@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kvp18_19_bewegungsapparat_v1",
+  "lectureCode": "KVP18/19",
+  "title": "Physikalische Aspekte der/s Bewegung(-sapparat)",
+  "block": "Block 8",
+  "sourceSummary": "Kinematik, Dynamik, Statik, Newtonsche Gesetze, Drehbewegung, Erhaltungssätze, Biomechanik und Elastizitätslehre des Bewegungsapparates.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Kinematik und Dynamik linearer und rotatorischer Bewegungen verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Newtonsche Gesetze und Drehbewegung erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Statik und biomechanische Hebelprinzipien verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Erhaltungssätze von Impuls, Drehimpuls und Energie anwenden"
+    },
+    {
+      "id": "lo5",
+      "text": "Elastizitätslehre, Hooke’sches Gesetz und Materialeigenschaften verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Kinematik stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beschreibt ausschliesslich Kräfte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beschreibt den Zusammenhang zwischen Ort, Geschwindigkeit und Beschleunigung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie untersucht nur Energie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beschreibt nur Drehmomente",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie erklärt nur Muskelkraft",
+          "correct": false
+        }
+      ],
+      "explanation": "Kinematik beschreibt Bewegungen unabhängig von Kräften.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Grösse entspricht dem rotatorischen Gegenstück zur Geschwindigkeit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drehmoment",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Winkelgeschwindigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Winkel",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Trägheitsmoment",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Impuls",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Winkelgeschwindigkeit entspricht der Geschwindigkeit bei Rotation.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Grössen gehören zur linearen Bewegung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ort",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Geschwindigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beschleunigung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Zeit",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle vier Grössen gehören zur linearen Kinematik.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Rotation stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rotation besitzt keinen Schwerpunkt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Jede Bewegung kann in Translation und Rotation zerlegt werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rotation betrifft nur Maschinen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Rotation besitzt keine Winkelbeschleunigung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Rotation benötigt keine Kräfte",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die Zerlegung in Translation und Rotation.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Einheit besitzt die Winkelgeschwindigkeit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "m/s",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "rad/s",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "N",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "kg",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "J",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Winkelgeschwindigkeit wird in rad/s angegeben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zur Beschleunigung stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beschleunigung beschreibt Geschwindigkeitsänderung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Winkelbeschleunigung beschreibt Änderung der Winkelgeschwindigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beschleunigung besitzt die Einheit m/s²",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Winkelbeschleunigung besitzt die Einheit rad/s²",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen stimmen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches Gesetz beschreibt F = ma?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hooke’sches Gesetz",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "2. Newtonsches Gesetz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Bernoulli-Gleichung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ohm’sches Gesetz",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Boyle-Gesetz",
+          "correct": false
+        }
+      ],
+      "explanation": "Das zweite Newtonsche Gesetz verknüpft Kraft, Masse und Beschleunigung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum 1. Newtonschen Gesetz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Körper benötigt immer eine Kraft zur Bewegung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Körper ändert seine Bewegung nur unter Krafteinwirkung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ruhe ist unmöglich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Beschleunigung ist unabhängig von Kräften",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Trägheit existiert nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Trägheitsprinzip beschreibt Bewegungsänderungen durch Kräfte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zum 3. Newtonschen Gesetz stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Actio = Reactio",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Kräfte treten paarweise auf",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Kräfte sind gleich gross",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Die Kräfte sind entgegengesetzt gerichtet",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen beschreiben das 3. Newtonsche Gesetz.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt das Drehmoment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kraft mal Zeit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kraft senkrecht zum Hebelarm mal Hebelarm",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Energie pro Zeit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Masse mal Geschwindigkeit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Impuls pro Zeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Drehmoment ergibt sich aus Kraft und Hebelarm.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum Massenträgheitsmoment stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es hängt nur von der Masse ab",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es hängt von Masse und deren Verteilung um die Drehachse ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es beschreibt ausschliesslich Translation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es besitzt die Einheit Newton",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es ist unabhängig vom Radius",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Massenverteilung bestimmt das Trägheitsmoment.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Grössen gehören zur Drehbewegung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drehmoment",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Massenträgheitsmoment",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Drehimpuls",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Rotationsenergie",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Grössen gehören zur Rotationsdynamik.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Rotationsenergie stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Erot = mv²",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Erot = 1/2 Iω²",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Erot = Fr",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Erot = ma",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Erot = p/t",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Rotationsenergie hängt von I und ω ab.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur rechten-Hand-Regel stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beschreibt Translation",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie dient zur Bestimmung der Richtung eines Vektorprodukts",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie berechnet Kräfte",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beschreibt Elastizität",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie misst Geschwindigkeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Die rechte-Hand-Regel bestimmt Richtungen von Drehgrössen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Wann befindet sich ein Körper in statischem Gleichgewicht?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wenn nur eine Kraft wirkt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wenn sich alle Kräfte und Drehmomente aufheben",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wenn er rotiert",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wenn Beschleunigung maximal ist",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wenn nur Gravitation wirkt",
+          "correct": false
+        }
+      ],
+      "explanation": "Im Gleichgewicht gilt ΣF = 0 und ΣM = 0.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Bedingungen gelten in der Statik?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keine lineare Beschleunigung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Kräftegleichgewicht",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Keine Winkelbeschleunigung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Drehmomentgleichgewicht",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Bedingungen müssen erfüllt sein.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Warum muss der Bizeps beim Halten eines Gewichts grosse Kräfte erzeugen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wegen geringer Muskelmasse",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wegen des kurzen Hebelarms",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wegen fehlender Gravitation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wegen geringer Knochenmasse",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wegen Luftwiderstand",
+          "correct": false
+        }
+      ],
+      "explanation": "Kurze Hebelarme erfordern grosse Muskelkräfte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Struktur überträgt Muskelkraft auf Knochen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Knorpel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sehnen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Haut",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fettgewebe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Blutgefässe",
+          "correct": false
+        }
+      ],
+      "explanation": "Sehnen übertragen Muskelkräfte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Biomechanik stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Knochen sind ausschliesslich passiv",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Knochen und Bänder bilden eine stabile Hebelstruktur",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Muskelkraft wirkt ohne Skelett",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sehnen verhindern Kraftübertragung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Biomechanik betrifft nur Sport",
+          "correct": false
+        }
+      ],
+      "explanation": "Knochen und Bänder dienen als Hebelsystem.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Grössen bleiben in einem abgeschlossenen System erhalten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Impuls",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Drehimpuls",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Energie",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Masse",
+          "correct": false
+        }
+      ],
+      "explanation": "Impuls, Drehimpuls und Energie bleiben erhalten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zum elastischen Stoss stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Energie geht vollständig verloren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Impuls und Energie bleiben erhalten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Energie bleibt erhalten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Impuls bleibt erhalten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Drehimpuls verschwindet",
+          "correct": false
+        }
+      ],
+      "explanation": "Beim elastischen Stoss bleiben Impuls und Energie erhalten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Warum dreht sich ein Turmspringer schneller beim Anziehen der Beine?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Drehimpuls nimmt zu",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Trägheitsmoment nimmt ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Masse nimmt zu",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Drehmoment steigt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Gravitation verschwindet",
+          "correct": false
+        }
+      ],
+      "explanation": "Kleineres Trägheitsmoment erhöht die Winkelgeschwindigkeit.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zum Hooke’schen Gesetz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dehnung ist unabhängig von Kraft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Im elastischen Bereich ist Dehnung proportional zur Kraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hooke gilt nur für Flüssigkeiten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Hooke beschreibt Energieerhaltung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Hooke gilt nur für Muskeln",
+          "correct": false
+        }
+      ],
+      "explanation": "Im elastischen Bereich gilt eine lineare Beziehung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Verformung ist irreversibel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elastische Verformung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Plastische Verformung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kompression",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Torsion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Rotation",
+          "correct": false
+        }
+      ],
+      "explanation": "Plastische Verformung bleibt bestehen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu Knochen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Knochen verhalten sich nicht elastisch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kompakter Knochen folgt näherungsweise dem Hooke’schen Gesetz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Knochen zeigen keine Deformation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Knochen besitzen kein Elastizitätsmodul",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Knochen brechen ohne Vorverformung",
+          "correct": false
+        }
+      ],
+      "explanation": "Knochen zeigen elastisches Verhalten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KVP18/19?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Biomechanik betrifft nur Sport",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bewegung und Stabilität des Körpers beruhen auf Kräften, Drehmomenten, Erhaltungssätzen und Materialeigenschaften",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rotation besitzt keine medizinische Relevanz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Elastizität betrifft nur Metalle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Statik und Dynamik sind identisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung verbindet Mechanik mit dem Bewegungsapparat.",
+      "sourceReliability": "high"
+    }
+  ]
+}

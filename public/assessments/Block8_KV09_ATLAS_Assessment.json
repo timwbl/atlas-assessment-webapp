@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kv09_spinale_motorik_v1",
+  "lectureCode": "KV09",
+  "title": "Spinale Motorik – Rückenmark und Spinalnerven",
+  "block": "Block 8",
+  "sourceSummary": "ZNS/PNS, Spinalnerven, Rückenmark, Motoneurone, Afferenzen/Efferenzen und Grundlagen der spinalen Motorik.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "ZNS, PNS sowie Afferenzen und Efferenzen unterscheiden"
+    },
+    {
+      "id": "lo2",
+      "text": "Aufbau peripherer Nerven und Muskelinnervation verstehen"
+    },
+    {
+      "id": "lo3",
+      "text": "Anatomie von Rückenmark und Spinalnerven erklären"
+    },
+    {
+      "id": "lo4",
+      "text": "Inneren Aufbau des Rückenmarks verstehen"
+    },
+    {
+      "id": "lo5",
+      "text": "Obere/untere Motoneurone und spinale Motorik erklären"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Struktur gehört zum zentralen Nervensystem (ZNS)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nervus radialis",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Rückenmark",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Spinalnerv",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Plexus brachialis",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ganglion spinale",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Rückenmark gehört zum ZNS.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Afferenzen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie verlaufen vom ZNS zum Muskel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie leiten Informationen zum ZNS",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie innervieren nur Drüsen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verlaufen ausschliesslich motorisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie verlassen immer das Vorderhorn",
+          "correct": false
+        }
+      ],
+      "explanation": "Afferenzen leiten Informationen zum ZNS.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zu Afferenzen und Efferenzen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Afferenzen sind sensibel",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Efferenzen sind motorisch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Afferenzen leiten Signale von Rezeptoren",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Efferenzen leiten Signale zu Erfolgsorganen",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Vorlesung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Rezeptoren zählen zu den Propriozeptoren?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nozizeptoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Muskelspindeln",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Photorezeptoren",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Geschmacksrezeptoren",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Haarzellen",
+          "correct": false
+        }
+      ],
+      "explanation": "Muskelspindeln sind Propriozeptoren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Wie werden periphere Nerven bezeichnet, die afferente und efferente Fasern enthalten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sensorische Nerven",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gemischte Nerven",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vegetative Nerven",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Plexus",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Reflexnerven",
+          "correct": false
+        }
+      ],
+      "explanation": "Spinalnerven sind gemischte Nerven.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Hüllstrukturen gehören zum Aufbau eines peripheren Nervs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Epineurium",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Perineurium",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Endoneurium",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Bindegewebe",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Strukturen gehören zum Nerv.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Struktur stellt die spezialisierte chemische Synapse zwischen Nerv und Muskel dar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muskelspindel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Motorische Endplatte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Spinalganglion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ranvier-Schnürring",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Golgi-Sehnenorgan",
+          "correct": false
+        }
+      ],
+      "explanation": "Die motorische Endplatte überträgt die Erregung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Fasern innervieren extrafusale Muskelfasern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "γ-Motoneurone",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "α-Motoneurone",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Typ-II-Afferenzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vegetative Fasern",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Viszerale Afferenzen",
+          "correct": false
+        }
+      ],
+      "explanation": "α-Motoneurone innervieren extrafusale Fasern.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zur Muskelspindel stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie liegt parallel zu extrafusalen Muskelfasern",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie reagiert auf Dehnung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie enthält intrafusale Muskelfasern",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie ist ein Propriozeptor",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen sind korrekt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Fasern leiten sensible Informationen der Muskelspindel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "β-Fasern",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Typ-Ia- und Typ-II-Fasern",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur C-Fasern",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vegetative Fasern",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur efferente Fasern",
+          "correct": false
+        }
+      ],
+      "explanation": "Typ-Ia- und II-Fasern leiten Propriozeption.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Symptome treten typischerweise bei chronischer Druckschädigung eines Nervs auf?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Sensibilität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kribbeln und Muskelschwäche",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hyperreflexie ohne Sensibilitätsverlust",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Schmerzen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Tremor",
+          "correct": false
+        }
+      ],
+      "explanation": "Kribbeln und Muskelschwäche sind typisch.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zum Rückenmark stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es liegt im Wirbelkanal",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Es beginnt am Foramen magnum",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es endet etwa auf Höhe L1/L2",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Es besitzt 31 Segmente",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen stimmen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Struktur wird durch die unteren Spinalnervenwurzeln gebildet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Plexus brachialis",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Cauda equina",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Conus medullaris",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Funiculus lateralis",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Corpus callosum",
+          "correct": false
+        }
+      ],
+      "explanation": "Die unteren Wurzeln bilden die Cauda equina.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu den Spinalnerven stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie treten durch das Foramen magnum aus",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie verlaufen durch die Foramina intervertebralia",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie enthalten nur efferente Fasern",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie besitzen keine Wurzeln",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie gehören zum ZNS",
+          "correct": false
+        }
+      ],
+      "explanation": "Spinalnerven treten durch Zwischenwirbellöcher aus.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Strukturen gehören zum Aufbau eines Spinalnerven?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Radix posterior",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Radix anterior",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ramus anterior",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ramus posterior",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Strukturen gehören zum Aufbau.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Wo liegen die Nervenzellkörper somatosensibler Neurone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cornu anterius",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Spinalganglion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Motorischer Cortex",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kleinhirn",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ramus anterior",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Zellkörper liegen im Ganglion spinale.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur grauen Substanz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besteht hauptsächlich aus Axonen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie enthält Nervenzellkörper und Gliazellen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie liegt nur peripher",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie enthält keine Interneurone",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie bildet die Hinterstränge",
+          "correct": false
+        }
+      ],
+      "explanation": "Graue Substanz enthält Perikaryen und Glia.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur weissen Substanz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besteht hauptsächlich aus Perikaryen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie enthält auf- und absteigende Faserbahnen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie liegt zentral im Rückenmark",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie besitzt keine Axone",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie bildet das Vorderhorn",
+          "correct": false
+        }
+      ],
+      "explanation": "Die weisse Substanz enthält Faserbahnen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Gliederungen der weissen Substanz werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Funiculus posterior",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Funiculus lateralis",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Funiculus anterior",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Faserstränge",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Begriffe werden erwähnt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Wo liegen die somatischen Motoneurone im Rückenmark?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cornu posterius",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Cornu anterius",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Funiculus posterior",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Spinalganglion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Substantia alba",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Motoneurone liegen im Vorderhorn.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Wie werden die somatischen Motoneurone des Vorderhorns funktionell bezeichnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Obere Motoneurone",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Untere Motoneurone",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sensorische Neurone",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vegetative Neurone",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Interneurone",
+          "correct": false
+        }
+      ],
+      "explanation": "Vorderhornneurone sind untere Motoneurone.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu oberen Motoneuronen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie liegen im Spinalganglion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie befinden sich in motorischen Zentren von Grosshirn und Hirnstamm",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie innervieren direkt Muskelspindeln",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verlaufen ausschliesslich afferent",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie liegen nur im Kleinhirn",
+          "correct": false
+        }
+      ],
+      "explanation": "Obere Motoneurone liegen in supraspinalen Zentren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur gemeinsamen motorischen Endstrecke stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besteht nur aus sensorischen Fasern",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verschiedene Einflüsse werden auf Ebene des unteren Motoneurons integriert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betrifft ausschliesslich Reflexe",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie liegt im Cortex",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie enthält keine Interneurone",
+          "correct": false
+        }
+      ],
+      "explanation": "Das untere Motoneuron integriert verschiedene Signale.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Muskulatur ist besonders an Zielmotorik beteiligt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rumpfmuskulatur",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Distale Extremitätenmuskulatur",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Paravertebrale Muskulatur",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zwerchfell",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Interkostalmuskulatur",
+          "correct": false
+        }
+      ],
+      "explanation": "Distale Muskeln ermöglichen Zielmotorik.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was beschreibt ein Reflex?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bewusste Willkürbewegung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Unwillkürliche stereotype efferente Reaktion auf einen afferenten Reiz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur kortikale Aktivität",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich vegetative Antworten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Willentliche Zielmotorik",
+          "correct": false
+        }
+      ],
+      "explanation": "Reflexe sind stereotype Reaktionen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV09?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spinale Motorik beruht ausschliesslich auf Muskeln",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Rückenmark und Spinalnerven verbinden sensible Afferenzen und motorische Efferenzen über obere und untere Motoneurone zu koordinierten Bewegungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die graue Substanz enthält nur Axone",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Spinalnerven enthalten nur motorische Fasern",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Reflexe benötigen keine afferenten Signale",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung verbindet Anatomie und Funktion der spinalen Motorik.",
+      "sourceReliability": "high"
+    }
+  ]
+}

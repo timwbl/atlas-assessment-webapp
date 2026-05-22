@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kv01_02_skelettmuskel_v1",
+  "lectureCode": "KV01/02",
+  "title": "Zelluläre Prozesse der Muskelfunktion: Skelettmuskel",
+  "block": "Block 8",
+  "sourceSummary": "Mikroanatomie des Skelettmuskels, Querbrückenzyklus, Erregungs-Kontraktions-Kopplung, Ca2+-Regulation, motorische Einheiten und Fasertypen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Mikroanatomie des Skelettmuskels und Sarkomers verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Querbrückenzyklus und Kraftentwicklung erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Ca2+-abhängige Regulation und elektromechanische Kopplung verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Neuromuskuläre Übertragung und Kraftregulation erklären"
+    },
+    {
+      "id": "lo5",
+      "text": "Eigenschaften verschiedener Muskelfasertypen und Muskelplastizität verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was ist die funktionelle Einheit des Skelettmuskels?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Motorische Einheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sarkomer",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Triade",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Myofibrille",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "T-Tubulus",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Sarkomer ist die funktionelle Einheit des Muskels.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Struktur verankert Myosinfilamente im Sarkomer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Z-Scheibe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "M-Linie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "T-Tubulus",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Troponin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Titin",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Myosinfilamente sind an der M-Linie verankert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zur Sarkomerstruktur stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die A-Bande enthält Myosinfilamente",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die I-Bande enthält Aktinfilamente",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die H-Zone enthält ausschliesslich Myosin",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ein Sarkomer ist ungefähr 2.2 µm lang",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Vorlesung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Myosin stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Myosin ist ein Strukturprotein ohne Enzymfunktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Myosin besitzt ATPase-Aktivität",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Myosin bindet kein ATP",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Myosin ist Bestandteil des Sarkoplasmatischen Retikulums",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Myosin reguliert Ca2+-Speicherung",
+          "correct": false
+        }
+      ],
+      "explanation": "Myosin wirkt als molekularer Motor mit ATPase-Funktion.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Funktion besitzt Titin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aktive ATP-Produktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Passive Elastizität des Muskels",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Freisetzung von Acetylcholin",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bildung von Troponin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ca2+-Freisetzung aus dem SR",
+          "correct": false
+        }
+      ],
+      "explanation": "Titin wirkt als viskoelastische molekulare Feder.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Schritte gehören zum Querbrückenzyklus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ATP-Bindung löst die Aktin-Myosin-Bindung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "ATP-Spaltung führt zu Konformationsänderung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Pi-Freisetzung trägt zum Kraftschlag bei",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ADP-Dissoziation beendet den Kraftschlag",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Schritte gehören zum Querbrückenzyklus.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was passiert bei ATP-Mangel im Muskel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Muskel erschlafft vollständig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Myosinköpfe bleiben hochaffin an Aktin gebunden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ca2+-Freisetzung stoppt vollständig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Troponin wird abgebaut",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "DHPR wird deaktiviert",
+          "correct": false
+        }
+      ],
+      "explanation": "ATP-Mangel führt zum Rigorzustand.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum Kraftschlag stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er benötigt keine ATP-Hydrolyse",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er beinhaltet Bewegungen des Hebelarms",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er erfolgt ausschliesslich im Sarkoplasmatischen Retikulum",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er ist unabhängig von Aktin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er verhindert Muskelverkürzung",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Hebelarm des Myosins bewegt sich während des Kraftschlags.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zur Muskelkraft stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur ein Teil der Myosinköpfe arbeitet gleichzeitig",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ein einzelner Myosinkopf erzeugt nur wenige Pikonewton Kraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Viele parallele Filamente ermöglichen hohe Muskelkräfte",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ATP wird pro Querbrückenzyklus verbraucht",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen wurden in den Überschlagsrechnungen erläutert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welcher Ca2+-Sensor reguliert die Freigabe der Myosin-Bindungsstellen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tropomyosin",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Troponin C",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Calsequestrin",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DHPR",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ORAI1",
+          "correct": false
+        }
+      ],
+      "explanation": "Troponin C bindet Ca2+.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Ca2+-abhängigen Aktivierung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tropomyosin blockiert bei hohem Ca2+ die Bindungsstellen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ca2+-Bindung an Troponin C verschiebt Tropomyosin",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ca2+ hemmt den Querbrückenzyklus",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Myosin bindet unabhängig von Ca2+",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aktin besitzt keine regulatorische Funktion",
+          "correct": false
+        }
+      ],
+      "explanation": "Ca2+ verschiebt Tropomyosin und erlaubt Bindung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Strukturen gehören zur Triade?",
+      "options": [
+        {
+          "id": "A",
+          "text": "T-Tubulus",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Terminale Zisterne",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sarkoplasmatisches Retikulum",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Longitudinale Zisterne",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Strukturen gehören zum intrazellulären Membransystem.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Struktur setzt im Skelettmuskel Ca2+ aus dem SR frei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SERCA",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "RyR1",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nav1.4",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Troponin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Myosin",
+          "correct": false
+        }
+      ],
+      "explanation": "RyR1 vermittelt die Ca2+-Freisetzung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur elektromechanischen Kopplung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DHPR wirkt ausschliesslich als Ca2+-Kanal",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "DHPR ist mechanisch mit RyR1 gekoppelt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Das SR besitzt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nav1.4 verhindert Depolarisation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ca2+ stammt nur extrazellulär",
+          "correct": false
+        }
+      ],
+      "explanation": "DHPR überträgt die Konformationsänderung auf RyR1.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zu STIM1 und ORAI1 stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "STIM1 dient als intra-SR-Ca2+-Sensor",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "ORAI1 vermittelt Store-operated Ca2+ entry",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "STIM1 erkennt SR-Ca2+-Defizite",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ORAI1 ermöglicht zusätzlichen Ca2+-Influx",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen stimmen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Mutation wird mit Central Core Disease assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Troponin-Mutation",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "RyR1-Mutation",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Aktin-Mutation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Titin-Mutation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nav1.4-Mutation",
+          "correct": false
+        }
+      ],
+      "explanation": "RyR1-Mutationen können Central Core Disease verursachen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was versteht man unter einer motorischen Einheit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Muskeln eines Arms",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein α-Motoneuron und die von ihm innervierten Muskelfasern",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Eine einzelne Myofibrille",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Alle Muskelfasern eines Muskels",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine Gruppe von Sarkomeren",
+          "correct": false
+        }
+      ],
+      "explanation": "Eine motorische Einheit besteht aus Motoneuron und Muskelfasern.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Wie erfolgt die räumliche Summation der Muskelkraft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Durch Verlängerung einzelner Sarkomere",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Durch Rekrutierung zusätzlicher motorischer Einheiten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Durch ATP-Abbau",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Durch Abnahme von Ca2+",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Durch Titin-Verkürzung",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehr aktive motorische Einheiten erzeugen mehr Kraft.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussagen zur Muskelkraftregulation stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Muskelfasern einer motorischen Einheit kontrahieren simultan",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Entladungsfrequenz beeinflusst die Muskelkraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zeitliche Summation erhöht die Kraft",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Maximalkraft entsteht bei maximaler zeitlicher und räumlicher Summation",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen sind korrekt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt ein glatter Tetanus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vollständige Muskelerschlaffung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verschmelzung vieler Einzelzuckungen bei hoher Reizfrequenz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Einzelreizantwort",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Muskelatrophie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Rigor mortis",
+          "correct": false
+        }
+      ],
+      "explanation": "Hohe Reizfrequenzen führen zum Tetanus.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Eigenschaft besitzen ST-Fasern (Typ I)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schnelle Ermüdung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hohe Ermüdungsresistenz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sehr hohe Kraftspitzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich glykolytischer Stoffwechsel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Keine oxidative Kapazität",
+          "correct": false
+        }
+      ],
+      "explanation": "Typ-I-Fasern sind langsam und ermüdungsresistent.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu FT-Fasern stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie kontrahieren langsam",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie entwickeln schnell hohe Kräfte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sind besonders ermüdungsresistent",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie besitzen niedrige Tetanisierungsfrequenzen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie entsprechen Typ-I-Fasern",
+          "correct": false
+        }
+      ],
+      "explanation": "FT-Fasern entwickeln rasch hohe Kräfte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Muskelplastizität stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muskeln sind nicht anpassungsfähig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Training beeinflusst Proteinexpression und Muskelstruktur",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fasertypen bleiben absolut unveränderlich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Satellitenzellen besitzen keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Muskelatrophie ist irreversibel",
+          "correct": false
+        }
+      ],
+      "explanation": "Muskelplastizität beruht auf Remodeling-Prozessen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zum Alterungsprozess des Muskels stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CRU nehmen im Alter zu",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Anzahl der CRU nimmt im Alter ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Feinmotorik verbessert sich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Motorische Einheiten werden kleiner",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Training beschleunigt Sarkopenie",
+          "correct": false
+        }
+      ],
+      "explanation": "Alterung reduziert die Anzahl funktioneller CRU.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu motorischen Einheiten im Alter stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Motorische Einheiten werden kleiner",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weniger Nervenfasern kontrollieren mehr Muskelfasern",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Feinmotorik verbessert sich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sarkopenie ist vollständig reversibel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nervenverbindungen regenerieren vollständig",
+          "correct": false
+        }
+      ],
+      "explanation": "Motorische Einheiten werden grösser.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV01/02?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muskelkraft entsteht ausschliesslich mechanisch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Muskelkontraktion beruht auf koordinierter Aktin-Myosin-Interaktion, Ca2+-Signalgebung und neuronaler Aktivierung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ca2+ besitzt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Muskelfasern kontrahieren unabhängig vom Nervensystem",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Skelettmuskeln besitzen keine Plastizität",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung verbindet molekulare Mechanismen mit Muskelphysiologie.",
+      "sourceReliability": "high"
+    }
+  ]
+}

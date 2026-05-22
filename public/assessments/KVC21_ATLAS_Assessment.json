@@ -1,0 +1,643 @@
+{
+  "id": "assessment_block8_kvc21_redoxreaktionen_v1",
+  "lectureCode": "KVC21",
+  "title": "Redoxreaktionen",
+  "block": "Block 8",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "stem": "Was beschreibt eine Oxidation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elektronenaufnahme",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Protonenaufnahme",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Elektronenabgabe",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sauerstoffabgabe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ATP-Synthese",
+          "correct": false
+        }
+      ],
+      "explanation": "Oxidation bedeutet Elektronenabgabe."
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "stem": "Wo findet in einem galvanischen Element die Oxidation statt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kathode",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Salzbrücke",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Anode",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Elektrolyt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Voltmeter",
+          "correct": false
+        }
+      ],
+      "explanation": "Oxidation erfolgt an der Anode."
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "stem": "Welche Aussage zu Standard-Reduktionspotentialen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beziehen sich auf ATP",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beschreiben Protonenkonzentrationen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie werden relativ zur Wasserstoffelektrode angegeben",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie gelten nur für organische Moleküle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie sind dimensionslos",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Normalwasserstoffelektrode dient als Referenz."
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "stem": "Welche Reaktion läuft spontan ab?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔG > 0",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "ΔE < 0",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ΔG = 0",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ΔE > 0",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "ΔE = 0",
+          "correct": false
+        }
+      ],
+      "explanation": "Spontane Redoxreaktionen besitzen positives ΔE."
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "stem": "Welche Beziehung zwischen Gibbs-Energie und Potentialdifferenz ist korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔG = zFΔE",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "ΔG = ΔE/F",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ΔG = −zFΔE",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ΔG = z/ΔE",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ΔG = −F/z",
+          "correct": false
+        }
+      ],
+      "explanation": "ΔG hängt negativ mit ΔE zusammen."
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "stem": "Welche Einheit besitzt das Reduktionspotential?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Joule",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Volt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mol",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Coulomb",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Pascal",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduktionspotentiale werden in Volt angegeben."
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "stem": "Welche Aussage zu E°’ stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es gilt nur für pH 0",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es beschreibt biochemische Standardbedingungen bei pH 7",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es beschreibt Temperaturänderungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es ist identisch mit ΔG",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es gilt ausschliesslich für Metalle",
+          "correct": false
+        }
+      ],
+      "explanation": "E°’ gilt für biochemische Bedingungen."
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "stem": "Welche Verbindung besitzt in der Atmungskette die Funktion eines mobilen Elektronenträgers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ATP",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Cytochrom c",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Pyruvat",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Lactat",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Glykogen",
+          "correct": false
+        }
+      ],
+      "explanation": "Cytochrom c transportiert Elektronen zwischen Komplexen."
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "stem": "Welcher Komplex der Atmungskette oxidiert NADH?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Komplex II",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Komplex I",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Komplex III",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Komplex IV",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ATP-Synthase",
+          "correct": false
+        }
+      ],
+      "explanation": "Komplex I überträgt Elektronen von NADH auf Ubichinon."
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "stem": "Welches Molekül wird am Ende der Atmungskette reduziert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NAD+",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Fumarat",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sauerstoff",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ATP",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "CO2",
+          "correct": false
+        }
+      ],
+      "explanation": "O2 wird zu Wasser reduziert."
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "stem": "Welche Funktion besitzt der Protonengradient?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DNA-Synthese",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "ATP-Synthese",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Glykolysehemmung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Lactatbildung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Citratabbau",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Protonengradient treibt die ATP-Synthase an."
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "stem": "Welche Aussage zu DNP stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es blockiert Komplex IV direkt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es verstärkt ATP-Synthese",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Es entkoppelt oxidative Phosphorylierung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Es reduziert NADH-Bildung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es hemmt Glykolyse irreversibel",
+          "correct": false
+        }
+      ],
+      "explanation": "DNP zerstört den Protonengradienten."
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "stem": "Welche Folge besitzt die Entkopplung durch DNP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ATP-Produktion steigt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wärmeproduktion nimmt zu",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sauerstoffverbrauch sinkt",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Elektronentransport stoppt vollständig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Protonengradient steigt an",
+          "correct": false
+        }
+      ],
+      "explanation": "Energie wird als Wärme freigesetzt."
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "stem": "Welche Aussage zu Elektronenfluss in der Atmungskette stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elektronen fliessen gegen den Energiegradienten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Elektronen werden direkt durch ATP transportiert",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Elektronen fliessen entlang eines Energiegradienten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Elektronen werden ausschliesslich durch Proteine transportiert",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Elektronenfluss benötigt keine Redoxreaktionen",
+          "correct": false
+        }
+      ],
+      "explanation": "Elektronen fliessen spontan zu höherem Reduktionspotential."
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "stem": "Welche Aussage zur Multiplikation von Redoxgleichungen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Potential verdoppelt sich",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Potential halbiert sich",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Das Reduktionspotential bleibt unverändert",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ΔG bleibt immer 0",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Elektronenzahl beeinflusst nie ΔG",
+          "correct": false
+        }
+      ],
+      "explanation": "Reduktionspotentiale sind intensive Grössen."
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "stem": "Welche Aussagen zu Redoxreaktionen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Oxidation bedeutet Elektronenabgabe",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Reduktion bedeutet Elektronenaufnahme",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Elektronen müssen immer übertragen werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Oxidation und Reduktion treten gekoppelt auf",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen definieren Redoxreaktionen korrekt."
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "stem": "Welche Aussagen zu Standardpotentialen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Normalwasserstoffelektrode besitzt E° = 0",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Vorzeichen und Reaktionsrichtung gehören zusammen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Positive Potentiale begünstigen die gezeigte Reduktion",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Potentiale werden in Volt angegeben",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Spannungsreihe."
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "stem": "Welche Aussagen zur Thermodynamik stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔG < 0 beschreibt spontane Reaktionen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "ΔE > 0 beschreibt spontane Reaktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "ΔG hängt von der Elektronenzahl ab",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ΔE ist konzentrationsabhängig",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen wurden in der Vorlesung behandelt."
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "stem": "Welche Aussagen zur Atmungskette stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NADH liefert Elektronen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ubichinon transportiert Elektronen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Cytochrom c transportiert Elektronen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sauerstoff ist terminaler Elektronenakzeptor",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen zur Atmungskette stimmen."
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "stem": "Welche Aussagen zu DNP stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DNP transportiert Protonen durch die innere Mitochondrienmembran",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Der Protonengradient wird reduziert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Energie wird als Wärme frei",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Der Stoffwechselumsatz steigt",
+          "correct": true
+        }
+      ],
+      "explanation": "DNP entkoppelt oxidative Phosphorylierung vollständig."
+    }
+  ]
+}

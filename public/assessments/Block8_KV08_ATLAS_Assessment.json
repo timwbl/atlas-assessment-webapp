@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kv08_muskelmechanik_v1",
+  "lectureCode": "KV08",
+  "title": "Skelettmuskulatur – Muskelmechanik",
+  "block": "Block 8",
+  "sourceSummary": "Kontraktionsformen, Längen-Spannungs-Beziehung, Titin, Muskelarbeit sowie Kraft-Geschwindigkeits-Beziehung der Skelettmuskulatur.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Elementare und abgeleitete Kontraktionsformen verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Passive Muskelkraft und Längen-Spannungs-Beziehung erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Die Rolle von Titin und elastischen Komponenten verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Muskelarbeit und Leistungsentwicklung erklären"
+    },
+    {
+      "id": "lo5",
+      "text": "Kraft-Geschwindigkeits-Beziehung und exzentrische Kontraktion verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur isometrischen Kontraktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Muskel verkürzt sich bei konstanter Kraft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Muskellänge bleibt konstant bei Kraftentwicklung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Muskelkraft bleibt null",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der Muskel verlängert sich aktiv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es wird keine Spannung erzeugt",
+          "correct": false
+        }
+      ],
+      "explanation": "Bei isometrischer Kontraktion bleibt die Länge konstant.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur isotonischen Kontraktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Kraft verändert sich ständig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Muskellänge verändert sich bei konstanter Kraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Muskellänge bleibt konstant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es wird keine Arbeit verrichtet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Kontraktion erfolgt ohne ATP",
+          "correct": false
+        }
+      ],
+      "explanation": "Isotonische Kontraktionen erfolgen bei konstanter Kraft.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Kontraktionsformen werden als elementar beschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Isometrisch",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Isotonisch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Auxoton",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Exzentrisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Isometrisch, isotonisch und auxoton sind elementare Kontraktionsformen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur auxotonen Kontraktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Kraft bleibt konstant",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Muskel verkürzt sich bei variabler Kraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Muskellänge bleibt konstant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es entsteht keine Bewegung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Spannung ist immer null",
+          "correct": false
+        }
+      ],
+      "explanation": "Bei auxotoner Kontraktion ändern sich Kraft und Länge.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Unterstützungskontraktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beginnt mit isotonischer Kontraktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie besteht aus isometrischer gefolgt von isotonischer/auxotoner Kontraktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie beschreibt nur passive Dehnung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie besitzt keine Arbeitsleistung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie tritt nur im Herzmuskel auf",
+          "correct": false
+        }
+      ],
+      "explanation": "Unterstützungskontraktionen beginnen isometrisch.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zu abgeleiteten Kontraktionsformen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anschlagskontraktionen sind durch einen Anschlag begrenzt",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Unterstützungskontraktionen können Lasten anheben",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Elementare Kontraktionsformen können kombiniert auftreten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Die zeitliche Abfolge bestimmt die Form",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen stimmen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Wodurch entsteht passive Muskelkraft hauptsächlich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur durch Aktin und Myosin",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Durch elastische Elemente wie Titin und Bindegewebe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich durch ATP",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur durch Nervensignale",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur durch Sehnen",
+          "correct": false
+        }
+      ],
+      "explanation": "Passive Kräfte entstehen durch elastische Strukturen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Ruhe-Dehnungskurve stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Spannung bleibt konstant",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mit zunehmender Dehnung steigt die passive Spannung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Der Muskel besitzt keine Elastizität",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Kraft nimmt bei Dehnung ab",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Beziehung ist streng linear",
+          "correct": false
+        }
+      ],
+      "explanation": "Die passive Spannung steigt mit zunehmender Länge.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Strukturen tragen zu den parallel-elastischen Elementen bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Titin",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Bindegewebe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sarkolemm",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Passive Muskelfasern",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Strukturen tragen zur passiven Elastizität bei.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Wie setzt sich die totale Muskelkraft zusammen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur aus aktiver Kraft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Aus aktiver und passiver Kraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur aus passiver Kraft",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur aus Reibungskräften",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur aus Nervensignalen",
+          "correct": false
+        }
+      ],
+      "explanation": "Totale Kraft = aktive + passive Kraft.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Wann ist die aktive Muskelkraft maximal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei minimaler Sarkomerlänge",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Im optimalen Sarkomerlängenbereich",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Bei vollständiger Überdehnung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur bei Ruhe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur bei maximaler passiver Spannung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die maximale aktive Kraft liegt im optimalen Überlappungsbereich.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Faktoren beeinflussen die maximale aktive Kraft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sarkomerlänge",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Zahl parallel angeordneter Myosinköpfe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gesamtquerschnitt der Muskelfasern",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Aktin-Myosin-Überlappung",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Faktoren beeinflussen die aktive Kraft.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Rolle besitzt Titin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur ATP-Synthese",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Passive Elastizität und Rückstellkraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Na+-Transport",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ca2+-Freisetzung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aktive Querbrückenbildung",
+          "correct": false
+        }
+      ],
+      "explanation": "Titin wirkt als elastisches drittes Filament.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Ca2+-abhängigen Titin-Bindung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Titin bindet niemals an Aktin",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ca2+ erhöht die Steifigkeit und Rückstellkraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ca2+ verhindert jede Elastizität",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Titin verliert Spannung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die passive Kraft sinkt",
+          "correct": false
+        }
+      ],
+      "explanation": "Ca2+ verstärkt die passive Rückstellkraft.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zu Titin stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Titin gilt als drittes Filament",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die freie Federlänge beeinflusst die Rückstellkraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Längere freie Federlänge erhöht die passive Spannung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ca2+ kann die Steifigkeit erhöhen",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen stimmen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Sarkomerdehnung bei aktiver Kontraktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die passive Rückstellkraft sinkt immer",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die passive Rückstellkraft hängt von der initialen Sarkomerlänge ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Titin besitzt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ca2+ verhindert jede Dehnung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Myosin erzeugt Kräfte",
+          "correct": false
+        }
+      ],
+      "explanation": "Die initiale Länge beeinflusst die passive Spannung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur Muskelarbeit stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Isometrische Kontraktionen verrichten äussere Arbeit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Muskelarbeit entspricht Kraft × Weg",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Arbeit entsteht nur ohne Wärme",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Arbeit ist unabhängig von Kraft",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Muskelarbeit besitzt keine Einheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Arbeit = Kraft × Weg.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussagen zur Muskelarbeit stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Isometrische Kontraktion erzeugt keine äussere Arbeit",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Isotonische Kontraktion verrichtet äussere Arbeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Auch isometrische Kontraktion setzt Wärme frei",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Serie-elastische Elemente werden gedehnt",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Vorlesung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Wann ist die äussere Muskelarbeit null?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur bei mittlerer Last",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wenn Kraft oder Weg null sind",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur bei maximaler Geschwindigkeit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur bei exzentrischer Kontraktion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur bei Titin-Dehnung",
+          "correct": false
+        }
+      ],
+      "explanation": "Arbeit = 0 bei fehlender Kraft oder fehlendem Weg.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Wann ist die Muskelleistung maximal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei maximaler Last",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bei ungefähr einem Drittel der isometrischen Maximalkraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Bei null Last",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur bei exzentrischer Kontraktion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Bei maximaler Geschwindigkeit ohne Last",
+          "correct": false
+        }
+      ],
+      "explanation": "Maximale Leistung entsteht bei mittlerer Last.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Kraft-Geschwindigkeits-Beziehung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mit steigender Last steigt die Verkürzungsgeschwindigkeit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mit steigender Last sinkt die Verkürzungsgeschwindigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Geschwindigkeit bleibt konstant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Beziehung ist linear",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Kraft ist unabhängig von Geschwindigkeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Beziehung ist hyperbolisch.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur exzentrischen Kontraktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Muskel verkürzt sich",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Muskel verlängert sich unter Kraftentwicklung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Kraft sinkt immer",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es entsteht keine Spannung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Exzentrische Arbeit verhindert Bremswirkung",
+          "correct": false
+        }
+      ],
+      "explanation": "Exzentrische Kontraktionen erzeugen Kraft bei Verlängerung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur exzentrischen Kraft stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie bleibt unter der isometrischen Maximalkraft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie kann bis zum Doppelten der isometrischen Maximalkraft erreichen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie erzeugt keine Bremswirkung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie erzeugt keine Wärme",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie benötigt kein ATP",
+          "correct": false
+        }
+      ],
+      "explanation": "Exzentrische Kräfte können sehr hoch sein.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Funktion besitzt exzentrische Muskelarbeit physiologisch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Beschleunigung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Brems- und Stossdämpferfunktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "ATP-Produktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verhinderung von Bewegung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Haltung",
+          "correct": false
+        }
+      ],
+      "explanation": "Exzentrische Arbeit absorbiert Energie.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zum Querbrückenzyklus bei grosser Last stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ADP dissoziiert sofort",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Querbrücken bleiben länger gebunden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Kraft sinkt immer",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Geschwindigkeit steigt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Myosin bindet weniger an Aktin",
+          "correct": false
+        }
+      ],
+      "explanation": "Hohe Last verlängert die Bindungsdauer.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV08?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muskelmechanik beruht ausschliesslich auf Aktin und Myosin",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Muskelkraft und Leistung entstehen aus dem Zusammenspiel von aktiven Querbrücken, passiven elastischen Elementen und äusseren Belastungsbedingungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Passive Elemente besitzen keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Exzentrische Kontraktionen erzeugen keine Kraft",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Kraft ist unabhängig von Geschwindigkeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung verbindet Muskelmechanik mit Kontraktionsphysiologie.",
+      "sourceReliability": "high"
+    }
+  ]
+}

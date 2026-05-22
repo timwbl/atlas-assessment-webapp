@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kv03_alterung_v1",
+  "lectureCode": "KV03",
+  "title": "Molekulare und pathologische Aspekte der Alterung",
+  "block": "Block 8",
+  "sourceSummary": "Biologische Alterungsprozesse, Hallmarks of Aging, Telomere, Seneszenz, mitochondriale Dysfunktion und altersassoziierte Erkrankungen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundlagen und Einflussfaktoren des Alterns verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Die neun Hallmarks of Aging kennen und erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Genomische Instabilität und Telomerverkürzung verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Proteostase, mitochondriale Dysfunktion und Seneszenz erklären"
+    },
+    {
+      "id": "lo5",
+      "text": "Stammzellerschöpfung und veränderte interzelluläre Kommunikation verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage beschreibt Altern am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein akut reversibler Prozess",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein multifaktorieller, fortschreitender biologischer Prozess mit Funktionsverlust",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich genetische Veränderungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur altersabhängige Krankheiten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein rein exogener Prozess",
+          "correct": false
+        }
+      ],
+      "explanation": "Altern wird als multifaktorieller, fortschreitender Prozess definiert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Einflussfaktoren des Alterns stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Umweltfaktoren beeinflussen Altern",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Endogene und exogene Faktoren beeinflussen die Lebensdauer",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Genetik besitzt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Exogene Faktoren sind irrelevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Altern ist vollständig zufällig",
+          "correct": false
+        }
+      ],
+      "explanation": "Sowohl endogene als auch exogene Faktoren sind relevant.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Erkrankungen werden als altersassoziiert genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sarkopenie",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Demenz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Diabetes",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Tumorerkrankungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Erkrankungen werden auf der Übersicht erwähnt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt Sarkopenie?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verlust von Nervenzellen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Altersabhängigen Muskelschwund",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Tumorwachstum",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verlust von Telomeren",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Chronische Fibrose",
+          "correct": false
+        }
+      ],
+      "explanation": "Sarkopenie bezeichnet altersabhängigen Muskelschwund.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur interindividuellen Variabilität des Alterns stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Menschen altern gleich schnell",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Lebensdauer variiert stark zwischen Individuen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Umweltfaktoren erklären Unterschiede",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Genetik beeinflusst Altern nicht",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es existieren keine Unterschiede",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont starke Variabilität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche gehören zu den Hallmarks of Aging?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Genomische Instabilität",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Telomerverkürzung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mitochondriale Dysfunktion",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Zelluläre Seneszenz",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Prozesse gehören zu den neun Hallmarks.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Prozess gehört NICHT zu den neun Hallmarks of Aging?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verlust der Proteostase",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stammzellerschöpfung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Veränderte interzelluläre Kommunikation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Photosyntheseverlust",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Epigenetische Veränderungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Photosynthese gehört nicht zu den Hallmarks.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu den Hallmarks stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie betreffen nur einzelne Organe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beschreiben molekulare und zelluläre Mechanismen des Alterns",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie erklären ausschliesslich Krebs",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beruhen nur auf Umweltfaktoren",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie sind ausschliesslich reversibel",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Hallmarks beschreiben zentrale Alterungsmechanismen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Prozesse tragen zur genomischen Instabilität bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DNA-Schäden",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Fehlerhafte Reparaturmechanismen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "ROS",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mutationen",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Prozesse fördern genomische Instabilität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Erkrankung ist mit einem WRN-Gen-Defekt assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alzheimer",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Werner-Syndrom",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Parkinson",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ALS",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Diabetes mellitus",
+          "correct": false
+        }
+      ],
+      "explanation": "Werner-Syndrom entsteht durch Defekte der DNA-Helicase.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt das Hayflick-Limit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximale ATP-Produktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Begrenzte Zellteilungsfähigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mitochondriale Dysfunktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fibroseentwicklung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Proteinaggregation",
+          "correct": false
+        }
+      ],
+      "explanation": "Zellen besitzen nur eine begrenzte Teilungszahl.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zur Telomerase stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie ist ein Ribonukleoprotein",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie enthält TERT",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie enthält einen RNA-Anteil",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie ist in den meisten somatischen Zellen deaktiviert",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Vorlesung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Telomerase-Reaktivierung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie verhindert Krebs immer",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie spielt bei vielen Tumoren eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verkürzt Telomere",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie deaktiviert Zellteilung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie führt zwingend zur Seneszenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Tumorzellen reaktivieren häufig Telomerase.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Erkrankung ist mit einem LMNA-Defekt assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hutchinson-Gilford-Progerie",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Parkinson",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ALS",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Myasthenia gravis",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mukoviszidose",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Progerie ist mit LMNA-Mutationen assoziiert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt Verlust der Proteostase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Proteinqualität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Störung von Proteinfaltung und -abbau",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verkürzte Telomere",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DNA-Replikation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aktivierung der Telomerase",
+          "correct": false
+        }
+      ],
+      "explanation": "Proteostaseverlust führt zu Fehlfaltung und Aggregation.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Proteinaggregate werden mit neurodegenerativen Erkrankungen assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Amyloid-β",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Tau",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "α-Synuclein",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "TDP-43",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aggregate wurden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Erkrankung ist mit Lewy-Körperchen assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alzheimer",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Parkinson",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "ALS",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Huntington",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Diabetes",
+          "correct": false
+        }
+      ],
+      "explanation": "Lewy-Körperchen enthalten α-Synuclein.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Enzyme sind an der amyloidogenen APP-Spaltung beteiligt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "α-Sekretase und Lipase",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "β- und γ-Sekretase",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Proteasom und Caspase",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Telomerase und Helicase",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "DNA-Polymerase und Ligase",
+          "correct": false
+        }
+      ],
+      "explanation": "β- und γ-Sekretase erzeugen Amyloid-β.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussagen zur mitochondrialen Dysfunktion stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie erhöht ROS",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie fördert mtDNA-Schäden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie trägt zum Altern bei",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mutator-Mäuse altern schneller",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen sind korrekt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur zellulären Seneszenz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie fördert unbegrenzte Zellteilung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie stoppt Zellproliferation",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie reduziert Entzündung vollständig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verbessert immer Gewebefunktion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie verhindert jede Fibrose",
+          "correct": false
+        }
+      ],
+      "explanation": "Seneszenz stoppt die Zellteilung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was bedeutet SASP?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stem cell associated signaling pathway",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Senescence associated secretory phenotype",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Systemic aging signaling process",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Senescent apoptosis signaling protein",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Somatic aging suppression pathway",
+          "correct": false
+        }
+      ],
+      "explanation": "SASP beschreibt sekretorische Faktoren seneszenter Zellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Stammzellerschöpfung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alterung erhöht unbegrenzt die Stammzellfunktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Differenzierungsprobleme nehmen zu",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vorläuferzellen nehmen zu",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Myeloische Zellen verschwinden",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Altern verbessert Regeneration",
+          "correct": false
+        }
+      ],
+      "explanation": "Alterung führt zu Funktionsverlust von Stammzellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was beschreibt der myeloische Shift?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zunahme lymphatischer Zellen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verschiebung der Hämatopoese Richtung myeloider Zellen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verlust aller Stammzellen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vermehrte Muskelbildung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verkürzung der Telomere",
+          "correct": false
+        }
+      ],
+      "explanation": "Im Alter verschiebt sich die Hämatopoese.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was bedeutet Inflammaging?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verminderte Entzündungsreaktionen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Chronisch erhöhte altersassoziierte Entzündung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich akute Infektionen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verlust von Immunzellen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verbesserte Geweberegeneration",
+          "correct": false
+        }
+      ],
+      "explanation": "Inflammaging beschreibt chronische sterile Entzündung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu Alters-Signaturen im Blut stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Blutfaktoren verändern sich nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zytokine und Hormone verändern sich altersabhängig",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Blut besitzt keine Informationsfunktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aging clocks sind unmöglich",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur genetische Marker sind relevant",
+          "correct": false
+        }
+      ],
+      "explanation": "Blutfaktoren ermöglichen Aging-Clocks.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV03?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Altern beruht ausschliesslich auf Telomerverkürzung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Altern entsteht durch zahlreiche miteinander verknüpfte molekulare und zelluläre Prozesse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Altern betrifft nur das Nervensystem",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mitochondrien besitzen keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Seneszenz ist ausschliesslich positiv",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die multifaktorielle Natur des Alterns.",
+      "sourceReliability": "high"
+    }
+  ]
+}

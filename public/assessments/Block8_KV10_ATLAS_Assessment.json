@@ -1,0 +1,856 @@
+{
+  "id": "assessment_block8_kv10_sensomotorik_v1",
+  "lectureCode": "KV10",
+  "title": "Sensomotorik im Rückenmark",
+  "block": "Block 8",
+  "sourceFile": "20260323_Sensomotorik_v2.pdf",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Sensomotorik und Bewegungsorganisation verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Motorische Einheiten und Innervationsverhältnisse erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Hennemansches Prinzip und Konsequenzen verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Muskelspindeln und γ-Motoneurone erklären"
+    },
+    {
+      "id": "lo5",
+      "text": "Golgi-Sehnenorgan und spinale Reflexe unterscheiden"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt Sensomotorik am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich sensorische Wahrnehmung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kontinuierliche Erzeugung motorischer Befehle als Reaktion auf sensorisches Feedback",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Reflexaktivität",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bewusste Bewegung ohne Feedback",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Muskelkontraktion ohne Nervensystem",
+          "correct": false
+        }
+      ],
+      "explanation": "Sensomotorik basiert auf motorischen Befehlen als Antwort auf sensorisches Feedback."
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Haltung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie basiert auf reziproker Aktivierung von Flexoren und Extensoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beschreibt nur schnelle Bewegungen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie beruht auf gleichzeitiger Aktivierung von Flexoren und Extensoren",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie ist unabhängig von der Schwerkraft",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie benötigt keinen Muskeltonus",
+          "correct": false
+        }
+      ],
+      "explanation": "Haltung benötigt gleichzeitige Aktivierung von Beugern und Streckern."
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zu Bewegungstypen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reflexive Bewegungen sind schnell",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Willkürliche Bewegungen benötigen den Kortex",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rhythmische Bewegungen können durch zentrale Mustergeneratoren erzeugt werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Reflexe sind immer bewusst gesteuert",
+          "correct": false
+        }
+      ],
+      "explanation": "Reflexe sind unwillkürlich und nicht bewusst gesteuert."
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Struktur ist besonders wichtig für Bewegungslernen und Feinmotorik?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Basalganglien",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kleinhirn",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hinterhorn",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vestibularapparat",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ramus anterior",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Kleinhirn ist zentral für Koordination und Bewegungslernen."
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "learningObjectiveId": "lo2",
+      "stem": "Wie ist eine motorische Einheit definiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Muskeln eines Segments",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Motoneuron und alle von ihm innervierten Muskelfasern",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur α-Motoneuron",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Motorischer Cortex und Muskel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Muskelspindel mit Ia-Afferenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Eine motorische Einheit besteht aus Motoneuron plus innervierten Muskelfasern."
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt das Innervationsverhältnis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anzahl Synapsen pro Muskel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Anzahl Muskeln pro Nerv",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Anzahl Muskelfasern pro motorischem Neuron",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Anzahl Motoneurone pro Muskel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anzahl Muskelspindeln pro Muskel",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Innervationsverhältnis beschreibt Muskelfasern pro Motoneuron."
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Muskel besitzt typischerweise ein kleines Innervationsverhältnis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "M. biceps brachii",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "M. gastrocnemius",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "M. rectus lateralis",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "M. soleus",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Quadriceps",
+          "correct": false
+        }
+      ],
+      "explanation": "Augenmuskeln benötigen hohe Präzision und kleine motorische Einheiten."
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zu motorischen Einheiten stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Typ-S-Einheiten ermüden langsam",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Typ-FF-Einheiten erzeugen hohe Kraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Typ-FR-Einheiten sind intermediär",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Typ-S-Einheiten sind wichtig für Haltung",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Vorlesung."
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Muskel enthält überwiegend Typ-S-Einheiten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "M. gastrocnemius",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "M. soleus",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "M. biceps brachii",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "M. deltoideus",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "M. triceps brachii",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Soleus dient vor allem der Haltung."
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "learningObjectiveId": "lo3",
+      "stem": "Was besagt das Hennemansche Prinzip?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grosse motorische Einheiten werden zuerst rekrutiert",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Motorische Einheiten werden zufällig aktiviert",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Kleine motorische Einheiten werden zuerst rekrutiert",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Nur Typ-FF-Einheiten werden willkürlich aktiviert",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Alle motorischen Einheiten feuern gleichzeitig",
+          "correct": false
+        }
+      ],
+      "explanation": "Kleine Einheiten mit niedriger Schwelle werden zuerst aktiviert."
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "learningObjectiveId": "lo3",
+      "stem": "Welche motorischen Einheiten werden bei maximaler Kraftleistung zuletzt rekrutiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Typ S",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Typ FR",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Typ FF",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Nur γ-Motoneurone",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ib-Afferenzen",
+          "correct": false
+        }
+      ],
+      "explanation": "Typ FF werden erst bei hohen Kraftanforderungen aktiviert."
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Konsequenzen hat das Hennemansche Prinzip?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feinsteuerung wird verbessert",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ermüdung wird reduziert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kraftzunahme erfolgt abgestuft",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Motorische Einheiten werden immer synchron aktiviert",
+          "correct": false
+        }
+      ],
+      "explanation": "Synchrone Aktivierung aller Einheiten findet nicht statt."
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "learningObjectiveId": "lo3",
+      "stem": "Wie verändert sich die Kraftvariabilität mit zunehmender Kraft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie nimmt ab",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie bleibt konstant",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie nimmt zu",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie verschwindet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist unabhängig von Kraft",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Kraftvariabilität steigt proportional mit der Kraft."
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "learningObjectiveId": "lo3",
+      "stem": "Welcher Zusammenhang besteht zwischen Geschwindigkeit und Genauigkeit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Höhere Geschwindigkeit verbessert Genauigkeit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Geschwindigkeit beeinflusst Genauigkeit nicht",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Höhere Geschwindigkeit reduziert Genauigkeit",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Nur Reflexe folgen diesem Prinzip",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Genauigkeit nimmt immer zu",
+          "correct": false
+        }
+      ],
+      "explanation": "Es besteht ein Speed-Accuracy-Trade-off."
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Einheit wird bei geringer Kraft zuerst aktiviert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Typ FF",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Typ FR",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Typ S",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Nur Interneurone",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Golgi-Sehnenorgan",
+          "correct": false
+        }
+      ],
+      "explanation": "Langsame, ermüdungsresistente Einheiten werden zuerst rekrutiert."
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "learningObjectiveId": "lo4",
+      "stem": "Was messen Muskelspindeln primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muskelkraft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Muskellänge und Kontraktionsgeschwindigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Temperatur",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Schmerz",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sehnenspannung",
+          "correct": false
+        }
+      ],
+      "explanation": "Muskelspindeln messen Länge und Längenänderung."
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "learningObjectiveId": "lo4",
+      "stem": "Wie sind Muskelspindeln zu extrafusalen Muskelfasern angeordnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "In Reihe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Parallel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Orthogonal",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur im Sehnenbereich",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Extrazellulär",
+          "correct": false
+        }
+      ],
+      "explanation": "Muskelspindeln liegen parallel zu Muskelfasern."
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Afferenz leitet Informationen der Muskelspindel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ib-Afferenz",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ia-Afferenz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "C-Faser",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Typ-B-Faser",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Vegetative Afferenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Ia-Afferenzen leiten Spindelinformationen."
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussagen zu γ-Motoneuronen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie regulieren die Empfindlichkeit der Muskelspindeln",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie verhindern das Erschlaffen der Spindel bei Kontraktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie innervieren intrafusale Fasern",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie erzeugen die Hauptmuskelkraft",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Hauptkraft entsteht durch α-Motoneurone."
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "learningObjectiveId": "lo4",
+      "stem": "Warum werden α- und γ-Motoneurone häufig gleichzeitig aktiviert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zur Schmerzhemmung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Damit Muskelspindeln während Kontraktion empfindlich bleiben",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zur Aktivierung des Golgi-Sehnenorgans",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Um Reflexe auszuschalten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zur Hemmung der Ia-Afferenzen",
+          "correct": false
+        }
+      ],
+      "explanation": "Koaktivierung erhält die Spindelsensitivität."
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "learningObjectiveId": "lo5",
+      "stem": "Was misst das Golgi-Sehnenorgan primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muskellänge",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kontraktionskraft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Temperatur",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vibration",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Schmerz",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Golgi-Sehnenorgan misst Muskelspannung bzw. Kraft."
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "learningObjectiveId": "lo5",
+      "stem": "Wie ist das Golgi-Sehnenorgan zu Muskelfasern angeordnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Parallel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "In Reihe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur intramuskulär",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Im Vorderhorn",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Im Perimysium",
+          "correct": false
+        }
+      ],
+      "explanation": "Golgi-Sehnenorgane liegen seriell zu den Muskelfasern."
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussagen zu spinalen Reflexen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie sind schnell",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie sind stereotyp",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sind unwillkürlich",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie benötigen immer bewusste Kontrolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Reflexe laufen unwillkürlich ab."
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage beschreibt einen Eigenreflex korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reiz- und Erfolgsorgan unterscheiden sich",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er ist immer polysynaptisch",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Reiz- und Erfolgsorgan sind identisch",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Er dient nur Schmerzabwehr",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er verwendet keine Muskelspindeln",
+          "correct": false
+        }
+      ],
+      "explanation": "Beim Eigenreflex sind Reiz- und Erfolgsorgan gleich."
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "learningObjectiveId": "lo5",
+      "stem": "Welches Beispiel entspricht einem Fremdreflex?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Patellarsehnenreflex",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Achillessehnenreflex",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Flexorreflex nach Schmerzreiz",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Masseterreflex",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Monosynaptischer Dehnungsreflex",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Flexorreflex ist ein polysynaptischer Schutzreflex."
+    }
+  ]
+}

@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kv05_herzmuskel_v1",
+  "lectureCode": "KV05",
+  "title": "Zelluläre Prozesse der Muskelfunktion: Herzmuskel",
+  "block": "Block 8",
+  "sourceSummary": "Aktionspotential des Herzmuskels, Erregungs-Kontraktions-Kopplung, CICR, Gap Junctions, Ca2+-Sparks und Local-Control-Theorie.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Gemeinsamkeiten und Unterschiede zwischen Herz- und Skelettmuskel verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Ruhemembranpotential und Aktionspotential der Herzmuskelzelle erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Erregungs-Kontraktions-Kopplung im Herzmuskel verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "CICR und den intrazellulären Ca2+-Haushalt erklären"
+    },
+    {
+      "id": "lo5",
+      "text": "Local-Control-Theorie und Ca2+-Sparks verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zum Herzmuskel stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er besteht aus elektrisch isolierten Einzelzellen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er bildet ein funktionelles Synzytium",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er besitzt keine Gap Junctions",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er arbeitet unabhängig von Ionenströmen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er kontrahiert ohne Aktionspotential",
+          "correct": false
+        }
+      ],
+      "explanation": "Herzmuskelzellen sind elektrisch gekoppelt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Struktur ermöglicht die elektrische Kopplung zwischen Herzmuskelzellen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "T-Tubuli",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gap Junctions",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mitochondrien",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sarkomere",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Troponin",
+          "correct": false
+        }
+      ],
+      "explanation": "Gap Junctions ermöglichen die Überleitung zwischen Zellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zum Herzmuskel treffen zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kleine Ionen können zwischen Zellen diffundieren",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "APs werden nahezu verzögerungsfrei weitergeleitet",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Herzmuskelzellen bilden ein funktionelles Synzytium",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Gap Junctions koppeln benachbarte Zellen elektrisch",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen entsprechen der Vorlesung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zum Vergleich Herz- vs. Skelettmuskel stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Im Herzmuskel ist extrazelluläres Ca2+ unnötig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Herzmuskel benötigt extrazelluläres Ca2+ für die Kontraktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur der Skelettmuskel besitzt T-Tubuli",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur der Herzmuskel besitzt Sarkomere",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Skelettmuskel besitzt keine RyR",
+          "correct": false
+        }
+      ],
+      "explanation": "Herzmuskel benötigt Trigger-Ca2+ von aussen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Ionen bestimmen hauptsächlich das Ruhemembranpotential der Herzmuskelzelle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Na+",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "K+",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ca2+",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Cl-",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mg2+",
+          "correct": false
+        }
+      ],
+      "explanation": "Das RMP liegt nahe am K+-Nernstpotential.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Mechanismen tragen zum Ruhepotential der Herzmuskelzelle bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Na+/K+-ATPase",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "K+-Diffusion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Offene Kir-Kanäle",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ungleiche Ionenverteilung",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Mechanismen tragen zum RMP bei.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Wie gross ist das Ruhepotential einer ventrikulären Herzmuskelzelle ungefähr?",
+      "options": [
+        {
+          "id": "A",
+          "text": "+40 mV",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "-90 mV",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "0 mV",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "-20 mV",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "-5 mV",
+          "correct": false
+        }
+      ],
+      "explanation": "Das RMP beträgt ungefähr -90 mV.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Kanäle sind hauptsächlich für die schnelle Depolarisation des ventrikulären AP verantwortlich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kir-Kanäle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Na+-Kanäle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "RyR2",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "SERCA",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "NCX",
+          "correct": false
+        }
+      ],
+      "explanation": "Nav-Kanäle erzeugen die schnelle Depolarisation.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Ströme/Kanäle tragen zur Plateauphase des Herzaktionspotentials bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "L-Typ-Ca2+-Kanäle",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Repolarisierende K+-Kanäle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Teilweise aktive IKr/IKs",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Fortgesetzter Ca2+-Einstrom",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Prozesse tragen zur Plateauphase bei.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Plateauphase stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entsteht ausschliesslich durch Na+-Kanäle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beruht auf einem Gleichgewicht zwischen Ca2+-Einstrom und K+-Ausstrom",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie existiert nur im Skelettmuskel",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verkürzt das AP auf wenige Millisekunden",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie wird nur durch Cl--Kanäle erzeugt",
+          "correct": false
+        }
+      ],
+      "explanation": "Plateauphase entsteht durch gegensätzliche Ionenströme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Wirkung hat Tetrodotoxin (TTX) auf Herzmuskelzellen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Blockade von K+-Kanälen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Blockade von Na+-Kanälen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Aktivierung von RyR2",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aktivierung von LTCC",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Blockade von SERCA",
+          "correct": false
+        }
+      ],
+      "explanation": "TTX blockiert spannungsabhängige Na+-Kanäle.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Folgen hat erhöhte extrazelluläre K+-Konzentration?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RMP wird weniger negativ",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Na+-Kanäle inaktivieren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Erregbarkeit sinkt",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "APs werden schwächer",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Folgen werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welcher Kanal entspricht funktionell dem DHPR des Skelettmuskels?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RyR2",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "L-Typ-Ca2+-Kanal",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kir-Kanal",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "NCX",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "SERCA",
+          "correct": false
+        }
+      ],
+      "explanation": "LTCC entsprechen funktionell dem DHPR.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Erregungs-Kontraktions-Kopplung im Herzmuskel stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ca2+ stammt ausschliesslich aus dem SR",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Extrazelluläres Ca2+ dient als Trigger",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "RyR2 wird mechanisch direkt geöffnet",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das AP besitzt keine Bedeutung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Herzmuskel kontrahiert ohne CICR",
+          "correct": false
+        }
+      ],
+      "explanation": "Extrazelluläres Ca2+ initiiert CICR.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Prozesse gehören zur Herzmuskel-EC-Kopplung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Öffnung von Nav1.5",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Öffnung von LTCC",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Aktivierung von RyR2",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Anstieg von [Ca2+]i",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Prozesse gehören zur EC-Kopplung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu RyR2 stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RyR2 ist ein Na+-Kanal",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "RyR2 vermittelt Ca2+-Freisetzung aus dem SR",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "RyR2 blockiert CICR",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "RyR2 ist nur im Skelettmuskel vorhanden",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "RyR2 transportiert ATP",
+          "correct": false
+        }
+      ],
+      "explanation": "RyR2 vermittelt die SR-Ca2+-Freisetzung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was bedeutet CICR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Calcium independent calcium release",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Calcium-induced calcium release",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Cardiac intracellular calcium regulation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Continuous intracellular calcium recycling",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Cytoplasmic ion channel response",
+          "correct": false
+        }
+      ],
+      "explanation": "CICR beschreibt Ca2+-induzierte Ca2+-Freisetzung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zum Herzmuskel-Ca2+-Haushalt stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Extrazelluläres Ca2+ ist unwichtig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Herzmuskel benötigt extrazelluläres Ca2+ zur Kontraktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur SERCA beeinflusst [Ca2+]i",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "NCX besitzt keine Funktion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ca2+ steigt nie über 100 nM",
+          "correct": false
+        }
+      ],
+      "explanation": "Trigger-Ca2+ von aussen ist essenziell.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Mechanismen reduzieren [Ca2+]i während der Relaxation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SERCA",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "NCX",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sarkolemmale Ca2+-Pumpe",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Schliessen der RyR2",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Prozesse tragen zur Relaxation bei.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zum Na+/Ca2+-Austauscher (NCX) stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er transportiert nur K+",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er beteiligt sich am Ca2+-Rücktransport",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er aktiviert RyR2 direkt",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er verhindert Relaxation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er ist ausschliesslich im Skelettmuskel vorhanden",
+          "correct": false
+        }
+      ],
+      "explanation": "NCX entfernt Ca2+ aus der Zelle.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Konzentrationsänderung tritt während der Herzmuskelkontraktion ungefähr auf?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 µM → 10 nM",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "100 nM → 10 µM",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "10 mM → 100 mM",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "1 mM → 0 mM",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Keine Änderung",
+          "correct": false
+        }
+      ],
+      "explanation": "Intrazelluläres Ca2+ steigt stark an.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was sind Ca2+-Sparks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Globale APs",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lokale SR-Ca2+-Freisetzungsereignisse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "ATP-Signale",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Gap-Junction-Ströme",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Na+-Transienten",
+          "correct": false
+        }
+      ],
+      "explanation": "Ca2+-Sparks sind lokale Freisetzungsereignisse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Struktur bildet zusammen mit RyR2-Clustern eine Calcium Release Unit (CRU)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SERCA",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "L-Typ-Ca2+-Kanal",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kir-Kanal",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "NCX",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nav1.5",
+          "correct": false
+        }
+      ],
+      "explanation": "LTCC und RyR2 bilden gemeinsam eine CRU.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Local-Control-Theorie stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle RyR2 öffnen gleichzeitig global",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "CRUs können unabhängig voneinander aktiviert werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ca2+-Sparks breiten sich immer unkontrolliert aus",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Theorie widerlegt CICR",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur K+-Kanäle regulieren die Kraft",
+          "correct": false
+        }
+      ],
+      "explanation": "CRUs werden lokal und unabhängig reguliert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Wie wird die Herzmuskelkraft laut Local-Control-Theorie reguliert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur über ATP",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Über die Anzahl rekrutierter Ca2+-Sparks",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich über Muskeldehnung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur über Gap Junctions",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur über Na+-Kanäle",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehr Sparks erzeugen stärkere Kontraktion.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV05?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Herzmuskel funktioniert identisch wie der Skelettmuskel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Herzmuskelkontraktion beruht auf CICR, präziser Ca2+-Regulation und elektrischer Zellkopplung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Extrazelluläres Ca2+ besitzt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Herz besitzt keine lokale Ca2+-Kontrolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gap Junctions verhindern AP-Ausbreitung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung verbindet AP, CICR und Local-Control-Theorie.",
+      "sourceReliability": "high"
+    }
+  ]
+}

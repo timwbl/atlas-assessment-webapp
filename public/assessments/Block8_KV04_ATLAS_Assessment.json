@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block8_kv04_verjuengung_v1",
+  "lectureCode": "KV04",
+  "title": "Molekulare und zelluläre Aspekte der Verjüngung",
+  "block": "Block 8",
+  "sourceSummary": "Anti-Aging-Interventionen, kalorische Restriktion, mTOR-Signalweg, Senolytics, junges Blut und experimentelle Verjüngungsansätze.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundlagen und Konzepte der Verjüngungsforschung verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Wirkungen von Bewegung und kalorischer Restriktion erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Kalorische Restriktionsmimetika und metabolische Signalwege verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "mTOR-Inhibition, Senolytics und Telomerase-basierte Ansätze verstehen"
+    },
+    {
+      "id": "lo5",
+      "text": "Experimentelle Verjüngungsansätze und Grenzen der Anti-Aging-Forschung diskutieren"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Verjüngungsforschung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Lebenserwartung stagniert weltweit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Interesse an Verjüngung nimmt wissenschaftlich zu",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Anti-Aging ist ausschliesslich esoterisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es existieren keine experimentellen Ansätze",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Altern gilt als vollständig irreversibel",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Zahl wissenschaftlicher Publikationen nimmt zu.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Intervention wird explizit als potenzieller Anti-Aging-Ansatz genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Photosynthese",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kalorische Restriktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Chronischer Schlafmangel",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nikotin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Immobilisation",
+          "correct": false
+        }
+      ],
+      "explanation": "Kalorische Restriktion zählt zu den wichtigsten Ansätzen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Interventionen werden als potenzielle Anti-Aging-Strategien genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bewegung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Kalorische Restriktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Metformin",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Trophische Signalinhibition",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Interventionen werden in der Übersicht genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Anti-Aging-Interventionen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es existiert nur ein Mechanismus",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mehrere molekulare Signalwege werden beeinflusst",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Telomere sind relevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Medikamente wirken",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sport besitzt keinen Effekt",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehrere Signalwege werden moduliert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Suche nach dem Jungbrunnen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Thema ist neu",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Suche nach Verjüngung begleitet die Menschheit seit Jahrhunderten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verjüngung wurde bereits vollständig erreicht",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Forschung ist beendet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anti-Aging betrifft nur Tiere",
+          "correct": false
+        }
+      ],
+      "explanation": "Historische und moderne Beispiele werden gezeigt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Effekte von Bewegung werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserter Sauerstofftransport",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Erhöhte ATP-Umsatzrate",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verbesserte Stoffwechselregulation",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Verbesserte körperliche Leistungsfähigkeit",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Effekte werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur körperlichen Aktivität stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehr Bewegung erhöht Mortalität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hohe körperliche Aktivität reduziert die Mortalität",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Bewegung beeinflusst Stoffwechsel nicht",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bewegung wirkt nur kurzfristig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sport beschleunigt Altern",
+          "correct": false
+        }
+      ],
+      "explanation": "Aktive Personen zeigen geringere Mortalität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur kalorischen Restriktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie aktiviert dauerhaft mTOR",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie kann Alterungsprozesse verlangsamen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie erhöht IGF-1 dauerhaft",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beschleunigt Proliferation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie wirkt nur bei Menschen",
+          "correct": false
+        }
+      ],
+      "explanation": "Kalorische Restriktion verlangsamt Alterungsprozesse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Signalwege werden durch kalorische Restriktion beeinflusst?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Insulin-Signalweg",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "IGF-1-Signalweg",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "PI3K/AKT",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "mTOR",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Signalwege werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu kalorischer Restriktion bei Affen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie verschlechtert die Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie verbessert Gesundheit und Überleben",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verkürzt die Lebensdauer",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie erhöht Tumorinzidenz",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie besitzt keine metabolischen Effekte",
+          "correct": false
+        }
+      ],
+      "explanation": "Studien zeigen bessere Gesundheit bei restriktiver Ernährung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Mechanismus wird mit kalorischer Restriktion assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Erhöhte chronische Entzündung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Reduzierte Wachstums- und Proliferationssignale",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vermehrte ROS-Produktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aktivierung der Seneszenz",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Massive Proteinaggregation",
+          "correct": false
+        }
+      ],
+      "explanation": "Kalorische Restriktion reduziert Wachstums-Signalwege.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Beispiele für kalorische Restriktionsmimetika werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NAD+-Vorläufer",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Resveratrol",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Metformin",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Rapamycin",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Substanzen werden diskutiert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Wirkung wird Nicotinamid-Ribosid zugeschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Abnahme der Muskelkraft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Erhöhung des Muskelstammzellpools",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beschleunigte Seneszenz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verlust von Muskelmasse",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verkürzung der Lebensdauer",
+          "correct": false
+        }
+      ],
+      "explanation": "NR verbessert Muskelparameter.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Resveratrol stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es kommt vor allem in Fleisch vor",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es ist in Rotwein enthalten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es deaktiviert SIRT1",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es wirkt ausschliesslich toxisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es verhindert ATP-Produktion",
+          "correct": false
+        }
+      ],
+      "explanation": "Resveratrol wird mit Rotwein assoziiert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Fasting Mimicking Diet stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie erhöht Risikofaktoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie senkt Marker altersassoziierter Erkrankungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie erhöht IGF-1",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verhindert Gewichtsverlust",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie wirkt nur bei Mäusen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die FMD senkt Risikofaktoren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussagen zu Metformin stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es ist ein Typ-2-Diabetes-Medikament",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Es beeinflusst metabolische Signalwege",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es wird als potenzieller Anti-Aging-Ansatz untersucht",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Es wirkt auf AMPK/mTOR-assoziierte Prozesse",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Aussagen werden dargestellt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welcher Wirkstoff hemmt mTOR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Resveratrol",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Rapamycin",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Insulin",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "IGF-1",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Glukose",
+          "correct": false
+        }
+      ],
+      "explanation": "Rapamycin ist ein mTOR-Inhibitor.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Rapamycin stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es aktiviert Wachstumssignale",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es verlängerte in Tierexperimenten die Lebensdauer",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es erhöht Proliferation dauerhaft",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es besitzt keine metabolischen Effekte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es aktiviert IGF-1",
+          "correct": false
+        }
+      ],
+      "explanation": "Rapamycin verlängerte die Lebensdauer von Mäusen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Strategien zur Entfernung seneszenter Zellen werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Induktion von Apoptose",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Survival-Inhibitoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Targeting von Oberflächenmolekülen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Senolytics",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Strategien werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was sind Senolytics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Telomerase-Aktivatoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Substanzen zur Eliminierung seneszenter Zellen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mitochondriale ROS",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DNA-Reparaturenzyme",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Kalorische Restriktionen",
+          "correct": false
+        }
+      ],
+      "explanation": "Senolytics eliminieren seneszente Zellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur Entfernung seneszenter Zellen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie verkürzt die Lebensdauer",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie verlängert Lebens- und Gesundheitsdauer",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie erhöht chronische Entzündung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verhindert Regeneration",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie besitzt keine Auswirkungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Tiermodelle zeigen positive Effekte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Strategie wird als gentherapeutischer Ansatz genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Myosintherapie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Telomerase-Gentherapie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Aktintransfer",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Proteasom-Inhibition",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Insulinblockade",
+          "correct": false
+        }
+      ],
+      "explanation": "TERT-Gentherapie wird gezeigt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu jungem Blut stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es besitzt keine biologischen Effekte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Junges Blut verbesserte in Tierexperimenten kognitive Funktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es beschleunigte Sarkopenie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es deaktivierte Stammzellen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es wirkte nur auf Muskeln",
+          "correct": false
+        }
+      ],
+      "explanation": "Parabiose-Experimente verbesserten Funktionen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welcher Faktor wird mit Verjüngungseffekten jungen Bluts assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tau",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "GDF11",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Amyloid-β",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "α-Synuclein",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Insulin",
+          "correct": false
+        }
+      ],
+      "explanation": "GDF11 wird als möglicher Faktor erwähnt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Anti-Aging-Forschung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es existiert bereits eine definitive Verjüngungstherapie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Viele Ansätze sind experimentell und ihre Effizienz bleibt unklar",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur ein Signalweg ist relevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Tiermodelle besitzen keinen Wert",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Altern kann vollständig verhindert werden",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Forschung ist noch experimentell.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV04?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Altern kann bereits vollständig rückgängig gemacht werden",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mehrere Interventionen beeinflussen molekulare Alterungsprozesse und könnten Gesundheitsspanne und Lebensdauer modulieren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Telomerase ist relevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bewegung besitzt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anti-Aging betrifft ausschliesslich Kosmetik",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung zeigt verschiedene experimentelle Anti-Aging-Ansätze.",
+      "sourceReliability": "high"
+    }
+  ]
+}
