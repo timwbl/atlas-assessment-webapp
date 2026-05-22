@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block7_kv03_soziale_dimension_v1",
+  "lectureCode": "KV03",
+  "title": "Die soziale Dimension von Gesundheit und Krankheit",
+  "block": "Block 7",
+  "sourceSummary": "Biopsychosoziales Modell, soziale Netzwerke, klinische soziale Arbeit, soziale Diagnostik und soziale Einflussfaktoren auf Gesundheit.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Die soziale Dimension im biopsychosozialen Modell verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Soziale Netzwerke als Gesundheitsfaktor erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Grundlagen klinischer Sozialer Arbeit kennen"
+    },
+    {
+      "id": "lo4",
+      "text": "Soziale Diagnostik beschreiben"
+    },
+    {
+      "id": "lo5",
+      "text": "Zusammenhang zwischen sozialer Ungleichheit und Gesundheit verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage beschreibt das biopsychosoziale Modell nach Engel am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur biologische Faktoren beeinflussen Krankheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Biologische, psychologische und soziale Faktoren wirken dynamisch zusammen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Psychische Faktoren sind sekundär",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Soziale Faktoren beeinflussen nur chronische Krankheiten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Krankheit ist ausschliesslich genetisch bedingt",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Modell beschreibt eine dynamische zirkuläre Kausalität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur sozialen Dimension im biopsychosozialen Modell stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besitzt keine eigenständige Bedeutung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie ist gleichwertig mit biologischen und psychischen Faktoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betrifft nur Familienstrukturen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beeinflusst ausschliesslich Verhalten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie wird in der modernen Medizin nicht berücksichtigt",
+          "correct": false
+        }
+      ],
+      "explanation": "Die soziale Dimension ist gleichwertig integriert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Faktoren werden in der Vorlesung als soziale Einflussgrössen genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bildung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Einkommen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Familie und sozialer Support",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Gemeindesicherheit",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Faktoren werden im Modell sozialer Determinanten erwähnt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Stress im biopsychosozialen Modell trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stress betrifft ausschliesslich psychische Prozesse",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stress gilt als zentraler Übertragungsmechanismus psychosozialer Prozesse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stress wirkt nur kurzfristig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Stress besitzt keine biologische Wirkung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stress entsteht ausschliesslich genetisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt Stress als zentralen Mechanismus.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu zirkulärer Kausalität stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Biologische Faktoren beeinflussen psychische Prozesse nie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die drei Dimensionen beeinflussen sich gegenseitig",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur soziale Prozesse beeinflussen Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Psychische Faktoren wirken ausschliesslich auf Verhalten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Kausalität verläuft immer linear",
+          "correct": false
+        }
+      ],
+      "explanation": "Das biopsychosoziale Modell basiert auf Wechselwirkungen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Ebenen sozialer Einflussfaktoren werden unterschieden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mikroebene",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Mesoebene",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Makroebene",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Molekulare Ebene",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt drei soziale Ebenen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu sozialen Netzwerken stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beeinflussen Gesundheit nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie können Gesundheitsverhalten und Selbstwirksamkeit beeinflussen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie wirken ausschliesslich negativ",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie betreffen nur psychische Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ersetzen medizinische Versorgung",
+          "correct": false
+        }
+      ],
+      "explanation": "Soziale Netzwerke wirken über verschiedene Pfade.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche physiologische Struktur wird im Zusammenhang mit sozialen Netzwerken erwähnt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kleinhirn",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "HPA-Achse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Pankreas",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Retina",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Leber",
+          "correct": false
+        }
+      ],
+      "explanation": "Die HPA-Achse wird als physiologischer Pfad genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Über welche Pfade beeinflussen soziale Netzwerke laut Vorlesung Gesundheit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesundheitsverhalten",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Psychologischer Pfad",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Physiologischer Pfad",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Genetischer Pfad",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt drei Hauptpfade.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu 'upstream'-Faktoren trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beschreiben nur individuelle Entscheidungen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie umfassen gesellschaftliche Rahmenbedingungen wie Armut oder Gesetze",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betreffen ausschliesslich Psychotherapie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie wirken nur kurzfristig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie beeinflussen keine Gesundheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Upstream-Faktoren beschreiben strukturelle Einflüsse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu chronischem Schmerz laut Vorlesung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesellschaftliche Faktoren beeinflussen Schmerz kaum",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vorurteile und Stigmatisierung können Schmerzbehandlung verschlechtern",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur biologische Faktoren bestimmen Schmerz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Chronischer Schmerz entspricht akutem Schmerz",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Empathie beeinflusst Schmerzbehandlung nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont soziale Einflüsse auf Schmerz.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Massnahmen werden zur Verbesserung der Schmerzversorgung empfohlen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reflexion eigener Vorurteile",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Empathisches Zuhören",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Angepasste Schmerzkommunikation",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ignorieren sozialer Faktoren",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung empfiehlt reflektierte und empathische Kommunikation.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage beschreibt Klinische Soziale Arbeit am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich finanzielle Beratung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Professionelle Bearbeitung der sozialen Dimension von Gesundheit und Krankheit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Psychotherapie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Sozialversicherungsberatung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Arbeit mit Kindern",
+          "correct": false
+        }
+      ],
+      "explanation": "Klinische Soziale Arbeit bearbeitet soziale Aspekte von Krankheit.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aufgabe gehört zur Klinischen Sozialen Arbeit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ressourcenerschliessung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ausschliesslich Pharmakotherapie",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nur Diagnosestellung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Laboranalysen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Chirurgische Behandlung",
+          "correct": false
+        }
+      ],
+      "explanation": "Ressourcenerschliessung gehört zu den methodischen Ansätzen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche methodischen Ansätze der Klinischen Sozialen Arbeit werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Soziale Diagnostik",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Beratung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Soziale Netzwerkarbeit",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Case Management",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Methoden werden erwähnt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Leitorientierung von Medizin und Sozialer Arbeit stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besitzen identische Aufgaben",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie besitzen unterschiedliche Leitorientierungen mit gemeinsamem Bezugspunkt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie arbeiten nie interprofessionell",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Soziale Arbeit ersetzt Medizin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Medizin berücksichtigt keine soziale Dimension",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt unterschiedliche Perspektiven.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Perspektive auf Sucht wird aus Sicht der Sozialen Arbeit gezeigt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sucht ausschliesslich als Hirnerkrankung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sucht auch als Form der Lebensbewältigung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sucht nur als moralisches Problem",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sucht nur als genetische Erkrankung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sucht ausschliesslich als Persönlichkeitsstörung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die soziale Perspektive betrachtet Lebensbewältigung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt soziale Diagnostik?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich medizinische Diagnostik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Diagnostik der sozialen Dimension von Gesundheit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur psychologische Tests",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Einkommensanalysen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich genetische Diagnostik",
+          "correct": false
+        }
+      ],
+      "explanation": "Soziale Diagnostik fokussiert Lebensführungssysteme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Prinzipien sozialer Diagnostik werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Partizipativ",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sozialökologisch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Multiperspektivisch",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Reflexiv",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle vier Prinzipien werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zum Person-in-Environment-Ansatz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Menschen werden isoliert betrachtet",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Menschen werden im Kontext ihrer Umwelt betrachtet",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur biologische Faktoren sind relevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Umwelt besitzt keine Bedeutung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es handelt sich um ein genetisches Modell",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Ansatz berücksichtigt Umwelt und Lebenskontext.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur Partizipation in der sozialen Diagnostik stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Patient*innen spielen keine aktive Rolle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Diagnostik erfolgt dialogisch und aushandlungsorientiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Fachpersonen entscheiden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Partizipation verschlechtert Diagnostik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie betrifft nur Kinder",
+          "correct": false
+        }
+      ],
+      "explanation": "Partizipation ist ein zentrales Prinzip.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu sozialer Ungleichheit und Gesundheit stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesundheit ist unabhängig von sozialer Lage",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Soziale Bedingungen beeinflussen Gesundheitschancen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Gene beeinflussen Krankheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Soziale Faktoren betreffen nur psychische Erkrankungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gesundheitsversorgung allein bestimmt Gesundheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont soziale Einflussgrössen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu sozialem Support trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er beeinflusst Gesundheit nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er kann protektiv wirken",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er verschlechtert grundsätzlich Krankheitsbewältigung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er betrifft nur ältere Menschen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er ersetzt jede Therapie",
+          "correct": false
+        }
+      ],
+      "explanation": "Sozialer Support wirkt als Schutzfaktor.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Funktion gesundheitsbezogener Sozialer Arbeit stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie dient ausschliesslich Verwaltung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie unterstützt Teilhabe und Lebensbewältigung kranker Menschen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzt ärztliche Therapie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie betrifft nur Suchterkrankungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie fokussiert nur ökonomische Probleme",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont Teilhabe und Lebensbewältigung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur sozialen Dimension von Krankheit trifft laut Vorlesung zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie ist nebensächlich",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beeinflusst Krankheitsverlauf und Lebensqualität wesentlich",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betrifft nur chronische Schmerzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie wirkt nur auf Verhalten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist ausschliesslich kulturell bedingt",
+          "correct": false
+        }
+      ],
+      "explanation": "Soziale Faktoren prägen Verlauf und Bewältigung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV03?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krankheit wird nur biologisch bestimmt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gesundheit und Krankheit entstehen im Zusammenspiel biologischer, psychischer und sozialer Faktoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Soziale Arbeit besitzt keine Rolle im Gesundheitswesen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Stress wirkt ausschliesslich psychisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Soziale Netzwerke beeinflussen Gesundheit nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "KV03 fokussiert die soziale Dimension im biopsychosozialen Modell.",
+      "sourceReliability": "high"
+    }
+  ]
+}

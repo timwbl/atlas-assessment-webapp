@@ -1,0 +1,937 @@
+{
+  "id": "assessment_block7_kv09_stress_v1",
+  "lectureCode": "KV09",
+  "title": "Stresserleben und gesundheitliche Auswirkungen",
+  "block": "Block 7",
+  "sourceSummary": "Stressreaktionen, Stresssysteme, HPA-Achse, Allostase, Allostatic Load und gesundheitliche Folgen chronischen Stresses.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Definition und Grundlagen von Stress verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Akute und chronische Stressreaktionen erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Stresssysteme und HPA-Achse verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Homöostase, Allostase und Allostatic Load erklären"
+    },
+    {
+      "id": "lo5",
+      "text": "Gesundheitliche Folgen chronischen Stresses analysieren"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Wie definiert die Vorlesung Stress?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur psychische Belastung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Psychische und physische Reaktion auf Stressoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich hormonelle Reaktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Angstreaktion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Objektive Arbeitsbelastung",
+          "correct": false
+        }
+      ],
+      "explanation": "Stress umfasst psychische und physische Reaktionen auf Stressoren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Stressoren stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es existieren nur psychische Stressoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stressoren können chemisch, biologisch, sozial, physikalisch oder psychisch sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur soziale Faktoren wirken als Stressoren",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Stressoren wirken ausschliesslich psychisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stressoren beeinflussen keine Physiologie",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehrere Stressor-Kategorien werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Organsysteme werden durch Stress beeinflusst?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Herz-Kreislauf-System",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Immunsystem",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Magen-Darm-System",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Psyche",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung nennt mehrere betroffene Systeme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Stress laut WHO stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stress gilt als bedeutungslose Gesundheitsgefahr",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stress gehört zu den grossen Gesundheitsgefahren des 21. Jahrhunderts",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stress betrifft nur Berufstätige",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Stress beeinflusst keine Krankheitsentstehung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stress besitzt nur positive Effekte",
+          "correct": false
+        }
+      ],
+      "explanation": "Die WHO beschreibt Stress als bedeutende Gesundheitsgefahr.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zur Stressbelastung am Arbeitsplatz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur wenige Menschen erleben Stress",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein relevanter Anteil leidet unter Stress",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stress besitzt keine ökonomischen Folgen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Stress betrifft nur Führungskräfte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stress reduziert Gesundheitskosten",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt hohe Prävalenzen und Kosten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Merkmale gehören zur ultraschnellen Stressantwort?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Umverteilung des Blutvolumens",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Blutzuckererhöhung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Reduziertes Schmerzempfinden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Gesteigerte Aufmerksamkeit",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Prozesse gehören zur schnellen Sympathikusreaktion.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Struktur vermittelt die ultraschnelle Stressantwort?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nebennierenrinde",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sympathikus-Nebennierenmark-System",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hypophyse",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Pankreas",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Schilddrüse",
+          "correct": false
+        }
+      ],
+      "explanation": "Die ultraschnelle Antwort läuft über das Nebennierenmark.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Hormone dominieren die schnelle Stressreaktion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cortisol und Aldosteron",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Adrenalin und Noradrenalin",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Insulin und Glukagon",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "TSH und T3",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Dopamin und Serotonin",
+          "correct": false
+        }
+      ],
+      "explanation": "Katecholamine dominieren die schnelle Stressantwort.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Prozesse werden durch Cortisol gefördert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gluconeogenese",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Proteinabbau",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Immunsuppression",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Langfristige Energiebereitstellung",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Prozesse werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur langsamen Stressantwort stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie wird primär durch das Nebennierenmark vermittelt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie läuft über die HPA-Achse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie dauert nur Millisekunden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie reduziert Blutdruck",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie hemmt Energiebereitstellung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die langsame Antwort erfolgt über die HPA-Achse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Reihenfolge beschreibt die HPA-Achse korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hypophyse → Nebennierenmark → Hypothalamus",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hypothalamus → Hypophyse → Nebennierenrinde",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nebennierenrinde → Hypothalamus → Pankreas",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sympathikus → Leber → Hypophyse",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Hypothalamus → Schilddrüse → Nebenniere",
+          "correct": false
+        }
+      ],
+      "explanation": "Die HPA-Achse verläuft über Hypothalamus, Hypophyse und Nebennierenrinde.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Hormone werden in der Stressreaktion genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CRH",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "ACTH",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Cortisol",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Adrenalin",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Hormone gehören zu den Stresssystemen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Funktion von Cortisol stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es reduziert langfristige Energiebereitstellung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es fördert katabole Prozesse und Immunsuppression",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es wird nur bei Ruhe ausgeschüttet",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es senkt den Blutdruck",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es hemmt Gluconeogenese",
+          "correct": false
+        }
+      ],
+      "explanation": "Cortisol fördert katabole Stoffwechselprozesse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur prolongierten Stressreaktion stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie betrifft nur das Nervensystem",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bei chronischem Stress bleiben beide Stresssysteme aktiviert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stressreaktionen enden immer rasch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Chronischer Stress reduziert Katecholamine sofort",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Langzeitstress besitzt keine physiologischen Folgen",
+          "correct": false
+        }
+      ],
+      "explanation": "Anhaltende Aktivierung führt zu Belastung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zum allgemeinen Adaptationssyndrom nach Selye stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es besitzt nur zwei Phasen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es umfasst Alarm-, Widerstands- und Erschöpfungsphase",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es beschreibt nur akuten Stress",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es betrifft ausschliesslich die Psyche",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es endet immer mit vollständiger Erholung",
+          "correct": false
+        }
+      ],
+      "explanation": "Selye beschreibt drei Stressphasen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Merkmale gehören zur Erschöpfungsphase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zusammenbruch der Anpassungsmechanismen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Erhöhtes Krankheitsrisiko",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Burn-out",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Dekompensation",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Merkmale werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt Homöostase?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zustand maximaler Stressaktivierung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stabilität durch Ausgleich",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Chronische Stressbelastung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich hormonelle Regulation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Dekompensation",
+          "correct": false
+        }
+      ],
+      "explanation": "Homöostase beschreibt Stabilität durch Regelkreise.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur Allostase stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entspricht vollständiger Ruhe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beschreibt Stabilität durch Veränderung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ist identisch mit Homöostase",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verhindert jede Stressreaktion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie betrifft nur das Immunsystem",
+          "correct": false
+        }
+      ],
+      "explanation": "Allostase beschreibt Anpassung an Stressoren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k6",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussagen zu Allostatic Load stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entsteht durch chronisch wiederholte Stressreize",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie kann einen neuen Set Point erzeugen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie erhöht Krankheitsrisiken",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie betrifft mehrere biologische Systeme",
+          "correct": true
+        }
+      ],
+      "explanation": "Allostatic Load beschreibt chronische Belastung des Organismus.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur anhaltenden Allostase stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Organismus kehrt vollständig zur Homöostase zurück",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stresssysteme bleiben dauerhaft aktiviert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es bestehen keine physiologischen Konsequenzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur die Psyche ist betroffen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anhaltende Allostase ist immer adaptiv",
+          "correct": false
+        }
+      ],
+      "explanation": "Chronische Aktivierung führt zu Belastung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche hormonellen Folgen chronischer Stressbelastung werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Hypotonie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hypertonie, Hyperglykämie und Insomnie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Hypoglykämie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Bradykardie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verbesserte Immunfunktion",
+          "correct": false
+        }
+      ],
+      "explanation": "Chronischer Stress erhöht mehrere Krankheitsrisiken.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche immunologischen Folgen von Allostatic Load werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Immunabwehr",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Erhöhte Infektanfälligkeit und chronische Entzündungsreaktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Allergien",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vollständige Immunsuppression ohne Folgen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Autoimmunität",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehrere immunologische Folgen werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche neurologischen Folgen chronischen Stresses werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Emotionsregulation",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hyperalgesie und Fatigue",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur gesteigerte Aufmerksamkeit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Keine Veränderungen im Gehirn",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur motorische Symptome",
+          "correct": false
+        }
+      ],
+      "explanation": "Chronischer Stress verändert neuronale Systeme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche sozialen Folgen von Allostatic Load werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Beziehungen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Rückzug und Konflikte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Leistungssteigerung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mehr soziale Integration",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Isolation im Alter",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt soziale Rückzugstendenzen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Verhaltensweisen werden als kompensatorische Massnahmen beschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Körperliche Aktivität allein",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Übermässiger Alkoholkonsum und Rauchen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Meditation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verbesserte Ernährung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mehr Schlaf",
+          "correct": false
+        }
+      ],
+      "explanation": "Ungünstige Gesundheitsverhalten werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kernaussage vermittelt KV09?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stress betrifft nur die Psyche",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Chronischer Stress führt über Allostase und Allostatic Load zu biopsychosozialen Gesundheitsfolgen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stressreaktionen sind immer schädlich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Homöostase und Allostase sind identisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stress beeinflusst das Immunsystem nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "KV09 verbindet Stressphysiologie mit langfristigen Gesundheitsfolgen.",
+      "sourceReliability": "high"
+    }
+  ]
+}
