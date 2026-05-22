@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv17_biomedizinische_wissenschaft_v1",
+  "lectureCode": "KV17",
+  "title": "Grundlagen der biomedizinischen Wissenschaft",
+  "block": "Block 5",
+  "sourceSummary": "KV17 behandelt Wissenskulturen der Medizin, Hallers Forschungsansatz, Spezialisierung, Experiment, peer review, Reproduzierbarkeit und Institutionalisierung moderner biomedizinischer Forschung.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundelemente des Hallerschen Forschungsansatzes beschreiben können"
+    },
+    {
+      "id": "lo2",
+      "text": "Charakteristika moderner biomedizinischer Wissenschaft erklären können"
+    },
+    {
+      "id": "lo3",
+      "text": "Soziale Mechanismen wissenschaftlicher Praxis verstehen können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Frage stellt laut Vorlesung die Wissenschaftstheorie primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wie Krankheiten behandelt werden",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wie Wissen gewonnen werden kann",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wie Spitäler organisiert werden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wie Forschung finanziert wird",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wie Statistik funktioniert",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Wissenschaftstheorie fokussiert auf die Gewinnung von Wissen.",
+      "trap": "Dies wird der Wissenschaftsgeschichte gegenübergestellt.",
+      "tags": [
+        "Wissenschaftstheorie",
+        "Wissen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche klassische Form der Wissensgewinnung beschreibt die Vorlesung seit der Antike?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Randomisierte Studien",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ärztliche Erfahrung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Peer Review",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Laborforschung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Meta-Analysen",
+          "correct": false
+        }
+      ],
+      "explanation": "Ärztliche Erfahrung war lange die dominante Wissensquelle.",
+      "trap": "Wilhelm Fabry dient als Beispiel.",
+      "tags": [
+        "ÄrztlicheErfahrung",
+        "Fabry"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu den drei medizinischen Wissenskulturen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beschreibende Wissenschaft gehört dazu",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Grundlagenforschung gehört dazu",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Klinische Forschung gehört dazu",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Alle drei entstanden erst im 20. Jahrhundert",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung unterscheidet drei Wissenskulturen.",
+      "trap": "Sie entwickelten sich historisch unterschiedlich.",
+      "tags": [
+        "Wissenskulturen",
+        "Forschung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Hydroxychloroquin bei COVID-19 betont die Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anekdotische Erfahrung beweist Wirksamkeit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Anekdotische Hinweise können Ausgangspunkt für Forschung sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Klinische Studien sind unnötig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ärztliche Erfahrung ersetzt Statistik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "COVID benötigte keine Evidenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Einzelbeobachtungen können Hinweise liefern, beweisen aber nichts.",
+      "trap": "Klinische Studien bleiben entscheidend.",
+      "tags": [
+        "COVID",
+        "Hydroxychloroquin"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum interessierte Haller die Vorlesung besonders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wegen seiner politischen Karriere",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Um Beständigkeit und Wandel moderner Forschungsprinzipien zu zeigen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wegen seiner chirurgischen Techniken",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil er Nobelpreisträger war",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil er Antibiotika entdeckte",
+          "correct": false
+        }
+      ],
+      "explanation": "Haller dient als Beispiel für moderne Forschungsprinzipien.",
+      "trap": "Nicht seine Person steht im Zentrum.",
+      "tags": [
+        "Haller",
+        "Forschungsprinzipien"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Hallers Forschungsansatz:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spezialisierung war zentral",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Hypothesen sollten experimentell geprüft werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Professionelle Kritik war wichtig",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Wissenschaft sollte ohne Veröffentlichung stattfinden",
+          "correct": false
+        }
+      ],
+      "explanation": "Haller forderte Veröffentlichung und kritische Diskussion.",
+      "trap": "Diese Prinzipien prägen Forschung bis heute.",
+      "tags": [
+        "Haller",
+        "Spezialisierung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was forderte Haller bezüglich wissenschaftlicher Arbeitsteilung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Abschaffung der Spezialisierung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Fokussierung auf eng begrenzte Forschungsfragen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur breite Universalbildung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verzicht auf Expertise",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich theoretische Medizin",
+          "correct": false
+        }
+      ],
+      "explanation": "Haller verlangte zunehmende Spezialisierung.",
+      "trap": "Expertise sollte vertieft werden.",
+      "tags": [
+        "Spezialisierung",
+        "Expertise"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Kritik übte Haller an der Physiologie des 18. Jahrhunderts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zu experimentell",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zu theorielastig und wenig experimentell",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zu mathematisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zu klinisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zu statistisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Haller kritisierte theoretische Modelle ohne experimentelle Sicherung.",
+      "trap": "Hypothesen mussten überprüft werden.",
+      "tags": [
+        "Physiologie",
+        "Experiment"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Hallers Umgang mit Hypothesen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hypothesen sind erlaubt",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Hypothesen müssen als unsicher gekennzeichnet werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hypothesen sollen Experimente anregen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Hypothesen ersetzen Experimente",
+          "correct": false
+        }
+      ],
+      "explanation": "Hypothesen dienen der Entwicklung neuer Fragen.",
+      "trap": "Experimentelle Prüfung bleibt zentral.",
+      "tags": [
+        "Hypothesen",
+        "Experiment"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Erkenntnis leitete Haller aus seinen Irritabilitäts-Experimenten ab?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Herz benötigt zwingend Nerven",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Muskelbewegung kann unabhängig von Nerven stattfinden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sehnen sind schmerzempfindlich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der Körper ist eine rein hydraulische Pumpe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Empfindung entsteht im Muskel",
+          "correct": false
+        }
+      ],
+      "explanation": "Haller trennte Muskelbewegung und Nervensensibilität.",
+      "trap": "Dies widersprach damaligen Vorstellungen.",
+      "tags": [
+        "Irritabilität",
+        "Sensibilität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum führte Haller zahlreiche Wiederholungen und Variationen seiner Experimente durch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zur Unterhaltung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Um Störfaktoren auszuschliessen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Um Statistik zu vermeiden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Experimente immer identisch sind",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Um Theorien zu ersetzen",
+          "correct": false
+        }
+      ],
+      "explanation": "Wiederholung erhöht Plausibilität und Glaubwürdigkeit.",
+      "trap": "Absolute Sicherheit entsteht dennoch nicht.",
+      "tags": [
+        "Replikation",
+        "Variation"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Schwierigkeiten des experimentellen Ansatzes nennt die Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Forschung ist theoriebeladen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Biomedizinische Experimente enthalten viele Variablen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Reproduzierbarkeit ist oft schwierig",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Experimente sind vollständig objektiv",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die replication crisis.",
+      "trap": "Absolute Objektivität gilt als unrealistisch.",
+      "tags": [
+        "ReplicationCrisis",
+        "Objektivität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt die „replication/reproducibility crisis“?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mangel an Experimenten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Viele biomedizinische Resultate lassen sich schwer reproduzieren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fehlende Statistik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zu wenig Spezialisierung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Abschaffung von Peer Review",
+          "correct": false
+        }
+      ],
+      "explanation": "Viele Experimente liefern bei Wiederholung andere Resultate.",
+      "trap": "Dies betrifft besonders komplexe Biomedizin.",
+      "tags": [
+        "ReplicationCrisis",
+        "Reproduzierbarkeit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum lassen sich biomedizinische Experimente oft schwer standardisieren?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil keine Geräte verwendet werden",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil viele Variablen beteiligt sind",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weil Forschende keine Hypothesen nutzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Statistik verboten ist",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil Biologie rein theoretisch ist",
+          "correct": false
+        }
+      ],
+      "explanation": "Tiere, Geräte, Infrastruktur und Personal erzeugen komplexe Variabilität.",
+      "trap": "Dies erschwert Replikation.",
+      "tags": [
+        "Standardisierung",
+        "Variablen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zum traditionellen Peer-Review-Modell:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Expert:innen prüfen Manuskripte",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Das Verfahren ist meist anonymisiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur geprüftes Wissen wird publiziert",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Das Verfahren ist völlig frei von Machtproblemen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung kritisiert mögliche Machtkonzentrationen.",
+      "trap": "Peer Review bleibt dennoch zentral.",
+      "tags": [
+        "PeerReview",
+        "Publikation"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Kritik nennt die Vorlesung an Preprints?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie enthalten keine Daten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ungeprüftes Wissen kann Glaubwürdigkeit gefährden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verhindern Diskussion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie verbieten Kritik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie sind langsamer als Peer Review",
+          "correct": false
+        }
+      ],
+      "explanation": "Preprints ermöglichen schnelle Verbreitung, bergen aber Risiken.",
+      "trap": "Besonders relevant in der Medizin.",
+      "tags": [
+        "Preprints",
+        "Glaubwürdigkeit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Funktion erfüllen Hand- und Lehrbücher laut Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ersetzen Forschung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Synthese des aktuellen Wissensstands",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verhindern Spezialisierung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Publizieren Rohdaten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ersetzen Zeitschriftenartikel",
+          "correct": false
+        }
+      ],
+      "explanation": "Lehrbücher synthetisieren gesichertes Wissen.",
+      "trap": "Sie folgen auf Zeitschriftenartikel.",
+      "tags": [
+        "Lehrbuch",
+        "Synthese"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was bedeutet Institutionalisierung der Forschung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Forschung wird privat verboten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Forschung erfolgt zunehmend in spezialisierten Institutionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Einzelpersonen forschen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Universitäten verlieren Bedeutung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Spitäler forschen nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Moderne Forschung benötigt Infrastruktur und Kooperationen.",
+      "trap": "Universitäten und Spitäler spielen zentrale Rollen.",
+      "tags": [
+        "Institutionalisierung",
+        "Forschung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Rolle spielt laut Robert Merton Anerkennung in der Wissenschaft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Finanzieller Gewinn ist allein entscheidend",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wissenschaftler:innen suchen Anerkennung durch peers",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Öffentliche Beliebtheit ist zentral",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Politische Macht ist Hauptziel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anerkennung spielt keine Rolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Merton beschreibt Anerkennung durch andere Forschende als zentralen Antrieb.",
+      "trap": "Preise und Peer Review sind Beispiele.",
+      "tags": [
+        "Merton",
+        "Anerkennung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche zentrale Botschaft formuliert die Vorlesung abschliessend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wissenschaft beruht auf einer einzigen Methode",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine Kombination von Regeln charakterisiert Wissenschaft",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Experimente liefern nur sicheres Wissen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Spezialisierung verhindert Kooperation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Preprints ersetzen Peer Review",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die Kombination verschiedener Regeln und Mechanismen.",
+      "trap": "Es gibt keine einzelne universelle Methode.",
+      "tags": [
+        "Wissenschaft",
+        "Regeln"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

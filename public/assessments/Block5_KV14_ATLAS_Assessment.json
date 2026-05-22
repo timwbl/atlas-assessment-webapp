@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv14_medizinische_evidenz_v1",
+  "lectureCode": "KV14",
+  "title": "Medizinische Evidenz",
+  "block": "Block 5",
+  "sourceSummary": "KV14 behandelt evidenzbasierte Medizin, Kausalschlüsse, RCTs, Randomisierung, Placebokontrolle, Blinding und die Rolle mechanistischer Evidenz.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Typen medizinischer Kausalschlüsse verstehen können"
+    },
+    {
+      "id": "lo2",
+      "text": "Prinzipien randomisierter kontrollierter Studien erklären können"
+    },
+    {
+      "id": "lo3",
+      "text": "Die Rolle mechanistischer Evidenz kritisch beurteilen können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Bedingung nennt die Vorlesung für einen gültigen Kausalschluss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alternativursachen müssen kontrolliert werden",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Korrelation genügt",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nur Expertenmeinungen sind relevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Statistik ist unnötig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mechanismen müssen vollständig bekannt sein",
+          "correct": false
+        }
+      ],
+      "explanation": "Für einen Kausalschluss müssen Alternativursachen kontrolliert werden.",
+      "trap": "Sonst bleibt die Ursache-Wirkungs-Beziehung unklar.",
+      "tags": [
+        "Kausalschluss",
+        "Alternativursachen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was charakterisiert einen theoretischen Kausalschluss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schluss von Wirkung auf Ursache",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Schluss auf kausale Relevanz einer Ursache",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vorhersage zukünftiger Symptome",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Reine Statistik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Diagnostik",
+          "correct": false
+        }
+      ],
+      "explanation": "Beim theoretischen Kausalschluss wird geprüft, ob A Ursache von W ist.",
+      "trap": "Dies entspricht kausaler Relevanz.",
+      "tags": [
+        "TheoretischerKausalschluss",
+        "Kausalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu diagnostischen Kausalschlüssen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Man schliesst von Wirkung auf Ursache",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Alternativursachen müssen ausgeschlossen werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rote Hautflecken können auf Masern hinweisen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie benötigen keine Kontrolle von Alternativursachen",
+          "correct": false
+        }
+      ],
+      "explanation": "Diagnostische Schlüsse gehen von Symptomen auf Ursachen.",
+      "trap": "Alternativursachen müssen berücksichtigt werden.",
+      "tags": [
+        "Diagnostik",
+        "Masern"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt ein prognostischer Kausalschluss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schluss von Ursache auf erwartete Wirkung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Schluss von Symptom auf Diagnose",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Reine Mechanismenanalyse",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mathematische Modellierung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zufällige Korrelation",
+          "correct": false
+        }
+      ],
+      "explanation": "Beim prognostischen Kausalschluss wird von einer bekannten Ursache auf eine Wirkung geschlossen.",
+      "trap": "Beispiel: Aspirin und Kopfschmerzlinderung.",
+      "tags": [
+        "Prognose",
+        "Kausalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welches Beispiel verwendet die Vorlesung für einen prognostischen Kausalschluss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Masernvirus",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Melanosomen fossiler Dinosaurier",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Appendizitis",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Schizophrenie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Herzinfarkt",
+          "correct": false
+        }
+      ],
+      "explanation": "Aus Melanosomen wird auf die Farbe fossiler Tiere geschlossen.",
+      "trap": "Dies ist ein prognostischer Schluss.",
+      "tags": [
+        "Melanosomen",
+        "Dinosaurier"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zur evidenzbasierten Medizin (EBM):",
+      "options": [
+        {
+          "id": "A",
+          "text": "EBM betont klinische Forschung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Intuition allein genügt nicht",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Systematische Literaturrecherche ist wichtig",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Pathophysiologische Überlegungen reichen immer aus",
+          "correct": false
+        }
+      ],
+      "explanation": "EBM priorisiert systematische Evidenz aus klinischer Forschung.",
+      "trap": "Intuition allein gilt als unzureichend.",
+      "tags": [
+        "EBM",
+        "Literatur"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Studientypen stehen laut Evidenzpyramide an oberster Stelle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Expertenurteile",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Beobachtungsstudien",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Randomisierte kontrollierte Studien (RCTs)",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Fallberichte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mechanistische Erwägungen",
+          "correct": false
+        }
+      ],
+      "explanation": "RCTs gelten als aussagekräftigste Evidenzquelle.",
+      "trap": "Sie kontrollieren viele Biases.",
+      "tags": [
+        "RCT",
+        "Evidenzpyramide"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was ist die Grundidee der Differenzmethode in klinischen Populationen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vergleich einzelner Patient:innen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vergleich mittlerer Wirkungen zwischen Interventions- und Kontrollgruppe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur theoretische Mechanismen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Beobachtung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mathematische Deduktion",
+          "correct": false
+        }
+      ],
+      "explanation": "Die mittlere Wirkung der Intervention wird mit der Kontrollgruppe verglichen.",
+      "trap": "So wird die Wirkung von A auf W untersucht.",
+      "tags": [
+        "Differenzmethode",
+        "RCT"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu den Zielen der Randomisierung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unbekannte Störer werden zufällig verteilt",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Selektionsbias soll verhindert werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Statistische Auswertung wird erleichtert",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Randomisierung garantiert gleiche Gruppen",
+          "correct": false
+        }
+      ],
+      "explanation": "Randomisierung reduziert systematische Verzerrungen.",
+      "trap": "Sie garantiert aber keine perfekten Gruppen.",
+      "tags": [
+        "Randomisierung",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Bias soll durch Randomisierung besonders verhindert werden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Recall Bias",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Selektionsbias",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Publikationsbias",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Observer Bias",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Lead-Time Bias",
+          "correct": false
+        }
+      ],
+      "explanation": "Randomisierung verhindert systematische Unterschiede bei der Gruppenzuteilung.",
+      "trap": "Dies betrifft allocation und self-allocation bias.",
+      "tags": [
+        "Selektionsbias",
+        "Randomisierung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welchen Zweck erfüllt eine Placebokontrolle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verstärkung der Intervention",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kontrolle unspezifischer Behandlungseffekte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verhinderung statistischer Fehler",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Messung genetischer Faktoren",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eliminierung aller Nebenwirkungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Placebokontrollen isolieren den Effekt des Wirkstoffs.",
+      "trap": "Unspezifische Behandlungseffekte werden kontrolliert.",
+      "tags": [
+        "Placebo",
+        "UnspezifischeEffekte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu Blinding in klinischen Studien:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Erwartungshaltungen können Resultate beeinflussen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Doppelblindstudien verbergen Gruppenzugehörigkeit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Placebos unterstützen Blinding",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Blinding funktioniert immer perfekt",
+          "correct": false
+        }
+      ],
+      "explanation": "Blinding reduziert Erwartungseffekte.",
+      "trap": "Starke Nebenwirkungen können das Blinding stören.",
+      "tags": [
+        "Blinding",
+        "Erwartung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum kann robustes Blinding schwierig sein?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil Statistik fehlt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil starke Wirkungen oder Nebenwirkungen die Gruppenzugehörigkeit verraten können",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weil Placebos verboten sind",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Forschende immer informiert sein müssen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil Kontrollgruppen fehlen",
+          "correct": false
+        }
+      ],
+      "explanation": "Sehr wirksame Therapien oder Nebenwirkungen können das Blinding kompromittieren.",
+      "trap": "Die Vorlesung nennt Adrenalin und Antidepressiva.",
+      "tags": [
+        "Blinding",
+        "Nebenwirkungen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Warum wird mechanistischen Erwägungen in der klassischen Evidenzpyramide wenig Gewicht gegeben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mechanismen existieren nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mechanistische Vorhersagen sind oft unzuverlässig",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mechanismen widersprechen Statistik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "RCTs benötigen keine Biologie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mechanismen sind nur philosophisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Mechanistische Überlegungen führten historisch oft zu falschen Vorhersagen.",
+      "trap": "RCTs gelten deshalb als robuster.",
+      "tags": [
+        "Mechanismen",
+        "EBM"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu mechanistischen Misserfolgen laut Vorlesung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Antiarrhythmika erhöhten Risiko des plötzlichen Herztods",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Bauchlage erhöhte Risiko des plötzlichen Kindstods",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hormontherapie erhöhte Schlaganfallrisiko",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Helicobacter pylori konnte nie im Magen überleben",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehrere plausible Mechanismen führten zu falschen klinischen Erwartungen.",
+      "trap": "Helicobacter pylori war tatsächlich relevant.",
+      "tags": [
+        "Mechanismen",
+        "Misserfolge"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel zeigt den Konflikt zwischen Beobachtungsstudien und RCTs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Masern",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hormonersatztherapie nach der Menopause",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Appendizitis",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Diabetes",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Dinosaurierfarben",
+          "correct": false
+        }
+      ],
+      "explanation": "Beobachtungsstudien deuteten auf Schutz hin, spätere RCTs zeigten erhöhtes Risiko.",
+      "trap": "Dies illustriert mögliche Confounder.",
+      "tags": [
+        "Hormonersatz",
+        "RCT"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche alternative Erklärung nennt die Vorlesung für die scheinbar schützende Wirkung der Hormontherapie?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Genetische Mutationen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sozioökonomische Faktoren und Gesundheitsbewusstsein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Messfehler",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fehlende Placebos",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Doppelblindung",
+          "correct": false
+        }
+      ],
+      "explanation": "Sozioökonomische Faktoren könnten die beobachtete Korrelation erklären.",
+      "trap": "Dies illustriert Confounding.",
+      "tags": [
+        "Confounding",
+        "Sozioökonomie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Haltung vertritt die Vorlesung gegenüber mechanistischer Evidenz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mechanismen sind wertlos",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mechanistische Evidenz kann wichtig sein, wenn sie robust ist",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mechanismen ersetzen RCTs vollständig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mechanismen sind immer spekulativ",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mechanismen widersprechen EBM",
+          "correct": false
+        }
+      ],
+      "explanation": "Robustes mechanistisches Wissen kann eine wichtige Rolle spielen.",
+      "trap": "Die Evidenzpyramide soll nicht zu strikt interpretiert werden.",
+      "tags": [
+        "Mechanismen",
+        "Robustheit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Bedingung nennt die Vorlesung für gute mechanistische Schlüsse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spekulation genügt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die relevanten Mechanismen müssen gut bestätigt sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Tiermodelle sind nötig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kontext ist irrelevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Statistik ersetzt Mechanismen",
+          "correct": false
+        }
+      ],
+      "explanation": "Mechanistische Teile und Interaktionen müssen gut bestätigt sein.",
+      "trap": "Der Kontext muss ebenfalls berücksichtigt werden.",
+      "tags": [
+        "MechanistischeSchlüsse",
+        "Kontext"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel verwendet die Vorlesung zur Diskussion pragmatischen Handelns ohne RCTs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hormonersatztherapie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "COVID-Masken",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Helicobacter pylori",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Antiarrhythmika",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Melanosomen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Maskendebatte illustriert Entscheidungen trotz begrenzter RCT-Evidenz.",
+      "trap": "Das Fallschirm-Beispiel wird erwähnt.",
+      "tags": [
+        "COVID",
+        "Masken"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

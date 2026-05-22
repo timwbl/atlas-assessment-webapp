@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv12_kausalitaet_mechanismen_v1",
+  "lectureCode": "KV12",
+  "title": "Kausalität und Mechanismen",
+  "block": "Block 5",
+  "sourceSummary": "KV12 behandelt Kausalität, INUS-Bedingungen, Mills Differenzmethode, kausales Schliessen und Mechanismen in der Biomedizin.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundbegriffe der Kausalität erklären können"
+    },
+    {
+      "id": "lo2",
+      "text": "Methoden des kausalen Schliessens verstehen können"
+    },
+    {
+      "id": "lo3",
+      "text": "Mechanismen in der Biomedizin charakterisieren können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was bedeutet der Begriff „Kausalität“ laut Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lehre der Statistik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lehre von Ursache-Wirkungs-Abhängigkeiten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beschreibung biologischer Strukturen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Experimentelle Technik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mathematische Wahrscheinlichkeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Kausalitätslehre untersucht ursächliche Abhängigkeiten und unser Wissen darüber.",
+      "trap": "Der Fokus liegt auf Ursache-Wirkung.",
+      "tags": [
+        "Kausalität",
+        "Ursache"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Ursachen als hinreichende Bedingungen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rauchen führt immer zu Mundhöhlenkrebs",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Einzelne Ursachen wirken meist nur im Ursachenbündel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Eine Ursache genügt immer allein",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kausalität benötigt keine Zusatzbedingungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Alle Ursachen sind deterministisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Einzelne Ursachen wirken häufig nur gemeinsam mit weiteren Faktoren.",
+      "trap": "Die Vorlesung spricht von Ursachenbündeln.",
+      "tags": [
+        "Hinreichend",
+        "Ursachenbündel"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Ursachenbündeln:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehrere Faktoren wirken gemeinsam",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Einzelne Ursachen sind oft nicht hinreichend",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Veranlagung kann Teil des Bündels sein",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine einzelne Ursache erklärt immer vollständig die Wirkung",
+          "correct": false
+        }
+      ],
+      "explanation": "Viele Wirkungen entstehen durch Kombination mehrerer Ursachen.",
+      "trap": "Einzelfaktoren reichen oft nicht aus.",
+      "tags": [
+        "Ursachenbündel",
+        "Veranlagung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum sind Ursachen oft keine notwendigen Bedingungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil Wirkungen zufällig sind",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil Alternativursachen existieren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weil Logik irrelevant ist",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Experimente unmöglich sind",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil Krankheiten nur eine Ursache haben",
+          "correct": false
+        }
+      ],
+      "explanation": "Mehrere alternative Pfade können zur gleichen Wirkung führen.",
+      "trap": "Dies nennt die Vorlesung Alternativursachen.",
+      "tags": [
+        "Alternativursachen",
+        "Notwendig"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Was bedeutet INUS-Bedingung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine isolierte Ursache",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein notwendiger und hinreichender Faktor",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein nicht-hinreichender, aber notwendiger Teil eines hinreichenden Bündels",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine statistische Korrelation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein mathematischer Beweis",
+          "correct": false
+        }
+      ],
+      "explanation": "INUS beschreibt Ursachen als Teile komplexer Ursachenbündel.",
+      "trap": "Die Ursache allein genügt nicht.",
+      "tags": [
+        "INUS",
+        "Kausalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu INUS-Bedingungen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine Ursache kann Teil eines Bündels sein",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Das Ursachenbündel kann hinreichend sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Alternativursachen können dieselbe Wirkung erzeugen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine INUS-Bedingung wirkt immer allein",
+          "correct": false
+        }
+      ],
+      "explanation": "INUS-Bedingungen beschreiben komplexe Kausalstrukturen.",
+      "trap": "Alternative Pfade bleiben möglich.",
+      "tags": [
+        "INUS",
+        "Alternativursachen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Methode beschreibt gezielte Veränderung einer Ursache zur Untersuchung der Wirkung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deduktive Logik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mills Differenzmethode",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Enumerative Induktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Popper’scher Falsifikationismus",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zirkelschluss",
+          "correct": false
+        }
+      ],
+      "explanation": "Mills Differenzmethode prüft, ob Veränderungen in A Veränderungen in W erzeugen.",
+      "trap": "Interventionen sind zentral.",
+      "tags": [
+        "Mill",
+        "Kausalschluss"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Bedingung muss für einen gültigen Kausalschluss erfüllt sein?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alternativursachen müssen kontrolliert werden",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Korrelation genügt",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Es braucht keine Intervention",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Wirkung muss sicher auftreten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Hypothesen dürfen nicht verändert werden",
+          "correct": false
+        }
+      ],
+      "explanation": "Alternativursachen müssen kontrolliert werden.",
+      "trap": "Sonst bleibt die Ursache-Wirkungs-Beziehung unklar.",
+      "tags": [
+        "Kontrolle",
+        "Kausalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu Bedingungen für kausales Schliessen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Intervention soll nur über die Ursache wirken",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Alternativursachen müssen kontrolliert werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Wirkung darf nicht direkt beeinflusst werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Korrelation allein beweist Kausalität",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Intervention darf keine anderen Pfade zur Wirkung eröffnen.",
+      "trap": "Korrelation reicht nicht aus.",
+      "tags": [
+        "Intervention",
+        "Kontrolle"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches historische Beispiel verwendet die Vorlesung zur Illustration kausalen Schliessens?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Watson und Crick",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ignaz Semmelweis",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gregor Mendel",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Louis Pasteur",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Charles Darwin",
+          "correct": false
+        }
+      ],
+      "explanation": "Semmelweis nutzte Händewaschen zur Untersuchung des Kindbettfiebers.",
+      "trap": "Dies illustriert kontrollierte Interventionen.",
+      "tags": [
+        "Semmelweis",
+        "Kindbettfieber"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Ursache vermutete Semmelweis für das Kindbettfieber?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schlechte Luft",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Cadaverteile an den Händen der Ärzte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Temperaturunterschiede",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Stress",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ernährung",
+          "correct": false
+        }
+      ],
+      "explanation": "Semmelweis vermutete krankheitserregende Cadaverteile.",
+      "trap": "Chlorwaschungen reduzierten die Mortalität.",
+      "tags": [
+        "Semmelweis",
+        "Cadaverteile"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zum DNS-Experiment von Avery:",
+      "options": [
+        {
+          "id": "A",
+          "text": "DNS transformierte R-Typ Pneumokokken",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Hilfshypothesen spielten eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Proteinverunreinigungen mussten ausgeschlossen werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Das Experiment war völlig unabhängig von Zusatzannahmen",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Experiment erforderte verlässliche Reinigungsverfahren.",
+      "trap": "Hilfshypothesen beeinflussen Interpretation.",
+      "tags": [
+        "Avery",
+        "DNS"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Was interessiert die biomedizinische Forschung neben kausaler Relevanz besonders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Statistik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mechanismen hinter Ursache-Wirkungs-Beziehungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Beobachtungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Absolute Gewissheit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Historische Entwicklung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Biomedizin möchte verstehen, wie Ursachen Wirkungen erzeugen.",
+      "trap": "Mechanismen stehen im Zentrum.",
+      "tags": [
+        "Mechanismen",
+        "Biomedizin"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel für Mechanismen wird in der Vorlesung diskutiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Photosynthese",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "NSAID-induzierte gastrointestinale Ulcera",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Evolution der Dinosaurier",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Klassische Mechanik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Quantenverschränkung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung diskutiert Mechanismen der NSAID-induzierten Schleimhautschädigung.",
+      "trap": "COX-Hemmung spielt eine Rolle.",
+      "tags": [
+        "NSAID",
+        "Mechanismus"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu Mechanismen nach Machamer, Darden und Craver:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mechanismen bestehen aus Entitäten und Aktivitäten",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Mechanismen erzeugen regelhafte Veränderungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Organisation der Teile ist wichtig",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mechanismen benötigen keine Struktur",
+          "correct": false
+        }
+      ],
+      "explanation": "Mechanismen sind organisierte Ketten von Entitäten und Interaktionen.",
+      "trap": "Organisation ist zentral.",
+      "tags": [
+        "Mechanismen",
+        "Machamer"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was ist laut Vorlesung ein Hauptmerkmal von Mechanismen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Absolute Einfachheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kontinuierliche Kette bekannter Teile und Interaktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich statistische Korrelation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Reine Beobachtung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Unabhängigkeit von Organisation",
+          "correct": false
+        }
+      ],
+      "explanation": "Mechanismen bestehen aus bekannten Entitäten und Interaktionen in bestimmter Anordnung.",
+      "trap": "Die Kette muss nachvollziehbar sein.",
+      "tags": [
+        "Mechanismus",
+        "Interaktionen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu alten und neuen Mechanismen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mechanismen bestehen immer nur aus Ziehen und Stossen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Biologische Mechanismen beruhen häufig auf chemischen Interaktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Neue Mechanismen lehnen Physik ab",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mechanismen sind nur philosophische Konzepte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mechanismen benötigen keine Entitäten",
+          "correct": false
+        }
+      ],
+      "explanation": "Der neue mechanistische Ansatz akzeptiert unterschiedliche grundlegende Interaktionen.",
+      "trap": "In der Biologie oft chemische Prozesse.",
+      "tags": [
+        "NeueMechanismen",
+        "Biologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Wie definiert die Vorlesung theoretisches Wissen der Biomedizin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich Statistik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kenntnis kausaler Zusammenhänge und Mechanismen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Reine Beobachtungsdaten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Historische Fakten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Deduktive Mathematik",
+          "correct": false
+        }
+      ],
+      "explanation": "Theoretisches Wissen der Biomedizin basiert auf Mechanismen und Kausalität.",
+      "trap": "Mechanismen strukturieren Erklärung.",
+      "tags": [
+        "Biomedizin",
+        "Theorie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Wie werden mechanistische Hypothesen untersucht?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur durch Beobachtung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Durch Manipulation von Teilen des Mechanismus",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich mathematisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ohne Experimente",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur philosophisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Mechanistische Hypothesen werden durch gezielte Manipulation untersucht.",
+      "trap": "Die kausalen Rollen einzelner Teile werden geprüft.",
+      "tags": [
+        "Hypothesen",
+        "Manipulation"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Wie wandeln sich Theorien laut Vorlesung typischerweise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Durch vollständigen Ersatz aller Erkenntnisse",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Durch Verfeinerung bestehenden Wissens",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur durch Revolutionen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Durch Abschaffung alter Mechanismen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gar nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Theorien werden häufig schrittweise verfeinert.",
+      "trap": "Mechanismen und Bedingungen werden genauer verstanden.",
+      "tags": [
+        "Theorien",
+        "Verfeinerung"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv16_evolutionsmedizin_v1",
+  "lectureCode": "KV16",
+  "title": "Philosophische Aspekte der Evolutionsmedizin",
+  "block": "Block 5",
+  "sourceSummary": "KV16 behandelt proximate und ultimate Ursachen, Mismatch-Erkrankungen, Trade-offs, Koevolution und evolutionsmedizinische Erklärungen von Krankheit.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Proximate und ultimate Ursachen unterscheiden können"
+    },
+    {
+      "id": "lo2",
+      "text": "Mismatch-Erkrankungen evolutionsmedizinisch erklären können"
+    },
+    {
+      "id": "lo3",
+      "text": "Trade-offs und Koevolution verstehen können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt eine proximate Ursache?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Evolutionsgeschichte eines Merkmals",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Den unmittelbaren physiologischen Mechanismus",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die zukünftige Fitness",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Populationsdynamik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die natürliche Selektion",
+          "correct": false
+        }
+      ],
+      "explanation": "Proximate Ursachen beschreiben unmittelbare physiologische Mechanismen.",
+      "trap": "Sie beantworten das „Wie?“ einer Eigenschaft.",
+      "tags": [
+        "ProximateUrsache",
+        "Mechanismus"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt eine ultimate Ursache?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Einen unmittelbaren Mechanismus",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Evolutionsgeschichte und den Selektionsvorteil",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Eine Laboruntersuchung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Eine Mutation allein",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine statistische Korrelation",
+          "correct": false
+        }
+      ],
+      "explanation": "Ultimate Ursachen beziehen sich auf Evolution und Selektion.",
+      "trap": "Sie beantworten das „Warum?“ einer Eigenschaft.",
+      "tags": [
+        "UltimateUrsache",
+        "Evolution"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu proximate und ultimate Ursachen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Proximate Ursachen betreffen Mechanismen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ultimate Ursachen betreffen Evolutionsgeschichte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beide Erklärungsebenen können kombiniert werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ultimate Ursachen ersetzen proximate Ursachen vollständig",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont komplementäre Erklärungsebenen.",
+      "trap": "Mechanismen und Evolution ergänzen sich.",
+      "tags": [
+        "Proximate",
+        "Ultimate"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche drei Schritte natürlicher Selektion nennt die Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mutation, Isolation, Drift",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Variation, differentielles Überleben, Vererbung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fitness, Zufall, Konkurrenz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mutation, Rekombination, Migration",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anpassung, Entwicklung, Altern",
+          "correct": false
+        }
+      ],
+      "explanation": "Variation sowie differentielles Überleben mit Vererbung sind zentral.",
+      "trap": "Diese Prozesse ermöglichen Selektion.",
+      "tags": [
+        "Selektion",
+        "Variation"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum waren Birkenspanner um Manchester häufig dunkel pigmentiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die dunkle Form entstand zufällig ohne Vorteil",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Dunkle Pigmentierung bot einen Selektionsvorteil",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Alle hellen Formen starben genetisch aus",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Luftverschmutzung erzeugte direkt Mutationen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Dunkle Tiere hatten grössere Augen",
+          "correct": false
+        }
+      ],
+      "explanation": "Dunkle Pigmentierung erhöhte die Fitness in verschmutzten Umgebungen.",
+      "trap": "Dies ist ein Beispiel natürlicher Selektion.",
+      "tags": [
+        "Birkenspanner",
+        "Selektion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Kettlewells Untersuchungen am Birkenspanner:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es musste erbbare Variation vorliegen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Fitness verschiedener Varianten musste untersucht werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Umweltveränderungen mussten berücksichtigt werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Plausible Spekulation allein genügte",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung unterscheidet zwischen „how possibly“ und „how actually“.",
+      "trap": "Empirische Prüfung bleibt zentral.",
+      "tags": [
+        "Kettlewell",
+        "Empirie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was bedeutet „Mismatch“ in der Evolutionsmedizin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Perfekte Anpassung an moderne Umwelt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Fehlanpassung eines Mechanismus an moderne Umweltbedingungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Eine genetische Mutation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich psychische Erkrankungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Unterschiede zwischen Populationen",
+          "correct": false
+        }
+      ],
+      "explanation": "Mismatch beschreibt Mechanismen, die in früheren Umwelten adaptiv waren.",
+      "trap": "In moderner Umgebung können sie maladaptiv wirken.",
+      "tags": [
+        "Mismatch",
+        "Evolution"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche proximate Ursache der Kurzsichtigkeit nennt die Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zu kurze Retina",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zu langes Augenwachstum",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fehlende Linse",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Pigmentverlust",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mutation des Sehnervs",
+          "correct": false
+        }
+      ],
+      "explanation": "Bei Myopie ist das Auge typischerweise zu lang.",
+      "trap": "Dies verschiebt den Brennpunkt vor die Retina.",
+      "tags": [
+        "Myopie",
+        "Augenwachstum"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu Kurzsichtigkeit laut Vorlesung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Genetik spielt eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Umweltfaktoren beeinflussen die Entwicklung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Naharbeit könnte relevant sein",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Hohe Heritabilität schliesst Umwelteinflüsse aus",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung warnt explizit vor diesem Fehlschluss.",
+      "trap": "Genetik und Umwelt interagieren.",
+      "tags": [
+        "Myopie",
+        "Heritabilität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welchen Fehlschluss kritisiert die Vorlesung bei hoher Heritabilität?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Korrelation beweist Kausalität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hohe Heritabilität schliesst Umwelteinflüsse aus",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gene spielen nie eine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Evolution erklärt alles",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mutationen sind irrelevant",
+          "correct": false
+        }
+      ],
+      "explanation": "Auch hoch heritable Merkmale können stark von Umweltbedingungen abhängen.",
+      "trap": "Die Reaktionsnorm ist entscheidend.",
+      "tags": [
+        "Heritabilität",
+        "Fehlschluss"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Erklärung gibt die Evolutionsmedizin für Kurzsichtigkeit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mutation ohne Umweltfaktoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mismatch zwischen Entwicklungsmechanismus und moderner Umwelt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich natürliche Selektion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fehlende Evolution",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Bakterielle Infektion",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Auge entwickelt sich möglicherweise unter modernen visuellen Bedingungen fehlangepasst.",
+      "trap": "Die Umwelt beeinflusst die Entwicklung.",
+      "tags": [
+        "Mismatch",
+        "Kurzsichtigkeit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Krankheiten nennt die Vorlesung als mögliche Mismatch-Erkrankungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Typ-2-Diabetes",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Myopie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hypertonie",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Akute Appendizitis",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung listet zahlreiche mögliche Mismatch-Erkrankungen auf.",
+      "trap": "Nicht jede Krankheit gehört dazu.",
+      "tags": [
+        "Mismatch",
+        "Krankheiten"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Warum wurde das HbS-Allel der Sichelzellanämie nicht vollständig aus Populationen entfernt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es besitzt keinen Nachteil",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Heterozygote Träger besitzen in Malariagebieten einen Vorteil",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mutation tritt nie neu auf",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es verbessert Sehschärfe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es schützt vor allen Infektionen",
+          "correct": false
+        }
+      ],
+      "explanation": "Heterozygote Träger sind besser gegen Malaria geschützt.",
+      "trap": "Dies ist ein klassischer Trade-off.",
+      "tags": [
+        "Sichelzelle",
+        "Tradeoff"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Fitnessordnung gilt laut Vorlesung in Malariagebieten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SS > AS > AA",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "AS > AA > SS",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "AA > SS > AS",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "AA > AS > SS",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "AS > SS > AA",
+          "correct": false
+        }
+      ],
+      "explanation": "Heterozygote Träger (AS) besitzen den höchsten Vorteil.",
+      "trap": "SS bleibt stark nachteilig.",
+      "tags": [
+        "Malaria",
+        "Fitness"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu antagonistische Pleiotropie:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Gen kann in jungen Jahren Vorteile bringen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Dasselbe Gen kann im Alter Nachteile verursachen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Selektion gegen Nachteile im Alter ist schwächer",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Alle Gene wirken in jedem Alter gleich",
+          "correct": false
+        }
+      ],
+      "explanation": "G. C. Williams nutzte dieses Konzept zur Erklärung des Alterns.",
+      "trap": "Selektionsdruck nimmt mit dem Alter ab.",
+      "tags": [
+        "Pleiotropie",
+        "Altern"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt Koevolution zwischen Wirt und Krankheitserreger?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unabhängige Entwicklung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gegenseitige evolutionäre Anpassung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur genetische Drift",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Mutationen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Antibiotikaresistenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Koevolution beschreibt wechselseitige evolutionäre Veränderungen.",
+      "trap": "Dies betrifft Immunsystem und Erreger.",
+      "tags": [
+        "Koevolution",
+        "Immunsystem"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel nennt die Vorlesung als Folge der Koevolution?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Photosynthese",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Antibiotikaresistenz",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kurzsichtigkeit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sichelzellanämie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Geburtskanal",
+          "correct": false
+        }
+      ],
+      "explanation": "Antibiotikaresistenz entsteht durch evolutionäre Anpassung von Erregern.",
+      "trap": "Dies ist ein zentrales evolutionsmedizinisches Problem.",
+      "tags": [
+        "Antibiotika",
+        "Resistenz"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche evolutionsmedizinische Erklärung wird für den engen menschlichen Geburtskanal diskutiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zufällige Mutation",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Trade-off zwischen aufrechtem Gang und grossem Gehirn",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich kulturelle Faktoren",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bakterielle Infektion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Fehlende Selektion",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Becken musste an aufrechten Gang und grosses Gehirn angepasst werden.",
+      "trap": "Dies erzeugt evolutionäre Kompromisse.",
+      "tags": [
+        "Geburtskanal",
+        "Tradeoff"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Evolutionsmedizin betont die Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Plausible Spekulation genügt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Evolutionshypothesen müssen empirisch geprüft werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ultimate Ursachen ersetzen Mechanismen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Alle Krankheiten sind adaptiv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Evolution erklärt jede Krankheit vollständig",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Prüfung evolutionsmedizinischer Hypothesen ist anspruchsvoll.",
+      "trap": "Empirie bleibt zentral.",
+      "tags": [
+        "Evolutionsmedizin",
+        "Empirie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel nennt die Vorlesung für adaptive und maladaptive Abwehrreaktionen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kurzsichtigkeit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Fieber und Husten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sichelzellanämie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Geburtskanal",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Birkenspanner",
+          "correct": false
+        }
+      ],
+      "explanation": "Fieber, Husten und Schnupfen können evolutiv adaptive Reaktionen sein.",
+      "trap": "Sie können jedoch auch maladaptive Folgen haben.",
+      "tags": [
+        "Abwehrreaktionen",
+        "Adaptiv"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

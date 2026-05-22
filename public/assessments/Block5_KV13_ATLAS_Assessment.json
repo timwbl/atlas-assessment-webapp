@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv13_krankheitsbegriff_v1",
+  "lectureCode": "KV13",
+  "title": "Was ist eine Krankheit?",
+  "block": "Block 5",
+  "sourceSummary": "KV13 behandelt naturalistische und normativ-konstruktivistische Krankheitsbegriffe, Krankheit als schädliche Dysfunktion und biologische Funktionen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Verschiedene Ansätze des Krankheitsbegriffs erklären können"
+    },
+    {
+      "id": "lo2",
+      "text": "Krankheit als schädliche Dysfunktion verstehen können"
+    },
+    {
+      "id": "lo3",
+      "text": "Funktionen als kausale Rollen oder selektierte Effekte vergleichen können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was charakterisiert naturalistische Krankheitsbegriffe?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krankheit hängt ausschliesslich von Werturteilen ab",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Krankheit basiert auf naturwissenschaftlichen Fakten der Physiologie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Krankheit wird nur gesellschaftlich definiert",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Krankheit ist rein subjektiv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Krankheit ist identisch mit Leiden",
+          "correct": false
+        }
+      ],
+      "explanation": "Naturalistische Ansätze verstehen Krankheit anhand biologischer Fakten.",
+      "trap": "Diese Ansätze werden auch deskriptiv genannt.",
+      "tags": [
+        "Naturalismus",
+        "Krankheitsbegriff"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was charakterisiert normativ-konstruktivistische Ansätze?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krankheit wird nur biologisch definiert",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Krankheit hängt von gesellschaftlichen Werturteilen ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Krankheit ist immer statistisch abnormal",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Krankheit ist nur genetisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Krankheit benötigt immer Schmerzen",
+          "correct": false
+        }
+      ],
+      "explanation": "Normative Ansätze betonen gesellschaftliche Bewertungen von Krankheit.",
+      "trap": "Werturteile stehen im Zentrum.",
+      "tags": [
+        "Normativ",
+        "Konstruktivismus"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu naturalistischen und normativen Ansätzen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Naturalistische Ansätze fokussieren Physiologie",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Normative Ansätze berücksichtigen Werturteile",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rein objektive Ansätze gelten als problematisch",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Rein subjektive Ansätze gelten als vollständig ausreichend",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung kritisiert rein objektive und rein subjektive Modelle.",
+      "trap": "Hybridansätze sind heute verbreitet.",
+      "tags": [
+        "Naturalismus",
+        "Normativität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum ist Krankheit nicht einfach mit „unerwünschten Zuständen“ gleichzusetzen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil alle Krankheiten erwünscht sind",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil auch nicht-pathologische Zustände unerwünscht sein können",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weil Krankheiten keine Symptome haben",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Medizin keine Wertungen kennt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil Krankheiten statistisch normal sind",
+          "correct": false
+        }
+      ],
+      "explanation": "Nicht alle unerwünschten Zustände sind Krankheiten.",
+      "trap": "Beispiele sind Schlafbedürfnis oder geringe Körpergrösse.",
+      "tags": [
+        "Unerwünscht",
+        "Krankheit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welches Beispiel nennt die Vorlesung für einen unerwünschten, aber nicht pathologischen Zustand?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Leberzirrhose",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Brustkrebs",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Schlafbedürfnis",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Herzinfarkt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Schizophrenie",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Bedürfnis nach Schlaf ist unerwünscht in manchen Situationen, aber keine Krankheit.",
+      "trap": "Nicht jedes Leiden ist pathologisch.",
+      "tags": [
+        "Schlaf",
+        "Pathologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Krankheit als soziologischer Kategorie:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krankheiten werden medizinisch behandelt",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Behandlung und Krankheit sind nicht identisch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es gibt Krankheiten ohne Behandlung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Es gibt keine Behandlung ohne Krankheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung diskutiert Krankheiten ohne Therapie sowie Therapien ohne Krankheit.",
+      "trap": "Kosmetische Chirurgie ist ein Beispiel.",
+      "tags": [
+        "Soziologie",
+        "Behandlung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welches Beispiel nennt die Vorlesung für „Behandlung ohne Krankheit“?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diabetes",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "AIDS 1982",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Kosmetische Chirurgie",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Herzinfarkt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Leberzirrhose",
+          "correct": false
+        }
+      ],
+      "explanation": "Kosmetische Chirurgie wird als Behandlung ohne Krankheit diskutiert.",
+      "trap": "Auch Schwangerschaft wird erwähnt.",
+      "tags": [
+        "Kosmetik",
+        "Behandlung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum kann Krankheit nicht einfach über Leiden definiert werden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil Krankheiten nie Leiden verursachen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil Leiden auch ohne Krankheit auftreten kann",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weil Schmerzen irrelevant sind",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil nur Laborwerte zählen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil Krankheiten immer objektiv messbar sind",
+          "correct": false
+        }
+      ],
+      "explanation": "Schwangerschaft oder Haarverlust können Leiden verursachen ohne Krankheit zu sein.",
+      "trap": "Diabetes kann umgekehrt lange symptomlos verlaufen.",
+      "tags": [
+        "Leiden",
+        "Krankheit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Zur Definition von Krankheit über Leiden:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schwangerschaft kann Leiden verursachen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Diabetes kann lange symptomlos verlaufen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Haarverlust kann psychisches Leiden verursachen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Leiden ist immer hinreichend für Krankheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Leiden allein genügt nicht zur Definition von Krankheit.",
+      "trap": "Die Beziehung ist komplexer.",
+      "tags": [
+        "Leiden",
+        "Symptome"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum genügt statistische Abnormalität nicht als Krankheitsdefinition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil alle Krankheiten häufig sind",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil seltene Eigenschaften nicht zwingend pathologisch sind",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weil Statistik irrelevant ist",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Krankheiten nie messbar sind",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weil Pathologie immer subjektiv ist",
+          "correct": false
+        }
+      ],
+      "explanation": "Blutgruppe AB+ ist selten, aber nicht krankhaft.",
+      "trap": "Seltenheit allein genügt nicht.",
+      "tags": [
+        "Statistik",
+        "Abnormalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welches Beispiel zeigt laut Vorlesung, dass statistisch normale Eigenschaften pathologisch sein können?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AB+ Blutgruppe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Schwangerschaft",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Atherosklerotische Plaques",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Linkshändigkeit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Körpergrösse",
+          "correct": false
+        }
+      ],
+      "explanation": "Atherosklerotische Plaques können häufig auftreten und trotzdem pathologisch sein.",
+      "trap": "Normalität bedeutet nicht Gesundheit.",
+      "tags": [
+        "Plaques",
+        "Pathologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zur Theorie der schädlichen Dysfunktion:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krankheit beinhaltet Dysfunktion",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Schädlichkeit spielt eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mechanismen sind zentral",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Krankheit ist rein statistische Abnormalität",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung definiert Krankheit als schädliche Dysfunktion biologischer Mechanismen.",
+      "trap": "Mehrere Dimensionen sind relevant.",
+      "tags": [
+        "Dysfunktion",
+        "Mechanismen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Wirkung des Herzens gilt als biologische Funktion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klopfgeräusch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wärmeproduktion",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Blutpumpen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Herzschatten im Röntgen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "EKG-Ableitung",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Blutpumpen trägt zum Kreislaufmechanismus bei.",
+      "trap": "Das Klopfgeräusch gilt nicht als Funktion.",
+      "tags": [
+        "Herz",
+        "Funktion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum gilt das Klopfgeräusch des Herzens nicht als Funktion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es existiert nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es trägt nicht zu einem übergeordneten Mechanismus bei",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es ist statistisch selten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es ist subjektiv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es wird nicht wahrgenommen",
+          "correct": false
+        }
+      ],
+      "explanation": "Funktionen als kausale Rollen müssen zu einem Mechanismus beitragen.",
+      "trap": "Das Geräusch erfüllt diese Rolle nicht.",
+      "tags": [
+        "KausaleRolle",
+        "Herz"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu Funktionen als selektierte Effekte:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Funktionen wurden evolutionär selektiert",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Selektionsgeschichte ist zentral",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nicht jede nützliche Fähigkeit ist eine Funktion",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Lesefähigkeit wurde direkt evolutionär selektiert",
+          "correct": false
+        }
+      ],
+      "explanation": "Selektierte Effekte beruhen auf evolutionärer Selektion.",
+      "trap": "Lesen wurde nicht direkt selektiert.",
+      "tags": [
+        "Selektion",
+        "Evolution"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Problem besitzt die Theorie selektierter Effekte?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie berücksichtigt keine Evolution",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Evolutionsgeschichte ist oft unzureichend bekannt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verwendet keine Biologie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie lehnt Funktionen ab",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie definiert alles als Krankheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Selektionsgeschichten lassen sich oft nur schwer rekonstruieren.",
+      "trap": "Dies erschwert Funktionsurteile.",
+      "tags": [
+        "Selektion",
+        "Probleme"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welchen Vorteil hat der Ansatz selektierter Effekte gegenüber kausalen Rollen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keine Biologie nötig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weniger versteckte Wertungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Keine Evolution nötig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Alle Fähigkeiten werden Funktionen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Keine Dysfunktionen existieren",
+          "correct": false
+        }
+      ],
+      "explanation": "Selektierte Effekte vermeiden gewisse normative Probleme.",
+      "trap": "Kontrastgruppen spielen eine kleinere Rolle.",
+      "tags": [
+        "SelektierteEffekte",
+        "Wertung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel nennt die Vorlesung für ein Problem selektierter Effekte?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AB+ Blutgruppe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sichelzellenallel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kurzsichtigkeit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Körpergrösse",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Schwangerschaft",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Sichelzellenallel kann selektive Vorteile und Nachteile besitzen.",
+      "trap": "Dies erschwert Funktionsurteile.",
+      "tags": [
+        "Sichelzelle",
+        "Selektion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum Krankheitsbegriff vertritt die Vorlesung am ehesten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krankheit ist rein subjektiv",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Krankheit ist ausschliesslich statistisch",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Krankheit kann aussichtsreich als schädliche Dysfunktion verstanden werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Krankheit ist identisch mit Behandlungsbedarf",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Krankheit ist nur sozial konstruiert",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung favorisiert einen Hybridansatz der schädlichen Dysfunktion.",
+      "trap": "Biologie und Wertung spielen beide Rollen.",
+      "tags": [
+        "Hybridansatz",
+        "Dysfunktion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Wie sollte laut Vorlesung Behandlungsbedarf verstanden werden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Identisch mit Krankheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Getrennt vom Krankheitsbegriff",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur biologisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur gesellschaftlich",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur statistisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Nicht jede Krankheit muss behandelt werden und nicht jede Behandlung betrifft eine Krankheit.",
+      "trap": "Behandlungsbedarf und Krankheit sind getrennte Konzepte.",
+      "tags": [
+        "Behandlungsbedarf",
+        "Krankheit"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}
