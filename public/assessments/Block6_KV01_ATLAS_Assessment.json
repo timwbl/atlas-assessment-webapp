@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block6_kv01_umweltepidemiologie_v1",
+  "lectureCode": "KV01",
+  "title": "Einführung in die Umweltepidemiologie",
+  "block": "Block 6",
+  "sourceSummary": "KV01 behandelt epidemiologische Studiendesigns, Kausalität, Bias, Confounding, Risikoabschätzung und attributable Fälle in der Umweltepidemiologie.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Assoziation und Kausalität unterscheiden können"
+    },
+    {
+      "id": "lo2",
+      "text": "Wichtige epidemiologische Studiendesigns verstehen können"
+    },
+    {
+      "id": "lo3",
+      "text": "Bias und Risikoabschätzung erklären können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was untersucht die Epidemiologie?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur genetische Krankheiten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verteilung und Determinanten von Gesundheitszuständen in Populationen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Infektionskrankheiten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur klinische Therapien",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur individuelle Krankengeschichten",
+          "correct": false
+        }
+      ],
+      "explanation": "Epidemiologie untersucht Gesundheitszustände und ihre Determinanten in Bevölkerungen.",
+      "trap": "Sie umfasst deskriptive und analytische Ansätze.",
+      "tags": [
+        "Epidemiologie",
+        "Population"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt Confounding?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zufällige Fehler",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verfälschung eines Zusammenhangs durch andere Ursachen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Messfehler bei Laborgeräten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Randomisierung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein biologischer Mechanismus",
+          "correct": false
+        }
+      ],
+      "explanation": "Confounding entsteht durch alternative Erklärungsmöglichkeiten.",
+      "trap": "Der Confounder beeinflusst Exposition und Outcome.",
+      "tags": [
+        "Confounding",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zu Randomisierung sind korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie eliminiert Confounding",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie ist bei Umweltrisiken oft ethisch problematisch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie wird in randomisierten kontrollierten Studien verwendet",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie garantiert perfekte Messungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Randomisierung verteilt Confounder zufällig.",
+      "trap": "Messfehler bleiben weiterhin möglich.",
+      "tags": [
+        "Randomisierung",
+        "RCT"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Was bedeutet ein relatives Risiko (RR) von 3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Risiko sinkt um das Dreifache",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Risiko der Exponierten ist dreimal höher",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Drei Personen erkranken sicher",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Outcome ist zufällig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Exposition schützt",
+          "correct": false
+        }
+      ],
+      "explanation": "RR vergleicht Risiko exponierter mit nicht exponierten Personen.",
+      "trap": "RR=3 bedeutet dreifach erhöhtes Risiko.",
+      "tags": [
+        "RR",
+        "Risiko"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Studienart liefert typischerweise die stärkste Evidenz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ökologische Studie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Randomisierte kontrollierte Studie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fallbericht",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Querschnittsstudie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Fallserie",
+          "correct": false
+        }
+      ],
+      "explanation": "RCTs minimieren Confounding durch Randomisierung.",
+      "trap": "Sie gelten als Goldstandard für Kausalität.",
+      "tags": [
+        "RCT",
+        "Evidenz"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu Fall-Kontroll-Studien:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beginnen mit Erkrankten und Kontrollen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Exposition wird retrospektiv erhoben",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sind effizient für seltene Krankheiten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie respektieren immer die zeitliche Reihenfolge von Ursache und Wirkung",
+          "correct": false
+        }
+      ],
+      "explanation": "Fall-Kontroll-Studien sind retrospektiv.",
+      "trap": "Die zeitliche Reihenfolge ist schwieriger zu beurteilen.",
+      "tags": [
+        "FallKontroll",
+        "Retrospektiv"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Bias bedroht Fall-Kontroll-Studien besonders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selektionsbias",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Lead-time bias",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Observer bias",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Publication bias",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Performance bias",
+          "correct": false
+        }
+      ],
+      "explanation": "Kontrollen sind oft nicht vollständig repräsentativ.",
+      "trap": "Dies kann den Zusammenhang verzerren.",
+      "tags": [
+        "Selektionsbias",
+        "FallKontroll"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was ist ein Vorteil von Kohortenstudien?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie benötigen keine Expositionsdaten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die zeitliche Beziehung Ursache → Wirkung bleibt erhalten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sind immer schnell durchführbar",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie vermeiden jeden Bias",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie benötigen keine grossen Stichproben",
+          "correct": false
+        }
+      ],
+      "explanation": "Kohortenstudien erfassen Exposition vor dem Outcome.",
+      "trap": "Dadurch bleibt die zeitliche Reihenfolge erhalten.",
+      "tags": [
+        "Kohorte",
+        "Kausalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zu ökologischen Studien treffen zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie vergleichen Gruppen auf aggregiertem Niveau",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie eignen sich zur Hypothesengenerierung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Confounder sind schwer kontrollierbar",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie beweisen zuverlässig individuelle Kausalität",
+          "correct": false
+        }
+      ],
+      "explanation": "Ökologische Studien leiden unter ecological fallacy.",
+      "trap": "Individuelle Schlüsse sind problematisch.",
+      "tags": [
+        "ÖkologischeStudie",
+        "EcologicalFallacy"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt die „ecological fallacy“?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Falsche Berechnung von RR",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Fehlschluss von Gruppendaten auf Individuen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Selektionsbias in Kohorten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zufällige Fehler",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Fehlerhafte Randomisierung",
+          "correct": false
+        }
+      ],
+      "explanation": "Zusammenhänge auf Gruppenebene gelten nicht zwingend individuell.",
+      "trap": "Dies ist die zentrale Schwäche ökologischer Studien.",
+      "tags": [
+        "EcologicalFallacy",
+        "Ökologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Fehlerart entsteht durch ungenaue Messung von Expositionen oder Outcomes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selektionsbias",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Informationsbias",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Confounding",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Recall bias",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sampling bias",
+          "correct": false
+        }
+      ],
+      "explanation": "Informationsbias beruht auf fehlerhaften Messungen.",
+      "trap": "Er verzerrt den beobachteten Zusammenhang.",
+      "tags": [
+        "Informationsbias",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Methoden dienen der Adjustierung für Confounder?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stratifizierung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Multivariable Regressionsmodelle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Randomisierung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ignorieren des Confounders",
+          "correct": false
+        }
+      ],
+      "explanation": "Confounder müssen bekannt und erfasst sein.",
+      "trap": "Ohne Erfassung ist keine Adjustierung möglich.",
+      "tags": [
+        "Adjustierung",
+        "Regression"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Regressionsmodellen ist korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie eliminieren jeden Bias",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie modellieren den Zusammenhang zwischen Einflussgrössen und Outcome",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzen Studiendesigns",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie funktionieren nur bei Experimenten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie berechnen nur Mittelwerte ohne Confounder",
+          "correct": false
+        }
+      ],
+      "explanation": "Regressionsmodelle erlauben Adjustierung für Confounder.",
+      "trap": "β₁ misst den adjustierten Zusammenhang.",
+      "tags": [
+        "Regression",
+        "Confounder"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Was charakterisiert ein natürliches Experiment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gezielte Randomisierung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein ungeplantes externes Ereignis erzeugt Expositionsunterschiede",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Laborbedingungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Keine Confounder",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Tierexperimente",
+          "correct": false
+        }
+      ],
+      "explanation": "Natürliche Experimente kommen Experimenten nahe.",
+      "trap": "Confounding bleibt jedoch möglich.",
+      "tags": [
+        "NatürlichesExperiment",
+        "Exposition"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu den Bradford-Hill-Kriterien:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zeitlicher Zusammenhang ist wichtig",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Biologische Plausibilität wird berücksichtigt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Dosis-Wirkungsbeziehungen unterstützen Kausalität",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ein einzelnes Kriterium beweist Kausalität sicher",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Kriterien unterstützen, beweisen aber keine Kausalität.",
+      "trap": "Sie dienen der Gesamtbeurteilung.",
+      "tags": [
+        "BradfordHill",
+        "Kausalität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was ist das Ziel einer Risikoabschätzung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur individuelle Diagnosen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Abschätzung des Effekts eines Umweltfaktors auf die Bevölkerung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Messung genetischer Mutationen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bestimmung einzelner Laborwerte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Elimination aller Unsicherheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Risikoabschätzungen bewerten Public-Health-Relevanz.",
+      "trap": "Sie schätzen attributable Fälle ab.",
+      "tags": [
+        "Risikoabschätzung",
+        "PublicHealth"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt die attributable Fraktion (AF)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anteil aller Gesunden",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Anteil der Fälle unter Exponierten, der auf die Exposition zurückzuführen ist",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur das relative Risiko",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Inzidenz einer Krankheit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Prävalenz eines Confounders",
+          "correct": false
+        }
+      ],
+      "explanation": "AF beschreibt den durch Exposition verursachten Anteil unter Exponierten.",
+      "trap": "Sie basiert auf RR.",
+      "tags": [
+        "AF",
+        "AttributableFraktion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Wie lautet die Formel der attributablen Fraktion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AF = RR + 1",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "AF = (RR−1)/RR",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "AF = 1/RR",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "AF = RR²",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "AF = RR−1",
+          "correct": false
+        }
+      ],
+      "explanation": "Die attributable Fraktion hängt direkt vom relativen Risiko ab.",
+      "trap": "Sie beschreibt den kausalen Anteil bei Exponierten.",
+      "tags": [
+        "AF",
+        "Formel"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt die population attributable fraction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anteil der Fälle in der Gesamtpopulation durch Exposition",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nur Risiko exponierter Personen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Messfehler der Population",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Anteil nicht exponierter Personen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Prävalenz des Outcomes",
+          "correct": false
+        }
+      ],
+      "explanation": "Die population attributable fraction berücksichtigt RR und Expositionshäufigkeit.",
+      "trap": "Sie beschreibt die Bedeutung für die Gesamtbevölkerung.",
+      "tags": [
+        "PAF",
+        "Population"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Warum ist die Risikoabschätzung in der Umweltepidemiologie schwierig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Expositionen existieren nie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die gesamte Population ist oft exponiert und Risiken sind klein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es gibt keine Studiendesigns",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Randomisierung ist immer möglich",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Umweltfaktoren beeinflussen keine Gesundheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Kleine Risiken und schwierige Expositionsabschätzung erschweren Studien.",
+      "trap": "Dies ist typisch für Umweltepidemiologie.",
+      "tags": [
+        "Umweltepidemiologie",
+        "Exposition"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}
