@@ -1,0 +1,101 @@
+{
+  "id": "assessment_kv11_glatte_muskulatur_v1",
+  "lectureCode": "KV11",
+  "title": "Glatte Muskulatur",
+  "block": "8",
+  "sourceSummary": "Zelluläre Prozesse der Muskelfunktion – Glatte Muskulatur.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Unterschiede und Gemeinsamkeiten zwischen glattem Muskel, Skelettmuskel und Herzmuskel erklären"
+    },
+    {
+      "id": "lo2",
+      "text": "Kontraktionsmechanismen der glatten Muskulatur erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Regulationsmechanismen der glatten Muskulatur kennen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches Protein dient im glatten Muskel primär als intrazellulärer Ca²⁺-Sensor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Troponin C",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Titin",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Calmodulin",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Dystrophin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nebulin",
+          "correct": false
+        }
+      ],
+      "explanation": "Im glatten Muskel übernimmt Calmodulin die Rolle des Ca²⁺-Sensors.",
+      "trap": "Troponin mit quergestreifter Muskulatur verwechseln.",
+      "tags": [
+        "Calmodulin",
+        "Ca2+",
+        "Mechanismus"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu Signalwegen glatter Muskelzellen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "NO erhöht cGMP",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "β₂-Rezeptoraktivierung wirkt relaxierend",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "α₁-Rezeptoren erhöhen cAMP",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Rho-Kinase aktiviert MLCP",
+          "correct": false
+        }
+      ],
+      "explanation": "NO wirkt über cGMP relaxierend, β₂-Rezeptoren erhöhen cAMP.",
+      "trap": "α₁- und β₂-Signalwege verwechseln.",
+      "tags": [
+        "NO_cGMP",
+        "AdrenergeSignalwege"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

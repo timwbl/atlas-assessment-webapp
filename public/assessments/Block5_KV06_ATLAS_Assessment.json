@@ -1,0 +1,821 @@
+{
+  "id": "assessment_block5_kv06_rassismus_gesundheit_v1",
+  "lectureCode": "KV06",
+  "title": "Rassismus als soziale Determinante von Gesundheit",
+  "block": "Block 5",
+  "sourceSummary": "KV06 behandelt Rassismus als soziale Determinante von Gesundheit, strukturellen und persönlichen Rassismus im Gesundheitswesen, Bias in Medizin und Forschung sowie Intersektionalität.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Rasse als soziales Konstrukt und soziale Determinante von Gesundheit erklären können"
+    },
+    {
+      "id": "lo2",
+      "text": "Strukturellen und persönlichen Rassismus im Gesundheitswesen erkennen können"
+    },
+    {
+      "id": "lo3",
+      "text": "Bias, historische Kontinuitäten und Auswirkungen auf medizinische Versorgung reflektieren können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Wie wird Rassismus in der Vorlesung grundlegend definiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vorurteile ohne Hierarchie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Stereotype plus Hierarchie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur individuelles Fehlverhalten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Biologische Unterschiede",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Gewalt",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung definiert Rassismus als Kombination aus Stereotypen und Hierarchie.",
+      "trap": "Rassismus wird zu stark auf individuelles Verhalten reduziert.",
+      "tags": [
+        "Rassismus",
+        "Definition"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu „race“ wird in der Vorlesung betont?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Race ist biologisch eindeutig definierbar",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es gibt biologische Menschenrassen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Race ist eine soziale und keine biologische Kategorie",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Race ist ausschliesslich genetisch bestimmt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Race spielt in der Medizin keine Rolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont ausdrücklich: Race ist ein soziales Konstrukt.",
+      "trap": "Die Vorlesung lehnt biologische Menschenrassen explizit ab.",
+      "tags": [
+        "Race",
+        "SozialesKonstrukt"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Rassismus als sozialer Determinante von Gesundheit:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diskriminierungserfahrungen beeinflussen Gesundheit",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Soziale Faktoren spielen eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rassismus hat keinen Einfluss auf Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aufenthaltsrechtliche Faktoren können relevant sein",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt Rassismus als gesundheitlich relevante soziale Determinante.",
+      "trap": "Gesundheit wird nicht nur biologisch beeinflusst.",
+      "tags": [
+        "Determinanten",
+        "Gesundheit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Beobachtung zeigte das DeZIM bezüglich Diskriminierungserfahrungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehr Diskriminierung → bessere Selbsteinschätzung der Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kein Zusammenhang zur Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mehr Diskriminierung → schlechter eingeschätzter Gesundheitszustand",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Nur Männer waren betroffen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Kinder waren betroffen",
+          "correct": false
+        }
+      ],
+      "explanation": "Mit zunehmender Diskriminierung wurde die eigene Gesundheit schlechter eingeschätzt.",
+      "trap": "Die Zusammenhänge waren nicht auf einzelne Gruppen beschränkt.",
+      "tags": [
+        "DeZIM",
+        "Gesundheit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt der Begriff „Morbus Mediterraneus“?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine genetische Mittelmeerkrankheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine Pseudodiagnose zur Abwertung von Schmerzangaben rassifizierter Personen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Eine tropische Infektionskrankheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Eine psychiatrische Diagnose",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine neurologische Syndromeinteilung",
+          "correct": false
+        }
+      ],
+      "explanation": "Morbus Mediterraneus beschreibt rassistische Zuschreibungen bezüglich Schmerzübertreibung.",
+      "trap": "Der Begriff ist keine legitime medizinische Diagnose.",
+      "tags": [
+        "MorbusMediterraneus",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Folge kann Angst vor Diskriminierung im Gesundheitswesen haben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehr Arztbesuche",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vermeidung medizinischer Versorgung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verbesserte Therapieadhärenz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weniger Stress",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Schnellere Diagnosen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt Vermeidungsverhalten aufgrund von Diskriminierungsangst.",
+      "trap": "Diskriminierung beeinflusst auch Zugang zu Versorgung.",
+      "tags": [
+        "Diskriminierung",
+        "Versorgung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zur Schmerzbehandlung und rassistischen Bias:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Biologische Mythen über Schwarze Menschen existieren",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Bias kann zu inadäquater Schmerztherapie führen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Unterschiede wurden nur in der Notaufnahme beschrieben",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Rassistische Bias beeinflussen Schmerzeinschätzungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt zahlreiche Studien zu Bias in Schmerzbehandlung.",
+      "trap": "Die Unterschiede wurden settingübergreifend gefunden.",
+      "tags": [
+        "Schmerz",
+        "Bias",
+        "Analgesie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Mythos wird in der Vorlesung als Beispiel biologischer Fehlannahmen genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schwarze Haut sei dicker",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Menschen asiatischer Herkunft hätten weniger Nerven",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Frauen hätten keine Schmerzfasern",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kinder hätten keine Schmerzempfindung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Europäer hätten höhere Schmerzschwellen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt explizit den Mythos einer dickeren schwarzen Haut.",
+      "trap": "Solche biologischen Mythen beeinflussen Behandlungsempfehlungen.",
+      "tags": [
+        "BiologischeMythen",
+        "Schmerz"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Problem wird bei klinischen Algorithmen mit „race correction“ diskutiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zu viele genetische Daten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Rassistische Verzerrungen in Behandlungsalgorithmen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zu wenig mathematische Präzision",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fehlende Digitalisierung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Übermässige Datenschutzprobleme",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung thematisiert race correction als potenzielle Reproduktion rassistischer Strukturen.",
+      "trap": "Race correction wird oft unkritisch übernommen.",
+      "tags": [
+        "Algorithmen",
+        "RaceCorrection"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt Intersektionalität am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich Unterschiede zwischen Ethnien",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Verflechtung verschiedener Identitätsdimensionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rein biologische Unterschiede",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Geschlechterrollen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur soziale Klassen",
+          "correct": false
+        }
+      ],
+      "explanation": "Intersektionalität analysiert das Zusammenspiel verschiedener Identitätskategorien.",
+      "trap": "Der Ansatz ist breiter als einzelne Kategorien isoliert zu betrachten.",
+      "tags": [
+        "Intersektionalität",
+        "Identität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Intersektionalität:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Race kann eine relevante Kategorie sein",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Gender spielt eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Class kann Erfahrungen beeinflussen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Intersektionalität reduziert Menschen auf eine einzige Identität",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Race, Gender, Class und Body als wichtige Kategorien.",
+      "trap": "Intersektionalität betont gerade Mehrdimensionalität.",
+      "tags": [
+        "Intersektionalität",
+        "Race",
+        "Gender"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Problem illustriert die Geschichte der Patientin mit Morbus Menière?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Überdiagnostik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nicht-Ernstnehmen von Beschwerden rassifizierter Personen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fehlende technische Geräte",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Übermässige Bildgebung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zu frühe Therapie",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Patientin wurde zunächst abgewertet und nicht untersucht.",
+      "trap": "Der Fall illustriert diagnostische Verzögerungen durch Bias.",
+      "tags": [
+        "Fallbeispiel",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage beschreibt kognitive Dissonanz im Kontext der Vorlesung am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Konflikt zwischen Selbstbild und Konfrontation von aussen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Rein neurologische Erkrankung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mangelnde Intelligenz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vergessen von Fakten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sprachbarrieren",
+          "correct": false
+        }
+      ],
+      "explanation": "Kognitive Dissonanz beschreibt den schmerzhaften Konflikt zwischen Selbstbild und Kritik.",
+      "trap": "Die Vorlesung verbindet dies mit Scham und Angst vor Fehlern.",
+      "tags": [
+        "KognitiveDissonanz",
+        "Reflexion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu historischen Kontinuitäten in der Medizin:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kolonialismus wird thematisiert",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nazismus wird thematisiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rassenforschung wird diskutiert",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Historische Machtstrukturen spielen laut Vorlesung keine Rolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung fordert Reflexion historischer Kontinuitäten.",
+      "trap": "Machtpolitische Strukturen werden explizit angesprochen.",
+      "tags": [
+        "Historie",
+        "Kolonialismus",
+        "Nazismus"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Problem medizinischer Lehrmaterialien wird beschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Überrepräsentation aller Hauttypen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Unterrepräsentation rassistisch markierter Gruppen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zu viele anatomische Bilder",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zu wenig Digitalisierung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Fehlende Pharmakologie",
+          "correct": false
+        }
+      ],
+      "explanation": "Besonders in Dermatologie wird Unterrepräsentation beschrieben.",
+      "trap": "Die Vorlesung nennt auch Fehlrepräsentationen.",
+      "tags": [
+        "Lehrmaterial",
+        "MindTheGap"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Wofür steht „Mind the Gap“ im Vorlesungskontext?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Statistikprojekt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein dermatologisches Lehrprojekt zu klinischen Zeichen auf dunkler Haut",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ein chirurgisches Ausbildungsprogramm",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein KI-System",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein Antibiotikaprojekt",
+          "correct": false
+        }
+      ],
+      "explanation": "Mind the Gap thematisiert Unterrepräsentation dunkler Haut in Lehrmaterialien.",
+      "trap": "Das Projekt ist international bekannt geworden.",
+      "tags": [
+        "MindTheGap",
+        "Dermatologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur ärztlichen Reflexion von Rassismus:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gespräche aushalten wird empfohlen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Eigene Bias sollen reflektiert werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rassismus wird als rein individuelles Problem dargestellt",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verbindungen suchen wird empfohlen",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung fordert aktive Reflexion und Gesprächsbereitschaft.",
+      "trap": "Rassismus wird ausdrücklich auch strukturell verstanden.",
+      "tags": [
+        "Reflexion",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage beschreibt strukturellen Rassismus im Gesundheitswesen am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur absichtliche individuelle Diskriminierung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gesellschaftliche und institutionelle Strukturen mit gesundheitlichen Auswirkungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich strafrechtlich relevante Handlungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur persönliche Vorurteile",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein rein historisches Phänomen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung unterscheidet persönliche und strukturelle Ebenen.",
+      "trap": "Struktureller Rassismus wirkt auch ohne individuelle Absicht.",
+      "tags": [
+        "StrukturellerRassismus",
+        "Gesundheitswesen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Errungenschaft wird Dr. Patricia Bath zugeschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Entwicklung moderner Blutbanken",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Laser-Katarakt-Chirurgie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Erfindung der MRT",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Penicillintherapie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "PCR-Technik",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Patricia Bath im Zusammenhang mit Laser-Katarakt-Chirurgie.",
+      "trap": "Die Folien zeigen bewusst oft wenig bekannte Beiträge Schwarzer Wissenschaftler:innen.",
+      "tags": [
+        "PatriciaBath",
+        "Geschichte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Haltung wird am Ende der Vorlesung besonders betont?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Neutralität ohne Reflexion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mut zur Komplexität und kritische Reflexion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verzicht auf Diskussionen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fokus nur auf individuelle Schuld",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Trennung von Medizin und Gesellschaft",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung fordert Mut zur Komplexität und aktive Reflexion.",
+      "trap": "Die Inhalte sollen nicht simplifiziert werden.",
+      "tags": [
+        "Reflexion",
+        "Komplexität"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

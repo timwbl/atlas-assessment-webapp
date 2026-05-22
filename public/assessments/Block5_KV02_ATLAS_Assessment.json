@@ -1,0 +1,824 @@
+{
+  "id": "assessment_block5_kv02_gesundheitswesen_v1",
+  "lectureCode": "KV02",
+  "title": "Ethisch entscheiden – Gesundheitswesen",
+  "block": "Block 5",
+  "sourceSummary": "KV02 behandelt Medizinethik, Prinzipienethik nach Beauchamp & Childress sowie klinische Ethik im Gesundheitswesen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Charakteristische Themenfelder der Medizinethik benennen können"
+    },
+    {
+      "id": "lo2",
+      "text": "Prinzipienethik ausführen und deren Prädominanz begründen können"
+    },
+    {
+      "id": "lo3",
+      "text": "Klinische Ethik und deren Aufgabenbereich im Gesundheitswesen skizzieren können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Mit was beschäftigt sich Medizinethik gemäss der Vorlesung primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mit rein juristischen Fragestellungen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mit den Werten, die im Gesundheitswesen gelten sollen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mit statistischen Analysen klinischer Studien",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mit naturwissenschaftlicher Grundlagenforschung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mit administrativen Abrechnungsprozessen",
+          "correct": false
+        }
+      ],
+      "explanation": "Medizinethik beschäftigt sich mit den Werten, die im Gesundheitswesen gelten sollen.",
+      "trap": "Ethik wird häufig mit Recht oder Administration verwechselt.",
+      "tags": [
+        "Medizinethik",
+        "Werte",
+        "Grundlagen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Aus welchem Bereich hat sich die Medizinethik historisch entwickelt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aus der technischen Informatik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Aus der Pflegewissenschaft",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Aus der ärztlichen Ethik",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Aus der Gesundheitsökonomie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aus der Epidemiologie",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Medizinethik entwickelte sich historisch aus der ärztlichen Ethik.",
+      "trap": "Moderne Medizinethik betrifft heute aber viele weitere Akteure.",
+      "tags": [
+        "Geschichte",
+        "Medizinethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welches Thema gehört typisch zur Medizinethik?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klonen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Differentialgleichungen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "PCR-Primerdesign",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mikroskopkalibration",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Spirometrieprotokolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Klonen explizit als medizinethisches Themenfeld.",
+      "trap": "Technische oder naturwissenschaftliche Themen sind nicht automatisch medizinethische Themen.",
+      "tags": [
+        "Themenfelder",
+        "Klonen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Medizinethik trifft am ehesten zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie betrifft ausschliesslich Ärztinnen und Ärzte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie betrifft nur Forschungslabore",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie betrifft alle im Gesundheitswesen tätigen Personen, Institutionen und Patienten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie ist nur relevant bei Sterbehilfe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie beschäftigt sich nur mit Gesetzen",
+          "correct": false
+        }
+      ],
+      "explanation": "Medizinethik betrifft laut Vorlesung alle Personen und Institutionen des Gesundheitswesens.",
+      "trap": "Medizinethik ist nicht auf einzelne Berufsgruppen reduziert.",
+      "tags": [
+        "Gesundheitswesen",
+        "Berufsrollen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches Prinzip gehört NICHT zum Vier-Prinzipien-Modell nach Beauchamp & Childress?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Autonomie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nicht-Schaden",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Effizienz",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Fürsorge",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gerechtigkeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Effizienz gehört nicht zu den vier klassischen Prinzipien.",
+      "trap": "Ökonomische Kriterien werden leicht mit ethischen Prinzipien verwechselt.",
+      "tags": [
+        "Prinzipienethik",
+        "Beauchamp_Childress"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches Prinzip beschreibt 'respect for autonomy' am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pflicht zur Kostenreduktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Respekt vor Selbstbestimmung der Patientinnen und Patienten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vorrang der Forschung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Gleichbehandlung aller Krankheiten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Maximale technische Therapie",
+          "correct": false
+        }
+      ],
+      "explanation": "Autonomie bedeutet Respekt vor der Selbstbestimmung der Patientinnen und Patienten.",
+      "trap": "Autonomie wird oft mit vollständiger Entscheidungsfreiheit ohne Kontext verwechselt.",
+      "tags": [
+        "Autonomie",
+        "Prinzipienethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage beschreibt die Grundidee der Prinzipienethik am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es gibt immer ein einziges absolut gültiges Prinzip",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Prinzipien dienen der Abwägung und Versprachlichung von Wertekonflikten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Prinzipien ersetzen klinisches Denken vollständig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Emotionen sind zentraler Bestandteil des Modells",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Das Modell basiert ausschliesslich auf Gesetzen",
+          "correct": false
+        }
+      ],
+      "explanation": "Prinzipienethik dient der Abwägung und Spezifikation relevanter Prinzipien.",
+      "trap": "Das Modell funktioniert nicht als starre Checkliste.",
+      "tags": [
+        "Prinzipienethik",
+        "Wertekonflikte",
+        "Abwägung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Kritik wird in der Vorlesung an der Prinzipienethik genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie sei zu emotional",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hierarchie und Machtstrukturen fehlen weitgehend",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie berücksichtige ausschliesslich Patienten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie sei ausschliesslich religiös begründet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie enthalte keine ethischen Prinzipien",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt fehlende Berücksichtigung von Hierarchien und Machtstrukturen als Kritikpunkt.",
+      "trap": "Die Kritikpunkte beziehen sich nicht auf einen völligen Mangel an Ethik.",
+      "tags": [
+        "Prinzipienethik",
+        "Kritik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum hat sich die Prinzipienethik besonders im westlichen Gesundheitswesen durchgesetzt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie ist vollständig emotionsfrei",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie erinnert an klassische ärztliche Ideale und wirkt intuitiv verständlich",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzt jede klinische Entscheidung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie ist rechtlich verpflichtend",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie wurde für Patienten entwickelt",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die intuitive Nähe zu traditionellen ärztlichen Idealen.",
+      "trap": "Das Modell ist nicht rechtlich vorgeschrieben.",
+      "tags": [
+        "Prinzipienethik",
+        "Prädominanz"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Womit beschäftigt sich klinische Ethik vorrangig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mit Molekularbiologie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mit Gewissens- und Wertekonflikten im Gesundheitswesen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mit Versicherungsmodellen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mit epidemiologischen Statistiken",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mit technischer Qualitätskontrolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Klinische Ethik beschäftigt sich mit Wertekonflikten und Entscheidungsproblemen in der Berufsrolle.",
+      "trap": "Klinische Ethik ist keine primär technische Disziplin.",
+      "tags": [
+        "Klinische_Ethik",
+        "Wertekonflikte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Eigenschaft passt am besten zur klinischen Ethik?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich theoretisch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Konkret, angewandt und vor Ort",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur juristisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Laborbasiert",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Primär wirtschaftlich",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt klinische Ethik als konkret, angewandt und vor Ort im Spital.",
+      "trap": "Klinische Ethik ist nicht rein theoretisch.",
+      "tags": [
+        "Klinische_Ethik",
+        "Praxis"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aufgabe gehört typischerweise zur Ethikberatung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Programmierung medizinischer Software",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ethische Fallbesprechungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Laboranalytik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bildrekonstruktion im CT",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Pharmakologische Synthese",
+          "correct": false
+        }
+      ],
+      "explanation": "Ethische Fallbesprechungen gehören zu den Kernaufgaben der klinischen Ethik.",
+      "trap": "Ethikberatung wird nicht mit technischen Spezialdisziplinen verwechselt.",
+      "tags": [
+        "Ethikberatung",
+        "Fallbesprechung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage beschreibt klinische Ethik am treffendsten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie trifft die endgültigen medizinischen Entscheidungen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie unterstützt Analyse- und Entscheidungsprozesse ohne selbst die Entscheidung zu übernehmen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzt die behandelnden Teams",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie entscheidet juristische Streitigkeiten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist ausschliesslich für Sterbehilfe zuständig",
+          "correct": false
+        }
+      ],
+      "explanation": "Klinische Ethik trägt Prozessverantwortung und Unterstützung, trifft aber nicht selbst die Entscheidung.",
+      "trap": "Ethikberatung wird oft mit Entscheidungsautorität verwechselt.",
+      "tags": [
+        "Klinische_Ethik",
+        "Prozessverantwortung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Spezifikation innerhalb der Prinzipienethik trifft am ehesten zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie funktioniert als einfache Checkliste",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie ist intellektuell anspruchsvoll und situationsabhängig",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzt klinische Erfahrung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie benötigt keine Abwägung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie basiert nur auf Emotionen",
+          "correct": false
+        }
+      ],
+      "explanation": "Spezifikation bedeutet anspruchsvolle situationsabhängige Abwägung der Prinzipien.",
+      "trap": "Die Prinzipienethik ist gerade keine starre Checkliste.",
+      "tags": [
+        "Spezifikation",
+        "Prinzipienethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Im Fall von Joe nach dem Suizidversuch entsteht vor allem welcher Konflikttyp?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Technischer Hardwarekonflikt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Werte- und Entscheidungsproblem innerhalb der Berufsrolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Reines Statistikproblem",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Administratives Abrechnungsproblem",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur ein logistisches Problem",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Fall illustriert klinische Ethik als Umgang mit Wertekonflikten und Entscheidungsproblemen.",
+      "trap": "Die Situation wird nicht auf rein technische Aspekte reduziert.",
+      "tags": [
+        "Fallbeispiel",
+        "Klinische_Ethik",
+        "Wertekonflikt"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Themenfeldern der Medizinethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Organtransplantation ist ein medizinethisches Thema",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Künstliche Intelligenz kann medizinethisch relevant sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "PCR-Gerätewartung ist ein klassisches Hauptthema der Medizinethik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Public Health Issues gehören zu den Themenfeldern",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Organtransplantation, KI und Public Health explizit als Themenfelder.",
+      "trap": "Technische Laboraufgaben sind keine typischen Ethikthemen.",
+      "tags": [
+        "Themenfelder",
+        "KI",
+        "PublicHealth"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zum Vier-Prinzipien-Modell nach Beauchamp & Childress:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Autonomie gehört zu den vier Prinzipien",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nicht-Schaden ist ein zentrales Prinzip",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Effizienz ist eines der vier Hauptprinzipien",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Gerechtigkeit gehört zu den vier Prinzipien",
+          "correct": true
+        }
+      ],
+      "explanation": "Autonomie, Nicht-Schaden, Fürsorge und Gerechtigkeit bilden die vier Prinzipien.",
+      "trap": "Effizienz ist kein offizielles Prinzip des Modells.",
+      "tags": [
+        "Prinzipienethik",
+        "Beauchamp_Childress"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zur Prinzipienethik gemäss Vorlesung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prinzipien dienen der Versprachlichung von Wertekonflikten",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Das Modell funktioniert als einfache Checkliste",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Emotionen und Kontext werden teilweise zu wenig berücksichtigt",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Hierarchien und Machtstrukturen fehlen teilweise",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung nennt fehlende Kontext- und Machtperspektiven als Kritikpunkte.",
+      "trap": "Das Modell wird ausdrücklich nicht als Checkliste beschrieben.",
+      "tags": [
+        "Prinzipienethik",
+        "Kritik",
+        "Wertekonflikte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu klinischer Ethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beschäftigt sich mit Gewissenskonflikten",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie ist konkret und angewandt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie trifft selbst alle klinischen Entscheidungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ethikberatung kann Richtlinien und Empfehlungen erarbeiten",
+          "correct": true
+        }
+      ],
+      "explanation": "Klinische Ethik analysiert und unterstützt, entscheidet aber nicht selbst.",
+      "trap": "Unterstützung wird mit Entscheidungsautorität verwechselt.",
+      "tags": [
+        "Klinische_Ethik",
+        "Ethikberatung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur Ethikberatung im klinischen Alltag:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ethische Fallbesprechungen gehören zu ihren Aufgaben",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie übernimmt Prozessverantwortung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzt medizinische Fachkompetenz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie unterstützt bei Werteanalysen",
+          "correct": true
+        }
+      ],
+      "explanation": "Ethikberatung unterstützt Analyse- und Entscheidungsprozesse.",
+      "trap": "Ethik ersetzt keine medizinische Fachkompetenz.",
+      "tags": [
+        "Ethikberatung",
+        "Werteanalyse",
+        "Prozessverantwortung"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

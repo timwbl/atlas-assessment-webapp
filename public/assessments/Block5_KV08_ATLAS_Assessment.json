@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv08_unconscious_bias_v1",
+  "lectureCode": "KV08",
+  "title": "Ethisch entscheiden – Unconscious Bias",
+  "block": "Block 5",
+  "sourceSummary": "KV08 behandelt ethische Entscheidungsfindung, unconscious bias, epistemische Ungerechtigkeit nach Fricker sowie dialogische Entscheidungsprozesse in der klinischen Ethik.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundmuster ethischer Entscheidungen erklären und Werte analysieren können"
+    },
+    {
+      "id": "lo2",
+      "text": "Unconscious bias definieren und auf ethische Entscheidungsfragen beziehen können"
+    },
+    {
+      "id": "lo3",
+      "text": "Epistemische Ungerechtigkeit und dialogische Entscheidungsfindung reflektieren können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Wie definiert die Vorlesung eine ethische Entscheidung am ehesten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spontane Handlung ohne Reflexion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bewusste Wahl zwischen mindestens zwei Alternativen anhand artikulierbarer Kriterien",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich emotionale Reaktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Juristische Pflichtentscheidung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Statistische Optimierung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung definiert ethische Entscheidungen als bewusste Wahl zwischen Alternativen anhand begründbarer Kriterien.",
+      "trap": "Ethische Entscheidungen werden nicht nur emotional getroffen.",
+      "tags": [
+        "EthischeEntscheidung",
+        "Definition"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welcher Aspekt begründet laut Vorlesung ethische Entscheidungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gewohnheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hierarchie",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Werte",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Emotionen allein",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zeitdruck",
+          "correct": false
+        }
+      ],
+      "explanation": "Werte bilden die Grundlage ethischer Entscheidungen.",
+      "trap": "Werte werden oft mit blossen Meinungen verwechselt.",
+      "tags": [
+        "Werte",
+        "Entscheidung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zur Schrittfolge ethischer Entscheidungsfindung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Situation soll analysiert werden",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Alternativen sollen entwickelt werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Konsequenzen sollen bedacht werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Revision spielt keine Rolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Analyse, Alternativen und Konsequenzen als wichtige Schritte.",
+      "trap": "Revision und Beobachtung gehören ebenfalls dazu.",
+      "tags": [
+        "Entscheidungsfindung",
+        "Schritte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welcher Schritt gehört laut Vorlesung zur Entscheidungsfindung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zufällige Wahl",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Beobachtung und Revision",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verzicht auf Reflexion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Hierarchische Abstimmung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Automatische Konsensfindung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Beobachtung, Verlauf und Revision explizit.",
+      "trap": "Ethische Entscheidungen werden als dynamische Prozesse verstanden.",
+      "tags": [
+        "Revision",
+        "Entscheidungsprozess"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Begriffe werden im Entscheidungsprozess unterschieden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Programmieren und Diagnostik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wahrnehmen, Beschreiben, Bewerten, Beurteilen, Handeln",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Profit und Verlust",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Planung und Statistik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Emotion und Intelligenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung strukturiert Entscheidungsfindung in mehrere Reflexionsschritte.",
+      "trap": "Die Schritte dienen der bewussten Analyse von Entscheidungen.",
+      "tags": [
+        "Wahrnehmen",
+        "Bewerten"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt „unconscious bias“ am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bewusste Diskriminierung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Unbewusste Vorurteile und stereotype Annahmen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Juristische Fehlentscheidungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich emotionale Überforderung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Objektive Datenanalyse",
+          "correct": false
+        }
+      ],
+      "explanation": "Unconscious bias beschreibt unbewusste stereotype Zuschreibungen.",
+      "trap": "Bias ist nicht immer absichtlich oder bewusst.",
+      "tags": [
+        "UnconsciousBias",
+        "Vorurteil"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu unconscious bias:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bias kann unbewusst sein",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Bias basiert oft auf Stereotypen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vorurteile müssen nicht immer absichtlich sein",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Bias betrifft nur andere Menschen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont, dass alle Menschen Bias besitzen können.",
+      "trap": "Bias wird oft externalisiert statt reflektiert.",
+      "tags": [
+        "Bias",
+        "Stereotype"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Problematik ethischer Entscheidungen wird in der Vorlesung hervorgehoben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zu wenig Daten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Viele Entscheidungen sind teilweise unbewusst",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Menschen handeln ausschliesslich rational",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Werte spielen keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Emotionen existieren nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung problematisiert die teilweise unbewusste Natur von Entscheidungen.",
+      "trap": "Entscheidungen sind nicht rein rational.",
+      "tags": [
+        "Unbewusst",
+        "Entscheidung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu Vorurteilen wird in der Vorlesung betont?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vorurteile existieren nur bei diskriminierenden Personen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vorurteile müssen immer schlecht sein",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Menschen haben mehr Vorurteile als sie denken",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Vorurteile sind ausschliesslich bewusst",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Vorurteile betreffen nur Politik",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die Alltäglichkeit unbewusster Vorurteile.",
+      "trap": "Vorurteile werden oft unterschätzt.",
+      "tags": [
+        "Vorurteile",
+        "Bias"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Ebene beschreibt im Eisbergmodell die Art der Kommunikation innerhalb einer Gruppe?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sachebene",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Beziehungsebene",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Individuelle Ebene",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Biologische Ebene",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Hierarchieebene",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Beziehungsebene betrifft Kommunikation und Interaktion.",
+      "trap": "Das Eisbergmodell unterscheidet mehrere Ebenen gleichzeitig.",
+      "tags": [
+        "Eisbergmodell",
+        "Kommunikation"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zum Eisbergmodell in der Vorlesung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Sachebene betrifft Auftrag und Ziel",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Beziehungsebene betrifft Kommunikation",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die individuelle Ebene umfasst Erfahrungen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Das Modell behauptet, Entscheidungen seien vollständig bewusst",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Modell illustriert die verborgenen Ebenen von Entscheidungsprozessen.",
+      "trap": "Gerade unbewusste Prozesse werden hervorgehoben.",
+      "tags": [
+        "Eisbergmodell",
+        "Gruppen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Philosophin wird im Zusammenhang mit epistemischer Ungerechtigkeit genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Judith Butler",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Miranda Fricker",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Martha Nussbaum",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Carol Gilligan",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Hannah Arendt",
+          "correct": false
+        }
+      ],
+      "explanation": "Miranda Fricker entwickelte das Konzept epistemischer Ungerechtigkeit.",
+      "trap": "Die Namen zentraler Ethiktheoretikerinnen können verwechselt werden.",
+      "tags": [
+        "Fricker",
+        "EpistemischeUngerechtigkeit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt testimonial injustice?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mangel an biologischem Wissen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Geringere Glaubwürdigkeit aufgrund von Vorurteilen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fehlende medizinische Infrastruktur",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Juristische Diskriminierung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Technische Kommunikationsprobleme",
+          "correct": false
+        }
+      ],
+      "explanation": "Testimonial injustice bedeutet, dass Aussagen weniger glaubwürdig erscheinen aufgrund von Vorurteilen.",
+      "trap": "Das Problem betrifft Wissens- und Glaubwürdigkeitsstrukturen.",
+      "tags": [
+        "TestimonialInjustice",
+        "Fricker"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu testimonial injustice:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vorurteile beeinflussen Glaubwürdigkeit",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Akzente können eine Rolle spielen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stereotype können Aussagen entwerten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Es handelt sich ausschliesslich um juristische Ungerechtigkeit",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt explizit Sprache und Stereotype als Einflussfaktoren.",
+      "trap": "Epistemische Ungerechtigkeit ist breiter als juristische Fragen.",
+      "tags": [
+        "TestimonialInjustice",
+        "Stereotype"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt hermeneutical injustice am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fehlende technische Geräte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mangelnde gesellschaftliche Begriffe oder Verständnismöglichkeiten für Erfahrungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich absichtliche Diskriminierung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fehlerhafte Statistik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Probleme medizinischer Infrastruktur",
+          "correct": false
+        }
+      ],
+      "explanation": "Hermeneutical injustice beschreibt fehlende kollektive Verständnismöglichkeiten.",
+      "trap": "Die Problematik betrifft Sprache, Verständnis und gesellschaftliche Ressourcen.",
+      "tags": [
+        "HermeneuticalInjustice",
+        "Fricker"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Beispiel wird in der Vorlesung im Zusammenhang mit hermeneutical injustice erwähnt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Appendizitis",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Postpartale Depression",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Lungenfibrose",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Herzinfarkt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "COVID-19",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nutzt postpartale Depression als Beispiel fehlender gesellschaftlicher Verständniskategorien.",
+      "trap": "Bestimmte Erfahrungen konnten historisch schwer benannt werden.",
+      "tags": [
+        "PostpartaleDepression",
+        "HermeneuticalInjustice"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur dialogischen Entscheidungsfindung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dialog wird betont",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Gruppenprozesse spielen eine Rolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Werte sollen explizit gemacht werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Hierarchie allein genügt für gute Entscheidungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont dialogische Prozesse und Reflexion.",
+      "trap": "Gute Entscheidungen entstehen nicht allein hierarchisch.",
+      "tags": [
+        "Dialog",
+        "Entscheidungsfindung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage beschreibt epistemische Ungerechtigkeit am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ungleichheit bei finanziellen Ressourcen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ungerechtigkeit im Umgang mit Wissen, Glaubwürdigkeit und Verständnis",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Fehlerhafte technische Diagnostik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich politische Unterdrückung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mangelnde Datenqualität",
+          "correct": false
+        }
+      ],
+      "explanation": "Epistemische Ungerechtigkeit betrifft Wissen und Glaubwürdigkeit.",
+      "trap": "Das Konzept ist breiter als reine Diskriminierung.",
+      "tags": [
+        "EpistemischeUngerechtigkeit",
+        "Wissen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum können unconscious biases ethisch problematisch sein?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie machen Entscheidungen immer schneller",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beeinflussen Wahrnehmung und Bewertung unbewusst",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verhindern jede Kommunikation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie eliminieren Emotionen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie machen Menschen objektiver",
+          "correct": false
+        }
+      ],
+      "explanation": "Bias beeinflusst Entscheidungen oft ohne bewusste Kontrolle.",
+      "trap": "Gerade die Unbewusstheit macht Bias ethisch relevant.",
+      "tags": [
+        "Bias",
+        "Ethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage beschreibt ethische Entscheidungsfindung gemäss Vorlesung am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie ist rein rational und emotionsfrei",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie ist ein reflektierter Prozess mit Wahrnehmung, Bewertung und Handeln",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie besteht nur aus Regeln",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie folgt ausschliesslich Hierarchien",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist vollständig objektiv",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt ethische Entscheidungsfindung als mehrschichtigen Reflexionsprozess.",
+      "trap": "Emotionen, Werte und Wahrnehmung spielen eine Rolle.",
+      "tags": [
+        "Entscheidungsfindung",
+        "Reflexion"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

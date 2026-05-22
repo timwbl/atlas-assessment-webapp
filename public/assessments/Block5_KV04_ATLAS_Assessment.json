@@ -1,0 +1,1001 @@
+{
+  "id": "assessment_block5_kv04_ethikinstitutionen_v1",
+  "lectureCode": "KV04",
+  "title": "Ethikinstitutionen in der Schweiz",
+  "block": "Block 5",
+  "sourceSummary": "KV04 behandelt klinische Ethik, Forschungsethik, kantonale Ethikkommissionen (KEK), die Nationale Ethikkommission (NEK) sowie die Zentrale Ethikkommission der SAMW.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Unterschiedliche Aufgaben klinischer Ethikstrukturen erklären können"
+    },
+    {
+      "id": "lo2",
+      "text": "Aufgaben von KEK, NEK und ZEK beschreiben können"
+    },
+    {
+      "id": "lo3",
+      "text": "Die eigene zukünftige Berufsrolle im Kontext ethischer Institutionen reflektieren können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Hauptfrage stellt die klinische Ethik gemäss Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wie maximiert man Gewinne?",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Was ist gute Medizin bzw. gute Pflege?",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wie reduziert man Personalkosten?",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Welche Leitlinie ist die älteste?",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wie erhöht man Forschungsgelder?",
+          "correct": false
+        }
+      ],
+      "explanation": "Die klinische Ethik stellt die Frage nach guter Medizin und guter Pflege.",
+      "trap": "Klinische Ethik wird leicht mit Management oder Administration verwechselt.",
+      "tags": [
+        "KlinischeEthik",
+        "GuteMedizin"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Wen unterstützt die klinische Ethik primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Patientinnen und Patienten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur die Spitaldirektion",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Health Care Professionals bei Wertekonflikten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Nur Juristinnen und Juristen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Forschende",
+          "correct": false
+        }
+      ],
+      "explanation": "Die klinische Ethik unterstützt Health Care Professionals bei Wertekonflikten.",
+      "trap": "Die klinische Ethik ersetzt nicht die behandelnden Teams.",
+      "tags": [
+        "KlinischeEthik",
+        "Wertekonflikte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage beschreibt klinische Ethik am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beschwerdedisziplin",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wohlfühloase",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Unterstützung bei ethischen Konflikten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Automatische Konsensmaschine",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Juristische Kontrollinstanz",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung grenzt klinische Ethik explizit von Beschwerdedisziplinen und Wohlfühloasen ab.",
+      "trap": "Die klinische Ethik ist mehr als reine Konsenssuche.",
+      "tags": [
+        "KlinischeEthik",
+        "Abgrenzung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage trifft auf klinische Ethik NICHT zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie übernimmt Prozessverantwortung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie analysiert Wertekonflikte",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie segnet Entscheidungen endgültig ab",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie unterstützt Behandlungsteams",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie fördert Transparenz",
+          "correct": false
+        }
+      ],
+      "explanation": "Die klinische Ethik übernimmt keine endgültige Entscheidungsautorität.",
+      "trap": "Ethikberatung wird oft mit Entscheidungsinstanz verwechselt.",
+      "tags": [
+        "KlinischeEthik",
+        "Prozessverantwortung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo2",
+      "stem": "Wofür steht die Abkürzung KEK?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klinische Ethik Konferenz",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kantonale Ethikkommission",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kommission für ethische Kliniken",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Konsens-Evaluations-Kommission",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Klinische Evaluations-Kommission",
+          "correct": false
+        }
+      ],
+      "explanation": "KEK steht für kantonale Ethikkommission.",
+      "trap": "KEK wird leicht mit klinischer Ethik verwechselt.",
+      "tags": [
+        "KEK",
+        "Forschungsethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aufgabe gehört primär zur KEK?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Unterstützung bei klinischen Wertekonflikten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Entscheidungen über Forschungsgesuche",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beratung von Behandlungsteams",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ethikunterricht im Studium",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Psychologische Betreuung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die KEK entscheidet über die Durchführung von Forschungsgesuchen.",
+      "trap": "Klinische Ethik und Forschungsethik werden leicht verwechselt.",
+      "tags": [
+        "KEK",
+        "Forschungsgesuche"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches historische Dokument wird in der Forschungsethik erwähnt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Magna Carta",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nuremberg Code",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "UNO-Charta",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Deklaration von Genf",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "EMRK",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Nuremberg Code von 1947 wird explizit genannt.",
+      "trap": "Historische Ethikdokumente können verwechselt werden.",
+      "tags": [
+        "NurembergCode",
+        "Forschungsethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage beschreibt BASEC am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nationale Ethikkommission des Bundes",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Portal für Forschungsgesuche bei Ethikkommissionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Juristische Datenbank für Klinikfehler",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ökonomisches Bewertungssystem",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Register für klinische Leitlinien",
+          "correct": false
+        }
+      ],
+      "explanation": "BASEC dient als Portal zur Einreichung von Forschungsgesuchen.",
+      "trap": "BASEC ist keine eigenständige Ethikkommission.",
+      "tags": [
+        "BASEC",
+        "KEK"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Voraussetzung für Forschung am Menschen wird in der Vorlesung genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximaler wirtschaftlicher Gewinn",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Günstiges Risiko-Nutzen-Verhältnis",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verzicht auf informierte Einwilligung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Absolute Gleichheit aller Studien",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Keine unabhängige Begutachtung",
+          "correct": false
+        }
+      ],
+      "explanation": "Ein günstiges Risiko-Nutzen-Verhältnis gehört zu den ethischen Anforderungen.",
+      "trap": "Ökonomischer Nutzen ersetzt keine ethische Bewertung.",
+      "tags": [
+        "Forschungsethik",
+        "RisikoNutzen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur informierten Einwilligung trifft am ehesten zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie ist in Forschung unnötig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie gehört zu den ethischen Kernanforderungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ersetzt wissenschaftliche Methodik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie ist nur bei Medikamentenstudien relevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie wird ausschliesslich juristisch begründet",
+          "correct": false
+        }
+      ],
+      "explanation": "Die informierte Einwilligung ist ein zentrales ethisches Prinzip der Forschung.",
+      "trap": "Informierte Einwilligung wird nicht nur rechtlich begründet.",
+      "tags": [
+        "InformedConsent",
+        "Forschungsethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Institution beschäftigt sich besonders mit gesellschaftlichen ethischen Fragen auf nationaler Ebene?",
+      "options": [
+        {
+          "id": "A",
+          "text": "KEK",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "NEK",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "BASEC",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Klinische Ethikberatung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ZEK allein",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Nationale Ethikkommission behandelt gesellschaftliche ethische Fragestellungen.",
+      "trap": "NEK und KEK haben unterschiedliche Aufgabenbereiche.",
+      "tags": [
+        "NEK",
+        "Gesellschaft"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Wofür steht die Abkürzung ZEK im Kontext der Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zentrale Ethikkommission der SAMW",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Zürcher Ethikkommission",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Zentrale Expertenkonferenz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zentrale Ethik-Kontrolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zentrum für Ethik und Kommunikation",
+          "correct": false
+        }
+      ],
+      "explanation": "ZEK steht für die Zentrale Ethikkommission der SAMW.",
+      "trap": "Die ZEK darf nicht mit kantonalen Ethikkommissionen verwechselt werden.",
+      "tags": [
+        "ZEK",
+        "SAMW"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Haltung wird in der klinischen Ethik besonders betont?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hierarchische Neutralität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Allparteilichkeit und Perspektivenwechsel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Konsenssuche",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Absolute Objektivität ohne Dialog",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Konsequente Entscheidungsdelegation",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Allparteilichkeit und Perspektivenwechsel ausdrücklich.",
+      "trap": "Klinische Ethik ist dialogisch und nicht rein hierarchisch.",
+      "tags": [
+        "Perspektivenwechsel",
+        "Allparteilichkeit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Methode wird für ethische Fallbesprechungen besonders hervorgehoben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Debatte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Diskussion mit Siegerprinzip",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Dialog und Konversationsmethode",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Abstimmung durch Mehrheit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Juristische Verhandlung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont Dialog und Konversationsmethode.",
+      "trap": "Ethikgespräche sollen nicht als reine Debatte geführt werden.",
+      "tags": [
+        "Dialog",
+        "Fallbesprechung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage beschreibt die Rolle der klinischen Ethik im Behandlungsteam am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie übernimmt die Entscheidung vollständig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie ersetzt ärztliche Verantwortung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie unterstützt systematisch bei ethischen Dilemmata und Konflikten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie dient primär als Beschwerdestelle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie kontrolliert juristische Konformität",
+          "correct": false
+        }
+      ],
+      "explanation": "Klinische Ethik unterstützt, übernimmt aber nicht die finale Entscheidung.",
+      "trap": "Die Unterstützung wird leicht mit Entscheidungsautorität verwechselt.",
+      "tags": [
+        "KlinischeEthik",
+        "Unterstützung",
+        "Berufsrolle"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zur klinischen Ethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie unterstützt bei Wertekonflikten",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie ist mehr als Konsenssuche",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie ist eine Beschwerdedisziplin",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie übernimmt keine endgültigen Entscheidungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Die klinische Ethik analysiert und unterstützt, entscheidet aber nicht selbst.",
+      "trap": "Klinische Ethik wird oft als reine Konfliktlösungsstelle missverstanden.",
+      "tags": [
+        "KlinischeEthik",
+        "Abgrenzung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu KEK und Forschungsethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "KEK steht für kantonale Ethikkommission",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "KEK entscheidet über Forschungsgesuche",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "BASEC dient der Einreichung von Forschungsgesuchen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "KEK führt primär klinische Fallbesprechungen durch",
+          "correct": false
+        }
+      ],
+      "explanation": "KEK und BASEC gehören zur Forschungsethik.",
+      "trap": "Klinische Ethikberatung ist nicht die Hauptaufgabe der KEK.",
+      "tags": [
+        "KEK",
+        "BASEC",
+        "Forschungsethik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu ethischen Anforderungen an Forschung am Menschen:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein günstiges Risiko-Nutzen-Verhältnis ist wichtig",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Informierte Einwilligung ist zentral",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wissenschaftliche Methodik spielt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Unabhängige Begutachtung gehört zu den Anforderungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Risiko-Nutzen-Verhältnis, Methodik und unabhängige Begutachtung.",
+      "trap": "Methodische Qualität ist ethisch relevant.",
+      "tags": [
+        "Forschungsethik",
+        "InformedConsent"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo1",
+      "stem": "Zur Haltung klinischer Ethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Perspektivenwechsel ist wichtig",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Allparteilichkeit wird betont",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Dialog ist zentral",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ethikarbeit soll primär als Debatte geführt werden",
+          "correct": false
+        }
+      ],
+      "explanation": "Dialogische Methoden werden gegenüber Debatten bevorzugt.",
+      "trap": "Ethik wird nicht als Wettkampf verstanden.",
+      "tags": [
+        "Dialog",
+        "Perspektivenwechsel"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Zu NEK und ZEK:",
+      "options": [
+        {
+          "id": "A",
+          "text": "NEK beschäftigt sich mit nationalen ethischen Fragestellungen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "ZEK gehört zur SAMW",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "KEK und NEK haben identische Aufgaben",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die ZEK ist eine zentrale Ethikkommission",
+          "correct": true
+        }
+      ],
+      "explanation": "NEK, KEK und ZEK haben unterschiedliche Rollen.",
+      "trap": "Die Institutionen werden leicht verwechselt.",
+      "tags": [
+        "NEK",
+        "ZEK",
+        "SAMW"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur Deontologie:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Immanuel Kant ist ein zentraler Vertreter",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Konsequenzen stehen im Zentrum",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Regeln und Pflichten sind zentral",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine Lüge bleibt auch bei guten Konsequenzen problematisch",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Deontologie beurteilt Handlungen unabhängig von Konsequenzen.",
+      "trap": "Konsequenzen gehören primär zum Utilitarismus.",
+      "tags": [
+        "Deontologie",
+        "Kant"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Zum Utilitarismus:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Maximum-Happiness-Principle ist zentral",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Jeder Mensch zählt grundsätzlich gleich viel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Der Fokus liegt auf Konsequenzen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Pflichten sind wichtiger als Folgen",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Utilitarismus fokussiert Glück und Konsequenzen für alle.",
+      "trap": "Pflichten stehen nicht im Zentrum.",
+      "tags": [
+        "Utilitarismus",
+        "Konsequenzen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur Tugendethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aristoteles ist ein wichtiger Vertreter",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Tugenden sollen trainiert werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Care Ethics wird in der Vorlesung als moderne Form der Tugendethik erwähnt",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Selbstbestimmung war im antiken Kontext vollständig verwirklicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt explizit die eingeschränkte historische Selbstbestimmung.",
+      "trap": "Der historische Kontext darf nicht idealisiert werden.",
+      "tags": [
+        "Tugendethik",
+        "Aristoteles"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur Prinzipienethik:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Autonomie gehört zu den vier Prinzipien",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nicht-Schaden gehört zu den vier Prinzipien",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Prinzipienethik lehnt Abwägungen ab",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Prinzipien dienen der Versprachlichung von Wertekonflikten",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Prinzipienethik basiert auf Abwägung und Spezifikation.",
+      "trap": "Sie funktioniert nicht als starres Regelwerk.",
+      "tags": [
+        "Prinzipienethik",
+        "Beauchamp_Childress"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu Care Ethics und Rawls:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Care Ethics fokussiert relationale Autonomie",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Care Ethics berücksichtigt Machtstrukturen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rawls entwickelt den Schleier des Nichtwissens",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Rawls lehnt jede Form gesellschaftlicher Ungleichheit ab",
+          "correct": false
+        }
+      ],
+      "explanation": "Rawls akzeptiert gewisse Ungleichheiten unter Bedingungen.",
+      "trap": "Rawls wird oft fälschlich als Vertreter absoluter Gleichheit interpretiert.",
+      "tags": [
+        "CareEthics",
+        "Rawls"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}
