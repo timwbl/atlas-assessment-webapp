@@ -1,0 +1,906 @@
+{
+  "id": "assessment_block6_kv07_lebensmittelsicherheit_v1",
+  "lectureCode": "KV07",
+  "title": "Lebensmittelsicherheit",
+  "block": "Block 6",
+  "sourceSummary": "Lebensmittelgesetz, amtliche Lebensmittelkontrolle, Hygienekonzepte, Selbstkontrolle, Trinkwasserqualität und lebensmittelbedingte Krankheitsausbrüche.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Organisation und Ziele der Lebensmittelkontrolle verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Grundlagen des Lebensmittelgesetzes kennen"
+    },
+    {
+      "id": "lo3",
+      "text": "Hygiene, Zusatzstoffe und Selbstkontrolle verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Trinkwasseranforderungen und Kontrollen kennen"
+    },
+    {
+      "id": "lo5",
+      "text": "Lebensmittelbedingte Krankheitsausbrüche und Vollzug verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was ist die Hauptaufgabe des kantonalen Laboratoriums?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verkehrskontrolle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lebensmittelkontrolle",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Spitalplanung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Pharmakologie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Impfstoffentwicklung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Hauptaufgabe ist die Lebensmittelkontrolle.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Tätigkeiten gehören zur amtlichen Lebensmittelkontrolle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inspektionen und Laboranalysen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ausschliesslich Werbung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nur Strafverfahren",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur klinische Untersuchungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Tierhaltung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Lebensmittelkontrolle basiert auf Inspektionen und Analysen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Institutionen gehören laut Vorlesung zum Vollzug der Lebensmittelkontrolle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kantonschemiker",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Lebensmittelinspektoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "BLV",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Kantonstierarzt",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Institutionen sind beteiligt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches Ziel verfolgt das Lebensmittelgesetz (LMG)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Förderung von Werbung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Schutz der Gesundheit vor unsicheren Lebensmitteln",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Erhöhung der Lebensmittelpreise",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verhinderung von Importen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Reduktion der Landwirtschaft",
+          "correct": false
+        }
+      ],
+      "explanation": "Das LMG schützt die Gesundheit der Konsumenten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu Lebensmitteln im Sinne des LMG trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur verarbeitete Produkte gelten als Lebensmittel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Alle Stoffe zur menschlichen Aufnahme gelten als Lebensmittel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wasser zählt nicht",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kosmetika gelten immer als Lebensmittel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur tierische Produkte zählen",
+          "correct": false
+        }
+      ],
+      "explanation": "Lebensmittel umfassen alle Stoffe zur menschlichen Aufnahme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Bereiche regelt das LMG?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Herstellung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Lagerung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Transport",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Kennzeichnung",
+          "correct": true
+        }
+      ],
+      "explanation": "Das LMG deckt die gesamte Lebensmittelkette ab.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Wann gilt ein Lebensmittel als nicht sicher?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wenn es teuer ist",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wenn es gesundheitsschädlich oder ungeeignet ist",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wenn es importiert wurde",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wenn es konserviert ist",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wenn es Zusatzstoffe enthält",
+          "correct": false
+        }
+      ],
+      "explanation": "Unsichere Lebensmittel sind gesundheitsschädlich oder ungeeignet.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum Täuschungsschutz stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Falsche Herkunftsangaben sind erlaubt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Angaben müssen den Tatsachen entsprechen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Werbung ist irrelevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verpackungen dürfen täuschen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Inhaltsstoffe müssen stimmen",
+          "correct": false
+        }
+      ],
+      "explanation": "Täuschungsschutz verlangt korrekte Angaben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Beispiele nennt die Vorlesung für Täuschungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "„Schweizer“ Poulets aus Brasilien",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Wasser in Milch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "„Frisches“ Brot aus Tiefkühlung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Honig gegen Halsweh",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Beispiele werden explizit genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur Hygiene trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kühlketten müssen nicht eingehalten werden",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lebensmittel dürfen nur mit sauberen Geräten in Kontakt kommen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Schädlinge sind unproblematisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Händewaschen ist irrelevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verdorbene Lebensmittel dürfen verkauft werden",
+          "correct": false
+        }
+      ],
+      "explanation": "Saubere Geräte und Hygiene sind zentral.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt das HACCP-Konzept?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Radiologische Kontrolle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Risikoanalyse kritischer Kontrollpunkte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur chemische Analytik",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Dokumentation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Werbung für Lebensmittel",
+          "correct": false
+        }
+      ],
+      "explanation": "HACCP steht für Hazard Analysis Critical Control Point.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Elemente gehören zur Selbstkontrolle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gefahrenanalyse",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Arbeitsanweisungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Aufzeichnungen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Rückverfolgbarkeit",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Aspekte gehören zur Selbstkontrolle.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Zusatzstoffen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zusatzstoffe sind grundsätzlich verboten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zusatzstoffe dienen technologischen Wirkungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zusatzstoffe müssen nie deklariert werden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zusatzstoffe sind immer toxisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zusatzstoffe kommen nur in Getränken vor",
+          "correct": false
+        }
+      ],
+      "explanation": "Zusatzstoffe verbessern Haltbarkeit, Konsistenz oder Geschmack.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Fremdstoffen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fremdstoffe gehören natürlicherweise in Lebensmittel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Pestizide und Dioxine gelten als Fremdstoffe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "THC ist ein Fremdstoff",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Acrylamid ist ein Zusatzstoff",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Fremdstoffe sind immer ungefährlich",
+          "correct": false
+        }
+      ],
+      "explanation": "Pestizide oder Dioxine gelten als Fremdstoffe.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Beispiele nennt die Vorlesung für Gesundheitsgefährdungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Listerien",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Pestizide",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Schwermetalle",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Allergene",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle Beispiele werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Trinkwasser stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Trinkwasser dient nur zum Trinken",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Trinkwasser wird auch zur Lebensmittelzubereitung verwendet",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Trinkwasser muss steril sein",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Flaschenwasser gilt als Trinkwasser",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Trinkwasser darf Geruch aufweisen",
+          "correct": false
+        }
+      ],
+      "explanation": "Trinkwasser dient auch zum Kochen und Reinigen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Anforderung gilt für Trinkwasser?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Escherichia coli müssen nachweisbar sein",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Escherichia coli dürfen in 100 ml nicht nachweisbar sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nitrat muss >40 mg/l sein",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Geruch ist irrelevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Farbe ist unwichtig",
+          "correct": false
+        }
+      ],
+      "explanation": "E. coli darf nicht nachweisbar sein.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welcher Höchstwert wird für Nitrat im Trinkwasser genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4 mg/l",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "10 mg/l",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "40 mg/l",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "100 mg/l",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "400 mg/l",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Toleranzwert beträgt 40 mg/l.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Methode dient zur Trinkwasserdesinfektion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UV-Anlagen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Röntgenstrahlung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Stickstoffzugabe",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Magnetfelder",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Pasteurisierung",
+          "correct": false
+        }
+      ],
+      "explanation": "UV-Anlagen werden zur Desinfektion eingesetzt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur Trinkwasserqualität in der Schweiz trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Qualität ist generell schlecht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Trinkwasser besitzt allgemein gute Qualität",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Trinkwasser wird kaum kontrolliert",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur chemische Parameter werden geprüft",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mikrobiologie spielt keine Rolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die gute Trinkwasserqualität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Wann spricht man von einem lebensmittelbedingten Krankheitsausbruch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bereits bei einem Einzelfall",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bei mindestens zwei zusammenhängenden Fällen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur bei Todesfällen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur bei Salmonellen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur bei Kindern",
+          "correct": false
+        }
+      ],
+      "explanation": "Mindestens zwei zusammenhängende Fälle definieren einen Ausbruch.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Wer informiert bei einem lebensmittelbedingten Ausbruch die Kantonsärztin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Lebensmittelkontrolleur",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Kantonschemiker",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Das BLV",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der Bundesrat",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Polizei",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Kantonschemiker informiert die Kantonsärztin.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu risikobasierten Kontrollen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Betriebe werden gleich häufig kontrolliert",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kontrollen berücksichtigen Risiken und bisheriges Verhalten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur grosse Betriebe werden kontrolliert",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Selbstkontrolle spielt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Kontrollen erfolgen zufällig",
+          "correct": false
+        }
+      ],
+      "explanation": "Kontrollen erfolgen risikobasiert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Beanstandungsquote wurde 2025 für Inspektionen im KL Bern genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 %",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "14 %",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "30 %",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "67 %",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "90 %",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt 67 % Beanstandungsquote bei Inspektionen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Eigenverantwortung stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Amtliche Kontrolle ersetzt Selbstkontrolle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Betriebe bleiben selbst verantwortlich für sichere Lebensmittel",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Behörden tragen Verantwortung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Selbstkontrolle ist freiwillig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Grossbetriebe müssen kontrollieren",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Prinzip der Eigenverantwortung ist zentral.",
+      "sourceReliability": "high"
+    }
+  ]
+}

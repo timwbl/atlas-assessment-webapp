@@ -1,0 +1,830 @@
+{
+  "id": "assessment_block6_kv04_ionisierende_strahlung_medizin_v1",
+  "lectureCode": "KV04",
+  "title": "Ionisierende Strahlung – Anwendungen in der Medizin",
+  "block": "Block 6",
+  "sourceSummary": "KV04 behandelt Physik ionisierender Strahlung, medizinische Anwendungen, Dosimetrie, Krebsentstehung, Radiobiologie, Strahlendosis, Krebsrisiko und Strahlenschutz.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Erklären können, weshalb ionisierende Strahlung Krebs auslösen, aber auch zur Behandlung von Krebs eingesetzt werden kann"
+    },
+    {
+      "id": "lo2",
+      "text": "Aus physikalischer Sicht erklären können, was ionisierende Strahlung ist"
+    },
+    {
+      "id": "lo3",
+      "text": "Medizinische Anwendungen ionisierender Strahlung und zentrale Dosisgrössen unterscheiden können"
+    },
+    {
+      "id": "lo4",
+      "text": "Zusammenhang zwischen Strahlendosis, DNA-Schädigung und Krebsrisiko erklären können"
+    },
+    {
+      "id": "lo5",
+      "text": "Grundprinzipien des Strahlenschutzes für Patient:innen und medizinisches Personal anwenden können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo2",
+      "stem": "Was macht Strahlung aus physikalischer Sicht ionisierend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie ist sichtbar",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie besitzt genügend Energie, um Elektronen aus Atomen zu lösen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie hat immer eine lange Wellenlänge",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie besteht ausschliesslich aus Radiowellen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist nur bei hoher Temperatur gefährlich",
+          "correct": false
+        }
+      ],
+      "explanation": "Ionisierende Strahlung besitzt genügend Energie, um Atome oder Moleküle zu ionisieren.",
+      "trap": "Nicht jede elektromagnetische Strahlung ist ionisierend.",
+      "tags": [
+        "Ionisation",
+        "Physik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu medizinischen Röntgenstrahlen trifft am ehesten zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besitzen weniger Energie als sichtbares Licht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie liegen im nicht-ionisierenden Bereich",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie haben deutlich höhere Photonenenergie als sichtbares Licht",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie entstehen nur in der Nuklearmedizin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie sind identisch mit Radiowellen",
+          "correct": false
+        }
+      ],
+      "explanation": "Medizinische Röntgenstrahlen besitzen viel höhere Energie pro Photon als sichtbares Licht.",
+      "trap": "Die Energie pro Photon ist entscheidend für Ionisation.",
+      "tags": [
+        "Röntgen",
+        "Photonenenergie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Zur Physik ionisierender Strahlung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Röntgenstrahlung und Gamma-Strahlung sind elektromagnetische Strahlung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Kurze Wellenlängen entsprechen höheren Energien",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Auch hochenergetische Teilchenstrahlung kann ionisierend sein",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mobilfunkstrahlung ist wegen ihrer Frequenz typischerweise ionisierend",
+          "correct": false
+        }
+      ],
+      "explanation": "Kurzwellig-hochenergetische Photonen sowie Teilchen können ionisieren; Mobilfunk liegt im nicht-ionisierenden Bereich.",
+      "trap": "Nicht jede Strahlung im Alltag ist ionisierend.",
+      "tags": [
+        "ElektromagnetischesSpektrum",
+        "Teilchenstrahlung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Formel beschreibt den Zusammenhang zwischen Photonenenergie und Frequenz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "E = mgh",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "E = h · f",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "E = 1/2 mv²",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "E = R · I",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "E = p · V",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Photonenenergie ist proportional zur Frequenz: E = h · f.",
+      "trap": "Höhere Frequenz bedeutet höhere Photonenenergie.",
+      "tags": [
+        "Photon",
+        "Planck"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Bildgebung verwendet keine ionisierende Strahlung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CT",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Planare Röntgenbildgebung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mammographie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "MRT",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Digitale Subtraktionsangiographie",
+          "correct": false
+        }
+      ],
+      "explanation": "Die MRT verwendet keine ionisierende Strahlung und bietet guten Weichteilkontrast.",
+      "trap": "CT und Röntgenverfahren verwenden ionisierende Strahlung.",
+      "tags": [
+        "MRT",
+        "Radiologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Zu medizinischen Anwendungen ionisierender Strahlung:",
+      "options": [
+        {
+          "id": "A",
+          "text": "CT verwendet Röntgenstrahlung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "PET verwendet radioaktive Tracer",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "SPECT verwendet radioaktive Tracer",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "MRT verwendet ionisierende Strahlung",
+          "correct": false
+        }
+      ],
+      "explanation": "CT, PET und SPECT gehören zu Verfahren mit ionisierender Strahlung; MRT nicht.",
+      "trap": "Radiologie und Nuklearmedizin unterscheiden sich in der Strahlenquelle.",
+      "tags": [
+        "CT",
+        "PET",
+        "SPECT"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zur CT trifft laut Vorlesung zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CT hat besseren Weichteilkontrast als MRT",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "CT hat sehr guten Knochenkontrast",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "CT verwendet keine ionisierende Strahlung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "CT-Perfusion hat eine sehr niedrige Strahlendosis",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "CT ist identisch mit SPECT",
+          "correct": false
+        }
+      ],
+      "explanation": "CT-Bilder haben einen sehr guten Knochenkontrast, aber schlechteren Weichteilkontrast als MRT.",
+      "trap": "CT ist besonders stark bei Knochenkontrast.",
+      "tags": [
+        "CT",
+        "Knochenkontrast"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Was beschreibt die absorbierte Dosis D?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Biologisch gewichtete Organdosis",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mittlere absorbierte Energie pro Masseneinheit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wahrscheinlichkeit für Krebs",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Anzahl radioaktiver Zerfälle pro Sekunde",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Abschirmungsstärke von Blei",
+          "correct": false
+        }
+      ],
+      "explanation": "Die absorbierte Dosis ist die Energie pro Masse mit Einheit Gray: 1 Gy = 1 J/kg.",
+      "trap": "Gray ist eine physikalische Dosisgrösse.",
+      "tags": [
+        "AbsorbierteDosis",
+        "Gray"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur Dosimetrie:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die absorbierte Dosis wird in Gray angegeben",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Äquivalentdosis berücksichtigt Strahlungsart über W_R",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die effektive Dosis berücksichtigt auch Gewebeempfindlichkeit über W_T",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Gray und Sievert beschreiben exakt dieselbe biologische Aussage",
+          "correct": false
+        }
+      ],
+      "explanation": "Gray beschreibt absorbierte Energie; Sievert berücksichtigt biologische Wirkung und Gewebegewichtung.",
+      "trap": "Einheiten können gleich dimensioniert sein, aber unterschiedliche Bedeutungen haben.",
+      "tags": [
+        "Dosimetrie",
+        "Sievert",
+        "Gray"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Einheit gehört zur effektiven Dosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Becquerel",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gray",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sievert",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Newton",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Tesla",
+          "correct": false
+        }
+      ],
+      "explanation": "Die effektive Dosis wird in Sievert angegeben.",
+      "trap": "Sie beschreibt ein gewichtetes stochastisches Gesundheitsrisiko.",
+      "tags": [
+        "EffektiveDosis",
+        "Sievert"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Warum besteht ein Zusammenhang zwischen ionisierender Strahlung und Krebs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Krebs ist ausschliesslich infektiös",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ionisierende Strahlung kann das Genom schädigen, und Krebs ist eine genetische Erkrankung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ionisierende Strahlung erzeugt nur Wärme",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Krebs entsteht nur durch Alpha-Strahlung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Strahlung schützt DNA grundsätzlich",
+          "correct": false
+        }
+      ],
+      "explanation": "Krebs beruht auf genetischen Veränderungen; ionisierende Strahlung kann DNA und Genom schädigen.",
+      "trap": "Strahlung ist nicht der einzige Krebsfaktor, aber ein relevanter.",
+      "tags": [
+        "Krebs",
+        "DNA",
+        "Radiobiologie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche DNA-Schäden werden in der Vorlesung genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Einzelstrangbrüche",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Doppelstrangbrüche",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Basenschäden oder Basenverlust",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Myelinabbau als primärer DNA-Schaden",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt SSBs, DSBs und Schäden an oder Verlust von Basen.",
+      "trap": "Nicht jede Zellschädigung ist ein DNA-Schaden.",
+      "tags": [
+        "DNA-Schaden",
+        "DSB"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu direkten und indirekten Strahleneffekten ist korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur direkte Effekte existieren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Indirekte Effekte können über aggressive Hydrolyseprodukte entstehen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Wasser spielt keine Rolle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DNA wird nie direkt getroffen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Indirekte Effekte betreffen nur Proteine",
+          "correct": false
+        }
+      ],
+      "explanation": "Ionisierende Strahlung kann Moleküle direkt stören oder über reaktive Wasserprodukte indirekt DNA angreifen.",
+      "trap": "Wasser-Radiolyse ist radiobiologisch wichtig.",
+      "tags": [
+        "DirekterEffekt",
+        "IndirekterEffekt",
+        "Radiolyse"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum kann ionisierende Strahlung paradoxerweise auch gegen Krebs eingesetzt werden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie stärkt Tumorzellen selektiv",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gezielte hohe Dosen können Tumorzellen abtöten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verhindert jede DNA-Reparatur in gesunden Zellen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie wirkt nur auf Bakterien",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist nur diagnostisch nutzbar",
+          "correct": false
+        }
+      ],
+      "explanation": "In der Strahlentherapie werden lokalisierte Dosen gezielt auf Tumore angewendet, um Tumorzellen abzutöten.",
+      "trap": "Das Ziel ist Tumorkontrolle bei Schonung gesunden Gewebes.",
+      "tags": [
+        "Strahlentherapie",
+        "Tumorzellen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu Strahlung und Krebs:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Strahlung kann Krebs verursachen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Strahlung kann therapeutisch zur Krebsbehandlung genutzt werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "DNA-Schäden sind ein zentraler Mechanismus",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Strahlung ist der einzige Krebsfaktor",
+          "correct": false
+        }
+      ],
+      "explanation": "Strahlung ist karzinogen, kann aber therapeutisch genutzt werden; sie ist nicht der einzige Krebsfaktor.",
+      "trap": "Die Dosis, Lokalisation und biologische Situation sind entscheidend.",
+      "tags": [
+        "Krebsrisiko",
+        "Therapie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Annahme zum Krebsrisiko wird in der Vorlesung genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5% zusätzliches Krebstodesrisiko pro 1000 mSv effektive Dosis",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "50% Risiko pro 1 mSv",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Kein Risiko unter 1000 mSv",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Alpha-Strahlung verursacht Krebs",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Medizinische Exposition verursacht immer Krebs",
+          "correct": false
+        }
+      ],
+      "explanation": "Als weit verbreitete Annahme wird 5% erhöhtes Krebstodesrisiko pro 1000 mSv effektive Dosis genannt.",
+      "trap": "Das ist eine Risikoabschätzung, keine individuelle Vorhersage.",
+      "tags": [
+        "Krebsrisiko",
+        "EffektiveDosis"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche typische effektive Dosis wird für eine CT-Kopf-Perfusion angegeben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.05 mSv",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "0.5 mSv",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "2 mSv",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "22 mSv",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "1000 mSv",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt für CT-Kopf-Perfusion ungefähr 22 mSv.",
+      "trap": "CT-Perfusion ist deutlich dosisintensiver als ein normales CT Kopf.",
+      "tags": [
+        "CTPerfusion",
+        "Dosis"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche typische effektive Dosis wird für Mammographie angegeben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.35–0.5 mSv",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "8 mSv",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "22 mSv",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "50 mSv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mehrere Dutzend Gy",
+          "correct": false
+        }
+      ],
+      "explanation": "Für Mammographie werden typische effektive Dosen von 0.35–0.5 mSv genannt.",
+      "trap": "Nicht alle Röntgenverfahren haben hohe Dosen.",
+      "tags": [
+        "Mammographie",
+        "Dosis"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage beschreibt das Abstandsgesetz im Strahlenschutz korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dosis steigt linear mit Abstand",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bei Verdopplung des Abstands bleibt die Dosis gleich",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Bei Verdopplung des Abstands erhält man nur noch 25% der Dosis",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Abstand spielt nur bei MRT eine Rolle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Dosis ist proportional zu r²",
+          "correct": false
+        }
+      ],
+      "explanation": "Nach dem inversen Quadratgesetz ist die Dosis proportional zu 1/r².",
+      "trap": "Abstand ist eine zentrale Schutzmassnahme.",
+      "tags": [
+        "Strahlenschutz",
+        "Abstandsgesetz"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Kombination beschreibt zentrale Prinzipien des Strahlenschutzes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rechtfertigung, Optimierung, Dosisgrenzwerte",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Maximale Bildqualität um jeden Preis",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Verzicht auf Abschirmung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur medikamentöse Prävention",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich Raum verlassen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Rechtfertigung, Optimierung und Dosisgrenzwerte als zentrale Schutzprinzipien.",
+      "trap": "Strahlenschutz umfasst mehrere Ebenen.",
+      "tags": [
+        "Strahlenschutz",
+        "ALARA"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}

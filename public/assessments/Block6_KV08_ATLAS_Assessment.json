@@ -1,0 +1,906 @@
+{
+  "id": "assessment_block6_kv08_klimawandel_gesundheit_v1",
+  "lectureCode": "KV08",
+  "title": "Klimawandel – Gesundheitsfolgen",
+  "block": "Block 6",
+  "sourceSummary": "Gesundheitsfolgen des Klimawandels, direkte und indirekte Auswirkungen, Vulnerabilität, Hitzewellen, Infektionskrankheiten sowie Mitigation und Adaptation.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Wichtigste Gesundheitsfolgen des Klimawandels verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Direkte Auswirkungen extremer Wetterereignisse kennen"
+    },
+    {
+      "id": "lo3",
+      "text": "Indirekte Auswirkungen auf Umwelt und Krankheiten verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Mitigations- und Adaptionsstrategien beurteilen"
+    },
+    {
+      "id": "lo5",
+      "text": "Rolle von Gesundheitsfachkräften verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage beschreibt Klimawandel und Gesundheit laut Vorlesung am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klimawandel betrifft nur Ökosysteme",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Klimawandel ist eine Public-Health-Krise",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gesundheitsfolgen treten erst in 200 Jahren auf",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Tropenländer sind betroffen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Infektionskrankheiten werden beeinflusst",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung bezeichnet Klimawandel als Public-Health-Krise.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Faktoren bestimmen das Risiko gesundheitlicher Auswirkungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur die Temperatur",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gefahr, Exposition und Vulnerabilität",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur sozioökonomischer Status",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur das Alter",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Luftverschmutzung",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Risiko ergibt sich aus Hazard, Exposure und Vulnerability.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Faktoren beeinflussen die Vulnerabilität einer Bevölkerung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Geografische Lage",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Altersstruktur",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Adaptive capacity",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Blutgruppe",
+          "correct": false
+        }
+      ],
+      "explanation": "Geografie, Altersstruktur und Anpassungsfähigkeit beeinflussen die Vulnerabilität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu sozialen Ungleichheiten trifft laut Vorlesung zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klimawandel reduziert soziale Ungleichheiten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Klimawandel verstärkt soziale Ungleichheiten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur reiche Länder sind betroffen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Armut beeinflusst Risiken nicht",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Treibhausgasemissionen sind weltweit gleich verteilt",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die Verstärkung sozialer Ungleichheiten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Warum gilt Klimawandel als intergenerationelles Problem?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur ältere Menschen sind betroffen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Junge Generationen werden länger mit den Folgen leben",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Klimawandel endet bald",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kinder emittieren mehr CO₂",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur zukünftige Generationen sind betroffen",
+          "correct": false
+        }
+      ],
+      "explanation": "Junge Menschen erleben künftig mehr Klimaextreme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche direkten Auswirkungen extremer Wetterereignisse werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hitzewellen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Überschwemmungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Stürme",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Appendizitis",
+          "correct": false
+        }
+      ],
+      "explanation": "Hitzewellen, Überschwemmungen und Stürme werden genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Bevölkerungsgruppe ist besonders vulnerabel gegenüber Hitzewellen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Junge gesunde Erwachsene",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ältere Menschen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Leistungssportler",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Kinder",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Touristen",
+          "correct": false
+        }
+      ],
+      "explanation": "Ältere Menschen zeigen ein erhöhtes Risiko.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Hitzewelle 2003 in Europa trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie hatte kaum gesundheitliche Auswirkungen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie war ein Wendepunkt für Public-Health-Strategien",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betraf nur Südeuropa",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Mortalität sank",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Kinder waren betroffen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Hitzewelle 2003 beeinflusste die Entwicklung von Hitzeschutzstrategien.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche physiologischen Mechanismen helfen bei Hitzeregulation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vasodilatation",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Schwitzen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Erhöhte Wärmeabgabe",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Bradykardie als Hauptmechanismus",
+          "correct": false
+        }
+      ],
+      "explanation": "Vasodilatation und Schwitzen fördern Wärmeabgabe.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Warum wird Hitze als „silent killer“ bezeichnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie verursacht nur leichte Symptome",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hitzebedingte Schäden entwickeln sich oft unbemerkt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Tiere sind betroffen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Hitze verursacht ausschliesslich Dehydratation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Hitze besitzt keine Mortalität",
+          "correct": false
+        }
+      ],
+      "explanation": "Hitze kann unbemerkt schwere systemische Schäden verursachen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu Hitzefolgen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Effekte sind streng linear",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Effekte steigen nichtlinear mit Temperatur",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur langfristige Effekte existieren",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es gibt keine Verzögerungseffekte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Alle Populationen reagieren identisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont nichtlineare Zusammenhänge.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Gesundheitsfolgen können Überschwemmungen verursachen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Traumata",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Hypothermie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Infektionskrankheiten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Psychische Erkrankungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Folgen werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche indirekte Folge des Klimawandels wird genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Luftqualität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Veränderte Pollensaisons",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Weniger Infektionskrankheiten",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Abnahme von Waldbränden",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Abnahme von Asthma",
+          "correct": false
+        }
+      ],
+      "explanation": "Klimawandel verändert Pollensaisons und Belastungen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu respiratorischer Gesundheit bei Kindern trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Luftverschmutzung verbessert Asthma",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Pollen, Waldbrände und Luftverschmutzung erhöhen respiratorische Risiken",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kinder sind weniger empfindlich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Erwachsene zeigen Effekte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Klimawandel beeinflusst keine Atemwegserkrankungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Kinder sind besonders vulnerabel.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche indirekten Auswirkungen auf Infektionskrankheiten werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Veränderung der Vektorverbreitung",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Veränderung wasserassoziierter Krankheiten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Veränderung lebensmittelassoziierter Krankheiten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Vollständiges Verschwinden infektiöser Erkrankungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Klimawandel verändert verschiedene Infektionsrisiken.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu vektorübertragenen Erkrankungen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klima beeinflusst Vektoren nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Klima beeinflusst Vektorhäufigkeit und Krankheitserreger",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Tropenkrankheiten sind betroffen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vektoren reagieren nur auf Medikamente",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Menschen beeinflussen Vektoren",
+          "correct": false
+        }
+      ],
+      "explanation": "Temperatur und Klima beeinflussen Vektoren stark.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche gesundheitliche Folge kann durch soziale Disruption entstehen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Malnutrition",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Verbesserte Ernährung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Abnahme psychischer Belastung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weniger Migration",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Reduktion von Konflikten",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Malnutrition als Folge.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Luftverschmutzung und Waldbränden stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie beeinflussen die Gesundheit kaum",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie verschlechtern die Luftqualität und erhöhen Gesundheitsrisiken",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie reduzieren Asthma",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie wirken ausschliesslich lokal",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie besitzen keine respiratorischen Effekte",
+          "correct": false
+        }
+      ],
+      "explanation": "Waldbrände verschlechtern die Luftqualität deutlich.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt Adaptation laut IPCC?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reduktion aller Emissionen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Anpassung an aktuelle oder erwartete Klimaeffekte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich technologische Innovation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur individuelle Verhaltensänderung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verzicht auf Gesundheitsversorgung",
+          "correct": false
+        }
+      ],
+      "explanation": "Adaptation beschreibt Anpassung an Klimaeffekte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welches Beispiel für Adaptation wird genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fossile Energie ausbauen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hitzewarnsysteme",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mehr Individualverkehr",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Reduktion von Grünflächen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weniger Gesundheitsversorgung",
+          "correct": false
+        }
+      ],
+      "explanation": "Hitzewarnsysteme sind klassische Adaptationsstrategien.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Mitigation trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mitigation reduziert Treibhausgasemissionen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Mitigation bedeutet ausschliesslich Therapie",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mitigation verhindert jede Klimaänderung sofort",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mitigation betrifft nur Entwicklungsländer",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mitigation hat keine Gesundheitsvorteile",
+          "correct": false
+        }
+      ],
+      "explanation": "Mitigation reduziert Emissionen und besitzt Co-Benefits.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welcher gesundheitliche Co-Benefit von Mitigation wird genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehr Luftverschmutzung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mehr körperliche Aktivität",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mehr Verkehrsunfälle",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Mehr chronische Erkrankungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Weniger nachhaltige Ernährung",
+          "correct": false
+        }
+      ],
+      "explanation": "Aktive Mobilität fördert die Gesundheit.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Rolle von Gesundheitsfachkräften wird betont?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Diagnostik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Schutz der Bevölkerung durch Prävention und nachhaltige Praxis",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Forschung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Verwaltung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Keine Rolle im Klimawandel",
+          "correct": false
+        }
+      ],
+      "explanation": "Gesundheitsfachkräfte besitzen eine wichtige gesellschaftliche Rolle.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aufgabe wird Gesundheitsfachkräften zusätzlich zugeschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Förderung fossiler Energien",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kommunikation effizienter Klimaschutzmassnahmen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Arzneimittelentwicklung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verzicht auf Prävention",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur administrative Tätigkeiten",
+          "correct": false
+        }
+      ],
+      "explanation": "Kommunikation und Prävention sind wichtige Aufgaben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage fasst die Vorlesung am besten zusammen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Klimawandel betrifft nur Umwelt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Klimawandel besitzt direkte, indirekte und soziale Gesundheitsfolgen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gesundheitsfolgen sind gleich verteilt",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur akute Effekte existieren",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anpassung ist unmöglich",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont die breite gesundheitliche Relevanz.",
+      "sourceReliability": "high"
+    }
+  ]
+}

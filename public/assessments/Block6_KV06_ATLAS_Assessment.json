@@ -1,0 +1,906 @@
+{
+  "id": "assessment_block6_kv06_luftverschmutzung_v1",
+  "lectureCode": "KV06",
+  "title": "Luftverschmutzung – Gesundheitsfolgen",
+  "block": "Block 6",
+  "sourceSummary": "Luftschadstoffe, Wirkmechanismen, Atemwegs- und Herz-Kreislauf-Erkrankungen, Schwangerschaft, Krebs, Burden of Disease und Prävention.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Wichtige Luftschadstoffe und Quellen kennen"
+    },
+    {
+      "id": "lo2",
+      "text": "Wirkmechanismen inhalierter Schadstoffe verstehen"
+    },
+    {
+      "id": "lo3",
+      "text": "Gesundheitsfolgen auf Atemwege und Herz-Kreislauf-System kennen"
+    },
+    {
+      "id": "lo4",
+      "text": "Besonders vulnerable Gruppen und chronische Effekte verstehen"
+    },
+    {
+      "id": "lo5",
+      "text": "Burden of Disease und Präventionsmöglichkeiten kennen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu PM2.5 trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Partikel >2.5 mm",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Feine inhalierbare Partikel <2.5 µm",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur biologische Partikel",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Innenraumschadstoffe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Ozonpartikel",
+          "correct": false
+        }
+      ],
+      "explanation": "PM2.5 umfasst besonders kleine Feinstaubpartikel.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Quelle ist typisch für Stickstoffdioxid (NO2)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Photosynthese",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verbrennungsprozesse bei hohen Temperaturen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verdunstung von Wasser",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Radioaktive Zerfälle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "UV-Licht",
+          "correct": false
+        }
+      ],
+      "explanation": "NO2 entsteht besonders bei Verbrennungsprozessen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Schadstoffe gehören laut Vorlesung zu wichtigen Luftschadstoffen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PM10/PM2.5",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ozon",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Schwefeldioxid",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Argon",
+          "correct": false
+        }
+      ],
+      "explanation": "Argon gilt nicht als relevanter Luftschadstoff.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Innenraumschadstoffen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Innenräume enthalten keine Luftschadstoffe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Radon kann in Innenräumen relevant sein",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Formaldehyd kommt nur draussen vor",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Passivrauch ist irrelevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Asbest ist harmlos",
+          "correct": false
+        }
+      ],
+      "explanation": "Radon kann abhängig von Region und Bauweise auftreten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Quelle ist typisch für Ozon (O3) in der Aussenluft?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Direkte Emission aus Motoren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Photochemische Bildung aus NO2 und VOC",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verbrennung von Holz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bodenbakterien",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wasserdampf",
+          "correct": false
+        }
+      ],
+      "explanation": "Ozon entsteht sekundär photochemisch.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Abwehrmechanismen der Atemwege werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Husten",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Mukoziliäre Clearance",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Makrophagen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Erythrozytenproduktion",
+          "correct": false
+        }
+      ],
+      "explanation": "Mukoziliäre Clearance und Makrophagen schützen die Atemwege.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Eindringtiefe von Schadstoffen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Grosse Partikel dringen am tiefsten ein",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ultrafeine Partikel können bis in die Alveolen gelangen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ozon bleibt ausschliesslich in der Nase",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "NO2 wird nicht eingeatmet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "PM2.5 bleibt nur im Rachen",
+          "correct": false
+        }
+      ],
+      "explanation": "Kleine Partikel gelangen tief in den Respirationstrakt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welcher Mechanismus trägt zu Herz-Kreislauf-Effekten bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verbesserte Endothelfunktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Systemische Entzündungsreaktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Abnahme oxidativen Stresses",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Reduzierte Gerinnungsneigung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Vasodilatation ohne Effekte",
+          "correct": false
+        }
+      ],
+      "explanation": "Entzündungsmediatoren fördern systemische Effekte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche pathophysiologischen Effekte inhalierter Schadstoffe werden beschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beeinträchtigung der mukoziliären Clearance",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Bronchospasmus",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Endothelschädigung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Verbesserung der Herzfrequenzvariabilität",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Herzfrequenzvariabilität nimmt eher ab.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Atemwegserkrankung wird durch Luftverschmutzung verschlechtert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Asthma",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Appendizitis",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Migräne",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Hyperthyreose",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Morbus Crohn",
+          "correct": false
+        }
+      ],
+      "explanation": "Asthma kann durch Luftverschmutzung verschlimmert werden.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zum kindlichen Lungenwachstum stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Luftverschmutzung beschleunigt das Lungenwachstum",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "NO2-Exposition ist mit reduziertem Lungenwachstum assoziiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kinder sind weniger empfindlich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Lungenfunktion ist unabhängig von Schadstoffen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Erwachsene zeigen Effekte",
+          "correct": false
+        }
+      ],
+      "explanation": "Kinder reagieren besonders empfindlich auf Luftschadstoffe.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Herz-Kreislauf-Erkrankungen werden mit Luftverschmutzung assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hypertonie",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Herzinfarkt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Hirnschlag",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Atherosklerose",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Erkrankungen werden beschrieben.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Diabetes trifft laut Vorlesung zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PM2.5 senkt das Diabetesrisiko",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Luftverschmutzung ist mit erhöhtem Diabetesrisiko assoziiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Ozon beeinflusst Diabetes",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der Zusammenhang ist ausgeschlossen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Diabetes betrifft nur Raucher",
+          "correct": false
+        }
+      ],
+      "explanation": "Studien zeigen erhöhte Risiken bei höherer PM2.5-Exposition.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Schwangerschaft und Neugeborenen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Luftverschmutzung beeinflusst die Plazenta nicht",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Schadstoffe können Geburtsgewicht und Lungenfunktion beeinflussen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur die Mutter ist betroffen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nanopartikel erreichen nie den Fetus",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Luftschadstoffe beeinflussen das Immunsystem nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Exposition kann Entwicklung und Funktion beeinflussen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Gesundheitsfolgen von Luftverschmutzung werden beschrieben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lungenkrebs",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "COPD",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Herzinsuffizienz",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Leukämie bei Kindern",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Erkrankungen werden erwähnt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Warum sind Kinder besonders vulnerabel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kinder atmen weniger Luft pro Körperoberfläche ein",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kinder besitzen unreife Stoffwechselprozesse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Kinder besitzen keine körperliche Aktivität",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kinder haben stärkere Entgiftungssysteme",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Kinder inhalieren weniger Schadstoffe",
+          "correct": false
+        }
+      ],
+      "explanation": "Unreife Stoffwechselprozesse erhöhen die Vulnerabilität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu chronischer Exposition trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Chronische Exposition besitzt keine Langzeiteffekte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Effekte können mit Dauer und kumulativer Belastung zunehmen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur akute Smogepisoden sind relevant",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Chronische Exposition betrifft nur Raucher",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Mortalität sinkt bei Langzeitexposition",
+          "correct": false
+        }
+      ],
+      "explanation": "Langfristige Exposition verstärkt Gesundheitsfolgen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Personen zeigen stärkere Effekte durch Ozon?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesunde Spitzensportler ohne Exposition",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Patienten mit Asthma oder COPD",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur ältere Menschen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Raucher",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Säuglinge",
+          "correct": false
+        }
+      ],
+      "explanation": "Vorerkrankte reagieren besonders empfindlich.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Todesursache trägt laut Vorlesung wesentlich zur Übersterblichkeit durch Luftverschmutzung bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ischämische Herzkrankheit",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Appendizitis",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Multiple Sklerose",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Leberzirrhose",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Morbus Parkinson",
+          "correct": false
+        }
+      ],
+      "explanation": "Herz-Kreislauf-Erkrankungen dominieren die Krankheitslast.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zum Burden of Disease trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Luftverschmutzung verursacht keine relevanten DALYs",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Luftverschmutzung gehört weltweit zu den wichtigsten Risikofaktoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Rauchen verursacht DALYs",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DALYs messen ausschliesslich Mortalität",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Luftverschmutzung betrifft nur Entwicklungsländer",
+          "correct": false
+        }
+      ],
+      "explanation": "Luftverschmutzung zählt global zu den führenden Risikofaktoren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche persönliche Massnahme reduziert die Exposition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sport während Smogepisoden intensivieren",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sport bei hoher Ozonbelastung früh morgens durchführen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rauchen steigern",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fenster nie öffnen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur indoors bleiben",
+          "correct": false
+        }
+      ],
+      "explanation": "Bei hohen Ozonwerten wird Sport früh morgens empfohlen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Verhältnisprävention stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur individuelles Verhalten ist relevant",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Grenzwerte und Emissionsvorschriften gehören zur Verhältnisprävention",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verhältnisprävention betrifft nur Spitäler",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Luftreinhaltepolitik besitzt keine Wirkung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Prävention ist unmöglich",
+          "correct": false
+        }
+      ],
+      "explanation": "Politische und technische Massnahmen sind zentral.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Beobachtung unterstützt den Nutzen von Luftreinhaltemassnahmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Steigende PM10-Werte verbessern die Lungenfunktion",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sinkende PM10-Werte reduzieren Atemwegssymptome",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Spitalaufenthalte steigen bei besserer Luft",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "COVID-Lockdowns erhöhten PM2.5",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Emissionen blieben seit 1980 unverändert",
+          "correct": false
+        }
+      ],
+      "explanation": "Verbesserte Luftqualität reduziert Gesundheitsfolgen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Wirkung besitzt oxidative Stressreaktion laut Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schutz vor Entzündung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Förderung systemischer Entzündung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verbesserung der Lungenfunktion",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Reduktion der Gerinnung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Abnahme neuronaler Reflexe",
+          "correct": false
+        }
+      ],
+      "explanation": "Oxidativer Stress trägt wesentlich zu Entzündungsreaktionen bei.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zur Exposition trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Menschen sind gleich exponiert",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nähe zu Verkehrsachsen erhöht die Belastung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Meteorologie beeinflusst die Exposition nicht",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Innenräume schützen vollständig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Städte besitzen Luftverschmutzung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Schadstoffkonzentration hängt u.a. vom Abstand zur Strasse ab.",
+      "sourceReliability": "high"
+    }
+  ]
+}

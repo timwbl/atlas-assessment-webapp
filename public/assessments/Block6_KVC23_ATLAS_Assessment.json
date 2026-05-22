@@ -1,0 +1,906 @@
+{
+  "id": "assessment_block6_kvc23_feinstaub_v1",
+  "lectureCode": "KVC23",
+  "title": "Feinstaub",
+  "block": "Block 6",
+  "sourceSummary": "Feinstaubquellen, Aerosole, PM10/PM2.5, Transmission, Immission, Grössenverteilungen, chemische Zusammensetzung und Klimaeffekte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Natürliche und anthropogene Feinstaubquellen kennen"
+    },
+    {
+      "id": "lo2",
+      "text": "Emission, Transmission und Immission verstehen"
+    },
+    {
+      "id": "lo3",
+      "text": "Physikalische Eigenschaften und Grössenverteilungen verstehen"
+    },
+    {
+      "id": "lo4",
+      "text": "Chemische Zusammensetzung von Feinstaub kennen"
+    },
+    {
+      "id": "lo5",
+      "text": "Gesundheits- und Klimaeffekte von Feinstaub verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Feinstaubquellen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feinstaub entsteht nur anthropogen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Feinstaub besitzt natürliche und anthropogene Quellen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Feinstaub stammt nur aus Verkehr",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Feinstaub entsteht nur in Städten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Feinstaub besteht nur aus Russ",
+          "correct": false
+        }
+      ],
+      "explanation": "Feinstaub besitzt natürliche und menschengemachte Quellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Quelle gehört zu den natürlichen Feinstaubquellen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dieselabgase",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bremsabrieb",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Saharastaub",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Kohleheizung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Industrieabgase",
+          "correct": false
+        }
+      ],
+      "explanation": "Saharastaub ist eine natürliche Quelle.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Quellen tragen laut Vorlesung wesentlich zu PM2.5 bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Strassenverkehr",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Holzverbrennung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Landwirtschaft",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Vulkane",
+          "correct": false
+        }
+      ],
+      "explanation": "Verkehr, Holzverbrennung und Landwirtschaft tragen wesentlich bei.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu primären Aerosolpartikeln trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entstehen nur photochemisch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie werden direkt emittiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie bestehen nur aus Wasser",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie entstehen nur aus Ozon",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie sind immer ultrafein",
+          "correct": false
+        }
+      ],
+      "explanation": "Primäre Aerosole werden direkt freigesetzt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu sekundären Aerosolpartikeln stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entstehen ausschliesslich mechanisch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie bilden sich aus Gasphasenreaktionen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie enthalten nie organisches Material",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie bestehen nur aus Russ",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie entstehen nur indoors",
+          "correct": false
+        }
+      ],
+      "explanation": "Sekundäre Partikel entstehen durch chemische Umwandlung gasförmiger Stoffe.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Prozesse bestimmen die Feinstaubbelastung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Emission",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Transmission",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Meteorologie",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Geographie",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle genannten Faktoren beeinflussen die Belastung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt der Begriff Immission?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Freisetzung eines Schadstoffes",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Transport von Schadstoffen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Belastung am Ort der Einwirkung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Chemische Reaktion eines Aerosols",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Radioaktive Aktivität",
+          "correct": false
+        }
+      ],
+      "explanation": "Immission beschreibt die Belastung am Wirkort.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum Ferntransport von Feinstaub trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feinstaub bleibt immer lokal",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Saharastaub kann über grosse Distanzen transportiert werden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ultrafeine Partikel können nie transportiert werden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Transport erfolgt nur in Bodennähe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Feinstaub transportiert keine Schadstoffe",
+          "correct": false
+        }
+      ],
+      "explanation": "Winderosion kann Saharastaub weit transportieren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zur Transmission stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Meteorologie beeinflusst den Transport",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Geographie beeinflusst die Belastung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Transport kann grenzüberschreitend erfolgen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Emission und Immission sind identisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Emission und Immission sind unterschiedliche Konzepte.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Wie wird Feinstaub häufig definiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Partikel >100 µm",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Partikel <10 µm (PM10)",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur flüssige Aerosole",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur feste Partikel",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur PM100",
+          "correct": false
+        }
+      ],
+      "explanation": "PM10 umfasst Partikel unter 10 µm.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu ultrafeinen Partikeln trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besitzen geringe Teilchenanzahlen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie besitzen kleine Masse, aber hohe Anzahl",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sedimentieren sofort",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie sind nie lungengängig",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie bestehen nur aus NaCl",
+          "correct": false
+        }
+      ],
+      "explanation": "Ultrafeine Partikel dominieren die Teilchenanzahl.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zur Grössenverteilung stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Je kleiner Partikel, desto besser die Lungengängigkeit",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Mittelgrosse Partikel besitzen oft längere Lebensdauer",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ultrafeine Partikel nehmen mit Distanz zur Quelle rasch ab",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Grobe Partikel dominieren die Teilchenanzahl",
+          "correct": false
+        }
+      ],
+      "explanation": "Grobe Partikel dominieren eher die Masse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu PM2.5 trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PM2.5 bezeichnet Partikel >2.5 mm",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "PM2.5-Partikel können tief in die Lunge eindringen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "PM2.5 beschreibt nur organische Stoffe",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "PM2.5 ist immer sichtbar",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "PM2.5 ist identisch mit Ozon",
+          "correct": false
+        }
+      ],
+      "explanation": "Kleine Partikel gelangen tiefer in die Atemwege.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu Teilchenmasse und Teilchenanzahl stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ultrafeine Partikel dominieren die Masse",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Grobe Partikel dominieren häufig die Masse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Teilchenanzahl und Masse sind identisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Masse ist relevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur Anzahl ist messbar",
+          "correct": false
+        }
+      ],
+      "explanation": "Grobe Partikel besitzen trotz kleiner Anzahl grosse Masse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Bestandteile von PM2.5 werden genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Russ",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nitrat",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ammonium",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sulfat",
+          "correct": true
+        }
+      ],
+      "explanation": "PM2.5 besteht aus verschiedenen chemischen Komponenten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Verbindung entsteht hauptsächlich aus Stickoxiden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sulfat",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nitrat",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Methan",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Argon",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ozon",
+          "correct": false
+        }
+      ],
+      "explanation": "NOx führen zur Bildung von Nitrat.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Russ trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Russ stammt nur aus Vulkanen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Russ entsteht bei Verbrennungsprozessen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Russ besitzt keine Gesundheitsrelevanz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Russ besteht nur aus Salz",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Russ wirkt ausschliesslich kühlend",
+          "correct": false
+        }
+      ],
+      "explanation": "Russ entsteht vor allem durch Verbrennung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Quelle liefert typischerweise NH4+ im Feinstaub?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Landwirtschaftliches NH3",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Saharastaub",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Meersalz",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bremsabrieb",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "CO2",
+          "correct": false
+        }
+      ],
+      "explanation": "Ammoniak aus Landwirtschaft bildet Ammonium.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Wie beeinflusst Feinstaub das Klima?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Erwärmung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Streuung von Sonnenlicht kann zur Abkühlung führen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Feinstaub besitzt keinen Klimaeffekt",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Feinstaub entfernt Wolken",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Feinstaub absorbiert ausschliesslich UV",
+          "correct": false
+        }
+      ],
+      "explanation": "Feinstaub streut Sonnenlicht und beeinflusst Wolken.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu Wolkenkondensationskeimen (CCN) trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CCN verhindern Wolkenbildung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Feinstaub kann als CCN wirken",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur CO2 wirkt als CCN",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "CCN entstehen nur indoors",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "CCN bestehen nur aus Wasser",
+          "correct": false
+        }
+      ],
+      "explanation": "Aerosole fördern die Wolkenbildung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Feinstaubbelastung in der Schweiz trifft laut Vorlesung zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Belastung blieb konstant",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Belastung nahm seit 1980 deutlich ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Belastung nahm um 500 % zu",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Feinstaub existiert nur in Städten",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Belastung ist unabhängig von Wetter",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung beschreibt eine deutliche Abnahme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Warum gelten ultrafeine Partikel als besonders gesundheitlich relevant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie werden nicht eingeatmet",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie gelangen tief in die Lunge",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sedimentieren sofort",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie bestehen nur aus Wasser",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie besitzen keine Oberfläche",
+          "correct": false
+        }
+      ],
+      "explanation": "Kleine Partikel sind besonders lungengängig.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Komponente wird mit Reifen- und Bremsabrieb assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NaCl",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Cu/Mo/Sb",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "CH4",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "O3",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "H2",
+          "correct": false
+        }
+      ],
+      "explanation": "Metalle wie Cu, Mo oder Sb stammen aus Abrieb.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage beschreibt Transmission korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Direkte Gesundheitswirkung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Transport von Schadstoffen in der Atmosphäre",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Chemische Analyse von PM2.5",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur lokale Ablagerung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Entstehung von Ozon",
+          "correct": false
+        }
+      ],
+      "explanation": "Transmission beschreibt den atmosphärischen Transport.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu Aerosolen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aerosole bestehen nur aus Gasen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Aerosole sind Dispersionen fester oder flüssiger Teilchen in Gasen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Aerosole existieren nur indoors",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aerosole enthalten nie Wasser",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aerosole sind immer sichtbar",
+          "correct": false
+        }
+      ],
+      "explanation": "Aerosole bestehen aus Schwebeteilchen in Gasen.",
+      "sourceReliability": "high"
+    }
+  ]
+}

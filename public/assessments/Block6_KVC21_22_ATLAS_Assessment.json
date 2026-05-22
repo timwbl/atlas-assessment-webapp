@@ -1,0 +1,906 @@
+{
+  "id": "assessment_block6_kvc21_22_umweltchemie_v1",
+  "lectureCode": "KVC21/22",
+  "title": "Umweltchemie",
+  "block": "Block 6",
+  "sourceSummary": "Umweltchemie, Atmosphäre, Ozonchemie, photochemischer Smog, saurer Regen, Treibhauseffekt, Treibhausgase und hormonaktive Substanzen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundlagen der Umweltchemie und anthropogene Stoffe verstehen"
+    },
+    {
+      "id": "lo2",
+      "text": "Atmosphäre, Ozon und photochemische Prozesse erklären"
+    },
+    {
+      "id": "lo3",
+      "text": "Photochemischen Smog und sauren Regen erklären"
+    },
+    {
+      "id": "lo4",
+      "text": "Treibhauseffekt und Treibhausgase verstehen"
+    },
+    {
+      "id": "lo5",
+      "text": "Hormonaktive Substanzen und Schadstoffregulation kennen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Womit beschäftigt sich die Umweltchemie?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur mit biologischen Organismen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mit Ausbreitung, Umwandlung und Wirkung chemischer Stoffe in der Umwelt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur mit Luftverschmutzung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur mit Wasserchemie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur mit Toxikologie",
+          "correct": false
+        }
+      ],
+      "explanation": "Umweltchemie untersucht chemische Stoffe in belebter und unbelebter Umwelt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Quelle ist anthropogen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vulkangase",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Pflanzengifte",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Verkehr",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Bakterielle Toxine",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Natürliche Methanbildung",
+          "correct": false
+        }
+      ],
+      "explanation": "Verkehr gehört zu den anthropogenen Quellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Stoffe besitzen laut Vorlesung anthropogene und natürliche Quellen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CO2",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "NO2",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "SO2",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "N2",
+          "correct": false
+        }
+      ],
+      "explanation": "CO2, NOx und SO2 besitzen natürliche und anthropogene Quellen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Verbindung wird typischerweise als VOC bezeichnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Volatile organic compounds",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Very oxidized compounds",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Variable ozone components",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Volatile oxygen carriers",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Visible organic compounds",
+          "correct": false
+        }
+      ],
+      "explanation": "VOC steht für volatile organic compounds.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welcher Innenraumschadstoff wird mit Spanplatten und Möbeln assoziiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ozon",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Formaldehyd",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Methan",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Argon",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stickstoff",
+          "correct": false
+        }
+      ],
+      "explanation": "Formaldehyd kann aus Möbeln und Spanplatten freigesetzt werden.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussagen zu stofflichen Belastungen stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Smog ist ein lokales Luftproblem",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ozonloch ist ein globales Problem",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Grundwasserverschmutzung kann lokal auftreten",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Treibhauseffekt ist ausschliesslich regional",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Treibhauseffekt ist global.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "In welcher Schicht befindet sich die Ozonschicht hauptsächlich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Troposphäre",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Mesosphäre",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Stratosphäre",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ionosphäre",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Thermosphäre",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Ozonschicht liegt überwiegend in der Stratosphäre.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zu Ozon trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ozon absorbiert UV-Strahlung zwischen 200 und 310 nm",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ozon absorbiert nur sichtbares Licht",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ozon entsteht ausschliesslich anthropogen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ozon ist IR-inaktiv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ozon absorbiert keine UV-Strahlung",
+          "correct": false
+        }
+      ],
+      "explanation": "Ozon filtert insbesondere UV-B und UV-C.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zur UV-Strahlung stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UV-C wird fast vollständig herausgefiltert",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Der grösste Teil von UV-B wird absorbiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "UV-A erreicht die Erdoberfläche weitgehend",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Fensterglas absorbiert keine UV-Strahlung",
+          "correct": false
+        }
+      ],
+      "explanation": "Fensterglas absorbiert Strahlung unter ca. 300 nm.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was beschreibt der Chapman-Zyklus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Den Kohlenstoffkreislauf",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Natürlichen Aufbau und Abbau von Ozon in der Stratosphäre",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Bildung von saurem Regen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Photosynthese",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Den Wasserkreislauf",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Chapman-Zyklus beschreibt Ozonbildung und -abbau.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Rolle spielen halogenierte Stoffe wie FCKW in der Stratosphäre?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie fördern Ozonaufbau",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie wirken als Katalysatoren beim Ozonabbau",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie absorbieren nur IR-Strahlung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie reduzieren UV-Strahlung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie neutralisieren NOx",
+          "correct": false
+        }
+      ],
+      "explanation": "Halogenradikale katalysieren den Ozonabbau.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussagen zu Reaktionen in der Atmosphäre stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Photochemische Reaktionen sind häufig",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Radikale sind relativ langlebig",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Viele Prozesse laufen als Reaktionsketten ab",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Atmosphärenchemie ist statisch",
+          "correct": false
+        }
+      ],
+      "explanation": "Atmosphärenchemie ist dynamisch.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Wetterlage begünstigt photochemischen Smog?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Starke Durchmischung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Inversionswetterlage",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gewitter",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Schneefall",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Polarwirbel",
+          "correct": false
+        }
+      ],
+      "explanation": "Eine Inversionslage verhindert Luftdurchmischung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Stoffe sind zentrale Vorläufer für troposphärisches Ozon?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NaCl und CO2",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "NOx und Kohlenwasserstoffe",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "N2 und O2",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Argon und Helium",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Calciumcarbonat und Methan",
+          "correct": false
+        }
+      ],
+      "explanation": "NOx und Kohlenwasserstoffe fördern Ozonbildung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zu photochemischem Smog stimmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ozonwerte erreichen mittags oft ihr Maximum",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sonneneinstrahlung fördert Ozonbildung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "NO kann Ozon abbauen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ozonwerte sind nachts maximal",
+          "correct": false
+        }
+      ],
+      "explanation": "Die höchsten Ozonwerte treten meist tagsüber auf.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Warum ist normaler Regen leicht sauer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wegen Schwefelsäure",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Durch Kohlensäurebildung aus CO2 und Wasser",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Durch Ozon",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wegen NH3",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Durch Methan",
+          "correct": false
+        }
+      ],
+      "explanation": "CO2 bildet mit Wasser Kohlensäure.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Stoffe tragen wesentlich zu saurem Regen bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SO2 und NOx",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "CO2 und O2",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "N2 und H2",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ozon und Argon",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Methan und Neon",
+          "correct": false
+        }
+      ],
+      "explanation": "SO2 und NOx werden zu Säuren oxidiert.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was bewirkt der natürliche Treibhauseffekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Abkühlung auf −50 °C",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Erhöhung der mittleren Temperatur von −18 °C auf +15 °C",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vollständige Reflexion der Sonnenstrahlung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Entfernung aller IR-Strahlung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Verringerung der Albedo auf 0",
+          "correct": false
+        }
+      ],
+      "explanation": "Der natürliche Treibhauseffekt macht die Erde bewohnbar.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Treibhausgasen stimmt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "N2 ist ein starkes Treibhausgas",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "CO2 absorbiert langwellige IR-Strahlung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Homonukleare zweiatomige Moleküle absorbieren IR besonders stark",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "O2 verursacht den stärksten Treibhauseffekt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Argon absorbiert effizient IR-Strahlung",
+          "correct": false
+        }
+      ],
+      "explanation": "CO2 ist IR-aktiv und treibhauswirksam.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zu hormonaktiven Substanzen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie wirken nur in hohen Konzentrationen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie können Hormone imitieren oder den Hormonhaushalt beeinflussen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Bisphenol A ist ein natürliches Hormon",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DDT ist ein Treibhausgas",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nonylphenole sind ungefährlich",
+          "correct": false
+        }
+      ],
+      "explanation": "Hormonaktive Substanzen können bereits in kleinen Mengen biologisch relevant sein.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welcher Stoff wurde als Insektizid verwendet und ist in der Schweiz verboten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Methan",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "DDT",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "CO2",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ozon",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Argon",
+          "correct": false
+        }
+      ],
+      "explanation": "DDT wurde früher breit als Insektizid eingesetzt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was beschreibt ein Immissionsgrenzwert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximale Emission an der Quelle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Belastungsgrenzwert der Umwelt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Maximale Arbeitsplatztemperatur",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Biologische Halbwertszeit",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Radioaktive Aktivität",
+          "correct": false
+        }
+      ],
+      "explanation": "Immissionsgrenzwerte beziehen sich auf Umweltbelastungen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Warum absorbieren viele Treibhausgase IR-Strahlung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie besitzen bewegliche Dipolmomente bei Schwingungen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie sind immer ionisch",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie reflektieren sichtbares Licht",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie enthalten nur Wasserstoff",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie sind radioaktiv",
+          "correct": false
+        }
+      ],
+      "explanation": "IR-aktive Schwingungen verändern das Dipolmoment.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Troposphäre trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dort befindet sich das Ozonloch",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hohe Ozonwerte und Feinstaub treten dort auf",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie enthält keine Spurengase",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beginnt erst ab 50 km Höhe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie absorbiert keine UV-Strahlung",
+          "correct": false
+        }
+      ],
+      "explanation": "Troposphärisches Ozon wirkt als Schadstoff.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt die Albedo der Erde?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IR-Absorption",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Rückstrahlvermögen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ozonkonzentration",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Luftdruck",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sauerstoffgehalt",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Albedo beschreibt den reflektierten Anteil der Einstrahlung.",
+      "sourceReliability": "high"
+    }
+  ]
+}
