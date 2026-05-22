@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f5f7fb;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: #ffffff;
+  --text: #17181c;
+  --muted: #6b7280;
+  --line: rgba(17, 24, 39, 0.10);
+  --accent: #2563eb;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #0b0d12;
+  --surface: rgba(20, 24, 32, 0.82);
+  --surface-strong: #141820;
+  --text: #f8fafc;
+  --muted: #9ca3af;
+  --line: rgba(255, 255, 255, 0.11);
+  --accent: #60a5fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #0b0d12;
+    --surface: rgba(20, 24, 32, 0.82);
+    --surface-strong: #141820;
+    --text: #f8fafc;
+    --muted: #9ca3af;
+    --line: rgba(255, 255, 255, 0.11);
+    --accent: #60a5fa;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 30rem),
+    linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 88%, #fff));
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, opacity 160ms ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.shell {
+  width: min(1180px, calc(100vw - 28px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.glass {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: 0 20px 70px rgba(15, 23, 42, 0.10);
+  backdrop-filter: blur(22px) saturate(160%);
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.07);
+}
+
+.btn-primary {
+  min-height: 42px;
+  border-radius: 999px;
+  padding: 0 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 74%, transparent);
+  background: var(--accent);
+  color: white;
+  font-weight: 760;
+}
+
+.btn-secondary {
+  min-height: 42px;
+  border-radius: 999px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  color: var(--text);
+  font-weight: 720;
+}
+
+.btn-danger {
+  min-height: 42px;
+  border-radius: 999px;
+  padding: 0 16px;
+  border: 1px solid rgba(239, 68, 68, 0.26);
+  background: color-mix(in srgb, #ef4444 11%, var(--surface-strong));
+  color: #dc2626;
+  font-weight: 760;
+}
+
+.input {
+  min-height: 42px;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  color: var(--text);
+  padding: 0 13px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: color-mix(in srgb, var(--accent) 72%, transparent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  padding: 5px 9px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 760;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.atlas-brand {
+  position: fixed;
+  left: 22px;
+  top: 18px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  padding: 7px 11px 7px 8px;
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.10);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+
+.atlas-brand-logo {
+  width: 31px;
+  height: 31px;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.14);
+}
+
+.atlas-brand-word {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.site-copyright {
+  position: fixed;
+  right: 18px;
+  bottom: 14px;
+  z-index: 30;
+  color: color-mix(in srgb, var(--muted) 78%, transparent);
+  font-size: 12px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .atlas-brand {
+    left: 14px;
+    top: 12px;
+  }
+
+  .site-copyright {
+    right: 12px;
+    bottom: 10px;
+    font-size: 11px;
+  }
+}
