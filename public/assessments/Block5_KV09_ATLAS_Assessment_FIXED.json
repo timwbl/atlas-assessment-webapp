@@ -1,0 +1,818 @@
+{
+  "id": "assessment_block5_kv09_medizingeschichte_v1",
+  "lectureCode": "KV09",
+  "title": "Wozu Medizingeschichte?",
+  "block": "Block 5",
+  "sourceSummary": "KV09 behandelt positivistische Fortschrittsgeschichte, William Harvey, moderne Medizingeschichte und historische Reflexion in der Medizin.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Positivistische Fortschrittsgeschichte erklären und kritisch beurteilen können"
+    },
+    {
+      "id": "lo2",
+      "text": "Fragestellungen der heutigen Medizingeschichte beschreiben können"
+    },
+    {
+      "id": "lo3",
+      "text": "Die Bedeutung medizinhistorischer Reflexion diskutieren können"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt die positivistische Fortschrittsgeschichte am ehesten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zyklische Entwicklung medizinischer Systeme",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lineare Geschichte wissenschaftlichen Fortschritts",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Sozialgeschichte",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fokus auf Patientenberichte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ablehnung moderner Wissenschaft",
+          "correct": false
+        }
+      ],
+      "explanation": "Fortschrittsgeschichte beschreibt Medizin als lineare Entwicklung hin zur modernen Wissenschaft.",
+      "trap": "Die Geschichte wird oft als stetiger Fortschritt erzählt.",
+      "tags": [
+        "Fortschrittsgeschichte",
+        "Positivismus"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 1,
+      "learningObjectiveId": "lo1",
+      "stem": "Welcher Fokus ist typisch für positivistische Fortschrittsgeschichte?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesellschaftliche Machtstrukturen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Patientenerfahrungen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Leistungen einzelner medizinischer Helden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Pflegegeschichte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gesundheitsökonomie",
+          "correct": false
+        }
+      ],
+      "explanation": "Klassische Fortschrittsgeschichten betonen grosse Persönlichkeiten und Entdeckungen.",
+      "trap": "Geschichte wird stark personalisiert dargestellt.",
+      "tags": [
+        "Helden",
+        "Fortschrittsgeschichte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zur positivistischen Fortschrittsgeschichte:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie erzählt häufig lineare Entwicklungen",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie fokussiert grosse Entdeckungen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie heroisiert einzelne Forscher",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie analysiert primär gesellschaftliche Machtstrukturen",
+          "correct": false
+        }
+      ],
+      "explanation": "Fortschrittsgeschichte fokussiert linearen Fortschritt und einzelne Persönlichkeiten.",
+      "trap": "Struktur- und Gesellschaftsgeschichte gehören eher zur modernen Medizingeschichte.",
+      "tags": [
+        "Positivismus",
+        "Linearität"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Kritik wird an Fortschrittsgeschichten häufig geäussert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zu viele statistische Daten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ahistorische Projektion heutiger Vorstellungen auf die Vergangenheit",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zu wenig Chronologie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fehlende Biochemie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Überbetonung von Pflegeberufen",
+          "correct": false
+        }
+      ],
+      "explanation": "Moderne Medizingeschichte kritisiert die Projektion heutiger Denkweisen auf frühere Epochen.",
+      "trap": "Historische Kontexte werden sonst verzerrt.",
+      "tags": [
+        "Ahistorisch",
+        "Projektion"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 2,
+      "learningObjectiveId": "lo1",
+      "stem": "William Harvey dient in der Vorlesung primär als Beispiel für:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Moderne Genetik",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Frühe Statistik",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Problematik ahistorischer Wissenschaftsdeutung",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Entwicklung der Antibiotika",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Public Health",
+          "correct": false
+        }
+      ],
+      "explanation": "Harvey zeigt, dass historische Wissenschaft nicht mit heutigen Kriterien bewertet werden darf.",
+      "trap": "Historische Wissenschaft war anders eingebettet.",
+      "tags": [
+        "Harvey",
+        "Wissenschaft"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Zu William Harvey:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Harvey war naturphilosophisch geprägt",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Seine Arbeit entstand im historischen Kontext des 17. Jahrhunderts",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er kann vollständig als moderner Wissenschaftler verstanden werden",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Seine Arbeiten enthalten Beobachtungen und theoretische Überlegungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Harveys Arbeiten verbinden Beobachtung mit naturphilosophischen Vorstellungen seiner Zeit.",
+      "trap": "Er war nicht einfach ein moderner Laborwissenschaftler.",
+      "tags": [
+        "Harvey",
+        "Naturphilosophie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Aussage zu William Harvey trifft am ehesten zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er arbeitete ausschliesslich experimentell-modern",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Seine Arbeit war auch naturphilosophisch geprägt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er entwickelte die Zelltheorie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er war Mikrobiologe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er lehnte Beobachtungen ab",
+          "correct": false
+        }
+      ],
+      "explanation": "Harveys Arbeiten waren stark vom naturphilosophischen Denken seiner Zeit geprägt.",
+      "trap": "Die moderne Sicht auf Wissenschaft darf nicht einfach rückprojiziert werden.",
+      "tags": [
+        "Harvey",
+        "Naturphilosophie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Wofür interessiert sich die heutige Medizingeschichte besonders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur technische Innovationen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Medizin im gesellschaftlichen und kulturellen Kontext",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Nobelpreise",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Chronologien",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Reine Anatomiegeschichte",
+          "correct": false
+        }
+      ],
+      "explanation": "Die moderne Medizingeschichte analysiert Medizin als kulturelles und gesellschaftliches Phänomen.",
+      "trap": "Der Fokus liegt nicht nur auf Entdeckungen.",
+      "tags": [
+        "ModerneMedizingeschichte",
+        "Gesellschaft"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zur modernen Medizingeschichte:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie analysiert historische Kontexte",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie interessiert sich für Patient:innen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie untersucht gesellschaftliche Strukturen",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie beschränkt sich nur auf grosse Entdeckungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Die moderne Medizingeschichte untersucht Medizin in gesellschaftlichen und kulturellen Zusammenhängen.",
+      "trap": "Sie grenzt sich von reinen Fortschrittserzählungen ab.",
+      "tags": [
+        "ModerneMedizingeschichte",
+        "Kontext"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Bereiche sind zentrale Felder moderner Medizingeschichte?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pharmakologie und Molekularbiologie",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wissenschaftsgeschichte und Sozialgeschichte",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Chirurgie und Radiologie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Histologie und Anatomie",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Virologie und Immunologie",
+          "correct": false
+        }
+      ],
+      "explanation": "Moderne Medizingeschichte verbindet Wissenschafts- und Sozialgeschichte.",
+      "trap": "Gesellschaftliche Aspekte sind zentral.",
+      "tags": [
+        "Wissenschaftsgeschichte",
+        "Sozialgeschichte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Fragestellung gehört typischerweise zur Sozialgeschichte der Medizin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mechanismus der PCR",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bedeutung von Krankheit für Gesellschaft und Patienten",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "ATP-Synthese",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "DNA-Replikation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Elektrophysiologie",
+          "correct": false
+        }
+      ],
+      "explanation": "Sozialgeschichte untersucht Krankheit im gesellschaftlichen Kontext.",
+      "trap": "Nicht nur biologische Mechanismen sind relevant.",
+      "tags": [
+        "Sozialgeschichte",
+        "Krankheit"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Zur Gendergeschichte in der Medizin:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der männliche Körper galt oft als Norm",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Geschlechterbilder sind historisch geprägt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Wahrnehmung von Krankheit hängt vom gesellschaftlichen Kontext ab",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Geschlecht spielte historisch keine Rolle in der Medizin",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung analysiert den historischen männlichen Blick auf Medizin.",
+      "trap": "Geschlechterrollen beeinflussen Medizin historisch stark.",
+      "tags": [
+        "Gendergeschichte",
+        "Norm"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zur Wissenschaftlichkeit wird betont?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wissenschaftliche Kriterien sind zeitlos",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wissenschaftliche Standards verändern sich historisch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Frühere Medizin war generell unwissenschaftlich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wissenschaft ist vollständig objektiv",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur moderne Forschung ist relevant",
+          "correct": false
+        }
+      ],
+      "explanation": "Vorstellungen von Wissenschaft verändern sich historisch.",
+      "trap": "Wissenschaft wird historisch betrachtet.",
+      "tags": [
+        "Wissenschaft",
+        "Historisch"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Wozu kann Medizingeschichte beitragen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ersatz klinischer Forschung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verständnis heutiger medizinischer Strukturen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich moralische Urteile",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verzicht auf Reflexion",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eliminierung moderner Medizin",
+          "correct": false
+        }
+      ],
+      "explanation": "Medizingeschichte hilft heutige Medizin kritisch zu verstehen.",
+      "trap": "Historische Reflexion verbessert Verständnis heutiger Systeme.",
+      "tags": [
+        "Reflexion",
+        "Strukturen"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Zur Funktion der Medizingeschichte:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie fördert kritische Reflexion",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie hilft heutige Medizin besser zu verstehen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie dient ausschliesslich der Glorifizierung medizinischer Leistungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie analysiert historische Entwicklungen",
+          "correct": true
+        }
+      ],
+      "explanation": "Medizingeschichte dient dem kritischen Verständnis historischer und moderner Medizin.",
+      "trap": "Sie geht über reine Erfolgserzählungen hinaus.",
+      "tags": [
+        "Reflexion",
+        "Geschichte"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Gefahr sieht die Vorlesung bei Fortschrittsgeschichten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zu viele Quellen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Idealisierung und Vereinfachung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Mangel an Chronologie",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zu wenig Namen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zu viele Patienten",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt Idealisierung und Vereinfachung ausdrücklich.",
+      "trap": "Komplexität historischer Prozesse kann verloren gehen.",
+      "tags": [
+        "Idealisierung",
+        "Vereinfachung"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo2",
+      "stem": "Welches Beispiel verwendet die Vorlesung für Gendergeschichte in der Medizin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tuberkulose",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hysterie",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Malaria",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "COVID-19",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Appendizitis",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung diskutiert Hysterie und den männlichen Blick auf den weiblichen Körper.",
+      "trap": "Gendergeschichte ist Teil moderner Medizingeschichte.",
+      "tags": [
+        "Gendergeschichte",
+        "Hysterie"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Warum ist historische Kontextualisierung wichtig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Um moderne Medizin abzulehnen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Um historische Akteure innerhalb ihrer Zeit zu verstehen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Um Wissenschaftlichkeit zu verhindern",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Um Chronologien zu verkürzen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Um Statistik zu vermeiden",
+          "correct": false
+        }
+      ],
+      "explanation": "Historische Kontextualisierung verhindert ahistorische Fehlinterpretationen.",
+      "trap": "Vergangenheit soll aus ihrer Zeit verstanden werden.",
+      "tags": [
+        "Kontext",
+        "Historisch"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussage zu KI und Geschichte wird diskutiert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "KI liefert immer objektive Antworten",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "KI spiegelt bestehende Internetquellen unterschiedlicher Qualität wider",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "KI ersetzt historische Forschung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "KI vermeidet Vereinfachungen automatisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wikipedia spielt keine Rolle",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung problematisiert die Quellenabhängigkeit von KI-Systemen.",
+      "trap": "Auch KI kann Fortschrittsnarrative reproduzieren.",
+      "tags": [
+        "KI",
+        "Quellenkritik"
+      ],
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 5,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Ziel verfolgt Medizingeschichte laut Vorlesung primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Festlegen guter und schlechter Medizin",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Verstehen und Erklären historischer Prozesse",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Technische Innovation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ersatz moderner Forschung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Moralische Verurteilung",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont Verstehen und Erklären statt moralisches Urteilen.",
+      "trap": "Historische Analyse steht im Zentrum.",
+      "tags": [
+        "Verstehen",
+        "Geschichte"
+      ],
+      "sourceReliability": "high"
+    }
+  ]
+}
