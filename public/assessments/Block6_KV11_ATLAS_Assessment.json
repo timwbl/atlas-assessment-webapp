@@ -1,0 +1,906 @@
+{
+  "id": "assessment_block6_kv11_sustainability_planetary_health_v1",
+  "lectureCode": "KV11",
+  "title": "Sustainability and Planetary Health",
+  "block": "Block 6",
+  "sourceSummary": "KV11 behandelt Nachhaltigkeit, Anthropozän, Sustainable Development Goals, Planetary Health, planetare Grenzen, Health Effects und Health Co-Benefits.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Konzepte von Nachhaltigkeit, Planetary Health und planetaren Grenzen kennen"
+    },
+    {
+      "id": "lo2",
+      "text": "Anthropozän und menschlichen Einfluss auf natürliche Systeme verstehen"
+    },
+    {
+      "id": "lo3",
+      "text": "SDGs, insbesondere SDG3, und deren Bezug zu Gesundheit erklären"
+    },
+    {
+      "id": "lo4",
+      "text": "Gesundheitsfolgen planetarer Umweltveränderungen verstehen"
+    },
+    {
+      "id": "lo5",
+      "text": "Health Co-Benefits und Rolle von Kliniker:innen verstehen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt Sustainable Development nach der Brundtland-Definition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximales Wirtschaftswachstum ohne Einschränkungen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Befriedigung heutiger Bedürfnisse ohne Gefährdung zukünftiger Generationen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Schutz der Biodiversität",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur Reduktion von Armut",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gesundheitspolitik ohne Umweltbezug",
+          "correct": false
+        }
+      ],
+      "explanation": "Nachhaltige Entwicklung erfüllt heutige Bedürfnisse, ohne die Möglichkeiten zukünftiger Generationen zu gefährden.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q2",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Was kennzeichnet das Anthropozän?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fehlen menschlicher Umwelteinflüsse",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Dominanter anthropogener Einfluss auf globale natürliche Systeme",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Rückkehr zu stabilen vorindustriellen Bedingungen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich natürliche Klimaschwankungen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine rein medizinische Epoche",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Anthropozän beschreibt eine Epoche mit starkem menschlichem Einfluss auf Erdsysteme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k1",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Entwicklungen illustrieren den zunehmenden Human Footprint?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zunehmender Energieverbrauch",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Zunehmender Wasserverbrauch",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Temperaturanstieg",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Zunehmender Biodiversitätsverlust",
+          "correct": true
+        }
+      ],
+      "explanation": "Die Vorlesung zeigt mehrere parallele ökologische Trends als Human Footprint.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q3",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was beschreibt Planetary Health am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesundheit unabhängig von Ökosystemen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Menschliche Gesundheit hängt von funktionierenden natürlichen Systemen ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Klimawandelmedizin",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich globale Infektionsmedizin",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gesundheitssysteme ohne Umweltbezug",
+          "correct": false
+        }
+      ],
+      "explanation": "Planetary Health verbindet menschliche Gesundheit mit stabilen natürlichen Lebensgrundlagen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q4",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was sind planetare Grenzen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Individuelle Gesundheitsgrenzwerte",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ökologische Belastungsgrenzen eines sicheren Handlungsraums",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Politische Landesgrenzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur CO₂-Grenzwerte",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Grenzen medizinischer Diagnostik",
+          "correct": false
+        }
+      ],
+      "explanation": "Planetare Grenzen definieren einen sicheren Handlungsraum für Erdsystemprozesse.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k2",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche planetaren Grenzen sind laut Vorlesung überschritten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Climate change",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Novel entities",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Biosphere integrity",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Land-system change",
+          "correct": true
+        }
+      ],
+      "explanation": "Diese Grenzen werden in der Vorlesung als transgressed dargestellt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q5",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche planetare Grenze liegt laut Vorlesung innerhalb sicherer Grenzen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Novel entities",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Climate change",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Stratospheric ozone depletion",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Biosphere integrity",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Freshwater change",
+          "correct": false
+        }
+      ],
+      "explanation": "Die stratosphärische Ozondepletion wird als innerhalb sicherer Grenzen dargestellt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q6",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Wie viele der neun planetaren Grenzen sind laut Revision 2025 überschritten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "4",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "5",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "7",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "9",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt 7 von 9 überschrittene planetare Grenzen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k3",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Aussagen zu den SDGs treffen zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie wurden 2015 durch die UN-Generalversammlung lanciert",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Sie umfassen 17 Ziele",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie sind universell anwendbar",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie gelten nur für Entwicklungsländer",
+          "correct": false
+        }
+      ],
+      "explanation": "Die SDGs sind universell und umfassender als die MDGs.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q7",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Was unterscheidet SDGs von MDGs besonders?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SDGs gelten nur für arme Länder",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "SDGs sind universeller und stärker systemisch ausgerichtet",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "SDGs enthalten keine Umweltziele",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "SDGs haben keine Gesundheitsziele",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "SDGs ersetzen Menschenrechte",
+          "correct": false
+        }
+      ],
+      "explanation": "SDGs gelten für alle Länder und betrachten Umwelt, Wirtschaft und Gesellschaft als verbundene Systeme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q8",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo3",
+      "stem": "Welches Ziel beschreibt SDG3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Clean Water and Sanitation",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Good Health and Well-Being",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Climate Action",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Life Below Water",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Responsible Consumption",
+          "correct": false
+        }
+      ],
+      "explanation": "SDG3 fokussiert Gesundheit und Wohlbefinden für alle Altersgruppen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k4",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo3",
+      "stem": "Welche Inhalte gehören zu SDG3?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Universal health coverage",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Reduktion von NCD-Mortalität",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Reduktion pollution-related deaths and illnesses",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Stärkung von Prävention und Behandlung von substance abuse",
+          "correct": true
+        }
+      ],
+      "explanation": "Alle vier Punkte werden unter SDG3 genannt.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q9",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Landnutzungsänderungen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie reduzieren Zoonoserisiken grundsätzlich",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie können die Entstehung zoonotischer Krankheiten begünstigen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betreffen nur Biodiversität, nicht Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie haben keinen Bezug zu COVID-19",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie verhindern Spillover-Ereignisse",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung verbindet Land-use change mit zoonotic disease emergence.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q10",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Was beschreibt antimikrobielle Resistenz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Antibiotika wirken stärker",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bakterien erwerben Resistenz gegen Medikamente",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Viren werden resistent",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Resistenz entsteht nur im Spital",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Antibiotika verlieren nie Wirkung",
+          "correct": false
+        }
+      ],
+      "explanation": "Antimicrobial resistance bedeutet verminderte Wirksamkeit durch Resistenzentwicklung.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "k5",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Faktoren tragen laut Vorlesung zu antimikrobieller Resistenz bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exzessiver Einsatz in Humanmedizin",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Exzessiver Einsatz in Veterinärmedizin",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Exzessiver Einsatz in Landwirtschaft",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Kompletter Verzicht auf Antibiotika",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung nennt verantwortungslosen und exzessiven Einsatz in mehreren Bereichen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q11",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Gesundheitsfolgen werden im Planetary-Health-Modell genannt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nur Krebs",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Malnutrition, infectious diseases, NCDs, displacement/conflict und mental health",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Allergien",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur akute Unfälle",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur genetische Erkrankungen",
+          "correct": false
+        }
+      ],
+      "explanation": "Das Modell verbindet ökologische Veränderungen mit mehreren Gesundheitsendpunkten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q12",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was bedeutet Health Co-Benefit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine Massnahme schadet Umwelt und Gesundheit gleichzeitig",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine Massnahme bringt Vorteile für Gesundheit und Umwelt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur wirtschaftlicher Zusatznutzen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein rein klinischer Endpunkt",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine Nebenwirkung von Medikamenten",
+          "correct": false
+        }
+      ],
+      "explanation": "Co-benefits sind gleichzeitige Vorteile für menschliche und planetare Gesundheit.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q13",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Aussage zur Planetary Health Diet trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie erhöht Mortalität",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Höhere Adhärenz ist mit niedrigerem Mortalitätsrisiko assoziiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betrifft nur Klima, nicht Gesundheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie besteht ausschliesslich aus Fleisch",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie ist irrelevant für Public Health",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung zeigt eine Assoziation zwischen Planetary Health Diet und tieferer Mortalität.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q14",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Was beschreibt ein sozialer Kipppunkt im Nachhaltigkeitskontext?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Langsame lineare Veränderung ohne Rückkopplung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kleine Interventionen, die schnelle selbstverstärkende Transformationen auslösen können",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ein medizinischer Grenzwert",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur individuelle Verhaltensänderung",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Unveränderbare ökologische Grenze",
+          "correct": false
+        }
+      ],
+      "explanation": "Social tipping points sind kleine kritische Interventionen mit nichtlinearen Effekten.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q15",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo5",
+      "stem": "Welche Rolle können Kliniker:innen in Planetary Health einnehmen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keine relevante Rolle",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kommunikation, Advocacy und Vorbildfunktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Laborforschung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich Diagnostik",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur politische Gesetzgebung",
+          "correct": false
+        }
+      ],
+      "explanation": "Kliniker:innen sind vertrauenswürdige Informationsquellen und können Gesundheits- und Planetary-Health-Strategien kommunizieren.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q16",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo2",
+      "stem": "Welche Aussage zum Zusammenhang von Gesundheitsfortschritt und natürlichen Systemen trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesundheitsgewinne waren immer ökologisch neutral",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gesundheitsgewinne wurden teilweise auf Kosten natürlicher Systeme erreicht",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Gesundheit verbessert sich unabhängig von Ressourcenverbrauch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Natürliche Systeme sind für Gesundheit irrelevant",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Umweltveränderungen bedrohen Gesundheitsfortschritte nicht",
+          "correct": false
+        }
+      ],
+      "explanation": "Die Vorlesung betont, dass Gesundheitsfortschritte teils auf Kosten natürlicher Systeme und zukünftiger Generationen erreicht wurden.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q17",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Was bedeutet 'safe operating space'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Operationssaal mit niedrigen Emissionen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sicherer ökologischer Handlungsraum innerhalb planetarer Grenzen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ein persönlicher Gesundheitsbereich",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein politisches Schutzgebiet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein Gebiet ohne Infektionsrisiko",
+          "correct": false
+        }
+      ],
+      "explanation": "Der Begriff meint den sicheren Bereich innerhalb planetarer Belastungsgrenzen.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q18",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Novel Entities trifft laut Vorlesung zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie sind vollständig innerhalb sicherer Grenzen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie umfassen u.a. synthetische Chemikalien, Mikroplastik und endokrine Disruptoren",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie betreffen nur natürliche Stoffe",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie haben keinen Gesundheitsbezug",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie beschreiben nur CO₂",
+          "correct": false
+        }
+      ],
+      "explanation": "Novel entities umfassen vom Menschen eingeführte neue Substanzen und Eingriffe.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q19",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo4",
+      "stem": "Welche Aussage zu Ocean Acidification trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entsteht durch Sauerstoffaufnahme",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie entsteht durch CO₂-Aufnahme und schädigt marine Ökosysteme",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Sie verbessert die Carbon-Sink-Funktion der Ozeane",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie ist sicher innerhalb der Grenzen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie betrifft nur Süsswasser",
+          "correct": false
+        }
+      ],
+      "explanation": "CO₂-Aufnahme erhöht die Ozeanazidität und schädigt marine Systeme.",
+      "sourceReliability": "high"
+    },
+    {
+      "id": "q20",
+      "type": "A",
+      "difficulty": 3,
+      "learningObjectiveId": "lo1",
+      "stem": "Welche Kernaussage fasst KV11 am besten zusammen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gesundheit ist unabhängig von Umwelt",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Menschliche Gesundheit, Nachhaltigkeit und Erdsystemstabilität sind eng verbunden",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Planetare Grenzen sind nur theoretisch",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "SDGs betreffen Medizin nicht",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Kliniker:innen sollten Planetary Health ignorieren",
+          "correct": false
+        }
+      ],
+      "explanation": "KV11 verbindet Nachhaltigkeit, planetare Grenzen und menschliche Gesundheit.",
+      "sourceReliability": "high"
+    }
+  ]
+}
