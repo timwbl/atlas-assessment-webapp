@@ -1,13 +1,22 @@
-import type { AssessmentQuestion, QuizResultRow, UserAnswer } from "./types";
+import type { AssessmentQuestion, QuestionOption, QuizResultRow, UserAnswer } from "./types";
+
+export function optionKey(option: QuestionOption): string {
+  return option.sessionOptionId || option.id;
+}
+
+export function optionLabel(option: QuestionOption): string {
+  return option.displayId || option.id;
+}
 
 export function isQuestionCorrect(question: AssessmentQuestion, answer: UserAnswer | undefined): boolean {
   if (!answer) return false;
 
   if (question.type === "KPRIM") {
-    return question.options.every((option) => answer.kprim?.[option.id] === option.correct);
+    return question.options.every((option) => answer.kprim?.[optionKey(option)] === option.correct);
   }
 
-  return question.options.find((option) => option.correct)?.id === answer.selected;
+  const correct = question.options.find((option) => option.correct);
+  return !!correct && optionKey(correct) === answer.selected;
 }
 
 export function answerLabel(question: AssessmentQuestion, answer: UserAnswer | undefined): string {
@@ -15,23 +24,23 @@ export function answerLabel(question: AssessmentQuestion, answer: UserAnswer | u
 
   if (question.type === "KPRIM") {
     return question.options.map((option) => {
-      const value = answer.kprim?.[option.id];
+      const value = answer.kprim?.[optionKey(option)];
       const label = typeof value === "boolean" ? (value ? "richtig" : "falsch") : "-";
-      return `${option.id}: ${label}`;
+      return `${optionLabel(option)}: ${label}`;
     }).join(" · ");
   }
 
-  const selected = question.options.find((option) => option.id === answer.selected);
-  return selected ? `${selected.id}: ${selected.text}` : "nicht beantwortet";
+  const selected = question.options.find((option) => optionKey(option) === answer.selected);
+  return selected ? `${optionLabel(selected)}: ${selected.text}` : "nicht beantwortet";
 }
 
 export function correctAnswerLabel(question: AssessmentQuestion): string {
   if (question.type === "KPRIM") {
-    return question.options.map((option) => `${option.id}: ${option.correct ? "richtig" : "falsch"}`).join(" · ");
+    return question.options.map((option) => `${optionLabel(option)}: ${option.correct ? "richtig" : "falsch"}`).join(" · ");
   }
 
   const correct = question.options.find((option) => option.correct);
-  return correct ? `${correct.id}: ${correct.text}` : "keine Lösung markiert";
+  return correct ? `${optionLabel(correct)}: ${correct.text}` : "keine Lösung markiert";
 }
 
 export function buildResultRows(

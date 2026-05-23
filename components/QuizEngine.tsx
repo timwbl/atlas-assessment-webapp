@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { ResultsPage } from "./ResultsPage";
-import { buildResultRows, correctAnswerLabel, isQuestionCorrect, scorePercent } from "@/lib/score";
+import { buildResultRows, correctAnswerLabel, isQuestionCorrect, optionKey, scorePercent } from "@/lib/score";
+import { createSessionQuestions } from "@/lib/sessionQuestions";
 import {
   recordAttempt,
   reviewQuestionIds,
@@ -20,8 +21,9 @@ type Props = {
 };
 
 export function QuizEngine({ assessment, initialMode }: Props) {
+  const didMount = useRef(false);
   const [mode, setMode] = useState<QuizMode>(initialMode);
-  const [questions, setQuestions] = useState<AssessmentQuestion[]>(() => selectQuestions(assessment, initialMode));
+  const [questions, setQuestions] = useState<AssessmentQuestion[]>(() => createSessionQuestions(selectQuestions(assessment, initialMode)));
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, UserAnswer>>({});
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
@@ -31,9 +33,14 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   const [progressVersion, setProgressVersion] = useState(0);
 
   useEffect(() => {
+    if (!didMount.current) {
+      didMount.current = true;
+      return;
+    }
+
     const selected = selectQuestions(assessment, initialMode);
     setMode(initialMode);
-    setQuestions(selected);
+    setQuestions(createSessionQuestions(selected));
     setIndex(0);
     setAnswers({});
     setRevealed({});
@@ -118,7 +125,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   function restart(nextMode: QuizMode) {
     const selected = selectQuestions(assessment, nextMode);
     setMode(nextMode);
-    setQuestions(selected);
+    setQuestions(createSessionQuestions(selected));
     setIndex(0);
     setAnswers({});
     setRevealed({});
@@ -130,7 +137,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
 
   function restartWithQuestions(nextQuestions: AssessmentQuestion[], nextMode: QuizMode) {
     setMode(nextMode);
-    setQuestions(nextQuestions);
+    setQuestions(createSessionQuestions(nextQuestions));
     setIndex(0);
     setAnswers({});
     setRevealed({});
@@ -176,7 +183,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
 
         <div className="mt-4 flex flex-wrap gap-2">
           {questions.map((item, itemIndex) => {
-            const answered = !!answers[item.id]?.selected || item.options.every((option) => typeof answers[item.id]?.kprim?.[option.id] === "boolean");
+            const answered = !!answers[item.id]?.selected || item.options.every((option) => typeof answers[item.id]?.kprim?.[optionKey(option)] === "boolean");
             return (
               <button
                 type="button"

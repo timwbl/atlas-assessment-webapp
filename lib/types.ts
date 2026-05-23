@@ -11,6 +11,9 @@ export type QuestionOption = {
   id: string;
   text: string;
   correct: boolean;
+  originalId?: string;
+  sessionOptionId?: string;
+  displayId?: string;
 };
 
 export type AssessmentQuestion = {
