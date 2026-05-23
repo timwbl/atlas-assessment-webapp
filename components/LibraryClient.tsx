@@ -6,6 +6,7 @@ import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
 import { loadAssessments } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
+import { formatBlockLabel } from "@/lib/blockLabels";
 import { getAllProgress } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/types";
 
@@ -61,12 +62,12 @@ export function LibraryClient() {
   }, [filtered]);
 
   return (
-    <main className="shell">
-      <header className="glass rounded-[28px] p-6 md:p-8">
+    <main id="top" className="shell">
+      <header className="glass library-hero rounded-[28px] p-6 md:p-8">
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="eyebrow">ATLAS Assessment Library</div>
-            <h1 className="mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
+            <h1 className="library-title mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
               MC Übungsfragen
             </h1>
           </div>
@@ -79,11 +80,11 @@ export function LibraryClient() {
       </div>
 
       <section className="card mt-5 p-4">
-        <div className="grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="assessment-filters grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <input className="input" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Suchen nach Titel, Code, Tag" />
           <select className="input" value={block} onChange={(event) => setBlock(event.target.value)}>
             <option value="">Alle Blöcke</option>
-            {blocks.map((value) => <option key={value} value={value}>Block {value}</option>)}
+            {blocks.map((value) => <option key={value} value={value}>{formatBlockLabel(value)}</option>)}
           </select>
           <select className="input" value={code} onChange={(event) => setCode(event.target.value)}>
             <option value="">Alle Codes</option>
@@ -114,8 +115,8 @@ export function LibraryClient() {
       <section className="mt-6 grid gap-8">
         {Object.entries(grouped).map(([groupBlock, groupAssessments]) => (
           <div key={groupBlock}>
-            <div className="mb-3 flex items-center justify-between">
-              <h2 className="text-2xl font-black">Block {groupBlock}</h2>
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <h2 className="text-2xl font-black">{formatBlockLabel(groupBlock)}</h2>
               <span className="pill">{groupAssessments.length} Assessments</span>
             </div>
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

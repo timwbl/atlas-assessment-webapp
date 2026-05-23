@@ -31,14 +31,14 @@ export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestar
   });
 
   return (
-    <main className="shell">
-      <header className="glass rounded-[28px] p-6 md:p-8">
+    <main id="top" className="shell">
+      <header className="glass result-hero rounded-[28px] p-6 md:p-8">
         <div className="eyebrow">Resultat · {assessment.lectureCode}</div>
-        <h1 className="mt-2 text-5xl font-black">{attempt.score}%</h1>
+        <h1 className="result-score mt-2 text-5xl font-black">{attempt.score}%</h1>
         <p className="mt-3 text-[var(--muted)]">
           {attempt.correct} von {attempt.total} Fragen richtig · {wrong.length} Fehler
         </p>
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="result-actions mt-6 flex flex-wrap gap-2">
           <button className="btn-primary" onClick={onRepeatWrong} disabled={!wrong.length}>Falsche Fragen wiederholen</button>
           <button className="btn-secondary" onClick={onRestart}>Neues Quiz starten</button>
           <Link className="btn-secondary inline-flex items-center" href="/">Zur Übersicht</Link>

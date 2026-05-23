@@ -147,10 +147,10 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   }
 
   return (
-    <main className="shell">
-      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+    <main id="top" className="shell quiz-shell">
+      <div className="quiz-topbar mb-4 flex flex-wrap items-center justify-between gap-3">
         <Link className="btn-secondary inline-flex items-center" href={`/assessment/${assessment.id}`}>Beenden</Link>
-        <div className="flex flex-wrap gap-2">
+        <div className="quiz-mode-tabs flex flex-wrap gap-2">
           {(["training", "exam", "review"] as QuizMode[]).map((value) => (
             <button type="button" className={mode === value ? "btn-primary" : "btn-secondary"} key={value} onClick={() => restart(value)}>
               {value === "training" ? "Training" : value === "exam" ? "Prüfung" : "Review"}
@@ -159,11 +159,11 @@ export function QuizEngine({ assessment, initialMode }: Props) {
         </div>
       </div>
 
-      <section className="glass rounded-[28px] p-5">
+      <section className="glass quiz-summary rounded-[28px] p-5">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <div className="eyebrow">{mode} · Frage {index + 1}/{questions.length}</div>
-            <h1 className="mt-1 text-2xl font-black">{assessment.title}</h1>
+            <h1 className="quiz-title mt-1 text-2xl font-black">{assessment.title}</h1>
           </div>
           <button
             type="button"
@@ -181,13 +181,13 @@ export function QuizEngine({ assessment, initialMode }: Props) {
           <div className="h-full rounded-full bg-[var(--accent)]" style={{ width: `${Math.round((index / questions.length) * 100)}%` }} />
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="quiz-progress-nav mt-4 flex flex-wrap gap-2">
           {questions.map((item, itemIndex) => {
             const answered = !!answers[item.id]?.selected || item.options.every((option) => typeof answers[item.id]?.kprim?.[optionKey(option)] === "boolean");
             return (
               <button
                 type="button"
-                className={`h-9 w-9 rounded-full border text-sm font-black ${itemIndex === index ? "border-[var(--accent)] bg-[var(--accent)] text-white" : answered ? "border-green-400 bg-green-500/10 text-green-700" : "border-[var(--line)] bg-[var(--surface-strong)] text-[var(--muted)]"}`}
+                className={`quiz-progress-dot h-9 w-9 rounded-full border text-sm font-black ${itemIndex === index ? "border-[var(--accent)] bg-[var(--accent)] text-white" : answered ? "border-green-400 bg-green-500/10 text-green-700" : "border-[var(--line)] bg-[var(--surface-strong)] text-[var(--muted)]"}`}
                 key={item.id}
                 title={`Frage ${itemIndex + 1}: ${answered ? "beantwortet" : "offen"}`}
                 onClick={() => setIndex(itemIndex)}
@@ -199,18 +199,18 @@ export function QuizEngine({ assessment, initialMode }: Props) {
         </div>
       </section>
 
-      <article className="card mt-5 p-5 md:p-7">
+      <article className="quiz-question-card card mt-5 p-5 md:p-7">
         <div className="flex flex-wrap gap-2">
           <span className="pill">{question.type}</span>
           <span className="pill">Level {question.difficulty}</span>
         </div>
-        <h2 className="mt-4 text-2xl font-black leading-tight">{question.stem}</h2>
+        <h2 className="quiz-question-title mt-4 text-2xl font-black leading-tight">{question.stem}</h2>
         <div className="mt-6">
           <QuestionRenderer question={question} answer={currentAnswer} revealed={isRevealed} onChange={setAnswer} />
         </div>
 
         {isRevealed && (
-          <div className={`mt-5 rounded-2xl border p-4 ${currentCorrect ? "border-green-300 bg-green-500/10" : "border-red-300 bg-red-500/10"}`}>
+          <div className={`quiz-feedback mt-5 rounded-2xl border p-4 ${currentCorrect ? "border-green-300 bg-green-500/10" : "border-red-300 bg-red-500/10"}`}>
             <strong>{currentCorrect ? "Richtig" : "Noch nicht"}</strong>
             <p className="mt-2 text-sm text-[var(--muted)]">Richtig wäre: {correctAnswerLabel(question)}</p>
             <p className="mt-3">{question.explanation}</p>
@@ -218,11 +218,11 @@ export function QuizEngine({ assessment, initialMode }: Props) {
           </div>
         )}
 
-        <div className="mt-6 flex flex-wrap justify-between gap-2">
+        <div className="quiz-action-row mt-6 flex flex-wrap justify-between gap-2">
           <button type="button" className="btn-secondary" disabled={index === 0} onClick={() => setIndex((value) => Math.max(0, value - 1))}>
             Zur letzten Frage zurück
           </button>
-          <div className="flex flex-wrap gap-2">
+          <div className="quiz-action-buttons flex flex-wrap gap-2">
             <button
               type="button"
               className="btn-secondary"

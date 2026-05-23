@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
+import { formatBlockLabel } from "@/lib/blockLabels";
 import { getProgress, resetProgress, reviewQuestionIds } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress } from "@/lib/types";
 
@@ -42,12 +43,12 @@ export function AssessmentDetailClient({ id }: { id: string }) {
   const tags = collectAssessmentTags(assessment);
 
   return (
-    <main className="shell">
+    <main id="top" className="shell">
       <Link className="btn-secondary inline-flex items-center" href="/">Zur Library</Link>
 
-      <header className="glass mt-4 rounded-[28px] p-6 md:p-8">
-        <div className="eyebrow">Block {assessment.block} · {assessment.lectureCode}</div>
-        <h1 className="mt-2 text-4xl font-black leading-tight md:text-6xl">{assessment.title}</h1>
+      <header className="glass detail-hero mt-4 rounded-[28px] p-6 md:p-8">
+        <div className="eyebrow">{formatBlockLabel(assessment.block)} · {assessment.lectureCode}</div>
+        <h1 className="detail-title mt-2 text-4xl font-black leading-tight md:text-6xl">{assessment.title}</h1>
         <p className="mt-4 max-w-3xl text-[var(--muted)]">{assessment.sourceSummary || "Kein Beschreibungstext hinterlegt."}</p>
 
         <div className="mt-6 grid gap-3 md:grid-cols-4">
@@ -57,7 +58,7 @@ export function AssessmentDetailClient({ id }: { id: string }) {
           <Stat label="Review" value={counts.review} />
         </div>
 
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="detail-actions mt-6 flex flex-wrap gap-2">
           <Link className="btn-primary inline-flex items-center" href={`/quiz/${assessment.id}?mode=training`}>Training starten</Link>
           <Link className="btn-secondary inline-flex items-center" href={`/quiz/${assessment.id}?mode=exam`}>Prüfungsmodus starten</Link>
           <Link className="btn-secondary inline-flex items-center" href={`/quiz/${assessment.id}?mode=review`}>Reviewmodus starten</Link>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { AtlasBrand } from "@/components/AtlasBrand";
 import { AdminShortcut } from "@/components/AdminShortcut";
+import { MobileNav } from "@/components/MobileNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <body>
         <AtlasBrand />
         {children}
+        <MobileNav />
         <div className="site-copyright">Copyright by Tim Weibel</div>
         <AdminShortcut />
       </body>

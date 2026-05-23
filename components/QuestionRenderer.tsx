@@ -30,7 +30,7 @@ function TypeAQuestion({ question, answer, revealed, onChange }: Props) {
 
         return (
           <button
-            className={`grid grid-cols-[34px_1fr] items-center gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface-strong)] p-4 text-left ${state}`}
+            className={`question-option grid grid-cols-[34px_1fr] items-center gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface-strong)] p-4 text-left ${state}`}
             key={key}
             onClick={() => onChange({ selected: key })}
           >
@@ -58,12 +58,12 @@ function KPrimQuestion({ question, answer, revealed, onChange }: Props) {
 
         return (
           <div
-            className={`grid gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface-strong)] p-4 md:grid-cols-[34px_1fr_auto] md:items-center ${state}`}
+            className={`kprim-option grid gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface-strong)] p-4 md:grid-cols-[34px_1fr_auto] md:items-center ${state}`}
             key={key}
           >
             <strong className="grid h-8 w-8 place-items-center rounded-full bg-black/5 dark:bg-white/10">{optionLabel(option)}</strong>
             <span>{option.text}</span>
-            <div className="flex gap-2">
+            <div className="kprim-toggle-group flex gap-2">
               {[true, false].map((value) => (
                 <button
                   className={values[key] === value ? "btn-primary" : "btn-secondary"}

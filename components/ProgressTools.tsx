@@ -28,7 +28,7 @@ export function ProgressTools({ onImported }: { onImported?: () => void }) {
   }
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="progress-tools flex flex-wrap gap-2">
       <button className="btn-secondary" onClick={exportProgress}>Fortschritt exportieren</button>
       <button className="btn-secondary" onClick={() => inputRef.current?.click()}>Fortschritt importieren</button>
       <input
