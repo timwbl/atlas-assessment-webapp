@@ -6,6 +6,7 @@ import { QuestionRenderer } from "./QuestionRenderer";
 import { ResultsPage } from "./ResultsPage";
 import { buildResultRows, correctAnswerLabel, isQuestionCorrect, optionKey, scorePercent } from "@/lib/score";
 import { createSessionQuestions } from "@/lib/sessionQuestions";
+import { syncAssessmentProgress } from "@/lib/cloudProgress";
 import {
   recordAttempt,
   reviewQuestionIds,
@@ -113,6 +114,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
 
     try {
       recordAttempt(assessment, attempt, rows);
+      void syncAssessmentProgress(assessment.id).catch(() => undefined);
       setProgressVersion((value) => value + 1);
       setFinishError("");
     } catch (error) {

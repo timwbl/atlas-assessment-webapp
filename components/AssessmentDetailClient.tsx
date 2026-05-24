@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
+import { cloudSyncAvailable, resetCloudProgress, syncAssessmentProgress } from "@/lib/cloudProgress";
 import { getProgress, resetProgress, reviewQuestionIds } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress } from "@/lib/types";
 
@@ -67,6 +68,7 @@ export function AssessmentDetailClient({ id }: { id: string }) {
             onClick={() => {
               if (confirm("Lokalen Fortschritt für dieses Assessment zurücksetzen?")) {
                 resetProgress(assessment.id);
+                void resetCloudProgress(assessment.id).catch(() => undefined);
                 setProgress(getProgress(assessment.id));
               }
             }}
@@ -99,6 +101,18 @@ export function AssessmentDetailClient({ id }: { id: string }) {
             <p>Bester Score: <strong className="text-[var(--text)]">{progress?.bestScore ?? 0}%</strong></p>
             <p>Versuche: <strong className="text-[var(--text)]">{progress?.attempts.length ?? 0}</strong></p>
           </div>
+          {cloudSyncAvailable() && (
+            <button
+              className="btn-secondary mt-5 w-full"
+              onClick={() => {
+                void syncAssessmentProgress(assessment.id)
+                  .then(() => setProgress(getProgress(assessment.id)))
+                  .catch((syncError) => alert(syncError instanceof Error ? syncError.message : "Sync fehlgeschlagen."));
+              }}
+            >
+              Fortschritt synchronisieren
+            </button>
+          )}
         </div>
       </section>
     </main>

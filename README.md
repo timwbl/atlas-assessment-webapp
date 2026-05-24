@@ -6,8 +6,9 @@ Separate read-only Assessment-WebApp für Mitstudierende.
 
 - Keine KI-Generierung
 - Kein PDF-Upload
-- Keine Accounts
-- Keine Cloud- oder Server-Speicherung personenbezogener Daten
+- Accounts sind optional
+- Ohne Login bleibt Fortschritt lokal im Browser
+- Mit Supabase-Konfiguration kann Fortschritt freiwillig synchronisiert werden
 - Assessments werden aus `public/assessments/*.json` geladen
 - Fortschritt bleibt lokal im Browser
 - Versteckter Admin-Modus mit lokalem Passwort und JSON-Export
@@ -39,3 +40,28 @@ Die App listet JSON-Dateien automatisch über die lokale Next.js Route `/api/ass
 4. Admin öffnen mit `Ctrl + Alt + A` oder Doppelklick auf den kaum sichtbaren Punkt unten rechts.
 
 Admin-Änderungen werden nicht serverseitig gespeichert. Nutze `Export Assessment JSON` und ersetze danach die JSON-Datei in `public/assessments/`.
+
+## Optionaler Account-Sync
+
+Die App funktioniert weiterhin komplett ohne Account. Wenn du Fortschritte zentral speichern willst:
+
+1. Supabase-Projekt erstellen.
+2. SQL aus `supabase/schema.sql` im Supabase SQL Editor ausführen.
+3. In `.env.local` und Netlify setzen:
+
+```text
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+```
+
+4. App neu starten oder neu deployen.
+5. In der Library mit E-Mail und Passwort einen Account erstellen.
+6. Deinen Account in Supabase einmalig zum Admin machen:
+
+```sql
+update public.profiles
+set role = 'admin'
+where email = 'deine-email@example.com';
+```
+
+Normale User können ohne Login weiter lernen. Mit Login wird ihr lokaler Fortschritt mit Supabase synchronisiert. Im Admin-Modus erscheint zusätzlich ein Cloud-Progress-Dashboard für synchronisierte Accounts.

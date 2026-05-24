@@ -4,8 +4,8 @@ export function PrivacyNotice() {
   return (
     <div className="card p-4 text-sm text-[var(--muted)]">
       <strong className="text-[var(--text)]">Datenschutz:</strong>{" "}
-      Dein Fortschritt wird nur lokal in diesem Browser gespeichert. Es gibt keine Accounts,
-      keine Cloud-Speicherung und keine zentrale personenbezogene Datenbank.
+      Ohne Login wird dein Fortschritt nur lokal in diesem Browser gespeichert. Wenn du dich freiwillig
+      einloggst, kann dein Fortschritt mit deinem Account synchronisiert werden.
     </div>
   );
 }

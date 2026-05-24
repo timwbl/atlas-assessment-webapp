@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { AccountSyncPanel } from "./AccountSyncPanel";
 import { AssessmentCard } from "./AssessmentCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
 import { loadAssessments } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
-import { getAllProgress } from "@/lib/progressStore";
+import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/types";
 
 export function LibraryClient() {
@@ -24,6 +25,15 @@ export function LibraryClient() {
       .then(setLoaded)
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Laden fehlgeschlagen."));
     setProgress(getAllProgress());
+  }, []);
+
+  useEffect(() => {
+    function updateProgress() {
+      setProgress(getAllProgress());
+    }
+
+    window.addEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
+    return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
   }, []);
 
   const assessments = loaded.map((item) => item.assessment).filter(Boolean) as Assessment[];
@@ -77,6 +87,10 @@ export function LibraryClient() {
 
       <div className="mt-5">
         <PrivacyNotice />
+      </div>
+
+      <div className="mt-5">
+        <AccountSyncPanel onSynced={() => setProgress(getAllProgress())} />
       </div>
 
       <section className="card mt-5 p-4">

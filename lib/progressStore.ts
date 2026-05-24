@@ -9,6 +9,7 @@ import type {
 } from "./types";
 
 const STORAGE_KEY = "atlas-assessment-progress-v1";
+export const PROGRESS_CHANGED_EVENT = "atlas-progress-changed";
 
 function emptyProgress(assessmentId: string): AssessmentProgress {
   return {
@@ -35,6 +36,7 @@ function readAll(): Record<string, AssessmentProgress> {
 function writeAll(value: Record<string, AssessmentProgress>): void {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
+  window.dispatchEvent(new CustomEvent(PROGRESS_CHANGED_EVENT));
 }
 
 export function getProgress(assessmentId: string): AssessmentProgress {
@@ -49,6 +51,75 @@ export function saveProgress(progress: AssessmentProgress): void {
   const all = readAll();
   all[progress.assessmentId] = progress;
   writeAll(all);
+}
+
+export function saveAllProgress(progress: Record<string, AssessmentProgress>): void {
+  writeAll(progress);
+}
+
+export function mergeProgress(local: AssessmentProgress, remote: AssessmentProgress): AssessmentProgress {
+  const attempts = [...remote.attempts, ...local.attempts]
+    .reduce<QuizAttempt[]>((acc, attempt) => {
+      if (!acc.some((item) => item.id === attempt.id)) acc.push(attempt);
+      return acc;
+    }, [])
+    .sort((a, b) => new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime())
+    .slice(0, 60);
+
+  const questionStats: AssessmentProgress["questionStats"] = {
+    ...remote.questionStats
+  };
+
+  Object.entries(local.questionStats).forEach(([questionId, localStat]) => {
+    const remoteStat = questionStats[questionId];
+    if (!remoteStat) {
+      questionStats[questionId] = localStat;
+      return;
+    }
+
+    const localTime = localStat.lastAnsweredAt ? new Date(localStat.lastAnsweredAt).getTime() : 0;
+    const remoteTime = remoteStat.lastAnsweredAt ? new Date(remoteStat.lastAnsweredAt).getTime() : 0;
+    questionStats[questionId] = {
+      seen: Math.max(localStat.seen, remoteStat.seen),
+      correct: Math.max(localStat.correct, remoteStat.correct),
+      wrong: Math.max(localStat.wrong, remoteStat.wrong),
+      lastCorrect: localTime >= remoteTime ? localStat.lastCorrect : remoteStat.lastCorrect,
+      markedForReview: localStat.markedForReview || remoteStat.markedForReview,
+      priority: localStat.priority === "high" || remoteStat.priority === "high" ? "high" : "normal",
+      lastAnsweredAt: localTime >= remoteTime ? localStat.lastAnsweredAt : remoteStat.lastAnsweredAt
+    };
+  });
+
+  const errorTags = { ...remote.errorTags };
+  Object.entries(local.errorTags).forEach(([tag, count]) => {
+    errorTags[tag] = Math.max(errorTags[tag] || 0, count);
+  });
+
+  const latestAttempt = attempts[0];
+
+  return {
+    assessmentId: local.assessmentId || remote.assessmentId,
+    attempts,
+    questionStats,
+    bestScore: Math.max(local.bestScore || 0, remote.bestScore || 0),
+    lastScore: latestAttempt?.score ?? local.lastScore ?? remote.lastScore ?? null,
+    lastAttemptAt: latestAttempt?.completedAt || local.lastAttemptAt || remote.lastAttemptAt,
+    errorTags
+  };
+}
+
+export function mergeProgressMap(remote: Record<string, AssessmentProgress>): Record<string, AssessmentProgress> {
+  const local = getAllProgress();
+  const merged = { ...remote };
+
+  Object.entries(local).forEach(([assessmentId, localProgress]) => {
+    merged[assessmentId] = merged[assessmentId]
+      ? mergeProgress(localProgress, merged[assessmentId])
+      : localProgress;
+  });
+
+  saveAllProgress(merged);
+  return merged;
 }
 
 export function resetProgress(assessmentId: string): void {

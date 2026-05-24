@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminProgressDashboard } from "./AdminProgressDashboard";
 import { QuestionEditor } from "./QuestionEditor";
 import { QuizEngine } from "./QuizEngine";
 import { loadActiveAssessments } from "@/lib/assessmentClient";
@@ -115,6 +116,8 @@ export function AdminEditor() {
           </div>
         </div>
       </header>
+
+      <AdminProgressDashboard />
 
       <section className="card mt-5 p-4">
         <select className="input" value={selectedId} onChange={(event) => select(event.target.value)}>

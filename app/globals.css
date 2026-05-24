@@ -426,6 +426,7 @@ button:disabled {
 
   .detail-actions,
   .result-actions,
+  .account-actions,
   .progress-tools {
     display: grid !important;
     grid-template-columns: 1fr;
@@ -434,7 +435,13 @@ button:disabled {
 
   .detail-actions > *,
   .result-actions > *,
+  .account-actions > *,
   .progress-tools > * {
+    width: 100%;
+  }
+
+  .account-login-grid {
+    grid-template-columns: 1fr !important;
     width: 100%;
   }
 
