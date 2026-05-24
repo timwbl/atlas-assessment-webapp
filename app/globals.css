@@ -240,6 +240,112 @@ button:disabled {
   display: none;
 }
 
+.account-menu {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 48;
+}
+
+.account-avatar {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--surface-strong) 92%, transparent), color-mix(in srgb, var(--surface) 82%, transparent));
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+
+.account-avatar.is-large {
+  position: static;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface-strong));
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.account-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(340px, calc(100vw - 24px));
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  padding: 14px;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(24px) saturate(170%);
+}
+
+.account-popover-head {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 11px;
+}
+
+.account-name {
+  display: block;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.account-email {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.account-menu-row {
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-strong);
+  padding: 0 13px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 780;
+  text-align: left;
+}
+
+.account-divider {
+  height: 1px;
+  margin: 14px 0;
+  background: var(--line);
+}
+
+.account-note,
+.account-status {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.account-status {
+  margin-top: 10px;
+}
+
 .assessment-card {
   position: relative;
   min-height: 220px;
@@ -385,6 +491,26 @@ button:disabled {
     color: white;
   }
 
+  .account-menu {
+    top: calc(10px + env(safe-area-inset-top));
+    right: max(10px, env(safe-area-inset-right));
+    z-index: 42;
+  }
+
+  .account-avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 12px;
+  }
+
+  .account-popover {
+    width: min(324px, calc(100vw - 20px));
+    max-height: calc(100vh - 76px - env(safe-area-inset-top));
+    overflow-y: auto;
+    border-radius: 20px;
+    padding: 12px;
+  }
+
   .library-hero,
   .detail-hero,
   .result-hero,
@@ -426,7 +552,6 @@ button:disabled {
 
   .detail-actions,
   .result-actions,
-  .account-actions,
   .progress-tools {
     display: grid !important;
     grid-template-columns: 1fr;
@@ -435,13 +560,7 @@ button:disabled {
 
   .detail-actions > *,
   .result-actions > *,
-  .account-actions > *,
   .progress-tools > * {
-    width: 100%;
-  }
-
-  .account-login-grid {
-    grid-template-columns: 1fr !important;
     width: 100%;
   }
 

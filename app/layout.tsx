@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { AccountMenu } from "@/components/AccountMenu";
 import { AtlasBrand } from "@/components/AtlasBrand";
 import { AdminShortcut } from "@/components/AdminShortcut";
 import { MobileNav } from "@/components/MobileNav";
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="de" suppressHydrationWarning>
       <body>
         <AtlasBrand />
+        <AccountMenu />
         {children}
         <MobileNav />
         <div className="site-copyright">Copyright by Tim Weibel</div>

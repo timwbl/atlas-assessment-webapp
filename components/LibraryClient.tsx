@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { AccountSyncPanel } from "./AccountSyncPanel";
 import { AssessmentCard } from "./AssessmentCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
@@ -87,10 +86,6 @@ export function LibraryClient() {
 
       <div className="mt-5">
         <PrivacyNotice />
-      </div>
-
-      <div className="mt-5">
-        <AccountSyncPanel onSynced={() => setProgress(getAllProgress())} />
       </div>
 
       <section className="card mt-5 p-4">

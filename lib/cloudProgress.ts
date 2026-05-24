@@ -123,6 +123,24 @@ export async function upsertCurrentProfile(user: CloudUser): Promise<CloudProfil
   return data[0];
 }
 
+export async function updateCurrentProfileName(displayName: string): Promise<CloudProfile> {
+  const user = await getCurrentUser();
+  if (!user) throw new Error("Nicht angemeldet.");
+
+  const data = await restRequest<CloudProfile[]>("profiles?on_conflict=id&select=id,email,display_name,role,created_at,last_seen_at", {
+    method: "POST",
+    headers: { Prefer: "resolution=merge-duplicates,return=representation" },
+    body: JSON.stringify([{
+      id: user.id,
+      email: user.email || "",
+      display_name: displayName || null,
+      last_seen_at: new Date().toISOString()
+    }])
+  });
+  if (!data[0]) throw new Error("Name konnte nicht gespeichert werden.");
+  return data[0];
+}
+
 export async function getCurrentProfile(): Promise<CloudProfile | null> {
   const user = await getCurrentUser();
   if (!user) return null;
