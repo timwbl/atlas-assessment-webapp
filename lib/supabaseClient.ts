@@ -20,9 +20,28 @@ export function isSupabaseConfigured(): boolean {
 }
 
 export function getSupabaseConfig(): { url: string; anonKey: string } | null {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.replace(/\/$/, "");
+  const url = normalizeSupabaseUrl(process.env.NEXT_PUBLIC_SUPABASE_URL);
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   return url && anonKey ? { url, anonKey } : null;
+}
+
+function normalizeSupabaseUrl(rawUrl: string | undefined): string {
+  const value = rawUrl?.trim();
+  if (!value) return "";
+
+  try {
+    const parsed = new URL(value);
+    const dashboardProject = parsed.pathname.match(/\/project\/([^/]+)/);
+    if (parsed.hostname === "supabase.com" && dashboardProject?.[1]) {
+      return `https://${dashboardProject[1]}.supabase.co`;
+    }
+    return parsed.origin.replace(/\/$/, "");
+  } catch {
+    return value
+      .replace(/\/auth\/v1\/?$/i, "")
+      .replace(/\/rest\/v1\/?$/i, "")
+      .replace(/\/$/, "");
+  }
 }
 
 export function getStoredSession(): CloudSession | null {
