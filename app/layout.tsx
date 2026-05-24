@@ -8,7 +8,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MC Übungsfragen",
-  description: "Read-only Assessment-WebApp für medizinische Vorlesungen."
+  description: "Read-only Assessment-WebApp für medizinische Vorlesungen.",
+  icons: {
+    icon: [
+      { url: "/atlas-logo.svg", type: "image/svg+xml" }
+    ],
+    shortcut: "/atlas-logo.svg",
+    apple: "/atlas-logo.svg"
+  }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
