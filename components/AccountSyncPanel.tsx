@@ -72,9 +72,13 @@ export function AccountSyncPanel({ onSynced }: Props) {
     await run(async () => {
       const created = await signUpWithPassword(email.trim(), password);
       await refreshUser();
-      setStatus(created
-        ? "Account erstellt. Falls E-Mail-Bestätigung aktiv ist, bestätige zuerst deine Adresse."
-        : "Account erstellt. Bitte prüfe deine E-Mails.");
+      if (created) {
+        const merged = await syncAllProgress();
+        onSynced?.();
+        setStatus(`Account erstellt und ${Object.keys(merged).length} Assessment-Fortschritte synchronisiert.`);
+      } else {
+        setStatus("Account erstellt. Du kannst dich jetzt einloggen.");
+      }
     });
   }
 

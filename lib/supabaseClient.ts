@@ -25,6 +25,13 @@ export function getSupabaseConfig(): { url: string; anonKey: string } | null {
   return url && anonKey ? { url, anonKey } : null;
 }
 
+export function getSiteUrl(): string {
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (configured) return configured.replace(/\/$/, "");
+  if (typeof window !== "undefined") return window.location.origin;
+  return "";
+}
+
 function normalizeSupabaseUrl(rawUrl: string | undefined): string {
   const value = rawUrl?.trim();
   if (!value) return "";

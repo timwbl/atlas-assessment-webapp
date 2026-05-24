@@ -47,19 +47,26 @@ Die App funktioniert weiterhin komplett ohne Account. Wenn du Fortschritte zentr
 
 1. Supabase-Projekt erstellen.
 2. SQL aus `supabase/schema.sql` im Supabase SQL Editor ausführen.
-3. In `.env.local` und Netlify setzen:
+3. In Supabase unter `Authentication` -> `Sign In / Providers` die E-Mail-Bestätigung deaktivieren, wenn Accounts sofort nutzbar sein sollen.
+4. In `.env.local` und Netlify setzen:
 
 ```text
 NEXT_PUBLIC_SUPABASE_URL=https://dein-project-ref.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+NEXT_PUBLIC_SITE_URL=https://deine-netlify-seite.netlify.app
 ```
 
 `NEXT_PUBLIC_SUPABASE_URL` muss die Project URL sein, nicht die API-Unterseite. Richtig ist also
 `https://...supabase.co`, ohne `/auth/v1`, ohne `/rest/v1` und ohne Dashboard-Pfad.
 
-4. App neu starten oder neu deployen.
-5. In der Library mit E-Mail und Passwort einen Account erstellen.
-6. Deinen Account in Supabase einmalig zum Admin machen:
+In Supabase unter `Authentication` → `URL Configuration`:
+
+- `Site URL`: deine Netlify-URL, z. B. `https://deine-netlify-seite.netlify.app`
+- `Redirect URLs`: zusätzlich dieselbe URL und optional `https://deine-netlify-seite.netlify.app/**`
+
+5. App neu starten oder neu deployen.
+6. In der Library mit E-Mail und Passwort einen Account erstellen.
+7. Deinen Account in Supabase einmalig zum Admin machen:
 
 ```sql
 update public.profiles

@@ -4,6 +4,7 @@ import {
   authRequest,
   ensureSession,
   getStoredSession,
+  getSiteUrl,
   isSupabaseConfigured,
   restRequest,
   saveSession,
@@ -81,7 +82,9 @@ export async function signInWithPassword(email: string, password: string): Promi
 }
 
 export async function signUpWithPassword(email: string, password: string): Promise<CloudUser | null> {
-  const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>("signup", {
+  const siteUrl = getSiteUrl();
+  const redirectPath = siteUrl ? `signup?redirect_to=${encodeURIComponent(siteUrl)}` : "signup";
+  const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>(redirectPath, {
     method: "POST",
     body: JSON.stringify({ email, password })
   });
