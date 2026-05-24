@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { AccountMenu } from "@/components/AccountMenu";
 import { AtlasBrand } from "@/components/AtlasBrand";
@@ -16,6 +16,13 @@ export const metadata: Metadata = {
     shortcut: "/atlas-logo.svg",
     apple: "/atlas-logo.svg"
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f5f7" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" }
+  ]
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

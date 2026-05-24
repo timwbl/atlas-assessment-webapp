@@ -90,7 +90,19 @@ export function LibraryClient() {
 
       <section className="card mt-5 p-4">
         <div className="assessment-filters grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          <input className="input" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Suchen nach Titel, Code, Tag" />
+          <input
+            className="input"
+            type="search"
+            name="atlas-assessment-library-search"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck={false}
+            inputMode="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Suchen nach Titel, Code, Tag"
+          />
           <select className="input" value={block} onChange={(event) => setBlock(event.target.value)}>
             <option value="">Alle Blöcke</option>
             {blocks.map((value) => <option key={value} value={value}>{formatBlockLabel(value)}</option>)}

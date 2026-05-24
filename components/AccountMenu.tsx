@@ -168,6 +168,8 @@ export function AccountMenu() {
                 <input
                   ref={nameInputRef}
                   className="input"
+                  name="atlas-display-name"
+                  autoComplete="name"
                   value={draftName}
                   onChange={(event) => setDraftName(event.target.value)}
                   onKeyDown={(event) => {
@@ -206,8 +208,24 @@ export function AccountMenu() {
 
           {cloudSyncAvailable() && !user && (
             <div className="grid gap-2">
-              <input className="input" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="E-Mail" />
-              <input className="input" type="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Passwort" />
+              <input
+                className="input"
+                type="email"
+                name="atlas-account-email"
+                autoComplete="username"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="E-Mail"
+              />
+              <input
+                className="input"
+                type="password"
+                name="atlas-account-password"
+                autoComplete="current-password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                placeholder="Passwort"
+              />
               <button type="button" className="btn-primary" disabled={busy || !email || !password} onClick={login}>Einloggen</button>
               <button type="button" className="btn-secondary" disabled={busy || !email || !password} onClick={createAccount}>Account erstellen</button>
             </div>

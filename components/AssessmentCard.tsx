@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import type { Assessment, AssessmentProgress } from "@/lib/types";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
+import { blockColor } from "@/lib/blockColors";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { reviewQuestionIds } from "@/lib/progressStore";
 
@@ -22,7 +24,7 @@ export function AssessmentCard({ assessment, progress }: Props) {
     <Link
       href={`/assessment/${assessment.id}`}
       className="assessment-card card group block overflow-hidden p-5 transition hover:-translate-y-1 hover:shadow-lift"
-      style={{ borderTop: `4px solid ${blockColor(assessment.block)}` }}
+      style={{ "--assessment-accent": blockColor(assessment.block) } as CSSProperties}
     >
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
@@ -40,7 +42,7 @@ export function AssessmentCard({ assessment, progress }: Props) {
       </div>
 
       <div className="mt-5 h-2 overflow-hidden rounded-full bg-black/10 dark:bg-white/10">
-        <div className="h-full rounded-full bg-[var(--accent)]" style={{ width: `${percent}%` }} />
+        <div className="h-full rounded-full" style={{ width: `${percent}%`, background: "var(--assessment-accent)" }} />
       </div>
 
       <div className="assessment-card-meta mt-3 flex flex-wrap gap-2 text-sm text-[var(--muted)]">
@@ -58,10 +60,4 @@ export function AssessmentCard({ assessment, progress }: Props) {
       </div>
     </Link>
   );
-}
-
-function blockColor(block: string) {
-  const palette = ["#2563eb", "#14b8a6", "#8b5cf6", "#f97316", "#22c55e", "#ef4444"];
-  const value = [...String(block)].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return palette[value % palette.length];
 }

@@ -108,7 +108,19 @@ export function AdminProgressDashboard() {
           <p className="mt-2 text-sm text-[var(--muted)]">Nur synchronisierte Accounts erscheinen hier.</p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <input className="input w-full lg:w-72" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="User oder Assessment suchen" />
+          <input
+            className="input w-full lg:w-72"
+            type="search"
+            name="atlas-admin-progress-search"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck={false}
+            inputMode="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="User oder Assessment suchen"
+          />
           <button className="btn-secondary" disabled={loading} onClick={load}>Aktualisieren</button>
         </div>
       </div>
