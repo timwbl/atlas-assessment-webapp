@@ -3,11 +3,16 @@ export function blockColor(block: string): string {
   const number = value.match(/\d+/)?.[0] || "";
 
   const colors: Record<string, string> = {
+    "1": "#b8004f",
+    "2": "#d81717",
+    "3": "#f45a00",
+    "4": "#ff9f0a",
     "5": "#22c55e",
     "6": "#14b8a6",
     "7": "#06b6d4",
     "8": "#3b82f6",
-    "9": "#4f46e5"
+    "9": "#4f46e5",
+    "Prüfungssimulationen": "#000000"
   };
 
   return colors[number] || "#0a84ff";
