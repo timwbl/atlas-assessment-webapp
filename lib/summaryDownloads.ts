@@ -74,8 +74,8 @@ const ALLOWED_TYPES = new Set([
 ]);
 
 export const DOWNLOAD_SEMESTERS: Array<{ id: SemesterId; title: string; order: number }> = [
-  { id: "HS2025", title: "HS2025", order: 1 },
-  { id: "FS2026", title: "FS2026", order: 2 }
+  { id: "HS2025", title: "1. Semester", order: 1 },
+  { id: "FS2026", title: "2. Semester", order: 2 }
 ];
 
 const SUMMARY_BLOCK_NUMBERS: Record<SemesterId, number[]> = {
@@ -96,6 +96,10 @@ export function blocksForSemester(semester: SemesterId): SummaryBlock[] {
   return SUMMARY_BLOCKS
     .filter((block) => block.semester === semester)
     .sort((a, b) => a.order - b.order);
+}
+
+export function semesterTitle(semester: string): string {
+  return DOWNLOAD_SEMESTERS.find((item) => item.id === semester)?.title || semester;
 }
 
 export function getSummaryBlock(blockId: string): SummaryBlock | null {
@@ -149,13 +153,13 @@ export async function loadSummaryDownloads(): Promise<SummaryDownload[]> {
       const rows = await restRequest<SummaryDownloadRow[]>(
         "summary_downloads?select=id,title,semester,block_id,block_title,description,version,file_name,file_type,file_size,upload_date,copyright_owner,file_path,download_url,created_at,updated_at&order=semester.asc,block_id.asc,created_at.desc"
       );
-      return rows.map(fromRow);
+      return sortSummaryDownloads(rows.map(fromRow));
     } catch {
       return readLocalDownloads();
     }
   }
 
-  return readLocalDownloads();
+  return sortSummaryDownloads(readLocalDownloads());
 }
 
 export async function loadSummaryDownloadFile(id: string): Promise<SummaryDownload | null> {
@@ -278,7 +282,7 @@ function readLocalDownloads(): SummaryDownload[] {
   if (typeof window === "undefined") return [];
   try {
     const parsed = JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "[]") as SummaryDownload[];
-    return Array.isArray(parsed) ? parsed.map(normalizeDownload) : [];
+    return Array.isArray(parsed) ? sortSummaryDownloads(parsed.map(normalizeDownload)) : [];
   } catch {
     return [];
   }
@@ -366,5 +370,20 @@ async function deleteSummaryStorageObject(filePath: string): Promise<void> {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ prefixes: [filePath] })
+  });
+}
+
+function sortSummaryDownloads(items: SummaryDownload[]): SummaryDownload[] {
+  const semesterOrder = new Map(DOWNLOAD_SEMESTERS.map((semester, index) => [semester.id, index]));
+  const blockOrder = new Map(SUMMARY_BLOCKS.map((block) => [block.id, block.order]));
+
+  return [...items].sort((a, b) => {
+    const semesterDiff = (semesterOrder.get(a.semester) ?? 99) - (semesterOrder.get(b.semester) ?? 99);
+    if (semesterDiff) return semesterDiff;
+
+    const blockDiff = (blockOrder.get(a.blockId) ?? 99) - (blockOrder.get(b.blockId) ?? 99);
+    if (blockDiff) return blockDiff;
+
+    return b.uploadDate.localeCompare(a.uploadDate);
   });
 }

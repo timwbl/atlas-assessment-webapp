@@ -9,6 +9,7 @@ import {
   formatFileSize,
   formatUploadDate,
   loadSummaryDownloads,
+  semesterTitle,
   SUMMARY_DOWNLOADS_CHANGED_EVENT,
   triggerSummaryDownload,
   type SemesterId,
@@ -18,7 +19,7 @@ import {
 export function DownloadLibrary() {
   const [downloads, setDownloads] = useState<SummaryDownload[]>([]);
   const [query, setQuery] = useState("");
-  const [semester, setSemester] = useState("");
+  const [semester, setSemester] = useState<SemesterId | "">("");
   const [blockId, setBlockId] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -48,7 +49,10 @@ export function DownloadLibrary() {
   }
 
   const filtered = useMemo(() => {
+    if (!semester) return [];
+
     const needle = query.trim().toLowerCase();
+    const allowedBlockIds = new Set(blocksForSemester(semester).map((block) => block.id));
     return downloads.filter((item) => {
       const haystack = [
         item.title,
@@ -59,14 +63,15 @@ export function DownloadLibrary() {
         item.fileName
       ].join(" ").toLowerCase();
 
-      return (!needle || haystack.includes(needle))
-        && (!semester || item.semester === semester)
+      return item.semester === semester
+        && allowedBlockIds.has(item.blockId)
+        && (!needle || haystack.includes(needle))
         && (!blockId || item.blockId === blockId);
     });
   }, [blockId, downloads, query, semester]);
 
-  const visibleSemesters = DOWNLOAD_SEMESTERS.filter((item) => !semester || item.id === semester);
-  const blockOptions = DOWNLOAD_SEMESTERS.flatMap((item) => blocksForSemester(item.id));
+  const visibleSemesters = semester ? DOWNLOAD_SEMESTERS.filter((item) => item.id === semester) : [];
+  const blockOptions = semester ? blocksForSemester(semester) : [];
 
   async function downloadFile(item: SummaryDownload) {
     setDownloadingId(item.id);
@@ -90,7 +95,7 @@ export function DownloadLibrary() {
               Zusammenfassungen
             </h1>
             <p className="mt-3 max-w-2xl text-[var(--muted)]">
-              Blockweise Lernunterlagen, sortiert nach Semester und sauber für den Download vorbereitet.
+              Wähle zuerst ein Semester und lade danach die blockweisen Lernunterlagen herunter.
             </p>
           </div>
           <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface-strong)] px-4 py-3 text-sm text-[var(--muted)]">
@@ -99,8 +104,31 @@ export function DownloadLibrary() {
         </div>
       </header>
 
+      <section className="semester-picker-card mt-5">
+        <div className="min-w-0">
+          <div className="eyebrow">Auswahl</div>
+          <h2 className="mt-1 text-2xl font-black">Semester auswählen</h2>
+          <p className="mt-1 text-sm text-[var(--muted)]">Es wird immer nur das gewählte Semester angezeigt.</p>
+        </div>
+        <label className="semester-picker-control">
+          <span>Semester</span>
+          <select
+            value={semester}
+            onChange={(event) => {
+              setSemester(event.target.value as SemesterId | "");
+              setBlockId("");
+            }}
+          >
+            <option value="">Bitte auswählen</option>
+            {DOWNLOAD_SEMESTERS.map((item) => (
+              <option key={item.id} value={item.id}>{item.title}</option>
+            ))}
+          </select>
+        </label>
+      </section>
+
       <section className="card mt-5 p-4">
-        <div className="download-filters grid gap-3 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="download-filters grid gap-3 md:grid-cols-[1.4fr_1fr]">
           <input
             className="input"
             type="search"
@@ -114,22 +142,11 @@ export function DownloadLibrary() {
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Zusammenfassung suchen"
           />
-          <select className="input" value={semester} onChange={(event) => {
-            setSemester(event.target.value);
-            setBlockId("");
-          }}>
-            <option value="">Alle Semester</option>
-            {DOWNLOAD_SEMESTERS.map((item) => (
-              <option key={item.id} value={item.id}>{item.title}</option>
-            ))}
-          </select>
-          <select className="input" value={blockId} onChange={(event) => setBlockId(event.target.value)}>
+          <select className="input" value={blockId} disabled={!semester} onChange={(event) => setBlockId(event.target.value)}>
             <option value="">Alle Blöcke</option>
-            {blockOptions
-              .filter((block) => !semester || block.semester === semester)
-              .map((block) => (
-                <option key={block.id} value={block.id}>{block.semester} · {block.title}</option>
-              ))}
+            {blockOptions.map((block) => (
+              <option key={block.id} value={block.id}>{block.title}</option>
+            ))}
           </select>
         </div>
       </section>
@@ -145,14 +162,22 @@ export function DownloadLibrary() {
         </section>
       )}
 
-      {!loading && downloads.length > 0 && (
+      {!loading && downloads.length > 0 && !semester && (
+        <section className="card mt-5 p-8 text-center">
+          <div className="eyebrow">Bereit</div>
+          <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Semester</h2>
+          <p className="mt-2 text-[var(--muted)]">Danach erscheinen nur die Blöcke und Zusammenfassungen des ausgewählten Semesters.</p>
+        </section>
+      )}
+
+      {!loading && downloads.length > 0 && semester && (
         <section className="mt-6 grid gap-8">
           {visibleSemesters.map((semesterItem) => (
             <div key={semesterItem.id}>
               <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <div className="eyebrow">Semester</div>
-                  <h2 className="text-3xl font-black">{semesterItem.title}</h2>
+                  <h2 className="text-3xl font-black">{semesterTitle(semesterItem.id)}</h2>
                 </div>
                 <span className="pill">
                   {filtered.filter((item) => item.semester === semesterItem.id).length} Dateien

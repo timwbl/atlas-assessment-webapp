@@ -15,6 +15,7 @@ import {
   loadSummaryDownloads,
   MAX_SUMMARY_FILE_SIZE,
   saveSummaryDownload,
+  semesterTitle,
   storageModeLabel,
   SUMMARY_DOWNLOADS_CHANGED_EVENT,
   triggerSummaryDownload,
@@ -272,7 +273,7 @@ export function AdminDownloadsManager() {
                 <article className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4" key={item.id}>
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
-                      <div className="eyebrow">{item.semester} · {item.blockTitle}</div>
+                      <div className="eyebrow">{semesterTitle(item.semester)} · {item.blockTitle}</div>
                       <h4 className="mt-1 font-black leading-tight">{item.title}</h4>
                       <p className="mt-2 text-sm text-[var(--muted)]">
                         {item.fileName} · {formatFileSize(item.fileSize)} · {formatUploadDate(item.uploadDate)} · © {item.copyrightOwner}
