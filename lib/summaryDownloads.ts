@@ -78,8 +78,13 @@ export const DOWNLOAD_SEMESTERS: Array<{ id: SemesterId; title: string; order: n
   { id: "FS2026", title: "FS2026", order: 2 }
 ];
 
+const SUMMARY_BLOCK_NUMBERS: Record<SemesterId, number[]> = {
+  HS2025: [1, 2, 3, 4],
+  FS2026: [5, 6, 7, 8, 9]
+};
+
 export const SUMMARY_BLOCKS: SummaryBlock[] = DOWNLOAD_SEMESTERS.flatMap((semester) => (
-  [5, 6, 7, 8, 9].map((blockNumber, index) => ({
+  SUMMARY_BLOCK_NUMBERS[semester.id].map((blockNumber, index) => ({
     id: `${semester.id}-block-${blockNumber}`,
     semester: semester.id,
     title: `Block ${blockNumber}`,
