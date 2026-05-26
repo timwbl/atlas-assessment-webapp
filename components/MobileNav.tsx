@@ -12,7 +12,11 @@ export function MobileNav() {
     <nav className="mobile-nav" aria-label="Mobile Navigation">
       <Link className={pathname === "/" ? "mobile-nav-item is-active" : "mobile-nav-item"} href="/">
         <span aria-hidden="true">⌂</span>
-        <span>Library</span>
+        <span>MC</span>
+      </Link>
+      <Link className={pathname.startsWith("/downloads") ? "mobile-nav-item is-active" : "mobile-nav-item"} href="/downloads">
+        <span aria-hidden="true">↓</span>
+        <span>Downloads</span>
       </Link>
       <a className="mobile-nav-item" href="#top">
         <span aria-hidden="true">↑</span>

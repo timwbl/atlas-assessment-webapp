@@ -10,6 +10,7 @@ Separate read-only Assessment-WebApp für Mitstudierende.
 - Ohne Login bleibt Fortschritt lokal im Browser
 - Mit Supabase-Konfiguration kann Fortschritt freiwillig synchronisiert werden
 - Assessments werden aus `public/assessments/*.json` geladen
+- Zusammenfassungen können im eigenen Downloadbereich nach Semester und Block bereitgestellt werden
 - Fortschritt bleibt lokal im Browser
 - Versteckter Admin-Modus mit lokalem Passwort und JSON-Export
 
@@ -40,6 +41,14 @@ Die App listet JSON-Dateien automatisch über die lokale Next.js Route `/api/ass
 4. Admin öffnen mit `Ctrl + Alt + A` oder Doppelklick auf den kaum sichtbaren Punkt unten rechts.
 
 Admin-Änderungen werden nicht serverseitig gespeichert. Nutze `Export Assessment JSON` und ersetze danach die JSON-Datei in `public/assessments/`.
+
+## Zusammenfassungen / Downloads
+
+Der Tab `Zusammenfassungen` zeigt Block-Zusammenfassungen nach `HS2025` und `FS2026`. Im Admin-Modus kannst du Dateien hochladen, bearbeiten, löschen und einem Semester plus Block zuordnen.
+
+Ohne Supabase werden Uploads lokal im Browser gespeichert. Für eine öffentlich geteilte Netlify-Seite solltest du Supabase konfigurieren und das aktuelle `supabase/schema.sql` ausführen. Dann können Admins Dateien zentral speichern und normale User sie herunterladen.
+
+Beim Speichern wird `Copyright: Tim Weibel` verpflichtend in den App-Metadaten hinterlegt und im Downloadbereich angezeigt.
 
 ## Optionaler Account-Sync
 

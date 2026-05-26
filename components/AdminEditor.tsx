@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminDownloadsManager } from "./AdminDownloadsManager";
 import { AdminProgressDashboard } from "./AdminProgressDashboard";
 import { QuestionEditor } from "./QuestionEditor";
 import { QuizEngine } from "./QuizEngine";
@@ -116,6 +117,8 @@ export function AdminEditor() {
           </div>
         </div>
       </header>
+
+      <AdminDownloadsManager />
 
       <AdminProgressDashboard />
 

@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { AccountMenu } from "@/components/AccountMenu";
 import { AtlasBrand } from "@/components/AtlasBrand";
 import { AdminShortcut } from "@/components/AdminShortcut";
+import { MainNav } from "@/components/MainNav";
 import { MobileNav } from "@/components/MobileNav";
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="de" suppressHydrationWarning>
       <body>
         <AtlasBrand />
+        <MainNav />
         <AccountMenu />
         {children}
         <MobileNav />

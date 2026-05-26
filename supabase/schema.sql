@@ -18,8 +18,29 @@ create table if not exists public.user_progress (
   primary key (user_id, assessment_id)
 );
 
+create table if not exists public.summary_downloads (
+  id text primary key,
+  title text not null,
+  semester text not null check (semester in ('HS2025', 'FS2026')),
+  block_id text not null,
+  block_title text not null,
+  description text,
+  version text,
+  file_name text not null,
+  file_type text not null,
+  file_size bigint not null,
+  upload_date timestamptz not null default now(),
+  copyright_owner text not null default 'Tim Weibel' check (copyright_owner = 'Tim Weibel'),
+  file_data text not null,
+  download_url text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
 create index if not exists user_progress_assessment_idx on public.user_progress(assessment_id);
 create index if not exists user_progress_updated_idx on public.user_progress(updated_at desc);
+create index if not exists summary_downloads_semester_block_idx on public.summary_downloads(semester, block_id);
+create index if not exists summary_downloads_updated_idx on public.summary_downloads(updated_at desc);
 
 create or replace function public.is_admin(check_user uuid default auth.uid())
 returns boolean
@@ -88,6 +109,7 @@ for each row execute function public.protect_profile_role();
 
 alter table public.profiles enable row level security;
 alter table public.user_progress enable row level security;
+alter table public.summary_downloads enable row level security;
 
 drop policy if exists "profiles_select_own_or_admin" on public.profiles;
 create policy "profiles_select_own_or_admin"
@@ -132,6 +154,31 @@ create policy "user_progress_delete_own_or_admin"
 on public.user_progress
 for delete
 using (user_id = auth.uid() or public.is_admin());
+
+drop policy if exists "summary_downloads_select_public" on public.summary_downloads;
+create policy "summary_downloads_select_public"
+on public.summary_downloads
+for select
+using (true);
+
+drop policy if exists "summary_downloads_insert_admin" on public.summary_downloads;
+create policy "summary_downloads_insert_admin"
+on public.summary_downloads
+for insert
+with check (public.is_admin());
+
+drop policy if exists "summary_downloads_update_admin" on public.summary_downloads;
+create policy "summary_downloads_update_admin"
+on public.summary_downloads
+for update
+using (public.is_admin())
+with check (public.is_admin());
+
+drop policy if exists "summary_downloads_delete_admin" on public.summary_downloads;
+create policy "summary_downloads_delete_admin"
+on public.summary_downloads
+for delete
+using (public.is_admin());
 
 -- After creating your own account, promote yourself once:
 -- update public.profiles set role = 'admin' where email = 'your-email@example.com';
