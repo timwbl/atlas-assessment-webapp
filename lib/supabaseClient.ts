@@ -97,6 +97,27 @@ export async function restRequest<T>(path: string, init: RequestInit = {}, token
   return parseResponse<T>(response);
 }
 
+export async function storageRequest<T>(path: string, init: RequestInit = {}, token?: string): Promise<T> {
+  const config = requireConfig();
+  const session = token ? null : await ensureSession();
+  const bearer = token || session?.access_token;
+  const response = await fetch(`${config.url}/storage/v1/${path}`, {
+    ...init,
+    headers: {
+      apikey: config.anonKey,
+      ...(bearer ? { Authorization: `Bearer ${bearer}` } : {}),
+      ...(init.headers || {})
+    }
+  });
+  return parseResponse<T>(response);
+}
+
+export function publicStorageUrl(bucket: string, path: string): string {
+  const config = requireConfig();
+  const encodedPath = path.split("/").map(encodeURIComponent).join("/");
+  return `${config.url}/storage/v1/object/public/${bucket}/${encodedPath}`;
+}
+
 export async function ensureSession(): Promise<CloudSession | null> {
   const session = getStoredSession();
   if (!session) return null;

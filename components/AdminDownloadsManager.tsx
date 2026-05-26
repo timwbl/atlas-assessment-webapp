@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   blocksForSemester,
+  canUseSummaryStorage,
   COPYRIGHT_OWNER,
   deleteSummaryDownload,
   DOWNLOAD_SEMESTERS,
@@ -17,6 +18,7 @@ import {
   storageModeLabel,
   SUMMARY_DOWNLOADS_CHANGED_EVENT,
   triggerSummaryDownload,
+  uploadSummaryFileToStorage,
   validateSummaryFile,
   type SemesterId,
   type SummaryDownload
@@ -106,7 +108,10 @@ export function AdminDownloadsManager() {
       if (!block) throw new Error("Bitte wähle einen Block aus.");
       if (!editing && !draft.file) throw new Error("Bitte wähle eine Datei aus.");
 
+      const summaryId = editing?.id || crypto.randomUUID();
       let fileData = editing?.fileData;
+      let filePath = editing?.filePath;
+      let downloadUrl = editing?.downloadUrl;
       let fileName = editing?.fileName || "";
       let fileType = editing?.fileType || "";
       let fileSize = editing?.fileSize || 0;
@@ -114,20 +119,33 @@ export function AdminDownloadsManager() {
       if (draft.file) {
         const fileError = validateSummaryFile(draft.file);
         if (fileError) throw new Error(fileError);
-        fileData = await fileToDataUrl(draft.file);
         fileName = draft.file.name;
         fileType = draft.file.type || "application/octet-stream";
         fileSize = draft.file.size;
+        if (await canUseSummaryStorage()) {
+          const uploaded = await uploadSummaryFileToStorage(draft.file, summaryId);
+          filePath = uploaded.filePath;
+          downloadUrl = uploaded.downloadUrl;
+          fileData = undefined;
+        } else {
+          fileData = await fileToDataUrl(draft.file);
+          filePath = undefined;
+          downloadUrl = undefined;
+        }
       } else if (editing && !fileData) {
         const complete = await loadSummaryDownloadFile(editing.id);
         fileData = complete?.fileData;
+        filePath = complete?.filePath;
+        downloadUrl = complete?.downloadUrl;
       }
 
-      if (!fileData) throw new Error("Die bestehende Datei konnte nicht geladen werden. Bitte lade sie erneut hoch.");
+      if (!fileData && !filePath && !downloadUrl) {
+        throw new Error("Die bestehende Datei konnte nicht geladen werden. Bitte lade sie erneut hoch.");
+      }
 
       const now = new Date().toISOString();
       const summary: SummaryDownload = {
-        id: editing?.id || crypto.randomUUID(),
+        id: summaryId,
         title,
         semester: draft.semester,
         blockId: block.id,
@@ -140,6 +158,8 @@ export function AdminDownloadsManager() {
         uploadDate: editing?.uploadDate || now,
         copyrightOwner: COPYRIGHT_OWNER,
         fileData,
+        filePath,
+        downloadUrl,
         createdAt: editing?.createdAt || now,
         updatedAt: now
       };

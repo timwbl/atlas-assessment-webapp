@@ -46,7 +46,7 @@ Admin-Änderungen werden nicht serverseitig gespeichert. Nutze `Export Assessmen
 
 Der Tab `Zusammenfassungen` zeigt Block-Zusammenfassungen nach `HS2025` und `FS2026`. Im Admin-Modus kannst du Dateien hochladen, bearbeiten, löschen und einem Semester plus Block zuordnen.
 
-Ohne Supabase werden Uploads lokal im Browser gespeichert. Für eine öffentlich geteilte Netlify-Seite solltest du Supabase konfigurieren und das aktuelle `supabase/schema.sql` ausführen. Dann können Admins Dateien zentral speichern und normale User sie herunterladen.
+Ohne Supabase werden Uploads lokal im Browser gespeichert. Für eine öffentlich geteilte Netlify-Seite solltest du Supabase konfigurieren und das aktuelle `supabase/schema.sql` ausführen. Dann speichert die App die Dateien in einem öffentlichen Supabase-Storage-Bucket `summary-downloads` und nur die Metadaten in der Tabelle `summary_downloads`.
 
 Beim Speichern wird `Copyright: Tim Weibel` verpflichtend in den App-Metadaten hinterlegt und im Downloadbereich angezeigt.
 

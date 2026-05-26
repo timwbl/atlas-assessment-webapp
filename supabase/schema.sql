@@ -31,11 +31,21 @@ create table if not exists public.summary_downloads (
   file_size bigint not null,
   upload_date timestamptz not null default now(),
   copyright_owner text not null default 'Tim Weibel' check (copyright_owner = 'Tim Weibel'),
-  file_data text not null,
+  file_data text,
+  file_path text,
   download_url text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+
+alter table public.summary_downloads add column if not exists file_path text;
+alter table public.summary_downloads alter column file_data drop not null;
+
+insert into storage.buckets (id, name, public, file_size_limit)
+values ('summary-downloads', 'summary-downloads', true, 52428800)
+on conflict (id) do update
+set public = true,
+    file_size_limit = 52428800;
 
 create index if not exists user_progress_assessment_idx on public.user_progress(assessment_id);
 create index if not exists user_progress_updated_idx on public.user_progress(updated_at desc);
@@ -179,6 +189,31 @@ create policy "summary_downloads_delete_admin"
 on public.summary_downloads
 for delete
 using (public.is_admin());
+
+drop policy if exists "summary_storage_select_public" on storage.objects;
+create policy "summary_storage_select_public"
+on storage.objects
+for select
+using (bucket_id = 'summary-downloads');
+
+drop policy if exists "summary_storage_insert_admin" on storage.objects;
+create policy "summary_storage_insert_admin"
+on storage.objects
+for insert
+with check (bucket_id = 'summary-downloads' and public.is_admin());
+
+drop policy if exists "summary_storage_update_admin" on storage.objects;
+create policy "summary_storage_update_admin"
+on storage.objects
+for update
+using (bucket_id = 'summary-downloads' and public.is_admin())
+with check (bucket_id = 'summary-downloads' and public.is_admin());
+
+drop policy if exists "summary_storage_delete_admin" on storage.objects;
+create policy "summary_storage_delete_admin"
+on storage.objects
+for delete
+using (bucket_id = 'summary-downloads' and public.is_admin());
 
 -- After creating your own account, promote yourself once:
 -- update public.profiles set role = 'admin' where email = 'your-email@example.com';

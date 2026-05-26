@@ -1,7 +1,7 @@
 "use client";
 
 import { getCurrentProfile } from "./cloudProgress";
-import { isSupabaseConfigured, restRequest } from "./supabaseClient";
+import { isSupabaseConfigured, publicStorageUrl, restRequest, storageRequest } from "./supabaseClient";
 
 export type SemesterId = "HS2025" | "FS2026";
 
@@ -26,6 +26,7 @@ export type SummaryDownload = {
   uploadDate: string;
   copyrightOwner: "Tim Weibel";
   fileData?: string;
+  filePath?: string;
   downloadUrl?: string;
   createdAt: string;
   updatedAt: string;
@@ -44,7 +45,8 @@ type SummaryDownloadRow = {
   file_size: number;
   upload_date: string;
   copyright_owner: "Tim Weibel";
-  file_data?: string;
+  file_data?: string | null;
+  file_path?: string | null;
   download_url?: string | null;
   created_at: string;
   updated_at: string;
@@ -52,8 +54,9 @@ type SummaryDownloadRow = {
 
 export const SUMMARY_DOWNLOADS_CHANGED_EVENT = "atlas-summary-downloads-changed";
 export const COPYRIGHT_OWNER = "Tim Weibel" as const;
-export const MAX_SUMMARY_FILE_SIZE = 8 * 1024 * 1024;
+export const MAX_SUMMARY_FILE_SIZE = 50 * 1024 * 1024;
 
+const STORAGE_BUCKET = "summary-downloads";
 const STORAGE_KEY = "atlas-summary-downloads-v1";
 const ALLOWED_EXTENSIONS = new Set(["pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx", "txt", "md", "zip"]);
 const ALLOWED_TYPES = new Set([
@@ -139,7 +142,7 @@ export async function loadSummaryDownloads(): Promise<SummaryDownload[]> {
   if (isSupabaseConfigured()) {
     try {
       const rows = await restRequest<SummaryDownloadRow[]>(
-        "summary_downloads?select=id,title,semester,block_id,block_title,description,version,file_name,file_type,file_size,upload_date,copyright_owner,download_url,created_at,updated_at&order=semester.asc,block_id.asc,created_at.desc"
+        "summary_downloads?select=id,title,semester,block_id,block_title,description,version,file_name,file_type,file_size,upload_date,copyright_owner,file_path,download_url,created_at,updated_at&order=semester.asc,block_id.asc,created_at.desc"
       );
       return rows.map(fromRow);
     } catch {
@@ -195,7 +198,11 @@ export async function deleteSummaryDownload(id: string): Promise<void> {
   if (isSupabaseConfigured()) {
     const profile = await getCurrentProfile().catch(() => null);
     if (profile?.role === "admin") {
+      const existing = await loadSummaryDownloadFile(id).catch(() => null);
       await restRequest(`summary_downloads?id=eq.${encodeURIComponent(id)}`, { method: "DELETE" });
+      if (existing?.filePath) {
+        await deleteSummaryStorageObject(existing.filePath).catch(() => undefined);
+      }
       notifyDownloadsChanged();
       return;
     }
@@ -207,22 +214,59 @@ export async function deleteSummaryDownload(id: string): Promise<void> {
 
 export async function triggerSummaryDownload(summary: SummaryDownload): Promise<void> {
   const complete = summary.fileData ? summary : await loadSummaryDownloadFile(summary.id);
-  if (!complete?.fileData && !complete?.downloadUrl) {
+  if (!complete?.fileData && !complete?.downloadUrl && !complete?.filePath) {
     throw new Error("Download ist nicht verfügbar.");
   }
 
   const link = document.createElement("a");
-  link.href = complete.fileData || complete.downloadUrl || "";
+  link.href = complete.fileData || complete.downloadUrl || (complete.filePath ? publicStorageUrl(STORAGE_BUCKET, complete.filePath) : "");
   link.download = complete.fileName || `${complete.title}.pdf`;
   document.body.appendChild(link);
   link.click();
   link.remove();
 }
 
+export async function uploadSummaryFileToStorage(file: File, summaryId: string): Promise<{ filePath: string; downloadUrl: string }> {
+  const profile = await getCurrentProfile().catch(() => null);
+  if (!isSupabaseConfigured() || profile?.role !== "admin") {
+    throw new Error("Supabase Storage ist nur mit Admin-Account verfügbar.");
+  }
+
+  const extension = file.name.split(".").pop()?.toLowerCase() || "file";
+  const safeName = file.name
+    .replace(/\.[^.]+$/, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 70) || "zusammenfassung";
+  const filePath = `${summaryId}/${safeName}-${Date.now()}.${extension}`;
+
+  await storageRequest(`object/${STORAGE_BUCKET}/${filePath}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": file.type || "application/octet-stream",
+      "Cache-Control": "3600",
+      "x-upsert": "true"
+    },
+    body: file
+  });
+
+  return {
+    filePath,
+    downloadUrl: publicStorageUrl(STORAGE_BUCKET, filePath)
+  };
+}
+
 export function storageModeLabel(): string {
   return isSupabaseConfigured()
-    ? "Supabase, falls dein Account Admin-Rechte hat. Sonst lokaler Browser-Speicher."
+    ? "Supabase Storage, falls dein Account Admin-Rechte hat. Sonst lokaler Browser-Speicher."
     : "Lokaler Browser-Speicher.";
+}
+
+export async function canUseSummaryStorage(): Promise<boolean> {
+  if (!isSupabaseConfigured()) return false;
+  const profile = await getCurrentProfile().catch(() => null);
+  return profile?.role === "admin";
 }
 
 function readLocalDownloads(): SummaryDownload[] {
@@ -282,8 +326,9 @@ function fromRow(row: SummaryDownloadRow): SummaryDownload {
     fileSize: row.file_size,
     uploadDate: row.upload_date,
     copyrightOwner: row.copyright_owner,
-    fileData: row.file_data,
-    downloadUrl: row.download_url || undefined,
+    fileData: row.file_data || undefined,
+    filePath: row.file_path || undefined,
+    downloadUrl: row.download_url || (row.file_path ? publicStorageUrl(STORAGE_BUCKET, row.file_path) : undefined),
     createdAt: row.created_at,
     updatedAt: row.updated_at
   });
@@ -303,9 +348,18 @@ function toRow(download: SummaryDownload): SummaryDownloadRow {
     file_size: download.fileSize,
     upload_date: download.uploadDate,
     copyright_owner: COPYRIGHT_OWNER,
-    file_data: download.fileData,
+    file_data: download.fileData || null,
+    file_path: download.filePath || null,
     download_url: download.downloadUrl || null,
     created_at: download.createdAt,
     updated_at: download.updatedAt
   };
+}
+
+async function deleteSummaryStorageObject(filePath: string): Promise<void> {
+  await storageRequest(`object/${STORAGE_BUCKET}`, {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prefixes: [filePath] })
+  });
 }
