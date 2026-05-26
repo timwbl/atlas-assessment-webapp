@@ -54,7 +54,7 @@ type SummaryDownloadRow = {
 
 export const SUMMARY_DOWNLOADS_CHANGED_EVENT = "atlas-summary-downloads-changed";
 export const COPYRIGHT_OWNER = "Tim Weibel" as const;
-export const MAX_SUMMARY_FILE_SIZE = 50 * 1024 * 1024;
+export const MAX_SUMMARY_FILE_SIZE = 100 * 1024 * 1024;
 
 const STORAGE_BUCKET = "summary-downloads";
 const STORAGE_KEY = "atlas-summary-downloads-v1";
