@@ -1,20 +1,37 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { AssessmentCard } from "./AssessmentCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
 import { loadAssessments } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
-import { formatBlockLabel } from "@/lib/blockLabels";
+import { blockColor } from "@/lib/blockColors";
+import {
+  BLOCK_RECOMMENDATIONS_CHANGED_EVENT,
+  blockRecommendationSummary,
+  loadBlockRecommendations,
+  recommendationId,
+  type BlockRecommendation
+} from "@/lib/blockRecommendations";
+import {
+  blocksForSemester,
+  DOWNLOAD_SEMESTERS,
+  getSummaryBlock,
+  semesterTitle,
+  type SemesterId
+} from "@/lib/summaryDownloads";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/types";
 
 export function LibraryClient() {
   const [loaded, setLoaded] = useState<LoadedAssessment[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
+  const [recommendations, setRecommendations] = useState<Record<string, BlockRecommendation>>({});
   const [query, setQuery] = useState("");
-  const [block, setBlock] = useState("");
+  const [semester, setSemester] = useState<SemesterId | "">("");
+  const [blockId, setBlockId] = useState("");
   const [code, setCode] = useState("");
   const [tag, setTag] = useState("");
   const [error, setError] = useState("");
@@ -35,19 +52,40 @@ export function LibraryClient() {
     return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
   }, []);
 
+  useEffect(() => {
+    void loadBlockRecommendations().then(setRecommendations);
+
+    function updateRecommendations() {
+      void loadBlockRecommendations().then(setRecommendations);
+    }
+
+    window.addEventListener(BLOCK_RECOMMENDATIONS_CHANGED_EVENT, updateRecommendations);
+    return () => window.removeEventListener(BLOCK_RECOMMENDATIONS_CHANGED_EVENT, updateRecommendations);
+  }, []);
+
   const assessments = loaded.map((item) => item.assessment).filter(Boolean) as Assessment[];
   const invalid = loaded.filter((item) => !item.assessment && item.errors.length);
 
-  const blocks = [...new Set(assessments.map((assessment) => assessment.block))]
+  const blockOptions = semester ? blocksForSemester(semester) : [];
+  const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
+  const selectedRecommendation = semester && selectedBlock
+    ? recommendations[recommendationId(semester, selectedBlock.id)]
+    : undefined;
+
+  const blockAssessments = useMemo(() => {
+    if (!selectedBlock) return [];
+    return assessments.filter((assessment) => blockMatches(assessment.block, selectedBlock.title));
+  }, [assessments, selectedBlock]);
+
+  const codes = [...new Set(blockAssessments.map((assessment) => assessment.lectureCode))]
     .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
-  const codes = [...new Set(assessments.map((assessment) => assessment.lectureCode))]
-    .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
-  const tags = [...new Set(assessments.flatMap(collectAssessmentTags))]
+  const tags = [...new Set(blockAssessments.flatMap(collectAssessmentTags))]
     .sort((a, b) => a.localeCompare(b, "de", { sensitivity: "base" }));
 
   const filtered = useMemo(() => {
+    if (!selectedBlock) return [];
     const needle = query.trim().toLowerCase();
-    return assessments.filter((assessment) => {
+    return blockAssessments.filter((assessment) => {
       const haystack = [
         assessment.title,
         assessment.lectureCode,
@@ -56,19 +94,10 @@ export function LibraryClient() {
         ...collectAssessmentTags(assessment)
       ].join(" ").toLowerCase();
       return (!needle || haystack.includes(needle))
-        && (!block || assessment.block === block)
         && (!code || assessment.lectureCode === code)
         && (!tag || collectAssessmentTags(assessment).includes(tag));
     });
-  }, [assessments, block, code, query, tag]);
-
-  const grouped = useMemo(() => {
-    return filtered.reduce<Record<string, Assessment[]>>((acc, assessment) => {
-      acc[assessment.block] = acc[assessment.block] || [];
-      acc[assessment.block].push(assessment);
-      return acc;
-    }, {});
-  }, [filtered]);
+  }, [blockAssessments, code, query, selectedBlock, tag]);
 
   return (
     <main id="top" className="shell">
@@ -79,6 +108,9 @@ export function LibraryClient() {
             <h1 className="library-title mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
               MC Übungsfragen
             </h1>
+            <p className="mt-3 max-w-2xl text-[var(--muted)]">
+              Wähle zuerst ein Semester und danach einen Block, um die passenden MC-Fragen zu öffnen.
+            </p>
           </div>
           <ProgressTools onImported={() => setProgress(getAllProgress())} />
         </div>
@@ -88,8 +120,67 @@ export function LibraryClient() {
         <PrivacyNotice />
       </div>
 
+      <section className="semester-picker-card mt-5">
+        <div className="min-w-0">
+          <div className="eyebrow">Auswahl</div>
+          <h2 className="mt-1 text-2xl font-black">Semester auswählen</h2>
+          <p className="mt-1 text-sm text-[var(--muted)]">Die Fragen werden erst nach Semester- und Blockauswahl angezeigt.</p>
+        </div>
+        <label className="semester-picker-control">
+          <span>Semester</span>
+          <select
+            value={semester}
+            onChange={(event) => {
+              setSemester(event.target.value as SemesterId | "");
+              setBlockId("");
+              setCode("");
+              setTag("");
+            }}
+          >
+            <option value="">Bitte auswählen</option>
+            {DOWNLOAD_SEMESTERS.map((item) => (
+              <option key={item.id} value={item.id}>{item.title}</option>
+            ))}
+          </select>
+        </label>
+      </section>
+
+      {semester && (
+        <section className="card mt-5 p-5">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+            <div>
+              <div className="eyebrow">{semesterTitle(semester)}</div>
+              <h2 className="mt-1 text-2xl font-black">Block auswählen</h2>
+            </div>
+            <span className="pill">{blockOptions.length} Blöcke</span>
+          </div>
+          <div className="block-picker-grid mt-4">
+            {blockOptions.map((item) => {
+              const recommendation = recommendations[recommendationId(item.semester, item.id)];
+              return (
+                <button
+                  className={blockId === item.id ? "block-picker-card is-active" : "block-picker-card"}
+                  key={item.id}
+                  style={{ "--block-picker-accent": blockColor(item.title) } as CSSProperties}
+                  onClick={() => {
+                    setBlockId(item.id);
+                    setCode("");
+                    setTag("");
+                  }}
+                  type="button"
+                >
+                  <span className="block-picker-dot" />
+                  <strong>{item.title}</strong>
+                  <small>{blockRecommendationSummary(recommendation)}</small>
+                </button>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       <section className="card mt-5 p-4">
-        <div className="assessment-filters grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="assessment-filters grid gap-3 md:grid-cols-[1.4fr_1fr_1fr]">
           <input
             className="input"
             type="search"
@@ -101,17 +192,14 @@ export function LibraryClient() {
             inputMode="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
+            disabled={!selectedBlock}
             placeholder="Suchen nach Titel, Code, Tag"
           />
-          <select className="input" value={block} onChange={(event) => setBlock(event.target.value)}>
-            <option value="">Alle Blöcke</option>
-            {blocks.map((value) => <option key={value} value={value}>{formatBlockLabel(value)}</option>)}
-          </select>
-          <select className="input" value={code} onChange={(event) => setCode(event.target.value)}>
+          <select className="input" value={code} disabled={!selectedBlock} onChange={(event) => setCode(event.target.value)}>
             <option value="">Alle Codes</option>
             {codes.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
-          <select className="input" value={tag} onChange={(event) => setTag(event.target.value)}>
+          <select className="input" value={tag} disabled={!selectedBlock} onChange={(event) => setTag(event.target.value)}>
             <option value="">Alle Tags</option>
             {tags.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
@@ -133,25 +221,71 @@ export function LibraryClient() {
         </section>
       )}
 
-      <section className="mt-6 grid gap-8">
-        {Object.entries(grouped).map(([groupBlock, groupAssessments]) => (
-          <div key={groupBlock}>
-            <div className="mb-3 flex items-center justify-between gap-3">
-              <h2 className="text-2xl font-black">{formatBlockLabel(groupBlock)}</h2>
-              <span className="pill">{groupAssessments.length} Assessments</span>
+      {!semester && (
+        <section className="card mt-5 p-8 text-center">
+          <div className="eyebrow">Start</div>
+          <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Semester</h2>
+          <p className="mt-2 text-[var(--muted)]">Danach kannst du den passenden Block auswählen.</p>
+        </section>
+      )}
+
+      {semester && !selectedBlock && (
+        <section className="card mt-5 p-8 text-center">
+          <div className="eyebrow">{semesterTitle(semester)}</div>
+          <h2 className="mt-2 text-2xl font-black">Bitte wähle einen Block</h2>
+          <p className="mt-2 text-[var(--muted)]">Erst danach werden die MC-Fragen angezeigt.</p>
+        </section>
+      )}
+
+      {selectedBlock && (
+        <section className="mt-6 grid gap-5">
+          <div>
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <div className="eyebrow">{semester ? semesterTitle(semester) : ""}</div>
+                <h2 className="text-3xl font-black">{selectedBlock.title}</h2>
+              </div>
+              <span className="pill">{filtered.length} Assessments</span>
             </div>
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {groupAssessments.map((assessment) => (
-                <AssessmentCard
-                  key={assessment.id}
-                  assessment={assessment}
-                  progress={progress[assessment.id]}
-                />
-              ))}
+
+            <div className="block-recommendation-card">
+              <div>
+                <div className="eyebrow">ATLAS Einschätzung</div>
+                <h3 className="mt-1 text-xl font-black">
+                  {selectedRecommendation?.rating ? `${selectedRecommendation.rating}/10 Empfehlung` : "Noch keine Bewertung"}
+                </h3>
+                <p className="mt-2 text-sm text-[var(--muted)]">
+                  {selectedRecommendation?.comment || "Für diesen Block wurde noch kein Admin-Kommentar hinterlegt."}
+                </p>
+              </div>
             </div>
+
+            {filtered.length === 0 ? (
+              <div className="card mt-4 p-8 text-center">
+                <div className="eyebrow">{selectedBlock.title}</div>
+                <h3 className="mt-2 text-2xl font-black">Keine passenden Fragen gefunden</h3>
+                <p className="mt-2 text-[var(--muted)]">Für diesen Block sind aktuell keine MC-Assessments hinterlegt oder deine Filter sind zu eng.</p>
+              </div>
+            ) : (
+              <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {filtered.map((assessment) => (
+                  <AssessmentCard
+                    key={assessment.id}
+                    assessment={assessment}
+                    progress={progress[assessment.id]}
+                  />
+                ))}
+              </div>
+            )}
           </div>
-        ))}
-      </section>
+        </section>
+      )}
     </main>
   );
+}
+
+function blockMatches(assessmentBlock: string, selectedBlockTitle: string): boolean {
+  const assessmentNumber = String(assessmentBlock || "").match(/\d+/)?.[0] || "";
+  const selectedNumber = selectedBlockTitle.match(/\d+/)?.[0] || "";
+  return !!assessmentNumber && assessmentNumber === selectedNumber;
 }

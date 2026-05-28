@@ -50,6 +50,10 @@ Ohne Supabase werden Uploads lokal im Browser gespeichert. Für eine öffentlich
 
 Beim Speichern wird `Copyright: Tim Weibel` verpflichtend in den App-Metadaten hinterlegt und im Downloadbereich angezeigt.
 
+## Block-Empfehlungen
+
+Im Admin-Modus kannst du für jeden Semester-Block eine MC-Fragen-Bewertung von 1 bis 10 und einen kurzen Kommentar speichern. Mit Supabase werden diese Empfehlungen zentral in `assessment_block_recommendations` gespeichert und in der MC-Library öffentlich angezeigt.
+
 ## Optionaler Account-Sync
 
 Die App funktioniert weiterhin komplett ohne Account. Wenn du Fortschritte zentral speichern willst:

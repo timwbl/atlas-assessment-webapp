@@ -38,6 +38,16 @@ create table if not exists public.summary_downloads (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.assessment_block_recommendations (
+  id text primary key,
+  semester text not null check (semester in ('HS2025', 'FS2026')),
+  block_id text not null,
+  block_title text not null,
+  rating integer check (rating between 1 and 10),
+  comment text,
+  updated_at timestamptz not null default now()
+);
+
 alter table public.summary_downloads add column if not exists file_path text;
 alter table public.summary_downloads alter column file_data drop not null;
 
@@ -51,6 +61,7 @@ create index if not exists user_progress_assessment_idx on public.user_progress(
 create index if not exists user_progress_updated_idx on public.user_progress(updated_at desc);
 create index if not exists summary_downloads_semester_block_idx on public.summary_downloads(semester, block_id);
 create index if not exists summary_downloads_updated_idx on public.summary_downloads(updated_at desc);
+create index if not exists assessment_block_recommendations_semester_block_idx on public.assessment_block_recommendations(semester, block_id);
 
 create or replace function public.is_admin(check_user uuid default auth.uid())
 returns boolean
@@ -120,6 +131,7 @@ for each row execute function public.protect_profile_role();
 alter table public.profiles enable row level security;
 alter table public.user_progress enable row level security;
 alter table public.summary_downloads enable row level security;
+alter table public.assessment_block_recommendations enable row level security;
 
 drop policy if exists "profiles_select_own_or_admin" on public.profiles;
 create policy "profiles_select_own_or_admin"
@@ -214,6 +226,31 @@ create policy "summary_storage_delete_admin"
 on storage.objects
 for delete
 using (bucket_id = 'summary-downloads' and public.is_admin());
+
+drop policy if exists "assessment_block_recommendations_select_public" on public.assessment_block_recommendations;
+create policy "assessment_block_recommendations_select_public"
+on public.assessment_block_recommendations
+for select
+using (true);
+
+drop policy if exists "assessment_block_recommendations_insert_admin" on public.assessment_block_recommendations;
+create policy "assessment_block_recommendations_insert_admin"
+on public.assessment_block_recommendations
+for insert
+with check (public.is_admin());
+
+drop policy if exists "assessment_block_recommendations_update_admin" on public.assessment_block_recommendations;
+create policy "assessment_block_recommendations_update_admin"
+on public.assessment_block_recommendations
+for update
+using (public.is_admin())
+with check (public.is_admin());
+
+drop policy if exists "assessment_block_recommendations_delete_admin" on public.assessment_block_recommendations;
+create policy "assessment_block_recommendations_delete_admin"
+on public.assessment_block_recommendations
+for delete
+using (public.is_admin());
 
 -- After creating your own account, promote yourself once:
 -- update public.profiles set role = 'admin' where email = 'your-email@example.com';

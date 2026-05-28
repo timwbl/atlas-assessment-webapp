@@ -560,6 +560,76 @@ button:disabled {
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 14%, transparent);
 }
 
+.block-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.block-picker-card {
+  display: grid;
+  min-height: 118px;
+  justify-items: start;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--surface-strong) 90%, transparent);
+  padding: 15px;
+  color: var(--text);
+  text-align: left;
+  box-shadow: var(--inner-highlight);
+}
+
+.block-picker-card.is-active {
+  border-color: color-mix(in srgb, var(--block-picker-accent, var(--accent)) 62%, transparent);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--block-picker-accent, var(--accent)) 13%, transparent), transparent 54%),
+    var(--surface-strong);
+}
+
+.block-picker-card strong {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.block-picker-card small {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 680;
+  line-height: 1.35;
+}
+
+.block-picker-dot {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 999px;
+  background: var(--block-picker-accent, var(--accent));
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--block-picker-accent, var(--accent)) 13%, transparent);
+}
+
+.block-recommendation-card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--warning) 10%, transparent), transparent 48%),
+    color-mix(in srgb, var(--surface) 94%, transparent);
+  padding: 18px;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.055), var(--inner-highlight);
+  backdrop-filter: blur(22px) saturate(165%);
+}
+
+.recommendation-editor-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.7fr) minmax(120px, 0.45fr) minmax(260px, 1.4fr) auto;
+  gap: 12px;
+  align-items: end;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
+  padding: 14px;
+}
+
 @media (max-width: 760px) {
   body {
     background:
@@ -884,6 +954,23 @@ button:disabled {
     grid-template-columns: 1fr;
     border-radius: 22px;
     padding: 16px;
+  }
+
+  .block-picker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .block-picker-card {
+    min-height: 96px;
+  }
+
+  .recommendation-editor-row {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .recommendation-editor-row .btn-primary {
+    width: 100%;
   }
 }
 
