@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { AssessmentPublicReviews } from "./AssessmentPublicReviews";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
@@ -77,6 +78,8 @@ export function AssessmentDetailClient({ id }: { id: string }) {
           </button>
         </div>
       </header>
+
+      <AssessmentPublicReviews assessmentId={assessment.id} />
 
       <section className="mt-6 grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="card p-5">

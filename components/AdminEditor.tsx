@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminAssessmentReviews } from "./AdminAssessmentReviews";
 import { AdminBlockRecommendations } from "./AdminBlockRecommendations";
 import { AdminDownloadsManager } from "./AdminDownloadsManager";
 import { AdminProgressDashboard } from "./AdminProgressDashboard";
@@ -120,6 +121,8 @@ export function AdminEditor() {
       </header>
 
       <AdminBlockRecommendations />
+
+      <AdminAssessmentReviews />
 
       <AdminDownloadsManager />
 

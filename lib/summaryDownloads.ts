@@ -10,6 +10,7 @@ export type SummaryBlock = {
   semester: SemesterId;
   title: string;
   order: number;
+  matchTerms?: string[];
 };
 
 export type SummaryDownload = {
@@ -78,17 +79,31 @@ export const DOWNLOAD_SEMESTERS: Array<{ id: SemesterId; title: string; order: n
   { id: "FS2026", title: "2. Semester", order: 2 }
 ];
 
-const SUMMARY_BLOCK_NUMBERS: Record<SemesterId, number[]> = {
-  HS2025: [1, 2, 3, 4],
-  FS2026: [5, 6, 7, 8, 9]
+const SUMMARY_BLOCK_CONFIG: Record<SemesterId, Array<Omit<SummaryBlock, "semester">>> = {
+  HS2025: [1, 2, 3, 4].map((blockNumber, index) => ({
+    id: `HS2025-block-${blockNumber}`,
+    title: `Block ${blockNumber}`,
+    order: index + 1
+  })),
+  FS2026: [
+    ...[5, 6, 7, 8, 9].map((blockNumber, index) => ({
+      id: `FS2026-block-${blockNumber}`,
+      title: `Block ${blockNumber}`,
+      order: index + 1
+    })),
+    {
+      id: "FS2026-pruefungssimulationen",
+      title: "Prüfungssimulationen",
+      order: 6,
+      matchTerms: ["prüfungssimulationen", "pruefungssimulationen"]
+    }
+  ]
 };
 
 export const SUMMARY_BLOCKS: SummaryBlock[] = DOWNLOAD_SEMESTERS.flatMap((semester) => (
-  SUMMARY_BLOCK_NUMBERS[semester.id].map((blockNumber, index) => ({
-    id: `${semester.id}-block-${blockNumber}`,
-    semester: semester.id,
-    title: `Block ${blockNumber}`,
-    order: index + 1
+  SUMMARY_BLOCK_CONFIG[semester.id].map((block) => ({
+    ...block,
+    semester: semester.id
   }))
 ));
 

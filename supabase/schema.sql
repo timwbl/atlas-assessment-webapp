@@ -48,6 +48,22 @@ create table if not exists public.assessment_block_recommendations (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.assessment_reviews (
+  id text primary key,
+  assessment_id text not null,
+  assessment_title text not null,
+  lecture_code text not null,
+  user_id uuid not null references public.profiles(id) on delete cascade,
+  user_email text not null,
+  display_name text,
+  rating integer not null check (rating between 1 and 5),
+  comment text,
+  approved boolean not null default false,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (user_id, assessment_id)
+);
+
 alter table public.summary_downloads add column if not exists file_path text;
 alter table public.summary_downloads alter column file_data drop not null;
 
@@ -62,6 +78,8 @@ create index if not exists user_progress_updated_idx on public.user_progress(upd
 create index if not exists summary_downloads_semester_block_idx on public.summary_downloads(semester, block_id);
 create index if not exists summary_downloads_updated_idx on public.summary_downloads(updated_at desc);
 create index if not exists assessment_block_recommendations_semester_block_idx on public.assessment_block_recommendations(semester, block_id);
+create index if not exists assessment_reviews_assessment_idx on public.assessment_reviews(assessment_id);
+create index if not exists assessment_reviews_updated_idx on public.assessment_reviews(updated_at desc);
 
 create or replace function public.is_admin(check_user uuid default auth.uid())
 returns boolean
@@ -132,6 +150,7 @@ alter table public.profiles enable row level security;
 alter table public.user_progress enable row level security;
 alter table public.summary_downloads enable row level security;
 alter table public.assessment_block_recommendations enable row level security;
+alter table public.assessment_reviews enable row level security;
 
 drop policy if exists "profiles_select_own_or_admin" on public.profiles;
 create policy "profiles_select_own_or_admin"
@@ -249,6 +268,38 @@ with check (public.is_admin());
 drop policy if exists "assessment_block_recommendations_delete_admin" on public.assessment_block_recommendations;
 create policy "assessment_block_recommendations_delete_admin"
 on public.assessment_block_recommendations
+for delete
+using (public.is_admin());
+
+drop policy if exists "assessment_reviews_select_public_approved_or_admin" on public.assessment_reviews;
+create policy "assessment_reviews_select_public_approved_or_admin"
+on public.assessment_reviews
+for select
+using (approved = true or user_id = auth.uid() or public.is_admin());
+
+drop policy if exists "assessment_reviews_insert_own" on public.assessment_reviews;
+create policy "assessment_reviews_insert_own"
+on public.assessment_reviews
+for insert
+with check (user_id = auth.uid() and approved = false);
+
+drop policy if exists "assessment_reviews_update_own_unapproved" on public.assessment_reviews;
+create policy "assessment_reviews_update_own_unapproved"
+on public.assessment_reviews
+for update
+using (user_id = auth.uid())
+with check (user_id = auth.uid() and approved = false);
+
+drop policy if exists "assessment_reviews_update_admin" on public.assessment_reviews;
+create policy "assessment_reviews_update_admin"
+on public.assessment_reviews
+for update
+using (public.is_admin())
+with check (public.is_admin());
+
+drop policy if exists "assessment_reviews_delete_admin" on public.assessment_reviews;
+create policy "assessment_reviews_delete_admin"
+on public.assessment_reviews
 for delete
 using (public.is_admin());
 

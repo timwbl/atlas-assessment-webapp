@@ -592,13 +592,6 @@ button:disabled {
   line-height: 1.1;
 }
 
-.block-picker-card small {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 680;
-  line-height: 1.35;
-}
-
 .block-picker-dot {
   display: block;
   width: 13px;
@@ -606,17 +599,6 @@ button:disabled {
   border-radius: 999px;
   background: var(--block-picker-accent, var(--accent));
   box-shadow: 0 0 0 5px color-mix(in srgb, var(--block-picker-accent, var(--accent)) 13%, transparent);
-}
-
-.block-recommendation-card {
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--warning) 10%, transparent), transparent 48%),
-    color-mix(in srgb, var(--surface) 94%, transparent);
-  padding: 18px;
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.055), var(--inner-highlight);
-  backdrop-filter: blur(22px) saturate(165%);
 }
 
 .recommendation-editor-row {
@@ -628,6 +610,54 @@ button:disabled {
   border-radius: 20px;
   background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
   padding: 14px;
+}
+
+.review-star-row {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.review-star {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-strong);
+  color: color-mix(in srgb, var(--muted) 62%, transparent);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.review-star.is-active {
+  border-color: color-mix(in srgb, var(--warning) 58%, transparent);
+  background: color-mix(in srgb, var(--warning) 16%, var(--surface-strong));
+  color: #9a5b00;
+}
+
+.public-review {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
+  padding: 14px;
+}
+
+.admin-review-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
+  padding: 14px;
+}
+
+.admin-review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 @media (max-width: 760px) {
@@ -970,6 +1000,20 @@ button:disabled {
   }
 
   .recommendation-editor-row .btn-primary {
+    width: 100%;
+  }
+
+  .admin-review-row {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .admin-review-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .admin-review-actions > * {
     width: 100%;
   }
 }

@@ -9,13 +9,6 @@ import { loadAssessments } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { blockColor } from "@/lib/blockColors";
 import {
-  BLOCK_RECOMMENDATIONS_CHANGED_EVENT,
-  blockRecommendationSummary,
-  loadBlockRecommendations,
-  recommendationId,
-  type BlockRecommendation
-} from "@/lib/blockRecommendations";
-import {
   blocksForSemester,
   DOWNLOAD_SEMESTERS,
   getSummaryBlock,
@@ -28,7 +21,6 @@ import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/typ
 export function LibraryClient() {
   const [loaded, setLoaded] = useState<LoadedAssessment[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
-  const [recommendations, setRecommendations] = useState<Record<string, BlockRecommendation>>({});
   const [query, setQuery] = useState("");
   const [semester, setSemester] = useState<SemesterId | "">("");
   const [blockId, setBlockId] = useState("");
@@ -52,25 +44,11 @@ export function LibraryClient() {
     return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
   }, []);
 
-  useEffect(() => {
-    void loadBlockRecommendations().then(setRecommendations);
-
-    function updateRecommendations() {
-      void loadBlockRecommendations().then(setRecommendations);
-    }
-
-    window.addEventListener(BLOCK_RECOMMENDATIONS_CHANGED_EVENT, updateRecommendations);
-    return () => window.removeEventListener(BLOCK_RECOMMENDATIONS_CHANGED_EVENT, updateRecommendations);
-  }, []);
-
   const assessments = loaded.map((item) => item.assessment).filter(Boolean) as Assessment[];
   const invalid = loaded.filter((item) => !item.assessment && item.errors.length);
 
   const blockOptions = semester ? blocksForSemester(semester) : [];
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
-  const selectedRecommendation = semester && selectedBlock
-    ? recommendations[recommendationId(semester, selectedBlock.id)]
-    : undefined;
 
   const blockAssessments = useMemo(() => {
     if (!selectedBlock) return [];
@@ -155,26 +133,22 @@ export function LibraryClient() {
             <span className="pill">{blockOptions.length} Blöcke</span>
           </div>
           <div className="block-picker-grid mt-4">
-            {blockOptions.map((item) => {
-              const recommendation = recommendations[recommendationId(item.semester, item.id)];
-              return (
-                <button
-                  className={blockId === item.id ? "block-picker-card is-active" : "block-picker-card"}
-                  key={item.id}
-                  style={{ "--block-picker-accent": blockColor(item.title) } as CSSProperties}
-                  onClick={() => {
-                    setBlockId(item.id);
-                    setCode("");
-                    setTag("");
-                  }}
-                  type="button"
-                >
-                  <span className="block-picker-dot" />
-                  <strong>{item.title}</strong>
-                  <small>{blockRecommendationSummary(recommendation)}</small>
-                </button>
-              );
-            })}
+            {blockOptions.map((item) => (
+              <button
+                className={blockId === item.id ? "block-picker-card is-active" : "block-picker-card"}
+                key={item.id}
+                style={{ "--block-picker-accent": blockColor(item.title) } as CSSProperties}
+                onClick={() => {
+                  setBlockId(item.id);
+                  setCode("");
+                  setTag("");
+                }}
+                type="button"
+              >
+                <span className="block-picker-dot" />
+                <strong>{item.title}</strong>
+              </button>
+            ))}
           </div>
         </section>
       )}
@@ -248,18 +222,6 @@ export function LibraryClient() {
               <span className="pill">{filtered.length} Assessments</span>
             </div>
 
-            <div className="block-recommendation-card">
-              <div>
-                <div className="eyebrow">ATLAS Einschätzung</div>
-                <h3 className="mt-1 text-xl font-black">
-                  {selectedRecommendation?.rating ? `${selectedRecommendation.rating}/10 Empfehlung` : "Noch keine Bewertung"}
-                </h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">
-                  {selectedRecommendation?.comment || "Für diesen Block wurde noch kein Admin-Kommentar hinterlegt."}
-                </p>
-              </div>
-            </div>
-
             {filtered.length === 0 ? (
               <div className="card mt-4 p-8 text-center">
                 <div className="eyebrow">{selectedBlock.title}</div>
@@ -285,7 +247,20 @@ export function LibraryClient() {
 }
 
 function blockMatches(assessmentBlock: string, selectedBlockTitle: string): boolean {
+  const normalizedAssessment = normalizeText(assessmentBlock);
+  const normalizedSelected = normalizeText(selectedBlockTitle);
+  if (normalizedSelected.includes("prufungssimulationen") || normalizedSelected.includes("pruefungssimulationen")) {
+    return normalizedAssessment.includes("prufungssimulationen") || normalizedAssessment.includes("pruefungssimulationen");
+  }
+
   const assessmentNumber = String(assessmentBlock || "").match(/\d+/)?.[0] || "";
   const selectedNumber = selectedBlockTitle.match(/\d+/)?.[0] || "";
   return !!assessmentNumber && assessmentNumber === selectedNumber;
+}
+
+function normalizeText(value: string): string {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 }

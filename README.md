@@ -54,6 +54,10 @@ Beim Speichern wird `Copyright: Tim Weibel` verpflichtend in den App-Metadaten h
 
 Im Admin-Modus kannst du für jeden Semester-Block eine MC-Fragen-Bewertung von 1 bis 10 und einen kurzen Kommentar speichern. Mit Supabase werden diese Empfehlungen zentral in `assessment_block_recommendations` gespeichert und in der MC-Library öffentlich angezeigt.
 
+## User-Bewertungen
+
+Angemeldete User können nach Abschluss eines Assessments 1 bis 5 Sterne und optional einen Kommentar abgeben. Bewertungen werden in `assessment_reviews` gespeichert. Kommentare sind standardmässig nicht freigegeben und erscheinen erst öffentlich, wenn du sie im Admin-Modus moderierst.
+
 ## Optionaler Account-Sync
 
 Die App funktioniert weiterhin komplett ohne Account. Wenn du Fortschritte zentral speichern willst:

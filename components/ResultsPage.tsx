@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { AssessmentReviewPrompt } from "./AssessmentReviewPrompt";
 import type { Assessment, QuizAttempt, QuizResultRow } from "@/lib/types";
 import { answerLabel, correctAnswerLabel } from "@/lib/score";
 
@@ -60,6 +61,8 @@ export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestar
           </div>
         </div>
       </section>
+
+      <AssessmentReviewPrompt assessment={assessment} />
 
       <section className="mt-6 grid gap-4">
         {wrong.map((row) => (
