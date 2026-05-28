@@ -59,6 +59,8 @@ export const MAX_SUMMARY_FILE_SIZE = 300 * 1024 * 1024;
 
 const STORAGE_BUCKET = "summary-downloads";
 const STORAGE_KEY = "atlas-summary-downloads-v1";
+const STORAGE_CHUNK_SIZE = 4 * 1024 * 1024;
+const CHUNK_MANIFEST_PREFIX = "atlas-chunks-v1:";
 const ALLOWED_EXTENSIONS = new Set(["pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx", "txt", "md", "zip"]);
 const ALLOWED_TYPES = new Set([
   "application/pdf",
@@ -73,6 +75,14 @@ const ALLOWED_TYPES = new Set([
   "application/zip",
   "application/x-zip-compressed"
 ]);
+
+type ChunkManifest = {
+  kind: "chunks";
+  parts: string[];
+  fileName: string;
+  fileType: string;
+  fileSize: number;
+};
 
 export const DOWNLOAD_SEMESTERS: Array<{ id: SemesterId; title: string; order: number }> = [
   { id: "HS2025", title: "1. Semester", order: 1 },
@@ -243,14 +253,20 @@ export async function triggerSummaryDownload(summary: SummaryDownload): Promise<
   }
 
   const link = document.createElement("a");
-  link.href = complete.fileData || complete.downloadUrl || (complete.filePath ? publicStorageUrl(STORAGE_BUCKET, complete.filePath) : "");
+  const chunkManifest = decodeChunkManifest(complete.filePath);
+  if (chunkManifest) {
+    link.href = await createChunkDownloadUrl(chunkManifest);
+  } else {
+    link.href = complete.fileData || complete.downloadUrl || (complete.filePath ? publicStorageUrl(STORAGE_BUCKET, complete.filePath) : "");
+  }
   link.download = complete.fileName || `${complete.title}.pdf`;
   document.body.appendChild(link);
   link.click();
+  if (chunkManifest) window.setTimeout(() => URL.revokeObjectURL(link.href), 5000);
   link.remove();
 }
 
-export async function uploadSummaryFileToStorage(file: File, summaryId: string): Promise<{ filePath: string; downloadUrl: string }> {
+export async function uploadSummaryFileToStorage(file: File, summaryId: string): Promise<{ filePath: string; downloadUrl?: string }> {
   const profile = await getCurrentProfile().catch(() => null);
   if (!isSupabaseConfigured() || profile?.role !== "admin") {
     throw new Error("Supabase Storage ist nur mit Admin-Account verfügbar.");
@@ -264,6 +280,19 @@ export async function uploadSummaryFileToStorage(file: File, summaryId: string):
     .replace(/^-|-$/g, "")
     .slice(0, 70) || "zusammenfassung";
   const filePath = `${summaryId}/${safeName}-${Date.now()}.${extension}`;
+
+  if (file.size > STORAGE_CHUNK_SIZE) {
+    const parts = await uploadSummaryFileInChunks(file, summaryId, safeName, extension);
+    return {
+      filePath: encodeChunkManifest({
+        kind: "chunks",
+        parts,
+        fileName: file.name,
+        fileType: file.type || "application/octet-stream",
+        fileSize: file.size
+      })
+    };
+  }
 
   await storageRequest(`object/${STORAGE_BUCKET}/${filePath}`, {
     method: "PUT",
@@ -352,7 +381,7 @@ function fromRow(row: SummaryDownloadRow): SummaryDownload {
     copyrightOwner: row.copyright_owner,
     fileData: row.file_data || undefined,
     filePath: row.file_path || undefined,
-    downloadUrl: row.download_url || (row.file_path ? publicStorageUrl(STORAGE_BUCKET, row.file_path) : undefined),
+    downloadUrl: row.download_url || (row.file_path && !decodeChunkManifest(row.file_path) ? publicStorageUrl(STORAGE_BUCKET, row.file_path) : undefined),
     createdAt: row.created_at,
     updatedAt: row.updated_at
   });
@@ -381,11 +410,77 @@ function toRow(download: SummaryDownload): SummaryDownloadRow {
 }
 
 async function deleteSummaryStorageObject(filePath: string): Promise<void> {
+  const chunkManifest = decodeChunkManifest(filePath);
+  const prefixes = chunkManifest?.parts.length ? chunkManifest.parts : [filePath];
   await storageRequest(`object/${STORAGE_BUCKET}`, {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ prefixes: [filePath] })
+    body: JSON.stringify({ prefixes })
   });
+}
+
+async function uploadSummaryFileInChunks(file: File, summaryId: string, safeName: string, extension: string): Promise<string[]> {
+  const uploadedParts: string[] = [];
+  const totalChunks = Math.ceil(file.size / STORAGE_CHUNK_SIZE);
+  const stamp = Date.now();
+
+  try {
+    for (let index = 0; index < totalChunks; index += 1) {
+      const start = index * STORAGE_CHUNK_SIZE;
+      const end = Math.min(start + STORAGE_CHUNK_SIZE, file.size);
+      const chunk = file.slice(start, end, "application/octet-stream");
+      const partPath = `${summaryId}/chunks/${safeName}-${stamp}.part-${String(index + 1).padStart(4, "0")}-of-${String(totalChunks).padStart(4, "0")}.${extension}`;
+
+      await storageRequest(`object/${STORAGE_BUCKET}/${partPath}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/octet-stream",
+          "Cache-Control": "3600",
+          "x-upsert": "true"
+        },
+        body: chunk
+      });
+      uploadedParts.push(partPath);
+    }
+  } catch (error) {
+    await deleteSummaryStorageParts(uploadedParts).catch(() => undefined);
+    throw error;
+  }
+
+  return uploadedParts;
+}
+
+async function deleteSummaryStorageParts(parts: string[]): Promise<void> {
+  if (!parts.length) return;
+  await storageRequest(`object/${STORAGE_BUCKET}`, {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prefixes: parts })
+  });
+}
+
+async function createChunkDownloadUrl(manifest: ChunkManifest): Promise<string> {
+  const blobs = await Promise.all(manifest.parts.map(async (partPath) => {
+    const response = await fetch(publicStorageUrl(STORAGE_BUCKET, partPath));
+    if (!response.ok) throw new Error("Ein Dateiteil konnte nicht geladen werden.");
+    return response.blob();
+  }));
+
+  return URL.createObjectURL(new Blob(blobs, { type: manifest.fileType || "application/octet-stream" }));
+}
+
+function encodeChunkManifest(manifest: ChunkManifest): string {
+  return `${CHUNK_MANIFEST_PREFIX}${JSON.stringify(manifest)}`;
+}
+
+function decodeChunkManifest(filePath?: string): ChunkManifest | null {
+  if (!filePath?.startsWith(CHUNK_MANIFEST_PREFIX)) return null;
+  try {
+    const parsed = JSON.parse(filePath.slice(CHUNK_MANIFEST_PREFIX.length)) as ChunkManifest;
+    return parsed?.kind === "chunks" && Array.isArray(parsed.parts) ? parsed : null;
+  } catch {
+    return null;
+  }
 }
 
 function sortSummaryDownloads(items: SummaryDownload[]): SummaryDownload[] {
