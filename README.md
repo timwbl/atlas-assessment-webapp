@@ -46,13 +46,13 @@ Admin-Änderungen werden nicht serverseitig gespeichert. Nutze `Export Assessmen
 
 Der Tab `Zusammenfassungen` zeigt Block-Zusammenfassungen nach `HS2025` und `FS2026`. Im Admin-Modus kannst du Dateien hochladen, bearbeiten, löschen und einem Semester plus Block zuordnen.
 
-Ohne Supabase werden Uploads lokal im Browser gespeichert. Für eine öffentlich geteilte Netlify-Seite solltest du Supabase konfigurieren und das aktuelle `supabase/schema.sql` ausführen. Dann speichert die App die Dateien in einem öffentlichen Supabase-Storage-Bucket `summary-downloads` und nur die Metadaten in der Tabelle `summary_downloads`.
+Ohne Supabase werden Uploads lokal im Browser gespeichert. Für eine öffentlich geteilte Netlify-Seite solltest du Supabase konfigurieren und das aktuelle `supabase/schema.sql` ausführen. Dann speichert die App Dateien bis 300 MB in einem öffentlichen Supabase-Storage-Bucket `summary-downloads` und nur die Metadaten in der Tabelle `summary_downloads`.
 
 Beim Speichern wird `Copyright: Tim Weibel` verpflichtend in den App-Metadaten hinterlegt und im Downloadbereich angezeigt.
 
 ## Block-Empfehlungen
 
-Im Admin-Modus kannst du für jeden Semester-Block eine MC-Fragen-Bewertung von 1 bis 10 und einen kurzen Kommentar speichern. Mit Supabase werden diese Empfehlungen zentral in `assessment_block_recommendations` gespeichert und in der MC-Library öffentlich angezeigt.
+Im Admin-Modus kannst du für jeden Semester-Block eine interne MC-Fragen-Bewertung von 1 bis 10 und einen kurzen Kommentar speichern. Mit Supabase werden diese Empfehlungen zentral in `assessment_block_recommendations` gespeichert und nur im Admin-Bereich angezeigt.
 
 ## User-Bewertungen
 

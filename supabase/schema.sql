@@ -68,10 +68,10 @@ alter table public.summary_downloads add column if not exists file_path text;
 alter table public.summary_downloads alter column file_data drop not null;
 
 insert into storage.buckets (id, name, public, file_size_limit)
-values ('summary-downloads', 'summary-downloads', true, 104857600)
+values ('summary-downloads', 'summary-downloads', true, 314572800)
 on conflict (id) do update
 set public = true,
-    file_size_limit = 104857600;
+    file_size_limit = 314572800;
 
 create index if not exists user_progress_assessment_idx on public.user_progress(assessment_id);
 create index if not exists user_progress_updated_idx on public.user_progress(updated_at desc);
