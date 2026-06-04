@@ -84,16 +84,7 @@ function drawQuestion(doc: PDFKit.PDFDocument, question: AssessmentQuestion, ind
 
   doc.moveDown(0.45);
   question.options.forEach((option, optionIndex) => {
-    const label = displayLabel(optionIndex);
-    doc
-      .fillColor(text)
-      .font("Helvetica")
-      .fontSize(10.5)
-      .text(`${label}. ${option.text}`, {
-        indent: 12,
-        hangingIndent: 18,
-        lineGap: 2
-      });
+    drawOptionLine(doc, displayLabel(optionIndex), option.text);
     doc.moveDown(0.22);
   });
 
@@ -115,26 +106,11 @@ function drawSolution(doc: PDFKit.PDFDocument, question: AssessmentQuestion, ind
   if (question.type === "A") {
     const correctIndex = question.options.findIndex((option) => option.correct);
     const correct = question.options[correctIndex];
-    doc
-      .fillColor(text)
-      .font("Helvetica")
-      .fontSize(10.5)
-      .text(correct ? `${displayLabel(correctIndex)}. ${correct.text}` : "Keine korrekte Antwort hinterlegt.", {
-        indent: 12,
-        hangingIndent: 18,
-        lineGap: 2
-      });
+    if (correct) drawOptionLine(doc, displayLabel(correctIndex), correct.text);
+    else drawOptionLine(doc, "", "Keine korrekte Antwort hinterlegt.");
   } else {
     question.options.forEach((option, optionIndex) => {
-      doc
-        .fillColor(text)
-        .font("Helvetica")
-        .fontSize(10.5)
-        .text(`${displayLabel(optionIndex)}. ${option.correct ? "richtig" : "falsch"} - ${option.text}`, {
-          indent: 12,
-          hangingIndent: 18,
-          lineGap: 2
-        });
+      drawOptionLine(doc, displayLabel(optionIndex), `${option.correct ? "richtig" : "falsch"} - ${option.text}`);
       doc.moveDown(0.18);
     });
   }
@@ -166,16 +142,31 @@ function drawQuestionHead(doc: PDFKit.PDFDocument, question: AssessmentQuestion,
     .text(question.stem, { lineGap: 3 });
 }
 
+function drawOptionLine(doc: PDFKit.PDFDocument, label: string, body: string): void {
+  const labelX = doc.page.margins.left + 12;
+  const textX = labelX + 24;
+  const startY = doc.y;
+  const width = doc.page.width - doc.page.margins.right - textX;
+
+  doc
+    .fillColor(text)
+    .font("Helvetica-Bold")
+    .fontSize(10.5)
+    .text(label ? `${label}.` : "", labelX, startY, { width: 20, lineBreak: false });
+
+  doc
+    .fillColor(text)
+    .font("Helvetica")
+    .fontSize(10.5)
+    .text(body, textX, startY, { width, lineGap: 2 });
+}
+
 function estimatedQuestionHeight(doc: PDFKit.PDFDocument, question: AssessmentQuestion): number {
   const usableWidth = doc.page.width - doc.page.margins.left - doc.page.margins.right;
   const stemHeight = doc.heightOfString(question.stem, { width: usableWidth, lineGap: 3 });
+  const optionWidth = usableWidth - 36;
   const optionsHeight = question.options.reduce((sum, option, index) => (
-    sum + doc.heightOfString(`${displayLabel(index)}. ${option.text}`, {
-      width: usableWidth - 24,
-      indent: 12,
-      hangingIndent: 18,
-      lineGap: 2
-    }) + 6
+    sum + doc.heightOfString(`${displayLabel(index)}. ${option.text}`, { width: optionWidth, lineGap: 2 }) + 6
   ), 0);
   return 54 + stemHeight + optionsHeight;
 }
