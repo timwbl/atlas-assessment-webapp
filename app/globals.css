@@ -600,6 +600,12 @@ button:disabled {
   border-top: 4px solid var(--assessment-accent, var(--accent));
 }
 
+.assessment-card-main {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .assessment-card-title {
   overflow-wrap: anywhere;
 }
@@ -616,6 +622,79 @@ button:disabled {
   font-size: 16px;
   line-height: 1;
   box-shadow: 0 8px 22px rgba(245, 158, 11, 0.16);
+}
+
+.assessment-card-actions {
+  position: relative;
+  z-index: 3;
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.assessment-pdf-export {
+  position: relative;
+}
+
+.assessment-pdf-trigger {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-strong) 92%, transparent);
+  color: var(--muted);
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 850;
+  box-shadow: var(--inner-highlight);
+}
+
+.assessment-pdf-trigger:hover:not(:disabled) {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 36%, var(--line));
+}
+
+.assessment-pdf-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  z-index: 20;
+  width: min(260px, calc(100vw - 32px));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  padding: 8px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.16), var(--inner-highlight);
+  backdrop-filter: blur(22px) saturate(170%);
+}
+
+.assessment-pdf-menu button {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  border: 0;
+  border-radius: 13px;
+  background: transparent;
+  color: var(--text);
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 780;
+  text-align: left;
+}
+
+.assessment-pdf-menu button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
+}
+
+.assessment-pdf-menu p {
+  margin: 6px 8px 4px;
+  color: var(--danger);
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 .quiz-progress-nav {

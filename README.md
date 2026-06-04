@@ -78,6 +78,15 @@ Führe das aktuelle `supabase/schema.sql` erneut im Supabase SQL Editor aus, dam
 
 Angemeldete User können nach Abschluss eines Assessments 1 bis 5 Sterne und optional einen Kommentar abgeben. Bewertungen werden in `assessment_reviews` gespeichert. Kommentare sind standardmässig nicht freigegeben und erscheinen erst öffentlich, wenn du sie im Admin-Modus moderierst.
 
+## Assessment PDF-Export
+
+Eingeloggte User sehen in jeder Assessment-Karte einen kleinen `PDF`-Button. Darüber können sie getrennt ein Fragen-PDF und ein Lösungen-PDF herunterladen. Die API-Routen prüfen serverseitig die Supabase-Session und bei `Altfragen` zusätzlich die Freigabe:
+
+- `GET /api/assessments/[id]/export/questions-pdf`
+- `GET /api/assessments/[id]/export/solutions-pdf`
+
+Die PDF-Erstellung läuft serverseitig mit `pdfkit`.
+
 ## Online-Zähler
 
 Oben rechts zeigt die WebApp aktive Verbindungen an. Dafür schreibt die App anonyme Heartbeats in `online_presence` und zählt Sessions, die gerade aktiv sind. Führe das aktuelle `supabase/schema.sql` erneut aus, damit die Tabelle und Policies vorhanden sind.
