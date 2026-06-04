@@ -11,6 +11,7 @@ import { formatBlockLabel } from "@/lib/blockLabels";
 import { cloudSyncAvailable, resetCloudProgress, syncAssessmentProgress } from "@/lib/cloudProgress";
 import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
 import { getProgress, resetProgress, reviewQuestionIds } from "@/lib/progressStore";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 import type { Assessment, AssessmentProgress } from "@/lib/types";
 
 export function AssessmentDetailClient({ id }: { id: string }) {
@@ -38,7 +39,11 @@ export function AssessmentDetailClient({ id }: { id: string }) {
     }
 
     window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
-    return () => window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
+    return () => {
+      window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
+    };
   }, []);
 
   async function refreshAltfragenAccess() {

@@ -3,12 +3,14 @@
 import { useEffect, useState } from "react";
 import {
   altfragenPasswordConfigured,
+  ALTFRAGEN_ACCESS_CHANGED_EVENT,
   loadOwnAltfragenRequest,
   submitAltfragenAccessRequest,
   verifyAltfragenPassword,
   type AltfragenAccessRequest
 } from "@/lib/altfragenAccess";
 import { cloudSyncAvailable, getCurrentProfile, type CloudProfile } from "@/lib/cloudProgress";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 
 type Props = {
   onUnlocked: () => void;
@@ -26,6 +28,17 @@ export function AltfragenAccessPanel({ onUnlocked }: Props) {
 
   useEffect(() => {
     void refresh();
+
+    function refreshAccessState() {
+      void refresh();
+    }
+
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, refreshAccessState);
+    window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, refreshAccessState);
+    return () => {
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, refreshAccessState);
+      window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, refreshAccessState);
+    };
   }, []);
 
   async function refresh() {

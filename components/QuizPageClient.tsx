@@ -6,6 +6,7 @@ import { QuizEngine } from "./QuizEngine";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 import type { Assessment, QuizMode } from "@/lib/types";
 
 export function QuizPageClient({ id, mode }: { id: string; mode: QuizMode }) {
@@ -29,7 +30,11 @@ export function QuizPageClient({ id, mode }: { id: string; mode: QuizMode }) {
     }
 
     window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
-    return () => window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
+    return () => {
+      window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
+    };
   }, []);
 
   async function refreshAltfragenAccess() {

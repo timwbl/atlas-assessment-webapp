@@ -15,6 +15,8 @@ type CloudSession = {
 
 const SESSION_KEY = "atlas-supabase-session-v1";
 
+export const AUTH_SESSION_CHANGED_EVENT = "atlas-auth-session-changed";
+
 export function isSupabaseConfigured(): boolean {
   return !!process.env.NEXT_PUBLIC_SUPABASE_URL && !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 }
@@ -23,13 +25,6 @@ export function getSupabaseConfig(): { url: string; anonKey: string } | null {
   const url = normalizeSupabaseUrl(process.env.NEXT_PUBLIC_SUPABASE_URL);
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   return url && anonKey ? { url, anonKey } : null;
-}
-
-export function getSiteUrl(): string {
-  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (configured) return configured.replace(/\/$/, "");
-  if (typeof window !== "undefined") return window.location.origin;
-  return "";
 }
 
 function normalizeSupabaseUrl(rawUrl: string | undefined): string {
@@ -65,6 +60,7 @@ export function saveSession(session: CloudSession | null): void {
   if (typeof window === "undefined") return;
   if (!session) window.localStorage.removeItem(SESSION_KEY);
   else window.localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+  window.dispatchEvent(new Event(AUTH_SESSION_CHANGED_EVENT));
 }
 
 export async function authRequest<T>(path: string, init: RequestInit = {}, token?: string): Promise<T> {
@@ -158,14 +154,21 @@ export type AuthSessionResponse = {
 
 async function parseResponse<T>(response: Response): Promise<T> {
   const text = await response.text();
-  const data = text ? JSON.parse(text) : null;
+  let data: any = null;
+  try {
+    data = text ? JSON.parse(text) : null;
+  } catch {
+    data = text || null;
+  }
   if (!response.ok) {
-    const message = typeof data?.message === "string"
-      ? data.message
-      : typeof data?.error_description === "string"
-        ? data.error_description
-        : `HTTP ${response.status}`;
-    throw new Error(message);
+    const message = [
+      data?.message,
+      data?.msg,
+      data?.error_description,
+      data?.error,
+      typeof data === "string" ? data : ""
+    ].find((value) => typeof value === "string" && value.trim());
+    throw new Error(message || `HTTP ${response.status}`);
   }
   return data as T;
 }

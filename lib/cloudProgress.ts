@@ -4,7 +4,6 @@ import {
   authRequest,
   ensureSession,
   getStoredSession,
-  getSiteUrl,
   isSupabaseConfigured,
   restRequest,
   saveSession,
@@ -81,18 +80,23 @@ export async function signInWithPassword(email: string, password: string): Promi
   return session.user;
 }
 
-export async function signUpWithPassword(email: string, password: string): Promise<CloudUser | null> {
-  const siteUrl = getSiteUrl();
-  const redirectPath = siteUrl ? `signup?redirect_to=${encodeURIComponent(siteUrl)}` : "signup";
-  const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>(redirectPath, {
+export async function signUpWithPassword(email: string, password: string, displayName: string): Promise<CloudUser | null> {
+  const name = displayName.trim();
+  if (!name) throw new Error("Bitte gib deinen Namen ein.");
+
+  const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>("signup", {
     method: "POST",
-    body: JSON.stringify({ email, password })
+    body: JSON.stringify({
+      email,
+      password,
+      data: { name }
+    })
   });
 
   if (response.access_token && response.user) {
     const session = toCloudSession(response as AuthSessionResponse);
     saveSession(session);
-    await upsertCurrentProfile(session.user);
+    await upsertCurrentProfile({ ...session.user, user_metadata: { ...(session.user.user_metadata || {}), name } });
     return session.user;
   }
 

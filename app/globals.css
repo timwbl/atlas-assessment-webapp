@@ -459,6 +459,141 @@ button:disabled {
   margin-top: 10px;
 }
 
+.auth-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: max(18px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(18px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+  background:
+    radial-gradient(circle at 50% 18%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 34%),
+    rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+.auth-modal {
+  position: relative;
+  width: min(430px, 100%);
+  max-height: min(720px, calc(100vh - 28px));
+  overflow-y: auto;
+  border: 1px solid color-mix(in srgb, var(--line) 88%, white 8%);
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-strong) 94%, transparent), color-mix(in srgb, var(--surface) 96%, transparent)),
+    var(--surface);
+  padding: 24px;
+  box-shadow: 0 34px 110px rgba(0, 0, 0, 0.28), var(--inner-highlight);
+  backdrop-filter: blur(34px) saturate(185%);
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.auth-modal-mark {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--surface-strong) 92%, transparent);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.10), var(--inner-highlight);
+}
+
+.auth-modal-mark img {
+  width: 38px;
+  height: 38px;
+}
+
+.auth-modal-copy {
+  margin-top: 18px;
+}
+
+.auth-modal-copy h2 {
+  margin: 6px 0 0;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.auth-modal-copy p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 9%, transparent);
+  padding: 4px;
+}
+
+.auth-tabs button {
+  min-height: 40px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.auth-tabs button.is-active {
+  background: var(--surface-strong);
+  color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), var(--inner-highlight);
+}
+
+.auth-form {
+  display: grid;
+  gap: 13px;
+  margin-top: 18px;
+}
+
+.auth-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.auth-form label span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.auth-form .input {
+  min-height: 50px;
+  border-radius: 18px;
+  font-size: 16px;
+}
+
+.auth-submit {
+  min-height: 52px;
+  margin-top: 4px;
+  border-radius: 18px;
+  font-size: 16px;
+}
+
 .assessment-card {
   position: relative;
   min-height: 220px;

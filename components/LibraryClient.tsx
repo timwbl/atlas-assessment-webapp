@@ -23,6 +23,7 @@ import {
   saveAssessmentLibrarySelection
 } from "@/lib/librarySelection";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/types";
 
 export function LibraryClient() {
@@ -65,9 +66,11 @@ export function LibraryClient() {
     }
 
     window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
     window.addEventListener("storage", updateAltfragenAccess);
     return () => {
       window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
       window.removeEventListener("storage", updateAltfragenAccess);
     };
   }, []);
