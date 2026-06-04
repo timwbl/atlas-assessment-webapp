@@ -9,6 +9,7 @@ import { loadAssessmentById } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { cloudSyncAvailable, resetCloudProgress, syncAssessmentProgress } from "@/lib/cloudProgress";
+import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
 import { getProgress, resetProgress, reviewQuestionIds } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress } from "@/lib/types";
 
@@ -22,7 +23,10 @@ export function AssessmentDetailClient({ id }: { id: string }) {
     void loadAssessmentById(id)
       .then((value) => {
         setAssessment(value);
-        if (value) setProgress(getProgress(value.id));
+        if (value) {
+          rememberAssessmentLibrarySelectionFromAssessment(value);
+          setProgress(getProgress(value.id));
+        }
       })
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Assessment konnte nicht geladen werden."));
     void refreshAltfragenAccess();

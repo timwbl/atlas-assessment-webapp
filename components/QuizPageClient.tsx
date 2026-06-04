@@ -5,6 +5,7 @@ import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { QuizEngine } from "./QuizEngine";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
+import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
 import type { Assessment, QuizMode } from "@/lib/types";
 
 export function QuizPageClient({ id, mode }: { id: string; mode: QuizMode }) {
@@ -14,7 +15,10 @@ export function QuizPageClient({ id, mode }: { id: string; mode: QuizMode }) {
 
   useEffect(() => {
     void loadAssessmentById(id)
-      .then(setAssessment)
+      .then((value) => {
+        setAssessment(value);
+        if (value) rememberAssessmentLibrarySelectionFromAssessment(value);
+      })
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Assessment konnte nicht geladen werden."));
     void refreshAltfragenAccess();
   }, [id]);

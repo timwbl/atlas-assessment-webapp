@@ -17,6 +17,11 @@ import {
   semesterTitle,
   type SemesterId
 } from "@/lib/summaryDownloads";
+import {
+  clearAssessmentLibrarySelection,
+  loadAssessmentLibrarySelection,
+  saveAssessmentLibrarySelection
+} from "@/lib/librarySelection";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/types";
 
@@ -32,6 +37,12 @@ export function LibraryClient() {
   const [altfragenAccess, setAltfragenAccess] = useState(false);
 
   useEffect(() => {
+    const savedSelection = loadAssessmentLibrarySelection();
+    if (savedSelection) {
+      setSemester(savedSelection.semester);
+      setBlockId(savedSelection.blockId);
+    }
+
     void loadAssessments()
       .then(setLoaded)
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Laden fehlgeschlagen."));
@@ -63,6 +74,15 @@ export function LibraryClient() {
 
   async function refreshAltfragenAccess() {
     setAltfragenAccess(await canAccessAltfragen().catch(() => false));
+  }
+
+  function resetToMainSelection() {
+    clearAssessmentLibrarySelection();
+    setSemester("");
+    setBlockId("");
+    setCode("");
+    setTag("");
+    setQuery("");
   }
 
   const assessments = loaded.map((item) => item.assessment).filter(Boolean) as Assessment[];
@@ -127,23 +147,32 @@ export function LibraryClient() {
           <h2 className="mt-1 text-2xl font-black">Semester auswählen</h2>
           <p className="mt-1 text-sm text-[var(--muted)]">Die Fragen werden erst nach Semester- und Blockauswahl angezeigt.</p>
         </div>
-        <label className="semester-picker-control">
-          <span>Semester</span>
-          <select
-            value={semester}
-            onChange={(event) => {
-              setSemester(event.target.value as SemesterId | "");
-              setBlockId("");
-              setCode("");
-              setTag("");
-            }}
-          >
-            <option value="">Bitte auswählen</option>
-            {DOWNLOAD_SEMESTERS.map((item) => (
-              <option key={item.id} value={item.id}>{item.title}</option>
-            ))}
-          </select>
-        </label>
+        <div className="grid min-w-0 gap-2 sm:grid-cols-[minmax(220px,320px)_auto] sm:items-end">
+          <label className="semester-picker-control">
+            <span>Semester</span>
+            <select
+              value={semester}
+              onChange={(event) => {
+                const nextSemester = event.target.value as SemesterId | "";
+                setSemester(nextSemester);
+                setBlockId("");
+                setCode("");
+                setTag("");
+                clearAssessmentLibrarySelection();
+              }}
+            >
+              <option value="">Bitte auswählen</option>
+              {DOWNLOAD_SEMESTERS.map((item) => (
+                <option key={item.id} value={item.id}>{item.title}</option>
+              ))}
+            </select>
+          </label>
+          {(semester || blockId) && (
+            <button className="btn-secondary" type="button" onClick={resetToMainSelection}>
+              Hauptauswahl
+            </button>
+          )}
+        </div>
       </section>
 
       {semester && (
@@ -165,6 +194,7 @@ export function LibraryClient() {
                   setBlockId(item.id);
                   setCode("");
                   setTag("");
+                  saveAssessmentLibrarySelection(item.semester, item.id);
                 }}
                 type="button"
               >
