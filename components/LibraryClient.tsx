@@ -2,9 +2,11 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
+import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentCard } from "./AssessmentCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
+import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenBlock } from "@/lib/altfragenAccess";
 import { loadAssessments } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { blockColor } from "@/lib/blockColors";
@@ -27,12 +29,14 @@ export function LibraryClient() {
   const [code, setCode] = useState("");
   const [tag, setTag] = useState("");
   const [error, setError] = useState("");
+  const [altfragenAccess, setAltfragenAccess] = useState(false);
 
   useEffect(() => {
     void loadAssessments()
       .then(setLoaded)
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Laden fehlgeschlagen."));
     setProgress(getAllProgress());
+    void refreshAltfragenAccess();
   }, []);
 
   useEffect(() => {
@@ -44,16 +48,35 @@ export function LibraryClient() {
     return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
   }, []);
 
+  useEffect(() => {
+    function updateAltfragenAccess() {
+      void refreshAltfragenAccess();
+    }
+
+    window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+    window.addEventListener("storage", updateAltfragenAccess);
+    return () => {
+      window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+      window.removeEventListener("storage", updateAltfragenAccess);
+    };
+  }, []);
+
+  async function refreshAltfragenAccess() {
+    setAltfragenAccess(await canAccessAltfragen().catch(() => false));
+  }
+
   const assessments = loaded.map((item) => item.assessment).filter(Boolean) as Assessment[];
   const invalid = loaded.filter((item) => !item.assessment && item.errors.length);
 
   const blockOptions = semester ? blocksForSemester(semester) : [];
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
+  const selectedAltfragen = selectedBlock ? isAltfragenBlock(selectedBlock.title) : false;
+  const altfragenLocked = selectedAltfragen && !altfragenAccess;
 
   const blockAssessments = useMemo(() => {
-    if (!selectedBlock) return [];
+    if (!selectedBlock || altfragenLocked) return [];
     return assessments.filter((assessment) => blockMatches(assessment.block, selectedBlock.title));
-  }, [assessments, selectedBlock]);
+  }, [altfragenLocked, assessments, selectedBlock]);
 
   const codes = [...new Set(blockAssessments.map((assessment) => assessment.lectureCode))]
     .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
@@ -166,14 +189,14 @@ export function LibraryClient() {
             inputMode="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            disabled={!selectedBlock}
+            disabled={!selectedBlock || altfragenLocked}
             placeholder="Suchen nach Titel, Code, Tag"
           />
-          <select className="input" value={code} disabled={!selectedBlock} onChange={(event) => setCode(event.target.value)}>
+          <select className="input" value={code} disabled={!selectedBlock || altfragenLocked} onChange={(event) => setCode(event.target.value)}>
             <option value="">Alle Codes</option>
             {codes.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
-          <select className="input" value={tag} disabled={!selectedBlock} onChange={(event) => setTag(event.target.value)}>
+          <select className="input" value={tag} disabled={!selectedBlock || altfragenLocked} onChange={(event) => setTag(event.target.value)}>
             <option value="">Alle Tags</option>
             {tags.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
@@ -219,10 +242,12 @@ export function LibraryClient() {
                 <div className="eyebrow">{semester ? semesterTitle(semester) : ""}</div>
                 <h2 className="text-3xl font-black">{selectedBlock.title}</h2>
               </div>
-              <span className="pill">{filtered.length} Assessments</span>
+              <span className="pill">{altfragenLocked ? "Geschützt" : `${filtered.length} Assessments`}</span>
             </div>
 
-            {filtered.length === 0 ? (
+            {altfragenLocked ? (
+              <AltfragenAccessPanel onUnlocked={() => void refreshAltfragenAccess()} />
+            ) : filtered.length === 0 ? (
               <div className="card mt-4 p-8 text-center">
                 <div className="eyebrow">{selectedBlock.title}</div>
                 <h3 className="mt-2 text-2xl font-black">Keine passenden Fragen gefunden</h3>
@@ -251,6 +276,12 @@ function blockMatches(assessmentBlock: string, selectedBlockTitle: string): bool
   const normalizedSelected = normalizeText(selectedBlockTitle);
   if (normalizedSelected.includes("prufungssimulationen") || normalizedSelected.includes("pruefungssimulationen")) {
     return normalizedAssessment.includes("prufungssimulationen") || normalizedAssessment.includes("pruefungssimulationen");
+  }
+
+  if (normalizedSelected.includes("altfragen") || normalizedSelected.includes("altfrage")) {
+    return normalizedAssessment.includes("altfragen")
+      || normalizedAssessment.includes("altfrage")
+      || normalizedAssessment.includes("alte fragen");
   }
 
   const assessmentNumber = String(assessmentBlock || "").match(/\d+/)?.[0] || "";

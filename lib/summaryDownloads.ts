@@ -108,6 +108,13 @@ const SUMMARY_BLOCK_CONFIG: Record<SemesterId, Array<Omit<SummaryBlock, "semeste
       order: 6,
       assessmentOnly: true,
       matchTerms: ["prüfungssimulationen", "pruefungssimulationen"]
+    },
+    {
+      id: "FS2026-altfragen",
+      title: "Altfragen",
+      order: 7,
+      assessmentOnly: true,
+      matchTerms: ["altfragen", "altfrage", "alte fragen"]
     }
   ]
 };

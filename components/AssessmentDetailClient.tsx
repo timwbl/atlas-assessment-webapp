@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentPublicReviews } from "./AssessmentPublicReviews";
+import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
@@ -13,6 +15,7 @@ import type { Assessment, AssessmentProgress } from "@/lib/types";
 export function AssessmentDetailClient({ id }: { id: string }) {
   const [assessment, setAssessment] = useState<Assessment | null>(null);
   const [progress, setProgress] = useState<AssessmentProgress | null>(null);
+  const [altfragenAccess, setAltfragenAccess] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -22,7 +25,21 @@ export function AssessmentDetailClient({ id }: { id: string }) {
         if (value) setProgress(getProgress(value.id));
       })
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Assessment konnte nicht geladen werden."));
+    void refreshAltfragenAccess();
   }, [id]);
+
+  useEffect(() => {
+    function updateAltfragenAccess() {
+      void refreshAltfragenAccess();
+    }
+
+    window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+    return () => window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
+  }, []);
+
+  async function refreshAltfragenAccess() {
+    setAltfragenAccess(await canAccessAltfragen().catch(() => false));
+  }
 
   const counts = useMemo(() => {
     if (!assessment) return { a: 0, kprim: 0, seen: 0, review: 0 };
@@ -43,6 +60,15 @@ export function AssessmentDetailClient({ id }: { id: string }) {
   }
 
   const tags = collectAssessmentTags(assessment);
+
+  if (isAltfragenAssessment(assessment) && !altfragenAccess) {
+    return (
+      <main id="top" className="shell">
+        <Link className="btn-secondary inline-flex items-center" href="/">Zur Library</Link>
+        <AltfragenAccessPanel onUnlocked={() => void refreshAltfragenAccess()} />
+      </main>
+    );
+  }
 
   return (
     <main id="top" className="shell">

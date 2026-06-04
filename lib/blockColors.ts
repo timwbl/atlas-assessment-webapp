@@ -12,6 +12,7 @@ export function blockColor(block: string): string {
     "7": "#06b6d4",
     "8": "#3b82f6",
     "9": "#4f46e5",
+    "altfragen": "#8e8e93",
     "prüfungssimulationen": "#1d1d1f",
     "pruefungssimulationen": "#1d1d1f"
   };

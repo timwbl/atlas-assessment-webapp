@@ -54,6 +54,26 @@ Beim Speichern wird `Copyright: Tim Weibel` verpflichtend in den App-Metadaten h
 
 Im Admin-Modus kannst du für jeden Semester-Block eine interne MC-Fragen-Bewertung von 1 bis 10 und einen kurzen Kommentar speichern. Mit Supabase werden diese Empfehlungen zentral in `assessment_block_recommendations` gespeichert und nur im Admin-Bereich angezeigt.
 
+## Altfragen
+
+Im 2. Semester gibt es einen geschützten Assessment-Block `Altfragen` mit grauer Blockfarbe. Assessments erscheinen dort, wenn ihr JSON-Feld so gesetzt ist:
+
+```json
+{
+  "block": "Altfragen"
+}
+```
+
+Im Admin-Editor gibt es dafür den Button `Als Altfragen markieren`. Der Zugriff ist für Admins automatisch offen. Eingeloggte User können eine Freigabe mit Name und Studienjahr 1 bis 6 anfragen; du siehst diese Anfragen im Admin-Modus unter `Altfragen Zugriff` und kannst sie freigeben oder ablehnen.
+
+Optional kannst du zusätzlich ein direktes Altfragen-Passwort setzen:
+
+```text
+NEXT_PUBLIC_ALTFRAGEN_PASSWORD=dein-altfragen-passwort
+```
+
+Führe das aktuelle `supabase/schema.sql` erneut im Supabase SQL Editor aus, damit `altfragen_access_requests` und die Zugriffspolicies vorhanden sind.
+
 ## User-Bewertungen
 
 Angemeldete User können nach Abschluss eines Assessments 1 bis 5 Sterne und optional einen Kommentar abgeben. Bewertungen werden in `assessment_reviews` gespeichert. Kommentare sind standardmässig nicht freigegeben und erscheinen erst öffentlich, wenn du sie im Admin-Modus moderierst.

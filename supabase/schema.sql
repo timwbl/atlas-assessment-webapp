@@ -64,6 +64,18 @@ create table if not exists public.assessment_reviews (
   unique (user_id, assessment_id)
 );
 
+create table if not exists public.altfragen_access_requests (
+  id text primary key,
+  user_id uuid not null references public.profiles(id) on delete cascade,
+  user_email text not null,
+  display_name text not null,
+  study_year integer not null check (study_year between 1 and 6),
+  status text not null default 'pending' check (status in ('pending', 'approved', 'denied')),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (user_id)
+);
+
 create table if not exists public.online_presence (
   session_id text primary key,
   path text not null default '/',
@@ -87,6 +99,8 @@ create index if not exists summary_downloads_updated_idx on public.summary_downl
 create index if not exists assessment_block_recommendations_semester_block_idx on public.assessment_block_recommendations(semester, block_id);
 create index if not exists assessment_reviews_assessment_idx on public.assessment_reviews(assessment_id);
 create index if not exists assessment_reviews_updated_idx on public.assessment_reviews(updated_at desc);
+create index if not exists altfragen_access_requests_status_idx on public.altfragen_access_requests(status, updated_at desc);
+create index if not exists altfragen_access_requests_user_idx on public.altfragen_access_requests(user_id);
 create index if not exists online_presence_last_seen_idx on public.online_presence(last_seen_at desc);
 
 create or replace function public.is_admin(check_user uuid default auth.uid())
@@ -159,6 +173,7 @@ alter table public.user_progress enable row level security;
 alter table public.summary_downloads enable row level security;
 alter table public.assessment_block_recommendations enable row level security;
 alter table public.assessment_reviews enable row level security;
+alter table public.altfragen_access_requests enable row level security;
 alter table public.online_presence enable row level security;
 
 drop policy if exists "profiles_select_own_or_admin" on public.profiles;
@@ -309,6 +324,31 @@ with check (public.is_admin());
 drop policy if exists "assessment_reviews_delete_admin" on public.assessment_reviews;
 create policy "assessment_reviews_delete_admin"
 on public.assessment_reviews
+for delete
+using (public.is_admin());
+
+drop policy if exists "altfragen_access_requests_select_own_or_admin" on public.altfragen_access_requests;
+create policy "altfragen_access_requests_select_own_or_admin"
+on public.altfragen_access_requests
+for select
+using (user_id = auth.uid() or public.is_admin());
+
+drop policy if exists "altfragen_access_requests_insert_own" on public.altfragen_access_requests;
+create policy "altfragen_access_requests_insert_own"
+on public.altfragen_access_requests
+for insert
+with check (user_id = auth.uid() and id = auth.uid()::text and status = 'pending');
+
+drop policy if exists "altfragen_access_requests_update_own_pending_or_admin" on public.altfragen_access_requests;
+create policy "altfragen_access_requests_update_own_pending_or_admin"
+on public.altfragen_access_requests
+for update
+using (user_id = auth.uid() or public.is_admin())
+with check ((user_id = auth.uid() and id = auth.uid()::text and status = 'pending') or public.is_admin());
+
+drop policy if exists "altfragen_access_requests_delete_admin" on public.altfragen_access_requests;
+create policy "altfragen_access_requests_delete_admin"
+on public.altfragen_access_requests
 for delete
 using (public.is_admin());
 

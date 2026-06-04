@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AdminAltfragenRequests } from "./AdminAltfragenRequests";
 import { AdminAssessmentReviews } from "./AdminAssessmentReviews";
 import { AdminBlockRecommendations } from "./AdminBlockRecommendations";
 import { AdminDownloadsManager } from "./AdminDownloadsManager";
@@ -122,6 +123,8 @@ export function AdminEditor() {
 
       <AdminBlockRecommendations />
 
+      <AdminAltfragenRequests />
+
       <AdminAssessmentReviews />
 
       <AdminDownloadsManager />
@@ -155,6 +158,9 @@ export function AdminEditor() {
           <label>
             <span className="eyebrow">Block</span>
             <input className="input mt-2" value={draft.block} onChange={(event) => updateDraft({ ...draft, block: event.target.value })} />
+            <button className="btn-secondary mt-2 w-full" type="button" onClick={() => updateDraft({ ...draft, block: "Altfragen" })}>
+              Als Altfragen markieren
+            </button>
           </label>
           <label>
             <span className="eyebrow">Aktiv</span>
