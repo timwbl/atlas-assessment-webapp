@@ -1,5 +1,6 @@
+import fs from "fs";
 import path from "path";
-import PDFDocument from "pdfkit";
+import PDFDocument from "pdfkit/js/pdfkit.standalone";
 import { formatBlockLabel } from "./blockLabels";
 import type { Assessment, AssessmentQuestion } from "./types";
 
@@ -373,8 +374,8 @@ function drawRule(doc: PDFKit.PDFDocument, color: string, width: number): void {
 }
 
 function registerFonts(doc: PDFKit.PDFDocument): void {
-  doc.registerFont(fonts.regular, path.join(process.cwd(), "assets", "fonts", "NotoSans-Regular.ttf"));
-  doc.registerFont(fonts.bold, path.join(process.cwd(), "assets", "fonts", "NotoSans-Bold.ttf"));
+  doc.registerFont(fonts.regular, fs.readFileSync(path.join(process.cwd(), "assets", "fonts", "NotoSans-Regular.ttf")));
+  doc.registerFont(fonts.bold, fs.readFileSync(path.join(process.cwd(), "assets", "fonts", "NotoSans-Bold.ttf")));
 }
 
 function setFont(doc: PDFKit.PDFDocument, face: FontFace, size: number): void {
