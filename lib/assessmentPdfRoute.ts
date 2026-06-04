@@ -22,8 +22,10 @@ export async function handleAssessmentPdfExport(request: Request, id: string, ki
 
   try {
     const pdf = await renderAssessmentPdf(assessment, kind);
+    const body = new ArrayBuffer(pdf.byteLength);
+    new Uint8Array(body).set(pdf);
     const fileName = `${fileSafe(assessment.lectureCode || assessment.title)}-${kind === "questions" ? "fragen" : "loesungen"}.pdf`;
-    return new Response(pdf, {
+    return new Response(body, {
       headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": `attachment; filename="${fileName}"`,
