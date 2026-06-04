@@ -150,7 +150,7 @@ export function LibraryClient() {
           <h2 className="mt-1 text-2xl font-black">Semester auswählen</h2>
           <p className="mt-1 text-sm text-[var(--muted)]">Die Fragen werden erst nach Semester- und Blockauswahl angezeigt.</p>
         </div>
-        <div className="grid min-w-0 gap-2 sm:grid-cols-[minmax(220px,320px)_auto] sm:items-end">
+        <div className="semester-picker-actions">
           <label className="semester-picker-control">
             <span>Semester</span>
             <select
@@ -171,8 +171,8 @@ export function LibraryClient() {
             </select>
           </label>
           {(semester || blockId) && (
-            <button className="btn-secondary" type="button" onClick={resetToMainSelection}>
-              Hauptauswahl
+            <button className="semester-reset-button" type="button" onClick={resetToMainSelection} title="Zur Hauptauswahl" aria-label="Zur Hauptauswahl">
+              ↺
             </button>
           )}
         </div>

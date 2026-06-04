@@ -137,7 +137,7 @@ export function AccountMenu() {
       }
 
       if (!currentUser) {
-        throw new Error("Account erstellt, aber automatische Anmeldung ist noch nicht möglich. Bitte prüfe, ob E-Mail-Bestätigungen in Supabase deaktiviert sind.");
+        throw new Error("Supabase verlangt noch eine E-Mail-Bestätigung. Bitte deaktiviere Confirm email im Supabase Dashboard und bestätige bestehende Accounts einmalig per SQL.");
       }
 
       setName(cleanName);
@@ -360,8 +360,9 @@ function friendlyAuthError(error: unknown): string {
   if (normalized.includes("invalid login credentials")) return "E-Mail oder Passwort ist nicht korrekt.";
   if (normalized.includes("user already registered") || normalized.includes("already registered")) return "Für diese E-Mail existiert bereits ein Account. Bitte melde dich an.";
   if (normalized.includes("password") && normalized.includes("weak")) return "Das Passwort ist zu schwach. Bitte wähle ein längeres Passwort.";
-  if (normalized.includes("email not confirmed")) return "Dieser Account wartet noch auf E-Mail-Bestätigung. Deaktiviere die Bestätigung in Supabase oder bestätige die E-Mail.";
-  if (normalized.includes("http 400")) return "Die Anmeldung wurde von Supabase abgelehnt. Prüfe E-Mail, Passwort und ob E-Mail-Bestätigung deaktiviert ist.";
+  if (normalized.includes("email not confirmed")) return "Supabase hat diesen Account noch nicht freigegeben. Schalte im Supabase Dashboard `Confirm email` aus und bestätige bestehende Accounts einmalig per SQL.";
+  if (normalized.includes("e-mail") && normalized.includes("bestätigung")) return message;
+  if (normalized.includes("http 400")) return "Supabase hat die Anmeldung abgelehnt. Häufige Ursache: `Confirm email` ist noch aktiv oder der Account wurde noch nicht bestätigt.";
 
   return message;
 }
