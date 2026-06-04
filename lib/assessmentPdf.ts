@@ -18,11 +18,11 @@ const colors = {
 const page = {
   width: 595.28,
   height: 841.89,
-  marginX: 46,
+  marginX: 48,
   headerTop: 28,
   headerHeight: 34,
-  contentTop: 80,
-  contentBottom: 780,
+  contentTop: 78,
+  contentBottom: 755,
   footerY: 806
 };
 
@@ -69,7 +69,7 @@ function renderQuestionDocument(doc: PDFKit.PDFDocument, assessment: Assessment)
 
   assessment.questions.forEach((question, index) => {
     const height = estimateQuestionBlockHeight(doc, question, "questions");
-    keepTogetherOrStartPage(doc, height, introHeight(doc, question) + firstOptionHeight(doc, question));
+    keepTogetherOrStartPage(doc, height, introHeight(doc, question) + firstOptionsHeight(doc, question, 2));
     drawQuestionBlock(doc, question, index, "questions");
   });
 }
@@ -257,32 +257,25 @@ function drawOption(doc: PDFKit.PDFDocument, label: string, value: string, empha
 function renderPageChrome(doc: PDFKit.PDFDocument, assessment: Assessment, kind: PdfKind): void {
   const range = doc.bufferedPageRange();
   const totalPages = range.count;
-  const rightLabel = truncateText(
-    [formatBlockLabel(assessment.block), assessment.lectureCode || assessment.title].filter(Boolean).join(" · "),
+  const metaLabel = truncateText(
+    ["ATLAS Assessment", formatBlockLabel(assessment.block), assessment.lectureCode].filter(Boolean).join(" · "),
+    68
+  );
+  const headerRight = truncateText(
+    [assessment.lectureCode, kind === "solutions" ? "Lösungen" : assessment.title].filter(Boolean).join(" · "),
     62
   );
 
   for (let offset = 0; offset < totalPages; offset += 1) {
     const pageIndex = range.start + offset;
     doc.switchToPage(pageIndex);
-    const oldY = doc.y;
+    const oldPosition = { x: doc.x, y: doc.y };
 
     setFont(doc, "bold", 8.5);
-    doc
-      .fillColor(colors.muted)
-      .text("ATLAS Assessment", page.marginX, page.headerTop, {
-        width: 160,
-        lineBreak: false
-      });
+    drawFixedText(doc, "ATLAS Assessment", page.marginX, page.headerTop, "left");
 
     setFont(doc, "regular", 8);
-    doc
-      .fillColor(colors.muted)
-      .text(cleanText(rightLabel), page.width - page.marginX - 240, page.headerTop, {
-        width: 240,
-        align: "right",
-        lineBreak: false
-      });
+    drawFixedText(doc, headerRight, page.width - page.marginX, page.headerTop, "right");
 
     doc
       .save()
@@ -294,15 +287,11 @@ function renderPageChrome(doc: PDFKit.PDFDocument, assessment: Assessment, kind:
       .restore();
 
     setFont(doc, "regular", 8);
-    doc
-      .fillColor(colors.muted)
-      .text(`Seite ${offset + 1} / ${totalPages}`, page.width - page.marginX - 100, page.footerY, {
-        width: 100,
-        align: "right",
-        lineBreak: false
-      });
+    drawFixedText(doc, metaLabel, page.marginX, page.footerY, "left");
+    drawFixedText(doc, `Seite ${offset + 1} / ${totalPages}`, page.width - page.marginX, page.footerY, "right");
 
-    doc.y = oldY;
+    doc.x = oldPosition.x;
+    doc.y = oldPosition.y;
   }
 }
 
@@ -348,9 +337,10 @@ function introHeight(doc: PDFKit.PDFDocument, question: AssessmentQuestion): num
   return 30 + doc.heightOfString(cleanText(question.stem), { width: contentWidth(), lineGap: 3 });
 }
 
-function firstOptionHeight(doc: PDFKit.PDFDocument, question: AssessmentQuestion): number {
-  const first = question.options[0];
-  return first ? optionHeight(doc, first.text) : 18;
+function firstOptionsHeight(doc: PDFKit.PDFDocument, question: AssessmentQuestion, count: number): number {
+  const firstOptions = question.options.slice(0, count);
+  if (!firstOptions.length) return 18;
+  return firstOptions.reduce((sum, option) => sum + optionHeight(doc, option.text), 0);
 }
 
 function optionHeight(doc: PDFKit.PDFDocument, value: string): number {
@@ -382,6 +372,25 @@ function setFont(doc: PDFKit.PDFDocument, face: FontFace, size: number): void {
   doc.font(fonts[face]).fontSize(size);
 }
 
+function drawFixedText(doc: PDFKit.PDFDocument, value: string, x: number, y: number, align: "left" | "right"): void {
+  const textValue = cleanText(value).replace(/\s+/g, " ");
+  const measuredWidth = doc.widthOfString(textValue);
+  const drawX = align === "right" ? x - measuredWidth : x;
+  const oldPosition = { x: doc.x, y: doc.y };
+
+  doc.fillColor(colors.muted);
+  (doc as unknown as {
+    _fragment: (text: string, x: number, y: number, options: Record<string, unknown>) => void;
+  })._fragment(textValue, drawX, y, {
+    textWidth: measuredWidth,
+    lineWidth: measuredWidth,
+    wordCount: Math.max(1, textValue.trim().split(/\s+/).length),
+    fill: true
+  });
+  doc.x = oldPosition.x;
+  doc.y = oldPosition.y;
+}
+
 function remainingHeight(doc: PDFKit.PDFDocument): number {
   return page.contentBottom - doc.y;
 }
@@ -393,7 +402,7 @@ function contentWidth(): number {
 function cleanText(value: string): string {
   return String(value || "")
     .replace(/\r\n/g, "\n")
-    .replace(/\u2192/g, "→")
+    .replace(/[\u2192\u27f6\u2794\u21d2]/g, "=>")
     .replace(/\s+\n/g, "\n")
     .trim();
 }
