@@ -1,4 +1,4 @@
-import PDFDocument from "pdfkit";
+import PDFDocument from "pdfkit/js/pdfkit.standalone";
 import type { Assessment, AssessmentQuestion } from "./types";
 import { formatBlockLabel } from "./blockLabels";
 
