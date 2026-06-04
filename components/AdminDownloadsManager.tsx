@@ -2,10 +2,10 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
-  blocksForSemester,
   canUseSummaryStorage,
   COPYRIGHT_OWNER,
   deleteSummaryDownload,
+  downloadBlocksForSemester,
   DOWNLOAD_SEMESTERS,
   fileToDataUrl,
   formatFileSize,
@@ -41,7 +41,7 @@ const emptyDraft = (): Draft => {
     id: "",
     title: "",
     semester,
-    blockId: blocksForSemester(semester)[0]?.id || "",
+    blockId: downloadBlocksForSemester(semester)[0]?.id || "",
     description: "",
     version: "",
     file: null
@@ -68,7 +68,7 @@ export function AdminDownloadsManager() {
     return () => window.removeEventListener(SUMMARY_DOWNLOADS_CHANGED_EVENT, onChange);
   }, []);
 
-  const blockOptions = useMemo(() => blocksForSemester(draft.semester), [draft.semester]);
+  const blockOptions = useMemo(() => downloadBlocksForSemester(draft.semester), [draft.semester]);
 
   async function refresh() {
     setDownloads(await loadSummaryDownloads());
@@ -212,7 +212,7 @@ export function AdminDownloadsManager() {
                   value={draft.semester}
                   onChange={(event) => {
                     const semester = event.target.value as SemesterId;
-                    setDraft({ ...draft, semester, blockId: blocksForSemester(semester)[0]?.id || "" });
+                    setDraft({ ...draft, semester, blockId: downloadBlocksForSemester(semester)[0]?.id || "" });
                   }}
                 >
                   {DOWNLOAD_SEMESTERS.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}

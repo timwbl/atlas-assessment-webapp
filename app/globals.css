@@ -321,6 +321,45 @@ button:disabled {
   z-index: 48;
 }
 
+.online-presence-badge {
+  position: fixed;
+  top: 18px;
+  right: 76px;
+  z-index: 47;
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  padding: 0 13px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 780;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.09), var(--inner-highlight);
+  backdrop-filter: blur(18px) saturate(160%);
+  white-space: nowrap;
+}
+
+.online-presence-badge strong {
+  font-size: 13px;
+  font-weight: 920;
+}
+
+.online-presence-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--success);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--success) 15%, transparent);
+}
+
+.online-presence-dot.is-muted {
+  background: var(--muted);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--muted) 13%, transparent);
+}
+
 .account-avatar {
   display: grid;
   width: 42px;
@@ -770,6 +809,21 @@ button:disabled {
     top: calc(10px + env(safe-area-inset-top));
     right: max(10px, env(safe-area-inset-right));
     z-index: 42;
+  }
+
+  .online-presence-badge {
+    top: calc(10px + env(safe-area-inset-top));
+    right: calc(max(10px, env(safe-area-inset-right)) + 46px);
+    min-height: 38px;
+    max-width: calc(100vw - 70px);
+    padding: 0 10px;
+    font-size: 11px;
+  }
+
+  .online-presence-badge span:last-child {
+    max-width: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .account-avatar {

@@ -5,6 +5,7 @@ import { AtlasBrand } from "@/components/AtlasBrand";
 import { AdminShortcut } from "@/components/AdminShortcut";
 import { MainNav } from "@/components/MainNav";
 import { MobileNav } from "@/components/MobileNav";
+import { OnlinePresenceBadge } from "@/components/OnlinePresenceBadge";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <body>
         <AtlasBrand />
         <MainNav />
+        <OnlinePresenceBadge />
         <AccountMenu />
         {children}
         <MobileNav />

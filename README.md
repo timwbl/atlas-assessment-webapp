@@ -58,6 +58,10 @@ Im Admin-Modus kannst du für jeden Semester-Block eine interne MC-Fragen-Bewert
 
 Angemeldete User können nach Abschluss eines Assessments 1 bis 5 Sterne und optional einen Kommentar abgeben. Bewertungen werden in `assessment_reviews` gespeichert. Kommentare sind standardmässig nicht freigegeben und erscheinen erst öffentlich, wenn du sie im Admin-Modus moderierst.
 
+## Online-Zähler
+
+Oben rechts zeigt die WebApp aktive Verbindungen an. Dafür schreibt die App anonyme Heartbeats in `online_presence` und zählt Sessions, die gerade aktiv sind. Führe das aktuelle `supabase/schema.sql` erneut aus, damit die Tabelle und Policies vorhanden sind.
+
 ## Optionaler Account-Sync
 
 Die App funktioniert weiterhin komplett ohne Account. Wenn du Fortschritte zentral speichern willst:

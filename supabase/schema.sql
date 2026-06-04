@@ -64,6 +64,13 @@ create table if not exists public.assessment_reviews (
   unique (user_id, assessment_id)
 );
 
+create table if not exists public.online_presence (
+  session_id text primary key,
+  path text not null default '/',
+  user_agent text,
+  last_seen_at timestamptz not null default now()
+);
+
 alter table public.summary_downloads add column if not exists file_path text;
 alter table public.summary_downloads alter column file_data drop not null;
 
@@ -80,6 +87,7 @@ create index if not exists summary_downloads_updated_idx on public.summary_downl
 create index if not exists assessment_block_recommendations_semester_block_idx on public.assessment_block_recommendations(semester, block_id);
 create index if not exists assessment_reviews_assessment_idx on public.assessment_reviews(assessment_id);
 create index if not exists assessment_reviews_updated_idx on public.assessment_reviews(updated_at desc);
+create index if not exists online_presence_last_seen_idx on public.online_presence(last_seen_at desc);
 
 create or replace function public.is_admin(check_user uuid default auth.uid())
 returns boolean
@@ -151,6 +159,7 @@ alter table public.user_progress enable row level security;
 alter table public.summary_downloads enable row level security;
 alter table public.assessment_block_recommendations enable row level security;
 alter table public.assessment_reviews enable row level security;
+alter table public.online_presence enable row level security;
 
 drop policy if exists "profiles_select_own_or_admin" on public.profiles;
 create policy "profiles_select_own_or_admin"
@@ -302,6 +311,31 @@ create policy "assessment_reviews_delete_admin"
 on public.assessment_reviews
 for delete
 using (public.is_admin());
+
+drop policy if exists "online_presence_select_public" on public.online_presence;
+create policy "online_presence_select_public"
+on public.online_presence
+for select
+using (true);
+
+drop policy if exists "online_presence_insert_public" on public.online_presence;
+create policy "online_presence_insert_public"
+on public.online_presence
+for insert
+with check (true);
+
+drop policy if exists "online_presence_update_public" on public.online_presence;
+create policy "online_presence_update_public"
+on public.online_presence
+for update
+using (true)
+with check (true);
+
+drop policy if exists "online_presence_delete_public" on public.online_presence;
+create policy "online_presence_delete_public"
+on public.online_presence
+for delete
+using (true);
 
 -- After creating your own account, promote yourself once:
 -- update public.profiles set role = 'admin' where email = 'your-email@example.com';

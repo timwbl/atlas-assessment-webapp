@@ -11,6 +11,7 @@ export type SummaryBlock = {
   title: string;
   order: number;
   matchTerms?: string[];
+  assessmentOnly?: boolean;
 };
 
 export type SummaryDownload = {
@@ -105,6 +106,7 @@ const SUMMARY_BLOCK_CONFIG: Record<SemesterId, Array<Omit<SummaryBlock, "semeste
       id: "FS2026-pruefungssimulationen",
       title: "Prüfungssimulationen",
       order: 6,
+      assessmentOnly: true,
       matchTerms: ["prüfungssimulationen", "pruefungssimulationen"]
     }
   ]
@@ -121,6 +123,11 @@ export function blocksForSemester(semester: SemesterId): SummaryBlock[] {
   return SUMMARY_BLOCKS
     .filter((block) => block.semester === semester)
     .sort((a, b) => a.order - b.order);
+}
+
+export function downloadBlocksForSemester(semester: SemesterId): SummaryBlock[] {
+  return blocksForSemester(semester)
+    .filter((block) => !block.assessmentOnly);
 }
 
 export function semesterTitle(semester: string): string {

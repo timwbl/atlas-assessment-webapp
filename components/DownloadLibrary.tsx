@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { blockColor } from "@/lib/blockColors";
 import {
-  blocksForSemester,
+  downloadBlocksForSemester,
   DOWNLOAD_SEMESTERS,
   formatFileSize,
   formatUploadDate,
@@ -52,7 +52,7 @@ export function DownloadLibrary() {
     if (!semester) return [];
 
     const needle = query.trim().toLowerCase();
-    const allowedBlockIds = new Set(blocksForSemester(semester).map((block) => block.id));
+    const allowedBlockIds = new Set(downloadBlocksForSemester(semester).map((block) => block.id));
     return downloads.filter((item) => {
       const haystack = [
         item.title,
@@ -71,7 +71,7 @@ export function DownloadLibrary() {
   }, [blockId, downloads, query, semester]);
 
   const visibleSemesters = semester ? DOWNLOAD_SEMESTERS.filter((item) => item.id === semester) : [];
-  const blockOptions = semester ? blocksForSemester(semester) : [];
+  const blockOptions = semester ? downloadBlocksForSemester(semester) : [];
 
   async function downloadFile(item: SummaryDownload) {
     setDownloadingId(item.id);
@@ -185,7 +185,7 @@ export function DownloadLibrary() {
               </div>
 
               <div className="grid gap-4">
-                {blocksForSemester(semesterItem.id).map((block) => {
+                {downloadBlocksForSemester(semesterItem.id).map((block) => {
                   const blockDownloads = filtered
                     .filter((item) => item.semester === semesterItem.id && item.blockId === block.id)
                     .sort((a, b) => b.uploadDate.localeCompare(a.uploadDate));
