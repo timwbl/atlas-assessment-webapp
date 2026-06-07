@@ -6,11 +6,15 @@ import { AdminShortcut } from "@/components/AdminShortcut";
 import { MainNav } from "@/components/MainNav";
 import { MobileNav } from "@/components/MobileNav";
 import { OnlinePresenceBadge } from "@/components/OnlinePresenceBadge";
+import { APP_VERSION } from "@/lib/appVersion";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MC Übungsfragen",
   description: "Read-only Assessment-WebApp für medizinische Vorlesungen.",
+  other: {
+    "application-version": APP_VERSION
+  },
   icons: {
     icon: [
       { url: "/atlas-logo.svg", type: "image/svg+xml" }
@@ -29,7 +33,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="de" suppressHydrationWarning>
+    <html lang="de" data-app-version={APP_VERSION} suppressHydrationWarning>
       <body>
         <AtlasBrand />
         <MainNav />
@@ -37,7 +41,10 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         <AccountMenu />
         {children}
         <MobileNav />
-        <div className="site-copyright">Copyright by Tim Weibel</div>
+        <div className="site-copyright">
+          <span>WebApp-Version {APP_VERSION}</span>
+          <span>Copyright by Tim Weibel</span>
+        </div>
         <AdminShortcut />
       </body>
     </html>

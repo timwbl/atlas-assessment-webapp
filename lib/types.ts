@@ -55,6 +55,42 @@ export type UserAnswer = {
 };
 
 export type QuizMode = "training" | "exam" | "review";
+export type AnswerStatus = "correct" | "partial" | "incorrect";
+export type AnalysisPriority = "high" | "medium" | "low";
+
+export type StoredQuestionResult = {
+  questionId: string;
+  answer: UserAnswer;
+  optionOrder: string[];
+  status: AnswerStatus;
+  points: number;
+  maxPoints: number;
+  correctStatements?: number;
+  totalStatements?: number;
+};
+
+export type AnalysisWeakness = {
+  topic: string;
+  priority: AnalysisPriority;
+  reason: string;
+  recommendedAction: string;
+  relatedQuestions: number[];
+  relatedLearningObjectives: string[];
+};
+
+export type AnalysisErrorPattern = {
+  pattern: string;
+  exampleQuestionNumbers: number[];
+  correctionStrategy: string;
+};
+
+export type AssessmentAnalysis = {
+  summary: string;
+  strengths: string[];
+  weaknesses: AnalysisWeakness[];
+  errorPatterns: AnalysisErrorPattern[];
+  nextStudySteps: string[];
+};
 
 export type QuestionStat = {
   seen: number;
@@ -72,11 +108,17 @@ export type QuizAttempt = {
   mode: QuizMode;
   score: number;
   correct: number;
+  partial?: number;
+  incorrect?: number;
+  points?: number;
+  maxPoints?: number;
   total: number;
   startedAt: string;
   completedAt: string;
   answers: Record<string, UserAnswer>;
   wrongQuestionIds: string[];
+  questionResults?: StoredQuestionResult[];
+  analysis?: AssessmentAnalysis;
 };
 
 export type AssessmentProgress = {
@@ -100,4 +142,11 @@ export type QuizResultRow = {
   question: AssessmentQuestion;
   answer: UserAnswer;
   correct: boolean;
+  status: AnswerStatus;
+  points: number;
+  maxPoints: number;
+  correctStatements?: number;
+  totalStatements?: number;
+  falsePositives?: number;
+  falseNegatives?: number;
 };

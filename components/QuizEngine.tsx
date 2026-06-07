@@ -4,7 +4,16 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { ResultsPage } from "./ResultsPage";
-import { buildResultRows, correctAnswerLabel, isQuestionCorrect, optionKey, scorePercent } from "@/lib/score";
+import { analyzeAssessmentResults } from "@/lib/assessmentAnalysis";
+import {
+  buildResultRows,
+  correctAnswerLabel,
+  isQuestionCorrect,
+  optionKey,
+  scorePercent,
+  stableAnswer,
+  toStoredQuestionResult
+} from "@/lib/score";
 import { createSessionQuestions } from "@/lib/sessionQuestions";
 import { syncAssessmentProgress } from "@/lib/cloudProgress";
 import {
@@ -98,18 +107,32 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   function finishQuiz() {
     const rows = buildResultRows(questions, answers);
     const correct = rows.filter((row) => row.correct).length;
+    const partial = rows.filter((row) => row.status === "partial").length;
+    const incorrect = rows.filter((row) => row.status === "incorrect").length;
+    const points = rows.reduce((sum, row) => sum + row.points, 0);
+    const maxPoints = rows.reduce((sum, row) => sum + row.maxPoints, 0);
     const completedAt = new Date().toISOString();
+    const analysis = analyzeAssessmentResults(assessment, rows);
     const attempt: QuizAttempt = {
       id: createAttemptId(),
       assessmentId: assessment.id,
       mode,
       score: scorePercent(rows),
       correct,
+      partial,
+      incorrect,
+      points,
+      maxPoints,
       total: rows.length,
       startedAt,
       completedAt,
-      answers,
-      wrongQuestionIds: rows.filter((row) => !row.correct).map((row) => row.question.id)
+      answers: rows.reduce<Record<string, UserAnswer>>((acc, row) => {
+        acc[row.question.id] = stableAnswer(row.question, row.answer);
+        return acc;
+      }, {}),
+      wrongQuestionIds: rows.filter((row) => !row.correct).map((row) => row.question.id),
+      questionResults: rows.map(toStoredQuestionResult),
+      analysis
     };
 
     try {

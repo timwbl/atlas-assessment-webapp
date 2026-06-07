@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
     "/api/assessments/[id]/export/solutions-pdf": [
       "./assets/fonts/**/*",
       "./node_modules/pdfkit/js/data/**/*"
+    ],
+    "/api/assessments/[id]/export/review-pdf": [
+      "./assets/fonts/**/*",
+      "./node_modules/pdfkit/js/data/**/*"
     ]
   }
 };
