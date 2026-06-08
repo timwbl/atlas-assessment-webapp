@@ -379,3 +379,7 @@ using (true);
 
 -- After creating your own account, promote yourself once:
 -- update public.profiles set role = 'admin' where email = 'your-email@example.com';
+
+-- E-mail confirmation is configured in Supabase Auth, not with SQL.
+-- Never update auth.users.confirmed_at: it is a generated column.
+-- Use supabase/configure-email-confirmation.sh or the Supabase dashboard.

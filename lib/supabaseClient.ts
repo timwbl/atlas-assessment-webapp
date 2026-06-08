@@ -6,7 +6,7 @@ export type CloudUser = {
   user_metadata?: Record<string, unknown>;
 };
 
-type CloudSession = {
+export type CloudSession = {
   access_token: string;
   refresh_token?: string;
   expires_at?: number;
@@ -27,6 +27,18 @@ export function getSupabaseConfig(): { url: string; anonKey: string } | null {
   return url && anonKey ? { url, anonKey } : null;
 }
 
+export function getPublicSiteUrl(): string {
+  const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  const fallback = typeof window !== "undefined" ? window.location.origin : "";
+  return normalizePublicUrl(configured || fallback);
+}
+
+export function getEmailConfirmationRedirectUrl(): string {
+  const siteUrl = getPublicSiteUrl();
+  if (!siteUrl) throw new Error("NEXT_PUBLIC_SITE_URL ist nicht konfiguriert.");
+  return `${siteUrl}/auth/confirm`;
+}
+
 function normalizeSupabaseUrl(rawUrl: string | undefined): string {
   const value = rawUrl?.trim();
   if (!value) return "";
@@ -43,6 +55,17 @@ function normalizeSupabaseUrl(rawUrl: string | undefined): string {
       .replace(/\/auth\/v1\/?$/i, "")
       .replace(/\/rest\/v1\/?$/i, "")
       .replace(/\/$/, "");
+  }
+}
+
+function normalizePublicUrl(rawUrl: string): string {
+  if (!rawUrl) return "";
+  const withProtocol = rawUrl.startsWith("http") ? rawUrl : `https://${rawUrl}`;
+  try {
+    const parsed = new URL(withProtocol);
+    return parsed.origin.replace(/\/$/, "");
+  } catch {
+    return withProtocol.replace(/\/$/, "");
   }
 }
 

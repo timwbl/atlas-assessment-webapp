@@ -5,6 +5,7 @@ import {
   cloudSyncAvailable,
   getCurrentProfile,
   getCurrentUser,
+  resendSignupConfirmation,
   signInWithPassword,
   signOut,
   signUpWithPassword,
@@ -13,11 +14,14 @@ import {
   type CloudProfile
 } from "@/lib/cloudProgress";
 import { getAllProgress } from "@/lib/progressStore";
-import type { CloudUser } from "@/lib/supabaseClient";
+import {
+  AUTH_SESSION_CHANGED_EVENT,
+  type CloudUser
+} from "@/lib/supabaseClient";
 
 const NAME_KEY = "atlas-user-display-name";
 
-type AuthMode = "signin" | "signup" | "name";
+type AuthMode = "signin" | "signup" | "name" | "check-email";
 
 export function AccountMenu() {
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -33,12 +37,20 @@ export function AccountMenu() {
   const [user, setUser] = useState<CloudUser | null>(null);
   const [profile, setProfile] = useState<CloudProfile | null>(null);
   const [status, setStatus] = useState("");
+  const [pendingEmail, setPendingEmail] = useState("");
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
     setName(window.localStorage.getItem(NAME_KEY) || "");
     if (cloudSyncAvailable()) void refreshUser();
     else setProfileChecked(true);
+
+    function handleSessionChange() {
+      if (cloudSyncAvailable()) void refreshUser();
+    }
+
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, handleSessionChange);
+    return () => window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, handleSessionChange);
   }, []);
 
   useEffect(() => {
@@ -128,25 +140,33 @@ export function AccountMenu() {
       if (!cleanName) throw new Error("Bitte gib deinen Namen ein.");
       if (!email.trim() || !password) throw new Error("Bitte gib E-Mail und Passwort ein.");
 
-      await signUpWithPassword(email.trim(), password, cleanName);
-      let currentUser = await getCurrentUser();
-
-      if (!currentUser) {
-        await signInWithPassword(email.trim(), password);
-        currentUser = await getCurrentUser();
-      }
-
-      if (!currentUser) {
-        throw new Error("Supabase verlangt noch eine E-Mail-Bestätigung. Bitte deaktiviere Confirm email im Supabase Dashboard und bestätige bestehende Accounts einmalig per SQL.");
-      }
-
+      const cleanEmail = email.trim();
+      const result = await signUpWithPassword(cleanEmail, password, cleanName);
       setName(cleanName);
       window.localStorage.setItem(NAME_KEY, cleanName);
+
+      if (result.requiresEmailConfirmation) {
+        setPendingEmail(cleanEmail);
+        setAuthMode("check-email");
+        setStatus("");
+        return;
+      }
+
       await updateCurrentProfileName(cleanName);
       await refreshUser();
       const merged = await syncAllProgress();
       setStatus(`Account erstellt · ${Object.keys(merged).length} Fortschritte synchronisiert.`);
       setAuthOpen(false);
+    });
+  }
+
+  async function resendConfirmation() {
+    await run(async () => {
+      const targetEmail = (pendingEmail || email).trim();
+      if (!targetEmail) throw new Error("Bitte gib zuerst deine E-Mail-Adresse ein.");
+      await resendSignupConfirmation(targetEmail);
+      setPendingEmail(targetEmail);
+      setStatus("Eine neue Bestätigungsmail wurde versendet.");
     });
   }
 
@@ -246,7 +266,13 @@ export function AccountMenu() {
             className="auth-modal"
             role="dialog"
             aria-modal="true"
-            aria-label={authMode === "signup" ? "Registrieren" : authMode === "name" ? "Name ergänzen" : "Anmelden"}
+            aria-label={authMode === "signup"
+              ? "Registrieren"
+              : authMode === "name"
+                ? "Name ergänzen"
+                : authMode === "check-email"
+                  ? "E-Mail bestätigen"
+                  : "Anmelden"}
             onMouseDown={(event) => event.stopPropagation()}
           >
             {!requiresName && (
@@ -261,17 +287,27 @@ export function AccountMenu() {
 
             <div className="auth-modal-copy">
               <div className="eyebrow">ATLAS Account</div>
-              <h2>{authMode === "signup" ? "Account erstellen" : authMode === "name" ? "Wie dürfen wir dich nennen?" : "Willkommen zurück"}</h2>
+              <h2>
+                {authMode === "signup"
+                  ? "Account erstellen"
+                  : authMode === "name"
+                    ? "Wie dürfen wir dich nennen?"
+                    : authMode === "check-email"
+                      ? "Prüfe dein Postfach"
+                      : "Willkommen zurück"}
+              </h2>
               <p>
                 {authMode === "signup"
                   ? "Erstelle deinen Account und synchronisiere deinen Lernfortschritt."
                   : authMode === "name"
                     ? "Bitte ergänze deinen Namen, damit Freigaben und Feedback sauber zugeordnet werden können."
-                    : "Melde dich an, um deinen Fortschritt und Freigaben zu synchronisieren."}
+                    : authMode === "check-email"
+                      ? `Wir haben eine Bestätigungsmail an ${pendingEmail || email} gesendet. Öffne den Link, um deinen ATLAS Account freizuschalten.`
+                      : "Melde dich an, um deinen Fortschritt und Freigaben zu synchronisieren."}
               </p>
             </div>
 
-            {authMode !== "name" && (
+            {authMode !== "name" && authMode !== "check-email" && (
               <div className="auth-tabs" role="tablist" aria-label="Account Aktion">
                 <button className={authMode === "signin" ? "is-active" : ""} type="button" onClick={() => setAuthMode("signin")}>
                   Anmelden
@@ -282,6 +318,24 @@ export function AccountMenu() {
               </div>
             )}
 
+            {authMode === "check-email" ? (
+              <div className="auth-confirmation-pending">
+                <div className="auth-confirmation-icon" aria-hidden="true">✓</div>
+                <p>
+                  Nach der Bestätigung wirst du auf eine sichere ATLAS-Seite weitergeleitet und automatisch angemeldet.
+                </p>
+                <button className="btn-primary auth-submit" disabled={busy} type="button" onClick={() => void resendConfirmation()}>
+                  {busy ? "Wird gesendet..." : "Bestätigungsmail erneut senden"}
+                </button>
+                <button className="btn-secondary auth-submit" type="button" onClick={() => {
+                  setAuthMode("signin");
+                  setStatus("");
+                }}>
+                  Zur Anmeldung
+                </button>
+                {status && <p className="account-status">{status}</p>}
+              </div>
+            ) : (
             <div className="auth-form">
               {(authMode === "signup" || authMode === "name") && (
                 <label>
@@ -339,13 +393,19 @@ export function AccountMenu() {
                   {busy ? "Erstellt..." : "Registrieren"}
                 </button>
               ) : (
-                <button className="btn-primary auth-submit" disabled={busy || !email || !password} type="button" onClick={() => void login()}>
-                  {busy ? "Meldet an..." : "Anmelden"}
-                </button>
+                <>
+                  <button className="btn-primary auth-submit" disabled={busy || !email || !password} type="button" onClick={() => void login()}>
+                    {busy ? "Meldet an..." : "Anmelden"}
+                  </button>
+                  <button className="auth-text-button" disabled={busy || !email.trim()} type="button" onClick={() => void resendConfirmation()}>
+                    Bestätigungsmail erneut senden
+                  </button>
+                </>
               )}
 
               {status && <p className="account-status">{status}</p>}
             </div>
+            )}
           </section>
         </div>
       )}
@@ -360,9 +420,9 @@ function friendlyAuthError(error: unknown): string {
   if (normalized.includes("invalid login credentials")) return "E-Mail oder Passwort ist nicht korrekt.";
   if (normalized.includes("user already registered") || normalized.includes("already registered")) return "Für diese E-Mail existiert bereits ein Account. Bitte melde dich an.";
   if (normalized.includes("password") && normalized.includes("weak")) return "Das Passwort ist zu schwach. Bitte wähle ein längeres Passwort.";
-  if (normalized.includes("email not confirmed")) return "Supabase hat diesen Account noch nicht freigegeben. Schalte im Supabase Dashboard `Confirm email` aus und bestätige bestehende Accounts einmalig per SQL.";
+  if (normalized.includes("email not confirmed")) return "Bitte bestätige zuerst deine E-Mail-Adresse. Du kannst die Bestätigungsmail unten erneut senden.";
   if (normalized.includes("e-mail") && normalized.includes("bestätigung")) return message;
-  if (normalized.includes("http 400")) return "Supabase hat die Anmeldung abgelehnt. Häufige Ursache: `Confirm email` ist noch aktiv oder der Account wurde noch nicht bestätigt.";
+  if (normalized.includes("http 400")) return "Supabase hat die Anfrage abgelehnt. Prüfe die E-Mail-Adresse, das Passwort und ob der Bestätigungslink noch gültig ist.";
 
   return message;
 }

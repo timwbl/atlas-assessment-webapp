@@ -3,6 +3,7 @@
 import {
   authRequest,
   ensureSession,
+  getEmailConfirmationRedirectUrl,
   getStoredSession,
   isSupabaseConfigured,
   restRequest,
@@ -45,6 +46,11 @@ export type AdminProgressRow = {
   updatedAt: string;
 };
 
+export type SignUpResult = {
+  user: CloudUser | null;
+  requiresEmailConfirmation: boolean;
+};
+
 type ProgressRecord = {
   user_id: string;
   assessment_id: string;
@@ -80,27 +86,48 @@ export async function signInWithPassword(email: string, password: string): Promi
   return session.user;
 }
 
-export async function signUpWithPassword(email: string, password: string, displayName: string): Promise<CloudUser | null> {
+export async function signUpWithPassword(email: string, password: string, displayName: string): Promise<SignUpResult> {
   const name = displayName.trim();
   if (!name) throw new Error("Bitte gib deinen Namen ein.");
+  const redirectTo = getEmailConfirmationRedirectUrl();
 
-  const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>("signup", {
+  const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>(
+    `signup?redirect_to=${encodeURIComponent(redirectTo)}`,
+    {
     method: "POST",
     body: JSON.stringify({
       email,
       password,
       data: { name }
     })
-  });
+    }
+  );
 
   if (response.access_token && response.user) {
     const session = toCloudSession(response as AuthSessionResponse);
     saveSession(session);
     await upsertCurrentProfile({ ...session.user, user_metadata: { ...(session.user.user_metadata || {}), name } });
-    return session.user;
+    return { user: session.user, requiresEmailConfirmation: false };
   }
 
-  return response.user || null;
+  return {
+    user: response.user || null,
+    requiresEmailConfirmation: true
+  };
+}
+
+export async function resendSignupConfirmation(email: string): Promise<void> {
+  const redirectTo = getEmailConfirmationRedirectUrl();
+  await authRequest(
+    `resend?redirect_to=${encodeURIComponent(redirectTo)}`,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        type: "signup",
+        email
+      })
+    }
+  );
 }
 
 export async function signOut(): Promise<void> {
