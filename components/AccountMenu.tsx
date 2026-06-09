@@ -18,6 +18,7 @@ import {
   AUTH_SESSION_CHANGED_EVENT,
   type CloudUser
 } from "@/lib/supabaseClient";
+import { CompanionSettings } from "./companion/CompanionSettings";
 
 const NAME_KEY = "atlas-user-display-name";
 
@@ -225,6 +226,10 @@ export function AccountMenu() {
                 <p className="account-email">{user?.email || "Fortschritt lokal gespeichert"}</p>
               </div>
             </div>
+
+            <div className="account-divider" />
+
+            <CompanionSettings />
 
             <div className="account-divider" />
 

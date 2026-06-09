@@ -7,6 +7,8 @@ import { AtlasBrand } from "./AtlasBrand";
 import { MainNav } from "./MainNav";
 import { MobileNav } from "./MobileNav";
 import { OnlinePresenceBadge } from "./OnlinePresenceBadge";
+import { AriCompanion } from "./companion/AriCompanion";
+import { CompanionDebugPanel } from "./companion/CompanionDebugPanel";
 import { APP_VERSION } from "@/lib/appVersion";
 
 export function AppChrome() {
@@ -20,6 +22,8 @@ export function AppChrome() {
       <OnlinePresenceBadge />
       <AccountMenu />
       <MobileNav />
+      <AriCompanion />
+      <CompanionDebugPanel />
       <div className="site-copyright">
         <span>WebApp-Version {APP_VERSION}</span>
         <span>Copyright by Tim Weibel</span>

@@ -1,0 +1,299 @@
+.ari-companion {
+  position: fixed;
+  right: 24px;
+  bottom: 38px;
+  z-index: 32;
+  width: 168px;
+  height: 168px;
+  pointer-events: none;
+}
+
+.ari-companion__image-wrap {
+  width: 168px;
+  height: 168px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--line) 78%, transparent);
+  border-radius: 28px;
+  background: var(--surface);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.13), var(--inner-highlight);
+}
+
+.ari-companion__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+}
+
+.ari-companion__callout {
+  position: absolute;
+  right: 136px;
+  bottom: 126px;
+  width: max-content;
+  max-width: min(260px, calc(100vw - 230px));
+  display: grid;
+  gap: 3px;
+  border: 1px solid var(--line);
+  border-radius: 17px 17px 5px 17px;
+  background: color-mix(in srgb, var(--surface-strong) 96%, transparent);
+  padding: 11px 13px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.12), var(--inner-highlight);
+  color: var(--text);
+  backdrop-filter: blur(20px) saturate(160%);
+  animation: ari-callout-in 240ms ease-out;
+}
+
+.ari-companion__callout strong {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.ari-companion__callout span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.ari-companion__image--idle {
+  animation: ari-breathe 4.8s ease-in-out infinite;
+}
+
+.ari-companion__image--success {
+  animation: ari-bounce 700ms ease-out;
+}
+
+.ari-companion__image--thinking {
+  animation: ari-thinking 2.6s ease-in-out infinite;
+}
+
+.ari-companion__image--encourage {
+  animation: ari-soft-pop 900ms ease-out;
+}
+
+.ari-companion__image--focus {
+  animation: ari-focus-pulse 1.4s ease-out;
+}
+
+.ari-companion__image--comeback_sleepy {
+  animation: ari-wake 1.4s ease-out;
+}
+
+.ari-companion--quiz {
+  bottom: 104px;
+}
+
+.ari-companion--reduced-motion .ari-companion__image,
+.ari-companion--reduced-motion .ari-companion__callout {
+  animation: none !important;
+  transition: none !important;
+}
+
+.companion-settings {
+  display: grid;
+  gap: 9px;
+}
+
+.companion-settings > div {
+  display: grid;
+  gap: 2px;
+}
+
+.companion-settings > div strong {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.companion-settings > div span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.companion-setting-row {
+  position: relative;
+  display: grid;
+  min-height: 42px;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 720;
+  cursor: pointer;
+}
+
+.companion-setting-row input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.companion-switch {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 25%, transparent);
+  transition: background 160ms ease;
+}
+
+.companion-switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  transition: transform 160ms ease;
+}
+
+.companion-setting-row input:checked + .companion-switch {
+  background: var(--accent);
+}
+
+.companion-setting-row input:checked + .companion-switch::after {
+  transform: translateX(16px);
+}
+
+.companion-setting-row input:focus-visible + .companion-switch {
+  outline: 3px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  outline-offset: 2px;
+}
+
+.companion-debug {
+  position: fixed;
+  left: 14px;
+  bottom: 14px;
+  z-index: 70;
+  pointer-events: auto;
+}
+
+.companion-debug__toggle,
+.companion-debug__panel button {
+  min-height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-strong);
+  padding: 0 9px;
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.companion-debug__panel {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: min(390px, calc(100vw - 28px));
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-strong);
+  padding: 12px;
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(20px);
+}
+
+.companion-debug__panel > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+@keyframes ari-breathe {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.008); }
+}
+
+@keyframes ari-bounce {
+  0% { transform: translateY(5px) scale(0.97); }
+  55% { transform: translateY(-4px) scale(1.015); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes ari-thinking {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@keyframes ari-soft-pop {
+  0% { transform: scale(0.97); opacity: 0.84; }
+  65% { transform: scale(1.01); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes ari-focus-pulse {
+  0% { transform: scale(0.98); }
+  55% { transform: scale(1.012); }
+  100% { transform: scale(1); }
+}
+
+@keyframes ari-wake {
+  0% { transform: translateY(4px); opacity: 0.74; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes ari-callout-in {
+  from { transform: translateY(4px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 720px) {
+  .ari-companion {
+    right: 10px;
+    bottom: calc(70px + env(safe-area-inset-bottom));
+    width: 104px;
+    height: 104px;
+    z-index: 30;
+  }
+
+  .ari-companion__image-wrap {
+    width: 104px;
+    height: 104px;
+    border-radius: 20px;
+  }
+
+  .ari-companion__callout {
+    display: none;
+  }
+
+  .ari-companion--quiz {
+    bottom: calc(164px + env(safe-area-inset-bottom));
+  }
+
+  .companion-debug {
+    bottom: calc(68px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 380px) {
+  .ari-companion {
+    width: 86px;
+    height: 86px;
+  }
+
+  .ari-companion__image-wrap {
+    width: 86px;
+    height: 86px;
+    border-radius: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ari-companion__image,
+  .ari-companion__callout,
+  .companion-switch,
+  .companion-switch::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { AppChrome } from "@/components/AppChrome";
+import { CompanionProvider } from "@/components/companion/CompanionProvider";
 import { APP_VERSION } from "@/lib/appVersion";
+import "@/components/companion/ari-companion.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,8 +32,10 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="de" data-app-version={APP_VERSION} suppressHydrationWarning>
       <body>
-        <AppChrome />
-        {children}
+        <CompanionProvider>
+          <AppChrome />
+          {children}
+        </CompanionProvider>
       </body>
     </html>
   );

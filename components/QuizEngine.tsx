@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { ResultsPage } from "./ResultsPage";
+import { useCompanion } from "./companion/CompanionProvider";
 import { analyzeAssessmentResults } from "@/lib/assessmentAnalysis";
 import {
   buildResultRows,
@@ -32,6 +33,12 @@ type Props = {
 
 export function QuizEngine({ assessment, initialMode }: Props) {
   const didMount = useRef(false);
+  const consecutiveErrors = useRef(0);
+  // Confidence- und asynchrone Analyse-Events bleiben vorbereitet, bis der Quiz-Flow diese Zustände erfasst.
+  const {
+    setCompanionExamMode,
+    triggerAriEvent
+  } = useCompanion();
   const [mode, setMode] = useState<QuizMode>(initialMode);
   const [questions, setQuestions] = useState<AssessmentQuestion[]>(() => createSessionQuestions(selectQuestions(assessment, initialMode)));
   const [index, setIndex] = useState(0);
@@ -58,6 +65,11 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     setResult(null);
     setFinishError("");
   }, [assessment, initialMode]);
+
+  useEffect(() => {
+    setCompanionExamMode(mode === "exam" && !result);
+    return () => setCompanionExamMode(false);
+  }, [mode, result, setCompanionExamMode]);
 
   const question = questions[index];
   const progress = useMemo(() => getProgress(assessment.id), [assessment.id, progressVersion]);
@@ -98,6 +110,12 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   function revealOrNext() {
     if (mode === "training" && !revealed[question.id]) {
       setRevealed((current) => ({ ...current, [question.id]: true }));
+      if (currentCorrect) {
+        consecutiveErrors.current = 0;
+      } else {
+        consecutiveErrors.current += 1;
+        triggerAriEvent(consecutiveErrors.current >= 3 ? "many_errors_in_row" : "wrong_answer");
+      }
       return;
     }
     if (index >= questions.length - 1) finishQuiz();
@@ -145,6 +163,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     }
 
     setResult({ rows, attempt });
+    triggerAriEvent("assessment_completed");
   }
 
   function restart(nextMode: QuizMode) {
@@ -158,6 +177,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     setResult(null);
     setFinishError("");
     setProgressVersion((value) => value + 1);
+    consecutiveErrors.current = 0;
   }
 
   function restartWithQuestions(nextQuestions: AssessmentQuestion[], nextMode: QuizMode) {
@@ -169,6 +189,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     setStartedAt(new Date().toISOString());
     setResult(null);
     setFinishError("");
+    consecutiveErrors.current = 0;
   }
 
   return (
