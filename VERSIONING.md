@@ -1,6 +1,6 @@
 # ATLAS WebApp Versionierung
 
-Aktuelle sichtbare WebApp-Version: `2.7`
+Aktuelle sichtbare WebApp-Version: `2.8`
 
 - Kleine Updates und Patches erhöhen die zweite Zahl: `2.6` → `2.7`.
 - Grosse Funktions- oder Architekturupdates erhöhen die erste Zahl: `2.6` → `3.0`.

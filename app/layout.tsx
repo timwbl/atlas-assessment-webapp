@@ -1,11 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { AccountMenu } from "@/components/AccountMenu";
-import { AtlasBrand } from "@/components/AtlasBrand";
-import { AdminShortcut } from "@/components/AdminShortcut";
-import { MainNav } from "@/components/MainNav";
-import { MobileNav } from "@/components/MobileNav";
-import { OnlinePresenceBadge } from "@/components/OnlinePresenceBadge";
+import { AppChrome } from "@/components/AppChrome";
 import { APP_VERSION } from "@/lib/appVersion";
 import "./globals.css";
 
@@ -35,17 +30,8 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="de" data-app-version={APP_VERSION} suppressHydrationWarning>
       <body>
-        <AtlasBrand />
-        <MainNav />
-        <OnlinePresenceBadge />
-        <AccountMenu />
+        <AppChrome />
         {children}
-        <MobileNav />
-        <div className="site-copyright">
-          <span>WebApp-Version {APP_VERSION}</span>
-          <span>Copyright by Tim Weibel</span>
-        </div>
-        <AdminShortcut />
       </body>
     </html>
   );
