@@ -1,38 +1,38 @@
 .ari-companion {
   position: fixed;
   right: 24px;
-  bottom: 38px;
+  bottom: 28px;
   z-index: 32;
-  width: 168px;
-  height: 168px;
+  width: 124px;
+  height: 124px;
   pointer-events: none;
 }
 
 .ari-companion__image-wrap {
-  width: 168px;
-  height: 168px;
+  width: 124px;
+  height: 124px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--line) 78%, transparent);
-  border-radius: 28px;
-  background: var(--surface);
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.13), var(--inner-highlight);
+  border-radius: 24px;
 }
 
 .ari-companion__image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 210%;
+  max-width: none;
+  max-height: none;
+  flex: 0 0 auto;
   object-position: center bottom;
   display: block;
+  -webkit-mask-image: radial-gradient(ellipse 45% 58% at 50% 58%, #000 58%, transparent 100%);
+  mask-image: radial-gradient(ellipse 45% 58% at 50% 58%, #000 58%, transparent 100%);
 }
 
 .ari-companion__callout {
   position: absolute;
-  right: 136px;
-  bottom: 126px;
+  right: 98px;
+  bottom: 94px;
   width: max-content;
   max-width: min(260px, calc(100vw - 230px));
   display: grid;
@@ -63,6 +63,7 @@
 }
 
 .ari-companion__image--success {
+  width: 175%;
   animation: ari-bounce 700ms ease-out;
 }
 
@@ -75,6 +76,7 @@
 }
 
 .ari-companion__image--focus {
+  width: 155%;
   animation: ari-focus-pulse 1.4s ease-out;
 }
 
@@ -83,7 +85,7 @@
 }
 
 .ari-companion--quiz {
-  bottom: 104px;
+  bottom: 94px;
 }
 
 .ari-companion--reduced-motion .ari-companion__image,
@@ -251,15 +253,15 @@
   .ari-companion {
     right: 10px;
     bottom: calc(70px + env(safe-area-inset-bottom));
-    width: 104px;
-    height: 104px;
+    width: 82px;
+    height: 82px;
     z-index: 30;
   }
 
   .ari-companion__image-wrap {
-    width: 104px;
-    height: 104px;
-    border-radius: 20px;
+    width: 82px;
+    height: 82px;
+    border-radius: 17px;
   }
 
   .ari-companion__callout {
@@ -267,7 +269,7 @@
   }
 
   .ari-companion--quiz {
-    bottom: calc(164px + env(safe-area-inset-bottom));
+    bottom: calc(150px + env(safe-area-inset-bottom));
   }
 
   .companion-debug {
@@ -277,14 +279,14 @@
 
 @media (max-width: 380px) {
   .ari-companion {
-    width: 86px;
-    height: 86px;
+    width: 72px;
+    height: 72px;
   }
 
   .ari-companion__image-wrap {
-    width: 86px;
-    height: 86px;
-    border-radius: 17px;
+    width: 72px;
+    height: 72px;
+    border-radius: 15px;
   }
 }
 
