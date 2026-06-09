@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, type SyntheticEvent } from "react";
-import { usePathname } from "next/navigation";
 import { useCompanion } from "./CompanionProvider";
 import { AriCallout } from "./AriCallout";
 import type { AriMood } from "./companion.types";
@@ -16,7 +15,6 @@ export const ARI_ASSETS: Record<AriMood, string> = {
 };
 
 export function AriCompanion() {
-  const pathname = usePathname();
   const {
     mood,
     reaction,
@@ -52,7 +50,6 @@ export function AriCompanion() {
       aria-label="Ari, dein ATLAS Companion"
       className={[
         "ari-companion",
-        pathname.startsWith("/quiz") ? "ari-companion--quiz" : "",
         reducedMotion ? "ari-companion--reduced-motion" : ""
       ].filter(Boolean).join(" ")}
     >

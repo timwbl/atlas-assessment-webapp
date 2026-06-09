@@ -85,10 +85,6 @@
   animation: ari-wake 1.4s ease-out;
 }
 
-.ari-companion--quiz {
-  bottom: 112px;
-}
-
 .ari-companion--reduced-motion .ari-companion__image,
 .ari-companion--reduced-motion .ari-companion__callout {
   animation: none !important;
@@ -268,10 +264,6 @@
 
   .ari-companion__callout {
     display: none;
-  }
-
-  .ari-companion--quiz {
-    bottom: calc(146px + env(safe-area-inset-bottom));
   }
 
   .companion-debug {
