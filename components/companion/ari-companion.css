@@ -1,25 +1,26 @@
 .ari-companion {
   position: fixed;
-  right: 24px;
-  bottom: 28px;
+  right: 18px;
+  bottom: 44px;
   z-index: 32;
-  width: 124px;
-  height: 124px;
+  width: 82px;
+  height: 82px;
   pointer-events: none;
+  opacity: 0.94;
 }
 
 .ari-companion__image-wrap {
-  width: 124px;
-  height: 124px;
+  width: 82px;
+  height: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 18px;
 }
 
 .ari-companion__image {
-  width: 210%;
+  width: 190%;
   max-width: none;
   max-height: none;
   flex: 0 0 auto;
@@ -31,8 +32,8 @@
 
 .ari-companion__callout {
   position: absolute;
-  right: 98px;
-  bottom: 94px;
+  right: 66px;
+  bottom: 64px;
   width: max-content;
   max-width: min(260px, calc(100vw - 230px));
   display: grid;
@@ -63,7 +64,7 @@
 }
 
 .ari-companion__image--success {
-  width: 175%;
+  width: 158%;
   animation: ari-bounce 700ms ease-out;
 }
 
@@ -76,7 +77,7 @@
 }
 
 .ari-companion__image--focus {
-  width: 155%;
+  width: 142%;
   animation: ari-focus-pulse 1.4s ease-out;
 }
 
@@ -85,7 +86,7 @@
 }
 
 .ari-companion--quiz {
-  bottom: 94px;
+  bottom: 112px;
 }
 
 .ari-companion--reduced-motion .ari-companion__image,
@@ -253,15 +254,16 @@
   .ari-companion {
     right: 10px;
     bottom: calc(70px + env(safe-area-inset-bottom));
-    width: 82px;
-    height: 82px;
+    width: 60px;
+    height: 60px;
     z-index: 30;
+    opacity: 0.9;
   }
 
   .ari-companion__image-wrap {
-    width: 82px;
-    height: 82px;
-    border-radius: 17px;
+    width: 60px;
+    height: 60px;
+    border-radius: 13px;
   }
 
   .ari-companion__callout {
@@ -269,7 +271,7 @@
   }
 
   .ari-companion--quiz {
-    bottom: calc(150px + env(safe-area-inset-bottom));
+    bottom: calc(146px + env(safe-area-inset-bottom));
   }
 
   .companion-debug {
@@ -279,14 +281,14 @@
 
 @media (max-width: 380px) {
   .ari-companion {
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
   }
 
   .ari-companion__image-wrap {
-    width: 72px;
-    height: 72px;
-    border-radius: 15px;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
   }
 }
 
