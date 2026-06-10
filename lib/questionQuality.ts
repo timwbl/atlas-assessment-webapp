@@ -173,23 +173,26 @@ export function analyzeQuestionQuality(
 }
 
 export function analyzeAssessmentQuality(assessment: Assessment): AssessmentQualityReport {
+  const questions = Array.isArray(assessment?.questions)
+    ? assessment.questions.filter(isRuntimeQuestion)
+    : [];
   const conceptCounts = new Map<string, number>();
-  assessment.questions.forEach((question) => {
+  questions.forEach((question) => {
     (question.concepts?.length ? question.concepts : deriveConcepts(question)).forEach((concept) => {
       const normalized = normalizeText(concept);
       conceptCounts.set(normalized, (conceptCounts.get(normalized) || 0) + 1);
     });
   });
   const duplicateConcepts = new Set(
-    [...conceptCounts.entries()].filter(([, count]) => count >= Math.max(4, assessment.questions.length * 0.45)).map(([concept]) => concept)
+    [...conceptCounts.entries()].filter(([, count]) => count >= Math.max(4, questions.length * 0.45)).map(([concept]) => concept)
   );
   return {
-    assessmentId: assessment.id,
-    title: assessment.title,
-    lectureCode: assessment.lectureCode,
-    block: assessment.block,
+    assessmentId: assessment?.id || "invalid-assessment",
+    title: assessment?.title || "Unvollständiges Assessment",
+    lectureCode: assessment?.lectureCode || "",
+    block: assessment?.block || "",
     blockId: blockIdForContent(assessment),
-    questions: assessment.questions.map((question, index) => (
+    questions: questions.map((question, index) => (
       analyzeQuestionQuality(assessment, question, index, duplicateConcepts)
     ))
   };
@@ -340,4 +343,12 @@ function firstSentence(value: string): string {
 
 function isQuestionQualityFlag(value: string): value is QuestionQualityFlag {
   return (QUESTION_QUALITY_FLAGS as readonly string[]).includes(value);
+}
+
+function isRuntimeQuestion(value: unknown): value is AssessmentQuestion {
+  if (!value || typeof value !== "object") return false;
+  const question = value as Partial<AssessmentQuestion>;
+  return typeof question.id === "string"
+    && typeof question.stem === "string"
+    && Array.isArray(question.options);
 }

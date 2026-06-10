@@ -4,6 +4,7 @@ const path = require("node:path");
 const compiledDirectory = process.argv[2];
 if (!compiledDirectory) throw new Error("Compiled quality module directory is required.");
 const {
+  analyzeAssessmentQuality,
   analyzeQuestionQuality,
   validateKPrimQuestion
 } = require(path.resolve(compiledDirectory, "questionQuality.js"));
@@ -71,7 +72,11 @@ const transferAnalysis = analyzeQuestionQuality(assessment("Block 8"), transfer)
 assert.equal(transferAnalysis.difficulty, "very_hard");
 assert.equal(transferAnalysis.bloomLevel, "clinical_reasoning");
 
-console.log("Question quality tests passed: 2/2, 4/0, 0/4, explanations, recall, mechanism and transfer.");
+const malformedAssessment = assessment("Block 8");
+malformedAssessment.questions = undefined;
+assert.deepEqual(analyzeAssessmentQuality(malformedAssessment).questions, []);
+
+console.log("Question quality tests passed: 2/2, 4/0, 0/4, explanations, recall, mechanism, transfer and malformed data.");
 
 function assessment(block) {
   return {

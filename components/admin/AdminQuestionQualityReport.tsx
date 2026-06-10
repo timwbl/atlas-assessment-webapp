@@ -1,7 +1,7 @@
 "use client";
 
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
-import { loadActiveAssessments } from "@/lib/assessmentClient";
+import { loadActiveAssessmentsWithDiagnostics } from "@/lib/assessmentClient";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { examForContent } from "@/lib/studyProgram";
 import {
@@ -37,6 +37,7 @@ export function AdminQuestionQualityReport({
   const [reviews, setReviews] = useState<Record<string, StoredQuestionQualityReview>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [warnings, setWarnings] = useState<string[]>([]);
   const [query, setQuery] = useState("");
   const [block, setBlock] = useState("all");
   const [exam, setExam] = useState("all");
@@ -53,11 +54,30 @@ export function AdminQuestionQualityReport({
   async function load() {
     setLoading(true);
     setError("");
+    setWarnings([]);
     try {
-      const assessments = await loadActiveAssessments();
-      setRows(assessments.flatMap((assessment) => (
-        analyzeAssessmentQuality(assessment).questions.map((analysis) => ({ ...analysis, assessment }))
-      )));
+      const result = await loadActiveAssessmentsWithDiagnostics();
+      const nextRows: QualityRow[] = [];
+      const nextWarnings = result.skipped.map((item) => (
+        `${item.file}: ${item.errors[0] || "unvollständige Daten"}`
+      ));
+
+      result.assessments.forEach((assessment) => {
+        try {
+          analyzeAssessmentQuality(assessment).questions.forEach((analysis) => {
+            nextRows.push({ ...analysis, assessment });
+          });
+        } catch (analysisError) {
+          nextWarnings.push(
+            `${assessment.lectureCode || assessment.id}: ${
+              analysisError instanceof Error ? analysisError.message : "Analyse fehlgeschlagen"
+            }`
+          );
+        }
+      });
+
+      setRows(nextRows);
+      setWarnings(nextWarnings);
       setReviews(loadQuestionQualityReviews());
     } catch (loadError) {
       setError(loadError instanceof Error ? loadError.message : "Qualitätsreport konnte nicht erstellt werden.");
@@ -230,6 +250,18 @@ export function AdminQuestionQualityReport({
       </section>
 
       {error && <div className="admin-alert admin-alert--error">{error}</div>}
+      {!!warnings.length && (
+        <div className="admin-alert admin-alert--warning" role="status">
+          <strong>{warnings.length} Datensatz{warnings.length === 1 ? "" : "e"} übersprungen.</strong>
+          <span> Die übrigen Assessments wurden normal analysiert. Neu laden behebt veraltete Browser-Caches automatisch.</span>
+          <details>
+            <summary>Details anzeigen</summary>
+            <ul>
+              {warnings.slice(0, 20).map((warning) => <li key={warning}>{warning}</li>)}
+            </ul>
+          </details>
+        </div>
+      )}
 
       <section className="card admin-quality-list">
         <div className="admin-quality-list-heading">
