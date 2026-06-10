@@ -7,6 +7,11 @@ import { QuizEngine } from "./QuizEngine";
 import { loadActiveAssessments } from "@/lib/assessmentClient";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { validateAssessment } from "@/lib/assessmentValidator";
+import { analyzeQuestionQuality } from "@/lib/questionQuality";
+import {
+  applyStoredQuestionQualityReviews,
+  consumeAdminQuestionTarget
+} from "@/lib/questionQualityReviewStore";
 import type { Assessment, AssessmentQuestion } from "@/lib/types";
 
 export function AdminEditor({ contentType = "assessment" }: { contentType?: "assessment" | "altfragen" }) {
@@ -18,6 +23,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [targetQuestionId, setTargetQuestionId] = useState("");
 
   useEffect(() => {
     setLoading(true);
@@ -26,16 +32,31 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
       .then((items) => {
         const matching = items.filter((item) => (
           contentType === "altfragen" ? isAltfragenAssessment(item) : !isAltfragenAssessment(item)
-        ));
+        )).map(applyStoredQuestionQualityReviews);
+        const target = consumeAdminQuestionTarget();
+        const initialAssessment = matching.find((item) => item.id === target?.assessmentId) || matching[0];
         setAssessments(matching);
-        setSelectedId(matching[0]?.id || "");
-        setDraft(matching[0] ? structuredClone(matching[0]) : null);
+        setSelectedId(initialAssessment?.id || "");
+        setDraft(initialAssessment ? structuredClone(initialAssessment) : null);
+        setTargetQuestionId(target?.assessmentId === initialAssessment?.id ? target.questionId : "");
       })
       .catch((loadError) => {
         setError(loadError instanceof Error ? loadError.message : "Assessments konnten nicht geladen werden.");
       })
       .finally(() => setLoading(false));
   }, [contentType]);
+
+  useEffect(() => {
+    if (!draft || !targetQuestionId) return;
+    const timer = window.setTimeout(() => {
+      document.getElementById(`admin-question-${targetQuestionId}`)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+      setTargetQuestionId("");
+    }, 120);
+    return () => window.clearTimeout(timer);
+  }, [draft, targetQuestionId]);
 
   const filteredAssessments = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -281,24 +302,26 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
           <button className="btn-primary" onClick={addQuestion}>Frage hinzufügen</button>
         </div>
         {draft.questions.map((question, index) => (
-          <QuestionEditor
-            key={question.id}
-            question={question}
-            objectives={draft.learningObjectives}
-            onChange={(nextQuestion) => {
-              const questions = [...draft.questions];
-              questions[index] = normalizeQuestionOptions(nextQuestion);
-              updateDraft({ ...draft, questions });
-            }}
-            onDelete={() => updateDraft({ ...draft, questions: draft.questions.filter((item) => item.id !== question.id) })}
-            onMove={(direction) => {
-              const target = index + direction;
-              if (target < 0 || target >= draft.questions.length) return;
-              const questions = [...draft.questions];
-              [questions[index], questions[target]] = [questions[target], questions[index]];
-              updateDraft({ ...draft, questions });
-            }}
-          />
+          <div className="scroll-mt-24" id={`admin-question-${question.id}`} key={question.id}>
+            <QuestionEditor
+              question={question}
+              objectives={draft.learningObjectives}
+              qualityAnalysis={analyzeQuestionQuality(draft, question, index)}
+              onChange={(nextQuestion) => {
+                const questions = [...draft.questions];
+                questions[index] = normalizeQuestionOptions(nextQuestion);
+                updateDraft({ ...draft, questions });
+              }}
+              onDelete={() => updateDraft({ ...draft, questions: draft.questions.filter((item) => item.id !== question.id) })}
+              onMove={(direction) => {
+                const target = index + direction;
+                if (target < 0 || target >= draft.questions.length) return;
+                const questions = [...draft.questions];
+                [questions[index], questions[target]] = [questions[target], questions[index]];
+                updateDraft({ ...draft, questions });
+              }}
+            />
+          </div>
         ))}
       </section>
         </div>

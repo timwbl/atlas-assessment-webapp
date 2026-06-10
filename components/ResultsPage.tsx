@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { AssessmentReviewPrompt } from "./AssessmentReviewPrompt";
 import { CompletedAssessmentPdfExport } from "./CompletedAssessmentPdfExport";
+import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { optionKey, optionLabel } from "@/lib/score";
 import type {
@@ -175,13 +176,7 @@ function ReviewQuestion({
             ))}
       </div>
 
-      {(row.question.explanation || row.question.trap || objective) && (
-        <div className="review-explanation">
-          {row.question.explanation && <p><strong>Begründung:</strong> {row.question.explanation}</p>}
-          {row.question.trap && <p><strong>Typische Falle:</strong> {row.question.trap}</p>}
-          {objective && <p><strong>Lernziel:</strong> {objective}</p>}
-        </div>
-      )}
+      <QuestionExplanationPanel answer={row.answer} objective={objective} question={row.question} />
     </article>
   );
 }

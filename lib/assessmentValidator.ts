@@ -1,12 +1,27 @@
 import type {
   Assessment,
   AssessmentQuestion,
+  BloomLevel,
+  QuestionDifficulty,
   QuestionOption,
+  QuestionReviewStatus,
+  StructuredQuestionExplanation,
   ValidationResult
 } from "./types";
+import { validateKPrimQuestion } from "./questionQuality";
 
 const reliabilityValues = new Set(["high", "medium", "low", "insufficient_source"]);
 const questionTypes = new Set(["A", "KPRIM"]);
+const difficultyLevels = new Set<QuestionDifficulty>(["easy", "medium", "hard", "very_hard"]);
+const bloomLevels = new Set<BloomLevel>([
+  "recall",
+  "understanding",
+  "application",
+  "mechanism",
+  "transfer",
+  "clinical_reasoning"
+]);
+const reviewStatuses = new Set<QuestionReviewStatus>(["draft", "needs_review", "reviewed", "verified"]);
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return !!value && typeof value === "object" && !Array.isArray(value);
@@ -14,6 +29,34 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 function stringValue(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";
+}
+
+function stringArray(value: unknown): string[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  return value.map(String).map((item) => item.trim()).filter(Boolean);
+}
+
+function normalizeStructuredExplanation(value: unknown): StructuredQuestionExplanation | undefined {
+  if (!isRecord(value)) return undefined;
+  const wrongAnswerExplanations = isRecord(value.wrongAnswerExplanations)
+    ? Object.fromEntries(Object.entries(value.wrongAnswerExplanations)
+      .map(([key, explanation]) => [key, stringValue(explanation)])
+      .filter(([, explanation]) => explanation))
+    : {};
+  const coreIdea = stringValue(value.coreIdea);
+  const correctReasoning = stringValue(value.correctReasoning);
+  const commonTrap = stringValue(value.commonTrap);
+  const highYield = stringValue(value.highYield);
+  if (!coreIdea && !correctReasoning && !Object.keys(wrongAnswerExplanations).length && !commonTrap && !highYield) {
+    return undefined;
+  }
+  return {
+    coreIdea,
+    correctReasoning,
+    wrongAnswerExplanations,
+    ...(commonTrap ? { commonTrap } : {}),
+    ...(highYield ? { highYield } : {})
+  };
 }
 
 function validateOptions(question: AssessmentQuestion, path: string): string[] {
@@ -62,6 +105,9 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
     : [];
 
   const rawType = stringValue(raw.type).toUpperCase();
+  const difficultyLevel = stringValue(raw.difficultyLevel) as QuestionDifficulty;
+  const bloomLevel = stringValue(raw.bloomLevel) as BloomLevel;
+  const reviewStatus = stringValue(raw.reviewStatus) as QuestionReviewStatus;
 
   return {
     id: stringValue(raw.id) || `q${index + 1}`,
@@ -75,7 +121,18 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
     tags: Array.isArray(raw.tags) ? raw.tags.map(String).map((tag) => tag.trim()).filter(Boolean) : [],
     sourceReliability: reliabilityValues.has(stringValue(raw.sourceReliability))
       ? stringValue(raw.sourceReliability) as AssessmentQuestion["sourceReliability"]
-      : "medium"
+      : "medium",
+    ...(difficultyLevels.has(difficultyLevel) ? { difficultyLevel } : {}),
+    ...(bloomLevels.has(bloomLevel) ? { bloomLevel } : {}),
+    ...(stringArray(raw.concepts) ? { concepts: stringArray(raw.concepts) } : {}),
+    ...(stringValue(raw.questionGoal) ? { questionGoal: stringValue(raw.questionGoal) } : {}),
+    ...(stringArray(raw.commonConfusions) ? { commonConfusions: stringArray(raw.commonConfusions) } : {}),
+    ...(normalizeStructuredExplanation(raw.structuredExplanation || (isRecord(raw.explanation) ? raw.explanation : undefined))
+      ? { structuredExplanation: normalizeStructuredExplanation(raw.structuredExplanation || raw.explanation) }
+      : {}),
+    ...(stringArray(raw.qualityFlags) ? { qualityFlags: stringArray(raw.qualityFlags) } : {}),
+    ...(stringArray(raw.reviewedQualityFlags) ? { reviewedQualityFlags: stringArray(raw.reviewedQualityFlags) } : {}),
+    ...(reviewStatuses.has(reviewStatus) ? { reviewStatus } : {})
   };
 }
 
@@ -127,6 +184,10 @@ export function validateAssessment(raw: unknown): ValidationResult<Assessment> {
     if (!questionTypes.has(question.type)) errors.push(`${path}: type muss A oder KPRIM sein.`);
     errors.push(...validateOptions(question, path));
     if (!question.learningObjectiveId) warnings.push(`${path}: learningObjectiveId fehlt.`);
+    validateKPrimQuestion(question).forEach((flag) => {
+      if (flag === "all_true_kprim") warnings.push(`${path}: K-Prim enthält 4 richtige Aussagen und braucht Review.`);
+      if (flag === "all_false_kprim") warnings.push(`${path}: K-Prim enthält 4 falsche Aussagen und braucht Review.`);
+    });
   });
 
   const ids = new Set<string>();

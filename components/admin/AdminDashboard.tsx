@@ -128,6 +128,7 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (view: AdminView) =
           <div className="admin-quick-grid">
             <button type="button" onClick={() => onNavigate("assessments")}>Assessment verwalten</button>
             <button type="button" onClick={() => onNavigate("altfragen")}>Altfragen verwalten</button>
+            <button type="button" onClick={() => onNavigate("quality")}>Fragenqualität prüfen</button>
             <button type="button" onClick={() => onNavigate("downloads")}>Zusammenfassung hochladen</button>
             <button type="button" onClick={() => onNavigate("users")}>Nutzerfortschritt öffnen</button>
           </div>

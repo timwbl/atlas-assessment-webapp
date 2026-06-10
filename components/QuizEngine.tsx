@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
+import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { ResultsPage } from "./ResultsPage";
 import { useCompanion } from "./companion/CompanionProvider";
 import { analyzeAssessmentResults } from "@/lib/assessmentAnalysis";
@@ -403,8 +404,12 @@ export function QuizEngine({
           <div className={`quiz-feedback mt-5 rounded-2xl border p-4 ${currentCorrect ? "border-green-300 bg-green-500/10" : "border-red-300 bg-red-500/10"}`}>
             <strong>{currentCorrect ? "Richtig" : "Noch nicht"}</strong>
             <p className="mt-2 text-sm text-[var(--muted)]">Richtig wäre: {correctAnswerLabel(question)}</p>
-            <p className="mt-3">{question.explanation}</p>
-            {question.trap && <p className="mt-2 text-sm text-amber-600"><strong>Falle:</strong> {question.trap}</p>}
+            <QuestionExplanationPanel
+              answer={currentAnswer}
+              compact
+              objective={assessment.learningObjectives.find((item) => item.id === question.learningObjectiveId)?.text}
+              question={question}
+            />
           </div>
         )}
 

@@ -1,6 +1,23 @@
 export type QuestionType = "A" | "KPRIM";
 
 export type SourceReliability = "high" | "medium" | "low" | "insufficient_source";
+export type QuestionDifficulty = "easy" | "medium" | "hard" | "very_hard";
+export type BloomLevel =
+  | "recall"
+  | "understanding"
+  | "application"
+  | "mechanism"
+  | "transfer"
+  | "clinical_reasoning";
+export type QuestionReviewStatus = "draft" | "needs_review" | "reviewed" | "verified";
+
+export type StructuredQuestionExplanation = {
+  coreIdea: string;
+  correctReasoning: string;
+  wrongAnswerExplanations: Record<string, string>;
+  commonTrap?: string;
+  highYield?: string;
+};
 
 export type LearningObjective = {
   id: string;
@@ -27,6 +44,15 @@ export type AssessmentQuestion = {
   trap: string;
   tags: string[];
   sourceReliability: SourceReliability;
+  difficultyLevel?: QuestionDifficulty;
+  bloomLevel?: BloomLevel;
+  concepts?: string[];
+  questionGoal?: string;
+  commonConfusions?: string[];
+  structuredExplanation?: StructuredQuestionExplanation;
+  qualityFlags?: string[];
+  reviewedQualityFlags?: string[];
+  reviewStatus?: QuestionReviewStatus;
 };
 
 export type Assessment = {

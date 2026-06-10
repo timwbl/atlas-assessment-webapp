@@ -11,6 +11,7 @@ export type AdminView =
   | "requests"
   | "assessments"
   | "altfragen"
+  | "quality"
   | "recommendations"
   | "reviews"
   | "downloads"
@@ -26,6 +27,10 @@ const AdminAltfragenRequests = dynamic(
 );
 const AdminAssessmentReviews = dynamic(
   () => import("@/components/AdminAssessmentReviews").then((module) => module.AdminAssessmentReviews),
+  { loading: AdminLoading }
+);
+const AdminQuestionQualityReport = dynamic(
+  () => import("./AdminQuestionQualityReport").then((module) => module.AdminQuestionQualityReport),
   { loading: AdminLoading }
 );
 const AdminBlockRecommendations = dynamic(
@@ -46,6 +51,7 @@ const NAV_ITEMS: Array<{ id: AdminView; label: string; description: string }> = 
   { id: "requests", label: "Altfragen-Anfragen", description: "Zugriffe prüfen und freigeben" },
   { id: "assessments", label: "Assessments", description: "Normale Assessments verwalten" },
   { id: "altfragen", label: "Altfragen", description: "Prüfungsnahe Inhalte verwalten" },
+  { id: "quality", label: "Fragenqualität", description: "Flags, Tiefe und K-Prim prüfen" },
   { id: "recommendations", label: "Empfehlungen", description: "Blockbewertungen pflegen" },
   { id: "reviews", label: "Kommentare", description: "User-Kommentare moderieren" },
   { id: "downloads", label: "Downloads", description: "Zusammenfassungen verwalten" },
@@ -118,6 +124,7 @@ export function AdminWorkspace() {
             {view === "requests" && <AdminAltfragenRequests />}
             {view === "assessments" && <AdminEditor contentType="assessment" />}
             {view === "altfragen" && <AdminEditor contentType="altfragen" />}
+            {view === "quality" && <AdminQuestionQualityReport onNavigate={navigate} />}
             {view === "recommendations" && <AdminBlockRecommendations />}
             {view === "reviews" && <AdminAssessmentReviews />}
             {view === "downloads" && <AdminDownloadsManager />}

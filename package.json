@@ -1,6 +1,6 @@
 {
   "name": "atlas-assessment-webapp",
-  "version": "3.6.1",
+  "version": "3.7.0",
   "private": true,
   "engines": {
     "node": ">=20 <23"
@@ -10,7 +10,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "quality:report": "node scripts/question-quality-report.mjs",
+    "quality:test": "rm -rf .quality-test && tsc lib/questionQuality.ts lib/questionDesignRules.ts lib/studyProgram.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .quality-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/question-quality-test.cjs .quality-test && rm -rf .quality-test"
   },
   "dependencies": {
     "@types/pdfkit": "^0.17.6",
