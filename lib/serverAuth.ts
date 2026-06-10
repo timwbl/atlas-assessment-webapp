@@ -3,6 +3,7 @@ import type { Assessment } from "./types";
 type CloudUser = {
   id: string;
   email?: string;
+  user_metadata?: Record<string, unknown>;
 };
 
 type CloudProfile = {
@@ -29,7 +30,7 @@ export async function authenticateRequest(request: Request): Promise<Authenticat
   const user = await supabaseAuthRequest<CloudUser>("user", token).catch(() => null);
   if (!user?.id) return null;
 
-  const profiles = await supabaseRestRequest<CloudProfile[]>(
+  const profiles = await supabaseServerRestRequest<CloudProfile[]>(
     `profiles?select=id,email,display_name,role&id=eq.${encodeURIComponent(user.id)}&limit=1`,
     token
   ).catch(() => []);
@@ -43,7 +44,7 @@ export async function canExportAssessment(auth: AuthenticatedRequest, assessment
   if (!isAltfragenBlock(assessment.block)) return true;
   if (auth.profile.role === "admin") return true;
 
-  const rows = await supabaseRestRequest<AltfragenRequestRow[]>(
+  const rows = await supabaseServerRestRequest<AltfragenRequestRow[]>(
     `altfragen_access_requests?select=status&user_id=eq.${encodeURIComponent(auth.user.id)}&limit=1`,
     auth.token
   ).catch(() => []);
@@ -68,13 +69,19 @@ async function supabaseAuthRequest<T>(path: string, token: string): Promise<T> {
   return parseResponse<T>(response);
 }
 
-async function supabaseRestRequest<T>(path: string, token: string): Promise<T> {
+export async function supabaseServerRestRequest<T>(
+  path: string,
+  token: string,
+  init: RequestInit = {}
+): Promise<T> {
   const config = supabaseConfig();
   const response = await fetch(`${config.url}/rest/v1/${path}`, {
+    ...init,
     headers: {
       apikey: config.anonKey,
       Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      ...(init.headers || {})
     }
   });
   return parseResponse<T>(response);

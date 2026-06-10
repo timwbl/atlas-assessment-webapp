@@ -1,7 +1,7 @@
 "use client";
 
 import { getCurrentProfile, type CloudProfile } from "./cloudProgress";
-import { isSupabaseConfigured, restRequest } from "./supabaseClient";
+import { ensureSession, isSupabaseConfigured, restRequest } from "./supabaseClient";
 import type { Assessment } from "./types";
 
 export const ALTFRAGEN_TITLE = "Altfragen";
@@ -97,22 +97,26 @@ export async function submitAltfragenAccessRequest(input: {
   if (!displayName) throw new Error("Bitte gib deinen Namen ein.");
   const studyYear = Math.max(1, Math.min(6, Number(input.studyYear) || 1));
 
-  const rows = await restRequest<AltfragenAccessRequestRow[]>("altfragen_access_requests?on_conflict=user_id&select=*", {
+  const session = await ensureSession();
+  if (!session) throw new Error("Bitte melde dich zuerst mit deinem Account an.");
+
+  const response = await fetch("/api/altfragen/requests", {
     method: "POST",
-    headers: { Prefer: "resolution=merge-duplicates,return=representation" },
-    body: JSON.stringify([{
-      id: profile.id,
-      user_id: profile.id,
-      user_email: profile.email,
-      display_name: displayName,
-      study_year: studyYear,
-      status: "pending",
-      updated_at: new Date().toISOString()
-    }])
+    headers: {
+      Authorization: `Bearer ${session.access_token}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ displayName, studyYear })
   });
+  const payload = await response.json().catch(() => null) as {
+    request?: AltfragenAccessRequest;
+    error?: string;
+  } | null;
+  if (!response.ok || !payload?.request) {
+    throw new Error(payload?.error || `Anfrage konnte nicht gesendet werden (HTTP ${response.status}).`);
+  }
   notifyAltfragenAccessChanged();
-  if (!rows[0]) throw new Error("Anfrage wurde gespeichert, konnte aber nicht zurückgelesen werden.");
-  return fromRow(rows[0]);
+  return payload.request;
 }
 
 export async function loadAdminAltfragenRequests(): Promise<AltfragenAccessRequest[]> {

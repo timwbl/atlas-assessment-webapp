@@ -28,6 +28,14 @@ export function AdminEditor() {
     });
   }, []);
 
+  useEffect(() => {
+    if (!draft || !window.location.hash) return;
+    const targetId = decodeURIComponent(window.location.hash.slice(1));
+    window.setTimeout(() => {
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }, [draft]);
+
   function select(id: string) {
     const assessment = assessments.find((item) => item.id === id) || null;
     setSelectedId(id);

@@ -1,6 +1,6 @@
 {
   "name": "atlas-assessment-webapp",
-  "version": "3.3.0",
+  "version": "3.5.0",
   "private": true,
   "engines": {
     "node": ">=20 <23"
@@ -15,12 +15,14 @@
   "dependencies": {
     "@types/pdfkit": "^0.17.6",
     "next": "^15.3.0",
+    "nodemailer": "^8.0.11",
     "pdfkit": "^0.18.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",
+    "@types/nodemailer": "^8.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.20",

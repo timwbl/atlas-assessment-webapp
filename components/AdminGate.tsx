@@ -1,13 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AdminEditor } from "./AdminEditor";
+import { getCurrentProfile } from "@/lib/cloudProgress";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 
 export function AdminGate() {
   const [password, setPassword] = useState("");
   const [unlocked, setUnlocked] = useState(false);
   const [error, setError] = useState("");
+  const [checkingAccount, setCheckingAccount] = useState(true);
+
+  useEffect(() => {
+    async function checkAdminAccount() {
+      setCheckingAccount(true);
+      const profile = await getCurrentProfile().catch(() => null);
+      if (profile?.role === "admin") {
+        setUnlocked(true);
+        setError("");
+      }
+      setCheckingAccount(false);
+    }
+
+    void checkAdminAccount();
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, checkAdminAccount);
+    return () => window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, checkAdminAccount);
+  }, []);
 
   function login() {
     const expected = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "";
@@ -32,8 +51,7 @@ export function AdminGate() {
         <div className="eyebrow text-amber-600">Versteckter Bereich</div>
         <h1 className="mt-2 text-4xl font-black">Admin Login</h1>
         <p className="mt-3 text-[var(--muted)]">
-          Dieser Bereich ist nur für lokale Bearbeitung und JSON-Export gedacht.
-          Es gibt keine Server-Authentifizierung und keine Datenbank.
+          Eingeloggte ATLAS-Admins werden automatisch erkannt. Alternativ bleibt der lokale Adminzugang verfügbar.
         </p>
         <div className="mt-5 grid gap-3">
           <input
@@ -47,7 +65,9 @@ export function AdminGate() {
             placeholder="Admin-Passwort"
           />
           {error && <p className="text-sm text-red-600">{error}</p>}
-          <button className="btn-primary" onClick={login}>Admin Mode aktivieren</button>
+          <button className="btn-primary" disabled={checkingAccount} onClick={login}>
+            {checkingAccount ? "Adminstatus wird geprüft…" : "Admin Mode aktivieren"}
+          </button>
         </div>
       </section>
     </main>

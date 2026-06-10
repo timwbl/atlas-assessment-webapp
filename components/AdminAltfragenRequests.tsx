@@ -59,7 +59,7 @@ export function AdminAltfragenRequests() {
   }
 
   return (
-    <section className="card mt-5 p-5">
+    <section className="card mt-5 scroll-mt-24 p-5" id="altfragen-requests">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <div className="eyebrow">Altfragen Zugriff</div>
@@ -82,7 +82,7 @@ export function AdminAltfragenRequests() {
 
       <div className="mt-5 grid gap-3">
         {filtered.map((request) => (
-          <article className="admin-review-row" key={request.id}>
+          <article className="admin-review-row scroll-mt-24" id={`altfragen-request-${request.id}`} key={request.id}>
             <div className="min-w-0">
               <div className="eyebrow">{statusLabel(request.status)} · {request.studyYear}. Studienjahr</div>
               <h3 className="mt-1 font-black">{request.displayName}</h3>

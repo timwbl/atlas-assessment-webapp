@@ -74,6 +74,32 @@ NEXT_PUBLIC_ALTFRAGEN_PASSWORD=dein-altfragen-passwort
 
 Führe das aktuelle `supabase/schema.sql` erneut im Supabase SQL Editor aus, damit `altfragen_access_requests` und die Zugriffspolicies vorhanden sind.
 
+Neue Altfragen-Anfragen werden nach erfolgreichem Speichern serverseitig per Resend an die konfigurierte Admin-Adresse gemeldet. Der Mailversand ist bewusst vom Speichern entkoppelt: Ein Providerfehler verwirft keine Anfrage.
+
+```text
+ATLAS_ADMIN_EMAIL=deine-private-admin-adresse@example.com
+ATLAS_APP_URL=https://atlas-mc-fragen.netlify.app
+ATLAS_EMAIL_FROM=ATLAS <noreply@deine-verifizierte-domain.ch>
+RESEND_API_KEY=re_...
+```
+
+`ATLAS_EMAIL_FROM` muss bei Resend als Absender erlaubt sein. Der Link in der Mail führt ohne unsicheren Zugriffstoken zur bestehenden geschützten Adminübersicht.
+
+Alternativ kann ATLAS direkt über iCloud Mail versenden. Sobald `SMTP_HOST`, `SMTP_USER` und `SMTP_PASSWORD` gesetzt sind, hat SMTP Vorrang vor Resend:
+
+```text
+ATLAS_ADMIN_EMAIL=tim.nick.weibel@icloud.com
+ATLAS_APP_URL=https://atlas-mc-fragen.netlify.app
+SMTP_HOST=smtp.mail.me.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=tim.nick.weibel@icloud.com
+SMTP_PASSWORD=dein-apple-app-spezifisches-passwort
+SMTP_FROM=ATLAS <tim.nick.weibel@icloud.com>
+```
+
+Für `SMTP_PASSWORD` wird ein Apple-App-spezifisches Passwort verwendet, niemals das normale Apple-Account-Passwort.
+
 ## User-Bewertungen
 
 Angemeldete User können nach Abschluss eines Assessments 1 bis 5 Sterne und optional einen Kommentar abgeben. Bewertungen werden in `assessment_reviews` gespeichert. Kommentare sind standardmässig nicht freigegeben und erscheinen erst öffentlich, wenn du sie im Admin-Modus moderierst.
