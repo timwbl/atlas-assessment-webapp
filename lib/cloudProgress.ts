@@ -49,6 +49,15 @@ export type AdminProgressRow = {
   updatedAt: string;
 };
 
+export type AdminProfileRow = {
+  id: string;
+  email: string;
+  displayName: string;
+  role: "student" | "admin";
+  createdAt: string;
+  lastSeenAt: string | null;
+};
+
 export type SignUpResult = {
   user: CloudUser | null;
   requiresEmailConfirmation: boolean;
@@ -326,6 +335,22 @@ export async function fetchAdminProgressRows(): Promise<AdminProgressRow[]> {
       updatedAt: record.updated_at
     };
   });
+}
+
+export async function fetchAdminProfiles(): Promise<AdminProfileRow[]> {
+  const profile = await getCurrentProfile();
+  if (profile?.role !== "admin") throw new Error("Nur Admins können die Nutzerübersicht laden.");
+  const rows = await restRequest<CloudProfile[]>(
+    "profiles?select=id,email,display_name,role,created_at,last_seen_at&order=last_seen_at.desc.nullslast"
+  );
+  return rows.map((row) => ({
+    id: row.id,
+    email: row.email,
+    displayName: row.display_name || "",
+    role: row.role,
+    createdAt: row.created_at,
+    lastSeenAt: row.last_seen_at
+  }));
 }
 
 export async function replaceLocalProgressFromCloud(): Promise<Record<string, AssessmentProgress>> {

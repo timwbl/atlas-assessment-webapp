@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import {
   ASSESSMENT_REVIEWS_CHANGED_EVENT,
   deleteAssessmentReview,
@@ -15,6 +15,9 @@ export function AdminAssessmentReviews() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [status, setStatus] = useState<"all" | "pending" | "approved">("all");
+  const [busyId, setBusyId] = useState("");
+  const deferredQuery = useDeferredValue(query);
 
   useEffect(() => {
     void refresh();
@@ -28,16 +31,20 @@ export function AdminAssessmentReviews() {
   }, []);
 
   const filtered = useMemo(() => {
-    const needle = query.trim().toLowerCase();
-    if (!needle) return reviews;
-    return reviews.filter((review) => [
-      review.assessmentTitle,
-      review.lectureCode,
-      review.userEmail,
-      review.displayName,
-      review.comment
-    ].join(" ").toLowerCase().includes(needle));
-  }, [query, reviews]);
+    const needle = deferredQuery.trim().toLowerCase();
+    return reviews.filter((review) => {
+      if (status === "pending" && review.approved) return false;
+      if (status === "approved" && !review.approved) return false;
+      if (!needle) return true;
+      return [
+        review.assessmentTitle,
+        review.lectureCode,
+        review.userEmail,
+        review.displayName,
+        review.comment
+      ].join(" ").toLowerCase().includes(needle);
+    });
+  }, [deferredQuery, reviews, status]);
 
   async function refresh() {
     if (!reviewsAvailable()) return;
@@ -53,23 +60,29 @@ export function AdminAssessmentReviews() {
   }
 
   async function approve(id: string, approved: boolean) {
+    setBusyId(id);
     setError("");
     try {
       await setAssessmentReviewApproved(id, approved);
-      await refresh();
+      setReviews((current) => current.map((review) => review.id === id ? { ...review, approved } : review));
     } catch (approveError) {
       setError(approveError instanceof Error ? approveError.message : "Moderation fehlgeschlagen.");
+    } finally {
+      setBusyId("");
     }
   }
 
   async function remove(id: string) {
     if (!confirm("Bewertung wirklich löschen?")) return;
+    setBusyId(id);
     setError("");
     try {
       await deleteAssessmentReview(id);
-      await refresh();
+      setReviews((current) => current.filter((review) => review.id !== id));
     } catch (deleteError) {
       setError(deleteError instanceof Error ? deleteError.message : "Löschen fehlgeschlagen.");
+    } finally {
+      setBusyId("");
     }
   }
 
@@ -83,7 +96,7 @@ export function AdminAssessmentReviews() {
   }
 
   return (
-    <section className="card mt-5 p-5">
+    <section className="card admin-panel">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <div className="eyebrow">User Bewertungen</div>
@@ -98,13 +111,20 @@ export function AdminAssessmentReviews() {
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Bewertungen suchen"
           />
+          <select className="input w-full lg:w-44" value={status} onChange={(event) => setStatus(event.target.value as typeof status)}>
+            <option value="all">Alle Status</option>
+            <option value="pending">Ausstehend</option>
+            <option value="approved">Freigegeben</option>
+          </select>
           <button className="btn-secondary" disabled={loading} onClick={() => void refresh()}>Aktualisieren</button>
         </div>
       </div>
 
       {error && <p className="mt-4 rounded-2xl border border-red-300 bg-red-500/10 p-3 text-sm text-red-600">{error}</p>}
 
-      <div className="mt-5 grid gap-3">
+      {loading && reviews.length === 0 ? (
+        <div className="admin-loading" aria-label="Bewertungen werden geladen"><span /><span /><span /></div>
+      ) : <div className="mt-5 grid gap-3">
         {filtered.map((review) => (
           <article className="admin-review-row" key={review.id}>
             <div className="min-w-0">
@@ -116,15 +136,15 @@ export function AdminAssessmentReviews() {
               </p>
             </div>
             <div className="admin-review-actions">
-              <button className={review.approved ? "btn-secondary" : "btn-primary"} onClick={() => void approve(review.id, !review.approved)}>
+              <button disabled={busyId === review.id} className={review.approved ? "btn-secondary" : "btn-primary"} onClick={() => void approve(review.id, !review.approved)}>
                 {review.approved ? "Zurückziehen" : "Freigeben"}
               </button>
-              <button className="btn-danger" onClick={() => void remove(review.id)}>Löschen</button>
+              <button disabled={busyId === review.id} className="btn-danger" onClick={() => void remove(review.id)}>Löschen</button>
             </div>
           </article>
         ))}
-        {!filtered.length && <p className="py-4 text-sm text-[var(--muted)]">Noch keine Bewertungen vorhanden.</p>}
-      </div>
+        {!filtered.length && <div className="admin-empty-state"><h3>Keine Bewertungen gefunden</h3><p>Es warten keine passenden Kommentare auf Bearbeitung.</p></div>}
+      </div>}
     </section>
   );
 }

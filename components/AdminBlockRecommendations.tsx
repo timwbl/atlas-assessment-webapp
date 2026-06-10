@@ -15,6 +15,7 @@ export function AdminBlockRecommendations() {
   const [savingId, setSavingId] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     void refresh();
@@ -28,7 +29,15 @@ export function AdminBlockRecommendations() {
   }, []);
 
   async function refresh() {
-    setRecommendations(await loadBlockRecommendations());
+    setLoading(true);
+    setError("");
+    try {
+      setRecommendations(await loadBlockRecommendations());
+    } catch (loadError) {
+      setError(loadError instanceof Error ? loadError.message : "Block-Empfehlungen konnten nicht geladen werden.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   function updateDraft(id: string, next: BlockRecommendation) {
@@ -52,7 +61,7 @@ export function AdminBlockRecommendations() {
   }
 
   return (
-    <section className="card mt-5 p-5">
+    <section className="card admin-panel">
       <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         <div>
           <div className="eyebrow">Admin Empfehlungen</div>
@@ -66,7 +75,9 @@ export function AdminBlockRecommendations() {
       {error && <p className="mt-4 rounded-2xl border border-red-300 bg-red-500/10 p-3 text-sm text-red-600">{error}</p>}
       {message && <p className="mt-4 rounded-2xl border border-green-300 bg-green-500/10 p-3 text-sm text-green-700">{message}</p>}
 
-      <div className="mt-5 grid gap-3">
+      {loading ? (
+        <div className="admin-loading" aria-label="Empfehlungen werden geladen"><span /><span /><span /></div>
+      ) : <div className="mt-5 grid gap-3">
         {allRecommendationBlocks().map((block) => {
           const current = recommendations[`${block.semester}:${block.blockId}`]
             || emptyRecommendation(block.semester, block.blockId, block.blockTitle);
@@ -111,7 +122,7 @@ export function AdminBlockRecommendations() {
             </article>
           );
         })}
-      </div>
+      </div>}
     </section>
   );
 }

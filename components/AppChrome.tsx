@@ -35,6 +35,7 @@ export function AppChrome() {
   const pathname = usePathname();
   const { hydrated, settings } = useUserStudyContext();
   if (pathname === "/maintenance") return null;
+  if (pathname.startsWith("/admin")) return <ServiceWorkerRegistration />;
 
   return (
     <>

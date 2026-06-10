@@ -1,40 +1,51 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { AdminAltfragenRequests } from "./AdminAltfragenRequests";
-import { AdminAssessmentReviews } from "./AdminAssessmentReviews";
-import { AdminBlockRecommendations } from "./AdminBlockRecommendations";
-import { AdminDownloadsManager } from "./AdminDownloadsManager";
-import { AdminProgressDashboard } from "./AdminProgressDashboard";
+import { useEffect, useMemo, useState } from "react";
 import { QuestionEditor } from "./QuestionEditor";
 import { QuizEngine } from "./QuizEngine";
 import { loadActiveAssessments } from "@/lib/assessmentClient";
+import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { validateAssessment } from "@/lib/assessmentValidator";
 import type { Assessment, AssessmentQuestion } from "@/lib/types";
 
-export function AdminEditor() {
+export function AdminEditor({ contentType = "assessment" }: { contentType?: "assessment" | "altfragen" }) {
   const [assessments, setAssessments] = useState<Assessment[]>([]);
   const [selectedId, setSelectedId] = useState("");
   const [draft, setDraft] = useState<Assessment | null>(null);
   const [validation, setValidation] = useState<string[]>([]);
   const [preview, setPreview] = useState(false);
+  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    void loadActiveAssessments().then((items) => {
-      setAssessments(items);
-      setSelectedId(items[0]?.id || "");
-      setDraft(items[0] ? structuredClone(items[0]) : null);
-    });
-  }, []);
+    setLoading(true);
+    setError("");
+    void loadActiveAssessments()
+      .then((items) => {
+        const matching = items.filter((item) => (
+          contentType === "altfragen" ? isAltfragenAssessment(item) : !isAltfragenAssessment(item)
+        ));
+        setAssessments(matching);
+        setSelectedId(matching[0]?.id || "");
+        setDraft(matching[0] ? structuredClone(matching[0]) : null);
+      })
+      .catch((loadError) => {
+        setError(loadError instanceof Error ? loadError.message : "Assessments konnten nicht geladen werden.");
+      })
+      .finally(() => setLoading(false));
+  }, [contentType]);
 
-  useEffect(() => {
-    if (!draft || !window.location.hash) return;
-    const targetId = decodeURIComponent(window.location.hash.slice(1));
-    window.setTimeout(() => {
-      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 80);
-  }, [draft]);
+  const filteredAssessments = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    if (!needle) return assessments;
+    return assessments.filter((assessment) => [
+      assessment.lectureCode,
+      assessment.title,
+      assessment.block
+    ].join(" ").toLowerCase().includes(needle));
+  }, [assessments, query]);
 
   function select(id: string) {
     const assessment = assessments.find((item) => item.id === id) || null;
@@ -86,21 +97,33 @@ export function AdminEditor() {
     updateDraft({ ...draft, questions: [...draft.questions, question] });
   }
 
+  if (loading) {
+    return (
+      <div className="admin-loading card" aria-label="Assessments werden geladen"><span /><span /><span /></div>
+    );
+  }
+
+  if (error) {
+    return <div className="admin-alert admin-alert--error">{error}</div>;
+  }
+
   if (!draft) {
     return (
-      <main className="shell">
-        <div className="card p-6">Keine Assessments gefunden.</div>
-      </main>
+      <section className="card admin-empty-state">
+        <div className="eyebrow">{contentType === "altfragen" ? "Altfragen" : "Assessments"}</div>
+        <h2>Keine Inhalte gefunden</h2>
+        <p>In diesem Bereich sind aktuell keine passenden JSON-Assessments vorhanden.</p>
+      </section>
     );
   }
 
   if (preview) {
     return (
       <div>
-        <div className="shell pb-0">
-          <div className="rounded-[24px] border border-amber-300 bg-amber-500/10 p-4">
+        <div className="pb-4">
+          <div className="admin-preview-bar">
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <strong>ADMIN MODE · Preview Quiz</strong>
+              <strong>Vorschau · {draft.lectureCode}</strong>
               <button className="btn-secondary" onClick={() => setPreview(false)}>Zurück zum Editor</button>
             </div>
           </div>
@@ -111,49 +134,66 @@ export function AdminEditor() {
   }
 
   return (
-    <main className="shell">
-      <header className="rounded-[28px] border border-amber-300 bg-amber-500/10 p-6 md:p-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <div>
+      <header className="card admin-editor-header">
+        <div className="admin-editor-header-inner">
           <div>
-            <div className="eyebrow text-amber-600">ADMIN MODE</div>
-            <h1 className="mt-2 text-4xl font-black">Assessment Editor</h1>
-            <p className="mt-3 text-[var(--muted)]">
+            <div className="eyebrow">{contentType === "altfragen" ? "ALTFRAGEN CONTENT" : "ASSESSMENT CONTENT"}</div>
+            <h2>{contentType === "altfragen" ? "Altfragen verwalten" : "Assessment Editor"}</h2>
+            <p>
               Änderungen bleiben lokal im Browser, bis du das JSON exportierst und in `/public/assessments` ersetzt.
             </p>
           </div>
-          <div className="flex flex-wrap gap-2">
-            <Link className="btn-secondary inline-flex items-center" href="/">Library</Link>
+          <div className="admin-editor-actions">
+            <Link className="btn-secondary inline-flex items-center" href={`/assessment/${draft.id}`}>Details</Link>
             <button className="btn-secondary" onClick={() => setPreview(true)}>Quiz Preview</button>
             <button className="btn-primary" onClick={exportDraft}>Export Assessment JSON</button>
           </div>
         </div>
       </header>
 
-      <AdminBlockRecommendations />
+      <section className="admin-assessment-layout">
+        <aside className="card admin-assessment-list">
+          <div className="admin-list-search">
+            <input
+              className="input"
+              type="search"
+              autoComplete="off"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Code, Titel oder Block suchen"
+            />
+            <span>{filteredAssessments.length} Inhalte</span>
+          </div>
+          <div className="admin-assessment-list-scroll">
+            {filteredAssessments.map((assessment) => {
+              const typeA = assessment.questions.filter((question) => question.type === "A").length;
+              const kprim = assessment.questions.length - typeA;
+              return (
+                <button
+                  className={selectedId === assessment.id ? "is-active" : ""}
+                  key={assessment.id}
+                  onClick={() => select(assessment.id)}
+                  type="button"
+                >
+                  <span className="eyebrow">{assessment.block} · {assessment.lectureCode}</span>
+                  <strong>{assessment.title}</strong>
+                  <small>{assessment.questions.length} Fragen · {typeA} A · {kprim} K-prim</small>
+                </button>
+              );
+            })}
+            {!filteredAssessments.length && <p className="admin-list-empty">Keine passenden Inhalte.</p>}
+          </div>
+        </aside>
 
-      <AdminAltfragenRequests />
+        <div className="admin-editor-main">
+          {validation.length > 0 && (
+            <section className="admin-alert admin-alert--warning">
+              <div>{validation.map((item) => <p key={item}>{item}</p>)}</div>
+            </section>
+          )}
 
-      <AdminAssessmentReviews />
-
-      <AdminDownloadsManager />
-
-      <AdminProgressDashboard />
-
-      <section className="card mt-5 p-4">
-        <select className="input" value={selectedId} onChange={(event) => select(event.target.value)}>
-          {assessments.map((assessment) => (
-            <option key={assessment.id} value={assessment.id}>{assessment.lectureCode} · {assessment.title}</option>
-          ))}
-        </select>
-      </section>
-
-      {validation.length > 0 && (
-        <section className="card mt-5 border-amber-300 p-4 text-sm text-amber-700">
-          {validation.map((item) => <p key={item}>{item}</p>)}
-        </section>
-      )}
-
-      <section className="card mt-5 p-5">
+      <section className="card p-5">
         <div className="grid gap-3 md:grid-cols-4">
           <label>
             <span className="eyebrow">Code</span>
@@ -184,7 +224,7 @@ export function AdminEditor() {
         </label>
       </section>
 
-      <section className="card mt-5 p-5">
+      <section className="card mt-4 p-5">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-2xl font-black">Lernziele</h2>
           <button
@@ -235,7 +275,7 @@ export function AdminEditor() {
         </div>
       </section>
 
-      <section className="mt-5 grid gap-4">
+      <section className="mt-4 grid gap-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-2xl font-black">Fragen</h2>
           <button className="btn-primary" onClick={addQuestion}>Frage hinzufügen</button>
@@ -261,7 +301,9 @@ export function AdminEditor() {
           />
         ))}
       </section>
-    </main>
+        </div>
+      </section>
+    </div>
   );
 }
 

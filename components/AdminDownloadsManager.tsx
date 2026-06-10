@@ -55,6 +55,8 @@ export function AdminDownloadsManager() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [saving, setSaving] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [query, setQuery] = useState("");
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -69,9 +71,27 @@ export function AdminDownloadsManager() {
   }, []);
 
   const blockOptions = useMemo(() => downloadBlocksForSemester(draft.semester), [draft.semester]);
+  const filteredDownloads = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    if (!needle) return downloads;
+    return downloads.filter((item) => [
+      item.title,
+      item.fileName,
+      item.blockTitle,
+      semesterTitle(item.semester)
+    ].join(" ").toLowerCase().includes(needle));
+  }, [downloads, query]);
 
   async function refresh() {
-    setDownloads(await loadSummaryDownloads());
+    setLoading(true);
+    setError("");
+    try {
+      setDownloads(await loadSummaryDownloads());
+    } catch (loadError) {
+      setError(loadError instanceof Error ? loadError.message : "Downloads konnten nicht geladen werden.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   function resetForm() {
@@ -178,13 +198,18 @@ export function AdminDownloadsManager() {
 
   async function remove(item: SummaryDownload) {
     if (!confirm(`"${item.title}" wirklich löschen?`)) return;
-    await deleteSummaryDownload(item.id);
-    await refresh();
-    if (editing?.id === item.id) resetForm();
+    setError("");
+    try {
+      await deleteSummaryDownload(item.id);
+      setDownloads((current) => current.filter((download) => download.id !== item.id));
+      if (editing?.id === item.id) resetForm();
+    } catch (removeError) {
+      setError(removeError instanceof Error ? removeError.message : "Datei konnte nicht gelöscht werden.");
+    }
   }
 
   return (
-    <section className="card mt-5 p-5">
+    <section className="card admin-panel">
       <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         <div>
           <div className="eyebrow">Admin Downloads</div>
@@ -262,14 +287,24 @@ export function AdminDownloadsManager() {
             <h3 className="font-black">Hochgeladene Dateien</h3>
             <span className="pill">{downloads.length}</span>
           </div>
+          <input
+            className="input mt-3"
+            type="search"
+            autoComplete="off"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Titel, Datei oder Block suchen"
+          />
 
           <div className="mt-4 grid max-h-[620px] gap-3 overflow-y-auto pr-1">
-            {downloads.length === 0 ? (
+            {loading ? (
+              <div className="admin-loading" aria-label="Downloads werden geladen"><span /><span /><span /></div>
+            ) : filteredDownloads.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
-                Noch keine Zusammenfassungen hochgeladen.
+                {downloads.length ? "Keine passenden Zusammenfassungen gefunden." : "Noch keine Zusammenfassungen hochgeladen."}
               </div>
             ) : (
-              downloads.map((item) => (
+              filteredDownloads.map((item) => (
                 <article className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4" key={item.id}>
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
