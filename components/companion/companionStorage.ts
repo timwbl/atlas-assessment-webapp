@@ -9,7 +9,7 @@ const INACTIVITY_THRESHOLD_MS = 12 * 60 * 60 * 1000;
 
 export function getDefaultCompanionPreferences(): CompanionPreferences {
   return {
-    companionEnabled: true,
+    companionEnabled: false,
     hideInExamMode: true,
     reducedMotion: prefersReducedMotion()
   };

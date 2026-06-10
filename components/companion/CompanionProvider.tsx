@@ -106,7 +106,7 @@ const CompanionContext = createContext<CompanionContextValue | null>(null);
 export function CompanionProvider({ children }: { children: ReactNode }) {
   const [mood, setMood] = useState<AriMood>("idle");
   const [reaction, setReaction] = useState<AriReaction | null>(null);
-  const [companionEnabled, setEnabled] = useState(true);
+  const [companionEnabled, setEnabled] = useState(false);
   const [hideInExamMode, setHideExam] = useState(true);
   const [reducedMotion, setMotion] = useState(false);
   const [isExamMode, setExamMode] = useState(false);

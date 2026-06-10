@@ -1595,6 +1595,239 @@ button:disabled {
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 14%, transparent);
 }
 
+.account-study-summary {
+  display: grid;
+  gap: 10px;
+}
+
+.account-study-summary > div {
+  display: grid;
+  gap: 4px;
+}
+
+.account-study-summary strong {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.study-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 82;
+  display: grid;
+  place-items: center;
+  padding:
+    max(18px, env(safe-area-inset-top))
+    max(14px, env(safe-area-inset-right))
+    max(18px, env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+  background: rgba(18, 20, 26, 0.38);
+  backdrop-filter: blur(18px) saturate(135%);
+}
+
+.study-modal {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: min(820px, calc(100vh - 32px));
+  overflow-y: auto;
+  border: 1px solid color-mix(in srgb, var(--line) 86%, white 10%);
+  border-radius: 28px;
+  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  padding: 26px;
+  box-shadow: 0 32px 100px rgba(0, 0, 0, 0.25), var(--inner-highlight);
+}
+
+.study-profile-editor {
+  display: grid;
+  gap: 22px;
+}
+
+.study-profile-editor h2,
+.semester-change-modal h2 {
+  margin: 5px 0 0;
+  font-size: clamp(28px, 5vw, 38px);
+  line-height: 1.05;
+  font-weight: 950;
+}
+
+.study-profile-editor > div:first-child > p:last-child,
+.semester-change-modal > p {
+  margin: 9px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.study-field {
+  display: grid;
+  min-width: 0;
+  gap: 10px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.study-field > span,
+.study-field legend {
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.study-choice-grid,
+.semester-change-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.study-choice,
+.semester-change-options button {
+  display: grid;
+  min-height: 84px;
+  gap: 4px;
+  align-content: center;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-strong);
+  padding: 15px;
+  color: var(--text);
+  text-align: left;
+  box-shadow: var(--inner-highlight);
+}
+
+.study-choice span,
+.semester-change-options span,
+.semester-change-options small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.study-choice.is-active,
+.semester-change-options button.is-suggested {
+  border-color: color-mix(in srgb, var(--accent) 66%, var(--line));
+  background: color-mix(in srgb, var(--accent) 9%, var(--surface-strong));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 10%, transparent), var(--inner-highlight);
+}
+
+.study-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.study-filter-chips button {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  padding: 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.study-filter-chips button.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.study-filter-chips--library {
+  grid-column: 1 / -1;
+  justify-content: flex-end;
+}
+
+.study-field-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.study-placeholder {
+  display: grid;
+  gap: 5px;
+  border: 1px dashed var(--line);
+  border-radius: 17px;
+  background: color-mix(in srgb, var(--muted) 5%, transparent);
+  padding: 15px;
+}
+
+.study-placeholder span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.study-toggle-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 42px;
+  gap: 14px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.study-toggle-row > span:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.study-toggle-row small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.study-toggle-row input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.study-toggle-row .companion-switch {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.study-save-button {
+  width: 100%;
+  min-height: 48px;
+}
+
+.study-modal > .auth-text-button {
+  display: block;
+  margin: 14px auto 0;
+}
+
+.semester-change-modal {
+  display: grid;
+  gap: 18px;
+}
+
+.semester-change-modal > p {
+  margin: 0;
+}
+
+.semester-change-options button {
+  min-height: 104px;
+}
+
+.altfragen-scope-tabs {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 3px;
+  scrollbar-width: none;
+}
+
+.altfragen-scope-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.altfragen-scope-tabs button {
+  flex: 0 0 auto;
+}
+
 .semester-reset-button {
   display: grid;
   width: 44px;
@@ -2971,6 +3204,90 @@ button:disabled {
 
   .quiz-action-buttons {
     grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .study-modal {
+    max-height: calc(100dvh - 20px);
+    border-radius: 24px;
+    padding: 20px;
+  }
+
+  .study-profile-editor {
+    gap: 18px;
+  }
+
+  .study-profile-editor h2,
+  .semester-change-modal h2 {
+    font-size: 29px;
+  }
+
+  .study-choice,
+  .semester-change-options button {
+    min-height: 78px;
+    padding: 13px;
+  }
+
+  .semester-change-options {
+    grid-template-columns: 1fr;
+  }
+
+  .study-filter-chips--library {
+    justify-content: flex-start;
+  }
+
+  .study-filter-chips button {
+    min-height: 44px;
+    padding: 0 16px;
+  }
+
+  .altfragen-scope-tabs {
+    margin-right: -4px;
+  }
+
+  .mobile-library-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin: 12px 0 16px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--muted) 8%, transparent);
+    padding: 4px;
+  }
+
+  .mobile-library-tabs a {
+    display: grid;
+    min-height: 44px;
+    place-items: center;
+    border-radius: 12px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 850;
+    text-decoration: none;
+  }
+
+  .mobile-library-tabs a.is-active {
+    background: var(--surface-strong);
+    color: var(--text);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.07);
+  }
+
+  .mobile-exam-filters {
+    margin-bottom: 14px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .mobile-exam-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-exam-filters button {
+    flex: 0 0 auto;
   }
 }
 

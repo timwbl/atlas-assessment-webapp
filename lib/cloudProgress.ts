@@ -23,6 +23,7 @@ import {
   saveProgress
 } from "./progressStore";
 import type { AssessmentProgress } from "./types";
+import type { UserStudySettings } from "./studyProgram";
 
 export type CloudProfile = {
   id: string;
@@ -208,6 +209,17 @@ export async function updateCurrentProfileName(displayName: string): Promise<Clo
   });
   if (!data[0]) throw new Error("Name konnte nicht gespeichert werden.");
   return data[0];
+}
+
+export async function updateCurrentUserStudySettings(settings: UserStudySettings): Promise<CloudUser | null> {
+  const session = await ensureSession();
+  if (!session) return null;
+  const updatedUser = await authRequest<CloudUser>("user", {
+    method: "PUT",
+    body: JSON.stringify({ data: { atlas_study_settings: settings } })
+  }, session.access_token);
+  saveSession({ ...session, user: updatedUser });
+  return updatedUser;
 }
 
 export async function getCurrentProfile(currentUser?: CloudUser): Promise<CloudProfile | null> {

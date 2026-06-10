@@ -21,12 +21,15 @@ import {
   type CloudUser
 } from "@/lib/supabaseClient";
 import { CompanionSettings } from "./companion/CompanionSettings";
+import { semesterHeading } from "@/lib/studyProgram";
+import { useUserStudyContext } from "./study/UserStudyProvider";
 
 const NAME_KEY = "atlas-user-display-name";
 
 type AuthMode = "signin" | "signup" | "name" | "check-email";
 
 export function AccountMenu() {
+  const { settings: studySettings, setProfileEditorOpen } = useUserStudyContext();
   const menuRef = useRef<HTMLDivElement | null>(null);
   const nameInputRef = useRef<HTMLInputElement | null>(null);
   const [open, setOpen] = useState(false);
@@ -249,6 +252,25 @@ export function AccountMenu() {
             <div className="account-divider" />
 
             <CompanionSettings />
+
+            <div className="account-divider" />
+
+            <div className="account-study-summary">
+              <div>
+                <span className="eyebrow">Lernprofil</span>
+                <strong>{semesterHeading(studySettings)}</strong>
+              </div>
+              <button
+                className="account-menu-row"
+                onClick={() => {
+                  setOpen(false);
+                  setProfileEditorOpen(true);
+                }}
+                type="button"
+              >
+                Lernprofil bearbeiten
+              </button>
+            </div>
 
             <div className="account-divider" />
 

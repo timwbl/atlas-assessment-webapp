@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
+import { useUserStudyContext } from "./study/UserStudyProvider";
 import { blockColor } from "@/lib/blockColors";
 import {
   downloadBlocksForSemester,
@@ -15,8 +16,19 @@ import {
   type SemesterId,
   type SummaryDownload
 } from "@/lib/summaryDownloads";
+import {
+  examsForSemester,
+  legacySemesterId,
+  normalizedBlockId,
+  selectedBlockIds,
+  semesterConfig,
+  settingsForSemester,
+  studySemesterForLegacyId,
+  type ExamId
+} from "@/lib/studyProgram";
 
 export function DownloadLibrary() {
+  const { hydrated, settings, updateSettings } = useUserStudyContext();
   const [downloads, setDownloads] = useState<SummaryDownload[]>([]);
   const [query, setQuery] = useState("");
   const [semester, setSemester] = useState<SemesterId | "">("");
@@ -36,6 +48,14 @@ export function DownloadLibrary() {
     return () => window.removeEventListener(SUMMARY_DOWNLOADS_CHANGED_EVENT, onChange);
   }, []);
 
+  useEffect(() => {
+    if (!hydrated || settings.studyYear !== "year1" || !settings.semester) return;
+    const preferredSemester = legacySemesterId(settings.semester);
+    if (!preferredSemester) return;
+    setSemester(preferredSemester);
+    setBlockId((current) => current.startsWith(`${preferredSemester}-`) ? current : "");
+  }, [hydrated, settings.semester, settings.studyYear]);
+
   async function refresh() {
     setLoading(true);
     setError("");
@@ -48,11 +68,27 @@ export function DownloadLibrary() {
     }
   }
 
+  const visibleSemesters = semester ? DOWNLOAD_SEMESTERS.filter((item) => item.id === semester) : [];
+  const blockOptions = useMemo(() => {
+    const profileBlockIds = selectedBlockIds(settings);
+    return semester
+      ? downloadBlocksForSemester(semester).filter((block) => {
+      if (settings.studyYear !== "year1" || !settings.semester) return true;
+      const profileBlockId = normalizedBlockId(block.title);
+      return !!profileBlockId && profileBlockIds.includes(profileBlockId);
+    })
+      : [];
+  }, [semester, settings]);
+  const studySemester = studySemesterForLegacyId(semester);
+  const examConfig = semesterConfig(studySemester);
+  const selectedExam = settings.examPreparation.mode === "singleExam"
+    ? settings.examPreparation.selectedExams[0]
+    : null;
   const filtered = useMemo(() => {
     if (!semester) return [];
 
     const needle = query.trim().toLowerCase();
-    const allowedBlockIds = new Set(downloadBlocksForSemester(semester).map((block) => block.id));
+    const allowedBlockIds = new Set(blockOptions.map((block) => block.id));
     return downloads.filter((item) => {
       const haystack = [
         item.title,
@@ -68,10 +104,22 @@ export function DownloadLibrary() {
         && (!needle || haystack.includes(needle))
         && (!blockId || item.blockId === blockId);
     });
-  }, [blockId, downloads, query, semester]);
+  }, [blockId, blockOptions, downloads, query, semester]);
 
-  const visibleSemesters = semester ? DOWNLOAD_SEMESTERS.filter((item) => item.id === semester) : [];
-  const blockOptions = semester ? downloadBlocksForSemester(semester) : [];
+  useEffect(() => {
+    if (blockId && !blockOptions.some((block) => block.id === blockId)) setBlockId("");
+  }, [blockId, blockOptions]);
+
+  function setExamFilter(exam: ExamId | null) {
+    if (!studySemester) return;
+    updateSettings({
+      ...settingsForSemester(settings, studySemester),
+      examPreparation: exam
+        ? { mode: "singleExam", selectedExams: [exam] }
+        : { mode: "semester", selectedExams: examsForSemester(studySemester) }
+    });
+    setBlockId("");
+  }
 
   async function downloadFile(item: SummaryDownload) {
     setDownloadingId(item.id);
@@ -115,8 +163,11 @@ export function DownloadLibrary() {
           <select
             value={semester}
             onChange={(event) => {
-              setSemester(event.target.value as SemesterId | "");
+              const nextSemester = event.target.value as SemesterId | "";
+              setSemester(nextSemester);
               setBlockId("");
+              const nextStudySemester = studySemesterForLegacyId(nextSemester);
+              if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
             }}
           >
             <option value="">Bitte auswählen</option>
@@ -125,6 +176,23 @@ export function DownloadLibrary() {
             ))}
           </select>
         </label>
+        {examConfig && settings.studyYear === "year1" && (
+          <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
+            <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
+              Alle
+            </button>
+            {examConfig.defaultExamGroup.map((exam) => (
+              <button
+                className={selectedExam === exam ? "is-active" : ""}
+                key={exam}
+                onClick={() => setExamFilter(exam)}
+                type="button"
+              >
+                {exam}
+              </button>
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="card mt-5 p-4">
@@ -185,7 +253,7 @@ export function DownloadLibrary() {
               </div>
 
               <div className="grid gap-4">
-                {downloadBlocksForSemester(semesterItem.id).map((block) => {
+                {blockOptions.map((block) => {
                   const blockDownloads = filtered
                     .filter((item) => item.semester === semesterItem.id && item.blockId === block.id)
                     .sort((a, b) => b.uploadDate.localeCompare(a.uploadDate));

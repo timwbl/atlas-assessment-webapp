@@ -12,11 +12,15 @@ import type {
   AssessmentProgress,
   AssessmentSummary
 } from "@/lib/types";
+import { matchesStudyProfile } from "@/lib/studyProgram";
+import { useUserStudyContext } from "@/components/study/UserStudyProvider";
 
 export type MobileLearningData = {
   assessments: AssessmentSummary[];
   progress: Record<string, AssessmentProgress>;
   resume: ActiveQuizSession | null;
+  otherResume: ActiveQuizSession | null;
+  otherResumeAssessment: AssessmentSummary | null;
   loading: boolean;
   error: string;
   recentAssessment: AssessmentSummary | null;
@@ -29,6 +33,7 @@ export type MobileLearningData = {
 };
 
 export function useMobileLearningData(): MobileLearningData {
+  const { settings, hydrated } = useUserStudyContext();
   const [assessments, setAssessments] = useState<AssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [resume, setResume] = useState<ActiveQuizSession | null>(null);
@@ -56,17 +61,27 @@ export function useMobileLearningData(): MobileLearningData {
     return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, refreshProgress);
   }, []);
 
-  const derived = useMemo(() => deriveLearningData(assessments, progress, resume), [assessments, progress, resume]);
-  return { assessments, progress, loading, error, ...derived };
+  const visibleAssessments = useMemo(
+    () => assessments.filter((assessment) => matchesStudyProfile(assessment, settings)),
+    [assessments, settings]
+  );
+  const derived = useMemo(
+    () => deriveLearningData(visibleAssessments, assessments, progress, resume),
+    [assessments, progress, resume, visibleAssessments]
+  );
+  return { assessments: visibleAssessments, progress, loading: loading || !hydrated, error, ...derived };
 }
 
 function deriveLearningData(
   assessments: AssessmentSummary[],
+  allAssessments: AssessmentSummary[],
   progress: Record<string, AssessmentProgress>,
   resume: ActiveQuizSession | null
 ) {
   const assessmentById = new Map(assessments.map((assessment) => [assessment.id, assessment]));
+  const allAssessmentById = new Map(allAssessments.map((assessment) => [assessment.id, assessment]));
   const validResume = resume && assessmentById.has(resume.assessmentId) ? resume : null;
+  const otherResume = resume && !validResume && allAssessmentById.has(resume.assessmentId) ? resume : null;
   const recentProgress = Object.values(progress)
     .filter((item) => item.lastAttemptAt || item.activeSession)
     .sort((a, b) => activityTime(b) - activityTime(a));
@@ -105,6 +120,8 @@ function deriveLearningData(
 
   return {
     resume: validResume,
+    otherResume,
+    otherResumeAssessment: otherResume ? allAssessmentById.get(otherResume.assessmentId) || null : null,
     recentAssessment,
     wrongTarget,
     markedTarget,

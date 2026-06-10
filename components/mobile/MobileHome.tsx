@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState, type CSSProperties } from "react";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { useMobileLearningData } from "./useMobileLearningData";
+import { examForBlock } from "@/lib/studyProgram";
 
 const NAME_KEY = "atlas-user-display-name";
 
@@ -39,6 +40,7 @@ export function MobileHome() {
               {primary && (
                 <p>
                   {formatBlockLabel(primary.block)} · {primary.lectureCode}
+                  {examForBlock(primary.block) ? ` · ${examForBlock(primary.block)}` : ""}
                   {data.resume ? ` · Frage ${data.resume.currentQuestionIndex + 1}` : ""}
                 </p>
               )}
@@ -74,6 +76,13 @@ export function MobileHome() {
               label="Assessment fortsetzen"
               meta={data.resume ? `Frage ${data.resume.currentQuestionIndex + 1}` : "Keine offene Session"}
             />
+            {data.otherResume && data.otherResumeAssessment && (
+              <QuickLink
+                href={`/quiz/${data.otherResume.assessmentId}?resume=1`}
+                label="Andere Session fortsetzen"
+                meta={`${formatBlockLabel(data.otherResumeAssessment.block)} · Frage ${data.otherResume.currentQuestionIndex + 1}`}
+              />
+            )}
           </section>
 
           <section className="mobile-progress-snapshot">

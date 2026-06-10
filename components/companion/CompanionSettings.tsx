@@ -1,27 +1,27 @@
 "use client";
 
 import { useCompanion } from "./CompanionProvider";
+import { useUserStudyContext } from "../study/UserStudyProvider";
 
 export function CompanionSettings() {
   const {
-    companionEnabled,
     hideInExamMode,
     reducedMotion,
-    setCompanionEnabled,
     setHideInExamMode,
     setReducedMotion
   } = useCompanion();
+  const { settings, updateSettings } = useUserStudyContext();
 
   return (
     <section className="companion-settings" aria-labelledby="companion-settings-title">
       <div>
         <strong id="companion-settings-title">Companion</strong>
-        <span>Ari begleitet dich dezent beim Lernen.</span>
+        <span>Optionaler Lernbegleiter für Fokus- und Fortschrittshinweise.</span>
       </div>
       <CompanionToggle
-        checked={companionEnabled}
-        label="Companion anzeigen"
-        onChange={setCompanionEnabled}
+        checked={settings.ariEnabled}
+        label="Ari anzeigen"
+        onChange={(ariEnabled) => updateSettings({ ...settings, ariEnabled })}
       />
       <CompanionToggle
         checked={hideInExamMode}

@@ -7,6 +7,8 @@ import { MainNav } from "./MainNav";
 import { MobileNav } from "./MobileNav";
 import { ServiceWorkerRegistration } from "./ServiceWorkerRegistration";
 import { APP_VERSION } from "@/lib/appVersion";
+import { StudyPrompts } from "./study/StudyPrompts";
+import { useUserStudyContext } from "./study/UserStudyProvider";
 
 const AccountMenu = dynamic(
   () => import("./AccountMenu").then((module) => module.AccountMenu),
@@ -31,6 +33,7 @@ const CompanionDebugPanel = dynamic(
 
 export function AppChrome() {
   const pathname = usePathname();
+  const { hydrated, settings } = useUserStudyContext();
   if (pathname === "/maintenance") return null;
 
   return (
@@ -41,7 +44,8 @@ export function AppChrome() {
       <OnlinePresenceBadge />
       <AccountMenu />
       <MobileNav />
-      <AriCompanion />
+      {hydrated && settings.ariEnabled && <AriCompanion />}
+      <StudyPrompts />
       {process.env.NODE_ENV === "development" && <CompanionDebugPanel />}
       <div className="site-copyright">
         <span>WebApp-Version {APP_VERSION}</span>

@@ -5,6 +5,7 @@ import type { CSSProperties } from "react";
 import { blockColor } from "@/lib/blockColors";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { useMobileLearningData } from "./useMobileLearningData";
+import { examForBlock } from "@/lib/studyProgram";
 
 export function MobileProgress() {
   const data = useMobileLearningData();
@@ -52,7 +53,11 @@ export function MobileProgress() {
             <span className={`mobile-health-dot ${healthClass(ratio)}`} />
             <div>
               <strong>{assessment.lectureCode} · {assessment.title}</strong>
-              <span>{formatBlockLabel(assessment.block)} · {seen} gesehen · {wrong} offen</span>
+              <span>
+                {formatBlockLabel(assessment.block)}
+                {examForBlock(assessment.block) ? ` · ${examForBlock(assessment.block)}` : ""}
+                {` · ${seen} gesehen · ${wrong} offen`}
+              </span>
             </div>
             <small>{lastAt ? relativeDate(lastAt) : "neu"}</small>
           </Link>

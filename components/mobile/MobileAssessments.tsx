@@ -4,9 +4,18 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { useMobileLearningData } from "./useMobileLearningData";
+import {
+  examsForSemester,
+  semesterConfig,
+  semesterHeading,
+  settingsForSemester,
+  type ExamId
+} from "@/lib/studyProgram";
+import { useUserStudyContext } from "@/components/study/UserStudyProvider";
 
 export function MobileAssessments() {
   const data = useMobileLearningData();
+  const { settings, updateSettings } = useUserStudyContext();
   const [query, setQuery] = useState("");
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -16,14 +25,49 @@ export function MobileAssessments() {
       assessment.block
     ].join(" ").toLowerCase().includes(needle));
   }, [data.assessments, query]);
+  const currentSemester = semesterConfig(settings.semester);
+  const selectedExam = settings.examPreparation.mode === "singleExam"
+    ? settings.examPreparation.selectedExams[0]
+    : null;
+
+  function setExamFilter(exam: ExamId | null) {
+    if (!settings.semester) return;
+    updateSettings({
+      ...settingsForSemester(settings, settings.semester),
+      examPreparation: exam
+        ? { mode: "singleExam", selectedExams: [exam] }
+        : { mode: "semester", selectedExams: examsForSemester(settings.semester) }
+    });
+  }
 
   return (
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
         <p className="eyebrow">Assessments</p>
         <h1>Fragen auswählen</h1>
-        <p>Nach Titel, KV oder Block suchen.</p>
+        <p>{semesterHeading(settings)} · nach Titel, KV oder Block suchen.</p>
       </header>
+      <nav className="mobile-library-tabs" aria-label="Fragenbereiche">
+        <Link className="is-active" href="/assessments">Assessments</Link>
+        <Link href="/altfragen">Altfragen</Link>
+      </nav>
+      {settings.studyYear === "year1" && currentSemester && (
+        <div className="study-filter-chips mobile-exam-filters" aria-label="Prüfungsfilter">
+          <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
+            Alle
+          </button>
+          {currentSemester.defaultExamGroup.map((exam) => (
+            <button
+              className={selectedExam === exam ? "is-active" : ""}
+              key={exam}
+              onClick={() => setExamFilter(exam)}
+              type="button"
+            >
+              {exam}
+            </button>
+          ))}
+        </div>
+      )}
       <input
         autoComplete="off"
         className="mobile-assessment-search"

@@ -2,11 +2,9 @@
 
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
-import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentCard } from "./AssessmentCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
-import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenBlock } from "@/lib/altfragenAccess";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import {
@@ -22,14 +20,27 @@ import {
   saveAssessmentLibrarySelection
 } from "@/lib/librarySelection";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
-import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
+import {
+  examsForSemester,
+  isAltfragenValue,
+  isThreeDContent,
+  legacySemesterId,
+  normalizedBlockId,
+  selectedBlockIds,
+  semesterConfig,
+  settingsForSemester,
+  studySemesterForLegacyId,
+  type ExamId
+} from "@/lib/studyProgram";
 import type {
   AssessmentProgress,
   AssessmentSummary,
   LoadedAssessmentSummary
 } from "@/lib/types";
+import { useUserStudyContext } from "./study/UserStudyProvider";
 
 export function LibraryClient() {
+  const { hydrated, settings, updateSettings } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [query, setQuery] = useState("");
@@ -38,7 +49,6 @@ export function LibraryClient() {
   const [code, setCode] = useState("");
   const [tag, setTag] = useState("");
   const [error, setError] = useState("");
-  const [altfragenAccess, setAltfragenAccess] = useState(false);
 
   useEffect(() => {
     const savedSelection = loadAssessmentLibrarySelection();
@@ -51,8 +61,18 @@ export function LibraryClient() {
       .then(setLoaded)
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Laden fehlgeschlagen."));
     setProgress(getAllProgress());
-    void refreshAltfragenAccess();
   }, []);
+
+  useEffect(() => {
+    if (!hydrated || settings.studyYear !== "year1" || !settings.semester) return;
+    const preferredSemester = legacySemesterId(settings.semester);
+    if (!preferredSemester) return;
+    setSemester(preferredSemester);
+    setBlockId((current) => {
+      const selected = current ? getSummaryBlock(current) : null;
+      return selected?.semester === preferredSemester ? current : "";
+    });
+  }, [hydrated, settings.semester, settings.studyYear]);
 
   useEffect(() => {
     function updateProgress() {
@@ -62,25 +82,6 @@ export function LibraryClient() {
     window.addEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
     return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
   }, []);
-
-  useEffect(() => {
-    function updateAltfragenAccess() {
-      void refreshAltfragenAccess();
-    }
-
-    window.addEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
-    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
-    window.addEventListener("storage", updateAltfragenAccess);
-    return () => {
-      window.removeEventListener(ALTFRAGEN_ACCESS_CHANGED_EVENT, updateAltfragenAccess);
-      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, updateAltfragenAccess);
-      window.removeEventListener("storage", updateAltfragenAccess);
-    };
-  }, []);
-
-  async function refreshAltfragenAccess() {
-    setAltfragenAccess(await canAccessAltfragen().catch(() => false));
-  }
 
   function resetToMainSelection() {
     clearAssessmentLibrarySelection();
@@ -93,7 +94,13 @@ export function LibraryClient() {
 
   const deferredQuery = useDeferredValue(query);
   const assessments = useMemo(
-    () => loaded.map((item) => item.assessment).filter(Boolean) as AssessmentSummary[],
+    () => loaded
+      .map((item) => item.assessment)
+      .filter((assessment): assessment is AssessmentSummary => (
+        !!assessment
+        && !isAltfragenValue(assessment.block)
+        && !isThreeDContent(assessment)
+      )),
     [loaded]
   );
   const invalid = useMemo(
@@ -101,15 +108,52 @@ export function LibraryClient() {
     [loaded]
   );
 
-  const blockOptions = semester ? blocksForSemester(semester) : [];
+  const blockOptions = useMemo(() => {
+    const profileBlockIds = selectedBlockIds(settings);
+    return semester
+      ? blocksForSemester(semester).filter((block) => {
+      if (isAltfragenValue(block.title) || isThreeDContent(block.title)) return false;
+      if (settings.studyYear !== "year1" || !settings.semester) return true;
+      const blockIdFromTitle = normalizedBlockId(block.title);
+      if (!blockIdFromTitle) return settings.semester === "fs" && normalizeText(block.title).includes("prufungssimulation");
+      return profileBlockIds.includes(blockIdFromTitle);
+    })
+      : [];
+  }, [semester, settings]);
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
-  const selectedAltfragen = selectedBlock ? isAltfragenBlock(selectedBlock.title) : false;
-  const altfragenLocked = selectedAltfragen && !altfragenAccess;
+
+  useEffect(() => {
+    if (blockId && !blockOptions.some((block) => block.id === blockId)) {
+      setBlockId("");
+      setCode("");
+      setTag("");
+    }
+  }, [blockId, blockOptions]);
 
   const blockAssessments = useMemo(() => {
-    if (!selectedBlock || altfragenLocked) return [];
+    if (!selectedBlock) return [];
     return assessments.filter((assessment) => blockMatches(assessment.block, selectedBlock.title));
-  }, [altfragenLocked, assessments, selectedBlock]);
+  }, [assessments, selectedBlock]);
+
+  const studySemester = studySemesterForLegacyId(semester);
+  const examConfig = semesterConfig(studySemester);
+  const selectedExam = settings.examPreparation.mode === "singleExam"
+    ? settings.examPreparation.selectedExams[0]
+    : null;
+
+  function setExamFilter(exam: ExamId | null) {
+    if (!studySemester) return;
+    updateSettings({
+      ...settingsForSemester(settings, studySemester),
+      examPreparation: exam
+        ? { mode: "singleExam", selectedExams: [exam] }
+        : { mode: "semester", selectedExams: examsForSemester(studySemester) }
+    });
+    setBlockId("");
+    setCode("");
+    setTag("");
+    clearAssessmentLibrarySelection();
+  }
 
   const codes = [...new Set(blockAssessments.map((assessment) => assessment.lectureCode))]
     .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
@@ -172,6 +216,8 @@ export function LibraryClient() {
                 setCode("");
                 setTag("");
                 clearAssessmentLibrarySelection();
+                const nextStudySemester = studySemesterForLegacyId(nextSemester);
+                if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
               }}
             >
               <option value="">Bitte auswählen</option>
@@ -186,6 +232,23 @@ export function LibraryClient() {
             </button>
           )}
         </div>
+        {examConfig && settings.studyYear === "year1" && (
+          <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
+            <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
+              Alle
+            </button>
+            {examConfig.defaultExamGroup.map((exam) => (
+              <button
+                className={selectedExam === exam ? "is-active" : ""}
+                key={exam}
+                onClick={() => setExamFilter(exam)}
+                type="button"
+              >
+                {exam}
+              </button>
+            ))}
+          </div>
+        )}
       </section>
 
       {semester && (
@@ -232,14 +295,14 @@ export function LibraryClient() {
             inputMode="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            disabled={!selectedBlock || altfragenLocked}
+            disabled={!selectedBlock}
             placeholder="Suchen nach Titel, Code, Tag"
           />
-          <select className="input" value={code} disabled={!selectedBlock || altfragenLocked} onChange={(event) => setCode(event.target.value)}>
+          <select className="input" value={code} disabled={!selectedBlock} onChange={(event) => setCode(event.target.value)}>
             <option value="">Alle Codes</option>
             {codes.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
-          <select className="input" value={tag} disabled={!selectedBlock || altfragenLocked} onChange={(event) => setTag(event.target.value)}>
+          <select className="input" value={tag} disabled={!selectedBlock} onChange={(event) => setTag(event.target.value)}>
             <option value="">Alle Tags</option>
             {tags.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
@@ -285,12 +348,10 @@ export function LibraryClient() {
                 <div className="eyebrow">{semester ? semesterTitle(semester) : ""}</div>
                 <h2 className="text-3xl font-black">{selectedBlock.title}</h2>
               </div>
-              <span className="pill">{altfragenLocked ? "Geschützt" : `${filtered.length} Assessments`}</span>
+              <span className="pill">{filtered.length} Assessments</span>
             </div>
 
-            {altfragenLocked ? (
-              <AltfragenAccessPanel onUnlocked={() => void refreshAltfragenAccess()} />
-            ) : filtered.length === 0 ? (
+            {filtered.length === 0 ? (
               <div className="card mt-4 p-8 text-center">
                 <div className="eyebrow">{selectedBlock.title}</div>
                 <h3 className="mt-2 text-2xl font-black">Keine passenden Fragen gefunden</h3>

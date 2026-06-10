@@ -10,6 +10,7 @@ export function MainNav() {
 
   const items = [
     { href: "/", label: "MC Übungsfragen" },
+    { href: "/altfragen", label: "Altfragen" },
     { href: "/downloads", label: "Zusammenfassungen" }
   ];
 
