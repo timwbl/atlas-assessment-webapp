@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AdminDashboard } from "./AdminDashboard";
+import { AdminContentBoundary } from "./AdminContentBoundary";
 
 export type AdminView =
   | "overview"
@@ -112,14 +113,16 @@ export function AdminWorkspace() {
         </nav>
 
         <section className="admin-content" aria-live="polite">
-          {view === "overview" && <AdminDashboard onNavigate={navigate} />}
-          {view === "requests" && <AdminAltfragenRequests />}
-          {view === "assessments" && <AdminEditor contentType="assessment" />}
-          {view === "altfragen" && <AdminEditor contentType="altfragen" />}
-          {view === "recommendations" && <AdminBlockRecommendations />}
-          {view === "reviews" && <AdminAssessmentReviews />}
-          {view === "downloads" && <AdminDownloadsManager />}
-          {view === "users" && <AdminProgressDashboard />}
+          <AdminContentBoundary resetKey={view}>
+            {view === "overview" && <AdminDashboard onNavigate={navigate} />}
+            {view === "requests" && <AdminAltfragenRequests />}
+            {view === "assessments" && <AdminEditor contentType="assessment" />}
+            {view === "altfragen" && <AdminEditor contentType="altfragen" />}
+            {view === "recommendations" && <AdminBlockRecommendations />}
+            {view === "reviews" && <AdminAssessmentReviews />}
+            {view === "downloads" && <AdminDownloadsManager />}
+            {view === "users" && <AdminProgressDashboard />}
+          </AdminContentBoundary>
         </section>
       </div>
     </main>

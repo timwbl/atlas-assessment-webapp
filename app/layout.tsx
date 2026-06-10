@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { AppChrome } from "@/components/AppChrome";
+import { ChunkRecovery } from "@/components/ChunkRecovery";
 import { CompanionProvider } from "@/components/companion/CompanionProvider";
 import { UserStudyProvider } from "@/components/study/UserStudyProvider";
 import { APP_VERSION } from "@/lib/appVersion";
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="de" data-app-version={APP_VERSION} suppressHydrationWarning>
       <body>
+        <ChunkRecovery />
         <UserStudyProvider>
           <CompanionProvider>
             <AppChrome />

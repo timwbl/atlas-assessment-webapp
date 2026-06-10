@@ -7,11 +7,14 @@ export function ServiceWorkerRegistration() {
     if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;
 
     function register() {
-      void navigator.serviceWorker.register("/sw.js").catch((error) => {
-        if (process.env.NODE_ENV === "development") {
-          console.warn("ATLAS service worker could not be registered.", error);
-        }
-      });
+      void navigator.serviceWorker
+        .register("/sw.js", { updateViaCache: "none" })
+        .then((registration) => registration.update())
+        .catch((error) => {
+          if (process.env.NODE_ENV === "development") {
+            console.warn("ATLAS service worker could not be registered.", error);
+          }
+        });
     }
 
     if (document.readyState === "complete") register();

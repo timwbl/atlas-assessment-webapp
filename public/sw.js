@@ -1,4 +1,4 @@
-const CACHE_NAME = "atlas-mobile-v3-6";
+const CACHE_NAME = "atlas-mobile-v3-6-1";
 const APP_SHELL = [
   "/manifest.webmanifest",
   "/atlas-logo.svg"
@@ -28,9 +28,15 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === "navigate") {
+    if (url.pathname.startsWith("/admin")) return;
     event.respondWith(networkFirst(request, "/"));
     return;
   }
+
+  // Next.js build assets are content-hashed and managed by the browser/CDN.
+  // Caching them here can keep an old deploy alive and cause ChunkLoadError
+  // when a previously opened page requests a chunk that no longer exists.
+  if (url.pathname.startsWith("/_next/")) return;
 
   if (url.pathname.startsWith("/api/assessments")) {
     event.respondWith(networkFirst(request));
@@ -38,8 +44,7 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (
-    url.pathname.startsWith("/_next/static/")
-    || url.pathname.startsWith("/assets/")
+    url.pathname.startsWith("/assets/")
     || url.pathname === "/atlas-logo.svg"
     || url.pathname === "/manifest.webmanifest"
   ) {
