@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import {
   cloudSyncAvailable,
@@ -99,7 +100,7 @@ export function AccountMenu() {
   async function refreshUser() {
     setProfileChecked(false);
     const currentUser = await getCurrentUser();
-    const currentProfile = currentUser ? await getCurrentProfile() : null;
+    const currentProfile = currentUser ? await getCurrentProfile(currentUser) : null;
     setUser(currentUser);
     setProfile(currentProfile);
     setProfileChecked(true);
@@ -287,7 +288,7 @@ export function AccountMenu() {
             )}
 
             <div className="auth-modal-mark">
-              <img alt="" src="/atlas-logo.svg" />
+              <Image alt="" height={38} src="/atlas-logo.svg" width={38} />
             </div>
 
             <div className="auth-modal-copy">

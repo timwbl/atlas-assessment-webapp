@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { QuizEngine } from "./QuizEngine";
+import { PageState } from "./ui/PageState";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
@@ -25,16 +26,26 @@ export function QuizPageClient({
   const [assessment, setAssessment] = useState<Assessment | null>(null);
   const [altfragenAccess, setAltfragenAccess] = useState(false);
   const [error, setError] = useState("");
+  const [loadVersion, setLoadVersion] = useState(0);
 
   useEffect(() => {
+    let active = true;
+    setAssessment(null);
+    setError("");
     void loadAssessmentById(id)
       .then((value) => {
+        if (!active) return;
         setAssessment(value);
         if (value) rememberAssessmentLibrarySelectionFromAssessment(value);
       })
-      .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Assessment konnte nicht geladen werden."));
+      .catch(() => {
+        if (active) setError("Das Assessment konnte gerade nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.");
+      });
     void refreshAltfragenAccess();
-  }, [id]);
+    return () => {
+      active = false;
+    };
+  }, [id, loadVersion]);
 
   useEffect(() => {
     function updateAltfragenAccess() {
@@ -53,8 +64,27 @@ export function QuizPageClient({
     setAltfragenAccess(await canAccessAltfragen().catch(() => false));
   }
 
-  if (error) return <main className="shell"><div className="card p-6 text-red-600">{error}</div></main>;
-  if (!assessment) return <main className="shell"><div className="card p-6">Quiz wird geladen…</div></main>;
+  if (error) {
+    return (
+      <PageState
+        actionLabel="Erneut versuchen"
+        eyebrow="Verbindung"
+        message={error}
+        onAction={() => setLoadVersion((value) => value + 1)}
+        title="Assessment nicht verfügbar"
+      />
+    );
+  }
+  if (!assessment) {
+    return (
+      <PageState
+        eyebrow="Assessment"
+        loading
+        message="Fragen und dein letzter Stand werden vorbereitet."
+        title="Quiz wird geladen"
+      />
+    );
+  }
   if (isAltfragenAssessment(assessment) && !altfragenAccess) {
     return (
       <main className="shell">

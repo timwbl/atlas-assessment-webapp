@@ -40,6 +40,18 @@ export type Assessment = {
   active?: boolean;
 };
 
+export type AssessmentSummary = {
+  id: string;
+  lectureCode: string;
+  title: string;
+  block: string;
+  sourceSummary: string;
+  questionCount: number;
+  questionIds: string[];
+  tags: string[];
+  active?: boolean;
+};
+
 export type ValidationResult<T> = {
   ok: true;
   value: T;
@@ -153,6 +165,13 @@ export type ActiveQuizSession = {
 export type LoadedAssessment = {
   file: string;
   assessment: Assessment | null;
+  errors: string[];
+  warnings: string[];
+};
+
+export type LoadedAssessmentSummary = {
+  file: string;
+  assessment: AssessmentSummary | null;
   errors: string[];
   warnings: string[];
 };

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentPublicReviews } from "./AssessmentPublicReviews";
+import { PageState } from "./ui/PageState";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
@@ -19,19 +20,29 @@ export function AssessmentDetailClient({ id }: { id: string }) {
   const [progress, setProgress] = useState<AssessmentProgress | null>(null);
   const [altfragenAccess, setAltfragenAccess] = useState(false);
   const [error, setError] = useState("");
+  const [loadVersion, setLoadVersion] = useState(0);
 
   useEffect(() => {
+    let active = true;
+    setAssessment(null);
+    setError("");
     void loadAssessmentById(id)
       .then((value) => {
+        if (!active) return;
         setAssessment(value);
         if (value) {
           rememberAssessmentLibrarySelectionFromAssessment(value);
           setProgress(getProgress(value.id));
         }
       })
-      .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Assessment konnte nicht geladen werden."));
+      .catch(() => {
+        if (active) setError("Das Assessment konnte gerade nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.");
+      });
     void refreshAltfragenAccess();
-  }, [id]);
+    return () => {
+      active = false;
+    };
+  }, [id, loadVersion]);
 
   useEffect(() => {
     function updateAltfragenAccess() {
@@ -61,11 +72,26 @@ export function AssessmentDetailClient({ id }: { id: string }) {
   }, [assessment, progress]);
 
   if (error) {
-    return <main className="shell"><div className="card p-6 text-red-600">{error}</div></main>;
+    return (
+      <PageState
+        actionLabel="Erneut versuchen"
+        eyebrow="Verbindung"
+        message={error}
+        onAction={() => setLoadVersion((value) => value + 1)}
+        title="Assessment nicht verfügbar"
+      />
+    );
   }
 
   if (!assessment) {
-    return <main className="shell"><div className="card p-6">Assessment wird geladen…</div></main>;
+    return (
+      <PageState
+        eyebrow="Assessment"
+        loading
+        message="Übersicht und Fortschritt werden vorbereitet."
+        title="Assessment wird geladen"
+      />
+    );
   }
 
   const tags = collectAssessmentTags(assessment);

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { loadActiveAssessments } from "@/lib/assessmentClient";
+import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import {
   getAllProgress,
   getLatestActiveSession,
@@ -9,19 +9,19 @@ import {
 } from "@/lib/progressStore";
 import type {
   ActiveQuizSession,
-  Assessment,
-  AssessmentProgress
+  AssessmentProgress,
+  AssessmentSummary
 } from "@/lib/types";
 
 export type MobileLearningData = {
-  assessments: Assessment[];
+  assessments: AssessmentSummary[];
   progress: Record<string, AssessmentProgress>;
   resume: ActiveQuizSession | null;
   loading: boolean;
   error: string;
-  recentAssessment: Assessment | null;
-  wrongTarget: Assessment | null;
-  markedTarget: Assessment | null;
+  recentAssessment: AssessmentSummary | null;
+  wrongTarget: AssessmentSummary | null;
+  markedTarget: AssessmentSummary | null;
   wrongCount: number;
   markedCount: number;
   seenCount: number;
@@ -29,7 +29,7 @@ export type MobileLearningData = {
 };
 
 export function useMobileLearningData(): MobileLearningData {
-  const [assessments, setAssessments] = useState<Assessment[]>([]);
+  const [assessments, setAssessments] = useState<AssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [resume, setResume] = useState<ActiveQuizSession | null>(null);
   const [loading, setLoading] = useState(true);
@@ -41,8 +41,14 @@ export function useMobileLearningData(): MobileLearningData {
       setResume(getLatestActiveSession());
     }
     refreshProgress();
-    loadActiveAssessments()
-      .then(setAssessments)
+    loadAssessmentSummaries()
+      .then((loaded) => {
+        setAssessments(
+          loaded
+            .map((item) => item.assessment)
+            .filter((assessment): assessment is AssessmentSummary => !!assessment)
+        );
+      })
       .catch((cause) => setError(cause instanceof Error ? cause.message : "Lerndaten konnten nicht geladen werden."))
       .finally(() => setLoading(false));
 
@@ -55,7 +61,7 @@ export function useMobileLearningData(): MobileLearningData {
 }
 
 function deriveLearningData(
-  assessments: Assessment[],
+  assessments: AssessmentSummary[],
   progress: Record<string, AssessmentProgress>,
   resume: ActiveQuizSession | null
 ) {
@@ -70,8 +76,8 @@ function deriveLearningData(
     || assessments[0]
     || null;
 
-  let wrongTarget: Assessment | null = null;
-  let markedTarget: Assessment | null = null;
+  let wrongTarget: AssessmentSummary | null = null;
+  let markedTarget: AssessmentSummary | null = null;
   let highestWrong = 0;
   let highestMarked = 0;
   let wrongCount = 0;
@@ -86,7 +92,7 @@ function deriveLearningData(
     wrongCount += assessmentWrong;
     markedCount += assessmentMarked;
     seenCount += stats.filter((stat) => stat.seen > 0).length;
-    totalQuestions += assessment.questions.length;
+    totalQuestions += assessment.questionCount;
     if (assessmentWrong > highestWrong) {
       highestWrong = assessmentWrong;
       wrongTarget = assessment;

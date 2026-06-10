@@ -11,6 +11,8 @@ import type {
 
 const STORAGE_KEY = "atlas-assessment-progress-v1";
 export const PROGRESS_CHANGED_EVENT = "atlas-progress-changed";
+let memoryProgress: Record<string, AssessmentProgress> | null = null;
+let storageListenerReady = false;
 
 function emptyProgress(assessmentId: string): AssessmentProgress {
   return {
@@ -25,27 +27,32 @@ function emptyProgress(assessmentId: string): AssessmentProgress {
 
 function readAll(): Record<string, AssessmentProgress> {
   if (typeof window === "undefined") return {};
+  ensureStorageListener();
+  if (memoryProgress) return memoryProgress;
 
   try {
     const parsed = JSON.parse(window.localStorage.getItem(STORAGE_KEY) || "{}") as Record<string, AssessmentProgress>;
-    return parsed && typeof parsed === "object" ? parsed : {};
+    memoryProgress = parsed && typeof parsed === "object" ? parsed : {};
   } catch {
-    return {};
+    memoryProgress = {};
   }
+
+  return memoryProgress;
 }
 
 function writeAll(value: Record<string, AssessmentProgress>): void {
   if (typeof window === "undefined") return;
+  memoryProgress = value;
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
   window.dispatchEvent(new CustomEvent(PROGRESS_CHANGED_EVENT));
 }
 
 export function getProgress(assessmentId: string): AssessmentProgress {
-  return readAll()[assessmentId] || emptyProgress(assessmentId);
+  return cloneProgress(readAll()[assessmentId] || emptyProgress(assessmentId));
 }
 
 export function getAllProgress(): Record<string, AssessmentProgress> {
-  return readAll();
+  return cloneProgress(readAll());
 }
 
 export function saveProgress(progress: AssessmentProgress): void {
@@ -278,4 +285,40 @@ export function reviewQuestionIds(assessment: Assessment): string[] {
         || (right?.wrong || 0) - (left?.wrong || 0);
     })
     .map((question) => question.id);
+}
+
+export function countReviewQuestions(
+  questionIds: string[],
+  progress?: AssessmentProgress
+): number {
+  if (!progress) return 0;
+  const now = Date.now();
+
+  return questionIds.filter((questionId) => {
+    const stat = progress.questionStats[questionId];
+    if (!stat) return false;
+    const old = stat.lastAnsweredAt
+      ? now - new Date(stat.lastAnsweredAt).getTime() > 1000 * 60 * 60 * 24 * 10
+      : false;
+    return stat.markedForReview
+      || stat.priority === "high"
+      || stat.lastCorrect === false
+      || stat.wrong >= 2
+      || old;
+  }).length;
+}
+
+function cloneProgress<T>(value: T): T {
+  if (typeof structuredClone === "function") return structuredClone(value);
+  return JSON.parse(JSON.stringify(value)) as T;
+}
+
+function ensureStorageListener(): void {
+  if (storageListenerReady || typeof window === "undefined") return;
+  storageListenerReady = true;
+  window.addEventListener("storage", (event) => {
+    if (event.key !== STORAGE_KEY) return;
+    memoryProgress = null;
+    window.dispatchEvent(new CustomEvent(PROGRESS_CHANGED_EVENT));
+  });
 }

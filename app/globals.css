@@ -4,6 +4,24 @@
 
 :root {
   color-scheme: light;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --radius-control: 12px;
+  --radius-card: 8px;
+  --radius-panel: 18px;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.055);
+  --shadow-float: 0 18px 52px rgba(0, 0, 0, 0.13);
+  --transition-fast: 140ms ease;
+  --transition-ui: 190ms ease;
+  --content-width: 1180px;
+  --reading-width: 760px;
+  --z-nav: 40;
+  --z-popover: 50;
+  --z-modal: 80;
   --bg: #f5f5f7;
   --surface: rgba(255, 255, 255, 0.64);
   --surface-strong: rgba(255, 255, 255, 0.76);
@@ -79,6 +97,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
 html {
   scroll-behavior: smooth;
   min-width: 0;
@@ -99,6 +121,7 @@ body {
   line-height: 1.45;
   letter-spacing: 0;
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 
 .maintenance-page {
@@ -186,12 +209,19 @@ textarea {
 }
 
 button {
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, opacity 160ms ease;
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-ui),
+    background var(--transition-ui),
+    color var(--transition-ui),
+    opacity var(--transition-ui);
   touch-action: manipulation;
 }
 
-button:hover:not(:disabled) {
-  transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+  button:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
 }
 
 button:disabled {
@@ -201,7 +231,7 @@ button:disabled {
 
 .shell {
   width: 100%;
-  max-width: 1180px;
+  max-width: var(--content-width);
   margin: 0 auto;
   padding: 28px max(14px, env(safe-area-inset-left)) 72px max(14px, env(safe-area-inset-right));
 }
@@ -209,15 +239,15 @@ button:disabled {
 .glass {
   border: 1px solid var(--line);
   background: var(--surface);
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.055), var(--inner-highlight);
+  box-shadow: var(--shadow-card), var(--inner-highlight);
   backdrop-filter: blur(32px) saturate(180%);
 }
 
 .card {
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   background: var(--surface);
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.055), var(--inner-highlight);
+  box-shadow: var(--shadow-card), var(--inner-highlight);
   min-width: 0;
 }
 
@@ -227,7 +257,7 @@ button:disabled {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   padding: 0 16px;
   border: 1px solid color-mix(in srgb, var(--accent) 74%, transparent);
   background: var(--accent);
@@ -244,7 +274,7 @@ button:disabled {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   padding: 0 16px;
   border: 1px solid var(--line);
   background: var(--surface-strong);
@@ -261,7 +291,7 @@ button:disabled {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   padding: 0 16px;
   border: 1px solid color-mix(in srgb, var(--danger) 26%, transparent);
   background: color-mix(in srgb, var(--danger) 11%, var(--surface-strong));
@@ -275,7 +305,7 @@ button:disabled {
 .input {
   min-height: 42px;
   width: 100%;
-  border-radius: 14px;
+  border-radius: var(--radius-control);
   border: 1px solid var(--line);
   background: var(--control);
   color: var(--text);
@@ -283,9 +313,94 @@ button:disabled {
   outline: none;
 }
 
-.input:focus {
+.input:focus,
+.input:focus-visible {
   border-color: color-mix(in srgb, var(--accent) 72%, transparent);
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+
+:where(a, button, input, select, textarea):disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.assessment-card,
+.review-question-card,
+.mobile-assessment-row,
+.mobile-progress-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 180px;
+}
+
+.page-state-shell {
+  display: grid;
+  min-height: min(72vh, 680px);
+  place-items: center;
+}
+
+.page-state-card {
+  width: min(100%, 520px);
+  padding: 28px;
+}
+
+.page-state-card h1 {
+  margin: 7px 0 0;
+  font-size: 30px;
+  line-height: 1.08;
+}
+
+.page-state-card > p:not(.eyebrow) {
+  margin: 10px 0 20px;
+  color: var(--muted);
+}
+
+.page-state-skeleton,
+.mobile-list-skeleton {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.page-state-skeleton span,
+.mobile-list-skeleton span {
+  display: block;
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--line) 78%, transparent);
+}
+
+.page-state-skeleton span::after,
+.mobile-list-skeleton span::after {
+  display: block;
+  width: 42%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, white 66%, transparent), transparent);
+  animation: atlas-skeleton-shimmer 1.2s ease-in-out infinite;
+  content: "";
+}
+
+.page-state-skeleton span:nth-child(1) {
+  width: 34%;
+}
+
+.page-state-skeleton span:nth-child(2) {
+  width: 78%;
+  height: 26px;
+}
+
+.page-state-skeleton span:nth-child(3) {
+  width: 62%;
+}
+
+@keyframes atlas-skeleton-shimmer {
+  from { transform: translateX(-110%); }
+  to { transform: translateX(260%); }
 }
 
 .pill {
@@ -395,6 +510,11 @@ button:disabled {
 }
 
 .mobile-nav {
+  display: none;
+}
+
+.is-assessment-active .account-menu,
+.is-assessment-active .online-presence-badge {
   display: none;
 }
 
@@ -1272,6 +1392,34 @@ button:disabled {
   overflow-wrap: anywhere;
 }
 
+.question-option {
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-ui),
+    background var(--transition-ui),
+    box-shadow var(--transition-ui);
+}
+
+.question-option:active {
+  transform: scale(0.992);
+}
+
+.question-option:disabled,
+.kprim-option .btn-primary:disabled,
+.kprim-option .btn-secondary:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.quiz-question-title {
+  max-width: 46ch;
+  text-wrap: pretty;
+}
+
+.quiz-feedback {
+  max-width: var(--reading-width);
+}
+
 .kprim-toggle-group {
   display: flex;
   gap: 8px;
@@ -1626,9 +1774,7 @@ button:disabled {
   }
 
   .online-presence-badge span:last-child {
-    max-width: 92px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
 
   .account-avatar {
@@ -2606,6 +2752,15 @@ button:disabled {
     animation: mobile-skeleton-pulse 1.4s ease-in-out infinite;
   }
 
+  .mobile-list-skeleton {
+    margin: 0;
+  }
+
+  .mobile-list-skeleton span {
+    height: 76px;
+    border-radius: 18px;
+  }
+
   /* The quiz becomes a focused action surface instead of a compact desktop card. */
   .quiz-shell {
     max-width: 760px;
@@ -2711,6 +2866,11 @@ button:disabled {
   .quiz-action-row button {
     min-height: 48px;
   }
+
+  .quiz-mode-training .quiz-finish-button,
+  .quiz-mode-review .quiz-finish-button {
+    display: none;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2754,8 +2914,14 @@ button:disabled {
   .mobile-train-card,
   .mobile-assessment-row,
   .mobile-progress-card,
-  .mobile-skeleton span {
+  .mobile-skeleton span,
+  .page-state-skeleton span::after,
+  .mobile-list-skeleton span::after {
     animation: none !important;
     transition: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }

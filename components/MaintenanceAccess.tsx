@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
@@ -41,7 +42,7 @@ export function MaintenanceAccess() {
     <main className="maintenance-page">
       <section className="maintenance-card">
         <div className="maintenance-brand">
-          <img src="/atlas-logo.svg" alt="" />
+          <Image src="/atlas-logo.svg" alt="" width={38} height={38} />
           <span>ATLAS</span>
         </div>
         <div className="eyebrow">Beta-Zugang</div>

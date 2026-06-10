@@ -15,10 +15,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/atlas-logo.svg", type: "image/svg+xml" }
+      { url: "/atlas-logo.svg", type: "image/svg+xml" },
+      { url: "/icons/atlas-192.png", sizes: "192x192", type: "image/png" }
     ],
     shortcut: "/atlas-logo.svg",
-    apple: "/atlas-logo.svg"
+    apple: "/icons/atlas-192.png"
   },
   appleWebApp: {
     capable: true,

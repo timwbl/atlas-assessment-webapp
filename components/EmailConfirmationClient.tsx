@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
@@ -92,7 +93,7 @@ export function EmailConfirmationClient() {
     <main className="confirmation-page">
       <section className={`confirmation-card glass is-${state}`} aria-live="polite">
         <div className="confirmation-logo">
-          <img src="/atlas-logo.svg" alt="" />
+          <Image src="/atlas-logo.svg" alt="" width={43} height={43} />
         </div>
 
         <div className={`confirmation-state-icon is-${state}`} aria-hidden="true">

@@ -2,10 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AUTH_SESSION_CHANGED_EVENT, ensureSession, getStoredSession } from "@/lib/supabaseClient";
-import type { Assessment } from "@/lib/types";
+import type { Assessment, AssessmentSummary } from "@/lib/types";
 
 type Props = {
-  assessment: Assessment;
+  assessment: Pick<Assessment | AssessmentSummary, "id" | "lectureCode" | "title">;
 };
 
 type ExportKind = "questions" | "solutions";

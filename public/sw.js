@@ -1,4 +1,4 @@
-const CACHE_NAME = "atlas-mobile-v3";
+const CACHE_NAME = "atlas-mobile-v3-1";
 const APP_SHELL = [
   "/manifest.webmanifest",
   "/atlas-logo.svg"
@@ -29,6 +29,11 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(networkFirst(request, "/"));
+    return;
+  }
+
+  if (url.pathname.startsWith("/api/assessments")) {
+    event.respondWith(networkFirst(request));
     return;
   }
 

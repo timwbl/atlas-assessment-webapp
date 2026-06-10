@@ -34,21 +34,42 @@ export function MobileAssessments() {
         value={query}
       />
       <section className="mobile-assessment-list">
+        {data.loading && <MobileAssessmentSkeleton />}
+        {!data.loading && data.error && (
+          <div className="mobile-data-error" role="alert">
+            Der Fragenkatalog ist gerade nicht erreichbar. Bereits geladene Assessments bleiben offline verfügbar.
+          </div>
+        )}
         {filtered.map((assessment) => {
           const progress = data.progress[assessment.id];
           const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
           return (
-            <Link className="mobile-assessment-row" href={`/assessment/${assessment.id}`} key={assessment.id}>
+            <Link className="mobile-assessment-row" href={`/assessment/${assessment.id}`} key={assessment.id} prefetch={false}>
               <div>
                 <span>{formatBlockLabel(assessment.block)} · {assessment.lectureCode}</span>
                 <strong>{assessment.title}</strong>
-                <small>{assessment.questions.length} Fragen · {seen} gesehen</small>
+                <small>{assessment.questionCount} Fragen · {seen} gesehen</small>
               </div>
               <b aria-hidden="true">›</b>
             </Link>
           );
         })}
+        {!data.loading && !data.error && filtered.length === 0 && (
+          <div className="mobile-empty-state">
+            {query ? "Keine Assessments passen zu deiner Suche." : "Noch keine Assessments verfügbar."}
+          </div>
+        )}
       </section>
     </main>
+  );
+}
+
+function MobileAssessmentSkeleton() {
+  return (
+    <div className="mobile-list-skeleton" aria-label="Assessments werden geladen" role="status">
+      <span />
+      <span />
+      <span />
+    </div>
   );
 }

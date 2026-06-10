@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { countOnlinePresence, heartbeatPresence } from "@/lib/onlinePresence";
+import { heartbeatPresence } from "@/lib/onlinePresence";
 
 export function OnlinePresenceBadge() {
   const [count, setCount] = useState(1);
@@ -9,8 +9,10 @@ export function OnlinePresenceBadge() {
 
   useEffect(() => {
     let cancelled = false;
+    let heartbeat: number | null = null;
 
     async function update() {
+      if (document.visibilityState === "hidden") return;
       try {
         const next = await heartbeatPresence();
         if (!cancelled) {
@@ -25,22 +27,23 @@ export function OnlinePresenceBadge() {
       }
     }
 
-    void update();
-    const heartbeat = window.setInterval(update, 25_000);
-    const refreshCount = window.setInterval(() => {
-      void countOnlinePresence()
-        .then((next) => {
-          if (!cancelled) setCount(next);
-        })
-        .catch(() => {
-          if (!cancelled) setAvailable(false);
-        });
-    }, 12_000);
+    function start() {
+      if (heartbeat !== null) window.clearInterval(heartbeat);
+      void update();
+      heartbeat = window.setInterval(update, 30_000);
+    }
+
+    function onVisibilityChange() {
+      if (document.visibilityState === "visible") start();
+    }
+
+    start();
+    document.addEventListener("visibilitychange", onVisibilityChange);
 
     return () => {
       cancelled = true;
-      window.clearInterval(heartbeat);
-      window.clearInterval(refreshCount);
+      if (heartbeat !== null) window.clearInterval(heartbeat);
+      document.removeEventListener("visibilitychange", onVisibilityChange);
     };
   }, []);
 

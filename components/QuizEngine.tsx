@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { ResultsPage } from "./ResultsPage";
 import { useCompanion } from "./companion/CompanionProvider";
@@ -68,8 +68,12 @@ export function QuizEngine({
   }
   const didMount = useRef(false);
   const consecutiveErrors = useRef(0);
+  const pendingSession = useRef<{ assessmentId: string; session: ActiveQuizSession } | null>(null);
+  const localSaveTimer = useRef<number | null>(null);
+  const cloudSyncTimer = useRef<number | null>(null);
   // Confidence- und asynchrone Analyse-Events bleiben vorbereitet, bis der Quiz-Flow diese Zustände erfasst.
   const {
+    setCompanionAssessmentActive,
     setCompanionExamMode,
     triggerAriEvent
   } = useCompanion();
@@ -81,7 +85,7 @@ export function QuizEngine({
   const [startedAt, setStartedAt] = useState(initial.current.startedAt);
   const [result, setResult] = useState<{ rows: QuizResultRow[]; attempt: QuizAttempt } | null>(null);
   const [finishError, setFinishError] = useState("");
-  const [, setProgressVersion] = useState(0);
+  const [progress, setProgress] = useState(() => getProgress(assessment.id));
 
   useEffect(() => {
     if (!didMount.current) {
@@ -96,6 +100,7 @@ export function QuizEngine({
     setAnswers(next.answers);
     setRevealed(next.revealed);
     setStartedAt(next.startedAt);
+    setProgress(getProgress(assessment.id));
     setResult(null);
     setFinishError("");
   }, [assessment, initialMode, limit, quick, resume]);
@@ -106,7 +111,27 @@ export function QuizEngine({
   }, [mode, result, setCompanionExamMode]);
 
   useEffect(() => {
-    if (result || !questions.length) return;
+    setCompanionAssessmentActive(!result);
+    document.body.classList.toggle("is-assessment-active", !result);
+    return () => {
+      setCompanionAssessmentActive(false);
+      document.body.classList.remove("is-assessment-active");
+    };
+  }, [result, setCompanionAssessmentActive]);
+
+  useEffect(() => {
+    if (result) return;
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("resume") === "1") return;
+    url.searchParams.set("resume", "1");
+    window.history.replaceState(window.history.state, "", url);
+  }, [result]);
+
+  useEffect(() => {
+    if (result || !questions.length) {
+      pendingSession.current = null;
+      return;
+    }
     const session: ActiveQuizSession = {
       assessmentId: assessment.id,
       blockId: assessment.block,
@@ -125,15 +150,52 @@ export function QuizEngine({
       quickType: quick,
       device: window.matchMedia("(max-width: 760px)").matches ? "mobile" : "desktop"
     };
-    saveActiveQuizSession(assessment.id, session);
-    const syncTimer = window.setTimeout(() => {
+    pendingSession.current = { assessmentId: assessment.id, session };
+
+    if (localSaveTimer.current !== null) window.clearTimeout(localSaveTimer.current);
+    localSaveTimer.current = window.setTimeout(() => {
+      saveActiveQuizSession(assessment.id, session);
+      localSaveTimer.current = null;
+    }, 180);
+
+    if (cloudSyncTimer.current !== null) window.clearTimeout(cloudSyncTimer.current);
+    cloudSyncTimer.current = window.setTimeout(() => {
       void syncAssessmentProgress(assessment.id).catch(() => undefined);
-    }, 1200);
-    return () => window.clearTimeout(syncTimer);
+      cloudSyncTimer.current = null;
+    }, 2200);
   }, [answers, assessment, index, mode, questions, quick, result, revealed, startedAt]);
 
+  useEffect(() => {
+    function flushSession() {
+      const pending = pendingSession.current;
+      if (pending) saveActiveQuizSession(pending.assessmentId, pending.session);
+    }
+
+    window.addEventListener("pagehide", flushSession);
+    return () => {
+      window.removeEventListener("pagehide", flushSession);
+      if (localSaveTimer.current !== null) window.clearTimeout(localSaveTimer.current);
+      if (cloudSyncTimer.current !== null) window.clearTimeout(cloudSyncTimer.current);
+      flushSession();
+    };
+  }, []);
+
   const question = questions[index];
-  const progress = getProgress(assessment.id);
+  const questionId = question?.id;
+  const setAnswer = useCallback((answer: UserAnswer) => {
+    if (!questionId) return;
+    setAnswers((current) => ({ ...current, [questionId]: answer }));
+  }, [questionId]);
+
+  const answeredQuestionIds = useMemo(() => new Set(
+    questions
+      .filter((item) => {
+        const answer = answers[item.id];
+        return !!answer?.selected
+          || item.options.every((option) => typeof answer?.kprim?.[optionKey(option)] === "boolean");
+      })
+      .map((item) => item.id)
+  ), [answers, questions]);
 
   if (result) {
     return (
@@ -164,10 +226,6 @@ export function QuizEngine({
   const isRevealed = usesImmediateFeedback && revealed[question.id];
   const currentCorrect = isQuestionCorrect(question, currentAnswer);
   const stat = progress.questionStats[question.id];
-
-  function setAnswer(answer: UserAnswer) {
-    setAnswers((current) => ({ ...current, [question.id]: answer }));
-  }
 
   function revealOrNext() {
     if (usesImmediateFeedback && !revealed[question.id]) {
@@ -226,10 +284,13 @@ export function QuizEngine({
     };
 
     try {
+      pendingSession.current = null;
+      if (localSaveTimer.current !== null) window.clearTimeout(localSaveTimer.current);
+      if (cloudSyncTimer.current !== null) window.clearTimeout(cloudSyncTimer.current);
       clearActiveQuizSession(assessment.id);
-      recordAttempt(assessment, attempt, rows);
+      const savedProgress = recordAttempt(assessment, attempt, rows);
       void syncAssessmentProgress(assessment.id).catch(() => undefined);
-      setProgressVersion((value) => value + 1);
+      setProgress(savedProgress);
       setFinishError("");
     } catch (error) {
       setFinishError(error instanceof Error ? error.message : "Der Fortschritt konnte lokal nicht gespeichert werden.");
@@ -249,7 +310,7 @@ export function QuizEngine({
     setStartedAt(new Date().toISOString());
     setResult(null);
     setFinishError("");
-    setProgressVersion((value) => value + 1);
+    setProgress(getProgress(assessment.id));
     consecutiveErrors.current = 0;
   }
 
@@ -266,7 +327,7 @@ export function QuizEngine({
   }
 
   return (
-    <main id="top" className="shell quiz-shell">
+    <main id="top" className={`shell quiz-shell quiz-mode-${mode}`}>
       <div className="quiz-topbar mb-4 flex flex-wrap items-center justify-between gap-3">
         <Link className="btn-secondary inline-flex items-center" href={`/assessment/${assessment.id}`}>Beenden</Link>
         <div className="quiz-mode-tabs flex flex-wrap gap-2">
@@ -289,20 +350,30 @@ export function QuizEngine({
             className={stat?.markedForReview ? "btn-primary" : "btn-secondary"}
             onClick={() => {
               toggleQuestionReview(assessment.id, question.id);
-              setProgressVersion((value) => value + 1);
+              setProgress(getProgress(assessment.id));
             }}
           >
             {stat?.markedForReview ? "Markiert" : "Für Review markieren"}
           </button>
         </div>
 
-        <div className="mt-5 h-2 overflow-hidden rounded-full bg-black/10 dark:bg-white/10">
-          <div className="h-full rounded-full bg-[var(--accent)]" style={{ width: `${Math.round((index / questions.length) * 100)}%` }} />
+        <div
+          aria-label={`Frage ${index + 1} von ${questions.length}`}
+          aria-valuemax={questions.length}
+          aria-valuemin={1}
+          aria-valuenow={index + 1}
+          className="mt-5 h-2 overflow-hidden rounded-full bg-black/10 dark:bg-white/10"
+          role="progressbar"
+        >
+          <div
+            className="h-full rounded-full bg-[var(--accent)]"
+            style={{ width: `${Math.round(((index + 1) / questions.length) * 100)}%` }}
+          />
         </div>
 
         <div className="quiz-progress-nav mt-4 flex flex-wrap gap-2">
           {questions.map((item, itemIndex) => {
-            const answered = !!answers[item.id]?.selected || item.options.every((option) => typeof answers[item.id]?.kprim?.[optionKey(option)] === "boolean");
+            const answered = answeredQuestionIds.has(item.id);
             return (
               <button
                 type="button"
@@ -352,7 +423,7 @@ export function QuizEngine({
               className="btn-secondary"
               onClick={() => {
                 setQuestionPriority(assessment.id, question.id, stat?.priority === "high" ? "normal" : "high");
-                setProgressVersion((value) => value + 1);
+                setProgress(getProgress(assessment.id));
               }}
             >
               {stat?.priority === "high" ? "Priorität normal" : "Priorisieren"}
@@ -366,7 +437,7 @@ export function QuizEngine({
                     ? "Abgeben"
                     : "Weiter"}
             </button>
-            <button type="button" className="btn-secondary" onClick={finishQuiz}>Jetzt abgeben</button>
+            <button type="button" className="btn-secondary quiz-finish-button" onClick={finishQuiz}>Jetzt abgeben</button>
           </div>
         </div>
         {finishError && (

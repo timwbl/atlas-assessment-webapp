@@ -247,12 +247,16 @@
 }
 
 @media (max-width: 720px) {
+  .ari-companion--assessment-active {
+    display: none;
+  }
+
   .ari-companion {
     right: 10px;
     bottom: calc(70px + env(safe-area-inset-bottom));
     width: 60px;
     height: 60px;
-    z-index: 30;
+    z-index: 20;
     opacity: 0.9;
   }
 

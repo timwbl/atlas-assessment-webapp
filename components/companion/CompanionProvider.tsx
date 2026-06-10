@@ -91,12 +91,14 @@ type CompanionContextValue = CompanionPreferences & {
   mood: AriMood;
   reaction: AriReaction | null;
   isExamMode: boolean;
+  isAssessmentActive: boolean;
   triggerAriEvent: (eventType: AriEventType) => void;
   setAriMood: (mood: AriMood) => void;
   setCompanionEnabled: (enabled: boolean) => void;
   setHideInExamMode: (hidden: boolean) => void;
   setReducedMotion: (reduced: boolean) => void;
   setCompanionExamMode: (isExamMode: boolean) => void;
+  setCompanionAssessmentActive: (active: boolean) => void;
 };
 
 const CompanionContext = createContext<CompanionContextValue | null>(null);
@@ -108,6 +110,7 @@ export function CompanionProvider({ children }: { children: ReactNode }) {
   const [hideInExamMode, setHideExam] = useState(true);
   const [reducedMotion, setMotion] = useState(false);
   const [isExamMode, setExamMode] = useState(false);
+  const [isAssessmentActive, setAssessmentActive] = useState(false);
   const returnTimer = useRef<number | null>(null);
 
   const clearReturnTimer = useCallback(() => {
@@ -174,15 +177,18 @@ export function CompanionProvider({ children }: { children: ReactNode }) {
     hideInExamMode,
     reducedMotion,
     isExamMode,
+    isAssessmentActive,
     triggerAriEvent,
     setAriMood,
     setCompanionEnabled,
     setHideInExamMode,
     setReducedMotion,
-    setCompanionExamMode: setExamMode
+    setCompanionExamMode: setExamMode,
+    setCompanionAssessmentActive: setAssessmentActive
   }), [
     companionEnabled,
     hideInExamMode,
+    isAssessmentActive,
     isExamMode,
     mood,
     reaction,

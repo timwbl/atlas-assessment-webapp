@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentCard } from "./AssessmentCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenBlock } from "@/lib/altfragenAccess";
-import { loadAssessments } from "@/lib/assessmentClient";
-import { collectAssessmentTags } from "@/lib/assessmentValidator";
+import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import {
   blocksForSemester,
@@ -24,10 +23,14 @@ import {
 } from "@/lib/librarySelection";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
-import type { Assessment, AssessmentProgress, LoadedAssessment } from "@/lib/types";
+import type {
+  AssessmentProgress,
+  AssessmentSummary,
+  LoadedAssessmentSummary
+} from "@/lib/types";
 
 export function LibraryClient() {
-  const [loaded, setLoaded] = useState<LoadedAssessment[]>([]);
+  const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [query, setQuery] = useState("");
   const [semester, setSemester] = useState<SemesterId | "">("");
@@ -44,7 +47,7 @@ export function LibraryClient() {
       setBlockId(savedSelection.blockId);
     }
 
-    void loadAssessments()
+    void loadAssessmentSummaries()
       .then(setLoaded)
       .catch((loadError: unknown) => setError(loadError instanceof Error ? loadError.message : "Laden fehlgeschlagen."));
     setProgress(getAllProgress());
@@ -88,8 +91,15 @@ export function LibraryClient() {
     setQuery("");
   }
 
-  const assessments = loaded.map((item) => item.assessment).filter(Boolean) as Assessment[];
-  const invalid = loaded.filter((item) => !item.assessment && item.errors.length);
+  const deferredQuery = useDeferredValue(query);
+  const assessments = useMemo(
+    () => loaded.map((item) => item.assessment).filter(Boolean) as AssessmentSummary[],
+    [loaded]
+  );
+  const invalid = useMemo(
+    () => loaded.filter((item) => !item.assessment && item.errors.length),
+    [loaded]
+  );
 
   const blockOptions = semester ? blocksForSemester(semester) : [];
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
@@ -103,25 +113,25 @@ export function LibraryClient() {
 
   const codes = [...new Set(blockAssessments.map((assessment) => assessment.lectureCode))]
     .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
-  const tags = [...new Set(blockAssessments.flatMap(collectAssessmentTags))]
+  const tags = [...new Set(blockAssessments.flatMap((assessment) => assessment.tags))]
     .sort((a, b) => a.localeCompare(b, "de", { sensitivity: "base" }));
 
   const filtered = useMemo(() => {
     if (!selectedBlock) return [];
-    const needle = query.trim().toLowerCase();
+    const needle = deferredQuery.trim().toLowerCase();
     return blockAssessments.filter((assessment) => {
       const haystack = [
         assessment.title,
         assessment.lectureCode,
         assessment.block,
         assessment.sourceSummary,
-        ...collectAssessmentTags(assessment)
+        ...assessment.tags
       ].join(" ").toLowerCase();
       return (!needle || haystack.includes(needle))
         && (!code || assessment.lectureCode === code)
-        && (!tag || collectAssessmentTags(assessment).includes(tag));
+        && (!tag || assessment.tags.includes(tag));
     });
-  }, [blockAssessments, code, query, selectedBlock, tag]);
+  }, [blockAssessments, code, deferredQuery, selectedBlock, tag]);
 
   return (
     <main id="top" className="shell">

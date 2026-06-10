@@ -172,8 +172,8 @@ export async function updateCurrentProfileName(displayName: string): Promise<Clo
   return data[0];
 }
 
-export async function getCurrentProfile(): Promise<CloudProfile | null> {
-  const user = await getCurrentUser();
+export async function getCurrentProfile(currentUser?: CloudUser): Promise<CloudProfile | null> {
+  const user = currentUser || await getCurrentUser();
   if (!user) return null;
   const rows = await restRequest<CloudProfile[]>(
     `profiles?select=id,email,display_name,role,created_at,last_seen_at&id=eq.${encodeURIComponent(user.id)}`
@@ -193,6 +193,16 @@ export async function pullCloudProgress(): Promise<Record<string, AssessmentProg
     acc[record.assessment_id] = record.progress;
     return acc;
   }, {});
+}
+
+async function pullCloudAssessmentProgress(
+  userId: string,
+  assessmentId: string
+): Promise<AssessmentProgress | null> {
+  const rows = await restRequest<Array<Pick<ProgressRecord, "progress">>>(
+    `user_progress?select=progress&user_id=eq.${encodeURIComponent(userId)}&assessment_id=eq.${encodeURIComponent(assessmentId)}&limit=1`
+  );
+  return rows[0]?.progress || null;
 }
 
 export async function syncAllProgress(): Promise<Record<string, AssessmentProgress>> {
@@ -228,9 +238,9 @@ export async function syncAssessmentProgress(assessmentId: string): Promise<void
   const user = await getCurrentUser();
   if (!user) return;
 
-  const remote = await pullCloudProgress();
   const local = getProgress(assessmentId);
-  const merged = remote[assessmentId] ? mergeProgress(local, remote[assessmentId]) : local;
+  const remote = await pullCloudAssessmentProgress(user.id, assessmentId);
+  const merged = remote ? mergeProgress(local, remote) : local;
   saveProgress(merged);
   await pushAllProgress({ [assessmentId]: merged });
 }

@@ -3,22 +3,21 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { AssessmentPdfExport } from "./AssessmentPdfExport";
-import type { Assessment, AssessmentProgress } from "@/lib/types";
-import { collectAssessmentTags } from "@/lib/assessmentValidator";
+import type { AssessmentProgress, AssessmentSummary } from "@/lib/types";
 import { blockColor } from "@/lib/blockColors";
 import { formatBlockLabel } from "@/lib/blockLabels";
-import { reviewQuestionIds } from "@/lib/progressStore";
+import { countReviewQuestions } from "@/lib/progressStore";
 
 type Props = {
-  assessment: Assessment;
+  assessment: AssessmentSummary;
   progress?: AssessmentProgress;
 };
 
 export function AssessmentCard({ assessment, progress }: Props) {
   const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
-  const percent = assessment.questions.length ? Math.round((seen / assessment.questions.length) * 100) : 0;
-  const tags = collectAssessmentTags(assessment).slice(0, 4);
-  const reviewCount = reviewQuestionIds(assessment).length;
+  const percent = assessment.questionCount ? Math.round((seen / assessment.questionCount) * 100) : 0;
+  const tags = assessment.tags.slice(0, 4);
+  const reviewCount = countReviewQuestions(assessment.questionIds, progress);
   const masteredInExam = progress?.attempts.some((attempt) => attempt.mode === "exam" && attempt.score > 90) ?? false;
 
   return (
@@ -26,7 +25,7 @@ export function AssessmentCard({ assessment, progress }: Props) {
       className="assessment-card card group overflow-visible p-5 transition hover:-translate-y-1 hover:shadow-lift"
       style={{ "--assessment-accent": blockColor(assessment.block) } as CSSProperties}
     >
-      <Link href={`/assessment/${assessment.id}`} className="assessment-card-main">
+      <Link href={`/assessment/${assessment.id}`} className="assessment-card-main" prefetch={false}>
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             <div className="eyebrow">{formatBlockLabel(assessment.block)} · {assessment.lectureCode}</div>
@@ -38,7 +37,7 @@ export function AssessmentCard({ assessment, progress }: Props) {
                 ★
               </span>
             )}
-            <span className="pill">{assessment.questions.length} Fragen</span>
+            <span className="pill">{assessment.questionCount} Fragen</span>
           </div>
         </div>
 

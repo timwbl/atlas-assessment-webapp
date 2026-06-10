@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import type { AssessmentQuestion, UserAnswer } from "@/lib/types";
 import { optionKey, optionLabel } from "@/lib/score";
 
@@ -10,13 +11,13 @@ type Props = {
   onChange: (answer: UserAnswer) => void;
 };
 
-export function QuestionRenderer({ question, answer, revealed, onChange }: Props) {
+export const QuestionRenderer = memo(function QuestionRenderer({ question, answer, revealed, onChange }: Props) {
   if (question.type === "KPRIM") {
     return <KPrimQuestion question={question} answer={answer} revealed={revealed} onChange={onChange} />;
   }
 
   return <TypeAQuestion question={question} answer={answer} revealed={revealed} onChange={onChange} />;
-}
+});
 
 function TypeAQuestion({ question, answer, revealed, onChange }: Props) {
   return (
@@ -30,7 +31,10 @@ function TypeAQuestion({ question, answer, revealed, onChange }: Props) {
 
         return (
           <button
+            type="button"
+            aria-pressed={selected}
             className={`question-option grid grid-cols-[34px_1fr] items-center gap-3 rounded-2xl border border-[var(--line)] bg-[var(--surface-strong)] p-4 text-left ${state}`}
+            disabled={revealed}
             key={key}
             onClick={() => onChange({ selected: key })}
           >
@@ -66,7 +70,10 @@ function KPrimQuestion({ question, answer, revealed, onChange }: Props) {
             <div className="kprim-toggle-group flex gap-2">
               {[true, false].map((value) => (
                 <button
+                  type="button"
+                  aria-pressed={values[key] === value}
                   className={values[key] === value ? "btn-primary" : "btn-secondary"}
+                  disabled={revealed}
                   key={String(value)}
                   onClick={() => onChange({ kprim: { ...values, [key]: value } })}
                 >

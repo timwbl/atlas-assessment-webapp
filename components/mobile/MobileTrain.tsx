@@ -40,7 +40,7 @@ export function MobileTrain() {
           subtitle={data.markedTarget ? `${data.markedTarget.lectureCode} · persönlicher Review` : "Noch nichts markiert"}
         />
         <TrainCard
-          count={recent?.questions.length || 0}
+          count={recent?.questionCount || 0}
           disabled={!recent}
           href={recent ? `/quiz/${recent.id}?mode=training&quick=random&limit=10` : "#"}
           title="Letzten Block wiederholen"
