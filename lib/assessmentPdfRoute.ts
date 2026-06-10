@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { renderAssessmentPdf, renderAssessmentReviewPdf } from "./assessmentPdf";
 import { canExportAssessment, authenticateRequest } from "./serverAuth";
 import { loadServerAssessmentById } from "./serverAssessments";
-import type { QuizAttempt, UserAnswer } from "./types";
+import type { QuizAttempt, StoredQuestionResult, UserAnswer } from "./types";
 
 type ExportKind = "questions" | "solutions";
 
@@ -110,7 +110,7 @@ function parseAttempt(raw: unknown, assessmentId: string): QuizAttempt | null {
     if (parsed) acc[questionId] = parsed;
     return acc;
   }, {});
-  const questionResults = Array.isArray(value.questionResults)
+  const questionResults: StoredQuestionResult[] | undefined = Array.isArray(value.questionResults)
     ? value.questionResults
       .filter(isRecord)
       .filter((result) => typeof result.questionId === "string")
@@ -159,7 +159,7 @@ function parseAnswer(raw: unknown): UserAnswer | null {
   return answer;
 }
 
-function isRecord(value: unknown): value is Record<string, any> {
+function isRecord(value: unknown): value is Record<string, unknown> {
   return !!value && typeof value === "object" && !Array.isArray(value);
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { ResultsPage } from "./ResultsPage";
 import { useCompanion } from "./companion/CompanionProvider";
@@ -12,26 +12,60 @@ import {
   isQuestionCorrect,
   optionKey,
   scorePercent,
+  stableOptionId,
   stableAnswer,
   toStoredQuestionResult
 } from "@/lib/score";
-import { createSessionQuestions } from "@/lib/sessionQuestions";
+import { createSessionQuestions, restoreSessionQuestions } from "@/lib/sessionQuestions";
 import { syncAssessmentProgress } from "@/lib/cloudProgress";
 import {
   recordAttempt,
   reviewQuestionIds,
+  saveActiveQuizSession,
+  clearActiveQuizSession,
   setQuestionPriority,
   toggleQuestionReview,
   getProgress
 } from "@/lib/progressStore";
-import type { Assessment, AssessmentQuestion, QuizAttempt, QuizMode, QuizResultRow, UserAnswer } from "@/lib/types";
+import type {
+  ActiveQuizSession,
+  Assessment,
+  AssessmentQuestion,
+  QuickTrainingType,
+  QuizAttempt,
+  QuizMode,
+  QuizResultRow,
+  UserAnswer
+} from "@/lib/types";
 
 type Props = {
   assessment: Assessment;
   initialMode: QuizMode;
+  resume?: boolean;
+  quick?: QuickTrainingType;
+  limit?: number;
 };
 
-export function QuizEngine({ assessment, initialMode }: Props) {
+type InitialQuizState = {
+  mode: QuizMode;
+  questions: AssessmentQuestion[];
+  index: number;
+  answers: Record<string, UserAnswer>;
+  revealed: Record<string, boolean>;
+  startedAt: string;
+};
+
+export function QuizEngine({
+  assessment,
+  initialMode,
+  resume = false,
+  quick = "",
+  limit = 0
+}: Props) {
+  const initial = useRef<InitialQuizState | null>(null);
+  if (!initial.current) {
+    initial.current = createInitialQuizState(assessment, initialMode, resume, quick, limit);
+  }
   const didMount = useRef(false);
   const consecutiveErrors = useRef(0);
   // Confidence- und asynchrone Analyse-Events bleiben vorbereitet, bis der Quiz-Flow diese Zustände erfasst.
@@ -39,15 +73,15 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     setCompanionExamMode,
     triggerAriEvent
   } = useCompanion();
-  const [mode, setMode] = useState<QuizMode>(initialMode);
-  const [questions, setQuestions] = useState<AssessmentQuestion[]>(() => createSessionQuestions(selectQuestions(assessment, initialMode)));
-  const [index, setIndex] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, UserAnswer>>({});
-  const [revealed, setRevealed] = useState<Record<string, boolean>>({});
-  const [startedAt, setStartedAt] = useState(() => new Date().toISOString());
+  const [mode, setMode] = useState<QuizMode>(initial.current.mode);
+  const [questions, setQuestions] = useState<AssessmentQuestion[]>(initial.current.questions);
+  const [index, setIndex] = useState(initial.current.index);
+  const [answers, setAnswers] = useState<Record<string, UserAnswer>>(initial.current.answers);
+  const [revealed, setRevealed] = useState<Record<string, boolean>>(initial.current.revealed);
+  const [startedAt, setStartedAt] = useState(initial.current.startedAt);
   const [result, setResult] = useState<{ rows: QuizResultRow[]; attempt: QuizAttempt } | null>(null);
   const [finishError, setFinishError] = useState("");
-  const [progressVersion, setProgressVersion] = useState(0);
+  const [, setProgressVersion] = useState(0);
 
   useEffect(() => {
     if (!didMount.current) {
@@ -55,24 +89,51 @@ export function QuizEngine({ assessment, initialMode }: Props) {
       return;
     }
 
-    const selected = selectQuestions(assessment, initialMode);
-    setMode(initialMode);
-    setQuestions(createSessionQuestions(selected));
-    setIndex(0);
-    setAnswers({});
-    setRevealed({});
-    setStartedAt(new Date().toISOString());
+    const next = createInitialQuizState(assessment, initialMode, resume, quick, limit);
+    setMode(next.mode);
+    setQuestions(next.questions);
+    setIndex(next.index);
+    setAnswers(next.answers);
+    setRevealed(next.revealed);
+    setStartedAt(next.startedAt);
     setResult(null);
     setFinishError("");
-  }, [assessment, initialMode]);
+  }, [assessment, initialMode, limit, quick, resume]);
 
   useEffect(() => {
     setCompanionExamMode(mode === "exam" && !result);
     return () => setCompanionExamMode(false);
   }, [mode, result, setCompanionExamMode]);
 
+  useEffect(() => {
+    if (result || !questions.length) return;
+    const session: ActiveQuizSession = {
+      assessmentId: assessment.id,
+      blockId: assessment.block,
+      lectureId: assessment.lectureCode,
+      currentQuestionIndex: index,
+      answers: stableSessionAnswers(questions, answers),
+      questionOrder: questions.map((item) => item.id),
+      optionOrder: questions.reduce<Record<string, string[]>>((acc, item) => {
+        acc[item.id] = item.options.map(stableOptionId);
+        return acc;
+      }, {}),
+      revealedQuestionIds: Object.keys(revealed).filter((id) => revealed[id]),
+      startedAt,
+      lastOpenedAt: new Date().toISOString(),
+      mode,
+      quickType: quick,
+      device: window.matchMedia("(max-width: 760px)").matches ? "mobile" : "desktop"
+    };
+    saveActiveQuizSession(assessment.id, session);
+    const syncTimer = window.setTimeout(() => {
+      void syncAssessmentProgress(assessment.id).catch(() => undefined);
+    }, 1200);
+    return () => window.clearTimeout(syncTimer);
+  }, [answers, assessment, index, mode, questions, quick, result, revealed, startedAt]);
+
   const question = questions[index];
-  const progress = useMemo(() => getProgress(assessment.id), [assessment.id, progressVersion]);
+  const progress = getProgress(assessment.id);
 
   if (result) {
     return (
@@ -99,7 +160,8 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   }
 
   const currentAnswer = answers[question.id] || {};
-  const isRevealed = mode === "training" && revealed[question.id];
+  const usesImmediateFeedback = mode !== "exam";
+  const isRevealed = usesImmediateFeedback && revealed[question.id];
   const currentCorrect = isQuestionCorrect(question, currentAnswer);
   const stat = progress.questionStats[question.id];
 
@@ -108,10 +170,11 @@ export function QuizEngine({ assessment, initialMode }: Props) {
   }
 
   function revealOrNext() {
-    if (mode === "training" && !revealed[question.id]) {
+    if (usesImmediateFeedback && !revealed[question.id]) {
       setRevealed((current) => ({ ...current, [question.id]: true }));
       if (currentCorrect) {
         consecutiveErrors.current = 0;
+        if (mode === "review") triggerAriEvent("review_item_corrected");
       } else {
         consecutiveErrors.current += 1;
         triggerAriEvent(consecutiveErrors.current >= 3 ? "many_errors_in_row" : "wrong_answer");
@@ -120,6 +183,15 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     }
     if (index >= questions.length - 1) finishQuiz();
     else setIndex((value) => value + 1);
+  }
+
+  function retryCurrentQuestion() {
+    setAnswers((current) => {
+      const next = { ...current };
+      delete next[question.id];
+      return next;
+    });
+    setRevealed((current) => ({ ...current, [question.id]: false }));
   }
 
   function finishQuiz() {
@@ -154,6 +226,7 @@ export function QuizEngine({ assessment, initialMode }: Props) {
     };
 
     try {
+      clearActiveQuizSession(assessment.id);
       recordAttempt(assessment, attempt, rows);
       void syncAssessmentProgress(assessment.id).catch(() => undefined);
       setProgressVersion((value) => value + 1);
@@ -269,6 +342,11 @@ export function QuizEngine({ assessment, initialMode }: Props) {
             Zur letzten Frage zurück
           </button>
           <div className="quiz-action-buttons flex flex-wrap gap-2">
+            {mode === "review" && isRevealed && (
+              <button type="button" className="btn-secondary" onClick={retryCurrentQuestion}>
+                Nochmals üben
+              </button>
+            )}
             <button
               type="button"
               className="btn-secondary"
@@ -280,7 +358,13 @@ export function QuizEngine({ assessment, initialMode }: Props) {
               {stat?.priority === "high" ? "Priorität normal" : "Priorisieren"}
             </button>
             <button type="button" className="btn-primary" onClick={revealOrNext}>
-              {mode === "training" && !revealed[question.id] ? "Lösung zeigen" : index >= questions.length - 1 ? "Abgeben" : "Weiter"}
+              {usesImmediateFeedback && !revealed[question.id]
+                ? "Lösung zeigen"
+                : mode === "review" && isRevealed
+                  ? "Verstanden"
+                  : index >= questions.length - 1
+                    ? "Abgeben"
+                    : "Weiter"}
             </button>
             <button type="button" className="btn-secondary" onClick={finishQuiz}>Jetzt abgeben</button>
           </div>
@@ -306,15 +390,75 @@ function createAttemptId(): string {
   return `attempt-${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
-function selectQuestions(assessment: Assessment, mode: QuizMode): AssessmentQuestion[] {
-  if (mode === "review") {
+function selectQuestions(
+  assessment: Assessment,
+  mode: QuizMode,
+  quick: QuickTrainingType = "",
+  limit = 0
+): AssessmentQuestion[] {
+  const progress = getProgress(assessment.id);
+  let selected: AssessmentQuestion[];
+
+  if (quick === "wrong") {
+    selected = assessment.questions.filter((question) => {
+      const stat = progress.questionStats[question.id];
+      return stat?.lastCorrect === false || (stat?.wrong || 0) > (stat?.correct || 0);
+    });
+  } else if (quick === "marked") {
+    selected = assessment.questions.filter((question) => progress.questionStats[question.id]?.markedForReview);
+  } else if (quick === "random") {
+    selected = [...assessment.questions].sort(() => Math.random() - 0.5);
+  } else if (mode === "review") {
     const ids = new Set(reviewQuestionIds(assessment));
-    return assessment.questions.filter((question) => ids.has(question.id));
+    selected = assessment.questions.filter((question) => ids.has(question.id));
+  } else if (mode === "exam") {
+    selected = [...assessment.questions].sort(() => Math.random() - 0.5);
+  } else {
+    selected = assessment.questions;
   }
 
-  if (mode === "exam") {
-    return [...assessment.questions].sort(() => Math.random() - 0.5);
+  return limit > 0 ? selected.slice(0, limit) : selected;
+}
+
+function createInitialQuizState(
+  assessment: Assessment,
+  mode: QuizMode,
+  resume: boolean,
+  quick: QuickTrainingType,
+  limit: number
+): InitialQuizState {
+  const saved = resume ? getProgress(assessment.id).activeSession : undefined;
+  if (saved) {
+    const restoredQuestions = restoreSessionQuestions(assessment.questions, saved.questionOrder, saved.optionOrder);
+    return {
+      mode: saved.mode,
+      questions: restoredQuestions,
+      index: Math.min(saved.currentQuestionIndex, Math.max(0, restoredQuestions.length - 1)),
+      answers: saved.answers,
+      revealed: saved.revealedQuestionIds.reduce<Record<string, boolean>>((acc, id) => {
+        acc[id] = true;
+        return acc;
+      }, {}),
+      startedAt: saved.startedAt
+    };
   }
 
-  return assessment.questions;
+  return {
+    mode,
+    questions: createSessionQuestions(selectQuestions(assessment, mode, quick, limit)),
+    index: 0,
+    answers: {},
+    revealed: {},
+    startedAt: new Date().toISOString()
+  };
+}
+
+function stableSessionAnswers(
+  questions: AssessmentQuestion[],
+  answers: Record<string, UserAnswer>
+): Record<string, UserAnswer> {
+  return questions.reduce<Record<string, UserAnswer>>((acc, question) => {
+    if (answers[question.id]) acc[question.id] = stableAnswer(question, answers[question.id]);
+    return acc;
+  }, {});
 }

@@ -7,9 +7,21 @@ import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessme
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
-import type { Assessment, QuizMode } from "@/lib/types";
+import type { Assessment, QuickTrainingType, QuizMode } from "@/lib/types";
 
-export function QuizPageClient({ id, mode }: { id: string; mode: QuizMode }) {
+export function QuizPageClient({
+  id,
+  mode,
+  resume,
+  quick,
+  limit
+}: {
+  id: string;
+  mode: QuizMode;
+  resume: boolean;
+  quick: QuickTrainingType;
+  limit: number;
+}) {
   const [assessment, setAssessment] = useState<Assessment | null>(null);
   const [altfragenAccess, setAltfragenAccess] = useState(false);
   const [error, setError] = useState("");
@@ -51,5 +63,13 @@ export function QuizPageClient({ id, mode }: { id: string; mode: QuizMode }) {
     );
   }
 
-  return <QuizEngine assessment={assessment} initialMode={mode} />;
+  return (
+    <QuizEngine
+      assessment={assessment}
+      initialMode={mode}
+      limit={limit}
+      quick={quick}
+      resume={resume}
+    />
+  );
 }

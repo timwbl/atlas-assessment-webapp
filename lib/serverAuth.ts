@@ -82,23 +82,28 @@ async function supabaseRestRequest<T>(path: string, token: string): Promise<T> {
 
 async function parseResponse<T>(response: Response): Promise<T> {
   const text = await response.text();
-  let data: any = null;
+  let data: unknown = null;
   try {
     data = text ? JSON.parse(text) : null;
   } catch {
     data = text || null;
   }
   if (!response.ok) {
+    const record = isRecord(data) ? data : {};
     const message = [
-      data?.message,
-      data?.msg,
-      data?.error_description,
-      data?.error,
+      record.message,
+      record.msg,
+      record.error_description,
+      record.error,
       typeof data === "string" ? data : ""
-    ].find((value) => typeof value === "string" && value.trim());
+    ].find((value): value is string => typeof value === "string" && !!value.trim());
     throw new Error(message || `HTTP ${response.status}`);
   }
   return data as T;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return !!value && typeof value === "object" && !Array.isArray(value);
 }
 
 function supabaseConfig(): { url: string; anonKey: string } {

@@ -55,6 +55,7 @@ export type UserAnswer = {
 };
 
 export type QuizMode = "training" | "exam" | "review";
+export type QuickTrainingType = "wrong" | "marked" | "random" | "";
 export type AnswerStatus = "correct" | "partial" | "incorrect";
 export type AnalysisPriority = "high" | "medium" | "low";
 
@@ -129,6 +130,24 @@ export type AssessmentProgress = {
   lastScore: number | null;
   lastAttemptAt?: string;
   errorTags: Record<string, number>;
+  activeSession?: ActiveQuizSession;
+  activeSessionClearedAt?: string;
+};
+
+export type ActiveQuizSession = {
+  assessmentId: string;
+  blockId: string;
+  lectureId?: string;
+  currentQuestionIndex: number;
+  answers: Record<string, UserAnswer>;
+  questionOrder: string[];
+  optionOrder: Record<string, string[]>;
+  revealedQuestionIds: string[];
+  startedAt: string;
+  lastOpenedAt: string;
+  mode: QuizMode;
+  quickType?: QuickTrainingType;
+  device?: "mobile" | "desktop";
 };
 
 export type LoadedAssessment = {

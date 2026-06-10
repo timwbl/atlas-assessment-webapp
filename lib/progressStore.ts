@@ -1,6 +1,7 @@
 "use client";
 
 import type {
+  ActiveQuizSession,
   Assessment,
   AssessmentProgress,
   QuizAttempt,
@@ -96,6 +97,13 @@ export function mergeProgress(local: AssessmentProgress, remote: AssessmentProgr
   });
 
   const latestAttempt = attempts[0];
+  const activeSessionClearedAt = newestTimestamp(
+    local.activeSessionClearedAt,
+    remote.activeSessionClearedAt
+  );
+  const activeSession = newestActiveSession(local.activeSession, remote.activeSession);
+  const clearedAfterSession = activeSessionClearedAt
+    && (!activeSession || new Date(activeSessionClearedAt).getTime() >= new Date(activeSession.lastOpenedAt).getTime());
 
   return {
     assessmentId: local.assessmentId || remote.assessmentId,
@@ -104,8 +112,27 @@ export function mergeProgress(local: AssessmentProgress, remote: AssessmentProgr
     bestScore: Math.max(local.bestScore || 0, remote.bestScore || 0),
     lastScore: latestAttempt?.score ?? local.lastScore ?? remote.lastScore ?? null,
     lastAttemptAt: latestAttempt?.completedAt || local.lastAttemptAt || remote.lastAttemptAt,
-    errorTags
+    errorTags,
+    activeSession: clearedAfterSession ? undefined : activeSession,
+    activeSessionClearedAt
   };
+}
+
+function newestActiveSession(
+  local?: ActiveQuizSession,
+  remote?: ActiveQuizSession
+): ActiveQuizSession | undefined {
+  if (!local) return remote;
+  if (!remote) return local;
+  return new Date(local.lastOpenedAt).getTime() >= new Date(remote.lastOpenedAt).getTime()
+    ? local
+    : remote;
+}
+
+function newestTimestamp(left?: string, right?: string): string | undefined {
+  if (!left) return right;
+  if (!right) return left;
+  return new Date(left).getTime() >= new Date(right).getTime() ? left : right;
 }
 
 export function mergeProgressMap(remote: Record<string, AssessmentProgress>): Record<string, AssessmentProgress> {
@@ -203,6 +230,32 @@ export function setQuestionPriority(
   progress.questionStats[questionId] = stat;
   saveProgress(progress);
   return progress;
+}
+
+export function saveActiveQuizSession(
+  assessmentId: string,
+  session: ActiveQuizSession
+): AssessmentProgress {
+  const progress = getProgress(assessmentId);
+  progress.activeSession = session;
+  delete progress.activeSessionClearedAt;
+  saveProgress(progress);
+  return progress;
+}
+
+export function clearActiveQuizSession(assessmentId: string): AssessmentProgress {
+  const progress = getProgress(assessmentId);
+  delete progress.activeSession;
+  progress.activeSessionClearedAt = new Date().toISOString();
+  saveProgress(progress);
+  return progress;
+}
+
+export function getLatestActiveSession(): ActiveQuizSession | null {
+  return Object.values(readAll())
+    .map((progress) => progress.activeSession)
+    .filter((session): session is ActiveQuizSession => !!session)
+    .sort((a, b) => new Date(b.lastOpenedAt).getTime() - new Date(a.lastOpenedAt).getTime())[0] || null;
 }
 
 export function reviewQuestionIds(assessment: Assessment): string[] {

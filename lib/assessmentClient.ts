@@ -1,16 +1,21 @@
 "use client";
 
 import type { Assessment, LoadedAssessment } from "./types";
+import { readCachedAssessments, writeCachedAssessments } from "./assessmentCache";
 
 export async function loadAssessments(): Promise<LoadedAssessment[]> {
-  const response = await fetch("/api/assessments", { cache: "no-store" });
-
-  if (!response.ok) {
-    throw new Error("Assessments konnten nicht geladen werden.");
+  try {
+    const response = await fetch("/api/assessments", { cache: "no-store" });
+    if (!response.ok) throw new Error("Assessments konnten nicht geladen werden.");
+    const payload = await response.json() as { assessments?: LoadedAssessment[] };
+    const assessments = payload.assessments || [];
+    void writeCachedAssessments(assessments);
+    return assessments;
+  } catch (error) {
+    const cached = await readCachedAssessments();
+    if (cached.length) return cached;
+    throw error;
   }
-
-  const payload = await response.json() as { assessments?: LoadedAssessment[] };
-  return payload.assessments || [];
 }
 
 export async function loadActiveAssessments(): Promise<Assessment[]> {

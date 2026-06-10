@@ -1,5 +1,5 @@
-import { LibraryClient } from "@/components/LibraryClient";
+import { ResponsiveLearningRoute } from "@/components/responsive/ResponsiveLearningRoute";
 
 export default function Home() {
-  return <LibraryClient />;
+  return <ResponsiveLearningRoute mobileView="home" />;
 }

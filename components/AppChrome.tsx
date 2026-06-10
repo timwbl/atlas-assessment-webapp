@@ -7,6 +7,7 @@ import { AtlasBrand } from "./AtlasBrand";
 import { MainNav } from "./MainNav";
 import { MobileNav } from "./MobileNav";
 import { OnlinePresenceBadge } from "./OnlinePresenceBadge";
+import { ServiceWorkerRegistration } from "./ServiceWorkerRegistration";
 import { AriCompanion } from "./companion/AriCompanion";
 import { CompanionDebugPanel } from "./companion/CompanionDebugPanel";
 import { APP_VERSION } from "@/lib/appVersion";
@@ -17,6 +18,7 @@ export function AppChrome() {
 
   return (
     <>
+      <ServiceWorkerRegistration />
       <AtlasBrand />
       <MainNav />
       <OnlinePresenceBadge />

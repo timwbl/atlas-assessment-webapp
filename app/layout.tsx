@@ -9,6 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "MC Übungsfragen",
   description: "Read-only Assessment-WebApp für medizinische Vorlesungen.",
+  manifest: "/manifest.webmanifest",
   other: {
     "application-version": APP_VERSION
   },
@@ -18,6 +19,11 @@ export const metadata: Metadata = {
     ],
     shortcut: "/atlas-logo.svg",
     apple: "/atlas-logo.svg"
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "ATLAS"
   }
 };
 
