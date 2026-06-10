@@ -14,6 +14,7 @@ export type CloudSession = {
 };
 
 const SESSION_KEY = "atlas-supabase-session-v1";
+const SESSION_PERSISTENCE_KEY = "atlas-auth-remember-v1";
 
 export const AUTH_SESSION_CHANGED_EVENT = "atlas-auth-session-changed";
 
@@ -72,17 +73,40 @@ function normalizePublicUrl(rawUrl: string): string {
 export function getStoredSession(): CloudSession | null {
   if (typeof window === "undefined") return null;
   try {
-    const parsed = JSON.parse(window.localStorage.getItem(SESSION_KEY) || "null") as CloudSession | null;
+    const raw = window.localStorage.getItem(SESSION_KEY)
+      || window.sessionStorage.getItem(SESSION_KEY);
+    const parsed = JSON.parse(raw || "null") as CloudSession | null;
     return parsed?.access_token && parsed.user?.id ? parsed : null;
   } catch {
     return null;
   }
 }
 
-export function saveSession(session: CloudSession | null): void {
+export function shouldRememberSession(): boolean {
+  if (typeof window === "undefined") return true;
+  return window.localStorage.getItem(SESSION_PERSISTENCE_KEY) !== "false";
+}
+
+export function setSessionPersistence(remember: boolean): void {
   if (typeof window === "undefined") return;
-  if (!session) window.localStorage.removeItem(SESSION_KEY);
-  else window.localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+  const current = getStoredSession();
+  window.localStorage.setItem(SESSION_PERSISTENCE_KEY, String(remember));
+  window.localStorage.removeItem(SESSION_KEY);
+  window.sessionStorage.removeItem(SESSION_KEY);
+  if (current) {
+    const storage = remember ? window.localStorage : window.sessionStorage;
+    storage.setItem(SESSION_KEY, JSON.stringify(current));
+  }
+}
+
+export function saveSession(session: CloudSession | null, remember = shouldRememberSession()): void {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(SESSION_KEY);
+  window.sessionStorage.removeItem(SESSION_KEY);
+  if (session) {
+    const storage = remember ? window.localStorage : window.sessionStorage;
+    storage.setItem(SESSION_KEY, JSON.stringify(session));
+  }
   window.dispatchEvent(new Event(AUTH_SESSION_CHANGED_EVENT));
 }
 
@@ -153,9 +177,12 @@ export async function ensureSession(): Promise<CloudSession | null> {
     const next = toCloudSession(refreshed);
     saveSession(next);
     return next;
-  } catch {
-    saveSession(null);
-    return null;
+  } catch (error) {
+    if (isInvalidSessionError(error)) {
+      saveSession(null);
+      return null;
+    }
+    return session;
   }
 }
 
@@ -192,9 +219,21 @@ async function parseResponse<T>(response: Response): Promise<T> {
       record.error,
       typeof data === "string" ? data : ""
     ].find((value): value is string => typeof value === "string" && !!value.trim());
-    throw new Error(message || `HTTP ${response.status}`);
+    throw new SupabaseRequestError(message || `HTTP ${response.status}`, response.status);
   }
   return data as T;
+}
+
+export class SupabaseRequestError extends Error {
+  constructor(message: string, readonly status: number) {
+    super(message);
+    this.name = "SupabaseRequestError";
+  }
+}
+
+export function isInvalidSessionError(error: unknown): boolean {
+  return error instanceof SupabaseRequestError
+    && [400, 401, 403].includes(error.status);
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

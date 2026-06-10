@@ -791,6 +791,74 @@ button:disabled {
   font-size: 16px;
 }
 
+.auth-form .auth-remember-row {
+  position: relative;
+  display: grid;
+  min-height: 48px;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: center;
+  gap: 11px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--surface-strong) 76%, transparent);
+  padding: 9px 12px;
+  cursor: pointer;
+}
+
+.auth-remember-row input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.auth-form .auth-checkbox {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1.5px solid color-mix(in srgb, var(--muted) 45%, transparent);
+  border-radius: 7px;
+  background: var(--surface-strong);
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.auth-remember-row input:checked + .auth-checkbox {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.auth-remember-row input:checked + .auth-checkbox::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+.auth-remember-row input:focus-visible + .auth-checkbox {
+  outline: 3px solid color-mix(in srgb, var(--accent) 24%, transparent);
+  outline-offset: 2px;
+}
+
+.auth-form .auth-remember-copy {
+  display: grid;
+  gap: 2px;
+  color: var(--text);
+  text-transform: none;
+}
+
+.auth-remember-copy strong {
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.auth-remember-copy small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 620;
+  line-height: 1.3;
+}
+
 .auth-submit {
   min-height: 52px;
   margin-top: 4px;
@@ -2247,9 +2315,9 @@ button:disabled {
     border-radius: 0;
     background: color-mix(in srgb, var(--surface-strong) 94%, transparent);
     padding:
-      7px
+      8px
       max(8px, env(safe-area-inset-right))
-      calc(7px + env(safe-area-inset-bottom))
+      max(14px, calc(9px + env(safe-area-inset-bottom)))
       max(8px, env(safe-area-inset-left));
     box-shadow: 0 -12px 36px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(24px) saturate(180%);
@@ -2258,12 +2326,12 @@ button:disabled {
   .mobile-nav-item {
     display: grid;
     min-width: 0;
-    min-height: 52px;
-    grid-template-rows: 20px 15px;
+    min-height: 56px;
+    grid-template-rows: 22px 16px;
     place-items: center;
-    gap: 2px;
-    border-radius: 14px;
-    padding: 5px 2px;
+    gap: 3px;
+    border-radius: 16px;
+    padding: 6px 2px;
     color: var(--muted);
     font-size: 10px;
     font-weight: 780;

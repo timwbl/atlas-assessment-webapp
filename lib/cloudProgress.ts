@@ -5,9 +5,11 @@ import {
   ensureSession,
   getEmailConfirmationRedirectUrl,
   getStoredSession,
+  isInvalidSessionError,
   isSupabaseConfigured,
   restRequest,
   saveSession,
+  setSessionPersistence,
   toCloudSession,
   type AuthSessionResponse,
   type CloudUser
@@ -69,26 +71,33 @@ export async function getCurrentUser(): Promise<CloudUser | null> {
   try {
     const user = await authRequest<CloudUser>("user", { method: "GET" }, session.access_token);
     return user;
-  } catch {
-    saveSession(null);
+  } catch (error) {
+    if (isInvalidSessionError(error)) saveSession(null);
     return null;
   }
 }
 
-export async function signInWithPassword(email: string, password: string): Promise<CloudUser> {
+export async function signInWithPassword(email: string, password: string, remember = true): Promise<CloudUser> {
+  setSessionPersistence(remember);
   const response = await authRequest<AuthSessionResponse>("token?grant_type=password", {
     method: "POST",
     body: JSON.stringify({ email, password })
   });
   const session = toCloudSession(response);
-  saveSession(session);
-  await upsertCurrentProfile(session.user);
+  saveSession(session, remember);
+  await upsertCurrentProfile(session.user).catch(() => undefined);
   return session.user;
 }
 
-export async function signUpWithPassword(email: string, password: string, displayName: string): Promise<SignUpResult> {
+export async function signUpWithPassword(
+  email: string,
+  password: string,
+  displayName: string,
+  remember = true
+): Promise<SignUpResult> {
   const name = displayName.trim();
   if (!name) throw new Error("Bitte gib deinen Namen ein.");
+  setSessionPersistence(remember);
   const redirectTo = getEmailConfirmationRedirectUrl();
 
   const response = await authRequest<Partial<AuthSessionResponse> & { user?: CloudUser }>(
@@ -139,32 +148,61 @@ export async function signOut(): Promise<void> {
 }
 
 export async function upsertCurrentProfile(user: CloudUser): Promise<CloudProfile> {
-  const body = [{
-    id: user.id,
+  const metadataName = typeof user.user_metadata?.name === "string"
+    ? user.user_metadata.name.trim()
+    : "";
+  const select = "id,email,display_name,role,created_at,last_seen_at";
+  const existing = await restRequest<CloudProfile[]>(
+    `profiles?select=${select}&id=eq.${encodeURIComponent(user.id)}&limit=1`
+  );
+
+  const current = existing[0];
+  const profile: Record<string, string> = {
     email: user.email || "",
-    display_name: typeof user.user_metadata?.name === "string" ? user.user_metadata.name : null,
     last_seen_at: new Date().toISOString()
-  }];
-  const data = await restRequest<CloudProfile[]>("profiles?on_conflict=id&select=id,email,display_name,role,created_at,last_seen_at", {
-    method: "POST",
-    headers: { Prefer: "resolution=merge-duplicates,return=representation" },
-    body: JSON.stringify(body)
-  });
+  };
+  if (!current?.display_name?.trim() && metadataName) profile.display_name = metadataName;
+
+  const data = current
+    ? await restRequest<CloudProfile[]>(
+      `profiles?id=eq.${encodeURIComponent(user.id)}&select=${select}`,
+      {
+        method: "PATCH",
+        headers: { Prefer: "return=representation" },
+        body: JSON.stringify(profile)
+      }
+    )
+    : await restRequest<CloudProfile[]>(
+      `profiles?select=${select}`,
+      {
+        method: "POST",
+        headers: { Prefer: "return=representation" },
+        body: JSON.stringify([{ id: user.id, ...profile }])
+      }
+    );
   if (!data[0]) throw new Error("Profil konnte nicht gespeichert werden.");
   return data[0];
 }
 
 export async function updateCurrentProfileName(displayName: string): Promise<CloudProfile> {
-  const user = await getCurrentUser();
-  if (!user) throw new Error("Nicht angemeldet.");
+  const name = displayName.trim();
+  if (!name) throw new Error("Bitte gib deinen Namen ein.");
+  const session = await ensureSession();
+  if (!session) throw new Error("Nicht angemeldet.");
+
+  const updatedUser = await authRequest<CloudUser>("user", {
+    method: "PUT",
+    body: JSON.stringify({ data: { name } })
+  }, session.access_token);
+  saveSession({ ...session, user: updatedUser });
 
   const data = await restRequest<CloudProfile[]>("profiles?on_conflict=id&select=id,email,display_name,role,created_at,last_seen_at", {
     method: "POST",
     headers: { Prefer: "resolution=merge-duplicates,return=representation" },
     body: JSON.stringify([{
-      id: user.id,
-      email: user.email || "",
-      display_name: displayName || null,
+      id: updatedUser.id,
+      email: updatedUser.email || "",
+      display_name: name,
       last_seen_at: new Date().toISOString()
     }])
   });

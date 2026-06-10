@@ -17,6 +17,7 @@ import {
 import { getAllProgress } from "@/lib/progressStore";
 import {
   AUTH_SESSION_CHANGED_EVENT,
+  shouldRememberSession,
   type CloudUser
 } from "@/lib/supabaseClient";
 import { CompanionSettings } from "./companion/CompanionSettings";
@@ -36,6 +37,7 @@ export function AccountMenu() {
   const [authName, setAuthName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(true);
   const [user, setUser] = useState<CloudUser | null>(null);
   const [profile, setProfile] = useState<CloudProfile | null>(null);
   const [status, setStatus] = useState("");
@@ -44,6 +46,7 @@ export function AccountMenu() {
 
   useEffect(() => {
     setName(window.localStorage.getItem(NAME_KEY) || "");
+    setRememberMe(shouldRememberSession());
     if (cloudSyncAvailable()) void refreshUser();
     else setProfileChecked(true);
 
@@ -99,11 +102,26 @@ export function AccountMenu() {
 
   async function refreshUser() {
     setProfileChecked(false);
-    const currentUser = await getCurrentUser();
-    const currentProfile = currentUser ? await getCurrentProfile(currentUser) : null;
-    setUser(currentUser);
-    setProfile(currentProfile);
-    setProfileChecked(true);
+    try {
+      const currentUser = await getCurrentUser();
+      setUser(currentUser);
+      if (!currentUser) {
+        setProfile(null);
+        setProfileChecked(true);
+        return;
+      }
+      const currentProfile = await getCurrentProfile(currentUser);
+      setProfile(currentProfile);
+      const storedName = currentProfile?.display_name?.trim();
+      if (storedName) {
+        setName(storedName);
+        window.localStorage.setItem(NAME_KEY, storedName);
+      }
+      setProfileChecked(true);
+    } catch {
+      // A temporary profile/network failure must not force the name dialog open.
+      setProfileChecked(false);
+    }
   }
 
   async function run(action: () => Promise<void>) {
@@ -128,7 +146,7 @@ export function AccountMenu() {
 
   async function login() {
     await run(async () => {
-      await signInWithPassword(email.trim(), password);
+      await signInWithPassword(email.trim(), password, rememberMe);
       await refreshUser();
       const merged = await syncAllProgress();
       setStatus(`${Object.keys(merged).length} Fortschritte synchronisiert.`);
@@ -143,7 +161,7 @@ export function AccountMenu() {
       if (!email.trim() || !password) throw new Error("Bitte gib E-Mail und Passwort ein.");
 
       const cleanEmail = email.trim();
-      const result = await signUpWithPassword(cleanEmail, password, cleanName);
+      const result = await signUpWithPassword(cleanEmail, password, cleanName, rememberMe);
       setName(cleanName);
       window.localStorage.setItem(NAME_KEY, cleanName);
 
@@ -386,6 +404,18 @@ export function AccountMenu() {
                       }}
                       placeholder="Passwort"
                     />
+                  </label>
+                  <label className="auth-remember-row">
+                    <input
+                      checked={rememberMe}
+                      onChange={(event) => setRememberMe(event.target.checked)}
+                      type="checkbox"
+                    />
+                    <span aria-hidden="true" className="auth-checkbox" />
+                    <span className="auth-remember-copy">
+                      <strong>Eingeloggt bleiben</strong>
+                      <small>Auf diesem Gerät angemeldet bleiben.</small>
+                    </span>
                   </label>
                 </>
               )}
