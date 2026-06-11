@@ -15,7 +15,8 @@ export type AdminView =
   | "recommendations"
   | "reviews"
   | "downloads"
-  | "users";
+  | "users"
+  | "settings";
 
 const AdminEditor = dynamic(
   () => import("@/components/AdminEditor").then((module) => module.AdminEditor),
@@ -45,6 +46,10 @@ const AdminProgressDashboard = dynamic(
   () => import("@/components/AdminProgressDashboard").then((module) => module.AdminProgressDashboard),
   { loading: AdminLoading }
 );
+const AdminSystemSettings = dynamic(
+  () => import("./AdminSystemSettings").then((module) => module.AdminSystemSettings),
+  { loading: AdminLoading }
+);
 
 const NAV_ITEMS: Array<{ id: AdminView; label: string; description: string }> = [
   { id: "overview", label: "Übersicht", description: "Offene Arbeit und Systemstatus" },
@@ -55,7 +60,8 @@ const NAV_ITEMS: Array<{ id: AdminView; label: string; description: string }> = 
   { id: "recommendations", label: "Empfehlungen", description: "Blockbewertungen pflegen" },
   { id: "reviews", label: "Kommentare", description: "User-Kommentare moderieren" },
   { id: "downloads", label: "Downloads", description: "Zusammenfassungen verwalten" },
-  { id: "users", label: "Nutzer", description: "Accounts und Fortschritt ansehen" }
+  { id: "users", label: "Nutzer", description: "Accounts und Fortschritt ansehen" },
+  { id: "settings", label: "System", description: "Verfügbarkeit und globale Einstellungen" }
 ];
 
 export function AdminWorkspace() {
@@ -129,6 +135,7 @@ export function AdminWorkspace() {
             {view === "reviews" && <AdminAssessmentReviews />}
             {view === "downloads" && <AdminDownloadsManager />}
             {view === "users" && <AdminProgressDashboard />}
+            {view === "settings" && <AdminSystemSettings />}
           </AdminContentBoundary>
         </section>
       </div>

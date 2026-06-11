@@ -135,69 +135,80 @@ body {
     max(16px, env(safe-area-inset-left));
 }
 
-.maintenance-card {
-  width: min(100%, 520px);
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  background: color-mix(in srgb, var(--surface-strong) 92%, transparent);
-  padding: 38px;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.12), var(--inner-highlight);
-  backdrop-filter: blur(30px) saturate(170%);
+.maintenance-screen {
+  display: grid;
+  width: min(100%, 760px);
+  justify-items: center;
+  text-align: center;
 }
 
-.maintenance-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 34px;
-  font-size: 15px;
-  font-weight: 900;
+.maintenance-logo {
+  display: grid;
+  width: clamp(112px, 18vw, 156px);
+  aspect-ratio: 1;
+  place-items: center;
+  margin-bottom: 30px;
+  border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--line));
+  border-radius: 34px;
+  background: color-mix(in srgb, var(--surface-strong) 88%, transparent);
+  box-shadow: 0 28px 80px rgba(0, 55, 130, 0.13), var(--inner-highlight);
+  backdrop-filter: blur(26px) saturate(160%);
 }
 
-.maintenance-brand img {
-  width: 38px;
-  height: 38px;
-  border-radius: 11px;
+.maintenance-logo img {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
 }
 
-.maintenance-card h1 {
-  max-width: 430px;
-  margin: 8px 0 12px;
-  font-size: clamp(34px, 7vw, 52px);
-  line-height: 1.02;
+.maintenance-screen h1 {
+  max-width: 720px;
+  margin: 12px 0 18px;
+  font-size: clamp(38px, 7vw, 68px);
+  font-weight: 950;
+  line-height: 1.01;
+  letter-spacing: 0;
+  text-wrap: balance;
 }
 
-.maintenance-card > p {
+.maintenance-message {
+  max-width: 640px;
   margin: 0;
   color: var(--muted);
-  font-size: 17px;
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.55;
+  text-wrap: pretty;
 }
 
-.maintenance-form {
+.maintenance-loader {
   display: grid;
-  gap: 12px;
-  margin-top: 30px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  margin-top: 40px;
 }
 
-.maintenance-form label {
+.maintenance-loader span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid color-mix(in srgb, var(--muted) 22%, transparent);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: maintenance-rotate 5s linear infinite;
+}
+
+.maintenance-subtext {
+  margin: 18px 0 0;
+  color: color-mix(in srgb, var(--muted) 82%, transparent);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 680;
 }
 
-.maintenance-form .input {
-  min-height: 52px;
-}
-
-.maintenance-form .btn-primary {
-  min-height: 50px;
-  margin-top: 4px;
-}
-
-.maintenance-error {
-  margin: 0;
-  color: var(--danger);
-  font-size: 14px;
-  font-weight: 700;
+@keyframes maintenance-rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 button,
@@ -2460,17 +2471,18 @@ button:disabled {
 }
 
 @media (max-width: 560px) {
-  .maintenance-card {
-    border-radius: 22px;
-    padding: 26px 20px;
+  .maintenance-page {
+    padding-right: 22px;
+    padding-left: 22px;
   }
 
-  .maintenance-brand {
-    margin-bottom: 26px;
+  .maintenance-logo {
+    margin-bottom: 24px;
+    border-radius: 28px;
   }
 
-  .maintenance-card h1 {
-    font-size: 36px;
+  .maintenance-screen h1 {
+    font-size: 40px;
   }
 }
 
@@ -3650,6 +3662,12 @@ button:disabled {
   color: color-mix(in srgb, var(--success) 70%, var(--text));
 }
 
+.admin-alert--success {
+  border-color: color-mix(in srgb, var(--success) 34%, var(--line));
+  background: color-mix(in srgb, var(--success) 8%, var(--surface));
+  color: color-mix(in srgb, var(--success) 72%, var(--text));
+}
+
 .admin-status-badge--denied {
   border-color: color-mix(in srgb, var(--danger) 32%, var(--line));
   background: color-mix(in srgb, var(--danger) 8%, var(--surface));
@@ -4029,6 +4047,125 @@ button:disabled {
 .admin-login-card h1 {
   margin-top: 7px;
   font-size: 38px;
+}
+
+.admin-system-settings {
+  display: grid;
+  gap: 18px;
+}
+
+.admin-maintenance-panel {
+  overflow: hidden;
+}
+
+.admin-maintenance-setting {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0;
+}
+
+.admin-maintenance-setting strong {
+  font-size: 17px;
+}
+
+.admin-maintenance-setting p {
+  max-width: 680px;
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.admin-switch {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.admin-switch input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.admin-switch span {
+  position: relative;
+  display: block;
+  width: 54px;
+  height: 32px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 15%, var(--surface-strong));
+  cursor: pointer;
+  transition: background var(--transition-ui), border-color var(--transition-ui);
+}
+
+.admin-switch span::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  content: "";
+  transition: transform var(--transition-ui);
+}
+
+.admin-switch input:checked + span {
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--line));
+  background: var(--danger);
+}
+
+.admin-switch input:checked + span::after {
+  transform: translateX(22px);
+}
+
+.admin-switch input:focus-visible + span {
+  outline: 3px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  outline-offset: 3px;
+}
+
+.admin-switch input:disabled + span {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.admin-maintenance-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.admin-maintenance-meta strong {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 9%, transparent);
+  padding: 5px 8px;
+  color: var(--text);
+  font-size: 11px;
+}
+
+.admin-maintenance-meta small {
+  margin-left: auto;
+}
+
+.admin-maintenance-panel .admin-alert {
+  margin-top: 16px;
+}
+
+.admin-maintenance-panel .admin-alert code {
+  margin: 0 4px;
 }
 
 .admin-error-boundary {
@@ -5361,6 +5498,21 @@ button:disabled {
 }
 
 @media (max-width: 760px) {
+  .admin-maintenance-setting {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px;
+    padding: 18px 0;
+  }
+
+  .admin-maintenance-meta {
+    align-items: flex-start;
+  }
+
+  .admin-maintenance-meta small {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .is-assessment-active .mobile-nav {
     display: none;
   }
@@ -5446,6 +5598,14 @@ button:disabled {
 }
 
 @media (max-width: 460px) {
+  .admin-maintenance-setting {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-switch {
+    justify-self: start;
+  }
+
   .block-readiness-card {
     gap: 14px;
     padding: 18px;
@@ -5477,5 +5637,9 @@ button:disabled {
   .fast-quiz-progress i {
     animation: none;
     transition: none;
+  }
+
+  .maintenance-loader span {
+    animation: none;
   }
 }

@@ -83,6 +83,16 @@ create table if not exists public.online_presence (
   last_seen_at timestamptz not null default now()
 );
 
+create table if not exists public.app_settings (
+  key text primary key,
+  value jsonb not null default '{}'::jsonb,
+  updated_at timestamptz not null default now()
+);
+
+insert into public.app_settings (key, value)
+values ('maintenance_mode', '{"enabled": false}'::jsonb)
+on conflict (key) do nothing;
+
 alter table public.summary_downloads add column if not exists file_path text;
 alter table public.summary_downloads alter column file_data drop not null;
 
@@ -102,6 +112,7 @@ create index if not exists assessment_reviews_updated_idx on public.assessment_r
 create index if not exists altfragen_access_requests_status_idx on public.altfragen_access_requests(status, updated_at desc);
 create index if not exists altfragen_access_requests_user_idx on public.altfragen_access_requests(user_id);
 create index if not exists online_presence_last_seen_idx on public.online_presence(last_seen_at desc);
+create index if not exists app_settings_updated_idx on public.app_settings(updated_at desc);
 
 create or replace function public.is_admin(check_user uuid default auth.uid())
 returns boolean
@@ -175,6 +186,7 @@ alter table public.assessment_block_recommendations enable row level security;
 alter table public.assessment_reviews enable row level security;
 alter table public.altfragen_access_requests enable row level security;
 alter table public.online_presence enable row level security;
+alter table public.app_settings enable row level security;
 
 drop policy if exists "profiles_select_own_or_admin" on public.profiles;
 create policy "profiles_select_own_or_admin"
@@ -376,6 +388,31 @@ create policy "online_presence_delete_public"
 on public.online_presence
 for delete
 using (true);
+
+drop policy if exists "app_settings_select_public" on public.app_settings;
+create policy "app_settings_select_public"
+on public.app_settings
+for select
+using (true);
+
+drop policy if exists "app_settings_insert_admin" on public.app_settings;
+create policy "app_settings_insert_admin"
+on public.app_settings
+for insert
+with check (public.is_admin());
+
+drop policy if exists "app_settings_update_admin" on public.app_settings;
+create policy "app_settings_update_admin"
+on public.app_settings
+for update
+using (public.is_admin())
+with check (public.is_admin());
+
+drop policy if exists "app_settings_delete_admin" on public.app_settings;
+create policy "app_settings_delete_admin"
+on public.app_settings
+for delete
+using (public.is_admin());
 
 -- After creating your own account, promote yourself once:
 -- update public.profiles set role = 'admin' where email = 'your-email@example.com';

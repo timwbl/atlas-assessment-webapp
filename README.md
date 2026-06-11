@@ -160,3 +160,14 @@ where email = 'deine-email@example.com';
 ```
 
 Normale User können ohne Login weiter lernen. Mit Login wird ihr lokaler Fortschritt mit Supabase synchronisiert. Im Admin-Modus erscheint zusätzlich ein Cloud-Progress-Dashboard für synchronisierte Accounts.
+
+## Globaler Umbau-Modus
+
+1. `supabase/maintenance-mode.sql` einmal im Supabase SQL Editor ausführen.
+2. Danach kann der Status im Adminbereich unter `System` umgeschaltet werden.
+3. Für einen Supabase-Admin-Account sind keine weiteren Secrets nötig.
+4. Soll auch der lokale Passwort-Admin den Status ändern können, in Netlify zusätzlich
+   `SUPABASE_SERVICE_ROLE_KEY` als geheime serverseitige Environment Variable setzen.
+
+Der Status wird in `public.app_settings` gespeichert und bleibt dadurch über Reloads
+und Deploys erhalten. `MAINTENANCE_MODE=true` bleibt als Notfall-Fallback verfügbar.

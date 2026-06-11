@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
-import { MaintenanceAccess } from "@/components/MaintenanceAccess";
+import { MaintenanceScreen } from "@/components/MaintenanceScreen";
 
 export const metadata: Metadata = {
   title: "ATLAS wird überarbeitet",
@@ -8,9 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function MaintenancePage() {
-  return (
-    <Suspense>
-      <MaintenanceAccess />
-    </Suspense>
-  );
+  return <MaintenanceScreen />;
 }
