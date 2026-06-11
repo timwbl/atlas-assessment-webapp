@@ -132,7 +132,19 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
       : {}),
     ...(stringArray(raw.qualityFlags) ? { qualityFlags: stringArray(raw.qualityFlags) } : {}),
     ...(stringArray(raw.reviewedQualityFlags) ? { reviewedQualityFlags: stringArray(raw.reviewedQualityFlags) } : {}),
-    ...(reviewStatuses.has(reviewStatus) ? { reviewStatus } : {})
+    ...(reviewStatuses.has(reviewStatus) ? { reviewStatus } : {}),
+    ...(stringValue(raw.blockId) ? { blockId: stringValue(raw.blockId) } : {}),
+    ...(stringValue(raw.lectureId) ? { lectureId: stringValue(raw.lectureId) } : {}),
+    ...(stringArray(raw.learningObjectiveIds) ? { learningObjectiveIds: stringArray(raw.learningObjectiveIds) } : {}),
+    ...(Number.isFinite(Number(raw.conceptualDepth))
+      ? { conceptualDepth: Math.max(1, Math.min(5, Number(raw.conceptualDepth))) }
+      : {}),
+    ...(Number.isFinite(Number(raw.discriminationScore))
+      ? { discriminationScore: Math.max(0, Math.min(1, Number(raw.discriminationScore))) }
+      : {}),
+    ...(typeof raw.isHighYield === "boolean" ? { isHighYield: raw.isHighYield } : {}),
+    ...(stringValue(raw.sourceAssessmentId) ? { sourceAssessmentId: stringValue(raw.sourceAssessmentId) } : {}),
+    ...(stringValue(raw.sourceQuestionId) ? { sourceQuestionId: stringValue(raw.sourceQuestionId) } : {})
   };
 }
 

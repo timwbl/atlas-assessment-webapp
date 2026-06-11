@@ -18,7 +18,7 @@ export function MobileNav() {
         <span className="mobile-nav-icon" aria-hidden="true">▶</span>
         <span>Train</span>
       </Link>
-      <Link className={pathname.startsWith("/assessments") || pathname.startsWith("/assessment/") || pathname.startsWith("/altfragen") ? "mobile-nav-item is-active" : "mobile-nav-item"} href="/assessments" prefetch={false}>
+      <Link className={pathname.startsWith("/assessments") || pathname.startsWith("/assessment/") || pathname.startsWith("/blocks/") || pathname.startsWith("/altfragen") ? "mobile-nav-item is-active" : "mobile-nav-item"} href="/assessments" prefetch={false}>
         <span className="mobile-nav-icon" aria-hidden="true">▤</span>
         <span>Assessments</span>
       </Link>

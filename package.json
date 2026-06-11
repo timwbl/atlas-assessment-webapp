@@ -1,6 +1,6 @@
 {
   "name": "atlas-assessment-webapp",
-  "version": "3.7.2",
+  "version": "3.8.0",
   "private": true,
   "engines": {
     "node": ">=20 <23"
@@ -12,7 +12,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "quality:report": "node scripts/question-quality-report.mjs",
-    "quality:test": "rm -rf .quality-test && tsc lib/questionQuality.ts lib/questionDesignRules.ts lib/studyProgram.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .quality-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/question-quality-test.cjs .quality-test && rm -rf .quality-test"
+    "quality:test": "rm -rf .quality-test && tsc lib/questionQuality.ts lib/questionDesignRules.ts lib/studyProgram.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .quality-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/question-quality-test.cjs .quality-test && rm -rf .quality-test",
+    "readiness:test": "rm -rf .readiness-test && tsc lib/blockReadiness.ts lib/questionQuality.ts lib/questionDesignRules.ts lib/studyProgram.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .readiness-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/block-readiness-test.cjs .readiness-test && rm -rf .readiness-test"
   },
   "dependencies": {
     "@types/pdfkit": "^0.17.6",

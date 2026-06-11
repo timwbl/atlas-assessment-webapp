@@ -94,7 +94,10 @@ export function mergeProgress(local: AssessmentProgress, remote: AssessmentProgr
       lastCorrect: localTime >= remoteTime ? localStat.lastCorrect : remoteStat.lastCorrect,
       markedForReview: localStat.markedForReview || remoteStat.markedForReview,
       priority: localStat.priority === "high" || remoteStat.priority === "high" ? "high" : "normal",
-      lastAnsweredAt: localTime >= remoteTime ? localStat.lastAnsweredAt : remoteStat.lastAnsweredAt
+      lastAnsweredAt: localTime >= remoteTime ? localStat.lastAnsweredAt : remoteStat.lastAnsweredAt,
+      avgTimeSeconds: localTime >= remoteTime ? localStat.avgTimeSeconds : remoteStat.avgTimeSeconds,
+      confidence: localTime >= remoteTime ? localStat.confidence : remoteStat.confidence,
+      mistakeType: localTime >= remoteTime ? localStat.mistakeType : remoteStat.mistakeType
     };
   });
 
@@ -214,6 +217,54 @@ export function recordAttempt(
   progress.lastAttemptAt = attempt.completedAt;
   saveProgress(progress);
   return progress;
+}
+
+export function recordCrossAssessmentQuestionStats(
+  rows: QuizResultRow[],
+  completedAt: string,
+  telemetry: Record<string, {
+    sourceAssessmentId: string;
+    sourceQuestionId: string;
+    timeSeconds: number;
+    confidence?: QuestionStat["confidence"];
+    mistakeType?: QuestionStat["mistakeType"];
+  }>
+): string[] {
+  const all = readAll();
+  const changed = new Set<string>();
+
+  rows.forEach((row) => {
+    const observation = telemetry[row.question.id];
+    if (!observation?.sourceAssessmentId || !observation.sourceQuestionId) return;
+    const assessmentProgress = all[observation.sourceAssessmentId]
+      || emptyProgress(observation.sourceAssessmentId);
+    const stat = assessmentProgress.questionStats[observation.sourceQuestionId]
+      || defaultQuestionStat();
+    const previousSeen = stat.seen;
+    stat.seen += 1;
+    stat.lastCorrect = row.correct;
+    stat.lastAnsweredAt = completedAt;
+    if (row.correct) stat.correct += 1;
+    else stat.wrong += 1;
+    if (Number.isFinite(observation.timeSeconds)) {
+      stat.avgTimeSeconds = previousSeen > 0 && typeof stat.avgTimeSeconds === "number"
+        ? Math.round((stat.avgTimeSeconds * previousSeen + observation.timeSeconds) / stat.seen)
+        : Math.round(observation.timeSeconds);
+    }
+    if (observation.confidence) stat.confidence = observation.confidence;
+    if (observation.mistakeType) stat.mistakeType = observation.mistakeType;
+    assessmentProgress.questionStats[observation.sourceQuestionId] = stat;
+    if (!row.correct) {
+      row.question.tags.forEach((tag) => {
+        assessmentProgress.errorTags[tag] = (assessmentProgress.errorTags[tag] || 0) + 1;
+      });
+    }
+    all[observation.sourceAssessmentId] = assessmentProgress;
+    changed.add(observation.sourceAssessmentId);
+  });
+
+  if (changed.size) writeAll(all);
+  return [...changed];
 }
 
 export function toggleQuestionReview(assessmentId: string, questionId: string): AssessmentProgress {

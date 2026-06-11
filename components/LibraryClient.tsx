@@ -3,6 +3,7 @@
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { AssessmentCard } from "./AssessmentCard";
+import { BlockReadinessCard } from "./BlockReadinessCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
@@ -20,6 +21,7 @@ import {
   saveAssessmentLibrarySelection
 } from "@/lib/librarySelection";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
+import { readinessProgressId } from "@/lib/blockReadiness";
 import {
   examsForSemester,
   isAltfragenValue,
@@ -176,6 +178,8 @@ export function LibraryClient() {
         && (!tag || assessment.tags.includes(tag));
     });
   }, [blockAssessments, code, deferredQuery, selectedBlock, tag]);
+  const selectedBlockKey = selectedBlock ? normalizedBlockId(selectedBlock.title) : null;
+  const blockQuestionCount = blockAssessments.reduce((sum, assessment) => sum + assessment.questionCount, 0);
 
   return (
     <main id="top" className="shell">
@@ -350,6 +354,14 @@ export function LibraryClient() {
               </div>
               <span className="pill">{filtered.length} Assessments</span>
             </div>
+
+            {selectedBlockKey && blockQuestionCount > 0 && (
+              <BlockReadinessCard
+                blockId={selectedBlockKey}
+                progress={progress[readinessProgressId(selectedBlockKey)]}
+                questionCount={blockQuestionCount}
+              />
+            )}
 
             {filtered.length === 0 ? (
               <div className="card mt-4 p-8 text-center">

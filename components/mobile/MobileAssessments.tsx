@@ -6,6 +6,7 @@ import { formatBlockLabel } from "@/lib/blockLabels";
 import { useMobileLearningData } from "./useMobileLearningData";
 import {
   examsForSemester,
+  normalizedBlockId,
   semesterConfig,
   semesterHeading,
   settingsForSemester,
@@ -25,6 +26,16 @@ export function MobileAssessments() {
       assessment.block
     ].join(" ").toLowerCase().includes(needle));
   }, [data.assessments, query]);
+  const grouped = useMemo(() => {
+    const groups = new Map<string, typeof filtered>();
+    filtered.forEach((assessment) => {
+      const blockId = normalizedBlockId(assessment.block) || "other";
+      const current = groups.get(blockId) || [];
+      current.push(assessment);
+      groups.set(blockId, current);
+    });
+    return [...groups.entries()].sort(([left], [right]) => left.localeCompare(right, "de", { numeric: true }));
+  }, [filtered]);
   const currentSemester = semesterConfig(settings.semester);
   const selectedExam = settings.examPreparation.mode === "singleExam"
     ? settings.examPreparation.selectedExams[0]
@@ -84,20 +95,33 @@ export function MobileAssessments() {
             Der Fragenkatalog ist gerade nicht erreichbar. Bereits geladene Assessments bleiben offline verfügbar.
           </div>
         )}
-        {filtered.map((assessment) => {
-          const progress = data.progress[assessment.id];
-          const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
-          return (
-            <Link className="mobile-assessment-row" href={`/assessment/${assessment.id}`} key={assessment.id} prefetch={false}>
+        {grouped.map(([blockId, assessments]) => (
+          <section className="mobile-assessment-group" key={blockId}>
+            <div className="mobile-assessment-group-head">
               <div>
-                <span>{formatBlockLabel(assessment.block)} · {assessment.lectureCode}</span>
-                <strong>{assessment.title}</strong>
-                <small>{assessment.questionCount} Fragen · {seen} gesehen</small>
+                <span>Block</span>
+                <strong>{formatBlockLabel(assessments[0]?.block || blockId)}</strong>
               </div>
-              <b aria-hidden="true">›</b>
-            </Link>
-          );
-        })}
+              {blockId !== "other" && (
+                <Link href={`/blocks/${blockId}/fast-quiz`} prefetch={false}>Fast Quiz</Link>
+              )}
+            </div>
+            {assessments.map((assessment) => {
+              const progress = data.progress[assessment.id];
+              const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
+              return (
+                <Link className="mobile-assessment-row" href={`/assessment/${assessment.id}`} key={assessment.id} prefetch={false}>
+                  <div>
+                    <span>{assessment.lectureCode}</span>
+                    <strong>{assessment.title}</strong>
+                    <small>{assessment.questionCount} Fragen · {seen} gesehen</small>
+                  </div>
+                  <b aria-hidden="true">›</b>
+                </Link>
+              );
+            })}
+          </section>
+        ))}
         {!data.loading && !data.error && filtered.length === 0 && (
           <div className="mobile-empty-state">
             {query ? "Keine Assessments passen zu deiner Suche." : "Noch keine Assessments verfügbar."}

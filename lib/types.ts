@@ -10,6 +10,14 @@ export type BloomLevel =
   | "transfer"
   | "clinical_reasoning";
 export type QuestionReviewStatus = "draft" | "needs_review" | "reviewed" | "verified";
+export type FastQuizMode = "pulse" | "weakness" | "readiness";
+export type QuestionConfidence = "sure" | "unsure";
+export type QuestionMistakeType =
+  | "knowledge_gap"
+  | "conceptual_error"
+  | "misread"
+  | "too_slow";
+export type BlockReadinessStatus = "ready" | "almost_ready" | "risk_zone" | "not_ready";
 
 export type StructuredQuestionExplanation = {
   coreIdea: string;
@@ -53,6 +61,14 @@ export type AssessmentQuestion = {
   qualityFlags?: string[];
   reviewedQualityFlags?: string[];
   reviewStatus?: QuestionReviewStatus;
+  blockId?: string;
+  lectureId?: string;
+  learningObjectiveIds?: string[];
+  conceptualDepth?: number;
+  discriminationScore?: number;
+  isHighYield?: boolean;
+  sourceAssessmentId?: string;
+  sourceQuestionId?: string;
 };
 
 export type Assessment = {
@@ -139,6 +155,9 @@ export type QuestionStat = {
   markedForReview: boolean;
   priority: "normal" | "high";
   lastAnsweredAt?: string;
+  avgTimeSeconds?: number;
+  confidence?: QuestionConfidence;
+  mistakeType?: QuestionMistakeType;
 };
 
 export type QuizAttempt = {
@@ -158,6 +177,39 @@ export type QuizAttempt = {
   wrongQuestionIds: string[];
   questionResults?: StoredQuestionResult[];
   analysis?: AssessmentAnalysis;
+  fastQuizMode?: FastQuizMode;
+  blockId?: string;
+  readinessResult?: BlockReadinessResult;
+  questionTelemetry?: Record<string, FastQuizQuestionTelemetry>;
+};
+
+export type FastQuizQuestionTelemetry = {
+  sourceAssessmentId: string;
+  sourceQuestionId: string;
+  learningObjectiveIds: string[];
+  timeSeconds: number;
+  confidence?: QuestionConfidence;
+  mistakeType?: QuestionMistakeType;
+};
+
+export type BlockReadinessResult = {
+  userId?: string;
+  blockId: string;
+  mode: FastQuizMode;
+  quizResultId: string;
+  readinessScore: number;
+  status: BlockReadinessStatus;
+  assessmentPerformance: number | null;
+  fastQuizPerformance: number;
+  learningObjectiveCoverage: number;
+  stabilityScore: number;
+  testedLearningObjectiveIds: string[];
+  weakLearningObjectiveIds: string[];
+  strongLearningObjectiveIds: string[];
+  learningObjectiveLabels: Record<string, string>;
+  recommendedNextMode: FastQuizMode;
+  recommendedAssessmentId?: string;
+  createdAt: string;
 };
 
 export type AssessmentProgress = {
@@ -185,6 +237,9 @@ export type ActiveQuizSession = {
   lastOpenedAt: string;
   mode: QuizMode;
   quickType?: QuickTrainingType;
+  fastQuizMode?: FastQuizMode;
+  questionTimings?: Record<string, number>;
+  confidenceByQuestion?: Record<string, QuestionConfidence>;
   device?: "mobile" | "desktop";
 };
 
