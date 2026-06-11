@@ -14,6 +14,7 @@ export function StudyPrompts() {
     semesterPromptOpen,
     suggestedSemester,
     settings,
+    authenticated,
     dismissOnboarding,
     keepCurrentSemester,
     selectSemester,
@@ -41,7 +42,7 @@ export function StudyPrompts() {
 
   return (
     <>
-      {(onboardingOpen || profileEditorOpen) && (
+      {((authenticated && onboardingOpen) || profileEditorOpen) && (
         <div className="study-modal-backdrop" role="presentation">
           <section className="study-modal" aria-label="Lernprofil einrichten" aria-modal="true" role="dialog">
             {profileEditorOpen && (
@@ -55,13 +56,13 @@ export function StudyPrompts() {
               </button>
             )}
             <StudyProfileSettings
-              description={onboardingOpen
+              description={authenticated && onboardingOpen
                 ? "Wähle deine aktuelle Lernphase. Du kannst dies später jederzeit im Benutzerfenster ändern."
                 : undefined}
               onDone={() => setProfileEditorOpen(false)}
-              title={onboardingOpen ? "ATLAS einrichten" : "Lernprofil"}
+              title={authenticated && onboardingOpen ? "ATLAS einrichten" : "Lernprofil"}
             />
-            {onboardingOpen && (
+            {authenticated && onboardingOpen && (
               <button className="auth-text-button" onClick={dismissOnboarding} type="button">
                 Später einrichten · vorerst alle Inhalte anzeigen
               </button>
@@ -70,7 +71,7 @@ export function StudyPrompts() {
         </div>
       )}
 
-      {semesterPromptOpen && suggestedSemester && !onboardingOpen && !profileEditorOpen && (
+      {authenticated && semesterPromptOpen && suggestedSemester && !onboardingOpen && !profileEditorOpen && (
         <div className="study-modal-backdrop" role="presentation">
           <section className="study-modal semester-change-modal" aria-label="Semester wechseln" aria-modal="true" role="dialog">
             <p className="eyebrow">Lernphase</p>

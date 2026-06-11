@@ -158,7 +158,15 @@
   background: var(--accent);
 }
 
+.study-toggle-row input:checked + .companion-switch {
+  background: var(--accent);
+}
+
 .companion-setting-row input:checked + .companion-switch::after {
+  transform: translateX(16px);
+}
+
+.study-toggle-row input:checked + .companion-switch::after {
   transform: translateX(16px);
 }
 
@@ -167,6 +175,10 @@
   outline-offset: 2px;
 }
 
+.study-toggle-row input:focus-visible + .companion-switch {
+  outline: 3px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  outline-offset: 2px;
+}
 .companion-debug {
   position: fixed;
   left: 14px;

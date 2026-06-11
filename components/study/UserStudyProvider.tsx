@@ -6,6 +6,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode
 } from "react";
@@ -22,7 +23,10 @@ import {
   updateCurrentUserStudySettings
 } from "@/lib/cloudProgress";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
-import { COMPANION_ENABLED_KEY } from "../companion/companionStorage";
+import {
+  COMPANION_ENABLED_KEY,
+  saveCompanionPreference
+} from "../companion/companionStorage";
 
 const SETTINGS_KEY = "atlas:user-study-settings:v1";
 const ONBOARDING_DISMISSED_KEY = "atlas:user-study-onboarding-dismissed:v1";
@@ -40,6 +44,7 @@ type StudyContextValue = {
   profileEditorOpen: boolean;
   semesterPromptOpen: boolean;
   suggestedSemester: StudySemester | null;
+  authenticated: boolean;
   updateSettings: (next: UserStudySettings) => void;
   selectSemester: (semester: StudySemester) => void;
   setProfileEditorOpen: (open: boolean) => void;
@@ -56,31 +61,60 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
   const [profileEditorOpen, setProfileEditorOpen] = useState(false);
   const [semesterPromptOpen, setSemesterPromptOpen] = useState(false);
   const [suggestedSemester, setSuggestedSemester] = useState<StudySemester | null>(null);
+  const [authenticated, setAuthenticated] = useState(false);
+  const [currentUserId, setCurrentUserId] = useState<string | null>(null);
+  const loadGeneration = useRef(0);
 
   const loadSettings = useCallback(async () => {
-    const local = readLocalSettings();
-    let next = local;
+    const generation = loadGeneration.current + 1;
+    loadGeneration.current = generation;
+    setOnboardingOpen(false);
+    setSemesterPromptOpen(false);
+    setSuggestedSemester(null);
+
+    const guestLocal = readLocalSettings();
+    let next = guestLocal;
+    let userId: string | null = null;
     try {
       const user = await getCurrentUser();
-      const remote = normalizeStudySettings(user?.user_metadata?.atlas_study_settings, local.ariEnabled);
-      const remoteConfigured = !!remote.studyYear || !!remote.semester;
-      if (user && remoteConfigured) {
-        next = remote;
-        saveLocalSettings(next);
-      } else if (user && (!!local.studyYear || !!local.semester)) {
-        void updateCurrentUserStudySettings(local).catch(() => undefined);
+      userId = user?.id || null;
+      if (user) {
+        const accountLocal = readLocalSettings(user.id);
+        const remote = normalizeStudySettings(
+          user.user_metadata?.atlas_study_settings,
+          accountLocal.ariEnabled
+        );
+        const hasRemoteSettings = isRecord(user.user_metadata?.atlas_study_settings);
+        const hasAccountLocalSettings = localSettingsExist(user.id);
+        if (hasRemoteSettings) {
+          next = remote;
+          saveLocalSettings(next, user.id);
+        } else if (hasAccountLocalSettings) {
+          next = accountLocal;
+          void updateCurrentUserStudySettings(accountLocal).catch(() => undefined);
+        } else {
+          next = defaultStudySettings(false);
+        }
       }
     } catch {
       // Local settings remain authoritative while offline.
     }
 
+    if (generation !== loadGeneration.current) return;
     setSettings(next);
+    setAuthenticated(!!userId);
+    setCurrentUserId(userId);
     setHydrated(true);
-    if (!next.studyYear && !readBoolean(ONBOARDING_DISMISSED_KEY)) {
+
+    // Guests can configure their profile manually, but never receive recurring
+    // automatic profile or semester prompts.
+    if (!userId) return;
+
+    if (!next.studyYear && !readBoolean(onboardingDismissedKey(userId))) {
       setOnboardingOpen(true);
       return;
     }
-    evaluateSemesterPrompt(next, setSuggestedSemester, setSemesterPromptOpen);
+    evaluateSemesterPrompt(next, userId, setSuggestedSemester, setSemesterPromptOpen);
   }, []);
 
   useEffect(() => {
@@ -92,41 +126,50 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
   const updateSettings = useCallback((nextValue: UserStudySettings) => {
     const next = normalizeStudySettings(nextValue, false);
     setSettings(next);
-    saveLocalSettings(next);
+    saveLocalSettings(next, currentUserId);
+    saveCompanionPreference(COMPANION_ENABLED_KEY, next.ariEnabled);
     if (next.studyYear) {
-      safeRemove(ONBOARDING_DISMISSED_KEY);
+      if (currentUserId) safeRemove(onboardingDismissedKey(currentUserId));
       setOnboardingOpen(false);
     }
     const period = semesterPeriod();
-    if (period && next.semester === period.semester) {
-      saveSemesterPrompt({ lastSemesterPromptShown: period.id, lastConfirmedSemester: next.semester });
+    if (currentUserId && period && next.semester === period.semester) {
+      saveSemesterPrompt(currentUserId, {
+        lastSemesterPromptShown: period.id,
+        lastConfirmedSemester: next.semester
+      });
       setSemesterPromptOpen(false);
     }
     void updateCurrentUserStudySettings(next).catch(() => undefined);
-  }, []);
+  }, [currentUserId]);
 
   const selectSemester = useCallback((semester: StudySemester) => {
     updateSettings(settingsForSemester(settings, semester));
     const period = semesterPeriod();
-    if (period) saveSemesterPrompt({ lastSemesterPromptShown: period.id, lastConfirmedSemester: semester });
+    if (currentUserId && period) {
+      saveSemesterPrompt(currentUserId, {
+        lastSemesterPromptShown: period.id,
+        lastConfirmedSemester: semester
+      });
+    }
     setSemesterPromptOpen(false);
-  }, [settings, updateSettings]);
+  }, [currentUserId, settings, updateSettings]);
 
   const dismissOnboarding = useCallback(() => {
-    safeSet(ONBOARDING_DISMISSED_KEY, "true");
+    if (currentUserId) safeSet(onboardingDismissedKey(currentUserId), "true");
     setOnboardingOpen(false);
-  }, []);
+  }, [currentUserId]);
 
   const keepCurrentSemester = useCallback(() => {
     const period = semesterPeriod();
-    if (period) {
-      saveSemesterPrompt({
+    if (currentUserId && period) {
+      saveSemesterPrompt(currentUserId, {
         lastSemesterPromptShown: period.id,
         lastConfirmedSemester: settings.semester || undefined
       });
     }
     setSemesterPromptOpen(false);
-  }, [settings.semester]);
+  }, [currentUserId, settings.semester]);
 
   const value = useMemo<StudyContextValue>(() => ({
     settings,
@@ -135,6 +178,7 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
     profileEditorOpen,
     semesterPromptOpen,
     suggestedSemester,
+    authenticated,
     updateSettings,
     selectSemester,
     setProfileEditorOpen,
@@ -142,6 +186,7 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
     keepCurrentSemester
   }), [
     dismissOnboarding,
+    authenticated,
     hydrated,
     keepCurrentSemester,
     onboardingOpen,
@@ -162,49 +207,73 @@ export function useUserStudyContext(): StudyContextValue {
   return context;
 }
 
-function readLocalSettings(): UserStudySettings {
+function readLocalSettings(userId: string | null = null): UserStudySettings {
   if (typeof window === "undefined") return defaultStudySettings(false);
   try {
     const explicitAri = window.localStorage.getItem(COMPANION_ENABLED_KEY);
     const ariFallback = explicitAri === "true";
-    return normalizeStudySettings(JSON.parse(window.localStorage.getItem(SETTINGS_KEY) || "null"), ariFallback);
+    return normalizeStudySettings(
+      JSON.parse(window.localStorage.getItem(settingsKey(userId)) || "null"),
+      ariFallback
+    );
   } catch {
     return defaultStudySettings(false);
   }
 }
 
-function saveLocalSettings(settings: UserStudySettings): void {
+function saveLocalSettings(settings: UserStudySettings, userId: string | null = null): void {
   try {
-    window.localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    window.localStorage.setItem(settingsKey(userId), JSON.stringify(settings));
   } catch {
     // Settings remain available in memory.
   }
 }
 
+function settingsKey(userId: string | null): string {
+  return userId ? `${SETTINGS_KEY}:${userId}` : SETTINGS_KEY;
+}
+
+function localSettingsExist(userId: string): boolean {
+  try {
+    return window.localStorage.getItem(settingsKey(userId)) !== null;
+  } catch {
+    return false;
+  }
+}
+
 function evaluateSemesterPrompt(
   settings: UserStudySettings,
+  userId: string,
   setSuggested: (semester: StudySemester | null) => void,
   setOpen: (open: boolean) => void
 ): void {
   if (settings.studyYear !== "year1" || !settings.semester) return;
   const period = semesterPeriod();
   if (!period || period.semester === settings.semester) return;
-  const prompt = readSemesterPrompt();
+  const prompt = readSemesterPrompt(userId);
   if (prompt.lastSemesterPromptShown === period.id) return;
   setSuggested(period.semester);
   setOpen(true);
 }
 
-function readSemesterPrompt(): SemesterPromptState {
+function readSemesterPrompt(userId: string): SemesterPromptState {
   try {
-    return JSON.parse(window.localStorage.getItem(SEMESTER_PROMPT_KEY) || "{}") as SemesterPromptState;
+    return JSON.parse(window.localStorage.getItem(semesterPromptKey(userId)) || "{}") as SemesterPromptState;
   } catch {
     return {};
   }
 }
 
-function saveSemesterPrompt(value: SemesterPromptState): void {
-  safeSet(SEMESTER_PROMPT_KEY, JSON.stringify(value));
+function saveSemesterPrompt(userId: string, value: SemesterPromptState): void {
+  safeSet(semesterPromptKey(userId), JSON.stringify(value));
+}
+
+function onboardingDismissedKey(userId: string): string {
+  return `${ONBOARDING_DISMISSED_KEY}:${userId}`;
+}
+
+function semesterPromptKey(userId: string): string {
+  return `${SEMESTER_PROMPT_KEY}:${userId}`;
 }
 
 function readBoolean(key: string): boolean {
@@ -230,4 +299,8 @@ function safeRemove(key: string): void {
   } catch {
     // Profile settings remain usable in memory when storage is unavailable.
   }
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return !!value && typeof value === "object" && !Array.isArray(value);
 }
