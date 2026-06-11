@@ -38,15 +38,17 @@ export async function PATCH(request: NextRequest) {
   }
 
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || "";
-  const writeToken = accountAdmin ? bearer : serviceRoleKey;
-  if (!writeToken) {
+  if (!accountAdmin && !serviceRoleKey) {
     return NextResponse.json({
       error: "Für den lokalen Passwort-Admin muss SUPABASE_SERVICE_ROLE_KEY serverseitig gesetzt sein. Alternativ mit dem Supabase-Admin-Account anmelden."
     }, { status: 503 });
   }
 
   try {
-    const status = await setMaintenanceStatus(body.enabled, writeToken);
+    const status = await setMaintenanceStatus(body.enabled, accountAdmin
+      ? { userAccessToken: bearer }
+      : { secretApiKey: serviceRoleKey }
+    );
     return NextResponse.json(status, {
       headers: { "Cache-Control": "no-store" }
     });

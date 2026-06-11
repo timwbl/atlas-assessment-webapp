@@ -43,19 +43,30 @@ export async function getMaintenanceStatus(): Promise<MaintenanceStatus> {
 
 export async function setMaintenanceStatus(
   enabled: boolean,
-  accessToken: string
+  credentials: {
+    userAccessToken?: string;
+    secretApiKey?: string;
+  }
 ): Promise<MaintenanceStatus> {
   const config = publicSupabaseConfig();
   if (!config) throw new Error("Supabase ist für globale Einstellungen nicht konfiguriert.");
-  if (!accessToken) throw new Error("Für diese Änderung fehlt eine gültige Admin-Autorisierung.");
+  const userAccessToken = credentials.userAccessToken?.trim() || "";
+  const secretApiKey = credentials.secretApiKey?.trim() || "";
+  if (!userAccessToken && !secretApiKey) {
+    throw new Error("Für diese Änderung fehlt eine gültige Admin-Autorisierung.");
+  }
 
   const updatedAt = new Date().toISOString();
   const response = await fetch(`${config.url}/rest/v1/app_settings?on_conflict=key`, {
     method: "POST",
     cache: "no-store",
     headers: {
-      apikey: config.anonKey,
-      Authorization: `Bearer ${accessToken}`,
+      apikey: secretApiKey || config.anonKey,
+      ...(userAccessToken
+        ? { Authorization: `Bearer ${userAccessToken}` }
+        : isJwt(secretApiKey)
+          ? { Authorization: `Bearer ${secretApiKey}` }
+          : {}),
       "Content-Type": "application/json",
       Prefer: "resolution=merge-duplicates,return=representation"
     },
@@ -68,10 +79,14 @@ export async function setMaintenanceStatus(
 
   if (!response.ok) {
     const detail = await response.text().catch(() => "");
-    if (response.status === 404 || detail.includes("app_settings")) {
+    const message = supabaseErrorMessage(detail);
+    if (response.status === 404 || message.includes("app_settings")) {
       throw new Error("Die Supabase-Tabelle app_settings fehlt. Führe zuerst das aktuelle ATLAS-Schema aus.");
     }
-    throw new Error(detail || `Umbau-Modus konnte nicht gespeichert werden (HTTP ${response.status}).`);
+    if (message.includes("Expected 3 parts in JWT")) {
+      throw new Error("Der Supabase Secret Key wurde fälschlich als JWT behandelt. Bitte deploye die aktuelle ATLAS-Version erneut.");
+    }
+    throw new Error(message || `Umbau-Modus konnte nicht gespeichert werden (HTTP ${response.status}).`);
   }
 
   return { enabled, source: "database", updatedAt };
@@ -146,4 +161,20 @@ function publicSupabaseConfig(): { url: string; anonKey: string } | null {
       anonKey
     };
   }
+}
+
+function supabaseErrorMessage(value: string): string {
+  if (!value) return "";
+  try {
+    const parsed = JSON.parse(value) as { message?: unknown; details?: unknown };
+    if (typeof parsed.message === "string") return parsed.message;
+    if (typeof parsed.details === "string") return parsed.details;
+  } catch {
+    // Plain-text Supabase responses are returned unchanged.
+  }
+  return value;
+}
+
+function isJwt(value: string): boolean {
+  return value.split(".").length === 3;
 }
