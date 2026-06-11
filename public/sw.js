@@ -1,4 +1,4 @@
-const CACHE_NAME = "atlas-mobile-v3-9-1";
+const CACHE_NAME = "atlas-mobile-v3-9-3";
 const APP_SHELL = [
   "/manifest.webmanifest",
   "/atlas-logo.svg"

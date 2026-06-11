@@ -51,7 +51,7 @@ export async function setMaintenanceStatus(
   const config = publicSupabaseConfig();
   if (!config) throw new Error("Supabase ist für globale Einstellungen nicht konfiguriert.");
   const userAccessToken = credentials.userAccessToken?.trim() || "";
-  const secretApiKey = credentials.secretApiKey?.trim() || "";
+  const secretApiKey = normalizeSupabaseServerKey(credentials.secretApiKey);
   if (!userAccessToken && !secretApiKey) {
     throw new Error("Für diese Änderung fehlt eine gültige Admin-Autorisierung.");
   }
@@ -85,6 +85,13 @@ export async function setMaintenanceStatus(
     }
     if (message.includes("Expected 3 parts in JWT")) {
       throw new Error("Der Supabase Secret Key wurde fälschlich als JWT behandelt. Bitte deploye die aktuelle ATLAS-Version erneut.");
+    }
+    if (/invalid api key/i.test(message)) {
+      throw new Error(
+        "Der serverseitige Supabase Secret Key ist ungültig oder gehört nicht zur konfigurierten Project URL. "
+        + "Kopiere im selben Supabase-Projekt unter Settings → API Keys einen Secret Key (sb_secret_…) "
+        + "und speichere ihn in Netlify als SUPABASE_SECRET_KEY."
+      );
     }
     throw new Error(message || `Umbau-Modus konnte nicht gespeichert werden (HTTP ${response.status}).`);
   }
@@ -177,4 +184,26 @@ function supabaseErrorMessage(value: string): string {
 
 function isJwt(value: string): boolean {
   return value.split(".").length === 3;
+}
+
+export function normalizeSupabaseServerKey(value: string | undefined): string {
+  let normalized = String(value || "").trim();
+  const assignment = normalized.match(/^(?:SUPABASE_SECRET_KEY|SUPABASE_SERVICE_ROLE_KEY)\s*=\s*(.+)$/i);
+  if (assignment?.[1]) normalized = assignment[1].trim();
+  if (
+    (normalized.startsWith("\"") && normalized.endsWith("\""))
+    || (normalized.startsWith("'") && normalized.endsWith("'"))
+  ) {
+    normalized = normalized.slice(1, -1).trim();
+  }
+  return normalized;
+}
+
+export function validateSupabaseServerKey(value: string): string | null {
+  if (!value) return "Kein serverseitiger Supabase Secret Key ist konfiguriert.";
+  if (value.startsWith("sb_publishable_")) {
+    return "SUPABASE_SECRET_KEY enthält einen Publishable Key. Benötigt wird ein Secret Key mit sb_secret_.";
+  }
+  if (value.startsWith("sb_secret_") || isJwt(value)) return null;
+  return "Der Supabase-Schlüssel hat kein unterstütztes Format. Verwende sb_secret_… oder den Legacy service_role JWT.";
 }

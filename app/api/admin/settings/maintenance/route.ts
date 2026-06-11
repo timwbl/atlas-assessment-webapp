@@ -6,6 +6,8 @@ import {
 } from "@/lib/adminSession";
 import {
   getMaintenanceStatus,
+  normalizeSupabaseServerKey,
+  validateSupabaseServerKey,
   setMaintenanceStatus
 } from "@/lib/maintenance";
 
@@ -37,11 +39,18 @@ export async function PATCH(request: NextRequest) {
     return NextResponse.json({ error: "Ungültiger Status." }, { status: 400 });
   }
 
-  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim() || "";
+  const serviceRoleKey = normalizeSupabaseServerKey(
+    process.env.SUPABASE_SECRET_KEY
+    || process.env.SUPABASE_SERVICE_ROLE_KEY
+  );
   if (!accountAdmin && !serviceRoleKey) {
     return NextResponse.json({
-      error: "Für den lokalen Passwort-Admin muss SUPABASE_SERVICE_ROLE_KEY serverseitig gesetzt sein. Alternativ mit dem Supabase-Admin-Account anmelden."
+      error: "Für den lokalen Passwort-Admin muss SUPABASE_SECRET_KEY serverseitig gesetzt sein. Alternativ mit dem Supabase-Admin-Account anmelden."
     }, { status: 503 });
+  }
+  const keyError = accountAdmin ? null : validateSupabaseServerKey(serviceRoleKey);
+  if (keyError) {
+    return NextResponse.json({ error: keyError }, { status: 503 });
   }
 
   try {
