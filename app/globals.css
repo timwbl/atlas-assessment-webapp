@@ -1566,6 +1566,42 @@ button:disabled {
   padding: 16px;
 }
 
+.altfragen-block-checks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 9px;
+}
+
+.altfragen-block-checks label {
+  display: flex;
+  min-height: 46px;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 10px 12px;
+  font-weight: 750;
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.altfragen-block-checks label:hover,
+.altfragen-block-checks label.is-selected {
+  border-color: color-mix(in srgb, var(--accent) 60%, var(--line));
+  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
+}
+
+.altfragen-block-checks label:active {
+  transform: scale(0.985);
+}
+
+.altfragen-block-checks input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
 .semester-picker-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);

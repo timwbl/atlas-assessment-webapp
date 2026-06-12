@@ -34,7 +34,9 @@ export type SummaryDownload = {
   updatedAt: string;
 };
 
-export type AltfragenDocument = SummaryDownload;
+export type AltfragenDocument = SummaryDownload & {
+  blockIds?: string[];
+};
 
 type SummaryDownloadRow = {
   id: string;
@@ -63,6 +65,7 @@ export const MAX_SUMMARY_FILE_SIZE = 300 * 1024 * 1024;
 const STORAGE_BUCKET = "summary-downloads";
 const STORAGE_KEY = "atlas-summary-downloads-v1";
 const ALTFRAGEN_DOCUMENT_PREFIX = "altfragen-";
+const ALTFRAGEN_BLOCK_SEPARATOR = "::";
 const STORAGE_CHUNK_SIZE = 4 * 1024 * 1024;
 const CHUNK_MANIFEST_PREFIX = "atlas-chunks-v1:";
 const ALLOWED_EXTENSIONS = new Set(["pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx", "txt", "md", "zip"]);
@@ -165,7 +168,47 @@ export function getAltfragenDocumentBlock(blockId: string): SummaryBlock | null 
 }
 
 export function isAltfragenDocument(download: Pick<SummaryDownload, "blockId">): boolean {
-  return download.blockId.startsWith(ALTFRAGEN_DOCUMENT_PREFIX);
+  return altfragenDocumentBlockIds(download).length > 0;
+}
+
+export function altfragenDocumentBlockIds(
+  download: Pick<SummaryDownload, "blockId"> & { blockIds?: string[] }
+): string[] {
+  const source = download.blockIds?.length
+    ? download.blockIds
+    : String(download.blockId || "").split(ALTFRAGEN_BLOCK_SEPARATOR);
+  return [...new Set(source.filter((id) => id.startsWith(ALTFRAGEN_DOCUMENT_PREFIX)))];
+}
+
+export function altfragenDocumentBlocks(
+  download: Pick<SummaryDownload, "blockId"> & { blockIds?: string[] }
+): SummaryBlock[] {
+  return altfragenDocumentBlockIds(download)
+    .map(getAltfragenDocumentBlock)
+    .filter((block): block is SummaryBlock => !!block)
+    .sort((a, b) => a.order - b.order);
+}
+
+export function createAltfragenBlockAssignment(blockIds: string[]): {
+  blockId: string;
+  blockTitle: string;
+  blockIds: string[];
+} {
+  const blocks = [...new Set(blockIds)]
+    .map(getAltfragenDocumentBlock)
+    .filter((block): block is SummaryBlock => !!block)
+    .sort((a, b) => a.order - b.order);
+  if (!blocks.length) throw new Error("Bitte wähle mindestens einen Block aus.");
+  const semester = blocks[0].semester;
+  if (blocks.some((block) => block.semester !== semester)) {
+    throw new Error("Alle gewählten Blöcke müssen zum gleichen Semester gehören.");
+  }
+  const normalizedIds = blocks.map((block) => block.id);
+  return {
+    blockId: normalizedIds.join(ALTFRAGEN_BLOCK_SEPARATOR),
+    blockTitle: blocks.map((block) => block.title).join(" · "),
+    blockIds: normalizedIds
+  };
 }
 
 export function formatFileSize(bytes: number): string {
@@ -401,13 +444,17 @@ function notifyDownloadsChanged(): void {
 }
 
 function normalizeDownload(download: SummaryDownload): SummaryDownload {
-  const block = getSummaryBlock(download.blockId) || getAltfragenDocumentBlock(download.blockId);
+  const documentBlocks = altfragenDocumentBlocks(download);
+  const block = getSummaryBlock(download.blockId) || documentBlocks[0];
   const now = new Date().toISOString();
   return {
     ...download,
+    ...(documentBlocks.length ? { blockIds: documentBlocks.map((item) => item.id) } : {}),
     title: download.title.trim(),
     semester: download.semester,
-    blockTitle: block?.title || download.blockTitle || "Block",
+    blockTitle: documentBlocks.length
+      ? documentBlocks.map((item) => item.title).join(" · ")
+      : block?.title || download.blockTitle || "Block",
     description: download.description || "",
     version: download.version || "",
     fileType: download.fileType || "application/octet-stream",
@@ -442,12 +489,15 @@ function fromRow(row: SummaryDownloadRow): SummaryDownload {
 }
 
 function toRow(download: SummaryDownload): SummaryDownloadRow {
+  const blockAssignment = isAltfragenDocument(download)
+    ? createAltfragenBlockAssignment(altfragenDocumentBlockIds(download))
+    : null;
   return {
     id: download.id,
     title: download.title,
     semester: download.semester,
-    block_id: download.blockId,
-    block_title: download.blockTitle,
+    block_id: blockAssignment?.blockId || download.blockId,
+    block_title: blockAssignment?.blockTitle || download.blockTitle,
     description: download.description || null,
     version: download.version || null,
     file_name: download.fileName,
@@ -546,7 +596,9 @@ function sortSummaryDownloads(items: SummaryDownload[]): SummaryDownload[] {
     const semesterDiff = (semesterOrder.get(a.semester) ?? 99) - (semesterOrder.get(b.semester) ?? 99);
     if (semesterDiff) return semesterDiff;
 
-    const blockDiff = (blockOrder.get(a.blockId) ?? 99) - (blockOrder.get(b.blockId) ?? 99);
+    const aBlockId = altfragenDocumentBlockIds(a)[0] || a.blockId;
+    const bBlockId = altfragenDocumentBlockIds(b)[0] || b.blockId;
+    const blockDiff = (blockOrder.get(aBlockId) ?? 99) - (blockOrder.get(bBlockId) ?? 99);
     if (blockDiff) return blockDiff;
 
     return b.uploadDate.localeCompare(a.uploadDate);

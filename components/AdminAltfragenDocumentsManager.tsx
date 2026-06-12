@@ -2,15 +2,16 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  altfragenDocumentBlockIds,
   altfragenDocumentBlocksForSemester,
   canUseSummaryStorage,
   COPYRIGHT_OWNER,
+  createAltfragenBlockAssignment,
   deleteSummaryDownload,
   DOWNLOAD_SEMESTERS,
   fileToDataUrl,
   formatFileSize,
   formatUploadDate,
-  getAltfragenDocumentBlock,
   loadAltfragenDocuments,
   loadSummaryDownloadFile,
   MAX_SUMMARY_FILE_SIZE,
@@ -28,7 +29,7 @@ import {
 type Draft = {
   title: string;
   semester: SemesterId;
-  blockId: string;
+  blockIds: string[];
   description: string;
   version: string;
   file: File | null;
@@ -39,7 +40,7 @@ function emptyDraft(): Draft {
   return {
     title: "",
     semester,
-    blockId: altfragenDocumentBlocksForSemester(semester)[0]?.id || "",
+    blockIds: [],
     description: "",
     version: "",
     file: null
@@ -104,7 +105,7 @@ export function AdminAltfragenDocumentsManager() {
     setDraft({
       title: item.title,
       semester: item.semester,
-      blockId: item.blockId,
+      blockIds: altfragenDocumentBlockIds(item),
       description: item.description,
       version: item.version,
       file: null
@@ -122,8 +123,7 @@ export function AdminAltfragenDocumentsManager() {
     try {
       const title = draft.title.trim();
       if (!title) throw new Error("Bitte gib einen Titel ein.");
-      const block = getAltfragenDocumentBlock(draft.blockId);
-      if (!block) throw new Error("Bitte wähle einen Block aus.");
+      const blockAssignment = createAltfragenBlockAssignment(draft.blockIds);
       if (!editing && !draft.file) throw new Error("Bitte wähle eine Datei aus.");
 
       const id = editing?.id || crypto.randomUUID();
@@ -166,8 +166,9 @@ export function AdminAltfragenDocumentsManager() {
         id,
         title,
         semester: draft.semester,
-        blockId: block.id,
-        blockTitle: block.title,
+        blockId: blockAssignment.blockId,
+        blockTitle: blockAssignment.blockTitle,
+        blockIds: blockAssignment.blockIds,
         description: draft.description.trim(),
         version: draft.version.trim(),
         fileName,
@@ -225,8 +226,8 @@ export function AdminAltfragenDocumentsManager() {
               <span className="eyebrow">Titel</span>
               <input className="input mt-2" value={draft.title} onChange={(event) => setDraft({ ...draft, title: event.target.value })} />
             </label>
-            <div className="grid gap-3 md:grid-cols-2">
-              <label>
+            <div className="grid gap-3">
+              <label className="max-w-sm">
                 <span className="eyebrow">Semester</span>
                 <select
                   className="input mt-2"
@@ -236,19 +237,39 @@ export function AdminAltfragenDocumentsManager() {
                     setDraft({
                       ...draft,
                       semester,
-                      blockId: altfragenDocumentBlocksForSemester(semester)[0]?.id || ""
+                      blockIds: []
                     });
                   }}
                 >
                   {DOWNLOAD_SEMESTERS.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}
                 </select>
               </label>
-              <label>
-                <span className="eyebrow">Block</span>
-                <select className="input mt-2" value={draft.blockId} onChange={(event) => setDraft({ ...draft, blockId: event.target.value })}>
-                  {blockOptions.map((block) => <option key={block.id} value={block.id}>{block.title}</option>)}
-                </select>
-              </label>
+              <fieldset>
+                <legend className="eyebrow">Blöcke</legend>
+                <p className="mt-2 text-sm text-[var(--muted)]">
+                  Wähle alle Blöcke aus, zu denen dieses Dokument gehört.
+                </p>
+                <div className="altfragen-block-checks mt-3">
+                  {blockOptions.map((block) => {
+                    const checked = draft.blockIds.includes(block.id);
+                    return (
+                      <label className={checked ? "is-selected" : ""} key={block.id}>
+                        <input
+                          checked={checked}
+                          onChange={() => setDraft({
+                            ...draft,
+                            blockIds: checked
+                              ? draft.blockIds.filter((id) => id !== block.id)
+                              : [...draft.blockIds, block.id]
+                          })}
+                          type="checkbox"
+                        />
+                        <span>{block.title}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </fieldset>
             </div>
             <label>
               <span className="eyebrow">Beschreibung optional</span>

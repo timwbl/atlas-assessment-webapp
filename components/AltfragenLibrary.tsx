@@ -14,6 +14,7 @@ import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import {
+  altfragenDocumentBlocks,
   DOWNLOAD_SEMESTERS,
   formatFileSize,
   formatUploadDate,
@@ -130,7 +131,7 @@ export function AltfragenLibrary() {
   const blockOptions = useMemo(
     () => [...new Set([
       ...assessments.map(blockIdForContent),
-      ...documents.map((item) => blockIdForContent(item.blockTitle))
+      ...documents.flatMap((item) => altfragenDocumentBlocks(item).map((block) => blockIdForContent(block.title)))
     ].filter((value): value is string => !!value))]
       .sort((a, b) => Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, ""))),
     [assessments, documents]
@@ -157,11 +158,16 @@ export function AltfragenLibrary() {
   const filteredDocuments = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return documents.filter((document) => {
-      const documentBlock = blockIdForContent(document.blockTitle);
-      const exam = examForBlock(document.blockTitle);
+      const documentBlocks = altfragenDocumentBlocks(document);
+      const documentBlockIds = documentBlocks
+        .map((block) => blockIdForContent(block.title))
+        .filter((value): value is string => !!value);
+      const exams = documentBlocks
+        .map((block) => examForBlock(block.title))
+        .filter((value): value is ExamId => !!value);
       const scopeMatches = scope === "all"
-        || (scope === "current" && (currentExams.length === 0 || (!!exam && currentExams.includes(exam))))
-        || scope === exam;
+        || (scope === "current" && (currentExams.length === 0 || exams.some((exam) => currentExams.includes(exam))))
+        || (scope !== "current" && exams.includes(scope));
       const queryMatches = !needle || [
         document.title,
         document.description,
@@ -171,7 +177,7 @@ export function AltfragenLibrary() {
       ].join(" ").toLowerCase().includes(needle);
       return scopeMatches
         && queryMatches
-        && (!blockId || documentBlock === blockId);
+        && (!blockId || documentBlockIds.includes(blockId));
     });
   }, [blockId, currentExams, documents, query, scope]);
 
@@ -318,12 +324,14 @@ export function AltfragenLibrary() {
                           <article
                             className="altfragen-document-card"
                             key={document.id}
-                            style={{ "--download-accent": blockColor(document.blockTitle) } as CSSProperties}
+                            style={{ "--download-accent": blockColor(altfragenDocumentBlocks(document)[0]?.title || document.blockTitle) } as CSSProperties}
                           >
                             <div className="min-w-0">
                               <div className="flex flex-wrap items-center gap-2">
                                 <span className="download-accent-dot" />
-                                <span className="eyebrow">{document.blockTitle}</span>
+                                {altfragenDocumentBlocks(document).map((block) => (
+                                  <span className="pill" key={block.id}>{block.title}</span>
+                                ))}
                                 {document.version && <span className="pill">{document.version}</span>}
                               </div>
                               <h4 className="mt-2 text-lg font-black leading-tight">{document.title}</h4>
