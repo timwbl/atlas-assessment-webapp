@@ -86,6 +86,7 @@ function summarizeAssessment(assessment: Assessment): AssessmentSummary {
     lectureCode: assessment.lectureCode,
     title: assessment.title,
     block: assessment.block,
+    subject: assessment.subject,
     sourceSummary: assessment.sourceSummary,
     questionCount: assessment.questions.length,
     questionIds: assessment.questions.map((question) => question.id),

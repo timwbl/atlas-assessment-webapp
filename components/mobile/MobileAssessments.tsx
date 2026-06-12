@@ -13,6 +13,11 @@ import {
   type ExamId
 } from "@/lib/studyProgram";
 import { useUserStudyContext } from "@/components/study/UserStudyProvider";
+import {
+  ASSESSMENT_SUBJECTS,
+  compareAssessmentsByNumber,
+  getAssessmentSubject
+} from "@/lib/assessmentCatalog";
 
 export function MobileAssessments() {
   const data = useMobileLearningData();
@@ -34,6 +39,11 @@ export function MobileAssessments() {
       current.push(assessment);
       groups.set(blockId, current);
     });
+    groups.forEach((assessments) => assessments.sort((left, right) => {
+      const subjectDifference = ASSESSMENT_SUBJECTS.indexOf(getAssessmentSubject(left))
+        - ASSESSMENT_SUBJECTS.indexOf(getAssessmentSubject(right));
+      return subjectDifference || compareAssessmentsByNumber(left, right);
+    }));
     return [...groups.entries()].sort(([left], [right]) => left.localeCompare(right, "de", { numeric: true }));
   }, [filtered]);
   const currentSemester = semesterConfig(settings.semester);
@@ -112,7 +122,7 @@ export function MobileAssessments() {
               return (
                 <Link className="mobile-assessment-row" href={`/assessment/${assessment.id}`} key={assessment.id} prefetch={false}>
                   <div>
-                    <span>{assessment.lectureCode}</span>
+                    <span>{getAssessmentSubject(assessment)} · {assessment.lectureCode}</span>
                     <strong>{assessment.title}</strong>
                     <small>{assessment.questionCount} Fragen · {seen} gesehen</small>
                   </div>

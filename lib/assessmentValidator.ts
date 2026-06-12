@@ -9,6 +9,7 @@ import type {
   ValidationResult
 } from "./types";
 import { validateKPrimQuestion } from "./questionQuality";
+import { normalizeAssessmentSubject } from "./assessmentCatalog";
 
 const reliabilityValues = new Set(["high", "medium", "low", "insufficient_source"]);
 const questionTypes = new Set(["A", "KPRIM"]);
@@ -165,6 +166,18 @@ export function validateAssessment(raw: unknown): ValidationResult<Assessment> {
     lectureCode: stringValue(raw.lectureCode),
     title: stringValue(raw.title),
     block: stringValue(raw.block),
+    subject: normalizeAssessmentSubject(
+      raw.subject || raw.fach,
+      {
+        lectureCode: stringValue(raw.lectureCode),
+        title: stringValue(raw.title),
+        block: stringValue(raw.block),
+        sourceSummary: stringValue(raw.sourceSummary),
+        course: raw.course,
+        lecture: raw.lecture,
+        assessmentTitle: raw.assessment_title
+      }
+    ),
     sourceSummary: stringValue(raw.sourceSummary),
     learningObjectives: Array.isArray(raw.learningObjectives)
       ? raw.learningObjectives.map((objective, index) => {

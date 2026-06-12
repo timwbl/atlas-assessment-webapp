@@ -18,6 +18,17 @@ export type QuestionMistakeType =
   | "misread"
   | "too_slow";
 export type BlockReadinessStatus = "ready" | "almost_ready" | "risk_zone" | "not_ready";
+export type AssessmentSubject =
+  | "Anatomie"
+  | "Histologie"
+  | "Physiologie"
+  | "Biochemie"
+  | "Chemie"
+  | "Physik"
+  | "Public Health / Epidemiologie"
+  | "Psychosoziale Medizin"
+  | "Medical Humanities"
+  | "Sonstiges";
 
 export type StructuredQuestionExplanation = {
   coreIdea: string;
@@ -76,6 +87,7 @@ export type Assessment = {
   lectureCode: string;
   title: string;
   block: string;
+  subject?: AssessmentSubject;
   sourceSummary: string;
   learningObjectives: LearningObjective[];
   questions: AssessmentQuestion[];
@@ -87,6 +99,7 @@ export type AssessmentSummary = {
   lectureCode: string;
   title: string;
   block: string;
+  subject?: AssessmentSubject;
   sourceSummary: string;
   questionCount: number;
   questionIds: string[];

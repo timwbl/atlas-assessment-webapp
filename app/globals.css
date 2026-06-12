@@ -1077,6 +1077,50 @@ button:disabled {
   justify-content: flex-end;
 }
 
+.assessment-subject-groups {
+  display: grid;
+  gap: 30px;
+}
+
+.assessment-subject-group {
+  display: grid;
+  gap: 13px;
+  min-width: 0;
+}
+
+.assessment-subject-heading {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 12px;
+}
+
+.assessment-subject-heading::after {
+  height: 1px;
+  min-width: 24px;
+  flex: 1;
+  background: var(--line);
+  content: "";
+}
+
+.assessment-subject-heading h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.assessment-subject-heading span {
+  order: 2;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 760;
+  white-space: nowrap;
+}
+
+.assessment-subject-heading::after {
+  order: 1;
+}
+
 .assessment-pdf-export {
   position: relative;
 }

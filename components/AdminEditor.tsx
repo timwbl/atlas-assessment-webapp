@@ -8,6 +8,7 @@ import { loadActiveAssessments } from "@/lib/assessmentClient";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { validateAssessment } from "@/lib/assessmentValidator";
 import { analyzeQuestionQuality } from "@/lib/questionQuality";
+import { ASSESSMENT_SUBJECTS, compareAssessmentsByNumber, getAssessmentSubject } from "@/lib/assessmentCatalog";
 import {
   applyStoredQuestionQualityReviews,
   consumeAdminQuestionTarget
@@ -32,7 +33,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
       .then((items) => {
         const matching = items.filter((item) => (
           contentType === "altfragen" ? isAltfragenAssessment(item) : !isAltfragenAssessment(item)
-        )).map(applyStoredQuestionQualityReviews);
+        )).map(applyStoredQuestionQualityReviews).sort(compareAssessmentsByNumber);
         const target = consumeAdminQuestionTarget();
         const initialAssessment = matching.find((item) => item.id === target?.assessmentId) || matching[0];
         setAssessments(matching);
@@ -64,7 +65,8 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
     return assessments.filter((assessment) => [
       assessment.lectureCode,
       assessment.title,
-      assessment.block
+      assessment.block,
+      getAssessmentSubject(assessment)
     ].join(" ").toLowerCase().includes(needle));
   }, [assessments, query]);
 
@@ -197,7 +199,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
                   onClick={() => select(assessment.id)}
                   type="button"
                 >
-                  <span className="eyebrow">{assessment.block} · {assessment.lectureCode}</span>
+                  <span className="eyebrow">{assessment.block} · {getAssessmentSubject(assessment)} · {assessment.lectureCode}</span>
                   <strong>{assessment.title}</strong>
                   <small>{assessment.questions.length} Fragen · {typeA} A · {kprim} K-prim</small>
                 </button>
@@ -215,7 +217,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
           )}
 
       <section className="card p-5">
-        <div className="grid gap-3 md:grid-cols-4">
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
           <label>
             <span className="eyebrow">Code</span>
             <input className="input mt-2" value={draft.lectureCode} onChange={(event) => updateDraft({ ...draft, lectureCode: event.target.value })} />
@@ -230,6 +232,18 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
             <button className="btn-secondary mt-2 w-full" type="button" onClick={() => updateDraft({ ...draft, block: "Altfragen" })}>
               Als Altfragen markieren
             </button>
+          </label>
+          <label>
+            <span className="eyebrow">Fach</span>
+            <select
+              className="input mt-2"
+              value={getAssessmentSubject(draft)}
+              onChange={(event) => updateDraft({ ...draft, subject: event.target.value as Assessment["subject"] })}
+            >
+              {ASSESSMENT_SUBJECTS.map((subject) => (
+                <option key={subject} value={subject}>{subject}</option>
+              ))}
+            </select>
           </label>
           <label>
             <span className="eyebrow">Aktiv</span>

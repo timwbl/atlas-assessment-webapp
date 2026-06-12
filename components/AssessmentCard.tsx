@@ -7,6 +7,7 @@ import type { AssessmentProgress, AssessmentSummary } from "@/lib/types";
 import { blockColor } from "@/lib/blockColors";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { countReviewQuestions } from "@/lib/progressStore";
+import { getAssessmentSubject } from "@/lib/assessmentCatalog";
 
 type Props = {
   assessment: AssessmentSummary;
@@ -28,7 +29,9 @@ export function AssessmentCard({ assessment, progress }: Props) {
       <Link href={`/assessment/${assessment.id}`} className="assessment-card-main" prefetch={false}>
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <div className="eyebrow">{formatBlockLabel(assessment.block)} · {assessment.lectureCode}</div>
+            <div className="eyebrow">
+              {formatBlockLabel(assessment.block)} · {getAssessmentSubject(assessment)} · {assessment.lectureCode}
+            </div>
             <h2 className="assessment-card-title mt-2 text-xl font-black leading-tight">{assessment.title}</h2>
           </div>
           <div className="flex shrink-0 items-center gap-2">

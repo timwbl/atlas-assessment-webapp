@@ -9,6 +9,11 @@ import { ProgressTools } from "./ProgressTools";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import {
+  availableAssessmentSubjects,
+  getAssessmentSubject,
+  groupAssessmentsBySubject
+} from "@/lib/assessmentCatalog";
+import {
   blocksForSemester,
   DOWNLOAD_SEMESTERS,
   getSummaryBlock,
@@ -50,6 +55,7 @@ export function LibraryClient() {
   const [blockId, setBlockId] = useState("");
   const [code, setCode] = useState("");
   const [tag, setTag] = useState("");
+  const [subject, setSubject] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -91,6 +97,7 @@ export function LibraryClient() {
     setBlockId("");
     setCode("");
     setTag("");
+    setSubject("");
     setQuery("");
   }
 
@@ -129,6 +136,7 @@ export function LibraryClient() {
       setBlockId("");
       setCode("");
       setTag("");
+      setSubject("");
     }
   }, [blockId, blockOptions]);
 
@@ -154,6 +162,7 @@ export function LibraryClient() {
     setBlockId("");
     setCode("");
     setTag("");
+    setSubject("");
     clearAssessmentLibrarySelection();
   }
 
@@ -161,6 +170,7 @@ export function LibraryClient() {
     .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
   const tags = [...new Set(blockAssessments.flatMap((assessment) => assessment.tags))]
     .sort((a, b) => a.localeCompare(b, "de", { sensitivity: "base" }));
+  const subjects = availableAssessmentSubjects(blockAssessments);
 
   const filtered = useMemo(() => {
     if (!selectedBlock) return [];
@@ -170,14 +180,17 @@ export function LibraryClient() {
         assessment.title,
         assessment.lectureCode,
         assessment.block,
+        getAssessmentSubject(assessment),
         assessment.sourceSummary,
         ...assessment.tags
       ].join(" ").toLowerCase();
       return (!needle || haystack.includes(needle))
         && (!code || assessment.lectureCode === code)
-        && (!tag || assessment.tags.includes(tag));
+        && (!tag || assessment.tags.includes(tag))
+        && (!subject || getAssessmentSubject(assessment) === subject);
     });
-  }, [blockAssessments, code, deferredQuery, selectedBlock, tag]);
+  }, [blockAssessments, code, deferredQuery, selectedBlock, subject, tag]);
+  const filteredGroups = useMemo(() => groupAssessmentsBySubject(filtered), [filtered]);
   const selectedBlockKey = selectedBlock ? normalizedBlockId(selectedBlock.title) : null;
   const blockQuestionCount = blockAssessments.reduce((sum, assessment) => sum + assessment.questionCount, 0);
 
@@ -219,6 +232,7 @@ export function LibraryClient() {
                 setBlockId("");
                 setCode("");
                 setTag("");
+                setSubject("");
                 clearAssessmentLibrarySelection();
                 const nextStudySemester = studySemesterForLegacyId(nextSemester);
                 if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
@@ -274,6 +288,7 @@ export function LibraryClient() {
                   setBlockId(item.id);
                   setCode("");
                   setTag("");
+                  setSubject("");
                   saveAssessmentLibrarySelection(item.semester, item.id);
                 }}
                 type="button"
@@ -287,7 +302,7 @@ export function LibraryClient() {
       )}
 
       <section className="card mt-5 p-4">
-        <div className="assessment-filters grid gap-3 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="assessment-filters grid gap-3 md:grid-cols-2 xl:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <input
             className="input"
             type="search"
@@ -300,7 +315,7 @@ export function LibraryClient() {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             disabled={!selectedBlock}
-            placeholder="Suchen nach Titel, Code, Tag"
+            placeholder="Suchen nach Titel, Code, Fach oder Tag"
           />
           <select className="input" value={code} disabled={!selectedBlock} onChange={(event) => setCode(event.target.value)}>
             <option value="">Alle Codes</option>
@@ -309,6 +324,16 @@ export function LibraryClient() {
           <select className="input" value={tag} disabled={!selectedBlock} onChange={(event) => setTag(event.target.value)}>
             <option value="">Alle Tags</option>
             {tags.map((value) => <option key={value} value={value}>{value}</option>)}
+          </select>
+          <select
+            aria-label="Fach filtern"
+            className="input"
+            value={subject}
+            disabled={!selectedBlock}
+            onChange={(event) => setSubject(event.target.value)}
+          >
+            <option value="">Alle Fächer</option>
+            {subjects.map((value) => <option key={value} value={value}>{value}</option>)}
           </select>
         </div>
       </section>
@@ -370,13 +395,23 @@ export function LibraryClient() {
                 <p className="mt-2 text-[var(--muted)]">Für diesen Block sind aktuell keine MC-Assessments hinterlegt oder deine Filter sind zu eng.</p>
               </div>
             ) : (
-              <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {filtered.map((assessment) => (
-                  <AssessmentCard
-                    key={assessment.id}
-                    assessment={assessment}
-                    progress={progress[assessment.id]}
-                  />
+              <div className="assessment-subject-groups mt-4">
+                {filteredGroups.map((group) => (
+                  <section className="assessment-subject-group" key={group.subject}>
+                    <div className="assessment-subject-heading">
+                      <h3>{group.subject}</h3>
+                      <span>{group.assessments.length} {group.assessments.length === 1 ? "Assessment" : "Assessments"}</span>
+                    </div>
+                    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                      {group.assessments.map((assessment) => (
+                        <AssessmentCard
+                          key={assessment.id}
+                          assessment={assessment}
+                          progress={progress[assessment.id]}
+                        />
+                      ))}
+                    </div>
+                  </section>
                 ))}
               </div>
             )}
