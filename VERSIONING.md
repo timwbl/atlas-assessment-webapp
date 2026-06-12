@@ -1,6 +1,6 @@
 # ATLAS WebApp Versionierung
 
-Aktuelle sichtbare WebApp-Version: `3.10.0`
+Aktuelle sichtbare WebApp-Version: `3.10.1`
 
 - Patch und Mini-Bugfix: dritte Zahl erhöhen, z. B. `3.1.1` → `3.1.2`.
 - Kleines bis mittleres Feature-Update: zweite Zahl erhöhen und Patch zurücksetzen, z. B. `3.1.2` → `3.2.0`.

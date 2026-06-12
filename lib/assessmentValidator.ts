@@ -94,6 +94,13 @@ function validateOptions(question: AssessmentQuestion, path: string): string[] {
 function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | null {
   if (!isRecord(raw)) return null;
 
+  const legacyOptions = isRecord(raw.options)
+    ? raw.options
+    : isRecord(raw.statements)
+      ? raw.statements
+      : null;
+  const legacyCorrect = isRecord(raw.correct) ? raw.correct : null;
+  const legacyCorrectId = stringValue(raw.correct).toUpperCase();
   const options = Array.isArray(raw.options)
     ? raw.options.map((option, optionIndex): QuestionOption => {
       const record = isRecord(option) ? option : {};
@@ -103,6 +110,14 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
         correct: Boolean(record.correct)
       };
     })
+    : legacyOptions
+      ? Object.entries(legacyOptions).map(([id, text]): QuestionOption => ({
+        id,
+        text: stringValue(text),
+        correct: legacyCorrect
+          ? Boolean(legacyCorrect[id])
+          : id.toUpperCase() === legacyCorrectId
+      }))
     : [];
 
   const rawType = stringValue(raw.type).toUpperCase();
@@ -115,7 +130,7 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
     type: questionTypes.has(rawType) ? rawType as AssessmentQuestion["type"] : "A",
     difficulty: Math.max(1, Math.min(5, Number(raw.difficulty) || 1)),
     learningObjectiveId: stringValue(raw.learningObjectiveId),
-    stem: stringValue(raw.stem),
+    stem: stringValue(raw.stem) || stringValue(raw.question),
     options,
     explanation: stringValue(raw.explanation),
     trap: stringValue(raw.trap),
@@ -161,24 +176,28 @@ export function validateAssessment(raw: unknown): ValidationResult<Assessment> {
     ? raw.questions.map(normalizeQuestion).filter(Boolean) as AssessmentQuestion[]
     : [];
 
+  const legacyTitle = stringValue(raw.assessment_title);
+  const lectureCode = stringValue(raw.lectureCode) || extractLectureCode(legacyTitle);
+  const title = stringValue(raw.title) || stripLectureCode(legacyTitle, lectureCode);
+  const block = stringValue(raw.block);
   const assessment: Assessment = {
-    id: stringValue(raw.id),
-    lectureCode: stringValue(raw.lectureCode),
-    title: stringValue(raw.title),
+    id: stringValue(raw.id) || legacyAssessmentId(block, lectureCode, title),
+    lectureCode,
+    title,
     block: stringValue(raw.block),
     subject: normalizeAssessmentSubject(
       raw.subject || raw.fach,
       {
-        lectureCode: stringValue(raw.lectureCode),
-        title: stringValue(raw.title),
-        block: stringValue(raw.block),
-        sourceSummary: stringValue(raw.sourceSummary),
+        lectureCode,
+        title,
+        block,
+        sourceSummary: stringValue(raw.sourceSummary) || stringValue(raw.source),
         course: raw.course,
         lecture: raw.lecture,
         assessmentTitle: raw.assessment_title
       }
     ),
-    sourceSummary: stringValue(raw.sourceSummary),
+    sourceSummary: stringValue(raw.sourceSummary) || stringValue(raw.course) || stringValue(raw.source),
     learningObjectives: Array.isArray(raw.learningObjectives)
       ? raw.learningObjectives.map((objective, index) => {
         const record = isRecord(objective) ? objective : {};
@@ -224,6 +243,34 @@ export function validateAssessment(raw: unknown): ValidationResult<Assessment> {
   });
 
   return errors.length ? { ok: false, errors } : { ok: true, value: assessment, warnings };
+}
+
+function extractLectureCode(value: string): string {
+  return value.match(/\b(KVP|KVC|KVB|KV|SV|FP)\s*0*\d+(?:\s*\/\s*\d+)?\b/i)?.[0]
+    ?.replace(/\s+/g, "")
+    .toUpperCase() || "";
+}
+
+function stripLectureCode(value: string, lectureCode: string): string {
+  if (!value) return "";
+  if (!lectureCode) return value;
+  return value.replace(new RegExp(`^${escapeRegExp(lectureCode)}\\s*[-–—:]?\\s*`, "i"), "").trim() || value;
+}
+
+function legacyAssessmentId(block: string, lectureCode: string, title: string): string {
+  const slug = [block, lectureCode, title]
+    .filter(Boolean)
+    .join("_")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+  return slug ? `assessment_${slug}_v1` : "";
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 export function collectAssessmentTags(assessment: Assessment): string[] {
