@@ -1,33 +1,31 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { AdminAltfragenDocumentsManager } from "./AdminAltfragenDocumentsManager";
 import {
+  altfragenDocumentBlocksForSemester,
   canUseSummaryStorage,
   COPYRIGHT_OWNER,
   deleteSummaryDownload,
-  downloadBlocksForSemester,
   DOWNLOAD_SEMESTERS,
   fileToDataUrl,
   formatFileSize,
   formatUploadDate,
-  getSummaryBlock,
+  getAltfragenDocumentBlock,
+  loadAltfragenDocuments,
   loadSummaryDownloadFile,
-  loadSummaryDownloads,
   MAX_SUMMARY_FILE_SIZE,
-  saveSummaryDownload,
+  saveAltfragenDocument,
   semesterTitle,
   storageModeLabel,
   SUMMARY_DOWNLOADS_CHANGED_EVENT,
   triggerSummaryDownload,
   uploadSummaryFileToStorage,
   validateSummaryFile,
-  type SemesterId,
-  type SummaryDownload
+  type AltfragenDocument,
+  type SemesterId
 } from "@/lib/summaryDownloads";
 
 type Draft = {
-  id: string;
   title: string;
   semester: SemesterId;
   blockId: string;
@@ -36,87 +34,59 @@ type Draft = {
   file: File | null;
 };
 
-const emptyDraft = (): Draft => {
+function emptyDraft(): Draft {
   const semester: SemesterId = "HS2025";
   return {
-    id: "",
     title: "",
     semester,
-    blockId: downloadBlocksForSemester(semester)[0]?.id || "",
+    blockId: altfragenDocumentBlocksForSemester(semester)[0]?.id || "",
     description: "",
     version: "",
     file: null
   };
-};
-
-export function AdminDownloadsManager() {
-  const [area, setArea] = useState<"summaries" | "altfragen">("summaries");
-
-  return (
-    <div className="grid gap-4">
-      <section className="card admin-panel">
-        <div>
-          <div className="eyebrow">Downloadbibliotheken</div>
-          <h2 className="mt-1 text-2xl font-black">Dateien verwalten</h2>
-          <p className="mt-2 text-sm text-[var(--muted)]">
-            Zusammenfassungen sind öffentlich. Altfragen-Dokumente erscheinen ausschliesslich im geschützten Altfragen-Bereich.
-          </p>
-        </div>
-        <div className="study-filter-chips mt-4" aria-label="Downloadbereich auswählen">
-          <button className={area === "summaries" ? "is-active" : ""} onClick={() => setArea("summaries")} type="button">
-            Zusammenfassungen
-          </button>
-          <button className={area === "altfragen" ? "is-active" : ""} onClick={() => setArea("altfragen")} type="button">
-            Altfragen-Dokumente
-          </button>
-        </div>
-      </section>
-      {area === "summaries" ? <SummaryDownloadsManager /> : <AdminAltfragenDocumentsManager />}
-    </div>
-  );
 }
 
-function SummaryDownloadsManager() {
-  const [downloads, setDownloads] = useState<SummaryDownload[]>([]);
+export function AdminAltfragenDocumentsManager() {
+  const [documents, setDocuments] = useState<AltfragenDocument[]>([]);
   const [draft, setDraft] = useState<Draft>(() => emptyDraft());
-  const [editing, setEditing] = useState<SummaryDownload | null>(null);
+  const [editing, setEditing] = useState<AltfragenDocument | null>(null);
+  const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [saving, setSaving] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState("");
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     void refresh();
-
-    function onChange() {
-      void refresh();
-    }
-
+    const onChange = () => void refresh();
     window.addEventListener(SUMMARY_DOWNLOADS_CHANGED_EVENT, onChange);
     return () => window.removeEventListener(SUMMARY_DOWNLOADS_CHANGED_EVENT, onChange);
   }, []);
 
-  const blockOptions = useMemo(() => downloadBlocksForSemester(draft.semester), [draft.semester]);
-  const filteredDownloads = useMemo(() => {
+  const blockOptions = useMemo(
+    () => altfragenDocumentBlocksForSemester(draft.semester),
+    [draft.semester]
+  );
+  const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    if (!needle) return downloads;
-    return downloads.filter((item) => [
+    if (!needle) return documents;
+    return documents.filter((item) => [
       item.title,
       item.fileName,
       item.blockTitle,
+      item.description,
       semesterTitle(item.semester)
     ].join(" ").toLowerCase().includes(needle));
-  }, [downloads, query]);
+  }, [documents, query]);
 
   async function refresh() {
     setLoading(true);
     setError("");
     try {
-      setDownloads(await loadSummaryDownloads());
+      setDocuments(await loadAltfragenDocuments());
     } catch (loadError) {
-      setError(loadError instanceof Error ? loadError.message : "Downloads konnten nicht geladen werden.");
+      setError(loadError instanceof Error ? loadError.message : "Altfragen-Dokumente konnten nicht geladen werden.");
     } finally {
       setLoading(false);
     }
@@ -129,10 +99,9 @@ function SummaryDownloadsManager() {
     if (fileInputRef.current) fileInputRef.current.value = "";
   }
 
-  function edit(item: SummaryDownload) {
+  function edit(item: AltfragenDocument) {
     setEditing(item);
     setDraft({
-      id: item.id,
       title: item.title,
       semester: item.semester,
       blockId: item.blockId,
@@ -153,11 +122,11 @@ function SummaryDownloadsManager() {
     try {
       const title = draft.title.trim();
       if (!title) throw new Error("Bitte gib einen Titel ein.");
-      const block = getSummaryBlock(draft.blockId);
+      const block = getAltfragenDocumentBlock(draft.blockId);
       if (!block) throw new Error("Bitte wähle einen Block aus.");
       if (!editing && !draft.file) throw new Error("Bitte wähle eine Datei aus.");
 
-      const summaryId = editing?.id || crypto.randomUUID();
+      const id = editing?.id || crypto.randomUUID();
       let fileData = editing?.fileData;
       let filePath = editing?.filePath;
       let downloadUrl = editing?.downloadUrl;
@@ -166,13 +135,13 @@ function SummaryDownloadsManager() {
       let fileSize = editing?.fileSize || 0;
 
       if (draft.file) {
-        const fileError = validateSummaryFile(draft.file);
-        if (fileError) throw new Error(fileError);
+        const validationError = validateSummaryFile(draft.file);
+        if (validationError) throw new Error(validationError);
         fileName = draft.file.name;
         fileType = draft.file.type || "application/octet-stream";
         fileSize = draft.file.size;
         if (await canUseSummaryStorage()) {
-          const uploaded = await uploadSummaryFileToStorage(draft.file, summaryId);
+          const uploaded = await uploadSummaryFileToStorage(draft.file, id);
           filePath = uploaded.filePath;
           downloadUrl = uploaded.downloadUrl;
           fileData = undefined;
@@ -193,8 +162,8 @@ function SummaryDownloadsManager() {
       }
 
       const now = new Date().toISOString();
-      const summary: SummaryDownload = {
-        id: summaryId,
+      await saveAltfragenDocument({
+        id,
         title,
         semester: draft.semester,
         blockId: block.id,
@@ -211,12 +180,11 @@ function SummaryDownloadsManager() {
         downloadUrl,
         createdAt: editing?.createdAt || now,
         updatedAt: now
-      };
+      });
 
-      await saveSummaryDownload(summary);
       await refresh();
       resetForm();
-      setMessage("Zusammenfassung gespeichert. © Tim Weibel wurde in den App-Metadaten hinterlegt.");
+      setMessage("Altfragen-Dokument gespeichert und dem geschützten Bereich zugeordnet.");
     } catch (saveError) {
       setError(saveError instanceof Error ? saveError.message : "Speichern fehlgeschlagen.");
     } finally {
@@ -224,12 +192,12 @@ function SummaryDownloadsManager() {
     }
   }
 
-  async function remove(item: SummaryDownload) {
+  async function remove(item: AltfragenDocument) {
     if (!confirm(`"${item.title}" wirklich löschen?`)) return;
     setError("");
     try {
       await deleteSummaryDownload(item.id);
-      setDownloads((current) => current.filter((download) => download.id !== item.id));
+      setDocuments((current) => current.filter((document) => document.id !== item.id));
       if (editing?.id === item.id) resetForm();
     } catch (removeError) {
       setError(removeError instanceof Error ? removeError.message : "Datei konnte nicht gelöscht werden.");
@@ -240,18 +208,18 @@ function SummaryDownloadsManager() {
     <section className="card admin-panel">
       <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         <div>
-          <div className="eyebrow">Admin Downloads</div>
-          <h2 className="mt-1 text-2xl font-black">Zusammenfassungen verwalten</h2>
+          <div className="eyebrow">Geschützte Downloads</div>
+          <h2 className="mt-1 text-2xl font-black">Altfragen-Dokumente verwalten</h2>
           <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
-            Dateien werden Block-Zusammenfassungen zugeordnet, nicht einzelnen Vorlesungen. Speicher: {storageModeLabel()}
+            Noch nicht digitalisierte Altfragen als Dokument bereitstellen. Speicher: {storageModeLabel()}
           </p>
         </div>
-        <a className="btn-secondary inline-flex items-center" href="/downloads">Downloadbereich öffnen</a>
+        <a className="btn-secondary inline-flex items-center" href="/altfragen">Altfragen öffnen</a>
       </div>
 
       <div className="mt-5 grid gap-4 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
         <div className="rounded-[22px] border border-[var(--line)] bg-[var(--surface-strong)] p-4">
-          <h3 className="font-black">{editing ? "Zusammenfassung bearbeiten" : "Neue Zusammenfassung"}</h3>
+          <h3 className="font-black">{editing ? "Dokument bearbeiten" : "Neues Altfragen-Dokument"}</h3>
           <div className="mt-4 grid gap-3">
             <label>
               <span className="eyebrow">Titel</span>
@@ -265,7 +233,11 @@ function SummaryDownloadsManager() {
                   value={draft.semester}
                   onChange={(event) => {
                     const semester = event.target.value as SemesterId;
-                    setDraft({ ...draft, semester, blockId: downloadBlocksForSemester(semester)[0]?.id || "" });
+                    setDraft({
+                      ...draft,
+                      semester,
+                      blockId: altfragenDocumentBlocksForSemester(semester)[0]?.id || ""
+                    });
                   }}
                 >
                   {DOWNLOAD_SEMESTERS.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}
@@ -283,8 +255,8 @@ function SummaryDownloadsManager() {
               <textarea className="input mt-2 min-h-24 py-3" value={draft.description} onChange={(event) => setDraft({ ...draft, description: event.target.value })} />
             </label>
             <label>
-              <span className="eyebrow">Version optional</span>
-              <input className="input mt-2" placeholder="z. B. v1.0 oder 26.05.2026" value={draft.version} onChange={(event) => setDraft({ ...draft, version: event.target.value })} />
+              <span className="eyebrow">Version / Jahr optional</span>
+              <input className="input mt-2" placeholder="z. B. FS 2024" value={draft.version} onChange={(event) => setDraft({ ...draft, version: event.target.value })} />
             </label>
             <label>
               <span className="eyebrow">Datei {editing ? "optional ersetzen" : "hochladen"}</span>
@@ -295,25 +267,27 @@ function SummaryDownloadsManager() {
                 accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.md,.zip"
                 onChange={(event) => setDraft({ ...draft, file: event.target.files?.[0] || null })}
               />
-              <span className="mt-2 block text-xs text-[var(--muted)]">Maximal {formatFileSize(MAX_SUMMARY_FILE_SIZE)}. Copyright wird als App-Metadatum erzwungen.</span>
+              <span className="mt-2 block text-xs text-[var(--muted)]">
+                Maximal {formatFileSize(MAX_SUMMARY_FILE_SIZE)}. Sichtbar nur nach Altfragen-Freigabe.
+              </span>
             </label>
 
             {error && <p className="rounded-2xl border border-red-300 bg-red-500/10 p-3 text-sm text-red-600">{error}</p>}
             {message && <p className="rounded-2xl border border-green-300 bg-green-500/10 p-3 text-sm text-green-700">{message}</p>}
 
             <div className="grid gap-2 md:grid-cols-2">
-              <button className="btn-primary" disabled={saving} onClick={() => void save()}>
-                {saving ? "Speichert…" : editing ? "Änderungen speichern" : "Datei speichern"}
+              <button className="btn-primary" disabled={saving} onClick={() => void save()} type="button">
+                {saving ? "Speichert…" : editing ? "Änderungen speichern" : "Dokument speichern"}
               </button>
-              <button className="btn-secondary" onClick={resetForm}>Reset</button>
+              <button className="btn-secondary" onClick={resetForm} type="button">Reset</button>
             </div>
           </div>
         </div>
 
         <div className="rounded-[22px] border border-[var(--line)] bg-[var(--surface-strong)] p-4">
           <div className="flex items-center justify-between gap-2">
-            <h3 className="font-black">Hochgeladene Dateien</h3>
-            <span className="pill">{downloads.length}</span>
+            <h3 className="font-black">Hochgeladene Altfragen-Dokumente</h3>
+            <span className="pill">{documents.length}</span>
           </div>
           <input
             className="input mt-3"
@@ -326,27 +300,23 @@ function SummaryDownloadsManager() {
 
           <div className="mt-4 grid max-h-[620px] gap-3 overflow-y-auto pr-1">
             {loading ? (
-              <div className="admin-loading" aria-label="Downloads werden geladen"><span /><span /><span /></div>
-            ) : filteredDownloads.length === 0 ? (
+              <div className="admin-loading" aria-label="Dokumente werden geladen"><span /><span /><span /></div>
+            ) : filtered.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
-                {downloads.length ? "Keine passenden Zusammenfassungen gefunden." : "Noch keine Zusammenfassungen hochgeladen."}
+                {documents.length ? "Keine passenden Dokumente gefunden." : "Noch keine Altfragen-Dokumente hochgeladen."}
               </div>
             ) : (
-              filteredDownloads.map((item) => (
+              filtered.map((item) => (
                 <article className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4" key={item.id}>
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <div className="eyebrow">{semesterTitle(item.semester)} · {item.blockTitle}</div>
-                      <h4 className="mt-1 font-black leading-tight">{item.title}</h4>
-                      <p className="mt-2 text-sm text-[var(--muted)]">
-                        {item.fileName} · {formatFileSize(item.fileSize)} · {formatUploadDate(item.uploadDate)} · © {item.copyrightOwner}
-                      </p>
-                    </div>
-                  </div>
+                  <div className="eyebrow">{semesterTitle(item.semester)} · {item.blockTitle}</div>
+                  <h4 className="mt-1 font-black leading-tight">{item.title}</h4>
+                  <p className="mt-2 text-sm text-[var(--muted)]">
+                    {item.fileName} · {formatFileSize(item.fileSize)} · {formatUploadDate(item.uploadDate)}
+                  </p>
                   <div className="mt-3 grid gap-2 sm:grid-cols-3">
-                    <button className="btn-secondary" onClick={() => edit(item)}>Bearbeiten</button>
-                    <button className="btn-secondary" onClick={() => void triggerSummaryDownload(item)}>Testdownload</button>
-                    <button className="btn-danger" onClick={() => void remove(item)}>Löschen</button>
+                    <button className="btn-secondary" onClick={() => edit(item)} type="button">Bearbeiten</button>
+                    <button className="btn-secondary" onClick={() => void triggerSummaryDownload(item)} type="button">Testdownload</button>
+                    <button className="btn-danger" onClick={() => void remove(item)} type="button">Löschen</button>
                   </div>
                 </article>
               ))

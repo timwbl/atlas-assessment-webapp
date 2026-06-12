@@ -59,7 +59,7 @@ const NAV_ITEMS: Array<{ id: AdminView; label: string; description: string }> = 
   { id: "quality", label: "Fragenqualität", description: "Flags, Tiefe und K-Prim prüfen" },
   { id: "recommendations", label: "Empfehlungen", description: "Blockbewertungen pflegen" },
   { id: "reviews", label: "Kommentare", description: "User-Kommentare moderieren" },
-  { id: "downloads", label: "Downloads", description: "Zusammenfassungen verwalten" },
+  { id: "downloads", label: "Downloads", description: "Zusammenfassungen und Altfragen-Dokumente" },
   { id: "users", label: "Nutzer", description: "Accounts und Fortschritt ansehen" },
   { id: "settings", label: "System", description: "Verfügbarkeit und globale Einstellungen" }
 ];

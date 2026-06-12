@@ -1553,6 +1553,19 @@ button:disabled {
   padding: 16px;
 }
 
+.altfragen-document-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--download-accent, var(--accent));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface-strong) 90%, transparent);
+  padding: 16px;
+}
+
 .semester-picker-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
@@ -2375,6 +2388,17 @@ button:disabled {
 
   .download-card .btn-primary {
     width: 100%;
+  }
+
+  .altfragen-document-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 15px;
+  }
+
+  .altfragen-document-card .btn-primary {
+    width: 100%;
+    min-height: 46px;
   }
 
   .semester-picker-card {

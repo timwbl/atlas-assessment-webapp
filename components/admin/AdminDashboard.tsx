@@ -129,7 +129,7 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (view: AdminView) =
             <button type="button" onClick={() => onNavigate("assessments")}>Assessment verwalten</button>
             <button type="button" onClick={() => onNavigate("altfragen")}>Altfragen verwalten</button>
             <button type="button" onClick={() => onNavigate("quality")}>Fragenqualität prüfen</button>
-            <button type="button" onClick={() => onNavigate("downloads")}>Zusammenfassung hochladen</button>
+            <button type="button" onClick={() => onNavigate("downloads")}>Dokument hochladen</button>
             <button type="button" onClick={() => onNavigate("users")}>Nutzerfortschritt öffnen</button>
             <button type="button" onClick={() => onNavigate("settings")}>Umbau-Modus verwalten</button>
           </div>

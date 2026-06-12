@@ -34,6 +34,8 @@ export type SummaryDownload = {
   updatedAt: string;
 };
 
+export type AltfragenDocument = SummaryDownload;
+
 type SummaryDownloadRow = {
   id: string;
   title: string;
@@ -60,6 +62,7 @@ export const MAX_SUMMARY_FILE_SIZE = 300 * 1024 * 1024;
 
 const STORAGE_BUCKET = "summary-downloads";
 const STORAGE_KEY = "atlas-summary-downloads-v1";
+const ALTFRAGEN_DOCUMENT_PREFIX = "altfragen-";
 const STORAGE_CHUNK_SIZE = 4 * 1024 * 1024;
 const CHUNK_MANIFEST_PREFIX = "atlas-chunks-v1:";
 const ALLOWED_EXTENSIONS = new Set(["pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx", "txt", "md", "zip"]);
@@ -137,12 +140,32 @@ export function downloadBlocksForSemester(semester: SemesterId): SummaryBlock[] 
     .filter((block) => !block.assessmentOnly);
 }
 
+export function altfragenDocumentBlocksForSemester(semester: SemesterId): SummaryBlock[] {
+  return downloadBlocksForSemester(semester).map((block) => ({
+    ...block,
+    id: `${ALTFRAGEN_DOCUMENT_PREFIX}${block.id}`
+  }));
+}
+
 export function semesterTitle(semester: string): string {
   return DOWNLOAD_SEMESTERS.find((item) => item.id === semester)?.title || semester;
 }
 
 export function getSummaryBlock(blockId: string): SummaryBlock | null {
   return SUMMARY_BLOCKS.find((block) => block.id === blockId) || null;
+}
+
+export function getAltfragenDocumentBlock(blockId: string): SummaryBlock | null {
+  for (const semester of DOWNLOAD_SEMESTERS) {
+    const block = altfragenDocumentBlocksForSemester(semester.id)
+      .find((candidate) => candidate.id === blockId);
+    if (block) return block;
+  }
+  return null;
+}
+
+export function isAltfragenDocument(download: Pick<SummaryDownload, "blockId">): boolean {
+  return download.blockId.startsWith(ALTFRAGEN_DOCUMENT_PREFIX);
 }
 
 export function formatFileSize(bytes: number): string {
@@ -171,7 +194,7 @@ export function validateSummaryFile(file: File): string | null {
 
   const extension = file.name.split(".").pop()?.toLowerCase() || "";
   if (!ALLOWED_EXTENSIONS.has(extension) && !ALLOWED_TYPES.has(file.type)) {
-    return "Dieser Dateityp wird für Zusammenfassungen nicht unterstützt.";
+    return "Dieser Dateityp wird für Downloads nicht unterstützt.";
   }
 
   return null;
@@ -187,6 +210,16 @@ export function fileToDataUrl(file: File): Promise<string> {
 }
 
 export async function loadSummaryDownloads(): Promise<SummaryDownload[]> {
+  const downloads = await loadAllDownloads();
+  return downloads.filter((item) => !isAltfragenDocument(item));
+}
+
+export async function loadAltfragenDocuments(): Promise<AltfragenDocument[]> {
+  const downloads = await loadAllDownloads();
+  return downloads.filter(isAltfragenDocument);
+}
+
+async function loadAllDownloads(): Promise<SummaryDownload[]> {
   if (isSupabaseConfigured()) {
     try {
       const rows = await restRequest<SummaryDownloadRow[]>(
@@ -240,6 +273,13 @@ export async function saveSummaryDownload(download: SummaryDownload): Promise<Su
   writeLocalDownloads(next);
   notifyDownloadsChanged();
   return normalized;
+}
+
+export async function saveAltfragenDocument(document: AltfragenDocument): Promise<AltfragenDocument> {
+  if (!isAltfragenDocument(document)) {
+    throw new Error("Altfragen-Dokumente benötigen eine gültige Altfragen-Blockzuordnung.");
+  }
+  return saveSummaryDownload(document);
 }
 
 export async function deleteSummaryDownload(id: string): Promise<void> {
@@ -361,7 +401,7 @@ function notifyDownloadsChanged(): void {
 }
 
 function normalizeDownload(download: SummaryDownload): SummaryDownload {
-  const block = getSummaryBlock(download.blockId);
+  const block = getSummaryBlock(download.blockId) || getAltfragenDocumentBlock(download.blockId);
   const now = new Date().toISOString();
   return {
     ...download,
@@ -499,7 +539,8 @@ function decodeChunkManifest(filePath?: string): ChunkManifest | null {
 
 function sortSummaryDownloads(items: SummaryDownload[]): SummaryDownload[] {
   const semesterOrder = new Map(DOWNLOAD_SEMESTERS.map((semester, index) => [semester.id, index]));
-  const blockOrder = new Map(SUMMARY_BLOCKS.map((block) => [block.id, block.order]));
+  const altfragenBlocks = DOWNLOAD_SEMESTERS.flatMap((semester) => altfragenDocumentBlocksForSemester(semester.id));
+  const blockOrder = new Map([...SUMMARY_BLOCKS, ...altfragenBlocks].map((block) => [block.id, block.order]));
 
   return [...items].sort((a, b) => {
     const semesterDiff = (semesterOrder.get(a.semester) ?? 99) - (semesterOrder.get(b.semester) ?? 99);

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentCard } from "./AssessmentCard";
 import { useUserStudyContext } from "./study/UserStudyProvider";
@@ -10,9 +11,21 @@ import {
   canAccessAltfragen
 } from "@/lib/altfragenAccess";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
+import { blockColor } from "@/lib/blockColors";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import {
+  DOWNLOAD_SEMESTERS,
+  formatFileSize,
+  formatUploadDate,
+  loadAltfragenDocuments,
+  semesterTitle,
+  SUMMARY_DOWNLOADS_CHANGED_EVENT,
+  triggerSummaryDownload,
+  type AltfragenDocument
+} from "@/lib/summaryDownloads";
+import {
   blockIdForContent,
+  examForBlock,
   examForContent,
   examsForSemester,
   isAltfragenValue,
@@ -31,6 +44,7 @@ type Scope = "all" | "current" | ExamId;
 export function AltfragenLibrary() {
   const { settings } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
+  const [documents, setDocuments] = useState<AltfragenDocument[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [access, setAccess] = useState(false);
   const [checkingAccess, setCheckingAccess] = useState(true);
@@ -38,6 +52,8 @@ export function AltfragenLibrary() {
   const [blockId, setBlockId] = useState("");
   const [query, setQuery] = useState("");
   const [error, setError] = useState("");
+  const [documentsLoading, setDocumentsLoading] = useState(true);
+  const [downloadingId, setDownloadingId] = useState("");
 
   useEffect(() => {
     void loadAssessmentSummaries()
@@ -54,6 +70,29 @@ export function AltfragenLibrary() {
     window.addEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
     return () => window.removeEventListener(PROGRESS_CHANGED_EVENT, updateProgress);
   }, []);
+
+  useEffect(() => {
+    if (!access) {
+      setDocuments([]);
+      setDocumentsLoading(false);
+      return;
+    }
+
+    async function refreshDocuments() {
+      setDocumentsLoading(true);
+      try {
+        setDocuments(await loadAltfragenDocuments());
+      } catch (loadError) {
+        setError(loadError instanceof Error ? loadError.message : "Altfragen-Dokumente konnten nicht geladen werden.");
+      } finally {
+        setDocumentsLoading(false);
+      }
+    }
+
+    void refreshDocuments();
+    window.addEventListener(SUMMARY_DOWNLOADS_CHANGED_EVENT, refreshDocuments);
+    return () => window.removeEventListener(SUMMARY_DOWNLOADS_CHANGED_EVENT, refreshDocuments);
+  }, [access]);
 
   useEffect(() => {
     async function refreshAccess() {
@@ -89,9 +128,12 @@ export function AltfragenLibrary() {
     [settings.semester, settings.studyYear]
   );
   const blockOptions = useMemo(
-    () => [...new Set(assessments.map(blockIdForContent).filter((value): value is string => !!value))]
+    () => [...new Set([
+      ...assessments.map(blockIdForContent),
+      ...documents.map((item) => blockIdForContent(item.blockTitle))
+    ].filter((value): value is string => !!value))]
       .sort((a, b) => Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, ""))),
-    [assessments]
+    [assessments, documents]
   );
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -112,6 +154,38 @@ export function AltfragenLibrary() {
         && (!blockId || assessmentBlock === blockId);
     });
   }, [assessments, blockId, currentExams, query, scope]);
+  const filteredDocuments = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return documents.filter((document) => {
+      const documentBlock = blockIdForContent(document.blockTitle);
+      const exam = examForBlock(document.blockTitle);
+      const scopeMatches = scope === "all"
+        || (scope === "current" && (currentExams.length === 0 || (!!exam && currentExams.includes(exam))))
+        || scope === exam;
+      const queryMatches = !needle || [
+        document.title,
+        document.description,
+        document.fileName,
+        document.blockTitle,
+        semesterTitle(document.semester)
+      ].join(" ").toLowerCase().includes(needle);
+      return scopeMatches
+        && queryMatches
+        && (!blockId || documentBlock === blockId);
+    });
+  }, [blockId, currentExams, documents, query, scope]);
+
+  async function downloadDocument(document: AltfragenDocument) {
+    setDownloadingId(document.id);
+    setError("");
+    try {
+      await triggerSummaryDownload(document);
+    } catch (downloadError) {
+      setError(downloadError instanceof Error ? downloadError.message : "Download nicht verfügbar.");
+    } finally {
+      setDownloadingId("");
+    }
+  }
 
   return (
     <main className="shell" id="top">
@@ -203,10 +277,88 @@ export function AltfragenLibrary() {
               </div>
             )}
           </section>
+
+          <section className="mt-8">
+            <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="eyebrow">Dokumentbibliothek</p>
+                <h2 className="text-3xl font-black">Weitere Altfragen</h2>
+                <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
+                  Originaldokumente und zusätzliche Altfragen, die noch nicht als interaktives Assessment vorliegen.
+                </p>
+              </div>
+              <span className="pill">{filteredDocuments.length} Dokumente</span>
+            </div>
+
+            {documentsLoading ? (
+              <div className="card p-5 text-[var(--muted)]">Dokumente werden geladen…</div>
+            ) : filteredDocuments.length === 0 ? (
+              <div className="card p-6 text-center">
+                <h3 className="text-xl font-black">Noch keine passenden Dokumente</h3>
+                <p className="mt-2 text-sm text-[var(--muted)]">
+                  Sobald zusätzliche Altfragen hochgeladen wurden, erscheinen sie hier nach Semester und Block.
+                </p>
+              </div>
+            ) : (
+              <div className="grid gap-5">
+                {DOWNLOAD_SEMESTERS.map((semester) => {
+                  const semesterDocuments = filteredDocuments.filter((document) => document.semester === semester.id);
+                  if (!semesterDocuments.length) return null;
+                  return (
+                    <div className="card overflow-hidden" key={semester.id}>
+                      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] p-4">
+                        <div>
+                          <div className="eyebrow">Semester</div>
+                          <h3 className="text-xl font-black">{semester.title}</h3>
+                        </div>
+                        <span className="pill">{semesterDocuments.length} Datei{semesterDocuments.length === 1 ? "" : "en"}</span>
+                      </div>
+                      <div className="grid gap-3 p-4 md:grid-cols-2">
+                        {semesterDocuments.map((document) => (
+                          <article
+                            className="altfragen-document-card"
+                            key={document.id}
+                            style={{ "--download-accent": blockColor(document.blockTitle) } as CSSProperties}
+                          >
+                            <div className="min-w-0">
+                              <div className="flex flex-wrap items-center gap-2">
+                                <span className="download-accent-dot" />
+                                <span className="eyebrow">{document.blockTitle}</span>
+                                {document.version && <span className="pill">{document.version}</span>}
+                              </div>
+                              <h4 className="mt-2 text-lg font-black leading-tight">{document.title}</h4>
+                              {document.description && (
+                                <p className="mt-2 text-sm text-[var(--muted)]">{document.description}</p>
+                              )}
+                              <p className="mt-3 text-xs text-[var(--muted)]">
+                                {fileTypeLabel(document)} · {formatFileSize(document.fileSize)} · {formatUploadDate(document.uploadDate)}
+                              </p>
+                            </div>
+                            <button
+                              className="btn-primary"
+                              disabled={downloadingId === document.id}
+                              onClick={() => void downloadDocument(document)}
+                              type="button"
+                            >
+                              {downloadingId === document.id ? "Lädt…" : "Download"}
+                            </button>
+                          </article>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </section>
         </>
       )}
     </main>
   );
+}
+
+function fileTypeLabel(document: AltfragenDocument): string {
+  return document.fileName.split(".").pop()?.toUpperCase() || document.fileType || "Datei";
 }
 
 function scopeLabel(scope: Scope): string {
