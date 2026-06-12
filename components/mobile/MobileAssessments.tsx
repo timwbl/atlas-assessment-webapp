@@ -14,7 +14,6 @@ import {
 } from "@/lib/studyProgram";
 import { useUserStudyContext } from "@/components/study/UserStudyProvider";
 import {
-  ASSESSMENT_SUBJECTS,
   compareAssessmentsByNumber,
   getAssessmentSubject
 } from "@/lib/assessmentCatalog";
@@ -39,11 +38,7 @@ export function MobileAssessments() {
       current.push(assessment);
       groups.set(blockId, current);
     });
-    groups.forEach((assessments) => assessments.sort((left, right) => {
-      const subjectDifference = ASSESSMENT_SUBJECTS.indexOf(getAssessmentSubject(left))
-        - ASSESSMENT_SUBJECTS.indexOf(getAssessmentSubject(right));
-      return subjectDifference || compareAssessmentsByNumber(left, right);
-    }));
+    groups.forEach((assessments) => assessments.sort(compareAssessmentsByNumber));
     return [...groups.entries()].sort(([left], [right]) => left.localeCompare(right, "de", { numeric: true }));
   }, [filtered]);
   const currentSemester = semesterConfig(settings.semester);

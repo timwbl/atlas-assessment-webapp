@@ -1,7 +1,7 @@
 import type { Assessment, AssessmentSubject, AssessmentSummary } from "./types";
 
 export const ASSESSMENT_SUBJECTS: readonly AssessmentSubject[] = [
-  "Anatomie",
+  "Embryologie",
   "Histologie",
   "Physiologie",
   "Biochemie",
@@ -27,7 +27,7 @@ export type AssessmentSortKey = {
 
 const CODE_GROUP_ORDER = ["KV", "KVB", "KVC", "KVP", "SV", "FP"];
 const SUBJECT_ALIASES: Array<[AssessmentSubject, string[]]> = [
-  ["Anatomie", ["anatomie", "anatomy"]],
+  ["Embryologie", ["embryologie", "embryology", "anatomie", "anatomy"]],
   ["Histologie", ["histologie", "histology"]],
   ["Physiologie", ["physiologie", "physiology"]],
   ["Biochemie", ["biochemie", "biochemistry"]],
@@ -87,7 +87,7 @@ export function normalizeAssessmentSubject(
   if (containsAny(metadata, [
     "anatom", "embryolog", "gametogen", "gastrulation", "somitogenese",
     "neurulation", "schlundbogen", "gliedmassen", "plazenta", "pranatal"
-  ])) return "Anatomie";
+  ])) return "Embryologie";
   if (containsAny(metadata, [
     "psychosoz", "bio psycho sozial", "biopsychosoz", "psychotherapie",
     "resilienz", "coping", "stresserleben", "einsamkeit"
@@ -166,25 +166,6 @@ export function availableAssessmentSubjects(
 ): AssessmentSubject[] {
   const available = new Set(assessments.map(getAssessmentSubject));
   return ASSESSMENT_SUBJECTS.filter((subject) => available.has(subject));
-}
-
-export function groupAssessmentsBySubject<T extends AssessmentCatalogItem>(
-  assessments: readonly T[]
-): Array<{ subject: AssessmentSubject; assessments: T[] }> {
-  const groups = new Map<AssessmentSubject, T[]>();
-  assessments.forEach((assessment) => {
-    const subject = getAssessmentSubject(assessment);
-    const current = groups.get(subject) || [];
-    current.push(assessment);
-    groups.set(subject, current);
-  });
-
-  return ASSESSMENT_SUBJECTS
-    .filter((subject) => groups.has(subject))
-    .map((subject) => ({
-      subject,
-      assessments: [...(groups.get(subject) || [])].sort(compareAssessmentsByNumber)
-    }));
 }
 
 function canonicalSubject(value: unknown): AssessmentSubject | null {

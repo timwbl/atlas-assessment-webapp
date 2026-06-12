@@ -19,7 +19,7 @@ export type QuestionMistakeType =
   | "too_slow";
 export type BlockReadinessStatus = "ready" | "almost_ready" | "risk_zone" | "not_ready";
 export type AssessmentSubject =
-  | "Anatomie"
+  | "Embryologie"
   | "Histologie"
   | "Physiologie"
   | "Biochemie"

@@ -58,7 +58,11 @@ assert.equal(
 );
 assert.equal(
   normalizeAssessmentSubject(undefined, { lectureCode: "KV02", title: "Embryologie", block: "Block 9" }),
-  "Anatomie"
+  "Embryologie"
+);
+assert.equal(
+  normalizeAssessmentSubject("Anatomie", { lectureCode: "KV02", title: "Embryologie", block: "Block 9" }),
+  "Embryologie"
 );
 assert.equal(
   normalizeAssessmentSubject(undefined, {

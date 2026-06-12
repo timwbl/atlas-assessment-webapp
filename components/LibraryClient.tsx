@@ -10,8 +10,8 @@ import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import {
   availableAssessmentSubjects,
+  compareAssessmentsByNumber,
   getAssessmentSubject,
-  groupAssessmentsBySubject
 } from "@/lib/assessmentCatalog";
 import {
   blocksForSemester,
@@ -190,7 +190,10 @@ export function LibraryClient() {
         && (!subject || getAssessmentSubject(assessment) === subject);
     });
   }, [blockAssessments, code, deferredQuery, selectedBlock, subject, tag]);
-  const filteredGroups = useMemo(() => groupAssessmentsBySubject(filtered), [filtered]);
+  const sortedAssessments = useMemo(
+    () => [...filtered].sort(compareAssessmentsByNumber),
+    [filtered]
+  );
   const selectedBlockKey = selectedBlock ? normalizedBlockId(selectedBlock.title) : null;
   const blockQuestionCount = blockAssessments.reduce((sum, assessment) => sum + assessment.questionCount, 0);
 
@@ -395,23 +398,13 @@ export function LibraryClient() {
                 <p className="mt-2 text-[var(--muted)]">Für diesen Block sind aktuell keine MC-Assessments hinterlegt oder deine Filter sind zu eng.</p>
               </div>
             ) : (
-              <div className="assessment-subject-groups mt-4">
-                {filteredGroups.map((group) => (
-                  <section className="assessment-subject-group" key={group.subject}>
-                    <div className="assessment-subject-heading">
-                      <h3>{group.subject}</h3>
-                      <span>{group.assessments.length} {group.assessments.length === 1 ? "Assessment" : "Assessments"}</span>
-                    </div>
-                    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                      {group.assessments.map((assessment) => (
-                        <AssessmentCard
-                          key={assessment.id}
-                          assessment={assessment}
-                          progress={progress[assessment.id]}
-                        />
-                      ))}
-                    </div>
-                  </section>
+              <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {sortedAssessments.map((assessment) => (
+                  <AssessmentCard
+                    key={assessment.id}
+                    assessment={assessment}
+                    progress={progress[assessment.id]}
+                  />
                 ))}
               </div>
             )}
