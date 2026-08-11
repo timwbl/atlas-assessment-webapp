@@ -349,6 +349,51 @@ body.atlas-sidebar-collapsed .account-avatar {
   }
 }
 
+/* Final assessment launcher polish: keep 100% readable inside the ring. */
+.assessment-launch-panel .assessment-launch-summary {
+  grid-template-columns: 50px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  align-items: center !important;
+}
+
+.assessment-launch-panel .assessment-launch-progress {
+  box-sizing: border-box !important;
+  width: 50px !important;
+  height: 50px !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(circle at center, var(--atlas-panel-strong) 0 58%, transparent 59%),
+    conic-gradient(var(--atlas-blue) var(--progress, 0%), color-mix(in srgb, var(--atlas-blue) 10%, #eef2f7) 0) !important;
+}
+
+.assessment-launch-panel .assessment-launch-progress::before {
+  display: none !important;
+}
+
+.assessment-launch-panel .assessment-launch-progress strong {
+  position: relative !important;
+  z-index: 1 !important;
+  display: block !important;
+  max-width: 38px !important;
+  color: var(--atlas-text) !important;
+  font-size: 12px !important;
+  font-weight: 760 !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  transform: translateY(0.5px);
+}
+
+.assessment-launch-panel .assessment-launch-summary > div:last-child {
+  min-width: 0 !important;
+}
+
+.assessment-launch-panel .assessment-launch-summary span,
+.assessment-launch-panel .assessment-launch-summary strong {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
 /* ATLAS 4.0 Typography Discipline
    A quiet, product-oriented scale: page titles lead, cards stay compact. */
 :root {
