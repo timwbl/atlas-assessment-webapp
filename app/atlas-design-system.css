@@ -567,6 +567,208 @@ body {
   }
 }
 
+/* ATLAS 4.0 Altfragen Refresh */
+.altfragen-library-shell > section {
+  margin-top: 22px !important;
+}
+
+.altfragen-library-shell .card {
+  border: 1px solid var(--atlas-hairline) !important;
+  border-radius: 20px !important;
+  background: var(--atlas-panel-strong) !important;
+  box-shadow: 0 10px 26px rgba(24, 29, 38, 0.035) !important;
+}
+
+.altfragen-library-shell .assessment-filters {
+  max-width: 780px;
+}
+
+.altfragen-library-shell .assessment-filters .input,
+.altfragen-library-shell .assessment-filters .atlas-dropdown-trigger {
+  min-height: 42px !important;
+  border-radius: 13px !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 42%, var(--atlas-panel-strong)) !important;
+  font-size: 14px !important;
+  font-weight: 560 !important;
+}
+
+.altfragen-library-shell h2.text-3xl,
+.altfragen-library-shell h2 {
+  font-size: clamp(22px, 1.55vw, 26px) !important;
+  font-weight: 740 !important;
+  line-height: 1.18 !important;
+}
+
+.altfragen-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 14px;
+}
+
+.altfragen-practice-card {
+  position: relative;
+  display: grid;
+  min-height: 214px;
+  gap: 14px;
+  overflow: hidden;
+  border: 1px solid var(--atlas-hairline);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--altfragen-accent, var(--atlas-blue)) 7%, transparent), transparent 38%),
+    var(--atlas-panel-strong);
+  padding: 18px;
+  color: var(--atlas-text);
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(24, 29, 38, 0.04);
+  transition:
+    transform var(--atlas-motion-medium) var(--atlas-ease-spring),
+    border-color var(--atlas-motion-fast) var(--atlas-ease-out),
+    box-shadow var(--atlas-motion-medium) var(--atlas-ease-out),
+    background-color var(--atlas-motion-fast) var(--atlas-ease-out);
+}
+
+.altfragen-practice-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--altfragen-accent, var(--atlas-blue)) 24%, var(--atlas-hairline));
+  box-shadow: var(--atlas-shadow-card);
+}
+
+.altfragen-practice-top,
+.altfragen-practice-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.altfragen-practice-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--altfragen-accent, var(--atlas-blue)) 13%, transparent);
+  color: var(--altfragen-accent, var(--atlas-blue));
+}
+
+.altfragen-practice-icon .atlas-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.altfragen-practice-percent {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border: 1px solid var(--atlas-hairline);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 72%, transparent);
+  padding: 0 10px;
+  color: var(--atlas-secondary-text);
+  font-size: 12px;
+  font-weight: 720;
+}
+
+.altfragen-practice-copy {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+}
+
+.altfragen-practice-copy .eyebrow {
+  margin: 0 !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 11px !important;
+  font-weight: 720 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.altfragen-practice-copy h3 {
+  margin: 0;
+  color: var(--atlas-text);
+  font-size: clamp(20px, 1.38vw, 24px);
+  font-weight: 740;
+  line-height: 1.18;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.altfragen-practice-copy p:not(.eyebrow) {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 13px !important;
+  font-weight: 540 !important;
+  line-height: 1.38 !important;
+}
+
+.altfragen-practice-progress {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 78%, transparent);
+}
+
+.altfragen-practice-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--altfragen-accent, var(--atlas-blue));
+}
+
+.altfragen-practice-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--atlas-hairline);
+  padding-top: 12px;
+}
+
+.altfragen-practice-footer span,
+.altfragen-practice-footer strong {
+  color: var(--atlas-secondary-text);
+  font-size: 12px;
+  font-weight: 680;
+  line-height: 1.2;
+}
+
+.altfragen-practice-footer strong {
+  margin-left: auto;
+  color: var(--altfragen-accent, var(--atlas-blue));
+  font-weight: 760;
+}
+
+/* Compact success state in the assessment launcher */
+.assessment-launch-summary {
+  grid-template-columns: 48px minmax(0, 1fr) !important;
+  gap: 11px !important;
+  padding: 11px !important;
+}
+
+.assessment-launch-progress {
+  width: 48px !important;
+  height: 48px !important;
+  font-size: 13px !important;
+  font-weight: 760 !important;
+}
+
+.assessment-launch-progress::before {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+.assessment-launch-progress strong {
+  font-size: 13px !important;
+  line-height: 1 !important;
+}
+
+.assessment-launch-summary strong {
+  font-size: 15px !important;
+  font-weight: 740 !important;
+  line-height: 1.18 !important;
+}
+
 /* ATLAS New Design: eigenständige Marke und einheitliches Profilmenü */
 .atlas-brand {
   gap: 11px !important;

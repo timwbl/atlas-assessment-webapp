@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
-import { AssessmentCard } from "./AssessmentCard";
+import { AtlasIcon, type AtlasIconName } from "./AtlasIcon";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { useUserStudyContext } from "./study/UserStudyProvider";
 import {
@@ -12,6 +12,7 @@ import {
   canAccessAltfragen
 } from "@/lib/altfragenAccess";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
+import { formatBlockLabel } from "@/lib/blockLabels";
 import { blockColor } from "@/lib/blockColors";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import {
@@ -272,9 +273,9 @@ export function AltfragenLibrary() {
               <span className="pill">{filtered.length} Übungen</span>
             </div>
             {filtered.length ? (
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className="altfragen-card-grid">
                 {filtered.map((assessment) => (
-                  <AssessmentCard
+                  <AltfragenAssessmentCard
                     assessment={assessment}
                     key={assessment.id}
                     progress={progress[assessment.id]}
@@ -374,6 +375,83 @@ export function AltfragenLibrary() {
 
 function fileTypeLabel(document: AltfragenDocument): string {
   return document.fileName.split(".").pop()?.toUpperCase() || document.fileType || "Datei";
+}
+
+function AltfragenAssessmentCard({ assessment, progress }: { assessment: AssessmentSummary; progress?: AssessmentProgress }) {
+  const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
+  const percent = assessment.questionCount ? Math.round((seen / assessment.questionCount) * 100) : 0;
+  const accent = blockColor(assessment.block);
+  const blockLabel = formatBlockLabel(assessment.block);
+  const exam = examForContent(assessment);
+  const icon = blockIcon(assessment.block);
+  const title = cleanAltfragenTitle(assessment.title, blockLabel);
+
+  return (
+    <Link
+      className="altfragen-practice-card"
+      href={`/assessment/${assessment.id}`}
+      prefetch={false}
+      style={{ "--altfragen-accent": accent } as CSSProperties}
+    >
+      <div className="altfragen-practice-top">
+        <span className="altfragen-practice-icon">
+          <AtlasIcon name={icon} />
+        </span>
+        <span className="altfragen-practice-percent">{percent}%</span>
+      </div>
+
+      <div className="altfragen-practice-copy">
+        <p className="eyebrow">Altfragen · {blockLabel}</p>
+        <h3>{title}</h3>
+        <p>{assessment.subject || "Prüfungsnahe Wiederholung"}</p>
+      </div>
+
+      <div className="altfragen-practice-progress" aria-label={`${percent}% gesehen`}>
+        <span style={{ width: `${Math.min(percent, 100)}%` }} />
+      </div>
+
+      <div className="altfragen-practice-footer">
+        <span>{assessment.questionCount} Fragen</span>
+        {exam ? <span>{exam}</span> : null}
+        <strong>Öffnen <span aria-hidden="true">→</span></strong>
+      </div>
+    </Link>
+  );
+}
+
+function cleanAltfragenTitle(title: string, blockLabel: string): string {
+  const cleaned = title
+    .replace(/^Altfragen\s*/i, "")
+    .replace(/^Block\s*(\d+)/i, "Block $1")
+    .trim();
+  return cleaned || blockLabel;
+}
+
+function blockIcon(title: string): AtlasIconName {
+  const normalized = normalizeText(title);
+  const number = title.match(/\d+/)?.[0] || "";
+  if (normalized.includes("prufungssimulation") || normalized.includes("pruefungssimulation")) return "target";
+
+  const icons: Record<string, AtlasIconName> = {
+    "1": "heart",
+    "2": "cells",
+    "3": "atom",
+    "4": "pulse",
+    "5": "ethics",
+    "6": "planetary",
+    "7": "psychosocial",
+    "8": "movement",
+    "9": "development"
+  };
+
+  return icons[number] || "archive";
+}
+
+function normalizeText(value: string): string {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 }
 
 function scopeLabel(scope: Scope): string {
