@@ -59,12 +59,12 @@ export function MobileAssessments() {
   return (
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
-        <p className="eyebrow">Assessments</p>
+        <p className="eyebrow">Übungen</p>
         <h1>Fragen auswählen</h1>
         <p>{semesterHeading(settings)} · nach Titel, KV oder Block suchen.</p>
       </header>
       <nav className="mobile-library-tabs" aria-label="Fragenbereiche">
-        <Link className="is-active" href="/assessments">Assessments</Link>
+        <Link className="is-active" href="/assessments">Übungen</Link>
         <Link href="/altfragen">Altfragen</Link>
       </nav>
       {settings.studyYear === "year1" && currentSemester && (
@@ -89,7 +89,7 @@ export function MobileAssessments() {
         className="mobile-assessment-search"
         inputMode="search"
         onChange={(event) => setQuery(event.target.value)}
-        placeholder="Assessment suchen"
+        placeholder="Übung suchen"
         type="search"
         value={query}
       />
@@ -97,7 +97,7 @@ export function MobileAssessments() {
         {data.loading && <MobileAssessmentSkeleton />}
         {!data.loading && data.error && (
           <div className="mobile-data-error" role="alert">
-            Der Fragenkatalog ist gerade nicht erreichbar. Bereits geladene Assessments bleiben offline verfügbar.
+            Der Fragenkatalog ist gerade nicht erreichbar. Bereits geladene Übungen bleiben offline verfügbar.
           </div>
         )}
         {grouped.map(([blockId, assessments]) => (
@@ -129,7 +129,7 @@ export function MobileAssessments() {
         ))}
         {!data.loading && !data.error && filtered.length === 0 && (
           <div className="mobile-empty-state">
-            {query ? "Keine Assessments passen zu deiner Suche." : "Noch keine Assessments verfügbar."}
+            {query ? "Keine Übungen passen zu deiner Suche." : "Noch keine Übungen verfügbar."}
           </div>
         )}
       </section>
@@ -139,7 +139,7 @@ export function MobileAssessments() {
 
 function MobileAssessmentSkeleton() {
   return (
-    <div className="mobile-list-skeleton" aria-label="Assessments werden geladen" role="status">
+    <div className="mobile-list-skeleton" aria-label="Übungen werden geladen" role="status">
       <span />
       <span />
       <span />

@@ -26,8 +26,8 @@ function TypeAQuestion({ question, answer, revealed, onChange }: Props) {
         const key = optionKey(option);
         const selected = answer?.selected === key;
         const state = revealed
-          ? option.correct ? "border-green-400 bg-green-500/10" : selected ? "border-red-400 bg-red-500/10" : ""
-          : selected ? "border-[var(--accent)] bg-blue-500/10" : "";
+          ? option.correct ? "is-correct" : selected ? "is-wrong" : ""
+          : selected ? "is-selected" : "";
 
         return (
           <button
@@ -57,7 +57,7 @@ function KPrimQuestion({ question, answer, revealed, onChange }: Props) {
         const chosen = values[key];
         const correct = chosen === option.correct;
         const state = revealed
-          ? correct ? "border-green-400 bg-green-500/10" : "border-red-400 bg-red-500/10"
+          ? correct ? "is-correct" : "is-wrong"
           : "";
 
         return (

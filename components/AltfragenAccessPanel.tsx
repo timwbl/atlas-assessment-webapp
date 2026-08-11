@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   altfragenPasswordConfigured,
   ALTFRAGEN_ACCESS_CHANGED_EVENT,
@@ -110,9 +111,16 @@ export function AltfragenAccessPanel({ onUnlocked }: Props) {
               </label>
               <label>
                 <span className="eyebrow">Studienjahr</span>
-                <select className="input mt-2" value={studyYear} onChange={(event) => setStudyYear(Number(event.target.value))}>
-                  {[1, 2, 3, 4, 5, 6].map((year) => <option key={year} value={year}>{year}. Studienjahr</option>)}
-                </select>
+                <AtlasDropdown
+                  className="mt-2"
+                  ariaLabel="Studienjahr auswählen"
+                  value={String(studyYear)}
+                  onChange={(value) => setStudyYear(Number(value))}
+                  options={[1, 2, 3, 4, 5, 6].map((year) => ({
+                    value: String(year),
+                    label: `${year}. Studienjahr`
+                  }))}
+                />
               </label>
               {request && (
                 <p className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-3 text-sm text-[var(--muted)]">

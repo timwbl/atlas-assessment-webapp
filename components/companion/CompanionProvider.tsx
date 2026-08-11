@@ -29,7 +29,7 @@ export const ARI_REACTIONS: Record<AriEventType, AriReaction> = {
   assessment_completed: {
     mood: "success",
     title: "Saubere Arbeit.",
-    subtitle: "Assessment abgeschlossen.",
+    subtitle: "Übung abgeschlossen.",
     autoReturnMs: 3800
   },
   daily_quest_completed: {

@@ -23,10 +23,6 @@ import {
   updateCurrentUserStudySettings
 } from "@/lib/cloudProgress";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
-import {
-  COMPANION_ENABLED_KEY,
-  saveCompanionPreference
-} from "../companion/companionStorage";
 
 const SETTINGS_KEY = "atlas:user-study-settings:v1";
 const ONBOARDING_DISMISSED_KEY = "atlas:user-study-onboarding-dismissed:v1";
@@ -82,7 +78,7 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
         const accountLocal = readLocalSettings(user.id);
         const remote = normalizeStudySettings(
           user.user_metadata?.atlas_study_settings,
-          accountLocal.ariEnabled
+          false
         );
         const hasRemoteSettings = isRecord(user.user_metadata?.atlas_study_settings);
         const hasAccountLocalSettings = localSettingsExist(user.id);
@@ -127,7 +123,6 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
     const next = normalizeStudySettings(nextValue, false);
     setSettings(next);
     saveLocalSettings(next, currentUserId);
-    saveCompanionPreference(COMPANION_ENABLED_KEY, next.ariEnabled);
     if (next.studyYear) {
       if (currentUserId) safeRemove(onboardingDismissedKey(currentUserId));
       setOnboardingOpen(false);
@@ -210,11 +205,9 @@ export function useUserStudyContext(): StudyContextValue {
 function readLocalSettings(userId: string | null = null): UserStudySettings {
   if (typeof window === "undefined") return defaultStudySettings(false);
   try {
-    const explicitAri = window.localStorage.getItem(COMPANION_ENABLED_KEY);
-    const ariFallback = explicitAri === "true";
     return normalizeStudySettings(
       JSON.parse(window.localStorage.getItem(settingsKey(userId)) || "null"),
-      ariFallback
+      false
     );
   } catch {
     return defaultStudySettings(false);

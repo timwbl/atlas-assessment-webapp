@@ -1,28 +1,17 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-
-const DesktopLibrary = dynamic(
-  () => import("@/components/LibraryClient").then((module) => module.LibraryClient),
-  { loading: () => <ResponsiveRouteLoading /> }
-);
-
-const MobileHome = dynamic(
-  () => import("@/components/mobile/MobileHome").then((module) => module.MobileHome),
-  { loading: () => <ResponsiveRouteLoading mobile /> }
-);
-
-const MobileAssessments = dynamic(
-  () => import("@/components/mobile/MobileAssessments").then((module) => module.MobileAssessments),
-  { loading: () => <ResponsiveRouteLoading mobile /> }
-);
+import { DashboardClient } from "@/components/DashboardClient";
+import { AtlasPageLoading } from "@/components/AtlasPageLoading";
+import { LibraryClient } from "@/components/LibraryClient";
+import { MobileAssessments } from "@/components/mobile/MobileAssessments";
+import { MobileHome } from "@/components/mobile/MobileHome";
 
 export function ResponsiveLearningRoute({ mobileView }: { mobileView: "home" | "assessments" }) {
   const mobile = useMobileViewport();
 
   if (mobile === null) return <ResponsiveRouteLoading />;
-  if (!mobile) return <DesktopLibrary />;
+  if (!mobile) return mobileView === "home" ? <DashboardClient /> : <LibraryClient />;
   return mobileView === "home" ? <MobileHome /> : <MobileAssessments />;
 }
 
@@ -41,6 +30,7 @@ function useMobileViewport(): boolean | null {
 }
 
 function ResponsiveRouteLoading({ mobile = false }: { mobile?: boolean }) {
+  if (!mobile) return <AtlasPageLoading />;
   return (
     <main className={mobile ? "mobile-action-page responsive-route-loading" : "shell responsive-route-loading"}>
       <span />

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AdminAltfragenDocumentsManager } from "./AdminAltfragenDocumentsManager";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   canUseSummaryStorage,
   COPYRIGHT_OWNER,
@@ -260,22 +261,25 @@ function SummaryDownloadsManager() {
             <div className="grid gap-3 md:grid-cols-2">
               <label>
                 <span className="eyebrow">Semester</span>
-                <select
-                  className="input mt-2"
+                <AtlasDropdown
+                  className="mt-2"
+                  ariaLabel="Semester auswählen"
                   value={draft.semester}
-                  onChange={(event) => {
-                    const semester = event.target.value as SemesterId;
+                  onChange={(semester) => {
                     setDraft({ ...draft, semester, blockId: downloadBlocksForSemester(semester)[0]?.id || "" });
                   }}
-                >
-                  {DOWNLOAD_SEMESTERS.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}
-                </select>
+                  options={DOWNLOAD_SEMESTERS.map((item) => ({ value: item.id, label: item.title }))}
+                />
               </label>
               <label>
                 <span className="eyebrow">Block</span>
-                <select className="input mt-2" value={draft.blockId} onChange={(event) => setDraft({ ...draft, blockId: event.target.value })}>
-                  {blockOptions.map((block) => <option key={block.id} value={block.id}>{block.title}</option>)}
-                </select>
+                <AtlasDropdown
+                  className="mt-2"
+                  ariaLabel="Block auswählen"
+                  value={draft.blockId}
+                  onChange={(blockId) => setDraft({ ...draft, blockId })}
+                  options={blockOptions.map((block) => ({ value: block.id, label: block.title }))}
+                />
               </label>
             </div>
             <label>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   cloudSyncAvailable,
   fetchAdminProfiles,
@@ -61,14 +62,14 @@ export function AdminProgressDashboard() {
       setProfiles(nextProfiles);
       setRows(nextRows);
     } catch (loadError) {
-      setError(loadError instanceof Error ? loadError.message : "Nutzer konnten nicht geladen werden.");
+      setError(loadError instanceof Error ? loadError.message : "Nutzer:innen konnten nicht geladen werden.");
     } finally {
       setLoading(false);
     }
   }
 
   if (loading) {
-    return <div className="admin-loading card" aria-label="Nutzer werden geladen"><span /><span /><span /></div>;
+    return <div className="admin-loading card" aria-label="Nutzer:innen werden geladen"><span /><span /><span /></div>;
   }
 
   return (
@@ -77,7 +78,7 @@ export function AdminProgressDashboard() {
         <div className="admin-section-heading">
           <div>
             <div className="eyebrow">Accounts & Fortschritt</div>
-            <h2>Nutzerübersicht</h2>
+            <h2>Nutzer:innenübersicht</h2>
             <p>Nur die für den operativen Support nötigen Account- und Lernfortschrittsdaten werden angezeigt.</p>
           </div>
           <button className="btn-secondary" onClick={() => void load()} type="button">Aktualisieren</button>
@@ -85,7 +86,7 @@ export function AdminProgressDashboard() {
 
         <div className="admin-stat-grid admin-stat-grid--compact">
           <MiniStat label="Accounts" value={totals.accounts} />
-          <MiniStat label="Admins" value={totals.admins} />
+          <MiniStat label="Administrator:innen" value={totals.admins} />
           <MiniStat label="Aktiv in 7 Tagen" value={totals.active} />
           <MiniStat label="Versuche" value={totals.attempts} />
         </div>
@@ -104,11 +105,16 @@ export function AdminProgressDashboard() {
           </label>
           <label>
             <span>Rolle</span>
-            <select className="input" value={role} onChange={(event) => setRole(event.target.value as typeof role)}>
-              <option value="all">Alle Rollen</option>
-              <option value="student">User</option>
-              <option value="admin">Admin</option>
-            </select>
+            <AtlasDropdown
+              ariaLabel="Rolle filtern"
+              value={role}
+              onChange={(value) => setRole(value as typeof role)}
+              options={[
+                { value: "all", label: "Alle Rollen" },
+                { value: "student", label: "User" },
+                { value: "admin", label: "Admin" }
+              ]}
+            />
           </label>
         </div>
       </section>
@@ -137,7 +143,7 @@ export function AdminProgressDashboard() {
                 </div>
               </div>
               <div><span>Rolle</span><strong>{profile.role === "admin" ? "Admin" : "User"}</strong></div>
-              <div><span>Assessments</span><strong>{progress.length}</strong></div>
+              <div><span>Übungen</span><strong>{progress.length}</strong></div>
               <div><span>Versuche</span><strong>{attempts}</strong></div>
               <div><span>Bester Score</span><strong>{best === null ? "–" : `${best}%`}</strong></div>
               <div><span>Letzte Aktivität</span><strong>{formatLastSeen(profile.lastSeenAt)}</strong></div>
@@ -146,7 +152,7 @@ export function AdminProgressDashboard() {
         })}
         {!filteredProfiles.length && (
           <div className="admin-empty-state">
-            <h3>Keine Nutzer gefunden</h3>
+            <h3>Keine Nutzer:innen gefunden</h3>
             <p>Passe Suche oder Rollenfilter an.</p>
           </div>
         )}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import { AtlasDropdown } from "../ui/AtlasDropdown";
 import { loadActiveAssessmentsWithDiagnostics } from "@/lib/assessmentClient";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { examForContent } from "@/lib/studyProgram";
@@ -253,7 +254,7 @@ export function AdminQuestionQualityReport({
       {!!warnings.length && (
         <div className="admin-alert admin-alert--warning" role="status">
           <strong>{warnings.length} Datensatz{warnings.length === 1 ? "" : "e"} übersprungen.</strong>
-          <span> Die übrigen Assessments wurden normal analysiert. Neu laden behebt veraltete Browser-Caches automatisch.</span>
+          <span> Die übrigen Übungen wurden normal analysiert. Neu laden behebt veraltete Browser-Caches automatisch.</span>
           <details>
             <summary>Details anzeigen</summary>
             <ul>
@@ -298,16 +299,17 @@ export function AdminQuestionQualityReport({
             </div>
             <div className="admin-quality-actions">
               <button className="btn-primary" onClick={() => openQuestion(row)} type="button">Frage öffnen</button>
-              <select
-                className="input"
+              <AtlasDropdown
+                ariaLabel="Review-Status ändern"
                 value={row.reviewStatus}
-                onChange={(event) => updateReview(row, event.target.value as QuestionReviewStatus)}
-              >
-                <option value="draft">Entwurf</option>
-                <option value="needs_review">Review nötig</option>
-                <option value="reviewed">Geprüft</option>
-                <option value="verified">Verifiziert</option>
-              </select>
+                onChange={(value) => updateReview(row, value as QuestionReviewStatus)}
+                options={[
+                  { value: "draft", label: "Entwurf" },
+                  { value: "needs_review", label: "Review nötig" },
+                  { value: "reviewed", label: "Geprüft" },
+                  { value: "verified", label: "Verifiziert" }
+                ]}
+              />
               {!!row.activeFlags.length && (
                 <button className="btn-secondary" onClick={() => updateReview(row, "reviewed", true)} type="button">
                   Flags als geprüft markieren
@@ -350,9 +352,12 @@ function Filter(props: {
   return (
     <label>
       <span>{props.label}</span>
-      <select className="input" value={props.value} onChange={(event) => props.onChange(event.target.value)}>
-        {props.options.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
-      </select>
+      <AtlasDropdown
+        ariaLabel={`${props.label} auswählen`}
+        value={props.value}
+        onChange={props.onChange}
+        options={props.options.map(([value, label]) => ({ value, label }))}
+      />
     </label>
   );
 }

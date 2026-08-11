@@ -39,7 +39,7 @@ export function QuizPageClient({
         if (value) rememberAssessmentLibrarySelectionFromAssessment(value);
       })
       .catch(() => {
-        if (active) setError("Das Assessment konnte gerade nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.");
+        if (active) setError("Die Übung konnte gerade nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.");
       });
     void refreshAltfragenAccess();
     return () => {
@@ -71,14 +71,14 @@ export function QuizPageClient({
         eyebrow="Verbindung"
         message={error}
         onAction={() => setLoadVersion((value) => value + 1)}
-        title="Assessment nicht verfügbar"
+        title="Übung nicht verfügbar"
       />
     );
   }
   if (!assessment) {
     return (
       <PageState
-        eyebrow="Assessment"
+        eyebrow="Übung"
         loading
         message="Fragen und dein letzter Stand werden vorbereitet."
         title="Quiz wird geladen"

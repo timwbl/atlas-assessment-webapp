@@ -54,7 +54,7 @@ export function MobileHome() {
               >
                 {data.resume ? "Fortsetzen" : "Starten"}
               </Link>
-            ) : <Link className="mobile-primary-action" href="/assessments">Assessment wählen</Link>}
+            ) : <Link className="mobile-primary-action" href="/assessments">Übung wählen</Link>}
           </section>
 
           <section className="mobile-quick-grid" aria-label="Schnelle Lernaktionen">
@@ -73,7 +73,7 @@ export function MobileHome() {
             <QuickLink
               disabled={!data.resume}
               href={data.resume ? `/quiz/${data.resume.assessmentId}?resume=1` : "#"}
-              label="Assessment fortsetzen"
+              label="Übung fortsetzen"
               meta={data.resume ? `Frage ${data.resume.currentQuestionIndex + 1}` : "Keine offene Session"}
             />
             {data.otherResume && data.otherResumeAssessment && (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   allRecommendationBlocks,
   BLOCK_RECOMMENDATIONS_CHANGED_EVENT,
@@ -91,19 +92,22 @@ export function AdminBlockRecommendations() {
 
               <label className="min-w-0">
                 <span className="eyebrow">Bewertung</span>
-                <select
-                  className="input mt-2"
-                  value={current.rating ?? ""}
-                  onChange={(event) => updateDraft(current.id, {
+                <AtlasDropdown
+                  className="mt-2"
+                  ariaLabel={`${block.blockTitle} bewerten`}
+                  value={current.rating === null ? "" : String(current.rating)}
+                  onChange={(value) => updateDraft(current.id, {
                     ...current,
-                    rating: event.target.value ? Number(event.target.value) : null
+                    rating: value ? Number(value) : null
                   })}
-                >
-                  <option value="">Noch keine</option>
-                  {Array.from({ length: 10 }, (_, index) => index + 1).map((value) => (
-                    <option key={value} value={value}>{value}/10</option>
-                  ))}
-                </select>
+                  options={[
+                    { value: "", label: "Noch keine" },
+                    ...Array.from({ length: 10 }, (_, index) => index + 1).map((value) => ({
+                      value: String(value),
+                      label: `${value}/10`
+                    }))
+                  ]}
+                />
               </label>
 
               <label className="min-w-0">

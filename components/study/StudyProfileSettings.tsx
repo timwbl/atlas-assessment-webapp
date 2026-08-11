@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AtlasDropdown } from "../ui/AtlasDropdown";
 import {
   STUDY_YEARS,
   examsForSemester,
@@ -13,13 +14,17 @@ import {
 import { useUserStudyContext } from "./UserStudyProvider";
 
 export function StudyProfileSettings({
+  showHeader = true,
   title = "Lernprofil",
   description = "ATLAS zeigt dir bevorzugt die Inhalte, die zu deiner aktuellen Lernphase passen.",
-  onDone
+  onDone,
+  submitLabel = "Einstellungen speichern"
 }: {
+  showHeader?: boolean;
   title?: string;
   description?: string;
   onDone?: () => void;
+  submitLabel?: string;
 }) {
   const { settings, updateSettings } = useUserStudyContext();
   const [draft, setDraft] = useState<UserStudySettings>(settings);
@@ -64,26 +69,28 @@ export function StudyProfileSettings({
 
   return (
     <div className="study-profile-editor">
-      <div>
-        <p className="eyebrow">Profileinstellungen</p>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
+      {showHeader && (
+        <div>
+          <p className="eyebrow">Profileinstellungen</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+      )}
 
       <label className="study-field">
         <span>Studienjahr</span>
-        <select
-          className="input"
+        <AtlasDropdown
+          ariaLabel="Studienjahr auswählen"
           value={draft.studyYear || ""}
-          onChange={(event) => setYear((event.target.value || null) as StudyYear | null)}
-        >
-          <option value="">Noch nicht festgelegt</option>
-          {STUDY_YEARS.map((year) => (
-            <option key={year.id} value={year.id}>
-              {year.label}{year.available ? "" : " · Inhalte folgen"}
-            </option>
-          ))}
-        </select>
+          onChange={(value) => setYear((value || null) as StudyYear | null)}
+          options={[
+            { value: "", label: "Noch nicht festgelegt" },
+            ...STUDY_YEARS.map((year) => ({
+              value: year.id,
+              label: `${year.label}${year.available ? "" : " · Inhalte folgen"}`
+            }))
+          ]}
+        />
       </label>
 
       {draft.studyYear === "year1" && (
@@ -145,19 +152,6 @@ export function StudyProfileSettings({
         </div>
       )}
 
-      <label className="study-toggle-row">
-        <span>
-          <strong>Ari anzeigen</strong>
-          <small>Optionaler Lernbegleiter für Fokus- und Fortschrittshinweise.</small>
-        </span>
-        <input
-          checked={draft.ariEnabled}
-          onChange={(event) => setDraft({ ...draft, ariEnabled: event.target.checked })}
-          type="checkbox"
-        />
-        <span className="companion-switch" aria-hidden="true" />
-      </label>
-
       <button
         className="btn-primary study-save-button"
         onClick={() => {
@@ -166,7 +160,7 @@ export function StudyProfileSettings({
         }}
         type="button"
       >
-        Einstellungen speichern
+        {submitLabel}
       </button>
     </div>
   );

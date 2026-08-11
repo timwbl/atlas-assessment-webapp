@@ -1,6 +1,7 @@
 "use client";
 
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   ASSESSMENT_REVIEWS_CHANGED_EVENT,
   deleteAssessmentReview,
@@ -99,8 +100,8 @@ export function AdminAssessmentReviews() {
     <section className="card admin-panel">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <div className="eyebrow">User Bewertungen</div>
-          <h2 className="mt-1 text-2xl font-black">Neueste Assessment-Kommentare</h2>
+          <div className="eyebrow">Nutzer:innenbewertungen</div>
+          <h2 className="mt-1 text-2xl font-black">Neueste Kommentare zu Übungen</h2>
           <p className="mt-2 text-sm text-[var(--muted)]">Kommentare erscheinen erst öffentlich, wenn du sie freigibst.</p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -111,11 +112,17 @@ export function AdminAssessmentReviews() {
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Bewertungen suchen"
           />
-          <select className="input w-full lg:w-44" value={status} onChange={(event) => setStatus(event.target.value as typeof status)}>
-            <option value="all">Alle Status</option>
-            <option value="pending">Ausstehend</option>
-            <option value="approved">Freigegeben</option>
-          </select>
+          <AtlasDropdown
+            className="w-full lg:w-44"
+            ariaLabel="Bewertungsstatus filtern"
+            value={status}
+            onChange={(value) => setStatus(value as typeof status)}
+            options={[
+              { value: "all", label: "Alle Status" },
+              { value: "pending", label: "Ausstehend" },
+              { value: "approved", label: "Freigegeben" }
+            ]}
+          />
           <button className="btn-secondary" disabled={loading} onClick={() => void refresh()}>Aktualisieren</button>
         </div>
       </div>

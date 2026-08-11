@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   altfragenDocumentBlockIds,
   altfragenDocumentBlocksForSemester,
@@ -229,20 +230,19 @@ export function AdminAltfragenDocumentsManager() {
             <div className="grid gap-3">
               <label className="max-w-sm">
                 <span className="eyebrow">Semester</span>
-                <select
-                  className="input mt-2"
+                <AtlasDropdown
+                  className="mt-2"
+                  ariaLabel="Semester auswählen"
                   value={draft.semester}
-                  onChange={(event) => {
-                    const semester = event.target.value as SemesterId;
+                  onChange={(semester) => {
                     setDraft({
                       ...draft,
                       semester,
                       blockIds: []
                     });
                   }}
-                >
-                  {DOWNLOAD_SEMESTERS.map((item) => <option key={item.id} value={item.id}>{item.title}</option>)}
-                </select>
+                  options={DOWNLOAD_SEMESTERS.map((item) => ({ value: item.id, label: item.title }))}
+                />
               </label>
               <fieldset>
                 <legend className="eyebrow">Blöcke</legend>

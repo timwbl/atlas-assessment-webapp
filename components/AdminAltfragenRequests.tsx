@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   ALTFRAGEN_ACCESS_CHANGED_EVENT,
   loadAdminAltfragenRequests,
@@ -142,28 +143,44 @@ export function AdminAltfragenRequests() {
           </label>
           <label>
             <span>Studienjahr</span>
-            <select className="input" value={studyYear} onChange={(event) => setStudyYear(event.target.value)}>
-              <option value="all">Alle</option>
-              {Array.from({ length: 6 }, (_, index) => index + 1).map((year) => (
-                <option key={year} value={year}>{year}. Studienjahr</option>
-              ))}
-            </select>
+            <AtlasDropdown
+              ariaLabel="Studienjahr filtern"
+              value={studyYear}
+              onChange={setStudyYear}
+              options={[
+                { value: "all", label: "Alle" },
+                ...Array.from({ length: 6 }, (_, index) => index + 1).map((year) => ({
+                  value: String(year),
+                  label: `${year}. Studienjahr`
+                }))
+              ]}
+            />
           </label>
           <label>
             <span>Zeitraum</span>
-            <select className="input" value={period} onChange={(event) => setPeriod(event.target.value)}>
-              <option value="all">Gesamter Zeitraum</option>
-              <option value="7">Letzte 7 Tage</option>
-              <option value="30">Letzte 30 Tage</option>
-            </select>
+            <AtlasDropdown
+              ariaLabel="Zeitraum filtern"
+              value={period}
+              onChange={setPeriod}
+              options={[
+                { value: "all", label: "Gesamter Zeitraum" },
+                { value: "7", label: "Letzte 7 Tage" },
+                { value: "30", label: "Letzte 30 Tage" }
+              ]}
+            />
           </label>
           <label>
             <span>Sortierung</span>
-            <select className="input" value={sort} onChange={(event) => setSort(event.target.value as SortMode)}>
-              <option value="newest">Neueste zuerst</option>
-              <option value="status">Status</option>
-              <option value="name">Name A–Z</option>
-            </select>
+            <AtlasDropdown
+              ariaLabel="Sortierung auswählen"
+              value={sort}
+              onChange={(value) => setSort(value as SortMode)}
+              options={[
+                { value: "newest", label: "Neueste zuerst" },
+                { value: "status", label: "Status" },
+                { value: "name", label: "Name A–Z" }
+              ]}
+            />
           </label>
         </div>
       </section>

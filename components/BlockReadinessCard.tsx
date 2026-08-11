@@ -27,11 +27,11 @@ export function BlockReadinessCard({
     <section className="block-readiness-card" aria-label="Block Readiness">
       <div className="block-readiness-copy">
         <p className="eyebrow">Block Readiness</p>
-        <h3>{latest ? `${latest.readinessScore}% · ${readinessStatusLabel(latest.status)}` : "Wie stabil sitzt dieser Block?"}</h3>
+        <h3>{latest ? readinessStatusLabel(latest.status) : "Kurzer Block-Check"}</h3>
         <p>
           {latest
-            ? `${latest.testedLearningObjectiveIds.length} Lernziele getestet · ${latest.weakLearningObjectiveIds.length} offene Schwächen`
-            : `ATLAS wählt aus ${questionCount} Fragen einen kurzen, lernzielorientierten Check.`}
+            ? `${latest.weakLearningObjectiveIds.length} offene Schwäche${latest.weakLearningObjectiveIds.length === 1 ? "" : "n"}`
+            : `${questionCount} Fragen im Pool`}
         </p>
       </div>
       {latest && (
@@ -42,7 +42,7 @@ export function BlockReadinessCard({
         </div>
       )}
       <Link className="btn-primary block-readiness-action" href={`/blocks/${blockId}/fast-quiz`}>
-        {latest ? "Readiness erneut prüfen" : "Fast Quiz starten"}
+        {latest ? "Erneut prüfen" : "Fast Quiz"}
       </Link>
     </section>
   );

@@ -35,7 +35,7 @@ export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestar
     <main id="top" className="shell assessment-review-shell">
       <header className="glass result-hero assessment-review-hero rounded-[28px] p-6 md:p-8">
         <div>
-          <div className="eyebrow">Assessment abgeschlossen · {assessment.lectureCode}</div>
+          <div className="eyebrow">Übung abgeschlossen · {assessment.lectureCode}</div>
           <h1 className="mt-2 text-3xl font-black md:text-4xl">{assessment.title}</h1>
           <p className="mt-2 text-[var(--muted)]">
             {formatBlockLabel(assessment.block)} · {formatCompletedAt(attempt.completedAt)} · {attempt.total} Fragen

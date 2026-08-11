@@ -1,16 +1,23 @@
 import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { AppChrome } from "@/components/AppChrome";
 import { ChunkRecovery } from "@/components/ChunkRecovery";
 import { CompanionProvider } from "@/components/companion/CompanionProvider";
 import { UserStudyProvider } from "@/components/study/UserStudyProvider";
 import { APP_VERSION } from "@/lib/appVersion";
-import "@/components/companion/ari-companion.css";
 import "./globals.css";
+import "./atlas-design-system.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter"
+});
 
 export const metadata: Metadata = {
-  title: "MC Übungsfragen",
-  description: "Read-only Assessment-WebApp für medizinische Vorlesungen.",
+  title: "ATLAS Study OS",
+  description: "Ruhige Lern- und Übungs-App für medizinische Vorlesungen.",
   manifest: "/manifest.webmanifest",
   other: {
     "application-version": APP_VERSION
@@ -41,7 +48,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="de" data-app-version={APP_VERSION} suppressHydrationWarning>
-      <body>
+      <body className={`${inter.variable} ${inter.className}`}>
         <ChunkRecovery />
         <UserStudyProvider>
           <CompanionProvider>

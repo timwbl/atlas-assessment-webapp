@@ -54,13 +54,13 @@ const AdminSystemSettings = dynamic(
 const NAV_ITEMS: Array<{ id: AdminView; label: string; description: string }> = [
   { id: "overview", label: "Übersicht", description: "Offene Arbeit und Systemstatus" },
   { id: "requests", label: "Altfragen-Anfragen", description: "Zugriffe prüfen und freigeben" },
-  { id: "assessments", label: "Assessments", description: "Normale Assessments verwalten" },
+  { id: "assessments", label: "Übungen", description: "Normale Übungen verwalten" },
   { id: "altfragen", label: "Altfragen", description: "Prüfungsnahe Inhalte verwalten" },
   { id: "quality", label: "Fragenqualität", description: "Flags, Tiefe und K-Prim prüfen" },
   { id: "recommendations", label: "Empfehlungen", description: "Blockbewertungen pflegen" },
-  { id: "reviews", label: "Kommentare", description: "User-Kommentare moderieren" },
+  { id: "reviews", label: "Kommentare", description: "Nutzer:innenkommentare moderieren" },
   { id: "downloads", label: "Downloads", description: "Zusammenfassungen und Altfragen-Dokumente" },
-  { id: "users", label: "Nutzer", description: "Accounts und Fortschritt ansehen" },
+  { id: "users", label: "Nutzer:innen", description: "Accounts und Fortschritt ansehen" },
   { id: "settings", label: "System", description: "Verfügbarkeit und globale Einstellungen" }
 ];
 

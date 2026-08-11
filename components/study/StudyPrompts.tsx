@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { semesterConfig } from "@/lib/studyProgram";
-import { useCompanion } from "../companion/CompanionProvider";
 import { StudyProfileSettings } from "./StudyProfileSettings";
 import { useUserStudyContext } from "./UserStudyProvider";
 
@@ -13,54 +13,41 @@ export function StudyPrompts() {
     profileEditorOpen,
     semesterPromptOpen,
     suggestedSemester,
-    settings,
     authenticated,
     dismissOnboarding,
     keepCurrentSemester,
     selectSemester,
     setProfileEditorOpen
   } = useUserStudyContext();
-  const { companionEnabled, setCompanionEnabled } = useCompanion();
-
-  useEffect(() => {
-    if (hydrated && companionEnabled !== settings.ariEnabled) {
-      setCompanionEnabled(settings.ariEnabled);
-    }
-  }, [companionEnabled, hydrated, setCompanionEnabled, settings.ariEnabled]);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     function closeOnEscape(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
-      if (profileEditorOpen) setProfileEditorOpen(false);
-      else if (semesterPromptOpen) keepCurrentSemester();
+      if (semesterPromptOpen) keepCurrentSemester();
     }
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
-  }, [keepCurrentSemester, profileEditorOpen, semesterPromptOpen, setProfileEditorOpen]);
+  }, [keepCurrentSemester, semesterPromptOpen]);
+
+  useEffect(() => {
+    if (!profileEditorOpen) return;
+    setProfileEditorOpen(false);
+    if (!pathname.startsWith("/settings")) router.push("/settings");
+  }, [pathname, profileEditorOpen, router, setProfileEditorOpen]);
 
   if (!hydrated) return null;
 
   return (
     <>
-      {((authenticated && onboardingOpen) || profileEditorOpen) && (
+      {authenticated && onboardingOpen && (
         <div className="study-modal-backdrop" role="presentation">
           <section className="study-modal" aria-label="Lernprofil einrichten" aria-modal="true" role="dialog">
-            {profileEditorOpen && (
-              <button
-                aria-label="Schliessen"
-                className="auth-modal-close"
-                onClick={() => setProfileEditorOpen(false)}
-                type="button"
-              >
-                ×
-              </button>
-            )}
             <StudyProfileSettings
-              description={authenticated && onboardingOpen
-                ? "Wähle deine aktuelle Lernphase. Du kannst dies später jederzeit im Benutzerfenster ändern."
-                : undefined}
-              onDone={() => setProfileEditorOpen(false)}
-              title={authenticated && onboardingOpen ? "ATLAS einrichten" : "Lernprofil"}
+              description="Wähle deine aktuelle Lernphase. Du kannst dies später jederzeit auf der Einstellungsseite ändern."
+              onDone={dismissOnboarding}
+              title="ATLAS einrichten"
             />
             {authenticated && onboardingOpen && (
               <button className="auth-text-button" onClick={dismissOnboarding} type="button">

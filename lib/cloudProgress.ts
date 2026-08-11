@@ -339,7 +339,7 @@ export async function fetchAdminProgressRows(): Promise<AdminProgressRow[]> {
 
 export async function fetchAdminProfiles(): Promise<AdminProfileRow[]> {
   const profile = await getCurrentProfile();
-  if (profile?.role !== "admin") throw new Error("Nur Admins können die Nutzerübersicht laden.");
+  if (profile?.role !== "admin") throw new Error("Nur Administrator:innen können die Nutzer:innenübersicht laden.");
   const rows = await restRequest<CloudProfile[]>(
     "profiles?select=id,email,display_name,role,created_at,last_seen_at&order=last_seen_at.desc.nullslast"
   );

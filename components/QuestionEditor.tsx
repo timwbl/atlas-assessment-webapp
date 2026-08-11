@@ -1,5 +1,6 @@
 "use client";
 
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import type { AssessmentQuestion, LearningObjective } from "@/lib/types";
 import {
   bloomLabel,
@@ -26,15 +27,29 @@ export function QuestionEditor({ question, objectives, onChange, onDelete, onMov
     <article className="card p-5">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div className="flex flex-wrap gap-2">
-          <select className="input w-auto" value={question.type} onChange={(event) => update("type", event.target.value as AssessmentQuestion["type"])}>
-            <option value="A">Typ A</option>
-            <option value="KPRIM">KPRIM</option>
-          </select>
+          <AtlasDropdown
+            className="w-auto"
+            fullWidth={false}
+            ariaLabel="Fragetyp auswählen"
+            value={question.type}
+            onChange={(value) => update("type", value as AssessmentQuestion["type"])}
+            options={[
+              { value: "A", label: "Typ A" },
+              { value: "KPRIM", label: "KPRIM" }
+            ]}
+          />
           <input className="input w-28" type="number" min={1} max={5} value={question.difficulty} onChange={(event) => update("difficulty", Number(event.target.value))} />
-          <select className="input w-auto" value={question.learningObjectiveId} onChange={(event) => update("learningObjectiveId", event.target.value)}>
-            <option value="">Kein Lernziel</option>
-            {objectives.map((objective) => <option key={objective.id} value={objective.id}>{objective.id}</option>)}
-          </select>
+          <AtlasDropdown
+            className="w-auto"
+            fullWidth={false}
+            ariaLabel="Lernziel auswählen"
+            value={question.learningObjectiveId}
+            onChange={(value) => update("learningObjectiveId", value)}
+            options={[
+              { value: "", label: "Kein Lernziel" },
+              ...objectives.map((objective) => ({ value: objective.id, label: objective.id }))
+            ]}
+          />
         </div>
         <div className="flex gap-2">
           <button className="btn-secondary" onClick={() => onMove(-1)}>↑</button>
@@ -65,44 +80,50 @@ export function QuestionEditor({ question, objectives, onChange, onDelete, onMov
       <div className="mt-4 grid gap-3 md:grid-cols-3">
         <label>
           <span className="eyebrow">Schwierigkeit</span>
-          <select
-            className="input mt-2"
+          <AtlasDropdown
+            className="mt-2"
+            ariaLabel="Schwierigkeit auswählen"
             value={question.difficultyLevel || qualityAnalysis?.difficulty || "medium"}
-            onChange={(event) => update("difficultyLevel", event.target.value as NonNullable<AssessmentQuestion["difficultyLevel"]>)}
-          >
-            <option value="easy">Einfach</option>
-            <option value="medium">Mittel</option>
-            <option value="hard">Schwierig</option>
-            <option value="very_hard">Sehr schwierig</option>
-          </select>
+            onChange={(value) => update("difficultyLevel", value as NonNullable<AssessmentQuestion["difficultyLevel"]>)}
+            options={[
+              { value: "easy", label: "Einfach" },
+              { value: "medium", label: "Mittel" },
+              { value: "hard", label: "Schwierig" },
+              { value: "very_hard", label: "Sehr schwierig" }
+            ]}
+          />
         </label>
         <label>
           <span className="eyebrow">Bloom-Level</span>
-          <select
-            className="input mt-2"
+          <AtlasDropdown
+            className="mt-2"
+            ariaLabel="Bloom-Level auswählen"
             value={question.bloomLevel || qualityAnalysis?.bloomLevel || "understanding"}
-            onChange={(event) => update("bloomLevel", event.target.value as NonNullable<AssessmentQuestion["bloomLevel"]>)}
-          >
-            <option value="recall">Recall</option>
-            <option value="understanding">Verständnis</option>
-            <option value="application">Anwendung</option>
-            <option value="mechanism">Mechanismus</option>
-            <option value="transfer">Transfer</option>
-            <option value="clinical_reasoning">Klinisches Denken</option>
-          </select>
+            onChange={(value) => update("bloomLevel", value as NonNullable<AssessmentQuestion["bloomLevel"]>)}
+            options={[
+              { value: "recall", label: "Recall" },
+              { value: "understanding", label: "Verständnis" },
+              { value: "application", label: "Anwendung" },
+              { value: "mechanism", label: "Mechanismus" },
+              { value: "transfer", label: "Transfer" },
+              { value: "clinical_reasoning", label: "Klinisches Denken" }
+            ]}
+          />
         </label>
         <label>
           <span className="eyebrow">Review Status</span>
-          <select
-            className="input mt-2"
+          <AtlasDropdown
+            className="mt-2"
+            ariaLabel="Review-Status auswählen"
             value={question.reviewStatus || qualityAnalysis?.reviewStatus || "needs_review"}
-            onChange={(event) => update("reviewStatus", event.target.value as NonNullable<AssessmentQuestion["reviewStatus"]>)}
-          >
-            <option value="draft">Entwurf</option>
-            <option value="needs_review">Review nötig</option>
-            <option value="reviewed">Geprüft</option>
-            <option value="verified">Verifiziert</option>
-          </select>
+            onChange={(value) => update("reviewStatus", value as NonNullable<AssessmentQuestion["reviewStatus"]>)}
+            options={[
+              { value: "draft", label: "Entwurf" },
+              { value: "needs_review", label: "Review nötig" },
+              { value: "reviewed", label: "Geprüft" },
+              { value: "verified", label: "Verifiziert" }
+            ]}
+          />
         </label>
       </div>
 

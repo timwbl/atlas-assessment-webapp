@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
   cloudSyncAvailable,
@@ -20,16 +21,18 @@ import {
   shouldRememberSession,
   type CloudUser
 } from "@/lib/supabaseClient";
-import { CompanionSettings } from "./companion/CompanionSettings";
 import { semesterHeading } from "@/lib/studyProgram";
 import { useUserStudyContext } from "./study/UserStudyProvider";
+import { AtlasIcon, type AtlasIconName } from "./AtlasIcon";
 
 const NAME_KEY = "atlas-user-display-name";
+const PROFILE_NAME_CHANGED_EVENT = "atlas-profile-name-changed";
 
 type AuthMode = "signin" | "signup" | "name" | "check-email";
 
 export function AccountMenu() {
-  const { settings: studySettings, setProfileEditorOpen } = useUserStudyContext();
+  const { settings: studySettings } = useUserStudyContext();
+  const router = useRouter();
   const menuRef = useRef<HTMLDivElement | null>(null);
   const nameInputRef = useRef<HTMLInputElement | null>(null);
   const [open, setOpen] = useState(false);
@@ -56,9 +59,19 @@ export function AccountMenu() {
     function handleSessionChange() {
       if (cloudSyncAvailable()) void refreshUser();
     }
+    function handleProfileNameChange(event: Event) {
+      const nextName = event instanceof CustomEvent && typeof event.detail === "string"
+        ? event.detail
+        : window.localStorage.getItem(NAME_KEY) || "";
+      setName(nextName);
+    }
 
     window.addEventListener(AUTH_SESSION_CHANGED_EVENT, handleSessionChange);
-    return () => window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, handleSessionChange);
+    window.addEventListener(PROFILE_NAME_CHANGED_EVENT, handleProfileNameChange);
+    return () => {
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, handleSessionChange);
+      window.removeEventListener(PROFILE_NAME_CHANGED_EVENT, handleProfileNameChange);
+    };
   }, []);
 
   useEffect(() => {
@@ -102,6 +115,8 @@ export function AccountMenu() {
     ? displayName.split(/\s+/).map((part) => part[0]).join("").slice(0, 2).toUpperCase()
     : user?.email?.[0]?.toUpperCase() || "A";
   const requiresName = !!user && profileChecked && !profile?.display_name?.trim();
+  const localProgressCount = Object.keys(getAllProgress()).length;
+  const accountEmail = user?.email || "Fortschritt lokal gespeichert";
 
   async function refreshUser() {
     setProfileChecked(false);
@@ -235,67 +250,93 @@ export function AccountMenu() {
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
         >
-          <span>{initials}</span>
+          <span className="account-avatar-mark">{initials}</span>
+          <span className="account-avatar-copy">
+            <strong>{displayName || "Gastprofil"}</strong>
+            <small>{semesterHeading(studySettings)}</small>
+          </span>
+          <AtlasIcon className="account-avatar-chevron" name="chevronRight" />
         </button>
 
         {open && (
           <div className="account-popover" role="dialog" aria-label="Account-Menü">
             <div className="account-popover-head">
-              <div className="account-avatar is-large"><span>{initials}</span></div>
-              <div className="min-w-0">
-                <div className="eyebrow">Account</div>
-                <strong className="account-name">{displayName || "Gast"}</strong>
-                <p className="account-email">{user?.email || "Fortschritt lokal gespeichert"}</p>
+              <div className="account-popover-mark">{initials}</div>
+              <div className="account-popover-identity">
+                <strong className="account-name">{displayName || "Gastprofil"}</strong>
+                <p className="account-email">{accountEmail}</p>
               </div>
             </div>
 
-            <div className="account-divider" />
-
-            <CompanionSettings />
-
-            <div className="account-divider" />
-
-            <div className="account-study-summary">
-              <div>
-                <span className="eyebrow">Lernprofil</span>
-                <strong>{semesterHeading(studySettings)}</strong>
-              </div>
-              <button
-                className="account-menu-row"
+            <div className="account-popover-list">
+              <AccountMenuItem
+                detail={semesterHeading(studySettings)}
+                icon="settings"
+                label="Einstellungen"
                 onClick={() => {
                   setOpen(false);
-                  setProfileEditorOpen(true);
+                  router.push("/settings");
                 }}
-                type="button"
-              >
-                Lernprofil bearbeiten
-              </button>
+              />
+              <AccountMenuItem
+                detail={displayName ? "Anzeigename ändern" : "Namen ergänzen"}
+                icon="user"
+                label="Profilname"
+                onClick={() => openAuth("name")}
+              />
+              <AccountInfoRow detail="Deutsch" icon="globe" label="Sprache" />
+              <AccountInfoRow detail="System" icon="palette" label="Erscheinungsbild" />
+              <AccountMenuItem
+                detail="E-Mail öffnen"
+                icon="mail"
+                label="Kontaktiere uns"
+                onClick={() => {
+                  window.location.href = "mailto:tim.nick.weibel@icloud.com?subject=ATLAS%20Feedback";
+                }}
+              />
             </div>
-
-            <div className="account-divider" />
 
             {!cloudSyncAvailable() && (
               <p className="account-note">Account-Sync ist noch nicht konfiguriert. Dein Fortschritt bleibt lokal.</p>
             )}
 
             {cloudSyncAvailable() && user && (
-              <div className="grid gap-2">
+              <div className="account-popover-list account-popover-list--sync">
                 <p className="account-note">
-                  {Object.keys(getAllProgress()).length} lokale Assessments · Rolle: {profile?.role === "admin" ? "Admin" : "Student"}
+                  {localProgressCount} lokale Übungen · Rolle: {profile?.role === "admin" ? "Administrator:in" : "Teilnehmer:in"}
                 </p>
-                <button type="button" className="account-menu-row" onClick={() => openAuth("name")}>
-                  Name bearbeiten
-                </button>
-                <button type="button" className="btn-primary" disabled={busy} onClick={syncNow}>Jetzt synchronisieren</button>
-                <button type="button" className="btn-secondary" disabled={busy} onClick={logout}>Abmelden</button>
+                <AccountMenuItem
+                  detail={busy ? "Synchronisiert..." : "Cloud-Fortschritt abgleichen"}
+                  disabled={busy}
+                  icon="sync"
+                  label="Synchronisieren"
+                  onClick={() => void syncNow()}
+                />
+                <AccountMenuItem
+                  danger
+                  detail="Lokal bleibt alles erhalten"
+                  disabled={busy}
+                  icon="logout"
+                  label="Abmelden"
+                  onClick={() => void logout()}
+                />
               </div>
             )}
 
             {cloudSyncAvailable() && !user && (
-              <div className="grid gap-2">
-                <button type="button" className="btn-primary" onClick={() => openAuth("signin")}>Anmelden</button>
-                <button type="button" className="btn-secondary" onClick={() => openAuth("signup")}>Registrieren</button>
-                <p className="account-note">Mit Account wird dein Fortschritt zwischen Geräten synchronisiert.</p>
+              <div className="account-popover-list account-popover-list--sync">
+                <AccountMenuItem
+                  detail="Fortschritt zwischen Geräten sichern"
+                  icon="sync"
+                  label="Anmelden"
+                  onClick={() => openAuth("signin")}
+                />
+                <AccountMenuItem
+                  detail="Neuen ATLAS Account erstellen"
+                  icon="user"
+                  label="Registrieren"
+                  onClick={() => openAuth("signup")}
+                />
               </div>
             )}
 
@@ -468,6 +509,62 @@ export function AccountMenu() {
         </div>
       )}
     </>
+  );
+}
+
+function AccountMenuItem({
+  danger = false,
+  detail,
+  disabled = false,
+  icon,
+  label,
+  onClick
+}: {
+  danger?: boolean;
+  detail?: string;
+  disabled?: boolean;
+  icon: AtlasIconName;
+  label: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      className={danger ? "account-popover-row is-danger" : "account-popover-row"}
+      disabled={disabled}
+      onClick={onClick}
+      type="button"
+    >
+      <span className="account-popover-row-icon">
+        <AtlasIcon name={icon} />
+      </span>
+      <span className="account-popover-row-copy">
+        <strong>{label}</strong>
+        {detail && <small>{detail}</small>}
+      </span>
+      <AtlasIcon className="account-popover-row-chevron" name="chevronRight" />
+    </button>
+  );
+}
+
+function AccountInfoRow({
+  detail,
+  icon,
+  label
+}: {
+  detail: string;
+  icon: AtlasIconName;
+  label: string;
+}) {
+  return (
+    <div className="account-popover-row account-popover-row--static">
+      <span className="account-popover-row-icon">
+        <AtlasIcon name={icon} />
+      </span>
+      <span className="account-popover-row-copy">
+        <strong>{label}</strong>
+        <small>{detail}</small>
+      </span>
+    </div>
   );
 }
 

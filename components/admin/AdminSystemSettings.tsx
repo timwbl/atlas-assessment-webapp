@@ -79,7 +79,7 @@ export function AdminSystemSettings() {
           <div>
             <strong>Öffentliche App sperren</strong>
             <p>
-              Bei aktivem Modus sehen normale Nutzer ausschliesslich den ATLAS-Wartungsbildschirm.
+              Bei aktivem Modus sehen normale Nutzer:innen ausschliesslich den ATLAS-Wartungsbildschirm.
               Adminbereich und Admin-APIs bleiben erreichbar.
             </p>
           </div>
@@ -125,9 +125,9 @@ export function AdminSystemSettings() {
           </div>
         </div>
         <div className="admin-system-grid">
-          <div><strong>Öffentliche Inhalte</strong><span>Dashboard, Assessments, Downloads und direkte URLs werden gesperrt.</span></div>
+          <div><strong>Öffentliche Inhalte</strong><span>Dashboard, Übungen, Downloads und direkte URLs werden gesperrt.</span></div>
           <div><strong>Adminbereich</strong><span><code>/admin</code> bleibt für Login und Steuerung verfügbar.</span></div>
-          <div><strong>Admin-Session</strong><span>Angemeldete Admins können weiterhin alle Verwaltungsbereiche verwenden.</span></div>
+          <div><strong>Admin-Session</strong><span>Angemeldete Administrator:innen können weiterhin alle Verwaltungsbereiche verwenden.</span></div>
         </div>
       </section>
     </div>

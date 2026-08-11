@@ -16,6 +16,7 @@ import { matchesStudyProfile } from "@/lib/studyProgram";
 import { useUserStudyContext } from "@/components/study/UserStudyProvider";
 
 export type MobileLearningData = {
+  allAssessments: AssessmentSummary[];
   assessments: AssessmentSummary[];
   progress: Record<string, AssessmentProgress>;
   resume: ActiveQuizSession | null;
@@ -69,7 +70,7 @@ export function useMobileLearningData(): MobileLearningData {
     () => deriveLearningData(visibleAssessments, assessments, progress, resume),
     [assessments, progress, resume, visibleAssessments]
   );
-  return { assessments: visibleAssessments, progress, loading: loading || !hydrated, error, ...derived };
+  return { allAssessments: assessments, assessments: visibleAssessments, progress, loading: loading || !hydrated, error, ...derived };
 }
 
 function deriveLearningData(

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { QuestionEditor } from "./QuestionEditor";
 import { QuizEngine } from "./QuizEngine";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { loadActiveAssessments } from "@/lib/assessmentClient";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { validateAssessment } from "@/lib/assessmentValidator";
@@ -122,7 +123,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
 
   if (loading) {
     return (
-      <div className="admin-loading card" aria-label="Assessments werden geladen"><span /><span /><span /></div>
+      <div className="admin-loading card" aria-label="Übungen werden geladen"><span /><span /><span /></div>
     );
   }
 
@@ -133,9 +134,9 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
   if (!draft) {
     return (
       <section className="card admin-empty-state">
-        <div className="eyebrow">{contentType === "altfragen" ? "Altfragen" : "Assessments"}</div>
+        <div className="eyebrow">{contentType === "altfragen" ? "Altfragen" : "Übungen"}</div>
         <h2>Keine Inhalte gefunden</h2>
-        <p>In diesem Bereich sind aktuell keine passenden JSON-Assessments vorhanden.</p>
+        <p>In diesem Bereich sind aktuell keine passenden JSON-Übungen vorhanden.</p>
       </section>
     );
   }
@@ -161,8 +162,8 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
       <header className="card admin-editor-header">
         <div className="admin-editor-header-inner">
           <div>
-            <div className="eyebrow">{contentType === "altfragen" ? "ALTFRAGEN CONTENT" : "ASSESSMENT CONTENT"}</div>
-            <h2>{contentType === "altfragen" ? "Altfragen verwalten" : "Assessment Editor"}</h2>
+            <div className="eyebrow">{contentType === "altfragen" ? "ALTFRAGEN CONTENT" : "FRAGENSAMMLUNGEN"}</div>
+            <h2>{contentType === "altfragen" ? "Altfragen verwalten" : "Übungseditor"}</h2>
             <p>
               Änderungen bleiben lokal im Browser, bis du das JSON exportierst und in `/public/assessments` ersetzt.
             </p>
@@ -170,7 +171,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
           <div className="admin-editor-actions">
             <Link className="btn-secondary inline-flex items-center" href={`/assessment/${draft.id}`}>Details</Link>
             <button className="btn-secondary" onClick={() => setPreview(true)}>Quiz Preview</button>
-            <button className="btn-primary" onClick={exportDraft}>Export Assessment JSON</button>
+            <button className="btn-primary" onClick={exportDraft}>Export JSON</button>
           </div>
         </div>
       </header>
@@ -235,22 +236,26 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
           </label>
           <label>
             <span className="eyebrow">Fach</span>
-            <select
-              className="input mt-2"
+            <AtlasDropdown
+              className="mt-2"
+              ariaLabel="Fach auswählen"
               value={getAssessmentSubject(draft)}
-              onChange={(event) => updateDraft({ ...draft, subject: event.target.value as Assessment["subject"] })}
-            >
-              {ASSESSMENT_SUBJECTS.map((subject) => (
-                <option key={subject} value={subject}>{subject}</option>
-              ))}
-            </select>
+              onChange={(subject) => updateDraft({ ...draft, subject: subject as Assessment["subject"] })}
+              options={ASSESSMENT_SUBJECTS.map((subject) => ({ value: subject, label: subject }))}
+            />
           </label>
           <label>
             <span className="eyebrow">Aktiv</span>
-            <select className="input mt-2" value={draft.active === false ? "false" : "true"} onChange={(event) => updateDraft({ ...draft, active: event.target.value === "true" })}>
-              <option value="true">aktiv</option>
-              <option value="false">deaktiviert</option>
-            </select>
+            <AtlasDropdown
+              className="mt-2"
+              ariaLabel="Aktivstatus auswählen"
+              value={draft.active === false ? "false" : "true"}
+              onChange={(value) => updateDraft({ ...draft, active: value === "true" })}
+              options={[
+                { value: "true", label: "aktiv" },
+                { value: "false", label: "deaktiviert" }
+              ]}
+            />
           </label>
         </div>
         <label className="mt-4 block">

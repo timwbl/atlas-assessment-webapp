@@ -51,7 +51,7 @@ export function MobileTrain() {
           disabled={!recent}
           href={recent ? `/quiz/${recent.id}?mode=training&quick=random&limit=10` : "#"}
           title="10-Minuten-Mix"
-          subtitle={recent ? `Zufällige Fragen aus ${formatBlockLabel(recent.block)}` : "Assessment auswählen"}
+          subtitle={recent ? `Zufällige Fragen aus ${formatBlockLabel(recent.block)}` : "Übung auswählen"}
         />
         <TrainCard
           count={data.resume ? 1 : 0}

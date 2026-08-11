@@ -3,9 +3,12 @@
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { AssessmentCard } from "./AssessmentCard";
+import { AtlasPageLoading } from "./AtlasPageLoading";
+import { AtlasIcon, type AtlasIconName } from "./AtlasIcon";
 import { BlockReadinessCard } from "./BlockReadinessCard";
 import { PrivacyNotice } from "./PrivacyNotice";
 import { ProgressTools } from "./ProgressTools";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import {
@@ -46,6 +49,8 @@ import type {
 } from "@/lib/types";
 import { useUserStudyContext } from "./study/UserStudyProvider";
 
+const EXERCISES_PER_PAGE = 8;
+
 export function LibraryClient() {
   const { hydrated, settings, updateSettings } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
@@ -53,9 +58,9 @@ export function LibraryClient() {
   const [query, setQuery] = useState("");
   const [semester, setSemester] = useState<SemesterId | "">("");
   const [blockId, setBlockId] = useState("");
-  const [code, setCode] = useState("");
   const [tag, setTag] = useState("");
   const [subject, setSubject] = useState("");
+  const [page, setPage] = useState(1);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -95,10 +100,22 @@ export function LibraryClient() {
     clearAssessmentLibrarySelection();
     setSemester("");
     setBlockId("");
-    setCode("");
     setTag("");
     setSubject("");
     setQuery("");
+    setPage(1);
+  }
+
+  function selectSemester(nextSemester: SemesterId) {
+    setSemester(nextSemester);
+    setBlockId("");
+    setTag("");
+    setSubject("");
+    setQuery("");
+    setPage(1);
+    clearAssessmentLibrarySelection();
+    const nextStudySemester = studySemesterForLegacyId(nextSemester);
+    if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
   }
 
   const deferredQuery = useDeferredValue(query);
@@ -130,13 +147,26 @@ export function LibraryClient() {
       : [];
   }, [semester, settings]);
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
+  const blockCards = useMemo(() => {
+    return blockOptions.map((block) => {
+      const matching = assessments.filter((assessment) => blockMatches(assessment.block, block.title));
+      const questionCount = matching.reduce((sum, assessment) => sum + assessment.questionCount, 0);
+      return {
+        block,
+        accent: blockColor(block.title),
+        exerciseCount: matching.length,
+        icon: blockIcon(block.title),
+        questionCount
+      };
+    });
+  }, [assessments, blockOptions]);
 
   useEffect(() => {
     if (blockId && !blockOptions.some((block) => block.id === blockId)) {
       setBlockId("");
-      setCode("");
       setTag("");
       setSubject("");
+      setPage(1);
     }
   }, [blockId, blockOptions]);
 
@@ -160,16 +190,12 @@ export function LibraryClient() {
         : { mode: "semester", selectedExams: examsForSemester(studySemester) }
     });
     setBlockId("");
-    setCode("");
     setTag("");
     setSubject("");
+    setPage(1);
     clearAssessmentLibrarySelection();
   }
 
-  const codes = [...new Set(blockAssessments.map((assessment) => assessment.lectureCode))]
-    .sort((a, b) => a.localeCompare(b, "de", { numeric: true, sensitivity: "base" }));
-  const tags = [...new Set(blockAssessments.flatMap((assessment) => assessment.tags))]
-    .sort((a, b) => a.localeCompare(b, "de", { sensitivity: "base" }));
   const subjects = availableAssessmentSubjects(blockAssessments);
 
   const filtered = useMemo(() => {
@@ -185,166 +211,188 @@ export function LibraryClient() {
         ...assessment.tags
       ].join(" ").toLowerCase();
       return (!needle || haystack.includes(needle))
-        && (!code || assessment.lectureCode === code)
         && (!tag || assessment.tags.includes(tag))
         && (!subject || getAssessmentSubject(assessment) === subject);
     });
-  }, [blockAssessments, code, deferredQuery, selectedBlock, subject, tag]);
+  }, [blockAssessments, deferredQuery, selectedBlock, subject, tag]);
   const sortedAssessments = useMemo(
     () => [...filtered].sort(compareAssessmentsByNumber),
     [filtered]
   );
+  const pageCount = Math.max(1, Math.ceil(sortedAssessments.length / EXERCISES_PER_PAGE));
+  const activePage = Math.min(page, pageCount);
+  const pageStart = (activePage - 1) * EXERCISES_PER_PAGE;
+  const pageEnd = Math.min(pageStart + EXERCISES_PER_PAGE, sortedAssessments.length);
+  const visibleAssessments = sortedAssessments.slice(pageStart, pageEnd);
   const selectedBlockKey = selectedBlock ? normalizedBlockId(selectedBlock.title) : null;
   const blockQuestionCount = blockAssessments.reduce((sum, assessment) => sum + assessment.questionCount, 0);
+  const loadingCatalog = hydrated && loaded.length === 0 && !error;
+
+  useEffect(() => {
+    setPage(1);
+  }, [blockId, deferredQuery, subject, tag]);
+
+  if (loadingCatalog) return <AtlasPageLoading title="Übungen werden geladen" />;
 
   return (
-    <main id="top" className="shell">
-      <header className="glass library-hero rounded-[28px] p-6 md:p-8">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+    <main id="top" className="shell library-shell exercise-library-shell">
+      <header className="glass library-hero atlas-library-hero rounded-[28px] p-6 md:p-8">
+        <div className="library-hero-inner">
           <div>
-            <div className="eyebrow">ATLAS Assessment Library</div>
+            <div className="eyebrow">ATLAS Übungen</div>
             <h1 className="library-title mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
-              MC Übungsfragen
+              Übungen
             </h1>
             <p className="mt-3 max-w-2xl text-[var(--muted)]">
-              Wähle zuerst ein Semester und danach einen Block, um die passenden MC-Fragen zu öffnen.
+              Öffne einen Block und trainiere die passenden MC-Fragen für dein aktuelles Semester.
             </p>
           </div>
           <ProgressTools onImported={() => setProgress(getAllProgress())} />
         </div>
       </header>
 
-      <div className="mt-5">
+      <div className="library-privacy-row mt-5">
         <PrivacyNotice />
       </div>
 
-      <section className="semester-picker-card mt-5">
-        <div className="min-w-0">
-          <div className="eyebrow">Auswahl</div>
-          <h2 className="mt-1 text-2xl font-black">Semester auswählen</h2>
-          <p className="mt-1 text-sm text-[var(--muted)]">Die Fragen werden erst nach Semester- und Blockauswahl angezeigt.</p>
+      <section className="exercise-control-panel">
+        <div className="exercise-control-copy">
+          <div className="eyebrow">Lernphase</div>
+          <h2>{semester ? semesterTitle(semester) : "Semester wählen"}</h2>
+          <p>Die Blockkarten zeigen nur Inhalte, die zu deiner aktuellen Auswahl passen.</p>
         </div>
-        <div className="semester-picker-actions">
-          <label className="semester-picker-control">
-            <span>Semester</span>
-            <select
-              value={semester}
-              onChange={(event) => {
-                const nextSemester = event.target.value as SemesterId | "";
-                setSemester(nextSemester);
-                setBlockId("");
-                setCode("");
-                setTag("");
-                setSubject("");
-                clearAssessmentLibrarySelection();
-                const nextStudySemester = studySemesterForLegacyId(nextSemester);
-                if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
-              }}
-            >
-              <option value="">Bitte auswählen</option>
-              {DOWNLOAD_SEMESTERS.map((item) => (
-                <option key={item.id} value={item.id}>{item.title}</option>
-              ))}
-            </select>
-          </label>
-          {(semester || blockId) && (
-            <button className="semester-reset-button" type="button" onClick={resetToMainSelection} title="Zur Hauptauswahl" aria-label="Zur Hauptauswahl">
-              ↺
-            </button>
-          )}
-        </div>
-        {examConfig && settings.studyYear === "year1" && (
-          <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
-            <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
-              Alle
-            </button>
-            {examConfig.defaultExamGroup.map((exam) => (
+        <div className="exercise-control-actions">
+          <div className="exercise-semester-tabs" aria-label="Semester auswählen">
+            {DOWNLOAD_SEMESTERS.map((item) => (
               <button
-                className={selectedExam === exam ? "is-active" : ""}
-                key={exam}
-                onClick={() => setExamFilter(exam)}
+                className={semester === item.id ? "is-active" : ""}
+                key={item.id}
+                onClick={() => selectSemester(item.id)}
                 type="button"
               >
-                {exam}
+                {item.title}
               </button>
             ))}
           </div>
-        )}
+          {(semester || blockId) && (
+            <button className="exercise-reset-button" type="button" onClick={resetToMainSelection}>
+              Zurücksetzen
+            </button>
+          )}
+          {examConfig && settings.studyYear === "year1" && (
+            <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
+              <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
+                Alle
+              </button>
+              {examConfig.defaultExamGroup.map((exam) => (
+                <button
+                  className={selectedExam === exam ? "is-active" : ""}
+                  key={exam}
+                  onClick={() => setExamFilter(exam)}
+                  type="button"
+                >
+                  {exam}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </section>
 
       {semester && (
-        <section className="card mt-5 p-5">
-          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <section className="library-block-showcase">
+          <div className="library-section-head">
             <div>
               <div className="eyebrow">{semesterTitle(semester)}</div>
-              <h2 className="mt-1 text-2xl font-black">Block auswählen</h2>
+              <h2>Block öffnen</h2>
             </div>
-            <span className="pill">{blockOptions.length} Blöcke</span>
+            <span className="pill">{blockCards.length} Blöcke</span>
           </div>
-          <div className="block-picker-grid mt-4">
-            {blockOptions.map((item) => (
+          <div className="exercise-block-grid">
+            {blockCards.map((item) => (
               <button
-                className={blockId === item.id ? "block-picker-card is-active" : "block-picker-card"}
-                key={item.id}
-                style={{ "--block-picker-accent": blockColor(item.title) } as CSSProperties}
+                className={blockId === item.block.id ? "exercise-block-card is-active" : "exercise-block-card"}
+                key={item.block.id}
+                style={{ "--block-picker-accent": item.accent } as CSSProperties}
                 onClick={() => {
-                  setBlockId(item.id);
-                  setCode("");
+                  setBlockId(item.block.id);
                   setTag("");
                   setSubject("");
-                  saveAssessmentLibrarySelection(item.semester, item.id);
+                  setPage(1);
+                  saveAssessmentLibrarySelection(item.block.semester, item.block.id);
                 }}
                 type="button"
               >
-                <span className="block-picker-dot" />
-                <strong>{item.title}</strong>
+                <span className="exercise-block-icon">
+                  <AtlasIcon name={item.icon} />
+                </span>
+                <span className="exercise-block-copy">
+                  <strong>{item.block.title}</strong>
+                  <small>{item.questionCount} Fragen</small>
+                </span>
+                <span className="exercise-block-meta">
+                  <b>{item.exerciseCount}</b>
+                  <small>Übungen</small>
+                </span>
+                <span className="exercise-block-foot">
+                  <span>Öffnen</span>
+                  <span aria-hidden="true">→</span>
+                </span>
               </button>
             ))}
           </div>
         </section>
       )}
 
-      <section className="card mt-5 p-4">
-        <div className="assessment-filters grid gap-3 md:grid-cols-2 xl:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          <input
-            className="input"
-            type="search"
-            name="atlas-assessment-library-search"
-            autoComplete="off"
-            autoCorrect="off"
-            autoCapitalize="none"
-            spellCheck={false}
-            inputMode="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            disabled={!selectedBlock}
-            placeholder="Suchen nach Titel, Code, Fach oder Tag"
-          />
-          <select className="input" value={code} disabled={!selectedBlock} onChange={(event) => setCode(event.target.value)}>
-            <option value="">Alle Codes</option>
-            {codes.map((value) => <option key={value} value={value}>{value}</option>)}
-          </select>
-          <select className="input" value={tag} disabled={!selectedBlock} onChange={(event) => setTag(event.target.value)}>
-            <option value="">Alle Tags</option>
-            {tags.map((value) => <option key={value} value={value}>{value}</option>)}
-          </select>
-          <select
-            aria-label="Fach filtern"
-            className="input"
-            value={subject}
-            disabled={!selectedBlock}
-            onChange={(event) => setSubject(event.target.value)}
-          >
-            <option value="">Alle Fächer</option>
-            {subjects.map((value) => <option key={value} value={value}>{value}</option>)}
-          </select>
-        </div>
-      </section>
+      {selectedBlock && (
+        <section className="exercise-filter-panel">
+          <div className="exercise-filter-grid">
+            <label>
+              <span>Suche</span>
+              <input
+                className="input"
+                type="search"
+                name="atlas-assessment-library-search"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                inputMode="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder="Übung suchen"
+              />
+            </label>
+            <label>
+              <span>Fach</span>
+              <AtlasDropdown
+                ariaLabel="Fach filtern"
+                value={subject}
+                onChange={setSubject}
+                options={[
+                  { value: "", label: "Alle Fächer" },
+                  ...subjects.map((item) => ({ value: item, label: item }))
+                ]}
+              />
+            </label>
+            {(query || tag || subject) && (
+              <button className="exercise-reset-button" type="button" onClick={() => {
+                setQuery("");
+                setTag("");
+                setSubject("");
+                setPage(1);
+              }}>
+                Filter löschen
+              </button>
+            )}
+          </div>
+        </section>
+      )}
 
       {error && <div className="card mt-5 border-red-300 p-4 text-red-600">{error}</div>}
 
       {invalid.length > 0 && (
-        <section className="card mt-5 p-4">
+        <section className="card library-panel mt-5 p-4">
           <h2 className="font-black">Validierungsfehler</h2>
           <div className="mt-3 grid gap-2">
             {invalid.map((item) => (
@@ -357,30 +405,22 @@ export function LibraryClient() {
       )}
 
       {!semester && (
-        <section className="card mt-5 p-8 text-center">
+        <section className="card library-empty-card mt-5 p-8 text-center">
           <div className="eyebrow">Start</div>
           <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Semester</h2>
           <p className="mt-2 text-[var(--muted)]">Danach kannst du den passenden Block auswählen.</p>
         </section>
       )}
 
-      {semester && !selectedBlock && (
-        <section className="card mt-5 p-8 text-center">
-          <div className="eyebrow">{semesterTitle(semester)}</div>
-          <h2 className="mt-2 text-2xl font-black">Bitte wähle einen Block</h2>
-          <p className="mt-2 text-[var(--muted)]">Erst danach werden die MC-Fragen angezeigt.</p>
-        </section>
-      )}
-
       {selectedBlock && (
-        <section className="mt-6 grid gap-5">
+        <section className="library-results-section mt-6 grid gap-5">
           <div>
-            <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+            <div className="library-section-head">
               <div>
                 <div className="eyebrow">{semester ? semesterTitle(semester) : ""}</div>
-                <h2 className="text-3xl font-black">{selectedBlock.title}</h2>
+                <h2>{selectedBlock.title}</h2>
               </div>
-              <span className="pill">{filtered.length} Assessments</span>
+              <span className="pill">{filtered.length} Übungen</span>
             </div>
 
             {selectedBlockKey && blockQuestionCount > 0 && (
@@ -395,18 +435,44 @@ export function LibraryClient() {
               <div className="card mt-4 p-8 text-center">
                 <div className="eyebrow">{selectedBlock.title}</div>
                 <h3 className="mt-2 text-2xl font-black">Keine passenden Fragen gefunden</h3>
-                <p className="mt-2 text-[var(--muted)]">Für diesen Block sind aktuell keine MC-Assessments hinterlegt oder deine Filter sind zu eng.</p>
+                <p className="mt-2 text-[var(--muted)]">Für diesen Block sind aktuell keine MC-Übungen hinterlegt oder deine Filter sind zu eng.</p>
               </div>
             ) : (
-              <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                {sortedAssessments.map((assessment) => (
-                  <AssessmentCard
-                    key={assessment.id}
-                    assessment={assessment}
-                    progress={progress[assessment.id]}
-                  />
-                ))}
-              </div>
+              <>
+                <div className="library-assessment-grid mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {visibleAssessments.map((assessment) => (
+                    <AssessmentCard
+                      key={assessment.id}
+                      assessment={assessment}
+                      progress={progress[assessment.id]}
+                    />
+                  ))}
+                </div>
+                {pageCount > 1 && (
+                  <nav className="atlas-pagination" aria-label="Übungen Seiten">
+                    <span>
+                      {pageStart + 1}-{pageEnd} von {sortedAssessments.length} Übungen
+                    </span>
+                    <div>
+                      <button
+                        disabled={activePage <= 1}
+                        onClick={() => setPage((current) => Math.max(1, current - 1))}
+                        type="button"
+                      >
+                        Zurück
+                      </button>
+                      <strong>{activePage} / {pageCount}</strong>
+                      <button
+                        disabled={activePage >= pageCount}
+                        onClick={() => setPage((current) => Math.min(pageCount, current + 1))}
+                        type="button"
+                      >
+                        Weiter
+                      </button>
+                    </div>
+                  </nav>
+                )}
+              </>
             )}
           </div>
         </section>
@@ -438,4 +504,24 @@ function normalizeText(value: string): string {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
+}
+
+function blockIcon(title: string): AtlasIconName {
+  const normalized = normalizeText(title);
+  const number = title.match(/\d+/)?.[0] || "";
+  if (normalized.includes("prufungssimulation") || normalized.includes("pruefungssimulation")) return "target";
+
+  const icons: Record<string, AtlasIconName> = {
+    "1": "heart",
+    "2": "cells",
+    "3": "atom",
+    "4": "pulse",
+    "5": "ethics",
+    "6": "planetary",
+    "7": "psychosocial",
+    "8": "movement",
+    "9": "development"
+  };
+
+  return icons[number] || "book";
 }

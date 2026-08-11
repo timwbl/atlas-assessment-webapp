@@ -523,7 +523,7 @@ export function FastQuizClient({
       </header>
 
       {warnings > 0 && (
-        <div className="fast-quiz-note">{warnings} unvollständige Assessment-Datei{warnings === 1 ? "" : "en"} wurden sicher übersprungen.</div>
+        <div className="fast-quiz-note">{warnings} unvollständige Übungsdatei{warnings === 1 ? "" : "en"} wurden sicher übersprungen.</div>
       )}
 
       {activeSession?.fastQuizMode && (
@@ -612,7 +612,7 @@ function FastQuizResult({
       </header>
 
       <section className="fast-result-components">
-        <ResultMetric label="Normale Assessments" value={readiness.assessmentPerformance === null ? "Noch keine Daten" : `${readiness.assessmentPerformance}%`} />
+        <ResultMetric label="Normale Übungen" value={readiness.assessmentPerformance === null ? "Noch keine Daten" : `${readiness.assessmentPerformance}%`} />
         <ResultMetric label="Fast Quiz" value={`${readiness.fastQuizPerformance}%`} />
         <ResultMetric label="Lernzielabdeckung" value={`${readiness.learningObjectiveCoverage}%`} />
         <ResultMetric label="Stabilität" value={`${readiness.stabilityScore}%`} />
@@ -644,7 +644,7 @@ function FastQuizResult({
         <div className="fast-result-actions">
           <button className="btn-primary" onClick={() => onRestart("weakness")} type="button">Gezieltes Weakness Quiz starten</button>
           {readiness.recommendedAssessmentId && (
-            <Link className="btn-secondary" href={`/assessment/${readiness.recommendedAssessmentId}`}>Normales Assessment öffnen</Link>
+            <Link className="btn-secondary" href={`/assessment/${readiness.recommendedAssessmentId}`}>Normale Übung öffnen</Link>
           )}
           <Link className="btn-secondary" href="/assessments">Zur Blockübersicht</Link>
         </div>

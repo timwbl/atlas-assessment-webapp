@@ -70,7 +70,7 @@ export function AdminGate() {
 
   return (
     <main className="shell">
-      <Link className="btn-secondary inline-flex items-center" href="/">Zur Library</Link>
+      <Link className="btn-secondary inline-flex items-center" href="/">Zur App</Link>
       <section className="glass admin-login-card mx-auto mt-8 max-w-xl">
         <div className="admin-kicker">GESCHÜTZTER BEREICH</div>
         <h1>ATLAS Admin</h1>

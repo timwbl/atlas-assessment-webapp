@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentCard } from "./AssessmentCard";
+import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { useUserStudyContext } from "./study/UserStudyProvider";
 import {
   ALTFRAGEN_ACCESS_CHANGED_EVENT,
@@ -194,8 +195,8 @@ export function AltfragenLibrary() {
   }
 
   return (
-    <main className="shell" id="top">
-      <header className="glass library-hero rounded-[28px] p-6 md:p-8">
+    <main className="shell atlas-subpage-shell altfragen-library-shell" id="top">
+      <header className="glass library-hero atlas-subpage-hero altfragen-page-head rounded-[28px] p-6 md:p-8">
         <p className="eyebrow">Prüfungsnahes Training</p>
         <h1 className="library-title mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
           Altfragen
@@ -205,7 +206,7 @@ export function AltfragenLibrary() {
         </p>
       </header>
       <nav className="mobile-library-tabs mobile-only" aria-label="Fragenbereiche">
-        <Link href="/assessments">Assessments</Link>
+        <Link href="/assessments">Übungen</Link>
         <Link className="is-active" href="/altfragen">Altfragen</Link>
       </nav>
 
@@ -245,12 +246,18 @@ export function AltfragenLibrary() {
                 type="search"
                 value={query}
               />
-              <select className="input" onChange={(event) => setBlockId(event.target.value)} value={blockId}>
-                <option value="">Alle Blöcke</option>
-                {blockOptions.map((value) => (
-                  <option key={value} value={value}>Block {value.replace(/\D/g, "")}</option>
-                ))}
-              </select>
+              <AtlasDropdown
+                ariaLabel="Block filtern"
+                value={blockId}
+                onChange={setBlockId}
+                options={[
+                  { value: "", label: "Alle Blöcke" },
+                  ...blockOptions.map((value) => ({
+                    value,
+                    label: `Block ${value.replace(/\D/g, "")}`
+                  }))
+                ]}
+              />
             </div>
           </section>
 
@@ -262,7 +269,7 @@ export function AltfragenLibrary() {
                 <p className="eyebrow">Auswahl</p>
                 <h2 className="text-3xl font-black">{scopeLabel(scope)}</h2>
               </div>
-              <span className="pill">{filtered.length} Assessments</span>
+              <span className="pill">{filtered.length} Übungen</span>
             </div>
             {filtered.length ? (
               <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -290,7 +297,7 @@ export function AltfragenLibrary() {
                 <p className="eyebrow">Dokumentbibliothek</p>
                 <h2 className="text-3xl font-black">Weitere Altfragen</h2>
                 <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
-                  Originaldokumente und zusätzliche Altfragen, die noch nicht als interaktives Assessment vorliegen.
+                  Originaldokumente und zusätzliche Altfragen, die noch nicht als interaktive Übung vorliegen.
                 </p>
               </div>
               <span className="pill">{filteredDocuments.length} Dokumente</span>
