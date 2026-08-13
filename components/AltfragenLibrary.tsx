@@ -292,12 +292,12 @@ export function AltfragenLibrary() {
             )}
           </section>
 
-          <section className="mt-8">
-            <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
+          <section className="altfragen-documents-section">
+            <div className="altfragen-documents-head">
               <div>
                 <p className="eyebrow">Dokumentbibliothek</p>
-                <h2 className="text-3xl font-black">Weitere Altfragen</h2>
-                <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
+                <h2>Weitere Altfragen</h2>
+                <p>
                   Originaldokumente und zusätzliche Altfragen, die noch nicht als interaktive Übung vorliegen.
                 </p>
               </div>
@@ -305,53 +305,56 @@ export function AltfragenLibrary() {
             </div>
 
             {documentsLoading ? (
-              <div className="card p-5 text-[var(--muted)]">Dokumente werden geladen…</div>
+              <div className="card altfragen-documents-loading">Dokumente werden geladen…</div>
             ) : filteredDocuments.length === 0 ? (
-              <div className="card p-6 text-center">
-                <h3 className="text-xl font-black">Noch keine passenden Dokumente</h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">
+              <div className="card altfragen-documents-empty">
+                <h3>Noch keine passenden Dokumente</h3>
+                <p>
                   Sobald zusätzliche Altfragen hochgeladen wurden, erscheinen sie hier nach Semester und Block.
                 </p>
               </div>
             ) : (
-              <div className="grid gap-5">
+              <div className="altfragen-document-semesters">
                 {DOWNLOAD_SEMESTERS.map((semester) => {
                   const semesterDocuments = filteredDocuments.filter((document) => document.semester === semester.id);
                   if (!semesterDocuments.length) return null;
                   return (
-                    <div className="card overflow-hidden" key={semester.id}>
-                      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] p-4">
+                    <section className="altfragen-document-semester" key={semester.id}>
+                      <div className="altfragen-document-semester-head">
                         <div>
                           <div className="eyebrow">Semester</div>
-                          <h3 className="text-xl font-black">{semester.title}</h3>
+                          <h3>{semester.title}</h3>
                         </div>
                         <span className="pill">{semesterDocuments.length} Datei{semesterDocuments.length === 1 ? "" : "en"}</span>
                       </div>
-                      <div className="grid gap-3 p-4 md:grid-cols-2">
+                      <div className="altfragen-document-grid">
                         {semesterDocuments.map((document) => (
                           <article
                             className="altfragen-document-card"
                             key={document.id}
                             style={{ "--download-accent": blockColor(altfragenDocumentBlocks(document)[0]?.title || document.blockTitle) } as CSSProperties}
                           >
-                            <div className="min-w-0">
-                              <div className="flex flex-wrap items-center gap-2">
+                            <div className="altfragen-document-icon" aria-hidden="true">
+                              <span>{fileTypeLabel(document)}</span>
+                            </div>
+                            <div className="altfragen-document-copy">
+                              <div className="altfragen-document-tags">
                                 <span className="download-accent-dot" />
                                 {altfragenDocumentBlocks(document).map((block) => (
                                   <span className="pill" key={block.id}>{block.title}</span>
                                 ))}
                                 {document.version && <span className="pill">{document.version}</span>}
                               </div>
-                              <h4 className="mt-2 text-lg font-black leading-tight">{document.title}</h4>
+                              <h4>{document.title}</h4>
                               {document.description && (
-                                <p className="mt-2 text-sm text-[var(--muted)]">{document.description}</p>
+                                <p>{document.description}</p>
                               )}
-                              <p className="mt-3 text-xs text-[var(--muted)]">
+                              <small>
                                 {fileTypeLabel(document)} · {formatFileSize(document.fileSize)} · {formatUploadDate(document.uploadDate)}
-                              </p>
+                              </small>
                             </div>
                             <button
-                              className="btn-primary"
+                              className="altfragen-document-download"
                               disabled={downloadingId === document.id}
                               onClick={() => void downloadDocument(document)}
                               type="button"
@@ -361,7 +364,7 @@ export function AltfragenLibrary() {
                           </article>
                         ))}
                       </div>
-                    </div>
+                    </section>
                   );
                 })}
               </div>
