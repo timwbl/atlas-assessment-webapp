@@ -349,6 +349,330 @@ body.atlas-sidebar-collapsed .account-avatar {
   }
 }
 
+/* Final account menu polish */
+.account-menu {
+  position: fixed !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: 18px !important;
+  left: 14px !important;
+  z-index: 80 !important;
+  width: calc(var(--atlas-sidebar-width) - 28px) !important;
+}
+
+.account-avatar {
+  display: grid !important;
+  width: 100% !important;
+  height: 58px !important;
+  grid-template-columns: 38px minmax(0, 1fr) 16px !important;
+  gap: 10px !important;
+  align-items: center !important;
+  border: 1px solid var(--atlas-hairline) !important;
+  border-radius: 18px !important;
+  background: var(--atlas-panel-strong) !important;
+  padding: 9px 10px !important;
+  color: var(--atlas-text) !important;
+  text-align: left !important;
+  box-shadow: 0 8px 22px rgba(24, 29, 38, 0.055) !important;
+  backdrop-filter: none !important;
+  transition:
+    background-color var(--atlas-motion-fast) var(--atlas-ease-out),
+    border-color var(--atlas-motion-fast) var(--atlas-ease-out),
+    box-shadow var(--atlas-motion-medium) var(--atlas-ease-out),
+    transform var(--atlas-motion-fast) var(--atlas-ease-out) !important;
+}
+
+.account-avatar:hover {
+  border-color: var(--atlas-hairline-strong) !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 42%, var(--atlas-panel-strong)) !important;
+}
+
+.account-avatar:active {
+  transform: scale(0.985);
+}
+
+.account-avatar-mark {
+  display: grid !important;
+  width: 38px !important;
+  height: 38px !important;
+  place-items: center !important;
+  border: 1px solid color-mix(in srgb, var(--atlas-blue) 30%, var(--atlas-hairline)) !important;
+  border-radius: 999px !important;
+  background: color-mix(in srgb, var(--atlas-blue) 9%, var(--atlas-panel-strong)) !important;
+  color: var(--atlas-blue) !important;
+  font-size: 13px !important;
+  font-weight: 720 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  box-shadow: none !important;
+}
+
+.account-avatar-copy {
+  display: grid !important;
+  min-width: 0 !important;
+  gap: 2px !important;
+}
+
+.account-avatar-copy strong {
+  overflow: hidden !important;
+  color: var(--atlas-text) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 1.12 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.account-avatar-copy small {
+  overflow: hidden !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 11px !important;
+  font-weight: 540 !important;
+  line-height: 1.18 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.account-avatar-chevron {
+  width: 14px !important;
+  height: 14px !important;
+  color: var(--atlas-tertiary-text) !important;
+  justify-self: end !important;
+  transition: transform var(--atlas-motion-fast) var(--atlas-ease-out) !important;
+}
+
+.account-avatar[aria-expanded="true"] {
+  border-color: color-mix(in srgb, var(--atlas-blue) 26%, var(--atlas-hairline)) !important;
+  background: color-mix(in srgb, var(--atlas-blue) 5%, var(--atlas-panel-strong)) !important;
+}
+
+.account-avatar[aria-expanded="true"] .account-avatar-chevron {
+  transform: rotate(-90deg);
+}
+
+.account-popover {
+  position: absolute !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: calc(100% + 10px) !important;
+  left: 0 !important;
+  width: min(318px, calc(100vw - 24px)) !important;
+  overflow: hidden !important;
+  border: 1px solid var(--atlas-hairline) !important;
+  border-radius: 18px !important;
+  background: var(--atlas-panel-strong) !important;
+  padding: 6px !important;
+  box-shadow: 0 18px 48px rgba(24, 29, 38, 0.16) !important;
+  backdrop-filter: none !important;
+  transform-origin: bottom left !important;
+  animation: atlas-popover-in 180ms var(--atlas-ease-spring) !important;
+}
+
+.account-popover-head {
+  display: grid !important;
+  grid-template-columns: 40px minmax(0, 1fr) !important;
+  gap: 11px !important;
+  align-items: center !important;
+  border-bottom: 1px solid var(--atlas-hairline) !important;
+  padding: 10px 10px 12px !important;
+}
+
+.account-popover-mark {
+  display: grid !important;
+  width: 40px !important;
+  height: 40px !important;
+  place-items: center !important;
+  border: 1px solid color-mix(in srgb, var(--atlas-blue) 28%, var(--atlas-hairline)) !important;
+  border-radius: 999px !important;
+  background: color-mix(in srgb, var(--atlas-blue) 9%, var(--atlas-panel-strong)) !important;
+  color: var(--atlas-blue) !important;
+  font-size: 13px !important;
+  font-weight: 720 !important;
+  box-shadow: none !important;
+}
+
+.account-popover-identity,
+.account-popover-row-copy {
+  min-width: 0 !important;
+}
+
+.account-name,
+.account-popover-row-copy strong {
+  overflow: hidden !important;
+  color: var(--atlas-text) !important;
+  font-size: 13px !important;
+  font-weight: 680 !important;
+  line-height: 1.18 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.account-email,
+.account-popover-row-copy small {
+  overflow: hidden !important;
+  margin: 2px 0 0 !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 11.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.account-popover-list {
+  display: grid !important;
+  gap: 2px !important;
+  padding: 6px 0 0 !important;
+}
+
+.account-popover-list--sync {
+  margin-top: 4px !important;
+  border-top: 1px solid var(--atlas-hairline) !important;
+  padding-top: 6px !important;
+}
+
+.account-popover-row {
+  display: grid !important;
+  width: 100% !important;
+  min-height: 42px !important;
+  grid-template-columns: 28px minmax(0, 1fr) 14px !important;
+  gap: 9px !important;
+  align-items: center !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  padding: 7px 8px !important;
+  color: var(--atlas-text) !important;
+  text-align: left !important;
+}
+
+.account-popover-row:not(.account-popover-row--static):hover {
+  background: color-mix(in srgb, var(--atlas-blue) 7%, var(--atlas-panel-tint)) !important;
+}
+
+.account-popover-row-icon {
+  display: grid !important;
+  width: 28px !important;
+  height: 28px !important;
+  place-items: center !important;
+  border-radius: 9px !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 68%, transparent) !important;
+  color: var(--atlas-secondary-text) !important;
+}
+
+.account-popover-row-icon .atlas-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.account-popover-row-chevron {
+  width: 12px !important;
+  height: 12px !important;
+  color: var(--atlas-tertiary-text) !important;
+}
+
+.account-popover-row--static {
+  cursor: default !important;
+}
+
+.account-popover-row--static .account-popover-row-icon {
+  background: transparent !important;
+}
+
+.account-popover-row--static .account-popover-row-chevron {
+  display: none !important;
+}
+
+.account-popover-row.is-danger,
+.account-popover-row.is-danger .account-popover-row-icon,
+.account-popover-row.is-danger .account-popover-row-chevron,
+.account-popover-row.is-danger small {
+  color: var(--atlas-red) !important;
+}
+
+.account-popover .account-note,
+.account-popover .account-status {
+  margin: 4px 6px 0 !important;
+  border-top: 1px solid var(--atlas-hairline) !important;
+  padding: 9px 2px 4px !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 11.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+
+.account-popover .account-status {
+  color: var(--atlas-blue) !important;
+}
+
+body.atlas-sidebar-collapsed .account-menu {
+  left: 15px !important;
+  width: 54px !important;
+}
+
+body.atlas-sidebar-collapsed .account-avatar {
+  width: 54px !important;
+  height: 54px !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+  border-radius: 18px !important;
+  padding: 0 !important;
+}
+
+body.atlas-sidebar-collapsed .account-avatar-mark {
+  width: 38px !important;
+  height: 38px !important;
+}
+
+body.atlas-sidebar-collapsed .account-avatar-copy,
+body.atlas-sidebar-collapsed .account-avatar-chevron {
+  display: none !important;
+}
+
+body.atlas-sidebar-collapsed .account-popover {
+  left: 0 !important;
+  bottom: calc(100% + 10px) !important;
+  transform-origin: bottom left !important;
+}
+
+@media (max-width: 900px) {
+  .account-menu {
+    top: calc(10px + env(safe-area-inset-top)) !important;
+    right: max(10px, env(safe-area-inset-right)) !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: auto !important;
+  }
+
+  .account-avatar {
+    width: 44px !important;
+    height: 44px !important;
+    grid-template-columns: 1fr !important;
+    border-radius: 14px !important;
+    padding: 0 !important;
+  }
+
+  .account-avatar-mark {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+  }
+
+  .account-avatar-copy,
+  .account-avatar-chevron {
+    display: none !important;
+  }
+
+  .account-popover {
+    top: calc(100% + 10px) !important;
+    right: 0 !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: min(318px, calc(100vw - 20px)) !important;
+    transform-origin: top right !important;
+  }
+}
+
 /* Final assessment launcher polish: keep 100% readable inside the ring. */
 .assessment-launch-panel .assessment-launch-summary {
   grid-template-columns: 50px minmax(0, 1fr) !important;
