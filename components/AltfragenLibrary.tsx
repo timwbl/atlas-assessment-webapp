@@ -503,10 +503,17 @@ function compareBlockIds(a: string, b: string): number {
   const aYear = a.startsWith("j2-") ? 2 : 1;
   const bYear = b.startsWith("j2-") ? 2 : 1;
   if (aYear !== bYear) return aYear - bYear;
-  return Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, ""));
+  return blockNumberFromId(a) - blockNumberFromId(b);
 }
 
 function formatBlockOptionLabel(value: string): string {
-  const number = value.replace(/\D/g, "");
-  return `Block ${number}`;
+  const number = blockNumberFromId(value);
+  return number ? `Block ${number}` : "Block";
+}
+
+function blockNumberFromId(value: string): number {
+  const match = value.match(/^j2-block(\d+)$/)
+    || value.match(/^block(\d+)$/)
+    || value.match(/(?:^|-)block-?(\d+)$/);
+  return match ? Number(match[1]) : 0;
 }
