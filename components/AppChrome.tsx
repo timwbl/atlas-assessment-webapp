@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AtlasBrand } from "./AtlasBrand";
 import { MainNav } from "./MainNav";
@@ -10,6 +10,7 @@ import { ServiceWorkerRegistration } from "./ServiceWorkerRegistration";
 import { APP_VERSION } from "@/lib/appVersion";
 import { StudyPrompts } from "./study/StudyPrompts";
 import { AtlasIcon, type AtlasIconName } from "./AtlasIcon";
+import { ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, type AssessmentRouteContext } from "@/lib/assessmentRouteContext";
 
 const SIDEBAR_COLLAPSED_KEY = "atlas:sidebar-collapsed:v1";
 const APP_VERSION_KEY = "atlas:last-app-version";
@@ -26,10 +27,9 @@ const AdminShortcut = dynamic(
 
 export function AppChrome() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [isPageEnd, setIsPageEnd] = useState(false);
-  const isAltfragenContext = searchParams.get("origin") === "altfragen" || searchParams.get("from") === "altfragen";
+  const isAltfragenContext = useAltfragenRouteContext(pathname);
 
   useEffect(() => {
     const stored = window.localStorage.getItem(SIDEBAR_COLLAPSED_KEY);
@@ -119,6 +119,30 @@ export function AppChrome() {
       <AdminShortcut />
     </>
   );
+}
+
+function useAltfragenRouteContext(pathname: string): boolean {
+  const [assessmentContext, setAssessmentContext] = useState<AssessmentRouteContext | null>(null);
+
+  useEffect(() => {
+    if (!pathname.startsWith("/assessment/")) {
+      setAssessmentContext(null);
+      return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    setAssessmentContext(params.get("origin") === "altfragen" || params.get("from") === "altfragen" ? "altfragen" : null);
+
+    function handleAssessmentContext(event: Event) {
+      const area = (event as CustomEvent<{ area?: AssessmentRouteContext }>).detail?.area;
+      if (area === "altfragen" || area === "assessments") setAssessmentContext(area);
+    }
+
+    window.addEventListener(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, handleAssessmentContext);
+    return () => window.removeEventListener(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, handleAssessmentContext);
+  }, [pathname]);
+
+  return assessmentContext === "altfragen";
 }
 
 function AppTopbar({

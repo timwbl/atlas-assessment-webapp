@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { AtlasIcon } from "./AtlasIcon";
+import { ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, type AssessmentRouteContext } from "@/lib/assessmentRouteContext";
 
 export function MainNav() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const isAltfragenContext = searchParams.get("origin") === "altfragen" || searchParams.get("from") === "altfragen";
+  const isAltfragenContext = useAltfragenRouteContext(pathname);
   const isAssessmentDetail = pathname.startsWith("/assessment/");
 
   if (pathname.startsWith("/quiz")) return null;
@@ -45,4 +46,28 @@ export function MainNav() {
       })}
     </nav>
   );
+}
+
+function useAltfragenRouteContext(pathname: string): boolean {
+  const [assessmentContext, setAssessmentContext] = useState<AssessmentRouteContext | null>(null);
+
+  useEffect(() => {
+    if (!pathname.startsWith("/assessment/")) {
+      setAssessmentContext(null);
+      return;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    setAssessmentContext(params.get("origin") === "altfragen" || params.get("from") === "altfragen" ? "altfragen" : null);
+
+    function handleAssessmentContext(event: Event) {
+      const area = (event as CustomEvent<{ area?: AssessmentRouteContext }>).detail?.area;
+      if (area === "altfragen" || area === "assessments") setAssessmentContext(area);
+    }
+
+    window.addEventListener(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, handleAssessmentContext);
+    return () => window.removeEventListener(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, handleAssessmentContext);
+  }, [pathname]);
+
+  return assessmentContext === "altfragen";
 }

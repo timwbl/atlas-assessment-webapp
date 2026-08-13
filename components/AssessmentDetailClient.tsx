@@ -9,6 +9,7 @@ import { AtlasIcon } from "./AtlasIcon";
 import { PageState } from "./ui/PageState";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
+import { ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT } from "@/lib/assessmentRouteContext";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { cloudSyncAvailable, resetCloudProgress, syncAssessmentProgress } from "@/lib/cloudProgress";
@@ -45,6 +46,13 @@ export function AssessmentDetailClient({ id }: { id: string }) {
       active = false;
     };
   }, [id, loadVersion]);
+
+  useEffect(() => {
+    if (!assessment) return;
+    window.dispatchEvent(new CustomEvent(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, {
+      detail: { area: isAltfragenAssessment(assessment) ? "altfragen" : "assessments" }
+    }));
+  }, [assessment]);
 
   useEffect(() => {
     function updateAltfragenAccess() {
