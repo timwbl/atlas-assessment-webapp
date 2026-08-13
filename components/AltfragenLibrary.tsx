@@ -158,12 +158,16 @@ export function AltfragenLibrary() {
   );
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
+    const profileBlockIds = selectedBlockIds(settings);
     return assessments.filter((assessment) => {
       const exam = examForContent(assessment);
       const assessmentBlock = blockIdForContent(assessment);
       const scopeMatches = scope === "all"
         || (scope === "current" && (currentExams.length === 0 || (!!exam && currentExams.includes(exam))))
         || scope === exam;
+      const profileMatches = scope === "all"
+        || profileBlockIds.length === 0
+        || (!!assessmentBlock && profileBlockIds.includes(assessmentBlock));
       const queryMatches = !needle || [
         assessment.title,
         assessment.lectureCode,
@@ -171,12 +175,14 @@ export function AltfragenLibrary() {
         ...assessment.tags
       ].join(" ").toLowerCase().includes(needle);
       return scopeMatches
+        && profileMatches
         && queryMatches
         && (!blockId || assessmentBlock === blockId);
     });
-  }, [assessments, blockId, currentExams, query, scope]);
+  }, [assessments, blockId, currentExams, query, scope, settings]);
   const filteredDocuments = useMemo(() => {
     const needle = query.trim().toLowerCase();
+    const profileBlockIds = selectedBlockIds(settings);
     return documents.filter((document) => {
       const documentBlocks = altfragenDocumentBlocks(document);
       const documentBlockIds = documentBlocks
@@ -188,6 +194,9 @@ export function AltfragenLibrary() {
       const scopeMatches = scope === "all"
         || (scope === "current" && (currentExams.length === 0 || exams.some((exam) => currentExams.includes(exam))))
         || (scope !== "current" && exams.includes(scope));
+      const profileMatches = scope === "all"
+        || profileBlockIds.length === 0
+        || documentBlockIds.some((id) => profileBlockIds.includes(id));
       const queryMatches = !needle || [
         document.title,
         document.description,
@@ -196,10 +205,11 @@ export function AltfragenLibrary() {
         semesterTitle(document.semester)
       ].join(" ").toLowerCase().includes(needle);
       return scopeMatches
+        && profileMatches
         && queryMatches
         && (!blockId || documentBlockIds.includes(blockId));
     });
-  }, [blockId, currentExams, documents, query, scope]);
+  }, [blockId, currentExams, documents, query, scope, settings]);
 
   async function downloadDocument(document: AltfragenDocument) {
     setDownloadingId(document.id);
@@ -452,12 +462,12 @@ function blockIcon(title: string): AtlasIconName {
   const normalized = normalizeText(title);
   const number = title.match(/\d+/)?.[0] || "";
   if (normalized.includes("prufungssimulation") || normalized.includes("pruefungssimulation")) return "target";
-  if (normalized.includes("herz") || normalized.includes("atmung")) return "heart";
-  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "cells";
-  if (normalized.includes("niere") || normalized.includes("elektrolyt")) return "pulse";
-  if (normalized.includes("blut") || normalized.includes("abwehr")) return "shield";
-  if (normalized.includes("endokrinologie") || normalized.includes("reproduktion")) return "dna";
-  if (normalized.includes("zns") || normalized.includes("sinnesorgane")) return "brain";
+  if (normalized.includes("herz") || normalized.includes("atmung") || normalized.includes("gasaustausch")) return "cardio";
+  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "metabolism";
+  if (normalized.includes("niere") || normalized.includes("elektrolyt") || normalized.includes("saure")) return "kidney";
+  if (normalized.includes("blut") || normalized.includes("abwehr") || normalized.includes("immun")) return "blood";
+  if (normalized.includes("endokrinologie") || normalized.includes("endokrin") || normalized.includes("reproduktion")) return "endocrine";
+  if (normalized.includes("zns") || normalized.includes("sinnesorgane") || normalized.includes("verhalten")) return "neuro";
 
   const icons: Record<string, AtlasIconName> = {
     "1": "heart",

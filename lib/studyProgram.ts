@@ -2,7 +2,7 @@ import type { AssessmentSummary } from "./types";
 
 export type StudyYear = "year1" | "year2" | "year3";
 export type StudySemester = "hs" | "fs";
-export type ExamId = "eMC1" | "eMC2" | "eMC3" | "eMC4" | "j2MC1" | "j2MC2";
+export type ExamId = "eMC1" | "eMC2" | "eMC3" | "eMC4";
 export type ExamPreparationMode = "semester" | "singleExam";
 
 export type UserStudySettings = {
@@ -58,25 +58,25 @@ export const STUDY_PROGRAM_CONFIG = {
     semesters: {
       hs: {
         label: "3. Fachsemester",
-        shortLabel: "HS · MC1",
+        shortLabel: "HS · eMC1",
         exams: {
-          j2MC1: {
-            label: "MC1",
+          eMC1: {
+            label: "eMC1",
             blocks: ["j2-block1", "j2-block2", "j2-block3"]
           }
         },
-        defaultExamGroup: ["j2MC1"]
+        defaultExamGroup: ["eMC1"]
       },
       fs: {
         label: "4. Fachsemester",
-        shortLabel: "FS · MC2",
+        shortLabel: "FS · eMC2",
         exams: {
-          j2MC2: {
-            label: "MC2",
+          eMC2: {
+            label: "eMC2",
             blocks: ["j2-block4", "j2-block5", "j2-block6"]
           }
         },
-        defaultExamGroup: ["j2MC2"]
+        defaultExamGroup: ["eMC2"]
       }
     }
   },
@@ -137,7 +137,9 @@ export function normalizeStudySettings(value: unknown, ariFallback = false): Use
   const prep = isRecord(record.examPreparation) ? record.examPreparation : {};
   const validExams = examsForSemester(semester, studyYear);
   const selected = Array.isArray(prep.selectedExams)
-    ? prep.selectedExams.filter((item): item is ExamId => isExamId(item) && validExams.includes(item))
+    ? prep.selectedExams
+      .map((item) => normalizeLegacyExamId(item, studyYear))
+      .filter((item): item is ExamId => !!item && validExams.includes(item))
     : [];
   const mode: ExamPreparationMode = prep.mode === "singleExam" && selected.length === 1
     ? "singleExam"
@@ -323,8 +325,14 @@ function isStudyYear(value: unknown): value is StudyYear {
 }
 
 function isExamId(value: unknown): value is ExamId {
-  return value === "eMC1" || value === "eMC2" || value === "eMC3" || value === "eMC4"
-    || value === "j2MC1" || value === "j2MC2";
+  return value === "eMC1" || value === "eMC2" || value === "eMC3" || value === "eMC4";
+}
+
+function normalizeLegacyExamId(value: unknown, studyYear: StudyYear | null): ExamId | null {
+  if (typeof value !== "string") return null;
+  if (studyYear === "year2" && value === "j2MC1") return "eMC1";
+  if (studyYear === "year2" && value === "j2MC2") return "eMC2";
+  return isExamId(value) ? value : null;
 }
 
 function isExamSimulation(value: string): boolean {

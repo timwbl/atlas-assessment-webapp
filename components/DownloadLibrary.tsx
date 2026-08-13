@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
+import { AtlasIcon, type AtlasIconName } from "./AtlasIcon";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { useUserStudyContext } from "./study/UserStudyProvider";
 import { blockColor } from "@/lib/blockColors";
@@ -258,7 +259,7 @@ export function DownloadLibrary() {
                 </span>
               </div>
 
-              <div className="grid gap-4">
+              <div className="summary-download-grid">
                 {blockOptions.map((block) => {
                   const blockDownloads = filtered
                     .filter((item) => item.semester === semesterItem.id && item.blockId === block.id)
@@ -267,31 +268,40 @@ export function DownloadLibrary() {
                   if (blockId && block.id !== blockId) return null;
 
                   return (
-                    <details className="download-block card overflow-hidden" open key={block.id}>
-                      <summary className="download-block-summary" style={{ "--download-accent": blockColor(block.canonicalBlockId || block.title) } as CSSProperties}>
-                        <span>
-                          <span className="download-accent-dot" />
-                          <strong>{block.title}</strong>
-                          {block.subtitle && <small>{block.subtitle}</small>}
+                    <section
+                      className="summary-block-card"
+                      key={block.id}
+                      style={{ "--download-accent": blockColor(block.canonicalBlockId || block.title) } as CSSProperties}
+                    >
+                      <div className="summary-block-card-head">
+                        <span className="summary-block-icon" aria-hidden="true">
+                          <AtlasIcon name={summaryBlockIcon(block.title, block.subtitle)} />
                         </span>
-                        <span className="pill">{blockDownloads.length} Zusammenfassung{blockDownloads.length === 1 ? "" : "en"}</span>
-                      </summary>
+                        <div className="min-w-0">
+                          <h3>{block.title}</h3>
+                          {block.subtitle && <p>{block.subtitle}</p>}
+                        </div>
+                        <span className="summary-block-count">{blockDownloads.length} Datei{blockDownloads.length === 1 ? "" : "en"}</span>
+                      </div>
 
-                      <div className="grid gap-3 p-4 pt-0">
+                      <div className="summary-file-list">
                         {blockDownloads.length === 0 ? (
-                          <div className="rounded-2xl border border-dashed border-[var(--line)] p-4 text-sm text-[var(--muted)]">
+                          <div className="summary-file-empty">
                             Keine Dateien in diesem Block.
                           </div>
                         ) : (
                           blockDownloads.map((item) => (
-                            <article className="download-card" key={item.id}>
+                            <article className="summary-file-card" key={item.id}>
+                              <span className="summary-file-icon" aria-hidden="true">
+                                <AtlasIcon name="book" />
+                              </span>
                               <div className="min-w-0">
-                                <div className="flex flex-wrap items-center gap-2">
-                                  <h3 className="text-xl font-black leading-tight">{item.title}</h3>
-                                  {item.version && <span className="pill">{item.version}</span>}
+                                <div className="summary-file-title-row">
+                                  <h4>{item.title}</h4>
+                                  {item.version && <span>{item.version}</span>}
                                 </div>
-                                {item.description && <p className="mt-2 text-sm text-[var(--muted)]">{item.description}</p>}
-                                <div className="mt-3 flex flex-wrap gap-2 text-sm text-[var(--muted)]">
+                                {item.description && <p className="summary-file-description">{item.description}</p>}
+                                <div className="summary-file-meta">
                                   <span>{item.fileName}</span>
                                   <span>·</span>
                                   <span>{fileTypeLabel(item)}</span>
@@ -303,14 +313,14 @@ export function DownloadLibrary() {
                                   <span>© {item.copyrightOwner}</span>
                                 </div>
                               </div>
-                              <button className="btn-primary" disabled={downloadingId === item.id} onClick={() => void downloadFile(item)}>
+                              <button className="summary-file-button" disabled={downloadingId === item.id} onClick={() => void downloadFile(item)}>
                                 {downloadingId === item.id ? "Lädt…" : "Download"}
                               </button>
                             </article>
                           ))
                         )}
                       </div>
-                    </details>
+                    </section>
                   );
                 })}
               </div>
@@ -326,4 +336,34 @@ function fileTypeLabel(item: SummaryDownload): string {
   const extension = item.fileName.split(".").pop()?.toUpperCase();
   if (extension) return extension;
   return item.fileType || "Datei";
+}
+
+function summaryBlockIcon(title: string, subtitle?: string): AtlasIconName {
+  const normalized = normalizeText(`${title} ${subtitle || ""}`);
+  const number = title.match(/\d+/)?.[0] || "";
+  if (normalized.includes("herz") || normalized.includes("atmung") || normalized.includes("gasaustausch")) return "cardio";
+  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "metabolism";
+  if (normalized.includes("niere") || normalized.includes("elektrolyt") || normalized.includes("saure")) return "kidney";
+  if (normalized.includes("blut") || normalized.includes("abwehr") || normalized.includes("immun")) return "blood";
+  if (normalized.includes("endokrinologie") || normalized.includes("endokrin") || normalized.includes("reproduktion")) return "endocrine";
+  if (normalized.includes("zns") || normalized.includes("sinnesorgane") || normalized.includes("verhalten")) return "neuro";
+  const fallback: Record<string, AtlasIconName> = {
+    "1": "heart",
+    "2": "cells",
+    "3": "atom",
+    "4": "pulse",
+    "5": "ethics",
+    "6": "planetary",
+    "7": "psychosocial",
+    "8": "movement",
+    "9": "development"
+  };
+  return fallback[number] || "book";
+}
+
+function normalizeText(value: string): string {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 }

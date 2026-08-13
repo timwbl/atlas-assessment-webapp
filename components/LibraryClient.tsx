@@ -158,7 +158,7 @@ export function LibraryClient() {
         block,
         accent: blockColor(block.canonicalBlockId || block.title),
         exerciseCount: matching.length,
-        icon: blockIcon(block.title),
+        icon: blockIcon([block.title, block.subtitle].filter(Boolean).join(" ")),
         questionCount
       };
     });
@@ -529,12 +529,12 @@ function blockIcon(title: string): AtlasIconName {
   const normalized = normalizeText(title);
   const number = title.match(/\d+/)?.[0] || "";
   if (normalized.includes("prufungssimulation") || normalized.includes("pruefungssimulation")) return "target";
-  if (normalized.includes("herz") || normalized.includes("atmung")) return "heart";
-  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "cells";
-  if (normalized.includes("niere") || normalized.includes("elektrolyt")) return "pulse";
-  if (normalized.includes("blut") || normalized.includes("abwehr")) return "shield";
-  if (normalized.includes("endokrinologie") || normalized.includes("reproduktion")) return "dna";
-  if (normalized.includes("zns") || normalized.includes("sinnesorgane")) return "brain";
+  if (normalized.includes("herz") || normalized.includes("atmung") || normalized.includes("gasaustausch")) return "cardio";
+  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "metabolism";
+  if (normalized.includes("niere") || normalized.includes("elektrolyt") || normalized.includes("saure")) return "kidney";
+  if (normalized.includes("blut") || normalized.includes("abwehr") || normalized.includes("immun")) return "blood";
+  if (normalized.includes("endokrinologie") || normalized.includes("endokrin") || normalized.includes("reproduktion")) return "endocrine";
+  if (normalized.includes("zns") || normalized.includes("sinnesorgane") || normalized.includes("verhalten")) return "neuro";
 
   const icons: Record<string, AtlasIconName> = {
     "1": "heart",
