@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { AtlasIcon } from "./AtlasIcon";
 
 export function MainNav() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const isAltfragenContext = searchParams.get("origin") === "altfragen" || searchParams.get("from") === "altfragen";
+  const isAssessmentDetail = pathname.startsWith("/assessment/");
 
   if (pathname.startsWith("/quiz")) return null;
 
@@ -26,8 +29,11 @@ export function MainNav() {
             pathname === "/" :
             item.href === "/assessments" ?
               pathname.startsWith("/assessments") ||
-              pathname.startsWith("/assessment/") ||
-              pathname.startsWith("/blocks/") :
+              pathname.startsWith("/blocks/") ||
+              (isAssessmentDetail && !isAltfragenContext) :
+              item.href === "/altfragen" ?
+                pathname.startsWith("/altfragen") ||
+                (isAssessmentDetail && isAltfragenContext) :
               pathname.startsWith(item.href);
 
         return (

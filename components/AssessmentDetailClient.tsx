@@ -102,11 +102,15 @@ export function AssessmentDetailClient({ id }: { id: string }) {
     : 0;
   const primaryDescription = assessment.sourceSummary || "Keine Beschreibung hinterlegt.";
   const lastScoreLabel = typeof progress?.lastScore === "number" ? `${progress.lastScore}%` : "-";
+  const isAltfragen = isAltfragenAssessment(assessment);
+  const backHref = isAltfragen ? "/altfragen" : "/assessments";
+  const backLabel = isAltfragen ? "Zu den Altfragen" : "Zu den Übungen";
+  const quizOrigin = isAltfragen ? "&origin=altfragen" : "";
 
-  if (isAltfragenAssessment(assessment) && !altfragenAccess) {
+  if (isAltfragen && !altfragenAccess) {
     return (
       <main id="top" className="shell atlas-subpage-shell assessment-detail-shell">
-        <Link className="assessment-detail-back" href="/assessments">Zu den Übungen</Link>
+        <Link className="assessment-detail-back" href={backHref}>{backLabel}</Link>
         <AltfragenAccessPanel onUnlocked={() => void refreshAltfragenAccess()} />
       </main>
     );
@@ -114,7 +118,7 @@ export function AssessmentDetailClient({ id }: { id: string }) {
 
   return (
     <main id="top" className="shell atlas-subpage-shell assessment-detail-shell">
-      <Link className="assessment-detail-back" href="/assessments">Zu den Übungen</Link>
+      <Link className="assessment-detail-back" href={backHref}>{backLabel}</Link>
 
       <header className="assessment-detail-head">
         <div className="assessment-detail-intro">
@@ -144,17 +148,17 @@ export function AssessmentDetailClient({ id }: { id: string }) {
             </div>
           </div>
           <div className="assessment-launch-actions">
-            <Link className="assessment-launch-action is-primary" href={`/quiz/${assessment.id}?mode=training`}>
+            <Link className="assessment-launch-action is-primary" href={`/quiz/${assessment.id}?mode=training${quizOrigin}`}>
               <span><AtlasIcon name="play" /></span>
               <strong>Training</strong>
               <small>Mit direktem Feedback</small>
             </Link>
-            <Link className="assessment-launch-action" href={`/quiz/${assessment.id}?mode=exam`}>
+            <Link className="assessment-launch-action" href={`/quiz/${assessment.id}?mode=exam${quizOrigin}`}>
               <span><AtlasIcon name="checklist" /></span>
               <strong>Prüfung</strong>
               <small>Ohne Zwischenlösung</small>
             </Link>
-            <Link className="assessment-launch-action" href={`/quiz/${assessment.id}?mode=review`}>
+            <Link className="assessment-launch-action" href={`/quiz/${assessment.id}?mode=review${quizOrigin}`}>
               <span><AtlasIcon name="bookmark" /></span>
               <strong>Review</strong>
               <small>{counts.review ? `${counts.review} markiert` : "Markierte Fragen"}</small>

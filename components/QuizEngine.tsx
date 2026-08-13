@@ -7,6 +7,7 @@ import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { ResultsPage } from "./ResultsPage";
 import { AtlasIcon } from "./AtlasIcon";
 import { useCompanion } from "./companion/CompanionProvider";
+import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { analyzeAssessmentResults } from "@/lib/assessmentAnalysis";
 import {
   buildResultRows,
@@ -198,6 +199,9 @@ export function QuizEngine({
       })
       .map((item) => item.id)
   ), [answers, questions]);
+  const detailHref = isAltfragenAssessment(assessment)
+    ? `/assessment/${assessment.id}?origin=altfragen`
+    : `/assessment/${assessment.id}`;
 
   if (result) {
     return (
@@ -217,7 +221,7 @@ export function QuizEngine({
         <div className="card p-6">
           <h1 className="text-2xl font-black">Keine Review-Fragen vorhanden</h1>
           <p className="mt-2 text-[var(--muted)]">Beantworte zuerst Fragen falsch oder markiere Fragen für Review.</p>
-          <Link className="btn-primary mt-5 inline-flex items-center" href={`/assessment/${assessment.id}`}>Zurück</Link>
+          <Link className="btn-primary mt-5 inline-flex items-center" href={detailHref}>Zurück</Link>
         </div>
       </main>
     );
@@ -335,7 +339,7 @@ export function QuizEngine({
     <main id="top" className={`shell quiz-shell atlas-quiz-shell quiz-mode-${mode}`}>
       <section className="atlas-quiz-session" aria-label="Trainingssitzung">
         <div className="atlas-quiz-commandbar">
-          <Link className="atlas-quiz-exit" href={`/assessment/${assessment.id}`}>
+          <Link className="atlas-quiz-exit" href={detailHref}>
             Beenden
           </Link>
           <div className="atlas-quiz-session-status">

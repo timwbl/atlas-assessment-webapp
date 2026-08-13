@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AtlasBrand } from "./AtlasBrand";
 import { MainNav } from "./MainNav";
@@ -26,8 +26,10 @@ const AdminShortcut = dynamic(
 
 export function AppChrome() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [isPageEnd, setIsPageEnd] = useState(false);
+  const isAltfragenContext = searchParams.get("origin") === "altfragen" || searchParams.get("from") === "altfragen";
 
   useEffect(() => {
     const stored = window.localStorage.getItem(SIDEBAR_COLLAPSED_KEY);
@@ -103,6 +105,7 @@ export function AppChrome() {
       <MainNav />
       <AppTopbar
         collapsed={sidebarCollapsed}
+        isAltfragenContext={isAltfragenContext}
         onToggleSidebar={() => setSidebarCollapsed((current) => !current)}
         pathname={pathname}
       />
@@ -120,16 +123,18 @@ export function AppChrome() {
 
 function AppTopbar({
   collapsed,
+  isAltfragenContext,
   onToggleSidebar,
   pathname
 }: {
   collapsed: boolean;
+  isAltfragenContext: boolean;
   onToggleSidebar: () => void;
   pathname: string;
 }) {
   if (pathname.startsWith("/quiz")) return null;
 
-  const meta = topbarMeta(pathname);
+  const meta = topbarMeta(pathname, isAltfragenContext);
   return (
     <header className="app-topbar" aria-label="Aktueller Bereich">
       <div className="app-topbar-title">
@@ -148,8 +153,9 @@ function AppTopbar({
   );
 }
 
-function topbarMeta(pathname: string): { label: string; icon: AtlasIconName } {
+function topbarMeta(pathname: string, isAltfragenContext = false): { label: string; icon: AtlasIconName } {
   if (pathname === "/") return { label: "Dashboard", icon: "dashboard" };
+  if (pathname.startsWith("/assessment/") && isAltfragenContext) return { label: "Altfragen", icon: "archive" };
   if (pathname.startsWith("/assessments") || pathname.startsWith("/assessment/") || pathname.startsWith("/blocks/")) {
     return { label: "Übungen", icon: "book" };
   }

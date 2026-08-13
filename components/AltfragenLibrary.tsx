@@ -392,7 +392,7 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
   return (
     <Link
       className="altfragen-practice-card"
-      href={`/assessment/${assessment.id}`}
+      href={`/assessment/${assessment.id}?origin=altfragen`}
       prefetch={false}
       style={{ "--altfragen-accent": accent } as CSSProperties}
     >
