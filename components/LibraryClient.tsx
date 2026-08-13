@@ -122,6 +122,11 @@ export function LibraryClient() {
   }
 
   const deferredQuery = useDeferredValue(query);
+  const semesterOptions = useMemo(() => {
+    const activeStudyYear = settings.studyYear || (semester ? studyProfileForLegacyId(semester)?.studyYear : null);
+    if (!activeStudyYear) return DOWNLOAD_SEMESTERS;
+    return DOWNLOAD_SEMESTERS.filter((item) => studyProfileForLegacyId(item.id)?.studyYear === activeStudyYear);
+  }, [semester, settings.studyYear]);
   const assessments = useMemo(
     () => loaded
       .map((item) => item.assessment)
@@ -267,7 +272,7 @@ export function LibraryClient() {
         </div>
         <div className="exercise-control-actions">
           <div className="exercise-semester-tabs" aria-label="Fachsemester auswählen">
-            {DOWNLOAD_SEMESTERS.map((item) => (
+            {semesterOptions.map((item) => (
               <button
                 className={semester === item.id ? "is-active" : ""}
                 key={item.id}
