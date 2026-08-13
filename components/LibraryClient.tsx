@@ -119,11 +119,7 @@ export function LibraryClient() {
   }
 
   const deferredQuery = useDeferredValue(query);
-  const semesterOptions = useMemo(() => {
-    const activeStudyYear = settings.studyYear || (semester ? studyProfileForLegacyId(semester)?.studyYear : null);
-    if (!activeStudyYear) return DOWNLOAD_SEMESTERS;
-    return DOWNLOAD_SEMESTERS.filter((item) => studyProfileForLegacyId(item.id)?.studyYear === activeStudyYear);
-  }, [semester, settings.studyYear]);
+  const semesterOptions = DOWNLOAD_SEMESTERS;
   const assessments = useMemo(
     () => loaded
       .map((item) => item.assessment)
@@ -143,6 +139,9 @@ export function LibraryClient() {
   const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
   const [localExam, setLocalExam] = useState<ExamId | null>(null);
   const selectedExam = localExam;
+  const profileSemesterId = settings.studyYear && settings.semester
+    ? legacySemesterId(settings.semester, settings.studyYear)
+    : null;
 
   const blockOptions = useMemo(() => {
     const profileBlockIds = selectedBlockIds(settings);
@@ -154,12 +153,12 @@ export function LibraryClient() {
       if (isAltfragenValue(block.title) || isThreeDContent(block.title)) return false;
       const blockIdFromTitle = block.canonicalBlockId || normalizedBlockId(block.title);
       if (localExamBlockIds && blockIdFromTitle) return localExamBlockIds.has(blockIdFromTitle);
-      if (!settings.studyYear || !settings.semester || studyProfile?.studyYear !== settings.studyYear) return true;
+      if (!settings.studyYear || !settings.semester || semester !== profileSemesterId) return true;
       if (!blockIdFromTitle) return settings.semester === "fs" && normalizeText(block.title).includes("prufungssimulation");
       return profileBlockIds.includes(blockIdFromTitle);
     })
       : [];
-  }, [examConfig, selectedExam, semester, settings, studyProfile?.studyYear]);
+  }, [examConfig, profileSemesterId, selectedExam, semester, settings]);
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
   const blockCards = useMemo(() => {
     return blockOptions.map((block) => {

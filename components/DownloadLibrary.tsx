@@ -75,6 +75,9 @@ export function DownloadLibrary() {
   const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
   const [localExam, setLocalExam] = useState<ExamId | null>(null);
   const selectedExam = localExam;
+  const profileSemesterId = settings.studyYear && settings.semester
+    ? legacySemesterId(settings.semester, settings.studyYear)
+    : null;
   const localExamBlockIds = useMemo(
     () => selectedExam && examConfig
       ? new Set(examConfig.exams[selectedExam]?.blocks || [])
@@ -88,11 +91,11 @@ export function DownloadLibrary() {
       ? downloadBlocksForSemester(semester).filter((block) => {
         const profileBlockId = block.canonicalBlockId || normalizedBlockId(block.title);
         if (localExamBlockIds && profileBlockId) return localExamBlockIds.has(profileBlockId);
-        if (!settings.studyYear || !settings.semester || studyProfile?.studyYear !== settings.studyYear) return true;
+        if (!settings.studyYear || !settings.semester || semester !== profileSemesterId) return true;
         return !!profileBlockId && profileBlockIds.includes(profileBlockId);
       })
       : [];
-  }, [localExamBlockIds, semester, settings, studyProfile?.studyYear]);
+  }, [localExamBlockIds, profileSemesterId, semester, settings]);
   const filtered = useMemo(() => {
     if (!semester) return [];
 
