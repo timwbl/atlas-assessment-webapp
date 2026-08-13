@@ -58,9 +58,9 @@ export function DashboardClient() {
   }, []);
 
   const scopedSettings = useMemo(() => {
-    if (settings.studyYear === "year1" && settings.semester) return settings;
+    if (settings.studyYear && settings.semester) return settings;
     const current = semesterPeriod();
-    return current ? settingsForSemester(settings, current.semester) : settings;
+    return current ? settingsForSemester(settings, current.semester, "year1") : settings;
   }, [settings]);
   const scopedAssessments = useMemo(
     () => data.allAssessments.filter((assessment) => matchesStudyProfile(assessment, scopedSettings)),

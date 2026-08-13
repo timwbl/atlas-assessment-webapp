@@ -6,6 +6,7 @@ import {
   STUDY_YEARS,
   examsForSemester,
   semesterConfig,
+  semestersForStudyYear,
   type ExamId,
   type StudySemester,
   type StudyYear,
@@ -41,13 +42,14 @@ export function StudyProfileSettings({
   }
 
   function setSemester(semester: StudySemester) {
+    const studyYear = draft.studyYear || "year1";
     setDraft({
       ...draft,
-      studyYear: "year1",
+      studyYear,
       semester,
       examPreparation: {
         mode: "semester",
-        selectedExams: examsForSemester(semester)
+        selectedExams: examsForSemester(semester, studyYear)
       }
     });
   }
@@ -57,12 +59,12 @@ export function StudyProfileSettings({
     setDraft({
       ...draft,
       examPreparation: exam === "all"
-        ? { mode: "semester", selectedExams: examsForSemester(draft.semester) }
+        ? { mode: "semester", selectedExams: examsForSemester(draft.semester, draft.studyYear) }
         : { mode: "singleExam", selectedExams: [exam] }
     });
   }
 
-  const semester = semesterConfig(draft.semester);
+  const semester = semesterConfig(draft.semester, draft.studyYear);
   const selectedExam = draft.examPreparation.mode === "singleExam"
     ? draft.examPreparation.selectedExams[0]
     : "all";
@@ -93,13 +95,13 @@ export function StudyProfileSettings({
         />
       </label>
 
-      {draft.studyYear === "year1" && (
+      {draft.studyYear && semestersForStudyYear(draft.studyYear).length > 0 && (
         <>
           <fieldset className="study-field">
             <legend>Semester / Lernphase</legend>
             <div className="study-choice-grid">
-              {(["hs", "fs"] as StudySemester[]).map((value) => {
-                const config = semesterConfig(value);
+              {semestersForStudyYear(draft.studyYear).map((value) => {
+                const config = semesterConfig(value, draft.studyYear);
                 return (
                   <button
                     className={draft.semester === value ? "study-choice is-active" : "study-choice"}
@@ -133,7 +135,7 @@ export function StudyProfileSettings({
                     onClick={() => setExam(exam)}
                     type="button"
                   >
-                    {exam}
+                    {semester.exams[exam]?.label || exam}
                   </button>
                 ))}
               </div>
@@ -145,7 +147,7 @@ export function StudyProfileSettings({
         </>
       )}
 
-      {draft.studyYear && draft.studyYear !== "year1" && (
+      {draft.studyYear && semestersForStudyYear(draft.studyYear).length === 0 && (
         <div className="study-placeholder" role="status">
           <strong>{STUDY_YEARS.find((year) => year.id === draft.studyYear)?.label}</strong>
           <span>Diese Inhalte werden später ergänzt. Bis dahin bleiben alle vorhandenen Inhalte erreichbar.</span>

@@ -3,12 +3,14 @@
 import { getCurrentProfile } from "./cloudProgress";
 import { isSupabaseConfigured, publicStorageUrl, restRequest, storageRequest } from "./supabaseClient";
 
-export type SemesterId = "HS2025" | "FS2026";
+export type SemesterId = "HS2025" | "FS2026" | "HS2026" | "FS2027";
 
 export type SummaryBlock = {
   id: string;
   semester: SemesterId;
   title: string;
+  subtitle?: string;
+  canonicalBlockId?: string;
   order: number;
   matchTerms?: string[];
   assessmentOnly?: boolean;
@@ -93,7 +95,9 @@ type ChunkManifest = {
 
 export const DOWNLOAD_SEMESTERS: Array<{ id: SemesterId; title: string; order: number }> = [
   { id: "HS2025", title: "1. Semester", order: 1 },
-  { id: "FS2026", title: "2. Semester", order: 2 }
+  { id: "FS2026", title: "2. Semester", order: 2 },
+  { id: "HS2026", title: "HS2026", order: 3 },
+  { id: "FS2027", title: "FS2027", order: 4 }
 ];
 
 const SUMMARY_BLOCK_CONFIG: Record<SemesterId, Array<Omit<SummaryBlock, "semester">>> = {
@@ -121,6 +125,58 @@ const SUMMARY_BLOCK_CONFIG: Record<SemesterId, Array<Omit<SummaryBlock, "semeste
       order: 7,
       assessmentOnly: true,
       matchTerms: ["altfragen", "altfrage", "alte fragen"]
+    }
+  ],
+  HS2026: [
+    {
+      id: "HS2026-block-1",
+      title: "Block 1",
+      subtitle: "Herz-Kreislauf, Gastransport, Atmung",
+      canonicalBlockId: "j2-block1",
+      order: 1,
+      matchTerms: ["j2 block 1", "herz kreislauf", "gastransport", "atmung"]
+    },
+    {
+      id: "HS2026-block-2",
+      title: "Block 2",
+      subtitle: "Verdauung, Metabolismus",
+      canonicalBlockId: "j2-block2",
+      order: 2,
+      matchTerms: ["j2 block 2", "verdauung", "metabolismus"]
+    },
+    {
+      id: "HS2026-block-3",
+      title: "Block 3",
+      subtitle: "Niere, Wasser- und Elektrolythaushalt, Säure-Basen-Haushalt",
+      canonicalBlockId: "j2-block3",
+      order: 3,
+      matchTerms: ["j2 block 3", "niere", "elektrolyt", "saure basen", "säure basen"]
+    }
+  ],
+  FS2027: [
+    {
+      id: "FS2027-block-4",
+      title: "Block 4",
+      subtitle: "Blut und Abwehr",
+      canonicalBlockId: "j2-block4",
+      order: 1,
+      matchTerms: ["j2 block 4", "blut", "abwehr"]
+    },
+    {
+      id: "FS2027-block-5",
+      title: "Block 5",
+      subtitle: "Endokrinologie, Reproduktionsorgane, Sexualität",
+      canonicalBlockId: "j2-block5",
+      order: 2,
+      matchTerms: ["j2 block 5", "endokrinologie", "reproduktion", "sexualitat", "sexualität"]
+    },
+    {
+      id: "FS2027-block-6",
+      title: "Block 6",
+      subtitle: "ZNS, Sinnesorgane, Verhalten",
+      canonicalBlockId: "j2-block6",
+      order: 3,
+      matchTerms: ["j2 block 6", "zns", "sinnesorgane", "verhalten"]
     }
   ]
 };

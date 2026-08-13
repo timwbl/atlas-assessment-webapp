@@ -16,6 +16,7 @@ import {
   examsForSemester,
   semesterConfig,
   semesterHeading,
+  semestersForStudyYear,
   type ExamId,
   type StudySemester,
   type StudyYear,
@@ -116,13 +117,14 @@ export function SettingsPageClient() {
   }
 
   function setSemester(semester: StudySemester) {
+    const studyYear = draftSettings.studyYear || "year1";
     setDraftSettings({
       ...draftSettings,
-      studyYear: "year1",
+      studyYear,
       semester,
       examPreparation: {
         mode: "semester",
-        selectedExams: examsForSemester(semester)
+        selectedExams: examsForSemester(semester, studyYear)
       }
     });
   }
@@ -132,7 +134,7 @@ export function SettingsPageClient() {
     setDraftSettings({
       ...draftSettings,
       examPreparation: exam === "all"
-        ? { mode: "semester", selectedExams: examsForSemester(draftSettings.semester) }
+        ? { mode: "semester", selectedExams: examsForSemester(draftSettings.semester, draftSettings.studyYear) }
         : { mode: "singleExam", selectedExams: [exam] }
     });
   }
@@ -145,15 +147,15 @@ export function SettingsPageClient() {
     .slice(0, 2)
     .toUpperCase();
   const email = user?.email || "Fortschritt lokal auf diesem Gerät";
-  const activeSemester = semesterConfig(settings.semester);
-  const draftSemester = semesterConfig(draftSettings.semester);
+  const activeSemester = semesterConfig(settings.semester, settings.studyYear);
+  const draftSemester = semesterConfig(draftSettings.semester, draftSettings.studyYear);
   const selectedExam = draftSettings.examPreparation.mode === "singleExam"
     ? draftSettings.examPreparation.selectedExams[0]
     : "all";
   const activeExamLabel = settings.semester
     ? settings.examPreparation.mode === "singleExam"
-      ? settings.examPreparation.selectedExams[0] || "Nicht festgelegt"
-      : `Alle (${examsForSemester(settings.semester).join(", ")})`
+      ? activeSemester?.exams[settings.examPreparation.selectedExams[0]]?.label || settings.examPreparation.selectedExams[0] || "Nicht festgelegt"
+      : `Alle (${examsForSemester(settings.semester, settings.studyYear).map((exam) => activeSemester?.exams[exam]?.label || exam).join(", ")})`
     : "Nicht festgelegt";
 
   return (
@@ -250,13 +252,13 @@ export function SettingsPageClient() {
               />
             </label>
 
-            {draftSettings.studyYear === "year1" && (
+            {draftSettings.studyYear && semestersForStudyYear(draftSettings.studyYear).length > 0 && (
               <>
                 <div className="settings-edit-field">
                   <span>Semester / Lernphase</span>
                   <div className="settings-option-list">
-                    {(["hs", "fs"] as StudySemester[]).map((value) => {
-                      const config = semesterConfig(value);
+                    {semestersForStudyYear(draftSettings.studyYear).map((value) => {
+                      const config = semesterConfig(value, draftSettings.studyYear);
                       const active = draftSettings.semester === value;
                       return (
                         <button
@@ -287,7 +289,7 @@ export function SettingsPageClient() {
                       >
                         <span>
                           <strong>Alle Prüfungen</strong>
-                          <small>{draftSemester.defaultExamGroup.join(", ")}</small>
+                          <small>{draftSemester.defaultExamGroup.map((exam) => draftSemester.exams[exam]?.label || exam).join(", ")}</small>
                         </span>
                         <em>{selectedExam === "all" ? "Ausgewählt" : "Wählen"}</em>
                       </button>
@@ -296,14 +298,14 @@ export function SettingsPageClient() {
                           className={selectedExam === exam ? "settings-option-row is-selected" : "settings-option-row"}
                           key={exam}
                           onClick={() => setExam(exam)}
-                          type="button"
-                        >
-                          <span>
-                            <strong>{exam}</strong>
+                        type="button"
+                      >
+                        <span>
+                            <strong>{draftSemester.exams[exam]?.label || exam}</strong>
                             <small>Nur Inhalte dieser Prüfung anzeigen</small>
                           </span>
-                          <em>{selectedExam === exam ? "Ausgewählt" : "Wählen"}</em>
-                        </button>
+                        <em>{selectedExam === exam ? "Ausgewählt" : "Wählen"}</em>
+                      </button>
                       ))}
                     </div>
                   </div>

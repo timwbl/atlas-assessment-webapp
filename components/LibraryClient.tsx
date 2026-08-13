@@ -21,6 +21,7 @@ import {
   DOWNLOAD_SEMESTERS,
   getSummaryBlock,
   semesterTitle,
+  type SummaryBlock,
   type SemesterId
 } from "@/lib/summaryDownloads";
 import {
@@ -39,6 +40,7 @@ import {
   selectedBlockIds,
   semesterConfig,
   settingsForSemester,
+  studyProfileForLegacyId,
   studySemesterForLegacyId,
   type ExamId
 } from "@/lib/studyProgram";
@@ -77,8 +79,8 @@ export function LibraryClient() {
   }, []);
 
   useEffect(() => {
-    if (!hydrated || settings.studyYear !== "year1" || !settings.semester) return;
-    const preferredSemester = legacySemesterId(settings.semester);
+    if (!hydrated || !settings.studyYear || !settings.semester) return;
+    const preferredSemester = legacySemesterId(settings.semester, settings.studyYear);
     if (!preferredSemester) return;
     setSemester(preferredSemester);
     setBlockId((current) => {
@@ -114,8 +116,8 @@ export function LibraryClient() {
     setQuery("");
     setPage(1);
     clearAssessmentLibrarySelection();
-    const nextStudySemester = studySemesterForLegacyId(nextSemester);
-    if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
+    const nextStudyProfile = studyProfileForLegacyId(nextSemester);
+    if (nextStudyProfile) updateSettings(settingsForSemester(settings, nextStudyProfile.semester, nextStudyProfile.studyYear));
   }
 
   const deferredQuery = useDeferredValue(query);
@@ -139,8 +141,8 @@ export function LibraryClient() {
     return semester
       ? blocksForSemester(semester).filter((block) => {
       if (isAltfragenValue(block.title) || isThreeDContent(block.title)) return false;
-      if (settings.studyYear !== "year1" || !settings.semester) return true;
-      const blockIdFromTitle = normalizedBlockId(block.title);
+      if (!settings.studyYear || !settings.semester) return true;
+      const blockIdFromTitle = block.canonicalBlockId || normalizedBlockId(block.title);
       if (!blockIdFromTitle) return settings.semester === "fs" && normalizeText(block.title).includes("prufungssimulation");
       return profileBlockIds.includes(blockIdFromTitle);
     })
@@ -149,11 +151,11 @@ export function LibraryClient() {
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
   const blockCards = useMemo(() => {
     return blockOptions.map((block) => {
-      const matching = assessments.filter((assessment) => blockMatches(assessment.block, block.title));
+      const matching = assessments.filter((assessment) => assessmentMatchesSummaryBlock(assessment, block));
       const questionCount = matching.reduce((sum, assessment) => sum + assessment.questionCount, 0);
       return {
         block,
-        accent: blockColor(block.title),
+        accent: blockColor(block.canonicalBlockId || block.title),
         exerciseCount: matching.length,
         icon: blockIcon(block.title),
         questionCount
@@ -172,22 +174,23 @@ export function LibraryClient() {
 
   const blockAssessments = useMemo(() => {
     if (!selectedBlock) return [];
-    return assessments.filter((assessment) => blockMatches(assessment.block, selectedBlock.title));
+    return assessments.filter((assessment) => assessmentMatchesSummaryBlock(assessment, selectedBlock));
   }, [assessments, selectedBlock]);
 
   const studySemester = studySemesterForLegacyId(semester);
-  const examConfig = semesterConfig(studySemester);
+  const studyProfile = studyProfileForLegacyId(semester);
+  const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
   const selectedExam = settings.examPreparation.mode === "singleExam"
     ? settings.examPreparation.selectedExams[0]
     : null;
 
   function setExamFilter(exam: ExamId | null) {
-    if (!studySemester) return;
+    if (!studyProfile) return;
     updateSettings({
-      ...settingsForSemester(settings, studySemester),
+      ...settingsForSemester(settings, studyProfile.semester, studyProfile.studyYear),
       examPreparation: exam
         ? { mode: "singleExam", selectedExams: [exam] }
-        : { mode: "semester", selectedExams: examsForSemester(studySemester) }
+        : { mode: "semester", selectedExams: examsForSemester(studyProfile.semester, studyProfile.studyYear) }
     });
     setBlockId("");
     setTag("");
@@ -224,7 +227,7 @@ export function LibraryClient() {
   const pageStart = (activePage - 1) * EXERCISES_PER_PAGE;
   const pageEnd = Math.min(pageStart + EXERCISES_PER_PAGE, sortedAssessments.length);
   const visibleAssessments = sortedAssessments.slice(pageStart, pageEnd);
-  const selectedBlockKey = selectedBlock ? normalizedBlockId(selectedBlock.title) : null;
+  const selectedBlockKey = selectedBlock ? selectedBlock.canonicalBlockId || normalizedBlockId(selectedBlock.title) : null;
   const blockQuestionCount = blockAssessments.reduce((sum, assessment) => sum + assessment.questionCount, 0);
   const loadingCatalog = hydrated && loaded.length === 0 && !error;
 
@@ -279,7 +282,7 @@ export function LibraryClient() {
               Zurücksetzen
             </button>
           )}
-          {examConfig && settings.studyYear === "year1" && (
+          {examConfig && settings.studyYear === studyProfile?.studyYear && (
             <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
               <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
                 Alle
@@ -329,6 +332,7 @@ export function LibraryClient() {
                 <span className="exercise-block-copy">
                   <strong>{item.block.title}</strong>
                   <small>{item.questionCount} Fragen</small>
+                  {item.block.subtitle && <small>{item.block.subtitle}</small>}
                 </span>
                 <span className="exercise-block-meta">
                   <b>{item.exerciseCount}</b>
@@ -481,9 +485,23 @@ export function LibraryClient() {
   );
 }
 
-function blockMatches(assessmentBlock: string, selectedBlockTitle: string): boolean {
+function assessmentMatchesSummaryBlock(assessment: AssessmentSummary, block: SummaryBlock): boolean {
+  const canonicalBlockId = block.canonicalBlockId || normalizedBlockId(block.title);
+  if (canonicalBlockId?.startsWith("j2-")) {
+    return normalizedBlockId([
+      assessment.block,
+      assessment.title,
+      assessment.lectureCode
+    ].join(" ")) === canonicalBlockId;
+  }
+  return blockMatches(assessment.block, block.title, block.matchTerms || []);
+}
+
+function blockMatches(assessmentBlock: string, selectedBlockTitle: string, matchTerms: string[] = []): boolean {
   const normalizedAssessment = normalizeText(assessmentBlock);
   const normalizedSelected = normalizeText(selectedBlockTitle);
+  const normalizedTerms = matchTerms.map(normalizeText);
+  if (normalizedTerms.some((term) => term && normalizedAssessment.includes(term))) return true;
   if (normalizedSelected.includes("prufungssimulationen") || normalizedSelected.includes("pruefungssimulationen")) {
     return normalizedAssessment.includes("prufungssimulationen") || normalizedAssessment.includes("pruefungssimulationen");
   }
@@ -510,6 +528,12 @@ function blockIcon(title: string): AtlasIconName {
   const normalized = normalizeText(title);
   const number = title.match(/\d+/)?.[0] || "";
   if (normalized.includes("prufungssimulation") || normalized.includes("pruefungssimulation")) return "target";
+  if (normalized.includes("herz") || normalized.includes("atmung")) return "heart";
+  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "cells";
+  if (normalized.includes("niere") || normalized.includes("elektrolyt")) return "pulse";
+  if (normalized.includes("blut") || normalized.includes("abwehr")) return "shield";
+  if (normalized.includes("endokrinologie") || normalized.includes("reproduktion")) return "dna";
+  if (normalized.includes("zns") || normalized.includes("sinnesorgane")) return "brain";
 
   const icons: Record<string, AtlasIconName> = {
     "1": "heart",

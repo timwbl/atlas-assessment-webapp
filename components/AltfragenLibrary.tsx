@@ -16,6 +16,7 @@ import { formatBlockLabel } from "@/lib/blockLabels";
 import { blockColor } from "@/lib/blockColors";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import {
+  blocksForSemester,
   altfragenDocumentBlocks,
   DOWNLOAD_SEMESTERS,
   formatFileSize,
@@ -32,7 +33,9 @@ import {
   examForContent,
   examsForSemester,
   isAltfragenValue,
+  legacySemesterId,
   isThreeDContent,
+  selectedBlockIds,
   type ExamId
 } from "@/lib/studyProgram";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
@@ -127,16 +130,30 @@ export function AltfragenLibrary() {
   );
 
   const currentExams = useMemo(
-    () => settings.studyYear === "year1" ? examsForSemester(settings.semester) : [],
+    () => settings.studyYear ? examsForSemester(settings.semester, settings.studyYear) : [],
     [settings.semester, settings.studyYear]
   );
   const blockOptions = useMemo(
     () => [...new Set([
       ...assessments.map(blockIdForContent),
-      ...documents.flatMap((item) => altfragenDocumentBlocks(item).map((block) => blockIdForContent(block.title)))
+      ...documents.flatMap((item) => altfragenDocumentBlocks(item).map((block) => block.canonicalBlockId || blockIdForContent(block.title))),
+      ...DOWNLOAD_SEMESTERS
+        .filter((semester) => {
+          if (!settings.studyYear || !settings.semester) return true;
+          const preferredSemester = legacySemesterId(settings.semester, settings.studyYear);
+          return semester.id === preferredSemester;
+        })
+        .flatMap((semester) => blocksForSemester(semester.id))
+        .filter((block) => !block.assessmentOnly)
+        .map((block) => block.canonicalBlockId || blockIdForContent(block.title))
     ].filter((value): value is string => !!value))]
-      .sort((a, b) => Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, ""))),
-    [assessments, documents]
+      .filter((value) => {
+        if (!settings.studyYear || !settings.semester) return true;
+        const selected = selectedBlockIds(settings);
+        return selected.length === 0 || selected.includes(value);
+      })
+      .sort(compareBlockIds),
+    [assessments, documents, settings]
   );
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -162,10 +179,10 @@ export function AltfragenLibrary() {
     return documents.filter((document) => {
       const documentBlocks = altfragenDocumentBlocks(document);
       const documentBlockIds = documentBlocks
-        .map((block) => blockIdForContent(block.title))
+        .map((block) => block.canonicalBlockId || blockIdForContent(block.title))
         .filter((value): value is string => !!value);
       const exams = documentBlocks
-        .map((block) => examForBlock(block.title))
+        .map((block) => examForBlock(block.canonicalBlockId || block.title))
         .filter((value): value is ExamId => !!value);
       const scopeMatches = scope === "all"
         || (scope === "current" && (currentExams.length === 0 || exams.some((exam) => currentExams.includes(exam))))
@@ -255,7 +272,7 @@ export function AltfragenLibrary() {
                   { value: "", label: "Alle Blöcke" },
                   ...blockOptions.map((value) => ({
                     value,
-                    label: `Block ${value.replace(/\D/g, "")}`
+                    label: formatBlockOptionLabel(value)
                   }))
                 ]}
               />
@@ -332,7 +349,7 @@ export function AltfragenLibrary() {
                           <article
                             className="altfragen-document-card"
                             key={document.id}
-                            style={{ "--download-accent": blockColor(altfragenDocumentBlocks(document)[0]?.title || document.blockTitle) } as CSSProperties}
+                            style={{ "--download-accent": blockColor(altfragenDocumentBlocks(document)[0]?.canonicalBlockId || altfragenDocumentBlocks(document)[0]?.title || document.blockTitle) } as CSSProperties}
                           >
                             <div className="altfragen-document-icon" aria-hidden="true">
                               <span>{fileTypeLabel(document)}</span>
@@ -434,6 +451,12 @@ function blockIcon(title: string): AtlasIconName {
   const normalized = normalizeText(title);
   const number = title.match(/\d+/)?.[0] || "";
   if (normalized.includes("prufungssimulation") || normalized.includes("pruefungssimulation")) return "target";
+  if (normalized.includes("herz") || normalized.includes("atmung")) return "heart";
+  if (normalized.includes("verdauung") || normalized.includes("metabolismus")) return "cells";
+  if (normalized.includes("niere") || normalized.includes("elektrolyt")) return "pulse";
+  if (normalized.includes("blut") || normalized.includes("abwehr")) return "shield";
+  if (normalized.includes("endokrinologie") || normalized.includes("reproduktion")) return "dna";
+  if (normalized.includes("zns") || normalized.includes("sinnesorgane")) return "brain";
 
   const icons: Record<string, AtlasIconName> = {
     "1": "heart",
@@ -461,4 +484,16 @@ function scopeLabel(scope: Scope): string {
   if (scope === "all") return "Alle Altfragen";
   if (scope === "current") return "Aktuelles Semester";
   return scope;
+}
+
+function compareBlockIds(a: string, b: string): number {
+  const aYear = a.startsWith("j2-") ? 2 : 1;
+  const bYear = b.startsWith("j2-") ? 2 : 1;
+  if (aYear !== bYear) return aYear - bYear;
+  return Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, ""));
+}
+
+function formatBlockOptionLabel(value: string): string {
+  const number = value.replace(/\D/g, "");
+  return value.startsWith("j2-") ? `2. Studienjahr · Block ${number}` : `Block ${number}`;
 }

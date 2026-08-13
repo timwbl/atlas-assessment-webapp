@@ -41,18 +41,18 @@ export function MobileAssessments() {
     groups.forEach((assessments) => assessments.sort(compareAssessmentsByNumber));
     return [...groups.entries()].sort(([left], [right]) => left.localeCompare(right, "de", { numeric: true }));
   }, [filtered]);
-  const currentSemester = semesterConfig(settings.semester);
+  const currentSemester = semesterConfig(settings.semester, settings.studyYear);
   const selectedExam = settings.examPreparation.mode === "singleExam"
     ? settings.examPreparation.selectedExams[0]
     : null;
 
   function setExamFilter(exam: ExamId | null) {
-    if (!settings.semester) return;
+    if (!settings.studyYear || !settings.semester) return;
     updateSettings({
-      ...settingsForSemester(settings, settings.semester),
+      ...settingsForSemester(settings, settings.semester, settings.studyYear),
       examPreparation: exam
         ? { mode: "singleExam", selectedExams: [exam] }
-        : { mode: "semester", selectedExams: examsForSemester(settings.semester) }
+        : { mode: "semester", selectedExams: examsForSemester(settings.semester, settings.studyYear) }
     });
   }
 
@@ -67,7 +67,7 @@ export function MobileAssessments() {
         <Link className="is-active" href="/assessments">Übungen</Link>
         <Link href="/altfragen">Altfragen</Link>
       </nav>
-      {settings.studyYear === "year1" && currentSemester && (
+      {settings.studyYear && currentSemester && (
         <div className="study-filter-chips mobile-exam-filters" aria-label="Prüfungsfilter">
           <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
             Alle
@@ -79,7 +79,7 @@ export function MobileAssessments() {
               onClick={() => setExamFilter(exam)}
               type="button"
             >
-              {exam}
+              {currentSemester.exams[exam]?.label || exam}
             </button>
           ))}
         </div>

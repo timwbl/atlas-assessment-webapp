@@ -24,6 +24,7 @@ import {
   selectedBlockIds,
   semesterConfig,
   settingsForSemester,
+  studyProfileForLegacyId,
   studySemesterForLegacyId,
   type ExamId
 } from "@/lib/studyProgram";
@@ -50,8 +51,8 @@ export function DownloadLibrary() {
   }, []);
 
   useEffect(() => {
-    if (!hydrated || settings.studyYear !== "year1" || !settings.semester) return;
-    const preferredSemester = legacySemesterId(settings.semester);
+    if (!hydrated || !settings.studyYear || !settings.semester) return;
+    const preferredSemester = legacySemesterId(settings.semester, settings.studyYear);
     if (!preferredSemester) return;
     setSemester(preferredSemester);
     setBlockId((current) => current.startsWith(`${preferredSemester}-`) ? current : "");
@@ -74,14 +75,15 @@ export function DownloadLibrary() {
     const profileBlockIds = selectedBlockIds(settings);
     return semester
       ? downloadBlocksForSemester(semester).filter((block) => {
-      if (settings.studyYear !== "year1" || !settings.semester) return true;
-      const profileBlockId = normalizedBlockId(block.title);
+      if (!settings.studyYear || !settings.semester) return true;
+      const profileBlockId = block.canonicalBlockId || normalizedBlockId(block.title);
       return !!profileBlockId && profileBlockIds.includes(profileBlockId);
     })
       : [];
   }, [semester, settings]);
   const studySemester = studySemesterForLegacyId(semester);
-  const examConfig = semesterConfig(studySemester);
+  const studyProfile = studyProfileForLegacyId(semester);
+  const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
   const selectedExam = settings.examPreparation.mode === "singleExam"
     ? settings.examPreparation.selectedExams[0]
     : null;
@@ -112,12 +114,12 @@ export function DownloadLibrary() {
   }, [blockId, blockOptions]);
 
   function setExamFilter(exam: ExamId | null) {
-    if (!studySemester) return;
+    if (!studyProfile) return;
     updateSettings({
-      ...settingsForSemester(settings, studySemester),
+      ...settingsForSemester(settings, studyProfile.semester, studyProfile.studyYear),
       examPreparation: exam
         ? { mode: "singleExam", selectedExams: [exam] }
-        : { mode: "semester", selectedExams: examsForSemester(studySemester) }
+        : { mode: "semester", selectedExams: examsForSemester(studyProfile.semester, studyProfile.studyYear) }
     });
     setBlockId("");
   }
@@ -154,7 +156,7 @@ export function DownloadLibrary() {
             <strong>Auswahl</strong>
             <span>{semester ? semesterTitle(semester) : "Noch kein Semester gewählt"}</span>
           </div>
-          {examConfig && settings.studyYear === "year1" && (
+          {examConfig && settings.studyYear === studyProfile?.studyYear && (
             <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
               <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
                 Alle
@@ -181,8 +183,8 @@ export function DownloadLibrary() {
               onChange={(nextSemester) => {
                 setSemester(nextSemester);
                 setBlockId("");
-                const nextStudySemester = studySemesterForLegacyId(nextSemester);
-                if (nextStudySemester) updateSettings(settingsForSemester(settings, nextStudySemester));
+                const nextStudyProfile = studyProfileForLegacyId(nextSemester);
+                if (nextStudyProfile) updateSettings(settingsForSemester(settings, nextStudyProfile.semester, nextStudyProfile.studyYear));
               }}
               options={[
                 { value: "", label: "Bitte auswählen" },
@@ -265,10 +267,11 @@ export function DownloadLibrary() {
 
                   return (
                     <details className="download-block card overflow-hidden" open key={block.id}>
-                      <summary className="download-block-summary" style={{ "--download-accent": blockColor(block.title) } as CSSProperties}>
+                      <summary className="download-block-summary" style={{ "--download-accent": blockColor(block.canonicalBlockId || block.title) } as CSSProperties}>
                         <span>
                           <span className="download-accent-dot" />
                           <strong>{block.title}</strong>
+                          {block.subtitle && <small>{block.subtitle}</small>}
                         </span>
                         <span className="pill">{blockDownloads.length} Zusammenfassung{blockDownloads.length === 1 ? "" : "en"}</span>
                       </summary>

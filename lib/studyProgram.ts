@@ -2,7 +2,7 @@ import type { AssessmentSummary } from "./types";
 
 export type StudyYear = "year1" | "year2" | "year3";
 export type StudySemester = "hs" | "fs";
-export type ExamId = "eMC1" | "eMC2" | "eMC3" | "eMC4";
+export type ExamId = "eMC1" | "eMC2" | "eMC3" | "eMC4" | "j2MC1" | "j2MC2";
 export type ExamPreparationMode = "semester" | "singleExam";
 
 export type UserStudySettings = {
@@ -16,11 +16,11 @@ export type UserStudySettings = {
 };
 
 type ExamConfig = {
-  label: ExamId;
+  label: string;
   blocks: readonly string[];
 };
 
-type SemesterConfig = {
+export type SemesterConfig = {
   label: string;
   shortLabel: string;
   exams: Partial<Record<ExamId, ExamConfig>>;
@@ -54,8 +54,31 @@ export const STUDY_PROGRAM_CONFIG = {
   },
   year2: {
     label: "2. Studienjahr",
-    available: false,
-    semesters: {}
+    available: true,
+    semesters: {
+      hs: {
+        label: "HS2026",
+        shortLabel: "HS · MC1",
+        exams: {
+          j2MC1: {
+            label: "MC1",
+            blocks: ["j2-block1", "j2-block2", "j2-block3"]
+          }
+        },
+        defaultExamGroup: ["j2MC1"]
+      },
+      fs: {
+        label: "FS2027",
+        shortLabel: "FS · MC2",
+        exams: {
+          j2MC2: {
+            label: "MC2",
+            blocks: ["j2-block4", "j2-block5", "j2-block6"]
+          }
+        },
+        defaultExamGroup: ["j2MC2"]
+      }
+    }
   },
   year3: {
     label: "3. Studienjahr",
@@ -66,7 +89,7 @@ export const STUDY_PROGRAM_CONFIG = {
 
 export const STUDY_YEARS: Array<{ id: StudyYear; label: string; available: boolean }> = [
   { id: "year1", label: "1. Studienjahr", available: true },
-  { id: "year2", label: "2. Studienjahr", available: false },
+  { id: "year2", label: "2. Studienjahr", available: true },
   { id: "year3", label: "3. Studienjahr", available: false }
 ];
 
@@ -82,21 +105,37 @@ export function defaultStudySettings(ariEnabled = false): UserStudySettings {
   };
 }
 
-export function semesterConfig(semester: StudySemester | null): SemesterConfig | null {
-  if (!semester) return null;
-  return STUDY_PROGRAM_CONFIG.year1.semesters[semester];
+export function semesterConfig(
+  semester: StudySemester | null,
+  studyYear: StudyYear | null = "year1"
+): SemesterConfig | null {
+  if (!semester || !studyYear) return null;
+  const yearConfig = STUDY_PROGRAM_CONFIG[studyYear];
+  if (!yearConfig.available || !("semesters" in yearConfig)) return null;
+  return (yearConfig.semesters as Partial<Record<StudySemester, SemesterConfig>>)[semester] || null;
 }
 
-export function examsForSemester(semester: StudySemester | null): ExamId[] {
-  return [...(semesterConfig(semester)?.defaultExamGroup || [])];
+export function semestersForStudyYear(studyYear: StudyYear | null): StudySemester[] {
+  if (!studyYear) return [];
+  const yearConfig = STUDY_PROGRAM_CONFIG[studyYear];
+  if (!yearConfig.available || !("semesters" in yearConfig)) return [];
+  return (Object.keys(yearConfig.semesters) as StudySemester[]);
+}
+
+export function examsForSemester(
+  semester: StudySemester | null,
+  studyYear: StudyYear | null = "year1"
+): ExamId[] {
+  return [...(semesterConfig(semester, studyYear)?.defaultExamGroup || [])];
 }
 
 export function normalizeStudySettings(value: unknown, ariFallback = false): UserStudySettings {
   const record = isRecord(value) ? value : {};
   const studyYear = isStudyYear(record.studyYear) ? record.studyYear : null;
-  const semester = record.semester === "hs" || record.semester === "fs" ? record.semester : null;
+  const rawSemester = record.semester === "hs" || record.semester === "fs" ? record.semester : null;
+  const semester = studyYear && rawSemester && semesterConfig(rawSemester, studyYear) ? rawSemester : null;
   const prep = isRecord(record.examPreparation) ? record.examPreparation : {};
-  const validExams = examsForSemester(semester);
+  const validExams = examsForSemester(semester, studyYear);
   const selected = Array.isArray(prep.selectedExams)
     ? prep.selectedExams.filter((item): item is ExamId => isExamId(item) && validExams.includes(item))
     : [];
@@ -106,7 +145,7 @@ export function normalizeStudySettings(value: unknown, ariFallback = false): Use
 
   return {
     studyYear,
-    semester: studyYear === "year1" ? semester : null,
+    semester,
     examPreparation: {
       mode,
       selectedExams: semester
@@ -119,40 +158,45 @@ export function normalizeStudySettings(value: unknown, ariFallback = false): Use
 
 export function settingsForSemester(
   current: UserStudySettings,
-  semester: StudySemester
+  semester: StudySemester,
+  studyYear: StudyYear = "year1"
 ): UserStudySettings {
   return {
     ...current,
-    studyYear: "year1",
+    studyYear,
     semester,
     examPreparation: {
       mode: "semester",
-      selectedExams: examsForSemester(semester)
+      selectedExams: examsForSemester(semester, studyYear)
     }
   };
 }
 
 export function selectedExamIds(settings: UserStudySettings): ExamId[] {
-  if (settings.studyYear !== "year1" || !settings.semester) return [];
+  if (!settings.studyYear || !settings.semester) return [];
   if (settings.examPreparation.mode === "singleExam" && settings.examPreparation.selectedExams.length) {
     return settings.examPreparation.selectedExams.slice(0, 1);
   }
-  return examsForSemester(settings.semester);
+  return examsForSemester(settings.semester, settings.studyYear);
 }
 
 export function selectedBlockIds(settings: UserStudySettings): string[] {
-  const config = semesterConfig(settings.semester);
-  if (settings.studyYear !== "year1" || !config) return [];
+  const config = semesterConfig(settings.semester, settings.studyYear);
+  if (!settings.studyYear || !config) return [];
   return selectedExamIds(settings).flatMap((exam) => config.exams[exam]?.blocks || []);
 }
 
 export function examForBlock(block: string): ExamId | null {
   const id = normalizedBlockId(block);
   if (!id) return null;
-  for (const semester of [semesterConfig("hs"), semesterConfig("fs")]) {
-    if (!semester) continue;
-    for (const exam of semester.defaultExamGroup) {
-      if (semester.exams[exam]?.blocks.includes(id)) return exam;
+  for (const year of STUDY_YEARS) {
+    if (!year.available) continue;
+    for (const semester of semestersForStudyYear(year.id)) {
+      const config = semesterConfig(semester, year.id);
+      if (!config) continue;
+      for (const exam of config.defaultExamGroup) {
+        if (config.exams[exam]?.blocks.includes(id)) return exam;
+      }
     }
   }
   return null;
@@ -175,19 +219,36 @@ export function examForContent(
 }
 
 export function normalizedBlockId(value: string): string | null {
-  const match = normalizeText(value).match(/\bblock\s*([1-9])\b/) || normalizeText(value).match(/\b([1-9])\b/);
+  const normalized = normalizeText(value);
+  const j2Match = normalized.match(/\bj2[\s-]*block\s*([1-6])\b/)
+    || normalized.match(/\byear\s*2[\s-]*block\s*([1-6])\b/)
+    || normalized.match(/\b2\.\s*studienjahr[\s\S]*?\bblock\s*([1-6])\b/);
+  if (j2Match) return `j2-block${j2Match[1]}`;
+
+  const match = normalized.match(/\bblock\s*([1-9])\b/) || normalized.match(/\b([1-9])\b/);
   return match ? `block${match[1]}` : null;
 }
 
 export function studySemesterForLegacyId(value: string): StudySemester | null {
-  if (value === "HS2025") return "hs";
-  if (value === "FS2026") return "fs";
+  return studyProfileForLegacyId(value)?.semester || null;
+}
+
+export function studyProfileForLegacyId(value: string): { studyYear: StudyYear; semester: StudySemester } | null {
+  if (value === "HS2025") return { studyYear: "year1", semester: "hs" };
+  if (value === "FS2026") return { studyYear: "year1", semester: "fs" };
+  if (value === "HS2026") return { studyYear: "year2", semester: "hs" };
+  if (value === "FS2027") return { studyYear: "year2", semester: "fs" };
   return null;
 }
 
-export function legacySemesterId(value: StudySemester | null): "HS2025" | "FS2026" | null {
-  if (value === "hs") return "HS2025";
-  if (value === "fs") return "FS2026";
+export function legacySemesterId(
+  value: StudySemester | null,
+  studyYear: StudyYear | null = "year1"
+): "HS2025" | "FS2026" | "HS2026" | "FS2027" | null {
+  if (studyYear === "year1" && value === "hs") return "HS2025";
+  if (studyYear === "year1" && value === "fs") return "FS2026";
+  if (studyYear === "year2" && value === "hs") return "HS2026";
+  if (studyYear === "year2" && value === "fs") return "FS2027";
   return null;
 }
 
@@ -199,11 +260,11 @@ export function matchesStudyProfile(
   if (isThreeDContent(assessment)) return false;
   const altfragen = isAltfragenValue(assessment.block);
   if (options.altfragen ? !altfragen : altfragen) return false;
-  if (settings.studyYear !== "year1" || !settings.semester) return true;
+  if (!settings.studyYear || !settings.semester) return true;
 
   const blockId = blockIdForContent(assessment);
   if (!blockId) {
-    return settings.semester === "fs" && isExamSimulation(assessment.block);
+    return settings.studyYear === "year1" && settings.semester === "fs" && isExamSimulation(assessment.block);
   }
   return selectedBlockIds(settings).includes(blockId);
 }
@@ -238,13 +299,10 @@ export function semesterPeriod(now = new Date()): { id: string; semester: StudyS
 }
 
 export function semesterHeading(settings: UserStudySettings): string {
-  if (settings.studyYear !== "year1") {
-    return settings.studyYear
-      ? `${STUDY_PROGRAM_CONFIG[settings.studyYear].label} · Inhalte folgen`
-      : "Alle Inhalte";
-  }
-  const config = semesterConfig(settings.semester);
-  return config ? `1. Studienjahr · ${config.label}` : "1. Studienjahr";
+  if (!settings.studyYear) return "Alle Inhalte";
+  const year = STUDY_PROGRAM_CONFIG[settings.studyYear];
+  const config = semesterConfig(settings.semester, settings.studyYear);
+  return config ? `${year.label} · ${config.label}` : year.label;
 }
 
 function isStudyYear(value: unknown): value is StudyYear {
@@ -252,7 +310,8 @@ function isStudyYear(value: unknown): value is StudyYear {
 }
 
 function isExamId(value: unknown): value is ExamId {
-  return value === "eMC1" || value === "eMC2" || value === "eMC3" || value === "eMC4";
+  return value === "eMC1" || value === "eMC2" || value === "eMC3" || value === "eMC4"
+    || value === "j2MC1" || value === "j2MC2";
 }
 
 function isExamSimulation(value: string): boolean {
