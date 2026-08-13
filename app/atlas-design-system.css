@@ -8753,3 +8753,561 @@ body.atlas-sidebar-collapsed .account-avatar {
     margin-top: 2px !important;
   }
 }
+
+/* Dark Mode Stability: keep New ATLAS calm, readable and token-driven. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --atlas-bg: #0f1013;
+    --atlas-sidebar-bg: #18191d;
+    --atlas-panel: #202126;
+    --atlas-panel-strong: #25262b;
+    --atlas-panel-tint: #191a1f;
+    --atlas-text: #f5f5f7;
+    --atlas-secondary-text: #c1c4cc;
+    --atlas-tertiary-text: #8f949e;
+    --atlas-hairline: rgba(255, 255, 255, 0.13);
+    --atlas-hairline-strong: rgba(255, 255, 255, 0.2);
+    --atlas-shadow-card: 0 14px 34px rgba(0, 0, 0, 0.28);
+    --atlas-shadow-float: 0 24px 68px rgba(0, 0, 0, 0.46);
+    --bg: var(--atlas-bg);
+    --surface: var(--atlas-panel);
+    --surface-strong: var(--atlas-panel-strong);
+    --text: var(--atlas-text);
+    --muted: var(--atlas-secondary-text);
+    --line: var(--atlas-hairline);
+    --separator: var(--atlas-hairline-strong);
+    --page-bg-top: #111216;
+    --page-bg-bottom: #0d0e11;
+  }
+
+  html,
+  body {
+    background: var(--atlas-bg) !important;
+    color: var(--atlas-text) !important;
+  }
+
+  body::before,
+  body::after {
+    display: none !important;
+  }
+
+  .main-nav,
+  .app-topbar {
+    background: var(--atlas-sidebar-bg) !important;
+    border-color: var(--atlas-hairline) !important;
+    backdrop-filter: none !important;
+  }
+
+  .app-topbar {
+    background: #1f2026 !important;
+  }
+
+  .atlas-brand,
+  .main-nav-item,
+  .app-topbar-title,
+  .app-sidebar-toggle,
+  .account-avatar,
+  .account-popover,
+  .account-popover-row,
+  .account-popover-row--static,
+  .auth-modal,
+  .study-modal,
+  .semester-change-modal,
+  .card,
+  .glass,
+  .dashboard-action-card,
+  .dashboard-progress-card,
+  .dashboard-next-card,
+  .dashboard-activity-card,
+  .library-selection-card,
+  .library-block-card,
+  .library-assessment-card,
+  .altfragen-filter-card,
+  .altfragen-practice-card,
+  .summary-control-card,
+  .summary-info-card,
+  .summary-empty-card,
+  .download-block,
+  .download-card,
+  .settings-profile-card,
+  .settings-page-card,
+  .assessment-detail-head,
+  .assessment-detail-card,
+  .assessment-launch-panel,
+  .quiz-question-card,
+  .atlas-quiz-session,
+  .atlas-dropdown-trigger,
+  .atlas-dropdown-menu,
+  .altfragen-document-semester,
+  .altfragen-document-card {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-panel-strong) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: var(--atlas-shadow-card) !important;
+  }
+
+  .account-avatar,
+  body:has(.summary-library-shell) .account-avatar,
+  body:has(.exercise-library-shell) .account-avatar,
+  body:has(.settings-page-shell) .account-avatar {
+    background: var(--atlas-panel-strong) !important;
+    box-shadow: none !important;
+  }
+
+  .account-avatar:hover,
+  .account-popover-row:hover:not(:disabled),
+  .atlas-dropdown-trigger:hover:not(:disabled),
+  .atlas-dropdown-menu button:hover:not(:disabled),
+  .atlas-dropdown-menu button:focus-visible,
+  .altfragen-document-download:hover:not(:disabled),
+  .btn-secondary:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--atlas-blue) 8%, var(--atlas-panel-strong)) !important;
+    border-color: var(--atlas-hairline-strong) !important;
+  }
+
+  .account-avatar-mark,
+  .account-popover-mark,
+  body:has(.summary-library-shell) .account-avatar-mark,
+  body:has(.exercise-library-shell) .account-avatar-mark,
+  body:has(.settings-page-shell) .account-avatar-mark,
+  .assessment-launch-action span,
+  .dashboard-card-icon,
+  .library-block-icon,
+  .altfragen-practice-icon,
+  .download-file-icon,
+  .auth-modal-mark {
+    border-color: color-mix(in srgb, var(--atlas-blue) 22%, var(--atlas-hairline)) !important;
+    background: color-mix(in srgb, var(--atlas-blue) 14%, var(--atlas-panel-tint)) !important;
+    color: var(--atlas-blue) !important;
+  }
+
+  .account-popover {
+    background: #24252a !important;
+    box-shadow: var(--atlas-shadow-float) !important;
+    backdrop-filter: none !important;
+  }
+
+  .account-popover-head,
+  .account-popover-list,
+  .account-popover-list--sync {
+    border-color: var(--atlas-hairline) !important;
+  }
+
+  .account-popover-row-icon {
+    background: color-mix(in srgb, var(--atlas-panel-tint) 82%, black) !important;
+    color: var(--atlas-secondary-text) !important;
+  }
+
+  .account-popover-row.is-danger,
+  .account-popover-row.is-danger strong,
+  .account-popover-row.is-danger small,
+  .account-popover-row.is-danger .account-popover-row-chevron {
+    color: #ff6961 !important;
+  }
+
+  .account-popover-row.is-danger .account-popover-row-icon {
+    background: rgba(255, 105, 97, 0.15) !important;
+    color: #ff6961 !important;
+  }
+
+  .account-popover-row:disabled {
+    opacity: 0.58 !important;
+  }
+
+  .library-title,
+  .settings-page-hero h1,
+  .summary-page-head h1,
+  .atlas-dashboard-hero h1,
+  .atlas-subpage-shell h1,
+  .assessment-detail-title,
+  .quiz-title,
+  .dashboard-action-card h3,
+  .dashboard-progress-card h2,
+  .dashboard-next-card h2,
+  .dashboard-activity-card h2,
+  .altfragen-practice-card h3,
+  .download-block h3,
+  .download-card h3,
+  .settings-page-card h2,
+  .assessment-detail-card h2 {
+    color: var(--atlas-text) !important;
+  }
+
+  .library-hero p,
+  .settings-page-hero p:not(.eyebrow),
+  .summary-page-head p,
+  .atlas-dashboard-hero p,
+  .atlas-subpage-shell p,
+  .assessment-detail-lead,
+  .dashboard-action-card p,
+  .dashboard-next-card p,
+  .dashboard-activity-card p,
+  .download-card p,
+  .account-email,
+  .account-note,
+  .account-status,
+  .account-avatar-copy small,
+  .account-popover-row-copy small,
+  .settings-summary-row span,
+  .settings-option-row small,
+  .atlas-dropdown-trigger,
+  .atlas-dropdown-menu button {
+    color: var(--atlas-secondary-text) !important;
+  }
+
+  .account-name,
+  .account-avatar-copy strong,
+  .account-popover-row-copy strong,
+  .atlas-dropdown-menu button.is-selected,
+  .atlas-dropdown-check,
+  .atlas-dropdown-trigger span:first-child,
+  .settings-summary-row strong,
+  .settings-option-row strong {
+    color: var(--atlas-text) !important;
+  }
+
+  .input,
+  input,
+  textarea,
+  select,
+  select.input,
+  .settings-edit-field .input,
+  .semester-picker-control select {
+    border-color: var(--atlas-hairline) !important;
+    background: color-mix(in srgb, var(--atlas-panel-tint) 76%, black) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+  }
+
+  .input::placeholder,
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--atlas-tertiary-text) !important;
+  }
+
+  .study-filter-chips,
+  .summary-control-card .study-filter-chips,
+  .settings-page-card .study-filter-chips,
+  .study-filter-chips--library,
+  .auth-tabs,
+  .assessment-detail-meta span,
+  .assessment-detail-count,
+  .pill,
+  .badge {
+    border-color: var(--atlas-hairline) !important;
+    background: color-mix(in srgb, var(--atlas-panel-tint) 82%, black) !important;
+    color: var(--atlas-secondary-text) !important;
+  }
+
+  .study-filter-chips button.is-active,
+  .summary-control-card .study-filter-chips button.is-active,
+  .settings-page-card .study-filter-chips button.is-active,
+  .auth-tabs button.is-active {
+    background: var(--atlas-panel-strong) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+  }
+
+  .settings-option-list,
+  .settings-option-row {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-panel-strong) !important;
+  }
+
+  .settings-option-row:hover {
+    background: color-mix(in srgb, var(--atlas-blue) 7%, var(--atlas-panel-strong)) !important;
+  }
+
+  .settings-option-row.is-selected {
+    background: color-mix(in srgb, var(--atlas-blue) 14%, var(--atlas-panel-strong)) !important;
+  }
+
+  .summary-info-card {
+    background: color-mix(in srgb, var(--atlas-panel-strong) 88%, var(--atlas-blue) 4%) !important;
+  }
+
+  .download-block {
+    background: color-mix(in srgb, var(--atlas-panel-strong) 94%, var(--download-accent, var(--atlas-blue)) 3%) !important;
+  }
+
+  .download-card,
+  .altfragen-document-card {
+    background: color-mix(in srgb, var(--atlas-panel-tint) 60%, var(--atlas-panel-strong)) !important;
+  }
+
+  .btn-secondary,
+  .altfragen-document-download,
+  .assessment-detail-back,
+  .atlas-pagination button {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-panel-strong) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+  }
+
+  .btn-primary {
+    background: var(--atlas-blue) !important;
+    color: #ffffff !important;
+  }
+
+  .progress-track,
+  .dashboard-progress-bar,
+  .altfragen-practice-progress,
+  .assessment-card-progress,
+  .library-progress-track {
+    background: color-mix(in srgb, var(--atlas-panel-tint) 82%, black) !important;
+  }
+
+  .atlas-page-loading span,
+  .page-state-skeleton span,
+  .mobile-list-skeleton span,
+  .mobile-skeleton span,
+  .admin-loading span,
+  .fast-quiz-loading span,
+  .responsive-route-loading span {
+    background: color-mix(in srgb, var(--atlas-panel-strong) 72%, #3a3c43) !important;
+  }
+
+  .atlas-page-loading span::after,
+  .page-state-skeleton span::after,
+  .mobile-list-skeleton span::after {
+    background: linear-gradient(
+      105deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.12) 42%,
+      transparent 78%
+    ) !important;
+  }
+
+  .auth-modal-backdrop,
+  .study-modal-backdrop {
+    background: rgba(0, 0, 0, 0.58) !important;
+  }
+
+  .site-copyright {
+    color: color-mix(in srgb, var(--atlas-tertiary-text) 86%, transparent) !important;
+  }
+}
+
+.dark {
+  --atlas-bg: #0f1013;
+  --atlas-sidebar-bg: #18191d;
+  --atlas-panel: #202126;
+  --atlas-panel-strong: #25262b;
+  --atlas-panel-tint: #191a1f;
+  --atlas-text: #f5f5f7;
+  --atlas-secondary-text: #c1c4cc;
+  --atlas-tertiary-text: #8f949e;
+  --atlas-hairline: rgba(255, 255, 255, 0.13);
+  --atlas-hairline-strong: rgba(255, 255, 255, 0.2);
+  --atlas-shadow-card: 0 14px 34px rgba(0, 0, 0, 0.28);
+  --atlas-shadow-float: 0 24px 68px rgba(0, 0, 0, 0.46);
+  --bg: var(--atlas-bg);
+  --surface: var(--atlas-panel);
+  --surface-strong: var(--atlas-panel-strong);
+  --text: var(--atlas-text);
+  --muted: var(--atlas-secondary-text);
+  --line: var(--atlas-hairline);
+  --separator: var(--atlas-hairline-strong);
+}
+
+.dark,
+.dark body {
+  background: var(--atlas-bg) !important;
+  color: var(--atlas-text) !important;
+}
+
+.dark .main-nav,
+.dark .app-topbar {
+  background: var(--atlas-sidebar-bg) !important;
+  border-color: var(--atlas-hairline) !important;
+  backdrop-filter: none !important;
+}
+
+.dark .card,
+.dark .glass,
+.dark .dashboard-action-card,
+.dark .dashboard-progress-card,
+.dark .dashboard-next-card,
+.dark .dashboard-activity-card,
+.dark .exercise-library-shell .exercise-block-card,
+.dark .exercise-library-shell .assessment-card.card,
+.dark .library-selection-card,
+.dark .library-block-card,
+.dark .library-assessment-card,
+.dark .altfragen-filter-card,
+.dark .altfragen-practice-card,
+.dark .summary-control-card,
+.dark .summary-info-card,
+.dark .summary-empty-card,
+.dark .download-block,
+.dark .download-card,
+.dark .settings-profile-card,
+.dark .settings-page-card,
+.dark .assessment-detail-head,
+.dark .assessment-detail-card,
+.dark .assessment-launch-panel,
+.dark .quiz-question-card,
+.dark .atlas-quiz-session,
+.dark .atlas-dropdown-trigger,
+.dark .atlas-dropdown-menu,
+.dark .altfragen-document-semester,
+.dark .altfragen-document-card {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: var(--atlas-shadow-card) !important;
+}
+
+.dark .account-avatar,
+.dark body:has(.summary-library-shell) .account-avatar,
+.dark body:has(.exercise-library-shell) .account-avatar,
+.dark body:has(.settings-page-shell) .account-avatar,
+.dark .account-popover {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: var(--atlas-shadow-float) !important;
+  backdrop-filter: none !important;
+}
+
+.dark .account-popover-row,
+.dark .account-popover-row--static {
+  background: transparent !important;
+  color: var(--atlas-text) !important;
+}
+
+.dark .account-popover-row-icon {
+  background: color-mix(in srgb, var(--atlas-panel-tint) 82%, black) !important;
+  color: var(--atlas-secondary-text) !important;
+}
+
+.dark .account-avatar-mark,
+.dark .account-popover-mark,
+.dark body:has(.summary-library-shell) .account-avatar-mark,
+.dark body:has(.exercise-library-shell) .account-avatar-mark,
+.dark body:has(.settings-page-shell) .account-avatar-mark,
+.dark .exercise-library-shell .exercise-block-icon,
+.dark .assessment-launch-action span,
+.dark .dashboard-card-icon,
+.dark .library-block-icon,
+.dark .altfragen-practice-icon,
+.dark .download-file-icon,
+.dark .auth-modal-mark {
+  border-color: color-mix(in srgb, var(--atlas-blue) 22%, var(--atlas-hairline)) !important;
+  background: color-mix(in srgb, var(--atlas-blue) 14%, var(--atlas-panel-tint)) !important;
+  color: var(--atlas-blue) !important;
+}
+
+.dark .library-title,
+.dark .settings-page-hero h1,
+.dark .summary-page-head h1,
+.dark .atlas-dashboard-hero h1,
+.dark .atlas-subpage-shell h1,
+.dark .assessment-detail-title,
+.dark .quiz-title,
+.dark .account-name,
+.dark .account-avatar-copy strong,
+.dark .account-popover-row-copy strong,
+.dark .atlas-dropdown-menu button.is-selected,
+.dark .atlas-dropdown-check,
+.dark .atlas-dropdown-trigger span:first-child {
+  color: var(--atlas-text) !important;
+}
+
+.dark .library-hero p,
+.dark .settings-page-hero p:not(.eyebrow),
+.dark .summary-page-head p,
+.dark .atlas-dashboard-hero p,
+.dark .atlas-subpage-shell p,
+.dark .dashboard-action-card p,
+.dark .dashboard-next-card p,
+.dark .dashboard-activity-card p,
+.dark .download-card p,
+.dark .account-email,
+.dark .account-note,
+.dark .account-status,
+.dark .account-avatar-copy small,
+.dark .account-popover-row-copy small,
+.dark .atlas-dropdown-trigger,
+.dark .atlas-dropdown-menu button {
+  color: var(--atlas-secondary-text) !important;
+}
+
+.dark .input,
+.dark input,
+.dark textarea,
+.dark select,
+.dark select.input,
+.dark .settings-edit-field .input,
+.dark .semester-picker-control select {
+  border-color: var(--atlas-hairline) !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 76%, black) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: none !important;
+}
+
+.dark .study-filter-chips,
+.dark .summary-control-card .study-filter-chips,
+.dark .settings-page-card .study-filter-chips,
+.dark .study-filter-chips--library,
+.dark .auth-tabs,
+.dark .assessment-detail-meta span,
+.dark .assessment-detail-count,
+.dark .pill,
+.dark .badge {
+  border-color: var(--atlas-hairline) !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 82%, black) !important;
+  color: var(--atlas-secondary-text) !important;
+}
+
+.dark .study-filter-chips button.is-active,
+.dark .summary-control-card .study-filter-chips button.is-active,
+.dark .settings-page-card .study-filter-chips button.is-active,
+.dark .auth-tabs button.is-active {
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: none !important;
+}
+
+.dark .btn-secondary,
+.dark .altfragen-document-download,
+.dark .assessment-detail-back,
+.dark .atlas-pagination button {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: none !important;
+}
+
+.dark .atlas-page-loading {
+  background: var(--atlas-bg) !important;
+}
+
+.dark .atlas-page-loading span,
+.dark .page-state-skeleton span,
+.dark .mobile-list-skeleton span,
+.dark .mobile-skeleton span,
+.dark .admin-loading span,
+.dark .fast-quiz-loading span,
+.dark .responsive-route-loading span {
+  background: color-mix(in srgb, var(--atlas-panel-strong) 72%, #3a3c43) !important;
+}
+
+.dark .atlas-page-loading span::after,
+.dark .page-state-skeleton span::after,
+.dark .mobile-list-skeleton span::after {
+  background: linear-gradient(105deg, transparent 0%, rgba(255, 255, 255, 0.12) 42%, transparent 78%) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .exercise-library-shell .exercise-block-card,
+  .exercise-library-shell .assessment-card.card {
+    background: var(--atlas-panel-strong) !important;
+  }
+
+  .exercise-library-shell .exercise-block-card.is-active,
+  .exercise-library-shell .assessment-card.card:hover {
+    background: color-mix(in srgb, var(--block-picker-accent, var(--atlas-blue)) 7%, var(--atlas-panel-strong)) !important;
+  }
+}
