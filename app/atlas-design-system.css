@@ -349,6 +349,336 @@ body.atlas-sidebar-collapsed .account-avatar {
   }
 }
 
+/* New ATLAS detail page: calm exercise cockpit */
+.assessment-detail-shell {
+  gap: 20px !important;
+  padding-top: 34px !important;
+}
+
+.assessment-detail-back {
+  min-height: 36px !important;
+  border-radius: 12px !important;
+  padding: 0 13px !important;
+  color: var(--atlas-text) !important;
+  font-size: 13px !important;
+  font-weight: 740 !important;
+}
+
+.assessment-detail-head {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 348px) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+  min-height: 0 !important;
+  border-radius: 22px !important;
+  padding: 26px !important;
+}
+
+.assessment-detail-intro {
+  display: flex !important;
+  min-width: 0 !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  text-align: left !important;
+}
+
+.assessment-detail-kicker {
+  color: var(--atlas-secondary-text) !important;
+  font-size: 12px !important;
+  font-weight: 760 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.assessment-detail-title {
+  max-width: 760px !important;
+  margin: 0 !important;
+  font-size: clamp(32px, 3vw, 43px) !important;
+  font-weight: 820 !important;
+  line-height: 1.06 !important;
+}
+
+.assessment-detail-description-panel {
+  max-width: 760px !important;
+}
+
+.assessment-detail-description-panel p {
+  color: var(--atlas-secondary-text) !important;
+  font-size: 15.5px !important;
+  font-weight: 480 !important;
+  line-height: 1.48 !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+.assessment-detail-meta {
+  gap: 7px !important;
+  margin-top: 2px !important;
+}
+
+.assessment-detail-meta span,
+.assessment-detail-count {
+  min-height: 28px !important;
+  padding: 4px 10px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.assessment-launch-panel {
+  display: grid !important;
+  align-content: stretch !important;
+  gap: 10px !important;
+}
+
+.assessment-launch-summary {
+  grid-template-columns: 46px minmax(0, 1fr) !important;
+  gap: 12px !important;
+  min-height: 74px !important;
+  border-radius: 18px !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 80%, var(--atlas-panel-strong)) !important;
+  padding: 11px 12px !important;
+}
+
+.assessment-launch-progress {
+  width: 46px !important;
+  height: 46px !important;
+  background:
+    radial-gradient(circle at center, var(--atlas-panel-strong) 0 58%, transparent 59%),
+    conic-gradient(var(--atlas-blue) var(--progress, 0%), color-mix(in srgb, var(--atlas-blue) 11%, #eef2f7) 0) !important;
+}
+
+.assessment-launch-progress::before {
+  display: none !important;
+}
+
+.assessment-launch-progress strong {
+  max-width: 34px !important;
+  font-size: 11.5px !important;
+  font-weight: 760 !important;
+  line-height: 1 !important;
+  text-align: center !important;
+}
+
+.assessment-launch-summary span {
+  margin-bottom: 3px !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.assessment-launch-summary strong {
+  color: var(--atlas-text) !important;
+  font-size: 16px !important;
+  font-weight: 780 !important;
+  line-height: 1.18 !important;
+}
+
+.assessment-launch-actions {
+  gap: 8px !important;
+}
+
+.assessment-launch-action {
+  grid-template-columns: 38px minmax(0, 1fr) auto !important;
+  min-height: 62px !important;
+  border-radius: 16px !important;
+  padding: 10px 12px !important;
+}
+
+.assessment-launch-action::after {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--atlas-tertiary-text);
+  content: "→";
+  font-size: 18px;
+  font-weight: 640;
+}
+
+.assessment-launch-action > span {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 12px !important;
+}
+
+.assessment-launch-action .atlas-icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.assessment-launch-action strong {
+  font-size: 15px !important;
+  font-weight: 780 !important;
+}
+
+.assessment-launch-action small {
+  font-size: 12px !important;
+  font-weight: 560 !important;
+}
+
+.assessment-launch-action.is-primary {
+  border-color: color-mix(in srgb, var(--atlas-blue) 26%, var(--atlas-hairline)) !important;
+  background: color-mix(in srgb, var(--atlas-blue) 7%, var(--atlas-panel-strong)) !important;
+}
+
+.assessment-detail-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(292px, 332px) !important;
+  gap: 20px !important;
+}
+
+.assessment-detail-card {
+  border-radius: 20px !important;
+  padding: 20px 22px !important;
+}
+
+.assessment-detail-card-head {
+  align-items: center !important;
+  padding-bottom: 13px !important;
+}
+
+.assessment-detail-label {
+  color: var(--atlas-secondary-text) !important;
+  font-size: 11px !important;
+  font-weight: 740 !important;
+  letter-spacing: 0.03em !important;
+}
+
+.assessment-detail-card h2 {
+  font-size: 21px !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+}
+
+.assessment-detail-empty {
+  margin: 14px 0 0 !important;
+  border: 1px solid var(--atlas-hairline) !important;
+  border-radius: 14px !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 60%, var(--atlas-panel-strong)) !important;
+  padding: 14px 16px !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.assessment-detail-objective-list {
+  max-height: none !important;
+}
+
+.assessment-detail-objective {
+  grid-template-columns: 58px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  padding: 14px 0 !important;
+}
+
+.assessment-detail-objective strong {
+  font-size: 12px !important;
+  font-weight: 760 !important;
+}
+
+.assessment-detail-objective p {
+  color: var(--atlas-secondary-text) !important;
+  font-size: 14.5px !important;
+  font-weight: 540 !important;
+  line-height: 1.45 !important;
+}
+
+.assessment-detail-side-card {
+  gap: 12px !important;
+}
+
+.assessment-detail-progress-list div,
+.assessment-detail-history {
+  min-height: 0 !important;
+  padding: 12px 0 !important;
+}
+
+.assessment-detail-progress-list span,
+.assessment-detail-history span,
+.assessment-detail-topics > span {
+  color: var(--atlas-secondary-text) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.assessment-detail-progress-list strong,
+.assessment-detail-history strong {
+  font-size: 15px !important;
+  font-weight: 780 !important;
+}
+
+.assessment-detail-history p {
+  font-size: 13.5px !important;
+}
+
+.assessment-detail-topics {
+  display: grid !important;
+  gap: 9px !important;
+}
+
+.assessment-detail-tags {
+  gap: 6px !important;
+  border-top: 0 !important;
+  padding: 0 !important;
+}
+
+.assessment-detail-tags span {
+  background: color-mix(in srgb, var(--atlas-panel-tint) 80%, var(--atlas-panel-strong)) !important;
+  padding: 4px 8px !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 11.5px !important;
+  font-weight: 660 !important;
+}
+
+.assessment-detail-wide-button,
+.assessment-detail-reset-button {
+  min-height: 39px !important;
+  margin-top: 2px !important;
+  border-radius: 13px !important;
+  font-size: 13px !important;
+  font-weight: 740 !important;
+}
+
+.assessment-detail-shell .card.mt-5 {
+  margin-top: 0 !important;
+  border-radius: 18px !important;
+  padding: 18px !important;
+}
+
+@media (max-width: 1040px) {
+  .assessment-detail-head,
+  .assessment-detail-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .assessment-launch-panel {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .assessment-detail-shell {
+    padding-top: 20px !important;
+  }
+
+  .assessment-detail-head,
+  .assessment-detail-card {
+    border-radius: 18px !important;
+    padding: 18px !important;
+  }
+
+  .assessment-detail-title {
+    font-size: clamp(29px, 8vw, 36px) !important;
+  }
+
+  .assessment-launch-panel,
+  .assessment-launch-actions {
+    grid-template-columns: 1fr !important;
+  }
+
+  .assessment-detail-objective {
+    grid-template-columns: 1fr !important;
+    gap: 5px !important;
+  }
+}
+
 /* Final account menu polish */
 .account-menu {
   position: fixed !important;
@@ -8094,4 +8424,63 @@ body.atlas-sidebar-collapsed .account-avatar {
   .atlas-pagination > div {
     justify-content: space-between;
   }
+}
+/* EOF guard: assessment detail must win after every legacy override. */
+.assessment-detail-head {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 348px) !important;
+  min-height: 0 !important;
+  padding: 26px !important;
+}
+
+.assessment-detail-intro {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+.assessment-detail-title {
+  max-width: 760px !important;
+  margin: 0 !important;
+  font-size: clamp(32px, 3vw, 43px) !important;
+  font-weight: 820 !important;
+  line-height: 1.06 !important;
+}
+
+.assessment-detail-description-panel {
+  max-width: 760px !important;
+  border: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.assessment-detail-description-panel span {
+  display: none !important;
+}
+
+.assessment-detail-description-panel p {
+  -webkit-line-clamp: 2 !important;
+  color: var(--atlas-secondary-text) !important;
+  font-size: 15.5px !important;
+  font-weight: 480 !important;
+  line-height: 1.48 !important;
+}
+
+.assessment-launch-progress {
+  width: 46px !important;
+  height: 46px !important;
+}
+
+.assessment-launch-progress strong {
+  max-width: 34px !important;
+  font-size: 11.5px !important;
+}
+
+.assessment-detail-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(292px, 332px) !important;
+  gap: 20px !important;
+}
+
+.assessment-detail-card h2 {
+  font-size: 21px !important;
+  font-weight: 800 !important;
 }

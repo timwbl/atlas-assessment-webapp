@@ -1,0 +1,983 @@
+{
+  "id": "altfragen_block_3_hs_v1",
+  "lectureCode": "ALT-BLOCK-3",
+  "title": "Altfragen Block 3",
+  "block": "Altfragen",
+  "sourceBlock": "Block 3",
+  "questionCount": 33,
+  "sources": [
+    "altfragen_sj1_hs.pdf",
+    "altfragen_sj1_hs_loesungen.pdf"
+  ],
+  "questions": [
+    {
+      "id": "b3_q001",
+      "type": "A",
+      "stem": "Die primäre Sinnesverarbeitung findet in spezifischen Hirnarealen statt. Welches ist die korrekte Verknüpfung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Druck wird im Gyrus Präcentralis verarbeitet",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Farbe wird wird im Occipitallappen decodiert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Schall wird im präfrontalen Kortex wahrgenommen",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Geruch wird im Gyrus Postcentralis verarbeitet",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Schmerz im Spinalganglion im Hinterhorn verarbeitet",
+          "correct": false
+        }
+      ],
+      "explanation": "B Farbverarbeitung erfolgt im visuellen Kortex des Okzipitallappens."
+    },
+    {
+      "id": "b3_q002",
+      "type": "A",
+      "stem": "Welche Aussage zum Aktionspotential ist korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Zellen haben ein Aktionspotential",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Aktionspotentialdauer ist vom Kaliumgleichgewichtspotential abhängig",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Tetrodotoxin kann die Auslösung von Aktionspotential blockieren",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Wird das Aktionspotential während der absoluten Refraktärzeit ausgelöst, ist die Amplitude des Aktionspotentials kleiner",
+          "correct": false
+        }
+      ],
+      "explanation": "D Tetrodotoxin blockiert spannungsabhängige Na+-Kanäle und kann Aktionspotentiale verhindern."
+    },
+    {
+      "id": "b3_q003",
+      "type": "A",
+      "stem": "Das Ruhepotential einer Zelle bei 37° beträgt -61mV (innen negativ). Dieser Wert entspricht exakt dem K+-Gleichgewichtspotential. (passiver K+-Influx = passiver K+-Efflux) E = 61mV * log (Ion)aussen/ (Ion)innen Das Verhältnis Kaussen : Kinnen entspricht demnach",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:6.1",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "1:61",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "1:10",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "1:100",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Keine der obigen Antworten ist auch nur annähernd richtig",
+          "correct": false
+        }
+      ],
+      "explanation": "C -61 mV = 61 mV * log(K_aussen/K_innen) -> log = -1 -> Verhältnis 1:10."
+    },
+    {
+      "id": "b3_q004",
+      "type": "A",
+      "stem": "Der somotopote Aufbau des somotosischen Kortex…, dass",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Retina 1:1 im Kortex abgebildet wird",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es sechs Kortexe gibt",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sensible KörperOberflächen geordnet im Kortex abgebildet werden",
+          "correct": true
+        }
+      ],
+      "explanation": "C Somatotopie bedeutet geordnete Abbildung sensibler Körperoberflächen im somatosensorischen Kortex."
+    },
+    {
+      "id": "b3_q005",
+      "type": "A",
+      "stem": "Rezeptive Felder",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sind alle gleich gross",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Haben häufig ein Erregungszentrum und ein hemmendes Umfeld",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Werden von aktiven Nervenendigungen bestimmt",
+          "correct": false
+        }
+      ],
+      "explanation": "B Viele rezeptive Felder besitzen ein erregendes Zentrum und hemmende Umgebung."
+    },
+    {
+      "id": "b3_q006",
+      "type": "A",
+      "stem": "Das Aktionspotential eines peripheren Nervs dauert 2 ms. Es pflanzt sich mit einer Geschwindigkeit von 20m/s fort. Demnach beträgt die Länge der gleichzeitig erregten Strecke auf der Nervenfaser",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.1mm",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "0.2mm",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "1mm",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "10mm",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "40mm",
+          "correct": true
+        }
+      ],
+      "explanation": "E Strecke = v*t = 20 m/s * 0.002 s = 0.04 m = 40 mm."
+    },
+    {
+      "id": "b3_q007",
+      "type": "A",
+      "stem": "Wird eine Suspension von Leberzellen von einer 0.96% NaCl in eine 1.25% NaCl gegeben, passiert was?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Zelle \"explodiert\"",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Zellvolumen nimmt ab",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Membrankapazität? bleibt unverändert?",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Alle obigen Aussagen sind",
+          "correct": false
+        }
+      ],
+      "explanation": "B 1.25% NaCl ist hypertoner als 0.96%; Zellen verlieren Wasser und schrumpfen."
+    },
+    {
+      "id": "b3_q008",
+      "type": "A",
+      "stem": "Welche ist wahr?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ionenkanäle haben eine höhere Transportrate als Aquaporine",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ionenkanäle lassen geladene AS hindurch",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Spannungsabhängige Nakanäle bestehen aus einer einzigen Aminosäure (RICHTIG!)",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mitochondrien besitzen keine Ionenkanäle",
+          "correct": false
+        }
+      ],
+      "explanation": "Unsicher: vermutlich C Gemeint ist vermutlich eine einzige alpha-Untereinheit, nicht \"eine Aminosäure\". Die übrigen Aussagen sind klar falsch."
+    },
+    {
+      "id": "b3_q009",
+      "type": "A",
+      "stem": "Welche Aussage über der Gesamtmembranwiderstand ist falsch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Gesamtmembranwiderstand lässt sich mit Hilfe einer Stromklemme bestimmen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Gesamtmembranwiderstand nimmt bei zunehmender Zellgrösse zu",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Einheit des Gesamtmembranwiderstands ist Ohm",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der Gesamtmembranwiderstand lässt sich mit Hilfe einer Spannungsklemme bestimmen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aus dem Gesamtmembranwiderstand und der Membranzeitkonstante t lässt sich die Membrankapazität bestimmen",
+          "correct": false
+        }
+      ],
+      "explanation": "B Grössere Membranfläche senkt den Gesamtmembranwiderstand; spezifischer Membranwiderstand ist davon zu unterscheiden."
+    },
+    {
+      "id": "b3_k010",
+      "type": "KPRIM",
+      "stem": "Gesetzmässigkeiten von synaptischen Sensoren (KPrim)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Reiz aktiviert nur bestimmter Sensor",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sensorpotentiale sind dreifach abgestuft",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Transduktion ist die Übersetzung eines Reizes in eine Membranpotentialänderung RICHTIG",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "(Aussage über Transformation)",
+          "correct": false
+        }
+      ],
+      "explanation": "C +; A/B -; D unklar Transduktion = Umwandlung eines Reizes in eine Membranpotentialänderung. Sensorpotentiale sind graduell, nicht dreifach abgestuft."
+    },
+    {
+      "id": "b3_q011",
+      "type": "A",
+      "stem": "Die Intensität eines Reizes wird dem ZNS mitgeteilt/weitergeleitet durch…",
+      "options": [
+        {
+          "id": "A",
+          "text": "Änderung der Sensorpotentialamplitude und der Aktionspotentialamplitude. (Richtig?)",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Umstellung von niederschwelligen auf hochschwellige Sensoren.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Änderung der Entladungsfrequenz der aktiven Afferenzen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Änderung der Entladungsfrequenz der Sensoren.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zusätzliche Aktivität von Schmerzsensoren.",
+          "correct": false
+        }
+      ],
+      "explanation": "C Reizintensität wird primär über Entladungsfrequenz aktiver Afferenzen und Rekrutierung codiert; AP-Amplitude bleibt konstant."
+    },
+    {
+      "id": "b3_k012",
+      "type": "KPRIM",
+      "stem": "Rezeptives Feld",
+      "options": [
+        {
+          "id": "A",
+          "text": "Felder im Kortex, die bestimmte Hautareale der Sinnesmodalität zusammenfassen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "B.m sind bestimmte Gruppen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Erregungszentren die von ihrer Umgebung gehemmt werden",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "werden durch die Aktivität einer Nervenendigung",
+          "correct": true
+        }
+      ],
+      "explanation": "C/D Ein rezeptives Feld ist das Areal, dessen Reizung die Aktivität eines Neurons verändert; häufig mit Zentrum-Umfeld-Organisation."
+    },
+    {
+      "id": "b3_q013",
+      "type": "A",
+      "stem": "Beim schnellen Aufrichten eines Kipptischs kann es zu Oszillationen kommen, falls",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Verzögerung der Herzfrequenzerhöhung zu klein ist",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "die negative Rückkopplung zu stark ist",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Der Kreislauf zu schwach",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Kipp Bett zu wenig schnell aufgestellt wird",
+          "correct": false
+        }
+      ],
+      "explanation": "B Zu starke negative Rückkopplung plus Verzögerung kann Oszillationen verursachen."
+    },
+    {
+      "id": "b3_q014",
+      "type": "A",
+      "stem": "Source to sink matching. Welche Aussage ist falsch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stromflüsse sind abhängig von der Längskonstante",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Dicke Axone brauchen geringere Reizung als dünne Axone",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Purkinje fasernHerz ist in diesem Zusammenhang eine Problemzone",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bei gleicher Reizung werden im Rückenmark dünnere Axone eher erregt als Dickere dünne, da der innere Widerstand geringer ist Weil Axon Sehr grosser Durchmesser !",
+          "correct": true
+        }
+      ],
+      "explanation": "D Dicke Axone haben geringeren Innenwiderstand und sind leichter/schneller erregbar; die Aussage zu dünneren Axonen ist falsch."
+    },
+    {
+      "id": "b3_q015",
+      "type": "A",
+      "stem": "Eine Membran bei 37 Grad hat ein Ruhemembranpotential von -61 mV. Dies entspricht dem Gleichgewichtspotential für Kalium. Potential= 61mV Ionenkonz. aussen/Ionenkonz. innen Vm = 61mV * log (Xaussen/Xinnen) Wie ist das Verhältnis zwischen aussen und innen? KVB4 MEMBRANPOTENTIAL",
+      "options": [
+        {
+          "id": "A",
+          "text": "1: 6.1",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "1: 10",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "1: 61",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "1: 100 bleibt aktiviert ! • Das K +-Gleichgewichtspotenzial beträgt EK = + 61 mV · lg (c[K]außen ÷ c[K]innen) EK = + 61 mV · lg (5 mmol/l ÷ 155 mmol/l) EK = + 61 mV · (-1,49) EK = - 91 mV • Das Na +-Gleichgewichtspotenzial beträgt ENa = + 61 mV · lg (c[Na]außen ÷ c[Na]innen) ENa = + 61 mV · lg (145 mmol/l ÷ 12 mmol/l) ENa = + 61 mV · (1,08) ENa = 66 mV • Knallgasreaktion Die Einzelreaktionen der sogenannten Knallgasreaktion 2 H2 + O2",
+          "correct": false
+        }
+      ],
+      "explanation": "B Gleiche Rechnung wie oben: K_aussen/K_innen = 0.1 = 1:10."
+    },
+    {
+      "id": "b3_q016",
+      "type": "A",
+      "stem": "Verschiebung von Membranlipiden: Was dauert am längsten? KVB5 MEMBRANSTRUKTUR (gleiche Frage auch in MC1 Dokument)",
+      "options": [
+        {
+          "id": "A",
+          "text": "laterale Diffusion - GESCHIEHT IM BEREICH VON MIKROSEKUNDEN",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Felxion",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Transversale Diffusion - GESCHIEHT IM BEREICH VON MEHREREN STUNDEN",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Rotation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nanion",
+          "correct": false
+        }
+      ],
+      "explanation": "C Transversale Diffusion/Flip-Flop ist deutlich langsamer als laterale Diffusion, Rotation und Flexion."
+    },
+    {
+      "id": "b3_k017",
+      "type": "KPRIM",
+      "stem": "An welchen Membranen können ZELLSTOFFWECHSEL",
+      "options": [
+        {
+          "id": "A",
+          "text": "Innere Mitochondrienmembran (UND CHLOROPLASTEN)",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Thylakoidmembran (Chloroplasten Membran)",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Plasmamembran",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ERMembran",
+          "correct": false
+        }
+      ],
+      "explanation": "A, B, C Energieumwandlung über Elektronentransportketten findet an innerer Mitochondrienmembran, Thylakoidmembran und bei Prokaryoten an der Plasmamembran statt."
+    },
+    {
+      "id": "b3_k018",
+      "type": "KPRIM",
+      "stem": "Wie verhält sich J (mol/s) zu diesen Werten bei der Diffusion? KVB3 MEMBRAN UND TRANSPORT hat aber nichts mit Kapazität tun ! weil mehr Raus als rein",
+      "options": [
+        {
+          "id": "A",
+          "text": "Proportional zu A",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Proportional zu Delta C - dC/dx",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Proportional zu T",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Proportional zu D - KONSTANTE, VERÄNDERT SICH NICHT",
+          "correct": true
+        }
+      ],
+      "explanation": "A, B, D Fick: J ist proportional zu Fläche A, Diffusionskoeffizient D und Konzentrationsgradient."
+    },
+    {
+      "id": "b3_q019",
+      "type": "A",
+      "stem": "Bei einer Depolarisation des Herzruhemembranpotentials um 10mV passiert folgendes",
+      "options": [
+        {
+          "id": "A",
+          "text": "LTyp Ca2+-Kanäle öffnen sich NEIN DIHYDROPYRIDINKANÄLE ODER SPANNUNGSAKTIVIERTE LTYP",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es findet ein erhöhter K+-Efflux statt",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Depolarisation findet schneller statt als bei normalem Ruhemembranpotential.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Aktivierungsschwelle der NaVoltageKanäle sinkt",
+          "correct": false
+        }
+      ],
+      "explanation": "Unsicher: am ehesten B Eine leichte Depolarisation erhöht die treibenden/aktivierenden Bedingungen für K+-Ströme; die anderen Aussagen sind als allgemeine Herzmuskel-Aussagen nicht korrekt."
+    },
+    {
+      "id": "b3_q020",
+      "type": "A",
+      "stem": "An einem Kondensator wird eine Wechselspannung mit Kreisfrequenz w angelegt. Dieser wird dabei unentwegt geladen und entladen es stellt sich ein Wechselstrom ein. Welche Aussagen sind wahr? MAN SO NICHT BEANTWORTEN - FALSCH NOTIERT",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kapazität C ist abhängig von Wechselspannung w",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Widerstand Rc ist abhängig von Wechselspannung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Bei Wechselspannung fliesst kein strom.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Strom und Spannung sind in Phase",
+          "correct": false
+        }
+      ],
+      "explanation": "Nur B wäre fachlich richtig Kapazitiver Widerstand X_C = 1/(omega*C) ist frequenzabhängig. Bei Wechselspannung fliesst Strom; Strom und Spannung sind nicht in Phase."
+    },
+    {
+      "id": "b3_k021",
+      "type": "KPRIM",
+      "stem": "Während relativer Refrektärszeit, hat ein neuer Reiz",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kleiner Amplitude",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Schneller Fortpflanzungsgeschwindigkeit (m/s)",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Verdopplung von Etwas",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kleinerer maximal Anstieg Auf die absolute Refraktärzeit folgt die relative Refraktärzeit. Sie entspricht der Phase der Hyperpolarisation, die durch Öffnung der",
+          "correct": true
+        }
+      ],
+      "explanation": "A und D In relativer Refraktärzeit sind weniger Na+-Kanäle verfügbar und K+-Leitfähigkeit erhöht: höhere Schwelle, geringerer Anstieg und ggf. kleinere Amplitude."
+    },
+    {
+      "id": "b3_q022",
+      "type": "A",
+      "stem": "Welche Aussage ist bezüglich des Aktionspotentials bei einem Skelettmuskel falsch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hyperpolarisation",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Refraktärzeit ist kürzer als bei Herzmuskeln - Herz ist auch Skelettmuskel, aber hat eine längere Refraktärzeit.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Es hat eine Nachhyperpolarisation",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es hat eine Nachdepolarisation Nerv",
+          "correct": true
+        }
+      ],
+      "explanation": "D Beim Skelettmuskel-Aktionspotential ist eine Nachdepolarisation nicht das typische Merkmal; Herzmuskel hat längere Refraktärzeit."
+    },
+    {
+      "id": "b3_q023",
+      "type": "A",
+      "stem": "Das Endplattenpotenzial führt zu einer Depolarisation der Muskelmembran. Das Endplattenpotenzial ist also entstanden durch",
+      "options": [
+        {
+          "id": "A",
+          "text": "Einwärtsstrom Na+-Ionen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nettoeinwärtsstrom positiver Ladung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nettoauswärtsstrom positiver Ladung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Einwärtsstrom K+-Ionen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Auswärtsstrom K+-Ionen",
+          "correct": false
+        }
+      ],
+      "explanation": "B Endplattenpotential entsteht durch Netto-Einwärtsstrom positiver Ladung, überwiegend Na+-Einstrom über nikotinische ACh-Rezeptoren."
+    },
+    {
+      "id": "b3_q024",
+      "type": "A",
+      "stem": "Was geschieht bei einer Depolarisation an der Endplatte?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Auswärtsstrom von NatriumIonen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "NettoEinwärtsstrom von positiver Ladung",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Auswärtsstrom von positiver Ladung",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Einwärtsstrom von KaliumIonen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Auswärtsstrom von KaliumIonen",
+          "correct": false
+        }
+      ],
+      "explanation": "B Gleiche Begründung: netto strömt positive Ladung in die Muskelzelle ein."
+    },
+    {
+      "id": "b3_q025",
+      "type": "A",
+      "stem": "Die unidirektionale Transportrat fettlöslicher Substanzen durch die Lipidmembran",
+      "options": [
+        {
+          "id": "A",
+          "text": "Korreliert negativ mit der Temperatur",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ist positiv mit dem WasserÖl Verteilungskoeffizienten korreliert",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ist gegeben in mol/cm",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ist gegeben in cm 2/sec",
+          "correct": false
+        }
+      ],
+      "explanation": "B Permeation fettlöslicher Substanzen korreliert positiv mit dem Öl/Wasser-Verteilungskoeffizienten."
+    },
+    {
+      "id": "b3_q026",
+      "type": "A",
+      "stem": "Periphere Nerven: während Anstieg vom AP",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weiteres Signal wird blockiert",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Permeabilität von Membran ist anders",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Irgendöpis",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Irgendöpis",
+          "correct": false
+        }
+      ],
+      "explanation": "B Während des AP-Anstiegs ändert sich die Membranpermeabilität stark, v. a. durch Na+-Kanalöffnung."
+    },
+    {
+      "id": "b3_q027",
+      "type": "A",
+      "stem": "Was geschieht mit der Galphas Untereinheit von",
+      "options": [
+        {
+          "id": "A",
+          "text": "Palmitoylierung der Galpha Untereinheit",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Desaminierung der Galpha Untereinheit",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Phospholierung der Galpha Untereinheit",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ADPRibosolyierung der Galpha Untereinheit",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Ubiquitinierung der Galpha Untereinheit",
+          "correct": false
+        }
+      ],
+      "explanation": "Unsicher: vermutlich D ADP-Ribosylierung von G-Alpha-Untereinheiten ist bei Toxinwirkungen klassisch; Frage ist unvollständig."
+    },
+    {
+      "id": "b3_q028",
+      "type": "A",
+      "stem": "Ein peripherer Nerv wird erregt. Die Erregung dauert 2 ms und der Reiz bewegt sich mit 20 m/s fort. Wie lang ist die erregte Strecke?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.01 mm",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "0.04 mm",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "1 mm",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "10 mm",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "40 mm",
+          "correct": true
+        }
+      ],
+      "explanation": "E 20 m/s * 0.002 s = 0.04 m = 40 mm."
+    },
+    {
+      "id": "b3_k029",
+      "type": "KPRIM",
+      "stem": "Von was hängt die Ausbreitungsgeschwindigkeit eines Signals innerhalb des Axons ab?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Öffnungskinetik der NatriumKanäle",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Innere Membranwiderstand und Durchmesser des Axons",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Länge des Axons",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ionenkanäle bei den RanvierSchnürringen",
+          "correct": true
+        }
+      ],
+      "explanation": "A, B, D Leitungsgeschwindigkeit hängt von Kanal-Kinetik, Axondurchmesser/Innenwiderstand und Myelinisierung/Ranvier-Knoten ab; nicht von der Axonlänge."
+    },
+    {
+      "id": "b3_q030",
+      "type": "A",
+      "stem": "Was geschieht mit einer Neuromuskulären Endplatten, welche mit Curare behandelt wurde?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Endplattenund Miniendplattenpotentiale werden kleiner.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Beide Potentiale verändern sich nicht.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Endplattenpotentiale werden grösser Miniendplattenpotentiale werden kleiner.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Beide Potentiale werden grösser.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Endplattenpotentiale werden kleiner Miniendplattenpotentiale werden grösser.",
+          "correct": false
+        }
+      ],
+      "explanation": "A Curare blockiert nikotinische ACh-Rezeptoren: Endplattenpotentiale und Miniendplattenpotentiale werden postsynaptisch kleiner."
+    },
+    {
+      "id": "b3_k031",
+      "type": "KPRIM",
+      "stem": "Wenn man eine NatriumKalium Pumpe blockiert was passiert nach gewisser Zeit? (K)",
+      "options": [
+        {
+          "id": "A",
+          "text": "Natriumkonzentration steigt im Cytoplasma.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Kaliumkonzentration steigt im Cytoplasma.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Leitungsgeschwindigkeit eins Aktionspotentials nimmt konstant zu.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Neuron beginnt zu depolarisieren.",
+          "correct": true
+        }
+      ],
+      "explanation": "A +, B -, C -, D + Blockade der Na/K-Pumpe erhöht intrazelluläres Na+, senkt langfristig K+-Gradienten und depolarisiert das Neuron."
+    },
+    {
+      "id": "b3_q032",
+      "type": "A",
+      "stem": "Bei welcher der folgenden Möglichkeiten handelt es sich um eine ZellMatrixVerbindung, welche an Aktinfilamente gebunden ist?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Desmosomen",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Adhäsionsverbindung",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Gap Junctions",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Fokale Adhäsion",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Hemidesmosomen",
+          "correct": false
+        }
+      ],
+      "explanation": "D Fokale Adhäsionen koppeln die extrazelluläre Matrix über Integrine an Aktinfilamente."
+    },
+    {
+      "id": "b3_q033",
+      "type": "A",
+      "stem": "Was passiert als erstes bei der Übertragung eines Umweltreizes in neuronale Signale im Körper?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Generierung eines Aktionspotentials",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Permeabilitätsänderung von Ionenkanälen",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Umwandlung eines Sensorpotentials in ein Aktionspotential Transduktion!",
+          "correct": false
+        }
+      ],
+      "explanation": "B Erster Schritt der sensorischen Transduktion ist eine reizabhängige Änderung der Ionenkanal-Permeabilität bzw. des Sensorpotentials."
+    }
+  ]
+}

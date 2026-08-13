@@ -1,0 +1,324 @@
+{
+  "id": "altfragen_block_2_hs_v1",
+  "lectureCode": "ALT-BLOCK-2",
+  "title": "Altfragen Block 2",
+  "block": "Altfragen",
+  "sourceBlock": "Block 2",
+  "questionCount": 10,
+  "sources": [
+    "altfragen_sj1_hs.pdf",
+    "altfragen_sj1_hs_loesungen.pdf"
+  ],
+  "questions": [
+    {
+      "id": "b2_q001",
+      "type": "A",
+      "stem": "Was ist den Aussagen über Sterben in der Schweiz falsch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Säuglingssterblichkeit liegt unter 1%",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Bei den über 20jährigen sterben Männer häufiger als Frauen",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nach Krebs ist der Unfall die zweithäufigste Todesursache",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "2019 sind bei den Erkrankten, die eine Infektionskrankheit haben unter 5% gestorben",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Seit 1900 hat sich die Lebenswahrscheinlichkeit verdoppelt",
+          "correct": false
+        }
+      ],
+      "explanation": "C Unfälle sind nicht die zweithäufigste Todesursache nach Krebs; kardiovaskuläre Erkrankungen/Demenz spielen je nach Altersgruppe eine zentrale Rolle."
+    },
+    {
+      "id": "b2_q002",
+      "type": "A",
+      "stem": "Was zur Streumasse von Werten einer Datenserie ist falsch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei normalverteilten Werten ist bei +/-2 Standardabweichungen 99% der Werte vorhanden",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Bei der InterQuartilBreite sind 50% der Werte vorhanden",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Noch einmal eine Aussage über InterQuartilBreite",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Standardabweichung ist sensibel auf Ausreisser",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine kleine Standardabweichung heisst so viel wie, dass der Wert nahe am Mittelwert ist",
+          "correct": false
+        }
+      ],
+      "explanation": "A Bei Normalverteilung liegen innerhalb ±2 SD ca. 95%, nicht 99%, der Werte."
+    },
+    {
+      "id": "b2_q003",
+      "type": "A",
+      "stem": "Das relative Risiko berechnen zwischen Medikament A 100 Personen gestorben von 1000 (10%) und Medikament B und 150 Personen gestorben von 1000 (15%)",
+      "options": [
+        {
+          "id": "A",
+          "text": "1",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "0.5",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "2",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "1.5",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "0.66",
+          "correct": true
+        }
+      ],
+      "explanation": "E RR = Risiko A / Risiko B = 10% / 15% = 0.66."
+    },
+    {
+      "id": "b2_q004",
+      "type": "A",
+      "stem": "Es wird ein Medikament gegen Hirnschlag in einer kontrolliert randomisierten Studie ausprobiert. Zusätzlich zur gängigen Akutbehandlung bekommt eine Gruppe der Patienten das Medikament A, die andere das Medikament",
+      "options": [
+        {
+          "id": "B",
+          "text": "In der Gruppe mit dem Medikament A sterben 150 von 1000 Patienten (d.h. 15%) in der Gruppe mit Medikament B sterben 100 von 1000 Patienten (d.h. 10%). Was ist das relative Risiko von den Personen in Gruppe mit Medikament A im Vergleich mit der Gruppe B. )",
+          "correct": false
+        },
+        {
+          "id": "A",
+          "text": "0.5",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "0.75",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "1",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "1.25",
+          "correct": true
+        },
+        {
+          "id": "F",
+          "text": "1.5",
+          "correct": false
+        }
+      ],
+      "explanation": "E RR = 15% / 10% = 1.5."
+    },
+    {
+      "id": "b2_q005",
+      "type": "A",
+      "stem": "Welche Aussage zum 95%-Konfidenzintervall ist falsch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er stellt mit einer 95% Wahrscheinlichkeit den wahren Mittelwert da.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Wird berechnet Mittelwert +- 1,96 * Standardfehler",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Kann auch Vertrauensintervall genannt werden.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Hat eine Breite von ungefähr von 4 * Standardfehler",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Gilt nur für Normalverteilungen Verteilungen",
+          "correct": false
+        }
+      ],
+      "explanation": "A; E ebenfalls problematisch Ein 95%-KI enthält nicht mit 95% Wahrscheinlichkeit den wahren Wert; bei wiederholtem Sampling würden 95% der Intervalle ihn enthalten. Die Aussage \"nur Normalverteilungen\" ist ebenfalls zu eng."
+    },
+    {
+      "id": "b2_q006",
+      "type": "A",
+      "stem": "Welche Aussage(n) zum relativen Risiko und der odds ratio ist/ sind korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "bei häufigen Erkrankungen ist das relative Risiko ungefähr so gross wie die odds ratio",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "in einer Fallkontrollstudie kann das relative Risiko berechnet werden",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "wenn die odds ratio =1 ist, ist auch das relative Risiko =1",
+          "correct": true
+        }
+      ],
+      "explanation": "C Wenn OR = 1, besteht kein Unterschied der Odds; dann ist bei vergleichbaren Gruppen auch RR = 1. ORca.RR gilt vor allem bei seltenen Erkrankungen, nicht bei häufigen."
+    },
+    {
+      "id": "b2_q007",
+      "type": "A",
+      "stem": "Prävalenz Krankheit 50/100'000. Sensitivität Test 70%, Spezifität Test 90%. Welche ist die Wahrscheinlichkeit, wenn der Test positiv ist, die Krankheit wirklich zu haben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "<20% à positiv prädiktiver Wert ausrechnen!",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "20-30%",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "40-50%",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "60-80% Der PPV errechnet sich mit Hilfe folgender Formel • PPV = (SEN × PRE) / (SEN × PRE + (1SPE) × (1PRE)) • PPV= (0.7*0.0005) /0.7*0.0005+(1-0.9) *(1",
+          "correct": false
+        }
+      ],
+      "explanation": "A PPV = 0.7*0.0005 / (0.7*0.0005 + 0.1*0.9995) ca. 0.35%, also klar <20%."
+    },
+    {
+      "id": "b2_q008",
+      "type": "A",
+      "stem": "k1) 250 270 330 350 390 430 470",
+      "options": [
+        {
+          "id": "A",
+          "text": "Median 350 & Wert der Mitte",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Median= Mittelwert à falsch MW: 355,7= (250+270+330+350+390+430+470)/7",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "IQR beinhaltet Werte von 250 zu 470 à",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "…",
+          "correct": false
+        }
+      ],
+      "explanation": "A Bei 250,270,330,350,390,430,470 ist der Median 350. Mittelwert ca.355.7; IQR ist nicht 250-470."
+    },
+    {
+      "id": "b2_q009",
+      "type": "A",
+      "stem": "Man führt eine DatenAnalyse mit den Gewichten von 50 Menschen. Der Mittelwert war 97 kg und der Median 84 kg. Ein Statistiker empfiehlt die Werte zu logarithmieren. Was erhoffen sie sich nach der Transformation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Median und der Mittelwert haben einen signifikanten Unterschied.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Median liegt nach der Transformation weiterhin unter dem Mittelwert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Median und Mittelwert nähern sich an.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Median und Standartabweichung nähern sich an.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mittelwert und Standardabweichung nähern sich an.",
+          "correct": false
+        }
+      ],
+      "explanation": "C Log-Transformation reduziert Rechtsschiefe; Mittelwert und Median nähern sich typischerweise an."
+    },
+    {
+      "id": "b2_q010",
+      "type": "A",
+      "stem": "Welche Aussage über den positiven prädikativen Wert einer Krebsbehandlung lässt sich ableiten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Wahrscheinlichkeit, dass ein Patient mit positiven TumormarkerTest Krebs hat.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Der Patient hat Krebs.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Wahrscheinlichkeit, dass ein Patient mit negativen TumormarkerTest keinen Krebs hat.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Wahrscheinlichkeit, dass ein Patient mit positiven TumormarkerTest keinen Krebs hat.",
+          "correct": false
+        }
+      ],
+      "explanation": "A Positiv prädiktiver Wert = Wahrscheinlichkeit, bei positivem Test tatsächlich krank zu sein."
+    }
+  ]
+}

@@ -181,7 +181,7 @@ export function AssessmentDetailClient({ id }: { id: string }) {
                 <strong>{objective.id}</strong>
                 <p>{objective.text}</p>
               </div>
-            )) : <p className="text-[var(--muted)]">Keine Lernziele im JSON hinterlegt.</p>}
+            )) : <p className="assessment-detail-empty">Keine Lernziele im JSON hinterlegt.</p>}
           </div>
         </article>
 
