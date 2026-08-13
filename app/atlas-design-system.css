@@ -8484,3 +8484,19 @@ body.atlas-sidebar-collapsed .account-avatar {
   font-size: 21px !important;
   font-weight: 800 !important;
 }
+
+/* Keep the exercise detail back action below the fixed topbar. */
+.assessment-detail-shell {
+  padding-top: calc(var(--atlas-topbar-height) + 32px) !important;
+}
+
+.assessment-detail-back {
+  position: relative !important;
+  z-index: 45 !important;
+}
+
+@media (max-width: 760px) {
+  .assessment-detail-shell {
+    padding-top: calc(var(--atlas-topbar-height) + 18px) !important;
+  }
+}
