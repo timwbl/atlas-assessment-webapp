@@ -19,20 +19,18 @@ import {
   type SummaryDownload
 } from "@/lib/summaryDownloads";
 import {
-  examsForSemester,
   examLabel,
   legacySemesterId,
   normalizedBlockId,
   selectedBlockIds,
   semesterConfig,
-  settingsForSemester,
   studyProfileForLegacyId,
   studySemesterForLegacyId,
   type ExamId
 } from "@/lib/studyProgram";
 
 export function DownloadLibrary() {
-  const { hydrated, settings, updateSettings } = useUserStudyContext();
+  const { hydrated, settings } = useUserStudyContext();
   const [downloads, setDownloads] = useState<SummaryDownload[]>([]);
   const [query, setQuery] = useState("");
   const [semester, setSemester] = useState<SemesterId | "">("");
@@ -72,23 +70,29 @@ export function DownloadLibrary() {
     }
   }
 
+  const studySemester = studySemesterForLegacyId(semester);
+  const studyProfile = studyProfileForLegacyId(semester);
+  const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
+  const [localExam, setLocalExam] = useState<ExamId | null>(null);
+  const selectedExam = localExam;
+  const localExamBlockIds = useMemo(
+    () => selectedExam && examConfig
+      ? new Set(examConfig.exams[selectedExam]?.blocks || [])
+      : null,
+    [examConfig, selectedExam]
+  );
   const visibleSemesters = semester ? DOWNLOAD_SEMESTERS.filter((item) => item.id === semester) : [];
   const blockOptions = useMemo(() => {
     const profileBlockIds = selectedBlockIds(settings);
     return semester
       ? downloadBlocksForSemester(semester).filter((block) => {
-      if (!settings.studyYear || !settings.semester) return true;
-      const profileBlockId = block.canonicalBlockId || normalizedBlockId(block.title);
-      return !!profileBlockId && profileBlockIds.includes(profileBlockId);
-    })
+        const profileBlockId = block.canonicalBlockId || normalizedBlockId(block.title);
+        if (localExamBlockIds && profileBlockId) return localExamBlockIds.has(profileBlockId);
+        if (!settings.studyYear || !settings.semester || studyProfile?.studyYear !== settings.studyYear) return true;
+        return !!profileBlockId && profileBlockIds.includes(profileBlockId);
+      })
       : [];
-  }, [semester, settings]);
-  const studySemester = studySemesterForLegacyId(semester);
-  const studyProfile = studyProfileForLegacyId(semester);
-  const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
-  const selectedExam = settings.examPreparation.mode === "singleExam"
-    ? settings.examPreparation.selectedExams[0]
-    : null;
+  }, [localExamBlockIds, semester, settings, studyProfile?.studyYear]);
   const filtered = useMemo(() => {
     if (!semester) return [];
 
@@ -116,15 +120,13 @@ export function DownloadLibrary() {
   }, [blockId, blockOptions]);
 
   function setExamFilter(exam: ExamId | null) {
-    if (!studyProfile) return;
-    updateSettings({
-      ...settingsForSemester(settings, studyProfile.semester, studyProfile.studyYear),
-      examPreparation: exam
-        ? { mode: "singleExam", selectedExams: [exam] }
-        : { mode: "semester", selectedExams: examsForSemester(studyProfile.semester, studyProfile.studyYear) }
-    });
+    setLocalExam(exam);
     setBlockId("");
   }
+
+  useEffect(() => {
+    setLocalExam(null);
+  }, [semester]);
 
   async function downloadFile(item: SummaryDownload) {
     setDownloadingId(item.id);
@@ -158,7 +160,7 @@ export function DownloadLibrary() {
             <strong>Auswahl</strong>
             <span>{semester ? semesterTitle(semester) : "Noch kein Fachsemester gewählt"}</span>
           </div>
-          {examConfig && settings.studyYear === studyProfile?.studyYear && (
+          {examConfig && (
             <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
               <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
                 Alle
@@ -185,8 +187,6 @@ export function DownloadLibrary() {
               onChange={(nextSemester) => {
                 setSemester(nextSemester);
                 setBlockId("");
-                const nextStudyProfile = studyProfileForLegacyId(nextSemester);
-                if (nextStudyProfile) updateSettings(settingsForSemester(settings, nextStudyProfile.semester, nextStudyProfile.studyYear));
               }}
               options={[
                 { value: "", label: "Bitte auswählen" },
@@ -313,8 +313,15 @@ export function DownloadLibrary() {
                                   <span>© {item.copyrightOwner}</span>
                                 </div>
                               </div>
-                              <button className="summary-file-button" disabled={downloadingId === item.id} onClick={() => void downloadFile(item)}>
-                                {downloadingId === item.id ? "Lädt…" : "Download"}
+                              <button
+                                className="summary-file-button"
+                                disabled={downloadingId === item.id}
+                                onClick={() => void downloadFile(item)}
+                                title={downloadingId === item.id ? "Download läuft" : "Herunterladen"}
+                                type="button"
+                              >
+                                <AtlasIcon name="download" />
+                                <span>{downloadingId === item.id ? "Lädt" : "Laden"}</span>
                               </button>
                             </article>
                           ))

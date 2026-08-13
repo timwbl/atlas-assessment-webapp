@@ -385,9 +385,11 @@ export function AltfragenLibrary() {
                               className="altfragen-document-download"
                               disabled={downloadingId === document.id}
                               onClick={() => void downloadDocument(document)}
+                              title={downloadingId === document.id ? "Download läuft" : "Herunterladen"}
                               type="button"
                             >
-                              {downloadingId === document.id ? "Lädt…" : "Download"}
+                              <AtlasIcon name="download" />
+                              <span>{downloadingId === document.id ? "Lädt" : "Laden"}</span>
                             </button>
                           </article>
                         ))}

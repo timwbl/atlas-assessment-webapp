@@ -3681,6 +3681,31 @@ select.input {
   line-height: 1.42;
 }
 
+.exercise-profile-link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  color: var(--atlas-blue);
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.exercise-profile-link::after {
+  content: "→";
+  font-size: 14px;
+  font-weight: 820;
+}
+
+.exercise-profile-link:hover {
+  color: color-mix(in srgb, var(--atlas-blue) 82%, var(--atlas-text));
+  transform: translateX(1px);
+}
+
 .exercise-control-actions {
   display: flex;
   flex-wrap: wrap;
@@ -8699,6 +8724,7 @@ body.atlas-sidebar-collapsed .account-avatar {
   min-height: 34px !important;
   align-items: center !important;
   justify-content: center !important;
+  gap: 7px !important;
   border: 1px solid var(--atlas-hairline) !important;
   border-radius: 11px !important;
   background: var(--atlas-panel-strong) !important;
@@ -8707,6 +8733,12 @@ body.atlas-sidebar-collapsed .account-avatar {
   font-size: 13px !important;
   font-weight: 760 !important;
   white-space: nowrap !important;
+}
+
+.altfragen-document-download .atlas-icon {
+  width: 17px !important;
+  height: 17px !important;
+  color: var(--download-accent, var(--atlas-blue)) !important;
 }
 
 .altfragen-document-download:hover:not(:disabled) {
@@ -9799,6 +9831,10 @@ body.dark:has(.settings-page-shell) .settings-edit-actions,
 }
 
 .summary-file-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
   border-radius: 14px;
   background: var(--accent);
@@ -9810,6 +9846,11 @@ body.dark:has(.settings-page-shell) .settings-edit-actions,
   padding: 0 15px;
   transition: transform .18s ease, background-color .18s ease, opacity .18s ease;
   white-space: nowrap;
+}
+
+.summary-file-button .atlas-icon {
+  width: 17px;
+  height: 17px;
 }
 
 .summary-file-button:hover {

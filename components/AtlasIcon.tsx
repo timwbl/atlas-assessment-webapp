@@ -32,6 +32,7 @@ export type AtlasIconName =
   | "logout"
   | "user"
   | "sync"
+  | "download"
   | "pencil"
   | "bookmark"
   | "sidebar"
@@ -221,6 +222,11 @@ const paths: Record<AtlasIconName, string[]> = {
     "M4 4.8V9h4.2",
     "M5.5 15.5a7 7 0 0 0 12.3 1.7L20 15",
     "M20 19.2V15h-4.2"
+  ],
+  download: [
+    "M12 4v9.2",
+    "M8.2 10.2 12 14l3.8-3.8",
+    "M5.2 15.8v2.4A1.8 1.8 0 0 0 7 20h10a1.8 1.8 0 0 0 1.8-1.8v-2.4"
   ],
   pencil: [
     "M5 16.9V20h3.1L18.8 9.3a2.1 2.1 0 0 0 0-3l-1.1-1.1a2.1 2.1 0 0 0-3 0L5 16.9Z",

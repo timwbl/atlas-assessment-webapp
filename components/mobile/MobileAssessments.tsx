@@ -5,12 +5,10 @@ import { useMemo, useState } from "react";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { useMobileLearningData } from "./useMobileLearningData";
 import {
-  examsForSemester,
   examLabel,
   normalizedBlockId,
   semesterConfig,
   semesterHeading,
-  settingsForSemester,
   type ExamId
 } from "@/lib/studyProgram";
 import { useUserStudyContext } from "@/components/study/UserStudyProvider";
@@ -21,8 +19,9 @@ import {
 
 export function MobileAssessments() {
   const data = useMobileLearningData();
-  const { settings, updateSettings } = useUserStudyContext();
+  const { settings } = useUserStudyContext();
   const [query, setQuery] = useState("");
+  const [selectedExam, setSelectedExam] = useState<ExamId | null>(null);
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return data.assessments.filter((assessment) => !needle || [
@@ -43,19 +42,18 @@ export function MobileAssessments() {
     return [...groups.entries()].sort(([left], [right]) => left.localeCompare(right, "de", { numeric: true }));
   }, [filtered]);
   const currentSemester = semesterConfig(settings.semester, settings.studyYear);
-  const selectedExam = settings.examPreparation.mode === "singleExam"
-    ? settings.examPreparation.selectedExams[0]
-    : null;
-
-  function setExamFilter(exam: ExamId | null) {
-    if (!settings.studyYear || !settings.semester) return;
-    updateSettings({
-      ...settingsForSemester(settings, settings.semester, settings.studyYear),
-      examPreparation: exam
-        ? { mode: "singleExam", selectedExams: [exam] }
-        : { mode: "semester", selectedExams: examsForSemester(settings.semester, settings.studyYear) }
-    });
-  }
+  const localExamBlocks = useMemo(
+    () => selectedExam && currentSemester
+      ? new Set(currentSemester.exams[selectedExam]?.blocks || [])
+      : null,
+    [currentSemester, selectedExam]
+  );
+  const visibleGrouped = useMemo(
+    () => localExamBlocks
+      ? grouped.filter(([blockId]) => localExamBlocks.has(blockId))
+      : grouped,
+    [grouped, localExamBlocks]
+  );
 
   return (
     <main className="mobile-action-page mobile-only" id="top">
@@ -70,14 +68,14 @@ export function MobileAssessments() {
       </nav>
       {settings.studyYear && currentSemester && (
         <div className="study-filter-chips mobile-exam-filters" aria-label="Prüfungsfilter">
-          <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
+          <button className={!selectedExam ? "is-active" : ""} onClick={() => setSelectedExam(null)} type="button">
             Alle
           </button>
           {currentSemester.defaultExamGroup.map((exam) => (
             <button
               className={selectedExam === exam ? "is-active" : ""}
               key={exam}
-              onClick={() => setExamFilter(exam)}
+              onClick={() => setSelectedExam(exam)}
               type="button"
             >
               {examLabel(exam)}
@@ -101,7 +99,7 @@ export function MobileAssessments() {
             Der Fragenkatalog ist gerade nicht erreichbar. Bereits geladene Übungen bleiben offline verfügbar.
           </div>
         )}
-        {grouped.map(([blockId, assessments]) => (
+        {visibleGrouped.map(([blockId, assessments]) => (
           <section className="mobile-assessment-group" key={blockId}>
             <div className="mobile-assessment-group-head">
               <div>

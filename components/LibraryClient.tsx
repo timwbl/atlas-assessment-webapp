@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import type { CSSProperties } from "react";
 import { AssessmentCard } from "./AssessmentCard";
@@ -32,7 +33,6 @@ import {
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import { readinessProgressId } from "@/lib/blockReadiness";
 import {
-  examsForSemester,
   examLabel,
   isAltfragenValue,
   isThreeDContent,
@@ -40,7 +40,6 @@ import {
   normalizedBlockId,
   selectedBlockIds,
   semesterConfig,
-  settingsForSemester,
   studyProfileForLegacyId,
   studySemesterForLegacyId,
   type ExamId
@@ -55,7 +54,7 @@ import { useUserStudyContext } from "./study/UserStudyProvider";
 const EXERCISES_PER_PAGE = 8;
 
 export function LibraryClient() {
-  const { hydrated, settings, updateSettings } = useUserStudyContext();
+  const { hydrated, settings } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [query, setQuery] = useState("");
@@ -117,8 +116,6 @@ export function LibraryClient() {
     setQuery("");
     setPage(1);
     clearAssessmentLibrarySelection();
-    const nextStudyProfile = studyProfileForLegacyId(nextSemester);
-    if (nextStudyProfile) updateSettings(settingsForSemester(settings, nextStudyProfile.semester, nextStudyProfile.studyYear));
   }
 
   const deferredQuery = useDeferredValue(query);
@@ -141,19 +138,28 @@ export function LibraryClient() {
     () => loaded.filter((item) => !item.assessment && item.errors.length),
     [loaded]
   );
+  const studySemester = studySemesterForLegacyId(semester);
+  const studyProfile = studyProfileForLegacyId(semester);
+  const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
+  const [localExam, setLocalExam] = useState<ExamId | null>(null);
+  const selectedExam = localExam;
 
   const blockOptions = useMemo(() => {
     const profileBlockIds = selectedBlockIds(settings);
+    const localExamBlockIds = selectedExam && examConfig
+      ? new Set(examConfig.exams[selectedExam]?.blocks || [])
+      : null;
     return semester
       ? blocksForSemester(semester).filter((block) => {
       if (isAltfragenValue(block.title) || isThreeDContent(block.title)) return false;
-      if (!settings.studyYear || !settings.semester) return true;
       const blockIdFromTitle = block.canonicalBlockId || normalizedBlockId(block.title);
+      if (localExamBlockIds && blockIdFromTitle) return localExamBlockIds.has(blockIdFromTitle);
+      if (!settings.studyYear || !settings.semester || studyProfile?.studyYear !== settings.studyYear) return true;
       if (!blockIdFromTitle) return settings.semester === "fs" && normalizeText(block.title).includes("prufungssimulation");
       return profileBlockIds.includes(blockIdFromTitle);
     })
       : [];
-  }, [semester, settings]);
+  }, [examConfig, selectedExam, semester, settings, studyProfile?.studyYear]);
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
   const blockCards = useMemo(() => {
     return blockOptions.map((block) => {
@@ -183,27 +189,18 @@ export function LibraryClient() {
     return assessments.filter((assessment) => assessmentMatchesSummaryBlock(assessment, selectedBlock));
   }, [assessments, selectedBlock]);
 
-  const studySemester = studySemesterForLegacyId(semester);
-  const studyProfile = studyProfileForLegacyId(semester);
-  const examConfig = semesterConfig(studySemester, studyProfile?.studyYear || settings.studyYear);
-  const selectedExam = settings.examPreparation.mode === "singleExam"
-    ? settings.examPreparation.selectedExams[0]
-    : null;
-
   function setExamFilter(exam: ExamId | null) {
-    if (!studyProfile) return;
-    updateSettings({
-      ...settingsForSemester(settings, studyProfile.semester, studyProfile.studyYear),
-      examPreparation: exam
-        ? { mode: "singleExam", selectedExams: [exam] }
-        : { mode: "semester", selectedExams: examsForSemester(studyProfile.semester, studyProfile.studyYear) }
-    });
+    setLocalExam(exam);
     setBlockId("");
     setTag("");
     setSubject("");
     setPage(1);
     clearAssessmentLibrarySelection();
   }
+
+  useEffect(() => {
+    setLocalExam(null);
+  }, [semester]);
 
   const subjects = availableAssessmentSubjects(blockAssessments);
 
@@ -269,6 +266,9 @@ export function LibraryClient() {
           <div className="eyebrow">Lernphase</div>
           <h2>{semester ? semesterTitle(semester) : "Fachsemester wählen"}</h2>
           <p>Die Blockkarten zeigen nur Inhalte, die zu deiner aktuellen Auswahl passen.</p>
+          <Link className="exercise-profile-link" href="/settings">
+            Fachsemester im Profil ändern
+          </Link>
         </div>
         <div className="exercise-control-actions">
           <div className="exercise-semester-tabs" aria-label="Fachsemester auswählen">
@@ -288,7 +288,7 @@ export function LibraryClient() {
               Zurücksetzen
             </button>
           )}
-          {examConfig && settings.studyYear === studyProfile?.studyYear && (
+          {examConfig && (
             <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
               <button className={!selectedExam ? "is-active" : ""} onClick={() => setExamFilter(null)} type="button">
                 Alle
