@@ -119,7 +119,11 @@ export function LibraryClient() {
   }
 
   const deferredQuery = useDeferredValue(query);
-  const semesterOptions = DOWNLOAD_SEMESTERS;
+  const semesterOptions = useMemo(() => {
+    const activeStudyYear = settings.studyYear || (semester ? studyProfileForLegacyId(semester)?.studyYear : null);
+    if (!activeStudyYear) return DOWNLOAD_SEMESTERS;
+    return DOWNLOAD_SEMESTERS.filter((item) => studyProfileForLegacyId(item.id)?.studyYear === activeStudyYear);
+  }, [semester, settings.studyYear]);
   const assessments = useMemo(
     () => loaded
       .map((item) => item.assessment)
