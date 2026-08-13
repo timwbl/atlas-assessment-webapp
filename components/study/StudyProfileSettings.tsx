@@ -5,6 +5,7 @@ import { AtlasDropdown } from "../ui/AtlasDropdown";
 import {
   STUDY_YEARS,
   examsForSemester,
+  examLabel,
   semesterConfig,
   semestersForStudyYear,
   type ExamId,
@@ -98,7 +99,7 @@ export function StudyProfileSettings({
       {draft.studyYear && semestersForStudyYear(draft.studyYear).length > 0 && (
         <>
           <fieldset className="study-field">
-            <legend>Semester / Lernphase</legend>
+            <legend>Fachsemester / Lernphase</legend>
             <div className="study-choice-grid">
               {semestersForStudyYear(draft.studyYear).map((value) => {
                 const config = semesterConfig(value, draft.studyYear);
@@ -135,12 +136,12 @@ export function StudyProfileSettings({
                     onClick={() => setExam(exam)}
                     type="button"
                   >
-                    {semester.exams[exam]?.label || exam}
+                    {examLabel(exam)}
                   </button>
                 ))}
               </div>
               <p className="study-field-note">
-                „Alle“ verbindet die Prüfungen semesterweise. Einzelne eMCs wirken nur als Inhaltsfilter.
+                „Alle“ verbindet die Prüfungen pro Fachsemester. Einzelne eMCs wirken nur als Inhaltsfilter.
               </p>
             </fieldset>
           )}

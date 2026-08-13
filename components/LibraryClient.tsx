@@ -33,6 +33,7 @@ import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import { readinessProgressId } from "@/lib/blockReadiness";
 import {
   examsForSemester,
+  examLabel,
   isAltfragenValue,
   isThreeDContent,
   legacySemesterId,
@@ -247,7 +248,7 @@ export function LibraryClient() {
               Übungen
             </h1>
             <p className="mt-3 max-w-2xl text-[var(--muted)]">
-              Öffne einen Block und trainiere die passenden MC-Fragen für dein aktuelles Semester.
+              Öffne einen Block und trainiere die passenden MC-Fragen für dein aktuelles Fachsemester.
             </p>
           </div>
           <ProgressTools onImported={() => setProgress(getAllProgress())} />
@@ -261,11 +262,11 @@ export function LibraryClient() {
       <section className="exercise-control-panel">
         <div className="exercise-control-copy">
           <div className="eyebrow">Lernphase</div>
-          <h2>{semester ? semesterTitle(semester) : "Semester wählen"}</h2>
+          <h2>{semester ? semesterTitle(semester) : "Fachsemester wählen"}</h2>
           <p>Die Blockkarten zeigen nur Inhalte, die zu deiner aktuellen Auswahl passen.</p>
         </div>
         <div className="exercise-control-actions">
-          <div className="exercise-semester-tabs" aria-label="Semester auswählen">
+          <div className="exercise-semester-tabs" aria-label="Fachsemester auswählen">
             {DOWNLOAD_SEMESTERS.map((item) => (
               <button
                 className={semester === item.id ? "is-active" : ""}
@@ -294,7 +295,7 @@ export function LibraryClient() {
                   onClick={() => setExamFilter(exam)}
                   type="button"
                 >
-                  {exam}
+                  {examLabel(exam)}
                 </button>
               ))}
             </div>
@@ -411,7 +412,7 @@ export function LibraryClient() {
       {!semester && (
         <section className="card library-empty-card mt-5 p-8 text-center">
           <div className="eyebrow">Start</div>
-          <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Semester</h2>
+          <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Fachsemester</h2>
           <p className="mt-2 text-[var(--muted)]">Danach kannst du den passenden Block auswählen.</p>
         </section>
       )}

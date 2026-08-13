@@ -6,6 +6,7 @@ import { formatBlockLabel } from "@/lib/blockLabels";
 import { useMobileLearningData } from "./useMobileLearningData";
 import {
   examsForSemester,
+  examLabel,
   normalizedBlockId,
   semesterConfig,
   semesterHeading,
@@ -79,7 +80,7 @@ export function MobileAssessments() {
               onClick={() => setExamFilter(exam)}
               type="button"
             >
-              {currentSemester.exams[exam]?.label || exam}
+              {examLabel(exam)}
             </button>
           ))}
         </div>

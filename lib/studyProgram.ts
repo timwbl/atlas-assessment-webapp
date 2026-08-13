@@ -57,7 +57,7 @@ export const STUDY_PROGRAM_CONFIG = {
     available: true,
     semesters: {
       hs: {
-        label: "HS2026",
+        label: "3. Fachsemester",
         shortLabel: "HS · MC1",
         exams: {
           j2MC1: {
@@ -68,7 +68,7 @@ export const STUDY_PROGRAM_CONFIG = {
         defaultExamGroup: ["j2MC1"]
       },
       fs: {
-        label: "FS2027",
+        label: "4. Fachsemester",
         shortLabel: "FS · MC2",
         exams: {
           j2MC2: {
@@ -303,6 +303,19 @@ export function semesterHeading(settings: UserStudySettings): string {
   const year = STUDY_PROGRAM_CONFIG[settings.studyYear];
   const config = semesterConfig(settings.semester, settings.studyYear);
   return config ? `${year.label} · ${config.label}` : year.label;
+}
+
+export function examLabel(exam: ExamId | string | null | undefined): string {
+  if (!exam) return "";
+  for (const year of STUDY_YEARS) {
+    if (!year.available) continue;
+    for (const semester of semestersForStudyYear(year.id)) {
+      const config = semesterConfig(semester, year.id);
+      const label = config?.exams[exam as ExamId]?.label;
+      if (label) return label;
+    }
+  }
+  return String(exam);
 }
 
 function isStudyYear(value: unknown): value is StudyYear {

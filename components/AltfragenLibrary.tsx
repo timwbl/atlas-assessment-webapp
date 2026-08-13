@@ -32,6 +32,7 @@ import {
   examForBlock,
   examForContent,
   examsForSemester,
+  examLabel,
   isAltfragenValue,
   legacySemesterId,
   isThreeDContent,
@@ -220,7 +221,7 @@ export function AltfragenLibrary() {
           Altfragen
         </h1>
         <p className="mt-3 max-w-2xl text-[var(--muted)]">
-          Separater Fragenpool für prüfungsnahe Wiederholung. Filtere nach aktueller Lernphase, eMC oder Block.
+          Separater Fragenpool für prüfungsnahe Wiederholung. Filtere nach aktueller Lernphase, Prüfung oder Block.
         </p>
       </header>
       <nav className="mobile-library-tabs mobile-only" aria-label="Fragenbereiche">
@@ -242,11 +243,11 @@ export function AltfragenLibrary() {
                 Alle Altfragen
               </button>
               <button className={scope === "current" ? "is-active" : ""} onClick={() => setScope("current")} type="button">
-                Aktuelles Semester
+                Aktuelles Fachsemester
               </button>
               {(["eMC1", "eMC2", "eMC3", "eMC4"] as ExamId[]).map((exam) => (
                 <button className={scope === exam ? "is-active" : ""} key={exam} onClick={() => setScope(exam)} type="button">
-                  {exam}
+                  {examLabel(exam)}
                 </button>
               ))}
             </div>
@@ -327,7 +328,7 @@ export function AltfragenLibrary() {
               <div className="card altfragen-documents-empty">
                 <h3>Noch keine passenden Dokumente</h3>
                 <p>
-                  Sobald zusätzliche Altfragen hochgeladen wurden, erscheinen sie hier nach Semester und Block.
+                  Sobald zusätzliche Altfragen hochgeladen wurden, erscheinen sie hier nach Fachsemester und Block.
                 </p>
               </div>
             ) : (
@@ -339,7 +340,7 @@ export function AltfragenLibrary() {
                     <section className="altfragen-document-semester" key={semester.id}>
                       <div className="altfragen-document-semester-head">
                         <div>
-                          <div className="eyebrow">Semester</div>
+                          <div className="eyebrow">Fachsemester</div>
                           <h3>{semester.title}</h3>
                         </div>
                         <span className="pill">{semesterDocuments.length} Datei{semesterDocuments.length === 1 ? "" : "en"}</span>
@@ -432,7 +433,7 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
 
       <div className="altfragen-practice-footer">
         <span>{assessment.questionCount} Fragen</span>
-        {exam ? <span>{exam}</span> : null}
+        {exam ? <span>{examLabel(exam)}</span> : null}
         <strong>Öffnen <span aria-hidden="true">→</span></strong>
       </div>
     </Link>
@@ -482,8 +483,8 @@ function normalizeText(value: string): string {
 
 function scopeLabel(scope: Scope): string {
   if (scope === "all") return "Alle Altfragen";
-  if (scope === "current") return "Aktuelles Semester";
-  return scope;
+  if (scope === "current") return "Aktuelles Fachsemester";
+  return examLabel(scope);
 }
 
 function compareBlockIds(a: string, b: string): number {
@@ -495,5 +496,5 @@ function compareBlockIds(a: string, b: string): number {
 
 function formatBlockOptionLabel(value: string): string {
   const number = value.replace(/\D/g, "");
-  return value.startsWith("j2-") ? `2. Studienjahr · Block ${number}` : `Block ${number}`;
+  return `Block ${number}`;
 }

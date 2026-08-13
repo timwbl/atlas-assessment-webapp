@@ -14,6 +14,7 @@ import { AUTH_SESSION_CHANGED_EVENT, type CloudUser } from "@/lib/supabaseClient
 import {
   STUDY_YEARS,
   examsForSemester,
+  examLabel,
   semesterConfig,
   semesterHeading,
   semestersForStudyYear,
@@ -154,8 +155,8 @@ export function SettingsPageClient() {
     : "all";
   const activeExamLabel = settings.semester
     ? settings.examPreparation.mode === "singleExam"
-      ? activeSemester?.exams[settings.examPreparation.selectedExams[0]]?.label || settings.examPreparation.selectedExams[0] || "Nicht festgelegt"
-      : `Alle (${examsForSemester(settings.semester, settings.studyYear).map((exam) => activeSemester?.exams[exam]?.label || exam).join(", ")})`
+      ? examLabel(settings.examPreparation.selectedExams[0])
+      : `Alle (${examsForSemester(settings.semester, settings.studyYear).map(examLabel).join(", ")})`
     : "Nicht festgelegt";
 
   return (
@@ -207,7 +208,7 @@ export function SettingsPageClient() {
               <strong>{STUDY_YEARS.find((year) => year.id === settings.studyYear)?.label || "Nicht festgelegt"}</strong>
             </div>
             <div className="settings-summary-row">
-              <span>Semester / Lernphase</span>
+              <span>Fachsemester / Lernphase</span>
               <strong>{activeSemester ? `${activeSemester.label} · ${activeSemester.shortLabel}` : "Nicht festgelegt"}</strong>
             </div>
             <div className="settings-summary-row">
@@ -219,7 +220,7 @@ export function SettingsPageClient() {
           <div className="settings-edit-submenu" aria-label="Lernprofil bearbeiten">
             <div className="settings-submenu-head">
               <h3>Profil bearbeiten</h3>
-              <p>Ändere hier Name, Studienjahr, Semester und Prüfungsfilter.</p>
+              <p>Ändere hier Name, Studienjahr, Fachsemester und Prüfungsfilter.</p>
             </div>
 
             <label className="settings-edit-field">
@@ -255,7 +256,7 @@ export function SettingsPageClient() {
             {draftSettings.studyYear && semestersForStudyYear(draftSettings.studyYear).length > 0 && (
               <>
                 <div className="settings-edit-field">
-                  <span>Semester / Lernphase</span>
+                  <span>Fachsemester / Lernphase</span>
                   <div className="settings-option-list">
                     {semestersForStudyYear(draftSettings.studyYear).map((value) => {
                       const config = semesterConfig(value, draftSettings.studyYear);
@@ -289,7 +290,7 @@ export function SettingsPageClient() {
                       >
                         <span>
                           <strong>Alle Prüfungen</strong>
-                          <small>{draftSemester.defaultExamGroup.map((exam) => draftSemester.exams[exam]?.label || exam).join(", ")}</small>
+                          <small>{draftSemester.defaultExamGroup.map(examLabel).join(", ")}</small>
                         </span>
                         <em>{selectedExam === "all" ? "Ausgewählt" : "Wählen"}</em>
                       </button>
@@ -301,7 +302,7 @@ export function SettingsPageClient() {
                         type="button"
                       >
                         <span>
-                            <strong>{draftSemester.exams[exam]?.label || exam}</strong>
+                            <strong>{examLabel(exam)}</strong>
                             <small>Nur Inhalte dieser Prüfung anzeigen</small>
                           </span>
                         <em>{selectedExam === exam ? "Ausgewählt" : "Wählen"}</em>

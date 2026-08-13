@@ -94,10 +94,10 @@ type ChunkManifest = {
 };
 
 export const DOWNLOAD_SEMESTERS: Array<{ id: SemesterId; title: string; order: number }> = [
-  { id: "HS2025", title: "1. Semester", order: 1 },
-  { id: "FS2026", title: "2. Semester", order: 2 },
-  { id: "HS2026", title: "HS2026", order: 3 },
-  { id: "FS2027", title: "FS2027", order: 4 }
+  { id: "HS2025", title: "1. Fachsemester", order: 1 },
+  { id: "FS2026", title: "2. Fachsemester", order: 2 },
+  { id: "HS2026", title: "3. Fachsemester", order: 3 },
+  { id: "FS2027", title: "4. Fachsemester", order: 4 }
 ];
 
 const SUMMARY_BLOCK_CONFIG: Record<SemesterId, Array<Omit<SummaryBlock, "semester">>> = {

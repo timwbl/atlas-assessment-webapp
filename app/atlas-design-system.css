@@ -9311,3 +9311,309 @@ body.atlas-sidebar-collapsed .account-avatar {
     background: color-mix(in srgb, var(--block-picker-accent, var(--atlas-blue)) 7%, var(--atlas-panel-strong)) !important;
   }
 }
+
+/* Settings dark-mode hardening: keep profile settings in the same New ATLAS surface system. */
+@media (prefers-color-scheme: dark) {
+  body:has(.settings-page-shell) {
+    --atlas-bg: #0f1013;
+    --atlas-sidebar-bg: #18191d;
+    --atlas-panel: #202126;
+    --atlas-panel-strong: #25262b;
+    --atlas-panel-tint: #191a1f;
+    --atlas-text: #f5f5f7;
+    --atlas-secondary-text: #c1c4cc;
+    --atlas-tertiary-text: #8f949e;
+    --atlas-hairline: rgba(255, 255, 255, 0.13);
+    --atlas-hairline-strong: rgba(255, 255, 255, 0.2);
+    --bg: var(--atlas-bg);
+    --surface: var(--atlas-panel);
+    --surface-strong: var(--atlas-panel-strong);
+    --text: var(--atlas-text);
+    --muted: var(--atlas-secondary-text);
+    --line: var(--atlas-hairline);
+    background: var(--atlas-bg) !important;
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .app-main,
+  body:has(.settings-page-shell) .settings-page-shell,
+  body:has(.settings-page-shell) .shell {
+    background: var(--atlas-bg) !important;
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-page-hero,
+  body:has(.settings-page-shell) .settings-profile-card,
+  body:has(.settings-page-shell) .settings-page-card,
+  body:has(.settings-page-shell) .settings-edit-submenu,
+  body:has(.settings-page-shell) .settings-option-list,
+  body:has(.settings-page-shell) .settings-option-row,
+  body:has(.settings-page-shell) .settings-summary-row {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-panel-strong) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: var(--atlas-shadow-card) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-page-hero {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body:has(.settings-page-shell) .settings-page-hero h1,
+  body:has(.settings-page-shell) .settings-section-head h2,
+  body:has(.settings-page-shell) .settings-page-card h2,
+  body:has(.settings-page-shell) .settings-submenu-head h3,
+  body:has(.settings-page-shell) .settings-profile-copy strong,
+  body:has(.settings-page-shell) .settings-summary-row strong,
+  body:has(.settings-page-shell) .settings-option-row strong {
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-page-hero p,
+  body:has(.settings-page-shell) .settings-section-head p,
+  body:has(.settings-page-shell) .settings-submenu-head p,
+  body:has(.settings-page-shell) .settings-profile-copy span,
+  body:has(.settings-page-shell) .settings-profile-copy small,
+  body:has(.settings-page-shell) .settings-summary-row span,
+  body:has(.settings-page-shell) .settings-edit-field > span,
+  body:has(.settings-page-shell) .settings-option-row small,
+  body:has(.settings-page-shell) .settings-option-row em {
+    color: var(--atlas-secondary-text) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-profile-avatar {
+    border-color: color-mix(in srgb, var(--atlas-blue) 22%, var(--atlas-hairline)) !important;
+    background: color-mix(in srgb, var(--atlas-blue) 12%, var(--atlas-panel-tint)) !important;
+    color: var(--atlas-blue) !important;
+    box-shadow: none !important;
+  }
+
+  body:has(.settings-page-shell) .settings-profile-edit,
+  body:has(.settings-page-shell) .settings-edit-actions .btn-secondary,
+  body:has(.settings-page-shell) .settings-option-row {
+    border-color: var(--atlas-hairline) !important;
+    background: color-mix(in srgb, var(--atlas-panel-tint) 76%, black) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+  }
+
+  body:has(.settings-page-shell) .settings-option-row.is-selected,
+  body:has(.settings-page-shell) .settings-option-row:hover {
+    border-color: color-mix(in srgb, var(--atlas-blue) 34%, var(--atlas-hairline)) !important;
+    background: color-mix(in srgb, var(--atlas-blue) 12%, var(--atlas-panel-strong)) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-edit-field .input,
+  body:has(.settings-page-shell) .atlas-dropdown-trigger,
+  body:has(.settings-page-shell) .atlas-dropdown-menu {
+    border-color: var(--atlas-hairline) !important;
+    background: color-mix(in srgb, var(--atlas-panel-tint) 76%, black) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+  }
+}
+
+.dark body:has(.settings-page-shell),
+.dark body:has(.settings-page-shell) .app-main,
+.dark body:has(.settings-page-shell) .settings-page-shell,
+.dark body:has(.settings-page-shell) .shell {
+  background: var(--atlas-bg) !important;
+  color: var(--atlas-text) !important;
+}
+
+.dark body:has(.settings-page-shell) .settings-profile-card,
+.dark body:has(.settings-page-shell) .settings-page-card,
+.dark body:has(.settings-page-shell) .settings-edit-submenu,
+.dark body:has(.settings-page-shell) .settings-option-list,
+.dark body:has(.settings-page-shell) .settings-option-row,
+.dark body:has(.settings-page-shell) .settings-summary-row {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: var(--atlas-shadow-card) !important;
+}
+
+.dark body:has(.settings-page-shell) .settings-page-hero {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.dark body:has(.settings-page-shell) .settings-page-hero h1,
+.dark body:has(.settings-page-shell) .settings-section-head h2,
+.dark body:has(.settings-page-shell) .settings-page-card h2,
+.dark body:has(.settings-page-shell) .settings-submenu-head h3,
+.dark body:has(.settings-page-shell) .settings-profile-copy strong,
+.dark body:has(.settings-page-shell) .settings-summary-row strong,
+.dark body:has(.settings-page-shell) .settings-option-row strong {
+  color: var(--atlas-text) !important;
+}
+
+.dark body:has(.settings-page-shell) .settings-page-hero p,
+.dark body:has(.settings-page-shell) .settings-section-head p,
+.dark body:has(.settings-page-shell) .settings-submenu-head p,
+.dark body:has(.settings-page-shell) .settings-profile-copy span,
+.dark body:has(.settings-page-shell) .settings-profile-copy small,
+.dark body:has(.settings-page-shell) .settings-summary-row span,
+.dark body:has(.settings-page-shell) .settings-edit-field > span,
+.dark body:has(.settings-page-shell) .settings-option-row small,
+.dark body:has(.settings-page-shell) .settings-option-row em {
+  color: var(--atlas-secondary-text) !important;
+}
+
+.dark body:has(.settings-page-shell) .settings-profile-avatar {
+  border-color: color-mix(in srgb, var(--atlas-blue) 22%, var(--atlas-hairline)) !important;
+  background: color-mix(in srgb, var(--atlas-blue) 12%, var(--atlas-panel-tint)) !important;
+  color: var(--atlas-blue) !important;
+  box-shadow: none !important;
+}
+
+.dark body:has(.settings-page-shell) .settings-profile-edit,
+.dark body:has(.settings-page-shell) .settings-edit-actions .btn-secondary,
+.dark body:has(.settings-page-shell) .settings-edit-field .input,
+.dark body:has(.settings-page-shell) .atlas-dropdown-trigger,
+.dark body:has(.settings-page-shell) .atlas-dropdown-menu {
+  border-color: var(--atlas-hairline) !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 76%, black) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:has(.settings-page-shell),
+  body:has(.settings-page-shell) {
+    background: #0f1013 !important;
+  }
+
+  body:has(.settings-page-shell) .main-nav,
+  body:has(.settings-page-shell) .app-topbar {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-sidebar-bg) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+
+  body:has(.settings-page-shell) .atlas-brand,
+  body:has(.settings-page-shell) .main-nav-label,
+  body:has(.settings-page-shell) .main-nav-item,
+  body:has(.settings-page-shell) .app-topbar-title,
+  body:has(.settings-page-shell) .app-sidebar-toggle {
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .main-nav-item.is-active {
+    background: color-mix(in srgb, var(--atlas-blue) 16%, transparent) !important;
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .account-card,
+  body:has(.settings-page-shell) .account-avatar {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-panel-strong) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: none !important;
+  }
+
+  body:has(.settings-page-shell) .settings-summary-list {
+    background: transparent !important;
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-submenu-head,
+  body:has(.settings-page-shell) .settings-edit-field,
+  body:has(.settings-page-shell) .settings-edit-toggle,
+  body:has(.settings-page-shell) .settings-edit-actions {
+    border-color: var(--atlas-hairline) !important;
+    background: transparent !important;
+    color: var(--atlas-text) !important;
+  }
+
+  body:has(.settings-page-shell) .settings-edit-toggle strong,
+  body:has(.settings-page-shell) .settings-edit-toggle small {
+    color: inherit !important;
+  }
+}
+
+body.dark:has(.settings-page-shell),
+.dark:has(.settings-page-shell) {
+  --atlas-bg: #0f1013;
+  --atlas-sidebar-bg: #18191d;
+  --atlas-panel: #202126;
+  --atlas-panel-strong: #25262b;
+  --atlas-panel-tint: #191a1f;
+  --atlas-text: #f5f5f7;
+  --atlas-secondary-text: #c1c4cc;
+  --atlas-tertiary-text: #8f949e;
+  --atlas-hairline: rgba(255, 255, 255, 0.13);
+  --atlas-hairline-strong: rgba(255, 255, 255, 0.2);
+  --bg: var(--atlas-bg);
+  --surface: var(--atlas-panel);
+  --surface-strong: var(--atlas-panel-strong);
+  --text: var(--atlas-text);
+  --muted: var(--atlas-secondary-text);
+  --line: var(--atlas-hairline);
+  background: var(--atlas-bg) !important;
+  color: var(--atlas-text) !important;
+}
+
+body.dark:has(.settings-page-shell) .main-nav,
+body.dark:has(.settings-page-shell) .app-topbar,
+.dark:has(.settings-page-shell) .main-nav,
+.dark:has(.settings-page-shell) .app-topbar {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-sidebar-bg) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.dark:has(.settings-page-shell) .settings-page-shell,
+body.dark:has(.settings-page-shell) .app-main,
+body.dark:has(.settings-page-shell) .shell,
+.dark:has(.settings-page-shell) .settings-page-shell,
+.dark:has(.settings-page-shell) .app-main,
+.dark:has(.settings-page-shell) .shell {
+  background: var(--atlas-bg) !important;
+  color: var(--atlas-text) !important;
+}
+
+body.dark:has(.settings-page-shell) .settings-profile-card,
+body.dark:has(.settings-page-shell) .settings-page-card,
+body.dark:has(.settings-page-shell) .settings-edit-submenu,
+body.dark:has(.settings-page-shell) .settings-option-list,
+body.dark:has(.settings-page-shell) .settings-option-row,
+body.dark:has(.settings-page-shell) .settings-summary-row,
+.dark:has(.settings-page-shell) .settings-profile-card,
+.dark:has(.settings-page-shell) .settings-page-card,
+.dark:has(.settings-page-shell) .settings-edit-submenu,
+.dark:has(.settings-page-shell) .settings-option-list,
+.dark:has(.settings-page-shell) .settings-option-row,
+.dark:has(.settings-page-shell) .settings-summary-row {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: var(--atlas-shadow-card) !important;
+}
+
+body.dark:has(.settings-page-shell) .settings-page-hero,
+.dark:has(.settings-page-shell) .settings-page-hero {
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.dark:has(.settings-page-shell) .settings-submenu-head,
+body.dark:has(.settings-page-shell) .settings-edit-field,
+body.dark:has(.settings-page-shell) .settings-edit-toggle,
+body.dark:has(.settings-page-shell) .settings-edit-actions,
+.dark:has(.settings-page-shell) .settings-submenu-head,
+.dark:has(.settings-page-shell) .settings-edit-field,
+.dark:has(.settings-page-shell) .settings-edit-toggle,
+.dark:has(.settings-page-shell) .settings-edit-actions {
+  border-color: var(--atlas-hairline) !important;
+  background: transparent !important;
+  color: var(--atlas-text) !important;
+}

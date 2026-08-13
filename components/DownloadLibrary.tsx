@@ -19,6 +19,7 @@ import {
 } from "@/lib/summaryDownloads";
 import {
   examsForSemester,
+  examLabel,
   legacySemesterId,
   normalizedBlockId,
   selectedBlockIds,
@@ -142,7 +143,7 @@ export function DownloadLibrary() {
         <div>
           <div className="eyebrow">ATLAS Zusammenfassungen</div>
           <h1>Zusammenfassungen</h1>
-          <p>Wähle Semester, Prüfung und Block. ATLAS zeigt dir nur die passenden Lernunterlagen.</p>
+          <p>Wähle Fachsemester, Prüfung und Block. ATLAS zeigt dir nur die passenden Lernunterlagen.</p>
         </div>
         <aside className="summary-page-note">
           <strong>Hinweis</strong>
@@ -154,7 +155,7 @@ export function DownloadLibrary() {
         <div className="summary-control-head">
           <div>
             <strong>Auswahl</strong>
-            <span>{semester ? semesterTitle(semester) : "Noch kein Semester gewählt"}</span>
+            <span>{semester ? semesterTitle(semester) : "Noch kein Fachsemester gewählt"}</span>
           </div>
           {examConfig && settings.studyYear === studyProfile?.studyYear && (
             <div className="study-filter-chips study-filter-chips--library" aria-label="Prüfungsfilter">
@@ -168,7 +169,7 @@ export function DownloadLibrary() {
                   onClick={() => setExamFilter(exam)}
                   type="button"
                 >
-                  {exam}
+                  {examLabel(exam)}
                 </button>
               ))}
             </div>
@@ -176,9 +177,9 @@ export function DownloadLibrary() {
         </div>
         <div className="summary-control-grid">
           <label className="summary-control-field">
-            <span>Semester</span>
+            <span>Fachsemester</span>
             <AtlasDropdown
-              ariaLabel="Semester auswählen"
+              ariaLabel="Fachsemester auswählen"
               value={semester}
               onChange={(nextSemester) => {
                 setSemester(nextSemester);
@@ -231,15 +232,15 @@ export function DownloadLibrary() {
         <section className="card library-empty-card summary-empty-card mt-5 p-8 text-center">
           <div className="eyebrow">Noch leer</div>
           <h2 className="mt-2 text-2xl font-black">Noch keine Zusammenfassungen hochgeladen</h2>
-          <p className="mt-2 text-[var(--muted)]">Sobald im Admin-Bereich Dateien hinzugefügt wurden, erscheinen sie hier nach Semester und Block.</p>
+          <p className="mt-2 text-[var(--muted)]">Sobald im Admin-Bereich Dateien hinzugefügt wurden, erscheinen sie hier nach Fachsemester und Block.</p>
         </section>
       )}
 
       {!loading && downloads.length > 0 && !semester && (
         <section className="card library-empty-card summary-empty-card mt-5 p-8 text-center">
           <div className="eyebrow">Bereit</div>
-          <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Semester</h2>
-          <p className="mt-2 text-[var(--muted)]">Danach erscheinen nur die Blöcke und Zusammenfassungen des ausgewählten Semesters.</p>
+          <h2 className="mt-2 text-2xl font-black">Bitte wähle ein Fachsemester</h2>
+          <p className="mt-2 text-[var(--muted)]">Danach erscheinen nur die Blöcke und Zusammenfassungen des ausgewählten Fachsemesters.</p>
         </section>
       )}
 
@@ -249,7 +250,7 @@ export function DownloadLibrary() {
             <div key={semesterItem.id}>
               <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
                 <div>
-                  <div className="eyebrow">Semester</div>
+                  <div className="eyebrow">Fachsemester</div>
                   <h2 className="text-3xl font-black">{semesterTitle(semesterItem.id)}</h2>
                 </div>
                 <span className="pill">
