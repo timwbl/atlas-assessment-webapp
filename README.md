@@ -161,6 +161,10 @@ where email = 'deine-email@example.com';
 
 Normale User können ohne Login weiter lernen. Mit Login wird ihr lokaler Fortschritt mit Supabase synchronisiert. Im Admin-Modus erscheint zusätzlich ein Cloud-Progress-Dashboard für synchronisierte Accounts.
 
+### Externe Logins
+
+ATLAS unterstützt Google über Supabase Auth. Google wird als Standard-Provider in Supabase aktiviert.
+
 ## Globaler Umbau-Modus
 
 1. `supabase/maintenance-mode.sql` einmal im Supabase SQL Editor ausführen.
