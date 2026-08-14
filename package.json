@@ -17,6 +17,7 @@
     "catalog:test": "rm -rf .catalog-test && tsc lib/assessmentCatalog.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .catalog-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/assessment-catalog-test.cjs ./.catalog-test/assessmentCatalog.js && rm -rf .catalog-test"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
     "@types/pdfkit": "^0.17.6",
     "next": "^15.3.0",
     "nodemailer": "^8.0.11",

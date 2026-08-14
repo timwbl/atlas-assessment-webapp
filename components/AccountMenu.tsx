@@ -17,6 +17,13 @@ import {
 } from "@/lib/cloudProgress";
 import { getAllProgress } from "@/lib/progressStore";
 import {
+  clearOAuthClientSession,
+  linkOAuthProvider,
+  OAUTH_PROVIDERS,
+  signInWithOAuthProvider,
+  type AtlasOAuthProvider
+} from "@/lib/supabaseOAuth";
+import {
   AUTH_SESSION_CHANGED_EVENT,
   shouldRememberSession,
   type CloudUser
@@ -218,11 +225,24 @@ export function AccountMenu() {
   async function logout() {
     await run(async () => {
       await signOut();
+      await clearOAuthClientSession();
       setUser(null);
       setProfile(null);
       setProfileChecked(true);
       setAuthOpen(false);
       setStatus("Abgemeldet. Lokaler Fortschritt bleibt erhalten.");
+    });
+  }
+
+  async function startOAuth(provider: AtlasOAuthProvider) {
+    await run(async () => {
+      await signInWithOAuthProvider(provider, rememberMe);
+    });
+  }
+
+  async function connectOAuth(provider: AtlasOAuthProvider) {
+    await run(async () => {
+      await linkOAuthProvider(provider);
     });
   }
 
@@ -312,6 +332,20 @@ export function AccountMenu() {
                   label="Synchronisieren"
                   onClick={() => void syncNow()}
                 />
+                <div className="account-provider-links" aria-label="Login-Anbieter verknüpfen">
+                  {OAUTH_PROVIDERS.map((item) => (
+                    <button
+                      className="account-provider-link"
+                      disabled={busy}
+                      key={item.provider}
+                      onClick={() => void connectOAuth(item.provider)}
+                      type="button"
+                    >
+                      <span>{item.mark}</span>
+                      <strong>{item.label} verbinden</strong>
+                    </button>
+                  ))}
+                </div>
                 <AccountMenuItem
                   danger
                   detail="Lokal bleibt alles erhalten"
@@ -424,6 +458,28 @@ export function AccountMenu() {
               </div>
             ) : (
             <div className="auth-form">
+              {authMode !== "name" && (
+                <>
+                  <div className="auth-provider-grid" aria-label="Mit externem Anbieter fortfahren">
+                    {OAUTH_PROVIDERS.map((item) => (
+                      <button
+                        className="auth-provider-button"
+                        disabled={busy}
+                        key={item.provider}
+                        onClick={() => void startOAuth(item.provider)}
+                        type="button"
+                      >
+                        <span>{item.mark}</span>
+                        <strong>Mit {item.label} fortfahren</strong>
+                      </button>
+                    ))}
+                  </div>
+                  <div className="auth-divider" role="presentation">
+                    <span>oder mit E-Mail</span>
+                  </div>
+                </>
+              )}
+
               {(authMode === "signup" || authMode === "name") && (
                 <label>
                   <span>Name</span>

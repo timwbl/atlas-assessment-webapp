@@ -4458,6 +4458,64 @@ select.input {
   color: color-mix(in srgb, #ff3b30 82%, var(--atlas-secondary-text));
 }
 
+.account-provider-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding: 2px;
+}
+
+.account-provider-link {
+  display: grid;
+  min-width: 0;
+  min-height: 42px;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--atlas-hairline);
+  border-radius: 14px;
+  background: var(--atlas-panel-strong);
+  padding: 8px 9px;
+  color: var(--atlas-text);
+  text-align: left;
+  transition:
+    background-color var(--atlas-motion-fast) var(--atlas-ease-standard),
+    border-color var(--atlas-motion-fast) var(--atlas-ease-standard),
+    transform var(--atlas-motion-fast) var(--atlas-ease-standard);
+}
+
+.account-provider-link:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--atlas-blue) 22%, var(--atlas-hairline));
+  background: color-mix(in srgb, var(--atlas-blue) 6%, var(--atlas-panel-strong));
+  transform: translateY(-1px);
+}
+
+.account-provider-link:disabled {
+  cursor: progress;
+  opacity: 0.58;
+}
+
+.account-provider-link span {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--atlas-blue) 9%, var(--atlas-panel));
+  color: var(--atlas-text);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.account-provider-link strong {
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 760;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .account-popover-companion {
   border-top: 1px solid var(--atlas-hairline);
   padding: 9px 14px 11px;
