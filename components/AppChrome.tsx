@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AtlasBrand } from "./AtlasBrand";
@@ -114,6 +115,8 @@ export function AppChrome() {
       <StudyPrompts />
       <div className={isPageEnd ? "site-copyright is-visible" : "site-copyright"} aria-hidden={!isPageEnd}>
         <span>WebApp-Version {APP_VERSION}</span>
+        <Link href="/datenschutz">Datenschutz</Link>
+        <Link href="/nutzungsbedingungen">Nutzungsbedingungen</Link>
         <span>Copyright by Tim Weibel</span>
       </div>
       <AdminShortcut />
@@ -188,5 +191,7 @@ function topbarMeta(pathname: string, isAltfragenContext = false): { label: stri
   if (pathname.startsWith("/downloads")) return { label: "Zusammenfassungen", icon: "folder" };
   if (pathname.startsWith("/altfragen")) return { label: "Altfragen", icon: "archive" };
   if (pathname.startsWith("/settings")) return { label: "Einstellungen", icon: "settings" };
+  if (pathname.startsWith("/datenschutz")) return { label: "Datenschutz", icon: "shield" };
+  if (pathname.startsWith("/nutzungsbedingungen")) return { label: "Nutzungsbedingungen", icon: "clipboard" };
   return { label: "ATLAS", icon: "dashboard" };
 }

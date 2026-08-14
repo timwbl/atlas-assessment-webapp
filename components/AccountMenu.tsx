@@ -314,6 +314,24 @@ export function AccountMenu() {
                   window.location.href = "mailto:tim.nick.weibel@icloud.com?subject=ATLAS%20Feedback";
                 }}
               />
+              <AccountMenuItem
+                detail="Wie ATLAS Daten verarbeitet"
+                icon="shield"
+                label="Datenschutz"
+                onClick={() => {
+                  setOpen(false);
+                  router.push("/datenschutz");
+                }}
+              />
+              <AccountMenuItem
+                detail="Regeln für die Nutzung"
+                icon="clipboard"
+                label="Nutzungsbedingungen"
+                onClick={() => {
+                  setOpen(false);
+                  router.push("/nutzungsbedingungen");
+                }}
+              />
             </div>
 
             {!cloudSyncAvailable() && (
