@@ -1,6 +1,7 @@
 "use client";
 
 import type { Assessment } from "./types";
+import { getCurrentProfile } from "./cloudProgress";
 import {
   DOWNLOAD_SEMESTERS,
   getSummaryBlock,
@@ -56,6 +57,11 @@ export function summaryLinkId(assessment: Assessment): string {
   return assessment.id;
 }
 
+export async function canEditSummaryLinks(): Promise<boolean> {
+  const profile = await getCurrentProfile().catch(() => null);
+  return profile?.role === "admin";
+}
+
 export async function resolveSummaryLink(assessment: Assessment): Promise<ResolvedSummaryLink | null> {
   const [downloads, links] = await Promise.all([
     loadSummaryDownloads(),
@@ -104,6 +110,10 @@ export async function loadSummaryLinks(): Promise<SummaryLink[]> {
 }
 
 export async function saveSummaryLink(link: SummaryLink): Promise<SummaryLink> {
+  if (!await canEditSummaryLinks()) {
+    throw new Error("Nur Administrator:innen können Zusammenfassungsseiten verknüpfen.");
+  }
+
   const now = new Date().toISOString();
   const normalized: SummaryLink = {
     ...link,

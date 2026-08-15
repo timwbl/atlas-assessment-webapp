@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AtlasIcon } from "./AtlasIcon";
 import { openSummaryDownload, loadSummaryDownloads, type SummaryDownload } from "@/lib/summaryDownloads";
 import {
+  canEditSummaryLinks,
   createDraftSummaryLink,
   findCandidateSummaries,
   pageRangeLabel,
@@ -13,6 +14,7 @@ import {
   type ResolvedSummaryLink,
   type SummaryLink
 } from "@/lib/summaryLinks";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 import type { Assessment } from "@/lib/types";
 
 type Props = {
@@ -29,6 +31,7 @@ export function SummaryLinkPanel({ assessment }: Props) {
   const [sectionTitle, setSectionTitle] = useState("");
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
+  const [canEdit, setCanEdit] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -43,6 +46,30 @@ export function SummaryLinkPanel({ assessment }: Props) {
       active = false;
     };
   }, [assessment]);
+
+  useEffect(() => {
+    let active = true;
+    function refreshPermission() {
+      void canEditSummaryLinks()
+        .then((allowed) => {
+          if (!active) return;
+          setCanEdit(allowed);
+          if (!allowed) setEditing(false);
+        })
+        .catch(() => {
+          if (!active) return;
+          setCanEdit(false);
+          setEditing(false);
+        });
+    }
+
+    refreshPermission();
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, refreshPermission);
+    return () => {
+      active = false;
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, refreshPermission);
+    };
+  }, []);
 
   const candidates = useMemo(() => {
     const preferred = findCandidateSummaries(assessment, downloads);
@@ -127,7 +154,9 @@ export function SummaryLinkPanel({ assessment }: Props) {
           <p>
             {resolved?.exact
               ? `${resolved.summary.title} · ${pageRangeLabel(resolved)}`
-              : "Block-Zusammenfassung gefunden. Hinterlege eine Seite, damit ATLAS direkt dorthin springt."}
+              : canEdit
+                ? "Block-Zusammenfassung gefunden. Hinterlege eine Seite, damit ATLAS direkt dorthin springt."
+                : "Passende Block-Zusammenfassung für diese Übung."}
           </p>
         </div>
       </div>
@@ -138,12 +167,14 @@ export function SummaryLinkPanel({ assessment }: Props) {
             Öffnen
           </button>
         )}
-        <button type="button" className="summary-link-ghost" onClick={() => setEditing((value) => !value)}>
-          {editing ? "Schliessen" : resolved?.exact ? "Bearbeiten" : "Seite setzen"}
-        </button>
+        {canEdit && (
+          <button type="button" className="summary-link-ghost" onClick={() => setEditing((value) => !value)}>
+            {editing ? "Schliessen" : resolved?.exact ? "Bearbeiten" : "Seite setzen"}
+          </button>
+        )}
       </div>
 
-      {editing && (
+      {canEdit && editing && (
         <div className="summary-link-editor">
           <div className="summary-link-summary-list" role="listbox" aria-label="Zusammenfassung auswählen">
             {candidates.slice(0, 8).map((item) => (

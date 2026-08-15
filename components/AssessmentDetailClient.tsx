@@ -144,7 +144,6 @@ export function AssessmentDetailClient({ id }: { id: string }) {
             <span>{counts.kprim} KPRIM</span>
             <span>{counts.review} Review</span>
           </div>
-          <SummaryLinkPanel assessment={assessment} />
         </div>
 
         <aside className="assessment-launch-panel" aria-label="Übung starten">
@@ -197,6 +196,8 @@ export function AssessmentDetailClient({ id }: { id: string }) {
               </div>
             )) : <p className="assessment-detail-empty">Keine Lernziele im JSON hinterlegt.</p>}
           </div>
+
+          <SummaryLinkPanel assessment={assessment} />
         </article>
 
         <aside className="assessment-detail-card assessment-detail-side-card">
