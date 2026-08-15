@@ -419,6 +419,51 @@ export async function triggerSummaryDownload(summary: SummaryDownload): Promise<
   link.remove();
 }
 
+export async function openSummaryDownload(summary: SummaryDownload, options: { page?: number } = {}): Promise<void> {
+  const popup = window.open("about:blank", "_blank", "noopener,noreferrer");
+
+  try {
+    const complete = summary.fileData ? summary : await loadSummaryDownloadFile(summary.id);
+    if (!complete?.fileData && !complete?.downloadUrl && !complete?.filePath) {
+      throw new Error("Zusammenfassung ist nicht verfügbar.");
+    }
+
+    const chunkManifest = decodeChunkManifest(complete.filePath);
+    let revokeUrl = "";
+    let href = "";
+    if (chunkManifest) {
+      href = await createChunkDownloadUrl(chunkManifest);
+      revokeUrl = href;
+    } else if (complete.fileData?.startsWith("data:")) {
+      href = dataUrlToObjectUrl(complete.fileData);
+      revokeUrl = href;
+    } else {
+      href = complete.fileData || complete.downloadUrl || (complete.filePath ? publicStorageUrl(STORAGE_BUCKET, complete.filePath) : "");
+    }
+
+    const target = withPdfPageFragment(href, options.page);
+    if (popup) {
+      popup.location.href = target;
+    } else {
+      openSummaryTargetWithLink(target);
+    }
+    if (revokeUrl) window.setTimeout(() => URL.revokeObjectURL(revokeUrl), 60_000);
+  } catch (error) {
+    popup?.close();
+    throw error;
+  }
+}
+
+function openSummaryTargetWithLink(target: string): void {
+    const link = document.createElement("a");
+    link.href = target;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
 export async function uploadSummaryFileToStorage(file: File, summaryId: string): Promise<{ filePath: string; downloadUrl?: string }> {
   const profile = await getCurrentProfile().catch(() => null);
   if (!isSupabaseConfigured() || profile?.role !== "admin") {
@@ -497,6 +542,23 @@ function writeLocalDownloads(items: SummaryDownload[]): void {
 function notifyDownloadsChanged(): void {
   if (typeof window === "undefined") return;
   window.dispatchEvent(new Event(SUMMARY_DOWNLOADS_CHANGED_EVENT));
+}
+
+function withPdfPageFragment(href: string, page?: number): string {
+  const safePage = Math.floor(Number(page) || 0);
+  if (!safePage || safePage < 1) return href;
+  return `${href.split("#")[0]}#page=${safePage}`;
+}
+
+function dataUrlToObjectUrl(dataUrl: string): string {
+  const [header, payload = ""] = dataUrl.split(",");
+  const mime = header.match(/^data:([^;]+)/)?.[1] || "application/octet-stream";
+  const binary = atob(payload);
+  const bytes = new Uint8Array(binary.length);
+  for (let index = 0; index < binary.length; index += 1) {
+    bytes[index] = binary.charCodeAt(index);
+  }
+  return URL.createObjectURL(new Blob([bytes], { type: mime }));
 }
 
 function normalizeDownload(download: SummaryDownload): SummaryDownload {

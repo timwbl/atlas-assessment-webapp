@@ -21,7 +21,7 @@ create table if not exists public.user_progress (
 create table if not exists public.summary_downloads (
   id text primary key,
   title text not null,
-  semester text not null check (semester in ('HS2025', 'FS2026')),
+  semester text not null check (semester in ('HS2025', 'FS2026', 'HS2026', 'FS2027')),
   block_id text not null,
   block_title text not null,
   description text,
@@ -38,9 +38,24 @@ create table if not exists public.summary_downloads (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.summary_links (
+  id text primary key,
+  assessment_id text not null,
+  lecture_code text not null,
+  assessment_title text not null,
+  summary_id text not null,
+  block_id text not null,
+  page_start integer check (page_start is null or page_start > 0),
+  page_end integer check (page_end is null or (page_start is not null and page_end >= page_start)),
+  section_title text,
+  note text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
 create table if not exists public.assessment_block_recommendations (
   id text primary key,
-  semester text not null check (semester in ('HS2025', 'FS2026')),
+  semester text not null check (semester in ('HS2025', 'FS2026', 'HS2026', 'FS2027')),
   block_id text not null,
   block_title text not null,
   rating integer check (rating between 1 and 10),
@@ -95,6 +110,14 @@ on conflict (key) do nothing;
 
 alter table public.summary_downloads add column if not exists file_path text;
 alter table public.summary_downloads alter column file_data drop not null;
+alter table public.summary_downloads drop constraint if exists summary_downloads_semester_check;
+alter table public.summary_downloads
+  add constraint summary_downloads_semester_check
+  check (semester in ('HS2025', 'FS2026', 'HS2026', 'FS2027'));
+alter table public.assessment_block_recommendations drop constraint if exists assessment_block_recommendations_semester_check;
+alter table public.assessment_block_recommendations
+  add constraint assessment_block_recommendations_semester_check
+  check (semester in ('HS2025', 'FS2026', 'HS2026', 'FS2027'));
 
 insert into storage.buckets (id, name, public, file_size_limit)
 values ('summary-downloads', 'summary-downloads', true, 314572800)
@@ -106,6 +129,9 @@ create index if not exists user_progress_assessment_idx on public.user_progress(
 create index if not exists user_progress_updated_idx on public.user_progress(updated_at desc);
 create index if not exists summary_downloads_semester_block_idx on public.summary_downloads(semester, block_id);
 create index if not exists summary_downloads_updated_idx on public.summary_downloads(updated_at desc);
+create index if not exists summary_links_assessment_idx on public.summary_links(assessment_id);
+create index if not exists summary_links_lecture_idx on public.summary_links(lecture_code, assessment_title);
+create index if not exists summary_links_summary_idx on public.summary_links(summary_id);
 create index if not exists assessment_block_recommendations_semester_block_idx on public.assessment_block_recommendations(semester, block_id);
 create index if not exists assessment_reviews_assessment_idx on public.assessment_reviews(assessment_id);
 create index if not exists assessment_reviews_updated_idx on public.assessment_reviews(updated_at desc);
@@ -182,6 +208,7 @@ for each row execute function public.protect_profile_role();
 alter table public.profiles enable row level security;
 alter table public.user_progress enable row level security;
 alter table public.summary_downloads enable row level security;
+alter table public.summary_links enable row level security;
 alter table public.assessment_block_recommendations enable row level security;
 alter table public.assessment_reviews enable row level security;
 alter table public.altfragen_access_requests enable row level security;
@@ -281,6 +308,31 @@ create policy "summary_storage_delete_admin"
 on storage.objects
 for delete
 using (bucket_id = 'summary-downloads' and public.is_admin());
+
+drop policy if exists "summary_links_select_public" on public.summary_links;
+create policy "summary_links_select_public"
+on public.summary_links
+for select
+using (true);
+
+drop policy if exists "summary_links_insert_admin" on public.summary_links;
+create policy "summary_links_insert_admin"
+on public.summary_links
+for insert
+with check (public.is_admin());
+
+drop policy if exists "summary_links_update_admin" on public.summary_links;
+create policy "summary_links_update_admin"
+on public.summary_links
+for update
+using (public.is_admin())
+with check (public.is_admin());
+
+drop policy if exists "summary_links_delete_admin" on public.summary_links;
+create policy "summary_links_delete_admin"
+on public.summary_links
+for delete
+using (public.is_admin());
 
 drop policy if exists "assessment_block_recommendations_select_public" on public.assessment_block_recommendations;
 create policy "assessment_block_recommendations_select_public"

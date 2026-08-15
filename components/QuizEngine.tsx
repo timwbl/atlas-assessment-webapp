@@ -6,6 +6,7 @@ import { QuestionRenderer } from "./QuestionRenderer";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { ResultsPage } from "./ResultsPage";
 import { AtlasIcon } from "./AtlasIcon";
+import { SummaryLinkButton } from "./SummaryLinkPanel";
 import { useCompanion } from "./companion/CompanionProvider";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { analyzeAssessmentResults } from "@/lib/assessmentAnalysis";
@@ -372,6 +373,7 @@ export function QuizEngine({
             <AtlasIcon name="bookmark" />
             <span>{stat?.markedForReview ? "Markiert" : "Review"}</span>
           </button>
+          <SummaryLinkButton assessment={assessment} />
         </div>
 
         <div className="atlas-quiz-progress-row">

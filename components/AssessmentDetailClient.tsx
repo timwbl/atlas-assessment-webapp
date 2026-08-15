@@ -7,6 +7,7 @@ import { AltfragenAccessPanel } from "./AltfragenAccessPanel";
 import { AssessmentPublicReviews } from "./AssessmentPublicReviews";
 import { AtlasIcon } from "./AtlasIcon";
 import { PageState } from "./ui/PageState";
+import { SummaryLinkPanel } from "./SummaryLinkPanel";
 import { ALTFRAGEN_ACCESS_CHANGED_EVENT, canAccessAltfragen, isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { loadAssessmentById } from "@/lib/assessmentClient";
 import { ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT } from "@/lib/assessmentRouteContext";
@@ -143,6 +144,7 @@ export function AssessmentDetailClient({ id }: { id: string }) {
             <span>{counts.kprim} KPRIM</span>
             <span>{counts.review} Review</span>
           </div>
+          <SummaryLinkPanel assessment={assessment} />
         </div>
 
         <aside className="assessment-launch-panel" aria-label="Übung starten">
