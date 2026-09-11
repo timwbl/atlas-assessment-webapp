@@ -10471,3 +10471,76 @@ body.dark:has(.settings-page-shell) .settings-edit-actions,
 .dark .summary-link-quiz-button {
   background: color-mix(in srgb, var(--atlas-panel-strong) 88%, #000);
 }
+
+/* Summary library: explicit dark surfaces override the light-only component accents. */
+.dark .summary-library-shell .summary-page-note,
+.dark .summary-library-shell .summary-control-card,
+.dark .summary-library-shell .summary-empty-card.library-empty-card {
+  border-color: var(--atlas-hairline) !important;
+  background: var(--atlas-panel-strong) !important;
+  color: var(--atlas-text) !important;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .22) !important;
+}
+
+.dark .summary-library-shell .summary-control-field .input,
+.dark .summary-library-shell .atlas-dropdown-trigger {
+  border-color: var(--atlas-hairline) !important;
+  background: color-mix(in srgb, var(--atlas-panel-tint) 82%, #000) !important;
+  color: var(--atlas-text) !important;
+}
+
+.dark .summary-library-shell .summary-empty-card h2 {
+  color: var(--atlas-text) !important;
+}
+
+.dark .summary-library-shell .summary-empty-card .eyebrow {
+  color: var(--atlas-blue) !important;
+}
+
+.dark .summary-library-shell .summary-empty-card p,
+.dark .summary-library-shell .summary-page-note span,
+.dark .summary-library-shell .summary-control-head span,
+.dark .summary-library-shell .summary-control-field > span {
+  color: var(--atlas-secondary-text) !important;
+}
+
+.dark .summary-library-shell .atlas-dropdown.is-disabled {
+  opacity: .66;
+}
+
+@media (prefers-color-scheme: dark) {
+  .summary-library-shell .summary-page-note,
+  .summary-library-shell .summary-control-card,
+  .summary-library-shell .summary-empty-card.library-empty-card {
+    border-color: var(--atlas-hairline) !important;
+    background: var(--atlas-panel-strong) !important;
+    color: var(--atlas-text) !important;
+    box-shadow: 0 12px 34px rgba(0, 0, 0, .22) !important;
+  }
+
+  .summary-library-shell .summary-control-field .input,
+  .summary-library-shell .atlas-dropdown-trigger {
+    border-color: var(--atlas-hairline) !important;
+    background: color-mix(in srgb, var(--atlas-panel-tint) 82%, #000) !important;
+    color: var(--atlas-text) !important;
+  }
+
+  .summary-library-shell .summary-empty-card h2 {
+    color: var(--atlas-text) !important;
+  }
+
+  .summary-library-shell .summary-empty-card .eyebrow {
+    color: var(--atlas-blue) !important;
+  }
+
+  .summary-library-shell .summary-empty-card p,
+  .summary-library-shell .summary-page-note span,
+  .summary-library-shell .summary-control-head span,
+  .summary-library-shell .summary-control-field > span {
+    color: var(--atlas-secondary-text) !important;
+  }
+
+  .summary-library-shell .atlas-dropdown.is-disabled {
+    opacity: .66;
+  }
+}
