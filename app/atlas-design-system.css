@@ -4135,6 +4135,91 @@ select.input {
   }
 }
 
+.atlas-logo-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 24px;
+  min-height: 100dvh;
+  color: var(--atlas-text-muted, var(--muted));
+  background:
+    radial-gradient(circle at 50% 44%, var(--atlas-panel-strong, #fff) 0%, var(--atlas-bg, var(--bg)) 48%, var(--atlas-bg-deep, var(--bg)) 100%);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 280ms var(--atlas-ease-out, ease), visibility 280ms var(--atlas-ease-out, ease);
+}
+
+.atlas-logo-loader.is-leaving {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.atlas-logo-loader-mark {
+  position: relative;
+  display: grid;
+  width: 190px;
+  height: 190px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--atlas-blue, var(--accent)) 10%, var(--atlas-hairline, var(--line)));
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--atlas-panel-strong, var(--surface-strong)) 86%, transparent);
+  box-shadow: 0 18px 50px rgba(0, 70, 150, 0.11), var(--inner-highlight);
+  backdrop-filter: blur(24px) saturate(160%);
+}
+
+.atlas-logo-loader-mark img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 118px;
+  height: 118px;
+  object-fit: contain;
+}
+
+.atlas-logo-loader-ring {
+  position: absolute;
+  inset: 8px;
+  z-index: 1;
+  border: 7px solid color-mix(in srgb, var(--atlas-blue, var(--accent)) 15%, transparent);
+  border-top-color: var(--atlas-blue, var(--accent));
+  border-right-color: var(--atlas-blue, var(--accent));
+  border-radius: 50%;
+  animation: atlas-logo-loader-spin 1.05s linear infinite;
+}
+
+.atlas-logo-loader-shimmer {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  transform: translateX(-120%);
+  background: linear-gradient(105deg, transparent 24%, rgba(255,255,255,.2) 38%, rgba(255,255,255,.9) 50%, rgba(255,255,255,.2) 62%, transparent 76%);
+  animation: atlas-shimmer 1.45s var(--atlas-ease-out, ease) infinite;
+  pointer-events: none;
+}
+
+.atlas-logo-loader p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: .015em;
+}
+
+@keyframes atlas-logo-loader-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atlas-logo-loader-ring,
+  .atlas-logo-loader-shimmer {
+    animation: none;
+  }
+}
+
 .library-results-section h2 {
   color: var(--atlas-text);
   font-weight: 850;
