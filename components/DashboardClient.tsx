@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AtlasIcon, type AtlasIconName } from "@/components/AtlasIcon";
 import { ProgressTools } from "@/components/ProgressTools";
 import { useMobileLearningData } from "@/components/mobile/useMobileLearningData";
 import { useUserStudyContext } from "@/components/study/UserStudyProvider";
 import { formatBlockLabel } from "@/lib/blockLabels";
+import { cloudSyncAvailable, getCurrentProfile, getCurrentUser } from "@/lib/cloudProgress";
+import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
 import {
   examForBlock,
   matchesStudyProfile,
@@ -15,6 +17,9 @@ import {
   settingsForSemester
 } from "@/lib/studyProgram";
 import type { AssessmentProgress, AssessmentSummary } from "@/lib/types";
+
+const NAME_KEY = "atlas-user-display-name";
+const PROFILE_NAME_CHANGED_EVENT = "atlas-profile-name-changed";
 
 type DashboardAction = {
   title: string;
@@ -48,6 +53,39 @@ type DashboardScope = {
 export function DashboardClient() {
   const data = useMobileLearningData();
   const { settings } = useUserStudyContext();
+  const [firstName, setFirstName] = useState("");
+
+  useEffect(() => {
+    let active = true;
+
+    async function refreshGreeting() {
+      if (!cloudSyncAvailable()) {
+        if (active) setFirstName("");
+        return;
+      }
+      try {
+        const user = await getCurrentUser();
+        if (!user) {
+          if (active) setFirstName("");
+          return;
+        }
+        const profile = await getCurrentProfile(user);
+        const displayName = profile?.display_name?.trim() || window.localStorage.getItem(NAME_KEY)?.trim() || "";
+        if (active) setFirstName(displayName.split(/\s+/)[0] || "");
+      } catch {
+        if (active) setFirstName("");
+      }
+    }
+
+    void refreshGreeting();
+    window.addEventListener(AUTH_SESSION_CHANGED_EVENT, refreshGreeting);
+    window.addEventListener(PROFILE_NAME_CHANGED_EVENT, refreshGreeting);
+    return () => {
+      active = false;
+      window.removeEventListener(AUTH_SESSION_CHANGED_EVENT, refreshGreeting);
+      window.removeEventListener(PROFILE_NAME_CHANGED_EVENT, refreshGreeting);
+    };
+  }, []);
   const scopedSettings = useMemo(() => {
     if (settings.studyYear && settings.semester) return settings;
     const current = semesterPeriod();
@@ -157,7 +195,7 @@ export function DashboardClient() {
       <header className="atlas-dashboard-hero">
         <div>
           <p className="eyebrow">{todayLabel}</p>
-          <h1>Herzlich willkommen</h1>
+          <h1>{firstName ? `Willkommen zurück, ${firstName}.` : "Herzlich willkommen"}</h1>
           <p>
             Dein ATLAS Arbeitsbereich für fokussiertes Trainieren, ruhigen Überblick
             und sauberen Lernfortschritt.
