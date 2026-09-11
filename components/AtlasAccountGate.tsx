@@ -129,20 +129,20 @@ function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUse
       <section className="account-gate-card" aria-labelledby="account-gate-title">
         <div className="account-gate-brand">
           <span className="account-gate-logo"><Image alt="ATLAS" height={58} src="/atlas-logo.svg" width={58} priority /></span>
-          <div><strong>ATLAS</strong><small>Dein Study OS</small></div>
+          <div><strong>ATLAS</strong><small>Lernen für die Uni</small></div>
         </div>
 
         {mode === "welcome" ? (
           <div className="account-gate-welcome">
-            <div className="eyebrow">Willkommen bei ATLAS</div>
-            <h1 id="account-gate-title">Dein Studium.<br />Klar organisiert.</h1>
-            <p>Übe gezielt, behalte deinen Fortschritt im Blick und finde deine Lerninhalte an einem Ort.</p>
-            <div className="account-gate-benefits" aria-label="Vorteile von ATLAS">
-              <div><span aria-hidden="true">✓</span><strong>Persönlicher Lernfortschritt</strong></div>
-              <div><span aria-hidden="true">✓</span><strong>Auf allen Geräten verfügbar</strong></div>
-              <div><span aria-hidden="true">✓</span><strong>Altfragen mit separater Freigabe</strong></div>
+            <div className="eyebrow">Hallo und willkommen</div>
+            <h1 id="account-gate-title">Gemeinsam fürs Studium lernen.</h1>
+            <p>Hier findest du die Inhalte, die wir für unsere Prüfungen und das gemeinsame Lernen gesammelt haben.</p>
+            <div className="account-gate-benefits" aria-label="Inhalte in ATLAS">
+              <div><span aria-hidden="true">✓</span><strong>Übungsfragen und Schnellquiz nach Block</strong></div>
+              <div><span aria-hidden="true">✓</span><strong>Zusammenfassungen und Downloads</strong></div>
+              <div><span aria-hidden="true">✓</span><strong>Altfragen nach persönlicher Freigabe</strong></div>
             </div>
-            <button className="btn-primary account-gate-main-action" onClick={() => setMode("signup")} type="button">Kostenlos registrieren</button>
+            <button className="btn-primary account-gate-main-action" onClick={() => setMode("signup")} type="button">Account erstellen</button>
             <button className="btn-secondary account-gate-main-action" onClick={() => setMode("signin")} type="button">Ich habe bereits ein Konto</button>
           </div>
         ) : mode === "check-email" ? (
