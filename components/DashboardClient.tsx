@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { AtlasIcon, type AtlasIconName } from "@/components/AtlasIcon";
 import { ProgressTools } from "@/components/ProgressTools";
 import { useMobileLearningData } from "@/components/mobile/useMobileLearningData";
@@ -15,8 +15,6 @@ import {
   settingsForSemester
 } from "@/lib/studyProgram";
 import type { AssessmentProgress, AssessmentSummary } from "@/lib/types";
-
-const NAME_KEY = "atlas-user-display-name";
 
 type DashboardAction = {
   title: string;
@@ -50,13 +48,6 @@ type DashboardScope = {
 export function DashboardClient() {
   const data = useMobileLearningData();
   const { settings } = useUserStudyContext();
-  const [firstName, setFirstName] = useState("Tim");
-
-  useEffect(() => {
-    const storedName = window.localStorage.getItem(NAME_KEY)?.trim();
-    setFirstName(storedName?.split(/\s+/)[0] || "Tim");
-  }, []);
-
   const scopedSettings = useMemo(() => {
     if (settings.studyYear && settings.semester) return settings;
     const current = semesterPeriod();
@@ -166,7 +157,7 @@ export function DashboardClient() {
       <header className="atlas-dashboard-hero">
         <div>
           <p className="eyebrow">{todayLabel}</p>
-          <h1>Willkommen zurück, {firstName}.</h1>
+          <h1>Herzlich willkommen</h1>
           <p>
             Dein ATLAS Arbeitsbereich für fokussiertes Trainieren, ruhigen Überblick
             und sauberen Lernfortschritt.
