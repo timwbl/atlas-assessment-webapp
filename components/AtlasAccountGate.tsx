@@ -134,9 +134,9 @@ function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUse
 
         {mode === "welcome" ? (
           <div className="account-gate-welcome">
-            <div className="eyebrow">Hallo und willkommen</div>
-            <h1 id="account-gate-title">Gemeinsam fürs Studium lernen.</h1>
-            <p>Hier findest du die Inhalte, die wir für unsere Prüfungen und das gemeinsame Lernen gesammelt haben.</p>
+            <div className="eyebrow">ATLAS Lernplattform</div>
+            <h1 id="account-gate-title">Willkommen bei ATLAS.</h1>
+            <p>Hier findest du Übungsfragen, Zusammenfassungen und weitere Unterlagen für das Studium.</p>
             <div className="account-gate-benefits" aria-label="Inhalte in ATLAS">
               <div><span aria-hidden="true">✓</span><strong>Übungsfragen und Schnellquiz nach Block</strong></div>
               <div><span aria-hidden="true">✓</span><strong>Zusammenfassungen und Downloads</strong></div>
