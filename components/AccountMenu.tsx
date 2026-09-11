@@ -18,7 +18,6 @@ import {
 import { getAllProgress } from "@/lib/progressStore";
 import {
   clearOAuthClientSession,
-  linkOAuthProvider,
   OAUTH_PROVIDERS,
   signInWithOAuthProvider,
   type AtlasOAuthProvider
@@ -240,12 +239,6 @@ export function AccountMenu() {
     });
   }
 
-  async function connectOAuth(provider: AtlasOAuthProvider) {
-    await run(async () => {
-      await linkOAuthProvider(provider);
-    });
-  }
-
   async function saveName() {
     await run(async () => {
       const nextName = authName.trim();
@@ -350,20 +343,6 @@ export function AccountMenu() {
                   label="Synchronisieren"
                   onClick={() => void syncNow()}
                 />
-                <div className="account-provider-links" aria-label="Login-Anbieter verknüpfen">
-                  {OAUTH_PROVIDERS.map((item) => (
-                    <button
-                      className="account-provider-link"
-                      disabled={busy}
-                      key={item.provider}
-                      onClick={() => void connectOAuth(item.provider)}
-                      type="button"
-                    >
-                      <span>{item.mark}</span>
-                      <strong>{item.label} verbinden</strong>
-                    </button>
-                  ))}
-                </div>
                 <AccountMenuItem
                   danger
                   detail="Lokal bleibt alles erhalten"
