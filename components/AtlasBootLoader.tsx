@@ -26,7 +26,7 @@ export function AtlasBootLoader() {
     >
       <div className="atlas-logo-loader-mark">
         <span className="atlas-logo-loader-ring" aria-hidden="true" />
-        <Image src="/atlas-logo.svg" alt="ATLAS" width={118} height={118} priority />
+        <Image src="/atlas-loader-logo.svg" alt="ATLAS" width={118} height={118} priority />
         <span className="atlas-logo-loader-shimmer" aria-hidden="true" />
       </div>
       <p>Daten werden synchronisiert</p>

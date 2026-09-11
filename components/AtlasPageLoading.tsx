@@ -7,7 +7,7 @@ export function AtlasPageLoading({ title = "ATLAS lädt" }: { title?: string }) 
     <main className="atlas-logo-loader" aria-label={title} role="status">
       <div className="atlas-logo-loader-mark">
         <span className="atlas-logo-loader-ring" aria-hidden="true" />
-        <Image src="/atlas-logo.svg" alt="ATLAS" width={118} height={118} priority />
+        <Image src="/atlas-loader-logo.svg" alt="ATLAS" width={118} height={118} priority />
         <span className="atlas-logo-loader-shimmer" aria-hidden="true" />
       </div>
       <p>{title}</p>

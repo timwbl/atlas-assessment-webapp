@@ -4168,7 +4168,7 @@ select.input {
   border: 1px solid color-mix(in srgb, var(--atlas-blue, var(--accent)) 10%, var(--atlas-hairline, var(--line)));
   border-radius: 50%;
   background: color-mix(in srgb, var(--atlas-panel-strong, var(--surface-strong)) 86%, transparent);
-  box-shadow: 0 18px 50px rgba(0, 70, 150, 0.11), var(--inner-highlight);
+  box-shadow: 0 16px 44px rgba(0, 70, 150, 0.09), var(--inner-highlight);
   backdrop-filter: blur(24px) saturate(160%);
 }
 
@@ -4207,6 +4207,28 @@ select.input {
   font-size: 13px;
   font-weight: 750;
   letter-spacing: .015em;
+}
+
+.dark .atlas-logo-loader-mark {
+  border-color: rgba(90, 200, 250, .12);
+  background: rgba(28, 31, 37, .84);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, .22), inset 0 1px rgba(255, 255, 255, .05);
+}
+
+.dark .atlas-logo-loader-shimmer {
+  background: linear-gradient(105deg, transparent 24%, rgba(255,255,255,.03) 38%, rgba(255,255,255,.18) 50%, rgba(255,255,255,.03) 62%, transparent 76%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .atlas-logo-loader-mark {
+    border-color: rgba(90, 200, 250, .12);
+    background: rgba(28, 31, 37, .84);
+    box-shadow: 0 18px 54px rgba(0, 0, 0, .22), inset 0 1px rgba(255, 255, 255, .05);
+  }
+
+  .atlas-logo-loader-shimmer {
+    background: linear-gradient(105deg, transparent 24%, rgba(255,255,255,.03) 38%, rgba(255,255,255,.18) 50%, rgba(255,255,255,.03) 62%, transparent 76%);
+  }
 }
 
 @keyframes atlas-logo-loader-spin {
