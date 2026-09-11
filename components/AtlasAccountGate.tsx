@@ -14,6 +14,7 @@ import {
 import { OAUTH_PROVIDERS, signInWithOAuthProvider } from "@/lib/supabaseOAuth";
 import {
   AUTH_SESSION_CHANGED_EVENT,
+  getStoredSession,
   shouldRememberSession,
   type CloudUser
 } from "@/lib/supabaseClient";
@@ -43,9 +44,16 @@ export function AtlasAccountGate({ children }: { children: ReactNode }) {
 
     let active = true;
     async function checkSession() {
+      const storedUser = getStoredSession()?.user || null;
+      if (storedUser && active) {
+        setUser(storedUser);
+        setChecked(true);
+      }
       const currentUser = cloudSyncAvailable() ? await getCurrentUser() : null;
       if (!active) return;
-      setUser(currentUser);
+      // Keep a cached, still stored session during temporary network failures.
+      // Invalid Supabase sessions are removed by getCurrentUser itself.
+      setUser(currentUser || getStoredSession()?.user || null);
       setChecked(true);
     }
     void checkSession();
