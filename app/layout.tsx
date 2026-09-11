@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { AppChrome } from "@/components/AppChrome";
+import { AtlasAccountGate } from "@/components/AtlasAccountGate";
 import { AtlasBootLoader } from "@/components/AtlasBootLoader";
 import { ChunkRecovery } from "@/components/ChunkRecovery";
 import { CompanionProvider } from "@/components/companion/CompanionProvider";
@@ -52,12 +53,14 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
       <body className={`${inter.variable} ${inter.className}`}>
         <AtlasBootLoader />
         <ChunkRecovery />
-        <UserStudyProvider>
-          <CompanionProvider>
-            <AppChrome />
-            {children}
-          </CompanionProvider>
-        </UserStudyProvider>
+        <AtlasAccountGate>
+          <UserStudyProvider>
+            <CompanionProvider>
+              <AppChrome />
+              {children}
+            </CompanionProvider>
+          </UserStudyProvider>
+        </AtlasAccountGate>
       </body>
     </html>
   );

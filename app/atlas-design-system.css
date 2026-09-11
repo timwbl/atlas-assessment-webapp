@@ -9497,6 +9497,76 @@ body.atlas-sidebar-collapsed .account-avatar {
 .dark .exercise-library-shell .assessment-card.card,
 .dark .library-selection-card,
 .dark .library-block-card,
+/* Account-only entry screen */
+.account-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  padding: 32px 20px;
+  background:
+    radial-gradient(circle at 18% 12%, color-mix(in srgb, var(--atlas-blue) 13%, transparent), transparent 32%),
+    radial-gradient(circle at 86% 88%, rgba(106, 68, 198, 0.09), transparent 34%),
+    var(--atlas-bg);
+}
+
+.account-gate-card {
+  width: min(100%, 510px);
+  border: 1px solid var(--atlas-hairline);
+  border-radius: 30px;
+  background: color-mix(in srgb, var(--atlas-panel-strong) 94%, transparent);
+  padding: 34px;
+  color: var(--atlas-text);
+  box-shadow: var(--atlas-shadow-float);
+}
+
+.account-gate-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; }
+.account-gate-logo { display: grid; width: 64px; height: 64px; place-items: center; overflow: hidden; border: 1px solid var(--atlas-hairline); border-radius: 19px; background: var(--atlas-panel); }
+.account-gate-logo img { width: 58px; height: 58px; }
+.account-gate-brand div { display: grid; gap: 2px; }
+.account-gate-brand strong { font-size: 21px; letter-spacing: .04em; }
+.account-gate-brand small { color: var(--atlas-secondary-text); font-size: 13px; font-weight: 650; }
+.account-gate-heading { margin-bottom: 22px; }
+.account-gate-heading h1,
+.account-gate-confirmation h1,
+.account-gate-welcome h1 { margin: 7px 0 9px; font-size: clamp(30px, 5vw, 42px); line-height: 1.05; letter-spacing: -.04em; }
+.account-gate-heading p,
+.account-gate-confirmation p,
+.account-gate-welcome > p { margin: 0; color: var(--atlas-secondary-text); line-height: 1.55; }
+.account-gate-welcome { display: grid; }
+.account-gate-benefits { display: grid; gap: 10px; margin: 25px 0 27px; }
+.account-gate-benefits div { display: flex; align-items: center; gap: 11px; color: var(--atlas-secondary-text); font-size: 14px; }
+.account-gate-benefits span { display: grid; width: 25px; height: 25px; flex: 0 0 auto; place-items: center; border-radius: 50%; background: color-mix(in srgb, var(--atlas-blue) 12%, var(--atlas-panel)); color: var(--atlas-blue); font-weight: 850; }
+.account-gate-main-action { width: 100%; min-height: 50px; }
+.account-gate-main-action + .account-gate-main-action { margin-top: 10px; }
+.account-gate-back { width: fit-content; margin: -10px 0 15px; border: 0; background: transparent; padding: 4px 0; color: var(--atlas-secondary-text); font: inherit; font-size: 13px; font-weight: 720; cursor: pointer; }
+.account-gate-back:hover { color: var(--atlas-blue); }
+.account-gate .auth-provider-grid { margin-top: 22px; }
+.account-gate-form { margin-top: 0; }
+.account-gate-card footer { display: flex; justify-content: center; gap: 9px; margin-top: 25px; color: var(--atlas-tertiary-text); font-size: 12px; }
+.account-gate-card footer a { color: inherit; }
+.account-gate-confirmation { display: grid; gap: 16px; }
+.account-gate-confirmation .btn-primary { width: 100%; margin-top: 8px; }
+.account-gate--loading { align-content: center; gap: 17px; color: var(--atlas-secondary-text); font-weight: 680; }
+.account-gate-spinner { display: grid; width: 92px; height: 92px; place-items: center; border: 2px solid color-mix(in srgb, var(--atlas-blue) 22%, transparent); border-top-color: var(--atlas-blue); border-radius: 50%; animation: account-gate-spin 1s linear infinite; }
+.account-gate-spinner img { animation: account-gate-counter-spin 1s linear infinite; }
+
+@keyframes account-gate-spin { to { transform: rotate(360deg); } }
+@keyframes account-gate-counter-spin { to { transform: rotate(-360deg); } }
+
+@media (max-width: 560px) {
+  .account-gate { align-items: start; padding: 18px 12px; }
+  .account-gate-card { border-radius: 24px; padding: 25px 20px; }
+  .account-gate-brand { margin-bottom: 27px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .account-gate-spinner,
+  .account-gate-spinner img { animation: none; }
+}
+
 .dark .library-assessment-card,
 .dark .altfragen-filter-card,
 .dark .altfragen-practice-card,
