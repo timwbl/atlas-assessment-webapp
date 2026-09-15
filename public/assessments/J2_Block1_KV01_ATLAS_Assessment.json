@@ -1,0 +1,1306 @@
+{
+  "id": "assessment_j2_block1_kv01_intro_hk_v1",
+  "lectureCode": "KV01",
+  "title": "Einführung Herz-Kreislauf – Anwendung und Transfer",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV1_Intro_Herzblock_WS26-27.pdf, PDF-S. 6–16; Lernziele S. 6/16. Eigenständig formulierte Übungsfragen, keine Originalprüfungsfragen. Rechenfälle verwenden ausdrücklich gesetzte Modellannahmen. Keine Übernahme unklarer Morbiditätszahlen. Schwierigkeit redaktionell eingeschätzt, nicht empirisch kalibriert.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Medizinische und ökonomische Bedeutung des Herz-Kreislaufsystems"
+    },
+    {
+      "id": "lo2",
+      "text": "Aufgaben des Herz-Kreislaufsystems"
+    },
+    {
+      "id": "lo3",
+      "text": "Blutvolumina und Gefässtyp"
+    },
+    {
+      "id": "lo4",
+      "text": "Herz als Pumpe"
+    },
+    {
+      "id": "lo5",
+      "text": "System- und Lungenkreislauf"
+    },
+    {
+      "id": "lo6",
+      "text": "Blutfluss durch Gefässe und Organe"
+    },
+    {
+      "id": "lo7",
+      "text": "Blutfluss entlang Druckgradient"
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv01_q01",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Eine Transportstrecke wird bei gleichem Diffusionskoeffizienten von 10 auf 50 µm verlängert. Die ursprüngliche Diffusionszeit beträgt 4 ms. Welche Zeit folgt aus dem Modell der Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20 ms",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "100 ms",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "400 ms",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "0,8 ms",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "4 ms",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Lineare statt quadratische Skalierung. B: t wächst mit x²: 4 ms × 5² = 100 ms. C: Hier wurde fälschlich mit 100 statt 25 multipliziert. D: Eine grössere Strecke verlängert die Zeit. E: Bei konstantem D bleibt die Zeit nicht konstant. Quelle: Vorlesung, PDF-S. 11.",
+      "trap": "Streckenfaktor und Zeitfaktor verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aufgaben des Herz-Kreislaufsystems"
+      ],
+      "questionGoal": "Eine Transportstrecke wird bei gleichem Diffusionskoeffizienten von 10 auf 50 µm verlängert. Die ursprüngliche Diffusionszeit beträgt 4 ms. Welche Zeit folgt aus dem Modell der Vorlesung?",
+      "structuredExplanation": {
+        "coreIdea": "Aufgaben des Herz-Kreislaufsystems",
+        "correctReasoning": "t wächst mit x²: 4 ms × 5² = 100 ms.",
+        "wrongAnswerExplanations": {
+          "A": "Lineare statt quadratische Skalierung.",
+          "C": "Hier wurde fälschlich mit 100 statt 25 multipliziert.",
+          "D": "Eine grössere Strecke verlängert die Zeit.",
+          "E": "Bei konstantem D bleibt die Zeit nicht konstant."
+        },
+        "commonTrap": "Streckenfaktor und Zeitfaktor verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q02",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Aussagen zum Transportmodell bei konstantem Diffusionskoeffizienten.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine Halbierung der Strecke reduziert die Diffusionszeit auf ein Viertel.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Konvektion transportiert gelöste Stoffe mit der bewegten Flüssigkeit.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Diffusionszeit wächst proportional zur Transportstrecke.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Aus der Effizienz über 1 µm folgt dieselbe Effizienz über 1 cm.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das folgt aus t = x²/(2D). B: Die Flüssigkeitsbewegung überbrückt grosse Distanzen. C: Die Abhängigkeit ist quadratisch. D: Die Strecke ist 10 000-mal grösser, die Zeit damit 100 Millionen-mal länger. Quelle: Vorlesung, PDF-S. 11.",
+      "trap": "Kurze und lange Transportstrecken gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aufgaben des Herz-Kreislaufsystems"
+      ],
+      "questionGoal": "Beurteilen Sie die Aussagen zum Transportmodell bei konstantem Diffusionskoeffizienten.",
+      "structuredExplanation": {
+        "coreIdea": "Aufgaben des Herz-Kreislaufsystems",
+        "correctReasoning": "Das folgt aus t = x²/(2D). Die Flüssigkeitsbewegung überbrückt grosse Distanzen.",
+        "wrongAnswerExplanations": {
+          "A": "Das folgt aus t = x²/(2D).",
+          "B": "Die Flüssigkeitsbewegung überbrückt grosse Distanzen.",
+          "C": "Die Abhängigkeit ist quadratisch.",
+          "D": "Die Strecke ist 10 000-mal grösser, die Zeit damit 100 Millionen-mal länger."
+        },
+        "commonTrap": "Kurze und lange Transportstrecken gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q03",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Bei einer Modellperson steigt die Herzfrequenz von 70 auf 100/min, während das Schlagvolumen von 70 auf 49 ml fällt. Welche Änderung des HMV ergibt sich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zunahme um 43 %",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Abnahme um 30 %",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Zunahme um 13 %",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Keine Änderung",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Abnahme um 51 %",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Berücksichtigt nur die Frequenz. B: Berücksichtigt nur das Schlagvolumen. C: Die Prozentänderungen dürfen nicht addiert werden. D: 70 × 70 = 100 × 49 = 4900 ml/min. E: Das Produkt bleibt konstant. Quelle: Vorlesung, PDF-S. 12–13.",
+      "trap": "HMV allein aus der Herzfrequenz ableiten.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Herz als Pumpe"
+      ],
+      "questionGoal": "Bei einer Modellperson steigt die Herzfrequenz von 70 auf 100/min, während das Schlagvolumen von 70 auf 49 ml fällt. Welche Änderung des HMV ergibt sich?",
+      "structuredExplanation": {
+        "coreIdea": "Herz als Pumpe",
+        "correctReasoning": "70 × 70 = 100 × 49 = 4900 ml/min.",
+        "wrongAnswerExplanations": {
+          "A": "Berücksichtigt nur die Frequenz.",
+          "B": "Berücksichtigt nur das Schlagvolumen.",
+          "C": "Die Prozentänderungen dürfen nicht addiert werden.",
+          "E": "Das Produkt bleibt konstant."
+        },
+        "commonTrap": "HMV allein aus der Herzfrequenz ableiten."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q04",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Während der Kammersystole fliesst Blut aus dem linken Ventrikel in den linken Vorhof zurück. Welche Klappe erfüllt ihre beschriebene Ventilfunktion unzureichend?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aortenklappe",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Pulmonalklappe",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mitralklappe",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Trikuspidalklappe",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Beide Taschenklappen",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Sie verhindert Rückfluss aus der Aorta in der Diastole. B: Sie liegt am Ausgang der rechten Kammer. C: Die linke AV-Klappe verhindert systolischen Rückfluss in den linken Vorhof. D: Sie liegt zwischen rechtem Vorhof und rechter Kammer. E: Taschenklappen liegen nicht zwischen Kammer und Vorhof. Quelle: Vorlesung, PDF-S. 12.",
+      "trap": "Rückflussrichtung und Herzseite nicht gemeinsam beachten.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Herz als Pumpe"
+      ],
+      "questionGoal": "Während der Kammersystole fliesst Blut aus dem linken Ventrikel in den linken Vorhof zurück. Welche Klappe erfüllt ihre beschriebene Ventilfunktion unzureichend?",
+      "structuredExplanation": {
+        "coreIdea": "Herz als Pumpe",
+        "correctReasoning": "Die linke AV-Klappe verhindert systolischen Rückfluss in den linken Vorhof.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verhindert Rückfluss aus der Aorta in der Diastole.",
+          "B": "Sie liegt am Ausgang der rechten Kammer.",
+          "D": "Sie liegt zwischen rechtem Vorhof und rechter Kammer.",
+          "E": "Taschenklappen liegen nicht zwischen Kammer und Vorhof."
+        },
+        "commonTrap": "Rückflussrichtung und Herzseite nicht gemeinsam beachten."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q05",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Zuordnung von Phase, Flussrichtung und Klappenfunktion.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Aortenklappe verhindert während der Diastole den Rückfluss in die linke Kammer.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Trikuspidalklappe ermöglicht den Auswurf aus der rechten Kammer in die Lungenarterie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Mitralklappe verhindert während der Systole den Rückfluss in den linken Vorhof.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Die Pulmonalklappe ermöglicht während der Diastole den Zufluss aus dem rechten Vorhof.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das ist die Rückstromsperre der linken Taschenklappe. B: Dieser Auswurf erfolgt durch die Pulmonalklappe. C: Das ist die Rückstromsperre der linken AV-Klappe. D: Vorhof und Kammer sind durch die Trikuspidalklappe verbunden. Quelle: Vorlesung, PDF-S. 12.",
+      "trap": "AV- und Taschenklappen nach Namen statt Flussweg zuordnen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Herz als Pumpe"
+      ],
+      "questionGoal": "Beurteilen Sie die Zuordnung von Phase, Flussrichtung und Klappenfunktion.",
+      "structuredExplanation": {
+        "coreIdea": "Herz als Pumpe",
+        "correctReasoning": "Das ist die Rückstromsperre der linken Taschenklappe. Das ist die Rückstromsperre der linken AV-Klappe.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist die Rückstromsperre der linken Taschenklappe.",
+          "B": "Dieser Auswurf erfolgt durch die Pulmonalklappe.",
+          "C": "Das ist die Rückstromsperre der linken AV-Klappe.",
+          "D": "Vorhof und Kammer sind durch die Trikuspidalklappe verbunden."
+        },
+        "commonTrap": "AV- und Taschenklappen nach Namen statt Flussweg zuordnen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q06",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "In einem geschlossenen Modellkreislauf ohne Shunt fördert die rechte Kammer vorübergehend 5,5 l/min, die linke 5,0 l/min. Beide Raten bleiben 30 s konstant. Wie ändert sich das Blutvolumen zwischen rechtem Kammerausgang und linkem Kammerausgang?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es nimmt um 500 ml ab.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es bleibt unverändert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Es nimmt um 250 ml ab.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es nimmt um 500 ml zu.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es nimmt um 250 ml zu.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Es fliesst mehr hinein als heraus. B: Stationärer Zustand liegt gerade nicht vor. C: Das Vorzeichen ist umgekehrt. D: 500 ml wäre die Differenz nach einer Minute. E: (5,5 − 5,0) l/min × 0,5 min = +0,25 l. Quelle: Vorlesung, PDF-S. 13.",
+      "trap": "Gleiche stationäre Flüsse mit vorübergehend ungleichen Pumpmengen verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "System- und Lungenkreislauf"
+      ],
+      "questionGoal": "In einem geschlossenen Modellkreislauf ohne Shunt fördert die rechte Kammer vorübergehend 5,5 l/min, die linke 5,0 l/min. Beide Raten bleiben 30 s konstant. Wie ändert sich das Blutvolumen zwischen rechtem Kammerausgang und linkem Kammerausgang?",
+      "structuredExplanation": {
+        "coreIdea": "System- und Lungenkreislauf",
+        "correctReasoning": "(5,5 − 5,0) l/min × 0,5 min = +0,25 l.",
+        "wrongAnswerExplanations": {
+          "A": "Es fliesst mehr hinein als heraus.",
+          "B": "Stationärer Zustand liegt gerade nicht vor.",
+          "C": "Das Vorzeichen ist umgekehrt.",
+          "D": "500 ml wäre die Differenz nach einer Minute."
+        },
+        "commonTrap": "Gleiche stationäre Flüsse mit vorübergehend ungleichen Pumpmengen verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q07",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Ein Modell des Kreislaufs befindet sich im stationären Zustand ohne Shunt. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der gesamte Lungenblutfluss entspricht dem HMV.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die meisten Körperorgane werden nacheinander vom gesamten HMV durchströmt.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein geringerer Lungendruck bedeutet zwingend einen geringeren Lungenblutfluss.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Summe der parallelen Organblutflüsse entspricht dem systemischen Gesamtfluss.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Der Lungenkreislauf ist in Serie zum Körperkreislauf geschaltet. B: Die Organstromgebiete sind überwiegend parallel angeordnet. C: Q hängt auch vom Widerstand ab; beide Kreisläufe haben denselben Gesamtfluss. D: An Verzweigungen wird der Gesamtfluss aufgeteilt. Quelle: Vorlesung, PDF-S. 13.",
+      "trap": "Druckhöhe mit Flussmenge gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "System- und Lungenkreislauf"
+      ],
+      "questionGoal": "Ein Modell des Kreislaufs befindet sich im stationären Zustand ohne Shunt. Beurteilen Sie die Aussagen.",
+      "structuredExplanation": {
+        "coreIdea": "System- und Lungenkreislauf",
+        "correctReasoning": "Der Lungenkreislauf ist in Serie zum Körperkreislauf geschaltet. An Verzweigungen wird der Gesamtfluss aufgeteilt.",
+        "wrongAnswerExplanations": {
+          "A": "Der Lungenkreislauf ist in Serie zum Körperkreislauf geschaltet.",
+          "B": "Die Organstromgebiete sind überwiegend parallel angeordnet.",
+          "C": "Q hängt auch vom Widerstand ab; beide Kreisläufe haben denselben Gesamtfluss.",
+          "D": "An Verzweigungen wird der Gesamtfluss aufgeteilt."
+        },
+        "commonTrap": "Druckhöhe mit Flussmenge gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q08",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Ein Organ wird mit 100 mmHg am Zufluss und 10 mmHg am Abfluss perfundiert. Der Widerstand beträgt 18 mmHg·min/l. Welcher Fluss ergibt sich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5,0 l/min",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "5,6 l/min",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "6,1 l/min",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "0,2 l/min",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "1,8 l/min",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Q = (100 − 10)/18 = 5 l/min. B: Der Abflussdruck wurde ignoriert. C: Die Drücke wurden addiert statt subtrahiert. D: Dies entspricht dem Kehrwert des richtigen Ergebnisses. E: Dieser Wert folgt nicht aus ΔP/R. Quelle: Vorlesung, PDF-S. 13–14.",
+      "trap": "Absoluten Zuflussdruck statt Druckdifferenz einsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss entlang Druckgradient"
+      ],
+      "questionGoal": "Ein Organ wird mit 100 mmHg am Zufluss und 10 mmHg am Abfluss perfundiert. Der Widerstand beträgt 18 mmHg·min/l. Welcher Fluss ergibt sich?",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss entlang Druckgradient",
+        "correctReasoning": "Q = (100 − 10)/18 = 5 l/min.",
+        "wrongAnswerExplanations": {
+          "B": "Der Abflussdruck wurde ignoriert.",
+          "C": "Die Drücke wurden addiert statt subtrahiert.",
+          "D": "Dies entspricht dem Kehrwert des richtigen Ergebnisses.",
+          "E": "Dieser Wert folgt nicht aus ΔP/R."
+        },
+        "commonTrap": "Absoluten Zuflussdruck statt Druckdifferenz einsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q09",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "In einem Organstromgebiet steigen Zuflussdruck und Abflussdruck von 100/10 auf 120/30 mmHg. Gleichzeitig steigt der Widerstand um 25 %. Wie verändert sich der Fluss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er steigt um 20 %.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Er sinkt um 20 %.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Er sinkt um 25 %.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er steigt um 25 %.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Druckdifferenz steigt nicht. B: Die Druckdifferenz bleibt gleich, der Widerstand nicht. C: ΔP bleibt 90 mmHg; Qneu/Qalt = 1/1,25 = 0,8. D: Der Kehrwert von 1,25 ist 0,8, nicht 0,75. E: Höherer Widerstand senkt bei gleichem ΔP den Fluss. Quelle: Vorlesung, PDF-S. 13–14.",
+      "trap": "Prozentänderung von R direkt auf Q übertragen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss entlang Druckgradient"
+      ],
+      "questionGoal": "In einem Organstromgebiet steigen Zuflussdruck und Abflussdruck von 100/10 auf 120/30 mmHg. Gleichzeitig steigt der Widerstand um 25 %. Wie verändert sich der Fluss?",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss entlang Druckgradient",
+        "correctReasoning": "ΔP bleibt 90 mmHg; Qneu/Qalt = 1/1,25 = 0,8.",
+        "wrongAnswerExplanations": {
+          "A": "Die Druckdifferenz steigt nicht.",
+          "B": "Die Druckdifferenz bleibt gleich, der Widerstand nicht.",
+          "D": "Der Kehrwert von 1,25 ist 0,8, nicht 0,75.",
+          "E": "Höherer Widerstand senkt bei gleichem ΔP den Fluss."
+        },
+        "commonTrap": "Prozentänderung von R direkt auf Q übertragen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q10",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Für einen Modellabschnitt gilt Q = ΔP/R. Jede Aussage beschreibt eine eigene Änderung gegenüber dem Ausgangszustand.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Verdoppeln von ΔP und R lässt Q unverändert.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Halbieren von R bei konstantem ΔP halbiert Q.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Verdoppeln von Zu- und Abflussdruck bei konstantem R verdoppelt Q.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ein gleicher additiver Anstieg beider Drücke erhöht bei konstantem R den Fluss.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Der Quotient bleibt gleich. B: Q verdoppelt sich. C: Auch die Differenz verdoppelt sich. D: Die Druckdifferenz bleibt bei gleichen additiven Änderungen konstant. Quelle: Vorlesung, PDF-S. 13–14.",
+      "trap": "Additive und multiplikative Druckänderungen verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss entlang Druckgradient"
+      ],
+      "questionGoal": "Für einen Modellabschnitt gilt Q = ΔP/R. Jede Aussage beschreibt eine eigene Änderung gegenüber dem Ausgangszustand.",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss entlang Druckgradient",
+        "correctReasoning": "Der Quotient bleibt gleich. Auch die Differenz verdoppelt sich.",
+        "wrongAnswerExplanations": {
+          "A": "Der Quotient bleibt gleich.",
+          "B": "Q verdoppelt sich.",
+          "C": "Auch die Differenz verdoppelt sich.",
+          "D": "Die Druckdifferenz bleibt bei gleichen additiven Änderungen konstant."
+        },
+        "commonTrap": "Additive und multiplikative Druckänderungen verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q11",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Zwei parallele Organstromgebiete A und B haben zunächst je Widerstand R und dieselbe konstante Druckdifferenz. Nun verdoppelt sich nur der Widerstand von A. Wie ändern sich Fluss A und gemeinsamer Gesamtfluss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A bleibt gleich; Gesamtfluss halbiert sich.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "A halbiert sich; Gesamtfluss bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "A verdoppelt sich; Gesamtfluss steigt um 50 %.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "A halbiert sich; Gesamtfluss sinkt um 25 %.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "A halbiert sich; Gesamtfluss halbiert sich.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Bei konstantem ΔP halbiert sich A. B: B bleibt konstant und kompensiert A nicht automatisch. C: Höherer Widerstand reduziert den Fluss. D: Aus Q + Q wird 0,5Q + Q = 1,5Q statt 2Q. E: B bleibt unverändert. Quelle: Vorlesung, PDF-S. 13–14.",
+      "trap": "Eine lokale Änderung auf beide parallelen Stromgebiete übertragen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss durch Gefässe und Organe"
+      ],
+      "questionGoal": "Zwei parallele Organstromgebiete A und B haben zunächst je Widerstand R und dieselbe konstante Druckdifferenz. Nun verdoppelt sich nur der Widerstand von A. Wie ändern sich Fluss A und gemeinsamer Gesamtfluss?",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss durch Gefässe und Organe",
+        "correctReasoning": "Aus Q + Q wird 0,5Q + Q = 1,5Q statt 2Q.",
+        "wrongAnswerExplanations": {
+          "A": "Bei konstantem ΔP halbiert sich A.",
+          "B": "B bleibt konstant und kompensiert A nicht automatisch.",
+          "C": "Höherer Widerstand reduziert den Fluss.",
+          "E": "B bleibt unverändert."
+        },
+        "commonTrap": "Eine lokale Änderung auf beide parallelen Stromgebiete übertragen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q12",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Zwei parallel versorgte Organe haben dieselben Zu- und Abflussdrücke. Organ A wird doppelt so stark durchblutet wie Organ B. Welche Widerstandsbeziehung folgt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RA = 2 RB",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "RA = 0,5 RB",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "RA = RB",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "RA = 4 RB",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "RA = 0,25 RB",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Fluss und Widerstand sind invers proportional. B: Bei gleichem ΔP führt halber Widerstand zum doppelten Fluss. C: Gleicher Widerstand ergäbe gleichen Fluss. D: Vierfacher Widerstand ergäbe ein Viertel des Flusses. E: Ein Viertel des Widerstands ergäbe den vierfachen Fluss. Quelle: Vorlesung, PDF-S. 13–14.",
+      "trap": "Parallele Versorgung mit identischer Durchblutung verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss durch Gefässe und Organe"
+      ],
+      "questionGoal": "Zwei parallel versorgte Organe haben dieselben Zu- und Abflussdrücke. Organ A wird doppelt so stark durchblutet wie Organ B. Welche Widerstandsbeziehung folgt?",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss durch Gefässe und Organe",
+        "correctReasoning": "Bei gleichem ΔP führt halber Widerstand zum doppelten Fluss.",
+        "wrongAnswerExplanations": {
+          "A": "Fluss und Widerstand sind invers proportional.",
+          "C": "Gleicher Widerstand ergäbe gleichen Fluss.",
+          "D": "Vierfacher Widerstand ergäbe ein Viertel des Flusses.",
+          "E": "Ein Viertel des Widerstands ergäbe den vierfachen Fluss."
+        },
+        "commonTrap": "Parallele Versorgung mit identischer Durchblutung verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Interpretieren Sie Druck, Geschwindigkeit und Gesamtquerschnitt entlang der Gefässabschnitte.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die geringe Kapillargeschwindigkeit beweist, dass im stationären Zustand weniger Blut pro Minute durch die Kapillaren fliesst als durch die Aorta.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der Gesamtquerschnitt addiert die Flächen der parallel verlaufenden Gefässe eines Abschnitts.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Arteriolen zeigen einen grossen Druckabfall und sind ein wichtiger Regulationsort.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Der hohe Gesamtquerschnitt der Kapillaren bedeutet, dass jede Kapillare weiter als die Aorta ist.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Geschwindigkeit ist nicht Volumenstrom; der Gesamtquerschnitt unterscheidet sich. B: Viele kleine Gefässe ergeben zusammen eine grosse Fläche. C: Die Vorlesung verknüpft den Druckabfall mit hohem Widerstand. D: Die Aussage betrifft die Summe, nicht ein Einzelgefäss. Quelle: Vorlesung, PDF-S. 14.",
+      "trap": "Einzelquerschnitt und Gesamtquerschnitt verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss durch Gefässe und Organe"
+      ],
+      "questionGoal": "Interpretieren Sie Druck, Geschwindigkeit und Gesamtquerschnitt entlang der Gefässabschnitte.",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss durch Gefässe und Organe",
+        "correctReasoning": "Viele kleine Gefässe ergeben zusammen eine grosse Fläche. Die Vorlesung verknüpft den Druckabfall mit hohem Widerstand.",
+        "wrongAnswerExplanations": {
+          "A": "Geschwindigkeit ist nicht Volumenstrom; der Gesamtquerschnitt unterscheidet sich.",
+          "B": "Viele kleine Gefässe ergeben zusammen eine grosse Fläche.",
+          "C": "Die Vorlesung verknüpft den Druckabfall mit hohem Widerstand.",
+          "D": "Die Aussage betrifft die Summe, nicht ein Einzelgefäss."
+        },
+        "commonTrap": "Einzelquerschnitt und Gesamtquerschnitt verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q14",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Drei Abschnitte liegen in Serie und werden stationär vom gleichen Volumenstrom durchflossen. Die Druckabfälle betragen 5, 60 und 10 mmHg. Welcher Abschnitt trägt den grössten Widerstand bei?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der erste, weil dort das Blut zuerst eintritt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der dritte, weil dort der niedrigste Druck herrscht.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Alle drei tragen gleich viel bei.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ohne Kenntnis des absoluten Eingangsdrucks ist kein Vergleich möglich.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Der zweite, weil bei gleichem Q der Druckabfall proportional zu R ist.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Reihenfolge bestimmt nicht den Widerstand. B: Der absolute Druck allein bestimmt nicht R. C: Die Druckabfälle unterscheiden sich. D: Für den relativen Vergleich genügt ΔP bei gleichem Q. E: R = ΔP/Q; 60 mmHg ist der grösste Druckabfall. Quelle: Vorlesung, PDF-S. 14.",
+      "trap": "Niedrigen Druck mit hohem lokalem Widerstand gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutfluss entlang Druckgradient"
+      ],
+      "questionGoal": "Drei Abschnitte liegen in Serie und werden stationär vom gleichen Volumenstrom durchflossen. Die Druckabfälle betragen 5, 60 und 10 mmHg. Welcher Abschnitt trägt den grössten Widerstand bei?",
+      "structuredExplanation": {
+        "coreIdea": "Blutfluss entlang Druckgradient",
+        "correctReasoning": "R = ΔP/Q; 60 mmHg ist der grösste Druckabfall.",
+        "wrongAnswerExplanations": {
+          "A": "Die Reihenfolge bestimmt nicht den Widerstand.",
+          "B": "Der absolute Druck allein bestimmt nicht R.",
+          "C": "Die Druckabfälle unterscheiden sich.",
+          "D": "Für den relativen Vergleich genügt ΔP bei gleichem Q."
+        },
+        "commonTrap": "Niedrigen Druck mit hohem lokalem Widerstand gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Für eine Modellperson werden 5 l Gesamtblutvolumen und die Verteilung der Vorlesung angenommen. Wie viel Blut liegt im venösen System?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3,25 l",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "0,25 l",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "0,50 l",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "4,50 l",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "0,65 l",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 0,65 × 5 l = 3,25 l. B: Das entspricht dem Kapillaranteil von 5 %. C: Das entspricht einem Anteil von 10 %. D: Das entspräche 90 %. E: 65 % bedeutet nicht 0,65 l unabhängig vom Gesamtvolumen. Quelle: Vorlesung, PDF-S. 15.",
+      "trap": "Prozentanteil als absolutes Volumen lesen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutvolumina und Gefässtyp"
+      ],
+      "questionGoal": "Für eine Modellperson werden 5 l Gesamtblutvolumen und die Verteilung der Vorlesung angenommen. Wie viel Blut liegt im venösen System?",
+      "structuredExplanation": {
+        "coreIdea": "Blutvolumina und Gefässtyp",
+        "correctReasoning": "0,65 × 5 l = 3,25 l.",
+        "wrongAnswerExplanations": {
+          "B": "Das entspricht dem Kapillaranteil von 5 %.",
+          "C": "Das entspricht einem Anteil von 10 %.",
+          "D": "Das entspräche 90 %.",
+          "E": "65 % bedeutet nicht 0,65 l unabhängig vom Gesamtvolumen."
+        },
+        "commonTrap": "Prozentanteil als absolutes Volumen lesen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie Aussagen zum Modell mit 5 l Blutvolumen und 5 l/min HMV.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das HMV bezeichnet eine Blutmenge ohne Zeitbezug.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein venöser Anteil von 65 % bedeutet, dass 65 % des HMV dauerhaft im Venensystem zurückbleiben.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Das venöse System enthält nach der Folienverteilung mehr Blut als Herz und Lunge zusammen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Der Quotient aus Gesamtvolumen und HMV beträgt eine Minute; daraus folgt keine identische Reisezeit aller Blutzellen.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: HMV ist Volumen pro Zeit. B: Volumenanteil ist kein zurückgehaltener Flussanteil. C: 65 % ist grösser als 10 % + 10 %. D: 5 l/(5 l/min) = 1 min ist eine globale rechnerische Zeit, keine einheitliche individuelle Transitzeit. Quelle: Vorlesung, PDF-S. 13–15.",
+      "trap": "Bestand, Fluss und individuelle Transitzeit gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutvolumina und Gefässtyp"
+      ],
+      "questionGoal": "Beurteilen Sie Aussagen zum Modell mit 5 l Blutvolumen und 5 l/min HMV.",
+      "structuredExplanation": {
+        "coreIdea": "Blutvolumina und Gefässtyp",
+        "correctReasoning": "65 % ist grösser als 10 % + 10 %. 5 l/(5 l/min) = 1 min ist eine globale rechnerische Zeit, keine einheitliche individuelle Transitzeit.",
+        "wrongAnswerExplanations": {
+          "A": "HMV ist Volumen pro Zeit.",
+          "B": "Volumenanteil ist kein zurückgehaltener Flussanteil.",
+          "C": "65 % ist grösser als 10 % + 10 %.",
+          "D": "5 l/(5 l/min) = 1 min ist eine globale rechnerische Zeit, keine einheitliche individuelle Transitzeit."
+        },
+        "commonTrap": "Bestand, Fluss und individuelle Transitzeit gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Ein im Blut transportierter Botenstoff beeinflusst ein entferntes Organ. Gleichzeitig transportiert derselbe Kreislauf Wärme und Antikörper. Welche Zuordnung entspricht den Aufgaben der Vorlesung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Botenstoff: Abwehr; Wärme: Kommunikation; Antikörper: Versorgung",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Botenstoff: Versorgung; Wärme: Abwehr; Antikörper: Kommunikation",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Botenstoff: Kommunikation; Wärme: Wärmeverteilung; Antikörper: Abwehr",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Botenstoff: Abtransport; Wärme: Flüssigkeitsverteilung; Antikörper: Kommunikation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Botenstoff: Abwehr; Wärme: Versorgung; Antikörper: Abtransport",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Botenstoffe vermitteln Signale; Wärme ist kein hormoneller Botenstoff. B: Antikörper dienen der Abwehr, nicht der hormonellen Kommunikation. C: Die drei Transportgüter erfüllen unterschiedliche Kreislaufaufgaben. D: Wärmeverteilung ist nicht gleich Flüssigkeitsverteilung; Antikörper gehören zur Abwehr. E: Die Zuordnungen verfehlen die spezifischen Aufgaben. Quelle: Vorlesung, PDF-S. 10.",
+      "trap": "Alle transportierten Stoffe derselben Funktion zuordnen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aufgaben des Herz-Kreislaufsystems"
+      ],
+      "questionGoal": "Ein im Blut transportierter Botenstoff beeinflusst ein entferntes Organ. Gleichzeitig transportiert derselbe Kreislauf Wärme und Antikörper. Welche Zuordnung entspricht den Aufgaben der Vorlesung?",
+      "structuredExplanation": {
+        "coreIdea": "Aufgaben des Herz-Kreislaufsystems",
+        "correctReasoning": "Die drei Transportgüter erfüllen unterschiedliche Kreislaufaufgaben.",
+        "wrongAnswerExplanations": {
+          "A": "Botenstoffe vermitteln Signale; Wärme ist kein hormoneller Botenstoff.",
+          "B": "Antikörper dienen der Abwehr, nicht der hormonellen Kommunikation.",
+          "D": "Wärmeverteilung ist nicht gleich Flüssigkeitsverteilung; Antikörper gehören zur Abwehr.",
+          "E": "Die Zuordnungen verfehlen die spezifischen Aufgaben."
+        },
+        "commonTrap": "Alle transportierten Stoffe derselben Funktion zuordnen."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q18",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Eine Planungskommission betrachtet nur die Zahl der Todesfälle durch Herz-Kreislauf-Erkrankungen. Welche zusätzliche Information aus der Vorlesung begründet am ehesten einen langfristigen Ressourcenbedarf?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Verteilung des Blutvolumens auf Arterien und Venen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Der unterschiedliche Druck in Lungenarterie und Aorta.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Anzahl der Herzklappen pro Person.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wiederholte Hospitalisationen bei chronischer Herzinsuffizienz.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die Diffusionszeit eines zellulären Calciumsignals.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das beschreibt Physiologie, keine Inanspruchnahme der Versorgung. B: Druckwerte beziffern keinen Versorgungsbedarf. C: Die Zahl der Klappen beschreibt keine Krankheitslast. D: Wiederkehrende Behandlung bindet auch ohne unmittelbar tödlichen Verlauf Ressourcen. E: Die Diffusionszeit sagt nichts über Hospitalisationsbedarf aus. Quelle: Vorlesung, PDF-S. 7–9.",
+      "trap": "Krankheitslast auf Mortalität reduzieren.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Medizinische und ökonomische Bedeutung des Herz-Kreislaufsystems"
+      ],
+      "questionGoal": "Eine Planungskommission betrachtet nur die Zahl der Todesfälle durch Herz-Kreislauf-Erkrankungen. Welche zusätzliche Information aus der Vorlesung begründet am ehesten einen langfristigen Ressourcenbedarf?",
+      "structuredExplanation": {
+        "coreIdea": "Medizinische und ökonomische Bedeutung des Herz-Kreislaufsystems",
+        "correctReasoning": "Wiederkehrende Behandlung bindet auch ohne unmittelbar tödlichen Verlauf Ressourcen.",
+        "wrongAnswerExplanations": {
+          "A": "Das beschreibt Physiologie, keine Inanspruchnahme der Versorgung.",
+          "B": "Druckwerte beziffern keinen Versorgungsbedarf.",
+          "C": "Die Zahl der Klappen beschreibt keine Krankheitslast.",
+          "E": "Die Diffusionszeit sagt nichts über Hospitalisationsbedarf aus."
+        },
+        "commonTrap": "Krankheitslast auf Mortalität reduzieren."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "Zwei hypothetische Erkrankungen verursachen gleich viele Todesfälle. Erkrankung A führt zusätzlich zu häufigen langen Spitalaufenthalten; Erkrankung B selten. Beurteilen Sie die Schlussfolgerungen.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die identische Mortalität beweist identische Versorgungskosten.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Für eine konkrete Kostenschätzung braucht es zusätzlich Angaben zu Ressourcen und Preisen.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Zahl der Todesfälle bildet die Morbiditätslast nur unvollständig ab.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Aus der Zahl der Hospitalisationen lässt sich ohne weitere Angaben die Zahl verschiedener erkrankter Personen bestimmen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Kosten hängen auch von Behandlung und Dauer ab. B: Aus Häufigkeit allein folgt kein Geldbetrag. C: Nicht tödliche Erkrankungen und wiederholte Behandlungen fehlen in der reinen Mortalitätszahl. D: Eine Person kann mehrfach hospitalisiert werden. Quelle: Vorlesung, PDF-S. 7–9.",
+      "trap": "Ereignisse, Personen und Kosten als austauschbare Kennzahlen behandeln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Medizinische und ökonomische Bedeutung des Herz-Kreislaufsystems"
+      ],
+      "questionGoal": "Zwei hypothetische Erkrankungen verursachen gleich viele Todesfälle. Erkrankung A führt zusätzlich zu häufigen langen Spitalaufenthalten; Erkrankung B selten. Beurteilen Sie die Schlussfolgerungen.",
+      "structuredExplanation": {
+        "coreIdea": "Medizinische und ökonomische Bedeutung des Herz-Kreislaufsystems",
+        "correctReasoning": "Aus Häufigkeit allein folgt kein Geldbetrag. Nicht tödliche Erkrankungen und wiederholte Behandlungen fehlen in der reinen Mortalitätszahl.",
+        "wrongAnswerExplanations": {
+          "A": "Kosten hängen auch von Behandlung und Dauer ab.",
+          "B": "Aus Häufigkeit allein folgt kein Geldbetrag.",
+          "C": "Nicht tödliche Erkrankungen und wiederholte Behandlungen fehlen in der reinen Mortalitätszahl.",
+          "D": "Eine Person kann mehrfach hospitalisiert werden."
+        },
+        "commonTrap": "Ereignisse, Personen und Kosten als austauschbare Kennzahlen behandeln."
+      }
+    },
+    {
+      "id": "j2_b1_kv01_q20",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV01",
+      "stem": "In einem stationären Modell ohne Shunt beträgt die Druckdifferenz über den Körperkreislauf 90 mmHg und über den Lungenkreislauf 10 mmHg. Welches Verhältnis der Gesamtwiderstände folgt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RKörper/RLunge = 1/9",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "RKörper/RLunge = 9",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "RKörper/RLunge = 1",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "RKörper/RLunge = 80",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ohne getrennte HMV-Werte ist das Verhältnis nicht bestimmbar.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die grössere Druckdifferenz gehört bei gleichem Q zum grösseren Widerstand. B: Beide Kreisläufe führen denselben Q: RK/RL = 90/10 = 9. C: Gleicher Q bedeutet bei ungleichen ΔP nicht gleiches R. D: Druckdifferenzen müssen für das Verhältnis dividiert werden. E: Die Serienschaltung liefert bereits die Gleichheit der Flüsse. Quelle: Vorlesung, PDF-S. 13–14.",
+      "trap": "Serienschaltung, Druckdifferenz und Widerstand nicht gemeinsam auswerten.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV01"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "System- und Lungenkreislauf"
+      ],
+      "questionGoal": "In einem stationären Modell ohne Shunt beträgt die Druckdifferenz über den Körperkreislauf 90 mmHg und über den Lungenkreislauf 10 mmHg. Welches Verhältnis der Gesamtwiderstände folgt?",
+      "structuredExplanation": {
+        "coreIdea": "System- und Lungenkreislauf",
+        "correctReasoning": "Beide Kreisläufe führen denselben Q: RK/RL = 90/10 = 9.",
+        "wrongAnswerExplanations": {
+          "A": "Die grössere Druckdifferenz gehört bei gleichem Q zum grösseren Widerstand.",
+          "C": "Gleicher Q bedeutet bei ungleichen ΔP nicht gleiches R.",
+          "D": "Druckdifferenzen müssen für das Verhältnis dividiert werden.",
+          "E": "Die Serienschaltung liefert bereits die Gleichheit der Flüsse."
+        },
+        "commonTrap": "Serienschaltung, Druckdifferenz und Widerstand nicht gemeinsam auswerten."
+      }
+    }
+  ]
+}
