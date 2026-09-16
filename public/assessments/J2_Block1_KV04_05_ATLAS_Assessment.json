@@ -1,0 +1,1330 @@
+{
+  "id": "assessment_j2_block1_kv04_05_herzmechanik_v1",
+  "lectureCode": "KV04/05",
+  "title": "Herzmechanik – Herzzyklus, Druck-Volumen und Regulation",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV4&5_Herzmechanik_WS26-27.pdf, Katja Odening, PDF-S. 3–25; gemeinsame offizielle Lernziele S. 25. Gemeinsamer Katalog zur Doppelvorlesung, insgesamt genau 20 eigenständig formulierte Übungsfragen, keine Originalprüfungsfragen. Isolierte Laständerungen beziehen sich auf das vereinfachte Folienmodell; Rechenwerte sind gesetzte Modellannahmen. Schwierigkeit redaktionell eingeschätzt, nicht empirisch kalibriert.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Zeitliche Abfolge der Phasen mechanischer Herzaktivität kennen und interpretieren."
+    },
+    {
+      "id": "lo2",
+      "text": "Drucke und Volumina während der Herzaktivität interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Klappenbewegungen und Herztöne zeitlich zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Das Druck-Volumen-Diagramm interpretieren."
+    },
+    {
+      "id": "lo5",
+      "text": "Volumina, Fraktionen, Leistung und Herzminutenvolumen bestimmen."
+    },
+    {
+      "id": "lo6",
+      "text": "Konsequenzen von Änderungen in Preload und Afterload verstehen."
+    },
+    {
+      "id": "lo7",
+      "text": "Konsequenzen von Änderungen der Inotropie erklären."
+    },
+    {
+      "id": "lo8",
+      "text": "Methoden zur Untersuchung der Herzfunktion kennen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv04_05_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "In einer Messung steigt der LV-Druck bei konstant maximalem Kammervolumen. Er liegt bereits über dem Vorhofdruck, aber noch unter dem Aortendruck. Welche Phase liegt vor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Späte Füllungsphase",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Isovolumetrische Kontraktion",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Frühe Auswurfphase",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Isovolumetrische Relaxation",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Späte Auswurfphase",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Bei Füllung steigt das Volumen. B: Beide Klappen sind geschlossen, während der Druck bei EDV steigt. C: Auswurf setzt eine offene Aortenklappe und sinkendes Volumen voraus. D: Bei Relaxation fällt der Druck bei ESV. E: Auch spät im Auswurf nimmt das Volumen ab. Quelle: Vorlesung, PDF-S. 7–10.",
+      "trap": "Konstantes Volumen ohne Beachtung der Druckrichtung interpretieren.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Isovolumetrische Kontraktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Isovolumetrische Kontraktion"
+      ],
+      "questionGoal": "Isovolumetrische Kontraktion",
+      "structuredExplanation": {
+        "coreIdea": "Isovolumetrische Kontraktion",
+        "correctReasoning": "Beide Klappen sind geschlossen, während der Druck bei EDV steigt.",
+        "wrongAnswerExplanations": {
+          "A": "Bei Füllung steigt das Volumen.",
+          "C": "Auswurf setzt eine offene Aortenklappe und sinkendes Volumen voraus.",
+          "D": "Bei Relaxation fällt der Druck bei ESV.",
+          "E": "Auch spät im Auswurf nimmt das Volumen ab."
+        },
+        "commonTrap": "Konstantes Volumen ohne Beachtung der Druckrichtung interpretieren."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Nach dem zweiten Herzton fällt der LV-Druck bei konstantem Volumen. Welches nächste Ereignis beendet diese Phase bei intakten Klappen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LV-Druck übersteigt Aortendruck.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Aortendruck übersteigt Vorhofdruck.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Vorhofdruck fällt unter LV-Druck.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "LV-Druck fällt unter Vorhofdruck.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "LV-Druck erreicht exakt null.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Dies würde die Aortenklappe öffnen und gehört zum Beginn des Auswurfs. B: Dieser Vergleich steuert die Mitralklappe nicht. C: Dieser Gradient hält die Mitralklappe geschlossen. D: Der umgekehrte Gradient öffnet die Mitralklappe und erlaubt Füllung. E: Entscheidend ist der relative Druck, kein Nullwert. Quelle: Vorlesung, PDF-S. 7–11.",
+      "trap": "Klappenereignisse an absolute statt relative Druckwerte knüpfen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Klappenöffnung durch Druckgradient"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Klappenöffnung durch Druckgradient"
+      ],
+      "questionGoal": "Klappenöffnung durch Druckgradient",
+      "structuredExplanation": {
+        "coreIdea": "Klappenöffnung durch Druckgradient",
+        "correctReasoning": "Der umgekehrte Gradient öffnet die Mitralklappe und erlaubt Füllung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde die Aortenklappe öffnen und gehört zum Beginn des Auswurfs.",
+          "B": "Dieser Vergleich steuert die Mitralklappe nicht.",
+          "C": "Dieser Gradient hält die Mitralklappe geschlossen.",
+          "E": "Entscheidend ist der relative Druck, kein Nullwert."
+        },
+        "commonTrap": "Klappenereignisse an absolute statt relative Druckwerte knüpfen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q03",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Ordnen Sie die Befunde eines normalen Wiggers-Diagramms ein.",
+      "options": [
+        {
+          "id": "A",
+          "text": "S1 liegt am Übergang von Füllung zu isovolumetrischer Kontraktion.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Während der isovolumetrischen Relaxation ist die Aortenklappe noch offen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Vorhofsystole gehört zur Ventrikelsystole.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "S2 tritt im Zusammenhang mit dem Schluss der Taschenklappen auf.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Der AV-Klappenschluss markiert den Beginn der Ventrikelsystole. B: Die Relaxationsphase beginnt nach dem Aortenklappenschluss; beide Klappen sind geschlossen. C: Die Vorhofsystole ergänzt die Füllung am Ende der Ventrikeldiastole. D: Taschenklappenschluss und S2 markieren den Beginn der Ventrikeldiastole. Quelle: Vorlesung, PDF-S. 7–10.",
+      "trap": "Vorhof- und Ventrikelsystole gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Herztöne und mechanische Phasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Herztöne und mechanische Phasen"
+      ],
+      "questionGoal": "Herztöne und mechanische Phasen",
+      "structuredExplanation": {
+        "coreIdea": "Herztöne und mechanische Phasen",
+        "correctReasoning": "Der AV-Klappenschluss markiert den Beginn der Ventrikelsystole. Taschenklappenschluss und S2 markieren den Beginn der Ventrikeldiastole.",
+        "wrongAnswerExplanations": {
+          "A": "Der AV-Klappenschluss markiert den Beginn der Ventrikelsystole.",
+          "B": "Die Relaxationsphase beginnt nach dem Aortenklappenschluss; beide Klappen sind geschlossen.",
+          "C": "Die Vorhofsystole ergänzt die Füllung am Ende der Ventrikeldiastole.",
+          "D": "Taschenklappenschluss und S2 markieren den Beginn der Ventrikeldiastole."
+        },
+        "commonTrap": "Vorhof- und Ventrikelsystole gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Zwei Herzen zeigen deckungsgleiche Druck-Volumen-Schleifen. Weitere Messdaten fehlen. Welche Grösse lässt sich daraus als gleich ableiten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Herzfrequenz",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Dauer der Füllungsphase",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Druck-Volumen-Arbeit pro Schlag",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Herzminutenvolumen",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mechanische Leistung pro Minute",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Zeit ist in der Schleife nicht abgebildet. B: Ohne Zeitinformation ist die Phasendauer nicht bekannt. C: Identische eingeschlossene Flächen bedeuten identische äussere Schlagarbeit. D: Das HMV hängt zusätzlich von der unbekannten Herzfrequenz ab. E: Die Energie pro Minute hängt zusätzlich von der Frequenz ab. Quelle: Vorlesung, PDF-S. 10–12.",
+      "trap": "Gleiche Arbeit pro Schlag mit gleicher Leistung gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Zeitinformation der PV-Schleife"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitinformation der PV-Schleife"
+      ],
+      "questionGoal": "Zeitinformation der PV-Schleife",
+      "structuredExplanation": {
+        "coreIdea": "Zeitinformation der PV-Schleife",
+        "correctReasoning": "Identische eingeschlossene Flächen bedeuten identische äussere Schlagarbeit.",
+        "wrongAnswerExplanations": {
+          "A": "Zeit ist in der Schleife nicht abgebildet.",
+          "B": "Ohne Zeitinformation ist die Phasendauer nicht bekannt.",
+          "D": "Das HMV hängt zusätzlich von der unbekannten Herzfrequenz ab.",
+          "E": "Die Energie pro Minute hängt zusätzlich von der Frequenz ab."
+        },
+        "commonTrap": "Gleiche Arbeit pro Schlag mit gleicher Leistung gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Ein Modellventrikel hat EDV 150 ml und ESV 60 ml; die Herzfrequenz beträgt 80/min. Welche Kombination folgt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SV 90 ml; EF 60 %; HMV 7,2 l/min",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "SV 60 ml; EF 40 %; HMV 4,8 l/min",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "SV 90 ml; EF 150 %; HMV 7,2 l/min",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "SV 150 ml; EF 60 %; HMV 12 l/min",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "SV 90 ml; EF 60 %; HMV 1,125 l/min",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 150−60=90 ml; 90/150=0,60; 90×80=7200 ml/min. B: ESV ist Restvolumen, nicht ausgeworfenes Volumen. C: EF wird durch EDV, nicht ESV, dividiert. D: EDV ist nicht gleich SV. E: Für das HMV wird mit der Frequenz multipliziert, nicht dividiert. Quelle: Vorlesung, PDF-S. 10.",
+      "trap": "Restvolumen als Schlagvolumen einsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "SV, EF und HMV berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SV, EF und HMV berechnen"
+      ],
+      "questionGoal": "SV, EF und HMV berechnen",
+      "structuredExplanation": {
+        "coreIdea": "SV, EF und HMV berechnen",
+        "correctReasoning": "150−60=90 ml; 90/150=0,60; 90×80=7200 ml/min.",
+        "wrongAnswerExplanations": {
+          "B": "ESV ist Restvolumen, nicht ausgeworfenes Volumen.",
+          "C": "EF wird durch EDV, nicht ESV, dividiert.",
+          "D": "EDV ist nicht gleich SV.",
+          "E": "Für das HMV wird mit der Frequenz multipliziert, nicht dividiert."
+        },
+        "commonTrap": "Restvolumen als Schlagvolumen einsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q06",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Der mittlere Auswurfdruck beträgt 100 mmHg, SV 75 ml, HF 80/min. Mit 1 mmHg ≈ 133 Pa: Welche linksventrikuläre Druck-Volumen-Leistung folgt näherungsweise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0,017 W",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "1,00 W",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "80 W",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "60 W",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "1,33 W",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Dies entspräche ungefähr einer falschen zusätzlichen Division durch 60. B: Etwa 1 J ist die Arbeit pro Schlag, nicht die Leistung bei 80/min. C: 80 J/min müssen noch in J/s umgerechnet werden. D: Dieser Wert folgt nicht aus Druck, SV und Frequenz. E: W≈100×133×75×10⁻⁶=0,9975 J; P≈0,9975×80/60=1,33 W. Quelle: Vorlesung, PDF-S. 12.",
+      "trap": "Joule pro Schlag oder pro Minute als Watt ausgeben.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Arbeit in Leistung umrechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Arbeit in Leistung umrechnen"
+      ],
+      "questionGoal": "Arbeit in Leistung umrechnen",
+      "structuredExplanation": {
+        "coreIdea": "Arbeit in Leistung umrechnen",
+        "correctReasoning": "W≈100×133×75×10⁻⁶=0,9975 J; P≈0,9975×80/60=1,33 W.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspräche ungefähr einer falschen zusätzlichen Division durch 60.",
+          "B": "Etwa 1 J ist die Arbeit pro Schlag, nicht die Leistung bei 80/min.",
+          "C": "80 J/min müssen noch in J/s umgerechnet werden.",
+          "D": "Dieser Wert folgt nicht aus Druck, SV und Frequenz."
+        },
+        "commonTrap": "Joule pro Schlag oder pro Minute als Watt ausgeben."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q07",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Herz A: EDV 100 ml, ESV 40 ml. Herz B: EDV 160 ml, ESV 64 ml. Beide schlagen 70-mal pro Minute. Beurteilen Sie die Folgerungen.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beide Herzen haben eine EF von 60 %.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Beide Herzen haben dasselbe HMV.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Herz B wirft pro Schlag 36 ml mehr aus.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Die EF-Werte beweisen identische intrinsische Kontraktilität.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 60/100=96/160=0,60. B: HMV A=4,2 l/min, B=6,72 l/min. C: SV B=96 ml und SV A=60 ml; Differenz 36 ml. D: EF hängt auch von Lastbedingungen ab; gleiche EF beweist keine gleiche Inotropie. Quelle: Vorlesung, PDF-S. 10, 16–20.",
+      "trap": "Eine gleiche Fraktion mit gleichem Auswurf oder gleicher Inotropie verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Ejektionsfraktion und Volumenstrom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ejektionsfraktion und Volumenstrom"
+      ],
+      "questionGoal": "Ejektionsfraktion und Volumenstrom",
+      "structuredExplanation": {
+        "coreIdea": "Ejektionsfraktion und Volumenstrom",
+        "correctReasoning": "60/100=96/160=0,60. SV B=96 ml und SV A=60 ml; Differenz 36 ml.",
+        "wrongAnswerExplanations": {
+          "A": "60/100=96/160=0,60.",
+          "B": "HMV A=4,2 l/min, B=6,72 l/min.",
+          "C": "SV B=96 ml und SV A=60 ml; Differenz 36 ml.",
+          "D": "EF hängt auch von Lastbedingungen ab; gleiche EF beweist keine gleiche Inotropie."
+        },
+        "commonTrap": "Eine gleiche Fraktion mit gleichem Auswurf oder gleicher Inotropie verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Im Folienmodell steigt der venöse Füllungsdruck; Nachlast und Inotropie werden konstant gehalten. Welche Veränderung ist am ehesten zu erwarten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "EDV unverändert; ESV steigt; SV sinkt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "EDV steigt; ESV ungefähr gleich; SV steigt.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "EDV unverändert; ESV sinkt durch neue ESPVR.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "EDV sinkt; ESV steigt; SV sinkt.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "EDV und SV bleiben trotz stärkerer Füllung gleich.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das passt eher zu isoliert erhöhter Nachlast. B: Mehr Füllung verschiebt die rechte Grenze; bei gleichen übrigen Bedingungen steigt das SV. C: Eine neue ESPVR wäre eine Inotropieänderung, nicht der isolierte Frank-Starling-Effekt. D: Mehr Füllungsdruck führt im Modell zu mehr EDV. E: Die zusätzliche Füllung erhöht das SV im Frank-Starling-Modell. Quelle: Vorlesung, PDF-S. 15–16.",
+      "trap": "Dehnungsabhängige Kraftzunahme als neue Inotropie interpretieren.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Frank-Starling bei konstanter Nachlast"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Frank-Starling bei konstanter Nachlast"
+      ],
+      "questionGoal": "Frank-Starling bei konstanter Nachlast",
+      "structuredExplanation": {
+        "coreIdea": "Frank-Starling bei konstanter Nachlast",
+        "correctReasoning": "Mehr Füllung verschiebt die rechte Grenze; bei gleichen übrigen Bedingungen steigt das SV.",
+        "wrongAnswerExplanations": {
+          "A": "Das passt eher zu isoliert erhöhter Nachlast.",
+          "C": "Eine neue ESPVR wäre eine Inotropieänderung, nicht der isolierte Frank-Starling-Effekt.",
+          "D": "Mehr Füllungsdruck führt im Modell zu mehr EDV.",
+          "E": "Die zusätzliche Füllung erhöht das SV im Frank-Starling-Modell."
+        },
+        "commonTrap": "Dehnungsabhängige Kraftzunahme als neue Inotropie interpretieren."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Die Nachlast wird unmittelbar vor einem Auswurf erhöht. Das anfängliche EDV und die Inotropie sind unverändert. Welche unmittelbare Folge zeigt das Folienmodell?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ESV sinkt, EF steigt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "EDV sinkt sofort, ESV bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ESPVR verschiebt sich durch positive Inotropie.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ESV steigt, SV und EF sinken.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "SV steigt wegen der höheren Druckentwicklung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Höhere Last erschwert die Entleerung. B: Das anfängliche EDV ist ausdrücklich konstant. C: Eine Laständerung ist keine Inotropieänderung. D: Bei begrenzter Systole und langsamerer Verkürzung bleibt mehr Restvolumen; bei gleichem EDV sinken SV und EF. E: Höherer Druck allein bedeutet keinen grösseren Auswurf. Quelle: Vorlesung, PDF-S. 17–19.",
+      "trap": "Spätere Füllungsanpassung mit dem unmittelbaren Effekt vermischen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Akute Nachlasterhöhung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Akute Nachlasterhöhung"
+      ],
+      "questionGoal": "Akute Nachlasterhöhung",
+      "structuredExplanation": {
+        "coreIdea": "Akute Nachlasterhöhung",
+        "correctReasoning": "Bei begrenzter Systole und langsamerer Verkürzung bleibt mehr Restvolumen; bei gleichem EDV sinken SV und EF.",
+        "wrongAnswerExplanations": {
+          "A": "Höhere Last erschwert die Entleerung.",
+          "B": "Das anfängliche EDV ist ausdrücklich konstant.",
+          "C": "Eine Laständerung ist keine Inotropieänderung.",
+          "E": "Höherer Druck allein bedeutet keinen grösseren Auswurf."
+        },
+        "commonTrap": "Spätere Füllungsanpassung mit dem unmittelbaren Effekt vermischen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q10",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Beurteilen Sie die mechanistische Erklärung einer isolierten Nachlasterhöhung.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei höherer Last nimmt die Verkürzungsgeschwindigkeit zu.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die begrenzte Auswurfzeit trägt zur Abnahme des SV bei.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die endsystolischen Punkte können auf derselben ESPVR liegen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ein höherer systolischer Spitzendruck beweist eine grössere Schleifenfläche.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Kraft-Geschwindigkeits-Beziehung zeigt langsamere Verkürzung bei höherer Last. B: Langsamere Verkürzung bei begrenzter Zeit vermindert die Entleerung. C: Bei unveränderter Inotropie bleibt die zugrunde liegende ESPVR gleich. D: Arbeit hängt von der gesamten Fläche ab; eine höhere, aber schmalere Schleife hat nicht zwingend mehr Fläche. Quelle: Vorlesung, PDF-S. 12, 17–19.",
+      "trap": "Druckhöhe mit Kontraktilität oder Arbeitsfläche gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Kraft-Geschwindigkeit und Nachlast"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kraft-Geschwindigkeit und Nachlast"
+      ],
+      "questionGoal": "Kraft-Geschwindigkeit und Nachlast",
+      "structuredExplanation": {
+        "coreIdea": "Kraft-Geschwindigkeit und Nachlast",
+        "correctReasoning": "Langsamere Verkürzung bei begrenzter Zeit vermindert die Entleerung. Bei unveränderter Inotropie bleibt die zugrunde liegende ESPVR gleich.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kraft-Geschwindigkeits-Beziehung zeigt langsamere Verkürzung bei höherer Last.",
+          "B": "Langsamere Verkürzung bei begrenzter Zeit vermindert die Entleerung.",
+          "C": "Bei unveränderter Inotropie bleibt die zugrunde liegende ESPVR gleich.",
+          "D": "Arbeit hängt von der gesamten Fläche ab; eine höhere, aber schmalere Schleife hat nicht zwingend mehr Fläche."
+        },
+        "commonTrap": "Druckhöhe mit Kontraktilität oder Arbeitsfläche gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Bei gleichem EDV und gleichem Auswurfdruck liegt die linke Grenze der PV-Schleife nach einer Intervention weiter links. Welche Erklärung passt am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Positive Inotropie mit niedrigerem ESV.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Höhere Vorlast als einzige Änderung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Höhere Nachlast als einzige Änderung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Niedrigere Inotropie mit höherem ESV.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Längere Diastole ist aus der Schleife bewiesen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Mehr Entleerung bei gleichen Lastbedingungen entspricht positiver Inotropie. B: Eine isolierte Vorlasterhöhung würde das EDV verändern. C: Höhere Nachlast erhöht im Modell das ESV. D: Höheres ESV läge weiter rechts. E: Eine reine PV-Schleife beweist keine Zeitänderung. Quelle: Vorlesung, PDF-S. 20.",
+      "trap": "Eine Linksverschiebung ohne Prüfung der konstant gehaltenen Grössen deuten.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Positive Inotropie im PV-Diagramm"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positive Inotropie im PV-Diagramm"
+      ],
+      "questionGoal": "Positive Inotropie im PV-Diagramm",
+      "structuredExplanation": {
+        "coreIdea": "Positive Inotropie im PV-Diagramm",
+        "correctReasoning": "Mehr Entleerung bei gleichen Lastbedingungen entspricht positiver Inotropie.",
+        "wrongAnswerExplanations": {
+          "B": "Eine isolierte Vorlasterhöhung würde das EDV verändern.",
+          "C": "Höhere Nachlast erhöht im Modell das ESV.",
+          "D": "Höheres ESV läge weiter rechts.",
+          "E": "Eine reine PV-Schleife beweist keine Zeitänderung."
+        },
+        "commonTrap": "Eine Linksverschiebung ohne Prüfung der konstant gehaltenen Grössen deuten."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q12",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Experiment X erhöht das EDV und SV bei konstantem Auswurfdruck; die endsystolischen Punkte bleiben auf derselben ESPVR. Experiment Y erhöht SV bei gleichem EDV und Auswurfdruck; die endsystolische Beziehung verschiebt sich. Welche Interpretation passt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "X und Y: ausschliesslich höhere Nachlast.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "X: positive Inotropie; Y: Frank-Starling.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "X: Frank-Starling; Y: positive Inotropie.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "X und Y: ausschliesslich höhere Vorlast.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "X: negative Inotropie; Y: höhere Nachlast.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Höhere Nachlast ist nicht mit konstantem Auswurfdruck und diesen SV-Veränderungen erklärt. B: Die Zuordnung ist umgekehrt: X verändert Füllung, Y die Beziehung. C: X nutzt stärkere Füllung bei gleicher Inotropie; Y steigert Entleerung bei gleichen Lastbedingungen. D: Y hat ausdrücklich unverändertes EDV. E: Beide vorgeschlagenen Änderungen würden im isolierten Modell die Entleerung verschlechtern. Quelle: Vorlesung, PDF-S. 16–20.",
+      "trap": "Die gemeinsame Zunahme des SV für denselben Mechanismus halten.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Laständerung versus Inotropie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Laständerung versus Inotropie"
+      ],
+      "questionGoal": "Laständerung versus Inotropie",
+      "structuredExplanation": {
+        "coreIdea": "Laständerung versus Inotropie",
+        "correctReasoning": "X nutzt stärkere Füllung bei gleicher Inotropie; Y steigert Entleerung bei gleichen Lastbedingungen.",
+        "wrongAnswerExplanations": {
+          "A": "Höhere Nachlast ist nicht mit konstantem Auswurfdruck und diesen SV-Veränderungen erklärt.",
+          "B": "Die Zuordnung ist umgekehrt: X verändert Füllung, Y die Beziehung.",
+          "D": "Y hat ausdrücklich unverändertes EDV.",
+          "E": "Beide vorgeschlagenen Änderungen würden im isolierten Modell die Entleerung verschlechtern."
+        },
+        "commonTrap": "Die gemeinsame Zunahme des SV für denselben Mechanismus halten."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Vergleichen Sie Herzfunktionskurven bei normaler und verminderter Inotropie.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehr Vorlast verschiebt den Arbeitspunkt auf der jeweiligen Kurve.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Mehr Vorlast verschiebt zwingend die gesamte Kurve nach oben.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein normales HMV schliesst einen erhöhten Füllungsdruck aus.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bei verminderter Inotropie kann dasselbe HMV einen höheren Füllungsdruck erfordern.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Bei unveränderter Inotropie folgt die Änderung derselben Frank-Starling-Kurve. B: Eine andere Kurve repräsentiert hier eine Inotropieänderung. C: Ein ausreichendes HMV kann durch erhöhten Füllungsdruck mit Rückstau erkauft sein. D: Die abgesenkte Kurve kann dasselbe HMV erst bei höherer Vorlast erreichen, sofern dieser Bereich erreichbar ist. Quelle: Vorlesung, PDF-S. 22.",
+      "trap": "Normales HMV als Beweis ungestörter Herzfunktion werten.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Sarnoff-Kurven interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sarnoff-Kurven interpretieren"
+      ],
+      "questionGoal": "Sarnoff-Kurven interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "Sarnoff-Kurven interpretieren",
+        "correctReasoning": "Bei unveränderter Inotropie folgt die Änderung derselben Frank-Starling-Kurve. Die abgesenkte Kurve kann dasselbe HMV erst bei höherer Vorlast erreichen, sofern dieser Bereich erreichbar ist.",
+        "wrongAnswerExplanations": {
+          "A": "Bei unveränderter Inotropie folgt die Änderung derselben Frank-Starling-Kurve.",
+          "B": "Eine andere Kurve repräsentiert hier eine Inotropieänderung.",
+          "C": "Ein ausreichendes HMV kann durch erhöhten Füllungsdruck mit Rückstau erkauft sein.",
+          "D": "Die abgesenkte Kurve kann dasselbe HMV erst bei höherer Vorlast erreichen, sofern dieser Bereich erreichbar ist."
+        },
+        "commonTrap": "Normales HMV als Beweis ungestörter Herzfunktion werten."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q14",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "In der Herzfunktionskurve wird das gewünschte HMV erst bei deutlich erhöhtem Füllungsdruck erreicht. Welche isolierte Veränderung erlaubt im Modell dasselbe HMV bei geringerem Füllungsdruck?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zusätzliche Vorlasterhöhung auf derselben Kurve.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Negative Inotropie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Erhöhung der Nachlast bei gleicher Inotropie.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Verringerung des SV bei unveränderter Herzfrequenz.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Positive Inotropie.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Dies erhöht den Füllungsdruck weiter. B: Eine abgesenkte Kurve erfordert eher höhere Vorlast. C: Höhere Auswurflast erleichtert den Auswurf nicht. D: Bei gleicher Frequenz würde das HMV sinken. E: Eine höhere Funktionskurve erreicht dasselbe HMV bei geringerer Vorlast. Quelle: Vorlesung, PDF-S. 20–22.",
+      "trap": "Auswurfverbesserung und Rückstau getrennt beurteilen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Ausreichender Auswurf ohne Rückstau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ausreichender Auswurf ohne Rückstau"
+      ],
+      "questionGoal": "Ausreichender Auswurf ohne Rückstau",
+      "structuredExplanation": {
+        "coreIdea": "Ausreichender Auswurf ohne Rückstau",
+        "correctReasoning": "Eine höhere Funktionskurve erreicht dasselbe HMV bei geringerer Vorlast.",
+        "wrongAnswerExplanations": {
+          "A": "Dies erhöht den Füllungsdruck weiter.",
+          "B": "Eine abgesenkte Kurve erfordert eher höhere Vorlast.",
+          "C": "Höhere Auswurflast erleichtert den Auswurf nicht.",
+          "D": "Bei gleicher Frequenz würde das HMV sinken."
+        },
+        "commonTrap": "Auswurfverbesserung und Rückstau getrennt beurteilen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Beurteilen Sie Aussagen zur Erregungs-Kontraktions-Kopplung und ihrem Bezug zum Herzzyklus.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ca²⁺-Einstrom kann eine grössere Ca²⁺-Freisetzung aus dem SR auslösen.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "SERCA transportiert Ca²⁺ aus dem Cytosol in den Extrazellulärraum.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein sinkender cytosolischer Ca²⁺-Spiegel unterstützt die Relaxation.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mit Öffnung der AV-Klappe muss die Relaxation vollständig abgeschlossen sein.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Der Ca²⁺-Einstrom aktiviert RyR und damit die Verstärkung durch das SR. B: SERCA transportiert Ca²⁺ in das SR; NCX trägt zum Transport aus der Zelle bei. C: Ca²⁺-Entfernung hebt die Aktivierung der kontraktilen Proteine auf. D: Laut Folie 11 setzt sich Relaxation nach der Klappenöffnung fort. Quelle: Vorlesung, PDF-S. 5–6, 11.",
+      "trap": "Klappenöffnung mit dem Ende zellulärer Relaxation gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Ca²⁺ und mechanische Relaxation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ca²⁺ und mechanische Relaxation"
+      ],
+      "questionGoal": "Ca²⁺ und mechanische Relaxation",
+      "structuredExplanation": {
+        "coreIdea": "Ca²⁺ und mechanische Relaxation",
+        "correctReasoning": "Der Ca²⁺-Einstrom aktiviert RyR und damit die Verstärkung durch das SR. Ca²⁺-Entfernung hebt die Aktivierung der kontraktilen Proteine auf.",
+        "wrongAnswerExplanations": {
+          "A": "Der Ca²⁺-Einstrom aktiviert RyR und damit die Verstärkung durch das SR.",
+          "B": "SERCA transportiert Ca²⁺ in das SR; NCX trägt zum Transport aus der Zelle bei.",
+          "C": "Ca²⁺-Entfernung hebt die Aktivierung der kontraktilen Proteine auf.",
+          "D": "Laut Folie 11 setzt sich Relaxation nach der Klappenöffnung fort."
+        },
+        "commonTrap": "Klappenöffnung mit dem Ende zellulärer Relaxation gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo8",
+      "learningObjectiveIds": [
+        "lo8"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Zunächst sollen Kammerbewegung und Volumen nichtinvasiv dargestellt werden; später ist eine direkte intrakardiale Druckmessung erforderlich. Welche Kombination passt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zuerst Angiographie, dann Echokardiographie.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zuerst Echokardiographie, dann Herzkatheter.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beide Schritte ausschliesslich mittels Standard-2D-Echo.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zuerst EKG, dann allein Röntgen ohne Katheter.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zuerst Herzkatheter, dann allein EKG.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Angiographie ist nicht die genannte nichtinvasive Ultraschallmethode; Echo misst den intrakardialen Druck nicht direkt. B: Echo stellt Funktion und Volumina dar; Katheter erlaubt direkte Druckmessung. C: Eine direkte intrakardiale Druckmessung erfordert invasiven Zugang. D: EKG stellt elektrische Aktivität, nicht Kammerbewegung und Volumen, dar. E: Katheter ist invasiv; EKG ersetzt keine direkte Druckmessung. Quelle: Vorlesung, PDF-S. 23–24.",
+      "trap": "Bildgebung mit direkter hämodynamischer Messung gleichsetzen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Untersuchungsmethoden zuordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Untersuchungsmethoden zuordnen"
+      ],
+      "questionGoal": "Untersuchungsmethoden zuordnen",
+      "structuredExplanation": {
+        "coreIdea": "Untersuchungsmethoden zuordnen",
+        "correctReasoning": "Echo stellt Funktion und Volumina dar; Katheter erlaubt direkte Druckmessung.",
+        "wrongAnswerExplanations": {
+          "A": "Angiographie ist nicht die genannte nichtinvasive Ultraschallmethode; Echo misst den intrakardialen Druck nicht direkt.",
+          "C": "Eine direkte intrakardiale Druckmessung erfordert invasiven Zugang.",
+          "D": "EKG stellt elektrische Aktivität, nicht Kammerbewegung und Volumen, dar.",
+          "E": "Katheter ist invasiv; EKG ersetzt keine direkte Druckmessung."
+        },
+        "commonTrap": "Bildgebung mit direkter hämodynamischer Messung gleichsetzen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q17",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Nach Intervention sinkt SV von 80 auf 60 ml; der mittlere Auswurfdruck steigt von 90 auf 120 mmHg. HF steigt von 60 auf 90/min. Vernachlässigen Sie Füllungs- und Beschleunigungsarbeit. Wie ändern sich Schlagarbeit und mechanische Leistung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schlagarbeit +33 %; Leistung +100 %.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Schlagarbeit −25 %; Leistung unverändert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Schlagarbeit unverändert; Leistung unverändert.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Schlagarbeit unverändert; Leistung +50 %.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Schlagarbeit +50 %; Leistung +50 %.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Druckzunahme wird durch die SV-Abnahme im Produkt ausgeglichen. B: SV allein bestimmt die Arbeit nicht; Druck steigt gleichzeitig. C: Die höhere Frequenz steigert die Leistung. D: 90×80=120×60; gleiche Arbeit pro Schlag, aber 90/60=1,5-fache Leistung. E: Die Arbeit bleibt im angegebenen Näherungsmodell gleich. Quelle: Vorlesung, PDF-S. 10–12.",
+      "trap": "Nur Druck oder nur Volumen statt deren Produkt vergleichen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "PV-Fläche und Frequenz kombinieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PV-Fläche und Frequenz kombinieren"
+      ],
+      "questionGoal": "PV-Fläche und Frequenz kombinieren",
+      "structuredExplanation": {
+        "coreIdea": "PV-Fläche und Frequenz kombinieren",
+        "correctReasoning": "90×80=120×60; gleiche Arbeit pro Schlag, aber 90/60=1,5-fache Leistung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Druckzunahme wird durch die SV-Abnahme im Produkt ausgeglichen.",
+          "B": "SV allein bestimmt die Arbeit nicht; Druck steigt gleichzeitig.",
+          "C": "Die höhere Frequenz steigert die Leistung.",
+          "E": "Die Arbeit bleibt im angegebenen Näherungsmodell gleich."
+        },
+        "commonTrap": "Nur Druck oder nur Volumen statt deren Produkt vergleichen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Beurteilen Sie Aussagen zu einem intakten linken Ventrikel im normalen Herzzyklus.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei LV-Druck über Vorhofdruck muss die Aortenklappe bereits offen sein.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "In der isovolumetrischen Relaxation entspricht das Volumen dem ESV.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Aortenklappe öffnet beim Überschreiten des aktuellen Aortendrucks.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Während der Auswurfphase bleibt der LV-Druck wegen der offenen Klappe konstant.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Während der Anspannung kann LV-Druck noch unter Aortendruck liegen. B: Nach dem Auswurf bleibt das Restvolumen bis zur Mitralöffnung konstant. C: Der Druckgradient entscheidet; 80 mmHg ist ein Beispielwert, keine feste Öffnungsschwelle. D: Druck und Volumen ändern sich während des auxotonen Auswurfs. Quelle: Vorlesung, PDF-S. 7–11.",
+      "trap": "Offene Klappe mit isobarem Auswurf verwechseln.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Druck, Volumen und Klappen simultan lesen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druck, Volumen und Klappen simultan lesen"
+      ],
+      "questionGoal": "Druck, Volumen und Klappen simultan lesen",
+      "structuredExplanation": {
+        "coreIdea": "Druck, Volumen und Klappen simultan lesen",
+        "correctReasoning": "Nach dem Auswurf bleibt das Restvolumen bis zur Mitralöffnung konstant. Der Druckgradient entscheidet; 80 mmHg ist ein Beispielwert, keine feste Öffnungsschwelle.",
+        "wrongAnswerExplanations": {
+          "A": "Während der Anspannung kann LV-Druck noch unter Aortendruck liegen.",
+          "B": "Nach dem Auswurf bleibt das Restvolumen bis zur Mitralöffnung konstant.",
+          "C": "Der Druckgradient entscheidet; 80 mmHg ist ein Beispielwert, keine feste Öffnungsschwelle.",
+          "D": "Druck und Volumen ändern sich während des auxotonen Auswurfs."
+        },
+        "commonTrap": "Offene Klappe mit isobarem Auswurf verwechseln."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q19",
+      "type": "A",
+      "difficulty": 5,
+      "difficultyLevel": "very_hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "EDV bleibt im Modell 140 ml, ESV sinkt von 70 auf 50 ml. Gleichzeitig wird nur die Nachlast reduziert. Welche Folgerung ist korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "EF steigt von 50 % auf etwa 64 %; dafür ist keine Inotropiezunahme erforderlich.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "EF steigt von 50 % auf 90 %; dies beweist positive Inotropie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "EF bleibt 50 %, da EDV unverändert ist.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "SV steigt um 40 ml, weil ESV um 20 ml sinkt.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "HMV muss unabhängig von der Herzfrequenz exakt 6,3 l/min betragen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: SV steigt von 70 auf 90 ml; 90/140≈64 %. Entlastung kann dies bei gleicher Inotropie erklären. B: 90 ml ist das neue SV, nicht die prozentuale EF; Lastbedingungen wurden verändert. C: Der Zähler SV steigt bei konstantem Nenner. D: SV nimmt bei konstantem EDV um genau 20 ml zu. E: Ohne Herzfrequenz ist kein absolutes HMV bestimmbar. Quelle: Vorlesung, PDF-S. 10, 17–20.",
+      "trap": "Verbesserte EF automatisch als erhöhte Kontraktilität auslegen.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "EF-Anstieg ohne Inotropiezunahme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "EF-Anstieg ohne Inotropiezunahme"
+      ],
+      "questionGoal": "EF-Anstieg ohne Inotropiezunahme",
+      "structuredExplanation": {
+        "coreIdea": "EF-Anstieg ohne Inotropiezunahme",
+        "correctReasoning": "SV steigt von 70 auf 90 ml; 90/140≈64 %. Entlastung kann dies bei gleicher Inotropie erklären.",
+        "wrongAnswerExplanations": {
+          "B": "90 ml ist das neue SV, nicht die prozentuale EF; Lastbedingungen wurden verändert.",
+          "C": "Der Zähler SV steigt bei konstantem Nenner.",
+          "D": "SV nimmt bei konstantem EDV um genau 20 ml zu.",
+          "E": "Ohne Herzfrequenz ist kein absolutes HMV bestimmbar."
+        },
+        "commonTrap": "Verbesserte EF automatisch als erhöhte Kontraktilität auslegen."
+      }
+    },
+    {
+      "id": "j2_b1_kv04_05_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo8",
+      "learningObjectiveIds": [
+        "lo8"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV04/05",
+      "stem": "Beurteilen Sie Schlussfolgerungen aus den vorgestellten Untersuchungsmethoden.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Echokardiographie nutzt reflektierte Ultraschallwellen.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Eine reine PV-Schleife liefert bereits die Herzfrequenz für die HMV-Berechnung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Angiographie mit Röntgen und Kontrastmittel ist dasselbe Messprinzip wie eine Katheter-Druckmessung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Katheterverfahren können je nach Untersuchung auch therapeutische Eingriffe ermöglichen.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Reflexion an Grenzflächen ist das genannte Echo-Prinzip. B: Die Schleife enthält keine Zeitachse; für HMV braucht es zusätzlich HF. C: Bildgebung des Gefässlumens und intrakardiale Druckmessung sind unterschiedliche Messungen. D: Die Vorlesung nennt unter anderem Dilatation/Stents und Ablation. Quelle: Vorlesung, PDF-S. 10–11, 23–24.",
+      "trap": "Aus einer Untersuchungsmethode mehr Information ableiten, als ihr Messprinzip liefert.",
+      "tags": [
+        "J2",
+        "Herz-Kreislauf",
+        "KV04/05",
+        "Messprinzip und klinische Information"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messprinzip und klinische Information"
+      ],
+      "questionGoal": "Messprinzip und klinische Information",
+      "structuredExplanation": {
+        "coreIdea": "Messprinzip und klinische Information",
+        "correctReasoning": "Die Reflexion an Grenzflächen ist das genannte Echo-Prinzip. Die Vorlesung nennt unter anderem Dilatation/Stents und Ablation.",
+        "wrongAnswerExplanations": {
+          "A": "Die Reflexion an Grenzflächen ist das genannte Echo-Prinzip.",
+          "B": "Die Schleife enthält keine Zeitachse; für HMV braucht es zusätzlich HF.",
+          "C": "Bildgebung des Gefässlumens und intrakardiale Druckmessung sind unterschiedliche Messungen.",
+          "D": "Die Vorlesung nennt unter anderem Dilatation/Stents und Ablation."
+        },
+        "commonTrap": "Aus einer Untersuchungsmethode mehr Information ableiten, als ihr Messprinzip liefert."
+      }
+    }
+  ]
+}
