@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
 import {
   cloudSyncAvailable,
+  setCloseCircle,
   fetchAdminProfiles,
   fetchAdminProgressRows,
   getCurrentProfile,
@@ -16,6 +17,10 @@ export function AdminProgressDashboard() {
   const [rows, setRows] = useState<AdminProgressRow[]>([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const [year, setYear] = useState("all");
+  const [circle, setCircle] = useState("all");
+  const [saving, setSaving] = useState<string | null>(null);
+  const [notice, setNotice] = useState("");
   const [query, setQuery] = useState("");
   const [role, setRole] = useState<"all" | "student" | "admin">("all");
 
@@ -31,6 +36,8 @@ export function AdminProgressDashboard() {
   const filteredProfiles = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return profiles.filter((profile) => {
+      if (year !== "all" && String(profile.studyYear || "unknown") !== year) return false;
+      if (circle !== "all" && profile.closeCircle !== (circle === "yes")) return false;
       if (role !== "all" && profile.role !== role) return false;
       return !needle || [
         profile.email,
@@ -38,7 +45,7 @@ export function AdminProgressDashboard() {
         profile.id
       ].join(" ").toLowerCase().includes(needle);
     });
-  }, [profiles, query, role]);
+  }, [profiles, query, role, year, circle]);
 
   const totals = useMemo(() => {
     const attempts = rows.reduce((sum, row) => sum + row.attempts, 0);
@@ -68,6 +75,21 @@ export function AdminProgressDashboard() {
     }
   }
 
+  async function toggleCircle(profile: AdminProfileRow) {
+    setSaving(profile.id);
+    setError("");
+    setNotice("");
+    try {
+      await setCloseCircle(profile.id, !profile.closeCircle);
+      setProfiles((current) => current.map((item) => item.id === profile.id ? { ...item, closeCircle: !profile.closeCircle } : item));
+      setNotice(`${profile.displayName || profile.email}: ${profile.closeCircle ? "aus dem Close Circle entfernt" : "zum Close Circle hinzugefügt"}.`);
+    } catch (error) {
+      setError(error instanceof Error ? error.message : "Änderung fehlgeschlagen.");
+    } finally {
+      setSaving(null);
+    }
+  }
+
   if (loading) {
     return <div className="admin-loading card" aria-label="Nutzer:innen werden geladen"><span /><span /><span /></div>;
   }
@@ -93,7 +115,7 @@ export function AdminProgressDashboard() {
 
         <div className="admin-filter-grid admin-filter-grid--users">
           <label className="admin-filter-search">
-            <span>Suche</span>
+            <span>Person suchen</span>
             <input
               className="input"
               type="search"
@@ -116,7 +138,21 @@ export function AdminProgressDashboard() {
               ]}
             />
           </label>
+          <label><span>Studienjahr</span><AtlasDropdown ariaLabel="Studienjahr filtern" value={year} onChange={setYear} options={[
+            { value: "all", label: "Alle Studienjahre" },
+            ...[1, 2, 3, 4, 5, 6].map((year) => ({ value: String(year), label: `${year}. Studienjahr` })),
+            { value: "unknown", label: "Ohne Angabe" }
+          ]} /></label>
+          <label><span>Close Circle</span><AtlasDropdown ariaLabel="Close Circle filtern" value={circle} onChange={setCircle} options={[
+            { value: "all", label: "Alle Personen" }, { value: "yes", label: "Im Close Circle" }, { value: "no", label: "Nicht im Close Circle" }
+          ]} /></label>
         </div>
+        <div className="admin-year-legend" aria-label="Farben der Studienjahre">
+          {[1, 2, 3, 4, 5, 6].map((year) => <span key={year}><i className={`study-year-color study-year-color--${year}`} />{year}. Jahr</span>)}
+          <span><i className="study-year-color study-year-color--unknown" />Ohne Angabe</span>
+        </div>
+        <p>{filteredProfiles.length} von {profiles.length} Personen · Close Circle erhält Zugang während des Wartungsmodus.</p>
+        {notice && <p role="status">{notice}</p>}
       </section>
 
       {error && (
@@ -136,11 +172,19 @@ export function AdminProgressDashboard() {
           return (
             <article key={profile.id}>
               <div className="admin-user-identity">
-                <div className="admin-user-avatar">{initials(profile.displayName || profile.email)}</div>
+                <div title={profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"} className={`admin-user-avatar study-year-color study-year-color--${profile.studyYear || "unknown"}`}>{initials(profile.displayName || profile.email)}</div>
                 <div>
                   <strong>{profile.displayName || "Name nicht hinterlegt"}</strong>
                   <span>{profile.email}</span>
+                  <small>{profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"}</small>
                 </div>
+              </div>
+              <div className="admin-circle-control">
+                <button type="button" className={profile.closeCircle ? "btn-secondary is-close-circle" : "btn-secondary"}
+                  aria-label={`${profile.displayName || profile.email}: Close Circle ${profile.closeCircle ? "entfernen" : "hinzufügen"}`}
+                  aria-pressed={profile.closeCircle} disabled={saving !== null} onClick={() => void toggleCircle(profile)}>
+                  {saving === profile.id ? "Speichert …" : profile.closeCircle ? "Close Circle entfernen" : "+ Close Circle"}
+                </button>
               </div>
               <div><span>Rolle</span><strong>{profile.role === "admin" ? "Admin" : "User"}</strong></div>
               <div><span>Übungen</span><strong>{progress.length}</strong></div>
@@ -153,7 +197,7 @@ export function AdminProgressDashboard() {
         {!filteredProfiles.length && (
           <div className="admin-empty-state">
             <h3>Keine Nutzer:innen gefunden</h3>
-            <p>Passe Suche oder Rollenfilter an.</p>
+            <p>Passe Suche oder Filter an.</p>
           </div>
         )}
       </section>

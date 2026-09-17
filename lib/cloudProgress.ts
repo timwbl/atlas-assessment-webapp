@@ -32,6 +32,8 @@ export type CloudProfile = {
   role: "student" | "admin";
   created_at: string;
   last_seen_at: string | null;
+  study_year: number | null;
+  close_circle: boolean;
 };
 
 export type AdminProgressRow = {
@@ -56,6 +58,8 @@ export type AdminProfileRow = {
   role: "student" | "admin";
   createdAt: string;
   lastSeenAt: string | null;
+  studyYear: number | null;
+  closeCircle: boolean;
 };
 
 export type SignUpResult = {
@@ -155,13 +159,14 @@ export async function signOut(): Promise<void> {
     await authRequest("logout", { method: "POST" }, session.access_token).catch(() => undefined);
   }
   saveSession(null);
+  await fetch("/api/maintenance/member", { method: "DELETE" }).catch(() => undefined);
 }
 
 export async function upsertCurrentProfile(user: CloudUser): Promise<CloudProfile> {
   const metadataName = typeof user.user_metadata?.name === "string"
     ? user.user_metadata.name.trim()
     : "";
-  const select = "id,email,display_name,role,created_at,last_seen_at";
+  const select = "id,email,display_name,role,created_at,last_seen_at,study_year,close_circle";
   const existing = await restRequest<CloudProfile[]>(
     `profiles?select=${select}&id=eq.${encodeURIComponent(user.id)}&limit=1`
   );
@@ -206,7 +211,7 @@ export async function updateCurrentProfileName(displayName: string): Promise<Clo
   }, session.access_token);
   saveSession({ ...session, user: updatedUser });
 
-  const data = await restRequest<CloudProfile[]>("profiles?on_conflict=id&select=id,email,display_name,role,created_at,last_seen_at", {
+  const data = await restRequest<CloudProfile[]>("profiles?on_conflict=id&select=id,email,display_name,role,created_at,last_seen_at,study_year,close_circle", {
     method: "POST",
     headers: { Prefer: "resolution=merge-duplicates,return=representation" },
     body: JSON.stringify([{
@@ -235,7 +240,7 @@ export async function getCurrentProfile(currentUser?: CloudUser): Promise<CloudP
   const user = currentUser || await getCurrentUser();
   if (!user) return null;
   const rows = await restRequest<CloudProfile[]>(
-    `profiles?select=id,email,display_name,role,created_at,last_seen_at&id=eq.${encodeURIComponent(user.id)}`
+    `profiles?select=id,email,display_name,role,created_at,last_seen_at,study_year,close_circle&id=eq.${encodeURIComponent(user.id)}`
   );
   return rows[0] || upsertCurrentProfile(user);
 }
@@ -341,7 +346,7 @@ export async function fetchAdminProfiles(): Promise<AdminProfileRow[]> {
   const profile = await getCurrentProfile();
   if (profile?.role !== "admin") throw new Error("Nur Administrator:innen können die Nutzer:innenübersicht laden.");
   const rows = await restRequest<CloudProfile[]>(
-    "profiles?select=id,email,display_name,role,created_at,last_seen_at&order=last_seen_at.desc.nullslast"
+    "profiles?select=id,email,display_name,role,created_at,last_seen_at,study_year,close_circle&order=last_seen_at.desc.nullslast"
   );
   return rows.map((row) => ({
     id: row.id,
@@ -349,7 +354,9 @@ export async function fetchAdminProfiles(): Promise<AdminProfileRow[]> {
     displayName: row.display_name || "",
     role: row.role,
     createdAt: row.created_at,
-    lastSeenAt: row.last_seen_at
+    lastSeenAt: row.last_seen_at,
+    studyYear: row.study_year,
+    closeCircle: row.close_circle
   }));
 }
 
@@ -357,4 +364,16 @@ export async function replaceLocalProgressFromCloud(): Promise<Record<string, As
   const remote = await pullCloudProgress();
   saveAllProgress(remote);
   return remote;
+}
+
+export async function setCloseCircle(userId: string, enabled: boolean): Promise<void> {
+  const profile = await getCurrentProfile();
+  if (profile?.role !== "admin") throw new Error("Admin-Zugang erforderlich.");
+  const rows = await restRequest<CloudProfile[]>(`profiles?id=eq.${encodeURIComponent(userId)}&select=id,close_circle`, {
+    method: "PATCH",
+    headers: { Prefer: "return=representation" },
+    body: JSON.stringify({ close_circle: enabled })
+  });
+  if (!rows[0] || rows[0].close_circle !== enabled) throw new Error("Close Circle konnte nicht gespeichert werden.");
+  window.dispatchEvent(new Event("atlas-membership-changed"));
 }

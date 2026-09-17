@@ -1,6 +1,7 @@
 "use client";
 
 import { createClient, type Provider, type Session } from "@supabase/supabase-js";
+import { syncMemberSession } from "./memberSession";
 import { syncAllProgress, upsertCurrentProfile } from "./cloudProgress";
 import {
   getPublicSiteUrl,
@@ -94,6 +95,7 @@ export async function completeOAuthCallback(): Promise<{ email: string; returnTo
   const cloudSession = toStoredCloudSession(data.session);
   saveSession(cloudSession);
   await upsertCurrentProfile(cloudSession.user);
+  await syncMemberSession().catch(() => null);
   await syncAllProgress().catch(() => undefined);
 
   const returnTo = consumeReturnTo();

@@ -1,6 +1,6 @@
 {
   "name": "atlas-assessment-webapp",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "private": true,
   "engines": {
     "node": ">=20 <23"
@@ -14,7 +14,8 @@
     "quality:report": "node scripts/question-quality-report.mjs",
     "quality:test": "rm -rf .quality-test && tsc lib/questionQuality.ts lib/questionDesignRules.ts lib/studyProgram.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .quality-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/question-quality-test.cjs .quality-test && rm -rf .quality-test",
     "readiness:test": "rm -rf .readiness-test && tsc lib/blockReadiness.ts lib/questionQuality.ts lib/questionDesignRules.ts lib/studyProgram.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .readiness-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/block-readiness-test.cjs .readiness-test && rm -rf .readiness-test",
-    "catalog:test": "rm -rf .catalog-test && tsc lib/assessmentCatalog.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .catalog-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/assessment-catalog-test.cjs ./.catalog-test/assessmentCatalog.js && rm -rf .catalog-test"
+    "catalog:test": "rm -rf .catalog-test && tsc lib/assessmentCatalog.ts lib/types.ts --module commonjs --moduleResolution node --target es2020 --outDir .catalog-test --esModuleInterop --skipLibCheck --noEmit false && node scripts/assessment-catalog-test.cjs ./.catalog-test/assessmentCatalog.js && rm -rf .catalog-test",
+    "membership:test": "node scripts/member-access-test.cjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",

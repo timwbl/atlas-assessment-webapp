@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { AtlasBrand } from "../AtlasBrand";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AdminDashboard } from "./AdminDashboard";
@@ -96,7 +97,7 @@ export function AdminWorkspace() {
     <main className="admin-shell">
       <header className="admin-topbar">
         <div>
-          <div className="admin-kicker">ATLAS 3.0 · ADMIN</div>
+          <AtlasBrand inline />
           <h1>{active.label}</h1>
           <p>{active.description}</p>
         </div>

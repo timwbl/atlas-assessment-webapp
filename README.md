@@ -176,3 +176,20 @@ ATLAS unterstützt Google über Supabase Auth. Google wird als Standard-Provider
 
 Der Status wird in `public.app_settings` gespeichert und bleibt dadurch über Reloads
 und Deploys erhalten. `MAINTENANCE_MODE=true` bleibt als Notfall-Fallback verfügbar.
+
+### Studienjahr und Close Circle (4.1)
+
+Für bestehende Datenbanken `supabase/profile-membership.sql` einmal im SQL Editor ausführen;
+Neuinstallationen verwenden `supabase/schema.sql`. Die Migration übernimmt Studienjahre
+aus den bestehenden Auth-Profilen und hält sie bei Profiländerungen synchron.
+
+Unter **Admin → Nutzer:innen** lassen sich Personen nach Name/E-Mail/User-ID, Studienjahr,
+Rolle und Close Circle filtern. Die Avatarfarbe zeigt das Studienjahr; Grau bedeutet keine
+Angabe. Nur ein angemeldeter Supabase-Admin kann Close-Circle-Mitgliedschaften vergeben
+oder entziehen. Die Datenbank verhindert eine Selbstvergabe durch normale Accounts.
+
+Close Circle (golden) und Admin (rot) werden neben dem ATLAS-Logo angezeigt. Beide erhalten
+Zugang während des Wartungsmodus. Die Wartungsseite bietet dafür Passwort- und Google-Login.
+Der Server prüft den Account und die aktuelle Mitgliedschaft bei jedem Wartungszugriff;
+entzogene Mitgliedschaften verlieren den Zugang auch mit vorhandenem Cookie. Altfragenrechte
+und E-Mail-Bestätigung bleiben unverändert.

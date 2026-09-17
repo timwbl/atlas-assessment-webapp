@@ -1,3 +1,5 @@
+import { authenticateRequest } from "./lib/serverAuth";
+import { hasPriorityAccess, MEMBER_SESSION_COOKIE } from "./lib/memberAccess";
 import { NextRequest, NextResponse } from "next/server";
 import {
   MAINTENANCE_COOKIE,
@@ -7,7 +9,7 @@ import {
   maintenanceEnabled
 } from "./lib/maintenance";
 
-const PUBLIC_MAINTENANCE_PATHS = new Set(["/maintenance", "/auth/confirm"]);
+const PUBLIC_MAINTENANCE_PATHS = new Set(["/maintenance", "/auth/confirm", "/auth/callback"]);
 const ADMIN_SESSION_COOKIE = "atlas-admin-session";
 
 export async function middleware(request: NextRequest) {
@@ -18,8 +20,16 @@ export async function middleware(request: NextRequest) {
   const status = await getMaintenanceStatus();
   if (!status.enabled) return NextResponse.next();
 
+  const memberToken = request.cookies.get(MEMBER_SESSION_COOKIE)?.value;
+  if (memberToken) {
+    const auth = await authenticateRequest(new Request(request.url, {
+      headers: { Authorization: `Bearer ${memberToken}` }
+    })).catch(() => null);
+    if (hasPriorityAccess(auth?.profile)) return NextResponse.next();
+  }
+
   // The legacy ENV mode keeps its optional beta-cookie bypass. The global
-  // database toggle intentionally blocks all public content.
+  // database toggle blocks public content unless account priority was verified.
   if (status.source === "environment" && maintenanceEnabled() && maintenanceConfigured()) {
     const expected = await maintenanceAccessToken();
     const received = request.cookies.get(MAINTENANCE_COOKIE)?.value || "";

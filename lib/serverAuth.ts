@@ -11,6 +11,7 @@ type CloudProfile = {
   email: string;
   display_name: string | null;
   role: "student" | "admin";
+  close_circle: boolean;
 };
 
 type AltfragenRequestRow = {
@@ -31,7 +32,7 @@ export async function authenticateRequest(request: Request): Promise<Authenticat
   if (!user?.id) return null;
 
   const profiles = await supabaseServerRestRequest<CloudProfile[]>(
-    `profiles?select=id,email,display_name,role&id=eq.${encodeURIComponent(user.id)}&limit=1`,
+    `profiles?select=id,email,display_name,role,close_circle&id=eq.${encodeURIComponent(user.id)}&limit=1`,
     token
   ).catch(() => []);
   const profile = profiles[0];
@@ -61,6 +62,7 @@ function bearerToken(request: Request): string {
 async function supabaseAuthRequest<T>(path: string, token: string): Promise<T> {
   const config = supabaseConfig();
   const response = await fetch(`${config.url}/auth/v1/${path}`, {
+    cache: "no-store",
     headers: {
       apikey: config.anonKey,
       Authorization: `Bearer ${token}`
@@ -77,6 +79,7 @@ export async function supabaseServerRestRequest<T>(
   const config = supabaseConfig();
   const response = await fetch(`${config.url}/rest/v1/${path}`, {
     ...init,
+    cache: "no-store",
     headers: {
       apikey: config.anonKey,
       Authorization: `Bearer ${token}`,
