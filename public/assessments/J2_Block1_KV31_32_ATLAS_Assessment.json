@@ -1,0 +1,1301 @@
+{
+  "id": "assessment_j2_block1_kv31_32_20261029",
+  "lectureCode": "KV31/32",
+  "title": "Ventilation und Atemmechanik",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV31_32_Atemmechanik I_II_2026st.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Keine Apnoe-Rekorde oder vereinfachten Atemanhaltezeit-Rechnungen geprüft. Vorzeichen der Drücke explizit relativ zur Atmosphäre. Bohr mit alveolärem CO₂ statt unmarkiertem Austausch durch arterielles CO₂. Keine Diagnose allein aus starrem Tiffeneau-Grenzwert; Rechenfall und Referenzinterpretation getrennt. Surfactantmangel nicht pauschal für jedes Frühgeborene behauptet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Ventilation und Drücke des Atemzyklus erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Pleuralen Unterdruck und transpulmonalen Druck unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Compliance und elastische Ruhelage des Atemapparats interpretieren."
+    },
+    {
+      "id": "lo4",
+      "text": "Oberflächenspannung und Surfactant funktionell verknüpfen."
+    },
+    {
+      "id": "lo5",
+      "text": "Lungenvolumina und Messverfahren unterscheiden."
+    },
+    {
+      "id": "lo6",
+      "text": "Atemwegswiderstand und forcierte Exspiration erklären."
+    },
+    {
+      "id": "lo7",
+      "text": "Totraum und alveoläre Ventilation bestimmen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv31_32_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Welche Grösse treibt bei offener Glottis den inspiratorischen Luftstrom unmittelbar von der Atmosphäre zu den Alveolen?",
+      "options": [
+        {
+          "text": "Die Druckdifferenz zwischen Atmosphäre und Alveolen",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine aktive Kontraktion der Alveolarwand",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die blosse Zahl der Erythrozyten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Sauerstoffpartialdruck allein",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Allein ein negativer Pleuradruck ohne Bezug zum Alveolardruck",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Atemmuskeln schaffen diese Druckdifferenz. B: Die Alveolen sind kein eigener Skelettmuskel-Blasebalg. C: Diese bestimmt keinen unmittelbaren Luftdruckgradienten. D: Massentransport durch die Atemwege wird vom Gesamtdruckgradienten getrieben. E: Der pleurale Druck wirkt auf die Dehnung, Luftfluss benötigt den Atemwegsgradienten. Quelle: Vorlesungsfolien, PDF-S. 3,26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Unmittelbarer Strömungsantrieb"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unmittelbarer Strömungsantrieb"
+      ],
+      "questionGoal": "Unmittelbarer Strömungsantrieb",
+      "structuredExplanation": {
+        "coreIdea": "Unmittelbarer Strömungsantrieb",
+        "correctReasoning": "Die Atemmuskeln schaffen diese Druckdifferenz.",
+        "wrongAnswerExplanations": {
+          "B": "Die Alveolen sind kein eigener Skelettmuskel-Blasebalg.",
+          "C": "Diese bestimmt keinen unmittelbaren Luftdruckgradienten.",
+          "D": "Massentransport durch die Atemwege wird vom Gesamtdruckgradienten getrieben.",
+          "E": "Der pleurale Druck wirkt auf die Dehnung, Luftfluss benötigt den Atemwegsgradienten."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Alveolardruck sei relativ zur Atmosphäre 0 cmH₂O, Pleuradruck −6 cmH₂O. Welcher transpulmonale Druck folgt?",
+      "options": [
+        {
+          "text": "0 cmH₂O",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−12 cmH₂O",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "+3 cmH₂O",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "+6 cmH₂O",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "−6 cmH₂O",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der pleurale Anteil darf nicht ignoriert werden. B: Dies folgt nicht aus den beiden Drücken. C: Ein Mittelwert ist nicht die Druckdifferenz. D: Ptp=Palv−Ppl=0−(−6). E: Das kehrt die definierte Differenz um. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Transpulmonaler Druck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transpulmonaler Druck"
+      ],
+      "questionGoal": "Transpulmonaler Druck",
+      "structuredExplanation": {
+        "coreIdea": "Transpulmonaler Druck",
+        "correctReasoning": "Ptp=Palv−Ppl=0−(−6).",
+        "wrongAnswerExplanations": {
+          "A": "Der pleurale Anteil darf nicht ignoriert werden.",
+          "B": "Dies folgt nicht aus den beiden Drücken.",
+          "C": "Ein Mittelwert ist nicht die Druckdifferenz.",
+          "E": "Das kehrt die definierte Differenz um."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Beurteilen Sie einen normalen spontanen Atemzug mit offenen Atemwegen.",
+      "options": [
+        {
+          "text": "Während des inspiratorischen Luftstroms liegt der Alveolardruck etwas unter Atmosphärendruck.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Während der ruhigen Exspiration kann der Alveolardruck etwas über Atmosphärendruck liegen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein negativer Pleuradruck bedeutet, dass sich im Pleuraspalt ein Vakuum ohne Flüssigkeit befindet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Pleuradruck kann während der Inspiration negativer werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das ermöglicht den Einstrom. B: Die Retraktion treibt den Ausstrom. C: Der geschlossene Spalt enthält Flüssigkeit. D: Dies vergrössert den dehnenden transpulmonalen Druck. Quelle: Vorlesungsfolien, PDF-S. 14–16,26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Druckverlauf bei Ruheatmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druckverlauf bei Ruheatmung"
+      ],
+      "questionGoal": "Druckverlauf bei Ruheatmung",
+      "structuredExplanation": {
+        "coreIdea": "Druckverlauf bei Ruheatmung",
+        "correctReasoning": "Das ermöglicht den Einstrom. Die Retraktion treibt den Ausstrom. Dies vergrössert den dehnenden transpulmonalen Druck.",
+        "wrongAnswerExplanations": {
+          "A": "Das ermöglicht den Einstrom.",
+          "B": "Die Retraktion treibt den Ausstrom.",
+          "C": "Der geschlossene Spalt enthält Flüssigkeit.",
+          "D": "Dies vergrössert den dehnenden transpulmonalen Druck."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Das Lungenvolumen nimmt bei einer transpulmonalen Druckzunahme von 5 cmH₂O um 0,75 l zu. Welche mittlere Compliance ergibt sich?",
+      "options": [
+        {
+          "text": "3,75 l/cmH₂O",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,75 l/cmH₂O",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,015 l/cmH₂O",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "6,67 l/cmH₂O",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,15 l/cmH₂O",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist das Produkt statt des Quotienten. B: Der Druckanstieg wurde nicht berücksichtigt. C: Der Wert ist um zehn zu klein. D: Dies ist der Kehrwert mit unpassender Einheit. E: ΔV/ΔP=0,75/5. Quelle: Vorlesungsfolien, PDF-S. 18–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Lungencompliance"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lungencompliance"
+      ],
+      "questionGoal": "Lungencompliance",
+      "structuredExplanation": {
+        "coreIdea": "Lungencompliance",
+        "correctReasoning": "ΔV/ΔP=0,75/5.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist das Produkt statt des Quotienten.",
+          "B": "Der Druckanstieg wurde nicht berücksichtigt.",
+          "C": "Der Wert ist um zehn zu klein.",
+          "D": "Dies ist der Kehrwert mit unpassender Einheit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Eine Lunge benötigt für dieselbe Volumenzunahme einen höheren transpulmonalen Druck als zuvor. Welche Interpretation passt?",
+      "options": [
+        {
+          "text": "Die Atemwege müssen deshalb zwangsläufig anatomisch vollständig verschlossen sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Befund beweist ein höheres Restvolumen allein durch Luftfalle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die elastische Arbeit muss bei gleichem Atemzug kleiner werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Compliance ist erhöht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Compliance ist vermindert.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Druck-Volumen-Beziehung beschreibt hier die Dehnbarkeit. B: Das folgt aus der Complianceangabe nicht zwingend. C: Eine steifere Lunge erhöht den elastischen Aufwand. D: Dann wäre weniger Druck nötig. E: Mehr Druck für gleiches ΔV bedeutet kleineres ΔV/ΔP. Quelle: Vorlesungsfolien, PDF-S. 12,18–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Fibrotische Lunge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fibrotische Lunge"
+      ],
+      "questionGoal": "Fibrotische Lunge",
+      "structuredExplanation": {
+        "coreIdea": "Fibrotische Lunge",
+        "correctReasoning": "Mehr Druck für gleiches ΔV bedeutet kleineres ΔV/ΔP.",
+        "wrongAnswerExplanations": {
+          "A": "Die Druck-Volumen-Beziehung beschreibt hier die Dehnbarkeit.",
+          "B": "Das folgt aus der Complianceangabe nicht zwingend.",
+          "C": "Eine steifere Lunge erhöht den elastischen Aufwand.",
+          "D": "Dann wäre weniger Druck nötig."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q06",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Beurteilen Sie die mechanischen Begriffe.",
+      "options": [
+        {
+          "text": "Erhöhter Strömungswiderstand und verminderte Compliance sind definitionsgemäss dasselbe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verminderte elastische Retraktion kann trotz hoher Dehnbarkeit die Ausatmung erschweren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein hoher Compliancewert beweist in jedem Fall eine bessere Lungenfunktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hohe Compliance bedeutet grosse Volumenänderung bei kleiner Druckänderung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie beschreiben verschiedene Lasten. B: Dies ist beim emphysematösen Umbau relevant. C: Überdehnbarkeit kann mit Strukturverlust einhergehen. D: Sie misst Dehnbarkeit. Quelle: Vorlesungsfolien, PDF-S. 12–13,18–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Elastizität und Obstruktion unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elastizität und Obstruktion unterscheiden"
+      ],
+      "questionGoal": "Elastizität und Obstruktion unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Elastizität und Obstruktion unterscheiden",
+        "correctReasoning": "Dies ist beim emphysematösen Umbau relevant. Sie misst Dehnbarkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Sie beschreiben verschiedene Lasten.",
+          "B": "Dies ist beim emphysematösen Umbau relevant.",
+          "C": "Überdehnbarkeit kann mit Strukturverlust einhergehen.",
+          "D": "Sie misst Dehnbarkeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Zwei isolierte kugelförmige Alveolenmodelle besitzen dieselbe Oberflächenspannung. Modell B hat halben Radius. Wie ist sein Laplace-Druck im Vergleich zu A?",
+      "options": [
+        {
+          "text": "Viermal so hoch",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gleich hoch",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Viertel so hoch",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Doppelt so hoch",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Halb so hoch",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier gilt keine r²-Abhängigkeit. B: Dafür müsste sich T entsprechend mitändern. C: Dies entspricht nicht dem Laplace-Modell. D: P=2T/r ist bei konstantem T invers zum Radius. E: Dies kehrt die Radiusabhängigkeit um. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Laplace-Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Laplace-Modell"
+      ],
+      "questionGoal": "Laplace-Modell",
+      "structuredExplanation": {
+        "coreIdea": "Laplace-Modell",
+        "correctReasoning": "P=2T/r ist bei konstantem T invers zum Radius.",
+        "wrongAnswerExplanations": {
+          "A": "Hier gilt keine r²-Abhängigkeit.",
+          "B": "Dafür müsste sich T entsprechend mitändern.",
+          "C": "Dies entspricht nicht dem Laplace-Modell.",
+          "E": "Dies kehrt die Radiusabhängigkeit um."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Beurteilen Sie den Einfluss des alveolären Surfactants.",
+      "options": [
+        {
+          "text": "Unzureichende Surfactantwirkung kann die Entfaltung unreifer Lungen erschweren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Modell mit konstanter Oberflächenspannung beschreibt reale Alveolen nur begrenzt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Surfactant vermindert die Oberflächenspannung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Surfactant erhöht die Oberflächenspannung gezielt, um kleine Alveolen stärker zu entleeren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die elastische Last ist erhöht. B: Surfactant und Gewebekopplung verändern das Verhalten. C: Dadurch sinkt der notwendige Entfaltungsdruck. D: Seine stabilisierende Wirkung beruht auf Spannungsverminderung. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Surfactantwirkung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Surfactantwirkung"
+      ],
+      "questionGoal": "Surfactantwirkung",
+      "structuredExplanation": {
+        "coreIdea": "Surfactantwirkung",
+        "correctReasoning": "Die elastische Last ist erhöht. Surfactant und Gewebekopplung verändern das Verhalten. Dadurch sinkt der notwendige Entfaltungsdruck.",
+        "wrongAnswerExplanations": {
+          "A": "Die elastische Last ist erhöht.",
+          "B": "Surfactant und Gewebekopplung verändern das Verhalten.",
+          "C": "Dadurch sinkt der notwendige Entfaltungsdruck.",
+          "D": "Seine stabilisierende Wirkung beruht auf Spannungsverminderung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Warum liegt das entspannte Lungen-Thorax-System bei Atemruhelage nicht beim Kollapsvolumen der isolierten Lunge?",
+      "options": [
+        {
+          "text": "Das Zwerchfell muss dafür in jeder Sekunde maximal kontrahieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nach innen gerichtete Lungenretraktion und nach aussen gerichteter Thoraxzug gleichen sich aus.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der Pleuraspalt ist bei FRC physiologisch offen zur Atmosphäre.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Alveolen werden durch geschlossene Aortenklappen offen gehalten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Lunge verliert in der FRC jede elastische Rückstellkraft.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Atemruhelage meint das entspannte Gesamtsystem. B: Das Gesamtsystem besitzt eine gemeinsame Ruhelage. C: Er ist normalerweise geschlossen. D: Herzklappen bilden keine solche Verbindung. E: Sie bleibt durch den Thorax gedehnt. Quelle: Vorlesungsfolien, PDF-S. 17,21–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "FRC als Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "FRC als Gleichgewicht"
+      ],
+      "questionGoal": "FRC als Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "FRC als Gleichgewicht",
+        "correctReasoning": "Das Gesamtsystem besitzt eine gemeinsame Ruhelage.",
+        "wrongAnswerExplanations": {
+          "A": "Atemruhelage meint das entspannte Gesamtsystem.",
+          "C": "Er ist normalerweise geschlossen.",
+          "D": "Herzklappen bilden keine solche Verbindung.",
+          "E": "Sie bleibt durch den Thorax gedehnt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Am Ende einer ruhigen Inspiration strömt kurzzeitig keine Luft. Beurteilen Sie offene Atemwege und unveränderten Atmosphärendruck.",
+      "options": [
+        {
+          "text": "Das Lungenvolumen muss deshalb bereits zur FRC zurückgekehrt sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Fehlen von Luftstrom beweist eine offene Verbindung des Pleuraspalts zur Aussenluft.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alveolardruck und Atmosphärendruck sind dann ungefähr gleich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der transpulmonale Druck muss deshalb null sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es liegt am endinspiratorischen höheren Volumen. B: Es kann ein normaler Moment des Atemzyklus sein. C: Ohne relevanten Gradient besteht kein Luftstrom. D: Der Pleuradruck ist weiterhin niedriger als der Alveolardruck. Quelle: Vorlesungsfolien, PDF-S. 18–26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Endinspiratorischer Stillstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endinspiratorischer Stillstand"
+      ],
+      "questionGoal": "Endinspiratorischer Stillstand",
+      "structuredExplanation": {
+        "coreIdea": "Endinspiratorischer Stillstand",
+        "correctReasoning": "Ohne relevanten Gradient besteht kein Luftstrom.",
+        "wrongAnswerExplanations": {
+          "A": "Es liegt am endinspiratorischen höheren Volumen.",
+          "B": "Es kann ein normaler Moment des Atemzyklus sein.",
+          "C": "Ohne relevanten Gradient besteht kein Luftstrom.",
+          "D": "Der Pleuradruck ist weiterhin niedriger als der Alveolardruck."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Welche Grösse kann mit einer einfachen Spirometrie ohne Zusatzverfahren nicht direkt bestimmt werden?",
+      "options": [
+        {
+          "text": "Vitalkapazität",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Exspiratorisches Reservevolumen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Inspiratorisches Reservevolumen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Residualvolumen",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Atemzugvolumen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie ist das maximal mobilisierbare Volumen. B: Es kann zusätzlich ausgeatmet werden. C: Es kann durch zusätzliche Inspiration mobilisiert werden. D: Die nach maximaler Exspiration verbleibende Luft wird nicht mobilisiert. E: Es ist als bewegtes Volumen messbar. Quelle: Vorlesungsfolien, PDF-S. 27–31.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Spirometriegrenze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spirometriegrenze"
+      ],
+      "questionGoal": "Spirometriegrenze",
+      "structuredExplanation": {
+        "coreIdea": "Spirometriegrenze",
+        "correctReasoning": "Die nach maximaler Exspiration verbleibende Luft wird nicht mobilisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist das maximal mobilisierbare Volumen.",
+          "B": "Es kann zusätzlich ausgeatmet werden.",
+          "C": "Es kann durch zusätzliche Inspiration mobilisiert werden.",
+          "E": "Es ist als bewegtes Volumen messbar."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Beurteilen Sie die Beziehungen zwischen Lungenvolumina.",
+      "options": [
+        {
+          "text": "Eine kleine Vitalkapazität beweist allein eine Restriktion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "FRC setzt sich aus exspiratorischem Reservevolumen und Residualvolumen zusammen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die totale Lungenkapazität umfasst Vitalkapazität und Residualvolumen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "FRC ist definitionsgemäss das Volumen einer einzelnen ruhigen Inspiration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch erhöhte Residualvolumina bei Obstruktion können sie vermindern. B: Sie ist das Volumen nach ruhiger Exspiration. C: Sie beschreibt das Volumen nach maximaler Inspiration. D: Dies ist das Atemzugvolumen. Quelle: Vorlesungsfolien, PDF-S. 29–31.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Volumina und Kapazitäten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Volumina und Kapazitäten"
+      ],
+      "questionGoal": "Volumina und Kapazitäten",
+      "structuredExplanation": {
+        "coreIdea": "Volumina und Kapazitäten",
+        "correctReasoning": "Sie ist das Volumen nach ruhiger Exspiration. Sie beschreibt das Volumen nach maximaler Inspiration.",
+        "wrongAnswerExplanations": {
+          "A": "Auch erhöhte Residualvolumina bei Obstruktion können sie vermindern.",
+          "B": "Sie ist das Volumen nach ruhiger Exspiration.",
+          "C": "Sie beschreibt das Volumen nach maximaler Inspiration.",
+          "D": "Dies ist das Atemzugvolumen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Beurteilen Sie die Bestimmung nicht direkt mobilisierbarer Lungenvolumina.",
+      "options": [
+        {
+          "text": "Ein Spirometer erfasst unabhängig von jeder Gasverbindung automatisch sämtliche Luftfallen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein schlecht kommunizierender eingeschlossener Gasraum kann in Verdünnungsverfahren unterschätzt werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Körperplethysmographie ist ein weiteres Verfahren zur Erfassung intrathorakalen Gasvolumens.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein geeignetes Tracergas kann über Konzentrationsänderung auf das kommunizierende Gasvolumen schliessen lassen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es misst primär mobilisierte Volumenänderungen. B: Der Tracer erreicht ihn unzureichend. C: Sie verwendet ein anderes Messprinzip. D: Die Berechnung nutzt eine Mengenbilanz. Quelle: Vorlesungsfolien, PDF-S. 30–31.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Gasverdünnungsverfahren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gasverdünnungsverfahren"
+      ],
+      "questionGoal": "Gasverdünnungsverfahren",
+      "structuredExplanation": {
+        "coreIdea": "Gasverdünnungsverfahren",
+        "correctReasoning": "Der Tracer erreicht ihn unzureichend. Sie verwendet ein anderes Messprinzip. Die Berechnung nutzt eine Mengenbilanz.",
+        "wrongAnswerExplanations": {
+          "A": "Es misst primär mobilisierte Volumenänderungen.",
+          "B": "Der Tracer erreicht ihn unzureichend.",
+          "C": "Sie verwendet ein anderes Messprinzip.",
+          "D": "Die Berechnung nutzt eine Mengenbilanz."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Bei einem Luftstrom von 0,5 l/s wird entlang der Atemwege eine Druckdifferenz von 2 cmH₂O gemessen. Welche Resistance folgt?",
+      "options": [
+        {
+          "text": "0,5 cmH₂O·s/l",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1 cmH₂O·s/l",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,25 cmH₂O·s/l",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "4 cmH₂O·s/l",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "2 cmH₂O·s/l",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist die Flusszahl mit falscher Einheit. B: Dies ist das Produkt statt des Quotienten. C: Dies ist der Kehrwert. D: R=ΔP/Volumenstrom=2/0,5. E: Der Fluss wurde ignoriert. Quelle: Vorlesungsfolien, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Resistance berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Resistance berechnen"
+      ],
+      "questionGoal": "Resistance berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Resistance berechnen",
+        "correctReasoning": "R=ΔP/Volumenstrom=2/0,5.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist die Flusszahl mit falscher Einheit.",
+          "B": "Dies ist das Produkt statt des Quotienten.",
+          "C": "Dies ist der Kehrwert.",
+          "E": "Der Fluss wurde ignoriert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Beurteilen Sie den Gesamtwiderstand des verzweigten Atemwegssystems.",
+      "options": [
+        {
+          "text": "Ein einzelnes Poiseuille-Rohrmodell kann jede turbulente Atemströmung exakt beschreiben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Viele periphere Atemwege liegen parallel und vergrössern gemeinsam den Gesamtquerschnitt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der kleinste Einzelbronchiolus muss deshalb den grössten Anteil am gesamten Atemwegswiderstand liefern.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein kleinerer Radius senkt bei sonst gleichen laminaren Rohrbedingungen den Widerstand.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Turbulenz verletzt dessen Grundannahmen. B: Dies kann den Gesamtwiderstand trotz kleiner Einzelradien vermindern. C: Einzel- und Parallelgesamtwiderstand sind verschieden. D: R ist proportional zu 1/r⁴. Quelle: Vorlesungsfolien, PDF-S. 32–33.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Viele kleine Atemwege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Viele kleine Atemwege"
+      ],
+      "questionGoal": "Viele kleine Atemwege",
+      "structuredExplanation": {
+        "coreIdea": "Viele kleine Atemwege",
+        "correctReasoning": "Dies kann den Gesamtwiderstand trotz kleiner Einzelradien vermindern.",
+        "wrongAnswerExplanations": {
+          "A": "Turbulenz verletzt dessen Grundannahmen.",
+          "B": "Dies kann den Gesamtwiderstand trotz kleiner Einzelradien vermindern.",
+          "C": "Einzel- und Parallelgesamtwiderstand sind verschieden.",
+          "D": "R ist proportional zu 1/r⁴."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Für einen Rechenfall seien FEV₁=2,4 l und gemessene Vitalkapazität=4,0 l. Welches Verhältnis ergibt sich?",
+      "options": [
+        {
+          "text": "40 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "60 %",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "96 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1,67 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "240 %",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspricht dem nicht in einer Sekunde ausgeatmeten Restanteil. B: 2,4/4,0=0,60. C: Das Produkt ist kein Verhältnis. D: Der Quotient wurde invertiert und falsch in Prozent übertragen. E: Die Bezugsgrösse wurde nicht berücksichtigt. Quelle: Vorlesungsfolien, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Tiffeneau-Verhältnis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tiffeneau-Verhältnis"
+      ],
+      "questionGoal": "Tiffeneau-Verhältnis",
+      "structuredExplanation": {
+        "coreIdea": "Tiffeneau-Verhältnis",
+        "correctReasoning": "2,4/4,0=0,60.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspricht dem nicht in einer Sekunde ausgeatmeten Restanteil.",
+          "C": "Das Produkt ist kein Verhältnis.",
+          "D": "Der Quotient wurde invertiert und falsch in Prozent übertragen.",
+          "E": "Die Bezugsgrösse wurde nicht berücksichtigt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Während forcierter Exspiration fällt der Atemwegsinnendruck stromabwärts unter den positiven Pleuradruck. Was wird dort begünstigt?",
+      "options": [
+        {
+          "text": "Umwandlung der Bronchiolen in Alveolararterien",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Einengung komprimierbarer intrathorakaler Atemwege",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Aufhebung aller elastischen Rückstellkräfte",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dauerhafte Erweiterung unabhängig von der Wandstabilität",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein unbegrenzt proportionaler Flussanstieg bei beliebiger Mehranstrengung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gefässe und Luftwege bleiben unterschiedliche Strukturen. B: Der negative transmurale Druck wirkt komprimierend. C: Die elastische Retraktion bleibt Teil der Druckbilanz. D: Der Aussendruck übersteigt den Innendruck. E: Die Kompression kann den Fluss begrenzen. Quelle: Vorlesungsfolien, PDF-S. 37.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Dynamische Kompression"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dynamische Kompression"
+      ],
+      "questionGoal": "Dynamische Kompression",
+      "structuredExplanation": {
+        "coreIdea": "Dynamische Kompression",
+        "correctReasoning": "Der negative transmurale Druck wirkt komprimierend.",
+        "wrongAnswerExplanations": {
+          "A": "Gefässe und Luftwege bleiben unterschiedliche Strukturen.",
+          "C": "Die elastische Retraktion bleibt Teil der Druckbilanz.",
+          "D": "Der Aussendruck übersteigt den Innendruck.",
+          "E": "Die Kompression kann den Fluss begrenzen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Bei VT=500 ml, anatomischem Totraum=150 ml und f=12/min: Welche alveoläre Ventilation folgt im vereinfachten Modell?",
+      "options": [
+        {
+          "text": "0,35 l/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "7,8 l/min",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4,2 l/min",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "1,8 l/min",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "6,0 l/min",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist nur das alveoläre Volumen pro Atemzug. B: Totraum muss abgezogen statt addiert werden. C: (0,50−0,15)×12=4,2. D: Das ist die Totraumventilation. E: Das ist die gesamte Minutenventilation. Quelle: Vorlesungsfolien, PDF-S. 41–44.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Alveoläre Ventilation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alveoläre Ventilation"
+      ],
+      "questionGoal": "Alveoläre Ventilation",
+      "structuredExplanation": {
+        "coreIdea": "Alveoläre Ventilation",
+        "correctReasoning": "(0,50−0,15)×12=4,2.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist nur das alveoläre Volumen pro Atemzug.",
+          "B": "Totraum muss abgezogen statt addiert werden.",
+          "D": "Das ist die Totraumventilation.",
+          "E": "Das ist die gesamte Minutenventilation."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Alveolärer CO₂-Partialdruck sei 40 mmHg, gemischt-exspiratorischer 28 mmHg. Welcher Totraumanteil VD/VT folgt aus der Bohr-Gleichung?",
+      "options": [
+        {
+          "text": "0,30",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0,43",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,12",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,70",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1,43",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: (40−28)/40=0,30. B: Dies verwendet den gemischt-exspiratorischen Wert als falschen Nenner. C: Die Druckdifferenz ist nicht direkt ein Volumenanteil. D: Dies ist der alveoläre Anteil des Atemzugs im Modell. E: Der Quotient 40/28 ist nicht die Bohr-Gleichung. Quelle: Vorlesungsfolien, PDF-S. 44.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Bohr-Totraumanteil"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bohr-Totraumanteil"
+      ],
+      "questionGoal": "Bohr-Totraumanteil",
+      "structuredExplanation": {
+        "coreIdea": "Bohr-Totraumanteil",
+        "correctReasoning": "(40−28)/40=0,30.",
+        "wrongAnswerExplanations": {
+          "B": "Dies verwendet den gemischt-exspiratorischen Wert als falschen Nenner.",
+          "C": "Die Druckdifferenz ist nicht direkt ein Volumenanteil.",
+          "D": "Dies ist der alveoläre Anteil des Atemzugs im Modell.",
+          "E": "Der Quotient 40/28 ist nicht die Bohr-Gleichung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv31_32_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV31/32",
+      "stem": "Zwei Muster haben je 6 l/min Minutenventilation; der Totraum sei konstant 150 ml. Muster A: 500 ml×12/min, B: 250 ml×24/min. Beurteilen Sie die Folgen.",
+      "options": [
+        {
+          "text": "Muster B ventiliert pro Minute mehr anatomischen Totraum.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Bohr-Gleichung vergleicht definitionsgemäss systolischen und diastolischen Blutdruck.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gleiche Minutenventilation beweist gleiche alveoläre Ventilation.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Muster A hat die grössere alveoläre Ventilation.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: 3,6 l/min gegenüber 1,8 l/min. B: Sie nutzt alveoläres und gemischt-exspiratorisches CO₂. C: Der Totraumanteil pro Atemzug unterscheidet sich. D: 4,2 l/min gegenüber 2,4 l/min. Quelle: Vorlesungsfolien, PDF-S. 41–44.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV31/32",
+        "Tiefe versus flache Atmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tiefe versus flache Atmung"
+      ],
+      "questionGoal": "Tiefe versus flache Atmung",
+      "structuredExplanation": {
+        "coreIdea": "Tiefe versus flache Atmung",
+        "correctReasoning": "3,6 l/min gegenüber 1,8 l/min. 4,2 l/min gegenüber 2,4 l/min.",
+        "wrongAnswerExplanations": {
+          "A": "3,6 l/min gegenüber 1,8 l/min.",
+          "B": "Sie nutzt alveoläres und gemischt-exspiratorisches CO₂.",
+          "C": "Der Totraumanteil pro Atemzug unterscheidet sich.",
+          "D": "4,2 l/min gegenüber 2,4 l/min."
+        }
+      }
+    }
+  ]
+}
