@@ -1,0 +1,1301 @@
+{
+  "id": "assessment_j2_block1_kv12_13_20261029",
+  "lectureCode": "KV12/13",
+  "title": "Elektrokardiographie: Entstehung, Ableitungen und Auswertung",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV_EKG-1-2_WS26-27.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Grundlagenorientierte Anwendung ohne diagnostische Detailfragen zu den ausdrücklich noch nicht als Lernziel geforderten Rhythmusstörungen. QT umfasst De- und Repolarisation; Bazett wird als vorgegebene Rechenformel geprüft, nicht als uneingeschränkt optimale Korrektur bei jeder Frequenz.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Extrazelluläres Feld und EKG als Projektion elektrischer Aktivität erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Erregungsablauf und unterschiedliche Aktionspotentiale im Herzen verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Sinusknotenautomatie und vegetative Frequenzregulation erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "De- und Repolarisation mit dem Vorzeichen des EKG-Signals verbinden."
+    },
+    {
+      "id": "lo5",
+      "text": "Extremitäten- und Brustwandableitungen räumlich zuordnen."
+    },
+    {
+      "id": "lo6",
+      "text": "Wellen, Strecken und Intervalle funktionell unterscheiden."
+    },
+    {
+      "id": "lo7",
+      "text": "Frequenz, Zeiten und Spannungen aus kalibrierten Registrierungen bestimmen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv12_13_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Zwei Oberflächenelektroden messen im Modell zu einem Zeitpunkt dasselbe Potential. Welche Aussage zum registrierten Differenzsignal ist korrekt?",
+      "options": [
+        {
+          "text": "Es entspricht unmittelbar der Kontraktionskraft des linken Ventrikels.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es entspricht automatisch dem mittleren arteriellen Blutdruck.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es ist null, obwohl in den Herzmuskelzellen Ionenströme bestehen können.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es muss das maximale ventrikuläre Aktionspotential anzeigen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es beweist einen vollständigen Stillstand aller elektrischen Herzaktivität.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die elektrische Messung ist keine Kraftmessung. B: Potential und Blutdruck sind verschiedene Messgrössen. C: Das EKG registriert die Differenz, nicht sämtliche Einzelzellströme. D: Das Zellpotential ist keine Oberflächenpotentialdifferenz. E: Gleiche Elektrodenpotentiale schliessen zelluläre Ströme nicht aus. Quelle: Vorlesungsfolien, PDF-S. 12–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Differenzsignal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzsignal"
+      ],
+      "questionGoal": "Differenzsignal",
+      "structuredExplanation": {
+        "coreIdea": "Differenzsignal",
+        "correctReasoning": "Das EKG registriert die Differenz, nicht sämtliche Einzelzellströme.",
+        "wrongAnswerExplanations": {
+          "A": "Die elektrische Messung ist keine Kraftmessung.",
+          "B": "Potential und Blutdruck sind verschiedene Messgrössen.",
+          "D": "Das Zellpotential ist keine Oberflächenpotentialdifferenz.",
+          "E": "Gleiche Elektrodenpotentiale schliessen zelluläre Ströme nicht aus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie die Aussagekraft eines Oberflächen-EKGs.",
+      "options": [
+        {
+          "text": "Räumlich entgegengesetzte elektrische Beiträge können sich teilweise aufheben.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Ableitung registriert dasselbe Signal unabhängig von ihrer Orientierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die gemessene Spannung hängt von der Projektion des elektrischen Summenvektors ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine hohe R-Zacke misst unmittelbar die mechanische Kontraktionskraft.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das registrierte Signal entsteht durch Überlagerung. B: Die Orientierung beeinflusst die Projektion. C: Verschiedene Ableitungen betrachten unterschiedliche Richtungen. D: Die Amplitude hängt von elektrischer Aktivität und Ableitungsgeometrie ab. Quelle: Vorlesungsfolien, PDF-S. 12–17,42.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Summenvektor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Summenvektor"
+      ],
+      "questionGoal": "Summenvektor",
+      "structuredExplanation": {
+        "coreIdea": "Summenvektor",
+        "correctReasoning": "Das registrierte Signal entsteht durch Überlagerung. Verschiedene Ableitungen betrachten unterschiedliche Richtungen.",
+        "wrongAnswerExplanations": {
+          "A": "Das registrierte Signal entsteht durch Überlagerung.",
+          "B": "Die Orientierung beeinflusst die Projektion.",
+          "C": "Verschiedene Ableitungen betrachten unterschiedliche Richtungen.",
+          "D": "Die Amplitude hängt von elektrischer Aktivität und Ableitungsgeometrie ab."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Eine depolarisierte Herzmuskelzelle erregt eine benachbarte Zelle. Welcher Ablauf erklärt die Fortleitung?",
+      "options": [
+        {
+          "text": "Lokaler Strom über Gap Junctions depolarisiert die Nachbarzelle bis zur Schwelle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Aktionspotential wird als unverändertes Molekül durch das SR weitergereicht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Extrazelluläres Calcium ersetzt die Membran der Nachbarzelle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Desmosomen öffnen als spannungsgesteuerte Natriumkanäle zur Nachbarzelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Nachbarzelle wird erst durch einen kompletten systemischen Blutumlauf aktiviert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Danach entsteht dort ein eigenes Aktionspotential. B: Aktionspotentiale sind Spannungsänderungen, keine transportierten Moleküle. C: Die elektrische Erregung setzt eine erhaltene Membran voraus. D: Desmosomen dienen der mechanischen Verankerung. E: Die Ausbreitung erfolgt direkt über Zellkontakte. Quelle: Vorlesungsfolien, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Elektrotonische Ausbreitung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektrotonische Ausbreitung"
+      ],
+      "questionGoal": "Elektrotonische Ausbreitung",
+      "structuredExplanation": {
+        "coreIdea": "Elektrotonische Ausbreitung",
+        "correctReasoning": "Danach entsteht dort ein eigenes Aktionspotential.",
+        "wrongAnswerExplanations": {
+          "B": "Aktionspotentiale sind Spannungsänderungen, keine transportierten Moleküle.",
+          "C": "Die elektrische Erregung setzt eine erhaltene Membran voraus.",
+          "D": "Desmosomen dienen der mechanischen Verankerung.",
+          "E": "Die Ausbreitung erfolgt direkt über Zellkontakte."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie die elektrischen Eigenschaften von Arbeitsmyokard und Schrittmacherzellen.",
+      "options": [
+        {
+          "text": "Sinusknotenzellen zeigen eine spontane diastolische Depolarisation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein flaches Plateau beweist, dass sämtliche Ionenkanäle geschlossen sind.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der schnelle Aufstrich im ventrikulären Arbeitsmyokard beruht wesentlich auf Natriumeinstrom.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Calciumeinstrom trägt zur Plateauphase des Arbeitsmyokards bei.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie besitzen kein stabiles Ruhepotential wie das Arbeitsmyokard. B: Ein nahezu konstantes Potential kann durch gegenläufige Ströme entstehen. C: Spannungsgesteuerte schnelle Natriumkanäle tragen den Aufstrich. D: Einwärts- und Auswärtsströme bestimmen gemeinsam das Plateau. Quelle: Vorlesungsfolien, PDF-S. 6–11,29–30.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Aktionspotentialtypen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktionspotentialtypen"
+      ],
+      "questionGoal": "Aktionspotentialtypen",
+      "structuredExplanation": {
+        "coreIdea": "Aktionspotentialtypen",
+        "correctReasoning": "Sie besitzen kein stabiles Ruhepotential wie das Arbeitsmyokard. Spannungsgesteuerte schnelle Natriumkanäle tragen den Aufstrich. Einwärts- und Auswärtsströme bestimmen gemeinsam das Plateau.",
+        "wrongAnswerExplanations": {
+          "A": "Sie besitzen kein stabiles Ruhepotential wie das Arbeitsmyokard.",
+          "B": "Ein nahezu konstantes Potential kann durch gegenläufige Ströme entstehen.",
+          "C": "Spannungsgesteuerte schnelle Natriumkanäle tragen den Aufstrich.",
+          "D": "Einwärts- und Auswärtsströme bestimmen gemeinsam das Plateau."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Die AV-Überleitung verlangsamt sich isoliert; Vorhofaktivierung und intraventrikuläre Leitung bleiben gleich. Welche EKG-Zeit wird vor allem länger?",
+      "options": [
+        {
+          "text": "QRS-Dauer",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "T-Wellen-Dauer",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "PQ-Intervall",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "P-Wellen-Dauer",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "ST-Strecke",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese beschreibt die hier unveränderte intraventrikuläre Aktivierung. B: Sie betrifft die ventrikuläre Repolarisation. C: Es umfasst die Zeit vom Beginn der Vorhof- bis zum Beginn der Kammerdepolarisation. D: Die unveränderte Vorhofaktivierung verlängert sich nicht dadurch. E: Sie liegt nach der Kammerdepolarisation. Quelle: Vorlesungsfolien, PDF-S. 27–28,41.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Überleitungsverzögerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Überleitungsverzögerung"
+      ],
+      "questionGoal": "Überleitungsverzögerung",
+      "structuredExplanation": {
+        "coreIdea": "Überleitungsverzögerung",
+        "correctReasoning": "Es umfasst die Zeit vom Beginn der Vorhof- bis zum Beginn der Kammerdepolarisation.",
+        "wrongAnswerExplanations": {
+          "A": "Diese beschreibt die hier unveränderte intraventrikuläre Aktivierung.",
+          "B": "Sie betrifft die ventrikuläre Repolarisation.",
+          "D": "Die unveränderte Vorhofaktivierung verlängert sich nicht dadurch.",
+          "E": "Sie liegt nach der Kammerdepolarisation."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Bei unverändertem maximalem diastolischem Potential und gleicher Schwelle wird die diastolische Depolarisation einer Sinusknotenzelle steiler. Welche Folge ist zu erwarten?",
+      "options": [
+        {
+          "text": "Die Frequenz bleibt gleich, weil die Schwelle gleich bleibt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Schwelle wird früher erreicht und die Eigenfrequenz steigt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Schwelle wird später erreicht und die Eigenfrequenz sinkt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zelle erhält dadurch zwingend ein stabiles Ruhepotential.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es folgt zwingend ein ventrikulärer Ersatzrhythmus.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch die Geschwindigkeit auf dem Weg zur Schwelle ist entscheidend. B: Die Zeit bis zum nächsten Aktionspotential verkürzt sich. C: Eine steilere Depolarisation verkürzt die Zeit bis zur Schwelle. D: Die spontane Depolarisation besteht weiter. E: Die schnellere Sinusknotenautomatie erfordert keinen Schrittmacherwechsel. Quelle: Vorlesungsfolien, PDF-S. 30–32.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Steigung der Schrittmacherphase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Steigung der Schrittmacherphase"
+      ],
+      "questionGoal": "Steigung der Schrittmacherphase",
+      "structuredExplanation": {
+        "coreIdea": "Steigung der Schrittmacherphase",
+        "correctReasoning": "Die Zeit bis zum nächsten Aktionspotential verkürzt sich.",
+        "wrongAnswerExplanations": {
+          "A": "Auch die Geschwindigkeit auf dem Weg zur Schwelle ist entscheidend.",
+          "C": "Eine steilere Depolarisation verkürzt die Zeit bis zur Schwelle.",
+          "D": "Die spontane Depolarisation besteht weiter.",
+          "E": "Die schnellere Sinusknotenautomatie erfordert keinen Schrittmacherwechsel."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie die Mechanismen der Frequenzregulation am Sinusknoten.",
+      "options": [
+        {
+          "text": "HCN-Kanäle vermitteln den schnellen Natriumaufstrich des Ventrikelmyokards.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Acetylcholin beschleunigt die Frequenz durch Hemmung sämtlicher Kaliumströme.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Noradrenalin kann über cAMP die Schrittmacheraktivität beschleunigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine steilere diastolische Depolarisation verlängert bei gleicher Schwelle den Zyklus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie vermitteln den funny current in der Schrittmacheraktivität. B: Parasympathische Aktivierung fördert unter anderem einen hyperpolarisierenden Kaliumstrom. C: Unter anderem wird der funny current verstärkt. D: Sie verkürzt die Zeit bis zum nächsten Aktionspotential. Quelle: Vorlesungsfolien, PDF-S. 30–32.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Vegetative Schrittmacherregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vegetative Schrittmacherregulation"
+      ],
+      "questionGoal": "Vegetative Schrittmacherregulation",
+      "structuredExplanation": {
+        "coreIdea": "Vegetative Schrittmacherregulation",
+        "correctReasoning": "Unter anderem wird der funny current verstärkt.",
+        "wrongAnswerExplanations": {
+          "A": "Sie vermitteln den funny current in der Schrittmacheraktivität.",
+          "B": "Parasympathische Aktivierung fördert unter anderem einen hyperpolarisierenden Kaliumstrom.",
+          "C": "Unter anderem wird der funny current verstärkt.",
+          "D": "Sie verkürzt die Zeit bis zum nächsten Aktionspotential."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q08",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Im Vorlesungsmodell wird ein Ca²⁺-Ion über NCX nach aussen transportiert, während drei Na⁺ nach innen gelangen. Welcher Effekt folgt pro Austauschzyklus?",
+      "options": [
+        {
+          "text": "Keine Nettoladungsbewegung, da ein Ion gegen ein Ion getauscht wird",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Netto drei positive Ladungen nach aussen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Netto eine positive Elementarladung nach innen, also ein depolarisierender Beitrag",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Netto eine positive Elementarladung nach aussen, also Hyperpolarisation",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein direkter elektrischer Kurzschluss zwischen zwei Vorhöfen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Ca²⁺ wird gegen drei Na⁺ ausgetauscht. B: Die Natriumionen gelangen im beschriebenen Modus nach innen. C: Drei positive Ladungen hinein überwiegen zwei hinaus. D: Das Vorzeichen der Nettoladung wäre umgekehrt. E: NCX ist ein Membrantransporter derselben Zelle. Quelle: Vorlesungsfolien, PDF-S. 31.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Calcium-Uhr"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Calcium-Uhr"
+      ],
+      "questionGoal": "Calcium-Uhr",
+      "structuredExplanation": {
+        "coreIdea": "Calcium-Uhr",
+        "correctReasoning": "Drei positive Ladungen hinein überwiegen zwei hinaus.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Ca²⁺ wird gegen drei Na⁺ ausgetauscht.",
+          "B": "Die Natriumionen gelangen im beschriebenen Modus nach innen.",
+          "D": "Das Vorzeichen der Nettoladung wäre umgekehrt.",
+          "E": "NCX ist ein Membrantransporter derselben Zelle."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Eine Depolarisationsfront bewegt sich im einfachen Modell auf den positiven Pol einer Ableitung zu. Welche Registrierung passt?",
+      "options": [
+        {
+          "text": "Ein Vorzeichen, das allein von der Papiergeschwindigkeit abhängt",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Vorzeichen, das allein durch die Höhe des Blutdrucks bestimmt wird",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein positiver Ausschlag",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Nullsignal unabhängig von der Projektionsgrösse",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein negativer Ausschlag",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Papiergeschwindigkeit skaliert Zeit, nicht das elektrische Vorzeichen. B: Die elektrische Richtung ist entscheidend. C: Der resultierende Depolarisationsvektor projiziert zum Pluspol. D: Ein relevanter Anteil entlang der Ableitungsachse erzeugt ein Signal. E: Dieser passt bei Depolarisation zur entgegengesetzten Richtung. Quelle: Vorlesungsfolien, PDF-S. 14–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Polung bei Depolarisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polung bei Depolarisation"
+      ],
+      "questionGoal": "Polung bei Depolarisation",
+      "structuredExplanation": {
+        "coreIdea": "Polung bei Depolarisation",
+        "correctReasoning": "Der resultierende Depolarisationsvektor projiziert zum Pluspol.",
+        "wrongAnswerExplanations": {
+          "A": "Papiergeschwindigkeit skaliert Zeit, nicht das elektrische Vorzeichen.",
+          "B": "Die elektrische Richtung ist entscheidend.",
+          "D": "Ein relevanter Anteil entlang der Ableitungsachse erzeugt ein Signal.",
+          "E": "Dieser passt bei Depolarisation zur entgegengesetzten Richtung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q10",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie das vereinfachte transmurale Modell von Erregung und Erregungsrückbildung.",
+      "options": [
+        {
+          "text": "Die T-Welle stellt eine zweite Depolarisation derselben Ventrikelwand dar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Repolarisation kann epikardial beginnen, weil die dortigen Aktionspotentiale kürzer sind.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Umkehr von Ausbreitungsrichtung und elektrischer Polarität kann gleichgerichtete QRS- und T-Ausschläge erklären.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die ventrikuläre Depolarisation beginnt im dargestellten Wandmodell endokardial.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie repräsentiert die ventrikuläre Repolarisation. B: Die Dauer beeinflusst die Reihenfolge der Rückbildung. C: Beide Umkehrungen führen im Modell zur Konkordanz. D: Das Epikard wird später erregt. Quelle: Vorlesungsfolien, PDF-S. 14–16,26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "QRS-T-Konkordanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "QRS-T-Konkordanz"
+      ],
+      "questionGoal": "QRS-T-Konkordanz",
+      "structuredExplanation": {
+        "coreIdea": "QRS-T-Konkordanz",
+        "correctReasoning": "Die Dauer beeinflusst die Reihenfolge der Rückbildung. Beide Umkehrungen führen im Modell zur Konkordanz. Das Epikard wird später erregt.",
+        "wrongAnswerExplanations": {
+          "A": "Sie repräsentiert die ventrikuläre Repolarisation.",
+          "B": "Die Dauer beeinflusst die Reihenfolge der Rückbildung.",
+          "C": "Beide Umkehrungen führen im Modell zur Konkordanz.",
+          "D": "Das Epikard wird später erregt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Eine elektrische Richtungsänderung soll ergänzend zur Frontalebene in der Horizontalebene untersucht werden. Welche Ableitungen liefern diese zusätzliche Sicht?",
+      "options": [
+        {
+          "text": "I, II und III",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "I und aVL allein",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "II und aVF allein",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "aVR, aVL und aVF",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "V1 bis V6",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese Extremitätenableitungen gehören zur Frontalebene. B: Beide liegen in der Frontalebene. C: Auch diese Kombination bleibt in der Frontalebene. D: Auch diese gehören zur Frontalebene. E: Die Brustwandableitungen betrachten die horizontale Ebene. Quelle: Vorlesungsfolien, PDF-S. 17,35–40.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Ableitungsebene"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ableitungsebene"
+      ],
+      "questionGoal": "Ableitungsebene",
+      "structuredExplanation": {
+        "coreIdea": "Ableitungsebene",
+        "correctReasoning": "Die Brustwandableitungen betrachten die horizontale Ebene.",
+        "wrongAnswerExplanations": {
+          "A": "Diese Extremitätenableitungen gehören zur Frontalebene.",
+          "B": "Beide liegen in der Frontalebene.",
+          "C": "Auch diese Kombination bleibt in der Frontalebene.",
+          "D": "Auch diese gehören zur Frontalebene."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie die Registrierung eines Standard-EKGs mit zwölf Ableitungen.",
+      "options": [
+        {
+          "text": "I, II und III benötigen je ein separates Paar neu angelegter Brustwandelektroden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Anzahl der Ableitungen ist grösser als die Zahl der verwendeten Elektroden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Brustwandableitungen registrieren primär die mechanische Bewegung des Thorax.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die sechs Extremitätenableitungen betrachten elektrische Projektionen in der Frontalebene.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie werden aus den Extremitätenelektroden abgeleitet. B: Zwölf Standardableitungen werden aus zehn Elektroden gebildet. C: Sie registrieren elektrische Spannungsdifferenzen. D: Einthoven- und Goldberger-Ableitungen ergänzen sich. Quelle: Vorlesungsfolien, PDF-S. 35–40.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Elektroden und Ableitungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektroden und Ableitungen"
+      ],
+      "questionGoal": "Elektroden und Ableitungen",
+      "structuredExplanation": {
+        "coreIdea": "Elektroden und Ableitungen",
+        "correctReasoning": "Zwölf Standardableitungen werden aus zehn Elektroden gebildet. Einthoven- und Goldberger-Ableitungen ergänzen sich.",
+        "wrongAnswerExplanations": {
+          "A": "Sie werden aus den Extremitätenelektroden abgeleitet.",
+          "B": "Zwölf Standardableitungen werden aus zehn Elektroden gebildet.",
+          "C": "Sie registrieren elektrische Spannungsdifferenzen.",
+          "D": "Einthoven- und Goldberger-Ableitungen ergänzen sich."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Ein Zeitintervall soll die gesamte ventrikuläre De- und Repolarisation erfassen. Welche Messpunkte sind korrekt?",
+      "options": [
+        {
+          "text": "Beginn des QRS-Komplexes bis zum Ende der T-Welle",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ende des QRS-Komplexes bis zum Beginn der T-Welle",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine R-Zacke bis zur nächsten R-Zacke",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beginn der P-Welle bis zum Beginn des QRS-Komplexes",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Beginn der P-Welle bis zum Ende der P-Welle",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist die Definition des QT-Intervalls. B: Das definiert die ST-Strecke. C: Das ist das RR-Intervall. D: Das definiert das PQ-Intervall. E: Das ist die P-Wellen-Dauer. Quelle: Vorlesungsfolien, PDF-S. 28,41.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "QT abgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "QT abgrenzen"
+      ],
+      "questionGoal": "QT abgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "QT abgrenzen",
+        "correctReasoning": "Das ist die Definition des QT-Intervalls.",
+        "wrongAnswerExplanations": {
+          "B": "Das definiert die ST-Strecke.",
+          "C": "Das ist das RR-Intervall.",
+          "D": "Das definiert das PQ-Intervall.",
+          "E": "Das ist die P-Wellen-Dauer."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie die funktionellen Zuordnungen eines normalen EKGs.",
+      "options": [
+        {
+          "text": "Die QRS-Dauer misst die Erregungsrückbildung der Ventrikel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die P-Welle bildet die Vorhofdepolarisation ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die T-Welle bildet hauptsächlich die Vorhofkontraktion ab.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das RR-Intervall entspricht der Dauer der AV-Überleitung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: QRS bildet die ventrikuläre Depolarisation ab. B: Sie zeigt die elektrische Vorhofaktivierung. C: Sie zeigt die elektrische Ventrikelrepolarisation. D: Es entspricht bei regelmässigem Rhythmus der ventrikulären Zykluszeit. Quelle: Vorlesungsfolien, PDF-S. 28,41–42.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "EKG-Komponenten zuordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "EKG-Komponenten zuordnen"
+      ],
+      "questionGoal": "EKG-Komponenten zuordnen",
+      "structuredExplanation": {
+        "coreIdea": "EKG-Komponenten zuordnen",
+        "correctReasoning": "Sie zeigt die elektrische Vorhofaktivierung.",
+        "wrongAnswerExplanations": {
+          "A": "QRS bildet die ventrikuläre Depolarisation ab.",
+          "B": "Sie zeigt die elektrische Vorhofaktivierung.",
+          "C": "Sie zeigt die elektrische Ventrikelrepolarisation.",
+          "D": "Es entspricht bei regelmässigem Rhythmus der ventrikulären Zykluszeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Bei 25 mm/s liegen zwischen zwei regelmässigen R-Zacken 20 mm. Welche Herzfrequenz ergibt sich?",
+      "options": [
+        {
+          "text": "100/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "60/min",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "75/min",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "150/min",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "125/min",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspräche einem RR-Abstand von 15 mm. B: Dies entspräche 25 mm bei dieser Geschwindigkeit. C: 20/25=0,8 s; 60/0,8=75/min. D: Dies entspräche 10 mm bei dieser Geschwindigkeit. E: Dieser Wert folgt nicht aus 0,8 Sekunden pro Zyklus. Quelle: Vorlesungsfolien, PDF-S. 41–42.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Frequenz aus Papierabstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Frequenz aus Papierabstand"
+      ],
+      "questionGoal": "Frequenz aus Papierabstand",
+      "structuredExplanation": {
+        "coreIdea": "Frequenz aus Papierabstand",
+        "correctReasoning": "20/25=0,8 s; 60/0,8=75/min.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspräche einem RR-Abstand von 15 mm.",
+          "B": "Dies entspräche 25 mm bei dieser Geschwindigkeit.",
+          "D": "Dies entspräche 10 mm bei dieser Geschwindigkeit.",
+          "E": "Dieser Wert folgt nicht aus 0,8 Sekunden pro Zyklus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Eine PQ-Strecke wird von Ende P bis Beginn QRS gemessen und als «PQ-Intervall» berichtet. Welcher Fehler liegt vor?",
+      "options": [
+        {
+          "text": "Die beiden Begriffe bezeichnen dieselben Messpunkte.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das PQ-Intervall muss bis zur nächsten R-Zacke reichen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Beginn des PQ-Intervalls muss am Ende der T-Welle liegen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Beginn des PQ-Intervalls muss am Beginn der P-Welle liegen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die PQ-Strecke ist definitionsgemäss länger als das PQ-Intervall.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Strecke und Intervall sind hier unterschiedlich definiert. B: Es endet am Beginn des aktuellen QRS-Komplexes. C: Damit würde ein anderer Abschnitt gemessen. D: Das Intervall umfasst zusätzlich die P-Welle. E: Das Intervall enthält die Strecke und die P-Welle. Quelle: Vorlesungsfolien, PDF-S. 41.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Intervallmessung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intervallmessung"
+      ],
+      "questionGoal": "Intervallmessung",
+      "structuredExplanation": {
+        "coreIdea": "Intervallmessung",
+        "correctReasoning": "Das Intervall umfasst zusätzlich die P-Welle.",
+        "wrongAnswerExplanations": {
+          "A": "Strecke und Intervall sind hier unterschiedlich definiert.",
+          "B": "Es endet am Beginn des aktuellen QRS-Komplexes.",
+          "C": "Damit würde ein anderer Abschnitt gemessen.",
+          "E": "Das Intervall enthält die Strecke und die P-Welle."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie quantitative EKG-Messungen bei dokumentierter Kalibrierung.",
+      "options": [
+        {
+          "text": "Bei stark unregelmässigem Rhythmus verbessert die Betrachtung mehrerer Zyklen die mittlere Frequenzschätzung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei 25 mm/s entsprechen 5 mm einer Zeit von 0,20 s.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei 10 mm/mV entspricht ein Ausschlag von 15 mm einer Spannung von 1,5 mV.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Wechsel von 25 auf 50 mm/s verdoppelt bei gleicher physiologischer Frequenz die RR-Zeit.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein einzelnes Intervall repräsentiert den Mittelwert schlecht. B: 5/25=0,20 Sekunden. C: 15/10=1,5 Millivolt. D: Der Papierabstand verdoppelt sich, die reale Zeit bleibt gleich. Quelle: Vorlesungsfolien, PDF-S. 41–42.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Kalibrierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kalibrierung"
+      ],
+      "questionGoal": "Kalibrierung",
+      "structuredExplanation": {
+        "coreIdea": "Kalibrierung",
+        "correctReasoning": "Ein einzelnes Intervall repräsentiert den Mittelwert schlecht. 5/25=0,20 Sekunden. 15/10=1,5 Millivolt.",
+        "wrongAnswerExplanations": {
+          "A": "Ein einzelnes Intervall repräsentiert den Mittelwert schlecht.",
+          "B": "5/25=0,20 Sekunden.",
+          "C": "15/10=1,5 Millivolt.",
+          "D": "Der Papierabstand verdoppelt sich, die reale Zeit bleibt gleich."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q18",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Für einen Rechenfall seien QT=0,36 s und RR=0,64 s gegeben. Welche QTc folgt nach der vorgegebenen Bazett-Formel QTc=QT/√RR?",
+      "options": [
+        {
+          "text": "0,23 s",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,29 s",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,36 s",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,45 s",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "0,56 s",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspricht ungefähr QT×RR statt der angegebenen Formel. B: Dies entspricht QT×√RR. C: Die Korrektur entfällt nur bei RR=1 s. D: √0,64=0,8; 0,36/0,8=0,45. E: Dies entspricht QT/RR ohne Quadratwurzel. Quelle: Vorlesungsfolien, PDF-S. 41.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "QT-Korrektur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "QT-Korrektur"
+      ],
+      "questionGoal": "QT-Korrektur",
+      "structuredExplanation": {
+        "coreIdea": "QT-Korrektur",
+        "correctReasoning": "√0,64=0,8; 0,36/0,8=0,45.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspricht ungefähr QT×RR statt der angegebenen Formel.",
+          "B": "Dies entspricht QT×√RR.",
+          "C": "Die Korrektur entfällt nur bei RR=1 s.",
+          "E": "Dies entspricht QT/RR ohne Quadratwurzel."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Warum übernimmt bei intaktem Sinusrhythmus ein langsameres untergeordnetes Schrittmacherzentrum normalerweise nicht die Führung?",
+      "options": [
+        {
+          "text": "Es hat dieselbe Eigenfrequenz wie jede einzelne Sinusknotenzelle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es wird durch die rascheren eintreffenden Erregungen vor seiner eigenen spontanen Auslösung aktiviert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Seine Zellen sind anatomisch vollständig vom Leitungssystem getrennt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es wird dauerhaft durch geschlossene Herzklappen elektrisch isoliert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es besitzt grundsätzlich keinerlei Möglichkeit zur spontanen Depolarisation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gerade unterschiedliche Eigenfrequenzen ermöglichen die Hierarchie. B: Die Vorlesung beschreibt diese Übersteuerung als overdrive suppression. C: Sie sind funktionell in den Erregungsweg eingebunden. D: Klappenstellung bestimmt diese Schrittmacherhierarchie nicht. E: Untergeordnete Zentren können als Ersatzschrittmacher wirken. Quelle: Vorlesungsfolien, PDF-S. 27–30.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Übersteuerung untergeordneter Zentren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Übersteuerung untergeordneter Zentren"
+      ],
+      "questionGoal": "Übersteuerung untergeordneter Zentren",
+      "structuredExplanation": {
+        "coreIdea": "Übersteuerung untergeordneter Zentren",
+        "correctReasoning": "Die Vorlesung beschreibt diese Übersteuerung als overdrive suppression.",
+        "wrongAnswerExplanations": {
+          "A": "Gerade unterschiedliche Eigenfrequenzen ermöglichen die Hierarchie.",
+          "C": "Sie sind funktionell in den Erregungsweg eingebunden.",
+          "D": "Klappenstellung bestimmt diese Schrittmacherhierarchie nicht.",
+          "E": "Untergeordnete Zentren können als Ersatzschrittmacher wirken."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv12_13_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV12/13",
+      "stem": "Beurteilen Sie Schlussfolgerungen aus einem EKG ohne zusätzliche mechanische Messung.",
+      "options": [
+        {
+          "text": "Die T-Welle folgt im normalen Zyklus auf die ventrikuläre Depolarisation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine isoelektrische ST-Strecke beweist, dass die Ventrikelzellen auf ihrem Ruhepotential liegen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein normaler QRS-Komplex beweist für sich allein kein normales Schlagvolumen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Höhe der R-Zacke erlaubt ohne weitere Untersuchung eine direkte Berechnung des Aortendrucks.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie bildet die anschliessende Rückbildung ab. B: Im normalen Modell sind sie weitgehend depolarisiert. C: Elektrische Aktivierung und mechanische Pumpfunktion sind verschiedene Messaspekte. D: Die EKG-Spannung ist keine Druckmessung. Quelle: Vorlesungsfolien, PDF-S. 14–16,26–28,41–42.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV12/13",
+        "Elektrisches Signal richtig deuten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektrisches Signal richtig deuten"
+      ],
+      "questionGoal": "Elektrisches Signal richtig deuten",
+      "structuredExplanation": {
+        "coreIdea": "Elektrisches Signal richtig deuten",
+        "correctReasoning": "Sie bildet die anschliessende Rückbildung ab. Elektrische Aktivierung und mechanische Pumpfunktion sind verschiedene Messaspekte.",
+        "wrongAnswerExplanations": {
+          "A": "Sie bildet die anschliessende Rückbildung ab.",
+          "B": "Im normalen Modell sind sie weitgehend depolarisiert.",
+          "C": "Elektrische Aktivierung und mechanische Pumpfunktion sind verschiedene Messaspekte.",
+          "D": "Die EKG-Spannung ist keine Druckmessung."
+        }
+      }
+    }
+  ]
+}
