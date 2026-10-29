@@ -1,0 +1,1297 @@
+{
+  "id": "assessment_j2_block1_sv42_20261029",
+  "lectureCode": "SV42",
+  "title": "CT des Thorax: Technik, Orientierung und Befunde",
+  "block": "J2 Block 1",
+  "subject": "Radiologie",
+  "active": true,
+  "sourceSummary": "Vorlesung_CT des Thorax_Demo_script.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Mangels separater expliziter Lernzielseite aus Fahrplan und Take-home-Messages sechs Teilziele abgeleitet. Bildbefunde in den Fragen vollständig textlich beschrieben; keine nicht vorhandenen PACS-Platzhalter als Bildbeleg verwendet. Anatomische Zuordnungsfolie 52 visuell geprüft. Folie 31 enthält vereinfachte Kontrastmittel-Handlungsoptionen: keine pauschale Dialyse oder generelle Kontrastmittelnephrotoxizität als Prüfungsantwort übernommen. Photon-Counting-Prinzip anhand Hersteller-Primärdokumentation gegengeprüft; keine universelle Dosisgarantie.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "CT-Datenerfassung und überlagerungsfreie Rekonstruktion erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Hounsfield-Werte und Fensterung auf Bilddarstellungen anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Kontrastmittel, Strahlenexposition und Grenzen der CT einordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Detektorprinzip und Möglichkeiten der Photon-Counting-CT unterscheiden."
+    },
+    {
+      "id": "lo5",
+      "text": "Axiale Orientierung und thorakale Lagebeziehungen beschreiben."
+    },
+    {
+      "id": "lo6",
+      "text": "Beschriebene CT-Befunde den demonstrierten Krankheitsbildern zuordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_sv42_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Was misst der CT-Detektor primär, bevor der Computer ein Schnittbild rekonstruiert?",
+      "options": [
+        {
+          "text": "Die direkte elektrische Aktivität jedes einzelnen Organs.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur die äussere Körperkontur ohne Information aus dem Inneren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Abschwächung von Röntgenstrahlung aus vielen Projektionsrichtungen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein bereits fertiges anatomisches Schnittbild ohne Rechenschritt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die lokale Magnetresonanzfrequenz nach Radiofrequenzanregung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: CT misst keine Organaktionspotentiale. B: Transmissionsmessungen enthalten Information über durchstrahlte Strukturen. C: Aus den Projektionen werden räumliche Schwächungswerte rekonstruiert. D: Die Rekonstruktion ist Teil des Verfahrens. E: Dies beschreibt ein anderes bildgebendes Prinzip. Quelle: Vorlesungsfolien, PDF-S. 7,12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Vom Projektionssignal zum Schnittbild"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vom Projektionssignal zum Schnittbild"
+      ],
+      "questionGoal": "Vom Projektionssignal zum Schnittbild",
+      "structuredExplanation": {
+        "coreIdea": "Vom Projektionssignal zum Schnittbild",
+        "correctReasoning": "Aus den Projektionen werden räumliche Schwächungswerte rekonstruiert.",
+        "wrongAnswerExplanations": {
+          "A": "CT misst keine Organaktionspotentiale.",
+          "B": "Transmissionsmessungen enthalten Information über durchstrahlte Strukturen.",
+          "D": "Die Rekonstruktion ist Teil des Verfahrens.",
+          "E": "Dies beschreibt ein anderes bildgebendes Prinzip."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Beurteilen Sie Möglichkeiten eines geeigneten volumetrischen CT-Datensatzes.",
+      "options": [
+        {
+          "text": "Er reduziert das Überlagerungsproblem eines konventionellen Projektionsbildes.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede neue Betrachtungsebene erfordert zwingend eine erneute Bestrahlung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aus ihm lassen sich koronal oder sagittal rekonstruierte Ansichten erzeugen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Er kann für dreidimensionale Darstellungen verwendet werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Schnittbilder trennen Strukturen entlang der Strahlrichtung. B: Viele Rekonstruktionen entstehen aus den bereits erfassten Daten. C: Die räumlichen Daten ermöglichen multiplanare Rekonstruktionen. D: Dies ist ein genannter Vorteil der CT. Quelle: Vorlesungsfolien, PDF-S. 8–12,19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Datensatz und Rekonstruktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Datensatz und Rekonstruktion"
+      ],
+      "questionGoal": "Datensatz und Rekonstruktion",
+      "structuredExplanation": {
+        "coreIdea": "Datensatz und Rekonstruktion",
+        "correctReasoning": "Schnittbilder trennen Strukturen entlang der Strahlrichtung. Die räumlichen Daten ermöglichen multiplanare Rekonstruktionen. Dies ist ein genannter Vorteil der CT.",
+        "wrongAnswerExplanations": {
+          "A": "Schnittbilder trennen Strukturen entlang der Strahlrichtung.",
+          "B": "Viele Rekonstruktionen entstehen aus den bereits erfassten Daten.",
+          "C": "Die räumlichen Daten ermöglichen multiplanare Rekonstruktionen.",
+          "D": "Dies ist ein genannter Vorteil der CT."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Eine homogene Region misst ungefähr −100 HU. Welche Zuordnung passt von den folgenden Geweben am besten?",
+      "options": [
+        {
+          "text": "Fett",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Wasser",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Stark kontrastiertes Gefässblut",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Luft",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Kortikaler Knochen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Fett liegt in der dargestellten Skala ungefähr bei −100 HU. B: Wasser definiert ungefähr 0 HU. C: Dieses besitzt in der Darstellung deutlich positive Werte. D: Luft liegt ungefähr bei −1000 HU. E: Seine Werte sind deutlich positiv, oft über +1000 HU. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "HU und Material"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HU und Material"
+      ],
+      "questionGoal": "HU und Material",
+      "structuredExplanation": {
+        "coreIdea": "HU und Material",
+        "correctReasoning": "Fett liegt in der dargestellten Skala ungefähr bei −100 HU.",
+        "wrongAnswerExplanations": {
+          "B": "Wasser definiert ungefähr 0 HU.",
+          "C": "Dieses besitzt in der Darstellung deutlich positive Werte.",
+          "D": "Luft liegt ungefähr bei −1000 HU.",
+          "E": "Seine Werte sind deutlich positiv, oft über +1000 HU."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Beurteilen Sie die CT-Darstellung.",
+      "options": [
+        {
+          "text": "Eine dunkle Bildregion muss in jedem Fenster Luft sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wasser dient als Referenz um 0 HU, Luft liegt ungefähr bei −1000 HU.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Dieselbe Struktur kann bei anderer Fensterung anders grau erscheinen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Fensterung verändert die nachträglich gemessene physikalische Schwächung des bereits erfassten Voxels.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch andere Werte können unterhalb der gewählten Fensteruntergrenze liegen. B: Dies sind die dargestellten Referenzwerte. C: Die Zuordnung von HU zu sichtbaren Grauwerten wird verändert. D: Sie verändert primär die Darstellung, nicht die zugrunde liegende Messung. Quelle: Vorlesungsfolien, PDF-S. 24–27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "HU und Graudarstellung unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HU und Graudarstellung unterscheiden"
+      ],
+      "questionGoal": "HU und Graudarstellung unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "HU und Graudarstellung unterscheiden",
+        "correctReasoning": "Dies sind die dargestellten Referenzwerte. Die Zuordnung von HU zu sichtbaren Grauwerten wird verändert.",
+        "wrongAnswerExplanations": {
+          "A": "Auch andere Werte können unterhalb der gewählten Fensteruntergrenze liegen.",
+          "B": "Dies sind die dargestellten Referenzwerte.",
+          "C": "Die Zuordnung von HU zu sichtbaren Grauwerten wird verändert.",
+          "D": "Sie verändert primär die Darstellung, nicht die zugrunde liegende Messung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Ein Weichteilfenster hat Center C=40 HU und Width W=400 HU. Welche Unter- und Obergrenze ergeben sich nach C ± W/2?",
+      "options": [
+        {
+          "text": "−200 bis +200 HU",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0 bis +400 HU",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "−360 bis +440 HU",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "+40 bis +400 HU",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−160 bis +240 HU",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre ein Center von 0 HU. B: Dabei wird das Center nicht berücksichtigt. C: Hier wurde die volle statt halbe Breite je Seite verwendet. D: Center und Breite sind keine beiden Fenstergrenzen. E: 40−200=−160 und 40+200=240. Quelle: Vorlesungsfolien, PDF-S. 26–27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Fenstergrenzen berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fenstergrenzen berechnen"
+      ],
+      "questionGoal": "Fenstergrenzen berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Fenstergrenzen berechnen",
+        "correctReasoning": "40−200=−160 und 40+200=240.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre ein Center von 0 HU.",
+          "B": "Dabei wird das Center nicht berücksichtigt.",
+          "C": "Hier wurde die volle statt halbe Breite je Seite verwendet.",
+          "D": "Center und Breite sind keine beiden Fenstergrenzen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Sie wollen feine Veränderungen des belüfteten Lungenparenchyms beurteilen. Welche Darstellung wählen Sie vorrangig?",
+      "options": [
+        {
+          "text": "Nur ein enges Knochenfenster um hohe positive Werte.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Lungenfenster mit breiter Breite und deutlich negativem Center.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine erneute Aufnahme, weil Fensterung nachträglich unmöglich ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Grauwerteinstellung ohne Bezug zum untersuchten Gewebe.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich eine Darstellung, in der alle negativen HU schwarz gesättigt sind.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies priorisiert knöcherne Strukturen. B: So werden Schwächungsunterschiede im belüfteten Lungengewebe dargestellt. C: Die vorhandenen Werte können in verschiedenen Fenstern dargestellt werden. D: Die Fragestellung bestimmt die sinnvolle Fensterung. E: Dann würden viele pulmonale Unterschiede verloren gehen. Quelle: Vorlesungsfolien, PDF-S. 27–28.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Fenster nach Fragestellung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fenster nach Fragestellung"
+      ],
+      "questionGoal": "Fenster nach Fragestellung",
+      "structuredExplanation": {
+        "coreIdea": "Fenster nach Fragestellung",
+        "correctReasoning": "So werden Schwächungsunterschiede im belüfteten Lungengewebe dargestellt.",
+        "wrongAnswerExplanations": {
+          "A": "Dies priorisiert knöcherne Strukturen.",
+          "C": "Die vorhandenen Werte können in verschiedenen Fenstern dargestellt werden.",
+          "D": "Die Fragestellung bestimmt die sinnvolle Fensterung.",
+          "E": "Dann würden viele pulmonale Unterschiede verloren gehen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Warum kann eine i.v.-Kontrastmittelgabe trotz geeigneter Fensterung zusätzliche diagnostische Information liefern?",
+      "options": [
+        {
+          "text": "Kontrastmittel ist nur nötig, um nachträglich zwischen axial und koronal wechseln zu können.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ohne Kontrastmittel können überhaupt keine HU gemessen werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Iodhaltiges Kontrastmittel macht Röntgenstrahlung nichtionisierend.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Viele native Weichteile besitzen ähnliche HU; Kontrastmittel kann Gefässe und Anreicherungsmuster besser unterscheiden lassen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Fensterung beseitigt grundsätzlich jeden Unterschied zwischen Gefässen und Organen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Rekonstruktionsebenen benötigen keine solche Gabe. B: Auch native CT misst Schwächungswerte. C: Die Strahlungsart wird dadurch nicht verändert. D: Fensterung kann fehlende gemessene Kontrastunterschiede nicht erzeugen. E: Sie verändert deren sichtbare Differenzierung, nicht zwingend ihren Messwertunterschied. Quelle: Vorlesungsfolien, PDF-S. 21,24–31.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Natürlicher Weichteilkontrast"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Natürlicher Weichteilkontrast"
+      ],
+      "questionGoal": "Natürlicher Weichteilkontrast",
+      "structuredExplanation": {
+        "coreIdea": "Natürlicher Weichteilkontrast",
+        "correctReasoning": "Fensterung kann fehlende gemessene Kontrastunterschiede nicht erzeugen.",
+        "wrongAnswerExplanations": {
+          "A": "Rekonstruktionsebenen benötigen keine solche Gabe.",
+          "B": "Auch native CT misst Schwächungswerte.",
+          "C": "Die Strahlungsart wird dadurch nicht verändert.",
+          "E": "Sie verändert deren sichtbare Differenzierung, nicht zwingend ihren Messwertunterschied."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Beurteilen Sie die in der Vorlesung angesprochenen Einschränkungen.",
+      "options": [
+        {
+          "text": "Eine passende Fensterung eliminiert jedes Kontrastmittelrisiko.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nierenfunktion, frühere Kontrastmittelreaktionen und Schilddrüsenerkrankungen können vor iodhaltigem i.v.-Kontrastmittel relevant sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede CT benötigt zwingend iodhaltiges i.v.-Kontrastmittel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "CT verwendet ionisierende Strahlung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Darstellungseinstellungen ändern diese Risiken nicht. B: Diese Anamnese- und Risikobereiche werden genannt. C: Es gibt zahlreiche native Fragestellungen. D: Die Strahlenexposition gehört zur Abwägung. Quelle: Vorlesungsfolien, PDF-S. 29–33.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Untersuchung abwägen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Untersuchung abwägen"
+      ],
+      "questionGoal": "Untersuchung abwägen",
+      "structuredExplanation": {
+        "coreIdea": "Untersuchung abwägen",
+        "correctReasoning": "Diese Anamnese- und Risikobereiche werden genannt. Die Strahlenexposition gehört zur Abwägung.",
+        "wrongAnswerExplanations": {
+          "A": "Darstellungseinstellungen ändern diese Risiken nicht.",
+          "B": "Diese Anamnese- und Risikobereiche werden genannt.",
+          "C": "Es gibt zahlreiche native Fragestellungen.",
+          "D": "Die Strahlenexposition gehört zur Abwägung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Eine Folie zeigt ein sehr niedrig dosiertes CT-Beispiel, eine andere einen breiten Dosisbereich für CT. Welche Einordnung ist am besten?",
+      "options": [
+        {
+          "text": "Der niedrigste gezeigte Wert gilt zwingend für jede CT-Untersuchung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Exposition hängt unter anderem von Fragestellung, Protokoll und untersuchtem Volumen ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "mGy, mGy·cm und mSv bezeichnen definitionsgemäss dieselbe Messgrösse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine 3D-Rekonstruktion verdoppelt automatisch die bereits applizierte Dosis.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine bessere Detektoreffizienz macht ionisierende Strahlung grundsätzlich risikofrei.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Protokolle und Anforderungen unterscheiden sich. B: Ein Einzelbeispiel ist keine universelle Dosis jeder CT. C: Die Folie nennt unterschiedliche Dosiskenngrössen. D: Nachverarbeitung vorhandener Daten ist keine erneute Exposition. E: Effizienz ersetzt die Abwägung nicht. Quelle: Vorlesungsfolien, PDF-S. 33,47.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Dosisangaben kontextualisieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dosisangaben kontextualisieren"
+      ],
+      "questionGoal": "Dosisangaben kontextualisieren",
+      "structuredExplanation": {
+        "coreIdea": "Dosisangaben kontextualisieren",
+        "correctReasoning": "Ein Einzelbeispiel ist keine universelle Dosis jeder CT.",
+        "wrongAnswerExplanations": {
+          "A": "Protokolle und Anforderungen unterscheiden sich.",
+          "C": "Die Folie nennt unterschiedliche Dosiskenngrössen.",
+          "D": "Nachverarbeitung vorhandener Daten ist keine erneute Exposition.",
+          "E": "Effizienz ersetzt die Abwägung nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Welche Eigenschaft unterscheidet Photon-Counting-Detektoren vom dargestellten konventionellen energieintegrierenden Detektor?",
+      "options": [
+        {
+          "text": "Messung nur der Hauttemperatur ohne Röntgenphotonen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständiger Verlust jeder Energieinformation als Funktionsprinzip.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Umwandlung im Halbleiter mit Erfassung einzelner Photonen und ihrer Energieinformation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verzicht auf jede elektronische Signalbildung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein notwendiger zusätzlicher Szintillationsschritt vor jedem Photonenzähler.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch PCCT ist ein Röntgenverfahren. B: Spektrale Information ist eine wichtige Möglichkeit. C: Der konventionelle Szintillationsdetektor besitzt einen Licht-Zwischenschritt. D: Die Photonen werden gerade in elektrische Signale umgewandelt. E: Die direkte Konversion ist der Unterschied. Quelle: Vorlesungsfolien, PDF-S. 35–36,63.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Detektorprinzip"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Detektorprinzip"
+      ],
+      "questionGoal": "Detektorprinzip",
+      "structuredExplanation": {
+        "coreIdea": "Detektorprinzip",
+        "correctReasoning": "Der konventionelle Szintillationsdetektor besitzt einen Licht-Zwischenschritt.",
+        "wrongAnswerExplanations": {
+          "A": "Auch PCCT ist ein Röntgenverfahren.",
+          "B": "Spektrale Information ist eine wichtige Möglichkeit.",
+          "D": "Die Photonen werden gerade in elektrische Signale umgewandelt.",
+          "E": "Die direkte Konversion ist der Unterschied."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Beurteilen Sie die genannten Potenziale der Photon-Counting-CT.",
+      "options": [
+        {
+          "text": "Günstigere Dosiseffizienz kann bei geeigneten Protokollen eine Dosisreduktion ermöglichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der neue Detektor ersetzt die ärztliche Befundinterpretation automatisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Spektrale Information kann zusätzliche Material- und Kontrastdarstellungen ermöglichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Höhere räumliche Auflösung kann die Beurteilung feiner Strukturen verbessern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das ist ein Potenzial, keine feste Dosisgarantie. B: Die Verantwortung bleibt laut Vorlesung ärztlich. C: Die Folien zeigen unter anderem monoenergetische Ansichten. D: Dies wird an mehreren Beispielen demonstriert. Quelle: Vorlesungsfolien, PDF-S. 36–47,63.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "PCCT-Möglichkeiten einordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PCCT-Möglichkeiten einordnen"
+      ],
+      "questionGoal": "PCCT-Möglichkeiten einordnen",
+      "structuredExplanation": {
+        "coreIdea": "PCCT-Möglichkeiten einordnen",
+        "correctReasoning": "Das ist ein Potenzial, keine feste Dosisgarantie. Die Folien zeigen unter anderem monoenergetische Ansichten. Dies wird an mehreren Beispielen demonstriert.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist ein Potenzial, keine feste Dosisgarantie.",
+          "B": "Die Verantwortung bleibt laut Vorlesung ärztlich.",
+          "C": "Die Folien zeigen unter anderem monoenergetische Ansichten.",
+          "D": "Dies wird an mehreren Beispielen demonstriert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q12",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Aus einer geeigneten Kontrastmittel-CT werden verschiedene monoenergetische Ansichten berechnet. Welche Aussage passt am besten?",
+      "options": [
+        {
+          "text": "Die Energieinformation kann den sichtbaren Materialkontrast verändern, ohne für jede Ansicht erneut zu scannen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Nachverarbeitung entfernt rückwirkend die zuvor applizierte Strahlendosis.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Materialien müssen in jeder Energieansicht denselben Kontrast behalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede dargestellte Energie erfordert zwingend eine eigene zusätzliche Untersuchung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein virtuelles Nativbild ist definitionsgemäss eine neue Aufnahme ohne vorherige Kontrastmittelgabe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die spektrale Auswertung nutzt Informationen des Datensatzes. B: Berechnung macht die Exposition nicht rückgängig. C: Die materialabhängige Veränderung ist gerade nutzbar. D: Die Ansichten können aus spektralen Daten berechnet werden. E: Es ist eine aus vorhandenen Daten abgeleitete Darstellung. Quelle: Vorlesungsfolien, PDF-S. 45–46,63.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Spektrale Nachverarbeitung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spektrale Nachverarbeitung"
+      ],
+      "questionGoal": "Spektrale Nachverarbeitung",
+      "structuredExplanation": {
+        "coreIdea": "Spektrale Nachverarbeitung",
+        "correctReasoning": "Die spektrale Auswertung nutzt Informationen des Datensatzes.",
+        "wrongAnswerExplanations": {
+          "B": "Berechnung macht die Exposition nicht rückgängig.",
+          "C": "Die materialabhängige Veränderung ist gerade nutzbar.",
+          "D": "Die Ansichten können aus spektralen Daten berechnet werden.",
+          "E": "Es ist eine aus vorhandenen Daten abgeleitete Darstellung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Bei einer axialen Thorax-CT in Standarddarstellung liegt ein Befund auf der rechten Bildseite. Auf welcher Patientenseite liegt er?",
+      "options": [
+        {
+          "text": "Links, weil die Betrachtung von den Füssen her erfolgt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Immer kranial, weil es sich um eine Schnittaufnahme handelt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Seite lässt sich trotz bekannter Standardkonvention grundsätzlich nicht bestimmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Rechts, weil Bild- und Patientenseite in axialer Standardansicht identisch sind.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Immer dorsal, unabhängig von der Bildposition.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Standardkonvention vertauscht Bildrechts und Patientenrechts. B: Die Position in der Bildebene legt die kraniokaudale Höhe nicht fest. C: Mit korrekter Orientierung ist die Zuordnung möglich. D: Dies widerspricht der Konvention. E: Rechts-links und ventral-dorsal sind unterschiedliche Achsen. Quelle: Vorlesungsfolien, PDF-S. 49.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Axiale Seitenorientierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Axiale Seitenorientierung"
+      ],
+      "questionGoal": "Axiale Seitenorientierung",
+      "structuredExplanation": {
+        "coreIdea": "Axiale Seitenorientierung",
+        "correctReasoning": "Die Standardkonvention vertauscht Bildrechts und Patientenrechts.",
+        "wrongAnswerExplanations": {
+          "B": "Die Position in der Bildebene legt die kraniokaudale Höhe nicht fest.",
+          "C": "Mit korrekter Orientierung ist die Zuordnung möglich.",
+          "D": "Dies widerspricht der Konvention.",
+          "E": "Rechts-links und ventral-dorsal sind unterschiedliche Achsen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Beurteilen Sie die Orientierung im gezeigten axialen Schnitt auf Höhe der grossen Gefässe und Hauptbronchien.",
+      "options": [
+        {
+          "text": "Der Ösophagus ist der ventral vor dem Sternum liegende luftführende Gang.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Aorta descendens liegt links der Wirbelsäule.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Sternum liegt ventral, der Wirbelkörper dorsal.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein luftgefüllter Hauptbronchus muss dieselbe hohe Schwächung wie das kontrastierte Gefässlumen haben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er liegt im Mediastinum vor der Wirbelsäule, nicht vor dem Sternum. B: In Standarddarstellung erscheint sie daher rechts im Bild. C: Diese Strukturen dienen als robuste Orientierungspunkte. D: Luft und kontrastiertes Blut unterscheiden sich stark. Quelle: Vorlesungsfolien, PDF-S. 49,51–52.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Lagebeziehungen im demonstrierten Schnitt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lagebeziehungen im demonstrierten Schnitt"
+      ],
+      "questionGoal": "Lagebeziehungen im demonstrierten Schnitt",
+      "structuredExplanation": {
+        "coreIdea": "Lagebeziehungen im demonstrierten Schnitt",
+        "correctReasoning": "In Standarddarstellung erscheint sie daher rechts im Bild. Diese Strukturen dienen als robuste Orientierungspunkte.",
+        "wrongAnswerExplanations": {
+          "A": "Er liegt im Mediastinum vor der Wirbelsäule, nicht vor dem Sternum.",
+          "B": "In Standarddarstellung erscheint sie daher rechts im Bild.",
+          "C": "Diese Strukturen dienen als robuste Orientierungspunkte.",
+          "D": "Luft und kontrastiertes Blut unterscheiden sich stark."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Im demonstrierten Schnitt liegt eine kontrastierte runde Struktur links neben dem Wirbelkörper, dorsal im Thorax. Welches Gefäss ist damit am ehesten gemeint?",
+      "options": [
+        {
+          "text": "Eine im luftgefüllten Bronchiallumen verlaufende Arterie",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Truncus pulmonalis",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aorta ascendens",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aorta descendens",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "V. cava superior",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein kontrastiertes Gefäss ist nicht das luftgefüllte Bronchiallumen. B: Dieser liegt im gezeigten Schnitt ventraler. C: Sie liegt im gezeigten Schnitt weiter ventral. D: Die Lage links paravertebral passt zum dargestellten absteigenden Aortenabschnitt. E: Sie liegt rechts und deutlich weiter ventral als die beschriebene Struktur. Quelle: Vorlesungsfolien, PDF-S. 51–52.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Gefäss topografisch erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gefäss topografisch erkennen"
+      ],
+      "questionGoal": "Gefäss topografisch erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Gefäss topografisch erkennen",
+        "correctReasoning": "Die Lage links paravertebral passt zum dargestellten absteigenden Aortenabschnitt.",
+        "wrongAnswerExplanations": {
+          "A": "Ein kontrastiertes Gefäss ist nicht das luftgefüllte Bronchiallumen.",
+          "B": "Dieser liegt im gezeigten Schnitt ventraler.",
+          "C": "Sie liegt im gezeigten Schnitt weiter ventral.",
+          "E": "Sie liegt rechts und deutlich weiter ventral als die beschriebene Struktur."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Bei akutem einseitigem Thoraxschmerz zeigt die CT rechts Luft im Pleuraraum ohne Gefässzeichnung ausserhalb der zurückgewichenen Lunge. Welcher Befund passt dazu?",
+      "options": [
+        {
+          "text": "Reiner Pleuraerguss",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Normale belüftete Lunge bis direkt an die Thoraxwand",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich ein pulmonalarterieller Füllungsdefekt",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Rechtsseitiger Pneumothorax",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Isolierte intrapulmonale Gefässverkalkung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Flüssigkeit weist nicht die Luftschwächung auf. B: Der beschriebene pleurale Raum fehlt im Normalbefund. C: Dies ist ein anderer Befundtyp. D: Entscheidend ist die extrapulmonale Luft im Pleuraraum. E: Dies erklärt keine pleurale Luftansammlung. Quelle: Vorlesungsfolien, PDF-S. 54–55.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Pneumothorax-Befund"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pneumothorax-Befund"
+      ],
+      "questionGoal": "Pneumothorax-Befund",
+      "structuredExplanation": {
+        "coreIdea": "Pneumothorax-Befund",
+        "correctReasoning": "Entscheidend ist die extrapulmonale Luft im Pleuraraum.",
+        "wrongAnswerExplanations": {
+          "A": "Flüssigkeit weist nicht die Luftschwächung auf.",
+          "B": "Der beschriebene pleurale Raum fehlt im Normalbefund.",
+          "C": "Dies ist ein anderer Befundtyp.",
+          "E": "Dies erklärt keine pleurale Luftansammlung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Beurteilen Sie den Fall mit Atemnot nach Langstreckenflug und geschwollener Wade.",
+      "options": [
+        {
+          "text": "Ein dunkler intraluminaler Defekt im sonst kontrastierten Pulmonalarterienlumen passt zu einem Embolus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Luft im Pleuraraum ist derselbe Bildbefund wie ein arterieller Füllungsdefekt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein hell kontrastiertes Gefässlumen schliesst einen umschriebenen darin liegenden Thrombus aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die vorausgegangene Reise allein beweist bereits die Diagnose.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: So wird der Fall aufgelöst. B: Die Lokalisation und das Material unterscheiden sich. C: Der umspülte Thrombus kann als Aussparung sichtbar bleiben. D: Sie liefert Kontext, ersetzt aber keine diagnostische Beurteilung. Quelle: Vorlesungsfolien, PDF-S. 59–60.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Pulmonalarterielle Embolie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pulmonalarterielle Embolie"
+      ],
+      "questionGoal": "Pulmonalarterielle Embolie",
+      "structuredExplanation": {
+        "coreIdea": "Pulmonalarterielle Embolie",
+        "correctReasoning": "So wird der Fall aufgelöst.",
+        "wrongAnswerExplanations": {
+          "A": "So wird der Fall aufgelöst.",
+          "B": "Die Lokalisation und das Material unterscheiden sich.",
+          "C": "Der umspülte Thrombus kann als Aussparung sichtbar bleiben.",
+          "D": "Sie liefert Kontext, ersetzt aber keine diagnostische Beurteilung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Bei chronischer Dyspnoe beschreibt der Befund basal-subpleurale Retikulationen, Honigwaben und Traktionsbronchiektasen. Welchem demonstrierten Muster entspricht dies am ehesten?",
+      "options": [
+        {
+          "text": "Isoliertem Pneumothorax ohne Parenchymveränderung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Reiner Fensterungsänderung ohne strukturellen Befund",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fibrotischem UIP-Muster",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich einer zentralen Pulmonalarterienembolie",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vollständig normalem belüftetem Lungenparenchym",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Pleurale Luft erklärt dieses fibrotische Muster nicht. B: Die beschriebenen morphologischen Zeichen sind nicht allein eine Grauwertumstellung. C: Diese Kombination ist die Auflösung des gezeigten Fibrosefalls. D: Die genannten Zeichen beschreiben Parenchymumbau. E: Honigwaben und Traktionsbronchiektasen sind kein Normalmuster. Quelle: Vorlesungsfolien, PDF-S. 61–62.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Fibrosemuster erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fibrosemuster erkennen"
+      ],
+      "questionGoal": "Fibrosemuster erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Fibrosemuster erkennen",
+        "correctReasoning": "Diese Kombination ist die Auflösung des gezeigten Fibrosefalls.",
+        "wrongAnswerExplanations": {
+          "A": "Pleurale Luft erklärt dieses fibrotische Muster nicht.",
+          "B": "Die beschriebenen morphologischen Zeichen sind nicht allein eine Grauwertumstellung.",
+          "D": "Die genannten Zeichen beschreiben Parenchymumbau.",
+          "E": "Honigwaben und Traktionsbronchiektasen sind kein Normalmuster."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Im demonstrierten Verlauf einer immungeschwächten Person wird eine pulmonale Läsion mit Air-crescent-Zeichen der Aspergillose zugeordnet. Beurteilen Sie die Schlussfolgerungen.",
+      "options": [
+        {
+          "text": "Jede halbmondförmige Luftstruktur im Thorax beweist unabhängig vom Ort eine Aspergillose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Zeichen bezeichnet definitionsgemäss einen Kontrastmittelfüllungsdefekt der A. pulmonalis.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Bildzeichen ist im klinischen Kontext zu bewerten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Immunsituation, zeitlicher Verlauf und Bildmorphologie werden gemeinsam interpretiert.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese Aussage ist zu unspezifisch und zu absolut. B: Das wäre ein anderer radiologischer Befund. C: Es sollte nicht losgelöst als universeller Erregernachweis verstanden werden. D: Der Fall kombiniert diese Informationen. Quelle: Vorlesungsfolien, PDF-S. 56–58.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Aspergillose-Fall interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aspergillose-Fall interpretieren"
+      ],
+      "questionGoal": "Aspergillose-Fall interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "Aspergillose-Fall interpretieren",
+        "correctReasoning": "Es sollte nicht losgelöst als universeller Erregernachweis verstanden werden. Der Fall kombiniert diese Informationen.",
+        "wrongAnswerExplanations": {
+          "A": "Diese Aussage ist zu unspezifisch und zu absolut.",
+          "B": "Das wäre ein anderer radiologischer Befund.",
+          "C": "Es sollte nicht losgelöst als universeller Erregernachweis verstanden werden.",
+          "D": "Der Fall kombiniert diese Informationen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv42_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV42",
+      "stem": "Bei C=40 HU und W=400 HU wird eine Region mit −800 HU schwarz dargestellt. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Der Wert liegt unterhalb der Fensteruntergrenze −160 HU.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der zugrunde liegende Wert bleibt trotz geänderter Graudarstellung −800 HU.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine passend gewählte Lungenfensterung kann Unterschiede zwischen solchen negativen Werten sichtbar machen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine schwarze Darstellung beweist in diesem Fenster, dass der Voxelwert exakt −1000 HU beträgt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Daher wird er auf Schwarz abgebildet. B: Fensterung ändert die Anzeige. C: Sie stellt einen anderen HU-Bereich differenzierter dar. D: Viele Werte unterhalb der Untergrenze werden gleich schwarz dargestellt. Quelle: Vorlesungsfolien, PDF-S. 26–28,65.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV42",
+        "Fensterung als diagnostische Entscheidung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fensterung als diagnostische Entscheidung"
+      ],
+      "questionGoal": "Fensterung als diagnostische Entscheidung",
+      "structuredExplanation": {
+        "coreIdea": "Fensterung als diagnostische Entscheidung",
+        "correctReasoning": "Daher wird er auf Schwarz abgebildet. Fensterung ändert die Anzeige. Sie stellt einen anderen HU-Bereich differenzierter dar.",
+        "wrongAnswerExplanations": {
+          "A": "Daher wird er auf Schwarz abgebildet.",
+          "B": "Fensterung ändert die Anzeige.",
+          "C": "Sie stellt einen anderen HU-Bereich differenzierter dar.",
+          "D": "Viele Werte unterhalb der Untergrenze werden gleich schwarz dargestellt."
+        }
+      }
+    }
+  ]
+}
