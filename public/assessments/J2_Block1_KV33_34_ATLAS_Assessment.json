@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block1_kv33_34_20261029",
+  "lectureCode": "KV33/34",
+  "title": "Gasaustausch und chemische Atemregulation",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV33_34_Gasaustausch III_IV_2026st.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Modellgleichungen ausdrücklich bei definiertem Stoffwechsel und stationären Bedingungen. Keine Annahme, arterielle und alveoläre O₂-Spannungen seien in jeder realen Lunge exakt identisch. Henry-Koeffizienten der Folie nicht als Zahlenabfrage übernommen; deren Einheiten werden dort missverständlich dargestellt. Kein pauschaler Austausch alveolärer durch arterielle CO₂-Werte in der Bohr-Gleichung.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Inspiratorische, alveoläre und gemischt-exspiratorische Luft unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Gaspartialdruck und physikalisch gelöste Gasmenge erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Diffusion, Äquilibrierung und Diffusionskapazität verknüpfen."
+    },
+    {
+      "id": "lo4",
+      "text": "Alveoläre Ventilation mit Blutgasänderungen verbinden."
+    },
+    {
+      "id": "lo5",
+      "text": "Zentrale und periphere chemische Atemregulation unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv33_34_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Warum enthält gemischt ausgeatmete Luft weniger CO₂ als reine Alveolarluft?",
+      "options": [
+        {
+          "text": "Die Ausatmung entsteht ausschliesslich aus dem Pleuraspalt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Totraumluft besitzt grundsätzlich mehr CO₂ als Alveolarluft.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CO₂-arme Totraumluft mischt sich mit CO₂-reicher Alveolarluft.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die gesamte alveoläre CO₂-Menge wird im Hauptbronchus wieder in O₂ umgewandelt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Hämoglobin verlässt regelhaft das Blut und bindet CO₂ im Bronchiallumen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Luft strömt aus den Atemwegen. B: Sie ist bei Frischlufteinatmung CO₂-arm. C: Die Mischung verdünnt den mittleren exspiratorischen CO₂-Anteil. D: Ein solcher Stoffwechsel findet dort nicht statt. E: Dies ist kein normaler Mechanismus. Quelle: Vorlesungsfolien, PDF-S. 3–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Gemischte Exspirationsluft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gemischte Exspirationsluft"
+      ],
+      "questionGoal": "Gemischte Exspirationsluft",
+      "structuredExplanation": {
+        "coreIdea": "Gemischte Exspirationsluft",
+        "correctReasoning": "Die Mischung verdünnt den mittleren exspiratorischen CO₂-Anteil.",
+        "wrongAnswerExplanations": {
+          "A": "Die Luft strömt aus den Atemwegen.",
+          "B": "Sie ist bei Frischlufteinatmung CO₂-arm.",
+          "D": "Ein solcher Stoffwechsel findet dort nicht statt.",
+          "E": "Dies ist kein normaler Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Gegeben seien PIO₂=150 mmHg, PACO₂=40 mmHg und RQ=0,8. Welcher PAO₂ folgt näherungsweise aus PAO₂=PIO₂−PACO₂/RQ?",
+      "options": [
+        {
+          "text": "150 mmHg",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "110 mmHg",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "200 mmHg",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "118 mmHg",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "100 mmHg",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der alveoläre Sauerstoffverbrauch wurde ignoriert. B: RQ wurde nicht berücksichtigt. C: Der CO₂-Term muss abgezogen werden. D: Hier wurde CO₂ mit RQ multipliziert statt dividiert. E: 150−40/0,8=100. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Alveoläre Gasgleichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alveoläre Gasgleichung"
+      ],
+      "questionGoal": "Alveoläre Gasgleichung",
+      "structuredExplanation": {
+        "coreIdea": "Alveoläre Gasgleichung",
+        "correctReasoning": "150−40/0,8=100.",
+        "wrongAnswerExplanations": {
+          "A": "Der alveoläre Sauerstoffverbrauch wurde ignoriert.",
+          "B": "RQ wurde nicht berücksichtigt.",
+          "C": "Der CO₂-Term muss abgezogen werden.",
+          "D": "Hier wurde CO₂ mit RQ multipliziert statt dividiert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Bei konstanter CO₂-Produktion verdoppelt sich die effektive Alveolarventilation im stationären Modell. Was geschieht mit dem alveolären CO₂-Partialdruck?",
+      "options": [
+        {
+          "text": "Er steigt um das Vierfache.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er wird sofort null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er bleibt zwingend unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er halbiert sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier besteht keine solche Potenzabhängigkeit. B: Auch bei verdoppelter Ventilation wird weiter CO₂ produziert. C: Die Abfuhr pro Zeit verändert sich. D: Das kehrt die Beziehung um. E: PACO₂ ist bei fester Produktion invers zu VA. Quelle: Vorlesungsfolien, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Ventilation und CO₂"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ventilation und CO₂"
+      ],
+      "questionGoal": "Ventilation und CO₂",
+      "structuredExplanation": {
+        "coreIdea": "Ventilation und CO₂",
+        "correctReasoning": "PACO₂ ist bei fester Produktion invers zu VA.",
+        "wrongAnswerExplanations": {
+          "A": "Hier besteht keine solche Potenzabhängigkeit.",
+          "B": "Auch bei verdoppelter Ventilation wird weiter CO₂ produziert.",
+          "C": "Die Abfuhr pro Zeit verändert sich.",
+          "D": "Das kehrt die Beziehung um."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie physikalisch gelöste Gase.",
+      "options": [
+        {
+          "text": "Gleicher Partialdruck bedeutet in verschiedenen Medien nicht gleiche gelöste Stoffmenge.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei gegebener Temperatur verknüpft ein Löslichkeitskoeffizient Konzentration und Partialdruck.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "CO₂ ist in Flüssigkeit deutlich besser löslich als O₂.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Gaspartialdruck im Blut ist definitionsgemäss identisch mit der gesamten chemisch gebundenen Gasmenge.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Löslichkeit unterscheidet sich. B: Dies ist die Henry-Beziehung. C: Die Folien zeigen entsprechend unterschiedliche Koeffizienten. D: Er beschreibt den gelösten Anteil beziehungsweise dessen Gleichgewichtstendenz. Quelle: Vorlesungsfolien, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Partialdruck und Lösung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Partialdruck und Lösung"
+      ],
+      "questionGoal": "Partialdruck und Lösung",
+      "structuredExplanation": {
+        "coreIdea": "Partialdruck und Lösung",
+        "correctReasoning": "Die Löslichkeit unterscheidet sich. Dies ist die Henry-Beziehung. Die Folien zeigen entsprechend unterschiedliche Koeffizienten.",
+        "wrongAnswerExplanations": {
+          "A": "Die Löslichkeit unterscheidet sich.",
+          "B": "Dies ist die Henry-Beziehung.",
+          "C": "Die Folien zeigen entsprechend unterschiedliche Koeffizienten.",
+          "D": "Er beschreibt den gelösten Anteil beziehungsweise dessen Gleichgewichtstendenz."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Zwei Blutproben haben gleichen PO₂, aber unterschiedliche Hämoglobinkonzentration. Welche Schlussfolgerung ist am besten begründet?",
+      "options": [
+        {
+          "text": "Die Probe mit weniger Hb kann definitionsgemäss keinen gelösten Sauerstoff besitzen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der gleiche PO₂ beweist keine gleiche gesamte Sauerstoffmenge.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Beide Proben müssen pro Liter exakt gleich viel O₂ enthalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "PO₂ und Hb-Konzentration sind dieselbe Messgrösse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein niedriger Hb-Wert verdoppelt automatisch den alveolären PO₂.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Physikalische Lösung ist auch ohne Hb möglich. B: Hämoglobingebundener Sauerstoff ist ein zusätzlicher Anteil. C: Der Hb-Gehalt beeinflusst die Gesamtmenge. D: Druck und Stoffkonzentration sind verschieden. E: Eine solche direkte Kopplung besteht nicht. Quelle: Vorlesungsfolien, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Blutgas richtig deuten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutgas richtig deuten"
+      ],
+      "questionGoal": "Blutgas richtig deuten",
+      "structuredExplanation": {
+        "coreIdea": "Blutgas richtig deuten",
+        "correctReasoning": "Hämoglobingebundener Sauerstoff ist ein zusätzlicher Anteil.",
+        "wrongAnswerExplanations": {
+          "A": "Physikalische Lösung ist auch ohne Hb möglich.",
+          "C": "Der Hb-Gehalt beeinflusst die Gesamtmenge.",
+          "D": "Druck und Stoffkonzentration sind verschieden.",
+          "E": "Eine solche direkte Kopplung besteht nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Welche Grösse treibt den Netto-O₂-Transfer über die alveolokapilläre Barriere unmittelbar an?",
+      "options": [
+        {
+          "text": "Der bronchiale Schleimgehalt allein",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Herzfrequenz unabhängig von Gasdrücken und Barriere",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die O₂-Partialdruckdifferenz zwischen Alveolarluft und Kapillarblut",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Unterschied der gesamten Blutmengen in beiden Vorhöfen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich die Zahl der Rippen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er ist nicht der unmittelbare molekulare Antrieb. B: Sie kann Transportbedingungen ändern, ersetzt den Gradienten aber nicht. C: Der Gradient bestimmt die Diffusionsrichtung. D: Dies ist keine transbarrieräre Diffusionskraft. E: Sie bestimmt keinen O₂-Gradienten. Quelle: Vorlesungsfolien, PDF-S. 11,13–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Diffusionsantrieb"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diffusionsantrieb"
+      ],
+      "questionGoal": "Diffusionsantrieb",
+      "structuredExplanation": {
+        "coreIdea": "Diffusionsantrieb",
+        "correctReasoning": "Der Gradient bestimmt die Diffusionsrichtung.",
+        "wrongAnswerExplanations": {
+          "A": "Er ist nicht der unmittelbare molekulare Antrieb.",
+          "B": "Sie kann Transportbedingungen ändern, ersetzt den Gradienten aber nicht.",
+          "D": "Dies ist keine transbarrieräre Diffusionskraft.",
+          "E": "Sie bestimmt keinen O₂-Gradienten."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie isolierte Änderungen im Modell DL=K·A/x.",
+      "options": [
+        {
+          "text": "Verdopplung der Barrieredicke halbiert DL.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Diffusionskoeffizient ist für jedes Gas definitionsgemäss gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verdopplung von A und x vervierfacht DL.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Halbierung der Fläche halbiert DL.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: x steht im Nenner. B: Die Stoffeigenschaften beeinflussen K. C: Die beiden Effekte heben sich auf. D: Die Abhängigkeit von A ist linear. Quelle: Vorlesungsfolien, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Fläche und Dicke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fläche und Dicke"
+      ],
+      "questionGoal": "Fläche und Dicke",
+      "structuredExplanation": {
+        "coreIdea": "Fläche und Dicke",
+        "correctReasoning": "x steht im Nenner. Die Abhängigkeit von A ist linear.",
+        "wrongAnswerExplanations": {
+          "A": "x steht im Nenner.",
+          "B": "Die Stoffeigenschaften beeinflussen K.",
+          "C": "Die beiden Effekte heben sich auf.",
+          "D": "Die Abhängigkeit von A ist linear."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Eine Gasmenge von 200 ml/min wird bei mittlerer treibender Partialdruckdifferenz 10 mmHg übertragen. Welche DL folgt im angegebenen Modell?",
+      "options": [
+        {
+          "text": "10 ml/(min·mmHg)",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "200 ml/(min·mmHg)",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "20 ml/(min·mmHg)",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "2000 ml/(min·mmHg)",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,05 ml/(min·mmHg)",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist nur die Zahlenangabe des Gradienten. B: Die Druckdifferenz wurde ignoriert. C: DL=Gasfluss/ΔP=200/10. D: Dies ist das Produkt statt des Quotienten. E: Dies ist der Kehrwert. Quelle: Vorlesungsfolien, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Diffusionskapazität berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diffusionskapazität berechnen"
+      ],
+      "questionGoal": "Diffusionskapazität berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Diffusionskapazität berechnen",
+        "correctReasoning": "DL=Gasfluss/ΔP=200/10.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist nur die Zahlenangabe des Gradienten.",
+          "B": "Die Druckdifferenz wurde ignoriert.",
+          "D": "Dies ist das Produkt statt des Quotienten.",
+          "E": "Dies ist der Kehrwert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Ein Gas erreicht schon früh während der Kapillarpassage denselben Partialdruck wie die Alveolarluft. Was begrenzt eine zusätzliche Aufnahme bei unverändertem Alveolardruck dann besonders?",
+      "options": [
+        {
+          "text": "Die Zahl der Hautdrüsen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein weiterhin beliebig grosser Gradient nach vollständiger Äquilibrierung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein vollständiges Fehlen jeder Molekülbewegung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zufuhr weiteren nicht äquilibrierten Blutes durch Perfusion",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine obligatorische Umkehr der Diffusion allein nach Ablauf einer Sekunde",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie bestimmt den lokalen pulmonalen Transfer nicht. B: Die Äquilibrierung beseitigt gerade diesen Gradienten. C: Im Gleichgewicht bestehen weiterhin bidirektionale Bewegungen. D: Ohne neuen Gradienten entsteht kaum zusätzlicher Nettotransfer. E: Zeit allein legt keine solche Umkehr fest. Quelle: Vorlesungsfolien, PDF-S. 13–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Äquilibrierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Äquilibrierung"
+      ],
+      "questionGoal": "Äquilibrierung",
+      "structuredExplanation": {
+        "coreIdea": "Äquilibrierung",
+        "correctReasoning": "Ohne neuen Gradienten entsteht kaum zusätzlicher Nettotransfer.",
+        "wrongAnswerExplanations": {
+          "A": "Sie bestimmt den lokalen pulmonalen Transfer nicht.",
+          "B": "Die Äquilibrierung beseitigt gerade diesen Gradienten.",
+          "C": "Im Gleichgewicht bestehen weiterhin bidirektionale Bewegungen.",
+          "E": "Zeit allein legt keine solche Umkehr fest."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q10",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie Aussagen zur Messung und Interpretation von DL.",
+      "options": [
+        {
+          "text": "Systemischer arterieller PO₂ ist stets identisch mit dem mittleren kapillären PO₂ entlang der gesamten Austauschstrecke.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein gemessener Gasfluss allein genügt ohne Kenntnis des treibenden Gradienten nicht zur Berechnung von DL.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein niedriger Gasfluss beweist unter allen Bedingungen eine dickere Barriere.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gleiche Fläche garantiert bei beliebiger Dicke dieselbe DL.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die kapilläre Spannung ändert sich während der Passage. B: DL ist der Quotient aus Fluss und Gradient. C: Auch Gradient und Fläche können verändert sein. D: Die Dicke bleibt eine unabhängige Einflussgrösse. Quelle: Vorlesungsfolien, PDF-S. 13–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Diffusionsleistung interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diffusionsleistung interpretieren"
+      ],
+      "questionGoal": "Diffusionsleistung interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "Diffusionsleistung interpretieren",
+        "correctReasoning": "DL ist der Quotient aus Fluss und Gradient.",
+        "wrongAnswerExplanations": {
+          "A": "Die kapilläre Spannung ändert sich während der Passage.",
+          "B": "DL ist der Quotient aus Fluss und Gradient.",
+          "C": "Auch Gradient und Fläche können verändert sein.",
+          "D": "Die Dicke bleibt eine unabhängige Einflussgrösse."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q11",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Warum kann eine verminderte Diffusionskapazität unter Belastung stärker auffallen als in Ruhe?",
+      "options": [
+        {
+          "text": "Jede gesunde Lunge muss bei kleinster Belastung hypoxämisch werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Ursache muss unabhängig von allen Befunden ausschliesslich Angst sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Alveolarmembran verschwindet während Bewegung vollständig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Belastung verlängert jede Kapillarpassage unbegrenzt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein höherer Blutfluss verkürzt die Kontaktzeit und erhöht die Anforderungen an die Äquilibrierung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Normale Reserven erlauben ausreichenden Austausch. B: Die beschriebenen mechanistischen Voraussetzungen sprechen für einen Austauschfaktor. C: Sie bleibt Teil der Barriere. D: Mehr Fluss kann die Passage verkürzen. E: Eine eingeschränkte Reserve kann dann unzureichend werden. Quelle: Vorlesungsfolien, PDF-S. 13–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Belastung und Diffusionsreserve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Belastung und Diffusionsreserve"
+      ],
+      "questionGoal": "Belastung und Diffusionsreserve",
+      "structuredExplanation": {
+        "coreIdea": "Belastung und Diffusionsreserve",
+        "correctReasoning": "Eine eingeschränkte Reserve kann dann unzureichend werden.",
+        "wrongAnswerExplanations": {
+          "A": "Normale Reserven erlauben ausreichenden Austausch.",
+          "B": "Die beschriebenen mechanistischen Voraussetzungen sprechen für einen Austauschfaktor.",
+          "C": "Sie bleibt Teil der Barriere.",
+          "D": "Mehr Fluss kann die Passage verkürzen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Die alveoläre Ventilation sinkt bei unverändertem Stoffwechsel. Welche Blutgasrichtung passt im vereinfachten stationären Modell?",
+      "options": [
+        {
+          "text": "Der pH wird allein durch die Atemfrequenz festgelegt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "CO₂ und O₂ steigen beide zwingend im gleichen Verhältnis.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CO₂ bleibt konstant unabhängig von VA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "CO₂ steigt, O₂ sinkt, pH fällt akut.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "CO₂ sinkt, O₂ steigt, pH steigt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch Totraum und Stoffwechsel bestimmen die effektive Ventilation. B: Das folgt nicht aus der alveolären Bilanz. C: Die CO₂-Abfuhr hängt von VA ab. D: CO₂-Retention führt zur respiratorischen Ansäuerung. E: Das entspricht Hyperventilation. Quelle: Vorlesungsfolien, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Alveoläre Hypoventilation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alveoläre Hypoventilation"
+      ],
+      "questionGoal": "Alveoläre Hypoventilation",
+      "structuredExplanation": {
+        "coreIdea": "Alveoläre Hypoventilation",
+        "correctReasoning": "CO₂-Retention führt zur respiratorischen Ansäuerung.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Totraum und Stoffwechsel bestimmen die effektive Ventilation.",
+          "B": "Das folgt nicht aus der alveolären Bilanz.",
+          "C": "Die CO₂-Abfuhr hängt von VA ab.",
+          "E": "Das entspricht Hyperventilation."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie eine Ventilation, die im Verhältnis zur aktuellen CO₂-Produktion erhöht ist.",
+      "options": [
+        {
+          "text": "Akut kann eine respiratorische Alkalose entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der alveoläre und arterielle CO₂-Partialdruck können sinken.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine erhöhte Atemfrequenz allein beweist keine Hyperventilation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede verstärkte Atmung bei entsprechend erhöhtem Stoffwechsel ist definitionsgemäss Hyperventilation.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der CO₂-Abfall wirkt alkalisierend. B: Mehr wirksame Abfuhr vermindert die CO₂-Spannung. C: Atemtiefe, Totraum und Produktion müssen mitbeurteilt werden. D: Die Definition ist auf das Verhältnis zum Bedarf bezogen. Quelle: Vorlesungsfolien, PDF-S. 23–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Hyperventilation definieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hyperventilation definieren"
+      ],
+      "questionGoal": "Hyperventilation definieren",
+      "structuredExplanation": {
+        "coreIdea": "Hyperventilation definieren",
+        "correctReasoning": "Der CO₂-Abfall wirkt alkalisierend. Mehr wirksame Abfuhr vermindert die CO₂-Spannung. Atemtiefe, Totraum und Produktion müssen mitbeurteilt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Der CO₂-Abfall wirkt alkalisierend.",
+          "B": "Mehr wirksame Abfuhr vermindert die CO₂-Spannung.",
+          "C": "Atemtiefe, Totraum und Produktion müssen mitbeurteilt werden.",
+          "D": "Die Definition ist auf das Verhältnis zum Bedarf bezogen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "CO₂-Produktion und Alveolarventilation steigen im stationären Modell beide auf das Doppelte. Welche Änderung von PACO₂ ist zu erwarten?",
+      "options": [
+        {
+          "text": "Ungefähr keine Änderung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Halbierung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Abfall auf null",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verdopplung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vervierfachung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Verhältnis Produktion/VA bleibt gleich. B: Dies ignoriert die gesteigerte Produktion. C: CO₂ wird weiterhin produziert. D: Dies ignoriert die vermehrte Ventilation. E: Das Produkt ist hier nicht die entscheidende Beziehung. Quelle: Vorlesungsfolien, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "CO₂-Produktion steigt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CO₂-Produktion steigt"
+      ],
+      "questionGoal": "CO₂-Produktion steigt",
+      "structuredExplanation": {
+        "coreIdea": "CO₂-Produktion steigt",
+        "correctReasoning": "Das Verhältnis Produktion/VA bleibt gleich.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ignoriert die gesteigerte Produktion.",
+          "C": "CO₂ wird weiterhin produziert.",
+          "D": "Dies ignoriert die vermehrte Ventilation.",
+          "E": "Das Produkt ist hier nicht die entscheidende Beziehung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Wie wird ein Anstieg des arteriellen CO₂ zentral wesentlich in ein Atemsignal übersetzt?",
+      "options": [
+        {
+          "text": "Der zentrale Atemantrieb benötigt keinerlei Verbindung zu Blutgasen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Zentralrezeptoren zählen unmittelbar rote Blutkörperchen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hämoglobin wird direkt ins Atemzentrum transportiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Arterielle Protonen passieren jede Barriere sofort und unbegrenzt identisch wie CO₂.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "CO₂ passiert die Blut-Hirn-Schranke und verändert lokal den pH.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Rückkopplung erfolgt gerade über solche Signale. B: Sie erfassen chemische Veränderungen. C: Ein solcher Transport ist nicht nötig. D: Protonen und CO₂ haben unterschiedliche Barrieregängigkeit. E: Zentrale chemosensitive Strukturen reagieren auf das Milieu. Quelle: Vorlesungsfolien, PDF-S. 26–28.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Zentrale Chemosensitivität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zentrale Chemosensitivität"
+      ],
+      "questionGoal": "Zentrale Chemosensitivität",
+      "structuredExplanation": {
+        "coreIdea": "Zentrale Chemosensitivität",
+        "correctReasoning": "Zentrale chemosensitive Strukturen reagieren auf das Milieu.",
+        "wrongAnswerExplanations": {
+          "A": "Die Rückkopplung erfolgt gerade über solche Signale.",
+          "B": "Sie erfassen chemische Veränderungen.",
+          "C": "Ein solcher Transport ist nicht nötig.",
+          "D": "Protonen und CO₂ haben unterschiedliche Barrieregängigkeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Wo wird ein arterieller O₂-Abfall für den hypoxischen Atemantrieb wesentlich erkannt?",
+      "options": [
+        {
+          "text": "In der Aortenklappe durch direkte O₂-Bindung an Sehnenfäden",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "In peripheren Glomera, besonders den Karotiskörperchen",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Allein im Magenlumen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich in den basalen Keratinozyten",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Im Bronchialschleim durch Zählung der Zilien",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Klappe besitzt keinen solchen Sensorapparat. B: Diese Chemorezeptoren erfassen unter anderem den arteriellen PO₂. C: Dies ist nicht der wesentliche arterielle O₂-Atemsensorort. D: Dies sind keine zentralen arteriellen O₂-Atemsensoren. E: Mukoziliäre Reinigung ist keine PO₂-Chemorezeption. Quelle: Vorlesungsfolien, PDF-S. 28–33.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Periphere O₂-Sensoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Periphere O₂-Sensoren"
+      ],
+      "questionGoal": "Periphere O₂-Sensoren",
+      "structuredExplanation": {
+        "coreIdea": "Periphere O₂-Sensoren",
+        "correctReasoning": "Diese Chemorezeptoren erfassen unter anderem den arteriellen PO₂.",
+        "wrongAnswerExplanations": {
+          "A": "Die Klappe besitzt keinen solchen Sensorapparat.",
+          "C": "Dies ist nicht der wesentliche arterielle O₂-Atemsensorort.",
+          "D": "Dies sind keine zentralen arteriellen O₂-Atemsensoren.",
+          "E": "Mukoziliäre Reinigung ist keine PO₂-Chemorezeption."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie die chemische Atemregulation.",
+      "options": [
+        {
+          "text": "Alle Rezeptoren messen direkt die gesamte hämoglobingebundene O₂-Menge statt PO₂.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Karotische Afferenzen nutzen wesentlich den N. glossopharyngeus.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "CO₂- und O₂-Regulation können sich gegenseitig beeinflussen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Periphere Chemorezeptoren reagieren auf Änderungen von O₂, CO₂ und pH.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Partialdruck und Gesamtgehalt müssen unterschieden werden. B: Dies unterscheidet sie von vagalen aortalen Afferenzen. C: Die Atemantwort integriert mehrere Reize. D: Die Signale werden zum Hirnstamm geleitet. Quelle: Vorlesungsfolien, PDF-S. 26–33.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Sensororte und Signale"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sensororte und Signale"
+      ],
+      "questionGoal": "Sensororte und Signale",
+      "structuredExplanation": {
+        "coreIdea": "Sensororte und Signale",
+        "correctReasoning": "Dies unterscheidet sie von vagalen aortalen Afferenzen. Die Atemantwort integriert mehrere Reize. Die Signale werden zum Hirnstamm geleitet.",
+        "wrongAnswerExplanations": {
+          "A": "Partialdruck und Gesamtgehalt müssen unterschieden werden.",
+          "B": "Dies unterscheidet sie von vagalen aortalen Afferenzen.",
+          "C": "Die Atemantwort integriert mehrere Reize.",
+          "D": "Die Signale werden zum Hirnstamm geleitet."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Eine primäre metabolische Ansäuerung senkt den arteriellen pH. Beurteilen Sie mögliche kompensatorische Zusammenhänge.",
+      "options": [
+        {
+          "text": "Ein niedriger pH muss reflexhaft ausschliesslich zu weniger Atmung führen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehr alveoläre Ventilation kann CO₂ absenken und damit der Ansäuerung entgegenwirken.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Periphere Chemorezeptoren können eine Ventilationssteigerung vermitteln.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede Ansäuerung ist definitionsgemäss durch Hypoventilation verursacht.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies würde die CO₂-Retention verstärken. B: Dies ist eine respiratorische Kompensationsrichtung. C: Sie sind für arterielle H⁺-Signale wichtig. D: Es gibt auch primär metabolische Ursachen. Quelle: Vorlesungsfolien, PDF-S. 26–31.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Metabolische Ansäuerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Metabolische Ansäuerung"
+      ],
+      "questionGoal": "Metabolische Ansäuerung",
+      "structuredExplanation": {
+        "coreIdea": "Metabolische Ansäuerung",
+        "correctReasoning": "Dies ist eine respiratorische Kompensationsrichtung. Sie sind für arterielle H⁺-Signale wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde die CO₂-Retention verstärken.",
+          "B": "Dies ist eine respiratorische Kompensationsrichtung.",
+          "C": "Sie sind für arterielle H⁺-Signale wichtig.",
+          "D": "Es gibt auch primär metabolische Ursachen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie den Einfluss verminderten arteriellen PO₂ auf die Atmung.",
+      "options": [
+        {
+          "text": "Die peripheren Chemorezeptoren liegen im Alveolarlumen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der hypoxische Atemantrieb beruht primär auf einem Anstieg der CO₂-Konzentration im Bronchialschleim.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein normaler arterieller CO₂-Wert beweist, dass O₂-Signale keinerlei Atemwirkung haben können.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei stärkerer Hypoxämie kann der periphere O₂-Antrieb deutlich zunehmen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie liegen unter anderem in den arteriellen Glomera. B: Es geht um arterielle Chemorezeption. C: Mehrere chemische Signale wirken zusammen. D: Der O₂-Reiz wird dann besonders relevant. Quelle: Vorlesungsfolien, PDF-S. 32–34.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Hypoxischer Atemantrieb"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hypoxischer Atemantrieb"
+      ],
+      "questionGoal": "Hypoxischer Atemantrieb",
+      "structuredExplanation": {
+        "coreIdea": "Hypoxischer Atemantrieb",
+        "correctReasoning": "Der O₂-Reiz wird dann besonders relevant.",
+        "wrongAnswerExplanations": {
+          "A": "Sie liegen unter anderem in den arteriellen Glomera.",
+          "B": "Es geht um arterielle Chemorezeption.",
+          "C": "Mehrere chemische Signale wirken zusammen.",
+          "D": "Der O₂-Reiz wird dann besonders relevant."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv33_34_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV33/34",
+      "stem": "Beurteilen Sie die Verbindung zwischen Stoffwechsel, Atempumpe und Chemorezeptoren.",
+      "options": [
+        {
+          "text": "Eine erhöhte Atemmuskelaktivität garantiert bei starkem Totraum nicht dieselbe Zunahme alveolärer Ventilation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Regelgrösse muss im Zusammenhang mit Sensoren und wirksamer Atempumpe betrachtet werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein erhöhtes CO₂-Angebot kann über Chemorezeption die effektive Ventilation erhöhen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein chemischer Atemantrieb ersetzt bei ausgefallener Atempumpe unmittelbar die notwendige Luftbewegung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Effektiver Austausch hängt vom ventilatorischen Muster ab. B: Ein Regelkreis benötigt Sensorik und Stellwirkung. C: Dies unterstützt die CO₂-Abfuhr. D: Ein Signal allein bewirkt ohne Pumpe keinen ausreichenden Fluss. Quelle: Vorlesungsfolien, PDF-S. 20–34.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV33/34",
+        "Geschlossener Atemregelkreis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschlossener Atemregelkreis"
+      ],
+      "questionGoal": "Geschlossener Atemregelkreis",
+      "structuredExplanation": {
+        "coreIdea": "Geschlossener Atemregelkreis",
+        "correctReasoning": "Effektiver Austausch hängt vom ventilatorischen Muster ab. Ein Regelkreis benötigt Sensorik und Stellwirkung. Dies unterstützt die CO₂-Abfuhr.",
+        "wrongAnswerExplanations": {
+          "A": "Effektiver Austausch hängt vom ventilatorischen Muster ab.",
+          "B": "Ein Regelkreis benötigt Sensorik und Stellwirkung.",
+          "C": "Dies unterstützt die CO₂-Abfuhr.",
+          "D": "Ein Signal allein bewirkt ohne Pumpe keinen ausreichenden Fluss."
+        }
+      }
+    }
+  ]
+}
