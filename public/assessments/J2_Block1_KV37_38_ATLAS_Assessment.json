@@ -1,0 +1,1297 @@
+{
+  "id": "assessment_j2_block1_kv37_38_20261029",
+  "lectureCode": "KV37/38",
+  "title": "Hämoglobin und Gastransport: Biochemie und Physiologie",
+  "block": "J2 Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Vorlesung KV3738 Hämoglobin HS2026 ml Biochemie Teil.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Gemeinsames 20er-Set aus BC: Vorlesung KV3738 Hämoglobin HS2026 ml Biochemie Teil.pdf (21 Seiten) und PHYS: Quellensicherung_PHYS.pdf, Odening (17 Seiten). Quellenangaben pro Frage tragen BC oder PHYS. Unpräzise Folienaussage zum überwiegenden Bicarbonatort korrigiert (Transport wesentlich im Plasma). RQ im Zellstoffwechsel von RER am Mund im Nichtgleichgewicht getrennt. Regulation hepatischer ALAS1 nicht pauschal auf jede ALAS-Isoform übertragen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Hb-Struktur, Häm und molekulare Kooperativität erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "2,3-BPG-Synthese und Affinitätsregulation verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Häm- und Globinsynthese sowie ihre abgestimmte Regulation erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "O₂-Gehalt, Sättigung und hypoxische Mechanismen unterscheiden."
+    },
+    {
+      "id": "lo5",
+      "text": "Bohr-, Haldane-Effekt und Folgen von Kohlenmonoxid erklären."
+    },
+    {
+      "id": "lo6",
+      "text": "CO₂-Transport und respiratorische Quotienten interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv37_38_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Ein vollständig funktionsfähiges HbA-Tetramer besitzt vier intakte Hämgruppen. Wie viele O₂-Moleküle kann es maximal gleichzeitig binden?",
+      "options": [
+        {
+          "text": "Zwei",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Keines, weil nur gelöster Sauerstoff existiert",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Acht",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vier",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eines",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Jede der vier Globinketten besitzt ein Häm. B: Hämoglobin bindet Sauerstoff reversibel. C: Ein Häm bindet nicht zwei O₂ gleichzeitig. D: Jede Hämgruppe bietet eine O₂-Bindungsstelle. E: Dies wäre eine einzelne Untereinheit beziehungsweise Myoglobin. Quelle: Vorlesungsfolien, PDF-S. BC 4–5; PHYS 3.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Bindungskapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindungskapazität"
+      ],
+      "questionGoal": "Bindungskapazität",
+      "structuredExplanation": {
+        "coreIdea": "Bindungskapazität",
+        "correctReasoning": "Jede Hämgruppe bietet eine O₂-Bindungsstelle.",
+        "wrongAnswerExplanations": {
+          "A": "Jede der vier Globinketten besitzt ein Häm.",
+          "B": "Hämoglobin bindet Sauerstoff reversibel.",
+          "C": "Ein Häm bindet nicht zwei O₂ gleichzeitig.",
+          "E": "Dies wäre eine einzelne Untereinheit beziehungsweise Myoglobin."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie die molekulare Sauerstoffbindung.",
+      "options": [
+        {
+          "text": "O₂ bindet an das Eisen der Hämgruppe.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das proximale Histidin koppelt Hämbewegung an die Globinstruktur.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede O₂-Bindung spaltet die Globinkette irreversibel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Normale reversible Oxygenierung ist nicht gleichbedeutend mit dauerhafter Oxidation zu Methämoglobin.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Polypeptidkette formt die Umgebung. B: Dadurch kann Bindung eine Konformationsänderung auslösen. C: Die physiologische Bindung ist reversibel. D: Funktionsfähiges O₂-bindendes Häm enthält Fe²⁺. Quelle: Vorlesungsfolien, PDF-S. BC 4–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Häm und Globin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Häm und Globin"
+      ],
+      "questionGoal": "Häm und Globin",
+      "structuredExplanation": {
+        "coreIdea": "Häm und Globin",
+        "correctReasoning": "Die Polypeptidkette formt die Umgebung. Dadurch kann Bindung eine Konformationsänderung auslösen. Funktionsfähiges O₂-bindendes Häm enthält Fe²⁺.",
+        "wrongAnswerExplanations": {
+          "A": "Die Polypeptidkette formt die Umgebung.",
+          "B": "Dadurch kann Bindung eine Konformationsänderung auslösen.",
+          "C": "Die physiologische Bindung ist reversibel.",
+          "D": "Funktionsfähiges O₂-bindendes Häm enthält Fe²⁺."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Warum besitzt Hämoglobin eine sigmoidale statt der myoglobinähnlichen hyperbolischen O₂-Bindungskurve?",
+      "options": [
+        {
+          "text": "O₂ wird bei Hb ausschliesslich kovalent und irreversibel eingebaut.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Myoglobin hat mehr gekoppelte Untereinheiten als Hb.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Untereinheit bindet unter allen Bedingungen völlig unabhängig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hb besitzt keine Hämgruppen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Ligandenbindung beeinflusst die Affinität weiterer Untereinheiten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Bindung ist reversibel. B: Myoglobin ist monomer. C: Das würde die kooperative Erklärung nicht liefern. D: Es besitzt vier. E: Die tetramere Kopplung ermöglicht positive Kooperativität. Quelle: Vorlesungsfolien, PDF-S. BC 6–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Kooperativität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kooperativität"
+      ],
+      "questionGoal": "Kooperativität",
+      "structuredExplanation": {
+        "coreIdea": "Kooperativität",
+        "correctReasoning": "Die tetramere Kopplung ermöglicht positive Kooperativität.",
+        "wrongAnswerExplanations": {
+          "A": "Die Bindung ist reversibel.",
+          "B": "Myoglobin ist monomer.",
+          "C": "Das würde die kooperative Erklärung nicht liefern.",
+          "D": "Es besitzt vier."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie die Konformationsmodelle von Hb.",
+      "options": [
+        {
+          "text": "Der T-Zustand hat eine geringere O₂-Affinität als der R-Zustand.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein R-Zustand ist definitionsgemäss unfähig, O₂ zu binden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "O₂-Bindung begünstigt hochaffine Konformationen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Symmetrie- und Sequenzmodell sind identische Beschreibungen jedes einzelnen Übergangs.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Zustände unterscheiden sich funktionell. B: Er ist der hochaffine Zustand. C: Dies trägt zur Kooperativität bei. D: Sie setzen unterschiedliche Modellannahmen. Quelle: Vorlesungsfolien, PDF-S. BC 8–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "T- und R-Zustand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "T- und R-Zustand"
+      ],
+      "questionGoal": "T- und R-Zustand",
+      "structuredExplanation": {
+        "coreIdea": "T- und R-Zustand",
+        "correctReasoning": "Die Zustände unterscheiden sich funktionell. Dies trägt zur Kooperativität bei.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zustände unterscheiden sich funktionell.",
+          "B": "Er ist der hochaffine Zustand.",
+          "C": "Dies trägt zur Kooperativität bei.",
+          "D": "Sie setzen unterschiedliche Modellannahmen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Welche Herkunft von erythrozytärem 2,3-BPG passt zum dargestellten glycolytischen Nebenweg?",
+      "options": [
+        {
+          "text": "Abbau von Carnitin zu einer Globinkette",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliessliche Bildung in reifen Erythrozytenmitochondrien",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Spaltung des Porphyrinrings",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Synthese aus drei gebundenen O₂-Molekülen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Bildung aus 1,3-Bisphosphoglycerat",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies sind andere Molekülklassen. B: Reife Erythrozyten besitzen keine Mitochondrien. C: Dies würde die Hämstruktur abbauen. D: O₂ liefert kein Glycerat-Kohlenstoffgerüst. E: Der Nebenweg koppelt den Hb-Effektor an die Glykolyse. Quelle: Vorlesungsfolien, PDF-S. BC 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "2,3-BPG-Synthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "2,3-BPG-Synthese"
+      ],
+      "questionGoal": "2,3-BPG-Synthese",
+      "structuredExplanation": {
+        "coreIdea": "2,3-BPG-Synthese",
+        "correctReasoning": "Der Nebenweg koppelt den Hb-Effektor an die Glykolyse.",
+        "wrongAnswerExplanations": {
+          "A": "Dies sind andere Molekülklassen.",
+          "B": "Reife Erythrozyten besitzen keine Mitochondrien.",
+          "C": "Dies würde die Hämstruktur abbauen.",
+          "D": "O₂ liefert kein Glycerat-Kohlenstoffgerüst."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Ein Anstieg von 2,3-BPG stabilisiert die T-Form. Welche Konsequenz folgt bei gleichem Gewebe-PO₂?",
+      "options": [
+        {
+          "text": "Direkte Umwandlung von Hb in Myoglobin",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Geringere O₂-Affinität mit erleichterter Abgabe",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "O₂-Sättigung unabhängig vom PO₂",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verlust sämtlicher Hämgruppen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Höhere Affinität mit erschwerter Abgabe",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Globinstruktur wird nicht so ersetzt. B: Die Bindungskurve verschiebt sich nach rechts. C: Der PO₂ bleibt eine wesentliche Einflussgrösse. D: BPG ist ein allosterischer Effektor, kein Hämabbauenzym. E: Dies wäre eine Linksverschiebung. Quelle: Vorlesungsfolien, PDF-S. BC 10–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "BPG und O₂-Abgabe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "BPG und O₂-Abgabe"
+      ],
+      "questionGoal": "BPG und O₂-Abgabe",
+      "structuredExplanation": {
+        "coreIdea": "BPG und O₂-Abgabe",
+        "correctReasoning": "Die Bindungskurve verschiebt sich nach rechts.",
+        "wrongAnswerExplanations": {
+          "A": "Die Globinstruktur wird nicht so ersetzt.",
+          "C": "Der PO₂ bleibt eine wesentliche Einflussgrösse.",
+          "D": "BPG ist ein allosterischer Effektor, kein Hämabbauenzym.",
+          "E": "Dies wäre eine Linksverschiebung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Welche Substratkombination liefert im ersten Schritt der Hämbiosynthese δ-Aminolävulinat?",
+      "options": [
+        {
+          "text": "Zwei fertige α-Globinketten",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Harnstoff und Aceton",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Glycin und Succinyl-CoA",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Glucose und Cholesterin",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lactat und Carnitin",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Globine sind Proteinanteile, keine Hämvorstufen. B: Diese liefern nicht den gezeigten Weg. C: Die ALA-Synthase verknüpft diese Vorstufen. D: Dies sind keine direkten Substrate des ALA-Startschritts. E: Dies beschreibt nicht den Biosynthesestart. Quelle: Vorlesungsfolien, PDF-S. BC 15–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Start der Hämsynthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Start der Hämsynthese"
+      ],
+      "questionGoal": "Start der Hämsynthese",
+      "structuredExplanation": {
+        "coreIdea": "Start der Hämsynthese",
+        "correctReasoning": "Die ALA-Synthase verknüpft diese Vorstufen.",
+        "wrongAnswerExplanations": {
+          "A": "Globine sind Proteinanteile, keine Hämvorstufen.",
+          "B": "Diese liefern nicht den gezeigten Weg.",
+          "D": "Dies sind keine direkten Substrate des ALA-Startschritts.",
+          "E": "Dies beschreibt nicht den Biosynthesestart."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie den Weg und seine Regulation.",
+      "options": [
+        {
+          "text": "Schritte der Hämbiosynthese liegen sowohl mitochondrial als auch cytosolisch.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Häm kann die hepatische ALAS1-vermittelte Synthese durch Rückkopplung begrenzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der Einbau von Eisen gehört zur Bildung der funktionsfähigen Hämgruppe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Reife Erythrozyten synthetisieren Häm über eine vollständig erhaltene mitochondriale Enzymkette.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Weg ist kompartimentübergreifend. B: Produktverfügbarkeit wird regulativ berücksichtigt. C: Protoporphyrin allein ist noch kein Häm. D: Sie besitzen keine Mitochondrien. Quelle: Vorlesungsfolien, PDF-S. BC 15–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Hämbiosynthese organisieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hämbiosynthese organisieren"
+      ],
+      "questionGoal": "Hämbiosynthese organisieren",
+      "structuredExplanation": {
+        "coreIdea": "Hämbiosynthese organisieren",
+        "correctReasoning": "Der Weg ist kompartimentübergreifend. Produktverfügbarkeit wird regulativ berücksichtigt. Protoporphyrin allein ist noch kein Häm.",
+        "wrongAnswerExplanations": {
+          "A": "Der Weg ist kompartimentübergreifend.",
+          "B": "Produktverfügbarkeit wird regulativ berücksichtigt.",
+          "C": "Protoporphyrin allein ist noch kein Häm.",
+          "D": "Sie besitzen keine Mitochondrien."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Was geschieht bei niedrigem Hämangebot im dargestellten HRI-System?",
+      "options": [
+        {
+          "text": "Der LDL-Rezeptor ersetzt den Translationsinitiationsfaktor.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Häm wird direkt als neue Aminosäure in jede Globinkette eingebaut.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zahl der Hämgruppen wird durch Spaltung von O₂ erhöht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "HRI wird zwingend abgebaut und Globintranslation unbegrenzt gesteigert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "HRI wird aktiver, eIF2α stärker phosphoryliert und die Globintranslation gehemmt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies betrifft unterschiedliche Systeme. B: Häm ist eine prosthetische Gruppe, keine proteinogene Aminosäure. C: O₂-Bindung synthetisiert kein Häm. D: Dies wäre die gegenteilige Regulationsrichtung. E: Dies begrenzt überschüssige Globinbildung bei fehlendem Häm. Quelle: Vorlesungsfolien, PDF-S. BC 19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "HRI bei Hämmangel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HRI bei Hämmangel"
+      ],
+      "questionGoal": "HRI bei Hämmangel",
+      "structuredExplanation": {
+        "coreIdea": "HRI bei Hämmangel",
+        "correctReasoning": "Dies begrenzt überschüssige Globinbildung bei fehlendem Häm.",
+        "wrongAnswerExplanations": {
+          "A": "Dies betrifft unterschiedliche Systeme.",
+          "B": "Häm ist eine prosthetische Gruppe, keine proteinogene Aminosäure.",
+          "C": "O₂-Bindung synthetisiert kein Häm.",
+          "D": "Dies wäre die gegenteilige Regulationsrichtung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie die Globinanteile und ihre Bedeutung.",
+      "options": [
+        {
+          "text": "Thalassämien sind definitionsgemäss ausschliesslich Fehler der Sauerstofflösung im Plasma.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Häm- und Globinbildung sind funktionell voneinander völlig unabhängige Endprodukte.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "HbF besitzt γ- statt β-Ketten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "HbA besitzt zwei α- und zwei β-Ketten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie betreffen die Globinkettensynthese. B: Sie müssen zur funktionsfähigen Hb-Bildung abgestimmt werden. C: Die Zusammensetzung verändert sich im Entwicklungsverlauf. D: Dies ist das wichtigste adulte Hb. Quelle: Vorlesungsfolien, PDF-S. BC 14,19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Hb-Zusammensetzung und Synthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hb-Zusammensetzung und Synthese"
+      ],
+      "questionGoal": "Hb-Zusammensetzung und Synthese",
+      "structuredExplanation": {
+        "coreIdea": "Hb-Zusammensetzung und Synthese",
+        "correctReasoning": "Die Zusammensetzung verändert sich im Entwicklungsverlauf. Dies ist das wichtigste adulte Hb.",
+        "wrongAnswerExplanations": {
+          "A": "Sie betreffen die Globinkettensynthese.",
+          "B": "Sie müssen zur funktionsfähigen Hb-Bildung abgestimmt werden.",
+          "C": "Die Zusammensetzung verändert sich im Entwicklungsverlauf.",
+          "D": "Dies ist das wichtigste adulte Hb."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Hb=15 g/dl, Sättigung=0,98. Mit 1,34 ml O₂/g Hb und vernachlässigtem gelöstem Anteil: Welcher O₂-Gehalt folgt?",
+      "options": [
+        {
+          "text": "Etwa 19,7 ml/dl",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 147 ml/dl",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Etwa 1,31 ml/dl",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "15 ml/dl",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 0,20 ml/dl",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 1,34×15×0,98=19,7. B: Einheiten und Bindungsfaktor wurden falsch verknüpft. C: Der Hb-Gehalt wurde nicht berücksichtigt. D: Hb-Masse ist nicht direkt O₂-Volumen. E: Das Ergebnis ist um den Faktor hundert zu klein. Quelle: Vorlesungsfolien, PDF-S. PHYS 3–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "O₂-Gehalt berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "O₂-Gehalt berechnen"
+      ],
+      "questionGoal": "O₂-Gehalt berechnen",
+      "structuredExplanation": {
+        "coreIdea": "O₂-Gehalt berechnen",
+        "correctReasoning": "1,34×15×0,98=19,7.",
+        "wrongAnswerExplanations": {
+          "B": "Einheiten und Bindungsfaktor wurden falsch verknüpft.",
+          "C": "Der Hb-Gehalt wurde nicht berücksichtigt.",
+          "D": "Hb-Masse ist nicht direkt O₂-Volumen.",
+          "E": "Das Ergebnis ist um den Faktor hundert zu klein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie eine Anämie bei normalem arteriellen PO₂.",
+      "options": [
+        {
+          "text": "PO₂, Sättigung und O₂-Gehalt sind unterschiedliche Grössen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine normale Hb-Sättigung kann trotz erniedrigtem O₂-Gehalt vorliegen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Normale Pulsoxymetrie schliesst jede anämische Gewebehypoxie aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Für gleiche O₂-Abgabe kann eine grössere Ausschöpfung des verfügbaren Angebots nötig sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine normale Spannung garantiert keine normale Transportmenge. B: Weniger Hb reduziert die Bindungskapazität. C: Sie misst den verminderten Hb-Gehalt nicht direkt. D: Die Reserve ist vermindert. Quelle: Vorlesungsfolien, PDF-S. PHYS 7–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Anämische Hypoxie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anämische Hypoxie"
+      ],
+      "questionGoal": "Anämische Hypoxie",
+      "structuredExplanation": {
+        "coreIdea": "Anämische Hypoxie",
+        "correctReasoning": "Eine normale Spannung garantiert keine normale Transportmenge. Weniger Hb reduziert die Bindungskapazität. Die Reserve ist vermindert.",
+        "wrongAnswerExplanations": {
+          "A": "Eine normale Spannung garantiert keine normale Transportmenge.",
+          "B": "Weniger Hb reduziert die Bindungskapazität.",
+          "C": "Sie misst den verminderten Hb-Gehalt nicht direkt.",
+          "D": "Die Reserve ist vermindert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Temperatur und CO₂ steigen im arbeitenden Gewebe, der pH fällt. Welche Hb-Reaktion unterstützt dort die O₂-Abgabe?",
+      "options": [
+        {
+          "text": "Vollständige Unabhängigkeit der Sättigung vom PO₂",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Entfernung sämtlichen 2,3-BPG als obligatorische Folge",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Erhöhung der Hämzahl auf acht pro Tetramer",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verminderte Affinität beziehungsweise Rechtsverschiebung",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Erhöhte Affinität beziehungsweise Linksverschiebung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Bindung bleibt PO₂-abhängig. B: Dies ist für den beschriebenen Effekt nicht nötig. C: Die Zahl der Bindungsstellen bleibt gleich. D: Bei gleichem PO₂ wird leichter O₂ abgegeben. E: Dies würde die Abgabe erschweren. Quelle: Vorlesungsfolien, PDF-S. BC 10–11; PHYS 9–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Rechtsverschiebung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rechtsverschiebung"
+      ],
+      "questionGoal": "Rechtsverschiebung",
+      "structuredExplanation": {
+        "coreIdea": "Rechtsverschiebung",
+        "correctReasoning": "Bei gleichem PO₂ wird leichter O₂ abgegeben.",
+        "wrongAnswerExplanations": {
+          "A": "Die Bindung bleibt PO₂-abhängig.",
+          "B": "Dies ist für den beschriebenen Effekt nicht nötig.",
+          "C": "Die Zahl der Bindungsstellen bleibt gleich.",
+          "E": "Dies würde die Abgabe erschweren."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q14",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie die wechselseitigen Beziehungen der Gasbindung.",
+      "options": [
+        {
+          "text": "Der Bohr-Effekt beschreibt den Einfluss von CO₂ beziehungsweise H⁺ auf die O₂-Affinität.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "CO₂ und O₂ müssen für diese Effekte an dieselbe Hämstelle binden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide Begriffe bezeichnen ausschliesslich die chemische Bindung von O₂ an Albumin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Haldane-Effekt beschreibt den Einfluss der Oxygenierung auf die CO₂-/H⁺-Transportfähigkeit des Blutes.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er unterstützt die O₂-Abgabe im Gewebe. B: CO₂ kann unter anderem an Globinaminogruppen binden. C: Albumin ist nicht der zentrale O₂-Träger. D: Oxygenierung begünstigt pulmonale CO₂-Abgabe. Quelle: Vorlesungsfolien, PDF-S. PHYS 9,15,17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Bohr und Haldane"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bohr und Haldane"
+      ],
+      "questionGoal": "Bohr und Haldane",
+      "structuredExplanation": {
+        "coreIdea": "Bohr und Haldane",
+        "correctReasoning": "Er unterstützt die O₂-Abgabe im Gewebe. Oxygenierung begünstigt pulmonale CO₂-Abgabe.",
+        "wrongAnswerExplanations": {
+          "A": "Er unterstützt die O₂-Abgabe im Gewebe.",
+          "B": "CO₂ kann unter anderem an Globinaminogruppen binden.",
+          "C": "Albumin ist nicht der zentrale O₂-Träger.",
+          "D": "Oxygenierung begünstigt pulmonale CO₂-Abgabe."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Warum kann CO die O₂-Versorgung über die reine Besetzung von Bindungsstellen hinaus verschlechtern?",
+      "options": [
+        {
+          "text": "Es erhöht die Zahl funktioneller Hämgruppen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es macht Hämoglobin zu einem besseren O₂-Abgeber bei gleichem Gewebe-PO₂",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es erhöht zusätzlich die Affinität verbleibender O₂-Bindungsstellen und erschwert die Abgabe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es steigert zwangsläufig den gelösten O₂-Partialdruck auf lebenslang normale Werte",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es bindet ausschliesslich an das bicarbonathaltige Plasma",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es besetzt vorhandene Stellen. B: Die Abgabe wird erschwert. C: Kapazitätsverlust und Linksverschiebung wirken zusammen. D: Dies folgt nicht aus CO-Bindung. E: Die hohe Hb-Affinität ist zentral. Quelle: Vorlesungsfolien, PDF-S. PHYS 13–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "CO als doppeltes Problem"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CO als doppeltes Problem"
+      ],
+      "questionGoal": "CO als doppeltes Problem",
+      "structuredExplanation": {
+        "coreIdea": "CO als doppeltes Problem",
+        "correctReasoning": "Kapazitätsverlust und Linksverschiebung wirken zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Es besetzt vorhandene Stellen.",
+          "B": "Die Abgabe wird erschwert.",
+          "D": "Dies folgt nicht aus CO-Bindung.",
+          "E": "Die hohe Hb-Affinität ist zentral."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie eine konventionelle Zweilängenwellen-Pulsoxymetrie.",
+      "options": [
+        {
+          "text": "Bei CO-Hämoglobin kann eine irreführend hohe Sättigungsanzeige entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Anzeigewert bestimmt unmittelbar den gesamten Hb-Gehalt in g/dl.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Methode misst den arteriellen PO₂ direkt als Druck.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein hoher Anzeigewert schliesst deshalb bei Rauchgasexposition sicher CO-Belastung aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die optische Unterscheidung ist begrenzt. B: Sättigung und Hb-Konzentration sind verschiedene Messgrössen. C: Sie schätzt eine optische Hb-Sättigung. D: Die Anzeige kann gerade täuschen. Quelle: Vorlesungsfolien, PDF-S. PHYS 6,13–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Pulsoxymetriegrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pulsoxymetriegrenzen"
+      ],
+      "questionGoal": "Pulsoxymetriegrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Pulsoxymetriegrenzen",
+        "correctReasoning": "Die optische Unterscheidung ist begrenzt.",
+        "wrongAnswerExplanations": {
+          "A": "Die optische Unterscheidung ist begrenzt.",
+          "B": "Sättigung und Hb-Konzentration sind verschiedene Messgrössen.",
+          "C": "Sie schätzt eine optische Hb-Sättigung.",
+          "D": "Die Anzeige kann gerade täuschen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "In welcher Form wird ein wesentlicher, überwiegender Anteil des CO₂ im Blut transportiert?",
+      "options": [
+        {
+          "text": "Nur als Carbonmonoxid",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Als Bicarbonat nach reversibler chemischer Umwandlung",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich als CO₂ an der Häm-O₂-Bindungsstelle",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich als freie Gasblasen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur kovalent im Cholesterinring",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: CO und CO₂ sind unterschiedliche Moleküle. B: Dies ist ein zentraler CO₂-Transportpool. C: CO₂ bindet nicht wie O₂ an Häm. D: Das ist kein physiologischer Transportmechanismus. E: Dies ist kein relevanter CO₂-Transportweg. Quelle: Vorlesungsfolien, PDF-S. PHYS 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "CO₂-Transportform"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CO₂-Transportform"
+      ],
+      "questionGoal": "CO₂-Transportform",
+      "structuredExplanation": {
+        "coreIdea": "CO₂-Transportform",
+        "correctReasoning": "Dies ist ein zentraler CO₂-Transportpool.",
+        "wrongAnswerExplanations": {
+          "A": "CO und CO₂ sind unterschiedliche Moleküle.",
+          "C": "CO₂ bindet nicht wie O₂ an Häm.",
+          "D": "Das ist kein physiologischer Transportmechanismus.",
+          "E": "Dies ist kein relevanter CO₂-Transportweg."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Beurteilen Sie die CO₂-Verarbeitung im Blut.",
+      "options": [
+        {
+          "text": "Der grösste Teil des transportierten Bicarbonats muss dauerhaft im Erythrozyten eingeschlossen bleiben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hämoglobin trägt zur Pufferung entstehender Protonen bei.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bicarbonat kann den Erythrozyten im Austausch gegen Chlorid verlassen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Carboanhydrase in Erythrozyten beschleunigt die reversible CO₂-Hydratation.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Chlorid-Bicarbonat-Austausch verlagert viel Bicarbonat ins Plasma. B: Dies koppelt Gastransport und Säure-Basen-Bilanz. C: Ein grosser Transportanteil befindet sich anschliessend im Plasma. D: Dies erleichtert die Bildung und Rückbildung von Bicarbonat. Quelle: Vorlesungsfolien, PDF-S. PHYS 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Bicarbonat und Erythrozyt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bicarbonat und Erythrozyt"
+      ],
+      "questionGoal": "Bicarbonat und Erythrozyt",
+      "structuredExplanation": {
+        "coreIdea": "Bicarbonat und Erythrozyt",
+        "correctReasoning": "Dies koppelt Gastransport und Säure-Basen-Bilanz. Ein grosser Transportanteil befindet sich anschliessend im Plasma. Dies erleichtert die Bildung und Rückbildung von Bicarbonat.",
+        "wrongAnswerExplanations": {
+          "A": "Chlorid-Bicarbonat-Austausch verlagert viel Bicarbonat ins Plasma.",
+          "B": "Dies koppelt Gastransport und Säure-Basen-Bilanz.",
+          "C": "Ein grosser Transportanteil befindet sich anschliessend im Plasma.",
+          "D": "Dies erleichtert die Bildung und Rückbildung von Bicarbonat."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Im metabolischen stationären Beispiel werden 250 ml O₂/min verbraucht und 200 ml CO₂/min gebildet. Welcher RQ ergibt sich?",
+      "options": [
+        {
+          "text": "0,8",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0,08",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "50",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1,25",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: RQ=VCO₂/VO₂=200/250. B: Die Dezimalstelle ist um den Faktor zehn falsch. C: Dies ist eine Volumendifferenz, kein Quotient. D: Dies ist der inverse Quotient. E: Dies wäre bei gleichen Mengen richtig. Quelle: Vorlesungsfolien, PDF-S. PHYS 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "Respiratorischer Quotient"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Respiratorischer Quotient"
+      ],
+      "questionGoal": "Respiratorischer Quotient",
+      "structuredExplanation": {
+        "coreIdea": "Respiratorischer Quotient",
+        "correctReasoning": "RQ=VCO₂/VO₂=200/250.",
+        "wrongAnswerExplanations": {
+          "B": "Die Dezimalstelle ist um den Faktor zehn falsch.",
+          "C": "Dies ist eine Volumendifferenz, kein Quotient.",
+          "D": "Dies ist der inverse Quotient.",
+          "E": "Dies wäre bei gleichen Mengen richtig."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv37_38_q20",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV37/38",
+      "stem": "Während kurzfristiger Hyperventilation wird zusätzlich gespeichertes CO₂ abgeatmet; am Mund wird VCO₂/VO₂>1 gemessen. Welche Interpretation passt am besten?",
+      "options": [
+        {
+          "text": "Die Zellen müssen deshalb sofort ein Substrat mit exakt demselben RQ verbrennen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der gemessene respiratorische Austauschquotient kann vom zellulären Substrat-RQ abweichen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Messung beweist, dass kein Sauerstoff mehr aufgenommen wird.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Quotient über eins ist mathematisch unmöglich",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Hyperventilation erzeugt neue Kohlenstoffatome aus O₂",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Mundquotient enthält auch Speicher- und Ventilationseffekte. B: CO₂-Speicherveränderung verletzt die stationäre Gleichsetzung. C: VO₂ ist im Beispiel weiterhin vorhanden. D: Der Zähler kann im Nichtgleichgewicht grösser sein. E: Zusätzliches CO₂ stammt aus vorhandenen Puffern und Speichern. Quelle: Vorlesungsfolien, PDF-S. PHYS 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV37/38",
+        "RER im Nichtgleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RER im Nichtgleichgewicht"
+      ],
+      "questionGoal": "RER im Nichtgleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "RER im Nichtgleichgewicht",
+        "correctReasoning": "CO₂-Speicherveränderung verletzt die stationäre Gleichsetzung.",
+        "wrongAnswerExplanations": {
+          "A": "Der Mundquotient enthält auch Speicher- und Ventilationseffekte.",
+          "C": "VO₂ ist im Beispiel weiterhin vorhanden.",
+          "D": "Der Zähler kann im Nichtgleichgewicht grösser sein.",
+          "E": "Zusätzliches CO₂ stammt aus vorhandenen Puffern und Speichern."
+        }
+      }
+    }
+  ]
+}
