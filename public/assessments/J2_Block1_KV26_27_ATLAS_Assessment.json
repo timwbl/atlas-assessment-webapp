@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block1_kv26_27_20261029",
+  "lectureCode": "KV26/27",
+  "title": "Gasphysik: Gasgesetze, Partialdrücke und Molekülbewegung",
+  "block": "J2 Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "KV Gasphysik.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Kurscode KV26/27; Folienfuss KVP25/26. Ausdrücklich nicht prüfungsrelevante quantitative Cryophorus-Zusatzrechnung PDF-S.26–27 ausgeschlossen. RMS-Geschwindigkeit von arithmetischem Mittel getrennt. Keine Behauptung vollständig fehlenden atmosphärischen Heliums und keine veraltete CO₂-Konzentration als Gegenwartswert. Inspiratorischer Druck ausdrücklich vor alveolärem Gasaustausch.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Ideale Gasgleichung und thermodynamische Grundprozesse anwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Partialdrücke in trockenen und befeuchteten Gemischen bestimmen."
+    },
+    {
+      "id": "lo3",
+      "text": "Dampfdruck, Sieden und relative Luftfeuchtigkeit erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Henry-Gesetz und seine Grenzen auf gelöste Gase anwenden."
+    },
+    {
+      "id": "lo5",
+      "text": "Kinetische Energie und Maxwell-Boltzmann-Verteilung interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv26_27_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Ein geschlossenes ideales Gas wird isotherm von 2 l auf 0,5 l komprimiert. Wie verändert sich sein absoluter Druck?",
+      "options": [
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er steigt auf das Achtfache.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er sinkt auf ein Viertel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Er bleibt unverändert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Volumen nimmt auf ein Viertel ab. B: Die Abhängigkeit ist invers linear zum Volumen. C: Druck und Volumen sind hier invers proportional. D: pV bleibt bei konstantem n und T gleich. E: Dann müsste sich die Temperatur oder Teilchenzahl ändern. Quelle: Vorlesungsfolien, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Isotherme Kompression"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Isotherme Kompression"
+      ],
+      "questionGoal": "Isotherme Kompression",
+      "structuredExplanation": {
+        "coreIdea": "Isotherme Kompression",
+        "correctReasoning": "pV bleibt bei konstantem n und T gleich.",
+        "wrongAnswerExplanations": {
+          "A": "Das Volumen nimmt auf ein Viertel ab.",
+          "B": "Die Abhängigkeit ist invers linear zum Volumen.",
+          "C": "Druck und Volumen sind hier invers proportional.",
+          "E": "Dann müsste sich die Temperatur oder Teilchenzahl ändern."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Ein ideales Gas mit fester Teilchenzahl wird bei konstantem Druck von 300 auf 450 K erwärmt. Was geschieht mit dem Volumen?",
+      "options": [
+        {
+          "text": "Es bleibt konstant.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es steigt um 50 %.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es sinkt um ein Drittel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es verdoppelt sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es steigt um 150 %.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei konstantem p muss V mit T steigen. B: V₂/V₁=T₂/T₁=1,5. C: Das wäre die umgekehrte Temperaturabhängigkeit. D: Dafür müsste die absolute Temperatur verdoppelt werden. E: Der Faktor 1,5 bedeutet eine Zunahme um 50 %. Quelle: Vorlesungsfolien, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Isobare Erwärmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Isobare Erwärmung"
+      ],
+      "questionGoal": "Isobare Erwärmung",
+      "structuredExplanation": {
+        "coreIdea": "Isobare Erwärmung",
+        "correctReasoning": "V₂/V₁=T₂/T₁=1,5.",
+        "wrongAnswerExplanations": {
+          "A": "Bei konstantem p muss V mit T steigen.",
+          "C": "Das wäre die umgekehrte Temperaturabhängigkeit.",
+          "D": "Dafür müsste die absolute Temperatur verdoppelt werden.",
+          "E": "Der Faktor 1,5 bedeutet eine Zunahme um 50 %."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Ein eingeschlossenes ideales Gas wird bei konstantem Volumen von 27 auf 127 °C erwärmt. Wie gross ist p₂/p₁ näherungsweise?",
+      "options": [
+        {
+          "text": "127/27",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "4/3",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "1",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3/4",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Für Gasgesetze müssen absolute Temperaturen verwendet werden. B: Die absoluten Temperaturen betragen etwa 300 und 400 K. C: Bei festem Volumen steigt der Druck mit der Temperatur. D: Dies ist das inverse Verhältnis. E: Die Kelvin-Temperatur wird nicht verdoppelt. Quelle: Vorlesungsfolien, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Isochorer Druck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Isochorer Druck"
+      ],
+      "questionGoal": "Isochorer Druck",
+      "structuredExplanation": {
+        "coreIdea": "Isochorer Druck",
+        "correctReasoning": "Die absoluten Temperaturen betragen etwa 300 und 400 K.",
+        "wrongAnswerExplanations": {
+          "A": "Für Gasgesetze müssen absolute Temperaturen verwendet werden.",
+          "C": "Bei festem Volumen steigt der Druck mit der Temperatur.",
+          "D": "Dies ist das inverse Verhältnis.",
+          "E": "Die Kelvin-Temperatur wird nicht verdoppelt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie das ideale Gasmodell.",
+      "options": [
+        {
+          "text": "Die universelle Gaskonstante R ist für verschiedene ideale Gase gleich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Isotherm bedeutet definitionsgemäss konstantes Volumen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zahl der Teilchen ist N=n·Nₐ.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Temperatur in pV=nRT wird in Kelvin eingesetzt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Stoffabhängigkeit liegt nicht in R. B: Isotherm bedeutet konstante Temperatur. C: Die Avogadro-Konstante verbindet Mol- und Teilchenzahl. D: Die Gleichung verwendet die absolute Skala. Quelle: Vorlesungsfolien, PDF-S. 5–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Modellannahmen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modellannahmen"
+      ],
+      "questionGoal": "Modellannahmen",
+      "structuredExplanation": {
+        "coreIdea": "Modellannahmen",
+        "correctReasoning": "Die Stoffabhängigkeit liegt nicht in R. Die Avogadro-Konstante verbindet Mol- und Teilchenzahl. Die Gleichung verwendet die absolute Skala.",
+        "wrongAnswerExplanations": {
+          "A": "Die Stoffabhängigkeit liegt nicht in R.",
+          "B": "Isotherm bedeutet konstante Temperatur.",
+          "C": "Die Avogadro-Konstante verbindet Mol- und Teilchenzahl.",
+          "D": "Die Gleichung verwendet die absolute Skala."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie unabhängige Änderungen eines idealen Gases.",
+      "options": [
+        {
+          "text": "Bei gleichem V und T halbiert eine Verdopplung von n den Druck.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gleiche Molekülzahl erzwingt bei beliebigen Temperaturen denselben Druck.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Mol Helium und ein Mol Sauerstoff enthalten unterschiedliche Molekülzahlen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei gleichem p und T benötigt die doppelte Stoffmenge das doppelte Volumen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Druck verdoppelt sich. B: Auch Temperatur und Volumen sind relevant. C: Beide enthalten Nₐ Teilchen. D: V=nRT/p. Quelle: Vorlesungsfolien, PDF-S. 5–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Teilchenzahl und Zustand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Teilchenzahl und Zustand"
+      ],
+      "questionGoal": "Teilchenzahl und Zustand",
+      "structuredExplanation": {
+        "coreIdea": "Teilchenzahl und Zustand",
+        "correctReasoning": "V=nRT/p.",
+        "wrongAnswerExplanations": {
+          "A": "Der Druck verdoppelt sich.",
+          "B": "Auch Temperatur und Volumen sind relevant.",
+          "C": "Beide enthalten Nₐ Teilchen.",
+          "D": "V=nRT/p."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Ein trockenes Gasgemisch enthält 20 Mol-% Sauerstoff bei insgesamt 900 hPa. Welcher Sauerstoffpartialdruck folgt im Idealmodell?",
+      "options": [
+        {
+          "text": "180 hPa",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "4500 hPa",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "720 hPa",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "900 hPa",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "20 hPa",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: pO₂=0,20×900. B: Hier wurde durch den Anteil dividiert. C: Das ist der Druck der übrigen 80 %. D: Das wäre der Partialdruck eines reinen Sauerstoffgases. E: Der prozentuale Anteil ist kein direkter Druckwert. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Dalton-Rechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dalton-Rechnung"
+      ],
+      "questionGoal": "Dalton-Rechnung",
+      "structuredExplanation": {
+        "coreIdea": "Dalton-Rechnung",
+        "correctReasoning": "pO₂=0,20×900.",
+        "wrongAnswerExplanations": {
+          "B": "Hier wurde durch den Anteil dividiert.",
+          "C": "Das ist der Druck der übrigen 80 %.",
+          "D": "Das wäre der Partialdruck eines reinen Sauerstoffgases.",
+          "E": "Der prozentuale Anteil ist kein direkter Druckwert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q07",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Ein Gemisch mit trockenem O₂-Anteil 0,21 wird bei Gesamtdruck 760 mmHg auf 37 °C wasserdampfgesättigt. pH₂O=47 mmHg. Welcher inspiratorische O₂-Partialdruck folgt vor weiterem Gasaustausch?",
+      "options": [
+        {
+          "text": "Etwa 160 mmHg",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 197 mmHg",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "47 mmHg",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Etwa 150 mmHg",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "713 mmHg",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist näherungsweise der Wert trockener Luft ohne Wasserdampfkorrektur. B: Wasserdampf wird nicht zum Sauerstoffpartialdruck addiert. C: Dies ist der Wasserdampfpartialdruck. D: 0,21×(760−47)=149,7 mmHg. E: Dies ist der für alle trockenen Gase verbleibende Druck. Quelle: Vorlesungsfolien, PDF-S. 11,13–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Befeuchteter Sauerstoffpartialdruck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Befeuchteter Sauerstoffpartialdruck"
+      ],
+      "questionGoal": "Befeuchteter Sauerstoffpartialdruck",
+      "structuredExplanation": {
+        "coreIdea": "Befeuchteter Sauerstoffpartialdruck",
+        "correctReasoning": "0,21×(760−47)=149,7 mmHg.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist näherungsweise der Wert trockener Luft ohne Wasserdampfkorrektur.",
+          "B": "Wasserdampf wird nicht zum Sauerstoffpartialdruck addiert.",
+          "C": "Dies ist der Wasserdampfpartialdruck.",
+          "E": "Dies ist der für alle trockenen Gase verbleibende Druck."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Wasserdampf hat einen Partialdruck von 12 hPa, der Sättigungsdampfdruck bei dieser Temperatur beträgt 24 hPa. Welche relative Feuchte liegt vor?",
+      "options": [
+        {
+          "text": "200 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "50 %",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "100 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "24 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "12 %",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist der umgekehrte Quotient. B: 12/24=0,5. C: Dafür müssten beide Partialdrücke gleich sein. D: Der Sättigungsdruck ist kein Prozentwert. E: Der Partialdruck ist kein Prozentwert. Quelle: Vorlesungsfolien, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Relative Feuchte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Relative Feuchte"
+      ],
+      "questionGoal": "Relative Feuchte",
+      "structuredExplanation": {
+        "coreIdea": "Relative Feuchte",
+        "correctReasoning": "12/24=0,5.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist der umgekehrte Quotient.",
+          "C": "Dafür müssten beide Partialdrücke gleich sein.",
+          "D": "Der Sättigungsdruck ist kein Prozentwert.",
+          "E": "Der Partialdruck ist kein Prozentwert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie wasserdampfhaltige Luft im thermischen Gleichgewicht.",
+      "options": [
+        {
+          "text": "Bei Sättigung können weiterhin Moleküle verdunsten und kondensieren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine rechnerische Übersättigung von 900 % beschreibt ein stabiles normales Gleichgewicht mit flüssigem Wasser.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gesättigter Wasserdampf hat bei jeder Temperatur denselben Partialdruck.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beim Abkühlen kann die relative Feuchte steigen, auch wenn zunächst kein Wasser hinzukommt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im dynamischen Gleichgewicht gleichen sich die Raten aus. B: Kondensation baut die Übersättigung ab. C: Der Sättigungsdampfdruck ist temperaturabhängig. D: Der Sättigungsdampfdruck fällt mit der Temperatur. Quelle: Vorlesungsfolien, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Kondensation und Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kondensation und Gleichgewicht"
+      ],
+      "questionGoal": "Kondensation und Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Kondensation und Gleichgewicht",
+        "correctReasoning": "Im dynamischen Gleichgewicht gleichen sich die Raten aus. Der Sättigungsdampfdruck fällt mit der Temperatur.",
+        "wrongAnswerExplanations": {
+          "A": "Im dynamischen Gleichgewicht gleichen sich die Raten aus.",
+          "B": "Kondensation baut die Übersättigung ab.",
+          "C": "Der Sättigungsdampfdruck ist temperaturabhängig.",
+          "D": "Der Sättigungsdampfdruck fällt mit der Temperatur."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Warum kann Wasser bei geringerem Umgebungsdruck unter 100 °C sieden?",
+      "options": [
+        {
+          "text": "Der Sättigungsdampfdruck erreicht den niedrigeren Aussendruck bereits bei geringerer Temperatur.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die universelle Gaskonstante nimmt mit der Höhe ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kondensation wird unabhängig von der Temperatur unmöglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Wassermoleküle verlieren in der Höhe ihre Masse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Wasser besitzt in der Höhe keine Flüssigphase mehr.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Siedebedingung ist druckabhängig. B: R ist konstant. C: Die Phasengleichgewichte bestehen weiterhin. D: Die Molekülmasse bleibt gleich. E: Flüssiges Wasser kann unter passenden Bedingungen bestehen. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Sieden in der Höhe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sieden in der Höhe"
+      ],
+      "questionGoal": "Sieden in der Höhe",
+      "structuredExplanation": {
+        "coreIdea": "Sieden in der Höhe",
+        "correctReasoning": "Die Siedebedingung ist druckabhängig.",
+        "wrongAnswerExplanations": {
+          "B": "R ist konstant.",
+          "C": "Die Phasengleichgewichte bestehen weiterhin.",
+          "D": "Die Molekülmasse bleibt gleich.",
+          "E": "Flüssiges Wasser kann unter passenden Bedingungen bestehen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Für ein nicht reagierendes Gas sei c=κp mit κ=0,50 mmol/(l·atm). Welche Gleichgewichtskonzentration folgt bei p=2 atm?",
+      "options": [
+        {
+          "text": "0,50 mmol/l",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,25 mmol/l",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1,0 mmol/l",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "2,5 mmol/l",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "4,0 mmol/l",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ignoriert die Verdopplung des Partialdrucks. B: Hier wurde durch den Druck dividiert. C: c=0,50×2. D: Dies folgt nicht aus dem Produkt. E: Dies verwendet den falschen Umrechnungsfaktor. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Henry berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Henry berechnen"
+      ],
+      "questionGoal": "Henry berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Henry berechnen",
+        "correctReasoning": "c=0,50×2.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ignoriert die Verdopplung des Partialdrucks.",
+          "B": "Hier wurde durch den Druck dividiert.",
+          "D": "Dies folgt nicht aus dem Produkt.",
+          "E": "Dies verwendet den falschen Umrechnungsfaktor."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie die Reichweite des Henry-Modells.",
+      "options": [
+        {
+          "text": "Physikalisch gelöster Sauerstoff und hämoglobingebundener Sauerstoff sind verschiedene Anteile.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Konstante hängt von Gas, Flüssigkeit und Temperatur ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der entsprechende Gaspartialdruck ist für die Gleichgewichtslöslichkeit entscheidend.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Henry berechnet ohne Erweiterung die gesamte chemisch gebundene Sauerstoffmenge des Blutes.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Gesamtmenge wird nicht allein durch Henry beschrieben. B: Die Löslichkeit ist stoff- und temperaturabhängig. C: Der Gesamtdruck allein reicht bei variabler Gemischzusammensetzung nicht. D: Die Bindung an Hämoglobin erfordert ein zusätzliches Modell. Quelle: Vorlesungsfolien, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Gelöst versus gebunden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gelöst versus gebunden"
+      ],
+      "questionGoal": "Gelöst versus gebunden",
+      "structuredExplanation": {
+        "coreIdea": "Gelöst versus gebunden",
+        "correctReasoning": "Die Gesamtmenge wird nicht allein durch Henry beschrieben. Die Löslichkeit ist stoff- und temperaturabhängig. Der Gesamtdruck allein reicht bei variabler Gemischzusammensetzung nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gesamtmenge wird nicht allein durch Henry beschrieben.",
+          "B": "Die Löslichkeit ist stoff- und temperaturabhängig.",
+          "C": "Der Gesamtdruck allein reicht bei variabler Gemischzusammensetzung nicht.",
+          "D": "Die Bindung an Hämoglobin erfordert ein zusätzliches Modell."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie ein zuvor unter höherem Stickstoffpartialdruck äquilibriertes Flüssigkeitsvolumen.",
+      "options": [
+        {
+          "text": "Ein Partialdruckabfall erhöht bei konstanter Temperatur die Henry-Gleichgewichtskonzentration.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei raschem Partialdruckabfall kann die zuvor gelöste Menge vorübergehend über der neuen Gleichgewichtslöslichkeit liegen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Stickstoff kann wegen fehlender Hämoglobinbindung nicht physikalisch gelöst vorliegen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die gelöste Stickstoffmenge muss ohne jeden Stofftransport augenblicklich null werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie sinkt mit p. B: Der neue Gleichgewichtswert ist niedriger. C: Physikalische Löslichkeit benötigt keine Hämoglobinbindung. D: Entgasung benötigt Transportprozesse. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Druckentlastung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druckentlastung"
+      ],
+      "questionGoal": "Druckentlastung",
+      "structuredExplanation": {
+        "coreIdea": "Druckentlastung",
+        "correctReasoning": "Der neue Gleichgewichtswert ist niedriger.",
+        "wrongAnswerExplanations": {
+          "A": "Sie sinkt mit p.",
+          "B": "Der neue Gleichgewichtswert ist niedriger.",
+          "C": "Physikalische Löslichkeit benötigt keine Hämoglobinbindung.",
+          "D": "Entgasung benötigt Transportprozesse."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Zwei ideale Gase haben dieselbe absolute Temperatur, aber unterschiedliche Molekülmassen. Was gilt für die mittlere translatorische kinetische Energie pro Molekül?",
+      "options": [
+        {
+          "text": "Sie ist in beiden Gasen null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie ist im leichteren Gas zwingend grösser.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie wird allein durch die Behälterform festgelegt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie ist im schwereren Gas zwingend grösser.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie ist gleich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Thermische Bewegung bleibt bestehen. B: Bei gleicher Temperatur ist die mittlere Energie gleich. C: Im Gleichgewichtsmodell ist die Temperatur entscheidend. D: Die höhere Masse wird durch geringere mittlere quadratische Geschwindigkeit ausgeglichen. E: Ekin=3kBT/2 ist massenunabhängig. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Mittlere Translationsenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mittlere Translationsenergie"
+      ],
+      "questionGoal": "Mittlere Translationsenergie",
+      "structuredExplanation": {
+        "coreIdea": "Mittlere Translationsenergie",
+        "correctReasoning": "Ekin=3kBT/2 ist massenunabhängig.",
+        "wrongAnswerExplanations": {
+          "A": "Thermische Bewegung bleibt bestehen.",
+          "B": "Bei gleicher Temperatur ist die mittlere Energie gleich.",
+          "C": "Im Gleichgewichtsmodell ist die Temperatur entscheidend.",
+          "D": "Die höhere Masse wird durch geringere mittlere quadratische Geschwindigkeit ausgeglichen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Gas B besitzt die vierfache molare Masse von Gas A. Beide haben dieselbe Temperatur. Wie verhalten sich ihre quadratischen Mittelgeschwindigkeiten?",
+      "options": [
+        {
+          "text": "vᵣₘₛ,B ist ein Viertel so gross.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "vᵣₘₛ,B ist halb so gross.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "vᵣₘₛ,B ist viermal so gross.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "vᵣₘₛ,B ist doppelt so gross.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Beide sind zwingend gleich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Abhängigkeit ist wurzelförmig, nicht invers linear. B: vᵣₘₛ=√(3RT/M). C: Die Masse steht unter der Wurzel im Nenner. D: Dies kehrt die Massenabhängigkeit um. E: Gleiche Energie bedeutet bei verschiedener Masse nicht gleiche Geschwindigkeit. Quelle: Vorlesungsfolien, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Masse und RMS-Geschwindigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Masse und RMS-Geschwindigkeit"
+      ],
+      "questionGoal": "Masse und RMS-Geschwindigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Masse und RMS-Geschwindigkeit",
+        "correctReasoning": "vᵣₘₛ=√(3RT/M).",
+        "wrongAnswerExplanations": {
+          "A": "Die Abhängigkeit ist wurzelförmig, nicht invers linear.",
+          "C": "Die Masse steht unter der Wurzel im Nenner.",
+          "D": "Dies kehrt die Massenabhängigkeit um.",
+          "E": "Gleiche Energie bedeutet bei verschiedener Masse nicht gleiche Geschwindigkeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie molekulare Bewegung eines ruhenden idealen Gases im Gleichgewicht.",
+      "options": [
+        {
+          "text": "Der mittlere Betrag der Geschwindigkeit bleibt bei positiver Temperatur grösser als null.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "√(3RT/M) ist definitionsgemäss identisch mit dem arithmetischen Mittel der Geschwindigkeitsbeträge.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein ruhender Behälter beweist, dass alle Moleküle ruhen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die mittlere Geschwindigkeitskomponente in einer Raumrichtung kann null sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Moleküle bewegen sich thermisch. B: Es ist der RMS-Wert √⟨v²⟩. C: Makroskopische Ruhe ist mit mikroskopischer Bewegung vereinbar. D: Entgegengesetzte Bewegungen gleichen sich aus. Quelle: Vorlesungsfolien, PDF-S. 19–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Mittelwerte unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mittelwerte unterscheiden"
+      ],
+      "questionGoal": "Mittelwerte unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Mittelwerte unterscheiden",
+        "correctReasoning": "Die Moleküle bewegen sich thermisch. Entgegengesetzte Bewegungen gleichen sich aus.",
+        "wrongAnswerExplanations": {
+          "A": "Die Moleküle bewegen sich thermisch.",
+          "B": "Es ist der RMS-Wert √⟨v²⟩.",
+          "C": "Makroskopische Ruhe ist mit mikroskopischer Bewegung vereinbar.",
+          "D": "Entgegengesetzte Bewegungen gleichen sich aus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Was beschreibt eine Maxwell-Boltzmann-Geschwindigkeitsverteilung bei gegebener Temperatur?",
+      "options": [
+        {
+          "text": "Die Verteilung enthält ausschliesslich Teilchen mit Fluchtgeschwindigkeit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Teilchen besitzen eine Verteilung verschiedener Geschwindigkeitsbeträge.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle Teilchen bewegen sich exakt mit vᵣₘₛ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur die schwersten Moleküle dürfen sich bewegen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Im Gleichgewicht fliegen alle Moleküle bevorzugt nach oben.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Geschwindigkeiten erstrecken sich über einen breiten Bereich. B: Ein Mittelwert steht nicht für identische Einzelgeschwindigkeiten. C: Der RMS-Wert fasst die Verteilung zusammen. D: Auch leichte Moleküle besitzen thermische Bewegung. E: Es gibt ohne gerichtete Strömung keine bevorzugte Raumrichtung. Quelle: Vorlesungsfolien, PDF-S. 22–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Maxwell-Verteilung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Maxwell-Verteilung"
+      ],
+      "questionGoal": "Maxwell-Verteilung",
+      "structuredExplanation": {
+        "coreIdea": "Maxwell-Verteilung",
+        "correctReasoning": "Ein Mittelwert steht nicht für identische Einzelgeschwindigkeiten.",
+        "wrongAnswerExplanations": {
+          "A": "Die Geschwindigkeiten erstrecken sich über einen breiten Bereich.",
+          "C": "Der RMS-Wert fasst die Verteilung zusammen.",
+          "D": "Auch leichte Moleküle besitzen thermische Bewegung.",
+          "E": "Es gibt ohne gerichtete Strömung keine bevorzugte Raumrichtung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Beurteilen Sie eine Erwärmung desselben idealen Gases.",
+      "options": [
+        {
+          "text": "Die Verteilung enthält bei höherer Temperatur einen grösseren Anteil schneller Moleküle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die mittlere translatorische Energie nimmt proportional zur Kelvin-Temperatur zu.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Vervierfachung der absoluten Temperatur verdoppelt vᵣₘₛ.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Erwärmung verändert ausschliesslich die Molekülmasse.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die charakteristischen Geschwindigkeiten steigen. B: Ekin=3kBT/2. C: vᵣₘₛ ist proportional zu √T. D: Die Molekülmasse desselben Gases bleibt unverändert. Quelle: Vorlesungsfolien, PDF-S. 20–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Temperatur und Verteilung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperatur und Verteilung"
+      ],
+      "questionGoal": "Temperatur und Verteilung",
+      "structuredExplanation": {
+        "coreIdea": "Temperatur und Verteilung",
+        "correctReasoning": "Die charakteristischen Geschwindigkeiten steigen. Ekin=3kBT/2. vᵣₘₛ ist proportional zu √T.",
+        "wrongAnswerExplanations": {
+          "A": "Die charakteristischen Geschwindigkeiten steigen.",
+          "B": "Ekin=3kBT/2.",
+          "C": "vᵣₘₛ ist proportional zu √T.",
+          "D": "Die Molekülmasse desselben Gases bleibt unverändert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Eine Kältefalle entfernt in einem geschlossenen Aufbau Wasserdampf aus der Gasphase. Warum kann das verbleibende flüssige Wasser dadurch abkühlen?",
+      "options": [
+        {
+          "text": "Das Wasser wird zwingend mit dem flüssigen Stickstoff chemisch vermischt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Flüssigkeit gefriert allein wegen einer Änderung von R.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Entfernter Wasserdampf wird unmittelbar zu zusätzlichem warmem Flüssigwasser im Ausgangskolben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verdampfen gibt der verbleibenden Flüssigkeit in diesem Aufbau netto Verdampfungswärme zu.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Weiteres Verdampfen ersetzt entfernten Dampf und entzieht der Flüssigkeit Verdampfungswärme.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kältefalle kann räumlich getrennt wirken. B: Die Gaskonstante bleibt gleich. C: Die Falle scheidet ihn am kalten Ende ab. D: Verdampfung benötigt Energie. E: Die Kühlung erfordert keinen direkten Kontakt des Wassers mit flüssigem Stickstoff. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Cryophorus qualitativ"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cryophorus qualitativ"
+      ],
+      "questionGoal": "Cryophorus qualitativ",
+      "structuredExplanation": {
+        "coreIdea": "Cryophorus qualitativ",
+        "correctReasoning": "Die Kühlung erfordert keinen direkten Kontakt des Wassers mit flüssigem Stickstoff.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kältefalle kann räumlich getrennt wirken.",
+          "B": "Die Gaskonstante bleibt gleich.",
+          "C": "Die Falle scheidet ihn am kalten Ende ab.",
+          "D": "Verdampfung benötigt Energie."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv26_27_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV26/27",
+      "stem": "Ein ideales Gasgemisch wird bei gleicher Zusammensetzung und Temperatur auf den doppelten Gesamtdruck gebracht. Beurteilen Sie ein nicht reagierendes Gas im Henry-Bereich.",
+      "options": [
+        {
+          "text": "Die Aussage bestimmt zugleich ohne Bindungsmodell die gesamte Hb-gebundene Sauerstoffmenge.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Seine Henry-Gleichgewichtskonzentration verdoppelt sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sein Molanteil muss sich allein durch die Druckverdopplung halbieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sein Partialdruck verdoppelt sich.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Chemische Bindung folgt nicht allein dem Henry-Gesetz. B: c ist bei konstantem κ proportional zu p. C: Alle Komponenten werden im gleichen Verhältnis komprimiert. D: Der Stoffmengenanteil bleibt unverändert. Quelle: Vorlesungsfolien, PDF-S. 11,13–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV26/27",
+        "Gemische und Löslichkeit integrieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gemische und Löslichkeit integrieren"
+      ],
+      "questionGoal": "Gemische und Löslichkeit integrieren",
+      "structuredExplanation": {
+        "coreIdea": "Gemische und Löslichkeit integrieren",
+        "correctReasoning": "c ist bei konstantem κ proportional zu p. Der Stoffmengenanteil bleibt unverändert.",
+        "wrongAnswerExplanations": {
+          "A": "Chemische Bindung folgt nicht allein dem Henry-Gesetz.",
+          "B": "c ist bei konstantem κ proportional zu p.",
+          "C": "Alle Komponenten werden im gleichen Verhältnis komprimiert.",
+          "D": "Der Stoffmengenanteil bleibt unverändert."
+        }
+      }
+    }
+  ]
+}
