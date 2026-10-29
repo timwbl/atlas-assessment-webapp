@@ -1,0 +1,1289 @@
+{
+  "id": "assessment_j2_block1_kv46_20261029",
+  "lectureCode": "KV46",
+  "title": "Höhenphysiologie und hypobare Hypoxie",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV42_Hoehenpyhsiologie 2026_handout.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Kurszuordnung KV46 trotz alter Deckblattnummer KV42. Folie 32 rechnerisch und dimensional korrigiert: 0,551×1,34×17,1≈12,6 ml/dl=126 ml/l; O₂-Angebot mit l/dl-Umrechnung. Hämokonzentration von vermehrter Zellmasse getrennt. Keine Vorhersage individueller Gipfelerfolge aus kleinen Expeditionskohorten. Keine Medikamentendosen geprüft; Grundprinzipien schwerer Höhenkrankheit anhand WMS-Leitlinie 2024 gegengeprüft. Die auf Folie 15 genannten Schlafstörungen nicht als zwingendes modernes AMS-Diagnosekriterium verwendet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Physikalische Grundlagen der hypobaren Hypoxie erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Physiologische Anpassungen von Kreislauf und O₂-Transport an die Höhe erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Alveoläre Gasgleichung und O₂-Dissoziationskurve anwenden."
+    },
+    {
+      "id": "lo4",
+      "text": "Maladaptation mit AMS, HACE und HAPE sowie Grundprinzipien der Prävention und Behandlung einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv46_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Warum sinkt der inspirierte O₂-Partialdruck beim Aufstieg in grosse Höhe trotz Atmung von Umgebungsluft?",
+      "options": [
+        {
+          "text": "Der Wasserdampfdruck in körperwarm befeuchteter Luft nimmt proportional zur Höhe auf null ab.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der arterielle CO₂-Druck legt allein den barometrischen Druck fest.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der barometrische Gesamtdruck sinkt, während die O₂-Fraktion ungefähr gleich bleibt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die O₂-Fraktion sinkt regelhaft von 21 % auf nahezu null, der Gesamtdruck bleibt gleich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Hb-Konzentration bestimmt unmittelbar den O₂-Partialdruck der Umgebungsluft.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er wird bei gegebener Temperatur nicht so durch die Höhe bestimmt. B: Dies verwechselt eine physiologische mit einer Umgebungsgrösse. C: Der Partialdruck hängt von Fraktion und Gesamtdruck ab. D: Bei gewöhnlicher Höhenexposition sinkt vor allem der Gesamtdruck. E: Hb beeinflusst den Bluttransport, nicht die Zusammensetzung der Aussenluft. Quelle: Vorlesungsfolien, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Hypobare Hypoxie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hypobare Hypoxie"
+      ],
+      "questionGoal": "Hypobare Hypoxie",
+      "structuredExplanation": {
+        "coreIdea": "Hypobare Hypoxie",
+        "correctReasoning": "Der Partialdruck hängt von Fraktion und Gesamtdruck ab.",
+        "wrongAnswerExplanations": {
+          "A": "Er wird bei gegebener Temperatur nicht so durch die Höhe bestimmt.",
+          "B": "Dies verwechselt eine physiologische mit einer Umgebungsgrösse.",
+          "D": "Bei gewöhnlicher Höhenexposition sinkt vor allem der Gesamtdruck.",
+          "E": "Hb beeinflusst den Bluttransport, nicht die Zusammensetzung der Aussenluft."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Gegeben sind PB=450 mmHg, FiO₂=0,21 und PH₂O=47 mmHg bei Körpertemperatur. Wie hoch ist PIO₂ nach FiO₂×(PB−PH₂O)?",
+      "options": [
+        {
+          "text": "Etwa 403 mmHg",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 95 mmHg",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Etwa 85 mmHg",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Etwa 38 mmHg",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 150 mmHg",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der trockengasbezogene Restdruck vor Multiplikation mit FiO₂. B: Dabei wurde die Befeuchtung nicht berücksichtigt. C: 0,21×403=84,63 mmHg. D: Hier wurde der gesamte Wasserdampfdruck erst nach Multiplikation abgezogen. E: Das wäre ein typischer meeresnaher Wert, nicht das Ergebnis der gegebenen Zahlen. Quelle: Vorlesungsfolien, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Inspirierter Partialdruck rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Inspirierter Partialdruck rechnen"
+      ],
+      "questionGoal": "Inspirierter Partialdruck rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Inspirierter Partialdruck rechnen",
+        "correctReasoning": "0,21×403=84,63 mmHg.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der trockengasbezogene Restdruck vor Multiplikation mit FiO₂.",
+          "B": "Dabei wurde die Befeuchtung nicht berücksichtigt.",
+          "D": "Hier wurde der gesamte Wasserdampfdruck erst nach Multiplikation abgezogen.",
+          "E": "Das wäre ein typischer meeresnaher Wert, nicht das Ergebnis der gegebenen Zahlen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q03",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Verwenden Sie PAO₂ ≈ PIO₂−PaCO₂/R. Bei PIO₂=85 mmHg, PaCO₂=28 mmHg und R=0,8 ergibt sich welcher alveoläre PO₂?",
+      "options": [
+        {
+          "text": "63 mmHg",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "57 mmHg",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "85 mmHg",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "50 mmHg",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "120 mmHg",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspricht ungefähr einer Multiplikation statt Division durch R. B: Dabei wurde R nicht berücksichtigt. C: Der alveoläre CO₂-Term wurde weggelassen. D: 85−28/0,8=85−35=50 mmHg. E: Der CO₂-Term wurde addiert statt subtrahiert. Quelle: Vorlesungsfolien, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Alveoläre Gasgleichung rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alveoläre Gasgleichung rechnen"
+      ],
+      "questionGoal": "Alveoläre Gasgleichung rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Alveoläre Gasgleichung rechnen",
+        "correctReasoning": "85−28/0,8=85−35=50 mmHg.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspricht ungefähr einer Multiplikation statt Division durch R.",
+          "B": "Dabei wurde R nicht berücksichtigt.",
+          "C": "Der alveoläre CO₂-Term wurde weggelassen.",
+          "E": "Der CO₂-Term wurde addiert statt subtrahiert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie die Wirkung erhöhter alveolärer Ventilation in hypobarer Hypoxie bei unveränderter inspirierter O₂-Fraktion.",
+      "options": [
+        {
+          "text": "Eine respiratorische Alkalose kann entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Hyperventilation erhöht unmittelbar den barometrischen Umgebungsdruck.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der alveoläre PO₂ kann dadurch steigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der alveoläre CO₂-Partialdruck kann sinken.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der CO₂-Abfall verschiebt den Säure-Basen-Zustand. B: Sie verändert die Ventilation, nicht die Höhe beziehungsweise den Luftdruck. C: Dies folgt aus der alveolären Gasgleichung. D: Mehr alveoläre Ventilation erleichtert die CO₂-Abgabe. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Hyperventilation als Anpassung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hyperventilation als Anpassung"
+      ],
+      "questionGoal": "Hyperventilation als Anpassung",
+      "structuredExplanation": {
+        "coreIdea": "Hyperventilation als Anpassung",
+        "correctReasoning": "Der CO₂-Abfall verschiebt den Säure-Basen-Zustand. Dies folgt aus der alveolären Gasgleichung. Mehr alveoläre Ventilation erleichtert die CO₂-Abgabe.",
+        "wrongAnswerExplanations": {
+          "A": "Der CO₂-Abfall verschiebt den Säure-Basen-Zustand.",
+          "B": "Sie verändert die Ventilation, nicht die Höhe beziehungsweise den Luftdruck.",
+          "C": "Dies folgt aus der alveolären Gasgleichung.",
+          "D": "Mehr alveoläre Ventilation erleichtert die CO₂-Abgabe."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Welche unmittelbar wirksame Veränderung kann das systemische O₂-Angebot in akuter hypobarer Hypoxie unterstützen?",
+      "options": [
+        {
+          "text": "Obligatorische Normalisierung jedes arteriellen PO₂ allein durch höheren Blutfluss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständiger Ersatz der Erythrozyten durch neu gebildete Zellen innerhalb weniger Minuten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Anstieg der atmosphärischen O₂-Fraktion durch Tachykardie.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Abnahme des Herzzeitvolumens auf null bei unverändertem Gewebebedarf.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Anstieg des Herzzeitvolumens.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehr Kreislauffluss beseitigt den erniedrigten inspiratorischen Partialdruck nicht. B: Erythropoese wirkt nicht so schnell. C: Herzfrequenz verändert nicht die Umgebungsluft. D: Dann wird kein konvektives O₂-Angebot aufrechterhalten. E: Bei gleichem arteriellem O₂-Gehalt erhöht mehr Blutfluss den angebotenen O₂-Fluss. Quelle: Vorlesungsfolien, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Akute Kreislaufanpassung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Akute Kreislaufanpassung"
+      ],
+      "questionGoal": "Akute Kreislaufanpassung",
+      "structuredExplanation": {
+        "coreIdea": "Akute Kreislaufanpassung",
+        "correctReasoning": "Bei gleichem arteriellem O₂-Gehalt erhöht mehr Blutfluss den angebotenen O₂-Fluss.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr Kreislauffluss beseitigt den erniedrigten inspiratorischen Partialdruck nicht.",
+          "B": "Erythropoese wirkt nicht so schnell.",
+          "C": "Herzfrequenz verändert nicht die Umgebungsluft.",
+          "D": "Dann wird kein konvektives O₂-Angebot aufrechterhalten."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q06",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "CaO₂ beträgt 18 ml O₂/dl Blut, das Herzzeitvolumen 6 l/min. Welcher systemische O₂-Angebotsfluss ergibt sich aus CaO₂×Q̇?",
+      "options": [
+        {
+          "text": "10 800 ml O₂/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1080 ml O₂/min",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "108 ml O₂/min",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "180 ml O₂/min",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3 ml O₂/min",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist um einen Faktor zehn zu gross. B: 6 l/min sind 60 dl/min; 18×60=1080. C: Hier wurde l nicht in dl umgerechnet. D: Das Herzzeitvolumen wurde nicht korrekt berücksichtigt. E: Dies ist der falsche Quotient 18/6. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "O₂-Angebot mit Einheiten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "O₂-Angebot mit Einheiten"
+      ],
+      "questionGoal": "O₂-Angebot mit Einheiten",
+      "structuredExplanation": {
+        "coreIdea": "O₂-Angebot mit Einheiten",
+        "correctReasoning": "6 l/min sind 60 dl/min; 18×60=1080.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist um einen Faktor zehn zu gross.",
+          "C": "Hier wurde l nicht in dl umgerechnet.",
+          "D": "Das Herzzeitvolumen wurde nicht korrekt berücksichtigt.",
+          "E": "Dies ist der falsche Quotient 18/6."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie die subakute Anpassung an höhenbedingte Hyperventilation.",
+      "options": [
+        {
+          "text": "Hämokonzentration kann zunächst aus einer Abnahme des Plasmavolumens entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine höhere Hb-Konzentration bedeutet zwingend, dass binnen Minuten neue Erythrozyten gebildet wurden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bicarbonatausscheidung erhöht den inspiratorischen O₂-Partialdruck direkt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vermehrte Bicarbonatausscheidung kann die respiratorische Alkalose teilweise kompensieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine höhere Konzentration beweist nicht bereits mehr gesamte Erythrozytenmasse. B: Konzentration und Zellmasse sind zu unterscheiden. C: Ihr primärer Bezug ist die Säure-Basen-Kompensation. D: Die renale Anpassung unterstützt die anhaltende ventilatorische Antwort. Quelle: Vorlesungsfolien, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Renale Akklimatisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Renale Akklimatisation"
+      ],
+      "questionGoal": "Renale Akklimatisation",
+      "structuredExplanation": {
+        "coreIdea": "Renale Akklimatisation",
+        "correctReasoning": "Eine höhere Konzentration beweist nicht bereits mehr gesamte Erythrozytenmasse. Die renale Anpassung unterstützt die anhaltende ventilatorische Antwort.",
+        "wrongAnswerExplanations": {
+          "A": "Eine höhere Konzentration beweist nicht bereits mehr gesamte Erythrozytenmasse.",
+          "B": "Konzentration und Zellmasse sind zu unterscheiden.",
+          "C": "Ihr primärer Bezug ist die Säure-Basen-Kompensation.",
+          "D": "Die renale Anpassung unterstützt die anhaltende ventilatorische Antwort."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie Mechanismen des O₂-Transports bei Höhenexposition.",
+      "options": [
+        {
+          "text": "Höherer Hb-Gehalt normalisiert nicht automatisch den arteriellen PO₂.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein höheres Herzzeitvolumen und ein höherer Hb-Gehalt sind dieselbe physikalische Grösse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hyperventilation kann akut wirksam werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Erythropoese kann längerfristig die O₂-Bindungskapazität erhöhen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Gehalts- und Partialdruckgrössen sind verschieden. B: Das eine ist Volumenfluss, das andere eine Konzentration. C: Die Ventilation kann rascher reagieren als die Erythrozytenneubildung. D: Mehr funktionsfähiges Hb erhöht die mögliche Transportmenge. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Zeitliche Anpassungen unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitliche Anpassungen unterscheiden"
+      ],
+      "questionGoal": "Zeitliche Anpassungen unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Zeitliche Anpassungen unterscheiden",
+        "correctReasoning": "Gehalts- und Partialdruckgrössen sind verschieden. Die Ventilation kann rascher reagieren als die Erythrozytenneubildung. Mehr funktionsfähiges Hb erhöht die mögliche Transportmenge.",
+        "wrongAnswerExplanations": {
+          "A": "Gehalts- und Partialdruckgrössen sind verschieden.",
+          "B": "Das eine ist Volumenfluss, das andere eine Konzentration.",
+          "C": "Die Ventilation kann rascher reagieren als die Erythrozytenneubildung.",
+          "D": "Mehr funktionsfähiges Hb erhöht die mögliche Transportmenge."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Für eine Messung auf grosser Höhe seien Hb=17,1 g/dl und SaO₂=55,1 % gegeben. Mit 1,34 ml O₂/g Hb und vernachlässigtem gelöstem Anteil ergibt sich welcher CaO₂?",
+      "options": [
+        {
+          "text": "Etwa 126 ml/dl, entsprechend 12,6 ml/l.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 1263 ml/dl.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Etwa 12,6 ml/dl, entsprechend 126 ml/l.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Etwa 5,5 ml/dl.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 22,9 ml/dl.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier wurden dl und l vertauscht. B: Die Prozentangabe wurde nicht durch hundert geteilt. C: 1,34×17,1×0,551=12,63 ml/dl. D: Sättigung ist ohne Hb-Menge und Bindungsfaktor noch kein O₂-Gehalt. E: Dieser Wert würde nahezu vollständige Sättigung voraussetzen. Quelle: Vorlesungsfolien, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Höhenrechnung mit Sättigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Höhenrechnung mit Sättigung"
+      ],
+      "questionGoal": "Höhenrechnung mit Sättigung",
+      "structuredExplanation": {
+        "coreIdea": "Höhenrechnung mit Sättigung",
+        "correctReasoning": "1,34×17,1×0,551=12,63 ml/dl.",
+        "wrongAnswerExplanations": {
+          "A": "Hier wurden dl und l vertauscht.",
+          "B": "Die Prozentangabe wurde nicht durch hundert geteilt.",
+          "D": "Sättigung ist ohne Hb-Menge und Bindungsfaktor noch kein O₂-Gehalt.",
+          "E": "Dieser Wert würde nahezu vollständige Sättigung voraussetzen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie Einflüsse auf die O₂-Dissoziationskurve bei Höhenexposition.",
+      "options": [
+        {
+          "text": "Ein pH-Anstieg begünstigt für sich betrachtet eine Linksverschiebung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Anstieg von 2,3-BPG begünstigt für sich betrachtet eine Rechtsverschiebung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Linksverschiebung bedeutet definitionsgemäss eine grössere maximale Zahl an Häm-Bindungsstellen pro Tetramer.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle gleichzeitig auftretenden Anpassungen verschieben die Kurve zwingend in dieselbe Richtung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies erhöht die O₂-Affinität. B: Dies erleichtert bei gleichem PO₂ die O₂-Abgabe. C: Sie verändert die Affinität, nicht die Zahl der Hämgruppen. D: Die Einflüsse können gegensinnig sein. Quelle: Vorlesungsfolien, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Affinitätsänderungen abwägen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Affinitätsänderungen abwägen"
+      ],
+      "questionGoal": "Affinitätsänderungen abwägen",
+      "structuredExplanation": {
+        "coreIdea": "Affinitätsänderungen abwägen",
+        "correctReasoning": "Dies erhöht die O₂-Affinität. Dies erleichtert bei gleichem PO₂ die O₂-Abgabe.",
+        "wrongAnswerExplanations": {
+          "A": "Dies erhöht die O₂-Affinität.",
+          "B": "Dies erleichtert bei gleichem PO₂ die O₂-Abgabe.",
+          "C": "Sie verändert die Affinität, nicht die Zahl der Hämgruppen.",
+          "D": "Die Einflüsse können gegensinnig sein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q11",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Nach Kochen im schlecht belüfteten Zelt treten Kopfschmerzen und Verwirrtheit auf. Warum muss neben Höhenkrankheit auch CO-Exposition bedacht werden?",
+      "options": [
+        {
+          "text": "Ein normaler gelöster arterieller PO₂ würde eine verminderte Hb-Transportkapazität sicher ausschliessen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Höhenlage verhindert grundsätzlich eine Carboxyhämoglobinbildung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CO besetzt Hb-Bindungsstellen und kann den nutzbaren O₂-Transport zusätzlich vermindern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "CO verändert ausschliesslich den Umgebungsluftdruck, ohne an Hb zu binden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "CO erhöht die verfügbare Zahl funktionsfähiger Häm-Bindungsstellen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Partialdruck und Hb-vermittelte Transportkapazität sind zu unterscheiden. B: Die dokumentierten Fälle zeigen das Gegenteil. C: Die Vorlesung beschreibt diese Gefahr ausdrücklich. D: Es bindet mit hoher Affinität an Häm-Eisen. E: Es blockiert einen Teil der O₂-Bindungskapazität. Quelle: Vorlesungsfolien, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "CO als zusätzliche Hypoxieursache"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CO als zusätzliche Hypoxieursache"
+      ],
+      "questionGoal": "CO als zusätzliche Hypoxieursache",
+      "structuredExplanation": {
+        "coreIdea": "CO als zusätzliche Hypoxieursache",
+        "correctReasoning": "Die Vorlesung beschreibt diese Gefahr ausdrücklich.",
+        "wrongAnswerExplanations": {
+          "A": "Partialdruck und Hb-vermittelte Transportkapazität sind zu unterscheiden.",
+          "B": "Die dokumentierten Fälle zeigen das Gegenteil.",
+          "D": "Es bindet mit hoher Affinität an Häm-Eisen.",
+          "E": "Es blockiert einen Teil der O₂-Bindungskapazität."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q12",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Bei einer Höhenmessung wechseln verstärkte Atmung und Atempausen; die SpO₂ schwankt im Zeitverlauf. Beurteilen Sie die Interpretation.",
+      "options": [
+        {
+          "text": "Ein einzelner SpO₂-Momentwert kann die nächtliche Schwankungsbreite verfehlen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Akklimatisation garantiert das vollständige Verschwinden jeder periodischen Atmung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Apnoe-Hypopnoe-Index von 120/h bedeutet eine einzelne 120 Minuten dauernde Apnoe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein kurzzeitig höherer SpO₂-Wert schliesst relevante nächtliche Desaturationen aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Folien zeigen periodische Atmung und zeitlich veränderliche Oxygenierung. B: Die gezeigten Höhenmessungen rechtfertigen keine solche Garantie. C: Der Index gibt eine Ereignishäufigkeit pro Stunde an. D: Zeitweilige bessere Werte schliessen spätere Abfälle nicht aus. Quelle: Vorlesungsfolien, PDF-S. 11–13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Periodische Atmung und Messverlauf"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Periodische Atmung und Messverlauf"
+      ],
+      "questionGoal": "Periodische Atmung und Messverlauf",
+      "structuredExplanation": {
+        "coreIdea": "Periodische Atmung und Messverlauf",
+        "correctReasoning": "Die Folien zeigen periodische Atmung und zeitlich veränderliche Oxygenierung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folien zeigen periodische Atmung und zeitlich veränderliche Oxygenierung.",
+          "B": "Die gezeigten Höhenmessungen rechtfertigen keine solche Garantie.",
+          "C": "Der Index gibt eine Ereignishäufigkeit pro Stunde an.",
+          "D": "Zeitweilige bessere Werte schliessen spätere Abfälle nicht aus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Nach raschem Aufstieg entwickeln sich im Verlauf mehrerer Stunden Kopfschmerzen, Übelkeit und ausgeprägte Müdigkeit. Welche höhenbezogene Einordnung passt zunächst am besten, sofern keine andere Ursache gefunden wird?",
+      "options": [
+        {
+          "text": "Normaler Befund, weil Symptome erst Stunden nach Ankunft beginnen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich eine Infektion, weil hypobare Hypoxie keine Übelkeit auslösen kann.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gesichertes HAPE ohne respiratorischen Befund.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gesichertes HACE allein aufgrund jeder Müdigkeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Akute Bergkrankheit, AMS.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Latenz von mehreren Stunden wird beschrieben. B: Übelkeit gehört zum beschriebenen AMS-Bild. C: Die Konstellation beschreibt nicht primär ein Lungenödem. D: Für diese schwere Einordnung sind insbesondere neurologische Zeichen relevant. E: Symptome und zeitlicher Zusammenhang entsprechen der dargestellten Konstellation. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "AMS-Konstellation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "AMS-Konstellation"
+      ],
+      "questionGoal": "AMS-Konstellation",
+      "structuredExplanation": {
+        "coreIdea": "AMS-Konstellation",
+        "correctReasoning": "Symptome und zeitlicher Zusammenhang entsprechen der dargestellten Konstellation.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Latenz von mehreren Stunden wird beschrieben.",
+          "B": "Übelkeit gehört zum beschriebenen AMS-Bild.",
+          "C": "Die Konstellation beschreibt nicht primär ein Lungenödem.",
+          "D": "Für diese schwere Einordnung sind insbesondere neurologische Zeichen relevant."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Eine Person auf grosser Höhe entwickelt zunehmende Gangataxie und Bewusstseinsstörung. Welche höhenbezogene Komplikation ist besonders dringlich zu berücksichtigen?",
+      "options": [
+        {
+          "text": "Höhenhirnödem, HACE.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Gesicherte leichte AMS ohne mögliche Progression.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Isolierte Hb-Konzentrationserhöhung als sichere alleinige Diagnose.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Unkomplizierte Akklimatisation ohne weiteren Handlungsbedarf.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein ausschliesslich lokales Muskelproblem, weil das Gehirn auf Höhe unbeeinflusst bleibt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ataxie und Bewusstseinsveränderung sind zentrale Warnzeichen. B: Die Schwerezeichen sprechen gegen diese Verharmlosung. C: Ein Laborwert erklärt die akute neurologische Konstellation nicht. D: Diese neurologischen Zeichen sind nicht als harmlose Anpassung einzuordnen. E: Das Gehirn kann schwer betroffen sein. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Neurologische Warnzeichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neurologische Warnzeichen"
+      ],
+      "questionGoal": "Neurologische Warnzeichen",
+      "structuredExplanation": {
+        "coreIdea": "Neurologische Warnzeichen",
+        "correctReasoning": "Ataxie und Bewusstseinsveränderung sind zentrale Warnzeichen.",
+        "wrongAnswerExplanations": {
+          "B": "Die Schwerezeichen sprechen gegen diese Verharmlosung.",
+          "C": "Ein Laborwert erklärt die akute neurologische Konstellation nicht.",
+          "D": "Diese neurologischen Zeichen sind nicht als harmlose Anpassung einzuordnen.",
+          "E": "Das Gehirn kann schwer betroffen sein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Nach zwei Tagen raschen Aufstiegs treten deutlicher Leistungseinbruch, zunehmende Dyspnoe und Husten mit schaumigem Auswurf auf. Welche Komplikation passt zu diesem Muster?",
+      "options": [
+        {
+          "text": "HACE als allein durch schaumigen Auswurf bewiesene Diagnose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Isolierte akute Bergkrankheit ohne Lungenbeteiligung als einzig mögliche Erklärung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine obligat harmlose Anpassung an den verminderten Luftdruck.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich ein erhöhter Hb-Wert ohne möglichen Gasaustauschdefekt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Höhenlungenödem, HAPE.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: HACE betrifft primär neurologische Symptome. B: Respiratorische Verschlechterung erfordert eine weitergehende Einordnung. C: Das Muster enthält ernsthafte respiratorische Warnzeichen. D: Dies erklärt die Konstellation nicht. E: Die beschriebenen respiratorischen Zeichen passen zur Vorlesung. Quelle: Vorlesungsfolien, PDF-S. 19,22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "HAPE-Konstellation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HAPE-Konstellation"
+      ],
+      "questionGoal": "HAPE-Konstellation",
+      "structuredExplanation": {
+        "coreIdea": "HAPE-Konstellation",
+        "correctReasoning": "Die beschriebenen respiratorischen Zeichen passen zur Vorlesung.",
+        "wrongAnswerExplanations": {
+          "A": "HACE betrifft primär neurologische Symptome.",
+          "B": "Respiratorische Verschlechterung erfordert eine weitergehende Einordnung.",
+          "C": "Das Muster enthält ernsthafte respiratorische Warnzeichen.",
+          "D": "Dies erklärt die Konstellation nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie die in der Vorlesung dargestellte Entstehung des HAPE.",
+      "options": [
+        {
+          "text": "Ein HAPE setzt keine primäre linksventrikuläre Pumpinsuffizienz voraus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ungleichmässige Vasokonstriktion kann zu regionaler Überperfusion und erhöhtem Kapillardruck beitragen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Weil HPV lokal die V/Q-Zuordnung verbessern kann, ist sie bei globaler Hypoxie grundsätzlich ohne Risiko.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hypoxische pulmonale Vasokonstriktion kann den pulmonalen Gefässdruck erhöhen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es wird als nichtkardiogenes Höhenlungenödem eingeordnet. B: Dies begünstigt eine druckbedingte Schädigung der Barriere. C: Die globale Druckbelastung ist gerade ein zentraler Mechanismus. D: Bei globaler Hypoxie ist die Reaktion grossflächig. Quelle: Vorlesungsfolien, PDF-S. 22–24.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "HAPE-Mechanismus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HAPE-Mechanismus"
+      ],
+      "questionGoal": "HAPE-Mechanismus",
+      "structuredExplanation": {
+        "coreIdea": "HAPE-Mechanismus",
+        "correctReasoning": "Es wird als nichtkardiogenes Höhenlungenödem eingeordnet. Dies begünstigt eine druckbedingte Schädigung der Barriere. Bei globaler Hypoxie ist die Reaktion grossflächig.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird als nichtkardiogenes Höhenlungenödem eingeordnet.",
+          "B": "Dies begünstigt eine druckbedingte Schädigung der Barriere.",
+          "C": "Die globale Druckbelastung ist gerade ein zentraler Mechanismus.",
+          "D": "Bei globaler Hypoxie ist die Reaktion grossflächig."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie die Einordnung des HAPE-Risikos.",
+      "options": [
+        {
+          "text": "Ein Risikofaktor beweist bei jeder exponierten Person ein bereits bestehendes Ödem.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "HAPE kann ohne vorausgehende typische AMS-Symptome auftreten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Fehlen von Kopfschmerzen schliesst HAPE sicher aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Individuelle Suszeptibilität und Aufstiegsprofil beeinflussen das Risiko.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Risiko und aktuelle Diagnose sind verschieden. B: Das wird ausdrücklich erwähnt. C: Kopfschmerzen sind keine notwendige Voraussetzung. D: Die Folien nennen beides. Quelle: Vorlesungsfolien, PDF-S. 22,25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Suszeptibilität und Warnzeichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Suszeptibilität und Warnzeichen"
+      ],
+      "questionGoal": "Suszeptibilität und Warnzeichen",
+      "structuredExplanation": {
+        "coreIdea": "Suszeptibilität und Warnzeichen",
+        "correctReasoning": "Das wird ausdrücklich erwähnt. Die Folien nennen beides.",
+        "wrongAnswerExplanations": {
+          "A": "Risiko und aktuelle Diagnose sind verschieden.",
+          "B": "Das wird ausdrücklich erwähnt.",
+          "C": "Kopfschmerzen sind keine notwendige Voraussetzung.",
+          "D": "Die Folien nennen beides."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Welche Strategie entspricht dem Grundprinzip der Prävention von Höhenkrankheit?",
+      "options": [
+        {
+          "text": "Gestufter langsamer Anstieg der Schlafhöhe mit Zeit zur Akklimatisation und eingeplanten Ruhetagen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliessliche Orientierung am Gipfelziel ohne Berücksichtigung des Verlaufs.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Weiterer Aufstieg trotz zunehmender Symptome, um die Anpassung zu erzwingen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Intensive Belastung als Garantie, unabhängig von der Schlafhöhe geschützt zu sein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Möglichst rascher kontinuierlicher Aufstieg als Ersatz für Akklimatisation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Expositionsgeschwindigkeit ist ein beeinflussbarer Faktor. B: Die Reaktion auf die Exposition muss berücksichtigt werden. C: Dies widerspricht der Sicherheitslogik. D: Fitness ist keine solche Garantie. E: Dies kann das Risiko erhöhen. Quelle: Vorlesungsfolien, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Akklimatisation planen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Akklimatisation planen"
+      ],
+      "questionGoal": "Akklimatisation planen",
+      "structuredExplanation": {
+        "coreIdea": "Akklimatisation planen",
+        "correctReasoning": "Die Expositionsgeschwindigkeit ist ein beeinflussbarer Faktor.",
+        "wrongAnswerExplanations": {
+          "B": "Die Reaktion auf die Exposition muss berücksichtigt werden.",
+          "C": "Dies widerspricht der Sicherheitslogik.",
+          "D": "Fitness ist keine solche Garantie.",
+          "E": "Dies kann das Risiko erhöhen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "In einer abgelegenen Bergregion besteht Verdacht auf HACE oder HAPE mit fortschreitenden Beschwerden. Welches Grundprinzip ist am besten begründet?",
+      "options": [
+        {
+          "text": "Die Beschwerden allein als mangelnde Motivation bewerten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur eine erneute Hb-Messung abwarten, weil der klinische Verlauf keine Rolle spielt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Den Aufstieg fortsetzen, solange noch irgendeine Gehfähigkeit besteht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weiteren Aufstieg stoppen und rasch Abstieg beziehungsweise Evakuation und verfügbare O₂-Unterstützung organisieren.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Abstieg grundsätzlich aufschieben, bis jede medikamentöse Option ausgeschöpft wurde.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es liegen medizinische Warnzeichen vor. B: Die Dringlichkeit wird wesentlich klinisch bestimmt. C: Dies kann die Hypoxie weiter verschärfen. D: Bei schwerer Höhenkrankheit hat die Verbesserung der Oxygenierung und Exposition Vorrang. E: Unnötiges Verzögern kann gefährlich sein. Quelle: Vorlesungsfolien, PDF-S. 27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "Schwere Höhenkrankheit einordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schwere Höhenkrankheit einordnen"
+      ],
+      "questionGoal": "Schwere Höhenkrankheit einordnen",
+      "structuredExplanation": {
+        "coreIdea": "Schwere Höhenkrankheit einordnen",
+        "correctReasoning": "Bei schwerer Höhenkrankheit hat die Verbesserung der Oxygenierung und Exposition Vorrang.",
+        "wrongAnswerExplanations": {
+          "A": "Es liegen medizinische Warnzeichen vor.",
+          "B": "Die Dringlichkeit wird wesentlich klinisch bestimmt.",
+          "C": "Dies kann die Hypoxie weiter verschärfen.",
+          "E": "Unnötiges Verzögern kann gefährlich sein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv46_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV46",
+      "stem": "Beurteilen Sie die Wirkprinzipien zweier unterstützender Massnahmen.",
+      "options": [
+        {
+          "text": "Vorübergehende Besserung im Überdrucksack macht bei schwerer Erkrankung jede weitere Evakuationsplanung entbehrlich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zusätzlicher Sauerstoff kann den inspiratorischen Partialdruck durch höhere FiO₂ steigern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Überdrucksack kann bei gleicher O₂-Fraktion den inspiratorischen Partialdruck durch höheren Umgebungsdruck steigern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Überdrucksack bildet innerhalb von Minuten neue Erythrozyten als primären Effekt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Unterstützung ist kein automatischer Ersatz für erforderliche weitere Versorgung. B: Der Gesamtdruck muss dafür nicht ansteigen. C: Beide Faktoren gehen in den Partialdruck ein. D: Seine unmittelbare Wirkung ist physikalisch. Quelle: Vorlesungsfolien, PDF-S. 5,27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV46",
+        "O₂ und Überdruck physikalisch verstehen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "O₂ und Überdruck physikalisch verstehen"
+      ],
+      "questionGoal": "O₂ und Überdruck physikalisch verstehen",
+      "structuredExplanation": {
+        "coreIdea": "O₂ und Überdruck physikalisch verstehen",
+        "correctReasoning": "Der Gesamtdruck muss dafür nicht ansteigen. Beide Faktoren gehen in den Partialdruck ein.",
+        "wrongAnswerExplanations": {
+          "A": "Die Unterstützung ist kein automatischer Ersatz für erforderliche weitere Versorgung.",
+          "B": "Der Gesamtdruck muss dafür nicht ansteigen.",
+          "C": "Beide Faktoren gehen in den Partialdruck ein.",
+          "D": "Seine unmittelbare Wirkung ist physikalisch."
+        }
+      }
+    }
+  ]
+}
