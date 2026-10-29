@@ -1,0 +1,1301 @@
+{
+  "id": "assessment_j2_block1_kv16_20261029",
+  "lectureCode": "KV16",
+  "title": "Herzmetabolismus: Fettsäureabbau, Ketonkörper und Phosphokreatin",
+  "block": "J2 Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "2026_2SJ_KV16_Herzmetabolismus_WK.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Tierexperimentelle Altersanteile nicht als humane Normwerte behandelt. β-Oxidation vor allem mitochondrial, VLCFA zusätzlich peroxisomal. Keine pauschalen unbehandelten Prognosen seltener Erkrankungen und keine veraltete CK-MB-Überlegenheit gegenüber Troponin behauptet. Energiebilanz mit explizit vorgegebenen P/O-Werten.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Energiequellen des Herzmuskels situationsabhängig einordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Wichtige Lipidstrukturen und ihre Funktion unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Fettsäureaktivierung und mitochondrialen Carnitintransport erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "β-Oxidation und Sonderwege verschiedener Fettsäuren erklären und bilanzieren."
+    },
+    {
+      "id": "lo5",
+      "text": "Ketonkörpersynthese und extrahepatische Verwertung verknüpfen."
+    },
+    {
+      "id": "lo6",
+      "text": "Defekte des Fettsäuremetabolismus mechanistisch einordnen."
+    },
+    {
+      "id": "lo7",
+      "text": "Phosphokreatinpuffer und Herkunft des muskulären Kreatins erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv16_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Bei körperlicher Arbeit steigt das Lactatangebot. Wie kann oxidatives Herzmuskelgewebe daraus Energie gewinnen?",
+      "options": [
+        {
+          "text": "Lactat direkt durch Carnitin in Acetyl-CoA umwandeln",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Lactat zu Pyruvat umsetzen und anschliessend oxidativ verwerten",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Lactat im Myokard zuerst zu Glykogen im Blut umwandeln",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lactat ohne Umwandlung direkt durch die ATP-Synthase schleusen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lactat ausschliesslich durch Ausatmung entfernen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Carnitin transportiert Acylgruppen und katalysiert diese Reaktion nicht. B: Lactat ist unter aeroben Bedingungen ein nutzbares Substrat. C: Glykogen ist ein intrazellulärer Speicher, kein Bluttransportmetabolit. D: Die ATP-Synthase nutzt einen Protonengradienten, kein Lactat als direktes Substrat. E: Lactat wird metabolisiert, nicht als solches abgeatmet. Quelle: Vorlesungsfolien, PDF-S. 2–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Lactat als Herzsubstrat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lactat als Herzsubstrat"
+      ],
+      "questionGoal": "Lactat als Herzsubstrat",
+      "structuredExplanation": {
+        "coreIdea": "Lactat als Herzsubstrat",
+        "correctReasoning": "Lactat ist unter aeroben Bedingungen ein nutzbares Substrat.",
+        "wrongAnswerExplanations": {
+          "A": "Carnitin transportiert Acylgruppen und katalysiert diese Reaktion nicht.",
+          "C": "Glykogen ist ein intrazellulärer Speicher, kein Bluttransportmetabolit.",
+          "D": "Die ATP-Synthase nutzt einen Protonengradienten, kein Lactat als direktes Substrat.",
+          "E": "Lactat wird metabolisiert, nicht als solches abgeatmet."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie die Energieversorgung des Herzmuskels.",
+      "options": [
+        {
+          "text": "Entwicklung und Substratangebot beeinflussen die relative Nutzung der Energieträger.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Lactat ist für oxidative Herzmuskelzellen grundsätzlich unverwertbar.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Herz kann Energie aus Glucose, Lactat und Fettsäuren gewinnen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Rattenwerte für einzelne Lebenstage sind unverändert als humane Normwerte anzuwenden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Folien zeigen alters- und situationsabhängige Unterschiede. B: Es kann über Pyruvat oxidiert werden. C: Mehrere Substrate können oxidativ genutzt werden. D: Tierexperimentelle Zahlen sind keine direkten humanen Normwerte. Quelle: Vorlesungsfolien, PDF-S. 2–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Substratflexibilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Substratflexibilität"
+      ],
+      "questionGoal": "Substratflexibilität",
+      "structuredExplanation": {
+        "coreIdea": "Substratflexibilität",
+        "correctReasoning": "Die Folien zeigen alters- und situationsabhängige Unterschiede. Mehrere Substrate können oxidativ genutzt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folien zeigen alters- und situationsabhängige Unterschiede.",
+          "B": "Es kann über Pyruvat oxidiert werden.",
+          "C": "Mehrere Substrate können oxidativ genutzt werden.",
+          "D": "Tierexperimentelle Zahlen sind keine direkten humanen Normwerte."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Ein Molekül besteht aus Glycerin, dessen drei Hydroxylgruppen mit Fettsäuren verestert sind. Welche Funktion passt am besten?",
+      "options": [
+        {
+          "text": "Wasserlösliches Redoxcoenzym wie NAD⁺",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Membranphospholipid mit geladener Phosphatkopfgruppe",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Steroidgrundgerüst für Cholesterin",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Polypeptidhormon mit Peptidbindungen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Energiespeicher als Triacylglycerin",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: NAD⁺ hat keinen Triacylglycerinaufbau. B: Dem beschriebenen Molekül fehlt diese polare Kopfgruppe. C: Cholesterin besitzt ein kondensiertes Ringsystem. D: Das Molekül besitzt Ester- statt Peptidbindungen. E: Die drei Esterbindungen kennzeichnen ein Triacylglycerin. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Lipidklassen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipidklassen"
+      ],
+      "questionGoal": "Lipidklassen",
+      "structuredExplanation": {
+        "coreIdea": "Lipidklassen",
+        "correctReasoning": "Die drei Esterbindungen kennzeichnen ein Triacylglycerin.",
+        "wrongAnswerExplanations": {
+          "A": "NAD⁺ hat keinen Triacylglycerinaufbau.",
+          "B": "Dem beschriebenen Molekül fehlt diese polare Kopfgruppe.",
+          "C": "Cholesterin besitzt ein kondensiertes Ringsystem.",
+          "D": "Das Molekül besitzt Ester- statt Peptidbindungen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Bei der Aktivierung einer Fettsäure wird ATP zu AMP und Pyrophosphat umgesetzt; dieses wird hydrolysiert. Welche energetische Belastung wird bilanziert?",
+      "options": [
+        {
+          "text": "Ein ATP-Äquivalent wie bei ATP zu ADP",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Drei ATP-Äquivalente pro C-Atom",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein halbes ATP-Äquivalent",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Kein Aufwand, da Acyl-CoA selbst energiereich ist",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwei ATP-Äquivalente",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Umsetzung bis AMP beansprucht zwei Äquivalente. B: Der Aktivierungsaufwand gilt pro Fettsäuremolekül. C: Die Reaktion verbraucht mehr als eine halbe Bindungsenergie. D: Die energiereiche Thioesterbildung benötigt Aktivierung. E: Zwei energiereiche Phosphatbindungen werden verbraucht. Quelle: Vorlesungsfolien, PDF-S. 8,15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Aktivierungsenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierungsenergie"
+      ],
+      "questionGoal": "Aktivierungsenergie",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierungsenergie",
+        "correctReasoning": "Zwei energiereiche Phosphatbindungen werden verbraucht.",
+        "wrongAnswerExplanations": {
+          "A": "Die Umsetzung bis AMP beansprucht zwei Äquivalente.",
+          "B": "Der Aktivierungsaufwand gilt pro Fettsäuremolekül.",
+          "C": "Die Reaktion verbraucht mehr als eine halbe Bindungsenergie.",
+          "D": "Die energiereiche Thioesterbildung benötigt Aktivierung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Eine langkettige Fettsäure ist als Acyl-CoA aktiviert, gelangt aber nicht direkt durch die innere Mitochondrienmembran. Welcher Schritt ermöglicht den Transport?",
+      "options": [
+        {
+          "text": "Übertragung der Acylgruppe auf Carnitin",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Direkte Umwandlung von CoA in einen Membrankanal",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verschluss des Citratzyklus als Transportvoraussetzung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verknüpfung der Fettsäure mit Albumin in der Matrix",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Abspaltung sämtlicher Kohlenstoffatome als CO₂ im Cytosol",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Acylcarnitin kann über das Shuttle die Membran passieren. B: CoA wird nicht zum Kanal umgebaut. C: Der Citratzyklusverschluss ersetzt keinen Membrantransport. D: Albumin ist kein intramitochondrialer Shuttlebestandteil. E: Dann wäre keine Fettsäure zum mitochondrialen Abbau übrig. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Carnitin-Shuttle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Carnitin-Shuttle"
+      ],
+      "questionGoal": "Carnitin-Shuttle",
+      "structuredExplanation": {
+        "coreIdea": "Carnitin-Shuttle",
+        "correctReasoning": "Acylcarnitin kann über das Shuttle die Membran passieren.",
+        "wrongAnswerExplanations": {
+          "B": "CoA wird nicht zum Kanal umgebaut.",
+          "C": "Der Citratzyklusverschluss ersetzt keinen Membrantransport.",
+          "D": "Albumin ist kein intramitochondrialer Shuttlebestandteil.",
+          "E": "Dann wäre keine Fettsäure zum mitochondrialen Abbau übrig."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie den Weg einer langkettigen Fettsäure zur mitochondrialen β-Oxidation.",
+      "options": [
+        {
+          "text": "Die Acylgruppe wird nach dem Transport wieder auf CoA übertragen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte β-Oxidationsspirale erfolgt beim Menschen auf der Aussenseite der Plasmamembran.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Carnitin kann nach Acylgruppenabgabe für weitere Transportzyklen genutzt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aktivierung und Transport sind unterschiedliche Schritte vor dem Kettenabbau.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: In der Matrix entsteht erneut Acyl-CoA. B: Mitochondriale β-Oxidation erfolgt in der Matrix. C: Es wird im Shuttle rezykliert. D: Acyl-CoA-Bildung ersetzt nicht die Membranpassage. Quelle: Vorlesungsfolien, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Aktivierung und Transport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierung und Transport"
+      ],
+      "questionGoal": "Aktivierung und Transport",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierung und Transport",
+        "correctReasoning": "In der Matrix entsteht erneut Acyl-CoA. Es wird im Shuttle rezykliert. Acyl-CoA-Bildung ersetzt nicht die Membranpassage.",
+        "wrongAnswerExplanations": {
+          "A": "In der Matrix entsteht erneut Acyl-CoA.",
+          "B": "Mitochondriale β-Oxidation erfolgt in der Matrix.",
+          "C": "Es wird im Shuttle rezykliert.",
+          "D": "Acyl-CoA-Bildung ersetzt nicht die Membranpassage."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Welche Abfolge beschreibt einen normalen Durchgang der mitochondrialen β-Oxidation gesättigter Fettsäuren?",
+      "options": [
+        {
+          "text": "ATP-Hydrolyse, Lactatbildung, Ketolyse, Deaminierung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydratation, Thiolyse, ATP-Synthese, Carboxylierung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Thiolyse, Carboxylierung, FAD-Reduktion, Glykolyse",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "NADPH-Reduktion, Kondensation, Decarboxylierung, Veresterung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "FAD-abhängige Oxidation, Hydratation, NAD⁺-abhängige Oxidation, Thiolyse",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies kombiniert verschiedene andere Stoffwechselwege. B: Das ist keine β-Oxidationssequenz. C: Die Thiolyse setzt das zuvor gebildete β-Ketointermediat voraus. D: Diese Folge passt nicht zum oxidativen Kettenabbau. E: So entsteht ein β-Ketoacyl-CoA als Substrat der Thiolyse. Quelle: Vorlesungsfolien, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Reihenfolge der β-Oxidation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reihenfolge der β-Oxidation"
+      ],
+      "questionGoal": "Reihenfolge der β-Oxidation",
+      "structuredExplanation": {
+        "coreIdea": "Reihenfolge der β-Oxidation",
+        "correctReasoning": "So entsteht ein β-Ketoacyl-CoA als Substrat der Thiolyse.",
+        "wrongAnswerExplanations": {
+          "A": "Dies kombiniert verschiedene andere Stoffwechselwege.",
+          "B": "Das ist keine β-Oxidationssequenz.",
+          "C": "Die Thiolyse setzt das zuvor gebildete β-Ketointermediat voraus.",
+          "D": "Diese Folge passt nicht zum oxidativen Kettenabbau."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie einen regulären β-Oxidationsdurchgang einer längeren gesättigten geradzahligen Acylkette vor dem letzten Durchgang.",
+      "options": [
+        {
+          "text": "Der abgespaltene C₂-Anteil verlässt die Thiolyse unmittelbar als zwei CO₂.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die verbleibende Acylkette wird um zwei Kohlenstoffatome verkürzt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "NADH und FADH₂ entstehen als reduzierte Elektronenüberträger.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Reaktionsfolge verlängert die Kette jeweils um zwei Kohlenstoffatome.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Thiolyse liefert Acetyl-CoA, nicht direkt CO₂. B: Ein C₂-Fragment wird als Acetyl-CoA abgespalten. C: Zwei Oxidationsschritte liefern Reduktionsäquivalente. D: Dies wäre eine Syntheselogik statt Abbau. Quelle: Vorlesungsfolien, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Produkte eines Durchgangs"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Produkte eines Durchgangs"
+      ],
+      "questionGoal": "Produkte eines Durchgangs",
+      "structuredExplanation": {
+        "coreIdea": "Produkte eines Durchgangs",
+        "correctReasoning": "Ein C₂-Fragment wird als Acetyl-CoA abgespalten. Zwei Oxidationsschritte liefern Reduktionsäquivalente.",
+        "wrongAnswerExplanations": {
+          "A": "Die Thiolyse liefert Acetyl-CoA, nicht direkt CO₂.",
+          "B": "Ein C₂-Fragment wird als Acetyl-CoA abgespalten.",
+          "C": "Zwei Oxidationsschritte liefern Reduktionsäquivalente.",
+          "D": "Dies wäre eine Syntheselogik statt Abbau."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Wie viele β-Oxidationsdurchgänge und Acetyl-CoA entstehen beim vollständigen Abbau von Palmitoyl-CoA C16:0 bis zu Acetyl-CoA?",
+      "options": [
+        {
+          "text": "8 Durchgänge und 7 Acetyl-CoA",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "7 Durchgänge und 8 Acetyl-CoA",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "16 Durchgänge und 8 Acetyl-CoA",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "8 Durchgänge und 8 Acetyl-CoA",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "7 Durchgänge und 7 Acetyl-CoA",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beide Zahlen sind vertauscht. B: Der letzte Durchgang spaltet die C₄-Kette in zwei C₂-Einheiten. C: Die Kette wird in C₂-Schritten abgebaut. D: Die Zahl der Durchgänge ist um eins kleiner als die der C₂-Produkte. E: Die terminale C₄-Spaltung liefert zwei Acetyl-CoA. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Palmitatbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Palmitatbilanz"
+      ],
+      "questionGoal": "Palmitatbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Palmitatbilanz",
+        "correctReasoning": "Der letzte Durchgang spaltet die C₄-Kette in zwei C₂-Einheiten.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Zahlen sind vertauscht.",
+          "C": "Die Kette wird in C₂-Schritten abgebaut.",
+          "D": "Die Zahl der Durchgänge ist um eins kleiner als die der C₂-Produkte.",
+          "E": "Die terminale C₄-Spaltung liefert zwei Acetyl-CoA."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q10",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Für Palmitat gelten 7 NADH zu je 2,5 ATP, 7 FADH₂ zu je 1,5 ATP und 8 Acetyl-CoA zu je 10 ATP. Die Aktivierung kostet 2 ATP-Äquivalente. Welche Nettobilanz folgt?",
+      "options": [
+        {
+          "text": "104 ATP-Äquivalente",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "80 ATP-Äquivalente",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "108 ATP-Äquivalente",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "106 ATP-Äquivalente",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "28 ATP-Äquivalente",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Aktivierung wurde doppelt abgezogen. B: Das zählt nur die anschliessende Acetyl-CoA-Verwertung. C: Die Aktivierungskosten wurden nicht abgezogen. D: 17,5+10,5+80−2=106. E: Das zählt nur die Reduktionsäquivalente der β-Oxidation. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "ATP-Ausbeute"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ATP-Ausbeute"
+      ],
+      "questionGoal": "ATP-Ausbeute",
+      "structuredExplanation": {
+        "coreIdea": "ATP-Ausbeute",
+        "correctReasoning": "17,5+10,5+80−2=106.",
+        "wrongAnswerExplanations": {
+          "A": "Die Aktivierung wurde doppelt abgezogen.",
+          "B": "Das zählt nur die anschliessende Acetyl-CoA-Verwertung.",
+          "C": "Die Aktivierungskosten wurden nicht abgezogen.",
+          "E": "Das zählt nur die Reduktionsäquivalente der β-Oxidation."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Nach Abbau einer ungeradzahligen Fettsäure verbleibt ein C₃-Acyl-CoA. Wie wird dieses Kohlenstoffgerüst in den Citratzyklus eingeschleust?",
+      "options": [
+        {
+          "text": "Als unverändertes Propionyl-CoA über die ATP-Synthase",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Über Propionyl-CoA und Methylmalonyl-CoA zu Succinyl-CoA",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Durch direkte Spaltung in drei Acetyl-CoA",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Als Aceton durch die Glucose-6-Phosphatase",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Als Lactat direkt durch die Citrat-Synthase",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die ATP-Synthase ist kein Eintrittsenzym des Citratzyklus. B: Dieser Sonderweg verbindet den C₃-Rest mit dem Citratzyklus. C: Drei Acetyl-CoA enthielten sechs statt drei Kohlenstoffatome. D: Dieses Enzym verarbeitet kein Propionyl-CoA. E: Citrat-Synthase verwertet Acetyl-CoA und Oxalacetat. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Ungeradzahlige Fettsäure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ungeradzahlige Fettsäure"
+      ],
+      "questionGoal": "Ungeradzahlige Fettsäure",
+      "structuredExplanation": {
+        "coreIdea": "Ungeradzahlige Fettsäure",
+        "correctReasoning": "Dieser Sonderweg verbindet den C₃-Rest mit dem Citratzyklus.",
+        "wrongAnswerExplanations": {
+          "A": "Die ATP-Synthase ist kein Eintrittsenzym des Citratzyklus.",
+          "C": "Drei Acetyl-CoA enthielten sechs statt drei Kohlenstoffatome.",
+          "D": "Dieses Enzym verarbeitet kein Propionyl-CoA.",
+          "E": "Citrat-Synthase verwertet Acetyl-CoA und Oxalacetat."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie den Abbau ungesättigter Fettsäuren im Vergleich zur Standardschleife.",
+      "options": [
+        {
+          "text": "Jede natürliche cis-Doppelbindung passt ohne Anpassung zu jedem Schritt der β-Oxidation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vorhandene Doppelbindungen können zusätzliche Umlagerungsreaktionen nötig machen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die β-Oxidation erzeugt bei ungesättigten Fettsäuren kein Acetyl-CoA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zusatzenzyme wandeln alle Fettsäuren zuerst in Glucose um.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Position und Konfiguration können Zusatzreaktionen erfordern. B: Die Standardschleife benötigt geeignete Zwischenprodukte. C: Der Kettenabbau liefert weiterhin Acetyl-CoA. D: Der Abbau bleibt ein Fettsäureoxidationsweg. Quelle: Vorlesungsfolien, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Ungesättigte Fettsäuren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ungesättigte Fettsäuren"
+      ],
+      "questionGoal": "Ungesättigte Fettsäuren",
+      "structuredExplanation": {
+        "coreIdea": "Ungesättigte Fettsäuren",
+        "correctReasoning": "Die Standardschleife benötigt geeignete Zwischenprodukte.",
+        "wrongAnswerExplanations": {
+          "A": "Position und Konfiguration können Zusatzreaktionen erfordern.",
+          "B": "Die Standardschleife benötigt geeignete Zwischenprodukte.",
+          "C": "Der Kettenabbau liefert weiterhin Acetyl-CoA.",
+          "D": "Der Abbau bleibt ein Fettsäureoxidationsweg."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie die Arbeitsteilung beim Abbau sehr langkettiger Fettsäuren.",
+      "options": [
+        {
+          "text": "Die initiale Verkürzung sehr langkettiger Fettsäuren kann in Peroxisomen erfolgen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "ABCD1 ist an der peroxisomalen Aufnahme entsprechender Substrate beteiligt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Verkürzte Produkte können anschliessend mitochondrial weiterverwertet werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sämtliche Fettsäuren werden ausschliesslich in Lysosomen bis CO₂ oxidiert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Folien nennen dies für VLCFA. B: Ein Defekt beeinträchtigt diesen Schritt. C: Peroxisomaler und mitochondrialer Abbau können zusammenwirken. D: Die entscheidenden oxidativen Abbauorte sind Mitochondrien und für VLCFA Peroxisomen. Quelle: Vorlesungsfolien, PDF-S. 13,18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Sehr lange Ketten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sehr lange Ketten"
+      ],
+      "questionGoal": "Sehr lange Ketten",
+      "structuredExplanation": {
+        "coreIdea": "Sehr lange Ketten",
+        "correctReasoning": "Die Folien nennen dies für VLCFA. Ein Defekt beeinträchtigt diesen Schritt. Peroxisomaler und mitochondrialer Abbau können zusammenwirken.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folien nennen dies für VLCFA.",
+          "B": "Ein Defekt beeinträchtigt diesen Schritt.",
+          "C": "Peroxisomaler und mitochondrialer Abbau können zusammenwirken.",
+          "D": "Die entscheidenden oxidativen Abbauorte sind Mitochondrien und für VLCFA Peroxisomen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Bei einem Transporterdefekt reichern sich sehr langkettige Fettsäuren an. Welche beeinträchtigte Funktion passt zu ABCD1?",
+      "options": [
+        {
+          "text": "Transport entsprechender Fettsäuresubstrate in Peroxisomen",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aufnahme von LDL über Endozytose",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Übertragung von Phosphat von Phosphokreatin auf ADP",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Export sämtlicher Ketonkörper aus dem Muskel",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Transport von Glucose durch den Darm",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: So wird die initiale peroxisomale Verkürzung erschwert. B: Diese nutzt den LDL-Rezeptor. C: Diese Reaktion katalysiert Kreatinkinase. D: ABCD1 ist kein allgemeiner Ketonkörperexporter. E: Das ist kein ABCD1-vermittelter Prozess. Quelle: Vorlesungsfolien, PDF-S. 13,18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "ABCD1-Defekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ABCD1-Defekt"
+      ],
+      "questionGoal": "ABCD1-Defekt",
+      "structuredExplanation": {
+        "coreIdea": "ABCD1-Defekt",
+        "correctReasoning": "So wird die initiale peroxisomale Verkürzung erschwert.",
+        "wrongAnswerExplanations": {
+          "B": "Diese nutzt den LDL-Rezeptor.",
+          "C": "Diese Reaktion katalysiert Kreatinkinase.",
+          "D": "ABCD1 ist kein allgemeiner Ketonkörperexporter.",
+          "E": "Das ist kein ABCD1-vermittelter Prozess."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q15",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie die Folgen gestörter Carnitinversorgung und β-Oxidation.",
+      "options": [
+        {
+          "text": "Bei einer β-Oxidationsstörung ist die oxidative Energiegewinnung aus Fettsäuren zwangsläufig gesteigert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Akkumulierende Acylgruppen können als Acylcarnitine einen Teil des freien Carnitinpools binden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Defekt der Carnitinaufnahme in Zellen kann einen primären Carnitinmangel verursachen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein erhöhtes Acylcarnitin bedeutet automatisch, dass der gesamte Fettsäureabbau störungsfrei ist.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der blockierte Abbau vermindert die Nutzbarkeit dieser Substrate. B: Dies trägt zum sekundären Mangel bei. C: Die intrazelluläre Verfügbarkeit wird vermindert. D: Bestimmte Muster können gerade auf Abbaustörungen hinweisen. Quelle: Vorlesungsfolien, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Primärer und sekundärer Carnitinmangel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Primärer und sekundärer Carnitinmangel"
+      ],
+      "questionGoal": "Primärer und sekundärer Carnitinmangel",
+      "structuredExplanation": {
+        "coreIdea": "Primärer und sekundärer Carnitinmangel",
+        "correctReasoning": "Dies trägt zum sekundären Mangel bei. Die intrazelluläre Verfügbarkeit wird vermindert.",
+        "wrongAnswerExplanations": {
+          "A": "Der blockierte Abbau vermindert die Nutzbarkeit dieser Substrate.",
+          "B": "Dies trägt zum sekundären Mangel bei.",
+          "C": "Die intrazelluläre Verfügbarkeit wird vermindert.",
+          "D": "Bestimmte Muster können gerade auf Abbaustörungen hinweisen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Im Fasten gelangen vermehrt Fettsäuren zur Leber. Welche Kette erklärt die vermehrte Ketonkörperbereitstellung?",
+      "options": [
+        {
+          "text": "Die Leber importiert Aceton zur Synthese neuer Fettsäuren als obligatorischen ersten Schritt",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Phosphokreatin wird zu β-Hydroxybutyrat phosphoryliert",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Albumin wird direkt in Acetoacetat gespalten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Fettsäuren werden vor der Ketogenese vollständig in Glucose umgewandelt",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Fettsäureoxidation liefert Acetyl-CoA, aus dem mitochondrial Ketonkörper gebildet werden.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ketogenese beginnt mit Acetyl-CoA, nicht Acetonimport. B: Phosphokreatin ist kein Zwischenprodukt der Ketogenese. C: Albumin ist ein Transportprotein und kein direkter Ketonkörpervorläufer. D: Geradzahlige Fettsäuren liefern primär Acetyl-CoA. E: Dies verbindet Fettmobilisierung mit exportierbarer Energie. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Ketogenese im Fasten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ketogenese im Fasten"
+      ],
+      "questionGoal": "Ketogenese im Fasten",
+      "structuredExplanation": {
+        "coreIdea": "Ketogenese im Fasten",
+        "correctReasoning": "Dies verbindet Fettmobilisierung mit exportierbarer Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Ketogenese beginnt mit Acetyl-CoA, nicht Acetonimport.",
+          "B": "Phosphokreatin ist kein Zwischenprodukt der Ketogenese.",
+          "C": "Albumin ist ein Transportprotein und kein direkter Ketonkörpervorläufer.",
+          "D": "Geradzahlige Fettsäuren liefern primär Acetyl-CoA."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie die Rolle von Ketonkörpern als Energieträger.",
+      "options": [
+        {
+          "text": "Acetoacetat und β-Hydroxybutyrat sind metabolisch miteinander verknüpft.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Herzmuskel kann Ketonkörper in Acetyl-CoA überführen und oxidativ verwerten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Ketonkörperverwertung ersetzt die gesamte Atmungskette durch anaerobe Lactatbildung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ketonkörper können Energie aus der Leber für extrahepatische Gewebe verfügbar machen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Umwandlung ist redoxabhängig. B: Dies stellt eine zusätzliche Substratquelle dar. C: Ihre oxidative Nutzung benötigt mitochondriale Energiegewinnung. D: Sie transportieren indirekt aus Fettsäuren gewonnene Kohlenstoffenergie. Quelle: Vorlesungsfolien, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Ketonkörper nutzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ketonkörper nutzen"
+      ],
+      "questionGoal": "Ketonkörper nutzen",
+      "structuredExplanation": {
+        "coreIdea": "Ketonkörper nutzen",
+        "correctReasoning": "Ihre Umwandlung ist redoxabhängig. Dies stellt eine zusätzliche Substratquelle dar. Sie transportieren indirekt aus Fettsäuren gewonnene Kohlenstoffenergie.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Umwandlung ist redoxabhängig.",
+          "B": "Dies stellt eine zusätzliche Substratquelle dar.",
+          "C": "Ihre oxidative Nutzung benötigt mitochondriale Energiegewinnung.",
+          "D": "Sie transportieren indirekt aus Fettsäuren gewonnene Kohlenstoffenergie."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Der ATP-Verbrauch einer Muskelzelle steigt abrupt. Welche Reaktion kann ATP unmittelbar nachliefern?",
+      "options": [
+        {
+          "text": "Lactat + CO₂ zu Phosphokreatin",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cholesterin + ADP zu Kreatin + ATP",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kreatin + ATP zu Phosphokreatin + ADP",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Phosphokreatin + ADP zu Kreatin + ATP",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Acetyl-CoA + Carnitin zu Acylcarnitin + ATP",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist keine Reaktion des Kreatinphosphatpuffers. B: Cholesterin stellt kein Phosphat für diese Reaktion bereit. C: Diese Richtung speichert Energie und verbraucht ATP. D: Kreatinkinase überträgt das energiereiche Phosphat. E: Der Carnitintransfer ist keine solche ATP-Bildungsreaktion. Quelle: Vorlesungsfolien, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Phosphokreatinpuffer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphokreatinpuffer"
+      ],
+      "questionGoal": "Phosphokreatinpuffer",
+      "structuredExplanation": {
+        "coreIdea": "Phosphokreatinpuffer",
+        "correctReasoning": "Kreatinkinase überträgt das energiereiche Phosphat.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist keine Reaktion des Kreatinphosphatpuffers.",
+          "B": "Cholesterin stellt kein Phosphat für diese Reaktion bereit.",
+          "C": "Diese Richtung speichert Energie und verbraucht ATP.",
+          "E": "Der Carnitintransfer ist keine solche ATP-Bildungsreaktion."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Beurteilen Sie die Rolle von Kreatinphosphat und Kreatinkinase.",
+      "options": [
+        {
+          "text": "Phosphokreatin überbrückt einen kurzfristig erhöhten ATP-Bedarf.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Kreatinkinase bildet ATP ohne Verbrauch eines energiereichen Reaktionspartners.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Serumenzymanstieg misst unmittelbar die Höhe des intrazellulären ATP-Vorrats.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Phosphokreatinvorrat kann eine unbegrenzt lange oxidative Energiegewinnung ersetzen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es ist ein rasch verfügbarer Phosphatpuffer. B: Phosphokreatin liefert die übertragene Phosphatgruppe. C: Enzymfreisetzung und zellulärer Energiestatus sind verschiedene Messaspekte. D: Der Vorrat ist begrenzt und muss regeneriert werden. Quelle: Vorlesungsfolien, PDF-S. 19–21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Energiepuffer und Marker"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiepuffer und Marker"
+      ],
+      "questionGoal": "Energiepuffer und Marker",
+      "structuredExplanation": {
+        "coreIdea": "Energiepuffer und Marker",
+        "correctReasoning": "Es ist ein rasch verfügbarer Phosphatpuffer.",
+        "wrongAnswerExplanations": {
+          "A": "Es ist ein rasch verfügbarer Phosphatpuffer.",
+          "B": "Phosphokreatin liefert die übertragene Phosphatgruppe.",
+          "C": "Enzymfreisetzung und zellulärer Energiestatus sind verschiedene Messaspekte.",
+          "D": "Der Vorrat ist begrenzt und muss regeneriert werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv16_q20",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV16",
+      "stem": "Warum ist Muskelgewebe für seinen Kreatinpool wesentlich auf Aufnahme aus dem Blut angewiesen?",
+      "options": [
+        {
+          "text": "Kreatin ist identisch mit dem im Muskel neu gebildeten Lactat",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kreatin entsteht ausschliesslich im Darmlumen durch Hydrolyse von Cholesterin",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Kreatinbiosynthese erfolgt vorwiegend in anderen Organen und Kreatin wird zum Muskel transportiert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Muskelzellen können Kreatin grundsätzlich nicht durch Membranen aufnehmen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede Kreatinkinasereaktion erzeugt aus ATP ein neues Kreatin-Kohlenstoffgerüst",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es sind unterschiedliche Moleküle und Stoffwechselwege. B: Dies beschreibt keinen menschlichen Kreatinsyntheseweg. C: Die Folien zeigen eine organübergreifende Synthese und Versorgung. D: Gerade die Aufnahme aus dem Blut versorgt den Muskel. E: Sie überträgt Phosphat und synthetisiert nicht das Kohlenstoffgerüst. Quelle: Vorlesungsfolien, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV16",
+        "Kreatinbiosynthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kreatinbiosynthese"
+      ],
+      "questionGoal": "Kreatinbiosynthese",
+      "structuredExplanation": {
+        "coreIdea": "Kreatinbiosynthese",
+        "correctReasoning": "Die Folien zeigen eine organübergreifende Synthese und Versorgung.",
+        "wrongAnswerExplanations": {
+          "A": "Es sind unterschiedliche Moleküle und Stoffwechselwege.",
+          "B": "Dies beschreibt keinen menschlichen Kreatinsyntheseweg.",
+          "D": "Gerade die Aufnahme aus dem Blut versorgt den Muskel.",
+          "E": "Sie überträgt Phosphat und synthetisiert nicht das Kohlenstoffgerüst."
+        }
+      }
+    }
+  ]
+}
