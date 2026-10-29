@@ -1,0 +1,1301 @@
+{
+  "id": "assessment_j2_block1_kv18_19_20261029",
+  "lectureCode": "KV18/19",
+  "title": "Hydrostatik und Hydrodynamik",
+  "block": "J2 Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "KV Hydrodynamik.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Kursbezeichnung KV18/19, Foliensatz abweichend KVP16/17. Rechenfehler auf PDF-S.27 korrigiert: 30% statt behaupteten 33% beim dort gezeichneten Bypassmodell. Fehlerhaften Dichtewert Eisen/Stahl nicht übernommen. Hydrostatische Vorzeichen nur mit eindeutig definierter Tiefe; Atmosphärenmodell als idealisiert gekennzeichnet. Blut ist real nicht überall als Newtonsches Fluid im starren Rohr modellierbar.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Dichte, Druck und hydrostatische Höhenabhängigkeit anwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Barometrische Höhenabhängigkeit kompressibler Gase erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Osmotischen Druck und Osmolarität bei angegebenen Modellannahmen bestimmen."
+    },
+    {
+      "id": "lo4",
+      "text": "Kontinuität und Bernoulli-Gleichung für ideale Strömung anwenden."
+    },
+    {
+      "id": "lo5",
+      "text": "Viskosität und Stokes-Sedimentation erklären."
+    },
+    {
+      "id": "lo6",
+      "text": "Poiseuille-Widerstände in Reihen- und Parallelschaltungen berechnen."
+    },
+    {
+      "id": "lo7",
+      "text": "Gültigkeitsgrenzen und Reynolds-Zahl interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv18_19_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Eine Flüssigkeit hat die Dichte 1,05 g/cm³. Welcher SI-Wert ist äquivalent?",
+      "options": [
+        {
+          "text": "1050 kg/m³",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "105 kg/m³",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1050000 kg/m³",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1,05 kg/m³",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,00105 kg/m³",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein g/cm³ entspricht 1000 kg/m³. B: Der Umrechnungsfaktor ist um zehn zu klein. C: Der Faktor ist um tausend zu gross. D: Die Volumen- und Massenumrechnung fehlt. E: Dies kehrt die Grössenordnung um. Quelle: Vorlesungsfolien, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Dichte umrechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dichte umrechnen"
+      ],
+      "questionGoal": "Dichte umrechnen",
+      "structuredExplanation": {
+        "coreIdea": "Dichte umrechnen",
+        "correctReasoning": "Ein g/cm³ entspricht 1000 kg/m³.",
+        "wrongAnswerExplanations": {
+          "B": "Der Umrechnungsfaktor ist um zehn zu klein.",
+          "C": "Der Faktor ist um tausend zu gross.",
+          "D": "Die Volumen- und Massenumrechnung fehlt.",
+          "E": "Dies kehrt die Grössenordnung um."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Bei unveränderter Normalkraft wird die belastete Fläche halbiert. Wie verändert sich der mittlere Druck?",
+      "options": [
+        {
+          "text": "Er halbiert sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er sinkt auf ein Viertel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies vertauscht die Proportionalität. B: Hier gilt keine quadratische Flächenabhängigkeit von p. C: p=F/A ist invers zur Fläche. D: Nur die Kraft, nicht die Fläche bleibt gleich. E: Dies widerspricht dem Quotienten F/A. Quelle: Vorlesungsfolien, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Kraft pro Fläche"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kraft pro Fläche"
+      ],
+      "questionGoal": "Kraft pro Fläche",
+      "structuredExplanation": {
+        "coreIdea": "Kraft pro Fläche",
+        "correctReasoning": "p=F/A ist invers zur Fläche.",
+        "wrongAnswerExplanations": {
+          "A": "Dies vertauscht die Proportionalität.",
+          "B": "Hier gilt keine quadratische Flächenabhängigkeit von p.",
+          "D": "Nur die Kraft, nicht die Fläche bleibt gleich.",
+          "E": "Dies widerspricht dem Quotienten F/A."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie ruhende inkompressible Flüssigkeiten bei gleichem Oberflächendruck.",
+      "options": [
+        {
+          "text": "Ein breiteres Gefäss erhöht bei gleicher Füllhöhe zwingend den Druck am Boden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "In gleicher Tiefe herrscht bei gleicher Dichte derselbe Druck.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine dichtere Flüssigkeit erzeugt bei gleicher Tiefe einen höheren Zusatzdruck.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Druck wirkt an einem Punkt in alle Richtungen gleich.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Gefässbreite steht nicht in ρgh. B: Der hydrostatische Zusatz ist ρgh. C: Der Zusatzdruck ist proportional zur Dichte. D: Das bezeichnet die Isotropie. Quelle: Vorlesungsfolien, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Hydrostatische Isotropie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrostatische Isotropie"
+      ],
+      "questionGoal": "Hydrostatische Isotropie",
+      "structuredExplanation": {
+        "coreIdea": "Hydrostatische Isotropie",
+        "correctReasoning": "Der hydrostatische Zusatz ist ρgh. Der Zusatzdruck ist proportional zur Dichte. Das bezeichnet die Isotropie.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gefässbreite steht nicht in ρgh.",
+          "B": "Der hydrostatische Zusatz ist ρgh.",
+          "C": "Der Zusatzdruck ist proportional zur Dichte.",
+          "D": "Das bezeichnet die Isotropie."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Ein Messpunkt liegt 0,50 m unter einer freien Wasseroberfläche. Mit ρ=1000 kg/m³ und g=10 m/s²: Wie gross ist der zusätzliche hydrostatische Druck?",
+      "options": [
+        {
+          "text": "20000 Pa",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "500 Pa",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "105000 Pa als Zusatzdruck",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "50 Pa",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5000 Pa",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser Wert folgt nicht aus der vorgegebenen Höhe. B: Das ist um den Faktor zehn zu klein. C: Atmosphärendruck wäre zum Zusatzdruck zu addieren, nicht darin enthalten. D: Das ist um den Faktor hundert zu klein. E: 1000×10×0,50=5000 Pa. Quelle: Vorlesungsfolien, PDF-S. 7,13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Hydrostatischer Zusatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrostatischer Zusatz"
+      ],
+      "questionGoal": "Hydrostatischer Zusatz",
+      "structuredExplanation": {
+        "coreIdea": "Hydrostatischer Zusatz",
+        "correctReasoning": "1000×10×0,50=5000 Pa.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser Wert folgt nicht aus der vorgegebenen Höhe.",
+          "B": "Das ist um den Faktor zehn zu klein.",
+          "C": "Atmosphärendruck wäre zum Zusatzdruck zu addieren, nicht darin enthalten.",
+          "D": "Das ist um den Faktor hundert zu klein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie das idealisierte isotherme Höhenmodell p(h)=p₀·exp(−h/H).",
+      "options": [
+        {
+          "text": "Eine konstante Luftdichte in jeder Höhe ist Voraussetzung dieses Exponentialverlaufs.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei h=H beträgt der Druck p₀/e.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Abnahme ist in diesem Modell linear mit der Höhe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei h=2H ist der Druck exakt null.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die kompressible Luftdichte nimmt im Modell mit ab. B: Dies folgt direkt aus exp(−1). C: Die Funktion ist exponentiell. D: Er beträgt p₀·exp(−2) und bleibt positiv. Quelle: Vorlesungsfolien, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Atmosphäre"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atmosphäre"
+      ],
+      "questionGoal": "Atmosphäre",
+      "structuredExplanation": {
+        "coreIdea": "Atmosphäre",
+        "correctReasoning": "Dies folgt direkt aus exp(−1).",
+        "wrongAnswerExplanations": {
+          "A": "Die kompressible Luftdichte nimmt im Modell mit ab.",
+          "B": "Dies folgt direkt aus exp(−1).",
+          "C": "Die Funktion ist exponentiell.",
+          "D": "Er beträgt p₀·exp(−2) und bleibt positiv."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Eine ideale 0,10-mol/l-NaCl-Lösung dissoziiert vollständig. Welche Osmolarität folgt, wenn beide Ionen osmotisch wirksam sind?",
+      "options": [
+        {
+          "text": "0,20 Osm/l",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "2,0 Osm/l",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,05 Osm/l",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,30 Osm/l",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,10 Osm/l",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein NaCl liefert zwei Teilchen. B: Die Ausgangskonzentration wird um zehn zu hoch eingesetzt. C: Der Dissoziationsfaktor wird fälschlich dividiert. D: Drei Teilchen entsprächen beispielsweise idealisiert CaCl₂. E: Dies berücksichtigt nur ein Teilchen pro Formeleinheit. Quelle: Vorlesungsfolien, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Teilchenzahl bei Osmose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Teilchenzahl bei Osmose"
+      ],
+      "questionGoal": "Teilchenzahl bei Osmose",
+      "structuredExplanation": {
+        "coreIdea": "Teilchenzahl bei Osmose",
+        "correctReasoning": "Ein NaCl liefert zwei Teilchen.",
+        "wrongAnswerExplanations": {
+          "B": "Die Ausgangskonzentration wird um zehn zu hoch eingesetzt.",
+          "C": "Der Dissoziationsfaktor wird fälschlich dividiert.",
+          "D": "Drei Teilchen entsprächen beispielsweise idealisiert CaCl₂.",
+          "E": "Dies berücksichtigt nur ein Teilchen pro Formeleinheit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie den osmotischen Druck an einer ideal semipermeablen Membran.",
+      "options": [
+        {
+          "text": "Gleiche Stoffmengenkonzentrationen von ideal dissoziiertem NaCl und Glucose sind zwingend isoosmolar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die molare Masse allein bestimmt den osmotischen Druck einer ideal verdünnten Lösung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleichem wirksamem Teilchenkonzentrationsunterschied erhöht eine höhere absolute Temperatur den osmotischen Druck.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein frei permeabler Stoff erzeugt im Gleichgewicht keinen dauerhaft wirksamen Konzentrationsunterschied über diese Membran.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: NaCl liefert im Modell zwei, Glucose ein Teilchen pro Molekül. B: Entscheidend sind wirksame Teilchenzahl und Temperatur. C: Im Idealmodell gilt Δπ=RT·Δc. D: Seine Verteilung gleicht sich an. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Wirksame Osmolarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wirksame Osmolarität"
+      ],
+      "questionGoal": "Wirksame Osmolarität",
+      "structuredExplanation": {
+        "coreIdea": "Wirksame Osmolarität",
+        "correctReasoning": "Im Idealmodell gilt Δπ=RT·Δc. Seine Verteilung gleicht sich an.",
+        "wrongAnswerExplanations": {
+          "A": "NaCl liefert im Modell zwei, Glucose ein Teilchen pro Molekül.",
+          "B": "Entscheidend sind wirksame Teilchenzahl und Temperatur.",
+          "C": "Im Idealmodell gilt Δπ=RT·Δc.",
+          "D": "Seine Verteilung gleicht sich an."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "In einer Pfeffer-Zelle hält eine 0,20-m-Wassersäule den osmotischen Einstrom gerade auf. Mit ρ=1000 kg/m³ und g=10 m/s²: Welcher osmotische Druck liegt vor?",
+      "options": [
+        {
+          "text": "20 Pa",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2000 Pa",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "5000 Pa",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0 Pa",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "200 Pa",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Dichtefaktor wird falsch umgesetzt. B: Im Gleichgewicht entspricht Δπ dem hydrostatischen Druck ρgh. C: Dieser Wert entspricht einer anderen Säulenhöhe. D: Die vorhandene Säule gleicht gerade einen osmotischen Druck aus. E: Die Höheneinsetzung ist um zehn zu klein. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Pfeffer-Zelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pfeffer-Zelle"
+      ],
+      "questionGoal": "Pfeffer-Zelle",
+      "structuredExplanation": {
+        "coreIdea": "Pfeffer-Zelle",
+        "correctReasoning": "Im Gleichgewicht entspricht Δπ dem hydrostatischen Druck ρgh.",
+        "wrongAnswerExplanations": {
+          "A": "Der Dichtefaktor wird falsch umgesetzt.",
+          "C": "Dieser Wert entspricht einer anderen Säulenhöhe.",
+          "D": "Die vorhandene Säule gleicht gerade einen osmotischen Druck aus.",
+          "E": "Die Höheneinsetzung ist um zehn zu klein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Ein inkompressibles Fluid strömt stationär durch ein dichtes Rohr. Der Querschnitt sinkt auf ein Viertel. Wie ändert sich bei vorgegebenem unverändertem Volumenstrom die mittlere Geschwindigkeit?",
+      "options": [
+        {
+          "text": "Sie bleibt unverändert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie vervierfacht sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sie sinkt auf ein Viertel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie halbiert sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das würde einen kleineren Volumenstrom bedeuten. B: Das wäre bei Halbierung der Fläche zu erwarten. C: Aus Q=A·v folgt v₂/v₁=A₁/A₂=4. D: Die Flächenabhängigkeit ist invers. E: Bei kleinerer Fläche muss v bei gleichem Q steigen. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Kontinuität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kontinuität"
+      ],
+      "questionGoal": "Kontinuität",
+      "structuredExplanation": {
+        "coreIdea": "Kontinuität",
+        "correctReasoning": "Aus Q=A·v folgt v₂/v₁=A₁/A₂=4.",
+        "wrongAnswerExplanations": {
+          "A": "Das würde einen kleineren Volumenstrom bedeuten.",
+          "B": "Das wäre bei Halbierung der Fläche zu erwarten.",
+          "D": "Die Flächenabhängigkeit ist invers.",
+          "E": "Bei kleinerer Fläche muss v bei gleichem Q steigen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie stationäre inkompressible Strömung ohne seitliche Abflüsse.",
+      "options": [
+        {
+          "text": "Massenerhaltung und Volumenerhaltung sind bei gleicher Dichte miteinander vereinbar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei unverändertem Q steigt dann die mittlere Geschwindigkeit auf das Vierfache.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei halbiertem Rohrradius ist die Querschnittsfläche geviertelt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Kontinuitätsgleichung legt allein fest, welcher Gesamtfluss sich bei festem Druckgefälle einstellt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Qm=ρQv. B: Q=A·v bleibt konstant. C: A=πr². D: Dafür braucht es zusätzlich eine Widerstandsbeziehung. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Radius und Geschwindigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Radius und Geschwindigkeit"
+      ],
+      "questionGoal": "Radius und Geschwindigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Radius und Geschwindigkeit",
+        "correctReasoning": "Qm=ρQv. Q=A·v bleibt konstant. A=πr².",
+        "wrongAnswerExplanations": {
+          "A": "Qm=ρQv.",
+          "B": "Q=A·v bleibt konstant.",
+          "C": "A=πr².",
+          "D": "Dafür braucht es zusätzlich eine Widerstandsbeziehung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Eine ideale reibungsfreie stationäre Strömung verengt sich auf gleicher Höhe. Wie verändert sich der statische Druck dort bei höherer Geschwindigkeit?",
+      "options": [
+        {
+          "text": "Er ist durch die Viskosität allein festgelegt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er muss gleich bleiben, weil die Höhe gleich ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er steigt um denselben Betrag wie der dynamische Anteil.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er sinkt, weil der dynamische Druckanteil steigt.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Er wird unabhängig von den Ausgangswerten immer null.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Im idealisierten Modell wird Reibung gerade vernachlässigt. B: Der Geschwindigkeitsanteil verändert sich ebenfalls. C: Das widerspräche der konstanten Summe. D: p+ρv²/2 bleibt bei gleicher Höhe konstant. E: Eine Verengung erzwingt keinen absoluten Nulldruck. Quelle: Vorlesungsfolien, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Bernoulli an Engstelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bernoulli an Engstelle"
+      ],
+      "questionGoal": "Bernoulli an Engstelle",
+      "structuredExplanation": {
+        "coreIdea": "Bernoulli an Engstelle",
+        "correctReasoning": "p+ρv²/2 bleibt bei gleicher Höhe konstant.",
+        "wrongAnswerExplanations": {
+          "A": "Im idealisierten Modell wird Reibung gerade vernachlässigt.",
+          "B": "Der Geschwindigkeitsanteil verändert sich ebenfalls.",
+          "C": "Das widerspräche der konstanten Summe.",
+          "E": "Eine Verengung erzwingt keinen absoluten Nulldruck."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie die ideale Bernoulli-Betrachtung entlang einer Stromlinie ohne Pumpe zwischen den Messorten.",
+      "options": [
+        {
+          "text": "Bei ruhender Flüssigkeit auf gleicher Höhe können beliebige Druckunterschiede dauerhaft ohne weitere Kräfte bestehen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Anstieg der Geschwindigkeit erzeugt zusätzliche Gesamtenergie aus dem Nichts.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Statischer Druck, ρgh und ρv²/2 haben jeweils die Einheit eines Drucks.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Gleichung berücksichtigt ohne Zusatzterm sämtliche viskosen Verluste eines realen Gefässes.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im verbundenen ruhenden Fluid gleicht sich der Druck auf gleicher Höhe aus. B: Die Beiträge werden ineinander umgewandelt. C: Alle Terme sind Energiedichten. D: Dissipation erfordert eine erweiterte Bilanz. Quelle: Vorlesungsfolien, PDF-S. 18–21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Energiebeiträge der Strömung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiebeiträge der Strömung"
+      ],
+      "questionGoal": "Energiebeiträge der Strömung",
+      "structuredExplanation": {
+        "coreIdea": "Energiebeiträge der Strömung",
+        "correctReasoning": "Alle Terme sind Energiedichten.",
+        "wrongAnswerExplanations": {
+          "A": "Im verbundenen ruhenden Fluid gleicht sich der Druck auf gleicher Höhe aus.",
+          "B": "Die Beiträge werden ineinander umgewandelt.",
+          "C": "Alle Terme sind Energiedichten.",
+          "D": "Dissipation erfordert eine erweiterte Bilanz."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Für zwei parallele Platten gilt F=ηAv/ℓ. Was geschieht beim Halbieren des Plattenabstands bei konstantem η, A und v?",
+      "options": [
+        {
+          "text": "Die Kraft wird allein durch die Fluiddichte bestimmt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Kraft vervierfacht sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Kraft halbiert sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die erforderliche Kraft verdoppelt sich.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Kraft bleibt gleich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: In dieser Gleichung bestimmt η den viskosen Anteil. B: Hier gilt eine lineare inverse Abhängigkeit von ℓ. C: Der Abstand steht im Nenner. D: Der Geschwindigkeitsgradient v/ℓ verdoppelt sich. E: Der veränderte Gradient beeinflusst die Scherkraft. Quelle: Vorlesungsfolien, PDF-S. 21–22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Viskose Scherung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Viskose Scherung"
+      ],
+      "questionGoal": "Viskose Scherung",
+      "structuredExplanation": {
+        "coreIdea": "Viskose Scherung",
+        "correctReasoning": "Der Geschwindigkeitsgradient v/ℓ verdoppelt sich.",
+        "wrongAnswerExplanations": {
+          "A": "In dieser Gleichung bestimmt η den viskosen Anteil.",
+          "B": "Hier gilt eine lineare inverse Abhängigkeit von ℓ.",
+          "C": "Der Abstand steht im Nenner.",
+          "E": "Der veränderte Gradient beeinflusst die Scherkraft."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Eine kleine Kugel sedimentiert im Stokes-Bereich mit Endgeschwindigkeit v. Wie ändert sich diese bei doppeltem Radius und unveränderter Dichtedifferenz und Viskosität?",
+      "options": [
+        {
+          "text": "Sie steigt auf 4v.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie bleibt bei v.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie sinkt auf v/2.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie steigt auf 2v.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie sinkt auf v/4.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Stokes-Endgeschwindigkeit ist proportional zu r². B: Gewicht, Auftrieb und Reibung ändern ihre Bilanz mit dem Radius. C: Ein grösserer Radius erhöht hier die Sedimentationsgeschwindigkeit. D: Dies berücksichtigt nicht die quadratische Radiusabhängigkeit. E: Die Richtung der Radiusabhängigkeit ist vertauscht. Quelle: Vorlesungsfolien, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Sedimentationsradius"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sedimentationsradius"
+      ],
+      "questionGoal": "Sedimentationsradius",
+      "structuredExplanation": {
+        "coreIdea": "Sedimentationsradius",
+        "correctReasoning": "Die Stokes-Endgeschwindigkeit ist proportional zu r².",
+        "wrongAnswerExplanations": {
+          "B": "Gewicht, Auftrieb und Reibung ändern ihre Bilanz mit dem Radius.",
+          "C": "Ein grösserer Radius erhöht hier die Sedimentationsgeschwindigkeit.",
+          "D": "Dies berücksichtigt nicht die quadratische Radiusabhängigkeit.",
+          "E": "Die Richtung der Radiusabhängigkeit ist vertauscht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie eine dichtere kleine Kugel bei erreichter Stokes-Endgeschwindigkeit.",
+      "options": [
+        {
+          "text": "Gewichtskraft wird durch Auftrieb und viskose Reibung zusammen ausgeglichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine höhere Viskosität senkt bei gleichem Radius die Endgeschwindigkeit.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Auftrieb und Gewichtskraft müssen einzeln gleich gross sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Konstante Geschwindigkeit beweist das Fehlen von Reibung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die resultierende Kraft ist null. B: v ist invers proportional zu η. C: Bei sinkender Kugel trägt die Reibung den verbleibenden Anteil. D: Reibung ist Teil des Kräftegleichgewichts. Quelle: Vorlesungsfolien, PDF-S. 22–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Kräfte beim Sedimentieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kräfte beim Sedimentieren"
+      ],
+      "questionGoal": "Kräfte beim Sedimentieren",
+      "structuredExplanation": {
+        "coreIdea": "Kräfte beim Sedimentieren",
+        "correctReasoning": "Die resultierende Kraft ist null. v ist invers proportional zu η.",
+        "wrongAnswerExplanations": {
+          "A": "Die resultierende Kraft ist null.",
+          "B": "v ist invers proportional zu η.",
+          "C": "Bei sinkender Kugel trägt die Reibung den verbleibenden Anteil.",
+          "D": "Reibung ist Teil des Kräftegleichgewichts."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Ein langes starres Rohr wird über seine gesamte Länge auf den halben Radius verengt. Bei gleicher Druckdifferenz, Länge und Viskosität gilt Poiseuille. Welcher Fluss bleibt?",
+      "options": [
+        {
+          "text": "1/16 des Ausgangsflusses",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "1/2 des Ausgangsflusses",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1/4 des Ausgangsflusses",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1/8 des Ausgangsflusses",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Vierfache des Ausgangsflusses",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Q ist proportional zu r⁴. B: Dies wäre eine lineare Radiusabhängigkeit. C: Dies verwechselt Fläche und Poiseuille-Fluss. D: Der Exponent beträgt vier. E: Die Verengung erhöht bei festem Δp den Widerstand. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Radius-vierte-Potenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Radius-vierte-Potenz"
+      ],
+      "questionGoal": "Radius-vierte-Potenz",
+      "structuredExplanation": {
+        "coreIdea": "Radius-vierte-Potenz",
+        "correctReasoning": "Q ist proportional zu r⁴.",
+        "wrongAnswerExplanations": {
+          "B": "Dies wäre eine lineare Radiusabhängigkeit.",
+          "C": "Dies verwechselt Fläche und Poiseuille-Fluss.",
+          "D": "Der Exponent beträgt vier.",
+          "E": "Die Verengung erhöht bei festem Δp den Widerstand."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Ein Drittel eines ursprünglich einheitlichen Rohres erhält halben Radius. Die übrigen zwei Drittel bleiben unverändert. Wie ändert sich der Gesamtwiderstand im Poiseuille-Modell?",
+      "options": [
+        {
+          "text": "Er sinkt auf ein Sechstel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er steigt auf das Zweifache.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er steigt auf das Sechzehnfache.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er steigt auf das Sechsfache.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Flussänderung wurde mit dem Widerstandsverhältnis verwechselt. B: Serienwiderstände addieren sich. C: Dies unterschätzt die r⁴-Wirkung im verengten Drittel. D: Dies gälte bei Verengung der gesamten Länge. E: Rneu/Ralt=2/3+(1/3)×16=6. Quelle: Vorlesungsfolien, PDF-S. 25–26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Lokale Stenose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lokale Stenose"
+      ],
+      "questionGoal": "Lokale Stenose",
+      "structuredExplanation": {
+        "coreIdea": "Lokale Stenose",
+        "correctReasoning": "Rneu/Ralt=2/3+(1/3)×16=6.",
+        "wrongAnswerExplanations": {
+          "A": "Die Flussänderung wurde mit dem Widerstandsverhältnis verwechselt.",
+          "B": "Serienwiderstände addieren sich.",
+          "C": "Dies unterschätzt die r⁴-Wirkung im verengten Drittel.",
+          "D": "Dies gälte bei Verengung der gesamten Länge."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q18",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Im vorigen Modell wird nur das verengte Drittel durch einen zweiten identischen Halb-Radius-Kanal parallel ergänzt. Die übrigen Abschnitte bleiben in Serie. Welcher Anteil des ursprünglichen ungestörten Flusses folgt bei gleichem Δp?",
+      "options": [
+        {
+          "text": "16,7 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "100 %",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "30 %",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "33,3 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "50 %",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist der Fluss ohne zusätzlichen Parallelkanal. B: Zwei Halb-Radius-Kanäle ersetzen keinen ursprünglichen Voll-Radius-Kanal. C: Rneu/Ralt=2/3+16/6=10/3; Qneu/Qalt=3/10. D: Dies vernachlässigt den Serienanteil beziehungsweise rundet die Widerstandsrechnung falsch. E: Nur der verengte Teilwiderstand halbiert sich, nicht der gesamte Widerstand. Quelle: Vorlesungsfolien, PDF-S. 26–27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Bypass nachrechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bypass nachrechnen"
+      ],
+      "questionGoal": "Bypass nachrechnen",
+      "structuredExplanation": {
+        "coreIdea": "Bypass nachrechnen",
+        "correctReasoning": "Rneu/Ralt=2/3+16/6=10/3; Qneu/Qalt=3/10.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist der Fluss ohne zusätzlichen Parallelkanal.",
+          "B": "Zwei Halb-Radius-Kanäle ersetzen keinen ursprünglichen Voll-Radius-Kanal.",
+          "D": "Dies vernachlässigt den Serienanteil beziehungsweise rundet die Widerstandsrechnung falsch.",
+          "E": "Nur der verengte Teilwiderstand halbiert sich, nicht der gesamte Widerstand."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Für ein Rohr sei Re=ρdv/η mit dem Durchmesser d definiert. Beurteilen Sie isolierte Änderungen.",
+      "options": [
+        {
+          "text": "Re ist dimensionslos.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine grössere Reynolds-Zahl ist im Rohr generell ein Hinweis auf stärkere Dominanz viskoser gegenüber trägen Kräften.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verdopplung von η halbiert Re.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verdopplung von v verdoppelt Re.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Einheiten kürzen sich heraus. B: Re beschreibt das Verhältnis von Trägheit zu viskosen Kräften. C: Die Viskosität steht im Nenner. D: Die Geschwindigkeit geht linear ein. Quelle: Vorlesungsfolien, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Reynolds-Zahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reynolds-Zahl"
+      ],
+      "questionGoal": "Reynolds-Zahl",
+      "structuredExplanation": {
+        "coreIdea": "Reynolds-Zahl",
+        "correctReasoning": "Die Einheiten kürzen sich heraus. Die Viskosität steht im Nenner. Die Geschwindigkeit geht linear ein.",
+        "wrongAnswerExplanations": {
+          "A": "Die Einheiten kürzen sich heraus.",
+          "B": "Re beschreibt das Verhältnis von Trägheit zu viskosen Kräften.",
+          "C": "Die Viskosität steht im Nenner.",
+          "D": "Die Geschwindigkeit geht linear ein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv18_19_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV18/19",
+      "stem": "Beurteilen Sie die Übertragung der Strömungsmodelle auf eine Gefässverengung.",
+      "options": [
+        {
+          "text": "Die Aussage «lokal schneller» beweist unter beliebigen Randbedingungen einen erhöhten Gesamtfluss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei vorgegebenem Δp kann die Verengung wegen des höheren Widerstands den Gesamtfluss vermindern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Poiseuille ist ohne Einschränkung für turbulentes pulsierendes Blut in jedem elastischen Gefäss exakt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei vorgegebenem Q erhöht die Verengung nach Kontinuität die lokale Geschwindigkeit.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Geschwindigkeit und Gesamtfluss sind verschiedene Grössen. B: Das ist die Poiseuille-Betrachtung unter anderen Randbedingungen. C: Das Gesetz setzt idealisierte laminare stationäre Rohrbedingungen voraus. D: Die kleinere Fläche muss denselben Fluss führen. Quelle: Vorlesungsfolien, PDF-S. 17,21,24,28–30.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV18/19",
+        "Annahmen auseinanderhalten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Annahmen auseinanderhalten"
+      ],
+      "questionGoal": "Annahmen auseinanderhalten",
+      "structuredExplanation": {
+        "coreIdea": "Annahmen auseinanderhalten",
+        "correctReasoning": "Das ist die Poiseuille-Betrachtung unter anderen Randbedingungen. Die kleinere Fläche muss denselben Fluss führen.",
+        "wrongAnswerExplanations": {
+          "A": "Geschwindigkeit und Gesamtfluss sind verschiedene Grössen.",
+          "B": "Das ist die Poiseuille-Betrachtung unter anderen Randbedingungen.",
+          "C": "Das Gesetz setzt idealisierte laminare stationäre Rohrbedingungen voraus.",
+          "D": "Die kleinere Fläche muss denselben Fluss führen."
+        }
+      }
+    }
+  ]
+}
