@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block1_sv11_20261029",
+  "lectureCode": "SV11",
+  "title": "Kreislauf: Pulswelle, venöser Rückstrom und Mikrozirkulation",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "SV_Kreislauf_WS26-27.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Kurscode SV11 beibehalten; die Titelfolie nennt abweichend SV10, gemeint ist die Kreislaufvorlesung, nicht die ausgeschlossene Echokardiographie-Demo. Historische Hypertonie-Klassifikation AHA1999 nicht abgefragt. Starling-Gleichung korrigiert geklammert, klassische Resorption ausdrücklich als begrenztes Modell behandelt; v-Welle als Vorhoffüllung bei geschlossener AV-Klappe erklärt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Druckverlauf, Pulswelle und arteriellen Mitteldruck interpretieren."
+    },
+    {
+      "id": "lo2",
+      "text": "Hypertonie nach Ursachen und möglichen Organschäden einordnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Muskelpumpe, Atmung und venöse Druckschwankungen erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Koronare Perfusion, Extraktion und Durchblutungsreserve verknüpfen."
+    },
+    {
+      "id": "lo5",
+      "text": "Filtrationskräfte und Ödementstehung im gekennzeichneten Modell beurteilen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_sv11_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Bei gleichem Volumenstrom fällt der mittlere Druck über einem kurzen arteriolären Abschnitt stärker als über einen grossen Arterienabschnitt. Welche Folgerung passt?",
+      "options": [
+        {
+          "text": "Der arterioläre Abschnitt führt zwangsläufig weniger Blut pro Minute.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der arterioläre Abschnitt besitzt den höheren Strömungswiderstand.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein grosser Druckabfall beweist eine hohe Strömungsgeschwindigkeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der grosse Arterienabschnitt hat wegen seines höheren absoluten Drucks den höheren Widerstand.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Druckabfall zeigt eine aktive Pumpleistung der Arteriolen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: In Serie ist der stationäre Volumenstrom gleich. B: Bei gleichem Q gilt R=ΔP/Q. C: Geschwindigkeit und Druckabfall sind unterschiedliche Grössen. D: Für den Widerstand ist der Druckabfall bei gegebenem Fluss entscheidend. E: Arteriolen erzeugen keinen dem Herzen entsprechenden Förderdruck. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Druckabfall und Widerstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druckabfall und Widerstand"
+      ],
+      "questionGoal": "Druckabfall und Widerstand",
+      "structuredExplanation": {
+        "coreIdea": "Druckabfall und Widerstand",
+        "correctReasoning": "Bei gleichem Q gilt R=ΔP/Q.",
+        "wrongAnswerExplanations": {
+          "A": "In Serie ist der stationäre Volumenstrom gleich.",
+          "C": "Geschwindigkeit und Druckabfall sind unterschiedliche Grössen.",
+          "D": "Für den Widerstand ist der Druckabfall bei gegebenem Fluss entscheidend.",
+          "E": "Arteriolen erzeugen keinen dem Herzen entsprechenden Förderdruck."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Ein Drucksignal erreicht die Peripherie deutlich früher als markierte Blutzellen vom gleichen Ausgangsort. Warum ist das möglich?",
+      "options": [
+        {
+          "text": "Markierte Blutzellen werden von allen Arterienklappen zurückgehalten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Druck wird ausschliesslich im lokalen Kapillarbett erzeugt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das periphere Drucksignal entsteht erst nach vollständigem Durchlaufen aller Kapillaren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Druckwelle breitet sich schneller aus als die mittlere Bewegung des Blutes.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Bei jedem Herzschlag wird das gesamte Aortenblut schlagartig bis zum Fuss verschoben.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Periphere Arterien besitzen keine solche allgemeine Klappenreihe. B: Die Welle wird durch den kardialen Auswurf ausgelöst. C: Die arterielle Welle erreicht das Gefäss vor der kapillären Passage. D: Signalgeschwindigkeit und Stofftransportgeschwindigkeit sind verschieden. E: Die Pulswelle ist kein derartiger Transport desselben Blutvolumens. Quelle: Vorlesungsfolien, PDF-S. 5,8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Druckwelle versus Blutstrom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druckwelle versus Blutstrom"
+      ],
+      "questionGoal": "Druckwelle versus Blutstrom",
+      "structuredExplanation": {
+        "coreIdea": "Druckwelle versus Blutstrom",
+        "correctReasoning": "Signalgeschwindigkeit und Stofftransportgeschwindigkeit sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Periphere Arterien besitzen keine solche allgemeine Klappenreihe.",
+          "B": "Die Welle wird durch den kardialen Auswurf ausgelöst.",
+          "C": "Die arterielle Welle erreicht das Gefäss vor der kapillären Passage.",
+          "E": "Die Pulswelle ist kein derartiger Transport desselben Blutvolumens."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Bei normaler Ruhefrequenz werden 135/75 mmHg gemessen. Welcher Mitteldruck folgt näherungsweise aus der Drittelregel?",
+      "options": [
+        {
+          "text": "75 mmHg",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "95 mmHg",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "105 mmHg",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "115 mmHg",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "60 mmHg",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist der diastolische Wert allein. B: 75+(135−75)/3=95 mmHg. C: Das wäre der einfache Mittelwert ohne zeitliche Gewichtung. D: Dies gewichtet den systolischen Anteil zu stark. E: Das ist die Pulsdruckamplitude. Quelle: Vorlesungsfolien, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Mitteldruck berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mitteldruck berechnen"
+      ],
+      "questionGoal": "Mitteldruck berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Mitteldruck berechnen",
+        "correctReasoning": "75+(135−75)/3=95 mmHg.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist der diastolische Wert allein.",
+          "C": "Das wäre der einfache Mittelwert ohne zeitliche Gewichtung.",
+          "D": "Dies gewichtet den systolischen Anteil zu stark.",
+          "E": "Das ist die Pulsdruckamplitude."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beurteilen Sie die Druckwelle im arteriellen Gefässbaum.",
+      "options": [
+        {
+          "text": "Die Pulswellengeschwindigkeit hängt von den elastischen Eigenschaften der Gefässwand ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der systolische Einzelwert ist definitionsgemäss der zeitliche Mitteldruck.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Pulsdruckamplitude kann peripher zunehmen, obwohl der Mitteldruck abnimmt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine höhere Pulswellengeschwindigkeit beweist eine gleich grosse Zunahme der Blutgeschwindigkeit.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Steifere Arterien begünstigen eine schnellere Wellenausbreitung. B: Der Mitteldruck gewichtet den gesamten zeitlichen Druckverlauf. C: Wellenreflexion und Überlagerung beeinflussen den Pulsdruck. D: Wellen- und Strömungsgeschwindigkeit dürfen nicht gleichgesetzt werden. Quelle: Vorlesungsfolien, PDF-S. 5–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Arterielle Wellen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Arterielle Wellen"
+      ],
+      "questionGoal": "Arterielle Wellen",
+      "structuredExplanation": {
+        "coreIdea": "Arterielle Wellen",
+        "correctReasoning": "Steifere Arterien begünstigen eine schnellere Wellenausbreitung. Wellenreflexion und Überlagerung beeinflussen den Pulsdruck.",
+        "wrongAnswerExplanations": {
+          "A": "Steifere Arterien begünstigen eine schnellere Wellenausbreitung.",
+          "B": "Der Mitteldruck gewichtet den gesamten zeitlichen Druckverlauf.",
+          "C": "Wellenreflexion und Überlagerung beeinflussen den Pulsdruck.",
+          "D": "Wellen- und Strömungsgeschwindigkeit dürfen nicht gleichgesetzt werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Eine reflektierte Druckwelle kehrt bei erhöhter arterieller Steifigkeit früher zum Herzen zurück. Welche Wirkung wird dadurch begünstigt?",
+      "options": [
+        {
+          "text": "Eine identische Druckkurve an jeder Stelle des Gefässbaums",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine stärkere Überlagerung mit dem systolischen Druckanstieg",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein zwingender vollständiger Wegfall der systolischen Druckwelle",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Aufhebung des peripheren Strömungswiderstands",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Senkung der Pulswellengeschwindigkeit durch die Steifigkeitszunahme",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Laufzeit und Reflexion verändern die lokale Kurvenform. B: Die frühere Rückkehr kann den systolischen Druck augmentieren. C: Die reflektierte Welle löscht den Auswurf nicht grundsätzlich aus. D: Wellenreflexion beseitigt keinen Gefässwiderstand. E: Steifigkeit erhöht typischerweise die Wellengeschwindigkeit. Quelle: Vorlesungsfolien, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Reflexion und Steifigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reflexion und Steifigkeit"
+      ],
+      "questionGoal": "Reflexion und Steifigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Reflexion und Steifigkeit",
+        "correctReasoning": "Die frühere Rückkehr kann den systolischen Druck augmentieren.",
+        "wrongAnswerExplanations": {
+          "A": "Laufzeit und Reflexion verändern die lokale Kurvenform.",
+          "C": "Die reflektierte Welle löscht den Auswurf nicht grundsätzlich aus.",
+          "D": "Wellenreflexion beseitigt keinen Gefässwiderstand.",
+          "E": "Steifigkeit erhöht typischerweise die Wellengeschwindigkeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Eine persistierende Blutdruckerhöhung wird auf eine nachgewiesene Nebennierenerkrankung zurückgeführt. Welche Einordnung passt am besten?",
+      "options": [
+        {
+          "text": "Essentielle Hypertonie gerade wegen der bekannten Einzelursache",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Isolierte venöse Hypertonie ohne Bezug zum arteriellen Blutdruck",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hypotonie durch Nebennierenhormonüberschuss",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sekundäre Hypertonie aufgrund einer identifizierten Ursache",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Physiologische Pulsdruckverstärkung ohne mögliche Erkrankung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Essentielle Hypertonie hat keine derart eindeutig zugeordnete sekundäre Ursache. B: Die Ausgangslage betrifft den arteriellen Blutdruck. C: Das widerspricht der beschriebenen Blutdruckerhöhung. D: Die Folien nennen hormonelle Erkrankungen als sekundäre Ursache. E: Eine persistierende ursächlich erklärte Erhöhung ist damit nicht beschrieben. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Sekundäre Hypertonie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekundäre Hypertonie"
+      ],
+      "questionGoal": "Sekundäre Hypertonie",
+      "structuredExplanation": {
+        "coreIdea": "Sekundäre Hypertonie",
+        "correctReasoning": "Die Folien nennen hormonelle Erkrankungen als sekundäre Ursache.",
+        "wrongAnswerExplanations": {
+          "A": "Essentielle Hypertonie hat keine derart eindeutig zugeordnete sekundäre Ursache.",
+          "B": "Die Ausgangslage betrifft den arteriellen Blutdruck.",
+          "C": "Das widerspricht der beschriebenen Blutdruckerhöhung.",
+          "E": "Eine persistierende ursächlich erklärte Erhöhung ist damit nicht beschrieben."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beurteilen Sie die Konsequenzen einer langjährigen arteriellen Druckbelastung.",
+      "options": [
+        {
+          "text": "Gefässschäden können auch Niere und Retina betreffen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine erhöhte kardiale Nachlast kann eine linksventrikuläre Hypertrophie fördern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede arterielle Hypertonie beruht auf einer nachweisbaren einzelnen endokrinen Erkrankung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fehlende Beschwerden schliessen eine relevante Hypertonie nicht aus.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Folien nennen diese Organe als mögliche Schadensorte. B: Der Ventrikel arbeitet gegen einen höheren Auswurfdruck. C: Die Mehrzahl wird als essentiell eingeordnet. D: Hypertonie kann lange ohne direkte Symptome bestehen. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Hypertonie und Folgeschäden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hypertonie und Folgeschäden"
+      ],
+      "questionGoal": "Hypertonie und Folgeschäden",
+      "structuredExplanation": {
+        "coreIdea": "Hypertonie und Folgeschäden",
+        "correctReasoning": "Die Folien nennen diese Organe als mögliche Schadensorte. Der Ventrikel arbeitet gegen einen höheren Auswurfdruck. Hypertonie kann lange ohne direkte Symptome bestehen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folien nennen diese Organe als mögliche Schadensorte.",
+          "B": "Der Ventrikel arbeitet gegen einen höheren Auswurfdruck.",
+          "C": "Die Mehrzahl wird als essentiell eingeordnet.",
+          "D": "Hypertonie kann lange ohne direkte Symptome bestehen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beim Gehen komprimiert die Wadenmuskulatur tiefe Venen mit intakten Klappen. Welche Folge erklärt den besseren venösen Rückstrom?",
+      "options": [
+        {
+          "text": "Ein niedriger Venendruck macht äussere Kompression wirkungslos.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Klappen erzeugen unabhängig von Muskelbewegung aktive Druckstösse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Klappen erzwingen bei Kompression den Fluss zum Fuss.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Kompression erhöht ausschliesslich den arteriellen Einstrom.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Kompression treibt Blut vorwiegend herzwärts, während Klappen Rückfluss begrenzen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gerade venöse Niederdruckgefässe reagieren auf äussere Kräfte. B: Klappen sind passive Rückstromsperren. C: Ihre Orientierung unterstützt den Fluss zum Herzen. D: Die beschriebene Wirkung betrifft direkt die Venen. E: Muskel und Klappen wirken gemeinsam als gerichtete Hilfspumpe. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Muskelpumpe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Muskelpumpe"
+      ],
+      "questionGoal": "Muskelpumpe",
+      "structuredExplanation": {
+        "coreIdea": "Muskelpumpe",
+        "correctReasoning": "Muskel und Klappen wirken gemeinsam als gerichtete Hilfspumpe.",
+        "wrongAnswerExplanations": {
+          "A": "Gerade venöse Niederdruckgefässe reagieren auf äussere Kräfte.",
+          "B": "Klappen sind passive Rückstromsperren.",
+          "C": "Ihre Orientierung unterstützt den Fluss zum Herzen.",
+          "D": "Die beschriebene Wirkung betrifft direkt die Venen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beurteilen Sie den venösen Rückstrom bei spontaner Atmung und intakten Klappen.",
+      "options": [
+        {
+          "text": "Ein inspiratorischer Abfall des Thoraxdrucks kann den Zufluss zum rechten Vorhof fördern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Muskelpumpe benötigt zwingend eine aktive Kontraktion der Venenklappen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine spontane Inspiration erhöht den Thoraxdruck und behindert dadurch grundsätzlich den venösen Zustrom.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lange Immobilität steigert die Wadenmuskelpumpe dauerhaft.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Druckgradient aus dem Abdomen zum Thorax kann zunehmen. B: Die Klappen wirken passiv bei wechselnden Druckgradienten. C: Bei spontaner Inspiration sinkt der Thoraxdruck und kann den Zustrom fördern. D: Fehlende Muskelbewegung vermindert ihre Unterstützung. Quelle: Vorlesungsfolien, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Respiratorische Pumpe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Respiratorische Pumpe"
+      ],
+      "questionGoal": "Respiratorische Pumpe",
+      "structuredExplanation": {
+        "coreIdea": "Respiratorische Pumpe",
+        "correctReasoning": "Der Druckgradient aus dem Abdomen zum Thorax kann zunehmen.",
+        "wrongAnswerExplanations": {
+          "A": "Der Druckgradient aus dem Abdomen zum Thorax kann zunehmen.",
+          "B": "Die Klappen wirken passiv bei wechselnden Druckgradienten.",
+          "C": "Bei spontaner Inspiration sinkt der Thoraxdruck und kann den Zustrom fördern.",
+          "D": "Fehlende Muskelbewegung vermindert ihre Unterstützung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Eine a-Welle im zentralvenösen Druckverlauf soll einem Ereignis zugeordnet werden. Welche Zuordnung passt?",
+      "options": [
+        {
+          "text": "Kontraktion des rechten Vorhofs",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Öffnung der Aortenklappe",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Rascher linksventrikulärer Auswurf in die Aorta",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Maximale Füllung der Aorta am Systolenende",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Passive Entleerung des rechten Vorhofs nach Trikuspidalöffnung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die a-Welle entsteht durch atriale Kontraktion. B: Dieses Ereignis definiert keine venöse a-Welle. C: Die a-Welle ist atrial und geht der Ventrikelsystole voraus. D: Das ist ein arterielles Ereignis. E: Diese trägt zum y-Abfall bei. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Venöser Puls"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Venöser Puls"
+      ],
+      "questionGoal": "Venöser Puls",
+      "structuredExplanation": {
+        "coreIdea": "Venöser Puls",
+        "correctReasoning": "Die a-Welle entsteht durch atriale Kontraktion.",
+        "wrongAnswerExplanations": {
+          "B": "Dieses Ereignis definiert keine venöse a-Welle.",
+          "C": "Die a-Welle ist atrial und geht der Ventrikelsystole voraus.",
+          "D": "Das ist ein arterielles Ereignis.",
+          "E": "Diese trägt zum y-Abfall bei."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beurteilen Sie die mechanische Interpretation des rechtsatrialen Druckverlaufs.",
+      "options": [
+        {
+          "text": "Ein Druckabfall nach Öffnung der Trikuspidalklappe passt zum y-Abfall.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die systolische Abwärtsbewegung der Ventilebene unterstützt den x-Abfall.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die v-Welle entsteht durch die Vorhofkontraktion bei offener Trikuspidalklappe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein erhöhter zentraler Venendruck beweist allein eine primäre arterielle Hypertonie.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Vorhof kann sich in den Ventrikel entleeren. B: Sie vergrössert den atrialen Raum. C: Sie repräsentiert überwiegend Vorhoffüllung bei geschlossener Klappe. D: Er kann unter anderem Rechtsherz- oder AV-Klappenprobleme widerspiegeln. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Zentralvenöse Kurven"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zentralvenöse Kurven"
+      ],
+      "questionGoal": "Zentralvenöse Kurven",
+      "structuredExplanation": {
+        "coreIdea": "Zentralvenöse Kurven",
+        "correctReasoning": "Der Vorhof kann sich in den Ventrikel entleeren. Sie vergrössert den atrialen Raum.",
+        "wrongAnswerExplanations": {
+          "A": "Der Vorhof kann sich in den Ventrikel entleeren.",
+          "B": "Sie vergrössert den atrialen Raum.",
+          "C": "Sie repräsentiert überwiegend Vorhoffüllung bei geschlossener Klappe.",
+          "D": "Er kann unter anderem Rechtsherz- oder AV-Klappenprobleme widerspiegeln."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Warum wird ein erhöhter Sauerstoffbedarf des Myokards vor allem durch mehr Koronardurchblutung gedeckt?",
+      "options": [
+        {
+          "text": "Der Sauerstoffbedarf sinkt bei stärkerer Kontraktion zwangsläufig ab.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Myokard extrahiert in Ruhe praktisch keinen Sauerstoff.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Koronarblut besitzt kein Hämoglobin und braucht deshalb immer mehr Fluss.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Myokard extrahiert bereits in Ruhe einen grossen Anteil des angebotenen Sauerstoffs.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine Koronarstenose steigert automatisch die maximal mögliche Flussreserve.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehr Herzarbeit erhöht typischerweise den Bedarf. B: Das widerspricht der hohen Ruheextraktion. C: Koronarblut enthält wie anderes arterielles Blut Erythrozyten mit Hämoglobin. D: Die zusätzliche Extraktionsreserve ist deshalb begrenzt. E: Stenosen können die Reserve gerade einschränken. Quelle: Vorlesungsfolien, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Koronare Sauerstoffreserve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Koronare Sauerstoffreserve"
+      ],
+      "questionGoal": "Koronare Sauerstoffreserve",
+      "structuredExplanation": {
+        "coreIdea": "Koronare Sauerstoffreserve",
+        "correctReasoning": "Die zusätzliche Extraktionsreserve ist deshalb begrenzt.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr Herzarbeit erhöht typischerweise den Bedarf.",
+          "B": "Das widerspricht der hohen Ruheextraktion.",
+          "C": "Koronarblut enthält wie anderes arterielles Blut Erythrozyten mit Hämoglobin.",
+          "E": "Stenosen können die Reserve gerade einschränken."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Warum ist die Perfusion des linken Ventrikelmyokards während der Systole eingeschränkt?",
+      "options": [
+        {
+          "text": "Die Aortenklappe verschliesst in der Systole anatomisch beide Koronarostien.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Lungenvenen unterbrechen in der Systole den gesamten koronaren Zufluss.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der hohe intramurale Druck komprimiert die intramyokardialen Gefässe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das linksventrikuläre Myokard benötigt Sauerstoff nur während der Diastole.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Koronarvenen werden während der Systole zu Arterien.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Ostien werden nicht regelhaft durch die geöffnete Klappe verschlossen. B: Der arterielle Koronarzufluss stammt aus der Aorta. C: Die Kompression vermindert den systolischen Fluss. D: Der Bedarf besteht auch während der Kontraktion. E: Gefässtyp und Flussrolle wechseln nicht derartig. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Diastolische Koronarperfusion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diastolische Koronarperfusion"
+      ],
+      "questionGoal": "Diastolische Koronarperfusion",
+      "structuredExplanation": {
+        "coreIdea": "Diastolische Koronarperfusion",
+        "correctReasoning": "Die Kompression vermindert den systolischen Fluss.",
+        "wrongAnswerExplanations": {
+          "A": "Die Ostien werden nicht regelhaft durch die geöffnete Klappe verschlossen.",
+          "B": "Der arterielle Koronarzufluss stammt aus der Aorta.",
+          "D": "Der Bedarf besteht auch während der Kontraktion.",
+          "E": "Gefässtyp und Flussrolle wechseln nicht derartig."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q14",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beurteilen Sie die Versorgung bei hoher Frequenz und eingeschränkter Koronarreserve.",
+      "options": [
+        {
+          "text": "Eine normale Ruheversorgung beweist unbegrenzt steigerbaren koronaren Blutfluss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine verkürzte Diastole kann die Zeit günstiger linksventrikulärer Perfusion vermindern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein gesteigerter Sauerstoffbedarf kann trotz normaler Ruheperfusion eine Ischämie auslösen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Koronarstenose kann die bedarfsabhängige Flusssteigerung begrenzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ruhefluss und maximale Durchblutungsreserve sind verschiedene Grössen. B: Der linke Ventrikel wird überwiegend diastolisch durchblutet. C: Eine begrenzte Reserve wird erst bei Belastung offensichtlich. D: Der Widerstand kann die maximale Reserve reduzieren. Quelle: Vorlesungsfolien, PDF-S. 13–15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Tachykardie und Ischämie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tachykardie und Ischämie"
+      ],
+      "questionGoal": "Tachykardie und Ischämie",
+      "structuredExplanation": {
+        "coreIdea": "Tachykardie und Ischämie",
+        "correctReasoning": "Der linke Ventrikel wird überwiegend diastolisch durchblutet. Eine begrenzte Reserve wird erst bei Belastung offensichtlich. Der Widerstand kann die maximale Reserve reduzieren.",
+        "wrongAnswerExplanations": {
+          "A": "Ruhefluss und maximale Durchblutungsreserve sind verschiedene Grössen.",
+          "B": "Der linke Ventrikel wird überwiegend diastolisch durchblutet.",
+          "C": "Eine begrenzte Reserve wird erst bei Belastung offensichtlich.",
+          "D": "Der Widerstand kann die maximale Reserve reduzieren."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Der koronare Ruhefluss beträgt im Modell 250 ml/min, der maximal erreichbare Fluss 1000 ml/min. Welche Flussreserve ergibt sich als Quotient?",
+      "options": [
+        {
+          "text": "40",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,25",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1250",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "4",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "750",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dafür wurde eine Zehnerpotenz falsch behandelt. B: Das ist der umgekehrte Quotient. C: Das ist die Summe beider Flüsse. D: 1000/250=4. E: Das ist die absolute Flussdifferenz in ml/min. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Koronare Flussreserve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Koronare Flussreserve"
+      ],
+      "questionGoal": "Koronare Flussreserve",
+      "structuredExplanation": {
+        "coreIdea": "Koronare Flussreserve",
+        "correctReasoning": "1000/250=4.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür wurde eine Zehnerpotenz falsch behandelt.",
+          "B": "Das ist der umgekehrte Quotient.",
+          "C": "Das ist die Summe beider Flüsse.",
+          "E": "Das ist die absolute Flussdifferenz in ml/min."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Im vereinfachten Starling-Modell gilt Jv=Kf[(Pc−Pi)−σ(πc−πi)]. Beurteilen Sie isolierte Veränderungen bei konstanten übrigen Grössen.",
+      "options": [
+        {
+          "text": "Ein Anstieg von Pi verstärkt den hydrostatischen Auswärtsgradienten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Verdopplung von Kf halbiert Jv.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Abfall von πc vermindert die Filtration.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Anstieg von Pc begünstigt eine Zunahme der Filtration.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Pc−Pi wird dadurch kleiner. B: Kf multipliziert die gesamte treibende Klammer. C: Die onkotische Gegenkraft wird geringer, Filtration nimmt zu. D: Der hydrostatische Filtrationsantrieb steigt. Quelle: Vorlesungsfolien, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Filtrationskräfte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Filtrationskräfte"
+      ],
+      "questionGoal": "Filtrationskräfte",
+      "structuredExplanation": {
+        "coreIdea": "Filtrationskräfte",
+        "correctReasoning": "Der hydrostatische Filtrationsantrieb steigt.",
+        "wrongAnswerExplanations": {
+          "A": "Pc−Pi wird dadurch kleiner.",
+          "B": "Kf multipliziert die gesamte treibende Klammer.",
+          "C": "Die onkotische Gegenkraft wird geringer, Filtration nimmt zu.",
+          "D": "Der hydrostatische Filtrationsantrieb steigt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Für das vereinfachte Modell seien Pc=25, Pi=0, πc=20 und πi=5 mmHg sowie σ=1 und Kf=0,1 ml/(min·mmHg). Welcher Jv folgt mit positiver Richtung ins Interstitium?",
+      "options": [
+        {
+          "text": "+2,5 ml/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0 ml/min",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "+4,0 ml/min",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "+1,0 ml/min",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "−1,0 ml/min",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier fehlt die onkotische Gegenkraft. B: Die beiden Druckdifferenzen sind 25 und 15, also ungleich. C: Hydrostatischer und onkotischer Beitrag dürfen nicht addiert werden. D: 0,1×[(25−0)−(20−5)]=+1,0. E: Das Vorzeichen würde einen einwärtsgerichteten Nettofluss bedeuten. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Starling-Modell rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Starling-Modell rechnen"
+      ],
+      "questionGoal": "Starling-Modell rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Starling-Modell rechnen",
+        "correctReasoning": "0,1×[(25−0)−(20−5)]=+1,0.",
+        "wrongAnswerExplanations": {
+          "A": "Hier fehlt die onkotische Gegenkraft.",
+          "B": "Die beiden Druckdifferenzen sind 25 und 15, also ungleich.",
+          "C": "Hydrostatischer und onkotischer Beitrag dürfen nicht addiert werden.",
+          "E": "Das Vorzeichen würde einen einwärtsgerichteten Nettofluss bedeuten."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Nach langem bewegungsarmem Stehen schwellen die Knöchel an. Welcher Mechanismus passt am unmittelbarsten zum beschriebenen Zusammenhang?",
+      "options": [
+        {
+          "text": "Eine zwingende arterielle Minderperfusion als einzige Ursache jedes Knöchelödems",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein sofortiger vollständiger Verlust aller Plasmaproteine",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Erhöhter venöser und damit kapillärer hydrostatischer Druck in den abhängigen Beinen",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Abfall des hydrostatischen Drucks in den Beinvenen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Zunahme der Muskelpumpwirkung bei völliger Bewegungslosigkeit",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das beschriebene Beispiel beruht auf venös-hydrostatischer Belastung. B: Das ist durch das Stehen nicht vorausgesetzt. C: Der höhere Filtrationsdruck begünstigt interstitielle Flüssigkeit. D: Im Stehen steigt der Druck unterhalb der Herzebene. E: Ohne Kontraktionen fehlt deren zusätzliche Unterstützung. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Stauungsödem"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stauungsödem"
+      ],
+      "questionGoal": "Stauungsödem",
+      "structuredExplanation": {
+        "coreIdea": "Stauungsödem",
+        "correctReasoning": "Der höhere Filtrationsdruck begünstigt interstitielle Flüssigkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Das beschriebene Beispiel beruht auf venös-hydrostatischer Belastung.",
+          "B": "Das ist durch das Stehen nicht vorausgesetzt.",
+          "D": "Im Stehen steigt der Druck unterhalb der Herzebene.",
+          "E": "Ohne Kontraktionen fehlt deren zusätzliche Unterstützung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Beurteilen Sie Aussagen zu Ödemen und zum vereinfachten Flüssigkeitsaustauschmodell.",
+      "options": [
+        {
+          "text": "Das klassische Schema einer dauerhaften venösen Resorption gilt uneingeschränkt für jedes Gewebe im stationären Zustand.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine gestörte Lymphdrainage bleibt bei jeder Filtrationsrate folgenlos.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Ödem bezeichnet eine vermehrte interstitielle Flüssigkeitsansammlung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verminderte Plasmaproteine können den onkotischen Rückhalt im Gefäss verringern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Moderne Betrachtungen berücksichtigen Glykokalyx und wesentlichen lymphatischen Rücktransport. B: Sie kann den Rücktransport begrenzen und Ödeme verursachen. C: Damit ist der betroffene Flüssigkeitsraum benannt. D: Dies begünstigt die Filtration. Quelle: Vorlesungsfolien, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Modellgrenzen und Lymphe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modellgrenzen und Lymphe"
+      ],
+      "questionGoal": "Modellgrenzen und Lymphe",
+      "structuredExplanation": {
+        "coreIdea": "Modellgrenzen und Lymphe",
+        "correctReasoning": "Damit ist der betroffene Flüssigkeitsraum benannt. Dies begünstigt die Filtration.",
+        "wrongAnswerExplanations": {
+          "A": "Moderne Betrachtungen berücksichtigen Glykokalyx und wesentlichen lymphatischen Rücktransport.",
+          "B": "Sie kann den Rücktransport begrenzen und Ödeme verursachen.",
+          "C": "Damit ist der betroffene Flüssigkeitsraum benannt.",
+          "D": "Dies begünstigt die Filtration."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv11_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV11",
+      "stem": "Zwei Messorte zeigen verschiedene systolische Spitzen bei ähnlichem Mitteldruck. Beurteilen Sie die Schlussfolgerungen.",
+      "options": [
+        {
+          "text": "Die Blutströmung muss mit der Pulswellengeschwindigkeit erfolgen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein ähnlicher Mitteldruck erzwingt identische Pulsdruckamplituden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lokale Wellenüberlagerung kann unterschiedliche systolische Spitzen erklären.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die höhere Spitze beweist eine zusätzliche lokale Herzpumpe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die mittlere Blutgeschwindigkeit ist deutlich geringer. B: Zeitmittel und Schwankungsbreite sind unterschiedliche Grössen. C: Die pulsatile Form hängt vom Messort ab. D: Wellenphänomene benötigen keine zweite Pumpe. Quelle: Vorlesungsfolien, PDF-S. 3–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV11",
+        "Mitteldruck versus Pulsamplitude"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mitteldruck versus Pulsamplitude"
+      ],
+      "questionGoal": "Mitteldruck versus Pulsamplitude",
+      "structuredExplanation": {
+        "coreIdea": "Mitteldruck versus Pulsamplitude",
+        "correctReasoning": "Die pulsatile Form hängt vom Messort ab.",
+        "wrongAnswerExplanations": {
+          "A": "Die mittlere Blutgeschwindigkeit ist deutlich geringer.",
+          "B": "Zeitmittel und Schwankungsbreite sind unterschiedliche Grössen.",
+          "C": "Die pulsatile Form hängt vom Messort ab.",
+          "D": "Wellenphänomene benötigen keine zweite Pumpe."
+        }
+      }
+    }
+  ]
+}
