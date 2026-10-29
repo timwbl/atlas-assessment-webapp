@@ -152,7 +152,10 @@
           "C": "Dieser bindet inhalierte Partikel.",
           "D": "Das Motorprotein erzeugt relative Bewegung im Axonem."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv29_q03",
@@ -347,7 +350,11 @@
           "D": "Diese Strukturen gehören zur Haut.",
           "E": "Dies entspricht nicht dem Tracheaaufbau."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy",
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv29_q06",
@@ -493,12 +500,12 @@
           "id": "A"
         },
         {
-          "text": "Keulenzellen sind identisch mit kapillären Erythrozyten.",
+          "text": "Keulenzellen produzieren den überwiegenden Anteil des alveolären Surfactants.",
           "correct": false,
           "id": "B"
         },
         {
-          "text": "Bronchioli werden ausschliesslich durch hyaline Knorpelspangen offengehalten.",
+          "text": "Knorpelplatten gehören zur typischen Wand eines terminalen Bronchiolus.",
           "correct": false,
           "id": "C"
         },
@@ -508,7 +515,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Die Verengung vermindert den Radius. B: Es sind spezialisierte Epithelzellen. C: Sie besitzen keinen Knorpel. D: Er ist der letzte rein leitende Abschnitt. Quelle: Vorlesungsfolien, PDF-S. 15–17.",
+      "explanation": "A: Die Verengung vermindert den Radius. B: Die wesentliche alveoläre Surfactantquelle sind Typ-II-Pneumozyten; Keulenzellen sind bronchioläre sekretorische Epithelzellen. C: Bronchiolen besitzen keinen Knorpel; das unterscheidet sie von Bronchien. D: Er ist der letzte rein leitende Abschnitt. Quelle: Vorlesungsfolien, PDF-S. 15–17.",
       "trap": "",
       "tags": [
         "J2",
@@ -528,11 +535,14 @@
         "correctReasoning": "Die Verengung vermindert den Radius.",
         "wrongAnswerExplanations": {
           "A": "Die Verengung vermindert den Radius.",
-          "B": "Es sind spezialisierte Epithelzellen.",
-          "C": "Sie besitzen keinen Knorpel.",
+          "B": "Die wesentliche alveoläre Surfactantquelle sind Typ-II-Pneumozyten; Keulenzellen sind bronchioläre sekretorische Epithelzellen.",
+          "C": "Bronchiolen besitzen keinen Knorpel; das unterscheidet sie von Bronchien.",
           "D": "Er ist der letzte rein leitende Abschnitt."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv29_q09",
@@ -597,7 +607,10 @@
           "C": "Dies ist kein bronchioläres Merkmal.",
           "E": "Dann wäre es kein Atemweg."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv29_q10",
@@ -722,7 +735,10 @@
           "C": "Arterieller Verlauf und Sauerstoffgehalt sind verschiedene Einteilungen.",
           "D": "Ein einzelnes Merkmal allein kann täuschen."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv29_q12",
@@ -787,7 +803,10 @@
           "D": "Sie ist eine Regenerationszelle zentraler Atemwege.",
           "E": "Typ II ist eher kubisch und sekretorisch."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv29_q13",
@@ -912,7 +931,10 @@
           "C": "Ihre dünnen Ausläufer begünstigen Diffusion.",
           "D": "Sie können an Reparatur und Differenzierung teilnehmen."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv29_q15",
@@ -977,7 +999,10 @@
           "C": "Diese liegen nicht zwischen Alveolenluft und Kapillarblut.",
           "E": "Dies beschreibt Hautschichten."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv29_q16",
@@ -1037,7 +1062,10 @@
           "C": "Gasaustausch ist von beiden Seiten möglich.",
           "D": "Er würde den Austauschweg verlängern."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv29_q17",
@@ -1227,7 +1255,10 @@
           "D": "Dies würde die dünne alveoläre Austauschbarriere behindern.",
           "E": "Dies vertauscht beziehungsweise verfälscht den Aufbau."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv29_q20",

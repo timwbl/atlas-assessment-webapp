@@ -338,7 +338,10 @@
           "C": "Der primäre Bezug ist die Schrittmachertätigkeit.",
           "D": "Sie betrifft die Erregungsleitung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv22_23_q06",
@@ -619,7 +622,7 @@
           "id": "B"
         },
         {
-          "text": "Die Herzfrequenz ergibt sich ausschliesslich aus der Anzahl der Herzklappen.",
+          "text": "Das über M2 aktivierte G-Protein erhöht den cAMP-Spiegel der Sinusknotenzelle.",
           "correct": false,
           "id": "C"
         },
@@ -629,7 +632,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Dies ermöglicht negative Rückkopplung. B: Die Folien zeigen prä- und postsynaptische Interaktion. C: Autonome Einflüsse verändern die Schrittmachertätigkeit. D: Typischerweise begrenzt er die Freisetzung. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
+      "explanation": "A: Dies ermöglicht negative Rückkopplung. B: Die Folien zeigen prä- und postsynaptische Interaktion. C: M2 ist Gi-gekoppelt und vermindert cAMP; hinzu kommt die Förderung eines hyperpolarisierenden Kaliumstroms. D: Typischerweise begrenzt er die Freisetzung. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
       "trap": "",
       "tags": [
         "J2",
@@ -650,7 +653,7 @@
         "wrongAnswerExplanations": {
           "A": "Dies ermöglicht negative Rückkopplung.",
           "B": "Die Folien zeigen prä- und postsynaptische Interaktion.",
-          "C": "Autonome Einflüsse verändern die Schrittmachertätigkeit.",
+          "C": "M2 ist Gi-gekoppelt und vermindert cAMP; hinzu kommt die Förderung eines hyperpolarisierenden Kaliumstroms.",
           "D": "Typischerweise begrenzt er die Freisetzung."
         }
       }
@@ -968,7 +971,10 @@
           "C": "Der Rezeptorbesatz beeinflusst die Reaktion.",
           "D": "Sie kann den Widerstand erhöhen."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv22_23_q16",
@@ -1033,7 +1039,10 @@
           "D": "Das wäre ein konstriktorischer adrenerger Weg.",
           "E": "NO ist kein Calciumshuttle."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv22_23_q17",

@@ -217,7 +217,10 @@
           "D": "Das hätte eine geringe relative Austauschfläche und lange Wege.",
           "E": "Dies verhindert Ventilation und Austausch."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv24_q04",
@@ -342,7 +345,10 @@
           "C": "Exspiratorische Muskeln können sie verstärken.",
           "D": "Das Zwerchfell ist ein wesentlicher Motor."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv24_q06",
@@ -407,7 +413,10 @@
           "D": "Dies unterstützt Inspiration.",
           "E": "Dieser richtet Haare auf."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv24_q07",
@@ -597,7 +606,10 @@
           "D": "Dies entspricht nicht der typischen Reihenfolge.",
           "E": "Arterie und Nerv sind vertauscht."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv24_q10",
@@ -662,7 +674,10 @@
           "D": "Sie bedeckt die thorakale Zwerchfelloberfläche.",
           "E": "Sie kleidet die Thoraxwand aus."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv24_q11",
@@ -787,7 +802,10 @@
           "C": "Sie dienen als Entfaltungsreserve.",
           "D": "Er liegt zwischen Rippen- und Zwerchfellpleura."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv24_q13",
@@ -852,7 +870,10 @@
           "D": "Die Spitze gehört zum Oberlappenbereich.",
           "E": "Dies ist eine abdominale Struktur."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv24_q14",
@@ -1042,7 +1063,10 @@
           "C": "Sie ist kein Bestandteil des linken Lungenstiels.",
           "D": "Sie gehört nicht zum linken Lungenstiel."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv24_q17",
@@ -1058,7 +1082,7 @@
       "stem": "Beurteilen Sie die Zusammensetzung und Anordnung des Lungenstiels.",
       "options": [
         {
-          "text": "Alle Hilusvenen führen sauerstoffarmes Blut zur rechten Kammer.",
+          "text": "Die Pulmonalvenen führen das oxygenierte Blut in den rechten Vorhof.",
           "correct": false,
           "id": "A"
         },
@@ -1068,7 +1092,7 @@
           "id": "B"
         },
         {
-          "text": "Der Hilus besteht ausschliesslich aus Luftwegen.",
+          "text": "Die Pulmonalvenen liegen am Hilus oberhalb der Bronchien und Pulmonalarterien.",
           "correct": false,
           "id": "C"
         },
@@ -1078,7 +1102,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Pulmonalvenen führen oxygeniertes Blut zum linken Vorhof. B: Sie bilden gemeinsam die Wurzelstrukturen. C: Er enthält auch Gefässe und Nerven. D: Der rechte Oberlappenbronchus liegt eparteriell. Quelle: Vorlesungsfolien, PDF-S. 22.",
+      "explanation": "A: Sie münden in den linken Vorhof. B: Sie bilden gemeinsam die Wurzelstrukturen. C: Die typische kraniokaudale Anordnung platziert die Pulmonalvenen weiter kaudal; die übrige Anordnung unterscheidet sich rechts und links. D: Der rechte Oberlappenbronchus liegt eparteriell. Quelle: Vorlesungsfolien, PDF-S. 22.",
       "trap": "",
       "tags": [
         "J2",
@@ -1097,9 +1121,9 @@
         "coreIdea": "Radix pulmonis",
         "correctReasoning": "Sie bilden gemeinsam die Wurzelstrukturen. Der rechte Oberlappenbronchus liegt eparteriell.",
         "wrongAnswerExplanations": {
-          "A": "Pulmonalvenen führen oxygeniertes Blut zum linken Vorhof.",
+          "A": "Sie münden in den linken Vorhof.",
           "B": "Sie bilden gemeinsam die Wurzelstrukturen.",
-          "C": "Er enthält auch Gefässe und Nerven.",
+          "C": "Die typische kraniokaudale Anordnung platziert die Pulmonalvenen weiter kaudal; die übrige Anordnung unterscheidet sich rechts und links.",
           "D": "Der rechte Oberlappenbronchus liegt eparteriell."
         }
       }

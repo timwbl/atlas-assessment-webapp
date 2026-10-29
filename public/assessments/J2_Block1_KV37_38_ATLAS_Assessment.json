@@ -156,7 +156,10 @@
           "C": "Die physiologische Bindung ist reversibel.",
           "D": "Funktionsfähiges O₂-bindendes Häm enthält Fe²⁺."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q03",
@@ -281,7 +284,10 @@
           "C": "Dies trägt zur Kooperativität bei.",
           "D": "Sie setzen unterschiedliche Modellannahmen."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q05",
@@ -297,22 +303,22 @@
       "stem": "Welche Herkunft von erythrozytärem 2,3-BPG passt zum dargestellten glycolytischen Nebenweg?",
       "options": [
         {
-          "text": "Abbau von Carnitin zu einer Globinkette",
+          "text": "Bildung direkt aus Phosphoenolpyruvat",
           "correct": false,
           "id": "A"
         },
         {
-          "text": "Ausschliessliche Bildung in reifen Erythrozytenmitochondrien",
+          "text": "Bildung direkt aus Glycerinaldehyd-3-phosphat ohne vorherige Oxidation und Phosphorylierung",
           "correct": false,
           "id": "B"
         },
         {
-          "text": "Direkte Spaltung des Porphyrinrings",
+          "text": "Bildung direkt aus 3-Phosphoglycerat",
           "correct": false,
           "id": "C"
         },
         {
-          "text": "Synthese aus drei gebundenen O₂-Molekülen",
+          "text": "Bildung direkt aus 2-Phosphoglycerat",
           "correct": false,
           "id": "D"
         },
@@ -322,7 +328,7 @@
           "id": "E"
         }
       ],
-      "explanation": "A: Dies sind andere Molekülklassen. B: Reife Erythrozyten besitzen keine Mitochondrien. C: Dies würde die Hämstruktur abbauen. D: O₂ liefert kein Glycerat-Kohlenstoffgerüst. E: Der Nebenweg koppelt den Hb-Effektor an die Glykolyse. Quelle: Vorlesungsfolien, PDF-S. BC 12.",
+      "explanation": "A: Phosphoenolpyruvat liegt weiter stromabwärts in der Glykolyse und ist nicht die unmittelbare Vorstufe. B: Erst aus Glycerinaldehyd-3-phosphat gebildetes 1,3-Bisphosphoglycerat liefert den gezeigten Abzweig. C: Der gezeigte Nebenweg zweigt bei 1,3-Bisphosphoglycerat ab, nicht bei 3-Phosphoglycerat. D: Die Vorstufe des 2,3-BPG-Nebenwegs ist 1,3-Bisphosphoglycerat. E: Der Nebenweg koppelt den Hb-Effektor an die Glykolyse. Quelle: Vorlesungsfolien, PDF-S. BC 12.",
       "trap": "",
       "tags": [
         "J2",
@@ -341,12 +347,15 @@
         "coreIdea": "2,3-BPG-Synthese",
         "correctReasoning": "Der Nebenweg koppelt den Hb-Effektor an die Glykolyse.",
         "wrongAnswerExplanations": {
-          "A": "Dies sind andere Molekülklassen.",
-          "B": "Reife Erythrozyten besitzen keine Mitochondrien.",
-          "C": "Dies würde die Hämstruktur abbauen.",
-          "D": "O₂ liefert kein Glycerat-Kohlenstoffgerüst."
+          "A": "Phosphoenolpyruvat liegt weiter stromabwärts in der Glykolyse und ist nicht die unmittelbare Vorstufe.",
+          "B": "Erst aus Glycerinaldehyd-3-phosphat gebildetes 1,3-Bisphosphoglycerat liefert den gezeigten Abzweig.",
+          "C": "Der gezeigte Nebenweg zweigt bei 1,3-Bisphosphoglycerat ab, nicht bei 3-Phosphoglycerat.",
+          "D": "Die Vorstufe des 2,3-BPG-Nebenwegs ist 1,3-Bisphosphoglycerat."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q06",
@@ -427,12 +436,12 @@
       "stem": "Welche Substratkombination liefert im ersten Schritt der Hämbiosynthese δ-Aminolävulinat?",
       "options": [
         {
-          "text": "Zwei fertige α-Globinketten",
+          "text": "Glutamat und Oxalacetat",
           "correct": false,
           "id": "A"
         },
         {
-          "text": "Harnstoff und Aceton",
+          "text": "Glycin und Malonyl-CoA",
           "correct": false,
           "id": "B"
         },
@@ -442,17 +451,17 @@
           "id": "C"
         },
         {
-          "text": "Glucose und Cholesterin",
+          "text": "Glycin und Acetyl-CoA",
           "correct": false,
           "id": "D"
         },
         {
-          "text": "Lactat und Carnitin",
+          "text": "Serin und Succinyl-CoA",
           "correct": false,
           "id": "E"
         }
       ],
-      "explanation": "A: Globine sind Proteinanteile, keine Hämvorstufen. B: Diese liefern nicht den gezeigten Weg. C: Die ALA-Synthase verknüpft diese Vorstufen. D: Dies sind keine direkten Substrate des ALA-Startschritts. E: Dies beschreibt nicht den Biosynthesestart. Quelle: Vorlesungsfolien, PDF-S. BC 15–17.",
+      "explanation": "A: Diese Kombination entspricht nicht dem ersten Schritt der menschlichen Hämbiosynthese. B: Malonyl-CoA gehört nicht zu den beiden direkten Substraten dieses Schritts. C: Die ALA-Synthase verknüpft diese Vorstufen. D: Die ALA-Synthase verwendet Succinyl-CoA statt Acetyl-CoA. E: Die verwendete Aminosäure ist Glycin statt Serin. Quelle: Vorlesungsfolien, PDF-S. BC 15–17.",
       "trap": "",
       "tags": [
         "J2",
@@ -471,12 +480,15 @@
         "coreIdea": "Start der Hämsynthese",
         "correctReasoning": "Die ALA-Synthase verknüpft diese Vorstufen.",
         "wrongAnswerExplanations": {
-          "A": "Globine sind Proteinanteile, keine Hämvorstufen.",
-          "B": "Diese liefern nicht den gezeigten Weg.",
-          "D": "Dies sind keine direkten Substrate des ALA-Startschritts.",
-          "E": "Dies beschreibt nicht den Biosynthesestart."
+          "A": "Diese Kombination entspricht nicht dem ersten Schritt der menschlichen Hämbiosynthese.",
+          "B": "Malonyl-CoA gehört nicht zu den beiden direkten Substraten dieses Schritts.",
+          "D": "Die ALA-Synthase verwendet Succinyl-CoA statt Acetyl-CoA.",
+          "E": "Die verwendete Aminosäure ist Glycin statt Serin."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q08",
@@ -536,7 +548,10 @@
           "C": "Protoporphyrin allein ist noch kein Häm.",
           "D": "Sie besitzen keine Mitochondrien."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q09",
@@ -601,7 +616,10 @@
           "C": "O₂-Bindung synthetisiert kein Häm.",
           "D": "Dies wäre die gegenteilige Regulationsrichtung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q10",
@@ -617,17 +635,17 @@
       "stem": "Beurteilen Sie die Globinanteile und ihre Bedeutung.",
       "options": [
         {
-          "text": "Thalassämien sind definitionsgemäss ausschliesslich Fehler der Sauerstofflösung im Plasma.",
+          "text": "Thalassämien beruhen primär auf verminderter Hämringsynthese bei intakter Globinbildung.",
           "correct": false,
           "id": "A"
         },
         {
-          "text": "Häm- und Globinbildung sind funktionell voneinander völlig unabhängige Endprodukte.",
+          "text": "HRI steigert bei Hämmangel die Neubildung von Globinketten.",
           "correct": false,
           "id": "B"
         },
         {
-          "text": "HbF besitzt γ- statt β-Ketten.",
+          "text": "Fetales HbF besitzt zwei α- und zwei γ-Ketten statt der adulten α₂β₂-Zusammensetzung.",
           "correct": true,
           "id": "C"
         },
@@ -637,7 +655,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Sie betreffen die Globinkettensynthese. B: Sie müssen zur funktionsfähigen Hb-Bildung abgestimmt werden. C: Die Zusammensetzung verändert sich im Entwicklungsverlauf. D: Dies ist das wichtigste adulte Hb. Quelle: Vorlesungsfolien, PDF-S. BC 14,19–20.",
+      "explanation": "A: Thalassämien betreffen die Synthese von Globinketten, nicht primär die Hämringsynthese. B: Bei Hämmangel hemmt HRI über eIF2α die Globintranslation, um die Komponenten abzustimmen. C: HbF ist α₂γ₂, das wichtigste adulte HbA dagegen α₂β₂. D: Dies ist das wichtigste adulte Hb. Quelle: Vorlesungsfolien, PDF-S. BC 14,19–20.",
       "trap": "",
       "tags": [
         "J2",
@@ -654,14 +672,17 @@
       "questionGoal": "Hb-Zusammensetzung und Synthese",
       "structuredExplanation": {
         "coreIdea": "Hb-Zusammensetzung und Synthese",
-        "correctReasoning": "Die Zusammensetzung verändert sich im Entwicklungsverlauf. Dies ist das wichtigste adulte Hb.",
+        "correctReasoning": "HbF ist α₂γ₂, das wichtigste adulte HbA dagegen α₂β₂. Dies ist das wichtigste adulte Hb.",
         "wrongAnswerExplanations": {
-          "A": "Sie betreffen die Globinkettensynthese.",
-          "B": "Sie müssen zur funktionsfähigen Hb-Bildung abgestimmt werden.",
-          "C": "Die Zusammensetzung verändert sich im Entwicklungsverlauf.",
+          "A": "Thalassämien betreffen die Synthese von Globinketten, nicht primär die Hämringsynthese.",
+          "B": "Bei Hämmangel hemmt HRI über eIF2α die Globintranslation, um die Komponenten abzustimmen.",
+          "C": "HbF ist α₂γ₂, das wichtigste adulte HbA dagegen α₂β₂.",
           "D": "Dies ist das wichtigste adulte Hb."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q11",
@@ -877,7 +898,7 @@
           "id": "B"
         },
         {
-          "text": "Beide Begriffe bezeichnen ausschliesslich die chemische Bindung von O₂ an Albumin.",
+          "text": "Der Haldane-Effekt beruht allein auf einer Erhöhung der alveolären Ventilation.",
           "correct": false,
           "id": "C"
         },
@@ -887,7 +908,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Er unterstützt die O₂-Abgabe im Gewebe. B: CO₂ kann unter anderem an Globinaminogruppen binden. C: Albumin ist nicht der zentrale O₂-Träger. D: Oxygenierung begünstigt pulmonale CO₂-Abgabe. Quelle: Vorlesungsfolien, PDF-S. PHYS 9,15,17.",
+      "explanation": "A: Er unterstützt die O₂-Abgabe im Gewebe. B: CO₂ kann unter anderem an Globinaminogruppen binden. C: Er beschreibt die oxygenierungsabhängige CO₂-/H⁺-Transportfähigkeit des Blutes; mehr Ventilation ist eine andere Einflussgrösse. D: Oxygenierung begünstigt pulmonale CO₂-Abgabe. Quelle: Vorlesungsfolien, PDF-S. PHYS 9,15,17.",
       "trap": "",
       "tags": [
         "J2",
@@ -908,7 +929,7 @@
         "wrongAnswerExplanations": {
           "A": "Er unterstützt die O₂-Abgabe im Gewebe.",
           "B": "CO₂ kann unter anderem an Globinaminogruppen binden.",
-          "C": "Albumin ist nicht der zentrale O₂-Träger.",
+          "C": "Er beschreibt die oxygenierungsabhängige CO₂-/H⁺-Transportfähigkeit des Blutes; mehr Ventilation ist eine andere Einflussgrösse.",
           "D": "Oxygenierung begünstigt pulmonale CO₂-Abgabe."
         }
       }
@@ -1161,7 +1182,10 @@
           "C": "Ein grosser Transportanteil befindet sich anschliessend im Plasma.",
           "D": "Dies erleichtert die Bildung und Rückbildung von Bicarbonat."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv37_38_q19",

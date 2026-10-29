@@ -96,7 +96,10 @@
           "D": "Die Rekonstruktion ist Teil des Verfahrens.",
           "E": "Dies beschreibt ein anderes bildgebendes Prinzip."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_sv42_q02",
@@ -507,12 +510,12 @@
           "id": "C"
         },
         {
-          "text": "CT verwendet ionisierende Strahlung.",
+          "text": "Ionisierende Röntgenphotonen sind die physikalische Grundlage der CT-Datenerfassung.",
           "correct": true,
           "id": "D"
         }
       ],
-      "explanation": "A: Darstellungseinstellungen ändern diese Risiken nicht. B: Diese Anamnese- und Risikobereiche werden genannt. C: Es gibt zahlreiche native Fragestellungen. D: Die Strahlenexposition gehört zur Abwägung. Quelle: Vorlesungsfolien, PDF-S. 29–33.",
+      "explanation": "A: Darstellungseinstellungen ändern diese Risiken nicht. B: Diese Anamnese- und Risikobereiche werden genannt. C: Es gibt zahlreiche native Fragestellungen. D: Die CT verwendet ionisierende Röntgenstrahlung; die Exposition gehört zur Untersuchungsabwägung. Quelle: Vorlesungsfolien, PDF-S. 29–33.",
       "trap": "",
       "tags": [
         "J2",
@@ -529,12 +532,12 @@
       "questionGoal": "Untersuchung abwägen",
       "structuredExplanation": {
         "coreIdea": "Untersuchung abwägen",
-        "correctReasoning": "Diese Anamnese- und Risikobereiche werden genannt. Die Strahlenexposition gehört zur Abwägung.",
+        "correctReasoning": "Diese Anamnese- und Risikobereiche werden genannt. Die CT verwendet ionisierende Röntgenstrahlung; die Exposition gehört zur Untersuchungsabwägung.",
         "wrongAnswerExplanations": {
           "A": "Darstellungseinstellungen ändern diese Risiken nicht.",
           "B": "Diese Anamnese- und Risikobereiche werden genannt.",
           "C": "Es gibt zahlreiche native Fragestellungen.",
-          "D": "Die Strahlenexposition gehört zur Abwägung."
+          "D": "Die CT verwendet ionisierende Röntgenstrahlung; die Exposition gehört zur Untersuchungsabwägung."
         }
       }
     },
@@ -666,7 +669,10 @@
           "D": "Die Photonen werden gerade in elektrische Signale umgewandelt.",
           "E": "Die direkte Konversion ist der Unterschied."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_sv42_q11",
@@ -869,7 +875,7 @@
       ],
       "blockId": "j2-block1",
       "lectureId": "SV42",
-      "stem": "Beurteilen Sie die Orientierung im gezeigten axialen Schnitt auf Höhe der grossen Gefässe und Hauptbronchien.",
+      "stem": "Beurteilen Sie typische Lagebeziehungen in einer axialen Thorax-CT auf Höhe der grossen Gefässe und Hauptbronchien.",
       "options": [
         {
           "text": "Der Ösophagus ist der ventral vor dem Sternum liegende luftführende Gang.",
@@ -929,10 +935,10 @@
       ],
       "blockId": "j2-block1",
       "lectureId": "SV42",
-      "stem": "Im demonstrierten Schnitt liegt eine kontrastierte runde Struktur links neben dem Wirbelkörper, dorsal im Thorax. Welches Gefäss ist damit am ehesten gemeint?",
+      "stem": "In einer axialen Thorax-CT liegt eine kontrastierte runde Struktur links neben dem Wirbelkörper, dorsal im Thorax. Welches Gefäss ist damit am ehesten gemeint?",
       "options": [
         {
-          "text": "Eine im luftgefüllten Bronchiallumen verlaufende Arterie",
+          "text": "Vena azygos",
           "correct": false,
           "id": "A"
         },
@@ -957,7 +963,7 @@
           "id": "E"
         }
       ],
-      "explanation": "A: Ein kontrastiertes Gefäss ist nicht das luftgefüllte Bronchiallumen. B: Dieser liegt im gezeigten Schnitt ventraler. C: Sie liegt im gezeigten Schnitt weiter ventral. D: Die Lage links paravertebral passt zum dargestellten absteigenden Aortenabschnitt. E: Sie liegt rechts und deutlich weiter ventral als die beschriebene Struktur. Quelle: Vorlesungsfolien, PDF-S. 51–52.",
+      "explanation": "A: Die Vena azygos liegt typischerweise rechts paravertebral; die beschriebene linksseitige runde Struktur passt zur Aorta descendens. B: Dieser liegt im gezeigten Schnitt ventraler. C: Sie liegt im gezeigten Schnitt weiter ventral. D: Die Lage links paravertebral passt zum dargestellten absteigenden Aortenabschnitt. E: Sie liegt rechts und deutlich weiter ventral als die beschriebene Struktur. Quelle: Vorlesungsfolien, PDF-S. 51–52.",
       "trap": "",
       "tags": [
         "J2",
@@ -976,7 +982,7 @@
         "coreIdea": "Gefäss topografisch erkennen",
         "correctReasoning": "Die Lage links paravertebral passt zum dargestellten absteigenden Aortenabschnitt.",
         "wrongAnswerExplanations": {
-          "A": "Ein kontrastiertes Gefäss ist nicht das luftgefüllte Bronchiallumen.",
+          "A": "Die Vena azygos liegt typischerweise rechts paravertebral; die beschriebene linksseitige runde Struktur passt zur Aorta descendens.",
           "B": "Dieser liegt im gezeigten Schnitt ventraler.",
           "C": "Sie liegt im gezeigten Schnitt weiter ventral.",
           "E": "Sie liegt rechts und deutlich weiter ventral als die beschriebene Struktur."

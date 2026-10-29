@@ -282,7 +282,10 @@
           "C": "Die Folien zeigen entsprechend unterschiedliche Koeffizienten.",
           "D": "Er beschreibt den gelösten Anteil beziehungsweise dessen Gleichgewichtstendenz."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv33_34_q05",
@@ -412,7 +415,10 @@
           "D": "Dies ist keine transbarrieräre Diffusionskraft.",
           "E": "Sie bestimmt keinen O₂-Gradienten."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv33_34_q07",
@@ -1107,7 +1113,10 @@
           "C": "Die Atemantwort integriert mehrere Reize.",
           "D": "Die Signale werden zum Hirnstamm geleitet."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv33_34_q18",
@@ -1123,7 +1132,7 @@
       "stem": "Eine primäre metabolische Ansäuerung senkt den arteriellen pH. Beurteilen Sie mögliche kompensatorische Zusammenhänge.",
       "options": [
         {
-          "text": "Ein niedriger pH muss reflexhaft ausschliesslich zu weniger Atmung führen.",
+          "text": "Ein primär metabolischer pH-Abfall wird kompensiert, indem der arterielle CO₂-Partialdruck erhöht wird.",
           "correct": false,
           "id": "A"
         },
@@ -1143,7 +1152,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Dies würde die CO₂-Retention verstärken. B: Dies ist eine respiratorische Kompensationsrichtung. C: Sie sind für arterielle H⁺-Signale wichtig. D: Es gibt auch primär metabolische Ursachen. Quelle: Vorlesungsfolien, PDF-S. 26–31.",
+      "explanation": "A: Die respiratorische Kompensation senkt CO₂ durch gesteigerte alveoläre Ventilation. B: Dies ist eine respiratorische Kompensationsrichtung. C: Sie sind für arterielle H⁺-Signale wichtig. D: Es gibt auch primär metabolische Ursachen. Quelle: Vorlesungsfolien, PDF-S. 26–31.",
       "trap": "",
       "tags": [
         "J2",
@@ -1162,7 +1171,7 @@
         "coreIdea": "Metabolische Ansäuerung",
         "correctReasoning": "Dies ist eine respiratorische Kompensationsrichtung. Sie sind für arterielle H⁺-Signale wichtig.",
         "wrongAnswerExplanations": {
-          "A": "Dies würde die CO₂-Retention verstärken.",
+          "A": "Die respiratorische Kompensation senkt CO₂ durch gesteigerte alveoläre Ventilation.",
           "B": "Dies ist eine respiratorische Kompensationsrichtung.",
           "C": "Sie sind für arterielle H⁺-Signale wichtig.",
           "D": "Es gibt auch primär metabolische Ursachen."

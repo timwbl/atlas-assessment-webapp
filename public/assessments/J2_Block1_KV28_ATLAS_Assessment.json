@@ -153,7 +153,10 @@
           "D": "Dies ist nicht die obere-untere Mediastinalgrenze.",
           "E": "Sie liegt abdominal."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv28_q03",
@@ -403,7 +406,10 @@
           "D": "Diese gehören zum Hiatus aorticus auf tieferem Niveau.",
           "E": "Die obere Hohlvene durchquert das Zwerchfell nicht."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv28_q07",
@@ -463,7 +469,10 @@
           "C": "Dies ist das Foramen venae cavae.",
           "D": "Er gelangt typischerweise über den Aortenhiatus nach thorakal."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q08",
@@ -593,7 +602,10 @@
           "C": "Er zieht auch zur Bauchhöhle.",
           "D": "Sie sind Nerven, keine Blutversorgung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv28_q10",
@@ -653,7 +665,10 @@
           "C": "Sie steht mit dem Azygos-System in Verbindung.",
           "D": "Sie sammelt unter anderem thorakale Wandvenen."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q11",
@@ -718,7 +733,10 @@
           "D": "Dies würde keinen normalen Lymphrückfluss bilden.",
           "E": "Dies ist keine typische Endmündung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q12",
@@ -799,7 +817,7 @@
       "stem": "Beurteilen Sie den Lymphabfluss aus Lunge und Thorax.",
       "options": [
         {
-          "text": "Alle Lymphe des Körpers mündet ausschliesslich über den rechten Lymphgang.",
+          "text": "Der Ductus thoracicus mündet typischerweise am rechten Venenwinkel.",
           "correct": false,
           "id": "A"
         },
@@ -814,12 +832,12 @@
           "id": "C"
         },
         {
-          "text": "Subpleurale und peribronchiale Netze sind identisch mit dem Alveolarluftraum.",
+          "text": "Peribronchiale Lymphgefässe münden zunächst direkt in die Vena cava superior.",
           "correct": false,
           "id": "D"
         }
       ],
-      "explanation": "A: Die grossen Einzugsgebiete verteilen sich auf mehrere Endwege. B: Sie liegen entlang der bronchovaskulären Wege. C: Sein Einzugsgebiet ist ausgedehnt. D: Es handelt sich um interstitielle Lymphwege. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
+      "explanation": "A: Typisch ist der linke Venenwinkel; anatomische Varianten sind möglich. B: Sie liegen entlang der bronchovaskulären Wege. C: Sein Einzugsgebiet ist ausgedehnt. D: Die Lymphe wird über regionale Lymphknoten und grössere Lymphwege zum venösen System geleitet. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
       "trap": "",
       "tags": [
         "J2",
@@ -838,12 +856,15 @@
         "coreIdea": "Lymphatische Stationen",
         "correctReasoning": "Sie liegen entlang der bronchovaskulären Wege. Sein Einzugsgebiet ist ausgedehnt.",
         "wrongAnswerExplanations": {
-          "A": "Die grossen Einzugsgebiete verteilen sich auf mehrere Endwege.",
+          "A": "Typisch ist der linke Venenwinkel; anatomische Varianten sind möglich.",
           "B": "Sie liegen entlang der bronchovaskulären Wege.",
           "C": "Sein Einzugsgebiet ist ausgedehnt.",
-          "D": "Es handelt sich um interstitielle Lymphwege."
+          "D": "Die Lymphe wird über regionale Lymphknoten und grössere Lymphwege zum venösen System geleitet."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q14",
@@ -968,7 +989,10 @@
           "C": "Die Folien schliessen ihn aus dem mediastinalen Inhalt aus.",
           "D": "Sie begleiten den Phrenicus thorakal."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q16",
@@ -1098,7 +1122,10 @@
           "D": "Diese gehören zum Becken.",
           "E": "Diese liegen abdominal."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv28_q18",
@@ -1158,7 +1185,10 @@
           "C": "Schnitt und Summationsbild sind verschiedene Darstellungen.",
           "D": "Projektionsgeometrie beeinflusst die Silhouette."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q19",
@@ -1218,7 +1248,10 @@
           "C": "Diese Beschreibung passt zum fetalen Ductus arteriosus.",
           "D": "Dies erklärt seine Beziehung zu perikardialen Prozessen."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv28_q20",

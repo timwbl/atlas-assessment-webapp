@@ -157,7 +157,10 @@
           "D": "Diese Reihenfolge läuft peripher nach zentral.",
           "E": "Die segmentale Ebene ist peripherer als die Haupt- und Lappenbronchien."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv25_q03",
@@ -287,7 +290,10 @@
           "C": "Ein Lappen umfasst sehr viele Azini.",
           "E": "Er gehört zum Lymphsystem."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv25_q05",
@@ -498,12 +504,12 @@
           "id": "A"
         },
         {
-          "text": "Axiales und peripheres Gerüst haben keine mechanische Wechselwirkung.",
+          "text": "Das axiale Bindegewebe folgt primär interlobulären Venen statt den Bronchien.",
           "correct": false,
           "id": "B"
         },
         {
-          "text": "Alveolarsepten bestehen ausschliesslich aus dicken hyalinen Knorpelspangen.",
+          "text": "Knorpelplatten bilden den tragenden Anteil der Alveolarsepten.",
           "correct": false,
           "id": "C"
         },
@@ -513,7 +519,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Es bildet den peripheren Stützverband. B: Ihre Verbindung trägt zur Offenhaltung der Räume bei. C: Sie sind dünne Austauschsepten. D: Die gespeicherte Dehnungsenergie wird freigesetzt. Quelle: Vorlesungsfolien, PDF-S. 7.",
+      "explanation": "A: Es bildet den peripheren Stützverband. B: Das axiale Gerüst folgt den Luftwegen mit begleitenden pulmonalarteriellen Ästen; Venen verlaufen typischerweise zwischen Einheiten. C: Die Alveolarsepten enthalten unter anderem Kapillaren und feines Bindegewebe; Knorpelplatten gehören zu grösseren Luftwegen. D: Die gespeicherte Dehnungsenergie wird freigesetzt. Quelle: Vorlesungsfolien, PDF-S. 7.",
       "trap": "",
       "tags": [
         "J2",
@@ -533,11 +539,14 @@
         "correctReasoning": "Es bildet den peripheren Stützverband. Die gespeicherte Dehnungsenergie wird freigesetzt.",
         "wrongAnswerExplanations": {
           "A": "Es bildet den peripheren Stützverband.",
-          "B": "Ihre Verbindung trägt zur Offenhaltung der Räume bei.",
-          "C": "Sie sind dünne Austauschsepten.",
+          "B": "Das axiale Gerüst folgt den Luftwegen mit begleitenden pulmonalarteriellen Ästen; Venen verlaufen typischerweise zwischen Einheiten.",
+          "C": "Die Alveolarsepten enthalten unter anderem Kapillaren und feines Bindegewebe; Knorpelplatten gehören zu grösseren Luftwegen.",
           "D": "Die gespeicherte Dehnungsenergie wird freigesetzt."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv25_q09",
@@ -667,7 +676,10 @@
           "D": "Das ist eine fetale Herzverbindung.",
           "E": "Dies erfolgt über die pulmonale Austauschstrombahn."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv25_q11",
@@ -857,7 +869,10 @@
           "D": "Diese Stationen bilden keinen solchen seriellen Weg.",
           "E": "Das ist keine normale pulmonale Abflussfolge."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv25_q14",
@@ -982,7 +997,10 @@
           "C": "Dies ist keine akute autonome Wirkung.",
           "D": "Das ist die entgegengesetzte Kombination."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv25_q16",
@@ -1003,12 +1021,12 @@
           "id": "A"
         },
         {
-          "text": "Jede Änderung der Bronchialweite entsteht ausschliesslich durch Skelettmuskel im Bronchus.",
+          "text": "Vagale Aktivierung vermindert im Allgemeinen die bronchiale Drüsensekretion.",
           "correct": false,
           "id": "B"
         },
         {
-          "text": "Der Plexus pulmonalis ersetzt das gesamte bronchiale Blutgefässsystem.",
+          "text": "Die präganglionären parasympathischen Efferenzen des Plexus pulmonalis stammen aus dem thorakolumbalen Seitenhorn.",
           "correct": false,
           "id": "C"
         },
@@ -1018,7 +1036,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Beides verändert die Atemwegsfunktion. B: Die Bronchialwand besitzt regulierbare glatte Muskulatur. C: Nerven und Gefässe haben unterschiedliche Aufgaben. D: Der N. vagus vermittelt diese Komponente. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "explanation": "A: Beides verändert die Atemwegsfunktion. B: Die typische parasympathische Wirkung fördert die Sekretion und kann die Bronchien verengen. C: Die parasympathischen Efferenzen stammen hier aus dem Hirnstamm und verlaufen mit dem Vagus; thorakolumbal liegt der sympathische Ursprung. D: Der N. vagus vermittelt diese Komponente. Quelle: Vorlesungsfolien, PDF-S. 12.",
       "trap": "",
       "tags": [
         "J2",
@@ -1038,11 +1056,14 @@
         "correctReasoning": "Beides verändert die Atemwegsfunktion. Der N. vagus vermittelt diese Komponente.",
         "wrongAnswerExplanations": {
           "A": "Beides verändert die Atemwegsfunktion.",
-          "B": "Die Bronchialwand besitzt regulierbare glatte Muskulatur.",
-          "C": "Nerven und Gefässe haben unterschiedliche Aufgaben.",
+          "B": "Die typische parasympathische Wirkung fördert die Sekretion und kann die Bronchien verengen.",
+          "C": "Die parasympathischen Efferenzen stammen hier aus dem Hirnstamm und verlaufen mit dem Vagus; thorakolumbal liegt der sympathische Ursprung.",
           "D": "Der N. vagus vermittelt diese Komponente."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv25_q17",
@@ -1107,7 +1128,10 @@
           "D": "Dies kehrt die Entwicklungsrichtung weitgehend um.",
           "E": "Die Reihenfolge ist vertauscht."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv25_q18",

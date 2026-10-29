@@ -626,7 +626,7 @@
           "id": "A"
         },
         {
-          "text": "Bei unverändertem Q steigt dann die mittlere Geschwindigkeit auf das Vierfache.",
+          "text": "Eine Halbierung des Rohrradius vervierfacht bei unverändertem Q die mittlere Geschwindigkeit.",
           "correct": true,
           "id": "B"
         },
@@ -641,7 +641,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Qm=ρQv. B: Q=A·v bleibt konstant. C: A=πr². D: Dafür braucht es zusätzlich eine Widerstandsbeziehung. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "explanation": "A: Qm=ρQv. B: Die Fläche sinkt auf ein Viertel; Q=A·v erfordert daher die vierfache Geschwindigkeit. C: A=πr². D: Dafür braucht es zusätzlich eine Widerstandsbeziehung. Quelle: Vorlesungsfolien, PDF-S. 17.",
       "trap": "",
       "tags": [
         "J2",
@@ -658,10 +658,10 @@
       "questionGoal": "Radius und Geschwindigkeit",
       "structuredExplanation": {
         "coreIdea": "Radius und Geschwindigkeit",
-        "correctReasoning": "Qm=ρQv. Q=A·v bleibt konstant. A=πr².",
+        "correctReasoning": "Qm=ρQv. Die Fläche sinkt auf ein Viertel; Q=A·v erfordert daher die vierfache Geschwindigkeit. A=πr².",
         "wrongAnswerExplanations": {
           "A": "Qm=ρQv.",
-          "B": "Q=A·v bleibt konstant.",
+          "B": "Die Fläche sinkt auf ein Viertel; Q=A·v erfordert daher die vierfache Geschwindigkeit.",
           "C": "A=πr².",
           "D": "Dafür braucht es zusätzlich eine Widerstandsbeziehung."
         }
@@ -1123,7 +1123,7 @@
       ],
       "blockId": "j2-block1",
       "lectureId": "KV18/19",
-      "stem": "Im vorigen Modell wird nur das verengte Drittel durch einen zweiten identischen Halb-Radius-Kanal parallel ergänzt. Die übrigen Abschnitte bleiben in Serie. Welcher Anteil des ursprünglichen ungestörten Flusses folgt bei gleichem Δp?",
+      "stem": "Ein Drittel eines ursprünglich einheitlichen Rohres wird auf halben Radius verengt und durch einen zweiten identischen Halb-Radius-Kanal parallel ergänzt. Die unveränderten zwei Drittel bleiben in Serie. Welcher Anteil des ursprünglichen ungestörten Flusses folgt im Poiseuille-Modell bei gleichem Δp?",
       "options": [
         {
           "text": "16,7 %",
@@ -1191,12 +1191,12 @@
       "stem": "Für ein Rohr sei Re=ρdv/η mit dem Durchmesser d definiert. Beurteilen Sie isolierte Änderungen.",
       "options": [
         {
-          "text": "Re ist dimensionslos.",
+          "text": "Die Reynolds-Zahl ist eine dimensionslose Kennzahl der Strömung.",
           "correct": true,
           "id": "A"
         },
         {
-          "text": "Eine grössere Reynolds-Zahl ist im Rohr generell ein Hinweis auf stärkere Dominanz viskoser gegenüber trägen Kräften.",
+          "text": "Eine grössere Reynolds-Zahl bedeutet stärkeres Überwiegen viskoser Kräfte.",
           "correct": false,
           "id": "B"
         },
@@ -1211,7 +1211,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Die Einheiten kürzen sich heraus. B: Re beschreibt das Verhältnis von Trägheit zu viskosen Kräften. C: Die Viskosität steht im Nenner. D: Die Geschwindigkeit geht linear ein. Quelle: Vorlesungsfolien, PDF-S. 28–30.",
+      "explanation": "A: Die Einheiten von ρdv/η kürzen sich heraus. B: Re beschreibt das Verhältnis von Trägheits- zu viskosen Kräften, nicht das umgekehrte Verhältnis. C: Die Viskosität steht im Nenner. D: Die Geschwindigkeit geht linear ein. Quelle: Vorlesungsfolien, PDF-S. 28–30.",
       "trap": "",
       "tags": [
         "J2",
@@ -1228,10 +1228,10 @@
       "questionGoal": "Reynolds-Zahl",
       "structuredExplanation": {
         "coreIdea": "Reynolds-Zahl",
-        "correctReasoning": "Die Einheiten kürzen sich heraus. Die Viskosität steht im Nenner. Die Geschwindigkeit geht linear ein.",
+        "correctReasoning": "Die Einheiten von ρdv/η kürzen sich heraus. Die Viskosität steht im Nenner. Die Geschwindigkeit geht linear ein.",
         "wrongAnswerExplanations": {
-          "A": "Die Einheiten kürzen sich heraus.",
-          "B": "Re beschreibt das Verhältnis von Trägheit zu viskosen Kräften.",
+          "A": "Die Einheiten von ρdv/η kürzen sich heraus.",
+          "B": "Re beschreibt das Verhältnis von Trägheits- zu viskosen Kräften, nicht das umgekehrte Verhältnis.",
           "C": "Die Viskosität steht im Nenner.",
           "D": "Die Geschwindigkeit geht linear ein."
         }

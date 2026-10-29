@@ -282,7 +282,10 @@
           "C": "Die Avogadro-Konstante verbindet Mol- und Teilchenzahl.",
           "D": "Die Gleichung verwendet die absolute Skala."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv26_27_q05",
@@ -787,7 +790,10 @@
           "C": "Der Gesamtdruck allein reicht bei variabler Gemischzusammensetzung nicht.",
           "D": "Die Bindung an Hämoglobin erfordert ein zusätzliches Modell."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv26_27_q13",
@@ -1102,7 +1108,10 @@
           "D": "Auch leichte Moleküle besitzen thermische Bewegung.",
           "E": "Es gibt ohne gerichtete Strömung keine bevorzugte Raumrichtung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv26_27_q18",
@@ -1133,12 +1142,12 @@
           "id": "C"
         },
         {
-          "text": "Eine Erwärmung verändert ausschliesslich die Molekülmasse.",
+          "text": "Die quadratische Mittelgeschwindigkeit steigt proportional zur Kelvin-Temperatur.",
           "correct": false,
           "id": "D"
         }
       ],
-      "explanation": "A: Die charakteristischen Geschwindigkeiten steigen. B: Ekin=3kBT/2. C: vᵣₘₛ ist proportional zu √T. D: Die Molekülmasse desselben Gases bleibt unverändert. Quelle: Vorlesungsfolien, PDF-S. 20–23.",
+      "explanation": "A: Die charakteristischen Geschwindigkeiten steigen. B: Ekin=3kBT/2. C: vᵣₘₛ ist proportional zu √T. D: Bei gleichem Gas ist v_rms proportional zur Quadratwurzel der absoluten Temperatur, nicht zur Temperatur selbst. Quelle: Vorlesungsfolien, PDF-S. 20–23.",
       "trap": "",
       "tags": [
         "J2",
@@ -1160,9 +1169,12 @@
           "A": "Die charakteristischen Geschwindigkeiten steigen.",
           "B": "Ekin=3kBT/2.",
           "C": "vᵣₘₛ ist proportional zu √T.",
-          "D": "Die Molekülmasse desselben Gases bleibt unverändert."
+          "D": "Bei gleichem Gas ist v_rms proportional zur Quadratwurzel der absoluten Temperatur, nicht zur Temperatur selbst."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv26_27_q19",

@@ -238,22 +238,22 @@
           "id": "A"
         },
         {
-          "text": "Langerhans-Zellen bilden den kontraktilen Apparat der Haaraufrichtung.",
+          "text": "Langerhans-Zellen nehmen Berührungsreize als primäre mechanosensorische Zellen auf.",
           "correct": false,
           "id": "B"
         },
         {
-          "text": "Merkel-Zellen sind die hauptsächlichen holokrinen Talgproduzenten.",
+          "text": "Merkel-Zellen sind dendritische antigenpräsentierende Zellen.",
           "correct": false,
           "id": "C"
         },
         {
-          "text": "Keratinozyten sind ausschliesslich Zellen der Subcutis.",
+          "text": "Die epidermalen Keratinozyten bilden ein mehrreihiges Epithel.",
           "correct": false,
           "id": "D"
         }
       ],
-      "explanation": "A: Sie bilden Melanin und geben Pigment weiter. B: Sie sind dendritische Immunzellen. C: Sie gehören zu Mechanosensorkomplexen. D: Sie bilden den Hauptzelltyp der Epidermis. Quelle: Vorlesungsfolien, PDF-S. 10–12.",
+      "explanation": "A: Sie bilden Melanin und geben Pigment weiter. B: Langerhans-Zellen dienen der Immunabwehr; die mechanosensorische Zuordnung passt zu Merkel-Zell-Komplexen. C: Dies verwechselt sie mit Langerhans-Zellen; Merkel-Zellen sind an der Mechanorezeption beteiligt. D: Die Epidermis ist ein mehrschichtig verhorntes Plattenepithel; mehrreihig bezeichnet einen anderen Aufbau. Quelle: Vorlesungsfolien, PDF-S. 10–12.",
       "trap": "",
       "tags": [
         "J2",
@@ -273,11 +273,14 @@
         "correctReasoning": "Sie bilden Melanin und geben Pigment weiter.",
         "wrongAnswerExplanations": {
           "A": "Sie bilden Melanin und geben Pigment weiter.",
-          "B": "Sie sind dendritische Immunzellen.",
-          "C": "Sie gehören zu Mechanosensorkomplexen.",
-          "D": "Sie bilden den Hauptzelltyp der Epidermis."
+          "B": "Langerhans-Zellen dienen der Immunabwehr; die mechanosensorische Zuordnung passt zu Merkel-Zell-Komplexen.",
+          "C": "Dies verwechselt sie mit Langerhans-Zellen; Merkel-Zellen sind an der Mechanorezeption beteiligt.",
+          "D": "Die Epidermis ist ein mehrschichtig verhorntes Plattenepithel; mehrreihig bezeichnet einen anderen Aufbau."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv21_q05",
@@ -657,7 +660,10 @@
           "D": "Die dargestellte Abgabe umfasst eine membranumschlossene Abschnürung.",
           "E": "Myoepithel unterstützt die Austreibung, nicht die Sekretbildung auf diese Weise."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv21_q11",
@@ -722,7 +728,10 @@
           "C": "Beide Strukturen haben unterschiedlichen Aufbau.",
           "D": "Dies ist keine Mammamyoepithelfunktion."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv21_q12",
@@ -787,7 +796,10 @@
           "C": "Die Übertragung ist ein selektiver Transportprozess.",
           "D": "Antikörper sind Proteine und entstehen nicht aus Fettspaltung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv21_q13",
@@ -977,7 +989,10 @@
           "C": "Haar- und Nagelmatrix sind verschiedene Anlagen.",
           "E": "Dies schädigt die Matrix nicht."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv21_q16",
@@ -1133,12 +1148,12 @@
           "id": "C"
         },
         {
-          "text": "Sehr schnelle Adaptation bedeutet, dass der Rezeptor ausschliesslich die konstante Reizdauer unabhängig von Änderungen kodiert.",
+          "text": "Bei rasch adaptierenden Rezeptoren bildet eine anhaltend hohe Entladungsrate primär den statischen Reizanteil ab.",
           "correct": false,
           "id": "D"
         }
       ],
-      "explanation": "A: Ihr Reiz entsteht am bewegten Haarapparat. B: Sie gehören zu den schnell adaptierenden Mechanorezeptoren. C: Ihre Antwort fällt bei konstantem Reiz langsamer ab. D: Schnell adaptierende Systeme betonen Änderungen. Quelle: Vorlesungsfolien, PDF-S. 34–40.",
+      "explanation": "A: Ihr Reiz entsteht am bewegten Haarapparat. B: Sie gehören zu den schnell adaptierenden Mechanorezeptoren. C: Ihre Antwort fällt bei konstantem Reiz langsamer ab. D: Rasch adaptierende Sensoren antworten besonders auf Änderungen; anhaltende statische Information wird eher langsam adaptierend abgebildet. Quelle: Vorlesungsfolien, PDF-S. 34–40.",
       "trap": "",
       "tags": [
         "J2",
@@ -1160,7 +1175,7 @@
           "A": "Ihr Reiz entsteht am bewegten Haarapparat.",
           "B": "Sie gehören zu den schnell adaptierenden Mechanorezeptoren.",
           "C": "Ihre Antwort fällt bei konstantem Reiz langsamer ab.",
-          "D": "Schnell adaptierende Systeme betonen Änderungen."
+          "D": "Rasch adaptierende Sensoren antworten besonders auf Änderungen; anhaltende statische Information wird eher langsam adaptierend abgebildet."
         }
       }
     },

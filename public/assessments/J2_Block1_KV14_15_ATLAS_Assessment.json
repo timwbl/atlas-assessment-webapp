@@ -342,7 +342,10 @@
           "C": "Eine Störung kann konotrunkale Fehlbildungen begünstigen.",
           "D": "Beide Anteile tragen zur definitiven Kammertrennung bei."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv14_15_q06",
@@ -423,12 +426,12 @@
       "stem": "Beurteilen Sie die Herkunft und Funktion beteiligter Zellpopulationen.",
       "options": [
         {
-          "text": "Die gesamte Myokardentwicklung ist unabhängig von Signalen des Epikards.",
+          "text": "Epikardiale Signale werden erst nach Abschluss der embryonalen Myokardentwicklung wirksam.",
           "correct": false,
           "id": "A"
         },
         {
-          "text": "Sämtliche koronaren Endothelzellen entstehen ausschliesslich aus dem Epikard.",
+          "text": "Die Endothelzellen der Koronargefässe gehen als einheitliche Zellpopulation aus dem Epikard hervor.",
           "correct": false,
           "id": "B"
         },
@@ -438,12 +441,12 @@
           "id": "C"
         },
         {
-          "text": "Das Cardiac Jelly ist eine vollständig ausgereifte Herzmuskelschicht.",
+          "text": "Das Cardiac Jelly ist die kontraktile Innenschicht des frühen Herzschlauchs.",
           "correct": false,
           "id": "D"
         }
       ],
-      "explanation": "A: Das Epikard unterstützt die Myokardentwicklung. B: Die Folien nennen mehrere Quellen, insbesondere Endokard und Sinus venosus. C: Daraus entsteht die epikardiale Bedeckung. D: Es ist extrazelluläre Matrix zwischen Endokard und Myokard. Quelle: Vorlesungsfolien, PDF-S. 20–22,37.",
+      "explanation": "A: Das Epikard liefert bereits während der Entwicklung unterstützende Signale. B: Die Folien nennen mehrere Beiträge zur koronaren Endothelentwicklung, insbesondere Endokard und Sinus venosus. C: Daraus entsteht die epikardiale Bedeckung. D: Es ist extrazelluläre Matrix zwischen Endokard und Myokard, kein kontraktiles Muskelgewebe. Quelle: Vorlesungsfolien, PDF-S. 20–22,37.",
       "trap": "",
       "tags": [
         "J2",
@@ -462,10 +465,10 @@
         "coreIdea": "Embryonale Zellbeiträge",
         "correctReasoning": "Daraus entsteht die epikardiale Bedeckung.",
         "wrongAnswerExplanations": {
-          "A": "Das Epikard unterstützt die Myokardentwicklung.",
-          "B": "Die Folien nennen mehrere Quellen, insbesondere Endokard und Sinus venosus.",
+          "A": "Das Epikard liefert bereits während der Entwicklung unterstützende Signale.",
+          "B": "Die Folien nennen mehrere Beiträge zur koronaren Endothelentwicklung, insbesondere Endokard und Sinus venosus.",
           "C": "Daraus entsteht die epikardiale Bedeckung.",
-          "D": "Es ist extrazelluläre Matrix zwischen Endokard und Myokard."
+          "D": "Es ist extrazelluläre Matrix zwischen Endokard und Myokard, kein kontraktiles Muskelgewebe."
         }
       }
     },
@@ -912,7 +915,10 @@
           "C": "Sie bezeichnet die de-novo-Gefässbildung.",
           "D": "Dies fördert den Ausbau der Gefässversorgung."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "low_concept_depth"
+      ]
     },
     {
       "id": "j2_b1_kv14_15_q15",
@@ -1102,7 +1108,10 @@
           "D": "Er umgeht die Lungenstrombahn und ist kein Plazentazufluss.",
           "E": "Die Nabelarterien führen Blut vom Fetus zur Plazenta."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     },
     {
       "id": "j2_b1_kv14_15_q18",
@@ -1292,7 +1301,10 @@
           "D": "Keine dieser Zuordnungen ist korrekt.",
           "E": "Die Fossa ovalis liegt im Vorhofseptum."
         }
-      }
+      },
+      "reviewedQualityFlags": [
+        "too_recall_heavy"
+      ]
     }
   ]
 }
