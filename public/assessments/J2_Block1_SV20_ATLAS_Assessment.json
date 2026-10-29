@@ -1,0 +1,1289 @@
+{
+  "id": "assessment_j2_block1_sv20_20261029",
+  "lectureCode": "SV20",
+  "title": "Hydrostatik, Blutrheologie und Gefässcompliance",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "SV_Hydrostatik_WS26-27.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Offensichtlichen Radius-Pfeilfehler PDF-S.12 korrigiert: passive Erweiterung bedeutet Radiuszunahme und Widerstandsabnahme. Keine universelle monotone Aussage zur Viskosität bei abnehmendem Fluss: Durchmesser, Scherung, Aggregation und Messbedingungen getrennt behandelt. Abgleich der Röhrenviskosität: Pries et al.1992 https://pubmed.ncbi.nlm.nih.gov/1481902/ sowie Reinke et al.1986 https://pubmed.ncbi.nlm.nih.gov/3742742/.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Hydrostatische Effekte auf arterielle und venöse Drücke und Perfusionsgradienten anwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Hämatokrit, Gefässdurchmesser und scheinbare Blutviskosität verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Compliance, Windkesselwirkung und Druck-Fluss-Beziehungen erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Bernoulli-Energiebeiträge auf Kreislaufphänomene übertragen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_sv20_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Ein arterieller und venöser Messpunkt liegen beide gleich weit unter Herzhöhe. Ihre lokalen Drücke steigen allein hydrostatisch jeweils um 30 mmHg. Was geschieht mit ihrer arteriovenösen Druckdifferenz?",
+      "options": [
+        {
+          "text": "Sie wird zwangsläufig null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie bleibt unverändert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie sinkt um 30 mmHg.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie steigt um 60 mmHg.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie steigt um 30 mmHg.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die ursprüngliche Perfusionsdifferenz bleibt bestehen. B: Der gleiche additive Anteil fällt bei der Differenzbildung weg. C: Beide Seiten werden gleich verschoben. D: Die beiden Druckanteile dürfen nicht addiert werden. E: Auch der venöse Druck steigt um denselben Betrag. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Gemeinsamer Höhenanteil"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gemeinsamer Höhenanteil"
+      ],
+      "questionGoal": "Gemeinsamer Höhenanteil",
+      "structuredExplanation": {
+        "coreIdea": "Gemeinsamer Höhenanteil",
+        "correctReasoning": "Der gleiche additive Anteil fällt bei der Differenzbildung weg.",
+        "wrongAnswerExplanations": {
+          "A": "Die ursprüngliche Perfusionsdifferenz bleibt bestehen.",
+          "C": "Beide Seiten werden gleich verschoben.",
+          "D": "Die beiden Druckanteile dürfen nicht addiert werden.",
+          "E": "Auch der venöse Druck steigt um denselben Betrag."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Die Manschette liegt 27,2 cm unter Herzhöhe. Vernachlässigen Sie weitere Einflüsse und verwenden Sie 1 mmHg≈1,36 cm H₂O. Welche hydrostatische Abweichung ist näherungsweise zu erwarten?",
+      "options": [
+        {
+          "text": "Etwa 20 mmHg höher als auf Herzhöhe",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 37 mmHg höher als auf Herzhöhe",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Etwa 20 mmHg niedriger als auf Herzhöhe",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Keine Abweichung, da hydrostatische Effekte nur Venen betreffen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 2 mmHg höher als auf Herzhöhe",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterhalb des Referenzniveaus erhöht die Flüssigkeitssäule den Druck. B: Hier wurde mit 1,36 multipliziert statt dividiert. C: Das Vorzeichen wäre oberhalb des Herzens passend. D: Schwerkraft beeinflusst beide Gefässarten. E: Der Wert ist um zehn zu klein. Quelle: Vorlesungsfolien, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Armhöhe bei Blutdruckmessung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Armhöhe bei Blutdruckmessung"
+      ],
+      "questionGoal": "Armhöhe bei Blutdruckmessung",
+      "structuredExplanation": {
+        "coreIdea": "Armhöhe bei Blutdruckmessung",
+        "correctReasoning": "Unterhalb des Referenzniveaus erhöht die Flüssigkeitssäule den Druck.",
+        "wrongAnswerExplanations": {
+          "B": "Hier wurde mit 1,36 multipliziert statt dividiert.",
+          "C": "Das Vorzeichen wäre oberhalb des Herzens passend.",
+          "D": "Schwerkraft beeinflusst beide Gefässarten.",
+          "E": "Der Wert ist um zehn zu klein."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie die Rolle der Schwerkraft bei der Betrachtung oberhalb des Herzens.",
+      "options": [
+        {
+          "text": "Arterien sind von der Schwerkraft grundsätzlich unbeeinflusst.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "In einer kontinuierlichen Flüssigkeitssäule nimmt der hydrostatische Druck nach oben ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei niedrigem Innendruck können extrathorakale Venen kollabieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine kollabierte Vene muss unbegrenzt beliebige negative transmuralen Drücke offen weiterleiten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch ihr lokaler Druck enthält einen hydrostatischen Anteil. B: Der Höhenanteil hat oberhalb der Referenz ein negatives Vorzeichen. C: Entscheidend ist der Druck relativ zur Umgebung. D: Kollaps begrenzt die einfache offene Säulenbetrachtung. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Venendruck über Herzhöhe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Venendruck über Herzhöhe"
+      ],
+      "questionGoal": "Venendruck über Herzhöhe",
+      "structuredExplanation": {
+        "coreIdea": "Venendruck über Herzhöhe",
+        "correctReasoning": "Der Höhenanteil hat oberhalb der Referenz ein negatives Vorzeichen. Entscheidend ist der Druck relativ zur Umgebung.",
+        "wrongAnswerExplanations": {
+          "A": "Auch ihr lokaler Druck enthält einen hydrostatischen Anteil.",
+          "B": "Der Höhenanteil hat oberhalb der Referenz ein negatives Vorzeichen.",
+          "C": "Entscheidend ist der Druck relativ zur Umgebung.",
+          "D": "Kollaps begrenzt die einfache offene Säulenbetrachtung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q04",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie Druckmessungen in unterschiedlichen Körperhöhen.",
+      "options": [
+        {
+          "text": "Ein hoher absoluter Fussarteriendruck beweist allein eine höhere Gewebeperfusion als am Arm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein stromabwärts sinkender Mitteldruck kann durch Strömungswiderstand bedingt sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Für einen Vergleich von Arm- und Beindruck sollte die Höhendifferenz berücksichtigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Gleiche lokale arteriovenöse Höhenanteile heben sich bei der Differenzbildung idealisiert auf.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch venöser Druck und Gefässwiderstand sind relevant. B: Der Widerstandsverlust ist vom Höhenanteil zu unterscheiden. C: Sonst kann Hydrostatik einen Unterschied vortäuschen oder überlagern. D: Dies setzt gleiches Niveau und offene vergleichbare Säulen voraus. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Hydrostatik und Strömungsdruck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrostatik und Strömungsdruck"
+      ],
+      "questionGoal": "Hydrostatik und Strömungsdruck",
+      "structuredExplanation": {
+        "coreIdea": "Hydrostatik und Strömungsdruck",
+        "correctReasoning": "Der Widerstandsverlust ist vom Höhenanteil zu unterscheiden. Sonst kann Hydrostatik einen Unterschied vortäuschen oder überlagern. Dies setzt gleiches Niveau und offene vergleichbare Säulen voraus.",
+        "wrongAnswerExplanations": {
+          "A": "Auch venöser Druck und Gefässwiderstand sind relevant.",
+          "B": "Der Widerstandsverlust ist vom Höhenanteil zu unterscheiden.",
+          "C": "Sonst kann Hydrostatik einen Unterschied vortäuschen oder überlagern.",
+          "D": "Dies setzt gleiches Niveau und offene vergleichbare Säulen voraus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Bei sonst gleichen Bedingungen steigt der Hämatokrit deutlich an. Welche Folge ist im vereinfachten Strömungsmodell am ehesten zu erwarten?",
+      "options": [
+        {
+          "text": "Vollständiger Ersatz der Viskosität durch Compliance",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Niedrigere Viskosität und höherer Fluss in jedem Gefäss",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Höhere scheinbare Viskosität und geringerer Fluss bei gleichem Druckgefälle",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine feste Verdopplung des Flusses unabhängig von der Änderung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unveränderter Widerstand, weil Blut nur aus Wasser besteht",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Rheologie und Wanddehnbarkeit sind unterschiedliche Eigenschaften. B: Das ist keine allgemeine Folge erhöhten Hämatokrits. C: Ein höherer Zellanteil kann den Strömungswiderstand erhöhen. D: Eine solche universelle Bilanz folgt nicht. E: Blut enthält Zellen und Proteine. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Hämatokrit und Widerstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hämatokrit und Widerstand"
+      ],
+      "questionGoal": "Hämatokrit und Widerstand",
+      "structuredExplanation": {
+        "coreIdea": "Hämatokrit und Widerstand",
+        "correctReasoning": "Ein höherer Zellanteil kann den Strömungswiderstand erhöhen.",
+        "wrongAnswerExplanations": {
+          "A": "Rheologie und Wanddehnbarkeit sind unterschiedliche Eigenschaften.",
+          "B": "Das ist keine allgemeine Folge erhöhten Hämatokrits.",
+          "D": "Eine solche universelle Bilanz folgt nicht.",
+          "E": "Blut enthält Zellen und Proteine."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie die Anwendung eines konstanten Viskositätswerts auf Blut.",
+      "options": [
+        {
+          "text": "Blut besitzt unter allen Messbedingungen dieselbe Viskosität wie Wasser.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein konstanter Blutviskositätswert ist für jede Scherrate und jeden Durchmesser exakt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Änderung der Erythrozytenverformbarkeit kann die Mikrozirkulation nicht beeinflussen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die scheinbare Viskosität kann vom Gefässdurchmesser abhängen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zellen, Proteine und Strömungsbedingungen verändern sie. B: Dies verkennt das nichtnewtonsche Verhalten. C: Verformbarkeit ist gerade für enge Gefässe bedeutsam. D: Dies zeigt der Fåhraeus-Lindqvist-Effekt. Quelle: Vorlesungsfolien, PDF-S. 5–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Nichtnewtonsches Blut"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nichtnewtonsches Blut"
+      ],
+      "questionGoal": "Nichtnewtonsches Blut",
+      "structuredExplanation": {
+        "coreIdea": "Nichtnewtonsches Blut",
+        "correctReasoning": "Dies zeigt der Fåhraeus-Lindqvist-Effekt.",
+        "wrongAnswerExplanations": {
+          "A": "Zellen, Proteine und Strömungsbedingungen verändern sie.",
+          "B": "Dies verkennt das nichtnewtonsche Verhalten.",
+          "C": "Verformbarkeit ist gerade für enge Gefässe bedeutsam.",
+          "D": "Dies zeigt der Fåhraeus-Lindqvist-Effekt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Bei kleiner werdenden Gefässdurchmessern im Bereich oberhalb des Viskositätsminimums sinkt die scheinbare Viskosität. Welche Erklärung passt zum dargestellten Effekt?",
+      "options": [
+        {
+          "text": "Umwandlung von Plasma in Gas an der Gefässwand",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständige Auflösung der Erythrozyten in jedem kleinen Gefäss",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zunehmende Verdickung aller Erythrozyten zu starren Kugeln",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verlust sämtlicher Plasmaproteine allein durch geringeren Durchmesser",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Axiale Erythrozytenanordnung mit einer relativ zellarmen wandnahen Plasmaschicht",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist kein physiologischer Rheologiemechanismus. B: Physiologische Mikrozirkulation setzt keine Hämolyse voraus. C: Dies würde die enge Passage eher erschweren. D: Die Durchmesserabhängigkeit setzt keinen generellen Proteinverlust voraus. E: Die räumliche Zellverteilung verändert den Strömungswiderstand. Quelle: Vorlesungsfolien, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Zellarme Randschicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellarme Randschicht"
+      ],
+      "questionGoal": "Zellarme Randschicht",
+      "structuredExplanation": {
+        "coreIdea": "Zellarme Randschicht",
+        "correctReasoning": "Die räumliche Zellverteilung verändert den Strömungswiderstand.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist kein physiologischer Rheologiemechanismus.",
+          "B": "Physiologische Mikrozirkulation setzt keine Hämolyse voraus.",
+          "C": "Dies würde die enge Passage eher erschweren.",
+          "D": "Die Durchmesserabhängigkeit setzt keinen generellen Proteinverlust voraus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie die Durchmesserabhängigkeit der scheinbaren Blutviskosität.",
+      "options": [
+        {
+          "text": "Die Abnahme der Viskosität lässt sich nicht unbegrenzt bis zum Durchmesser null fortsetzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Gefässdurchmesser und Hämatokrit sind definitionsgemäss dieselbe Messgrösse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das gezeigte Minimum beweist, dass jedes Gefäss bei exakt demselben Durchmesser optimal arbeitet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "In sehr engen Kapillaren ist die Erythrozytenverformbarkeit entscheidend.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Unterhalb eines Minimums erschwert die Zellpassage den Fluss. B: Durchmesser beschreibt Geometrie, Hämatokrit den Zellvolumenanteil. C: Der Verlauf hängt von Modell und Bedingungen ab. D: Die Zellen müssen sich dem Lumen anpassen. Quelle: Vorlesungsfolien, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Grenzen des Fåhraeus-Lindqvist-Effekts"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzen des Fåhraeus-Lindqvist-Effekts"
+      ],
+      "questionGoal": "Grenzen des Fåhraeus-Lindqvist-Effekts",
+      "structuredExplanation": {
+        "coreIdea": "Grenzen des Fåhraeus-Lindqvist-Effekts",
+        "correctReasoning": "Unterhalb eines Minimums erschwert die Zellpassage den Fluss. Die Zellen müssen sich dem Lumen anpassen.",
+        "wrongAnswerExplanations": {
+          "A": "Unterhalb eines Minimums erschwert die Zellpassage den Fluss.",
+          "B": "Durchmesser beschreibt Geometrie, Hämatokrit den Zellvolumenanteil.",
+          "C": "Der Verlauf hängt von Modell und Bedingungen ab.",
+          "D": "Die Zellen müssen sich dem Lumen anpassen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Ein Gefäss nimmt bei einem Druckanstieg von 10 mmHg zusätzlich 30 ml auf. Welche lokale mittlere Compliance folgt?",
+      "options": [
+        {
+          "text": "40 ml/mmHg",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "300 ml/mmHg",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "20 ml/mmHg",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,33 ml/mmHg",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3 ml/mmHg",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Volumen und Druck dürfen nicht addiert werden. B: Hier wurden Volumen und Druck multipliziert. C: Differenzbildung zwischen ungleichen Einheiten ist nicht sinnvoll. D: Dies ist der Kehrwert. E: C=ΔV/ΔP=30/10. Quelle: Vorlesungsfolien, PDF-S. 9,11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Compliance berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Compliance berechnen"
+      ],
+      "questionGoal": "Compliance berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Compliance berechnen",
+        "correctReasoning": "C=ΔV/ΔP=30/10.",
+        "wrongAnswerExplanations": {
+          "A": "Volumen und Druck dürfen nicht addiert werden.",
+          "B": "Hier wurden Volumen und Druck multipliziert.",
+          "C": "Differenzbildung zwischen ungleichen Einheiten ist nicht sinnvoll.",
+          "D": "Dies ist der Kehrwert."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Bei gleichem aufgenommenem Schlagvolumen sinkt die effektive arterielle Compliance. Welche unmittelbare Wirkung ist im vereinfachten Windkesselmodell zu erwarten?",
+      "options": [
+        {
+          "text": "Eine kleinere Druckänderung für dieselbe Volumenänderung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine grössere Druckänderung für dieselbe Volumenänderung",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein zwingender Verschluss aller peripheren Gefässe",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gleiche Druckänderung unabhängig von C",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein dauerhaft fehlender systolischer Druckanstieg",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre bei höherer Compliance zu erwarten. B: ΔP=ΔV/C nimmt bei kleinerem C zu. C: Die Änderung erfordert keinen derartigen Verschluss. D: Compliance verbindet gerade ΔV und ΔP. E: Geringere Compliance dämpft den Druckanstieg schlechter. Quelle: Vorlesungsfolien, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Steife Aorta"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Steife Aorta"
+      ],
+      "questionGoal": "Steife Aorta",
+      "structuredExplanation": {
+        "coreIdea": "Steife Aorta",
+        "correctReasoning": "ΔP=ΔV/C nimmt bei kleinerem C zu.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre bei höherer Compliance zu erwarten.",
+          "C": "Die Änderung erfordert keinen derartigen Verschluss.",
+          "D": "Compliance verbindet gerade ΔV und ΔP.",
+          "E": "Geringere Compliance dämpft den Druckanstieg schlechter."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie Druck-Volumen-Beziehungen in einem angegebenen Arbeitsbereich.",
+      "options": [
+        {
+          "text": "Ein steilerer Anstieg von Volumen gegen Druck bedeutet höhere Compliance.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Venen können bei kleinen Druckänderungen erhebliche Volumenänderungen aufnehmen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Gefäss kann bei verschiedenen Füllungszuständen unterschiedliche lokale Compliance besitzen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Compliance hat dieselbe Einheit wie Strömungswiderstand.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Steigung ist ΔV/ΔP. B: Sie besitzen im physiologischen Bereich eine hohe Kapazität beziehungsweise Compliance. C: Reale Druck-Volumen-Beziehungen sind häufig nichtlinear. D: Compliance ist Volumen pro Druck, Widerstand Druck pro Fluss. Quelle: Vorlesungsfolien, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Compliance vergleichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Compliance vergleichen"
+      ],
+      "questionGoal": "Compliance vergleichen",
+      "structuredExplanation": {
+        "coreIdea": "Compliance vergleichen",
+        "correctReasoning": "Die Steigung ist ΔV/ΔP. Sie besitzen im physiologischen Bereich eine hohe Kapazität beziehungsweise Compliance. Reale Druck-Volumen-Beziehungen sind häufig nichtlinear.",
+        "wrongAnswerExplanations": {
+          "A": "Die Steigung ist ΔV/ΔP.",
+          "B": "Sie besitzen im physiologischen Bereich eine hohe Kapazität beziehungsweise Compliance.",
+          "C": "Reale Druck-Volumen-Beziehungen sind häufig nichtlinear.",
+          "D": "Compliance ist Volumen pro Druck, Widerstand Druck pro Fluss."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Warum fliesst aus elastischen Arterien auch nach Ende des ventrikulären Auswurfs Blut weiter in die Peripherie?",
+      "options": [
+        {
+          "text": "Die Aortenklappe pumpt während ihrer Schliessung aktiv Blut in beide Richtungen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die systolisch gedehnte Wand gibt gespeicherte elastische Energie und Volumen ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Aortenwand muss hierfür aus Skelettmuskelfasern bestehen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der linke Ventrikel wirft während der gesamten Diastole unverändert weiter aus",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der periphere Widerstand fällt in jeder Diastole auf null",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Klappe verhindert Rückfluss und ist keine aktive Pumpe. B: Der elastische Rückstoss stützt den diastolischen Fluss. C: Elastischer Rückstoss benötigt keine Skelettmuskelfasern. D: Der diastolische Vorwärtsfluss wird durch den Windkessel gestützt. E: Der Widerstand bleibt Teil der Flussbilanz. Quelle: Vorlesungsfolien, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Windkessel in der Diastole"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Windkessel in der Diastole"
+      ],
+      "questionGoal": "Windkessel in der Diastole",
+      "structuredExplanation": {
+        "coreIdea": "Windkessel in der Diastole",
+        "correctReasoning": "Der elastische Rückstoss stützt den diastolischen Fluss.",
+        "wrongAnswerExplanations": {
+          "A": "Die Klappe verhindert Rückfluss und ist keine aktive Pumpe.",
+          "C": "Elastischer Rückstoss benötigt keine Skelettmuskelfasern.",
+          "D": "Der diastolische Vorwärtsfluss wird durch den Windkessel gestützt.",
+          "E": "Der Widerstand bleibt Teil der Flussbilanz."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie die Windkesselwirkung und ihre Grenzen.",
+      "options": [
+        {
+          "text": "Peripherer Strömungswiderstand und Gefässcompliance sind austauschbare Begriffe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine starre Aorta kann dieselbe elastische Volumenreserve speichern wie eine dehnbare.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Windkesselwirkung erzeugt zusätzliche Energie ohne vorherige Arbeit des Herzens.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Elastische Volumenspeicherung glättet den pulsatilen Herzauswurf.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie beschreiben Flusshemmung beziehungsweise Volumendehnbarkeit. B: Ohne Dehnung fehlt diese Reserve. C: Sie speichert und verteilt kardial zugeführte Energie. D: Ein Teil des Volumens wird zeitversetzt weitergegeben. Quelle: Vorlesungsfolien, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Pulsdämpfung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pulsdämpfung"
+      ],
+      "questionGoal": "Pulsdämpfung",
+      "structuredExplanation": {
+        "coreIdea": "Pulsdämpfung",
+        "correctReasoning": "Ein Teil des Volumens wird zeitversetzt weitergegeben.",
+        "wrongAnswerExplanations": {
+          "A": "Sie beschreiben Flusshemmung beziehungsweise Volumendehnbarkeit.",
+          "B": "Ohne Dehnung fehlt diese Reserve.",
+          "C": "Sie speichert und verteilt kardial zugeführte Energie.",
+          "D": "Ein Teil des Volumens wird zeitversetzt weitergegeben."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Bei einer passiv dehnbaren Arterie steigt mit ΔP zugleich der Radius. Warum kann Q stärker steigen als bei einem starren Rohr?",
+      "options": [
+        {
+          "text": "Das Blut wird allein wegen der Dehnung zwangsläufig inkompressibel",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zum grösseren Druckgradienten kommt ein durch Radiuszunahme verringerter Widerstand.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Gefässlänge muss bei jeder Druckänderung um die vierte Potenz zunehmen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Radiuszunahme erhöht nach Poiseuille den Widerstand",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Druckgradient wird durch jede Dehnung auf null reduziert",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Dehnbarkeit betrifft primär die Wand. B: Beide Effekte fördern den Fluss. C: Eine solche Voraussetzung besteht nicht. D: Ein grösserer Radius senkt den Widerstand. E: Der vorgegebene Anstieg von ΔP bleibt Teil des Modells. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Druckabhängige Gefässweite"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druckabhängige Gefässweite"
+      ],
+      "questionGoal": "Druckabhängige Gefässweite",
+      "structuredExplanation": {
+        "coreIdea": "Druckabhängige Gefässweite",
+        "correctReasoning": "Beide Effekte fördern den Fluss.",
+        "wrongAnswerExplanations": {
+          "A": "Die Dehnbarkeit betrifft primär die Wand.",
+          "C": "Eine solche Voraussetzung besteht nicht.",
+          "D": "Ein grösserer Radius senkt den Widerstand.",
+          "E": "Der vorgegebene Anstieg von ΔP bleibt Teil des Modells."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Eine Organarteriole hält ihren Fluss bei moderat steigendem Perfusionsdruck ungefähr konstant. Welche aktive Anpassung passt dazu?",
+      "options": [
+        {
+          "text": "Eine reine Änderung der Manschettenhöhe",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein unveränderter Widerstand bei beliebig grosser Drucksteigerung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Widerstandsabnahme durch Erweiterung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Widerstandszunahme durch Verengung",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine spontane Umwandlung von Blut in Plasma",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das wäre eine Messänderung, keine Gefässautoregulation. B: Dann würde Q mit ΔP steigen. C: Das würde den druckbedingten Flussanstieg verstärken. D: Aus Q=ΔP/R folgt für konstantes Q ein entsprechender R-Anstieg. E: Das ist kein autoregulatorischer Mechanismus. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Autoregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autoregulation"
+      ],
+      "questionGoal": "Autoregulation",
+      "structuredExplanation": {
+        "coreIdea": "Autoregulation",
+        "correctReasoning": "Aus Q=ΔP/R folgt für konstantes Q ein entsprechender R-Anstieg.",
+        "wrongAnswerExplanations": {
+          "A": "Das wäre eine Messänderung, keine Gefässautoregulation.",
+          "B": "Dann würde Q mit ΔP steigen.",
+          "C": "Das würde den druckbedingten Flussanstieg verstärken.",
+          "E": "Das ist kein autoregulatorischer Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Für ein horizontales ideales Strömungsmodell gelten ρ=1000 kg/m³, v₁=1 m/s und v₂=3 m/s. Wie gross ist p₁−p₂?",
+      "options": [
+        {
+          "text": "2000 Pa",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−4000 Pa",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4000 Pa",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "1000 Pa",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "8000 Pa",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies unterschätzt die Differenz der Quadrate. B: Der schnellere Ort hat im Idealmodell den geringeren statischen Druck. C: ρ(v₂²−v₁²)/2=1000×8/2. D: Die Geschwindigkeiten müssen quadriert werden. E: Hier fehlt der Faktor ein Halb. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Bernoulli-Druckdifferenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bernoulli-Druckdifferenz"
+      ],
+      "questionGoal": "Bernoulli-Druckdifferenz",
+      "structuredExplanation": {
+        "coreIdea": "Bernoulli-Druckdifferenz",
+        "correctReasoning": "ρ(v₂²−v₁²)/2=1000×8/2.",
+        "wrongAnswerExplanations": {
+          "A": "Dies unterschätzt die Differenz der Quadrate.",
+          "B": "Der schnellere Ort hat im Idealmodell den geringeren statischen Druck.",
+          "D": "Die Geschwindigkeiten müssen quadriert werden.",
+          "E": "Hier fehlt der Faktor ein Halb."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Bei unveränderter Dichte verdoppelt sich die Strömungsgeschwindigkeit. Wie verändert sich der dynamische Druckanteil ρv²/2?",
+      "options": [
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er halbiert sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er steigt auf das Achtfache.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nur die Dichte bleibt gleich. B: Der Beitrag steigt mit der Geschwindigkeit. C: Das wäre eine kubische Abhängigkeit. D: Er hängt quadratisch von v ab. E: Das wäre eine lineare Abhängigkeit. Quelle: Vorlesungsfolien, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Dynamischer Druck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dynamischer Druck"
+      ],
+      "questionGoal": "Dynamischer Druck",
+      "structuredExplanation": {
+        "coreIdea": "Dynamischer Druck",
+        "correctReasoning": "Er hängt quadratisch von v ab.",
+        "wrongAnswerExplanations": {
+          "A": "Nur die Dichte bleibt gleich.",
+          "B": "Der Beitrag steigt mit der Geschwindigkeit.",
+          "C": "Das wäre eine kubische Abhängigkeit.",
+          "E": "Das wäre eine lineare Abhängigkeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Beurteilen Sie Aussagen zur Strömungsenergie im Kreislauf.",
+      "options": [
+        {
+          "text": "Ein statischer Druckwert allein beschreibt nicht sämtliche Energiebeiträge eines strömenden Blutes.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bernoulli erklärt jede reale Gefässströmung ohne Angaben zu Randbedingungen und Verlusten exakt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Reibungsverluste müssen in einer realen Energiebilanz zusätzlich berücksichtigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei niedrigen Strömungsgeschwindigkeiten kann der kinetische Anteil vergleichsweise klein sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Geschwindigkeit und Höhe können beitragen. B: Die Gültigkeit hängt von den Modellannahmen ab. C: Die ideale Bernoulli-Summe allein erfasst Dissipation nicht. D: Dann dominiert häufig der Druckanteil. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Statischer Druck und Gesamtenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Statischer Druck und Gesamtenergie"
+      ],
+      "questionGoal": "Statischer Druck und Gesamtenergie",
+      "structuredExplanation": {
+        "coreIdea": "Statischer Druck und Gesamtenergie",
+        "correctReasoning": "Auch Geschwindigkeit und Höhe können beitragen. Die ideale Bernoulli-Summe allein erfasst Dissipation nicht. Dann dominiert häufig der Druckanteil.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Geschwindigkeit und Höhe können beitragen.",
+          "B": "Die Gültigkeit hängt von den Modellannahmen ab.",
+          "C": "Die ideale Bernoulli-Summe allein erfasst Dissipation nicht.",
+          "D": "Dann dominiert häufig der Druckanteil."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Eine Stenose hat einen kleinen Querschnitt, aber der Gesamtfluss sinkt wegen des erhöhten Widerstands. Welche Aussage ist korrekt?",
+      "options": [
+        {
+          "text": "Ein hoher lokaler Geschwindigkeitswert beweist einen grösseren Gesamtfluss als vor der Stenose",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die lokale Geschwindigkeit kann erhöht sein, obwohl der Gesamtfluss kleiner geworden ist.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein kleinerer Gesamtfluss erzwingt in jedem Abschnitt eine kleinere Geschwindigkeit",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Stenose kann keinen Energieverlust verursachen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Volumenstrom und Geschwindigkeit besitzen dieselbe Einheit",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ohne Querschnittsangabe folgt dies nicht. B: v=Q/A hängt von beiden Grössen ab. C: Die starke Flächenabnahme kann den Effekt überwiegen. D: Reale verengte Strömungen können deutliche Verluste verursachen. E: Volumen pro Zeit unterscheidet sich von Länge pro Zeit. Quelle: Vorlesungsfolien, PDF-S. 5,14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Lokale Geschwindigkeit und Gesamtfluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lokale Geschwindigkeit und Gesamtfluss"
+      ],
+      "questionGoal": "Lokale Geschwindigkeit und Gesamtfluss",
+      "structuredExplanation": {
+        "coreIdea": "Lokale Geschwindigkeit und Gesamtfluss",
+        "correctReasoning": "v=Q/A hängt von beiden Grössen ab.",
+        "wrongAnswerExplanations": {
+          "A": "Ohne Querschnittsangabe folgt dies nicht.",
+          "C": "Die starke Flächenabnahme kann den Effekt überwiegen.",
+          "D": "Reale verengte Strömungen können deutliche Verluste verursachen.",
+          "E": "Volumen pro Zeit unterscheidet sich von Länge pro Zeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_sv20_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "SV20",
+      "stem": "Eine Messung am herabhängenden Arm zeigt höheren Druck als auf Herzhöhe; gleichzeitig ist die Aorta steifer als zuvor. Beurteilen Sie die getrennten Mechanismen.",
+      "options": [
+        {
+          "text": "Die Armposition kann den gemessenen systolischen und diastolischen Druck hydrostatisch anheben.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine geringere Compliance kann die Druckschwankung bei gleichem Schlagvolumen vergrössern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Aus dem höheren Messwert allein lässt sich eine grössere lokale Durchblutung sicher ableiten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hydrostatische Höheneffekte und Wandsteifigkeit sind derselbe physikalische Vorgang.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Höhenanteil überlagert beide Werte. B: Die gleiche Volumenänderung erzeugt eine grössere Druckänderung. C: Dafür fehlen Druckdifferenz und Widerstand. D: Sie beeinflussen die Messung über unterschiedliche Mechanismen. Quelle: Vorlesungsfolien, PDF-S. 3–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "SV20",
+        "Mehrere Effekte integrieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mehrere Effekte integrieren"
+      ],
+      "questionGoal": "Mehrere Effekte integrieren",
+      "structuredExplanation": {
+        "coreIdea": "Mehrere Effekte integrieren",
+        "correctReasoning": "Der Höhenanteil überlagert beide Werte. Die gleiche Volumenänderung erzeugt eine grössere Druckänderung.",
+        "wrongAnswerExplanations": {
+          "A": "Der Höhenanteil überlagert beide Werte.",
+          "B": "Die gleiche Volumenänderung erzeugt eine grössere Druckänderung.",
+          "C": "Dafür fehlen Druckdifferenz und Widerstand.",
+          "D": "Sie beeinflussen die Messung über unterschiedliche Mechanismen."
+        }
+      }
+    }
+  ]
+}
