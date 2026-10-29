@@ -1,0 +1,1297 @@
+{
+  "id": "assessment_j2_block1_kv17_20261029",
+  "lectureCode": "KV17",
+  "title": "Fettstoffwechsel und Lipoproteintransport",
+  "block": "J2 Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "2026_2SJ_KV17_Fettstoffwechsel_WK.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Keine pauschale Ableitung von Therapiewirkung aus HDL-Konzentrationen. Folienfehler zu ApoE präzisiert: Remnantaufnahme statt allgemeiner LDL-Bindung. Unbelegte Karzinombehauptung bei Abetalipoproteinämie nicht übernommen. Ergänzende Mechanismenchecks: https://www.ncbi.nlm.nih.gov/books/NBK549920/ und https://www.ncbi.nlm.nih.gov/books/NBK567738/.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Aufbau und physikalische Eigenschaften von Triacylglycerinen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Lipoproteinaufbau mit dem Transport hydrophober Lipide verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "VLDL-, LDL- und HDL-Stoffwechsel unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Synthese, Speicherung, Mobilisierung und Transport von Fettsäuren erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Cholesterinaufnahme und Rücktransport verknüpfen."
+    },
+    {
+      "id": "lo6",
+      "text": "Lipoproteinstörungen ihren gestörten Teilschritten zuordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv17_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Eine Lipase hydrolysiert ein Triacylglycerin vollständig. Welche Produkte entstehen aus einem Molekül?",
+      "options": [
+        {
+          "text": "Cholesterin und drei Fettsäuren",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glycerin und drei Fettsäuren",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Fettsäure und drei Glycerinmoleküle",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Glycerin, Phosphat und zwei Fettsäuren",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Glycerin und zwei Fettsäuren",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Cholesterin ist nicht das Grundgerüst des TAG. B: Drei Fettsäurereste sind mit Glycerin verestert. C: Die Stöchiometrie ist umgekehrt. D: Das beschreibt die Grundbausteine eines Glycerophospholipids. E: Das wäre noch keine vollständige Spaltung eines Triacylglycerins. Quelle: Vorlesungsfolien, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "TAG-Struktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "TAG-Struktur"
+      ],
+      "questionGoal": "TAG-Struktur",
+      "structuredExplanation": {
+        "coreIdea": "TAG-Struktur",
+        "correctReasoning": "Drei Fettsäurereste sind mit Glycerin verestert.",
+        "wrongAnswerExplanations": {
+          "A": "Cholesterin ist nicht das Grundgerüst des TAG.",
+          "C": "Die Stöchiometrie ist umgekehrt.",
+          "D": "Das beschreibt die Grundbausteine eines Glycerophospholipids.",
+          "E": "Das wäre noch keine vollständige Spaltung eines Triacylglycerins."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Vergleichen Sie bei gleicher Zahl von Fettsäureresten unterschiedliche Triacylglycerine.",
+      "options": [
+        {
+          "text": "Längere gesättigte Kohlenwasserstoffketten begünstigen stärkere hydrophobe Eigenschaften.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jedes Öl besteht aus freien Glycerinmolekülen ohne Esterbindungen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Cis-Doppelbindungen stören die dichte Packung von Fettsäureketten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein TAG besitzt dieselbe geladene Phosphatkopfgruppe wie ein Phospholipid.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der unpolare Anteil nimmt zu. B: Öle enthalten Triacylglycerine mit veresterten Fettsäuren. C: Das begünstigt bei vergleichbaren Ketten niedrigere Schmelztemperaturen. D: Dem TAG fehlt die Phosphatkopfgruppe. Quelle: Vorlesungsfolien, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Ketten und Schmelzverhalten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ketten und Schmelzverhalten"
+      ],
+      "questionGoal": "Ketten und Schmelzverhalten",
+      "structuredExplanation": {
+        "coreIdea": "Ketten und Schmelzverhalten",
+        "correctReasoning": "Der unpolare Anteil nimmt zu. Das begünstigt bei vergleichbaren Ketten niedrigere Schmelztemperaturen.",
+        "wrongAnswerExplanations": {
+          "A": "Der unpolare Anteil nimmt zu.",
+          "B": "Öle enthalten Triacylglycerine mit veresterten Fettsäuren.",
+          "C": "Das begünstigt bei vergleichbaren Ketten niedrigere Schmelztemperaturen.",
+          "D": "Dem TAG fehlt die Phosphatkopfgruppe."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Welche Anordnung erlaubt den Transport von Triacylglycerinen und Cholesterinestern in wässrigem Plasma am besten?",
+      "options": [
+        {
+          "text": "Hydrophiler Wasserkern mit ausschliesslich freien Fettsäureketten nach aussen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydrophober Kern mit amphiphilen Lipiden und Proteinen an der Oberfläche",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein unveresterter Glycerinkern ohne Proteine und Phospholipide",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Proteinkern mit ausschliesslich Cholesterinestern als wasserexponierter Oberfläche",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Membrandoppelschicht um einen reinen wässrigen Kern ohne hydrophobe Lipide",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine unpolare Aussenfläche wäre ungünstig im Plasma. B: Die Oberfläche vermittelt den Kontakt zum Plasma. C: Damit fehlen die typischen strukturellen Bestandteile. D: Cholesterinester gehören überwiegend in den hydrophoben Kern. E: Das entspricht eher einem Vesikel als dem Lipoproteinaufbau. Quelle: Vorlesungsfolien, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Lipoproteinhülle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipoproteinhülle"
+      ],
+      "questionGoal": "Lipoproteinhülle",
+      "structuredExplanation": {
+        "coreIdea": "Lipoproteinhülle",
+        "correctReasoning": "Die Oberfläche vermittelt den Kontakt zum Plasma.",
+        "wrongAnswerExplanations": {
+          "A": "Eine unpolare Aussenfläche wäre ungünstig im Plasma.",
+          "C": "Damit fehlen die typischen strukturellen Bestandteile.",
+          "D": "Cholesterinester gehören überwiegend in den hydrophoben Kern.",
+          "E": "Das entspricht eher einem Vesikel als dem Lipoproteinaufbau."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q04",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie die Eigenschaften der Lipoproteinklassen.",
+      "options": [
+        {
+          "text": "Apolipoproteine können neben Strukturaufgaben auch Erkennungs- oder Aktivatorfunktionen besitzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Hydrophobe Transportgüter befinden sich wesentlich im Partikelinneren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Lipoproteine bestehen ausschliesslich aus kovalent an Albumin gebundenen Fettsäuren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "HDL weist eine höhere Dichte auf als VLDL.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beispiele sind Rezeptorerkennung und LPL-Aktivierung. B: Die amphiphile Oberfläche grenzt sie vom Plasma ab. C: Albumingebundene Fettsäuren sind ein anderer Transportweg. D: Die Klassen sind entsprechend ihrer Zusammensetzung unterschiedlich dicht. Quelle: Vorlesungsfolien, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Lipoproteindichte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipoproteindichte"
+      ],
+      "questionGoal": "Lipoproteindichte",
+      "structuredExplanation": {
+        "coreIdea": "Lipoproteindichte",
+        "correctReasoning": "Beispiele sind Rezeptorerkennung und LPL-Aktivierung. Die amphiphile Oberfläche grenzt sie vom Plasma ab. Die Klassen sind entsprechend ihrer Zusammensetzung unterschiedlich dicht.",
+        "wrongAnswerExplanations": {
+          "A": "Beispiele sind Rezeptorerkennung und LPL-Aktivierung.",
+          "B": "Die amphiphile Oberfläche grenzt sie vom Plasma ab.",
+          "C": "Albumingebundene Fettsäuren sind ein anderer Transportweg.",
+          "D": "Die Klassen sind entsprechend ihrer Zusammensetzung unterschiedlich dicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Ein Partikel wird in der Leber mit endogenen Triacylglycerinen beladen und in das Blut abgegeben. Welche Klasse passt am ehesten?",
+      "options": [
+        {
+          "text": "Ein ausschliesslich aus Cholesterinestern bestehendes HDL",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "VLDL",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Albumin-Fettsäure-Komplex als TAG-Partikel",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Reifes LDL als primärer TAG-reicher Leberexport",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Chylomikron",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: HDL hat eine andere Zusammensetzung und Rolle. B: Es transportiert vor allem lebereigene Lipide zu peripheren Geweben. C: Albumin transportiert unveresterte Fettsäuren, kein TAG-Partikel. D: LDL entsteht wesentlich nach Umbau TAG-reicher VLDL. E: Es transportiert vor allem Nahrungslipide aus dem Darm. Quelle: Vorlesungsfolien, PDF-S. 5,17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "VLDL-Ursprung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "VLDL-Ursprung"
+      ],
+      "questionGoal": "VLDL-Ursprung",
+      "structuredExplanation": {
+        "coreIdea": "VLDL-Ursprung",
+        "correctReasoning": "Es transportiert vor allem lebereigene Lipide zu peripheren Geweben.",
+        "wrongAnswerExplanations": {
+          "A": "HDL hat eine andere Zusammensetzung und Rolle.",
+          "C": "Albumin transportiert unveresterte Fettsäuren, kein TAG-Partikel.",
+          "D": "LDL entsteht wesentlich nach Umbau TAG-reicher VLDL.",
+          "E": "Es transportiert vor allem Nahrungslipide aus dem Darm."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Wie werden VLDL-Triacylglycerine für die Aufnahme von Fettsäuren in Muskel und Fettgewebe zugänglich?",
+      "options": [
+        {
+          "text": "Der LDL-Rezeptor wandelt TAG direkt in Glucose um.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hormonsensitive Lipase hydrolysiert alle VLDL im Zellkern der Endothelzelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Albumin synthetisiert an VLDL neue Fettsäuren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "ABCA1 spaltet TAG zu Acetyl-CoA im Plasma.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lipoproteinlipase hydrolysiert TAG an der luminalen Kapillaroberfläche.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er vermittelt Partikelaufnahme, keine solche Stoffumwandlung. B: HSL wirkt vorwiegend bei intrazellulärer Fettmobilisierung. C: Albumin dient dem Transport, nicht der Fettsäuresynthese. D: ABCA1 ist ein Lipidtransporter, kein TAG-Abbauenzymsystem. E: Die freigesetzten Fettsäuren können in Zellen gelangen. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Lipoproteinlipase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipoproteinlipase"
+      ],
+      "questionGoal": "Lipoproteinlipase",
+      "structuredExplanation": {
+        "coreIdea": "Lipoproteinlipase",
+        "correctReasoning": "Die freigesetzten Fettsäuren können in Zellen gelangen.",
+        "wrongAnswerExplanations": {
+          "A": "Er vermittelt Partikelaufnahme, keine solche Stoffumwandlung.",
+          "B": "HSL wirkt vorwiegend bei intrazellulärer Fettmobilisierung.",
+          "C": "Albumin dient dem Transport, nicht der Fettsäuresynthese.",
+          "D": "ABCA1 ist ein Lipidtransporter, kein TAG-Abbauenzymsystem."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie Vorgänge während der Abgabe von VLDL-Lipiden.",
+      "options": [
+        {
+          "text": "Apo-C-II unterstützt die Aktivierung der Lipoproteinlipase.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Freigesetzte Fettsäuren müssen vor jeder Zellaufnahme erst in LDL-Rezeptoren eingebaut werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "VLDL wird nach TAG-Abgabe zunehmend zu einem reinen Wassertröpfchen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Lipoproteinlipase arbeitet als Hauptenzym im Inneren der Mitochondrienmatrix.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es dient als wichtiger LPL-Cofaktor. B: Sie können über Transporter beziehungsweise Membranpassage aufgenommen werden. C: Es bleibt ein umgebautes Lipoproteinpartikel. D: Sie wirkt an der vaskulären Oberfläche. Quelle: Vorlesungsfolien, PDF-S. 5–7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "VLDL-Umbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "VLDL-Umbau"
+      ],
+      "questionGoal": "VLDL-Umbau",
+      "structuredExplanation": {
+        "coreIdea": "VLDL-Umbau",
+        "correctReasoning": "Es dient als wichtiger LPL-Cofaktor.",
+        "wrongAnswerExplanations": {
+          "A": "Es dient als wichtiger LPL-Cofaktor.",
+          "B": "Sie können über Transporter beziehungsweise Membranpassage aufgenommen werden.",
+          "C": "Es bleibt ein umgebautes Lipoproteinpartikel.",
+          "D": "Sie wirkt an der vaskulären Oberfläche."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Eine Fettsäure gelangt nach LPL-vermittelter Freisetzung in eine Muskelzelle. Welcher Schritt unterstützt ihre weitere metabolische Nutzung?",
+      "options": [
+        {
+          "text": "Transport als unverändertes VLDL direkt durch die innere Mitochondrienmembran",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Veresterung sämtlicher Fettsäuren mit Albumin im Zellkern",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Umwandlung zu Apo-B durch Lipoproteinlipase",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Direkte Spaltung von LDL-Rezeptoren zu ATP",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Aktivierung zu Acyl-CoA durch Acyl-CoA-Synthetase",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Fettsäureverwertung erfordert andere intrazelluläre Schritte. B: Albumin ist kein intrazellulärer Veresterungspartner. C: Apo-B ist ein Protein und kein Fettsäureprodukt. D: Das ist kein Fettsäureaktivierungsweg. E: Acyl-CoA ist ein zentraler aktivierter Fettsäuremetabolit. Quelle: Vorlesungsfolien, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Intrazelluläre Fettsäureaktivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intrazelluläre Fettsäureaktivierung"
+      ],
+      "questionGoal": "Intrazelluläre Fettsäureaktivierung",
+      "structuredExplanation": {
+        "coreIdea": "Intrazelluläre Fettsäureaktivierung",
+        "correctReasoning": "Acyl-CoA ist ein zentraler aktivierter Fettsäuremetabolit.",
+        "wrongAnswerExplanations": {
+          "A": "Fettsäureverwertung erfordert andere intrazelluläre Schritte.",
+          "B": "Albumin ist kein intrazellulärer Veresterungspartner.",
+          "C": "Apo-B ist ein Protein und kein Fettsäureprodukt.",
+          "D": "Das ist kein Fettsäureaktivierungsweg."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Welcher glycolytische Metabolit kann das Glycerin-3-phosphat-Grundgerüst für die TAG-Synthese liefern?",
+      "options": [
+        {
+          "text": "Harnstoff",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Dihydroxyacetonphosphat",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Cholesterinester",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Acetyl-CoA",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Acetoacetat",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er gehört zum Stickstoffausscheidungsstoffwechsel. B: Es kann zu Glycerin-3-phosphat reduziert werden. C: Sie sind ein anderer Lipidpool. D: Es liefert nicht unmittelbar das C₃-Glyceringerüst über diesen Schritt. E: Es ist ein Ketonkörper, kein glycolytisches Triosephosphat. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "TAG-Synthese und Glykolyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "TAG-Synthese und Glykolyse"
+      ],
+      "questionGoal": "TAG-Synthese und Glykolyse",
+      "structuredExplanation": {
+        "coreIdea": "TAG-Synthese und Glykolyse",
+        "correctReasoning": "Es kann zu Glycerin-3-phosphat reduziert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Er gehört zum Stickstoffausscheidungsstoffwechsel.",
+          "C": "Sie sind ein anderer Lipidpool.",
+          "D": "Es liefert nicht unmittelbar das C₃-Glyceringerüst über diesen Schritt.",
+          "E": "Es ist ein Ketonkörper, kein glycolytisches Triosephosphat."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie den intrazellulären Triacylglycerinstoffwechsel.",
+      "options": [
+        {
+          "text": "Die vollständige TAG-Spaltung im Fettgewebe erfordert nur die Bindung von LDL an seinen Rezeptor.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Lipidtropfen speichern TAG im Cytosol.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede Freisetzung von Fettsäuren aus Adipozyten benötigt die Neubildung von Chylomikronen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Glycerin-3-phosphat wird schrittweise mit aktivierten Fettsäureresten verestert.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Intrazelluläre Lipasen spalten die Esterbindungen. B: Ihre Entstehung ist mit dem endoplasmatischen Reticulum verknüpft. C: Mobilisierte unveresterte Fettsäuren werden wesentlich albumingebunden transportiert. D: Die TAG-Synthese verknüpft ein C₃-Gerüst mit drei Acylresten. Quelle: Vorlesungsfolien, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Speicherbildung und Mobilisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Speicherbildung und Mobilisierung"
+      ],
+      "questionGoal": "Speicherbildung und Mobilisierung",
+      "structuredExplanation": {
+        "coreIdea": "Speicherbildung und Mobilisierung",
+        "correctReasoning": "Ihre Entstehung ist mit dem endoplasmatischen Reticulum verknüpft. Die TAG-Synthese verknüpft ein C₃-Gerüst mit drei Acylresten.",
+        "wrongAnswerExplanations": {
+          "A": "Intrazelluläre Lipasen spalten die Esterbindungen.",
+          "B": "Ihre Entstehung ist mit dem endoplasmatischen Reticulum verknüpft.",
+          "C": "Mobilisierte unveresterte Fettsäuren werden wesentlich albumingebunden transportiert.",
+          "D": "Die TAG-Synthese verknüpft ein C₃-Gerüst mit drei Acylresten."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Während einer Fastenphase werden Fettsäuren aus dem Fettgewebe mobilisiert. In welcher Form werden sie wesentlich zur Muskulatur transportiert?",
+      "options": [
+        {
+          "text": "Als unveresterte, an Albumin gebundene Fettsäuren",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Als Glycerin ohne Fettsäureanteil",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Als neu synthetisierte Apo-B-Polypeptide",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Als ausschliesslich freie Acyl-CoA-Moleküle im Plasma",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Als an Hämoglobin kovalent gebundene TAG",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Albumin bietet Bindungstaschen für diese hydrophoben Moleküle. B: Das würde die mobilisierten Fettsäuren nicht transportieren. C: Apo-B ist ein Partikelprotein und kein Fettsäureäquivalent. D: Der wesentliche Transport erfolgt albumingebunden, nicht als Acyl-CoA. E: Hämoglobin ist kein solcher Lipidtransporter. Quelle: Vorlesungsfolien, PDF-S. 11–12,17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Albumintransport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Albumintransport"
+      ],
+      "questionGoal": "Albumintransport",
+      "structuredExplanation": {
+        "coreIdea": "Albumintransport",
+        "correctReasoning": "Albumin bietet Bindungstaschen für diese hydrophoben Moleküle.",
+        "wrongAnswerExplanations": {
+          "B": "Das würde die mobilisierten Fettsäuren nicht transportieren.",
+          "C": "Apo-B ist ein Partikelprotein und kein Fettsäureäquivalent.",
+          "D": "Der wesentliche Transport erfolgt albumingebunden, nicht als Acyl-CoA.",
+          "E": "Hämoglobin ist kein solcher Lipidtransporter."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q12",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie den Vergleich von vaskulärer Lipidabgabe und Fettgewebemobilisierung.",
+      "options": [
+        {
+          "text": "Intrazelluläre Lipasen mobilisieren gespeicherte TAG im Adipozyten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Begriffe Lipolyse und β-Oxidation bezeichnen denselben Reaktionsschritt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Freigesetzte unveresterte Fettsäuren und TAG-reiche Lipoproteine sind verschiedene Transportformen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "LPL erschliesst TAG aus zirkulierenden Lipoproteinen für Gewebe.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ist räumlich von der LPL-Wirkung getrennt. B: Lipolyse spaltet Ester, β-Oxidation baut Acylketten ab. C: Albumintransport ist nicht gleich Partikeltransport. D: Sie arbeitet an der Kapillaroberfläche. Quelle: Vorlesungsfolien, PDF-S. 5–7,11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Zwei Lipaseorte unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zwei Lipaseorte unterscheiden"
+      ],
+      "questionGoal": "Zwei Lipaseorte unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Zwei Lipaseorte unterscheiden",
+        "correctReasoning": "Dies ist räumlich von der LPL-Wirkung getrennt. Albumintransport ist nicht gleich Partikeltransport. Sie arbeitet an der Kapillaroberfläche.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist räumlich von der LPL-Wirkung getrennt.",
+          "B": "Lipolyse spaltet Ester, β-Oxidation baut Acylketten ab.",
+          "C": "Albumintransport ist nicht gleich Partikeltransport.",
+          "D": "Sie arbeitet an der Kapillaroberfläche."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Ein LDL-Partikel wird an einer Zelloberfläche erkannt und anschliessend in Vesikel aufgenommen. Welcher Mechanismus liegt vor?",
+      "options": [
+        {
+          "text": "Aktive Umwandlung von LDL in Albumin an der Membran",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Freie Diffusion des gesamten Partikels durch den Lipiddoppelfilm",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Rezeptorvermittelte Endozytose",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Direkte Filtration durch die Kernporen vom Plasma in den Zellkern",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Carnitinvermittelter Import durch die innere Mitochondrienmembran",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Proteine werden nicht so ineinander umgewandelt. B: Ein grosses Lipoprotein passiert die Membran nicht auf diese Weise. C: Der LDL-Rezeptor ermöglicht die spezifische Partikelaufnahme. D: Die Plasmamembranaufnahme erfolgt über Endozytose. E: Dies betrifft Acylgruppen, nicht LDL-Partikel. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "LDL-Aufnahme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "LDL-Aufnahme"
+      ],
+      "questionGoal": "LDL-Aufnahme",
+      "structuredExplanation": {
+        "coreIdea": "LDL-Aufnahme",
+        "correctReasoning": "Der LDL-Rezeptor ermöglicht die spezifische Partikelaufnahme.",
+        "wrongAnswerExplanations": {
+          "A": "Die Proteine werden nicht so ineinander umgewandelt.",
+          "B": "Ein grosses Lipoprotein passiert die Membran nicht auf diese Weise.",
+          "D": "Die Plasmamembranaufnahme erfolgt über Endozytose.",
+          "E": "Dies betrifft Acylgruppen, nicht LDL-Partikel."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Ein Transportweg entfernt Cholesterin aus peripheren Geweben und führt es der Leber zu. Welche Klasse ist daran besonders beteiligt?",
+      "options": [
+        {
+          "text": "Carnitin als extrazelluläres Cholesterinpartikel",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Albumin als Cholesterinesterkern",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "HDL",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Chylomikronen als primäre Cholesterinentferner aus jeder Körperzelle",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "VLDL als hauptsächlicher Leberexport von TAG",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Carnitin ist ein Acylgruppenträger, kein Lipoprotein. B: Albumin bildet keinen derartigen Lipoproteinkern. C: Es beteiligt sich am reversen Cholesterintransport. D: Sie transportieren vor allem Nahrungslipide aus dem Darm. E: Seine Haupttransportrichtung ist von der Leber in die Peripherie. Quelle: Vorlesungsfolien, PDF-S. 15,17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "HDL-Richtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HDL-Richtung"
+      ],
+      "questionGoal": "HDL-Richtung",
+      "structuredExplanation": {
+        "coreIdea": "HDL-Richtung",
+        "correctReasoning": "Es beteiligt sich am reversen Cholesterintransport.",
+        "wrongAnswerExplanations": {
+          "A": "Carnitin ist ein Acylgruppenträger, kein Lipoprotein.",
+          "B": "Albumin bildet keinen derartigen Lipoproteinkern.",
+          "D": "Sie transportieren vor allem Nahrungslipide aus dem Darm.",
+          "E": "Seine Haupttransportrichtung ist von der Leber in die Peripherie."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie Aussagen zu Cholesterinaufnahme und Rücktransport.",
+      "options": [
+        {
+          "text": "LDL kann Cholesterin zu extrahepatischen Zellen transportieren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein hoher HDL-Wert allein beweist den Ausschluss jeder Atherosklerose.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der gesamte Cholesterintransport erfolgt als frei wasserlösliches Cholesterinmonomer ohne Träger.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "HDL ist am Transport peripheren Cholesterins in Richtung Leber beteiligt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Aufnahme kann über LDL-Rezeptoren erfolgen. B: Eine einzelne Konzentration bildet nicht das gesamte Risiko oder die Transportfunktion ab. C: Die hydrophoben Lipide werden wesentlich in Lipoproteinen transportiert. D: Dies gehört zum reversen Cholesterintransport. Quelle: Vorlesungsfolien, PDF-S. 13–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Cholesterinverkehr"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cholesterinverkehr"
+      ],
+      "questionGoal": "Cholesterinverkehr",
+      "structuredExplanation": {
+        "coreIdea": "Cholesterinverkehr",
+        "correctReasoning": "Die Aufnahme kann über LDL-Rezeptoren erfolgen. Dies gehört zum reversen Cholesterintransport.",
+        "wrongAnswerExplanations": {
+          "A": "Die Aufnahme kann über LDL-Rezeptoren erfolgen.",
+          "B": "Eine einzelne Konzentration bildet nicht das gesamte Risiko oder die Transportfunktion ab.",
+          "C": "Die hydrophoben Lipide werden wesentlich in Lipoproteinen transportiert.",
+          "D": "Dies gehört zum reversen Cholesterintransport."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Welche unmittelbare Stoffwechselstörung passt am besten zu einem ausgeprägten LPL-Funktionsverlust?",
+      "options": [
+        {
+          "text": "Vollständiger Verlust aller Fettsäuren aus den Lipoproteinen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verminderter Abbau TAG-reicher Lipoproteine und Anstieg der Plasma-TAG",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Beschleunigte Hydrolyse sämtlicher VLDL-TAG",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Direkte Hemmung der Phosphokreatinsynthese",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Primär verstärkte Cholesterinabgabe an Apo-A-I",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei gestörter Hydrolyse bleiben vielmehr TAG in den Partikeln. B: Die kapilläre Hydrolyse der Partikel-TAG ist beeinträchtigt. C: Dies wäre die entgegengesetzte Funktionsänderung. D: Dies ist ein anderer Stoffwechselweg. E: Das betrifft nicht unmittelbar die LPL-Reaktion. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "LPL-Mangel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "LPL-Mangel"
+      ],
+      "questionGoal": "LPL-Mangel",
+      "structuredExplanation": {
+        "coreIdea": "LPL-Mangel",
+        "correctReasoning": "Die kapilläre Hydrolyse der Partikel-TAG ist beeinträchtigt.",
+        "wrongAnswerExplanations": {
+          "A": "Bei gestörter Hydrolyse bleiben vielmehr TAG in den Partikeln.",
+          "C": "Dies wäre die entgegengesetzte Funktionsänderung.",
+          "D": "Dies ist ein anderer Stoffwechselweg.",
+          "E": "Das betrifft nicht unmittelbar die LPL-Reaktion."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Eine Mutation vermindert die LDL-Rezeptorfunktion. Welcher Befund passt mechanistisch am besten?",
+      "options": [
+        {
+          "text": "Obligatorisch fehlende Bildung aller HDL-Partikel",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verminderte rezeptorvermittelte LDL-Clearance und erhöhte LDL-Konzentration",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Isolierte Blockade der Nabelvenenobliteration",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Primärer Verlust der LPL-Aktivierung durch eine Apo-C-II-Mutation",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Verstärkte LDL-Aufnahme bei unveränderter Rezeptorzahl und Affinität",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: LDLR ist nicht das zentrale HDL-Bildungssystem. B: Die Entfernung von LDL aus dem Blut wird erschwert. C: Dies ist kein Lipoproteinstoffwechselschritt. D: Das wäre ein anderer Defekt. E: Dies erklärt keinen Rezeptorfunktionsverlust. Quelle: Vorlesungsfolien, PDF-S. 13,16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "LDL-Rezeptordefekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "LDL-Rezeptordefekt"
+      ],
+      "questionGoal": "LDL-Rezeptordefekt",
+      "structuredExplanation": {
+        "coreIdea": "LDL-Rezeptordefekt",
+        "correctReasoning": "Die Entfernung von LDL aus dem Blut wird erschwert.",
+        "wrongAnswerExplanations": {
+          "A": "LDLR ist nicht das zentrale HDL-Bildungssystem.",
+          "C": "Dies ist kein Lipoproteinstoffwechselschritt.",
+          "D": "Das wäre ein anderer Defekt.",
+          "E": "Dies erklärt keinen Rezeptorfunktionsverlust."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie die korrigierte mechanistische Zuordnung von Lipoproteinstörungen.",
+      "options": [
+        {
+          "text": "ApoE ist identisch mit dem katalytischen Zentrum der Lipoproteinlipase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "ABCA1 unterstützt die Abgabe von Zellcholesterin und Phospholipiden an lipidarmes Apo-A-I.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gestörte ApoE-vermittelte Erkennung kann die hepatische Aufnahme von Remnantpartikeln beeinträchtigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein ABCA1-Funktionsverlust kann mit sehr niedrigem HDL einhergehen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: ApoE ist ein Apolipoprotein, kein LPL-Enzymteil. B: Dies trägt zur Bildung naszenter HDL bei. C: ApoE ist für den Remnantstoffwechsel bedeutsam. D: Die Lipidierung von Apo-A-I ist gestört. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "ApoE und ABCA1"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ApoE und ABCA1"
+      ],
+      "questionGoal": "ApoE und ABCA1",
+      "structuredExplanation": {
+        "coreIdea": "ApoE und ABCA1",
+        "correctReasoning": "Dies trägt zur Bildung naszenter HDL bei. ApoE ist für den Remnantstoffwechsel bedeutsam. Die Lipidierung von Apo-A-I ist gestört.",
+        "wrongAnswerExplanations": {
+          "A": "ApoE ist ein Apolipoprotein, kein LPL-Enzymteil.",
+          "B": "Dies trägt zur Bildung naszenter HDL bei.",
+          "C": "ApoE ist für den Remnantstoffwechsel bedeutsam.",
+          "D": "Die Lipidierung von Apo-A-I ist gestört."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Welche Angabe spricht am unmittelbarsten für eine primäre Ursache einer Fettstoffwechselstörung?",
+      "options": [
+        {
+          "text": "Neu aufgetretene schlecht kontrollierte Stoffwechselerkrankung als Auslöser",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nachgewiesene funktionsmindernde Mutation des LDL-Rezeptors",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Zeitlicher Zusammenhang mit starkem Alkoholkonsum",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Normalisierung nach Beseitigung eines erworbenen Auslösers",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Allein die Tatsache, dass der Laborwert erhöht ist",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies spricht für eine sekundäre Ursache. B: Eine ursächliche genetische Veränderung kennzeichnet die primäre Form. C: Dies kann eine sekundäre Störung verursachen. D: Das unterstützt eine sekundäre Ursache. E: Die Höhe allein legt die Ursache nicht fest. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Primär versus sekundär"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Primär versus sekundär"
+      ],
+      "questionGoal": "Primär versus sekundär",
+      "structuredExplanation": {
+        "coreIdea": "Primär versus sekundär",
+        "correctReasoning": "Eine ursächliche genetische Veränderung kennzeichnet die primäre Form.",
+        "wrongAnswerExplanations": {
+          "A": "Dies spricht für eine sekundäre Ursache.",
+          "C": "Dies kann eine sekundäre Störung verursachen.",
+          "D": "Das unterstützt eine sekundäre Ursache.",
+          "E": "Die Höhe allein legt die Ursache nicht fest."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv17_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV17",
+      "stem": "Beurteilen Sie die Zuordnung von Herkunft, Transportform und Ziel.",
+      "options": [
+        {
+          "text": "Der reverse Cholesterintransport führt definitionsgemäss von der Leber ins Fettgewebe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Aus dem Fettgewebe mobilisierte unveresterte Fettsäuren werden zwingend als neu gebildetes LDL exportiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nahrungslipide gelangen nach intestinaler Verarbeitung wesentlich in Chylomikronen ins Blut.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Leber exportiert ihre TAG vorwiegend als freie TAG-Moleküle gelöst im Wasseranteil des Plasmas.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Richtung ist von der Peripherie zur Leber. B: Sie werden wesentlich an Albumin gebunden transportiert. C: Dies ist der exogene Lipidtransportweg. D: Dafür werden TAG-reiche Lipoproteine wie VLDL verwendet. Quelle: Vorlesungsfolien, PDF-S. 5–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV17",
+        "Transportwege integrieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportwege integrieren"
+      ],
+      "questionGoal": "Transportwege integrieren",
+      "structuredExplanation": {
+        "coreIdea": "Transportwege integrieren",
+        "correctReasoning": "Dies ist der exogene Lipidtransportweg.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Richtung ist von der Peripherie zur Leber.",
+          "B": "Sie werden wesentlich an Albumin gebunden transportiert.",
+          "C": "Dies ist der exogene Lipidtransportweg.",
+          "D": "Dafür werden TAG-reiche Lipoproteine wie VLDL verwendet."
+        }
+      }
+    }
+  ]
+}
