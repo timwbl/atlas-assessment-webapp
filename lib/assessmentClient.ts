@@ -6,6 +6,7 @@ import type {
   LoadedAssessmentSummary
 } from "./types";
 import { validateAssessment } from "./assessmentValidator";
+import { normalizeLoadedAssessmentSummaries } from "./assessmentSummary";
 import {
   readCachedAssessment,
   readCachedAssessments,
@@ -70,17 +71,23 @@ export async function loadAssessmentSummaries(): Promise<LoadedAssessmentSummary
 }
 
 async function requestAssessmentSummaries(): Promise<LoadedAssessmentSummary[]> {
-  const cached = await readCachedAssessmentSummaries();
+  const cached = normalizeLoadedAssessmentSummaries(await readCachedAssessmentSummaries());
 
   try {
-    const response = await fetch("/api/assessments?summary=1");
+    const response = await fetch("/api/assessments/summaries");
     if (!response.ok) throw new Error("Assessment-Katalog konnte nicht geladen werden.");
-    const payload = await response.json() as { assessments?: LoadedAssessmentSummary[] };
-    const assessments = payload.assessments || [];
+    const payload = await response.json() as { assessments?: unknown };
+    if (!Array.isArray(payload.assessments)) {
+      throw new Error("Assessment-Katalog ist unvollständig.");
+    }
+    const assessments = normalizeLoadedAssessmentSummaries(payload.assessments);
+    if (assessments.length && !assessments.some((item) => item.assessment)) {
+      throw new Error("Der Assessment-Katalog enthielt keine gültigen Übersichten.");
+    }
     void writeCachedAssessmentSummaries(assessments);
     return assessments;
   } catch (error) {
-    if (cached.length) return cached;
+    if (cached.some((item) => item.assessment)) return cached;
     summaryListRequest = null;
     throw error;
   }

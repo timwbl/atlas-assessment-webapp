@@ -13,7 +13,11 @@ export async function GET(request: Request) {
     { assessments },
     {
       headers: {
-        "Cache-Control": "public, max-age=0, s-maxage=300, stale-while-revalidate=86400"
+        // Legacy clients vary this response by ?summary=1. Do not let a CDN
+        // reuse a full-list response as a summary (or the other way around).
+        "Cache-Control": "private, no-store, max-age=0, must-revalidate",
+        "Netlify-CDN-Cache-Control": "no-store",
+        "Netlify-Vary": "query=summary"
       }
     }
   );

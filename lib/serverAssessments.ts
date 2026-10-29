@@ -1,9 +1,9 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { validateAssessment } from "./assessmentValidator";
+import { summarizeAssessment } from "./assessmentSummary";
 import type {
   Assessment,
-  AssessmentSummary,
   LoadedAssessment,
   LoadedAssessmentSummary
 } from "./types";
@@ -78,20 +78,4 @@ export async function loadServerAssessmentById(id: string): Promise<Assessment |
     .map((item) => item.assessment)
     .filter(Boolean)
     .find((assessment) => assessment?.id === id) || null;
-}
-
-function summarizeAssessment(assessment: Assessment): AssessmentSummary {
-  return {
-    id: assessment.id,
-    lectureCode: assessment.lectureCode,
-    title: assessment.title,
-    block: assessment.block,
-    subject: assessment.subject,
-    sourceSummary: assessment.sourceSummary,
-    questionCount: assessment.questions.length,
-    questionIds: assessment.questions.map((question) => question.id),
-    tags: [...new Set(assessment.questions.flatMap((question) => question.tags))]
-      .sort((a, b) => a.localeCompare(b, "de", { sensitivity: "base" })),
-    active: assessment.active
-  };
 }
