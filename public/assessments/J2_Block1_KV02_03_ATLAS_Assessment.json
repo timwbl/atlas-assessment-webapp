@@ -113,8 +113,8 @@
           "id": "A"
         },
         {
-          "text": "Embryologie beschreibt primär die Stammesgeschichte einer Tiergruppe.",
-          "correct": false,
+          "text": "Embryologie untersucht die individuelle Entwicklung eines Organismus.",
+          "correct": true,
           "id": "B"
         },
         {
@@ -128,7 +128,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Der funktionelle Zusammenhang bestimmt die Systemgliederung. B: Embryologie untersucht die individuelle Entwicklung, die Ontogenese. C: Embryonale Herkunft gehört zur Entwicklungsbetrachtung. D: Artvergleiche sind ihre zentrale Vorgehensweise. Quelle: Vorlesungsfolien, PDF-S. 2.",
+      "explanation": "A: Der funktionelle Zusammenhang bestimmt die Systemgliederung. B: Diese wird als Ontogenese bezeichnet. C: Embryonale Herkunft gehört zur Entwicklungsbetrachtung. D: Artvergleiche sind ihre zentrale Vorgehensweise. Quelle: Vorlesungsfolien, PDF-S. 2.",
       "trap": "",
       "tags": [
         "J2",
@@ -145,10 +145,10 @@
       "questionGoal": "Anatomische Perspektiven",
       "structuredExplanation": {
         "coreIdea": "Anatomische Perspektiven",
-        "correctReasoning": "Der funktionelle Zusammenhang bestimmt die Systemgliederung. Artvergleiche sind ihre zentrale Vorgehensweise.",
+        "correctReasoning": "Der funktionelle Zusammenhang bestimmt die Systemgliederung. Diese wird als Ontogenese bezeichnet. Artvergleiche sind ihre zentrale Vorgehensweise.",
         "wrongAnswerExplanations": {
           "A": "Der funktionelle Zusammenhang bestimmt die Systemgliederung.",
-          "B": "Embryologie untersucht die individuelle Entwicklung, die Ontogenese.",
+          "B": "Diese wird als Ontogenese bezeichnet.",
           "C": "Embryonale Herkunft gehört zur Entwicklungsbetrachtung.",
           "D": "Artvergleiche sind ihre zentrale Vorgehensweise."
         }
@@ -308,8 +308,8 @@
           "id": "B"
         },
         {
-          "text": "In einem geschlossenen Kreislauf bleiben Blut und interstitielle Flüssigkeit getrennte Kompartimente.",
-          "correct": true,
+          "text": "Ein geschlossener Kreislauf ist durch eine direkte Mischung von Blut und Interstitialflüssigkeit gekennzeichnet.",
+          "correct": false,
           "id": "C"
         },
         {
@@ -318,7 +318,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Die vollständige Trennung verhindert die direkte ventrikuläre Blutmischung. B: Das gezeigte Fischherz besitzt einen Vorhof und einen Ventrikel. C: Die Gefässwand grenzt die Kompartimente voneinander ab. D: Die fehlende durchgängige Gefässbegrenzung charakterisiert den offenen Kreislauf. Quelle: Vorlesungsfolien, PDF-S. 33–40.",
+      "explanation": "A: Die vollständige Trennung verhindert die direkte ventrikuläre Blutmischung. B: Das gezeigte Fischherz besitzt einen Vorhof und einen Ventrikel. C: Die Gefässwand trennt beide Kompartimente voneinander. D: Die fehlende durchgängige Gefässbegrenzung charakterisiert den offenen Kreislauf. Quelle: Vorlesungsfolien, PDF-S. 33–40.",
       "trap": "",
       "tags": [
         "J2",
@@ -335,11 +335,11 @@
       "questionGoal": "Kreislaufformen",
       "structuredExplanation": {
         "coreIdea": "Kreislaufformen",
-        "correctReasoning": "Die vollständige Trennung verhindert die direkte ventrikuläre Blutmischung. Die Gefässwand grenzt die Kompartimente voneinander ab.",
+        "correctReasoning": "Die vollständige Trennung verhindert die direkte ventrikuläre Blutmischung.",
         "wrongAnswerExplanations": {
           "A": "Die vollständige Trennung verhindert die direkte ventrikuläre Blutmischung.",
           "B": "Das gezeigte Fischherz besitzt einen Vorhof und einen Ventrikel.",
-          "C": "Die Gefässwand grenzt die Kompartimente voneinander ab.",
+          "C": "Die Gefässwand trennt beide Kompartimente voneinander.",
           "D": "Die fehlende durchgängige Gefässbegrenzung charakterisiert den offenen Kreislauf."
         }
       }
@@ -803,8 +803,8 @@
       "stem": "Beurteilen Sie unterschiedliche Mechanismen einer interstitiellen Flüssigkeitszunahme.",
       "options": [
         {
-          "text": "Albuminmangel führt zu Ödemen durch erhöhten Plasmaonkosedruck.",
-          "correct": false,
+          "text": "Ein verminderter Plasmaonkosedruck kann die interstitielle Flüssigkeitsansammlung begünstigen.",
+          "correct": true,
           "id": "A"
         },
         {
@@ -823,7 +823,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Der Plasmaonkosedruck nimmt bei Albuminmangel ab. B: Entscheidend ist eine gestörte Lymphdrainage. C: Die veränderte Barriere fördert Flüssigkeits- und gegebenenfalls Proteinübertritt. D: Der Rückstau erhöht den hydrostatischen Filtrationsantrieb. Quelle: Vorlesungsfolien, PDF-S. 49–57.",
+      "explanation": "A: Eine Hypalbuminämie schwächt den intravasalen onkotischen Druckbeitrag. B: Entscheidend ist eine gestörte Lymphdrainage. C: Die veränderte Barriere fördert Flüssigkeits- und gegebenenfalls Proteinübertritt. D: Der Rückstau erhöht den hydrostatischen Filtrationsantrieb. Quelle: Vorlesungsfolien, PDF-S. 49–57.",
       "trap": "",
       "tags": [
         "J2",
@@ -840,9 +840,9 @@
       "questionGoal": "Ödemmechanismen",
       "structuredExplanation": {
         "coreIdea": "Ödemmechanismen",
-        "correctReasoning": "Die veränderte Barriere fördert Flüssigkeits- und gegebenenfalls Proteinübertritt. Der Rückstau erhöht den hydrostatischen Filtrationsantrieb.",
+        "correctReasoning": "Eine Hypalbuminämie schwächt den intravasalen onkotischen Druckbeitrag. Die veränderte Barriere fördert Flüssigkeits- und gegebenenfalls Proteinübertritt. Der Rückstau erhöht den hydrostatischen Filtrationsantrieb.",
         "wrongAnswerExplanations": {
-          "A": "Der Plasmaonkosedruck nimmt bei Albuminmangel ab.",
+          "A": "Eine Hypalbuminämie schwächt den intravasalen onkotischen Druckbeitrag.",
           "B": "Entscheidend ist eine gestörte Lymphdrainage.",
           "C": "Die veränderte Barriere fördert Flüssigkeits- und gegebenenfalls Proteinübertritt.",
           "D": "Der Rückstau erhöht den hydrostatischen Filtrationsantrieb."
@@ -1123,8 +1123,8 @@
           "id": "A"
         },
         {
-          "text": "Axilläre Lymphknoten sind für Lymphabflusswege der Brustdrüse relevant.",
-          "correct": true,
+          "text": "Der typische regionale Lymphabfluss der Brustdrüse führt zunächst zu den poplitealen Knoten.",
+          "correct": false,
           "id": "B"
         },
         {
@@ -1138,7 +1138,7 @@
           "id": "D"
         }
       ],
-      "explanation": "A: Sie sind eine Station der oberen Extremität. B: Die Vorlesung verknüpft Brustdrüse und axilläres Abflussgebiet. C: Sie sind dem Kopfbereich zugeordnet. D: Sie liegen im Abflussgebiet der unteren Extremität. Quelle: Vorlesungsfolien, PDF-S. 58–60.",
+      "explanation": "A: Sie sind eine Station der oberen Extremität. B: Ein wesentlicher Abfluss führt zu axillären Knoten, nicht zur Kniekehle. C: Sie sind dem Kopfbereich zugeordnet. D: Sie liegen im Abflussgebiet der unteren Extremität. Quelle: Vorlesungsfolien, PDF-S. 58–60.",
       "trap": "",
       "tags": [
         "J2",
@@ -1155,10 +1155,10 @@
       "questionGoal": "Lymphatische Regionen",
       "structuredExplanation": {
         "coreIdea": "Lymphatische Regionen",
-        "correctReasoning": "Die Vorlesung verknüpft Brustdrüse und axilläres Abflussgebiet. Sie sind dem Kopfbereich zugeordnet.",
+        "correctReasoning": "Sie sind dem Kopfbereich zugeordnet.",
         "wrongAnswerExplanations": {
           "A": "Sie sind eine Station der oberen Extremität.",
-          "B": "Die Vorlesung verknüpft Brustdrüse und axilläres Abflussgebiet.",
+          "B": "Ein wesentlicher Abfluss führt zu axillären Knoten, nicht zur Kniekehle.",
           "C": "Sie sind dem Kopfbereich zugeordnet.",
           "D": "Sie liegen im Abflussgebiet der unteren Extremität."
         }
