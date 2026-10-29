@@ -1,0 +1,1301 @@
+{
+  "id": "assessment_j2_block1_kv41_20261029",
+  "lectureCode": "KV41",
+  "title": "Ventilation/Perfusion und Atemregulation",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "KV41_Ventilation_Perfusion_VII_2026st.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Folie 10–11 nennt die PO₂-Differenz in umgekehrter Reihenfolge; Fragen verwenden die übliche alveoloarterielle Richtung. Shunt und Totraum über ihre Flussdefinitionen abgegrenzt. PaO₂-Grenzen nicht ohne FiO₂, Höhe und klinischen Kontext als Diagnosen verwendet. Atemgas-Austauschquotient am Mund von zellulärem RQ unterschieden. Diagramme der Atemsteuerung und des Hustenstosses visuell geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Besonderheiten der Lungenperfusion und hypoxische Vasokonstriktion erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Regionale Ventilations-Perfusions-Verhältnisse im Stehen beschreiben."
+    },
+    {
+      "id": "lo3",
+      "text": "Alveoloarterielle O₂-Unterschiede und Folgen von Verteilungsstörungen erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Blutgasveränderungen funktionell interpretieren."
+    },
+    {
+      "id": "lo5",
+      "text": "Neuronale und chemische Einflüsse auf die Atemsteuerung beschreiben."
+    },
+    {
+      "id": "lo6",
+      "text": "Husten- und Hering-Breuer-Reflex mechanistisch unterscheiden."
+    },
+    {
+      "id": "lo7",
+      "text": "O₂-Aufnahme und indirekte Bestimmung des Energieumsatzes erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv41_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Bei steigendem pulmonalem Blutfluss werden zusätzliche Gefässabschnitte rekrutiert und offene Gefässe gedehnt. Welche Druck-Fluss-Beziehung passt dazu?",
+      "options": [
+        {
+          "text": "Rekrutierung offener Gefässquerschnitte erhöht zwingend den Gesamtwiderstand.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Widerstand kann abnehmen, sodass der Druck weniger stark steigt als bei konstantem Widerstand.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Druckdifferenz bleibt selbst bei beliebig grossem Blutfluss exakt null.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der pulmonale Mitteldruck muss den systemischen übersteigen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Widerstand muss proportional zum Blutfluss zunehmen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zusätzliche parallele Strömungswege vermindern ihn. B: Der Lungenkreislauf ist ein rekrutierbares Niederdrucksystem. C: Auch ein niedriger Widerstand erfordert eine Druckdifferenz. D: Dies entspricht nicht dem normalen Niederdrucksystem. E: Dies berücksichtigt Rekrutierung und Dehnung nicht. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Pulmonaler Gefässwiderstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pulmonaler Gefässwiderstand"
+      ],
+      "questionGoal": "Pulmonaler Gefässwiderstand",
+      "structuredExplanation": {
+        "coreIdea": "Pulmonaler Gefässwiderstand",
+        "correctReasoning": "Der Lungenkreislauf ist ein rekrutierbares Niederdrucksystem.",
+        "wrongAnswerExplanations": {
+          "A": "Zusätzliche parallele Strömungswege vermindern ihn.",
+          "C": "Auch ein niedriger Widerstand erfordert eine Druckdifferenz.",
+          "D": "Dies entspricht nicht dem normalen Niederdrucksystem.",
+          "E": "Dies berücksichtigt Rekrutierung und Dehnung nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q02",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie die gegensinnigen Einflüsse des Lungenvolumens auf pulmonale Gefässe.",
+      "options": [
+        {
+          "text": "Alle pulmonalen Gefässabschnitte reagieren auf Lungendehnung in derselben Richtung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Gesamtwiderstand kann deshalb im Bereich mittlerer Lungenvolumina besonders niedrig sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mit stärkerer Lungendehnung können extraalveoläre Gefässe weiter werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Stark gedehnte Alveolen können alveoläre Kapillaren komprimieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Alveoläre und extraalveoläre Abschnitte unterscheiden sich. B: Die Folien verorten das Minimum nahe der FRC. C: Radialer Zug vermindert ihren Widerstand. D: Dies erhöht den Widerstand dieses Gefässanteils. Quelle: Vorlesungsfolien, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Lungenvolumen und Widerstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lungenvolumen und Widerstand"
+      ],
+      "questionGoal": "Lungenvolumen und Widerstand",
+      "structuredExplanation": {
+        "coreIdea": "Lungenvolumen und Widerstand",
+        "correctReasoning": "Die Folien verorten das Minimum nahe der FRC. Radialer Zug vermindert ihren Widerstand. Dies erhöht den Widerstand dieses Gefässanteils.",
+        "wrongAnswerExplanations": {
+          "A": "Alveoläre und extraalveoläre Abschnitte unterscheiden sich.",
+          "B": "Die Folien verorten das Minimum nahe der FRC.",
+          "C": "Radialer Zug vermindert ihren Widerstand.",
+          "D": "Dies erhöht den Widerstand dieses Gefässanteils."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Eine Lungenregion wird schlecht belüftet, ihr alveolärer PO₂ sinkt. Welche lokale Reaktion verbessert die Zuordnung von Ventilation und Perfusion?",
+      "options": [
+        {
+          "text": "Unmittelbare Umwandlung der Region in alveolären Totraum durch zusätzliche Perfusion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine ausschliesslich zentrale Reflexantwort ohne lokale Gefässreaktion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verengung der zuführenden pulmonalen Widerstandsgefässe mit Umverteilung des Blutflusses.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Weitstellung dieser Gefässe mit zusätzlicher Perfusion der schlecht belüfteten Region.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Gleich starke Vasokonstriktion sämtlicher gut belüfteter Regionen als notwendiger erster Schritt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Totraum setzt fehlende oder unzureichende Perfusion voraus. B: Die Folien beschreiben eine lokale Reaktion glatter Gefässmuskelzellen. C: Der Euler-Liljestrand-Mechanismus reduziert die Perfusion schlecht ventilierter Regionen. D: Dies würde das Missverhältnis verstärken. E: Die lokale Reaktion orientiert sich am regionalen O₂-Angebot. Quelle: Vorlesungsfolien, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Lokale hypoxische Vasokonstriktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lokale hypoxische Vasokonstriktion"
+      ],
+      "questionGoal": "Lokale hypoxische Vasokonstriktion",
+      "structuredExplanation": {
+        "coreIdea": "Lokale hypoxische Vasokonstriktion",
+        "correctReasoning": "Der Euler-Liljestrand-Mechanismus reduziert die Perfusion schlecht ventilierter Regionen.",
+        "wrongAnswerExplanations": {
+          "A": "Totraum setzt fehlende oder unzureichende Perfusion voraus.",
+          "B": "Die Folien beschreiben eine lokale Reaktion glatter Gefässmuskelzellen.",
+          "D": "Dies würde das Missverhältnis verstärken.",
+          "E": "Die lokale Reaktion orientiert sich am regionalen O₂-Angebot."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q04",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie den dargestellten pulmonalen Hypoxiemechanismus.",
+      "options": [
+        {
+          "text": "Bei globaler alveolärer Hypoxie kann der pulmonale Gesamtwiderstand steigen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Kanalveränderungen, Depolarisation und Ca²⁺-Anstieg vermitteln die Gefässmuskelkontraktion.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine lokal adaptive Reaktion kann bei grossflächiger Aktivierung keine nachteiligen Folgen haben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dieselbe Reaktion muss bei globaler Hypoxie den pulmonalen Druck senken.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Umverteilungsmöglichkeit zu gut belüfteten Regionen ist dann begrenzt. B: Dies entspricht der gezeigten Signalkette. C: Der globale Druckanstieg zeigt die Grenze dieser Folgerung. D: Diffuse Vasokonstriktion kann ihn erhöhen. Quelle: Vorlesungsfolien, PDF-S. 7,9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Lokale versus globale Hypoxie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lokale versus globale Hypoxie"
+      ],
+      "questionGoal": "Lokale versus globale Hypoxie",
+      "structuredExplanation": {
+        "coreIdea": "Lokale versus globale Hypoxie",
+        "correctReasoning": "Die Umverteilungsmöglichkeit zu gut belüfteten Regionen ist dann begrenzt. Dies entspricht der gezeigten Signalkette.",
+        "wrongAnswerExplanations": {
+          "A": "Die Umverteilungsmöglichkeit zu gut belüfteten Regionen ist dann begrenzt.",
+          "B": "Dies entspricht der gezeigten Signalkette.",
+          "C": "Der globale Druckanstieg zeigt die Grenze dieser Folgerung.",
+          "D": "Diffuse Vasokonstriktion kann ihn erhöhen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Warum ist das Ventilations-Perfusions-Verhältnis an der Lungenspitze im Stehen typischerweise höher als an der Basis?",
+      "options": [
+        {
+          "text": "Die Basis wird weniger perfundiert, aber stärker ventiliert als die Spitze.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Perfusion und Ventilation nehmen nach basal zu, die Perfusion jedoch stärker.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ventilation und Perfusion sind in jeder Region exakt gleich gross.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Spitze erhält grundsätzlich den grössten absoluten Blutfluss.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Apikale Alveolen sind am Atemruheniveau weniger vorgedehnt und deshalb immer besser ventilierbar.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die regionale Perfusionsrichtung ist hier vertauscht. B: Der steilere Perfusionsgradient bestimmt den Quotienten. C: Die Folien behandeln ihre Inhomogenität. D: Der hydrostatische Gradient begünstigt die Basis. E: Sie sind stärker vorgedehnt und besitzen weniger Volumenzuwachs für denselben Druckschritt. Quelle: Vorlesungsfolien, PDF-S. 12–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Aufrechter regionaler Gradient"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aufrechter regionaler Gradient"
+      ],
+      "questionGoal": "Aufrechter regionaler Gradient",
+      "structuredExplanation": {
+        "coreIdea": "Aufrechter regionaler Gradient",
+        "correctReasoning": "Der steilere Perfusionsgradient bestimmt den Quotienten.",
+        "wrongAnswerExplanations": {
+          "A": "Die regionale Perfusionsrichtung ist hier vertauscht.",
+          "C": "Die Folien behandeln ihre Inhomogenität.",
+          "D": "Der hydrostatische Gradient begünstigt die Basis.",
+          "E": "Sie sind stärker vorgedehnt und besitzen weniger Volumenzuwachs für denselben Druckschritt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie die ruhige Atmung einer gesunden stehenden Person.",
+      "options": [
+        {
+          "text": "Die regionale Perfusion ist vom hydrostatischen Druck unabhängig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Basale Alveolen sind am Atemruheniveau weniger vorgedehnt als apikale.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gleiche inspiratorische Druckänderung kann basal einen grösseren Volumenzuwachs erzeugen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Grössere apikale Ausgangsgrösse bedeutet automatisch grössere apikale Atemvolumenänderung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Druckgradient trägt zur inhomogenen Perfusion bei. B: Dies trägt zu einer grösseren lokalen Compliance bei. C: Die lokale Position auf der Druck-Volumen-Kurve ist entscheidend. D: Ausgangsvolumen und Compliance sind nicht dasselbe. Quelle: Vorlesungsfolien, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Vordehnung und regionale Ventilation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vordehnung und regionale Ventilation"
+      ],
+      "questionGoal": "Vordehnung und regionale Ventilation",
+      "structuredExplanation": {
+        "coreIdea": "Vordehnung und regionale Ventilation",
+        "correctReasoning": "Dies trägt zu einer grösseren lokalen Compliance bei. Die lokale Position auf der Druck-Volumen-Kurve ist entscheidend.",
+        "wrongAnswerExplanations": {
+          "A": "Der Druckgradient trägt zur inhomogenen Perfusion bei.",
+          "B": "Dies trägt zu einer grösseren lokalen Compliance bei.",
+          "C": "Die lokale Position auf der Druck-Volumen-Kurve ist entscheidend.",
+          "D": "Ausgangsvolumen und Compliance sind nicht dasselbe."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Eine Lungenregion erhält 0,6 l/min alveoläre Ventilation und 1,2 l/min Blutfluss. Welche Einordnung ist richtig?",
+      "options": [
+        {
+          "text": "V̇A/Q̇ = 0,5; die Region ist relativ zu ihrer Perfusion wenig ventiliert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "V̇A/Q̇ = 1,8; man addiert beide Flüsse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "V̇A/Q̇ = 0; sie ist ein vollständiger Shunt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "V̇A/Q̇ strebt gegen unendlich; sie ist Totraum.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "V̇A/Q̇ = 2; sie ist relativ überventiliert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,6/1,2=0,5. B: Das Verhältnis ist ein Quotient. C: Die Ventilation ist nicht null. D: Die Perfusion ist nicht null. E: Zähler und Nenner wurden vertauscht. Quelle: Vorlesungsfolien, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "V/Q berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "V/Q berechnen"
+      ],
+      "questionGoal": "V/Q berechnen",
+      "structuredExplanation": {
+        "coreIdea": "V/Q berechnen",
+        "correctReasoning": "0,6/1,2=0,5.",
+        "wrongAnswerExplanations": {
+          "B": "Das Verhältnis ist ein Quotient.",
+          "C": "Die Ventilation ist nicht null.",
+          "D": "Die Perfusion ist nicht null.",
+          "E": "Zähler und Nenner wurden vertauscht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie idealisierte regionale Grenzfälle.",
+      "options": [
+        {
+          "text": "Ventilation bei fehlender Perfusion entspricht ebenfalls V̇A/Q̇ = 0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zusätzliche Ventilation einer bereits unperfundierten Alveole verbessert direkt die Oxygenierung ihres durchströmenden Blutes.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Shunt und alveolärer Totraum haben denselben Austauschmechanismus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Perfusion bei fehlender Ventilation entspricht einem Shunt mit V̇A/Q̇ = 0.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: In diesem Totraumgrenzfall geht das Verhältnis gegen unendlich. B: Es gibt dort keinen Blutfluss, der oxygeniert werden könnte. C: Einmal fehlt Ventilation, einmal Perfusion. D: Das Blut erreicht dort keine ventilierte Austauschfläche. Quelle: Vorlesungsfolien, PDF-S. 10–11,16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Grenzfälle des Gasaustauschs"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzfälle des Gasaustauschs"
+      ],
+      "questionGoal": "Grenzfälle des Gasaustauschs",
+      "structuredExplanation": {
+        "coreIdea": "Grenzfälle des Gasaustauschs",
+        "correctReasoning": "Das Blut erreicht dort keine ventilierte Austauschfläche.",
+        "wrongAnswerExplanations": {
+          "A": "In diesem Totraumgrenzfall geht das Verhältnis gegen unendlich.",
+          "B": "Es gibt dort keinen Blutfluss, der oxygeniert werden könnte.",
+          "C": "Einmal fehlt Ventilation, einmal Perfusion.",
+          "D": "Das Blut erreicht dort keine ventilierte Austauschfläche."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Warum kann eine stark ventilierte Region das O₂-Defizit aus einer stark perfundierten Region mit niedrigem V̇A/Q̇ nur begrenzt ausgleichen?",
+      "options": [
+        {
+          "text": "Die regionalen PO₂-Werte werden unabhängig vom Blutfluss arithmetisch gemittelt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zusätzlicher alveolärer PO₂ kann die Hb-Sättigung beliebig über 100 % erhöhen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gut ventilierte Regionen nehmen grundsätzlich keinen Sauerstoff auf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hb ist im gut oxygenierten Blut bereits weitgehend gesättigt; zusätzliche Ventilation erhöht dessen O₂-Gehalt nur wenig.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Niedriges V̇A/Q̇ bedeutet definitionsgemäss fehlende Perfusion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gemischt werden Blutmengen und O₂-Gehalte. B: Die Zahl der Bindungsstellen ist begrenzt. C: Sie oxygenieren ihr Blut, besitzen aber eine begrenzte zusätzliche Kapazität. D: Bei der Mischung zählen die perfusionsgewichteten O₂-Gehalte. E: Es bedeutet wenig Ventilation relativ zur Perfusion. Quelle: Vorlesungsfolien, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Begrenzte O₂-Kompensation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Begrenzte O₂-Kompensation"
+      ],
+      "questionGoal": "Begrenzte O₂-Kompensation",
+      "structuredExplanation": {
+        "coreIdea": "Begrenzte O₂-Kompensation",
+        "correctReasoning": "Bei der Mischung zählen die perfusionsgewichteten O₂-Gehalte.",
+        "wrongAnswerExplanations": {
+          "A": "Gemischt werden Blutmengen und O₂-Gehalte.",
+          "B": "Die Zahl der Bindungsstellen ist begrenzt.",
+          "C": "Sie oxygenieren ihr Blut, besitzen aber eine begrenzte zusätzliche Kapazität.",
+          "E": "Es bedeutet wenig Ventilation relativ zur Perfusion."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q10",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Warum kann eine zusätzliche Ventilation gut ventilierter Regionen eine CO₂-Retention aus anderen Regionen eher kompensieren als deren O₂-Defizit?",
+      "options": [
+        {
+          "text": "Ein normaler PaCO₂ schliesst deshalb jede V/Q-Störung aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "O₂- und CO₂-Gehaltskurven müssen identisch sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Diese Regionen können zusätzlich CO₂ abatmen, während die O₂-Aufnahme durch die schon hohe Hb-Sättigung begrenzt ist.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "CO₂ kann die alveoläre Barriere grundsätzlich nicht passieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die CO₂-Abgabe wird durch eine obere Hb-Sättigungsgrenze bei 100 % vollständig blockiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kompensation kann den PaCO₂ trotz Störung normal halten. B: Ihre Eigenschaften und Transportformen unterscheiden sich. C: Die unterschiedlichen Gehalts-Partialdruck-Beziehungen sind entscheidend. D: Es wird über diese Barriere abgegeben. E: Die O₂-Sättigungsgrenze ist nicht so auf die CO₂-Abgabe übertragbar. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "CO₂-Kompensation einordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CO₂-Kompensation einordnen"
+      ],
+      "questionGoal": "CO₂-Kompensation einordnen",
+      "structuredExplanation": {
+        "coreIdea": "CO₂-Kompensation einordnen",
+        "correctReasoning": "Die unterschiedlichen Gehalts-Partialdruck-Beziehungen sind entscheidend.",
+        "wrongAnswerExplanations": {
+          "A": "Kompensation kann den PaCO₂ trotz Störung normal halten.",
+          "B": "Ihre Eigenschaften und Transportformen unterscheiden sich.",
+          "D": "Es wird über diese Barriere abgegeben.",
+          "E": "Die O₂-Sättigungsgrenze ist nicht so auf die CO₂-Abgabe übertragbar."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Bei unveränderter CO₂-Produktion sinkt die gesamte alveoläre Ventilation. Welche Blutgasveränderung ist bei gleichbleibender inspirierter O₂-Fraktion am ehesten zu erwarten?",
+      "options": [
+        {
+          "text": "PaCO₂ bleibt definitionsgemäss unverändert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "PaCO₂ sinkt, weil weniger Luft bewegt wird.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Atemfrequenz allein bestimmt ohne Atemzug- und Totraumvolumen den PaCO₂.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "PaO₂ muss unabhängig vom Ausgangswert auf über 150 mmHg steigen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "PaCO₂ steigt; der alveoläre und meist auch arterielle PO₂ sinken.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er hängt vom Verhältnis Produktion zu alveolärer Ventilation ab. B: Bei unveränderter Produktion wird CO₂ zurückgehalten. C: Entscheidend ist die effektive alveoläre Ventilation. D: Hypoventilation erhöht die O₂-Zufuhr nicht. E: Weniger alveoläre Ventilation bedeutet weniger CO₂-Abgabe. Quelle: Vorlesungsfolien, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Hypoventilation funktionell erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hypoventilation funktionell erkennen"
+      ],
+      "questionGoal": "Hypoventilation funktionell erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Hypoventilation funktionell erkennen",
+        "correctReasoning": "Weniger alveoläre Ventilation bedeutet weniger CO₂-Abgabe.",
+        "wrongAnswerExplanations": {
+          "A": "Er hängt vom Verhältnis Produktion zu alveolärer Ventilation ab.",
+          "B": "Bei unveränderter Produktion wird CO₂ zurückgehalten.",
+          "C": "Entscheidend ist die effektive alveoläre Ventilation.",
+          "D": "Hypoventilation erhöht die O₂-Zufuhr nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie Blutgasinterpretationen.",
+      "options": [
+        {
+          "text": "Jeder PaO₂ unter 100 mmHg beweist allein eine globale Hypoventilation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein erniedrigter PaCO₂ kann auf erhöhte alveoläre Ventilation relativ zur CO₂-Produktion hinweisen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein unauffälliger PaCO₂ schliesst eine Oxygenierungsstörung nicht aus.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die inspirierte O₂-Fraktion beeinflusst den erreichbaren alveolären PO₂.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Alter, Höhe, V/Q-Verteilung und andere Ursachen beeinflussen ihn ebenfalls. B: So ist Hyperventilation funktionell definiert. C: Ventilation und O₂-Übertritt beziehungsweise V/Q-Verteilung sind zu unterscheiden. D: Daher müssen O₂-Zufuhr und Umgebungsbedingungen mitbedacht werden. Quelle: Vorlesungsfolien, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Blutgase kontextbezogen beurteilen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "clinical_reasoning",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutgase kontextbezogen beurteilen"
+      ],
+      "questionGoal": "Blutgase kontextbezogen beurteilen",
+      "structuredExplanation": {
+        "coreIdea": "Blutgase kontextbezogen beurteilen",
+        "correctReasoning": "So ist Hyperventilation funktionell definiert. Ventilation und O₂-Übertritt beziehungsweise V/Q-Verteilung sind zu unterscheiden. Daher müssen O₂-Zufuhr und Umgebungsbedingungen mitbedacht werden.",
+        "wrongAnswerExplanations": {
+          "A": "Alter, Höhe, V/Q-Verteilung und andere Ursachen beeinflussen ihn ebenfalls.",
+          "B": "So ist Hyperventilation funktionell definiert.",
+          "C": "Ventilation und O₂-Übertritt beziehungsweise V/Q-Verteilung sind zu unterscheiden.",
+          "D": "Daher müssen O₂-Zufuhr und Umgebungsbedingungen mitbedacht werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Welche Zuordnung beschreibt die in der Abbildung gezeigte zentrale Chemorezeption am besten?",
+      "options": [
+        {
+          "text": "CO₂-abhängige Änderung des Liquor-pH beeinflusst die zentrale Atemsteuerung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein sinkender arterieller PO₂ wird nur durch zentrale Liquorrezeptoren erfasst.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Atemzentrum liegt ausschliesslich im motorischen Kortex.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zentrale Chemorezeptoren messen vorrangig direkt die Hb-Masse pro dl Blut.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine ausgeprägte Hypoxie muss die Ventilation bei jedem CO₂-Niveau unverändert lassen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die zentrale Antwort ist eng an CO₂ und H⁺ im Liquor gekoppelt. B: Periphere Chemorezeptoren sind für die hypoxische Antwort entscheidend. C: Die zentrale Rhythmussteuerung liegt wesentlich im Hirnstamm. D: Dies ist nicht ihre dargestellte Messgrösse. E: Die Folien zeigen eine deutliche hypoxische Ventilationsantwort. Quelle: Vorlesungsfolien, PDF-S. 21–22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Chemische Atemsteuerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chemische Atemsteuerung"
+      ],
+      "questionGoal": "Chemische Atemsteuerung",
+      "structuredExplanation": {
+        "coreIdea": "Chemische Atemsteuerung",
+        "correctReasoning": "Die zentrale Antwort ist eng an CO₂ und H⁺ im Liquor gekoppelt.",
+        "wrongAnswerExplanations": {
+          "B": "Periphere Chemorezeptoren sind für die hypoxische Antwort entscheidend.",
+          "C": "Die zentrale Rhythmussteuerung liegt wesentlich im Hirnstamm.",
+          "D": "Dies ist nicht ihre dargestellte Messgrösse.",
+          "E": "Die Folien zeigen eine deutliche hypoxische Ventilationsantwort."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie Einflüsse auf die Atemsteuerung.",
+      "options": [
+        {
+          "text": "Jede Anpassung an Muskelarbeit beginnt zwingend erst nach ausgeprägter arterieller Hypoxie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Chemorezeptoren tragen zur weiteren Feinregulation bei.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Motorische Zentren können beim Bewegungsbeginn die Atmung mitaktivieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Höhere Zentren und Rezeptoren der Atemwege sind von der Hirnstammsteuerung vollständig getrennt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zentrale Mitinnervation kann vorher wirken. B: CO₂, pH und O₂ liefern Rückmeldungen. C: Zentrale Mitinnervation ermöglicht eine vorausschauende Anpassung. D: Die Abbildung zeigt ihre konvergierenden Einflüsse. Quelle: Vorlesungsfolien, PDF-S. 21–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Atemzentrum und Mitinnervation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atemzentrum und Mitinnervation"
+      ],
+      "questionGoal": "Atemzentrum und Mitinnervation",
+      "structuredExplanation": {
+        "coreIdea": "Atemzentrum und Mitinnervation",
+        "correctReasoning": "CO₂, pH und O₂ liefern Rückmeldungen. Zentrale Mitinnervation ermöglicht eine vorausschauende Anpassung.",
+        "wrongAnswerExplanations": {
+          "A": "Zentrale Mitinnervation kann vorher wirken.",
+          "B": "CO₂, pH und O₂ liefern Rückmeldungen.",
+          "C": "Zentrale Mitinnervation ermöglicht eine vorausschauende Anpassung.",
+          "D": "Die Abbildung zeigt ihre konvergierenden Einflüsse."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Anhaltende Lungendehnung aktiviert langsam adaptierende Rezeptoren. Welche Wirkung entspricht dem Hering-Breuer-Reflex?",
+      "options": [
+        {
+          "text": "Unmittelbare Hemmung jeder Exspiration.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Isolierte Aktivierung der Blutgerinnung ohne respiratorischen Effekt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Sauerstoffbildung in den Alveolen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hemmung der weiteren Inspiration.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Verstärkung der Inspiration unabhängig vom Füllungszustand.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die gezeigte Wirkung richtet sich gegen weitere Inspiration. B: Dies beschreibt einen anderen Funktionsbereich. C: Rezeptoren regulieren die Motorik, nicht die Erzeugung von O₂. D: Die Dehnungsrückmeldung kann die inspiratorische Aktivität begrenzen. E: Dies ist nicht die beschriebene Reflexrichtung. Quelle: Vorlesungsfolien, PDF-S. 24,26–27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Hering-Breuer-Reflex"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hering-Breuer-Reflex"
+      ],
+      "questionGoal": "Hering-Breuer-Reflex",
+      "structuredExplanation": {
+        "coreIdea": "Hering-Breuer-Reflex",
+        "correctReasoning": "Die Dehnungsrückmeldung kann die inspiratorische Aktivität begrenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Die gezeigte Wirkung richtet sich gegen weitere Inspiration.",
+          "B": "Dies beschreibt einen anderen Funktionsbereich.",
+          "C": "Rezeptoren regulieren die Motorik, nicht die Erzeugung von O₂.",
+          "E": "Dies ist nicht die beschriebene Reflexrichtung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie den in der Vorlesung dargestellten Hustenreflex.",
+      "options": [
+        {
+          "text": "Vor dem kräftigen Ausstrom kann bei geschlossener Glottis hoher Druck aufgebaut werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Afferente Informationen aus den Atemwegen können über den N. vagus zum Hirnstamm gelangen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Afferenz des Reflexes verläuft als motorisches Signal vom Hirnstamm zu den Rezeptoren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Antwort rekrutiert Atemmuskulatur und glottische Koordination.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Abbildung zeigt anschliessende Glottisöffnung und Ausstromspitzen. B: Dies ist im Reflexschema dargestellt. C: Afferenz bedeutet Informationsfluss zum zentralen Nervensystem. D: Ein wirksamer Hustenstoss ist ein motorisches Programm. Quelle: Vorlesungsfolien, PDF-S. 26–28.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Reflexbögen der Atemwege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reflexbögen der Atemwege"
+      ],
+      "questionGoal": "Reflexbögen der Atemwege",
+      "structuredExplanation": {
+        "coreIdea": "Reflexbögen der Atemwege",
+        "correctReasoning": "Die Abbildung zeigt anschliessende Glottisöffnung und Ausstromspitzen. Dies ist im Reflexschema dargestellt. Ein wirksamer Hustenstoss ist ein motorisches Programm.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abbildung zeigt anschliessende Glottisöffnung und Ausstromspitzen.",
+          "B": "Dies ist im Reflexschema dargestellt.",
+          "C": "Afferenz bedeutet Informationsfluss zum zentralen Nervensystem.",
+          "D": "Ein wirksamer Hustenstoss ist ein motorisches Programm."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Während eines Hustenstosses ist der intrathorakale Druck bereits hoch, der Luftstrom aber noch nahezu null. Welcher dargestellte Zustand erklärt dies am besten?",
+      "options": [
+        {
+          "text": "Die Glottis ist während der Kompressionsphase noch geschlossen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Atemwege müssen frei offen sein, denn hoher Druck garantiert immer einen Strom.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein hoher Druck schliesst eine nachfolgende Ausstromspitze aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Atemmuskulatur ist sicher vollständig inaktiv.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Druckkurve beweist zwingend eine ruhige Inspiration.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nach ihrer Öffnung kann der kräftige Ausstrom einsetzen. B: Ein Verschluss kann den Strom trotz Druckdifferenz verhindern. C: Gerade die Druckfreigabe kann eine starke Spitze erzeugen. D: Der Druckaufbau beruht auf koordiniertem Muskeleinsatz. E: Die Hustenkompression unterscheidet sich von der normalen Inspirationsphase. Quelle: Vorlesungsfolien, PDF-S. 28.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Druck und Hustenstrom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Druck und Hustenstrom"
+      ],
+      "questionGoal": "Druck und Hustenstrom",
+      "structuredExplanation": {
+        "coreIdea": "Druck und Hustenstrom",
+        "correctReasoning": "Nach ihrer Öffnung kann der kräftige Ausstrom einsetzen.",
+        "wrongAnswerExplanations": {
+          "B": "Ein Verschluss kann den Strom trotz Druckdifferenz verhindern.",
+          "C": "Gerade die Druckfreigabe kann eine starke Spitze erzeugen.",
+          "D": "Der Druckaufbau beruht auf koordiniertem Muskeleinsatz.",
+          "E": "Die Hustenkompression unterscheidet sich von der normalen Inspirationsphase."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "In einer stationären Messphase beträgt die O₂-Aufnahme 0,30 l/min. Verwenden Sie ein gegebenes kalorisches Äquivalent von 20 kJ/l O₂. Welcher Energieumsatz folgt?",
+      "options": [
+        {
+          "text": "60 kJ/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "6 kJ/min",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "20 kJ/min",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,015 kJ/min",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "6 kJ/l",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist um den Faktor zehn zu hoch. B: 0,30×20=6 kJ/min. C: Das kalorische Äquivalent allein ist noch kein Umsatz pro Zeit. D: Dies ergibt sich durch falsches Dividieren. E: Nach Multiplikation mit l/min lautet die Einheit kJ/min. Quelle: Vorlesungsfolien, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Indirekte Kalorimetrie rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Indirekte Kalorimetrie rechnen"
+      ],
+      "questionGoal": "Indirekte Kalorimetrie rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Indirekte Kalorimetrie rechnen",
+        "correctReasoning": "0,30×20=6 kJ/min.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist um den Faktor zehn zu hoch.",
+          "C": "Das kalorische Äquivalent allein ist noch kein Umsatz pro Zeit.",
+          "D": "Dies ergibt sich durch falsches Dividieren.",
+          "E": "Nach Multiplikation mit l/min lautet die Einheit kJ/min."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "Beurteilen Sie die Bestimmung des Energieumsatzes aus Atemgasen.",
+      "options": [
+        {
+          "text": "Aus der CO₂-Fraktion allein ohne Berücksichtigung der Gasvolumina folgt unmittelbar der gesamte CO₂-Fluss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das kalorische Äquivalent ist eine gemessene Atemfrequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ergospirometrie kann O₂-Aufnahme und CO₂-Abgabe am Mund erfassen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der am Mund gemessene Quotient muss auch bei akuter Hyperventilation exakt dem zellulären Substratquotienten entsprechen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Fraktion und Volumenstrom müssen verknüpft werden. B: Es verknüpft O₂-Verbrauch mit freigesetzter Energie. C: Mundstück oder Maske erlauben die Messung der Gasflüsse. D: Nichtstationäre CO₂-Speicherung beziehungsweise Abatmung kann zu Abweichungen führen. Quelle: Vorlesungsfolien, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Atemgasmessung und Energie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atemgasmessung und Energie"
+      ],
+      "questionGoal": "Atemgasmessung und Energie",
+      "structuredExplanation": {
+        "coreIdea": "Atemgasmessung und Energie",
+        "correctReasoning": "Mundstück oder Maske erlauben die Messung der Gasflüsse.",
+        "wrongAnswerExplanations": {
+          "A": "Fraktion und Volumenstrom müssen verknüpft werden.",
+          "B": "Es verknüpft O₂-Verbrauch mit freigesetzter Energie.",
+          "C": "Mundstück oder Maske erlauben die Messung der Gasflüsse.",
+          "D": "Nichtstationäre CO₂-Speicherung beziehungsweise Abatmung kann zu Abweichungen führen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv41_q20",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV41",
+      "stem": "In einer stabilen Messphase werden 0,24 l/min CO₂ abgegeben und 0,30 l/min O₂ aufgenommen. Welcher am Mund gemessene Austauschquotient ergibt sich?",
+      "options": [
+        {
+          "text": "8,0",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,54",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,80",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0,06",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1,25",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies enthält einen Faktor-zehn-Fehler. B: Die Summe ist nicht der Quotient. C: 0,24/0,30=0,80; in stationären Bedingungen kann er den metabolischen RQ annähern. D: Die Differenz ist nicht der Quotient. E: Hier wurden Zähler und Nenner vertauscht. Quelle: Vorlesungsfolien, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV41",
+        "Respiratorischen Quotienten berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Respiratorischen Quotienten berechnen"
+      ],
+      "questionGoal": "Respiratorischen Quotienten berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Respiratorischen Quotienten berechnen",
+        "correctReasoning": "0,24/0,30=0,80; in stationären Bedingungen kann er den metabolischen RQ annähern.",
+        "wrongAnswerExplanations": {
+          "A": "Dies enthält einen Faktor-zehn-Fehler.",
+          "B": "Die Summe ist nicht der Quotient.",
+          "D": "Die Differenz ist nicht der Quotient.",
+          "E": "Hier wurden Zähler und Nenner vertauscht."
+        }
+      }
+    }
+  ]
+}
