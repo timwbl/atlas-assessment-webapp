@@ -1,0 +1,1289 @@
+{
+  "id": "assessment_j2_block1_kv22_23_20261029",
+  "lectureCode": "KV22/23",
+  "title": "Autonomes Nervensystem und Blutdruckregulation",
+  "block": "J2 Block 1",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "2026 VL Blutdruck.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 29.10.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Keine Übernahme der fehlerhaften M5-Zuordnung als Standardrezeptor glatter Muskulatur. M2 am Herzen und neuronale nikotinische Ganglienrezeptoren sauber getrennt. Baroreflex als kurzfristiger Regelkreis; starre Zuordnung Karotis=dynamisch versus Aorta=langfristig nicht als universeller Lehrsatz geprüft. Beispielhafte Pharmakologie ohne Therapieempfehlungen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Aufbau, Transmitter und Rezeptoren autonomer Bahnen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Autonome Regulation von Frequenz, AV-Leitung, Inotropie und Lusitropie verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Herzzeitvolumen, Gefässwiderstand und Baroreflex funktionell verbinden."
+    },
+    {
+      "id": "lo4",
+      "text": "Globale und lokale Regulation der Gefässweite unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b1_kv22_23_q01",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie die Zuordnung autonomer Bahnen und ihrer Transmitter.",
+      "options": [
+        {
+          "text": "Der Parasympathikus besitzt kraniale und sakrale Ursprünge.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede postganglionäre sympathische Wirkung erfolgt über muskarinische M2-Rezeptoren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Präganglionäre sympathische Neurone setzen Acetylcholin frei.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die kardiale parasympathische Wirkung wird wesentlich durch muskarinische Rezeptoren vermittelt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ist die kraniosakrale Organisation. B: Adrenerge Rezeptoren vermitteln wichtige sympathische Effekte. C: Es aktiviert nikotinische Rezeptoren im Ganglion. D: Am Herzen ist M2 besonders wichtig. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Autonome Bahnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autonome Bahnen"
+      ],
+      "questionGoal": "Autonome Bahnen",
+      "structuredExplanation": {
+        "coreIdea": "Autonome Bahnen",
+        "correctReasoning": "Dies ist die kraniosakrale Organisation. Es aktiviert nikotinische Rezeptoren im Ganglion. Am Herzen ist M2 besonders wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die kraniosakrale Organisation.",
+          "B": "Adrenerge Rezeptoren vermitteln wichtige sympathische Effekte.",
+          "C": "Es aktiviert nikotinische Rezeptoren im Ganglion.",
+          "D": "Am Herzen ist M2 besonders wichtig."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Ein Wirkstoff blockiert neuronale nikotinische Rezeptoren autonomer Ganglien. Welche Signalübertragung ist direkt betroffen?",
+      "options": [
+        {
+          "text": "Acetylcholinbindung am M2-Rezeptor des Sinusknotens",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cholinerge Übertragung vom prä- auf das postganglionäre Neuron",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "NO-Aktivierung löslicher Guanylatcyclase",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Adenosinbedingte lokale Gefässreaktion",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Noradrenalinbindung am β1-Rezeptor des Myokards",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: M2 ist muskarinisch, nicht nikotinisch. B: Diese Synapse nutzt neuronale nikotinische Rezeptoren. C: Dies ist kein ganglionärer Rezeptorschritt. D: Dies ist eine andere lokale Signalwirkung. E: β1 ist ein adrenerger Rezeptor am Erfolgsorgan. Quelle: Vorlesungsfolien, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Ganglion versus Erfolgsorgan"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ganglion versus Erfolgsorgan"
+      ],
+      "questionGoal": "Ganglion versus Erfolgsorgan",
+      "structuredExplanation": {
+        "coreIdea": "Ganglion versus Erfolgsorgan",
+        "correctReasoning": "Diese Synapse nutzt neuronale nikotinische Rezeptoren.",
+        "wrongAnswerExplanations": {
+          "A": "M2 ist muskarinisch, nicht nikotinisch.",
+          "C": "Dies ist kein ganglionärer Rezeptorschritt.",
+          "D": "Dies ist eine andere lokale Signalwirkung.",
+          "E": "β1 ist ein adrenerger Rezeptor am Erfolgsorgan."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Welcher Mechanismus passt zur Frequenzsenkung durch Acetylcholin am Sinusknoten?",
+      "options": [
+        {
+          "text": "Direkte Aktivierung der Myosin-ATPase ohne Membraneffekt",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Aktivierung von β1-Rezeptoren und cAMP-Anstieg",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aktivierung neuronaler Nikotinrezeptoren mit dauerhaftem Na⁺-Aufstrich",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aktivierung muskarinischer M2-Rezeptoren mit hyperpolarisierendem Kaliumstrom",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Hemmung sämtlicher Kaliumströme mit sofortiger Depolarisation",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Frequenz wird über Schrittmacherströme verändert. B: Das entspricht sympathischer Beschleunigung. C: Das ist nicht der beschriebene kardiale M2-Effekt. D: GIRK-Aktivierung erschwert die nächste Schwellenüberschreitung. E: Dies ist nicht der dargestellte vagale Mechanismus. Quelle: Vorlesungsfolien, PDF-S. 4,11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Kardiales M2-Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kardiales M2-Signal"
+      ],
+      "questionGoal": "Kardiales M2-Signal",
+      "structuredExplanation": {
+        "coreIdea": "Kardiales M2-Signal",
+        "correctReasoning": "GIRK-Aktivierung erschwert die nächste Schwellenüberschreitung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Frequenz wird über Schrittmacherströme verändert.",
+          "B": "Das entspricht sympathischer Beschleunigung.",
+          "C": "Das ist nicht der beschriebene kardiale M2-Effekt.",
+          "E": "Dies ist nicht der dargestellte vagale Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Eine β1-Stimulation erhöht die kardiale Kontraktilität. Welche Signalkette passt?",
+      "options": [
+        {
+          "text": "Ersetzung von Troponin durch Acetylcholin",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Direkte Umwandlung des β1-Rezeptors in eine Gap Junction",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "cAMP/PKA-Aktivierung und veränderte Phosphorylierung von Ca²⁺-Handhabungsproteinen",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Blockade der Freisetzung aus dem SR als einzige Wirkung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliessliche Hemmung aller L-Typ-Ca²⁺-Kanäle",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Acetylcholin ist kein kontraktiles Strukturprotein. B: Rezeptoren werden nicht zu Zell-Zell-Kanälen. C: Dadurch kann mehr aktivierendes Calcium verfügbar werden. D: β1-Stimulation fördert die kontraktile Calciumantwort. E: Dies würde den Calciumtrigger vermindern. Quelle: Vorlesungsfolien, PDF-S. 10,13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "β1-cAMP-PKA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "β1-cAMP-PKA"
+      ],
+      "questionGoal": "β1-cAMP-PKA",
+      "structuredExplanation": {
+        "coreIdea": "β1-cAMP-PKA",
+        "correctReasoning": "Dadurch kann mehr aktivierendes Calcium verfügbar werden.",
+        "wrongAnswerExplanations": {
+          "A": "Acetylcholin ist kein kontraktiles Strukturprotein.",
+          "B": "Rezeptoren werden nicht zu Zell-Zell-Kanälen.",
+          "D": "β1-Stimulation fördert die kontraktile Calciumantwort.",
+          "E": "Dies würde den Calciumtrigger vermindern."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie die funktionellen Begriffe am Herzen.",
+      "options": [
+        {
+          "text": "Positive Lusitropie bedeutet eine langsamere Relaxation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Inotropie bezeichnet definitionsgemäss nur eine Änderung der Herzfrequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Positive Chronotropie bezeichnet eine Frequenzsteigerung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Negative Dromotropie kann die AV-Überleitung verzögern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Positive Lusitropie erleichtert beziehungsweise beschleunigt die Relaxation. B: Inotropie betrifft die Kontraktilität. C: Der primäre Bezug ist die Schrittmachertätigkeit. D: Sie betrifft die Erregungsleitung. Quelle: Vorlesungsfolien, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Chronotropie und Dromotropie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chronotropie und Dromotropie"
+      ],
+      "questionGoal": "Chronotropie und Dromotropie",
+      "structuredExplanation": {
+        "coreIdea": "Chronotropie und Dromotropie",
+        "correctReasoning": "Der primäre Bezug ist die Schrittmachertätigkeit. Sie betrifft die Erregungsleitung.",
+        "wrongAnswerExplanations": {
+          "A": "Positive Lusitropie erleichtert beziehungsweise beschleunigt die Relaxation.",
+          "B": "Inotropie betrifft die Kontraktilität.",
+          "C": "Der primäre Bezug ist die Schrittmachertätigkeit.",
+          "D": "Sie betrifft die Erregungsleitung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Eine Phosphorylierung vermindert die hemmende Wirkung von Phospholamban auf SERCA. Welche Folge passt?",
+      "options": [
+        {
+          "text": "Blockade der Ca²⁺-Aufnahme ins SR",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verlust jeder erneuten SR-Calciumfreisetzung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkter Transport sämtlichen SR-Calciums ins Blut",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Raschere Ca²⁺-Rückaufnahme ins SR und erleichterte Relaxation",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Öffnung der Aortenklappe unabhängig vom Druckgradienten",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Enthemmung steigert gerade die Aufnahme. B: Ein höherer SR-Füllungszustand kann die nächste Freisetzung unterstützen. C: SERCA transportiert aus dem Cytosol ins SR. D: SERCA entfernt Calcium schneller aus dem Cytosol. E: Die Klappenöffnung folgt weiterhin den Druckverhältnissen. Quelle: Vorlesungsfolien, PDF-S. 10,13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Phospholamban und SERCA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phospholamban und SERCA"
+      ],
+      "questionGoal": "Phospholamban und SERCA",
+      "structuredExplanation": {
+        "coreIdea": "Phospholamban und SERCA",
+        "correctReasoning": "SERCA entfernt Calcium schneller aus dem Cytosol.",
+        "wrongAnswerExplanations": {
+          "A": "Die Enthemmung steigert gerade die Aufnahme.",
+          "B": "Ein höherer SR-Füllungszustand kann die nächste Freisetzung unterstützen.",
+          "C": "SERCA transportiert aus dem Cytosol ins SR.",
+          "E": "Die Klappenöffnung folgt weiterhin den Druckverhältnissen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie die β-adrenerge Unterstützung bei gesteigerter Herzarbeit.",
+      "options": [
+        {
+          "text": "Troponin-I-Phosphorylierung kann die Relaxation zusätzlich beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein grösserer Calciumtransient kann die Kontraktion verstärken.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Positive Inotropie muss zwangsläufig eine längere vollständige Calciumaktivierung bei jeder Frequenz erzwingen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine raschere Calciumrückaufnahme unterstützt trotz höherer Frequenz die diastolische Relaxation.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie verändert die Calciumabhängigkeit der Myofilamente. B: Mehr aktivierendes Calcium fördert die Myofilamentaktivierung. C: Die Relaxationsmechanismen werden parallel angepasst. D: So werden stärkere Kontraktion und schnellere Entspannung vereinbar. Quelle: Vorlesungsfolien, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Inotropie und Lusitropie koppeln"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Inotropie und Lusitropie koppeln"
+      ],
+      "questionGoal": "Inotropie und Lusitropie koppeln",
+      "structuredExplanation": {
+        "coreIdea": "Inotropie und Lusitropie koppeln",
+        "correctReasoning": "Sie verändert die Calciumabhängigkeit der Myofilamente. Mehr aktivierendes Calcium fördert die Myofilamentaktivierung. So werden stärkere Kontraktion und schnellere Entspannung vereinbar.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verändert die Calciumabhängigkeit der Myofilamente.",
+          "B": "Mehr aktivierendes Calcium fördert die Myofilamentaktivierung.",
+          "C": "Die Relaxationsmechanismen werden parallel angepasst.",
+          "D": "So werden stärkere Kontraktion und schnellere Entspannung vereinbar."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Bei gleicher Schwelle und gleicher Depolarisationssteigung wird das maximale diastolische Potential negativer. Welche unmittelbare Folge ist im Schrittmachermodell zu erwarten?",
+      "options": [
+        {
+          "text": "Keine mögliche Veränderung der Zyklusdauer",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Längere Zeit bis zur Schwelle und tendenziell niedrigere Frequenz",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Zwingend schnellere AV-Überleitung allein durch den negativeren Wert",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Kürzere Zeit bis zur Schwelle",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sofortiger Wegfall der gesamten Zellmembran",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Ausgangswert ist neben der Steigung relevant. B: Die zu überwindende Potentialdifferenz wird grösser. C: Die beschriebene Änderung erklärt keine Beschleunigung. D: Die Ausgangslage liegt weiter von der Schwelle entfernt. E: Hyperpolarisation ist eine Potentialänderung einer erhaltenen Membran. Quelle: Vorlesungsfolien, PDF-S. 8,11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Hyperpolarisation und Zyklusdauer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hyperpolarisation und Zyklusdauer"
+      ],
+      "questionGoal": "Hyperpolarisation und Zyklusdauer",
+      "structuredExplanation": {
+        "coreIdea": "Hyperpolarisation und Zyklusdauer",
+        "correctReasoning": "Die zu überwindende Potentialdifferenz wird grösser.",
+        "wrongAnswerExplanations": {
+          "A": "Der Ausgangswert ist neben der Steigung relevant.",
+          "C": "Die beschriebene Änderung erklärt keine Beschleunigung.",
+          "D": "Die Ausgangslage liegt weiter von der Schwelle entfernt.",
+          "E": "Hyperpolarisation ist eine Potentialänderung einer erhaltenen Membran."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Bei vorhandenem vagalem Ruhetonus werden kardiale muskarinische Rezeptoren blockiert. Welche unmittelbare Tendenz passt?",
+      "options": [
+        {
+          "text": "Direkte β1-Blockade mit sinkender Inotropie als primärer Mechanismus",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bradykardie durch verstärkte M2-Wirkung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Hemmung sämtlicher L-Typ-Kanäle durch Bindung an deren Poren",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Anstieg der Sinusfrequenz durch Wegfall vagaler Bremswirkung",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Obligatorischer Verschluss der Koronararterien",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Muskarinblockade ist keine β-Blockade. B: Die Rezeptorwirkung wird blockiert statt verstärkt. C: Das beschreibt nicht die muskarinische Rezeptorblockade. D: Die cholinerge Verlangsamung wird vermindert. E: Dieser folgt nicht aus dem beschriebenen Rezeptoreffekt. Quelle: Vorlesungsfolien, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Muskarinblockade"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Muskarinblockade"
+      ],
+      "questionGoal": "Muskarinblockade",
+      "structuredExplanation": {
+        "coreIdea": "Muskarinblockade",
+        "correctReasoning": "Die cholinerge Verlangsamung wird vermindert.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Muskarinblockade ist keine β-Blockade.",
+          "B": "Die Rezeptorwirkung wird blockiert statt verstärkt.",
+          "C": "Das beschreibt nicht die muskarinische Rezeptorblockade.",
+          "E": "Dieser folgt nicht aus dem beschriebenen Rezeptoreffekt."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie die Wechselwirkung von Sympathikus und Parasympathikus.",
+      "options": [
+        {
+          "text": "Autorezeptoren können die weitere Transmitterfreisetzung einer Nervenendigung hemmen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Beide Systeme wirken am Herzen unter allen Bedingungen unabhängig ohne Wechselwirkung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Herzfrequenz ergibt sich ausschliesslich aus der Anzahl der Herzklappen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein präsynaptischer α2-Autorezeptor muss die Noradrenalinfreisetzung verstärken.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ermöglicht negative Rückkopplung. B: Die Folien zeigen prä- und postsynaptische Interaktion. C: Autonome Einflüsse verändern die Schrittmachertätigkeit. D: Typischerweise begrenzt er die Freisetzung. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Autonome Wechselwirkung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autonome Wechselwirkung"
+      ],
+      "questionGoal": "Autonome Wechselwirkung",
+      "structuredExplanation": {
+        "coreIdea": "Autonome Wechselwirkung",
+        "correctReasoning": "Dies ermöglicht negative Rückkopplung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ermöglicht negative Rückkopplung.",
+          "B": "Die Folien zeigen prä- und postsynaptische Interaktion.",
+          "C": "Autonome Einflüsse verändern die Schrittmachertätigkeit.",
+          "D": "Typischerweise begrenzt er die Freisetzung."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Im vereinfachten Modell ist MAP−ZVD=HMV×TPW. HMV steigt um 20 %, TPW sinkt auf 75 % des Ausgangswerts. Welcher Faktor folgt für MAP−ZVD?",
+      "options": [
+        {
+          "text": "0,95",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,90",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "1,20",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,75",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1,60",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Prozentänderungen dürfen nicht einfach addiert werden. B: 1,20×0,75=0,90. C: Dies ignoriert die Widerstandsänderung. D: Dies ignoriert die HMV-Änderung. E: Dies ist der Quotient statt des Produkts. Quelle: Vorlesungsfolien, PDF-S. 6,16–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "HMV und Widerstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HMV und Widerstand"
+      ],
+      "questionGoal": "HMV und Widerstand",
+      "structuredExplanation": {
+        "coreIdea": "HMV und Widerstand",
+        "correctReasoning": "1,20×0,75=0,90.",
+        "wrongAnswerExplanations": {
+          "A": "Die Prozentänderungen dürfen nicht einfach addiert werden.",
+          "C": "Dies ignoriert die Widerstandsänderung.",
+          "D": "Dies ignoriert die HMV-Änderung.",
+          "E": "Dies ist der Quotient statt des Produkts."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Der arterielle Druck steigt plötzlich. Welche reflektorische Kombination wirkt dem Anstieg entgegen?",
+      "options": [
+        {
+          "text": "Mehr vagale Wirkung mit zwingender α1-Vasokonstriktion aller Organe",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehr Sympathikus mit Tachykardie und Vasokonstriktion",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mehr vagale und weniger sympathische Wirkung mit Bradykardie und Gefässdilatation",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Direkte Erhöhung des Blutvolumens als einzige sofortige Antwort",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Weniger Vagus bei unverändert maximaler Sympathikusaktivität",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die reflexhafte sympathische Gefässwirkung nimmt ab. B: Dies würde den Druckanstieg eher verstärken. C: HMV und peripherer Widerstand können sinken. D: Der schnelle Reflex wirkt über autonome Efferenzen. E: Dies begünstigt eher eine Frequenzzunahme. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Baroreflex bei Druckanstieg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Baroreflex bei Druckanstieg"
+      ],
+      "questionGoal": "Baroreflex bei Druckanstieg",
+      "structuredExplanation": {
+        "coreIdea": "Baroreflex bei Druckanstieg",
+        "correctReasoning": "HMV und peripherer Widerstand können sinken.",
+        "wrongAnswerExplanations": {
+          "A": "Die reflexhafte sympathische Gefässwirkung nimmt ab.",
+          "B": "Dies würde den Druckanstieg eher verstärken.",
+          "D": "Der schnelle Reflex wirkt über autonome Efferenzen.",
+          "E": "Dies begünstigt eher eine Frequenzzunahme."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie den arteriellen Baroreflex als Regelkreis.",
+      "options": [
+        {
+          "text": "Der Reflex wirkt schnellen Druckänderungen durch negative Rückkopplung entgegen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Rezeptoren erfassen die durch Druckänderung beeinflusste Gefässwanddehnung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Drucksteigerung muss im intakten Reflex grundsätzlich eine weitere Drucksteigerung auslösen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Herz und Gefässe sind effektorische Stellglieder.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Antwort richtet sich gegen die Störung. B: Das ist die afferente Grundlage des Reflexes. C: Dies wäre positive statt kompensatorischer Rückkopplung. D: Frequenz, Kontraktilität und Gefässtonus beeinflussen den Druck. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rückkopplung"
+      ],
+      "questionGoal": "Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Rückkopplung",
+        "correctReasoning": "Die Antwort richtet sich gegen die Störung. Das ist die afferente Grundlage des Reflexes. Frequenz, Kontraktilität und Gefässtonus beeinflussen den Druck.",
+        "wrongAnswerExplanations": {
+          "A": "Die Antwort richtet sich gegen die Störung.",
+          "B": "Das ist die afferente Grundlage des Reflexes.",
+          "C": "Dies wäre positive statt kompensatorischer Rückkopplung.",
+          "D": "Frequenz, Kontraktilität und Gefässtonus beeinflussen den Druck."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Warum kann die Verminderung sympathischer vasokonstriktorischer Aktivität ein Gefäss erweitern?",
+      "options": [
+        {
+          "text": "Ein Teil des zuvor vorhandenen aktiven Muskeltonus fällt weg.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Gefässdilatation erfordert neue parasympathische Fasern",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Radius muss bei jeder Tonusabnahme kleiner werden",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Gefässwand verliert sofort ihre elastischen Fasern",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Noradrenalin wird dadurch zum stärkeren α1-Agonisten",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dilatation kann durch Entzug eines konstriktorischen Signals entstehen. B: Auch die Rücknahme sympathischen Tonus kann genügen. C: Entspannung vergrössert unter passenden Druckbedingungen den Radius. D: Akute Tonusänderung ist kein Abbau der Wandstruktur. E: Die geringere Freisetzung verstärkt dessen Wirkung nicht. Quelle: Vorlesungsfolien, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Sympathischer Grundtonus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sympathischer Grundtonus"
+      ],
+      "questionGoal": "Sympathischer Grundtonus",
+      "structuredExplanation": {
+        "coreIdea": "Sympathischer Grundtonus",
+        "correctReasoning": "Dilatation kann durch Entzug eines konstriktorischen Signals entstehen.",
+        "wrongAnswerExplanations": {
+          "B": "Auch die Rücknahme sympathischen Tonus kann genügen.",
+          "C": "Entspannung vergrössert unter passenden Druckbedingungen den Radius.",
+          "D": "Akute Tonusänderung ist kein Abbau der Wandstruktur.",
+          "E": "Die geringere Freisetzung verstärkt dessen Wirkung nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie die adrenergen Gefässreaktionen.",
+      "options": [
+        {
+          "text": "Adrenalin und Noradrenalin müssen in jedem Gewebe dieselbe Nettoantwort erzeugen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein β2-Rezeptor ist derselbe Rezeptortyp wie der kardiale M2-Rezeptor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "β2-Aktivierung kann in entsprechend ausgestatteten Gefässen dilatierend wirken.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "α1-Aktivierung begünstigt die Kontraktion glatter Gefässmuskulatur.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Rezeptoraffinität, Konzentration und Gewebeausstattung unterscheiden sich. B: β2 ist adrenerg, M2 muskarinisch. C: Der Rezeptorbesatz beeinflusst die Reaktion. D: Sie kann den Widerstand erhöhen. Quelle: Vorlesungsfolien, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Adrenerge Gefässwirkungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Adrenerge Gefässwirkungen"
+      ],
+      "questionGoal": "Adrenerge Gefässwirkungen",
+      "structuredExplanation": {
+        "coreIdea": "Adrenerge Gefässwirkungen",
+        "correctReasoning": "Der Rezeptorbesatz beeinflusst die Reaktion. Sie kann den Widerstand erhöhen.",
+        "wrongAnswerExplanations": {
+          "A": "Rezeptoraffinität, Konzentration und Gewebeausstattung unterscheiden sich.",
+          "B": "β2 ist adrenerg, M2 muskarinisch.",
+          "C": "Der Rezeptorbesatz beeinflusst die Reaktion.",
+          "D": "Sie kann den Widerstand erhöhen."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Welche Signalkette passt zur NO-vermittelten Relaxation glatter Gefässmuskulatur?",
+      "options": [
+        {
+          "text": "NO wird zu Acetylcholin und bindet an nikotinische Ganglienrezeptoren",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "NO ersetzt den gesamten Muskelapparat durch elastisches Bindegewebe",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NO diffundiert aus dem Endothel und aktiviert lösliche Guanylatcyclase mit cGMP-Anstieg.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "NO aktiviert unmittelbar α1-Rezeptoren und erhöht deren PLC-Signal",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "NO transportiert Calcium als Carnitinester in das SR",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist keine NO-Signalübertragung. B: Die Reaktion ist eine akute funktionelle Signalwirkung. C: Dies fördert nachgeschaltete relaxierende Signalwege. D: Das wäre ein konstriktorischer adrenerger Weg. E: NO ist kein Calciumshuttle. Quelle: Vorlesungsfolien, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Endotheliales NO"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endotheliales NO"
+      ],
+      "questionGoal": "Endotheliales NO",
+      "structuredExplanation": {
+        "coreIdea": "Endotheliales NO",
+        "correctReasoning": "Dies fördert nachgeschaltete relaxierende Signalwege.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist keine NO-Signalübertragung.",
+          "B": "Die Reaktion ist eine akute funktionelle Signalwirkung.",
+          "D": "Das wäre ein konstriktorischer adrenerger Weg.",
+          "E": "NO ist kein Calciumshuttle."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Eine Arteriole wird durch höheren transmuralen Druck gedehnt und kontrahiert daraufhin. Welche Funktion hat diese Antwort?",
+      "options": [
+        {
+          "text": "Verschluss aller Kapillaren unabhängig vom Bedarf",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Umwandlung der Arteriole in einen venösen Speicher",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Widerstandserhöhung zur Begrenzung des druckbedingten Flussanstiegs",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Primäre Beschleunigung des Sinusknotens durch direkten Zellkontakt",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zusätzliche passive Erweiterung zur unbegrenzten Flussverstärkung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Antwort moduliert den Zufluss statt generell alle Kapillaren zu verschliessen. B: Der Gefässtyp bleibt erhalten. C: Das ist myogene Autoregulation. D: Es ist eine lokale Gefässantwort. E: Der aktive myogene Anteil wirkt konstriktorisch. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Bayliss-Effekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bayliss-Effekt"
+      ],
+      "questionGoal": "Bayliss-Effekt",
+      "structuredExplanation": {
+        "coreIdea": "Bayliss-Effekt",
+        "correctReasoning": "Das ist myogene Autoregulation.",
+        "wrongAnswerExplanations": {
+          "A": "Die Antwort moduliert den Zufluss statt generell alle Kapillaren zu verschliessen.",
+          "B": "Der Gefässtyp bleibt erhalten.",
+          "D": "Es ist eine lokale Gefässantwort.",
+          "E": "Der aktive myogene Anteil wirkt konstriktorisch."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie lokale Vorgänge bei gesteigerter Aktivität eines systemischen Gewebes.",
+      "options": [
+        {
+          "text": "Auswaschung dilatierender Metabolite muss deren lokale Konzentration erhöhen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine lokale metabolische Gefässantwort benötigt zwingend eine neue zentrale Nervenfaser.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lokale Hypoxie erzeugt in jedem Organ dieselbe Reaktion wie in der Lungenstrombahn.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Anfallende Metabolite können eine lokale Gefässdilatation begünstigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie kann die Konzentration und damit die Dilatationswirkung vermindern. B: Sie kann unabhängig von vegetativer Innervation wirken. C: Systemische und pulmonale Gefässe können gegensinnig reagieren. D: Dies koppelt Durchblutung an den Stoffwechselbedarf. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Metabolische Regulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Metabolische Regulation"
+      ],
+      "questionGoal": "Metabolische Regulation",
+      "structuredExplanation": {
+        "coreIdea": "Metabolische Regulation",
+        "correctReasoning": "Dies koppelt Durchblutung an den Stoffwechselbedarf.",
+        "wrongAnswerExplanations": {
+          "A": "Sie kann die Konzentration und damit die Dilatationswirkung vermindern.",
+          "B": "Sie kann unabhängig von vegetativer Innervation wirken.",
+          "C": "Systemische und pulmonale Gefässe können gegensinnig reagieren.",
+          "D": "Dies koppelt Durchblutung an den Stoffwechselbedarf."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Der Perfusionsdruck steigt kurzzeitig; der Organfluss kehrt durch myogene Reaktion ungefähr zum Ausgangswert zurück. Welche Änderung muss im vereinfachten Modell erfolgt sein?",
+      "options": [
+        {
+          "text": "Ausschliesslicher Anstieg der Compliance ohne Radius- oder Widerstandsänderung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verlust der Kontinuitätsgleichung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Abnahme des Gefässwiderstands",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwingende Halbierung der Blutdichte",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zunahme des Gefässwiderstands",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies erklärt keinen anhaltend gleichen Fluss bei höherem ΔP. B: Die Massenerhaltung gilt weiter. C: Das würde den Flussanstieg unterstützen. D: Die lokale myogene Antwort erklärt sich über Gefässweite. E: Bei höherem ΔP und gleichem Q muss R höher sein. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Autoregulatorische Kompensation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autoregulatorische Kompensation"
+      ],
+      "questionGoal": "Autoregulatorische Kompensation",
+      "structuredExplanation": {
+        "coreIdea": "Autoregulatorische Kompensation",
+        "correctReasoning": "Bei höherem ΔP und gleichem Q muss R höher sein.",
+        "wrongAnswerExplanations": {
+          "A": "Dies erklärt keinen anhaltend gleichen Fluss bei höherem ΔP.",
+          "B": "Die Massenerhaltung gilt weiter.",
+          "C": "Das würde den Flussanstieg unterstützen.",
+          "D": "Die lokale myogene Antwort erklärt sich über Gefässweite."
+        }
+      }
+    },
+    {
+      "id": "j2_b1_kv22_23_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block1",
+      "lectureId": "KV22/23",
+      "stem": "Beurteilen Sie die Durchblutung eines arbeitenden Skelettmuskels unter Sympathikusaktivierung.",
+      "options": [
+        {
+          "text": "Der lokale Gefässtonus ist allein aus der Herzfrequenz eindeutig berechenbar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Nettoantwort hängt vom Zusammenspiel mehrerer Signale ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sympathikusaktivierung beweist ohne weitere Angaben eine gleich starke Flussabnahme in jedem Organ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lokale vasodilatierende Mechanismen können eine globale vasokonstriktorische Wirkung abschwächen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dafür fehlen lokale und vaskuläre Informationen. B: Rezeptoren, Stoffwechsel und Endothel wirken zusammen. C: Die regionalen Antworten sind unterschiedlich. D: Dies unterstützt eine bedarfsgerechte regionale Durchblutung. Quelle: Vorlesungsfolien, PDF-S. 21–26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 1",
+        "KV22/23",
+        "Globale und lokale Signale"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Globale und lokale Signale"
+      ],
+      "questionGoal": "Globale und lokale Signale",
+      "structuredExplanation": {
+        "coreIdea": "Globale und lokale Signale",
+        "correctReasoning": "Rezeptoren, Stoffwechsel und Endothel wirken zusammen. Dies unterstützt eine bedarfsgerechte regionale Durchblutung.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür fehlen lokale und vaskuläre Informationen.",
+          "B": "Rezeptoren, Stoffwechsel und Endothel wirken zusammen.",
+          "C": "Die regionalen Antworten sind unterschiedlich.",
+          "D": "Dies unterstützt eine bedarfsgerechte regionale Durchblutung."
+        }
+      }
+    }
+  ]
+}
