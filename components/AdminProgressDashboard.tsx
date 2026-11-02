@@ -164,17 +164,21 @@ export function AdminProgressDashboard() {
 
       <section className="card admin-user-list">
         {filteredProfiles.map((profile) => {
+          const isAdmin = profile.role === "admin";
           const progress = progressByUser[profile.id] || [];
           const attempts = progress.reduce((sum, row) => sum + row.attempts, 0);
           const best = progress.length
             ? Math.max(...progress.map((row) => row.bestScore))
             : null;
           return (
-            <article key={profile.id}>
+            <article key={profile.id} className={isAdmin ? "admin-user--admin" : undefined}>
               <div className="admin-user-identity">
                 <div title={profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"} className={`admin-user-avatar study-year-color study-year-color--${profile.studyYear || "unknown"}`}>{initials(profile.displayName || profile.email)}</div>
                 <div>
-                  <strong>{profile.displayName || "Name nicht hinterlegt"}</strong>
+                  <div className="admin-user-name">
+                    <strong>{profile.displayName || "Name nicht hinterlegt"}</strong>
+                    {isAdmin && <span className="admin-user-badge">ADMIN</span>}
+                  </div>
                   <span>{profile.email}</span>
                   <small>{profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"}</small>
                 </div>
