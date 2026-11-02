@@ -1,0 +1,1297 @@
+{
+  "id": "assessment_j2_block2_kv11_20261102",
+  "lectureCode": "KV11",
+  "title": "Verdauung II – Darm und Resorption",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "KV11_Vorlesung KV11 Verdauung II HS2026 ml.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Tight Junctions sind keine absolute Einwegbarriere für Wasser. CFTR vermittelt Anionenfluss; Wasser folgt osmotisch. Die Aktivierung pankreatischer Proteasezymogene wird nicht auf sämtliche Pankreasenzyme übertragen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Exokrine Pankreasfunktion, Proteaseaktivierung und ihre hormonelle Steuerung erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Proteinverdauung und Aufnahme ihrer Spaltprodukte im Dünndarm erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Kohlenhydratverdauung und Monosaccharidresorption funktionell verknüpfen."
+    },
+    {
+      "id": "lo4",
+      "text": "Laktoseintoleranz und weitere Bürstensaumenzymdefekte mechanistisch einordnen."
+    },
+    {
+      "id": "lo5",
+      "text": "Fettverdauung, Mizellen, Chylomikronen und den weiteren Transportweg erklären."
+    },
+    {
+      "id": "lo6",
+      "text": "Wasser- und Elektrolytresorption sowie osmotische und sekretorische Diarrhö unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv11_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Nach Sekretinfreisetzung nimmt vor allem das bicarbonatreiche Pankreassekret zu. Welche Arbeitsteilung erklärt die Wirkung am besten?",
+      "options": [
+        {
+          "text": "Beide Zelltypen ersetzen ihre Sekretion nach Sekretin durch Insulinabgabe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sekretin steigert ausschliesslich die Bildung von Gallensalzen in den Azini.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Azinuszellen bilden primär HCl; Gangzellen aktivieren die Pepsinogene des Magens.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gangzellen sezernieren Trypsin als Hauptpuffer; Azinuszellen entfernen luminales Bicarbonat.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Gangzellen liefern HCO3− und Wasser zur Neutralisation; Azinuszellen liefern hauptsächlich Verdauungsenzyme.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Insulin ist ein Inselhormon und kein exokrines Verdauungssekret. B: Gallensalze entstehen in der Leber; die gezeigte Wirkung betrifft pankreatische Gangzellen. C: Das Pankreas liefert Bicarbonat und keine für die Magenfunktion bestimmte Salzsäure. D: Pufferwirkung und Enzymsekretion sind hier vertauscht und falsch zugeordnet. E: Die beiden exokrinen Kompartimente erfüllen ergänzende Funktionen. Quelle: Vorlesungsfolien, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Gangzelle und Azinuszelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gangzelle und Azinuszelle"
+      ],
+      "questionGoal": "Gangzelle und Azinuszelle",
+      "structuredExplanation": {
+        "coreIdea": "Gangzelle und Azinuszelle",
+        "correctReasoning": "Die beiden exokrinen Kompartimente erfüllen ergänzende Funktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Insulin ist ein Inselhormon und kein exokrines Verdauungssekret.",
+          "B": "Gallensalze entstehen in der Leber; die gezeigte Wirkung betrifft pankreatische Gangzellen.",
+          "C": "Das Pankreas liefert Bicarbonat und keine für die Magenfunktion bestimmte Salzsäure.",
+          "D": "Pufferwirkung und Enzymsekretion sind hier vertauscht und falsch zugeordnet."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Ein Säugling hat einen kongenitalen Enteropeptidasemangel. Trypsinogen wird normal aus dem Pankreas sezerniert. Welche unmittelbare Folge ist zu erwarten?",
+      "options": [
+        {
+          "text": "Die Leber stellt deshalb keine Galle mehr her.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Trypsinogen wird schon im Pankreas vollständig zu Aminosäuren abgebaut.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pankreatische α-Amylase kann nicht mehr an Stärke binden, weil sie selbst Trypsinogen ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Start der Trypsinaktivierung und damit die nachgeschaltete Proteasekaskade ist beeinträchtigt.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Alle Disaccharidasen verlieren dadurch automatisch ihr aktives Zentrum.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Gallensynthese ist nicht der unmittelbar blockierte Schritt. B: Der Defekt betrifft den intestinalen Aktivierungsschritt und nicht einen vorzeitigen vollständigen Proteinabbau. C: Amylase und Trypsinogen sind unterschiedliche Enzyme. D: Enteropeptidase spaltet Trypsinogen am Bürstensaum zur aktiven Form. E: Enteropeptidase aktiviert die Proteasekaskade und ist keine allgemeine Reifungsprotease sämtlicher Bürstensaumenzyme. Quelle: Vorlesungsfolien, PDF-S. 5,13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Enteropeptidase als Startsignal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enteropeptidase als Startsignal"
+      ],
+      "questionGoal": "Enteropeptidase als Startsignal",
+      "structuredExplanation": {
+        "coreIdea": "Enteropeptidase als Startsignal",
+        "correctReasoning": "Enteropeptidase spaltet Trypsinogen am Bürstensaum zur aktiven Form.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gallensynthese ist nicht der unmittelbar blockierte Schritt.",
+          "B": "Der Defekt betrifft den intestinalen Aktivierungsschritt und nicht einen vorzeitigen vollständigen Proteinabbau.",
+          "C": "Amylase und Trypsinogen sind unterschiedliche Enzyme.",
+          "E": "Enteropeptidase aktiviert die Proteasekaskade und ist keine allgemeine Reifungsprotease sämtlicher Bürstensaumenzyme."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Pankreassekrete sollen Nahrung verdauen, ohne die sekretorischen Gewebe vorzeitig anzugreifen. Beurteilen Sie die Arbeitsteilung von Zymogenabgabe und Bicarbonatsekretion.",
+      "options": [
+        {
+          "text": "Die physiologische Hauptaufgabe des Pankreassekrets besteht darin, den Dünndarm auf pH 1 abzusenken.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bicarbonat verbessert nach saurem Mageninhalt die Bedingungen für die Dünndarmverdauung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Pankreatische Lipase ist ebenso wie Trypsin obligat eine erst durch Enteropeptidase direkt aktivierte Proteasevorstufe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Abgabe proteolytischer Enzyme als Zymogene begrenzt die Gefahr vorzeitiger Proteolyse.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das entspräche nicht den Wirkbedingungen der meisten pankreatischen Verdauungsenzyme. B: Neutralisation schützt die Mukosa und ermöglicht geeignete pH-Bedingungen für pankreatische Enzyme. C: Lipase ist keine Protease und wird nicht als Trypsinogen sezerniert. D: Die Aktivierung wird überwiegend in das Darmlumen verlagert. Quelle: Vorlesungsfolien, PDF-S. 4–7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Sekretion und Schutz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekretion und Schutz"
+      ],
+      "questionGoal": "Sekretion und Schutz",
+      "structuredExplanation": {
+        "coreIdea": "Sekretion und Schutz",
+        "correctReasoning": "Neutralisation schützt die Mukosa und ermöglicht geeignete pH-Bedingungen für pankreatische Enzyme. Die Aktivierung wird überwiegend in das Darmlumen verlagert.",
+        "wrongAnswerExplanations": {
+          "A": "Das entspräche nicht den Wirkbedingungen der meisten pankreatischen Verdauungsenzyme.",
+          "B": "Neutralisation schützt die Mukosa und ermöglicht geeignete pH-Bedingungen für pankreatische Enzyme.",
+          "C": "Lipase ist keine Protease und wird nicht als Trypsinogen sezerniert.",
+          "D": "Die Aktivierung wird überwiegend in das Darmlumen verlagert."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Ein Enzym entfernt vom C-Terminus eines Peptids einzelne Aminosäuren. Welche in der Vorlesung behandelte Enzymgruppe passt dazu?",
+      "options": [
+        {
+          "text": "Pankreatisches Trypsin",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pankreatisches Chymotrypsin",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pankreatische Carboxypeptidasen",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Membrangebundene Lactase",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Intestinale Aminopeptidasen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Trypsin spaltet als Endopeptidase innerhalb der Peptidkette bevorzugt nach basischen Resten. B: Auch Chymotrypsin ist eine Endopeptidase. C: Sie sind Exopeptidasen mit Angriff am C-Terminus. D: Sie spaltet ein Disaccharid und keine terminale Aminosäure ab. E: Diese greifen am N-Terminus und nicht am C-Terminus an. Quelle: Vorlesungsfolien, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Endo- und Exopeptidase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endo- und Exopeptidase"
+      ],
+      "questionGoal": "Endo- und Exopeptidase",
+      "structuredExplanation": {
+        "coreIdea": "Endo- und Exopeptidase",
+        "correctReasoning": "Sie sind Exopeptidasen mit Angriff am C-Terminus.",
+        "wrongAnswerExplanations": {
+          "A": "Trypsin spaltet als Endopeptidase innerhalb der Peptidkette bevorzugt nach basischen Resten.",
+          "B": "Auch Chymotrypsin ist eine Endopeptidase.",
+          "D": "Sie spaltet ein Disaccharid und keine terminale Aminosäure ab.",
+          "E": "Diese greifen am N-Terminus und nicht am C-Terminus an."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Nach der luminalen und Bürstensaumverdauung müssen Nahrungsproteine die apikale Enterozytenmembran passieren. Welche Produktgruppe wird dabei physiologisch in relevantem Umfang transportiert?",
+      "options": [
+        {
+          "text": "Nur Oligopeptide mit mindestens 30 Aminosäuren",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Freie Aminosäuren sowie Di- und Tripeptide",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur C-terminale Aminosäuren, während N-terminale im Lumen verbleiben",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich freie Aminosäuren, da Di- und Tripeptide nicht aufgenommen werden können",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich ungespaltene Nahrungsproteine mit unveränderter Tertiärstruktur",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Für die übliche Aufnahme werden kleinere Spaltprodukte benötigt. B: Diese kleinen Spaltprodukte besitzen geeignete Transportwege; kleine Peptide werden intrazellulär weiter zerlegt. C: Die Lage im ursprünglichen Protein legt keine solche Resorptionsauswahl fest. D: Ein H+-gekoppelter Peptidtransport ermöglicht gerade deren Aufnahme. E: Die normale quantitative Proteinresorption beruht auf vorangehender Spaltung. Quelle: Vorlesungsfolien, PDF-S. 6,10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Resorbierbare Proteinprodukte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Resorbierbare Proteinprodukte"
+      ],
+      "questionGoal": "Resorbierbare Proteinprodukte",
+      "structuredExplanation": {
+        "coreIdea": "Resorbierbare Proteinprodukte",
+        "correctReasoning": "Diese kleinen Spaltprodukte besitzen geeignete Transportwege; kleine Peptide werden intrazellulär weiter zerlegt.",
+        "wrongAnswerExplanations": {
+          "A": "Für die übliche Aufnahme werden kleinere Spaltprodukte benötigt.",
+          "C": "Die Lage im ursprünglichen Protein legt keine solche Resorptionsauswahl fest.",
+          "D": "Ein H+-gekoppelter Peptidtransport ermöglicht gerade deren Aufnahme.",
+          "E": "Die normale quantitative Proteinresorption beruht auf vorangehender Spaltung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Ein Nahrungsprotein wird nacheinander im sauren Magen und im weniger sauren Dünndarm verarbeitet. Beurteilen Sie die Spezifität und Zusammenarbeit der beteiligten Enzyme.",
+      "options": [
+        {
+          "text": "Enteropeptidase ist die für die Fettmizellenbildung benötigte Gallensäure.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pepsin wirkt bevorzugt im sauren Milieu des Magens.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Trypsin kann Peptidbindungen nach Lysin oder Arginin spalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bürstensaumpeptidasen ersetzen grundsätzlich jeden luminalen Proteinabbau.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist ein membranständiges Enzym zur Trypsinogenaktivierung. B: Im Dünndarm übernehmen andere Proteasen bei höherem pH den weiteren Abbau. C: Seine Sequenzpräferenz erklärt einen Teil der komplementären Proteasenwirkung. D: Luminale Proteasen und Bürstensaumenzyme arbeiten nacheinander und ergänzend. Quelle: Vorlesungsfolien, PDF-S. 5–6,10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Proteinspaltung in Abschnitten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Proteinspaltung in Abschnitten"
+      ],
+      "questionGoal": "Proteinspaltung in Abschnitten",
+      "structuredExplanation": {
+        "coreIdea": "Proteinspaltung in Abschnitten",
+        "correctReasoning": "Im Dünndarm übernehmen andere Proteasen bei höherem pH den weiteren Abbau. Seine Sequenzpräferenz erklärt einen Teil der komplementären Proteasenwirkung.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist ein membranständiges Enzym zur Trypsinogenaktivierung.",
+          "B": "Im Dünndarm übernehmen andere Proteasen bei höherem pH den weiteren Abbau.",
+          "C": "Seine Sequenzpräferenz erklärt einen Teil der komplementären Proteasenwirkung.",
+          "D": "Luminale Proteasen und Bürstensaumenzyme arbeiten nacheinander und ergänzend."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Pankreatische α-Amylase ist vorhanden, aber die terminale Spaltung am Bürstensaum ist gestört. Warum kann die Kohlenhydratresorption trotzdem eingeschränkt sein?",
+      "options": [
+        {
+          "text": "Alle Produkte der Amylase sind bereits ausschliesslich freie Fructose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Amylase hydrolysiert nur die β-1,4-Bindung der Lactose.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Amylase transportiert intakte Stärke direkt durch die apikale Zellmembran.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Amylase baut die Natrium-Kalium-Pumpe des Enterozyten ab.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Amylase liefert vor allem kleinere Kohlenhydrate, die vor der Aufnahme weiter zu Monosacchariden gespalten werden müssen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Stärke liefert glucosehaltige Oligosaccharide und keine ausschliessliche Fructosefraktion. B: Diese Aufgabe übernimmt Lactase; α-Amylase spaltet α-glykosidische Bindungen der Stärke. C: Amylase ist ein hydrolytisches Enzym und kein Stärketransporter. D: Das ist nicht ihre physiologische Substratspezifität. E: Die luminale Vorverdauung ersetzt nicht alle membranständigen Disaccharidasen und Oligosaccharidasen. Quelle: Vorlesungsfolien, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Amylase und Bürstensaum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Amylase und Bürstensaum"
+      ],
+      "questionGoal": "Amylase und Bürstensaum",
+      "structuredExplanation": {
+        "coreIdea": "Amylase und Bürstensaum",
+        "correctReasoning": "Die luminale Vorverdauung ersetzt nicht alle membranständigen Disaccharidasen und Oligosaccharidasen.",
+        "wrongAnswerExplanations": {
+          "A": "Stärke liefert glucosehaltige Oligosaccharide und keine ausschliessliche Fructosefraktion.",
+          "B": "Diese Aufgabe übernimmt Lactase; α-Amylase spaltet α-glykosidische Bindungen der Stärke.",
+          "C": "Amylase ist ein hydrolytisches Enzym und kein Stärketransporter.",
+          "D": "Das ist nicht ihre physiologische Substratspezifität."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Beurteilen Sie die Zuordnung von Nahrungskohlenhydrat und resorbierbaren Spaltprodukten.",
+      "options": [
+        {
+          "text": "Maltose liefert bei vollständiger Hydrolyse zwei Glucosemoleküle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Saccharose liefert bei vollständiger Hydrolyse zwei Galactosemoleküle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lactose liefert bei vollständiger Hydrolyse Glucose und Galactose.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Intakte Saccharose wird über den apikalen Glucosecarrier aufgenommen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die terminale Spaltung wird durch Bürstensaumenzyme ermöglicht. B: Sie besteht aus Glucose und Fructose. C: Lactase spaltet den Milchzucker in diese beiden Monosaccharide. D: Das Disaccharid wird vor der physiologischen Aufnahme in Monosaccharide gespalten. Quelle: Vorlesungsfolien, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Disaccharidprodukte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Disaccharidprodukte"
+      ],
+      "questionGoal": "Disaccharidprodukte",
+      "structuredExplanation": {
+        "coreIdea": "Disaccharidprodukte",
+        "correctReasoning": "Die terminale Spaltung wird durch Bürstensaumenzyme ermöglicht. Lactase spaltet den Milchzucker in diese beiden Monosaccharide.",
+        "wrongAnswerExplanations": {
+          "A": "Die terminale Spaltung wird durch Bürstensaumenzyme ermöglicht.",
+          "B": "Sie besteht aus Glucose und Fructose.",
+          "C": "Lactase spaltet den Milchzucker in diese beiden Monosaccharide.",
+          "D": "Das Disaccharid wird vor der physiologischen Aufnahme in Monosaccharide gespalten."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Nach Milchaufnahme entstehen bei verminderter Lactaseaktivität Blähungen und wässriger Stuhl. Welcher Mechanismus verbindet den Enzymdefekt mit den Beschwerden?",
+      "options": [
+        {
+          "text": "Nicht gespaltene Lactose bleibt osmotisch wirksam im Lumen und wird zusätzlich bakteriell fermentiert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Intakte Lactose wird vermehrt als Chylomikron in Lymphgefässe aufgenommen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lactasehemmung steigert direkt die Salzsäurebildung im Kolon auf pH 1.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fehlende Lactase erzeugt obligat einen Gallengangsverschluss.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Enzymdefekt ist gleichbedeutend mit einer dauerhaften CFTR-Aktivierung durch Choleratoxin.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wasserretention und Gärungsprodukte erklären Diarrhö und Blähungen. B: Chylomikronen transportieren Nahrungsfette und keine Lactose. C: Dies ist nicht der Mechanismus der Lactosemalabsorption. D: Ein Bürstensaumenzymdefekt ist keine mechanische Gallenwegsobstruktion. E: Dies beschreibt eine andere, sekretorische Diarrhöursache. Quelle: Vorlesungsfolien, PDF-S. 13,20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Lactasemangel und Osmose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lactasemangel und Osmose"
+      ],
+      "questionGoal": "Lactasemangel und Osmose",
+      "structuredExplanation": {
+        "coreIdea": "Lactasemangel und Osmose",
+        "correctReasoning": "Wasserretention und Gärungsprodukte erklären Diarrhö und Blähungen.",
+        "wrongAnswerExplanations": {
+          "B": "Chylomikronen transportieren Nahrungsfette und keine Lactose.",
+          "C": "Dies ist nicht der Mechanismus der Lactosemalabsorption.",
+          "D": "Ein Bürstensaumenzymdefekt ist keine mechanische Gallenwegsobstruktion.",
+          "E": "Dies beschreibt eine andere, sekretorische Diarrhöursache."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Ein Kind verträgt Milch, entwickelt aber nach der Einführung saccharosereicher Getränke osmotische Beschwerden. Welcher isolierte Bürstensaumdefekt passt am besten?",
+      "options": [
+        {
+          "text": "Fehlender Intrinsic Factor",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine alleinige Störung des Gallensäurerücktransports",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kongenitaler Lactasemangel",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Saccharase-Isomaltase-Mangel",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Kongenitaler Enteropeptidasemangel",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies betrifft die Vitamin-B12-Resorption und erklärt den isolierten Saccharosetrigger nicht. B: Sie betrifft vor allem die Fettverarbeitung und erklärt das spezifische Muster nicht am besten. C: Dieser wäre bereits bei Lactosezufuhr durch Milch zu erwarten. D: Die zeitliche Zuordnung zur Saccharosezufuhr passt zur fehlenden Spaltung dieses Zuckers. E: Er stört primär die Aktivierung pankreatischer Proteasen und damit die Proteinverdauung. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Defekt aus Nahrungstrigger ableiten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Defekt aus Nahrungstrigger ableiten"
+      ],
+      "questionGoal": "Defekt aus Nahrungstrigger ableiten",
+      "structuredExplanation": {
+        "coreIdea": "Defekt aus Nahrungstrigger ableiten",
+        "correctReasoning": "Die zeitliche Zuordnung zur Saccharosezufuhr passt zur fehlenden Spaltung dieses Zuckers.",
+        "wrongAnswerExplanations": {
+          "A": "Dies betrifft die Vitamin-B12-Resorption und erklärt den isolierten Saccharosetrigger nicht.",
+          "B": "Sie betrifft vor allem die Fettverarbeitung und erklärt das spezifische Muster nicht am besten.",
+          "C": "Dieser wäre bereits bei Lactosezufuhr durch Milch zu erwarten.",
+          "E": "Er stört primär die Aktivierung pankreatischer Proteasen und damit die Proteinverdauung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Ein isolierter Lactasemangel führt nach Milchzuckeraufnahme zu Beschwerden. Beurteilen Sie, welche Verdauungs- und Aufnahmefunktionen davon unmittelbar betroffen sind.",
+      "options": [
+        {
+          "text": "Eine verminderte Lactaseaktivität ist definitionsgemäss eine immunologische Milcheiweissallergie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Defekt betrifft die Hydrolyse und nicht unmittelbar die Struktur des Glucosetransporters.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Menge der zugeführten Lactose beeinflusst die luminale Belastung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei einem isolierten Lactasemangel fällt zwangsläufig auch die Saccharosespaltung aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Enzymatische Malabsorption und Immunreaktion auf Protein sind unterschiedliche Mechanismen. B: Enzymspaltung und Membrantransport sind getrennte Schritte. C: Die Beschwerden hängen unter anderem von Substratmenge und Restaktivität ab. D: Dafür ist ein anderes Enzymsystem zuständig. Quelle: Vorlesungsfolien, PDF-S. 13–14,20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Lactosemalabsorption einordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lactosemalabsorption einordnen"
+      ],
+      "questionGoal": "Lactosemalabsorption einordnen",
+      "structuredExplanation": {
+        "coreIdea": "Lactosemalabsorption einordnen",
+        "correctReasoning": "Enzymspaltung und Membrantransport sind getrennte Schritte. Die Beschwerden hängen unter anderem von Substratmenge und Restaktivität ab.",
+        "wrongAnswerExplanations": {
+          "A": "Enzymatische Malabsorption und Immunreaktion auf Protein sind unterschiedliche Mechanismen.",
+          "B": "Enzymspaltung und Membrantransport sind getrennte Schritte.",
+          "C": "Die Beschwerden hängen unter anderem von Substratmenge und Restaktivität ab.",
+          "D": "Dafür ist ein anderes Enzymsystem zuständig."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Nach vermindertem Gallensalzangebot ist die Fettresorption trotz vorhandener pankreatischer Lipase beeinträchtigt. Welche Funktion fehlt besonders?",
+      "options": [
+        {
+          "text": "Die Solubilisierung hydrophober Verdauungsprodukte in gemischten Mizellen für den Weg zur Enterozytenoberfläche",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die direkte enzymatische Spaltung aller Triacylglyceridbindungen durch Gallensalze",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Synthese von ApoB48 durch Mizellen im Darmlumen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Bildung von Lactase aus inaktivem Prolactase durch Gallensalze",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Umwandlung freier Fettsäuren in Aminosäuren vor der Aufnahme",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gallensalze erleichtern die Verfügbarkeit der Lipidspaltprodukte im wässrigen Darmlumen. B: Die Hydrolyse leisten Lipasen und weitere Esterasen; Gallensalze sind keine solchen Enzyme. C: ApoB48 wird im Enterozyten synthetisiert und gehört zu Chylomikronen. D: Dies ist keine physiologische Aufgabe der Gallensalze. E: Eine solche Umwandlung ist für die Fettresorption nicht erforderlich. Quelle: Vorlesungsfolien, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Gallensalze und Mizellen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gallensalze und Mizellen"
+      ],
+      "questionGoal": "Gallensalze und Mizellen",
+      "structuredExplanation": {
+        "coreIdea": "Gallensalze und Mizellen",
+        "correctReasoning": "Gallensalze erleichtern die Verfügbarkeit der Lipidspaltprodukte im wässrigen Darmlumen.",
+        "wrongAnswerExplanations": {
+          "B": "Die Hydrolyse leisten Lipasen und weitere Esterasen; Gallensalze sind keine solchen Enzyme.",
+          "C": "ApoB48 wird im Enterozyten synthetisiert und gehört zu Chylomikronen.",
+          "D": "Dies ist keine physiologische Aufgabe der Gallensalze.",
+          "E": "Eine solche Umwandlung ist für die Fettresorption nicht erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q13",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Ein langkettiger Nahrungsfettsäurerest wird im Enterozyten wieder in Triacylglycerid eingebaut. Welcher anschliessende Weg entspricht der Vorlesung?",
+      "options": [
+        {
+          "text": "Einbau in ApoB48-haltige Chylomikronen, Abgabe an die Lymphe und Eintritt in den Blutkreislauf über den Ductus thoracicus",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Speicherung des Chylomikrons im Darmlumen als dauerhaft unverdauliche Mizelle",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Transport durch den Gallengang zurück in die Leber vor jedem Blutkontakt",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verpackung in ApoB100-haltige VLDL und direkte Abgabe in die Pfortader",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Direkte Abgabe ganzer Chylomikronen in die intestinalen Blutkapillaren und anschliessend in die Pfortader",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der typische Weg langkettiger Nahrungsfette nach Resynthese. B: Chylomikron und gemischte Mizelle sind unterschiedliche Strukturen an unterschiedlichen Orten. C: Der primäre Exportweg ist lymphatisch und nicht biliär. D: Die intestinale Verpackung erfolgt in ApoB48-haltige Chylomikronen; VLDL werden vor allem in der Leber gebildet. E: Intestinale Chylomikronen gelangen zunächst in die Lymphe; die Pfortader ist nicht ihr regulärer erster Abflussweg. Quelle: Vorlesungsfolien, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Lymphweg der Nahrungsfette"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lymphweg der Nahrungsfette"
+      ],
+      "questionGoal": "Lymphweg der Nahrungsfette",
+      "structuredExplanation": {
+        "coreIdea": "Lymphweg der Nahrungsfette",
+        "correctReasoning": "Dies ist der typische Weg langkettiger Nahrungsfette nach Resynthese.",
+        "wrongAnswerExplanations": {
+          "B": "Chylomikron und gemischte Mizelle sind unterschiedliche Strukturen an unterschiedlichen Orten.",
+          "C": "Der primäre Exportweg ist lymphatisch und nicht biliär.",
+          "D": "Die intestinale Verpackung erfolgt in ApoB48-haltige Chylomikronen; VLDL werden vor allem in der Leber gebildet.",
+          "E": "Intestinale Chylomikronen gelangen zunächst in die Lymphe; die Pfortader ist nicht ihr regulärer erster Abflussweg."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Vom luminalen Fetttropfen bis zum Transport im Blut werden unterschiedliche Partikel und Enzyme benötigt. Beurteilen Sie die folgenden Zuordnungen der Fettverarbeitung.",
+      "options": [
+        {
+          "text": "Eine gemischte Mizelle und ein Chylomikron sind derselbe Partikel mit demselben Proteinanteil.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "ApoB48 gehört zum strukturellen Aufbau intestinaler Chylomikronen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Chylomikronen besitzen wegen ihres hohen Triacylglyceridgehalts eine besonders hohe Dichte.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2-Monoacylglyceride und freie Fettsäuren gehören zu wichtigen Produkten der Triacylglyceridverdauung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mizellen erleichtern luminale Solubilisierung; Chylomikronen sind zellulär gebildete Lipoproteine. B: Es wird mit resynthetisierten Lipiden verpackt. C: Der hohe Lipid- und geringe Proteinanteil begründet ihre niedrige Dichte. D: Sie können nach Aufnahme zur Resynthese genutzt werden. Quelle: Vorlesungsfolien, PDF-S. 15–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Lipidspaltung und Verpackung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipidspaltung und Verpackung"
+      ],
+      "questionGoal": "Lipidspaltung und Verpackung",
+      "structuredExplanation": {
+        "coreIdea": "Lipidspaltung und Verpackung",
+        "correctReasoning": "Es wird mit resynthetisierten Lipiden verpackt. Sie können nach Aufnahme zur Resynthese genutzt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Mizellen erleichtern luminale Solubilisierung; Chylomikronen sind zellulär gebildete Lipoproteine.",
+          "B": "Es wird mit resynthetisierten Lipiden verpackt.",
+          "C": "Der hohe Lipid- und geringe Proteinanteil begründet ihre niedrige Dichte.",
+          "D": "Sie können nach Aufnahme zur Resynthese genutzt werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Choleratoxin führt zu einer anhaltend erhöhten CFTR-vermittelten Chloridsekretion. Welche unmittelbare Folge erklärt den Wasserverlust?",
+      "options": [
+        {
+          "text": "Der Wasserverlust setzt einen gleichzeitigen Lactasemangel voraus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede CFTR-Aktivierung bedeutet denselben Funktionsverlust wie bei cystischer Fibrose.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Chloridsekretion entzieht dem Lumen osmotisch wirksame Teilchen und erzwingt deshalb Wasserresorption.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "CFTR transportiert aktiv Wassermoleküle unter direktem ATP-Verbrauch in den Darm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die vermehrte luminale Elektrolytabgabe fördert den osmotischen Wassereinstrom in das Darmlumen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine sekretorische Diarrhö kann unabhängig von einer Lactosemaldigestion entstehen. B: Überaktivierung und Funktionsverlust sind unterschiedliche Störungen. C: Sekretion fügt dem Lumen Elektrolyte hinzu; die osmotische Folge begünstigt die Flüssigkeitsabgabe. D: CFTR ist ein Anionenkanal; Wasser folgt dem osmotischen Gradienten. E: Sekretion von Salz und passiver Wasserfluss sind gekoppelt. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Sekretorische Diarrhö"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekretorische Diarrhö"
+      ],
+      "questionGoal": "Sekretorische Diarrhö",
+      "structuredExplanation": {
+        "coreIdea": "Sekretorische Diarrhö",
+        "correctReasoning": "Sekretion von Salz und passiver Wasserfluss sind gekoppelt.",
+        "wrongAnswerExplanations": {
+          "A": "Eine sekretorische Diarrhö kann unabhängig von einer Lactosemaldigestion entstehen.",
+          "B": "Überaktivierung und Funktionsverlust sind unterschiedliche Störungen.",
+          "C": "Sekretion fügt dem Lumen Elektrolyte hinzu; die osmotische Folge begünstigt die Flüssigkeitsabgabe.",
+          "D": "CFTR ist ein Anionenkanal; Wasser folgt dem osmotischen Gradienten."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Warum kann resorbierter Zucker die Wasseraufnahme im Jejunum begünstigen, sofern die entsprechenden Transportwege funktionieren?",
+      "options": [
+        {
+          "text": "Glucose wird im Lumen zu einer ATP-getriebenen Wasserpumpe polymerisiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Zuckeraufnahme blockiert jede basolaterale Natriumabgabe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Tight Junctions machen jeden Wasserfluss von Gewebe zum Lumen physikalisch unmöglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die gekoppelte Aufnahme osmotisch wirksamer Teilchen fördert die Na+-Resorption; Wasser folgt passiv dem entstehenden Gradienten.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der Zucker öffnet die Membran so, dass Natrium unabhängig vom elektrochemischen Gradienten beliebig strömt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wasser wird hier nicht direkt unter ATP-Verbrauch gepumpt. B: Die Na+/K+-ATPase ist gerade für den Na+-Gradienten erforderlich. C: Epithelien besitzen keine absolute Einwegbarriere; die Richtung hängt von treibenden Kräften und Permeabilität ab. D: Dies verknüpft Nährstofftransport und Flüssigkeitsresorption. E: Die gerichtete Aufnahme benötigt spezifische Transportwege und erhaltene Gradienten. Quelle: Vorlesungsfolien, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Gekoppelte Wasseraufnahme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gekoppelte Wasseraufnahme"
+      ],
+      "questionGoal": "Gekoppelte Wasseraufnahme",
+      "structuredExplanation": {
+        "coreIdea": "Gekoppelte Wasseraufnahme",
+        "correctReasoning": "Dies verknüpft Nährstofftransport und Flüssigkeitsresorption.",
+        "wrongAnswerExplanations": {
+          "A": "Wasser wird hier nicht direkt unter ATP-Verbrauch gepumpt.",
+          "B": "Die Na+/K+-ATPase ist gerade für den Na+-Gradienten erforderlich.",
+          "C": "Epithelien besitzen keine absolute Einwegbarriere; die Richtung hängt von treibenden Kräften und Permeabilität ab.",
+          "E": "Die gerichtete Aufnahme benötigt spezifische Transportwege und erhaltene Gradienten."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Beurteilen Sie die Mechanismen intestinaler Flüssigkeitsbewegung.",
+      "options": [
+        {
+          "text": "Eine osmotische Diarrhö beweist eine primäre Daueraktivierung von CFTR.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die basolaterale Na+/K+-ATPase ist nur für die Sekretion von Magenpepsinogen relevant.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Wasser kann einer durch Elektrolyttransport erzeugten osmotischen Triebkraft folgen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nicht resorbierte gelöste Teilchen können Wasser im Darmlumen zurückhalten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Daueraktiviertes CFTR ist eine sekretorische Ursache; unresorbierte Solute können unabhängig davon wirken. B: Sie ermöglicht in vielen Epithelien die Na+-abhängige Resorption. C: Es benötigt dafür keine eigene ATP-hydrolysierende Wasserpumpe. D: Dies ist eine Grundlage osmotischer Diarrhö. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Osmotisch und sekretorisch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Osmotisch und sekretorisch"
+      ],
+      "questionGoal": "Osmotisch und sekretorisch",
+      "structuredExplanation": {
+        "coreIdea": "Osmotisch und sekretorisch",
+        "correctReasoning": "Es benötigt dafür keine eigene ATP-hydrolysierende Wasserpumpe. Dies ist eine Grundlage osmotischer Diarrhö.",
+        "wrongAnswerExplanations": {
+          "A": "Daueraktiviertes CFTR ist eine sekretorische Ursache; unresorbierte Solute können unabhängig davon wirken.",
+          "B": "Sie ermöglicht in vielen Epithelien die Na+-abhängige Resorption.",
+          "C": "Es benötigt dafür keine eigene ATP-hydrolysierende Wasserpumpe.",
+          "D": "Dies ist eine Grundlage osmotischer Diarrhö."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Beurteilen Sie die Verarbeitung von Reststoffen im Kolon.",
+      "options": [
+        {
+          "text": "Das Kolon trägt zur Rückresorption von Wasser und Elektrolyten bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die bakterielle Fermentation resistenter Stärke liefert als typische Endprodukte langkettige Chylomikronen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bakterielle Fermentation kann Acetat, Propionat und Butyrat liefern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Mucus und Bicarbonat sind im Kolon grundsätzlich unerwünschte Fremdstoffe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Dünndarmresorption wird durch diese Reserve ergänzt. B: Chylomikronen entstehen in Enterozyten; bakterielle Fermentation liefert unter anderem kurzkettige Fettsäuren. C: Diese kurzkettigen Fettsäuren können vom Kolonepithel aufgenommen und genutzt werden. D: Beides gehört zu seinen physiologischen Sekreten. Quelle: Vorlesungsfolien, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Kolonfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kolonfunktion"
+      ],
+      "questionGoal": "Kolonfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Kolonfunktion",
+        "correctReasoning": "Die Dünndarmresorption wird durch diese Reserve ergänzt. Diese kurzkettigen Fettsäuren können vom Kolonepithel aufgenommen und genutzt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Dünndarmresorption wird durch diese Reserve ergänzt.",
+          "B": "Chylomikronen entstehen in Enterozyten; bakterielle Fermentation liefert unter anderem kurzkettige Fettsäuren.",
+          "C": "Diese kurzkettigen Fettsäuren können vom Kolonepithel aufgenommen und genutzt werden.",
+          "D": "Beides gehört zu seinen physiologischen Sekreten."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Beurteilen Sie die gastrointestinale Signalübertragung.",
+      "options": [
+        {
+          "text": "GLP-1 aus intestinalen L-Zellen gehört zu den aufgeführten Sättigungssignalen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sekretin und CCK sind zwei Namen desselben Moleküls.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CCK fördert die enzymreiche pankreatische Sekretion.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "CCK1- und CCK2-Rezeptor sind zwei Spaltprodukte der pankreatischen Lipase.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es wird zusammen mit Amylin, CCK und Leptin genannt. B: Es sind verschiedene Peptidhormone mit unterschiedlichen Schwerpunkten. C: Die Vorlesung verknüpft dies mit Ca2+-abhängigen Signalen der Azinuszelle. D: Es handelt sich um Rezeptoren; CCK2 erkennt unter anderem Gastrin und CCK. Quelle: Vorlesungsfolien, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Regulatorische Signale"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regulatorische Signale"
+      ],
+      "questionGoal": "Regulatorische Signale",
+      "structuredExplanation": {
+        "coreIdea": "Regulatorische Signale",
+        "correctReasoning": "Es wird zusammen mit Amylin, CCK und Leptin genannt. Die Vorlesung verknüpft dies mit Ca2+-abhängigen Signalen der Azinuszelle.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird zusammen mit Amylin, CCK und Leptin genannt.",
+          "B": "Es sind verschiedene Peptidhormone mit unterschiedlichen Schwerpunkten.",
+          "C": "Die Vorlesung verknüpft dies mit Ca2+-abhängigen Signalen der Azinuszelle.",
+          "D": "Es handelt sich um Rezeptoren; CCK2 erkennt unter anderem Gastrin und CCK."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv11_q20",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV11",
+      "stem": "Nach einer fettreichen Mahlzeit geben Chylomikronen einen Teil ihres Triacylglycerids an Gewebe ab. Welcher Vorgang erklärt dies am besten?",
+      "options": [
+        {
+          "text": "Die gesamte Lipidfracht wird unverändert durch glomeruläre Filtration ausgeschieden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Remnants werden nach jeder Fettabgabe zu pankreatischen Proteasen umgebaut.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lactase spaltet ApoB48 in freie Fettsäuren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Chylomikronen müssen zuerst wieder als Mizellen ins Darmlumen zurückkehren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lipoproteinlipase hydrolysiert Triacylglyceride, sodass Fettsäuren aufgenommen werden können.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist nicht der physiologische Verteilungsweg der Chylomikronen. B: Remnants sind verbleibende Lipoproteinpartikel und keine Verdauungsenzyme. C: Lactase ist eine Disaccharidase und hydrolysiert keine Lipoproteintriacylglyceride. D: Die Abgabe an Zielgewebe erfolgt im Blutkreislauf. E: Die verbleibenden Remnants werden anschliessend vor allem von der Leber aufgenommen. Quelle: Vorlesungsfolien, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV11",
+        "Chylomikronen im Zielgewebe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chylomikronen im Zielgewebe"
+      ],
+      "questionGoal": "Chylomikronen im Zielgewebe",
+      "structuredExplanation": {
+        "coreIdea": "Chylomikronen im Zielgewebe",
+        "correctReasoning": "Die verbleibenden Remnants werden anschliessend vor allem von der Leber aufgenommen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist nicht der physiologische Verteilungsweg der Chylomikronen.",
+          "B": "Remnants sind verbleibende Lipoproteinpartikel und keine Verdauungsenzyme.",
+          "C": "Lactase ist eine Disaccharidase und hydrolysiert keine Lipoproteintriacylglyceride.",
+          "D": "Die Abgabe an Zielgewebe erfolgt im Blutkreislauf."
+        }
+      }
+    }
+  ]
+}

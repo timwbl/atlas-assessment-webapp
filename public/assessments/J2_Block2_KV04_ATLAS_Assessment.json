@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block2_kv04_20261102",
+  "lectureCode": "KV04",
+  "title": "Verdauung I – Magen und Sekretionsregulation",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Vorlesung KV4 Verdauung I HS2026 ml.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die fünf offiziellen Lernziele von PDF-S. 23 sind übernommen und präzisiert. CCK1/2 werden als Rezeptoren eingeordnet. Die Erholung nach Omeprazolhemmung wird nicht ausschliesslich durch Neusynthese erklärt. Speichelwerte aus den Folien sind keine individuellen Referenzintervalle. Klinische Vignetten prüfen Mechanismen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Nahrungsbestandteile sowie Verdauung und Resorption unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Speichelzusammensetzung und -funktionen erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Magenzelltypen, Pepsinaktivierung und Schleimhautschutz verknüpfen."
+    },
+    {
+      "id": "lo4",
+      "text": "Ionentransport, Aktivierung und Hemmung der Magensäuresekretion verstehen."
+    },
+    {
+      "id": "lo5",
+      "text": "Neurokrine, endokrine und parakrine Regulation einschliesslich Neben- und Hauptzellen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv04_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Eine Substanz hemmt den Transport von Aminosäuren durch das Darmepithel, ohne die luminale Proteolyse zu beeinträchtigen. Welcher Teilprozess ist unmittelbar gestört?",
+      "options": [
+        {
+          "text": "Resorption bei erhaltener enzymatischer Verdauung",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Denaturierung bei gesteigerter Peptidspaltung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Emulgierung bei isoliertem Ausfall der Lipasen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mechanische Zerkleinerung bei intakter epithelialer Aufnahme",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Proteinhydrolyse bei erhaltener Resorption",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Aufnahme ist blockiert, die Spaltung bleibt möglich. B: Über die Denaturierung wird keine solche Wirkung beschrieben. C: Die Intervention betrifft den Aminosäuretransport. D: Gerade die epitheliale Aufnahme wird gehemmt. E: Dies vertauscht die beiden beschriebenen Vorgänge. Quelle: Vorlesungsfolien, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Verdauung versus Resorption"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verdauung versus Resorption"
+      ],
+      "questionGoal": "Verdauung versus Resorption",
+      "structuredExplanation": {
+        "coreIdea": "Verdauung versus Resorption",
+        "correctReasoning": "Die Aufnahme ist blockiert, die Spaltung bleibt möglich.",
+        "wrongAnswerExplanations": {
+          "B": "Über die Denaturierung wird keine solche Wirkung beschrieben.",
+          "C": "Die Intervention betrifft den Aminosäuretransport.",
+          "D": "Gerade die epitheliale Aufnahme wird gehemmt.",
+          "E": "Dies vertauscht die beiden beschriebenen Vorgänge."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die Zuordnung von Nährstoffstruktur und Verdauung.",
+      "options": [
+        {
+          "text": "Lactose besteht aus Glucose und Fructose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Amylopectin besitzt neben α1,4-Bindungen auch α1,6-Verzweigungen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Proteasen spalten bevorzugt die glycosidischen Bindungen von Stärke.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Glycerophospholipide besitzen einen polaren Kopf und Fettsäurereste.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Glucose und Fructose bilden Saccharose. B: Die Verzweigung unterscheidet es von Amylose. C: Proteasen hydrolysieren Peptidbindungen. D: Die Struktur unterscheidet sich vom reinen Triacylglycerid. Quelle: Vorlesungsfolien, PDF-S. 4–7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Nährstoffstruktur und Spaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nährstoffstruktur und Spaltung"
+      ],
+      "questionGoal": "Nährstoffstruktur und Spaltung",
+      "structuredExplanation": {
+        "coreIdea": "Nährstoffstruktur und Spaltung",
+        "correctReasoning": "Die Verzweigung unterscheidet es von Amylose. Die Struktur unterscheidet sich vom reinen Triacylglycerid.",
+        "wrongAnswerExplanations": {
+          "A": "Glucose und Fructose bilden Saccharose.",
+          "B": "Die Verzweigung unterscheidet es von Amylose.",
+          "C": "Proteasen hydrolysieren Peptidbindungen.",
+          "D": "Die Struktur unterscheidet sich vom reinen Triacylglycerid."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Eine lösliche Nahrungsfaser bindet Gallensalze und verlangsamt die Zuckeraufnahme. Welche Einordnung passt am besten zum Vorlesungsbeispiel?",
+      "options": [
+        {
+          "text": "Amylose als vollständig unverdauliches Polysaccharid",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glykogen als unverzweigte Pflanzenfaser",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pektin als löslicher Ballaststoff",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Maltose als gallensalzbindender Gerüststoff",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Cellulose als leicht hydrolysierbares Disaccharid",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Amylose gehört zur verdaulichen Stärke. B: Glykogen ist stark verzweigt und keine solche Pflanzenfaser. C: Es wird mit diesen beiden Wirkungen beschrieben. D: Maltose ist ein resorbierbar aufspaltbarer Zucker. E: Cellulose ist ein unverdauliches Polymer, kein Disaccharid. Quelle: Vorlesungsfolien, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Ballaststoffe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ballaststoffe"
+      ],
+      "questionGoal": "Ballaststoffe",
+      "structuredExplanation": {
+        "coreIdea": "Ballaststoffe",
+        "correctReasoning": "Es wird mit diesen beiden Wirkungen beschrieben.",
+        "wrongAnswerExplanations": {
+          "A": "Amylose gehört zur verdaulichen Stärke.",
+          "B": "Glykogen ist stark verzweigt und keine solche Pflanzenfaser.",
+          "D": "Maltose ist ein resorbierbar aufspaltbarer Zucker.",
+          "E": "Cellulose ist ein unverdauliches Polymer, kein Disaccharid."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Stärke wird mit menschlichem Speichel inkubiert. Welche Produktbildung ist durch das dargestellte Enzym unmittelbar zu erwarten?",
+      "options": [
+        {
+          "text": "Maltose und Maltotriose durch α-Amylase",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Glucose und Fructose durch Saccharase",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aminosäuren und kleine Peptide durch Pepsin",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Glucose und Galactose durch Lactase",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Freie Fettsäuren und Monoacylglyceride durch Lipase",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Speichelamylase beginnt die α-glykosidische Stärkespaltung. B: Dies wären Produkte der Saccharosespaltung und nicht der Amylasewirkung auf Stärke. C: Pepsin ist ein Magenenzym für Proteine, nicht die Stärkeaktivität des Speichels. D: Lactase spaltet Lactose am intestinalen Bürstensaum, nicht Stärke im Speichelansatz. E: Diese Produkte gehören zur Fettspaltung und nicht zur Stärkespaltung. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Speichelamylase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Speichelamylase"
+      ],
+      "questionGoal": "Speichelamylase",
+      "structuredExplanation": {
+        "coreIdea": "Speichelamylase",
+        "correctReasoning": "Speichelamylase beginnt die α-glykosidische Stärkespaltung.",
+        "wrongAnswerExplanations": {
+          "B": "Dies wären Produkte der Saccharosespaltung und nicht der Amylasewirkung auf Stärke.",
+          "C": "Pepsin ist ein Magenenzym für Proteine, nicht die Stärkeaktivität des Speichels.",
+          "D": "Lactase spaltet Lactose am intestinalen Bürstensaum, nicht Stärke im Speichelansatz.",
+          "E": "Diese Produkte gehören zur Fettspaltung und nicht zur Stärkespaltung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die Beiträge einzelner Speichelbestandteile.",
+      "options": [
+        {
+          "text": "Bicarbonat trägt zur Pufferwirkung bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Mucine dienen vor allem als oxidativer ATP-Generator.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "IgA und Lysozym unterstützen die Oralhygiene.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die flüssige Phase löst Nahrungsbestandteile.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Puffersystem beeinflusst den lokalen pH. B: Sie verbessern Bindung und Gleitfähigkeit des Bolus. C: Sie ergänzen die lokale Abwehr. D: Das unterstützt unter anderem die sensorische Zugänglichkeit. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Speichel als Funktionsgemisch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Speichel als Funktionsgemisch"
+      ],
+      "questionGoal": "Speichel als Funktionsgemisch",
+      "structuredExplanation": {
+        "coreIdea": "Speichel als Funktionsgemisch",
+        "correctReasoning": "Das Puffersystem beeinflusst den lokalen pH. Sie ergänzen die lokale Abwehr. Das unterstützt unter anderem die sensorische Zugänglichkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Das Puffersystem beeinflusst den lokalen pH.",
+          "B": "Sie verbessern Bindung und Gleitfähigkeit des Bolus.",
+          "C": "Sie ergänzen die lokale Abwehr.",
+          "D": "Das unterstützt unter anderem die sensorische Zugänglichkeit."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q06",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Bei ausgeprägtem Verlust der Belegzellen werden sowohl Säuresekretion als auch eine für die ileale Vitaminaufnahme nötige Funktion vermindert. Welche zweite Substanz fehlt besonders?",
+      "options": [
+        {
+          "text": "Mucin",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sekretorisches IgA",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pankreatisches Trypsinogen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Intrinsic Factor",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Pepsinogen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Schleimkomponenten stammen von anderen sekretorischen Epithelzellen. B: Es erklärt nicht die spezifische ileale B12-Aufnahme. C: Es ist kein Produkt der Belegzelle. D: Er wird in Belegzellen gebildet und ermöglicht B12-Aufnahme. E: Es stammt überwiegend aus Hauptzellen. Quelle: Vorlesungsfolien, PDF-S. 11,14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Belegzellverlust"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Belegzellverlust"
+      ],
+      "questionGoal": "Belegzellverlust",
+      "structuredExplanation": {
+        "coreIdea": "Belegzellverlust",
+        "correctReasoning": "Er wird in Belegzellen gebildet und ermöglicht B12-Aufnahme.",
+        "wrongAnswerExplanations": {
+          "A": "Schleimkomponenten stammen von anderen sekretorischen Epithelzellen.",
+          "B": "Es erklärt nicht die spezifische ileale B12-Aufnahme.",
+          "C": "Es ist kein Produkt der Belegzelle.",
+          "E": "Es stammt überwiegend aus Hauptzellen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie den Zusammenhang zwischen Magenzelltyp und Sekretfunktion.",
+      "options": [
+        {
+          "text": "Belegzellen setzen Intrinsic Factor vorwiegend als Verdauungsprotease frei.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hauptzellen sezernieren eine inaktive Pepsinvorstufe.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mucine und Bicarbonat tragen gemeinsam zur Schutzschicht bei.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Abspaltung des ER-Signalpeptids erzeugt bereits maximal aktives Pepsin.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: IF ist ein B12-bindendes Glycoprotein. B: Pepsinogen vermindert die Proteolyse vor der luminalen Aktivierung. C: Gel und Puffer schützen das Epithel vor Säure. D: Signalpeptid- und Aktivierungspeptidspaltung sind verschiedene Schritte. Quelle: Vorlesungsfolien, PDF-S. 11,15–16,22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Zellprodukt und Aktivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellprodukt und Aktivierung"
+      ],
+      "questionGoal": "Zellprodukt und Aktivierung",
+      "structuredExplanation": {
+        "coreIdea": "Zellprodukt und Aktivierung",
+        "correctReasoning": "Pepsinogen vermindert die Proteolyse vor der luminalen Aktivierung. Gel und Puffer schützen das Epithel vor Säure.",
+        "wrongAnswerExplanations": {
+          "A": "IF ist ein B12-bindendes Glycoprotein.",
+          "B": "Pepsinogen vermindert die Proteolyse vor der luminalen Aktivierung.",
+          "C": "Gel und Puffer schützen das Epithel vor Säure.",
+          "D": "Signalpeptid- und Aktivierungspeptidspaltung sind verschiedene Schritte."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Nach initialer säureabhängiger Pepsinbildung steigt die aktive Enzymmenge rasch weiter. Welcher Mechanismus verstärkt die Aktivierung?",
+      "options": [
+        {
+          "text": "Der saure pH steigert innerhalb des Lumens unmittelbar die Transkription der Hauptzellgene.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pepsinogen bindet reversibel ATP und wird dadurch ohne Peptidspaltung zu Pepsin.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das bereits im ER entfernte Signalpeptid wird wieder angefügt und bildet das aktive Zentrum.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bereits aktives Pepsin spaltet Aktivierungspeptide weiterer Pepsinogenmoleküle.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Intrinsic Factor hydrolysiert das Aktivierungspeptid als spezifische Protease.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die schnelle extrazelluläre Verstärkung braucht keine luminale Genexpression. B: Die Aktivierung ist proteolytisch und nicht eine ATP-Ligandbindung. C: Signalpeptid und Aktivierungspeptid sind unterschiedliche Sequenzen; Wiederanfügen ist nicht der Mechanismus. D: Diese Autokatalyse verstärkt die initiale Aktivierung. E: IF ist ein B12-bindendes Protein, nicht diese aktivierende Protease. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Pepsin-Autokatalyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pepsin-Autokatalyse"
+      ],
+      "questionGoal": "Pepsin-Autokatalyse",
+      "structuredExplanation": {
+        "coreIdea": "Pepsin-Autokatalyse",
+        "correctReasoning": "Diese Autokatalyse verstärkt die initiale Aktivierung.",
+        "wrongAnswerExplanations": {
+          "A": "Die schnelle extrazelluläre Verstärkung braucht keine luminale Genexpression.",
+          "B": "Die Aktivierung ist proteolytisch und nicht eine ATP-Ligandbindung.",
+          "C": "Signalpeptid und Aktivierungspeptid sind unterschiedliche Sequenzen; Wiederanfügen ist nicht der Mechanismus.",
+          "E": "IF ist ein B12-bindendes Protein, nicht diese aktivierende Protease."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Während starker HCl-Sekretion wird Bicarbonat basolateral aus der Belegzelle abgegeben. Welche gekoppelte Bewegung liefert dabei Chlorid für die Säuresekretion?",
+      "options": [
+        {
+          "text": "Cl− wird an der Basalseite ausschliesslich aus Mucinen freigesetzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "K+ wird gegen HCO3− durch die Protonenpumpe ausgetauscht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "HCl wird als fertiges Molekül basolateral aufgenommen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Cl− gelangt im Austausch gegen HCO3− in die Zelle.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "NADH wird basolateral in Chlorid umgewandelt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Abbildung zeigt einen transmembranären Anionenaustausch. B: Die H+/K+-ATPase ist apikal und tauscht andere Ionen. C: Die Zelle transportiert die beteiligten Ionen getrennt. D: Der basolaterale Anionentauscher koppelt beide Bewegungen. E: Ein Redoxcoenzym ist keine Chloridquelle. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Alkalische Flut"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alkalische Flut"
+      ],
+      "questionGoal": "Alkalische Flut",
+      "structuredExplanation": {
+        "coreIdea": "Alkalische Flut",
+        "correctReasoning": "Der basolaterale Anionentauscher koppelt beide Bewegungen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abbildung zeigt einen transmembranären Anionenaustausch.",
+          "B": "Die H+/K+-ATPase ist apikal und tauscht andere Ionen.",
+          "C": "Die Zelle transportiert die beteiligten Ionen getrennt.",
+          "E": "Ein Redoxcoenzym ist keine Chloridquelle."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die Transportrichtungen der stimulierten Belegzelle.",
+      "options": [
+        {
+          "text": "Chlorid kann über einen apikalen Leitungsweg ins Lumen folgen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die H+/K+-ATPase befördert H+ apikal ins Lumen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Apikaler K+-Ausstrom ersetzt den ATP-Verbrauch der Protonenpumpe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Carboanhydrase verbraucht H+ und HCO3− zur ausschliesslichen HCl-Aufnahme.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: So stehen beide Ionen der Salzsäure luminal bereit. B: Der Transport benötigt ATP. C: K+-Recycling hebt den Energiebedarf der Pumpe nicht auf. D: Im Sekretionsmodell liefert sie H+ und HCO3− aus CO2/Wasser. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Parietaler Ionenkreislauf"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Parietaler Ionenkreislauf"
+      ],
+      "questionGoal": "Parietaler Ionenkreislauf",
+      "structuredExplanation": {
+        "coreIdea": "Parietaler Ionenkreislauf",
+        "correctReasoning": "So stehen beide Ionen der Salzsäure luminal bereit. Der Transport benötigt ATP.",
+        "wrongAnswerExplanations": {
+          "A": "So stehen beide Ionen der Salzsäure luminal bereit.",
+          "B": "Der Transport benötigt ATP.",
+          "C": "K+-Recycling hebt den Energiebedarf der Pumpe nicht auf.",
+          "D": "Im Sekretionsmodell liefert sie H+ und HCO3− aus CO2/Wasser."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Die Vorlesung vergleicht 10−7mol/l H+ im Zellinneren mit 10−1mol/l im Magenlumen. Um welchen Faktor ist die luminale H+-Konzentration höher?",
+      "options": [
+        {
+          "text": "Um den Faktor 10^6",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Um den Faktor 10^8",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Um den Faktor 10^2",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Um den Faktor 10^−6",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Um den Faktor 6",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Exponentenunterschied beträgt sechs Zehnerpotenzen. B: Die Exponenten werden hier nicht addiert. C: Der Exponentenunterschied ist grösser als zwei. D: Das wäre das umgekehrte Konzentrationsverhältnis. E: Sechs Zehnerpotenzen bedeuten nicht den Zahlenfaktor sechs. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Protonengradient"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Protonengradient"
+      ],
+      "questionGoal": "Protonengradient",
+      "structuredExplanation": {
+        "coreIdea": "Protonengradient",
+        "correctReasoning": "Der Exponentenunterschied beträgt sechs Zehnerpotenzen.",
+        "wrongAnswerExplanations": {
+          "B": "Die Exponenten werden hier nicht addiert.",
+          "C": "Der Exponentenunterschied ist grösser als zwei.",
+          "D": "Das wäre das umgekehrte Konzentrationsverhältnis.",
+          "E": "Sechs Zehnerpotenzen bedeuten nicht den Zahlenfaktor sechs."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die Folgerungen aus der säureabhängigen Omeprazolaktivierung.",
+      "options": [
+        {
+          "text": "Neubildung von Pumpen trägt zur Erholung der Säuresekretion bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Omeprazol konkurriert reversibel mit Histamin am H2-Rezeptor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kovalente Cysteinbindung kann die Pumpfunktion über die freie Arzneistoffphase hinaus hemmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das saure Kompartiment begünstigt die Bildung einer reaktiven Sulfen-Spezies.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Proteinumsatz liefert wieder funktionsfähige Transporter. B: Es greift an der Protonenpumpe an. C: Die gebundene Pumpe bleibt funktionell inaktiviert. D: Die Prodrug wird chemisch aktiviert. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Omeprazolwirkung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Omeprazolwirkung"
+      ],
+      "questionGoal": "Omeprazolwirkung",
+      "structuredExplanation": {
+        "coreIdea": "Omeprazolwirkung",
+        "correctReasoning": "Proteinumsatz liefert wieder funktionsfähige Transporter. Die gebundene Pumpe bleibt funktionell inaktiviert. Die Prodrug wird chemisch aktiviert.",
+        "wrongAnswerExplanations": {
+          "A": "Proteinumsatz liefert wieder funktionsfähige Transporter.",
+          "B": "Es greift an der Protonenpumpe an.",
+          "C": "Die gebundene Pumpe bleibt funktionell inaktiviert.",
+          "D": "Die Prodrug wird chemisch aktiviert."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q13",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Ein Experiment stimuliert Belegzellen gleichzeitig durch ACh, Gastrin und Histamin. Welche Hemmung kann deren gemeinsame luminale Säure-Endstrecke am unmittelbarsten unterbrechen?",
+      "options": [
+        {
+          "text": "Blockade der apikalen H+/K+-ATPase",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Hemmung der G-Zell-Gastrinfreisetzung allein",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Blockade nur der ACh-Freisetzung aus Nerven",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Steigerung der basolateralen Chloridaufnahme",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Isolierte Blockade der Histaminfreisetzung aus ECL-Zellen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Pumpe ist die gemeinsame Endstrecke der Protonensekretion. B: Die übrigen Stimuli werden dadurch nicht vollständig entfernt. C: Histamin- und Gastrinsignale bleiben vorhanden. D: Dies blockiert die Endstrecke nicht. E: Direkte ACh- und Gastrinanteile können bestehen bleiben. Quelle: Vorlesungsfolien, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Gemeinsame Endstrecke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gemeinsame Endstrecke"
+      ],
+      "questionGoal": "Gemeinsame Endstrecke",
+      "structuredExplanation": {
+        "coreIdea": "Gemeinsame Endstrecke",
+        "correctReasoning": "Die Pumpe ist die gemeinsame Endstrecke der Protonensekretion.",
+        "wrongAnswerExplanations": {
+          "B": "Die übrigen Stimuli werden dadurch nicht vollständig entfernt.",
+          "C": "Histamin- und Gastrinsignale bleiben vorhanden.",
+          "D": "Dies blockiert die Endstrecke nicht.",
+          "E": "Direkte ACh- und Gastrinanteile können bestehen bleiben."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q14",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Bei zunehmender luminaler Ansäuerung steigt die Somatostatinwirkung. Welche Folge begrenzt die weitere Säurebildung?",
+      "options": [
+        {
+          "text": "Vermehrte Gastrinfreisetzung und dadurch höhere Belegzellstimulation",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vermehrter Einbau von Protonenpumpen als primäre Somatostatinantwort",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aufhebung der luminalen Säureerkennung mit dadurch unveränderter Gastrinfreisetzung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verminderte ECL-Histaminfreisetzung und geringere Belegzellstimulation",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Verstärkte Histaminwirkung mit gesteigertem cAMP in der Belegzelle",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das würde die negative Rückkopplung umkehren. B: Die bremsende Wirkung soll die Säuresekretion vermindern. C: Die beschriebene Ansäuerung setzt gerade die hemmende Rückkopplung in Gang. D: Somatostatin wirkt hemmend auf das stimulierende Sekretionsnetzwerk. E: Dies wäre ein stimulierender und kein begrenzender Effekt. Quelle: Vorlesungsfolien, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Säure-Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Säure-Rückkopplung"
+      ],
+      "questionGoal": "Säure-Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Säure-Rückkopplung",
+        "correctReasoning": "Somatostatin wirkt hemmend auf das stimulierende Sekretionsnetzwerk.",
+        "wrongAnswerExplanations": {
+          "A": "Das würde die negative Rückkopplung umkehren.",
+          "B": "Die bremsende Wirkung soll die Säuresekretion vermindern.",
+          "C": "Die beschriebene Ansäuerung setzt gerade die hemmende Rückkopplung in Gang.",
+          "E": "Dies wäre ein stimulierender und kein begrenzender Effekt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die Unterscheidung neurokriner, endokriner und parakriner Signale.",
+      "options": [
+        {
+          "text": "CCK1 und CCK2 sind zwei unabhängige Verdauungsenzyme.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Histamin aus benachbarten ECL-Zellen ist das typische neurokrine ACh-Signal.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Endokrine GEP-Zellen geben ihre Hormone vorrangig ins Darmlumen ab.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gastrin kann über das Blut entfernte Zielzellen erreichen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Bezeichnungen stehen für Rezeptorsubtypen. B: Histamin wirkt hier parakrin; ACh stammt aus Neuronen. C: Die Freisetzung erfolgt zur basalen Seite. D: Dies entspricht endokriner Signalübertragung. Quelle: Vorlesungsfolien, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Botenstoffwege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Botenstoffwege"
+      ],
+      "questionGoal": "Botenstoffwege",
+      "structuredExplanation": {
+        "coreIdea": "Botenstoffwege",
+        "correctReasoning": "Dies entspricht endokriner Signalübertragung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Bezeichnungen stehen für Rezeptorsubtypen.",
+          "B": "Histamin wirkt hier parakrin; ACh stammt aus Neuronen.",
+          "C": "Die Freisetzung erfolgt zur basalen Seite.",
+          "D": "Dies entspricht endokriner Signalübertragung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q16",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Nach Belegzellstimulation nehmen Canaliculioberfläche und Mikrovilli zu. Welche Veränderung erklärt den raschen Anstieg der Sekretionskapazität?",
+      "options": [
+        {
+          "text": "Sofortiger Ersatz aller Belegzellen durch neu differenzierte Hauptzellen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Oberflächenvergrösserung ohne jede Änderung der apikal verfügbaren Pumpenmenge als einziger Mechanismus",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Einbau derselben Pumpen in die basolaterale statt apikale Membran",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fusion pumpentragender Tubulovesikel mit der apikalen Membran",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslicher Abbau der apikalen Membran in Lysosomen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der schnelle Effekt nutzt vorhandene Belegzellen und Membranreserven. B: Das dargestellte Tubulovesikelmodell umfasst gerade die Bereitstellung zusätzlicher Pumpen. C: Die Protonen sollen ins Lumen und nicht zur Blutseite gelangen. D: Vorhandene Pumpen werden in die vergrösserte Sekretionsoberfläche eingebaut. E: Dies würde die Zahl luminal verfügbarer Pumpen eher vermindern. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Pumpeneinbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pumpeneinbau"
+      ],
+      "questionGoal": "Pumpeneinbau",
+      "structuredExplanation": {
+        "coreIdea": "Pumpeneinbau",
+        "correctReasoning": "Vorhandene Pumpen werden in die vergrösserte Sekretionsoberfläche eingebaut.",
+        "wrongAnswerExplanations": {
+          "A": "Der schnelle Effekt nutzt vorhandene Belegzellen und Membranreserven.",
+          "B": "Das dargestellte Tubulovesikelmodell umfasst gerade die Bereitstellung zusätzlicher Pumpen.",
+          "C": "Die Protonen sollen ins Lumen und nicht zur Blutseite gelangen.",
+          "E": "Dies würde die Zahl luminal verfügbarer Pumpen eher vermindern."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die Regulation der Mucin- und Pepsinogensekretion.",
+      "options": [
+        {
+          "text": "Sekretin und Prostaglandinsignale können die Mucinsekretion unterstützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine cAMP-Zunahme bedeutet in jedem Magenzelltyp zwangsläufig dieselbe Sekretart.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ACh hemmt im dargestellten Hauptzellweg grundsätzlich jede Ca2+-Erhöhung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gastrin kann die Pepsinogenabgabe aus Hauptzellen fördern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Schema verknüpft sie mit cAMP-abhängiger Stimulation. B: Zelltyp und molekulare Ausstattung bestimmen die Antwort. C: Der dargestellte Weg stimuliert Ca2+ und Pepsinogenfreisetzung. D: Die Signalwirkung ist von der anschliessenden luminalen Aktivierung zu unterscheiden. Quelle: Vorlesungsfolien, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Neben- und Hauptzellsteuerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neben- und Hauptzellsteuerung"
+      ],
+      "questionGoal": "Neben- und Hauptzellsteuerung",
+      "structuredExplanation": {
+        "coreIdea": "Neben- und Hauptzellsteuerung",
+        "correctReasoning": "Das Schema verknüpft sie mit cAMP-abhängiger Stimulation. Die Signalwirkung ist von der anschliessenden luminalen Aktivierung zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "Das Schema verknüpft sie mit cAMP-abhängiger Stimulation.",
+          "B": "Zelltyp und molekulare Ausstattung bestimmen die Antwort.",
+          "C": "Der dargestellte Weg stimuliert Ca2+ und Pepsinogenfreisetzung.",
+          "D": "Die Signalwirkung ist von der anschliessenden luminalen Aktivierung zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Warum können COX-hemmende NSAIDs die Magenschleimhaut schädigen, auch ohne primäre Steigerung der Säureproduktion?",
+      "options": [
+        {
+          "text": "Weniger protektive Prostaglandine schwächen Schleim- und Bicarbonatschutz.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Schädigung setzt eine vollständig fehlende Pepsinogenbildung voraus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "COX-Hemmung wirkt wie eine H2-Rezeptorblockade und muss deshalb jeden Schleimhautschaden verhindern.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weniger Prostaglandine steigern ausschliesslich die Säurelast, ohne Schutzmechanismen zu beeinflussen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unter COX-Hemmung werden Mucin und Bicarbonat vermehrt gebildet und übersäuern dadurch die Oberfläche.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vorhandene Säure kann eine schlechter geschützte Oberfläche leichter schädigen. B: Ein Verlust der Proteasevorstufe ist nicht der hier beschriebene Schadensmechanismus. C: COX- und Histaminrezeptorhemmung betreffen verschiedene Wege. D: Das lässt den wichtigen Verlust protektiver Schleimhautwirkungen unberücksichtigt. E: Beide dienen dem Schutz; die Einschränkung prostaglandinabhängiger Schutzwirkung erklärt das Risiko. Quelle: Vorlesungsfolien, PDF-S. 16,21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "NSAID und Schutzbarriere"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NSAID und Schutzbarriere"
+      ],
+      "questionGoal": "NSAID und Schutzbarriere",
+      "structuredExplanation": {
+        "coreIdea": "NSAID und Schutzbarriere",
+        "correctReasoning": "Vorhandene Säure kann eine schlechter geschützte Oberfläche leichter schädigen.",
+        "wrongAnswerExplanations": {
+          "B": "Ein Verlust der Proteasevorstufe ist nicht der hier beschriebene Schadensmechanismus.",
+          "C": "COX- und Histaminrezeptorhemmung betreffen verschiedene Wege.",
+          "D": "Das lässt den wichtigen Verlust protektiver Schleimhautwirkungen unberücksichtigt.",
+          "E": "Beide dienen dem Schutz; die Einschränkung prostaglandinabhängiger Schutzwirkung erklärt das Risiko."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Bereits der Geruch einer Mahlzeit steigert Speichelfluss und Magenaktivität, bevor Nahrung den Magen erreicht. Welcher Phase entspricht das?",
+      "options": [
+        {
+          "text": "Postresorptive Hemmung durch ausgeschiedenen Pepsinrest",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cephalische Phase",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gastrische Phase durch Wanddehnung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Intestinale Phase durch sauren Duodenalinhalt",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Reine Resorptionsphase im terminalen Ileum",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist keine der dargestellten Verdauungsphasen. B: Sensorische und gedankliche Reize bereiten die Verdauung vor. C: Hierfür müsste Nahrung den Magen bereits erreichen. D: Diesen Reiz beschreibt die Situation nicht. E: Der geschilderte frühe Reiz liegt davor. Quelle: Vorlesungsfolien, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Verdauungsphasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verdauungsphasen"
+      ],
+      "questionGoal": "Verdauungsphasen",
+      "structuredExplanation": {
+        "coreIdea": "Verdauungsphasen",
+        "correctReasoning": "Sensorische und gedankliche Reize bereiten die Verdauung vor.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist keine der dargestellten Verdauungsphasen.",
+          "C": "Hierfür müsste Nahrung den Magen bereits erreichen.",
+          "D": "Diesen Reiz beschreibt die Situation nicht.",
+          "E": "Der geschilderte frühe Reiz liegt davor."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv04_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV04",
+      "stem": "Beurteilen Sie die unterschiedlichen Folgen isolierter Funktionsausfälle.",
+      "options": [
+        {
+          "text": "Fehlende Denaturierung bedeutet, dass keinerlei Proteintransport ins Darmepithel möglich ist.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausfall der Hauptzellen senkt unmittelbar die Synthese des Intrinsic Factor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine geschwächte Mucus-/Bicarbonatbarriere kann trotz vorhandener Säuresekretion schädlich sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ausfall des Intrinsic Factor verhindert primär die Stärkespaltung im Mund.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Denaturierung, Hydrolyse und Resorption sind getrennte Teilprozesse. B: IF wird in Belegzellen gebildet. C: Schutzkapazität und Säurelast müssen zusammen betrachtet werden. D: Seine spezifische Aufgabe betrifft B12-Aufnahme im Ileum. Quelle: Vorlesungsfolien, PDF-S. 10–11,14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV04",
+        "Sekretionsausfälle vergleichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekretionsausfälle vergleichen"
+      ],
+      "questionGoal": "Sekretionsausfälle vergleichen",
+      "structuredExplanation": {
+        "coreIdea": "Sekretionsausfälle vergleichen",
+        "correctReasoning": "Schutzkapazität und Säurelast müssen zusammen betrachtet werden.",
+        "wrongAnswerExplanations": {
+          "A": "Denaturierung, Hydrolyse und Resorption sind getrennte Teilprozesse.",
+          "B": "IF wird in Belegzellen gebildet.",
+          "C": "Schutzkapazität und Säurelast müssen zusammen betrachtet werden.",
+          "D": "Seine spezifische Aufgabe betrifft B12-Aufnahme im Ileum."
+        }
+      }
+    }
+  ]
+}

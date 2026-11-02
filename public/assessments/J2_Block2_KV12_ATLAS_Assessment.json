@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block2_kv12_20261102",
+  "lectureCode": "KV12",
+  "title": "Membranproteine – Struktur und Mechanismen",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "KV12-Membranproteine_Fotiadis_2026.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Eine feste C9-Zahl wird nicht als universelle MAC-Stöchiometrie abgefragt. Granzyme werden als Proteasen eingeordnet. Quellenangaben verwenden Dateiseiten statt mehrfach wiederholter Foliennummern.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Biologische und pharmakologische Bedeutung sowie Eigenschaften von Membranproteinen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Primär-, Sekundär-, Tertiär- und Quaternärstruktur auf molekularer Ebene unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Klassen, Membranverankerung und α-helikale beziehungsweise β-Barrel-Baumuster zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Struktur und Mechanismen von Aquaporinen und porenbildenden Proteinen funktionell erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Röntgenkristallographie und Kryo-Elektronenmikroskopie als Strukturmethoden vergleichen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv12_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Die 3D-Struktur eines membranständigen Rezeptors zeigt, wie ein Hemmstoff in seiner Bindungstasche liegt. Welcher nächste Schritt wird dadurch am unmittelbarsten unterstützt?",
+      "options": [
+        {
+          "text": "Gezielte Veränderung des Wirkstoffs anhand räumlicher Kontakte in der Tasche",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Vollständiger Verzicht auf Messungen der Rezeptoraktivität",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Bestimmung der klinischen Überlegenheit ohne weitere Experimente",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nachweis, dass der Hemmstoff die Aminosäuresequenz des Rezeptors verändert",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sichere Ableitung jeder Nebenwirkung allein aus der Zahl der Transmembranhelizes",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Strukturinformationen erlauben Hypothesen zur Passform und zu bindungsrelevanten Gruppen. B: Bindungslage und tatsächliche Signalwirkung müssen funktionell verknüpft werden. C: Eine Struktur ersetzt weder Funktionsmessungen noch klinische Studien. D: Die Bindung eines Wirkstoffs ist nicht gleichbedeutend mit einer Sequenzänderung. E: Nebenwirkungen hängen von weiteren molekularen und physiologischen Faktoren ab. Quelle: Vorlesungsfolien, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Struktur als Wirkstoffgrundlage"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Struktur als Wirkstoffgrundlage"
+      ],
+      "questionGoal": "Struktur als Wirkstoffgrundlage",
+      "structuredExplanation": {
+        "coreIdea": "Struktur als Wirkstoffgrundlage",
+        "correctReasoning": "Strukturinformationen erlauben Hypothesen zur Passform und zu bindungsrelevanten Gruppen.",
+        "wrongAnswerExplanations": {
+          "B": "Bindungslage und tatsächliche Signalwirkung müssen funktionell verknüpft werden.",
+          "C": "Eine Struktur ersetzt weder Funktionsmessungen noch klinische Studien.",
+          "D": "Die Bindung eines Wirkstoffs ist nicht gleichbedeutend mit einer Sequenzänderung.",
+          "E": "Nebenwirkungen hängen von weiteren molekularen und physiologischen Faktoren ab."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Ein Membranprotein kann Transport, Signalübertragung oder Katalyse vermitteln. Beurteilen Sie, welche Aussagen seine biologische und pharmakologische Bedeutung zutreffend beschreiben.",
+      "options": [
+        {
+          "text": "Rezeptoren und Transportproteine können beide pharmakologische Angriffspunkte sein.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine bekannte 3D-Struktur beweist ohne zusätzliche Befunde die Krankheitsursache einer beliebigen Mutation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Membranständige Enzyme werden funktionell stets als reine Transportproteine eingeordnet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Membranproteine können zur biologischen Energieumwandlung beitragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Vorlesung nennt verschiedene funktionelle Klassen als Medikamentenziele. B: Strukturelle Plausibilität braucht funktionelle und gegebenenfalls klinische Evidenz. C: Membranproteine können katalytische Aufgaben ohne eigene Transportfunktion erfüllen. D: Atmungskettenkomplexe sind wichtige Beispiele. Quelle: Vorlesungsfolien, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Funktionsvielfalt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Funktionsvielfalt"
+      ],
+      "questionGoal": "Funktionsvielfalt",
+      "structuredExplanation": {
+        "coreIdea": "Funktionsvielfalt",
+        "correctReasoning": "Die Vorlesung nennt verschiedene funktionelle Klassen als Medikamentenziele. Atmungskettenkomplexe sind wichtige Beispiele.",
+        "wrongAnswerExplanations": {
+          "A": "Die Vorlesung nennt verschiedene funktionelle Klassen als Medikamentenziele.",
+          "B": "Strukturelle Plausibilität braucht funktionelle und gegebenenfalls klinische Evidenz.",
+          "C": "Membranproteine können katalytische Aufgaben ohne eigene Transportfunktion erfüllen.",
+          "D": "Atmungskettenkomplexe sind wichtige Beispiele."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Nach Behandlung eines Proteins bleiben alle Peptidbindungen erhalten, aber entfernte Kettenabschnitte verlieren ihre räumlichen Kontakte. Welche Ebene ist unmittelbar erhalten, obwohl die native 3D-Faltung gestört ist?",
+      "options": [
+        {
+          "text": "Die native Quaternärstruktur als notwendige Folge",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede ursprüngliche Wasserstoffbrücke zwischen Rückgratgruppen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die native Tertiärstruktur",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Primärstruktur",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Jede native hydrophobe Wechselwirkung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Erhaltene Peptidbindungen sichern keine native Untereinheitenanordnung. B: Die Behandlung kann solche nichtkovalenten Kontakte aufheben. C: Gerade die räumliche Gesamtanordnung ist gestört. D: Die Reihenfolge der über Peptidbindungen verknüpften Aminosäuren bleibt erhalten. E: Hydrophobe Kontakte können beim Verlust der Faltung verändert werden. Quelle: Vorlesungsfolien, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Strukturebenen trennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strukturebenen trennen"
+      ],
+      "questionGoal": "Strukturebenen trennen",
+      "structuredExplanation": {
+        "coreIdea": "Strukturebenen trennen",
+        "correctReasoning": "Die Reihenfolge der über Peptidbindungen verknüpften Aminosäuren bleibt erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Erhaltene Peptidbindungen sichern keine native Untereinheitenanordnung.",
+          "B": "Die Behandlung kann solche nichtkovalenten Kontakte aufheben.",
+          "C": "Gerade die räumliche Gesamtanordnung ist gestört.",
+          "E": "Hydrophobe Kontakte können beim Verlust der Faltung verändert werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Eine Transmembranhelix soll den etwa 30 Å dicken hydrophoben Membrankern durchspannen. Welche Eigenschaft passt am besten zur in der Vorlesung dargestellten Bauweise?",
+      "options": [
+        {
+          "text": "Eine Helix, deren Seitenketten sämtlich in die Helixachse statt nach aussen zeigen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine vollständig ungeordnete Kette mit dauerhaft ungeschützten polaren Rückgratgruppen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein antiparalleles β-Faltblatt als definitionsgemäss gleiche Sekundärstruktur",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vier Aminosäurereste mit ausschliesslich geladenen Seitenketten im Kernbereich",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 20 oder mehr helikal angeordnete Aminosäurereste mit überwiegend hydrophoben Seitenketten im Kernbereich",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei der α-Helix ragen Seitenketten nach aussen. B: Helikale Wasserstoffbrücken helfen, das polare Rückgrat im Membrankern zu stabilisieren. C: β-Faltblatt und α-Helix sind verschiedene Baumuster. D: Dies ist für eine gewöhnliche durchspannende Helix zu kurz und energetisch ungünstig. E: Diese Länge und Oberflächenchemie passen zum hydrophoben Membraninneren. Quelle: Vorlesungsfolien, PDF-S. 8–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Helix und Membrankern"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Helix und Membrankern"
+      ],
+      "questionGoal": "Helix und Membrankern",
+      "structuredExplanation": {
+        "coreIdea": "Helix und Membrankern",
+        "correctReasoning": "Diese Länge und Oberflächenchemie passen zum hydrophoben Membraninneren.",
+        "wrongAnswerExplanations": {
+          "A": "Bei der α-Helix ragen Seitenketten nach aussen.",
+          "B": "Helikale Wasserstoffbrücken helfen, das polare Rückgrat im Membrankern zu stabilisieren.",
+          "C": "β-Faltblatt und α-Helix sind verschiedene Baumuster.",
+          "D": "Dies ist für eine gewöhnliche durchspannende Helix zu kurz und energetisch ungünstig."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Beurteilen Sie die molekularen Grundlagen der Proteinstruktur.",
+      "options": [
+        {
+          "text": "Wasserstoffbrücken zwischen Rückgratgruppen stabilisieren α-Helizes und β-Faltblätter.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Disulfidbrücken sind kovalente Kontakte, die eine Tertiärstruktur stabilisieren können.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die α-Helix wird durch Peptidbindungen zwischen jeder Seitenkette und der viertnächsten Seitenkette stabilisiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Primärstruktur bezeichnet die räumliche Anordnung mehrerer bereits gefalteter Untereinheiten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es handelt sich um charakteristische Kontakte der Sekundärstruktur. B: Sie unterscheiden sich von nichtkovalenten Wasserstoffbrücken und Ionenbindungen. C: Die charakteristischen i-zu-i+4-Kontakte sind Wasserstoffbrücken des Rückgrats. D: Dies beschreibt Quaternärstruktur; Primärstruktur ist die Aminosäuresequenz. Quelle: Vorlesungsfolien, PDF-S. 6–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Bindungen und Faltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindungen und Faltung"
+      ],
+      "questionGoal": "Bindungen und Faltung",
+      "structuredExplanation": {
+        "coreIdea": "Bindungen und Faltung",
+        "correctReasoning": "Es handelt sich um charakteristische Kontakte der Sekundärstruktur. Sie unterscheiden sich von nichtkovalenten Wasserstoffbrücken und Ionenbindungen.",
+        "wrongAnswerExplanations": {
+          "A": "Es handelt sich um charakteristische Kontakte der Sekundärstruktur.",
+          "B": "Sie unterscheiden sich von nichtkovalenten Wasserstoffbrücken und Ionenbindungen.",
+          "C": "Die charakteristischen i-zu-i+4-Kontakte sind Wasserstoffbrücken des Rückgrats.",
+          "D": "Dies beschreibt Quaternärstruktur; Primärstruktur ist die Aminosäuresequenz."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q06",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "In einem Membranprotein häufen sich Lys- und Arg-Reste an einer Seite eines Transmembransegments. Welche Orientierung wird durch die positive-inside-Regel typischerweise begünstigt?",
+      "options": [
+        {
+          "text": "Die basischen Reste beweisen einen extrazellulären GPI-Anker.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die basischen Reste liegen eher auf der zytosolischen Seite.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die basischen Reste wandeln eine α-Helix definitionsgemäss in ein β-Barrel um.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die basischen Reste liegen zwingend im Zentrum des hydrophoben Membrankerns.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die basischen Reste schliessen jede Membranassoziation des Proteins aus.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: GPI-Verankerung folgt nicht aus diesem Ladungsmuster. B: Die Regel ist eine Orientierungstendenz, keine ausnahmslose Determination jeder Topologie. C: Ladungsverteilung und Sekundärstrukturklasse sind unterschiedliche Merkmale. D: Positive Ladungen sind an der zytosolischen Grenzfläche begünstigt und nicht pauschal im Kern. E: Solche Reste kommen gerade an typischen Membranprotein-Grenzflächen vor. Quelle: Vorlesungsfolien, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Positive-inside-Regel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positive-inside-Regel"
+      ],
+      "questionGoal": "Positive-inside-Regel",
+      "structuredExplanation": {
+        "coreIdea": "Positive-inside-Regel",
+        "correctReasoning": "Die Regel ist eine Orientierungstendenz, keine ausnahmslose Determination jeder Topologie.",
+        "wrongAnswerExplanations": {
+          "A": "GPI-Verankerung folgt nicht aus diesem Ladungsmuster.",
+          "C": "Ladungsverteilung und Sekundärstrukturklasse sind unterschiedliche Merkmale.",
+          "D": "Positive Ladungen sind an der zytosolischen Grenzfläche begünstigt und nicht pauschal im Kern.",
+          "E": "Solche Reste kommen gerade an typischen Membranprotein-Grenzflächen vor."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Beurteilen Sie die Klassifikation von Membranproteinen.",
+      "options": [
+        {
+          "text": "Ein monotopisches Protein muss beide Membranblätter vollständig durchqueren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein bitopisches Protein durchspannt die Membran mit einem Transmembransegment.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jedes lipidverankerte Protein besitzt zwingend zwölf Transmembranhelizes.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein peripheres Protein kann nichtkovalent an ein integrales Membranprotein gebunden sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Monotopische Proteine dringen in ein Blatt ein, ohne die Membran vollständig zu durchspannen. B: Es unterscheidet sich von einem mehrfach durchspannenden polytopischen Protein. C: Ein kovalenter Lipidanker ist eine eigenständige Form der Membranbindung. D: Es braucht dafür keine eigene Transmembrandomäne. Quelle: Vorlesungsfolien, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Membranverankerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranverankerung"
+      ],
+      "questionGoal": "Membranverankerung",
+      "structuredExplanation": {
+        "coreIdea": "Membranverankerung",
+        "correctReasoning": "Es unterscheidet sich von einem mehrfach durchspannenden polytopischen Protein. Es braucht dafür keine eigene Transmembrandomäne.",
+        "wrongAnswerExplanations": {
+          "A": "Monotopische Proteine dringen in ein Blatt ein, ohne die Membran vollständig zu durchspannen.",
+          "B": "Es unterscheidet sich von einem mehrfach durchspannenden polytopischen Protein.",
+          "C": "Ein kovalenter Lipidanker ist eine eigenständige Form der Membranbindung.",
+          "D": "Es braucht dafür keine eigene Transmembrandomäne."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Ein β-Barrel bildet eine wassergefüllte Pore in einer Membran. Welche Verteilung von Seitenketten ist dafür am plausibelsten?",
+      "options": [
+        {
+          "text": "Alle Seitenketten liegen innerhalb des Peptidrückgrats und berühren weder Lipide noch Wasser",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Pore benötigt nur Primärstruktur, aber keinerlei definierte räumliche Faltung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich geladene Reste zur Lipidkernfläche und ausschliesslich hydrophobe Reste zur Wasserpore",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hydrophobe Reste an der Lipidkontaktfläche und geeignete polare Reste zum wässrigen Poreninneren",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Lipidkontaktfläche muss aus einer ununterbrochenen RNA-Kette bestehen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: β-Strang-Seitenketten ragen abwechselnd auf beide Seiten. B: Die räumliche Anordnung ist für die Kanalgeometrie entscheidend. C: Dies wäre für den Kontakt mit den jeweiligen Umgebungen ungünstig. D: Die alternierende Orientierung der β-Strang-Seitenketten ermöglicht unterschiedliche Innen- und Aussenflächen. E: Das β-Barrel ist eine Proteinstruktur. Quelle: Vorlesungsfolien, PDF-S. 10–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "β-Barrel und Seitenketten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "β-Barrel und Seitenketten"
+      ],
+      "questionGoal": "β-Barrel und Seitenketten",
+      "structuredExplanation": {
+        "coreIdea": "β-Barrel und Seitenketten",
+        "correctReasoning": "Die alternierende Orientierung der β-Strang-Seitenketten ermöglicht unterschiedliche Innen- und Aussenflächen.",
+        "wrongAnswerExplanations": {
+          "A": "β-Strang-Seitenketten ragen abwechselnd auf beide Seiten.",
+          "B": "Die räumliche Anordnung ist für die Kanalgeometrie entscheidend.",
+          "C": "Dies wäre für den Kontakt mit den jeweiligen Umgebungen ungünstig.",
+          "E": "Das β-Barrel ist eine Proteinstruktur."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Xenopus-Oozyten erhalten entweder AQP1-RNA oder nur Puffer. Nach Überführung in ein hypoosmotisches Medium schwellen die AQP1-Oozyten schneller. Welche Folgerung wird am direktesten gestützt?",
+      "options": [
+        {
+          "text": "AQP1 erhöht zwangsläufig die Protonenleitfähigkeit im selben Ausmass.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die AQP1-RNA bildet selbst die dauerhafte Wasserpore der Membran.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Ergebnis beweist einen aktiven Export von Wasser ins hypoosmotische Medium.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "AQP1 erhöht die Wasserpermeabilität der Zellmembran.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "AQP1 pumpt Wasser durch ATP-Hydrolyse gegen den osmotischen Gradienten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wasserpermeation und Protonenleitung sind im Aquaporin gerade getrennt. B: Die RNA dient als Vorlage für das Kanalprotein. C: Beobachtet wird ein verstärkter Wassereinstrom und eine Volumenzunahme. D: Der osmotische Gradient ist die Triebkraft; die veränderte Schwellgeschwindigkeit zeigt den erleichterten Wasserfluss. E: Im Versuch strömt Wasser entlang der osmotischen Triebkraft ein. Quelle: Vorlesungsfolien, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Aquaporin-Nachweis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aquaporin-Nachweis"
+      ],
+      "questionGoal": "Aquaporin-Nachweis",
+      "structuredExplanation": {
+        "coreIdea": "Aquaporin-Nachweis",
+        "correctReasoning": "Der osmotische Gradient ist die Triebkraft; die veränderte Schwellgeschwindigkeit zeigt den erleichterten Wasserfluss.",
+        "wrongAnswerExplanations": {
+          "A": "Wasserpermeation und Protonenleitung sind im Aquaporin gerade getrennt.",
+          "B": "Die RNA dient als Vorlage für das Kanalprotein.",
+          "C": "Beobachtet wird ein verstärkter Wassereinstrom und eine Volumenzunahme.",
+          "E": "Im Versuch strömt Wasser entlang der osmotischen Triebkraft ein."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q10",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Welche Strukturfunktion erklärt am besten, warum AQP1 Wasser rasch passieren lässt, aber keinen entsprechenden Protonenkurzschluss verursacht?",
+      "options": [
+        {
+          "text": "AQP1 lässt ausschliesslich Hydroxoniumionen passieren und erzeugt daraus ausserhalb Wasser.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes hindurchtretende Wassermolekül wird dauerhaft in Wasserstoff und Sauerstoff gespalten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Pore bindet jedes Proton irreversibel und wird nach einem Durchtritt verbraucht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die enge selektive Pore orientiert Wasser und unterbricht eine durchgehende protonenleitende Wasserstoffbrückenkette.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Lipiddoppelschicht wird im Bereich von AQP1 vollständig aufgelöst.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies widerspricht der geringen Protonenleitfähigkeit. B: Die Permeation ist keine chemische Wasserspaltung. C: Selektivität beruht nicht auf einem einmalig verbrauchten Protonenfänger. D: So sind Wasserfluss und Grotthuss-Protonenleitung nicht gleichbedeutend. E: Der Kanal erhält eine selektive Passage innerhalb einer intakten Membran. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Wasser ohne Protonenleck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasser ohne Protonenleck"
+      ],
+      "questionGoal": "Wasser ohne Protonenleck",
+      "structuredExplanation": {
+        "coreIdea": "Wasser ohne Protonenleck",
+        "correctReasoning": "So sind Wasserfluss und Grotthuss-Protonenleitung nicht gleichbedeutend.",
+        "wrongAnswerExplanations": {
+          "A": "Dies widerspricht der geringen Protonenleitfähigkeit.",
+          "B": "Die Permeation ist keine chemische Wasserspaltung.",
+          "C": "Selektivität beruht nicht auf einem einmalig verbrauchten Protonenfänger.",
+          "E": "Der Kanal erhält eine selektive Passage innerhalb einer intakten Membran."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Eine Membran enthält AQP1; auf beiden Seiten können unterschiedliche Osmolaritäten eingestellt werden. Beurteilen Sie die Folgen für Wasserfluss und Selektivität.",
+      "options": [
+        {
+          "text": "Ein schneller Wasserfluss beweist eine gleich hohe Permeabilität für Na+.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Öffnung eines Wasserkanals legt unabhängig von der Osmolarität einen nach innen gerichteten Wasserstrom fest.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine erhöhte Zahl funktionsfähiger Wasserkanäle kann den osmotischen Volumenwechsel beschleunigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die definierte Porengeometrie verbindet Proteinstruktur und Selektivität.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Wasser- und Ionenselektivität sind verschiedene Eigenschaften. B: Der Wasserfluss folgt der osmotischen Triebkraft und kann seine Richtung ändern. C: Die Permeabilität beeinflusst bei gleicher Triebkraft die Flussgeschwindigkeit. D: Eine 3D-Struktur kann eine mechanistische Erklärung der Permeation liefern. Quelle: Vorlesungsfolien, PDF-S. 17–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Aquaporinstruktur und Fluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aquaporinstruktur und Fluss"
+      ],
+      "questionGoal": "Aquaporinstruktur und Fluss",
+      "structuredExplanation": {
+        "coreIdea": "Aquaporinstruktur und Fluss",
+        "correctReasoning": "Die Permeabilität beeinflusst bei gleicher Triebkraft die Flussgeschwindigkeit. Eine 3D-Struktur kann eine mechanistische Erklärung der Permeation liefern.",
+        "wrongAnswerExplanations": {
+          "A": "Wasser- und Ionenselektivität sind verschiedene Eigenschaften.",
+          "B": "Der Wasserfluss folgt der osmotischen Triebkraft und kann seine Richtung ändern.",
+          "C": "Die Permeabilität beeinflusst bei gleicher Triebkraft die Flussgeschwindigkeit.",
+          "D": "Eine 3D-Struktur kann eine mechanistische Erklärung der Permeation liefern."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Ein porenbildendes Toxin liegt zunächst als wasserlösliches Monomer vor und bildet nach Membrankontakt ein Oligomer. Welcher Vorgang erklärt die neu entstehende Membranpermeabilität am besten?",
+      "options": [
+        {
+          "text": "Konformationsänderung und Zusammenlagerung erzeugen eine membranüberspannende Pore.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die unveränderten Monomere müssen lediglich die Menge des intrazellulären ATP verdoppeln.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Monomer wird ohne Strukturänderung zu einer Lipiddoppelschicht umgewandelt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Monomere schliessen nach ihrer Bindung ausschliesslich vorhandene Ionenkanäle, ohne selbst eine Pore zu bilden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die entstehende Leitfähigkeit setzt voraus, dass das Oligomer vollständig ausserhalb der Membran bleibt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das aktive Oligomer besitzt andere Membrankontakte als das lösliche Monomer. B: Ein solcher ATP-Anstieg erklärt keine neue Membranpore. C: Die Pore bleibt eine geordnete Proteinstruktur in der Membran. D: Das geschilderte porenbildende Oligomer erzeugt einen eigenen Permeabilitätsweg. E: Für eine durchspannende Proteinpore müssen geeignete Proteinabschnitte in die Membran eingebracht werden. Quelle: Vorlesungsfolien, PDF-S. 20,23–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Porenbildung aus löslichem Protein"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Porenbildung aus löslichem Protein"
+      ],
+      "questionGoal": "Porenbildung aus löslichem Protein",
+      "structuredExplanation": {
+        "coreIdea": "Porenbildung aus löslichem Protein",
+        "correctReasoning": "Das aktive Oligomer besitzt andere Membrankontakte als das lösliche Monomer.",
+        "wrongAnswerExplanations": {
+          "B": "Ein solcher ATP-Anstieg erklärt keine neue Membranpore.",
+          "C": "Die Pore bleibt eine geordnete Proteinstruktur in der Membran.",
+          "D": "Das geschilderte porenbildende Oligomer erzeugt einen eigenen Permeabilitätsweg.",
+          "E": "Für eine durchspannende Proteinpore müssen geeignete Proteinabschnitte in die Membran eingebracht werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Eine zytotoxische Zelle setzt Perforin und Granzyme frei. Welche funktionelle Zuordnung passt am besten?",
+      "options": [
+        {
+          "text": "Granzyme bilden den C9-Anteil des Membranangriffskomplexes.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Perforin und Granzyme sind die beiden obligaten Untereinheiten des terminalen Komplementkomplexes.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Perforin vermittelt ausschliesslich Antigenerkennung und benötigt für jede Zielzelle eine neu gebildete Antikörperbindestelle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Perforin unterstützt den Zugang der Granzym-Proteasen zur Zielzelle; Granzyme können dort Apoptoseprogramme auslösen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Granzyme bilden den membranüberspannenden Kanal; Perforin ist die darin transportierte Protease.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Komplement und granulaabhängige Zytotoxizität sind unterschiedliche Systeme. B: Perforin/Granzyme gehören zur zellulären Zytotoxizität; der MAC wird aus terminalen Komplementkomponenten aufgebaut. C: Die spezifische Erkennung der Zielzelle und die anschliessende zytotoxische Effektorfunktion sind getrennte Vorgänge. D: Die Porenfunktion und die enzymatische Wirkung ergänzen sich. E: Die Funktionszuordnung ist vertauscht: Perforin unterstützt den Zugang, Granzyme sind Proteasen. Quelle: Vorlesungsfolien, PDF-S. 21–22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Perforin und Granzyme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Perforin und Granzyme"
+      ],
+      "questionGoal": "Perforin und Granzyme",
+      "structuredExplanation": {
+        "coreIdea": "Perforin und Granzyme",
+        "correctReasoning": "Die Porenfunktion und die enzymatische Wirkung ergänzen sich.",
+        "wrongAnswerExplanations": {
+          "A": "Komplement und granulaabhängige Zytotoxizität sind unterschiedliche Systeme.",
+          "B": "Perforin/Granzyme gehören zur zellulären Zytotoxizität; der MAC wird aus terminalen Komplementkomponenten aufgebaut.",
+          "C": "Die spezifische Erkennung der Zielzelle und die anschliessende zytotoxische Effektorfunktion sind getrennte Vorgänge.",
+          "E": "Die Funktionszuordnung ist vertauscht: Perforin unterstützt den Zugang, Granzyme sind Proteasen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Porenbildende Proteine können bakterielle Virulenz vermitteln oder zur menschlichen Abwehr beitragen. Beurteilen Sie die jeweiligen Komponenten und Wirkungen.",
+      "options": [
+        {
+          "text": "Porenbildung kann die Permeabilitätsbarriere einer Zielmembran beeinträchtigen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Membranangriffskomplex wird unter Beteiligung von C5b, C6, C7, C8 und C9 aufgebaut.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Granzyme bilden gemeinsam mit C9 die regelhafte Proteinwand des Membranangriffskomplexes.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bakterielle porenbildende Toxine müssen zum Funktionsnachweis zunächst menschliches Komplement in die Pore einbauen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Unkontrollierte Stoffflüsse können die Zellhomöostase zerstören. B: Die Komplementkomponenten ermöglichen die Porenassemblierung. C: Granzyme sind zytotoxische Proteasen und keine regulären MAC-Bausteine. D: Bakterielle Toxine können eigene Poren bilden; der menschliche MAC ist ein davon verschiedenes System. Quelle: Vorlesungsfolien, PDF-S. 20–24.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Immunporen und Toxinporen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Immunporen und Toxinporen"
+      ],
+      "questionGoal": "Immunporen und Toxinporen",
+      "structuredExplanation": {
+        "coreIdea": "Immunporen und Toxinporen",
+        "correctReasoning": "Unkontrollierte Stoffflüsse können die Zellhomöostase zerstören. Die Komplementkomponenten ermöglichen die Porenassemblierung.",
+        "wrongAnswerExplanations": {
+          "A": "Unkontrollierte Stoffflüsse können die Zellhomöostase zerstören.",
+          "B": "Die Komplementkomponenten ermöglichen die Porenassemblierung.",
+          "C": "Granzyme sind zytotoxische Proteasen und keine regulären MAC-Bausteine.",
+          "D": "Bakterielle Toxine können eigene Poren bilden; der menschliche MAC ist ein davon verschiedenes System."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Zwei Toxine erzeugen beide Membranporen. Strukturaufklärung zeigt beim einen α-Helizes und beim anderen ein β-Barrel als durchspannendes Element. Welche Aussage folgt daraus?",
+      "options": [
+        {
+          "text": "Die Strukturklasse allein beweist, dass das eine Protein ATP hydrolysiert und das andere nicht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das α-helikale Protein ist deshalb nur peripher gebunden und kann die Membran nicht durchspannen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die gleiche übergeordnete Funktion kann durch unterschiedliche Proteinbaumuster erreicht werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Beide Strukturen müssen dieselbe Aminosäuresequenz besitzen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein β-Barrel kann definitionsgemäss keine wassergefüllte Pore bilden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Energiekopplung folgt nicht allein aus dem Sekundärstrukturbaumuster. B: α-Helizes können Membranen durchspannen und Poren begrenzen. C: Die Vorlesung vergleicht unter anderem Cytolysin A und α-Hämolysin. D: Gleiche Funktion setzt keine identische Primärstruktur voraus. E: β-Barrels sind ein typisches Kanalbaumuster. Quelle: Vorlesungsfolien, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Unterschiedliche Porenbaumuster"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unterschiedliche Porenbaumuster"
+      ],
+      "questionGoal": "Unterschiedliche Porenbaumuster",
+      "structuredExplanation": {
+        "coreIdea": "Unterschiedliche Porenbaumuster",
+        "correctReasoning": "Die Vorlesung vergleicht unter anderem Cytolysin A und α-Hämolysin.",
+        "wrongAnswerExplanations": {
+          "A": "Energiekopplung folgt nicht allein aus dem Sekundärstrukturbaumuster.",
+          "B": "α-Helizes können Membranen durchspannen und Poren begrenzen.",
+          "D": "Gleiche Funktion setzt keine identische Primärstruktur voraus.",
+          "E": "β-Barrels sind ein typisches Kanalbaumuster."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Beurteilen Sie die Strukturaufklärung von Membranproteinen.",
+      "options": [
+        {
+          "text": "Röntgenkristallographie nutzt Beugungsdaten eines geordneten Proteinkristalls.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Strukturmethode liefert die katalytische Umsatzrate in µmol/min direkt aus dem Atommodell.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kryo-Elektronenmikroskopie erfordert grundsätzlich zuerst einen dreidimensionalen Proteinkristall.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beide Methoden können bei geeigneten Proben die atomare Modellbildung unterstützen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Daraus wird eine Elektronendichte für den Modellaufbau gewonnen. B: Die Umsatzrate benötigt funktionelle Messungen. C: Einzelpartikel-Kryo-EM untersucht viele Partikel in dünnem vitrifiziertem Eis. D: Die erreichbare Auflösung und Aussagekraft hängen von Probe und Datenqualität ab. Quelle: Vorlesungsfolien, PDF-S. 26–28.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Methodenvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methodenvergleich"
+      ],
+      "questionGoal": "Methodenvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Methodenvergleich",
+        "correctReasoning": "Daraus wird eine Elektronendichte für den Modellaufbau gewonnen. Die erreichbare Auflösung und Aussagekraft hängen von Probe und Datenqualität ab.",
+        "wrongAnswerExplanations": {
+          "A": "Daraus wird eine Elektronendichte für den Modellaufbau gewonnen.",
+          "B": "Die Umsatzrate benötigt funktionelle Messungen.",
+          "C": "Einzelpartikel-Kryo-EM untersucht viele Partikel in dünnem vitrifiziertem Eis.",
+          "D": "Die erreichbare Auflösung und Aussagekraft hängen von Probe und Datenqualität ab."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Bei einem kristallisierten Membranprotein liegt nach Auswertung der Röntgenbeugung eine Elektronendichte vor. Welcher Arbeitsschritt folgt daraus für die Strukturinterpretation?",
+      "options": [
+        {
+          "text": "Die Dichte wird durch einen Enzymaktivitätstest ersetzt, weil keine räumliche Information vorliegt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein mit der Aminosäuresequenz vereinbares Atommodell wird in die Dichte eingepasst und geprüft.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Intensitäten werden ohne Modellprüfung direkt als Reihenfolge der Gene abgelesen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jeder helle Dichtebereich wird unabhängig von Auflösung und Chemie als eigene Untereinheit definiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Aus dem Kristall wird ohne Rekonstruktion eine natürliche Membran mit allen Zellproteinen sichtbar.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Elektronendichte enthält gerade räumliche Strukturinformation. B: Die Dichte ist experimentelle Grundlage; das Strukturmodell muss mit den Daten konsistent sein. C: Röntgenbeugung liefert keine direkte Genomsequenz. D: Die Interpretation braucht geometrische, chemische und experimentelle Plausibilität. E: Der Versuch untersucht die kristallisierte Probe, nicht automatisch die gesamte native Zellmembran. Quelle: Vorlesungsfolien, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Von Beugung zu Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Von Beugung zu Modell"
+      ],
+      "questionGoal": "Von Beugung zu Modell",
+      "structuredExplanation": {
+        "coreIdea": "Von Beugung zu Modell",
+        "correctReasoning": "Die Dichte ist experimentelle Grundlage; das Strukturmodell muss mit den Daten konsistent sein.",
+        "wrongAnswerExplanations": {
+          "A": "Elektronendichte enthält gerade räumliche Strukturinformation.",
+          "C": "Röntgenbeugung liefert keine direkte Genomsequenz.",
+          "D": "Die Interpretation braucht geometrische, chemische und experimentelle Plausibilität.",
+          "E": "Der Versuch untersucht die kristallisierte Probe, nicht automatisch die gesamte native Zellmembran."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Ein gereinigter Membranproteinkomplex ist ausreichend homogen, lässt sich aber bisher nicht kristallisieren. Welche genannte Methode kann seine Struktur ohne Proteinkristall zugänglich machen?",
+      "options": [
+        {
+          "text": "Eine Messung der Gesamtproteinmenge mittels Absorption allein",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Einzelpartikel-Kryo-Elektronenmikroskopie",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Aktivitätsmessung bei einer einzigen Substratkonzentration allein",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Vergleich der Osmolarität beider Seiten der Membran allein",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Röntgenkristallographie desselben nicht vorhandenen Proteinkristalls",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie liefert keine 3D-Anordnung der Proteinbausteine. B: Viele Partikelansichten in vitrifiziertem Eis können zur 3D-Rekonstruktion beitragen. C: Sie kann Funktion messen, aber keine atomare Struktur rekonstruieren. D: Die Osmolarität enthält keine ausreichende Strukturinformation des Komplexes. E: Für diesen Ansatz fehlt gerade die geordnete Kristallprobe. Quelle: Vorlesungsfolien, PDF-S. 27.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Kryo-EM als Alternative"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kryo-EM als Alternative"
+      ],
+      "questionGoal": "Kryo-EM als Alternative",
+      "structuredExplanation": {
+        "coreIdea": "Kryo-EM als Alternative",
+        "correctReasoning": "Viele Partikelansichten in vitrifiziertem Eis können zur 3D-Rekonstruktion beitragen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie liefert keine 3D-Anordnung der Proteinbausteine.",
+          "C": "Sie kann Funktion messen, aber keine atomare Struktur rekonstruieren.",
+          "D": "Die Osmolarität enthält keine ausreichende Strukturinformation des Komplexes.",
+          "E": "Für diesen Ansatz fehlt gerade die geordnete Kristallprobe."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Ein gefalteter Proteinkomplex zerfällt in einzeln weiterhin gefaltete Untereinheiten. Beurteilen Sie den Vorgang.",
+      "options": [
+        {
+          "text": "Jede Peptidbindung muss bei einer solchen Dissoziation gespalten werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Verlust der Quaternärstruktur beweist eine neue Aminosäuresequenz jeder Untereinheit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Tertiärstruktur einzelner Untereinheiten kann dabei weitgehend erhalten bleiben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Quaternärstruktur ist verändert.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele Untereinheitenkontakte sind nichtkovalent. B: Die Sequenz kann trotz veränderter Zusammenlagerung identisch bleiben. C: Dissoziation und Entfaltung sind nicht zwangsläufig derselbe Vorgang. D: Die Anordnung mehrerer Untereinheiten ist verloren gegangen. Quelle: Vorlesungsfolien, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Untereinheiten und Kontaktflächen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Untereinheiten und Kontaktflächen"
+      ],
+      "questionGoal": "Untereinheiten und Kontaktflächen",
+      "structuredExplanation": {
+        "coreIdea": "Untereinheiten und Kontaktflächen",
+        "correctReasoning": "Dissoziation und Entfaltung sind nicht zwangsläufig derselbe Vorgang. Die Anordnung mehrerer Untereinheiten ist verloren gegangen.",
+        "wrongAnswerExplanations": {
+          "A": "Viele Untereinheitenkontakte sind nichtkovalent.",
+          "B": "Die Sequenz kann trotz veränderter Zusammenlagerung identisch bleiben.",
+          "C": "Dissoziation und Entfaltung sind nicht zwangsläufig derselbe Vorgang.",
+          "D": "Die Anordnung mehrerer Untereinheiten ist verloren gegangen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv12_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV12",
+      "stem": "Beurteilen Sie die Einordnung transmembraner Strukturen.",
+      "options": [
+        {
+          "text": "VDAC ist ein Beispiel für ein β-Barrel in der äusseren Mitochondrienmembran.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aromatische und positiv geladene Seitenketten sind für Membrangrenzflächen grundsätzlich ausgeschlossen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "GPCRs sind Beispiele α-helikaler Membranproteine.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Protein mit mehreren Transmembranhelizes ist definitionsgemäss ein peripheres Membranprotein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es zeigt, dass β-Barrels nicht nur in bakteriellen Aussenmembranen vorkommen. B: Die Vorlesung zeigt aromatische Reste und basische Reste als typische Elemente entsprechender Grenzbereiche. C: Mehrere Transmembranhelizes bilden ihre charakteristische Topologie. D: Es ist ein polytopisches integrales Membranprotein. Quelle: Vorlesungsfolien, PDF-S. 11–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV12",
+        "Baumuster und Umgebung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Baumuster und Umgebung"
+      ],
+      "questionGoal": "Baumuster und Umgebung",
+      "structuredExplanation": {
+        "coreIdea": "Baumuster und Umgebung",
+        "correctReasoning": "Es zeigt, dass β-Barrels nicht nur in bakteriellen Aussenmembranen vorkommen. Mehrere Transmembranhelizes bilden ihre charakteristische Topologie.",
+        "wrongAnswerExplanations": {
+          "A": "Es zeigt, dass β-Barrels nicht nur in bakteriellen Aussenmembranen vorkommen.",
+          "B": "Die Vorlesung zeigt aromatische Reste und basische Reste als typische Elemente entsprechender Grenzbereiche.",
+          "C": "Mehrere Transmembranhelizes bilden ihre charakteristische Topologie.",
+          "D": "Es ist ein polytopisches integrales Membranprotein."
+        }
+      }
+    }
+  ]
+}

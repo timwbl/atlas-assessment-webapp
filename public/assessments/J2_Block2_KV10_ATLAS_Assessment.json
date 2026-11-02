@@ -1,0 +1,1289 @@
+{
+  "id": "assessment_j2_block2_kv10_20261102",
+  "lectureCode": "KV10",
+  "title": "Coenzyme, Vitamine und Spurenelemente",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Vorlesung KV10 Coenzyme Vitamine HS2026 ml.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. TPP wird im Zytosol gebildet und für mitochondriale Nutzung transportiert. Menschliche MAO-A/B sind FAD-Enzyme und keine Kupferenzyme. Uneinheitliche Folienangaben begründen keine Dosierungs- oder Therapieempfehlungen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Herkunft, Bindung und Aufgaben von Coenzymen einschliesslich der zentralen B-Vitamin-Derivate erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Vitaminaufnahme, Aktivierung, Speicherung und wichtige Folgen eines Mangels funktionell verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Die biochemische Bedeutung und unterschiedliche Funktionen essenzieller Spurenelemente erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Kupfertransport und kupferabhängige Enzymfunktionen mit Mangel- und Speicherstörungen verknüpfen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv10_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Ein gereinigtes Protein besitzt ohne seinen organischen Cofaktor kaum katalytische Aktivität. Nach Zugabe des Cofaktors wird es aktiv. Welche Beschreibung passt?",
+      "options": [
+        {
+          "text": "Die Zugabe beweist eine veränderte Aminosäuresequenz des Apoenzyms.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Coenzym muss die gesamte Primärstruktur des Proteins ersetzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das aktive Holoenzym besteht definitionsgemäss nur aus dem freien Cofaktor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Apoenzym bildet mit dem benötigten Coenzym ein funktionsfähiges Holoenzym.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Das Coenzym dient dabei zwangsläufig als abzubauendes Nahrungsprotein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Wiederherstellung durch Cofaktorbindung braucht keine Sequenzänderung. B: Ein Cofaktor ergänzt das Protein und ersetzt nicht dessen Peptidkette. C: Zum Holoenzym gehören Protein und erforderliche Cofaktoren. D: Der Proteinanteil allein kann für die Katalyse unzureichend sein. E: Coenzyme übernehmen spezialisierte chemische Funktionen. Quelle: Vorlesungsfolien, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Apoenzym und Holoenzym"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Apoenzym und Holoenzym"
+      ],
+      "questionGoal": "Apoenzym und Holoenzym",
+      "structuredExplanation": {
+        "coreIdea": "Apoenzym und Holoenzym",
+        "correctReasoning": "Der Proteinanteil allein kann für die Katalyse unzureichend sein.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Wiederherstellung durch Cofaktorbindung braucht keine Sequenzänderung.",
+          "B": "Ein Cofaktor ergänzt das Protein und ersetzt nicht dessen Peptidkette.",
+          "C": "Zum Holoenzym gehören Protein und erforderliche Cofaktoren.",
+          "E": "Coenzyme übernehmen spezialisierte chemische Funktionen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Zwei Cofaktoren unterscheiden sich darin, ob sie zwischen Reaktionen frei austauschen oder am Enzym verbleiben. Beurteilen Sie die Konsequenzen für ihre Einteilung und Regeneration.",
+      "options": [
+        {
+          "text": "Eine prosthetische Gruppe bleibt typischerweise fest am Enzym gebunden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle Coenzyme müssen zwingend aus essenziellen Vitaminen entstehen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Bezeichnung prosthetische Gruppe bedeutet, dass ihre chemische Form während der Katalyse unverändert bleiben muss.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Cosubstrat kann vorübergehend binden und in einer anderen Reaktion regeneriert werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Feste Bindung unterscheidet sie vom frei austauschenden Cosubstrat. B: ATP und weitere körpereigene Cofaktoren zeigen, dass die Herkunft unterschiedlich ist. C: Sie kann am Umsatz teilnehmen und danach im Enzymzyklus regeneriert werden. D: NAD ist ein typisches Beispiel für einen übertragbaren Redoxpartner. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Cosubstrat und prosthetische Gruppe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cosubstrat und prosthetische Gruppe"
+      ],
+      "questionGoal": "Cosubstrat und prosthetische Gruppe",
+      "structuredExplanation": {
+        "coreIdea": "Cosubstrat und prosthetische Gruppe",
+        "correctReasoning": "Feste Bindung unterscheidet sie vom frei austauschenden Cosubstrat. NAD ist ein typisches Beispiel für einen übertragbaren Redoxpartner.",
+        "wrongAnswerExplanations": {
+          "A": "Feste Bindung unterscheidet sie vom frei austauschenden Cosubstrat.",
+          "B": "ATP und weitere körpereigene Cofaktoren zeigen, dass die Herkunft unterschiedlich ist.",
+          "C": "Sie kann am Umsatz teilnehmen und danach im Enzymzyklus regeneriert werden.",
+          "D": "NAD ist ein typisches Beispiel für einen übertragbaren Redoxpartner."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Bei ausgeprägtem Thiaminmangel nimmt die oxidative Decarboxylierung von Pyruvat ab. Welches fehlende Coenzym erklärt den Zusammenhang am direktesten?",
+      "options": [
+        {
+          "text": "Nicotinamidadenindinukleotid aus Vitamin B3",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Flavinadenindinukleotid aus Vitamin B2",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ascorbat aus Vitamin C",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Coenzym A aus Pantothenat",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Thiaminpyrophosphat, TPP",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: NAD nimmt Reduktionsäquivalente auf, ist aber kein B1-Derivat. B: FAD wird ebenfalls im Komplex benötigt, ist aber nicht das Derivat von Thiamin. C: Ascorbat ist hier nicht der für die Pyruvatdecarboxylierung benötigte Cofaktor. D: CoA überträgt Acylgruppen und entsteht aus Vitamin B5. E: TPP aus Vitamin B1 unterstützt die Decarboxylierung im Pyruvatdehydrogenase-Komplex. Quelle: Vorlesungsfolien, PDF-S. 8–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "TPP und Pyruvatoxidation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "TPP und Pyruvatoxidation"
+      ],
+      "questionGoal": "TPP und Pyruvatoxidation",
+      "structuredExplanation": {
+        "coreIdea": "TPP und Pyruvatoxidation",
+        "correctReasoning": "TPP aus Vitamin B1 unterstützt die Decarboxylierung im Pyruvatdehydrogenase-Komplex.",
+        "wrongAnswerExplanations": {
+          "A": "NAD nimmt Reduktionsäquivalente auf, ist aber kein B1-Derivat.",
+          "B": "FAD wird ebenfalls im Komplex benötigt, ist aber nicht das Derivat von Thiamin.",
+          "C": "Ascorbat ist hier nicht der für die Pyruvatdecarboxylierung benötigte Cofaktor.",
+          "D": "CoA überträgt Acylgruppen und entsteht aus Vitamin B5."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Im Pyruvatdehydrogenase-Komplex werden Elektronen zunächst auf FAD und danach auf NAD+ übertragen. Welche Vitaminvorstufen müssen für beide Redoxcoenzyme zur Verfügung stehen?",
+      "options": [
+        {
+          "text": "Pantothenat und Riboflavin",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Riboflavin und Niacin",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Thiamin und Pantothenat",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ascorbat und Pyridoxin",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Niacin und Thiamin",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Damit sind CoA und FAD abgedeckt, aber NAD fehlt. B: B2 liefert FMN/FAD, B3 liefert NAD/NADP. C: Diese liefern TPP und CoA, nicht FAD und NAD. D: Diese liefern nicht die beiden genannten Redoxcoenzyme. E: Damit sind NAD und TPP abgedeckt, aber FAD fehlt. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Cofaktoren des PDH-Komplexes"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cofaktoren des PDH-Komplexes"
+      ],
+      "questionGoal": "Cofaktoren des PDH-Komplexes",
+      "structuredExplanation": {
+        "coreIdea": "Cofaktoren des PDH-Komplexes",
+        "correctReasoning": "B2 liefert FMN/FAD, B3 liefert NAD/NADP.",
+        "wrongAnswerExplanations": {
+          "A": "Damit sind CoA und FAD abgedeckt, aber NAD fehlt.",
+          "C": "Diese liefern TPP und CoA, nicht FAD und NAD.",
+          "D": "Diese liefern nicht die beiden genannten Redoxcoenzyme.",
+          "E": "Damit sind NAD und TPP abgedeckt, aber FAD fehlt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Ein Cofaktormangel kann entweder die Übertragung von Acylgruppen oder von Reduktionsäquivalenten begrenzen. Beurteilen Sie die Zuordnung der folgenden Coenzymfunktionen.",
+      "options": [
+        {
+          "text": "Coenzym A kann Acylgruppen über seine endständige Thiolgruppe tragen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei der Oxidation von Lactat zu Pyruvat kann NAD+ zu NADH reduziert werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "FMN ist das Pantothenat-Derivat für die Aktivierung von Fettsäuren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "FAD entsteht durch Acetylierung von Niacin.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Acylgruppe liegt dabei als energiereicher Thioester vor. B: Die Redoxäquivalente des Substrats werden auf NAD+ übertragen. C: FMN stammt aus Riboflavin; Fettsäureaktivierung verwendet unter anderem CoA. D: FAD wird aus Riboflavin über FMN gebildet. Quelle: Vorlesungsfolien, PDF-S. 12–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Gruppen- und Elektronenübertragung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gruppen- und Elektronenübertragung"
+      ],
+      "questionGoal": "Gruppen- und Elektronenübertragung",
+      "structuredExplanation": {
+        "coreIdea": "Gruppen- und Elektronenübertragung",
+        "correctReasoning": "Die Acylgruppe liegt dabei als energiereicher Thioester vor. Die Redoxäquivalente des Substrats werden auf NAD+ übertragen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Acylgruppe liegt dabei als energiereicher Thioester vor.",
+          "B": "Die Redoxäquivalente des Substrats werden auf NAD+ übertragen.",
+          "C": "FMN stammt aus Riboflavin; Fettsäureaktivierung verwendet unter anderem CoA.",
+          "D": "FAD wird aus Riboflavin über FMN gebildet."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Ein Defekt der zytosolischen Thiaminpyrophosphokinase vermindert TPP und beeinträchtigt auch mitochondriale Reaktionen. Welche Erklärung verbindet beide Orte korrekt?",
+      "options": [
+        {
+          "text": "TPP wird im Zytosol gebildet und für seine mitochondriale Nutzung in die Mitochondrien transportiert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Verminderung von TPP kann die Transketolase im Zytosol prinzipiell nicht betreffen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Thiamin wird erst durch proteolytische Spaltung im Darmlumen zu TPP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "TPP kann nur in der mitochondrialen Matrix aus Thiamin entstehen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mitochondriale Enzyme verwenden statt TPP ausschliesslich freies Thiamin.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bildungsort und Einsatzort müssen nicht identisch sein. B: Auch die zytosolische Transketolase ist TPP-abhängig. C: Die Aktivierung ist eine intrazelluläre Phosphorylierungsreaktion. D: Die Aktivierung durch TPK erfolgt zytosolisch. E: Die aktive Cofaktorform ist TPP. Quelle: Vorlesungsfolien, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Aktivierung und Kompartiment"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierung und Kompartiment"
+      ],
+      "questionGoal": "Aktivierung und Kompartiment",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierung und Kompartiment",
+        "correctReasoning": "Bildungsort und Einsatzort müssen nicht identisch sein.",
+        "wrongAnswerExplanations": {
+          "B": "Auch die zytosolische Transketolase ist TPP-abhängig.",
+          "C": "Die Aktivierung ist eine intrazelluläre Phosphorylierungsreaktion.",
+          "D": "Die Aktivierung durch TPK erfolgt zytosolisch.",
+          "E": "Die aktive Cofaktorform ist TPP."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Bei Vitamin-C-Mangel entstehen unter anderem Zahnfleischblutungen und eine schlechte Wundheilung. Welcher molekulare Defekt passt am besten?",
+      "options": [
+        {
+          "text": "Ein Ausfall der Hämoglobinsynthese durch fehlendes Iod",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein fehlender Einbau von FAD in die Peptidbindung des Kollagens",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine beeinträchtigte Hydroxylierung von Prolin- und Lysinresten bei der Kollagenreifung",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine direkte Hemmung der extrazellulären Lysyl-Oxidase durch fehlendes Kupfer",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Blockade der Glykogenphosphorylase durch fehlendes TPP",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Iod hat seine zentrale Rolle in Schilddrüsenhormonen und erklärt diesen Befund nicht. B: FAD ist kein Baustein der Kollagenpeptidbindung. C: Ascorbat unterstützt die dafür erforderlichen Hydroxylasen unter anderem durch Erhalt des reduzierten Eisens. D: Dies betrifft einen anderen Cofaktor und einen anderen Schritt der Kollagenreifung. E: Dies ist keine Erklärung für den klassischen Vitamin-C-bedingten Kollagendefekt. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Skorbut und Kollagen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Skorbut und Kollagen"
+      ],
+      "questionGoal": "Skorbut und Kollagen",
+      "structuredExplanation": {
+        "coreIdea": "Skorbut und Kollagen",
+        "correctReasoning": "Ascorbat unterstützt die dafür erforderlichen Hydroxylasen unter anderem durch Erhalt des reduzierten Eisens.",
+        "wrongAnswerExplanations": {
+          "A": "Iod hat seine zentrale Rolle in Schilddrüsenhormonen und erklärt diesen Befund nicht.",
+          "B": "FAD ist kein Baustein der Kollagenpeptidbindung.",
+          "D": "Dies betrifft einen anderen Cofaktor und einen anderen Schritt der Kollagenreifung.",
+          "E": "Dies ist keine Erklärung für den klassischen Vitamin-C-bedingten Kollagendefekt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q08",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Beurteilen Sie Ursachen und Folgen einer unzureichenden Vitaminversorgung.",
+      "options": [
+        {
+          "text": "Ein Mangel kann trotz vorhandener Nahrung bei gestörter Resorption entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Speicherung fettlöslicher Vitamine schützt grundsätzlich vor jeder Überdosierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine gestörte intrazelluläre Aktivierung kann die Nutzung eines aufgenommenen Vitamins beeinträchtigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Wasserlösliche Vitamine können unabhängig von Dosis und Dauer keine unerwünschten Wirkungen auslösen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Aufnahme und Verfügbarkeit sind unterschiedliche Schritte. B: Speicherung kann eine Akkumulation und Hypervitaminose begünstigen. C: Einige Vitamine müssen erst in Coenzymformen überführt werden. D: Wasserlöslichkeit ist keine allgemeine Unbedenklichkeitsgarantie. Quelle: Vorlesungsfolien, PDF-S. 5–7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Vitaminmangel verstehen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitaminmangel verstehen"
+      ],
+      "questionGoal": "Vitaminmangel verstehen",
+      "structuredExplanation": {
+        "coreIdea": "Vitaminmangel verstehen",
+        "correctReasoning": "Aufnahme und Verfügbarkeit sind unterschiedliche Schritte. Einige Vitamine müssen erst in Coenzymformen überführt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Aufnahme und Verfügbarkeit sind unterschiedliche Schritte.",
+          "B": "Speicherung kann eine Akkumulation und Hypervitaminose begünstigen.",
+          "C": "Einige Vitamine müssen erst in Coenzymformen überführt werden.",
+          "D": "Wasserlöslichkeit ist keine allgemeine Unbedenklichkeitsgarantie."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Eine Probe enthält ausreichend Apoenzyme, aber deutlich zu wenig Riboflavin-Derivate. Welche Cofaktorgruppe ist am unmittelbarsten betroffen?",
+      "options": [
+        {
+          "text": "Ascorbat und Dehydroascorbat",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "TPP und freies Thiamin",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "FMN und FAD",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "NAD und NADP",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "CoA und Acetyl-CoA",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese bilden das Redoxpaar des Vitamins C. B: Diese gehören zum Vitamin-B1-Stoffwechsel. C: Beide entstehen aus Riboflavin und übernehmen Redoxfunktionen. D: Ihre Vitaminvorstufe ist Niacin. E: Pantothenat ist die Vitaminvorstufe des CoA-Anteils. Quelle: Vorlesungsfolien, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Redoxcoenzym aus Vitaminvorstufe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Redoxcoenzym aus Vitaminvorstufe"
+      ],
+      "questionGoal": "Redoxcoenzym aus Vitaminvorstufe",
+      "structuredExplanation": {
+        "coreIdea": "Redoxcoenzym aus Vitaminvorstufe",
+        "correctReasoning": "Beide entstehen aus Riboflavin und übernehmen Redoxfunktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Diese bilden das Redoxpaar des Vitamins C.",
+          "B": "Diese gehören zum Vitamin-B1-Stoffwechsel.",
+          "D": "Ihre Vitaminvorstufe ist Niacin.",
+          "E": "Pantothenat ist die Vitaminvorstufe des CoA-Anteils."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Nach der Aufnahme können Vitamine weiter umgewandelt oder als Reduktionsmittel eingesetzt werden. Beurteilen Sie die folgenden Zusammenhänge am Beispiel von Niacin und Vitamin C.",
+      "options": [
+        {
+          "text": "Die Reduktion von Fe3+ zu Fe2+ ist eine wichtige Funktion von Ascorbat in bestimmten Enzymreaktionen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Niacin kann teilweise aus Tryptophan bereitgestellt werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ascorbat und Dehydroascorbat werden zwingend durch denselben apikalen Transporter aufgenommen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vitamin C ist die Kupferquelle der Lysyl-Oxidase.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: So bleibt der Metallcofaktor für Hydroxylierungsreaktionen funktionsfähig. B: Diese Synthesemöglichkeit hebt die Bedeutung einer ausreichenden Versorgung nicht auf. C: Ascorbat wird Na+-gekoppelt transportiert, DHA kann GLUT-vermittelt aufgenommen werden. D: Ascorbat ist kein Metallion und liefert kein Kupfer. Quelle: Vorlesungsfolien, PDF-S. 16–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Vitamin C und Niacin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin C und Niacin"
+      ],
+      "questionGoal": "Vitamin C und Niacin",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin C und Niacin",
+        "correctReasoning": "So bleibt der Metallcofaktor für Hydroxylierungsreaktionen funktionsfähig. Diese Synthesemöglichkeit hebt die Bedeutung einer ausreichenden Versorgung nicht auf.",
+        "wrongAnswerExplanations": {
+          "A": "So bleibt der Metallcofaktor für Hydroxylierungsreaktionen funktionsfähig.",
+          "B": "Diese Synthesemöglichkeit hebt die Bedeutung einer ausreichenden Versorgung nicht auf.",
+          "C": "Ascorbat wird Na+-gekoppelt transportiert, DHA kann GLUT-vermittelt aufgenommen werden.",
+          "D": "Ascorbat ist kein Metallion und liefert kein Kupfer."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Ein Enzym benötigt Zink für Katalyse oder Strukturstabilisierung. Welche Aussage vermeidet die unzutreffende Gleichsetzung aller Metallfunktionen mit Elektronenübertragung?",
+      "options": [
+        {
+          "text": "Ein Metall ist schon aufgrund seiner Bindung an ein Protein ernährungsphysiologisch essenziell.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes essenzielle Metall muss zwischen mindestens zwei Oxidationsstufen wechseln.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein essenzielles Metall kann wichtig sein, ohne im Enzymzyklus seine Oxidationsstufe zu wechseln.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die geringe benötigte Menge eines Spurenelements schliesst enzymatische Funktionen aus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Strukturmetall kann bei Mangel durch jedes andere zweiwertige Metall ersetzt werden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch toxische Metalle können an Proteine binden. B: Dies trifft beispielsweise auf die typische Funktion von Zn2+ nicht zu. C: Zn2+ übernimmt häufig katalytische oder strukturelle Funktionen ohne biologischen Redoxwechsel. D: Gerade geringe Mengen können für zahlreiche Metalloproteine ausreichen. E: Geometrie und Bindungseigenschaften sind spezifisch; Ersatz kann funktionslos oder toxisch sein. Quelle: Vorlesungsfolien, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Spurenelement und Redoxchemie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spurenelement und Redoxchemie"
+      ],
+      "questionGoal": "Spurenelement und Redoxchemie",
+      "structuredExplanation": {
+        "coreIdea": "Spurenelement und Redoxchemie",
+        "correctReasoning": "Zn2+ übernimmt häufig katalytische oder strukturelle Funktionen ohne biologischen Redoxwechsel.",
+        "wrongAnswerExplanations": {
+          "A": "Auch toxische Metalle können an Proteine binden.",
+          "B": "Dies trifft beispielsweise auf die typische Funktion von Zn2+ nicht zu.",
+          "D": "Gerade geringe Mengen können für zahlreiche Metalloproteine ausreichen.",
+          "E": "Geometrie und Bindungseigenschaften sind spezifisch; Ersatz kann funktionslos oder toxisch sein."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Beurteilen Sie die Bedeutung essenzieller Spurenelemente.",
+      "options": [
+        {
+          "text": "Iod wird für die Bildung der Schilddrüsenhormone benötigt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eisen ist ein Bestandteil von Hämgruppen und weiteren Redoxzentren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Cadmium ist beim Menschen aufgrund seiner Proteinbindung ein allgemein notwendiger Enzymcofaktor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Spurenelementmangel kann keine Folgen haben, solange genügend Protein gegessen wird.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Funktion unterscheidet sich von der eines frei wechselnden Redoxmetalls im Enzym. B: Damit ist es an Sauerstofftransport und Elektronentransport beteiligt. C: Cadmium ist kein anerkannt essenzielles Spurenelement des Menschen und kann toxisch wirken. D: Ein Apoenzym kann ohne seinen benötigten Metallcofaktor funktionsgestört bleiben. Quelle: Vorlesungsfolien, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Spezifische Metallfunktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spezifische Metallfunktionen"
+      ],
+      "questionGoal": "Spezifische Metallfunktionen",
+      "structuredExplanation": {
+        "coreIdea": "Spezifische Metallfunktionen",
+        "correctReasoning": "Seine Funktion unterscheidet sich von der eines frei wechselnden Redoxmetalls im Enzym. Damit ist es an Sauerstofftransport und Elektronentransport beteiligt.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Funktion unterscheidet sich von der eines frei wechselnden Redoxmetalls im Enzym.",
+          "B": "Damit ist es an Sauerstofftransport und Elektronentransport beteiligt.",
+          "C": "Cadmium ist kein anerkannt essenzielles Spurenelement des Menschen und kann toxisch wirken.",
+          "D": "Ein Apoenzym kann ohne seinen benötigten Metallcofaktor funktionsgestört bleiben."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Bei einer Störung von ATP7B ist die biliäre Kupferausscheidung beeinträchtigt. Welche Zuordnung passt am besten?",
+      "options": [
+        {
+          "text": "Eine isolierte Störung der Aufnahme von Niacin über GLUT5",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Menkes-Erkrankung durch primären ATP7A-Defekt der intestinalen Kupferbereitstellung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Skorbut durch fehlende Riboflavinaufnahme",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Mangel an Intrinsic Factor mit selektiv gestörter Kupferaufnahme im Ileum",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Morbus Wilson mit gestörter hepatischer Kupferhandhabung",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: GLUT5 transportiert Fructose; diese Zuordnung erklärt den Kupfertransportdefekt nicht. B: Dies betrifft einen anderen Transporter und typischerweise einen systemischen Kupfermangel. C: Skorbut ist ein Vitamin-C-Mangel und keine ATP7B-Störung. D: Intrinsic Factor gehört zur Vitamin-B12-Resorption. E: ATP7B ist unter anderem für die Abgabe von Kupfer in die Galle wichtig. Quelle: Vorlesungsfolien, PDF-S. 22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Kupfertransport unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kupfertransport unterscheiden"
+      ],
+      "questionGoal": "Kupfertransport unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Kupfertransport unterscheiden",
+        "correctReasoning": "ATP7B ist unter anderem für die Abgabe von Kupfer in die Galle wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "GLUT5 transportiert Fructose; diese Zuordnung erklärt den Kupfertransportdefekt nicht.",
+          "B": "Dies betrifft einen anderen Transporter und typischerweise einen systemischen Kupfermangel.",
+          "C": "Skorbut ist ein Vitamin-C-Mangel und keine ATP7B-Störung.",
+          "D": "Intrinsic Factor gehört zur Vitamin-B12-Resorption."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Eine verminderte Kupferverfügbarkeit reduziert die Aktivität der Lysyl-Oxidase. Welcher Schritt wird dadurch unmittelbar beeinträchtigt?",
+      "options": [
+        {
+          "text": "Die Umsetzung von Riboflavin zu FAD durch Lysyl-Oxidase",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die oxidative Vorbereitung von Lysinresten für die extrazelluläre Quervernetzung von Kollagen und Elastin",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die zytosolische Aktivierung von Thiamin zu TPP durch Lysyl-Oxidase",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Vitamin-C-abhängige Hydroxylierung von Prolin im endoplasmatischen Retikulum",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Spaltung von Nahrungskollagen durch pankreatische Lipase",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist keine Funktion der Lysyl-Oxidase. B: Die kupferabhängige Lysyl-Oxidase ist für die Ausbildung stabiler Quervernetzungen wichtig. C: TPK und nicht Lysyl-Oxidase katalysiert diese Aktivierung. D: Diese ist ein anderer Reifungsschritt mit eisenabhängigen Hydroxylasen. E: Lipase ist ein fettspaltendes Enzym und kein Ersatz für die Lysyl-Oxidase. Quelle: Vorlesungsfolien, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Kupfer und Bindegewebe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kupfer und Bindegewebe"
+      ],
+      "questionGoal": "Kupfer und Bindegewebe",
+      "structuredExplanation": {
+        "coreIdea": "Kupfer und Bindegewebe",
+        "correctReasoning": "Die kupferabhängige Lysyl-Oxidase ist für die Ausbildung stabiler Quervernetzungen wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist keine Funktion der Lysyl-Oxidase.",
+          "C": "TPK und nicht Lysyl-Oxidase katalysiert diese Aktivierung.",
+          "D": "Diese ist ein anderer Reifungsschritt mit eisenabhängigen Hydroxylasen.",
+          "E": "Lipase ist ein fettspaltendes Enzym und kein Ersatz für die Lysyl-Oxidase."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Eine gestörte Kupferverfügbarkeit kann mehrere Enzymsysteme beeinflussen. Beurteilen Sie, welche der folgenden Funktionen tatsächlich an Kupfer gebunden sind.",
+      "options": [
+        {
+          "text": "Die menschlichen Monoaminoxidasen A und B sind kupferabhängig und benötigen kein FAD.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ceruloplasmin ersetzt als Verdauungsprotease die enterozytäre Kupferaufnahme.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dopamin-β-Hydroxylase und Tyrosinase sind kupferabhängige Enzyme.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Cytochrom-c-Oxidase enthält Kupferzentren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: MAO-A und MAO-B sind Flavinenzyme mit FAD; die Folientabelle ist hier unzutreffend. B: Es ist ein kupferhaltiges Plasmaprotein mit unter anderem Ferroxidasefunktion. C: Kupfer ist für diese unterschiedlichen Biosynthesereaktionen relevant. D: Kupfer ist Teil der Elektronenübertragung im terminalen Atmungskettenkomplex. Quelle: Vorlesungsfolien, PDF-S. 22–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Kupferabhängige Funktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kupferabhängige Funktionen"
+      ],
+      "questionGoal": "Kupferabhängige Funktionen",
+      "structuredExplanation": {
+        "coreIdea": "Kupferabhängige Funktionen",
+        "correctReasoning": "Kupfer ist für diese unterschiedlichen Biosynthesereaktionen relevant. Kupfer ist Teil der Elektronenübertragung im terminalen Atmungskettenkomplex.",
+        "wrongAnswerExplanations": {
+          "A": "MAO-A und MAO-B sind Flavinenzyme mit FAD; die Folientabelle ist hier unzutreffend.",
+          "B": "Es ist ein kupferhaltiges Plasmaprotein mit unter anderem Ferroxidasefunktion.",
+          "C": "Kupfer ist für diese unterschiedlichen Biosynthesereaktionen relevant.",
+          "D": "Kupfer ist Teil der Elektronenübertragung im terminalen Atmungskettenkomplex."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Nach Spaltung von Acetyl-CoA wird die freie Thiolgruppe des Coenzym A sichtbar. Welche Bindung wurde dabei am Acylträger gelöst?",
+      "options": [
+        {
+          "text": "Eine Thioesterbindung zwischen Acylgruppe und Schwefel des CoA",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine glykosidische Bindung zwischen Glucose und NAD",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Disulfidbrücke zwischen zwei Pantothenatmolekülen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Phosphodiesterbindung zwischen Acetylgruppe und TPP",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Peptidbindung zwischen Acylgruppe und FAD",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die endständige SH-Gruppe nimmt Acylgruppen auf. B: Dies beschreibt nicht die Bindung des Acetylrests an CoA. C: Acetyl-CoA enthält den Acetylrest nicht als Disulfid. D: Der Acetylrest wird im CoA-Thioester getragen. E: FAD ist kein thiolhaltiger Acylträger. Quelle: Vorlesungsfolien, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "CoA und Acylaktivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CoA und Acylaktivierung"
+      ],
+      "questionGoal": "CoA und Acylaktivierung",
+      "structuredExplanation": {
+        "coreIdea": "CoA und Acylaktivierung",
+        "correctReasoning": "Die endständige SH-Gruppe nimmt Acylgruppen auf.",
+        "wrongAnswerExplanations": {
+          "B": "Dies beschreibt nicht die Bindung des Acetylrests an CoA.",
+          "C": "Acetyl-CoA enthält den Acetylrest nicht als Disulfid.",
+          "D": "Der Acetylrest wird im CoA-Thioester getragen.",
+          "E": "FAD ist kein thiolhaltiger Acylträger."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Beurteilen Sie die folgenden Vorstufen-Produkt-Zuordnungen.",
+      "options": [
+        {
+          "text": "Riboflavin wird zum Coenzym NAD umgewandelt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Niacin liefert die aktive Thiolgruppe von Coenzym A.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Thiamin wird zur aktiven Coenzymform TPP umgesetzt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Pantothenat liefert einen Bestandteil von Coenzym A.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: NAD stammt aus Niacin beziehungsweise dessen Vorstufen. B: Niacin gehört zum NAD-Stoffwechsel; die CoA-Thiolgruppe stammt aus dem Cysteinanteil. C: TPP ist unter anderem für Transketolase und oxidative Decarboxylierungen wichtig. D: B5 trägt zum Aufbau des universellen Acylträgers bei. Quelle: Vorlesungsfolien, PDF-S. 8–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Vitamin-Coenzym-Zuordnungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin-Coenzym-Zuordnungen"
+      ],
+      "questionGoal": "Vitamin-Coenzym-Zuordnungen",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin-Coenzym-Zuordnungen",
+        "correctReasoning": "TPP ist unter anderem für Transketolase und oxidative Decarboxylierungen wichtig. B5 trägt zum Aufbau des universellen Acylträgers bei.",
+        "wrongAnswerExplanations": {
+          "A": "NAD stammt aus Niacin beziehungsweise dessen Vorstufen.",
+          "B": "Niacin gehört zum NAD-Stoffwechsel; die CoA-Thiolgruppe stammt aus dem Cysteinanteil.",
+          "C": "TPP ist unter anderem für Transketolase und oxidative Decarboxylierungen wichtig.",
+          "D": "B5 trägt zum Aufbau des universellen Acylträgers bei."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Die Menge einer kollagenmodifizierenden Hydroxylase ist normal. Nach längerer sehr einseitiger Ernährung sinkt jedoch ihre Aktivität; Ascorbatzugabe verbessert den Umsatz im geeigneten Testsystem. Was ist die schlüssigste Interpretation?",
+      "options": [
+        {
+          "text": "Die normale Proteinmenge beweist eine normale Kollagenreifung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Cofaktormangel kann die Funktion trotz erhaltener Enzymproteinmenge begrenzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede ernährungsbedingte Aktivitätsminderung muss auf einer Enzymgen-Deletion beruhen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Resultat beweist eine Überladung mit fettlöslichen Vitaminen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ascorbat ersetzt im Testsystem die gesamte Kollagenpeptidkette.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein vorhandenes Enzym kann bei fehlendem Cofaktor unzureichend arbeiten. B: Proteinmenge und verfügbare Cofaktoren bestimmen gemeinsam die Funktion. C: Die Reaktion auf Cofaktorzugabe spricht gegen diese pauschale Deutung. D: Beschrieben ist die funktionelle Besserung durch einen wasserlöslichen Cofaktor. E: Es unterstützt die enzymatische Modifikation und ist kein Ersatzprotein. Quelle: Vorlesungsfolien, PDF-S. 7,18–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Mangel trotz normalem Enzymprotein"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mangel trotz normalem Enzymprotein"
+      ],
+      "questionGoal": "Mangel trotz normalem Enzymprotein",
+      "structuredExplanation": {
+        "coreIdea": "Mangel trotz normalem Enzymprotein",
+        "correctReasoning": "Proteinmenge und verfügbare Cofaktoren bestimmen gemeinsam die Funktion.",
+        "wrongAnswerExplanations": {
+          "A": "Ein vorhandenes Enzym kann bei fehlendem Cofaktor unzureichend arbeiten.",
+          "C": "Die Reaktion auf Cofaktorzugabe spricht gegen diese pauschale Deutung.",
+          "D": "Beschrieben ist die funktionelle Besserung durch einen wasserlöslichen Cofaktor.",
+          "E": "Es unterstützt die enzymatische Modifikation und ist kein Ersatzprotein."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "Beurteilen Sie die Verknüpfung von Kupfertransport und Organismusfunktion.",
+      "options": [
+        {
+          "text": "Ein ATP7B-Defekt ist funktionell gleichbedeutend mit einer fehlenden Kupferaufnahme aus dem Darmlumen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Kupfermangel kann mehrere Enzymsysteme gleichzeitig betreffen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein ATP7A-Defekt kann die systemische Bereitstellung von aufgenommenem Kupfer beeinträchtigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Kupfer kann jede Funktion der B-Vitamin-Coenzyme ohne weitere Voraussetzungen übernehmen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: ATP7B betrifft vor allem die hepatische Verarbeitung und Ausscheidung. B: Ein gemeinsamer Metallcofaktor verbindet unterschiedliche Funktionen. C: Die gestörte Abgabe aus Enterozyten trägt bei Menkes zum Kupfermangel bei. D: Metallionen und organische Coenzyme erfüllen spezifische, nicht beliebig austauschbare Aufgaben. Quelle: Vorlesungsfolien, PDF-S. 22–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "Transportdefekt und Enzymfolgen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportdefekt und Enzymfolgen"
+      ],
+      "questionGoal": "Transportdefekt und Enzymfolgen",
+      "structuredExplanation": {
+        "coreIdea": "Transportdefekt und Enzymfolgen",
+        "correctReasoning": "Ein gemeinsamer Metallcofaktor verbindet unterschiedliche Funktionen. Die gestörte Abgabe aus Enterozyten trägt bei Menkes zum Kupfermangel bei.",
+        "wrongAnswerExplanations": {
+          "A": "ATP7B betrifft vor allem die hepatische Verarbeitung und Ausscheidung.",
+          "B": "Ein gemeinsamer Metallcofaktor verbindet unterschiedliche Funktionen.",
+          "C": "Die gestörte Abgabe aus Enterozyten trägt bei Menkes zum Kupfermangel bei.",
+          "D": "Metallionen und organische Coenzyme erfüllen spezifische, nicht beliebig austauschbare Aufgaben."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv10_q20",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV10",
+      "stem": "In einem Test wird Lactat zu Pyruvat oxidiert; gleichzeitig nimmt die Menge an NADH zu. Welche Rolle übernimmt NAD+ dabei?",
+      "options": [
+        {
+          "text": "Es nimmt Reduktionsäquivalente des Substrats als Cosubstrat auf.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es hydrolysiert die Peptidbindungen der Lactatdehydrogenase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es spendet eine Acylgruppe über eine Thiolgruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es oxidiert das Substrat, ohne selbst chemisch verändert zu werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es wird zu TPP phosphoryliert und trägt die Carboxylgruppe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Lactat wird oxidiert und NAD+ im gekoppelten Schritt reduziert. B: NAD+ ist kein proteolytisches Enzym. C: Das wäre eine CoA-ähnliche Funktion und kein NAD-Redoxschritt. D: In diesem Einzelschritt wird NAD+ zu NADH reduziert und muss anschliessend regeneriert werden. E: NAD und TPP sind unterschiedliche Cofaktoren mit anderen Aufgaben. Quelle: Vorlesungsfolien, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV10",
+        "NAD-Redoxreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NAD-Redoxreaktion"
+      ],
+      "questionGoal": "NAD-Redoxreaktion",
+      "structuredExplanation": {
+        "coreIdea": "NAD-Redoxreaktion",
+        "correctReasoning": "Lactat wird oxidiert und NAD+ im gekoppelten Schritt reduziert.",
+        "wrongAnswerExplanations": {
+          "B": "NAD+ ist kein proteolytisches Enzym.",
+          "C": "Das wäre eine CoA-ähnliche Funktion und kein NAD-Redoxschritt.",
+          "D": "In diesem Einzelschritt wird NAD+ zu NADH reduziert und muss anschliessend regeneriert werden.",
+          "E": "NAD und TPP sind unterschiedliche Cofaktoren mit anderen Aufgaben."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block2_kv09_20261102",
+  "lectureCode": "KV09",
+  "title": "Enzyme – Katalyse, Kinetik und Regulation",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "KV9_Vorlesung Enzyme HS2026 ml.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Km wird nicht pauschal mit Kd gleichgesetzt; bei kooperativer Kinetik wird S0,5 verwendet. Kovalente Hemmung und mechanismusbasierte Inaktivierung sind getrennt. Pankreaslipase und Procolipase werden unterschieden.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Die katalytische Funktion von Enzymen und die Bedeutung des aktiven Zentrums erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Michaelis-Menten-Kinetik, Enzymaktivität und deren experimentelle Grenzen interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Regulation durch Enzymmenge, Substratangebot und Enzymformen unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Allosterie, kovalente Modifikation und proteolytische Aktivierung mechanistisch erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Reversible und irreversible Enzymhemmung anhand von Mechanismus und Messdaten unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv09_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Eine Reaktion erreicht mit einem Enzym viel schneller das Gleichgewicht. Die anfänglichen Substrat- und Produktkonzentrationen sind unverändert. Welche Erklärung trifft zu?",
+      "options": [
+        {
+          "text": "Das Enzym wird pro Umsatz verbraucht und liefert dadurch Reaktionsenergie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Enzym erhöht die Gleichgewichtskonstante durch stärkere Produktbindung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Enzym senkt die Aktivierungsbarriere, ohne die freie Reaktionsenthalpie zu verändern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Enzym erhöht ausschliesslich die Geschwindigkeit der Hinreaktion.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Enzym macht die freie Reaktionsenthalpie negativer und verschiebt dadurch das Gleichgewicht.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Enzym geht regeneriert aus dem katalytischen Zyklus hervor. B: Ein Katalysator verändert die Gleichgewichtskonstante nicht. C: Katalyse verändert die Geschwindigkeit beider Richtungen, nicht die thermodynamische Gleichgewichtslage. D: Hin- und Rückreaktion werden beschleunigt; die Gleichgewichtslage bleibt bestehen. E: Eine Änderung der Reaktionsgeschwindigkeit ist keine Änderung der freien Reaktionsenthalpie. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Katalyse und Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Katalyse und Gleichgewicht"
+      ],
+      "questionGoal": "Katalyse und Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Katalyse und Gleichgewicht",
+        "correctReasoning": "Katalyse verändert die Geschwindigkeit beider Richtungen, nicht die thermodynamische Gleichgewichtslage.",
+        "wrongAnswerExplanations": {
+          "A": "Das Enzym geht regeneriert aus dem katalytischen Zyklus hervor.",
+          "B": "Ein Katalysator verändert die Gleichgewichtskonstante nicht.",
+          "D": "Hin- und Rückreaktion werden beschleunigt; die Gleichgewichtslage bleibt bestehen.",
+          "E": "Eine Änderung der Reaktionsgeschwindigkeit ist keine Änderung der freien Reaktionsenthalpie."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Beurteilen Sie die Folgen der Bindung eines Substrats im aktiven Zentrum.",
+      "options": [
+        {
+          "text": "Jede am Enzym gebundene Substanz ist zwangsläufig ein Substrat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein günstigeres aktives Zentrum kann eine endergone Gesamtreaktion ohne Kopplung thermodynamisch exergon machen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die räumliche Orientierung reaktiver Gruppen kann den Umsatz erleichtern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nach Produktfreisetzung steht das Enzym für einen weiteren Zyklus zur Verfügung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Inhibitoren und regulatorische Liganden können binden. B: Die freie Energie der ungekoppelten Gesamtreaktion wird durch Katalyse nicht verändert. C: Produktive Annäherung ist ein Beitrag zur Senkung der Aktivierungsbarriere. D: Das Enzym wird katalytisch eingesetzt und regeneriert. Quelle: Vorlesungsfolien, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Aktives Zentrum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktives Zentrum"
+      ],
+      "questionGoal": "Aktives Zentrum",
+      "structuredExplanation": {
+        "coreIdea": "Aktives Zentrum",
+        "correctReasoning": "Produktive Annäherung ist ein Beitrag zur Senkung der Aktivierungsbarriere. Das Enzym wird katalytisch eingesetzt und regeneriert.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Inhibitoren und regulatorische Liganden können binden.",
+          "B": "Die freie Energie der ungekoppelten Gesamtreaktion wird durch Katalyse nicht verändert.",
+          "C": "Produktive Annäherung ist ein Beitrag zur Senkung der Aktivierungsbarriere.",
+          "D": "Das Enzym wird katalytisch eingesetzt und regeneriert."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Ein Enzym folgt der Michaelis-Menten-Gleichung. Bei einer Substratkonzentration von 2 mmol/L beträgt die Anfangsgeschwindigkeit die Hälfte von Vmax. Welcher Km ergibt sich?",
+      "options": [
+        {
+          "text": "Der Wert von Vmax in µmol/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,5 mmol/L",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1 mmol/L",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "4 mmol/L",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2 mmol/L",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Km hat die Dimension einer Konzentration, nicht einer Umsatzrate. B: Damit läge die Geschwindigkeit bei S = 2 mmol/L bereits bei 0,8 Vmax. C: Das wäre nicht die Konzentration, bei der hier die halbmaximale Geschwindigkeit gemessen wurde. D: Ein Km von 4 mmol/L ergäbe bei S = 2 mmol/L erst Vmax/3. E: Bei S = Km gilt v = Vmax/2. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Halbmaximale Geschwindigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbmaximale Geschwindigkeit"
+      ],
+      "questionGoal": "Halbmaximale Geschwindigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Halbmaximale Geschwindigkeit",
+        "correctReasoning": "Bei S = Km gilt v = Vmax/2.",
+        "wrongAnswerExplanations": {
+          "A": "Km hat die Dimension einer Konzentration, nicht einer Umsatzrate.",
+          "B": "Damit läge die Geschwindigkeit bei S = 2 mmol/L bereits bei 0,8 Vmax.",
+          "C": "Das wäre nicht die Konzentration, bei der hier die halbmaximale Geschwindigkeit gemessen wurde.",
+          "D": "Ein Km von 4 mmol/L ergäbe bei S = 2 mmol/L erst Vmax/3."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Die Konzentration eines Michaelis-Menten-Enzyms wird verdoppelt; Substrat liegt weiterhin sättigend vor, Temperatur und pH bleiben gleich. Welche Änderung ist zu erwarten?",
+      "options": [
+        {
+          "text": "Vmax und Km verdoppeln sich beide.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vmax verdoppelt sich, während Km unverändert bleibt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Km verdoppelt sich, während Vmax unverändert bleibt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vmax bleibt gleich und Km halbiert sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vmax halbiert sich, während Km unverändert bleibt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Substratkonzentration für Halbmaximalität wird nicht durch mehr Enzym verdoppelt. B: Vmax ist proportional zur Menge aktiven Enzyms; Km ist unter gleichen Bedingungen nicht von dieser Menge abhängig. C: Dies verwechselt Enzymmenge mit Änderungen der kinetischen Eigenschaften. D: Zusätzliches aktives Enzym vergrössert die maximale Gesamtrate. E: Mehr aktive Zentren erhöhen die maximale Rate, statt sie zu halbieren. Quelle: Vorlesungsfolien, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Enzymverdopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enzymverdopplung"
+      ],
+      "questionGoal": "Enzymverdopplung",
+      "structuredExplanation": {
+        "coreIdea": "Enzymverdopplung",
+        "correctReasoning": "Vmax ist proportional zur Menge aktiven Enzyms; Km ist unter gleichen Bedingungen nicht von dieser Menge abhängig.",
+        "wrongAnswerExplanations": {
+          "A": "Die Substratkonzentration für Halbmaximalität wird nicht durch mehr Enzym verdoppelt.",
+          "C": "Dies verwechselt Enzymmenge mit Änderungen der kinetischen Eigenschaften.",
+          "D": "Zusätzliches aktives Enzym vergrössert die maximale Gesamtrate.",
+          "E": "Mehr aktive Zentren erhöhen die maximale Rate, statt sie zu halbieren."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Beurteilen Sie die Interpretation enzymkinetischer Messwerte.",
+      "options": [
+        {
+          "text": "Bei starker Substratsättigung nähert sich die Anfangsgeschwindigkeit Vmax.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein kleiner Km ist bei jedem Reaktionsmechanismus identisch mit einer kleinen Dissoziationskonstante.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aus einem einzigen Km-Wert kann die Enzymaktivität in jedem Gewebe unabhängig vom Substratangebot berechnet werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Aktivität von 1 U entspricht 1 µmol Umsatz pro Minute unter festgelegten Bedingungen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die endliche Zahl aktiver Zentren begrenzt die Rate. B: Km enthält im Allgemeinen mehrere Geschwindigkeitskonstanten und ist nicht generell Kd. C: Dafür fehlen unter anderem Vmax beziehungsweise aktive Enzymmenge und Substratkonzentration. D: Substrat, Temperatur und pH gehören zur Definition der Messbedingungen. Quelle: Vorlesungsfolien, PDF-S. 5–7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Kinetische Messbedingungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kinetische Messbedingungen"
+      ],
+      "questionGoal": "Kinetische Messbedingungen",
+      "structuredExplanation": {
+        "coreIdea": "Kinetische Messbedingungen",
+        "correctReasoning": "Die endliche Zahl aktiver Zentren begrenzt die Rate. Substrat, Temperatur und pH gehören zur Definition der Messbedingungen.",
+        "wrongAnswerExplanations": {
+          "A": "Die endliche Zahl aktiver Zentren begrenzt die Rate.",
+          "B": "Km enthält im Allgemeinen mehrere Geschwindigkeitskonstanten und ist nicht generell Kd.",
+          "C": "Dafür fehlen unter anderem Vmax beziehungsweise aktive Enzymmenge und Substratkonzentration.",
+          "D": "Substrat, Temperatur und pH gehören zur Definition der Messbedingungen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Nach einem Hormonreiz steigt über mehrere Stunden die Transkription eines Enzymgens. Pro Enzymmolekül bleiben die kinetischen Eigenschaften gleich. Welche Regulation erklärt die erhöhte Stoffwechselkapazität?",
+      "options": [
+        {
+          "text": "Eine sofortige allosterische Aktivierung bereits vorhandener Enzyme",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine proteolytische Spaltung aller neu gebildeten Enzyme zu inaktiven Fragmenten",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Abnahme des Substratangebots bei gleichbleibender Enzymmenge",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Zunahme der Enzymmenge durch Induktion",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine kompetitive Hemmung der vorhandenen aktiven Zentren",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese erfordert keine erhöhte Transkription und erklärt die hier beschriebene Mengenänderung nicht. B: Ein solcher Abbau würde die Zahl aktiver Enzymmoleküle vermindern. C: Dies erklärt weder die Transkriptionszunahme noch die erhöhte Kapazität. D: Mehr Enzymmoleküle erhöhen die mögliche Gesamtrate, ohne die Eigenschaften jedes Moleküls ändern zu müssen. E: Sie würde bei gleichem Substratangebot die Rate eher vermindern. Quelle: Vorlesungsfolien, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Regulation der Enzymmenge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regulation der Enzymmenge"
+      ],
+      "questionGoal": "Regulation der Enzymmenge",
+      "structuredExplanation": {
+        "coreIdea": "Regulation der Enzymmenge",
+        "correctReasoning": "Mehr Enzymmoleküle erhöhen die mögliche Gesamtrate, ohne die Eigenschaften jedes Moleküls ändern zu müssen.",
+        "wrongAnswerExplanations": {
+          "A": "Diese erfordert keine erhöhte Transkription und erklärt die hier beschriebene Mengenänderung nicht.",
+          "B": "Ein solcher Abbau würde die Zahl aktiver Enzymmoleküle vermindern.",
+          "C": "Dies erklärt weder die Transkriptionszunahme noch die erhöhte Kapazität.",
+          "E": "Sie würde bei gleichem Substratangebot die Rate eher vermindern."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q07",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Beurteilen Sie unterschiedliche Ursachen veränderter Enzymaktivität.",
+      "options": [
+        {
+          "text": "Enzyminduktion und reversible Phosphorylierung verändern die Aktivität zwingend auf derselben Zeitskala.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Unterschiedliche Untereinheitenkombinationen können verschiedene Isoenzyme ergeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mitochondriale und zytosolische Formen eines Enzyms müssen durch proteolytische Spaltung desselben Vorläufers entstehen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein erhöhter Substratspiegel kann die Rate ohne Änderung der Enzymmenge steigern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine Änderung der Genexpression braucht typischerweise mehr Zeit als die Modifikation vorhandener Moleküle. B: Die Vorlesung nennt unter anderem LDH und Kreatinkinase als Beispiele. C: Unterschiedliche Gene können kompartimentspezifische Formen kodieren. D: Dies gilt insbesondere im nicht gesättigten Bereich. Quelle: Vorlesungsfolien, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Enzymformen und Ebenen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enzymformen und Ebenen"
+      ],
+      "questionGoal": "Enzymformen und Ebenen",
+      "structuredExplanation": {
+        "coreIdea": "Enzymformen und Ebenen",
+        "correctReasoning": "Die Vorlesung nennt unter anderem LDH und Kreatinkinase als Beispiele. Dies gilt insbesondere im nicht gesättigten Bereich.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Änderung der Genexpression braucht typischerweise mehr Zeit als die Modifikation vorhandener Moleküle.",
+          "B": "Die Vorlesung nennt unter anderem LDH und Kreatinkinase als Beispiele.",
+          "C": "Unterschiedliche Gene können kompartimentspezifische Formen kodieren.",
+          "D": "Dies gilt insbesondere im nicht gesättigten Bereich."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Ein oligomeres Enzym zeigt nach Bindung seines Substrats eine höhere Bindungsneigung weiterer Untereinheiten. Die Geschwindigkeitskurve ist sigmoid. Welche Beschreibung passt?",
+      "options": [
+        {
+          "text": "Positive homotrope Kooperativität; S0,5 beschreibt die Halbmaximalität zweckmässiger als ein Michaelis-Menten-Km.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Erhöhung der Enzymmenge ohne Änderung der Bindungseigenschaften",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kompetitive Hemmung durch ein vom Substrat verschiedenes Molekül",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Irreversible Inaktivierung durch Spaltung einer Peptidbindung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Negative homotrope Kooperativität mit einer unveränderten Michaelis-Menten-Hyperbel",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Substrat ist selbst der Effektor; die einfache Michaelis-Menten-Hyperbel beschreibt diesen Verlauf nicht. B: Mehr Enzym allein erklärt den kooperativen Kurvenverlauf nicht. C: Beschrieben wird Substratkooperativität ohne separaten Inhibitor. D: Der Befund beschreibt eine reversible Bindungskopplung zwischen Untereinheiten. E: Erleichterte weitere Bindung entspricht positiver, nicht negativer Kooperativität. Quelle: Vorlesungsfolien, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Kooperativität und S0,5"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kooperativität und S0,5"
+      ],
+      "questionGoal": "Kooperativität und S0,5",
+      "structuredExplanation": {
+        "coreIdea": "Kooperativität und S0,5",
+        "correctReasoning": "Das Substrat ist selbst der Effektor; die einfache Michaelis-Menten-Hyperbel beschreibt diesen Verlauf nicht.",
+        "wrongAnswerExplanations": {
+          "B": "Mehr Enzym allein erklärt den kooperativen Kurvenverlauf nicht.",
+          "C": "Beschrieben wird Substratkooperativität ohne separaten Inhibitor.",
+          "D": "Der Befund beschreibt eine reversible Bindungskopplung zwischen Untereinheiten.",
+          "E": "Erleichterte weitere Bindung entspricht positiver, nicht negativer Kooperativität."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Bei der in der Vorlesung gezeigten Aspartat-Transcarbamoylase aktiviert ATP, während CTP hemmt. Welche Erklärung verknüpft diese Effekte am besten mit dem Stoffwechsel?",
+      "options": [
+        {
+          "text": "ATP kann einen Bedarf an ausgeglichener Nukleotidbereitstellung signalisieren, während das Pyrimidin-Endprodukt CTP rückkoppelt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "CTP hemmt, weil es die freie Energie der katalysierten Gesamtreaktion umkehrt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ATP aktiviert durch proteolytische Freisetzung eines neuen Enzymfragments.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "CTP muss am aktiven Zentrum zu ATP umgesetzt werden, damit die Hemmung entsteht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "ATP und CTP erhöhen beide die Transkription des Enzymgens innerhalb jedes einzelnen Umsatzes.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterschiedliche allosterische Liganden koppeln die Aktivität an den Zustand der Nukleotidpools. B: Ein Effektor ändert die Enzymaktivität, nicht die thermodynamische Bilanz der Reaktion. C: Allosterische Aktivierung erfordert keine irreversible Zymogenspaltung. D: CTP wirkt hier als regulatorischer Effektor, nicht als ATP-Vorstufe im aktiven Zentrum. E: Die dargestellte allosterische Regulation wirkt auf vorhandene Enzymmoleküle. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Allosterische Gegenregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Allosterische Gegenregulation"
+      ],
+      "questionGoal": "Allosterische Gegenregulation",
+      "structuredExplanation": {
+        "coreIdea": "Allosterische Gegenregulation",
+        "correctReasoning": "Unterschiedliche allosterische Liganden koppeln die Aktivität an den Zustand der Nukleotidpools.",
+        "wrongAnswerExplanations": {
+          "B": "Ein Effektor ändert die Enzymaktivität, nicht die thermodynamische Bilanz der Reaktion.",
+          "C": "Allosterische Aktivierung erfordert keine irreversible Zymogenspaltung.",
+          "D": "CTP wirkt hier als regulatorischer Effektor, nicht als ATP-Vorstufe im aktiven Zentrum.",
+          "E": "Die dargestellte allosterische Regulation wirkt auf vorhandene Enzymmoleküle."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q10",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Beurteilen Sie die Regulation durch Proteinphosphorylierung.",
+      "options": [
+        {
+          "text": "Die Rückreaktion der Phosphatase setzt das zuvor verbrauchte ATP direkt wieder zusammen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Phosphorylierung aktiviert jedes regulierte Enzym.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Proteinphosphatase entfernt die Phosphatgruppe hydrolytisch.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Proteinkinase kann eine Phosphatgruppe von ATP auf Serin, Threonin oder Tyrosin übertragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Hydrolytische Dephosphorylierung ist keine ATP-Synthese. B: Je nach Protein kann sie aktivieren oder hemmen. C: Das ermöglicht eine reversible Umschaltung. D: Diese Seitenketten besitzen geeignete Hydroxygruppen. Quelle: Vorlesungsfolien, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Reversible Phosphorylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reversible Phosphorylierung"
+      ],
+      "questionGoal": "Reversible Phosphorylierung",
+      "structuredExplanation": {
+        "coreIdea": "Reversible Phosphorylierung",
+        "correctReasoning": "Das ermöglicht eine reversible Umschaltung. Diese Seitenketten besitzen geeignete Hydroxygruppen.",
+        "wrongAnswerExplanations": {
+          "A": "Hydrolytische Dephosphorylierung ist keine ATP-Synthese.",
+          "B": "Je nach Protein kann sie aktivieren oder hemmen.",
+          "C": "Das ermöglicht eine reversible Umschaltung.",
+          "D": "Diese Seitenketten besitzen geeignete Hydroxygruppen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Eine Bürstensaumprotease aktiviert zunächst wenig Trypsinogen. Danach nimmt die aktive Trypsinmenge stark zu und weitere pankreatische Proteasen werden aktiviert. Was erklärt die Verstärkung?",
+      "options": [
+        {
+          "text": "Trypsin phosphoryliert alle Zymogene unter ATP-Verbrauch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Verdauungsenzyme werden einschliesslich der pankreatischen Lipase erst durch dieselbe Spaltung aktiviert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Trypsin aktiviert weiteres Trypsinogen und andere Zymogene durch begrenzte Proteolyse.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Trypsin erhöht im Darmlumen die Transkription pankreatischer Gene.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Proteolyse ist durch eine Phosphatase direkt rückgängig zu machen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die beschriebene Aktivierung beruht auf Peptidspaltung, nicht auf Kinaseaktivität. B: Nicht alle Verdauungsenzyme sind Zymogene; pankreatische Lipase wird aktiv sezerniert. C: Eine initiale Spaltung kann so eine Aktivierungskaskade auslösen. D: Die Kaskade wirkt extrazellulär auf bereits sezernierte Vorstufen. E: Eine abgespaltene Peptidsequenz wird durch Dephosphorylierung nicht wieder angefügt. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Zymogenkaskade"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zymogenkaskade"
+      ],
+      "questionGoal": "Zymogenkaskade",
+      "structuredExplanation": {
+        "coreIdea": "Zymogenkaskade",
+        "correctReasoning": "Eine initiale Spaltung kann so eine Aktivierungskaskade auslösen.",
+        "wrongAnswerExplanations": {
+          "A": "Die beschriebene Aktivierung beruht auf Peptidspaltung, nicht auf Kinaseaktivität.",
+          "B": "Nicht alle Verdauungsenzyme sind Zymogene; pankreatische Lipase wird aktiv sezerniert.",
+          "D": "Die Kaskade wirkt extrazellulär auf bereits sezernierte Vorstufen.",
+          "E": "Eine abgespaltene Peptidsequenz wird durch Dephosphorylierung nicht wieder angefügt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Beurteilen Sie die folgenden Zuordnungen von Aktivierungsmechanismen.",
+      "options": [
+        {
+          "text": "Die Aktivierung von Procolipase beweist, dass pankreatische Lipase selbst als Prolipase sezerniert wird.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Aktivierung eines Zymogens durch Abspaltung eines Peptids ist für dieses Molekül gewöhnlich irreversibel.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bindung eines vom Substrat verschiedenen Regulators ist heterotrope Regulation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Allosterische Regulation setzt bei jedem Protein mehrere Untereinheiten voraus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Procolipase und Lipase sind unterschiedliche Proteine; nur erstere ist hier die Vorstufe. B: Eine einfache Liganddissoziation stellt die Vorstufe nicht wieder her. C: Homotrop wäre eine Regulation durch das Substrat selbst. D: Auch monomere Enzyme können durch einen anderen Liganden allosterisch reguliert werden. Quelle: Vorlesungsfolien, PDF-S. 10–13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Aktivierungsarten unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierungsarten unterscheiden"
+      ],
+      "questionGoal": "Aktivierungsarten unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierungsarten unterscheiden",
+        "correctReasoning": "Eine einfache Liganddissoziation stellt die Vorstufe nicht wieder her. Homotrop wäre eine Regulation durch das Substrat selbst.",
+        "wrongAnswerExplanations": {
+          "A": "Procolipase und Lipase sind unterschiedliche Proteine; nur erstere ist hier die Vorstufe.",
+          "B": "Eine einfache Liganddissoziation stellt die Vorstufe nicht wieder her.",
+          "C": "Homotrop wäre eine Regulation durch das Substrat selbst.",
+          "D": "Auch monomere Enzyme können durch einen anderen Liganden allosterisch reguliert werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Ein reversibler Inhibitor erhöht bei einem Michaelis-Menten-Enzym den apparenten Km; Vmax bleibt bei hinreichend hoher Substratkonzentration gleich. Welcher Mechanismus passt am besten?",
+      "options": [
+        {
+          "text": "Halbierung der eingesetzten aktiven Enzymmenge",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kompetition zwischen Substrat und Inhibitor um das aktive Zentrum",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Irreversible Zerstörung eines festen Anteils der aktiven Zentren",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Reine nichtkompetitive Hemmung mit gleicher Affinität zu E und ES",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Positive homotrope Kooperativität durch das Substrat",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies senkt Vmax und lässt Km unter gleichen Bedingungen unverändert. B: Hohe Substratkonzentrationen verdrängen den kompetitiven Inhibitor funktionell. C: Dabei wäre die maximale Rate der verbleibenden aktiven Enzymmenge geringer. D: Im einfachen Modell sinkt dabei Vmax, während Km gleich bleibt. E: Diese kann eine sigmoide Kinetik erzeugen und erklärt nicht spezifisch dieses kompetitive Muster. Quelle: Vorlesungsfolien, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Kompetitive Hemmung erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompetitive Hemmung erkennen"
+      ],
+      "questionGoal": "Kompetitive Hemmung erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Kompetitive Hemmung erkennen",
+        "correctReasoning": "Hohe Substratkonzentrationen verdrängen den kompetitiven Inhibitor funktionell.",
+        "wrongAnswerExplanations": {
+          "A": "Dies senkt Vmax und lässt Km unter gleichen Bedingungen unverändert.",
+          "C": "Dabei wäre die maximale Rate der verbleibenden aktiven Enzymmenge geringer.",
+          "D": "Im einfachen Modell sinkt dabei Vmax, während Km gleich bleibt.",
+          "E": "Diese kann eine sigmoide Kinetik erzeugen und erklärt nicht spezifisch dieses kompetitive Muster."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Für denselben reversiblen Inhibitor werden bei verschiedenen Substratkonzentrationen unterschiedliche IC50-Werte gemessen. Welche Folgerung ist am besten begründet?",
+      "options": [
+        {
+          "text": "IC50 ist eine assayabhängige Hemmkonzentration und muss zusammen mit den Messbedingungen interpretiert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder IC50-Wert ist identisch mit der substratunabhängigen Bindungskonstante Ki.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "IC50 kann nur bei vollständiger Abwesenheit von Substrat bestimmt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die unterschiedlichen Werte beweisen eine Änderung der Aminosäuresequenz während des Assays.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein niedriger IC50-Wert beweist eine irreversible kovalente Bindung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Insbesondere bei kompetitiver Hemmung beeinflusst das Verhältnis von Substratkonzentration zu Km den Wert. B: IC50 und Ki sind nicht generell gleich. C: Zur Messung einer Umsatzhemmung wird ein definierter Substratumsatz benötigt. D: Veränderte Messbedingungen können den Unterschied ohne Mutation erklären. E: Auch reversible Inhibitoren können hohe Potenz besitzen. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "IC50 interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "IC50 interpretieren"
+      ],
+      "questionGoal": "IC50 interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "IC50 interpretieren",
+        "correctReasoning": "Insbesondere bei kompetitiver Hemmung beeinflusst das Verhältnis von Substratkonzentration zu Km den Wert.",
+        "wrongAnswerExplanations": {
+          "B": "IC50 und Ki sind nicht generell gleich.",
+          "C": "Zur Messung einer Umsatzhemmung wird ein definierter Substratumsatz benötigt.",
+          "D": "Veränderte Messbedingungen können den Unterschied ohne Mutation erklären.",
+          "E": "Auch reversible Inhibitoren können hohe Potenz besitzen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q15",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Beurteilen Sie die Mechanismen von α1-Proteinase-Inhibitor und Organophosphaten.",
+      "options": [
+        {
+          "text": "Diisopropylfluorophosphat kann das katalytische Serin der Acetylcholinesterase modifizieren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder kovalent bindende Inhibitor ist allein deshalb ein mechanismusbasierter Suizidinhibitor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Serpin α1-Proteinase-Inhibitor kann Elastase in einem kovalenten Komplex festhalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein stabil kovalent blockiertes aktives Zentrum wird durch mehr Substrat unmittelbar wieder frei.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dadurch wird der Acetylcholinabbau gehemmt. B: Mechanismusbasiert bezeichnet zusätzlich die enzymatische Umwandlung des Hemmstoffs zum reaktiven Inaktivator. C: Die normale Freisetzung aus dem Acyl-Enzym-Zwischenzustand wird verhindert. D: Substratkonkurrenz löst eine solche chemische Blockade nicht. Quelle: Vorlesungsfolien, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Irreversible Proteasehemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Irreversible Proteasehemmung"
+      ],
+      "questionGoal": "Irreversible Proteasehemmung",
+      "structuredExplanation": {
+        "coreIdea": "Irreversible Proteasehemmung",
+        "correctReasoning": "Dadurch wird der Acetylcholinabbau gehemmt. Die normale Freisetzung aus dem Acyl-Enzym-Zwischenzustand wird verhindert.",
+        "wrongAnswerExplanations": {
+          "A": "Dadurch wird der Acetylcholinabbau gehemmt.",
+          "B": "Mechanismusbasiert bezeichnet zusätzlich die enzymatische Umwandlung des Hemmstoffs zum reaktiven Inaktivator.",
+          "C": "Die normale Freisetzung aus dem Acyl-Enzym-Zwischenzustand wird verhindert.",
+          "D": "Substratkonkurrenz löst eine solche chemische Blockade nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Acetylsalicylsäure hemmt Cyclooxygenase durch Acetylierung eines Serinrests. Welche Folge unterscheidet diesen Vorgang von einer rein kompetitiven Hemmung?",
+      "options": [
+        {
+          "text": "Die Acetylierung erhöht die Gleichgewichtskonstante der Prostaglandinsynthese.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Hemmung verschwindet sofort, sobald Arachidonsäure das aktive Zentrum erreicht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Hemmung beruht auf einer Abnahme der Cyclooxygenase-Genkopien.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Cyclooxygenase muss den Hemmstoff in unbegrenzter Menge als normales Substrat umsetzen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mehr Substrat entfernt die kovalent gebundene Acetylgruppe nicht und stellt das betroffene Enzym nicht sofort wieder her.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hemmung verändert die Reaktionsgeschwindigkeit, nicht die thermodynamische Gleichgewichtskonstante. B: Das würde eine verdrängbare reversible Bindung voraussetzen. C: Eine akute Acetylierung verändert die vorhandenen Proteinmoleküle. D: Die entscheidende Folge ist eine kovalente Enzymmodifikation, keine kontinuierliche Katalyse des Hemmstoffs. E: Die chemische Modifikation blockiert den Zugang der Arachidonsäure irreversibel für das modifizierte Molekül. Quelle: Vorlesungsfolien, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Acetylsalicylsäure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Acetylsalicylsäure"
+      ],
+      "questionGoal": "Acetylsalicylsäure",
+      "structuredExplanation": {
+        "coreIdea": "Acetylsalicylsäure",
+        "correctReasoning": "Die chemische Modifikation blockiert den Zugang der Arachidonsäure irreversibel für das modifizierte Molekül.",
+        "wrongAnswerExplanations": {
+          "A": "Hemmung verändert die Reaktionsgeschwindigkeit, nicht die thermodynamische Gleichgewichtskonstante.",
+          "B": "Das würde eine verdrängbare reversible Bindung voraussetzen.",
+          "C": "Eine akute Acetylierung verändert die vorhandenen Proteinmoleküle.",
+          "D": "Die entscheidende Folge ist eine kovalente Enzymmodifikation, keine kontinuierliche Katalyse des Hemmstoffs."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Für ein Michaelis-Menten-Enzym gelten Vmax = 120 µmol/min und Km = 3 mmol/L. Welche Anfangsgeschwindigkeit ergibt sich bei S = 9 mmol/L?",
+      "options": [
+        {
+          "text": "120 µmol/min",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "360 µmol/min",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "60 µmol/min",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "30 µmol/min",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "90 µmol/min",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei endlicher Substratkonzentration wird Vmax hier nur angenähert. B: Die Michaelis-Menten-Rate kann Vmax nicht überschreiten. C: Halbmaximalität läge bei S = 3 mmol/L vor. D: Dies entspricht nicht dem Quotienten S/(Km+S) = 3/4. E: 120 × 9 / (3 + 9) = 90 µmol/min. Quelle: Vorlesungsfolien, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Geschwindigkeit berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschwindigkeit berechnen"
+      ],
+      "questionGoal": "Geschwindigkeit berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Geschwindigkeit berechnen",
+        "correctReasoning": "120 × 9 / (3 + 9) = 90 µmol/min.",
+        "wrongAnswerExplanations": {
+          "A": "Bei endlicher Substratkonzentration wird Vmax hier nur angenähert.",
+          "B": "Die Michaelis-Menten-Rate kann Vmax nicht überschreiten.",
+          "C": "Halbmaximalität läge bei S = 3 mmol/L vor.",
+          "D": "Dies entspricht nicht dem Quotienten S/(Km+S) = 3/4."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Nach Zugabe eines Metaboliten steigt die Enzymaktivität innerhalb von Sekunden, während die Proteinmenge konstant bleibt. Beurteilen Sie mögliche Deutungen.",
+      "options": [
+        {
+          "text": "Eine Bindung an einen regulatorischen Ort ist mit dem Zeitverlauf vereinbar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine unveränderte Enzymmenge schliesst kovalente Aktivitätsregulation aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein höheres Substratangebot kann die Rate bei unveränderter Proteinmenge erhöhen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Messung beweist bereits eine erhöhte Transkription des Enzymgens.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Allosterische Effekte benötigen keine Neusynthese. B: Vorhandene Enzyme können etwa durch Phosphorylierung reguliert werden. C: Dies setzt nicht gesättigte aktive Zentren voraus. D: Die konstante Proteinmenge und der schnelle Effekt erlauben diese Folgerung nicht. Quelle: Vorlesungsfolien, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Aktivität und Enzymmenge trennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivität und Enzymmenge trennen"
+      ],
+      "questionGoal": "Aktivität und Enzymmenge trennen",
+      "structuredExplanation": {
+        "coreIdea": "Aktivität und Enzymmenge trennen",
+        "correctReasoning": "Allosterische Effekte benötigen keine Neusynthese. Dies setzt nicht gesättigte aktive Zentren voraus.",
+        "wrongAnswerExplanations": {
+          "A": "Allosterische Effekte benötigen keine Neusynthese.",
+          "B": "Vorhandene Enzyme können etwa durch Phosphorylierung reguliert werden.",
+          "C": "Dies setzt nicht gesättigte aktive Zentren voraus.",
+          "D": "Die konstante Proteinmenge und der schnelle Effekt erlauben diese Folgerung nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Bei der Beurteilung eines Hemmstoffs werden Bindungsort, Substratkonkurrenz und Reversibilität getrennt betrachtet. Beurteilen Sie die folgenden mechanistischen Zuordnungen.",
+      "options": [
+        {
+          "text": "Ein substratähnlicher Inhibitor kann das aktive Zentrum besetzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine hohe Konzentration eines kompetitiven Inhibitors muss das Enzymprotein proteolytisch abbauen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Allosterischer Angriffsort bedeutet automatisch irreversible Bindung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sulfonamide können in der bakteriellen Folatsynthese mit PABA konkurrieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Strukturähnlichkeit kann eine kompetitive Bindung ermöglichen. B: Die reversible Besetzung eines Bindungsorts erfordert keinen Proteinabbau. C: Bindungsort und chemische Reversibilität sind unterschiedliche Eigenschaften. D: Die Vorlesung verwendet dies als Beispiel kompetitiver Hemmung. Quelle: Vorlesungsfolien, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Angriffsort und Reversibilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Angriffsort und Reversibilität"
+      ],
+      "questionGoal": "Angriffsort und Reversibilität",
+      "structuredExplanation": {
+        "coreIdea": "Angriffsort und Reversibilität",
+        "correctReasoning": "Strukturähnlichkeit kann eine kompetitive Bindung ermöglichen. Die Vorlesung verwendet dies als Beispiel kompetitiver Hemmung.",
+        "wrongAnswerExplanations": {
+          "A": "Strukturähnlichkeit kann eine kompetitive Bindung ermöglichen.",
+          "B": "Die reversible Besetzung eines Bindungsorts erfordert keinen Proteinabbau.",
+          "C": "Bindungsort und chemische Reversibilität sind unterschiedliche Eigenschaften.",
+          "D": "Die Vorlesung verwendet dies als Beispiel kompetitiver Hemmung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv09_q20",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV09",
+      "stem": "Eine Punktmutation verändert eine Seitenkette in der Substratbindungstasche. Die gesamte Faltung und Enzymmenge bleiben erhalten, aber das bisherige Substrat bindet schlechter. Welche Deutung ist am besten begründet?",
+      "options": [
+        {
+          "text": "Die intakte Gesamtfaltung schliesst jede Änderung der Substratspezifität aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die lokale räumliche und chemische Komplementarität des aktiven Zentrums ist verändert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine schlechtere Substratbindung beweist einen irreversibel gebundenen Inhibitor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Mutation muss die Zahl der Enzymmoleküle halbiert haben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Ergebnis beweist, dass das Enzym nun eine andere Gleichgewichtskonstante derselben Reaktion erzeugt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die lokale Bindungstasche kann trotz erhaltener Gesamtfaltung verändert sein. B: Schon einzelne Seitenketten können die Erkennung und produktive Orientierung beeinflussen. C: Hier ist eine Sequenzänderung und kein gebundener Hemmstoff die Ursache. D: Die Enzymmenge wurde ausdrücklich als unverändert beschrieben. E: Eine veränderte Bindungseigenschaft verändert nicht die Gleichgewichtskonstante der Gesamtreaktion. Quelle: Vorlesungsfolien, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV09",
+        "Struktur und Substraterkennung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Struktur und Substraterkennung"
+      ],
+      "questionGoal": "Struktur und Substraterkennung",
+      "structuredExplanation": {
+        "coreIdea": "Struktur und Substraterkennung",
+        "correctReasoning": "Schon einzelne Seitenketten können die Erkennung und produktive Orientierung beeinflussen.",
+        "wrongAnswerExplanations": {
+          "A": "Die lokale Bindungstasche kann trotz erhaltener Gesamtfaltung verändert sein.",
+          "C": "Hier ist eine Sequenzänderung und kein gebundener Hemmstoff die Ursache.",
+          "D": "Die Enzymmenge wurde ausdrücklich als unverändert beschrieben.",
+          "E": "Eine veränderte Bindungseigenschaft verändert nicht die Gleichgewichtskonstante der Gesamtreaktion."
+        }
+      }
+    }
+  ]
+}

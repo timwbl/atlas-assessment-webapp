@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j2_block2_kv13_20261102",
+  "lectureCode": "KV13",
+  "title": "Membrantransport I – Intestinale Resorption",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "KV13-Membrantransport I_Fotiadis_2026.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. GLUT2 entspricht SLC2A2. HCP1/SLC46A1 wird nicht als gesicherter hauptsächlicher Hämeisentransporter abgefragt; seine Funktion als protonengekoppelter Folattransporter ist etabliert. Weder generelle Irreversibilität von SGLT1 noch obligatorische lysosomale Zerstörung des B12-Rezeptors werden behauptet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Nahrungskomponenten und die für ihre Absorption notwendigen Verarbeitungsschritte zuordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Aufbau und Permeabilität der Membran als selektive Barriere erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Transportproteine und die Bedeutung von Konzentrationsgradient und Membranpotential erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Den Alternating-Access-Mechanismus funktionell beschreiben."
+    },
+    {
+      "id": "lo5",
+      "text": "Primär und sekundär aktiven Transport anhand der Energiequelle unterscheiden."
+    },
+    {
+      "id": "lo6",
+      "text": "Einfache Diffusion und sättigbaren vermittelten Transport kinetisch unterscheiden."
+    },
+    {
+      "id": "lo7",
+      "text": "Uniport, Symport und Antiport anhand der Transportrichtung klassifizieren."
+    },
+    {
+      "id": "lo8",
+      "text": "Den protonengekoppelten Laktosetransport in Bakterien mechanistisch erklären."
+    },
+    {
+      "id": "lo9",
+      "text": "Die Resorption von Zuckern, Peptiden, Aminosäuren, Eisen und Vitaminen mit Proteinen, Membranseiten und Energiequellen verknüpfen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv13_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein kleines ungeladenes lipophiles Molekül und ein Na+-Ion liegen vor einer intakten proteinfreien Lipiddoppelschicht vor. Welche Passage ist typischerweise stärker eingeschränkt?",
+      "options": [
+        {
+          "text": "Die des Na+-Ions nur dann, wenn im Membrankern zusätzlich ein ATP-Mangel entsteht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die des Na+-Ions, weil eine Ladung den hydrophoben Membrankern nicht leicht passiert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Beide müssen mit exakt gleicher Geschwindigkeit passieren, weil nur die Membrandicke zählt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die des lipophilen Moleküls, weil der hydrophobe Kern jede unpolare Substanz abstösst.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die des lipophilen Moleküls, weil erst ein Na+-Symporter es chemisch neutralisieren muss.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die proteinfreie Barriere wirkt unabhängig von einem ATP-hydrolysierenden Transporter. B: Ionen benötigen gewöhnlich Kanäle oder andere Transportproteine. C: Ladung, Polarität und Grösse beeinflussen die Permeabilität erheblich. D: Lipophile Substanzen können sich im Membrankern lösen. E: Ein ungeladenes lipophiles Molekül benötigt diese Neutralisierung nicht. Quelle: Vorlesungsfolien, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Selektive Lipidbarriere"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektive Lipidbarriere"
+      ],
+      "questionGoal": "Selektive Lipidbarriere",
+      "structuredExplanation": {
+        "coreIdea": "Selektive Lipidbarriere",
+        "correctReasoning": "Ionen benötigen gewöhnlich Kanäle oder andere Transportproteine.",
+        "wrongAnswerExplanations": {
+          "A": "Die proteinfreie Barriere wirkt unabhängig von einem ATP-hydrolysierenden Transporter.",
+          "C": "Ladung, Polarität und Grösse beeinflussen die Permeabilität erheblich.",
+          "D": "Lipophile Substanzen können sich im Membrankern lösen.",
+          "E": "Ein ungeladenes lipophiles Molekül benötigt diese Neutralisierung nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie die Vorbereitung unterschiedlicher Nahrungskomponenten auf die Resorption.",
+      "options": [
+        {
+          "text": "Disaccharide werden gewöhnlich vor der Aufnahme durch Bürstensaumenzyme zu Monosacchariden gespalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle Nahrungsproteine müssen vollständig bis zu freien Aminosäuren gespalten sein, bevor irgendeine Aufnahme möglich ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vitamin B12 verwendet einen anderen Aufnahmeweg als Glucose.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine gemeinsame Zugehörigkeit zu Nährstoffen bedeutet, dass alle Stoffe denselben apikalen Carrier benutzen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Produkte sind Substrate der intestinalen Zuckertransporter. B: Auch Di- und Tripeptide können apikal aufgenommen werden. C: IF-B12 wird rezeptorvermittelt endozytiert; Glucose wird durch Transportproteine aufgenommen. D: Die Vorlesung zeigt substratspezifische Transportwege. Quelle: Vorlesungsfolien, PDF-S. 2,13,17,24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Nahrung vor dem Membranübertritt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nahrung vor dem Membranübertritt"
+      ],
+      "questionGoal": "Nahrung vor dem Membranübertritt",
+      "structuredExplanation": {
+        "coreIdea": "Nahrung vor dem Membranübertritt",
+        "correctReasoning": "Die Produkte sind Substrate der intestinalen Zuckertransporter. IF-B12 wird rezeptorvermittelt endozytiert; Glucose wird durch Transportproteine aufgenommen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Produkte sind Substrate der intestinalen Zuckertransporter.",
+          "B": "Auch Di- und Tripeptide können apikal aufgenommen werden.",
+          "C": "IF-B12 wird rezeptorvermittelt endozytiert; Glucose wird durch Transportproteine aufgenommen.",
+          "D": "Die Vorlesung zeigt substratspezifische Transportwege."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein einwertiges Kation liegt aussen höher konzentriert vor als innen. Das Zellinnere wird zusätzlich negativer, ohne dass sich die Konzentrationen ändern. Wie ändert sich die Triebkraft für den Einstrom durch einen offenen Kanal?",
+      "options": [
+        {
+          "text": "Die elektrische Triebkraft wirkt dem Einstrom nun zwingend entgegen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Potentialänderung wandelt den passiven Kanal in eine ATPase um.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Ion wird durch das negative Innere chemisch zu einem ungeladenen Molekül.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die elektrische Änderung kann bei geladenen Teilchen grundsätzlich keine Rolle spielen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die elektrische Triebkraft verstärkt den chemisch begünstigten Einstrom.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Für ein Kation zieht ein negativeres Inneres in dieselbe Richtung wie der beschriebene Konzentrationsgradient. B: Die Triebkraft ändert sich ohne Änderung der Proteinklasse. C: Die elektrische Anziehung entfernt seine Ladung nicht. D: Gerade bei Ionen ist der elektrochemische und nicht allein der chemische Gradient entscheidend. E: Ein negativeres Inneres begünstigt zusätzlich die Aufnahme positiver Ladung. Quelle: Vorlesungsfolien, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Chemische und elektrische Triebkraft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chemische und elektrische Triebkraft"
+      ],
+      "questionGoal": "Chemische und elektrische Triebkraft",
+      "structuredExplanation": {
+        "coreIdea": "Chemische und elektrische Triebkraft",
+        "correctReasoning": "Ein negativeres Inneres begünstigt zusätzlich die Aufnahme positiver Ladung.",
+        "wrongAnswerExplanations": {
+          "A": "Für ein Kation zieht ein negativeres Inneres in dieselbe Richtung wie der beschriebene Konzentrationsgradient.",
+          "B": "Die Triebkraft ändert sich ohne Änderung der Proteinklasse.",
+          "C": "Die elektrische Anziehung entfernt seine Ladung nicht.",
+          "D": "Gerade bei Ionen ist der elektrochemische und nicht allein der chemische Gradient entscheidend."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein Carrier besitzt eine Substratbindestelle, die abwechselnd nach aussen und nach innen zugänglich ist. Welches Merkmal unterscheidet dieses Modell von einer dauerhaft offenen Pore?",
+      "options": [
+        {
+          "text": "Die Bindestelle muss bei jedem Zyklus als freies Protein ins Zytosol diffundieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beide Membranseiten sind während des gesamten Zyklus durch dieselbe offene Röhre verbunden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Konformationswechsel koppeln den Zugang der Bindestelle an jeweils eine Membranseite.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Konformationswechsel bedeutet, dass bei jedem Zyklus eine neue Peptidkette synthetisiert wird.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Substrat bleibt an einem starren Ort ohne jede Änderung der Proteinstruktur gebunden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zugangsänderung erfolgt innerhalb des Membranproteins. B: Dies beschreibt eher eine kontinuierlich offene Pore. C: Die Bindestelle ist im Alternating-Access-Modell nicht fortlaufend zu beiden Seiten offen. D: Die vorhandene Kette wechselt ihre räumliche Anordnung. E: Ohne Zugangswechsel erklärt dieses Modell keinen vollständigen Transportzyklus. Quelle: Vorlesungsfolien, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Alternierender Zugang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alternierender Zugang"
+      ],
+      "questionGoal": "Alternierender Zugang",
+      "structuredExplanation": {
+        "coreIdea": "Alternierender Zugang",
+        "correctReasoning": "Die Bindestelle ist im Alternating-Access-Modell nicht fortlaufend zu beiden Seiten offen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zugangsänderung erfolgt innerhalb des Membranproteins.",
+          "B": "Dies beschreibt eher eine kontinuierlich offene Pore.",
+          "D": "Die vorhandene Kette wechselt ihre räumliche Anordnung.",
+          "E": "Ohne Zugangswechsel erklärt dieses Modell keinen vollständigen Transportzyklus."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q05",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein passiver Carrier wechselt zwischen aussen- und innenoffenen Zuständen. Beurteilen Sie, welche energetischen und strukturellen Folgerungen aus diesem Modell zulässig sind.",
+      "options": [
+        {
+          "text": "Der Wechsel zwischen aussen- und innenoffenem Zustand beweist bereits eine direkte ATP-Hydrolyse.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein passiver Carrier benötigt eine geeignete Triebkraft für den Nettofluss.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Substratbindung und Freisetzung können auf verschiedenen Membranseiten erfolgen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Fähigkeit zum Konformationswechsel macht die Substratspezifität überflüssig.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch passive und sekundär aktive Carrier können alternierenden Zugang verwenden. B: Ein Konformationszyklus allein erzeugt keine Energie für beliebigen Aufwärtstransport. C: Der Bindungsort wird nacheinander zugänglich. D: Spezifische Bindungswechselwirkungen bleiben für den Transport wichtig. Quelle: Vorlesungsfolien, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Transportzyklus und Richtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportzyklus und Richtung"
+      ],
+      "questionGoal": "Transportzyklus und Richtung",
+      "structuredExplanation": {
+        "coreIdea": "Transportzyklus und Richtung",
+        "correctReasoning": "Ein Konformationszyklus allein erzeugt keine Energie für beliebigen Aufwärtstransport. Der Bindungsort wird nacheinander zugänglich.",
+        "wrongAnswerExplanations": {
+          "A": "Auch passive und sekundär aktive Carrier können alternierenden Zugang verwenden.",
+          "B": "Ein Konformationszyklus allein erzeugt keine Energie für beliebigen Aufwärtstransport.",
+          "C": "Der Bindungsort wird nacheinander zugänglich.",
+          "D": "Spezifische Bindungswechselwirkungen bleiben für den Transport wichtig."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein Transportprotein hydrolysiert ATP und befördert dabei Na+ gegen dessen elektrochemischen Gradienten. Welche Klassifikation passt zur direkten Energiequelle?",
+      "options": [
+        {
+          "text": "Erleichterte Diffusion durch einen Na+-Kanal entlang des elektrochemischen Gradienten",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Passiver Uniport ohne Energiezufuhr",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sekundär aktiver Transport durch einen Na+-Gradienten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Einfache Diffusion durch Lipide",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Primär aktiver Transport",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein passiver Kanaltransport beschreibt keinen ATP-getriebenen Transport gegen den Gradienten. B: Der beschriebene Aufwärtstransport benötigt die direkte Energiekopplung. C: Hier ist die direkte Energiequelle ATP und nicht der Abbau eines zuvor erzeugten Ionengradienten. D: Diese verwendet kein ATP-hydrolysierendes Transportprotein und läuft nicht gegen den Gradienten. E: Die ATP-Hydrolyse ist unmittelbar an den Transport gekoppelt. Quelle: Vorlesungsfolien, PDF-S. 8,16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Primär aktive Pumpe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Primär aktive Pumpe"
+      ],
+      "questionGoal": "Primär aktive Pumpe",
+      "structuredExplanation": {
+        "coreIdea": "Primär aktive Pumpe",
+        "correctReasoning": "Die ATP-Hydrolyse ist unmittelbar an den Transport gekoppelt.",
+        "wrongAnswerExplanations": {
+          "A": "Ein passiver Kanaltransport beschreibt keinen ATP-getriebenen Transport gegen den Gradienten.",
+          "B": "Der beschriebene Aufwärtstransport benötigt die direkte Energiekopplung.",
+          "C": "Hier ist die direkte Energiequelle ATP und nicht der Abbau eines zuvor erzeugten Ionengradienten.",
+          "D": "Diese verwendet kein ATP-hydrolysierendes Transportprotein und läuft nicht gegen den Gradienten."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q07",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie die Kopplung zwischen Na+/K+-ATPase und SGLT1.",
+      "options": [
+        {
+          "text": "Die Na+/K+-ATPase trägt zum niedrigen intrazellulären Na+-Spiegel bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine länger anhaltende Hemmung der Na+/K+-ATPase kann die Glucoseaufnahme vermindern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "SGLT1 muss für jeden transportierten Zucker selbst ATP hydrolysieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Na+-Gradient ist eine Energiequelle, die auch ohne Erhaltung dauerhaft unverändert bleibt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: So wird ein Teil der Triebkraft für den apikalen Na+-gekoppelten Transport erzeugt. B: Mit dem Gradientenverlust wird die energetische Kopplung geschwächt. C: SGLT1 nutzt sekundär die im Na+-Gradienten gespeicherte Energie. D: Ionentransporte und Leckflüsse würden einen nicht erneuerten Gradienten abbauen. Quelle: Vorlesungsfolien, PDF-S. 8,14–16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Indirekte ATP-Abhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Indirekte ATP-Abhängigkeit"
+      ],
+      "questionGoal": "Indirekte ATP-Abhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Indirekte ATP-Abhängigkeit",
+        "correctReasoning": "So wird ein Teil der Triebkraft für den apikalen Na+-gekoppelten Transport erzeugt. Mit dem Gradientenverlust wird die energetische Kopplung geschwächt.",
+        "wrongAnswerExplanations": {
+          "A": "So wird ein Teil der Triebkraft für den apikalen Na+-gekoppelten Transport erzeugt.",
+          "B": "Mit dem Gradientenverlust wird die energetische Kopplung geschwächt.",
+          "C": "SGLT1 nutzt sekundär die im Na+-Gradienten gespeicherte Energie.",
+          "D": "Ionentransporte und Leckflüsse würden einen nicht erneuerten Gradienten abbauen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo6",
+      "learningObjectiveIds": [
+        "lo6"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Bei einem Carrier steigt der Transport zunächst mit der Substratkonzentration, nähert sich dann aber einem Plateau. Was erklärt dies am besten?",
+      "options": [
+        {
+          "text": "Die Zahl der Carrier nimmt bei jeder Substratbindung automatisch unbegrenzt zu.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Plateau beweist, dass überhaupt kein Substrat mehr transportiert wird.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Einfache Diffusion durch eine unveränderte Membran muss denselben bindungsbedingten Sättigungsverlauf zeigen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine begrenzte Carrierzahl mit endlicher Zyklusgeschwindigkeit limitiert die maximale Rate.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine Sättigung beweist zwingend eine direkte ATP-Spaltung am Carrier.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies würde gerade keine feste Sättigungsrate erklären. B: Es bezeichnet eine annähernd maximale, nicht eine auf null gesunkene Rate. C: Einfache Diffusion ist im dargestellten Bereich proportional zur Konzentrationsdifferenz und hat keine Carrier-Bindungssättigung. D: Bei hoher Belegung kann weiteres Substrat die Rate kaum noch steigern. E: Auch passive Carrier besitzen eine endliche Transportkapazität. Quelle: Vorlesungsfolien, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Sättigung des vermittelten Transports"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sättigung des vermittelten Transports"
+      ],
+      "questionGoal": "Sättigung des vermittelten Transports",
+      "structuredExplanation": {
+        "coreIdea": "Sättigung des vermittelten Transports",
+        "correctReasoning": "Bei hoher Belegung kann weiteres Substrat die Rate kaum noch steigern.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde gerade keine feste Sättigungsrate erklären.",
+          "B": "Es bezeichnet eine annähernd maximale, nicht eine auf null gesunkene Rate.",
+          "C": "Einfache Diffusion ist im dargestellten Bereich proportional zur Konzentrationsdifferenz und hat keine Carrier-Bindungssättigung.",
+          "E": "Auch passive Carrier besitzen eine endliche Transportkapazität."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo7",
+      "learningObjectiveIds": [
+        "lo7"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie die Zuordnung von Transportertypen.",
+      "options": [
+        {
+          "text": "Ein Uniporter kann erleichterte Diffusion eines einzelnen Substrats vermitteln.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Bezeichnung Symport beweist unabhängig vom Mechanismus, dass ATP direkt am Protein hydrolysiert wird.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Antiport bewegt beide gekoppelten Substrate definitionsgemäss in dieselbe Richtung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei einem Symport werden gekoppelte Substrate in dieselbe Richtung bewegt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: GLUT-Transporter sind typische Beispiele. B: Sie beschreibt die Richtungskopplung und nicht allein die unmittelbare Energiequelle. C: Antiport bedeutet entgegengesetzte Transportrichtungen. D: SGLT1 ist ein Beispiel für Na+-Zucker-Symport. Quelle: Vorlesungsfolien, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Transportrichtungen klassifizieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportrichtungen klassifizieren"
+      ],
+      "questionGoal": "Transportrichtungen klassifizieren",
+      "structuredExplanation": {
+        "coreIdea": "Transportrichtungen klassifizieren",
+        "correctReasoning": "GLUT-Transporter sind typische Beispiele. SGLT1 ist ein Beispiel für Na+-Zucker-Symport.",
+        "wrongAnswerExplanations": {
+          "A": "GLUT-Transporter sind typische Beispiele.",
+          "B": "Sie beschreibt die Richtungskopplung und nicht allein die unmittelbare Energiequelle.",
+          "C": "Antiport bedeutet entgegengesetzte Transportrichtungen.",
+          "D": "SGLT1 ist ein Beispiel für Na+-Zucker-Symport."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo8",
+      "learningObjectiveIds": [
+        "lo8"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Die bakterielle Lactosepermease LacY transportiert H+ und Lactose gemeinsam. Sowohl die elektrische als auch die chemische Protonentriebkraft werden aufgehoben. Welche Folge ist für die Anreicherung von Lactose gegen ihren Gradienten zu erwarten?",
+      "options": [
+        {
+          "text": "Die energetische Grundlage für den gekoppelten Aufwärtstransport fehlt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Lactose kann gerade wegen des fehlenden H+-Gradienten unbegrenzt angereichert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die passive Verteilung wird von jeder Konzentrationsdifferenz unabhängig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der H+-Verlust beweist eine irreversible Spaltung der Lactosebindestelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "LacY muss dadurch zu einer direkten ATP-hydrolysierenden Lactosepumpe werden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Symporter benötigt den energetisch günstigen Protonentransport als Antrieb. B: Ohne passende Kopplungsenergie ist Aufwärtstransport nicht beliebig möglich. C: Auch ohne Protonentriebkraft bleibt der Lactosegradient für passiven Nettofluss relevant. D: Eine Änderung des Gradienten ist kein Nachweis einer Proteinspaltung. E: Ein Verlust der Triebkraft ändert nicht automatisch die Energiequelle des Proteins. Quelle: Vorlesungsfolien, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "LacY und Protonentriebkraft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "LacY und Protonentriebkraft"
+      ],
+      "questionGoal": "LacY und Protonentriebkraft",
+      "structuredExplanation": {
+        "coreIdea": "LacY und Protonentriebkraft",
+        "correctReasoning": "Der Symporter benötigt den energetisch günstigen Protonentransport als Antrieb.",
+        "wrongAnswerExplanations": {
+          "B": "Ohne passende Kopplungsenergie ist Aufwärtstransport nicht beliebig möglich.",
+          "C": "Auch ohne Protonentriebkraft bleibt der Lactosegradient für passiven Nettofluss relevant.",
+          "D": "Eine Änderung des Gradienten ist kein Nachweis einer Proteinspaltung.",
+          "E": "Ein Verlust der Triebkraft ändert nicht automatisch die Energiequelle des Proteins."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo8",
+      "learningObjectiveIds": [
+        "lo8"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie den gezeigten Mechanismus der Lactosepermease.",
+      "options": [
+        {
+          "text": "Die Protonenkopplung bedeutet, dass der Transport eine dauerhaft offene unspezifische Pore benötigt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gleiten und Neigen von Helizes können die Zugänglichkeit der Bindestelle verändern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "LacY besitzt zwölf Transmembranhelizes in zwei grösseren Strukturteilen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Carrier hydrolysiert Lactose vor dem Transport zwingend zu Glucose und Galactose.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein gekoppelter Carrierzyklus wahrt die wechselseitige Zugänglichkeit. B: Dies ist eine strukturelle Grundlage des Alternating Access. C: Die Vorlesung verbindet diese Architektur mit dem Zugangswechsel. D: LacY transportiert das Disaccharid; Spaltung und Transport sind verschiedene Vorgänge. Quelle: Vorlesungsfolien, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Bakterieller Symporter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bakterieller Symporter"
+      ],
+      "questionGoal": "Bakterieller Symporter",
+      "structuredExplanation": {
+        "coreIdea": "Bakterieller Symporter",
+        "correctReasoning": "Dies ist eine strukturelle Grundlage des Alternating Access. Die Vorlesung verbindet diese Architektur mit dem Zugangswechsel.",
+        "wrongAnswerExplanations": {
+          "A": "Ein gekoppelter Carrierzyklus wahrt die wechselseitige Zugänglichkeit.",
+          "B": "Dies ist eine strukturelle Grundlage des Alternating Access.",
+          "C": "Die Vorlesung verbindet diese Architektur mit dem Zugangswechsel.",
+          "D": "LacY transportiert das Disaccharid; Spaltung und Transport sind verschiedene Vorgänge."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "SGLT1 wird selektiv gehemmt; GLUT5 und die basolaterale Zuckerabgabe funktionieren. Welche luminale Zuckeraufnahme ist relativ am wenigsten direkt betroffen?",
+      "options": [
+        {
+          "text": "Glucoseaufnahme über SGLT1",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Galactoseaufnahme über SGLT1",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fructoseaufnahme über GLUT5",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Intakte Lactoseaufnahme durch GLUT5",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Intakte Saccharoseaufnahme durch denselben SGLT1",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese ist der unmittelbar gehemmte Weg. B: Auch Galactose ist ein Substrat des Na+-gekoppelten SGLT1. C: GLUT5 vermittelt apikal erleichterte Fructoseaufnahme ohne direkte Na+-Kopplung. D: GLUT5 ist ein Monosaccharidtransporter für Fructose. E: Saccharose muss zunächst gespalten werden und ist nicht sein transportiertes Substrat. Quelle: Vorlesungsfolien, PDF-S. 13–15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Apikale Zuckeraufnahme unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Apikale Zuckeraufnahme unterscheiden"
+      ],
+      "questionGoal": "Apikale Zuckeraufnahme unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Apikale Zuckeraufnahme unterscheiden",
+        "correctReasoning": "GLUT5 vermittelt apikal erleichterte Fructoseaufnahme ohne direkte Na+-Kopplung.",
+        "wrongAnswerExplanations": {
+          "A": "Diese ist der unmittelbar gehemmte Weg.",
+          "B": "Auch Galactose ist ein Substrat des Na+-gekoppelten SGLT1.",
+          "D": "GLUT5 ist ein Monosaccharidtransporter für Fructose.",
+          "E": "Saccharose muss zunächst gespalten werden und ist nicht sein transportiertes Substrat."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein vollständiger SGLT1-Zyklus bewegt zwei Na+-Ionen und ein ungeladenes Glucosemolekül vom Lumen in den Enterozyten. Welche Nettoladung wird dabei nach innen bewegt?",
+      "options": [
+        {
+          "text": "Zwei positive Elementarladungen",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Drei positive Elementarladungen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine positive Elementarladung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Keine Nettoladung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwei negative Elementarladungen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Glucose trägt keine Nettoladung; beide Na+-Ionen tragen je eine positive Ladung. B: Das Glucosemolekül trägt unter diesen Bedingungen keine zusätzliche positive Ladung. C: Dies würde nur ein Na+-Ion pro Zyklus berücksichtigen. D: Die ungeladene Glucose neutralisiert die positiven Natriumladungen nicht. E: Die transportierten Ionen sind Kationen. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "SGLT1 ist elektrogen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SGLT1 ist elektrogen"
+      ],
+      "questionGoal": "SGLT1 ist elektrogen",
+      "structuredExplanation": {
+        "coreIdea": "SGLT1 ist elektrogen",
+        "correctReasoning": "Glucose trägt keine Nettoladung; beide Na+-Ionen tragen je eine positive Ladung.",
+        "wrongAnswerExplanations": {
+          "B": "Das Glucosemolekül trägt unter diesen Bedingungen keine zusätzliche positive Ladung.",
+          "C": "Dies würde nur ein Na+-Ion pro Zyklus berücksichtigen.",
+          "D": "Die ungeladene Glucose neutralisiert die positiven Natriumladungen nicht.",
+          "E": "Die transportierten Ionen sind Kationen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Die apikale H+-Triebkraft nimmt ab, der Na+-Gradient ist zunächst noch erhalten. Welcher Aufnahmeweg wird dadurch besonders unmittelbar geschwächt?",
+      "options": [
+        {
+          "text": "PepT1-vermittelte Aufnahme von Di- und Tripeptiden",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "GLUT5-vermittelte Aufnahme von Fructose als H+-Symport",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die luminale Spaltung von Stärke durch PepT1",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Direkte ATP-Hydrolyse durch den SGLT1 bei der Glucoseaufnahme",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lysosomale Freisetzung von Vitamin B12 durch PepT1",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: PepT1 ist ein H+-gekoppelter Symporter. B: GLUT5 ist kein H+-gekoppelter Peptidtransporter. C: PepT1 transportiert kleine Peptide und ist keine Amylase. D: SGLT1 hydrolysiert selbst kein ATP und nutzt den Na+-Gradienten. E: PepT1 ist nicht der Rezeptor- und Vesikelweg der B12-Aufnahme. Quelle: Vorlesungsfolien, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Peptidaufnahme und Gradienten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Peptidaufnahme und Gradienten"
+      ],
+      "questionGoal": "Peptidaufnahme und Gradienten",
+      "structuredExplanation": {
+        "coreIdea": "Peptidaufnahme und Gradienten",
+        "correctReasoning": "PepT1 ist ein H+-gekoppelter Symporter.",
+        "wrongAnswerExplanations": {
+          "B": "GLUT5 ist kein H+-gekoppelter Peptidtransporter.",
+          "C": "PepT1 transportiert kleine Peptide und ist keine Amylase.",
+          "D": "SGLT1 hydrolysiert selbst kein ATP und nutzt den Na+-Gradienten.",
+          "E": "PepT1 ist nicht der Rezeptor- und Vesikelweg der B12-Aufnahme."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie die Resorption von nicht hämgebundenem Eisen im Duodenum.",
+      "options": [
+        {
+          "text": "Ferroportin ist für die basolaterale Eisenabgabe bedeutsam.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "DMT1 ist ein apikaler Na+-unabhängiger Fructose-Uniporter.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Eisenbindung an Transferrin im Plasma erfolgt als Fe2+.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine apikale Ferrireduktase kann Fe3+ zu Fe2+ reduzieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nach Export und Oxidation kann Eisen an Transferrin gebunden werden. B: DMT1 vermittelt H+-gekoppelten Transport zweiwertiger Metalle. C: Transferrin bindet Fe3+; das exportierte Eisen wird vor der Bindung oxidiert. D: Fe2+ ist das relevante Substrat von DMT1. Quelle: Vorlesungsfolien, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Nicht-Häm-Eisen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nicht-Häm-Eisen"
+      ],
+      "questionGoal": "Nicht-Häm-Eisen",
+      "structuredExplanation": {
+        "coreIdea": "Nicht-Häm-Eisen",
+        "correctReasoning": "Nach Export und Oxidation kann Eisen an Transferrin gebunden werden. Fe2+ ist das relevante Substrat von DMT1.",
+        "wrongAnswerExplanations": {
+          "A": "Nach Export und Oxidation kann Eisen an Transferrin gebunden werden.",
+          "B": "DMT1 vermittelt H+-gekoppelten Transport zweiwertiger Metalle.",
+          "C": "Transferrin bindet Fe3+; das exportierte Eisen wird vor der Bindung oxidiert.",
+          "D": "Fe2+ ist das relevante Substrat von DMT1."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q16",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Dehydroascorbat gelangt über einen GLUT-Transportweg in einen Enterozyten und wird dort rasch zu Ascorbat reduziert. Warum kann dies die weitere DHA-Aufnahme begünstigen?",
+      "options": [
+        {
+          "text": "Die intrazelluläre DHA-Konzentration bleibt niedrig und damit die treibende Konzentrationsdifferenz erhalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Reduktion beweist, dass DHA selbst ein obligater H+-gekoppelter PepT1-Ligand ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "GLUT wird durch die Reduktion automatisch zu einer Na+/K+-ATPase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der GLUT-Weg hydrolysiert bei der DHA-Reduktion selbst ATP und wird dadurch primär aktiv.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "DHA kann nur transportiert werden, wenn die Konzentration innen höher als aussen ist.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Metabolische Umwandlung kann erleichterten Einstrom unterstützen, ohne dass GLUT ATP hydrolysiert. B: Der genannte DHA-Weg verwendet GLUTs, nicht den Peptidtransporter. C: Die Proteinklasse und direkte Energiequelle ändern sich dadurch nicht. D: Die intrazelluläre Umwandlung erhält eine Konzentrationsdifferenz; sie macht den GLUT-Transport nicht zur ATPase. E: Erleichterter Nettofluss wird durch den jeweils wirksamen Konzentrationsgradienten bestimmt. Quelle: Vorlesungsfolien, PDF-S. 21–22.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "DHA-Aufnahme und Reduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DHA-Aufnahme und Reduktion"
+      ],
+      "questionGoal": "DHA-Aufnahme und Reduktion",
+      "structuredExplanation": {
+        "coreIdea": "DHA-Aufnahme und Reduktion",
+        "correctReasoning": "Metabolische Umwandlung kann erleichterten Einstrom unterstützen, ohne dass GLUT ATP hydrolysiert.",
+        "wrongAnswerExplanations": {
+          "B": "Der genannte DHA-Weg verwendet GLUTs, nicht den Peptidtransporter.",
+          "C": "Die Proteinklasse und direkte Energiequelle ändern sich dadurch nicht.",
+          "D": "Die intrazelluläre Umwandlung erhält eine Konzentrationsdifferenz; sie macht den GLUT-Transport nicht zur ATPase.",
+          "E": "Erleichterter Nettofluss wird durch den jeweils wirksamen Konzentrationsgradienten bestimmt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie die apikalen Aufnahmewege von Vitaminen.",
+      "options": [
+        {
+          "text": "Ascorbat kann über den Na+-gekoppelten SVCT1 aufgenommen werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Kopplung eines Vitamintransports an Na+ macht die basolaterale Na+/K+-ATPase für den langfristigen Gradienten bedeutungslos.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pantothenat und Biotin können den Na+-abhängigen Multivitamintransporter SMVT nutzen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Alle wasserlöslichen Vitamine werden wegen ihrer Löslichkeit gleich schnell durch die proteinfreie Lipiddoppelschicht aufgenommen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dieser Weg unterscheidet sich vom GLUT-vermittelten DHA-Transport. B: Die Pumpe erhält die Na+-Triebkraft und unterstützt damit indirekt die Aufnahme. C: Ein Transporter kann mehrere passende Vitaminliganden besitzen. D: Viele benötigen spezifische Transportproteine. Quelle: Vorlesungsfolien, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Wasserlösliche Vitamine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasserlösliche Vitamine"
+      ],
+      "questionGoal": "Wasserlösliche Vitamine",
+      "structuredExplanation": {
+        "coreIdea": "Wasserlösliche Vitamine",
+        "correctReasoning": "Dieser Weg unterscheidet sich vom GLUT-vermittelten DHA-Transport. Ein Transporter kann mehrere passende Vitaminliganden besitzen.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser Weg unterscheidet sich vom GLUT-vermittelten DHA-Transport.",
+          "B": "Die Pumpe erhält die Na+-Triebkraft und unterstützt damit indirekt die Aufnahme.",
+          "C": "Ein Transporter kann mehrere passende Vitaminliganden besitzen.",
+          "D": "Viele benötigen spezifische Transportproteine."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Nach einem Verlust gastrischer Belegzellen fehlt der Intrinsic Factor. Welcher Schritt der physiologischen B12-Aufnahme wird dadurch besonders beeinträchtigt?",
+      "options": [
+        {
+          "text": "Die Na+-gekoppelte Aufnahme freien Vitamins B12 über den Multivitamintransporter SMVT",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die direkte Spaltung von Vitamin B12 durch Lactase im Jejunum",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die IF-abhängige rezeptorvermittelte Aufnahme im terminalen Ileum",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Aufnahme von Vitamin B12 durch den apikalen SGLT1",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Aufnahme von Vitamin B12 als Fe2+-Ion durch DMT1",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die reguläre IF-abhängige ileale Aufnahme unterscheidet sich vom SMVT-Weg für Biotin und Pantothenat. B: B12 wird nicht als Disaccharid durch Lactase gespalten. C: Der fehlende Bindungspartner vermindert die effiziente Aufnahme des IF-B12-Komplexes. D: SGLT1 ist ein Na+-gekoppelter Zuckertransporter. E: B12 ist kein freies zweiwertiges Eisenion. Quelle: Vorlesungsfolien, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "B12 nach Verlust der Belegzellen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "B12 nach Verlust der Belegzellen"
+      ],
+      "questionGoal": "B12 nach Verlust der Belegzellen",
+      "structuredExplanation": {
+        "coreIdea": "B12 nach Verlust der Belegzellen",
+        "correctReasoning": "Der fehlende Bindungspartner vermindert die effiziente Aufnahme des IF-B12-Komplexes.",
+        "wrongAnswerExplanations": {
+          "A": "Die reguläre IF-abhängige ileale Aufnahme unterscheidet sich vom SMVT-Weg für Biotin und Pantothenat.",
+          "B": "B12 wird nicht als Disaccharid durch Lactase gespalten.",
+          "D": "SGLT1 ist ein Na+-gekoppelter Zuckertransporter.",
+          "E": "B12 ist kein freies zweiwertiges Eisenion."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo9",
+      "learningObjectiveIds": [
+        "lo9"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Ein Enterozyt nimmt Glucose apikal auf und gibt sie zur Blutseite ab. Welche Kombination beschreibt die übliche Arbeitsteilung der Transportproteine?",
+      "options": [
+        {
+          "text": "Derselbe dauerhaft offene Zellspalt muss beide Membranen als unspezifische Zuckerpore ersetzen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Apikale Na+/K+-ATPase als ausschliesslicher Zuckertransporter und basolaterale Lactase",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Apikaler SGLT1 für die Aufnahme und basolateraler GLUT2 für die erleichterte Abgabe",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Apikaler GLUT5 für Glucose und basolateraler PepT1 für die Blutabgabe",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Basolateraler SGLT1 für die luminale Aufnahme und apikaler GLUT2 für die Abgabe ans Blut",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Vorlesung beschreibt polarisierte spezifische Transportproteine. B: Pumpe und Lactase transportieren nicht diesen Zucker über die beiden Membranen. C: Die getrennten Membrandomänen ermöglichen den gerichteten transepithelialen Transport. D: Die Substratspezifitäten passen nicht zu diesem Glucoseweg. E: Dies vertauscht die Seiten der gezeigten Transportarchitektur. Quelle: Vorlesungsfolien, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Epithelpolarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Epithelpolarität"
+      ],
+      "questionGoal": "Epithelpolarität",
+      "structuredExplanation": {
+        "coreIdea": "Epithelpolarität",
+        "correctReasoning": "Die getrennten Membrandomänen ermöglichen den gerichteten transepithelialen Transport.",
+        "wrongAnswerExplanations": {
+          "A": "Die Vorlesung beschreibt polarisierte spezifische Transportproteine.",
+          "B": "Pumpe und Lactase transportieren nicht diesen Zucker über die beiden Membranen.",
+          "D": "Die Substratspezifitäten passen nicht zu diesem Glucoseweg.",
+          "E": "Dies vertauscht die Seiten der gezeigten Transportarchitektur."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv13_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV13",
+      "stem": "Beurteilen Sie die Rolle von Membran und Transportprotein.",
+      "options": [
+        {
+          "text": "Sättigbarkeit ist ein Beweis, dass die Lipiddoppelschicht vollständig zerstört wurde.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede proteinvermittelte Passage ist bereits aktiver Aufwärtstransport.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Transportprotein kann die Passage eines sonst schlecht permeablen Stoffes ermöglichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei einem geladenen Substrat gehören elektrische und chemische Anteile zur Triebkraft.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie kann aus der endlichen Zahl und Zyklusrate intakter Carrier entstehen. B: Erleichterte Diffusion ist ebenfalls proteinvermittelt, aber passiv. C: Es stellt eine geeignete Umgebung und einen spezifischen Weg bereit. D: Eine reine Konzentrationsbetrachtung kann deshalb unzureichend sein. Quelle: Vorlesungsfolien, PDF-S. 4–6,9.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV13",
+        "Barriere und erleichterte Passage"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Barriere und erleichterte Passage"
+      ],
+      "questionGoal": "Barriere und erleichterte Passage",
+      "structuredExplanation": {
+        "coreIdea": "Barriere und erleichterte Passage",
+        "correctReasoning": "Es stellt eine geeignete Umgebung und einen spezifischen Weg bereit. Eine reine Konzentrationsbetrachtung kann deshalb unzureichend sein.",
+        "wrongAnswerExplanations": {
+          "A": "Sie kann aus der endlichen Zahl und Zyklusrate intakter Carrier entstehen.",
+          "B": "Erleichterte Diffusion ist ebenfalls proteinvermittelt, aber passiv.",
+          "C": "Es stellt eine geeignete Umgebung und einen spezifischen Weg bereit.",
+          "D": "Eine reine Konzentrationsbetrachtung kann deshalb unzureichend sein."
+        }
+      }
+    }
+  ]
+}

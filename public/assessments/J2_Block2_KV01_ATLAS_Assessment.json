@@ -1,0 +1,1293 @@
+{
+  "id": "assessment_j2_block2_kv01_20261102",
+  "lectureCode": "KV01",
+  "title": "Verdauung und Metabolismus – Energie aus Nährstoffen",
+  "block": "J2 Block 2",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Einfuehrung Block 2_CP_20261022_final.pdf; Universität Bern, HS2026. Lernziele und gesamter prüfungsrelevanter Foliensatz ausgewertet. 20 eigenständig formulierte Übungsfragen; keine Originalprüfungsfragen. Redaktionell fachlich und formal geprüft am 02.11.2026; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die zwei offiziellen Lernziele von PDF-S. 8 sind in fünf prüfbare Teilziele aufgegliedert. Organisation, PBL-Fallnamen und das unbeantwortete Laufbeispiel sind ausgeschlossen. Die Ernährungspyramide wird als Folienstand 2024 behandelt. Protonenzahlen gelten für das ausdrücklich vorgegebene Folienmodell.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Nährstoffgruppen, Verdauungsorgane und die Stufen des Nährstoffabbaus verknüpfen."
+    },
+    {
+      "id": "lo2",
+      "text": "Glucose-6-phosphat als Verzweigung zwischen Speicher, Glykolyse und Pentosephosphatweg erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Investitions- und Ertragsphase der Glykolyse einschliesslich ihrer Bilanz verstehen."
+    },
+    {
+      "id": "lo4",
+      "text": "Pyruvatoxidation und Zitratzyklus hinsichtlich Kohlenstoff- und Elektronenbilanz erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Atmungskette und ATP-Synthase räumlich, energetisch und funktionell verknüpfen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j2_b2_kv01_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Nach der Magenpassage trifft der Speisebrei erstmals auf die gemeinsamen Verdauungsleistungen von Leber und exokrinem Pankreas. In welchem Abschnitt geschieht dies normalerweise?",
+      "options": [
+        {
+          "text": "Im Colon sigmoideum",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Im Duodenum",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Im Magenfundus",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Im terminalen Ileum",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Im Oesophagus",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die beiden Drüsensekrete treten im Dünndarm ein. B: Galle und Pankreassekret werden in den Zwölffingerdarm abgegeben. C: Hier wirken Magensekrete statt der duodenalen Drüsensekrete. D: Der Eintritt erfolgt bereits wesentlich weiter oral. E: Er transportiert Nahrung, erhält aber diese Sekrete nicht. Quelle: Vorlesungsfolien, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Drüsenanschluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Drüsenanschluss"
+      ],
+      "questionGoal": "Drüsenanschluss",
+      "structuredExplanation": {
+        "coreIdea": "Drüsenanschluss",
+        "correctReasoning": "Galle und Pankreassekret werden in den Zwölffingerdarm abgegeben.",
+        "wrongAnswerExplanations": {
+          "A": "Die beiden Drüsensekrete treten im Dünndarm ein.",
+          "C": "Hier wirken Magensekrete statt der duodenalen Drüsensekrete.",
+          "D": "Der Eintritt erfolgt bereits wesentlich weiter oral.",
+          "E": "Er transportiert Nahrung, erhält aber diese Sekrete nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q02",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Einordnung von Nährstoffen und ihre Bedeutung für Ernährung und Stoffwechsel.",
+      "options": [
+        {
+          "text": "Kohlenhydrate, Fette und Proteine liefern metabolisierbare organische Bausteine.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Wasser und Mineralstoffe gehören neben organischen Nährstoffen zur Ernährung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Süssigkeiten bilden die mengenmässige Basis der Ernährungspyramide.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vitamine ersetzen den Bedarf an energieliefernden Makronährstoffen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese drei Nährstoffgruppen werden im Stufenmodell abgebaut. B: Die Pyramide umfasst mehr als reine Energieträger. C: Sie stehen an der Spitze statt an der Basis. D: Ihre Funktionen sind nicht mit einer solchen Energieversorgung gleichzusetzen. Quelle: Vorlesungsfolien, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Ernährungsbausteine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ernährungsbausteine"
+      ],
+      "questionGoal": "Ernährungsbausteine",
+      "structuredExplanation": {
+        "coreIdea": "Ernährungsbausteine",
+        "correctReasoning": "Diese drei Nährstoffgruppen werden im Stufenmodell abgebaut. Die Pyramide umfasst mehr als reine Energieträger.",
+        "wrongAnswerExplanations": {
+          "A": "Diese drei Nährstoffgruppen werden im Stufenmodell abgebaut.",
+          "B": "Die Pyramide umfasst mehr als reine Energieträger.",
+          "C": "Sie stehen an der Spitze statt an der Basis.",
+          "D": "Ihre Funktionen sind nicht mit einer solchen Energieversorgung gleichzusetzen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Eine Proteinmahlzeit soll zur Energiegewinnung genutzt werden. Welcher Vorgang entspricht der ersten Abbaustufe des Vorlesungsmodells?",
+      "options": [
+        {
+          "text": "Rotation der mitochondrialen ATP-Synthase",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Oxidation von Acetyl-CoA im Zitratzyklus",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kondensation von Acetyl-CoA mit Oxalacetat",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Übertragung von Elektronen unmittelbar auf Sauerstoff",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Spaltung der Proteine in kleinere Bausteine",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie nutzt den zuvor aufgebauten Protonengradienten. B: Diese Stufe liegt nach der Bausteingewinnung. C: Das ist der Eintritt in den Zitratzyklus. D: Das entspricht der abschliessenden oxidativen Energiegewinnung. E: Hydrolyse bereitet die weitere intrazelluläre Verwertung vor. Quelle: Vorlesungsfolien, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Hydrolyse vor Oxidation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrolyse vor Oxidation"
+      ],
+      "questionGoal": "Hydrolyse vor Oxidation",
+      "structuredExplanation": {
+        "coreIdea": "Hydrolyse vor Oxidation",
+        "correctReasoning": "Hydrolyse bereitet die weitere intrazelluläre Verwertung vor.",
+        "wrongAnswerExplanations": {
+          "A": "Sie nutzt den zuvor aufgebauten Protonengradienten.",
+          "B": "Diese Stufe liegt nach der Bausteingewinnung.",
+          "C": "Das ist der Eintritt in den Zitratzyklus.",
+          "D": "Das entspricht der abschliessenden oxidativen Energiegewinnung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q04",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Eine Zelle benötigt gleichzeitig Ribosebausteine und Reduktionskraft für Biosynthesen. Welcher Abzweig von Glucose-6-phosphat passt am besten?",
+      "options": [
+        {
+          "text": "Die Glykogensynthese mit UTP-Verbrauch",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Glykolyse mit ausschliesslicher Pyruvatbildung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Bildung von Citrat aus Acetyl-CoA",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Atmungskette mit Sauerstoffverbrauch",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Pentosephosphatweg mit NADPH-Bildung",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie dient dem Kohlenhydratspeicher statt dieser Produktkombination. B: Sie erklärt nicht gemeinsam Ribose-5-phosphat und NADPH. C: Sie ist kein solcher direkter G6P-Abzweig. D: Sie oxidiert Elektronenüberträger zur Energiegewinnung. E: Er verbindet Pentosebereitstellung mit reduzierendem NADPH. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Pentosephosphat-Abzweigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pentosephosphat-Abzweigung"
+      ],
+      "questionGoal": "Pentosephosphat-Abzweigung",
+      "structuredExplanation": {
+        "coreIdea": "Pentosephosphat-Abzweigung",
+        "correctReasoning": "Er verbindet Pentosebereitstellung mit reduzierendem NADPH.",
+        "wrongAnswerExplanations": {
+          "A": "Sie dient dem Kohlenhydratspeicher statt dieser Produktkombination.",
+          "B": "Sie erklärt nicht gemeinsam Ribose-5-phosphat und NADPH.",
+          "C": "Sie ist kein solcher direkter G6P-Abzweig.",
+          "D": "Sie oxidiert Elektronenüberträger zur Energiegewinnung."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q05",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Stoffwechselverknüpfungen am Knoten Glucose-6-phosphat.",
+      "options": [
+        {
+          "text": "Über Glucose-1-phosphat besteht eine Verbindung zum Glykogenstoffwechsel.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Glucose-6-phosphat muss vor jedem Stoffwechselweg zu freier Glucose hydrolysiert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Aufbau von Glucose aus Vorstufen erfordert Energiezufuhr.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Pentosephosphatweg dient primär der Oxidation von NADH an Sauerstoff.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die beiden phosphorylierten Zucker verknüpfen Speicher und weitere Verwertung. B: G6P kann unmittelbar in mehrere Wege eintreten. C: Glukoneogenese ist kein kostenloser Rückwärtslauf der ATP-Gewinnung. D: Er liefert unter anderem NADPH und Pentosen. Quelle: Vorlesungsfolien, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "G6P-Netzwerk"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "G6P-Netzwerk"
+      ],
+      "questionGoal": "G6P-Netzwerk",
+      "structuredExplanation": {
+        "coreIdea": "G6P-Netzwerk",
+        "correctReasoning": "Die beiden phosphorylierten Zucker verknüpfen Speicher und weitere Verwertung. Glukoneogenese ist kein kostenloser Rückwärtslauf der ATP-Gewinnung.",
+        "wrongAnswerExplanations": {
+          "A": "Die beiden phosphorylierten Zucker verknüpfen Speicher und weitere Verwertung.",
+          "B": "G6P kann unmittelbar in mehrere Wege eintreten.",
+          "C": "Glukoneogenese ist kein kostenloser Rückwärtslauf der ATP-Gewinnung.",
+          "D": "Er liefert unter anderem NADPH und Pentosen."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Aus einem Glucosemolekül entstehen in der Ertragsphase vier ATP. Zuvor wurden zwei ATP investiert. Wie lautet der unmittelbare Netto-ATP-Gewinn der Glykolyse?",
+      "options": [
+        {
+          "text": "Vier ATP pro Glucose",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei ATP pro Glucose",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Kein ATP pro Glucose",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein ATP pro Glucose",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sechs ATP pro Glucose",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist die Bruttobildung ohne Abzug der Investition. B: Vier gebildete minus zwei investierte ATP ergeben zwei netto. C: Die Ertragsphase übersteigt die anfänglichen ATP-Kosten. D: Die beiden C3-Äste müssen gemeinsam berücksichtigt werden. E: Die Investition darf nicht als Gewinn addiert werden. Quelle: Vorlesungsfolien, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Glykolysebilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glykolysebilanz"
+      ],
+      "questionGoal": "Glykolysebilanz",
+      "structuredExplanation": {
+        "coreIdea": "Glykolysebilanz",
+        "correctReasoning": "Vier gebildete minus zwei investierte ATP ergeben zwei netto.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist die Bruttobildung ohne Abzug der Investition.",
+          "C": "Die Ertragsphase übersteigt die anfänglichen ATP-Kosten.",
+          "D": "Die beiden C3-Äste müssen gemeinsam berücksichtigt werden.",
+          "E": "Die Investition darf nicht als Gewinn addiert werden."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q07",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Energieinvestition und Kohlenstoffaufteilung der Glykolyse.",
+      "options": [
+        {
+          "text": "Die anfänglichen Phosphorylierungen erzeugen bereits den gesamten Netto-ATP-Ertrag.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nach der Aufteilung muss die Ertragsbilanz beide C3-Einheiten berücksichtigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Phosphofructokinase beteiligt sich an einer weiteren ATP-Investition.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Hexokinase beziehungsweise Glucokinase beteiligt sich an der ersten Phosphorylierung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie verbrauchen ATP; der Ertrag folgt später. B: Ein C6-Ausgangsmolekül liefert zwei C3-Äste. C: Fructose-6-phosphat wird zu Fructose-1,6-bisphosphat phosphoryliert. D: Glucose wird dabei zu Glucose-6-phosphat umgesetzt. Quelle: Vorlesungsfolien, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Investitionsphase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Investitionsphase"
+      ],
+      "questionGoal": "Investitionsphase",
+      "structuredExplanation": {
+        "coreIdea": "Investitionsphase",
+        "correctReasoning": "Ein C6-Ausgangsmolekül liefert zwei C3-Äste. Fructose-6-phosphat wird zu Fructose-1,6-bisphosphat phosphoryliert. Glucose wird dabei zu Glucose-6-phosphat umgesetzt.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verbrauchen ATP; der Ertrag folgt später.",
+          "B": "Ein C6-Ausgangsmolekül liefert zwei C3-Äste.",
+          "C": "Fructose-6-phosphat wird zu Fructose-1,6-bisphosphat phosphoryliert.",
+          "D": "Glucose wird dabei zu Glucose-6-phosphat umgesetzt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q08",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Bei einem Glykolyseschritt wird NAD+ reduziert. Welche Zuordnung erklärt die Bildung der beiden NADH pro Glucose?",
+      "options": [
+        {
+          "text": "Pyruvatkinase reduziert NAD+ bei der Phosphatübertragung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Phosphofructokinase reduziert NAD+ beim C6-Aufbau.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ATP-Synthase reduziert zwei NAD+ im Cytoplasma.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hexokinase reduziert je ein NAD+ pro Glucosephosphorylierung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "GAPDH oxidiert die beiden Glyceraldehyd-3-phosphat-Moleküle.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie bildet ATP, nicht das dargestellte NADH. B: Sie verbraucht ATP vor der Aufteilung. C: ATP-Synthase ist nicht das glykolytische Redoxenzym. D: Dieser Schritt überträgt Phosphat aus ATP. E: Jeder C3-Ast trägt einmal zur NADH-Bildung bei. Quelle: Vorlesungsfolien, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Reduktionsäquivalente der Glykolyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reduktionsäquivalente der Glykolyse"
+      ],
+      "questionGoal": "Reduktionsäquivalente der Glykolyse",
+      "structuredExplanation": {
+        "coreIdea": "Reduktionsäquivalente der Glykolyse",
+        "correctReasoning": "Jeder C3-Ast trägt einmal zur NADH-Bildung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Sie bildet ATP, nicht das dargestellte NADH.",
+          "B": "Sie verbraucht ATP vor der Aufteilung.",
+          "C": "ATP-Synthase ist nicht das glykolytische Redoxenzym.",
+          "D": "Dieser Schritt überträgt Phosphat aus ATP."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Die Glykolyse liefert Pyruvat. Welche Umsetzung verbindet es im dargestellten aeroben Abbau mit dem Zitratzyklus?",
+      "options": [
+        {
+          "text": "Reduktion von Pyruvat zu Lactat",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Carboxylierung von Pyruvat zu Oxalacetat als Bildung des Acetylrests",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Oxidative Decarboxylierung zu Acetyl-CoA",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Rückreaktion der Pyruvatkinase zu Phosphoenolpyruvat",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Transaminierung von Pyruvat zu Alanin",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie regeneriert NAD+, liefert aber keinen Acetylrest für den Zykluseintritt. B: Dies ist eine anaplerotische Reaktion und keine Bildung von Acetyl-CoA. C: Dabei entstehen CO2 und NADH; Acetyl-CoA tritt in den Zyklus ein. D: Diese erzeugt keinen Acetylrest und ist unter Zellbedingungen kein einfacher Rückwärtslauf. E: Sie verbindet Aminosäure- und Kohlenhydratstoffwechsel, ist aber nicht der oxidative Zykluseintritt. Quelle: Vorlesungsfolien, PDF-S. 10,15,18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Pyruvateintritt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pyruvateintritt"
+      ],
+      "questionGoal": "Pyruvateintritt",
+      "structuredExplanation": {
+        "coreIdea": "Pyruvateintritt",
+        "correctReasoning": "Dabei entstehen CO2 und NADH; Acetyl-CoA tritt in den Zyklus ein.",
+        "wrongAnswerExplanations": {
+          "A": "Sie regeneriert NAD+, liefert aber keinen Acetylrest für den Zykluseintritt.",
+          "B": "Dies ist eine anaplerotische Reaktion und keine Bildung von Acetyl-CoA.",
+          "D": "Diese erzeugt keinen Acetylrest und ist unter Zellbedingungen kein einfacher Rückwärtslauf.",
+          "E": "Sie verbindet Aminosäure- und Kohlenhydratstoffwechsel, ist aber nicht der oxidative Zykluseintritt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q10",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Bilanz eines vollständigen Zyklusdurchlaufs pro Acetyl-CoA.",
+      "options": [
+        {
+          "text": "Der direkt gebildete Nucleotidtriphosphatertrag entsteht an der ATP-Synthase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Oxalacetat wird bei jedem Durchlauf netto in stöchiometrischer Menge verbraucht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pro Acetyl-CoA werden zwei FADH2 gebildet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Pro Acetyl-CoA werden drei NADH gebildet.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die direkte Bildung im Zyklus erfolgt an der Succinyl-CoA-Synthetase. B: Der Kohlenstoffakzeptor wird regeneriert. C: Der dargestellte Durchlauf liefert ein FADH2. D: Isocitrat-, α-Ketoglutarat- und Malatreaktion liefern jeweils ein NADH. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Zyklusprodukte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zyklusprodukte"
+      ],
+      "questionGoal": "Zyklusprodukte",
+      "structuredExplanation": {
+        "coreIdea": "Zyklusprodukte",
+        "correctReasoning": "Isocitrat-, α-Ketoglutarat- und Malatreaktion liefern jeweils ein NADH.",
+        "wrongAnswerExplanations": {
+          "A": "Die direkte Bildung im Zyklus erfolgt an der Succinyl-CoA-Synthetase.",
+          "B": "Der Kohlenstoffakzeptor wird regeneriert.",
+          "C": "Der dargestellte Durchlauf liefert ein FADH2.",
+          "D": "Isocitrat-, α-Ketoglutarat- und Malatreaktion liefern jeweils ein NADH."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q11",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Warum kann ein begrenzter Oxalacetatbestand im Zyklus wiederholt Acetylgruppen aufnehmen, solange keine Zwischenprodukte entzogen werden?",
+      "options": [
+        {
+          "text": "Oxalacetat wird zusammen mit jeder Acetylgruppe vollständig in CO2 überführt und durch NADH ersetzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Citratbildung benötigt nach dem ersten Durchlauf keinen Kohlenstoffakzeptor mehr.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Acetyl-CoA bringt neben der Acetylgruppe bereits sein eigenes Oxalacetat mit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Reaktionsfolge stellt Oxalacetat am Ende wieder her.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Citrat wird ohne weitere Reaktion direkt wieder in unverändertes Acetyl-CoA und Oxalacetat gespalten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der C4-Akzeptor wird regeneriert; NADH ersetzt keinen Kohlenstoffkörper. B: Jeder Eintritt einer Acetylgruppe benötigt erneut Oxalacetat. C: Acetyl-CoA ist der C2-Donor, nicht zugleich der C4-Akzeptor. D: Damit kann es nach einem vollständigen Durchlauf eine neue Acetylgruppe aufnehmen. E: Die oxidative zyklische Reaktionsfolge erklärt die Regeneration und die Gewinnung von Reduktionsäquivalenten. Quelle: Vorlesungsfolien, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Akzeptorregeneration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Akzeptorregeneration"
+      ],
+      "questionGoal": "Akzeptorregeneration",
+      "structuredExplanation": {
+        "coreIdea": "Akzeptorregeneration",
+        "correctReasoning": "Damit kann es nach einem vollständigen Durchlauf eine neue Acetylgruppe aufnehmen.",
+        "wrongAnswerExplanations": {
+          "A": "Der C4-Akzeptor wird regeneriert; NADH ersetzt keinen Kohlenstoffkörper.",
+          "B": "Jeder Eintritt einer Acetylgruppe benötigt erneut Oxalacetat.",
+          "C": "Acetyl-CoA ist der C2-Donor, nicht zugleich der C4-Akzeptor.",
+          "E": "Die oxidative zyklische Reaktionsfolge erklärt die Regeneration und die Gewinnung von Reduktionsäquivalenten."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q12",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Zuordnung der Energiegewinnung zu den Zellräumen.",
+      "options": [
+        {
+          "text": "Der Protonengradient wird allein über die Plasmamembran aufgebaut.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Glykolyse läuft im Cytoplasma ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Atmungskette liegt in der äusseren Mitochondrienmembran.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Zitratzyklus ist funktionell überwiegend der Matrix zugeordnet.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im Mitochondrium ist die innere Membran die relevante Barriere. B: Sie ist nicht auf die mitochondriale Matrix beschränkt. C: Ihre Komplexe sitzen in der inneren Membran. D: Die Succinatdehydrogenase ist zugleich Membrankomplex II. Quelle: Vorlesungsfolien, PDF-S. 12–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Kompartimentierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompartimentierung"
+      ],
+      "questionGoal": "Kompartimentierung",
+      "structuredExplanation": {
+        "coreIdea": "Kompartimentierung",
+        "correctReasoning": "Sie ist nicht auf die mitochondriale Matrix beschränkt. Die Succinatdehydrogenase ist zugleich Membrankomplex II.",
+        "wrongAnswerExplanations": {
+          "A": "Im Mitochondrium ist die innere Membran die relevante Barriere.",
+          "B": "Sie ist nicht auf die mitochondriale Matrix beschränkt.",
+          "C": "Ihre Komplexe sitzen in der inneren Membran.",
+          "D": "Die Succinatdehydrogenase ist zugleich Membrankomplex II."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q13",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Elektronen gelangen über Succinat/FAD an Komplex II statt über NADH an Komplex I in die Kette. Warum werden dadurch weniger Protonen gepumpt?",
+      "options": [
+        {
+          "text": "Komplex II pumpt mehr Protonen zurück in die Matrix.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Komplex II umgeht den protonenpumpenden Komplex I.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Cytochrom c wird durch den Eintritt an II vollständig ersetzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Elektronen erreichen danach den Komplex IV nicht mehr.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die innere Membran verliert bei diesem Eintritt ihre Barrierefunktion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er ist im Schema keine Protonenpumpe. B: Komplex II trägt selbst nicht zur dargestellten Protonenpumpe bei. C: Der spätere Elektronentransport nutzt weiterhin Cytochrom c. D: Der Weg über Q und III führt weiterhin zu IV. E: Der alternative Eintritt zerstört die Membran nicht. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Elektroneneintritt und Pumpen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektroneneintritt und Pumpen"
+      ],
+      "questionGoal": "Elektroneneintritt und Pumpen",
+      "structuredExplanation": {
+        "coreIdea": "Elektroneneintritt und Pumpen",
+        "correctReasoning": "Komplex II trägt selbst nicht zur dargestellten Protonenpumpe bei.",
+        "wrongAnswerExplanations": {
+          "A": "Er ist im Schema keine Protonenpumpe.",
+          "C": "Der spätere Elektronentransport nutzt weiterhin Cytochrom c.",
+          "D": "Der Weg über Q und III führt weiterhin zu IV.",
+          "E": "Der alternative Eintritt zerstört die Membran nicht."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Im Folienmodell pumpen I, III und IV je 4, 4 und 2 H+ pro Elektronenpaar; II pumpt nicht. Wie unterscheiden sich NADH- und FADH2-Eintritt bis Sauerstoff?",
+      "options": [
+        {
+          "text": "Zehn gegenüber sechs gepumpte H+",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Acht gegenüber acht gepumpte H+",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vier gegenüber null gepumpte H+",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sechs gegenüber zehn gepumpte H+",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zehn gegenüber zwei gepumpte H+",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: NADH nutzt I, III, IV; FADH2 umgeht die vier H+ von I. B: Der fehlende Pumpbeitrag von II ist nicht berücksichtigt. C: Die späteren Pumpen III und IV fehlen in dieser Rechnung. D: Die beiden Eintrittswege wurden vertauscht. E: FAD-Elektronen passieren weiterhin III und IV. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Protonenbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Protonenbilanz"
+      ],
+      "questionGoal": "Protonenbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Protonenbilanz",
+        "correctReasoning": "NADH nutzt I, III, IV; FADH2 umgeht die vier H+ von I.",
+        "wrongAnswerExplanations": {
+          "B": "Der fehlende Pumpbeitrag von II ist nicht berücksichtigt.",
+          "C": "Die späteren Pumpen III und IV fehlen in dieser Rechnung.",
+          "D": "Die beiden Eintrittswege wurden vertauscht.",
+          "E": "FAD-Elektronen passieren weiterhin III und IV."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q15",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie den Zusammenhang zwischen Elektronenfluss und Protonengradient.",
+      "options": [
+        {
+          "text": "Ubichinon verbindet die Eintrittskomplexe mit Komplex III.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "NADH wird an Komplex I unter Aufnahme von Elektronen reduziert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sauerstoff wird am Ende der Kette zu Wasser reduziert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Cytochrom c transportiert Elektronen zwischen III und IV.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Q nimmt Elektronen aus unterschiedlichen Eintrittswegen auf. B: Es gibt Elektronen ab und wird oxidiert. C: Er nimmt die transportierten Elektronen auf. D: Es ist ein beweglicher Elektronenüberträger dieser Strecke. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Elektronentransport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektronentransport"
+      ],
+      "questionGoal": "Elektronentransport",
+      "structuredExplanation": {
+        "coreIdea": "Elektronentransport",
+        "correctReasoning": "Q nimmt Elektronen aus unterschiedlichen Eintrittswegen auf. Er nimmt die transportierten Elektronen auf. Es ist ein beweglicher Elektronenüberträger dieser Strecke.",
+        "wrongAnswerExplanations": {
+          "A": "Q nimmt Elektronen aus unterschiedlichen Eintrittswegen auf.",
+          "B": "Es gibt Elektronen ab und wird oxidiert.",
+          "C": "Er nimmt die transportierten Elektronen auf.",
+          "D": "Es ist ein beweglicher Elektronenüberträger dieser Strecke."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q16",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Eine experimentelle Membran wird für Protonen durchlässig, während die Atmungskettenenzyme intakt bleiben. Welche unmittelbare Folge für die ATP-Synthase ist am plausibelsten?",
+      "options": [
+        {
+          "text": "Die Elektronenübertragung übernimmt die ATP-Bildung unmittelbar und macht den Gradienten entbehrlich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die protonengetriebene ATP-Synthese nimmt ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der ATP-Ertrag pro übertragenem Elektronenpaar bleibt zwingend unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Matrix wird durch den Protoneneinstrom relativ alkalischer und erhöht so den Synthaseantrieb.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die ATP-Synthese nimmt wegen eines nun grösseren Protonengradienten zu.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Chemiosmotische Kopplung benötigt eine erhaltene protonenmotorische Kraft. B: Die zusätzliche Protonenleitfähigkeit schwächt den Antrieb für die ATP-Synthase. C: Die Kopplung ist durch den Nebenweg für Protonen vermindert. D: Protoneneinstrom baut den Gradient ab und macht die Matrix relativ saurer. E: Ein Protonenleck vermindert die protonenmotorische Kraft. Quelle: Vorlesungsfolien, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Gradientenverlust"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gradientenverlust"
+      ],
+      "questionGoal": "Gradientenverlust",
+      "structuredExplanation": {
+        "coreIdea": "Gradientenverlust",
+        "correctReasoning": "Die zusätzliche Protonenleitfähigkeit schwächt den Antrieb für die ATP-Synthase.",
+        "wrongAnswerExplanations": {
+          "A": "Chemiosmotische Kopplung benötigt eine erhaltene protonenmotorische Kraft.",
+          "C": "Die Kopplung ist durch den Nebenweg für Protonen vermindert.",
+          "D": "Protoneneinstrom baut den Gradient ab und macht die Matrix relativ saurer.",
+          "E": "Ein Protonenleck vermindert die protonenmotorische Kraft."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Energieumwandlungen an der mitochondrialen ATP-Synthase.",
+      "options": [
+        {
+          "text": "Der katalytische Teil koppelt die Bewegung an ATP-Bildung aus ADP und Pi.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "F0 dient primär der Übertragung von Kohlenstoffgruppen auf NAD+.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die ATP-Synthase bildet den gesamten benötigten Gradienten ohne Energiezufuhr selbst.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die protonenmotorische Kraft kann mechanische Rotation antreiben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mechanische Zustandswechsel ermöglichen chemische Energiebindung. B: F0 ist der membranständige Teil des Protonenmotors. C: Im Synthesebetrieb nutzt sie den zuvor aufgebauten Gradienten. D: Der elektrochemische Gradient speist den Rotationsmechanismus. Quelle: Vorlesungsfolien, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Chemiosmotische Kopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chemiosmotische Kopplung"
+      ],
+      "questionGoal": "Chemiosmotische Kopplung",
+      "structuredExplanation": {
+        "coreIdea": "Chemiosmotische Kopplung",
+        "correctReasoning": "Mechanische Zustandswechsel ermöglichen chemische Energiebindung. Der elektrochemische Gradient speist den Rotationsmechanismus.",
+        "wrongAnswerExplanations": {
+          "A": "Mechanische Zustandswechsel ermöglichen chemische Energiebindung.",
+          "B": "F0 ist der membranständige Teil des Protonenmotors.",
+          "C": "Im Synthesebetrieb nutzt sie den zuvor aufgebauten Gradienten.",
+          "D": "Der elektrochemische Gradient speist den Rotationsmechanismus."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q18",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Für zwei Elektronen gilt im Folienbeispiel ΔE = 1.14 V und F = 96.5 kJ/(V·mol). Welcher Wert folgt aus ΔG = −nFΔE?",
+      "options": [
+        {
+          "text": "Ungefähr −55 kJ/mol",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ungefähr −220 kJ/mol",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ungefähr +110 kJ/mol",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ungefähr −110 kJ/mol",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ungefähr +220 kJ/mol",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Elektronenzahl wurde unzulässig nochmals halbiert. B: −2 × 96.5 × 1.14 ergibt rund −220. C: Elektronenzahl und Vorzeichen sind beide falsch berücksichtigt. D: Hier fehlt der Faktor für zwei Elektronen. E: Das Vorzeichen der angegebenen Gleichung wurde vertauscht. Quelle: Vorlesungsfolien, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Redoxenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Redoxenergie"
+      ],
+      "questionGoal": "Redoxenergie",
+      "structuredExplanation": {
+        "coreIdea": "Redoxenergie",
+        "correctReasoning": "−2 × 96.5 × 1.14 ergibt rund −220.",
+        "wrongAnswerExplanations": {
+          "A": "Die Elektronenzahl wurde unzulässig nochmals halbiert.",
+          "C": "Elektronenzahl und Vorzeichen sind beide falsch berücksichtigt.",
+          "D": "Hier fehlt der Faktor für zwei Elektronen.",
+          "E": "Das Vorzeichen der angegebenen Gleichung wurde vertauscht."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Bei vollständiger aerober Verwertung einer Glucose werden die zwei Pyruvate zu zwei Acetyl-CoA umgesetzt und diese vollständig oxidiert. Wie viele CO2 entstehen netto aus ihren sechs C-Atomen?",
+      "options": [
+        {
+          "text": "Sechs CO2",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Acht CO2",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vier CO2",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwei CO2",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwölf CO2",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zwei entstehen bei Pyruvatoxidation, vier bilanziell im Zyklus. B: Die Glucose enthält nur sechs Kohlenstoffatome. C: Das berücksichtigt nur die zwei Zyklusdurchläufe. D: Das erfasst nur die Pyruvatoxidation. E: Die Zahl der C-Atome wurde doppelt gezählt. Quelle: Vorlesungsfolien, PDF-S. 14–15,18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "C-Bilanz einer Glucose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "C-Bilanz einer Glucose"
+      ],
+      "questionGoal": "C-Bilanz einer Glucose",
+      "structuredExplanation": {
+        "coreIdea": "C-Bilanz einer Glucose",
+        "correctReasoning": "Zwei entstehen bei Pyruvatoxidation, vier bilanziell im Zyklus.",
+        "wrongAnswerExplanations": {
+          "B": "Die Glucose enthält nur sechs Kohlenstoffatome.",
+          "C": "Das berücksichtigt nur die zwei Zyklusdurchläufe.",
+          "D": "Das erfasst nur die Pyruvatoxidation.",
+          "E": "Die Zahl der C-Atome wurde doppelt gezählt."
+        }
+      }
+    },
+    {
+      "id": "j2_b2_kv01_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "j2-block2",
+      "lectureId": "KV01",
+      "stem": "Beurteilen Sie die Abgrenzung der dargestellten Energie- und Aufbauwege.",
+      "options": [
+        {
+          "text": "NADPH aus dem Pentosephosphatweg ist mit ATP stofflich identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glykogensynthese speichert Glucosebausteine unter Energieaufwand.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Acetyl-CoA-Oxidation und oxidative Phosphorylierung sind dieselbe einzelne Reaktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Glykolyse setzt unmittelbar Sauerstoff als eigenes Substrat um.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Reduktionsäquivalent und Nucleotidenergieträger sind verschiedene Moleküle. B: Die Übersicht zeigt die aktivierende Rolle von UTP. C: Zyklus und Atmungskette sind gekoppelte, getrennte Reaktionssysteme. D: Sauerstoffverbrauch erfolgt hier erst in der Atmungskette. Quelle: Vorlesungsfolien, PDF-S. 10–18.",
+      "trap": "",
+      "tags": [
+        "J2",
+        "Block 2",
+        "KV01",
+        "Stoffwechselintegration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stoffwechselintegration"
+      ],
+      "questionGoal": "Stoffwechselintegration",
+      "structuredExplanation": {
+        "coreIdea": "Stoffwechselintegration",
+        "correctReasoning": "Die Übersicht zeigt die aktivierende Rolle von UTP.",
+        "wrongAnswerExplanations": {
+          "A": "Reduktionsäquivalent und Nucleotidenergieträger sind verschiedene Moleküle.",
+          "B": "Die Übersicht zeigt die aktivierende Rolle von UTP.",
+          "C": "Zyklus und Atmungskette sind gekoppelte, getrennte Reaktionssysteme.",
+          "D": "Sauerstoffverbrauch erfolgt hier erst in der Atmungskette."
+        }
+      }
+    }
+  ]
+}
