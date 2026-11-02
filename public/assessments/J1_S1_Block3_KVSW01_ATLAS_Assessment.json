@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw01_20261102",
+  "lectureCode": "KVSW01",
+  "title": "Membranen und Transport",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW01_Membran und Transport. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Offizielle Block3-Lernziele KV01 abgeglichen. Molalität korrekt auf kg Lösungsmittel bezogen. Elektrochemische statt ausschliesslich chemische Triebkraft für Ionen; Aquaporinvorkommen und Gasspezifität nicht pauschal für alle Typen behauptet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Membranaufbau, Stoffverteilung und Konzentrationsbegriffe erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Ficksches Gesetz und Membranpermeabilität anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Kanäle, Carrier, Pumpen und ihre treibenden Kräfte unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Osmose, osmotischen Druck und Aquaporinfunktion erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw01_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Warum bilden Phospholipide in Wasser eine Doppelschicht?",
+      "options": [
+        {
+          "text": "Nur eine kovalente Verbindung aller Lipide kann eine Membran bilden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Teile des Phospholipids sind gleich gut wasserlöslich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ihre hydrophilen Köpfe und hydrophoben Schwänze begünstigen diese Anordnung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Schwänze tragen die höchste freie Wasserlöslichkeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Köpfe sind hydrophob und liegen deshalb bevorzugt im Wasser.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Doppelschicht entsteht überwiegend durch nichtkovalente Wechselwirkungen. B: Gerade die Amphiphilie ist entscheidend. C: Der hydrophobe Kern wird vom Wasser abgeschirmt. D: Die Fettsäurereste bilden den hydrophoben Bereich. E: Die polaren Köpfe sind hydrophil. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Doppelschicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Doppelschicht"
+      ],
+      "questionGoal": "Doppelschicht",
+      "structuredExplanation": {
+        "coreIdea": "Doppelschicht",
+        "correctReasoning": "Der hydrophobe Kern wird vom Wasser abgeschirmt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Doppelschicht entsteht überwiegend durch nichtkovalente Wechselwirkungen.",
+          "B": "Gerade die Amphiphilie ist entscheidend.",
+          "D": "Die Fettsäurereste bilden den hydrophoben Bereich.",
+          "E": "Die polaren Köpfe sind hydrophil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche ideale Osmolarität hat eine 100-mmol/l-NaCl-Lösung bei vollständiger Dissoziation?",
+      "options": [
+        {
+          "text": "100 mosmol/l.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "200 mol/l.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "200 mosmol/l.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "300 mosmol/l.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "50 mosmol/l.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies berücksichtigt die Dissoziation nicht. B: Die Vorsilbe milli darf nicht entfallen. C: Jede Formeleinheit liefert zwei gelöste Ionen. D: NaCl liefert nicht drei Teilchen pro Formeleinheit. E: Die Teilchenzahl steigt statt zu sinken. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Osmolarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Osmolarität"
+      ],
+      "questionGoal": "Osmolarität",
+      "structuredExplanation": {
+        "coreIdea": "Osmolarität",
+        "correctReasoning": "Jede Formeleinheit liefert zwei gelöste Ionen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies berücksichtigt die Dissoziation nicht.",
+          "B": "Die Vorsilbe milli darf nicht entfallen.",
+          "D": "NaCl liefert nicht drei Teilchen pro Formeleinheit.",
+          "E": "Die Teilchenzahl steigt statt zu sinken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q03",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Wodurch unterscheidet sich Molalität von Molarität?",
+      "options": [
+        {
+          "text": "Molarität ist die Stoffmenge pro Kilogramm Lösungsmittel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Molalität ist grundsätzlich identisch mit Osmolarität.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Molalität zählt ausschliesslich elektrische Ladungen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Molarität enthält immer die Anzahl dissoziierter Teilchen als zusätzlichen Faktor.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Molalität bezieht die Stoffmenge auf die Masse des Lösungsmittels, Molarität auf das Lösungsvolumen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist die Molalität. B: Dissoziation und Bezugsgrösse unterscheiden sich. C: Dies entspricht nicht ihrer Definition. D: Das kennzeichnet idealisierte Osmolarität. E: Die unterschiedlichen Nenner machen die Begriffe verschieden. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Molalität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Molalität"
+      ],
+      "questionGoal": "Molalität",
+      "structuredExplanation": {
+        "coreIdea": "Molalität",
+        "correctReasoning": "Die unterschiedlichen Nenner machen die Begriffe verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist die Molalität.",
+          "B": "Dissoziation und Bezugsgrösse unterscheiden sich.",
+          "C": "Dies entspricht nicht ihrer Definition.",
+          "D": "Das kennzeichnet idealisierte Osmolarität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Bei unverändertem Diffusionskoeffizienten und Konzentrationsgradienten wird die Austauschfläche verdoppelt. Wie ändert sich der gesamte Diffusionsfluss?",
+      "options": [
+        {
+          "text": "Er halbiert sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er wechselt zwingend die Richtung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er bleibt unverändert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Fläche steht nicht im Nenner. B: Im ersten Fickschen Gesetz ist der Gesamtfluss proportional zur Fläche. C: Es besteht hier eine lineare, keine quadratische Abhängigkeit. D: Die Richtung bestimmt der Gradient, nicht die Flächenvergrösserung. E: Die Flussdichte bleibt gleich, nicht der Gesamtfluss. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Ficksches Gesetz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ficksches Gesetz"
+      ],
+      "questionGoal": "Ficksches Gesetz",
+      "structuredExplanation": {
+        "coreIdea": "Ficksches Gesetz",
+        "correctReasoning": "Im ersten Fickschen Gesetz ist der Gesamtfluss proportional zur Fläche.",
+        "wrongAnswerExplanations": {
+          "A": "Die Fläche steht nicht im Nenner.",
+          "C": "Es besteht hier eine lineare, keine quadratische Abhängigkeit.",
+          "D": "Die Richtung bestimmt der Gradient, nicht die Flächenvergrösserung.",
+          "E": "Die Flussdichte bleibt gleich, nicht der Gesamtfluss."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Eine Membran wird bei gleichbleibendem D und Verteilungskoeffizienten doppelt so dick. Was geschieht im einfachen Membranmodell mit P?",
+      "options": [
+        {
+          "text": "P bleibt gleich, weil nur die Fläche zählt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "P vervierfacht sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "P halbiert sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "P verdoppelt sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "P wird zwangsläufig negativ.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dicke und Fläche sind verschiedene Faktoren. B: Das Modell enthält keine positive quadratische Dickenabhängigkeit. C: P = Dβ/d ist umgekehrt proportional zur Dicke. D: Die Dicke steht im Nenner. E: Eine positive Dicke erzeugt keine negative Permeabilität. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Permeabilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Permeabilität"
+      ],
+      "questionGoal": "Permeabilität",
+      "structuredExplanation": {
+        "coreIdea": "Permeabilität",
+        "correctReasoning": "P = Dβ/d ist umgekehrt proportional zur Dicke.",
+        "wrongAnswerExplanations": {
+          "A": "Dicke und Fläche sind verschiedene Faktoren.",
+          "B": "Das Modell enthält keine positive quadratische Dickenabhängigkeit.",
+          "D": "Die Dicke steht im Nenner.",
+          "E": "Eine positive Dicke erzeugt keine negative Permeabilität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Substanz durchquert eine reine Lipiddoppelschicht ohne Transportprotein typischerweise besonders gut?",
+      "options": [
+        {
+          "text": "Sauerstoff.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Glucose.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein grosses geladenes Protein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein hydratisiertes Calciumion.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein hydratisiertes Natriumion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das kleine unpolare Molekül löst sich vergleichsweise gut im hydrophoben Kern. B: Das grössere polare Molekül hat geringe Lipidpermeabilität. C: Grösse und Ladungen verhindern freien Bilayerdurchtritt. D: Die doppelte Ladung begünstigt keine freie Lipidpassage. E: Ladung und Hydrathülle erschweren den direkten Durchtritt. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Lipidpermeabilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipidpermeabilität"
+      ],
+      "questionGoal": "Lipidpermeabilität",
+      "structuredExplanation": {
+        "coreIdea": "Lipidpermeabilität",
+        "correctReasoning": "Das kleine unpolare Molekül löst sich vergleichsweise gut im hydrophoben Kern.",
+        "wrongAnswerExplanations": {
+          "B": "Das grössere polare Molekül hat geringe Lipidpermeabilität.",
+          "C": "Grösse und Ladungen verhindern freien Bilayerdurchtritt.",
+          "D": "Die doppelte Ladung begünstigt keine freie Lipidpassage.",
+          "E": "Ladung und Hydrathülle erschweren den direkten Durchtritt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Was treibt den passiven Ionenfluss durch einen offenen selektiven Kanal?",
+      "options": [
+        {
+          "text": "Die Bindung eines Substrats erzwingt immer Transport gegen jede Triebkraft.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine obligatorische ATP-Spaltung bei jedem einzelnen Ionendurchtritt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich die Konzentrationsdifferenz unabhängig von jeder Spannung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur der elektrische Gradient ohne jede Konzentrationsabhängigkeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der elektrochemische Gradient des betreffenden Ions.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Kanal ist keine unbegrenzt aktive Pumpe. B: Dies kennzeichnet keinen passiven Kanalfluss. C: Bei geladenen Teilchen ist auch die Spannung relevant. D: Beide Beiträge bilden zusammen den elektrochemischen Gradienten. E: Chemische und elektrische Beiträge wirken gemeinsam. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Kanaltreibkraft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kanaltreibkraft"
+      ],
+      "questionGoal": "Kanaltreibkraft",
+      "structuredExplanation": {
+        "coreIdea": "Kanaltreibkraft",
+        "correctReasoning": "Chemische und elektrische Beiträge wirken gemeinsam.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Kanal ist keine unbegrenzt aktive Pumpe.",
+          "B": "Dies kennzeichnet keinen passiven Kanalfluss.",
+          "C": "Bei geladenen Teilchen ist auch die Spannung relevant.",
+          "D": "Beide Beiträge bilden zusammen den elektrochemischen Gradienten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Warum kann der Transport über einen Carrier bei hoher Substratkonzentration sättigen?",
+      "options": [
+        {
+          "text": "Die Transportgeschwindigkeit muss unbegrenzt proportional zur Substratkonzentration bleiben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine beliebig hohe Substratkonzentration erzeugt unmittelbar unbegrenzt viele neue Carrier.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Carrierbindung hebt den gesamten Konzentrationsgradienten sofort auf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sättigung beweist, dass der Transporter das Substrat überhaupt nicht bindet.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Bindungsstellen und Umschlaggeschwindigkeit sind begrenzt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei endlichen Bindungsstellen und begrenztem Umsatz kann ein Maximaltransport erreicht werden. B: Die Zahl funktionsfähiger Transporter steigt nicht automatisch und unbegrenzt mit der Substratkonzentration. C: Die Bindung einzelner Moleküle beseitigt den makroskopischen Gradienten nicht notwendig. D: Gerade Bindung und begrenzter Transportzyklus ermöglichen Sättigung. E: Sind die Carrier weitgehend ausgelastet, steigt die Rate kaum weiter. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Carrier-Sättigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Carrier-Sättigung"
+      ],
+      "questionGoal": "Carrier-Sättigung",
+      "structuredExplanation": {
+        "coreIdea": "Carrier-Sättigung",
+        "correctReasoning": "Sind die Carrier weitgehend ausgelastet, steigt die Rate kaum weiter.",
+        "wrongAnswerExplanations": {
+          "A": "Bei endlichen Bindungsstellen und begrenztem Umsatz kann ein Maximaltransport erreicht werden.",
+          "B": "Die Zahl funktionsfähiger Transporter steigt nicht automatisch und unbegrenzt mit der Substratkonzentration.",
+          "C": "Die Bindung einzelner Moleküle beseitigt den makroskopischen Gradienten nicht notwendig.",
+          "D": "Gerade Bindung und begrenzter Transportzyklus ermöglichen Sättigung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Glucose wird gegen ihren Gradienten zusammen mit Na+ aufgenommen. Der Na+-Gradient wurde durch eine ATPase aufgebaut. Wie ist der Glucosetransport einzuordnen?",
+      "options": [
+        {
+          "text": "Einfache Diffusion direkt durch die Lipide.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sekundäraktiv.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Osmose.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Primäraktiv durch direkte ATP-Spaltung am Glucosecarrier.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Elektrochemisches Gleichgewicht ohne Energiefluss.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Glucose wird gekoppelt gegen ihren Gradienten transportiert. B: Die Energie stammt unmittelbar aus dem Na+-Gradienten und mittelbar aus ATP. C: Dabei wird Wasser bewegt, nicht die gekoppelte Glucoseaufnahme. D: Die beschriebene Kopplung nutzt den Ionengradienten. E: Der gekoppelte Transport nutzt gespeicherte freie Energie. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Sekundäraktiver Symport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekundäraktiver Symport"
+      ],
+      "questionGoal": "Sekundäraktiver Symport",
+      "structuredExplanation": {
+        "coreIdea": "Sekundäraktiver Symport",
+        "correctReasoning": "Die Energie stammt unmittelbar aus dem Na+-Gradienten und mittelbar aus ATP.",
+        "wrongAnswerExplanations": {
+          "A": "Glucose wird gekoppelt gegen ihren Gradienten transportiert.",
+          "C": "Dabei wird Wasser bewegt, nicht die gekoppelte Glucoseaufnahme.",
+          "D": "Die beschriebene Kopplung nutzt den Ionengradienten.",
+          "E": "Der gekoppelte Transport nutzt gespeicherte freie Energie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Transportbilanz besitzt die Na+/K+-ATPase pro Zyklus im üblichen Modell?",
+      "options": [
+        {
+          "text": "Zwei Na+ nach aussen und drei K+ nach innen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Drei Na+ nach aussen und zwei K+ nach innen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Je ein Na+ und K+ nach aussen ohne ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Drei K+ nach aussen und zwei Na+ nach innen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Drei Na+ und zwei K+ gemeinsam nach innen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies vertauscht die Stöchiometrie. B: Dabei wird netto eine positive Ladung nach aussen verschoben. C: Dies beschreibt weder Stöchiometrie noch Energiequelle. D: Ionen und Richtungen sind vertauscht. E: Natrium wird im üblichen Vorwärtsbetrieb hinausgepumpt. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Na-K-ATPase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Na-K-ATPase"
+      ],
+      "questionGoal": "Na-K-ATPase",
+      "structuredExplanation": {
+        "coreIdea": "Na-K-ATPase",
+        "correctReasoning": "Dabei wird netto eine positive Ladung nach aussen verschoben.",
+        "wrongAnswerExplanations": {
+          "A": "Dies vertauscht die Stöchiometrie.",
+          "C": "Dies beschreibt weder Stöchiometrie noch Energiequelle.",
+          "D": "Ionen und Richtungen sind vertauscht.",
+          "E": "Natrium wird im üblichen Vorwärtsbetrieb hinausgepumpt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Eine nur für Wasser permeable Membran trennt 100 von 300 mosmol/l nichtpermeierender Teilchen. Anfänglich sind die Drücke gleich. Wohin fliesst netto Wasser?",
+      "options": [
+        {
+          "text": "Zur Seite mit 100 mosmol/l.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wasser fliesst stets zur Seite mit weniger Gesamtteilchen pro Volumen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es gibt unabhängig von Druck und Konzentration nie Nettofluss.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zur verdünnteren Seite, weil der höhere osmotische Druck auf der konzentrierten Seite Wasser immer hinausdrückt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zur Seite mit 300 mosmol/l.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre entgegen der anfänglichen osmotischen Triebkraft. B: Hier bestimmt gerade die höhere wirksame Osmolarität die Richtung. C: Wasser kann die Membran passieren und eine Triebkraft liegt vor. D: Ohne entgegengesetzten hydrostatischen Druck fliesst Wasser netto zur höheren Konzentration nichtpermeierender Teilchen. E: Die höhere Konzentration wirksamer gelöster Teilchen senkt dort das Wasserpotential. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Osmose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Osmose"
+      ],
+      "questionGoal": "Osmose",
+      "structuredExplanation": {
+        "coreIdea": "Osmose",
+        "correctReasoning": "Die höhere Konzentration wirksamer gelöster Teilchen senkt dort das Wasserpotential.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre entgegen der anfänglichen osmotischen Triebkraft.",
+          "B": "Hier bestimmt gerade die höhere wirksame Osmolarität die Richtung.",
+          "C": "Wasser kann die Membran passieren und eine Triebkraft liegt vor.",
+          "D": "Ohne entgegengesetzten hydrostatischen Druck fliesst Wasser netto zur höheren Konzentration nichtpermeierender Teilchen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Oozyten mit exprimiertem Wasserkanal schwellen in hypotoner Lösung schneller als Kontrolloozyten. Welche Folgerung stützt dies unmittelbar?",
+      "options": [
+        {
+          "text": "Das Protein pumpt Wasser zwingend unter ATP-Verbrauch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das exprimierte Protein erhöht die Wasserpermeabilität.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle Kontrolloozyten sind völlig wasserundurchlässig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Osmolaritätsunterschied wird durch das Protein grundsätzlich bedeutungslos.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es ist dadurch ein selektiver Natriumkanal bewiesen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beschleunigter passiver Fluss erfordert keine Pumpe. B: Der Vergleich prüft die funktionelle Wasserleitfähigkeit. C: Sie können eine geringere, aber vorhandene Permeabilität besitzen. D: Er liefert weiterhin die osmotische Triebkraft. E: Schwellung allein zeigt dies nicht. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Aquaporinexperiment"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aquaporinexperiment"
+      ],
+      "questionGoal": "Aquaporinexperiment",
+      "structuredExplanation": {
+        "coreIdea": "Aquaporinexperiment",
+        "correctReasoning": "Der Vergleich prüft die funktionelle Wasserleitfähigkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Beschleunigter passiver Fluss erfordert keine Pumpe.",
+          "C": "Sie können eine geringere, aber vorhandene Permeabilität besitzen.",
+          "D": "Er liefert weiterhin die osmotische Triebkraft.",
+          "E": "Schwellung allein zeigt dies nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Membran und Lösungen» treffen zu?",
+      "options": [
+        {
+          "text": "Membranlipide können sich lateral bewegen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Intrazelluläre und extrazelluläre Ionenzusammensetzung müssen im Ruhefall identisch sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Cholesterin hat unter jeder Temperatur ausschliesslich dieselbe fluiditätssteigernde Wirkung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 mmol/l ideal vollständig dissoziiertes NaCl entsprechen 100 mosmol/l.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Doppelschicht besitzt eine flüssige Komponente. B: Membranen und Transport halten Unterschiede aufrecht. C: Seine Wirkung hängt unter anderem von Temperatur und Lipidumgebung ab. D: Die zwei Ionen ergeben ideal etwa 200 mosmol/l. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Membran und Lösungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membran und Lösungen"
+      ],
+      "questionGoal": "Membran und Lösungen",
+      "structuredExplanation": {
+        "coreIdea": "Membran und Lösungen",
+        "correctReasoning": "Die Doppelschicht besitzt eine flüssige Komponente.",
+        "wrongAnswerExplanations": {
+          "A": "Die Doppelschicht besitzt eine flüssige Komponente.",
+          "B": "Membranen und Transport halten Unterschiede aufrecht.",
+          "C": "Seine Wirkung hängt unter anderem von Temperatur und Lipidumgebung ab.",
+          "D": "Die zwei Ionen ergeben ideal etwa 200 mosmol/l."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Diffusion» treffen zu?",
+      "options": [
+        {
+          "text": "Höhere Lipidlöslichkeit kann die Bilayerpermeabilität erhöhen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei gleicher Permeabilität wird der Gesamtfluss durch eine grössere Fläche zwingend kleiner.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleichen Konzentrationen bestehen weiterhin gegenläufige mikroskopische Bewegungen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Diffusion beruht auf thermischer Molekularbewegung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies geht im einfachen Modell in den Verteilungskoeffizienten ein. B: Er nimmt bei gleichem Gradienten zu. C: Nur der Nettofluss kann verschwinden. D: Ein Gradient führt daraus zu einem Nettofluss. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Diffusion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diffusion"
+      ],
+      "questionGoal": "Diffusion",
+      "structuredExplanation": {
+        "coreIdea": "Diffusion",
+        "correctReasoning": "Dies geht im einfachen Modell in den Verteilungskoeffizienten ein. Nur der Nettofluss kann verschwinden. Ein Gradient führt daraus zu einem Nettofluss.",
+        "wrongAnswerExplanations": {
+          "A": "Dies geht im einfachen Modell in den Verteilungskoeffizienten ein.",
+          "B": "Er nimmt bei gleichem Gradienten zu.",
+          "C": "Nur der Nettofluss kann verschwinden.",
+          "D": "Ein Gradient führt daraus zu einem Nettofluss."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Transportklassen» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Antiporter transportiert gekoppelte Substrate in entgegengesetzte Richtungen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder Symporter spaltet direkt ATP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Passive Kanäle bauen ohne andere Energiequelle beliebig grosse elektrochemische Gradienten auf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Erleichterte Diffusion über einen Uniporter kann passiv sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies unterscheidet ihn vom Symporter. B: Viele Symporter nutzen gekoppelte Gradienten. C: Sie dissipieren die verfügbare Triebkraft. D: Ein Carrier ist nicht automatisch aktiv. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Transportklassen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportklassen"
+      ],
+      "questionGoal": "Transportklassen",
+      "structuredExplanation": {
+        "coreIdea": "Transportklassen",
+        "correctReasoning": "Dies unterscheidet ihn vom Symporter. Ein Carrier ist nicht automatisch aktiv.",
+        "wrongAnswerExplanations": {
+          "A": "Dies unterscheidet ihn vom Symporter.",
+          "B": "Viele Symporter nutzen gekoppelte Gradienten.",
+          "C": "Sie dissipieren die verfügbare Triebkraft.",
+          "D": "Ein Carrier ist nicht automatisch aktiv."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Selektivität» treffen zu?",
+      "options": [
+        {
+          "text": "Alle gleich geladenen Ionen müssen denselben Kanal gleich gut passieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Carrier-Selektivität hängt mit der Substratbindung zusammen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Kanalproteine können Ionen unterschiedlich gut passieren lassen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Na+/K+-ATPase arbeitet im üblichen Vorwärtszyklus elektroneutral.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Grösse, Hydratation und spezifische Bindung unterscheiden sich. B: Bindungsaffinität beeinflusst die Transportauswahl. C: Interaktionen im Selektivitätsfilter sind entscheidend. D: Drei positive Ladungen hinaus und zwei hinein ergeben einen Nettoladungstransfer. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Selektivität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektivität"
+      ],
+      "questionGoal": "Selektivität",
+      "structuredExplanation": {
+        "coreIdea": "Selektivität",
+        "correctReasoning": "Bindungsaffinität beeinflusst die Transportauswahl. Interaktionen im Selektivitätsfilter sind entscheidend.",
+        "wrongAnswerExplanations": {
+          "A": "Grösse, Hydratation und spezifische Bindung unterscheiden sich.",
+          "B": "Bindungsaffinität beeinflusst die Transportauswahl.",
+          "C": "Interaktionen im Selektivitätsfilter sind entscheidend.",
+          "D": "Drei positive Ladungen hinaus und zwei hinein ergeben einen Nettoladungstransfer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q17",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Gradientenenergie» treffen zu?",
+      "options": [
+        {
+          "text": "ATP-getriebene Pumpen können elektrochemische Gradienten aufbauen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Ausfall einer Pumpe kann längerfristig auch gekoppelte Carrier beeinträchtigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sekundäraktiver Transport ist energiefrei, weil am Carrier kein ATP gespalten wird.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede unmittelbar nach Pumpenhemmung beobachtete Spannung muss sofort null sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie koppeln Transport an Energiezufuhr. B: Deren antreibender Gradient kann abnehmen. C: Er verbraucht die freie Energie eines gekoppelten Gradienten. D: Vorhandene Gradienten verschwinden nicht augenblicklich vollständig. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Gradientenenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gradientenenergie"
+      ],
+      "questionGoal": "Gradientenenergie",
+      "structuredExplanation": {
+        "coreIdea": "Gradientenenergie",
+        "correctReasoning": "Sie koppeln Transport an Energiezufuhr. Deren antreibender Gradient kann abnehmen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie koppeln Transport an Energiezufuhr.",
+          "B": "Deren antreibender Gradient kann abnehmen.",
+          "C": "Er verbraucht die freie Energie eines gekoppelten Gradienten.",
+          "D": "Vorhandene Gradienten verschwinden nicht augenblicklich vollständig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Osmotischer Druck» treffen zu?",
+      "options": [
+        {
+          "text": "Bei gleicher Teilchenkonzentration erzeugen grössere Moleküle im idealen Modell stets mehr osmotischen Druck.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Onkotischer Druck bezeichnet ausschliesslich den Druck frei gelöster Natriumionen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Im idealen Modell gilt π = cRT für die wirksame Teilchenkonzentration.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein entgegengesetzter hydrostatischer Druck kann den Netto-Wasserfluss ausgleichen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Molekülgrösse ist darin nicht der bestimmende Faktor. B: Er bezeichnet den kolloidosmotischen Beitrag, insbesondere von Proteinen. C: Temperatur und Teilchenzahl bestimmen den Druck. D: Im Gleichgewicht kompensieren sich die Triebkräfte. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Osmotischer Druck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Osmotischer Druck"
+      ],
+      "questionGoal": "Osmotischer Druck",
+      "structuredExplanation": {
+        "coreIdea": "Osmotischer Druck",
+        "correctReasoning": "Temperatur und Teilchenzahl bestimmen den Druck. Im Gleichgewicht kompensieren sich die Triebkräfte.",
+        "wrongAnswerExplanations": {
+          "A": "Die Molekülgrösse ist darin nicht der bestimmende Faktor.",
+          "B": "Er bezeichnet den kolloidosmotischen Beitrag, insbesondere von Proteinen.",
+          "C": "Temperatur und Teilchenzahl bestimmen den Druck.",
+          "D": "Im Gleichgewicht kompensieren sich die Triebkräfte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Wasserkanäle» treffen zu?",
+      "options": [
+        {
+          "text": "Mehr Wasserpermeabilität kann die Geschwindigkeit einer Volumenänderung erhöhen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aquaporine ermöglichen einen schnellen passiven Wassertransport.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Aquaporin transportiert Wasser unabhängig von jeder osmotischen oder Druckdifferenz dauerhaft netto in dieselbe Richtung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Wasserkanal muss für alle Kationen gleich gut leitend sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Gleichgewichtslage wird nicht allein durch den Kanal bestimmt. B: Die Triebkraft liefern Wasserpotentialunterschiede. C: Die Richtung folgt der aktuellen Triebkraft. D: Wasser- und Ionenselektivität sind zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Wasserkanäle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasserkanäle"
+      ],
+      "questionGoal": "Wasserkanäle",
+      "structuredExplanation": {
+        "coreIdea": "Wasserkanäle",
+        "correctReasoning": "Die Gleichgewichtslage wird nicht allein durch den Kanal bestimmt. Die Triebkraft liefern Wasserpotentialunterschiede.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gleichgewichtslage wird nicht allein durch den Kanal bestimmt.",
+          "B": "Die Triebkraft liefern Wasserpotentialunterschiede.",
+          "C": "Die Richtung folgt der aktuellen Triebkraft.",
+          "D": "Wasser- und Ionenselektivität sind zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw01_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW01",
+      "stem": "Welche Aussagen zum Thema «Kompartimente erhalten» treffen zu?",
+      "options": [
+        {
+          "text": "Passiver und aktiver Transport können gleichzeitig an derselben Membran stattfinden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein stationärer Zustand beweist, dass keinerlei Teilchen mehr transportiert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Selektive Permeabilität ermöglicht unterschiedliche Zusammensetzungen benachbarter Kompartimente.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Membran muss für sämtliche Stoffe absolut undurchlässig sein, damit eine Zelle funktioniert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Pumpen und Leckwege wirken nebeneinander. B: Ausgeglichene gegenläufige Flüsse sind möglich. C: Unterschiedliche Transportwege tragen dazu bei. D: Kontrollierter Stoffaustausch ist erforderlich. Quelle: Originalunterlagen, PDF-S. 3–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW01",
+        "Kompartimente erhalten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompartimente erhalten"
+      ],
+      "questionGoal": "Kompartimente erhalten",
+      "structuredExplanation": {
+        "coreIdea": "Kompartimente erhalten",
+        "correctReasoning": "Pumpen und Leckwege wirken nebeneinander. Unterschiedliche Transportwege tragen dazu bei.",
+        "wrongAnswerExplanations": {
+          "A": "Pumpen und Leckwege wirken nebeneinander.",
+          "B": "Ausgeglichene gegenläufige Flüsse sind möglich.",
+          "C": "Unterschiedliche Transportwege tragen dazu bei.",
+          "D": "Kontrollierter Stoffaustausch ist erforderlich."
+        }
+      }
+    }
+  ]
+}

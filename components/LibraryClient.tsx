@@ -13,6 +13,7 @@ import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
 import {
+  assessmentMatchesLibraryBlock,
   availableAssessmentSubjects,
   compareAssessmentsByNumber,
   getAssessmentSubject,
@@ -22,7 +23,6 @@ import {
   DOWNLOAD_SEMESTERS,
   getSummaryBlock,
   semesterTitle,
-  type SummaryBlock,
   type SemesterId
 } from "@/lib/summaryDownloads";
 import {
@@ -166,7 +166,7 @@ export function LibraryClient() {
   const selectedBlock = blockId ? getSummaryBlock(blockId) : null;
   const blockCards = useMemo(() => {
     return blockOptions.map((block) => {
-      const matching = assessments.filter((assessment) => assessmentMatchesSummaryBlock(assessment, block));
+      const matching = assessments.filter((assessment) => assessmentMatchesLibraryBlock(assessment, block));
       const questionCount = matching.reduce((sum, assessment) => sum + assessment.questionCount, 0);
       return {
         block,
@@ -189,7 +189,7 @@ export function LibraryClient() {
 
   const blockAssessments = useMemo(() => {
     if (!selectedBlock) return [];
-    return assessments.filter((assessment) => assessmentMatchesSummaryBlock(assessment, selectedBlock));
+    return assessments.filter((assessment) => assessmentMatchesLibraryBlock(assessment, selectedBlock));
   }, [assessments, selectedBlock]);
 
   function setExamFilter(exam: ExamId | null) {
@@ -492,38 +492,6 @@ export function LibraryClient() {
       )}
     </main>
   );
-}
-
-function assessmentMatchesSummaryBlock(assessment: AssessmentSummary, block: SummaryBlock): boolean {
-  const canonicalBlockId = block.canonicalBlockId || normalizedBlockId(block.title);
-  if (canonicalBlockId?.startsWith("j2-")) {
-    return normalizedBlockId([
-      assessment.block,
-      assessment.title,
-      assessment.lectureCode
-    ].join(" ")) === canonicalBlockId;
-  }
-  return blockMatches(assessment.block, block.title, block.matchTerms || []);
-}
-
-function blockMatches(assessmentBlock: string, selectedBlockTitle: string, matchTerms: string[] = []): boolean {
-  const normalizedAssessment = normalizeText(assessmentBlock);
-  const normalizedSelected = normalizeText(selectedBlockTitle);
-  const normalizedTerms = matchTerms.map(normalizeText);
-  if (normalizedTerms.some((term) => term && normalizedAssessment.includes(term))) return true;
-  if (normalizedSelected.includes("prufungssimulationen") || normalizedSelected.includes("pruefungssimulationen")) {
-    return normalizedAssessment.includes("prufungssimulationen") || normalizedAssessment.includes("pruefungssimulationen");
-  }
-
-  if (normalizedSelected.includes("altfragen") || normalizedSelected.includes("altfrage")) {
-    return normalizedAssessment.includes("altfragen")
-      || normalizedAssessment.includes("altfrage")
-      || normalizedAssessment.includes("alte fragen");
-  }
-
-  const assessmentNumber = String(assessmentBlock || "").match(/\d+/)?.[0] || "";
-  const selectedNumber = selectedBlockTitle.match(/\d+/)?.[0] || "";
-  return !!assessmentNumber && assessmentNumber === selectedNumber;
 }
 
 function normalizeText(value: string): string {

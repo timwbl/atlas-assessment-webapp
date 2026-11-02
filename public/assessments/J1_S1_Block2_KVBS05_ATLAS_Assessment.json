@@ -1,0 +1,1319 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs05_20261102",
+  "lectureCode": "KVBS05",
+  "title": "Binäre Daten, absolute Risikoreduktion und NNT",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS05 - BinaereDaten_Proportionen_Risikodifferenz_NNT_2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Folienfehler S.28 korrigiert: 0,2067−0,1333 = 0,0734 beziehungsweise ca.7,33 Prozentpunkte, nicht 0,733. NNT-Intervalle bei Nullübertritt sind nicht als gewöhnliches endliches Intervall anzugeben (Altman, BMJ 1998, doi:10.1136/bmj.317.7168.1309). Wald-Approximation nur bei geeigneten Ereigniszahlen. Synthetische Rechenaufgaben.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Binäre Daten als Anteile und Risiken beschreiben."
+    },
+    {
+      "id": "lo2",
+      "text": "Binomialmodell, Standardfehler und approximiertes Anteilsintervall anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Absolute Risikodifferenzen unabhängiger Gruppen berechnen und testen."
+    },
+    {
+      "id": "lo4",
+      "text": "NNT aus der absoluten Risikoreduktion mit Zeitbezug interpretieren."
+    },
+    {
+      "id": "lo5",
+      "text": "Grenzen der Approximation und Besonderheiten der NNT-Unsicherheit erkennen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs05_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "In einer Serie mit 50 unabhängigen Personen treten 10 Ereignisse auf. Welcher beobachtete Anteil ergibt sich?",
+      "options": [
+        {
+          "text": "5",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "40",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,10",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,25",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,20",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der Kehrwert des Anteils. B: Dies ist die Zahl ohne Ereignis. C: Der Nenner ist 50, nicht 100. D: Dies wäre Ereignisse geteilt durch Nichtereignisse, also die Odds. E: 10/50 = 0,20. Quelle: Originalunterlagen, PDF-S. 4,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Anteil berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anteil berechnen"
+      ],
+      "questionGoal": "Anteil berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Anteil berechnen",
+        "correctReasoning": "10/50 = 0,20.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der Kehrwert des Anteils.",
+          "B": "Dies ist die Zahl ohne Ereignis.",
+          "C": "Der Nenner ist 50, nicht 100.",
+          "D": "Dies wäre Ereignisse geteilt durch Nichtereignisse, also die Odds."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Zwei unabhängige Versuche haben je Erfolgswahrscheinlichkeit 0,2. Wie wahrscheinlich sind zwei Erfolge?",
+      "options": [
+        {
+          "text": "0,64",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,8",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,4",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,2",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,04",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Wahrscheinlichkeit zweier Misserfolge. B: Dies ist die Wahrscheinlichkeit eines einzelnen Misserfolgs. C: Die Summe beschreibt nicht das gemeinsame Eintreten. D: Dies ist die Wahrscheinlichkeit eines einzelnen Erfolgs. E: Die Wahrscheinlichkeiten werden multipliziert. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Unabhängige Erfolge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unabhängige Erfolge"
+      ],
+      "questionGoal": "Unabhängige Erfolge",
+      "structuredExplanation": {
+        "coreIdea": "Unabhängige Erfolge",
+        "correctReasoning": "Die Wahrscheinlichkeiten werden multipliziert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Wahrscheinlichkeit zweier Misserfolge.",
+          "B": "Dies ist die Wahrscheinlichkeit eines einzelnen Misserfolgs.",
+          "C": "Die Summe beschreibt nicht das gemeinsame Eintreten.",
+          "D": "Dies ist die Wahrscheinlichkeit eines einzelnen Erfolgs."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Zum Thema «Annahmen des Binomialmodells»: Beurteilen Sie die Aussagen zum üblichen Binomialmodell.",
+      "options": [
+        {
+          "text": "Die Versuche werden als unabhängig modelliert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Im gewöhnlichen Binomialmodell muss die Erfolgswahrscheinlichkeit mit jedem Versuch steigen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Erfolgswahrscheinlichkeit muss von Versuch zu Versuch zunehmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der beobachtete Erfolgsanteil muss exakt der Erfolgswahrscheinlichkeit entsprechen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Abhängige Erfolge benötigen ein anderes oder erweitertes Modell. B: Das Modell verwendet eine konstante Erfolgswahrscheinlichkeit. C: Das Standardmodell setzt eine konstante Erfolgswahrscheinlichkeit voraus. D: Zufällige Stichprobenabweichungen sind möglich. Quelle: Originalunterlagen, PDF-S. 5–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Binomialmodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Binomialmodell"
+      ],
+      "questionGoal": "Binomialmodell",
+      "structuredExplanation": {
+        "coreIdea": "Binomialmodell",
+        "correctReasoning": "Abhängige Erfolge benötigen ein anderes oder erweitertes Modell.",
+        "wrongAnswerExplanations": {
+          "A": "Abhängige Erfolge benötigen ein anderes oder erweitertes Modell.",
+          "B": "Das Modell verwendet eine konstante Erfolgswahrscheinlichkeit.",
+          "C": "Das Standardmodell setzt eine konstante Erfolgswahrscheinlichkeit voraus.",
+          "D": "Zufällige Stichprobenabweichungen sind möglich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Für p̂ = 0,20 und n = 100: Wie gross ist der geschätzte SE nach √[p̂(1−p̂)/n]?",
+      "options": [
+        {
+          "text": "4",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,16",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,004",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,04",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "0,20",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre der SE in Prozentpunkten, nicht als Anteil. B: Dies ist p̂(1−p̂) ohne Division und Wurzel. C: Der Faktor n wurde nicht korrekt berücksichtigt. D: √(0,2×0,8/100) = 0,04. E: Der Anteil ist nicht sein Standardfehler. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Standardfehler eines Anteils"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Standardfehler eines Anteils"
+      ],
+      "questionGoal": "Standardfehler eines Anteils",
+      "structuredExplanation": {
+        "coreIdea": "Standardfehler eines Anteils",
+        "correctReasoning": "√(0,2×0,8/100) = 0,04.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre der SE in Prozentpunkten, nicht als Anteil.",
+          "B": "Dies ist p̂(1−p̂) ohne Division und Wurzel.",
+          "C": "Der Faktor n wurde nicht korrekt berücksichtigt.",
+          "E": "Der Anteil ist nicht sein Standardfehler."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "p̂ = 0,20 und SE = 0,04. Welches normalapproximierte 95%-Intervall ergibt sich?",
+      "options": [
+        {
+          "text": "0,196 bis 0,204",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,1216 bis 0,2784",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,16 bis 0,24",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,04 bis 0,20",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−0,0784 bis 0,0784",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der SE wurde um den Faktor 20 unterschätzt. B: 0,20 ± 1,96×0,04. C: Dies entspricht ±1 SE. D: Diese Grenzen sind nicht um den Schätzwert zentriert. E: Dies ist um null statt um den beobachteten Anteil zentriert. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Anteilsintervall"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anteilsintervall"
+      ],
+      "questionGoal": "Anteilsintervall",
+      "structuredExplanation": {
+        "coreIdea": "Anteilsintervall",
+        "correctReasoning": "0,20 ± 1,96×0,04.",
+        "wrongAnswerExplanations": {
+          "A": "Der SE wurde um den Faktor 20 unterschätzt.",
+          "C": "Dies entspricht ±1 SE.",
+          "D": "Diese Grenzen sind nicht um den Schätzwert zentriert.",
+          "E": "Dies ist um null statt um den beobachteten Anteil zentriert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Zum Thema «Wald-Normalapproximation eines Anteilsintervalls»: Beurteilen Sie die Aussagen zur einfachen Wald-Normalapproximation eines Anteilsintervalls.",
+      "options": [
+        {
+          "text": "Kleine Zahlen beobachteter Ereignisse oder Nichtereignisse können die Wald-Normalapproximation unzuverlässig machen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Auch nach null beobachteten Ereignissen kann das wahre Risiko positiv sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sehr kleine Ereigniszahlen können die Approximation unzuverlässig machen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Intervall mit negativer Untergrenze zeigt ein biologisch negatives Risiko.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die symmetrische Approximation kann bei Randanteilen schlecht abdecken. B: Eine endliche Stichprobe schliesst ein kleines positives Risiko nicht aus. C: Die Stichprobenverteilung ist dann oft stark diskret und schief. D: Es zeigt eine Schwäche dieser Approximation für eine begrenzte Grösse. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Normalapproximation prüfen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Normalapproximation prüfen"
+      ],
+      "questionGoal": "Normalapproximation prüfen",
+      "structuredExplanation": {
+        "coreIdea": "Normalapproximation prüfen",
+        "correctReasoning": "Die symmetrische Approximation kann bei Randanteilen schlecht abdecken. Eine endliche Stichprobe schliesst ein kleines positives Risiko nicht aus. Die Stichprobenverteilung ist dann oft stark diskret und schief.",
+        "wrongAnswerExplanations": {
+          "A": "Die symmetrische Approximation kann bei Randanteilen schlecht abdecken.",
+          "B": "Eine endliche Stichprobe schliesst ein kleines positives Risiko nicht aus.",
+          "C": "Die Stichprobenverteilung ist dann oft stark diskret und schief.",
+          "D": "Es zeigt eine Schwäche dieser Approximation für eine begrenzte Grösse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Welche Angabe beschreibt eine kumulative Inzidenz am besten?",
+      "options": [
+        {
+          "text": "Die Summe beider Gruppenmittelwerte.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Odds ohne Ereigniszeitraum.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle jemals beobachteten Ereignisse ohne definierte Population.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Anteil der zu Beginn gefährdeten Personen, die während eines festgelegten Zeitraums das Ereignis erleiden.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ereignisse geteilt durch Personenjahre.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das betrifft keine Ereignisproportion. B: Odds und zeitbezogenes Risiko sind verschiedene Grössen. C: Ohne Bezugsgruppe lässt sich kein Risiko angeben. D: Damit wird die Ereigniswahrscheinlichkeit über diesen Zeitraum geschätzt. E: Dies ist eine Inzidenzrate, nicht eine dimensionslose Risikoproportion. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Zeitbezogenes Risiko"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitbezogenes Risiko"
+      ],
+      "questionGoal": "Zeitbezogenes Risiko",
+      "structuredExplanation": {
+        "coreIdea": "Zeitbezogenes Risiko",
+        "correctReasoning": "Damit wird die Ereigniswahrscheinlichkeit über diesen Zeitraum geschätzt.",
+        "wrongAnswerExplanations": {
+          "A": "Das betrifft keine Ereignisproportion.",
+          "B": "Odds und zeitbezogenes Risiko sind verschiedene Grössen.",
+          "C": "Ohne Bezugsgruppe lässt sich kein Risiko angeben.",
+          "E": "Dies ist eine Inzidenzrate, nicht eine dimensionslose Risikoproportion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Innerhalb von zwei Jahren beträgt das Ereignisrisiko unter Kontrolle 20 %, unter Behandlung 12 %. Wie gross ist ARR = Kontrolle−Behandlung?",
+      "options": [
+        {
+          "text": "8 Prozentpunkte",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "32 Prozentpunkte",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "40 Prozentpunkte",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "60 Prozentpunkte",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−8 Prozentpunkte",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,20−0,12 = 0,08. B: Hier wurden die Risiken addiert. C: 40 % wäre die relative Risikoreduktion. D: 0,12/0,20 ist ein relatives Risiko von 0,60. E: Das Vorzeichen entspricht Behandlung−Kontrolle. Quelle: Originalunterlagen, PDF-S. 28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Absolute Risikoreduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Absolute Risikoreduktion"
+      ],
+      "questionGoal": "Absolute Risikoreduktion",
+      "structuredExplanation": {
+        "coreIdea": "Absolute Risikoreduktion",
+        "correctReasoning": "0,20−0,12 = 0,08.",
+        "wrongAnswerExplanations": {
+          "B": "Hier wurden die Risiken addiert.",
+          "C": "40 % wäre die relative Risikoreduktion.",
+          "D": "0,12/0,20 ist ein relatives Risiko von 0,60.",
+          "E": "Das Vorzeichen entspricht Behandlung−Kontrolle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Zum Thema «absolute Risikodifferenz und Prozentpunkte»: Beurteilen Sie dieselbe Risikosenkung von 20 % auf 12 %.",
+      "options": [
+        {
+          "text": "Die absolute Senkung beträgt 8 als Anteil.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die absolute Senkung beträgt 0,08 als Anteil.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der Zeitbezug kann für die Interpretation ersatzlos entfallen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Risikodifferenz hängt von der Reihenfolge der Subtraktion ab.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das verwechselt Prozentpunkte mit einer Anteilszahl. B: Dies entspricht 8 Prozentpunkten. C: Risiken über zwei Jahre sind nicht automatisch Risiken über beliebige andere Zeiträume. D: Ein Vertauschen der Gruppen ändert das Vorzeichen. Quelle: Originalunterlagen, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Prozent und Prozentpunkte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Prozent und Prozentpunkte"
+      ],
+      "questionGoal": "Prozent und Prozentpunkte",
+      "structuredExplanation": {
+        "coreIdea": "Prozent und Prozentpunkte",
+        "correctReasoning": "Dies entspricht 8 Prozentpunkten. Ein Vertauschen der Gruppen ändert das Vorzeichen.",
+        "wrongAnswerExplanations": {
+          "A": "Das verwechselt Prozentpunkte mit einer Anteilszahl.",
+          "B": "Dies entspricht 8 Prozentpunkten.",
+          "C": "Risiken über zwei Jahre sind nicht automatisch Risiken über beliebige andere Zeiträume.",
+          "D": "Ein Vertauschen der Gruppen ändert das Vorzeichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Unabhängige Risikoschätzungen haben SE = 0,03 und 0,04. Welcher SE gehört zur Differenz?",
+      "options": [
+        {
+          "text": "0,035",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,01",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,07",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,0025",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,05",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der einfache Mittelwert ist hier nicht die richtige Kombination. B: Die Differenz der SE ist nicht der gesuchte SE. C: Die Standardfehler wurden direkt addiert. D: Dies ist die Varianz der Differenz. E: √(0,03²+0,04²) = 0,05. Quelle: Originalunterlagen, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "SE der Risikodifferenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SE der Risikodifferenz"
+      ],
+      "questionGoal": "SE der Risikodifferenz",
+      "structuredExplanation": {
+        "coreIdea": "SE der Risikodifferenz",
+        "correctReasoning": "√(0,03²+0,04²) = 0,05.",
+        "wrongAnswerExplanations": {
+          "A": "Der einfache Mittelwert ist hier nicht die richtige Kombination.",
+          "B": "Die Differenz der SE ist nicht der gesuchte SE.",
+          "C": "Die Standardfehler wurden direkt addiert.",
+          "D": "Dies ist die Varianz der Differenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Ein 95%-Intervall für ARR reicht von −0,01 bis +0,16. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Sowohl eine kleine Risikoerhöhung als auch eine Risikosenkung sind mit dem Intervall vereinbar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Intervall beweist einen Nutzen der Behandlung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Resultat beweist identische Risiken.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der entsprechende zweiseitige Test ist bei α = 0,05 nicht signifikant, sofern dasselbe Verfahren verwendet wird.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide Vorzeichen sind enthalten. B: Null und negative ARR sind enthalten. C: Nichtsignifikanz ist kein Gleichheitsbeweis. D: Null liegt im zugehörigen Intervall. Quelle: Originalunterlagen, PDF-S. 30–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Unsichere Risikoreduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unsichere Risikoreduktion"
+      ],
+      "questionGoal": "Unsichere Risikoreduktion",
+      "structuredExplanation": {
+        "coreIdea": "Unsichere Risikoreduktion",
+        "correctReasoning": "Beide Vorzeichen sind enthalten. Null liegt im zugehörigen Intervall.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Vorzeichen sind enthalten.",
+          "B": "Null und negative ARR sind enthalten.",
+          "C": "Nichtsignifikanz ist kein Gleichheitsbeweis.",
+          "D": "Null liegt im zugehörigen Intervall."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "ARR = 0,08 und SE(ARR) = 0,04. Welche Teststatistik ergibt sich für H0: ARR = 0?",
+      "options": [
+        {
+          "text": "z = 0,0032",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "z = 8",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "z = 0,5",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "z = 2",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "z = 0,04",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Produkt ist nicht die Teststatistik. B: Prozentpunkte wurden durch einen Anteil geteilt. C: Hier wurde der Quotient umgekehrt. D: 0,08/0,04 = 2. E: Dies ist die Differenz zwischen ARR und SE. Quelle: Originalunterlagen, PDF-S. 32–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Teststatistik der RD"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Teststatistik der RD"
+      ],
+      "questionGoal": "Teststatistik der RD",
+      "structuredExplanation": {
+        "coreIdea": "Teststatistik der RD",
+        "correctReasoning": "0,08/0,04 = 2.",
+        "wrongAnswerExplanations": {
+          "A": "Das Produkt ist nicht die Teststatistik.",
+          "B": "Prozentpunkte wurden durch einen Anteil geteilt.",
+          "C": "Hier wurde der Quotient umgekehrt.",
+          "E": "Dies ist die Differenz zwischen ARR und SE."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «zweiseitiger p-Wert für einen Risikovergleich».",
+      "options": [
+        {
+          "text": "p = 0,09 bedeutet 9 % Wahrscheinlichkeit für gleiche Risiken.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein p-Wert hängt bei gegebener Risikodifferenz auch von ihrer Präzision ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein p-Wert gibt die NNT unmittelbar an.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein zweiseitiger p-Wert berücksichtigt Abweichungen in beide Richtungen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: p ist unter H0 berechnet, keine Wahrscheinlichkeit von H0. B: Die standardisierte Differenz enthält den SE im Nenner. C: NNT hängt von der absoluten Risikoreduktion ab. D: Auch eine unerwartete Risikoerhöhung kann gegen die Gleichheitsnullhypothese sprechen. Quelle: Originalunterlagen, PDF-S. 33–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "p-Wert bei Risiken"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "p-Wert bei Risiken"
+      ],
+      "questionGoal": "p-Wert bei Risiken",
+      "structuredExplanation": {
+        "coreIdea": "p-Wert bei Risiken",
+        "correctReasoning": "Die standardisierte Differenz enthält den SE im Nenner. Auch eine unerwartete Risikoerhöhung kann gegen die Gleichheitsnullhypothese sprechen.",
+        "wrongAnswerExplanations": {
+          "A": "p ist unter H0 berechnet, keine Wahrscheinlichkeit von H0.",
+          "B": "Die standardisierte Differenz enthält den SE im Nenner.",
+          "C": "NNT hängt von der absoluten Risikoreduktion ab.",
+          "D": "Auch eine unerwartete Risikoerhöhung kann gegen die Gleichheitsnullhypothese sprechen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Eine ARR beträgt 0,20 über fünf Jahre. Welche NNT folgt als Punktschätzer?",
+      "options": [
+        {
+          "text": "20 über fünf Jahre",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "5 über fünf Jahre",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,2 über fünf Jahre",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "80 über fünf Jahre",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5 pro Jahr unabhängig vom Beobachtungszeitraum",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Prozentzahl wurde ohne Umrechnung verwendet. B: NNT = 1/0,20 = 5. C: Dies ist ARR, nicht ihr Kehrwert. D: Das Komplement der ARR ergibt keine NNT. E: Der Fünfjahreszeitraum darf nicht in ein Jahresmass umgedeutet werden. Quelle: Originalunterlagen, PDF-S. 36–37.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "NNT berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NNT berechnen"
+      ],
+      "questionGoal": "NNT berechnen",
+      "structuredExplanation": {
+        "coreIdea": "NNT berechnen",
+        "correctReasoning": "NNT = 1/0,20 = 5.",
+        "wrongAnswerExplanations": {
+          "A": "Die Prozentzahl wurde ohne Umrechnung verwendet.",
+          "C": "Dies ist ARR, nicht ihr Kehrwert.",
+          "D": "Das Komplement der ARR ergibt keine NNT.",
+          "E": "Der Fünfjahreszeitraum darf nicht in ein Jahresmass umgedeutet werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "ARR = 0,0733 für einen definierten Zeitraum. Die NNT soll als ganze Zahl von Personen angegeben werden. Welche Angabe passt?",
+      "options": [
+        {
+          "text": "14",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "7",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "73",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "13",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1364",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 1/0,0733 ≈ 13,64; für die ganze Personenzahl wird aufgerundet. B: Dies verwechselt Prozentpunkte mit der Zahl zu Behandelnder. C: Eine direkte Multiplikation der ARR ist nicht die Kehrwertbildung. D: Abrunden unterschreitet den berechneten Wert. E: Die Anteils- und Prozentdarstellung wurden verwechselt. Quelle: Originalunterlagen, PDF-S. 36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "NNT aufrunden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NNT aufrunden"
+      ],
+      "questionGoal": "NNT aufrunden",
+      "structuredExplanation": {
+        "coreIdea": "NNT aufrunden",
+        "correctReasoning": "1/0,0733 ≈ 13,64; für die ganze Personenzahl wird aufgerundet.",
+        "wrongAnswerExplanations": {
+          "B": "Dies verwechselt Prozentpunkte mit der Zahl zu Behandelnder.",
+          "C": "Eine direkte Multiplikation der ARR ist nicht die Kehrwertbildung.",
+          "D": "Abrunden unterschreitet den berechneten Wert.",
+          "E": "Die Anteils- und Prozentdarstellung wurden verwechselt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «NNT, Endpunkt und Beobachtungszeitraum».",
+      "options": [
+        {
+          "text": "Bei sonst gleichem Kontext bedeutet eine kleinere positive NNT einen grösseren absoluten Nutzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "NNT = 5 bedeutet eine absolute Risikoreduktion von 5 %.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei NNT = 5 profitiert garantiert jede fünfte bestimmte Person.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine NNT benötigt einen definierten Endpunkt und Zeitraum.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Kehrwert der ARR sinkt mit zunehmender ARR. B: Der Kehrwert ist 0,20, also 20 Prozentpunkte. C: NNT beschreibt einen durchschnittlichen zusätzlichen Ereignisunterschied. D: Beide bestimmen das zugrunde liegende absolute Risiko. Quelle: Originalunterlagen, PDF-S. 36–37.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "NNT interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NNT interpretieren"
+      ],
+      "questionGoal": "NNT interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "NNT interpretieren",
+        "correctReasoning": "Der Kehrwert der ARR sinkt mit zunehmender ARR. Beide bestimmen das zugrunde liegende absolute Risiko.",
+        "wrongAnswerExplanations": {
+          "A": "Der Kehrwert der ARR sinkt mit zunehmender ARR.",
+          "B": "Der Kehrwert ist 0,20, also 20 Prozentpunkte.",
+          "C": "NNT beschreibt einen durchschnittlichen zusätzlichen Ereignisunterschied.",
+          "D": "Beide bestimmen das zugrunde liegende absolute Risiko."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Das 95%-Intervall einer positiven ARR ist 0,05 bis 0,10. Welches NNT-Intervall ergibt sich durch Kehrwertbildung?",
+      "options": [
+        {
+          "text": "5 bis 10",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,10 bis 0,20",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "10 bis 20",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "10 bis 100",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "20 bis 10 als aufsteigende Grenzen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Prozentzahlen sind nicht die NNT-Grenzen. B: Es wurde keine Kehrwertbildung durchgeführt. C: 1/0,10 = 10 und 1/0,05 = 20; die Reihenfolge kehrt sich um. D: 1/0,05 ist 20, nicht 100. E: Die Kehrwerte müssen geordnet angegeben werden. Quelle: Originalunterlagen, PDF-S. 38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "NNT-Intervall ohne Nullübertritt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NNT-Intervall ohne Nullübertritt"
+      ],
+      "questionGoal": "NNT-Intervall ohne Nullübertritt",
+      "structuredExplanation": {
+        "coreIdea": "NNT-Intervall ohne Nullübertritt",
+        "correctReasoning": "1/0,10 = 10 und 1/0,05 = 20; die Reihenfolge kehrt sich um.",
+        "wrongAnswerExplanations": {
+          "A": "Die Prozentzahlen sind nicht die NNT-Grenzen.",
+          "B": "Es wurde keine Kehrwertbildung durchgeführt.",
+          "D": "1/0,05 ist 20, nicht 100.",
+          "E": "Die Kehrwerte müssen geordnet angegeben werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Das ARR-Intervall umfasst negative Werte, null und positive Werte. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Bei Annäherung der ARR an null wächst der Betrag der NNT unbegrenzt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine endliche positive NNT-Punktschätzung beweist bei diesem Intervall einen gesicherten Nutzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Unsicherheit umfasst hier sowohl möglichen Nutzen als auch möglichen Schaden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die beiden Kehrwerte der Grenzen bilden einfach ein gewöhnliches endliches NNT-Intervall durch null.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Kehrwert hat bei null eine Polstelle. B: Die Unsicherheit des Effekts bleibt entscheidend. C: Das Vorzeichen der absoluten Risikodifferenz ist nicht eindeutig. D: Die Transformation erzeugt getrennte Bereiche über Unendlich, keinen solchen endlichen Bereich. Quelle: Originalunterlagen, PDF-S. 38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "NNT bei Nullübertritt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NNT bei Nullübertritt"
+      ],
+      "questionGoal": "NNT bei Nullübertritt",
+      "structuredExplanation": {
+        "coreIdea": "NNT bei Nullübertritt",
+        "correctReasoning": "Der Kehrwert hat bei null eine Polstelle. Das Vorzeichen der absoluten Risikodifferenz ist nicht eindeutig.",
+        "wrongAnswerExplanations": {
+          "A": "Der Kehrwert hat bei null eine Polstelle.",
+          "B": "Die Unsicherheit des Effekts bleibt entscheidend.",
+          "C": "Das Vorzeichen der absoluten Risikodifferenz ist nicht eindeutig.",
+          "D": "Die Transformation erzeugt getrennte Bereiche über Unendlich, keinen solchen endlichen Bereich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Kontrolle: Risiko 10 %, Behandlung: 15 % im selben Zeitraum. Welche zusätzliche Zahl beschreibt den beobachteten Schaden?",
+      "options": [
+        {
+          "text": "NNT für einen gesicherten Nutzen = 20",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "ARR = +0,05 bei Kontrolle minus Behandlung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Number needed to harm = 20",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Number needed to harm = 5",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "RR = 0,67 bei Behandlung geteilt durch Kontrolle",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Richtung ist eine Risikoerhöhung, kein Nutzen. B: Mit dieser Definition ist ARR = −0,05. C: Die absolute Risikoerhöhung ist 0,05; ihr Kehrwert ist 20. D: 5 Prozentpunkte müssen als 0,05 eingesetzt werden. E: Mit dieser Reihenfolge ist RR = 1,5. Quelle: Originalunterlagen, PDF-S. 36–37.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Risikoerhöhung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Risikoerhöhung"
+      ],
+      "questionGoal": "Risikoerhöhung",
+      "structuredExplanation": {
+        "coreIdea": "Risikoerhöhung",
+        "correctReasoning": "Die absolute Risikoerhöhung ist 0,05; ihr Kehrwert ist 20.",
+        "wrongAnswerExplanations": {
+          "A": "Die Richtung ist eine Risikoerhöhung, kein Nutzen.",
+          "B": "Mit dieser Definition ist ARR = −0,05.",
+          "D": "5 Prozentpunkte müssen als 0,05 eingesetzt werden.",
+          "E": "Mit dieser Reihenfolge ist RR = 1,5."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs05_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «binäre Daten, Stichprobengrösse und systematische Fehler».",
+      "options": [
+        {
+          "text": "Eine grosse Stichprobe beseitigt eine verzerrte Auswahl nicht automatisch.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Stichprobenverteilung eines Anteils ist bei n = 1 bereits immer normal.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Mittelwert einer 0/1-kodierten Variable ist ihr Einsenanteil.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Viermal so viele unabhängige Beobachtungen bei gleichem Anteil vierteln den SE.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Präzision und systematische Verzerrung sind verschieden. B: Dann sind nur die Werte 0 und 1 möglich. C: Die Summe zählt die Erfolge. D: Der SE halbiert sich wegen der Quadratwurzel. Quelle: Originalunterlagen, PDF-S. 15,17–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS05",
+        "Anteile und Stichprobengrösse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anteile und Stichprobengrösse"
+      ],
+      "questionGoal": "Anteile und Stichprobengrösse",
+      "structuredExplanation": {
+        "coreIdea": "Anteile und Stichprobengrösse",
+        "correctReasoning": "Präzision und systematische Verzerrung sind verschieden. Die Summe zählt die Erfolge.",
+        "wrongAnswerExplanations": {
+          "A": "Präzision und systematische Verzerrung sind verschieden.",
+          "B": "Dann sind nur die Werte 0 und 1 möglich.",
+          "C": "Die Summe zählt die Erfolge.",
+          "D": "Der SE halbiert sich wegen der Quadratwurzel."
+        }
+      }
+    }
+  ]
+}

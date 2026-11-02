@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block1_kvc11_20261102",
+  "lectureCode": "KVC11",
+  "title": "Aminosäuren",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC11 - Aminosäuren. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die allgemeine Zwitterionenstruktur wird von der tatsächlichen Nettoladung mit ionisierbarer Seitenkette unterschieden. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Struktur, Stereochemie und Seitenketten proteinogener Aminosäuren unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Protonierung, Pufferung und isoelektrischen Punkt anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Transaminierung und Decarboxylierung funktionell erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc11_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Warum ist Glycin am α-C achiral?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es trägt dort zwei identische H-Atome.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Es hat zwei verschiedene aromatische Seitenketten.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sein α-C ist grundsätzlich sp²-hybridisiert.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es besitzt keine Carboxylgruppe.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Aminogruppe ist kovalent an beide H-Atome statt an C gebunden.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein tetraedrisches Stereozentrum benötigt vier verschiedene Substituenten; Glycin erfüllt dies nicht. B: Glycin hat als Seitenkette H und keine zwei aromatischen Reste. C: Das α-C des Glycins ist tetraedrisch; seine zwei gleichen H verhindern die Chiralität. D: Glycin besitzt wie die einfache Aminosäurestruktur eine Carboxylgruppe. E: Die Aminogruppe ist an das α-C gebunden; eine andere H-Verknüpfung erklärt die Achiralität nicht. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Glycin-Chiralität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glycin-Chiralität"
+      ],
+      "questionGoal": "Glycin-Chiralität",
+      "structuredExplanation": {
+        "coreIdea": "Glycin-Chiralität",
+        "correctReasoning": "Ein tetraedrisches Stereozentrum benötigt vier verschiedene Substituenten; Glycin erfüllt dies nicht.",
+        "wrongAnswerExplanations": {
+          "B": "Glycin hat als Seitenkette H und keine zwei aromatischen Reste.",
+          "C": "Das α-C des Glycins ist tetraedrisch; seine zwei gleichen H verhindern die Chiralität.",
+          "D": "Glycin besitzt wie die einfache Aminosäurestruktur eine Carboxylgruppe.",
+          "E": "Die Aminogruppe ist an das α-C gebunden; eine andere H-Verknüpfung erklärt die Achiralität nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welche Aussage zur L-Konfiguration proteinogener Aminosäuren ist richtig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie garantiert für alle Aminosäuren negative optische Drehung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie beschreibt die negative Nettoladung bei jedem pH.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie bezeichnet einen genau 50:50-Enantiomerenmix.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie beschreibt die Referenzkonfiguration und legt das Drehvorzeichen nicht allgemein fest.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Sie bedeutet für jedes α-C zwingend S, ohne jede Ausnahme.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: L bezeichnet keine allgemeine negative optische Drehung. B: Der Protonierungszustand und pH bestimmen Ladung, nicht L allein. C: Ein Enantiomerendeskriptor legt kein 50:50-Mischungsverhältnis fest. D: Relative Konfiguration, absolute R/S-Zuordnung, optische Drehung und Protonierung sind verschiedene Eigenschaften. E: Cystein ist ein bekanntes Beispiel, bei dem die CIP-Zuordnung von der üblichen L/S-Verknüpfung abweicht. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "L und Drehung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "L und Drehung"
+      ],
+      "questionGoal": "L und Drehung",
+      "structuredExplanation": {
+        "coreIdea": "L und Drehung",
+        "correctReasoning": "Relative Konfiguration, absolute R/S-Zuordnung, optische Drehung und Protonierung sind verschiedene Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "A": "L bezeichnet keine allgemeine negative optische Drehung.",
+          "B": "Der Protonierungszustand und pH bestimmen Ladung, nicht L allein.",
+          "C": "Ein Enantiomerendeskriptor legt kein 50:50-Mischungsverhältnis fest.",
+          "E": "Cystein ist ein bekanntes Beispiel, bei dem die CIP-Zuordnung von der üblichen L/S-Verknüpfung abweicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welches Paar trägt bei physiologischem pH typischerweise negativ geladene Seitenketten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aspartat und Glutamat.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Leucin und Isoleucin.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Phenylalanin und Tryptophan.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Serin und Threonin.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Lysin und Arginin.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die zusätzlichen Carboxylgruppen von Asp/Glu liegen überwiegend deprotoniert vor. B: Leucin und Isoleucin besitzen unpolare ungeladene Seitenketten. C: Die aromatischen Seitenketten dieses Paars tragen keine typische zusätzliche negative Ladung. D: Serin und Threonin besitzen bei physiologischem pH meist ungeladene OH-Seitenketten. E: Lysin und Arginin tragen typischerweise positive, nicht negative Seitenketten. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Saure Seitenketten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Saure Seitenketten"
+      ],
+      "questionGoal": "Saure Seitenketten",
+      "structuredExplanation": {
+        "coreIdea": "Saure Seitenketten",
+        "correctReasoning": "Die zusätzlichen Carboxylgruppen von Asp/Glu liegen überwiegend deprotoniert vor.",
+        "wrongAnswerExplanations": {
+          "B": "Leucin und Isoleucin besitzen unpolare ungeladene Seitenketten.",
+          "C": "Die aromatischen Seitenketten dieses Paars tragen keine typische zusätzliche negative Ladung.",
+          "D": "Serin und Threonin besitzen bei physiologischem pH meist ungeladene OH-Seitenketten.",
+          "E": "Lysin und Arginin tragen typischerweise positive, nicht negative Seitenketten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welche Paarung besitzt bei physiologischem pH typischerweise positiv geladene Seitenketten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aspartat und Glutamat.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Phenylalanin und Methionin.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Serin und Asparagin.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Alanin und Valin.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Lysin und Arginin.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Aspartat und Glutamat besitzen überwiegend negative Carboxylatseitenketten. B: Phenylalanin und Methionin haben keine entsprechend protonierten basischen Seitenketten. C: Serin und Asparagin sind polar, aber typischerweise nicht positiv geladen. D: Alanin und Valin tragen keine basischen geladenen Seitenkettengruppen. E: Lysin besitzt eine basische Aminoseitenkette, Arginin eine Guanidiniumgruppe. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Basische Seitenketten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Basische Seitenketten"
+      ],
+      "questionGoal": "Basische Seitenketten",
+      "structuredExplanation": {
+        "coreIdea": "Basische Seitenketten",
+        "correctReasoning": "Lysin besitzt eine basische Aminoseitenkette, Arginin eine Guanidiniumgruppe.",
+        "wrongAnswerExplanations": {
+          "A": "Aspartat und Glutamat besitzen überwiegend negative Carboxylatseitenketten.",
+          "B": "Phenylalanin und Methionin haben keine entsprechend protonierten basischen Seitenketten.",
+          "C": "Serin und Asparagin sind polar, aber typischerweise nicht positiv geladen.",
+          "D": "Alanin und Valin tragen keine basischen geladenen Seitenkettengruppen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welches Strukturmerkmal ermöglicht Cystein die Bildung einer Disulfidbrücke?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine Guanidiniumgruppe wie bei Arginin.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine Phenolgruppe wie bei Tyrosin.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine Thiolgruppe der Seitenkette.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine Carboxamidgruppe wie bei Asparagin.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine bereits vorhandene Thioethergruppe wie bei Methionin.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Amin-/Guanidiniumgruppen enthalten keinen Thiol-Schwefel. B: Tyrosins Phenol enthält O statt Schwefel und bildet keine S–S-Brücke. C: Zwei Thiolgruppen können oxidativ zu S–S verknüpft werden; ein Thioether ist nicht dieselbe Ausgangsgruppe. D: Asparagins Carboxamid enthält keinen Thiol-Schwefel. E: Ein unveränderter Methionin-Thioether besitzt kein freies S–H für die übliche Cystein-Disulfidbildung. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Cystein und Methionin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cystein und Methionin"
+      ],
+      "questionGoal": "Cystein und Methionin",
+      "structuredExplanation": {
+        "coreIdea": "Cystein und Methionin",
+        "correctReasoning": "Zwei Thiolgruppen können oxidativ zu S–S verknüpft werden; ein Thioether ist nicht dieselbe Ausgangsgruppe.",
+        "wrongAnswerExplanations": {
+          "A": "Amin-/Guanidiniumgruppen enthalten keinen Thiol-Schwefel.",
+          "B": "Tyrosins Phenol enthält O statt Schwefel und bildet keine S–S-Brücke.",
+          "D": "Asparagins Carboxamid enthält keinen Thiol-Schwefel.",
+          "E": "Ein unveränderter Methionin-Thioether besitzt kein freies S–H für die übliche Cystein-Disulfidbildung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welche Gruppe besteht ausschliesslich aus Aminosäuren mit aromatischen Seitenkettenanteilen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lysin, Arginin, Glycin.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Alanin, Valin, Leucin.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Aspartat, Glutamat, Asparagin.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Phenylalanin, Tyrosin, Tryptophan.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Serin, Threonin, Cystein.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Lysin, Arginin und Glycin besitzen keine aromatischen Seitenkettenringe. B: Diese drei Seitenketten sind aliphatisch und nicht aromatisch. C: Carboxylat- und Amidseitenketten bilden hier keine aromatischen Ringsysteme. D: Phe trägt Phenyl, Tyr Phenol und Trp Indol; die übrigen Gruppen sind nicht aromatisch aufgebaut. E: OH- und SH-Funktionen machen diese Seitenketten nicht aromatisch. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Aromatische Gruppen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aromatische Gruppen"
+      ],
+      "questionGoal": "Aromatische Gruppen",
+      "structuredExplanation": {
+        "coreIdea": "Aromatische Gruppen",
+        "correctReasoning": "Phe trägt Phenyl, Tyr Phenol und Trp Indol; die übrigen Gruppen sind nicht aromatisch aufgebaut.",
+        "wrongAnswerExplanations": {
+          "A": "Lysin, Arginin und Glycin besitzen keine aromatischen Seitenkettenringe.",
+          "B": "Diese drei Seitenketten sind aliphatisch und nicht aromatisch.",
+          "C": "Carboxylat- und Amidseitenketten bilden hier keine aromatischen Ringsysteme.",
+          "E": "OH- und SH-Funktionen machen diese Seitenketten nicht aromatisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welche Struktur hat ein Zwitterion einer einfachen Aminosäure ohne geladene Seitenkette?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keine geladenen Gruppen an irgendeinem Atom.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur eine negative Gruppe und keine positive.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Zwei positive Gruppen ohne negative Gegenladung im Molekül.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Gleichzeitig eine positive und eine negative Ladungsgruppe bei Nettoladung null.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Nur eine positive Gruppe und keine negative.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ohne geladene Gruppen wäre die Spezies ungeladen, aber kein Zwitterion. B: Nur eine negative Gruppe ergäbe ein Anion statt eines Zwitterions. C: Zwei positive Gruppen ohne negative Gegenladung ergeben keine ausgeglichene zwitterionische Nettoladung. D: Zwitterion beschreibt entgegengesetzte Ladungsgruppen innerhalb eines Moleküls; die Nettoladung muss gesondert bilanziert werden. E: Nur eine positive Gruppe ergäbe ohne Gegenladung ein Kation, kein neutrales Zwitterion. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Zwitterion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zwitterion"
+      ],
+      "questionGoal": "Zwitterion",
+      "structuredExplanation": {
+        "coreIdea": "Zwitterion",
+        "correctReasoning": "Zwitterion beschreibt entgegengesetzte Ladungsgruppen innerhalb eines Moleküls; die Nettoladung muss gesondert bilanziert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Ohne geladene Gruppen wäre die Spezies ungeladen, aber kein Zwitterion.",
+          "B": "Nur eine negative Gruppe ergäbe ein Anion statt eines Zwitterions.",
+          "C": "Zwei positive Gruppen ohne negative Gegenladung ergeben keine ausgeglichene zwitterionische Nettoladung.",
+          "E": "Nur eine positive Gruppe ergäbe ohne Gegenladung ein Kation, kein neutrales Zwitterion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Eine Aminosäure ohne ionisierbare Seitenkette besitzt pKa-Werte 2.0 und 10.0. Welcher pI folgt näherungsweise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6.0.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "2.0.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "4.0.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "8.0.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "12.0.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die beiden pKa um die neutrale Spezies werden gemittelt: (2+10)/2=6. B: 2.0 ist nur einer der pKa-Werte und nicht ihr Mittel. C: 4.0 wäre nicht das Mittel der vorgegebenen Werte 2 und 10. D: 8.0 folgt nicht aus dem Mittel der beiden neutralitätsbegrenzenden pKa. E: 12.0 ist die Summe, beim pI dieses Falls muss jedoch durch zwei geteilt werden. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Isoelektrischer Punkt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Isoelektrischer Punkt"
+      ],
+      "questionGoal": "Isoelektrischer Punkt",
+      "structuredExplanation": {
+        "coreIdea": "Isoelektrischer Punkt",
+        "correctReasoning": "Die beiden pKa um die neutrale Spezies werden gemittelt: (2+10)/2=6.",
+        "wrongAnswerExplanations": {
+          "B": "2.0 ist nur einer der pKa-Werte und nicht ihr Mittel.",
+          "C": "4.0 wäre nicht das Mittel der vorgegebenen Werte 2 und 10.",
+          "D": "8.0 folgt nicht aus dem Mittel der beiden neutralitätsbegrenzenden pKa.",
+          "E": "12.0 ist die Summe, beim pI dieses Falls muss jedoch durch zwei geteilt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Wie ist die mittlere Nettoladung einer Aminosäure oberhalb ihres pI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei jedem pH exakt null.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Unabhängig von der Protonierung zwingend +1.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Immer genau +2.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Negativ.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Positiv.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die mittlere Nettoladung ist nur am pI null, nicht bei jedem pH. B: Die Nettoladung hängt von ionisierbaren Gruppen und pH ab und ist nicht fest +1. C: +2 ist mit stärkerer Deprotonierung oberhalb des pI nicht die allgemeine Nettoladung. D: Höherer pH begünstigt Deprotonierung; oberhalb des isoelektrischen Punkts überwiegt negative Nettoladung. E: Oberhalb des pI überwiegt Deprotonierung und damit nicht positive Nettoladung. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "pH über pI"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "pH über pI"
+      ],
+      "questionGoal": "pH über pI",
+      "structuredExplanation": {
+        "coreIdea": "pH über pI",
+        "correctReasoning": "Höherer pH begünstigt Deprotonierung; oberhalb des isoelektrischen Punkts überwiegt negative Nettoladung.",
+        "wrongAnswerExplanations": {
+          "A": "Die mittlere Nettoladung ist nur am pI null, nicht bei jedem pH.",
+          "B": "Die Nettoladung hängt von ionisierbaren Gruppen und pH ab und ist nicht fest +1.",
+          "C": "+2 ist mit stärkerer Deprotonierung oberhalb des pI nicht die allgemeine Nettoladung.",
+          "E": "Oberhalb des pI überwiegt Deprotonierung und damit nicht positive Nettoladung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welches Produktpaar entsteht bei Decarboxylierung einer geeigneten Aminosäure am ehesten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Peptid und Wasser.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Disulfid und Wasserstoff.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine α-Ketosäure und Ammoniak ohne CO₂.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein biogenes Amin und CO₂.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Ein Carbonsäureester und Phosphat.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Eine Peptidbindung entsteht durch Verknüpfung zweier Funktionen, nicht durch diese Decarboxylierung. B: Eine Disulfidbildung ist eine Schwefelredoxreaktion und kein Verlust einer Carboxylgruppe. C: Die Bildung einer Ketosäure betrifft Deaminierung/Transaminierung statt den Abgang von CO₂. D: Die Carboxylgruppe wird als CO₂ entfernt; die Aminogruppe bleibt im biogenen Amin erhalten. E: Eine Ester-/Phosphatbildung ist nicht die Abspaltung einer Carboxylgruppe als CO₂. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Decarboxylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Decarboxylierung"
+      ],
+      "questionGoal": "Decarboxylierung",
+      "structuredExplanation": {
+        "coreIdea": "Decarboxylierung",
+        "correctReasoning": "Die Carboxylgruppe wird als CO₂ entfernt; die Aminogruppe bleibt im biogenen Amin erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Peptidbindung entsteht durch Verknüpfung zweier Funktionen, nicht durch diese Decarboxylierung.",
+          "B": "Eine Disulfidbildung ist eine Schwefelredoxreaktion und kein Verlust einer Carboxylgruppe.",
+          "C": "Die Bildung einer Ketosäure betrifft Deaminierung/Transaminierung statt den Abgang von CO₂.",
+          "E": "Eine Ester-/Phosphatbildung ist nicht die Abspaltung einer Carboxylgruppe als CO₂."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welches biogene Amin entsteht durch Decarboxylierung von L-DOPA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serotonin.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Dopamin.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Tryptamin.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Histamin.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "GABA.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Serotonin besitzt ein anderes Ringsystem und entsteht nicht aus L-DOPA durch diesen einzelnen Schritt. B: Die Catechol-Seitenkette von L-DOPA bleibt erhalten; Entfernung von CO₂ ergibt Dopamin. C: Tryptamin entsteht aus Tryptophan und besitzt ein Indolgerüst statt des Catechols. D: Histamin stammt aus Histidin und nicht aus L-DOPA. E: GABA ist das Decarboxylierungsprodukt von Glutamat. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "L-DOPA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "L-DOPA"
+      ],
+      "questionGoal": "L-DOPA",
+      "structuredExplanation": {
+        "coreIdea": "L-DOPA",
+        "correctReasoning": "Die Catechol-Seitenkette von L-DOPA bleibt erhalten; Entfernung von CO₂ ergibt Dopamin.",
+        "wrongAnswerExplanations": {
+          "A": "Serotonin besitzt ein anderes Ringsystem und entsteht nicht aus L-DOPA durch diesen einzelnen Schritt.",
+          "C": "Tryptamin entsteht aus Tryptophan und besitzt ein Indolgerüst statt des Catechols.",
+          "D": "Histamin stammt aus Histidin und nicht aus L-DOPA.",
+          "E": "GABA ist das Decarboxylierungsprodukt von Glutamat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Welche Stoffpaarung bildet ein Aminosäure/α-Ketosäure-Paar mit gleichem C-Grundgerüst?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serin und Cholesterin.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lysin und Pyruvat.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Phenylalanin und Acetat.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Alanin und Pyruvat.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Glycin und α-Ketoglutarat.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Cholesterin ist ein Sterol und keine entsprechende α-Ketosäure von Serin. B: Lysin besitzt mehr C und eine andere Seitenkette als das zu Pyruvat passende Alanin. C: Phenylalanin besitzt ein aromatisches C-Gerüst, das in Acetat fehlt. D: Alanin und Pyruvat besitzen denselben C3-Rahmen; Amino- und Ketofunktion entsprechen einander am α-C. E: Glycin hat C2, α-Ketoglutarat C5; die Grundgerüste passen nicht. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Transaminierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transaminierung"
+      ],
+      "questionGoal": "Transaminierung",
+      "structuredExplanation": {
+        "coreIdea": "Transaminierung",
+        "correctReasoning": "Alanin und Pyruvat besitzen denselben C3-Rahmen; Amino- und Ketofunktion entsprechen einander am α-C.",
+        "wrongAnswerExplanations": {
+          "A": "Cholesterin ist ein Sterol und keine entsprechende α-Ketosäure von Serin.",
+          "B": "Lysin besitzt mehr C und eine andere Seitenkette als das zu Pyruvat passende Alanin.",
+          "C": "Phenylalanin besitzt ein aromatisches C-Gerüst, das in Acetat fehlt.",
+          "E": "Glycin hat C2, α-Ketoglutarat C5; die Grundgerüste passen nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu PLP, Alanin und Pyruvat, L-Konfiguration, Aromatische Seitenketten.",
+      "options": [
+        {
+          "text": "Phenylalanin wird wegen seiner unpolaren Seitenkette nicht zu den aromatischen Aminosäuren gezählt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pyridoxalphosphat ist ein wichtiger Cofaktor vieler Aminosäureumsetzungen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Aus der Bezeichnung L-Alanin lässt sich ohne Messbedingung ein negatives Drehvorzeichen ableiten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alanin und Pyruvat bilden ein typisches Aminosäure/α-Ketosäure-Paar.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Unpolar und aromatisch schliessen sich nicht aus; der Phenylring ist aromatisch. B: Es stammt aus Vitamin B6. C: L beschreibt eine Konfiguration; das Vorzeichen der optischen Drehung ist eine getrennte Messgrösse. D: Alanin besitzt denselben C3-Kohlenstoffrahmen. Quelle: Originalunterlagen, PDF-S. 3–5, 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "PLP"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PLP"
+      ],
+      "questionGoal": "PLP",
+      "structuredExplanation": {
+        "coreIdea": "PLP",
+        "correctReasoning": "Es stammt aus Vitamin B6. Alanin besitzt denselben C3-Kohlenstoffrahmen.",
+        "wrongAnswerExplanations": {
+          "A": "Unpolar und aromatisch schliessen sich nicht aus; der Phenylring ist aromatisch.",
+          "B": "Es stammt aus Vitamin B6.",
+          "C": "L beschreibt eine Konfiguration; das Vorzeichen der optischen Drehung ist eine getrennte Messgrösse.",
+          "D": "Alanin besitzt denselben C3-Kohlenstoffrahmen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Alanin und Pyruvat, Decarboxylierung, Saure Seitenketten, Zwitterion.",
+      "options": [
+        {
+          "text": "Aspartat und Glutamat tragen bei physiologischem pH überwiegend negative Seitenkettenladungen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei Aminosäuredecarboxylierung wird die Aminogruppe an eine α-Ketosäure übertragen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alanin und Pyruvat bilden ein typisches Aminosäure/α-Ketosäure-Paar.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Zwitterion besitzt zugleich positive und negative Ladungsgruppen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Seitenketten enthalten Carboxylatgruppen. B: Das beschreibt Transaminierung; Decarboxylierung entfernt eine Carboxylgruppe als CO₂ und kann ein biogenes Amin erzeugen. C: Alanin besitzt denselben C3-Kohlenstoffrahmen. D: Die Nettoladung kann trotzdem null sein. Quelle: Originalunterlagen, PDF-S. 4–5, 7–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Alanin und Pyruvat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alanin und Pyruvat"
+      ],
+      "questionGoal": "Alanin und Pyruvat",
+      "structuredExplanation": {
+        "coreIdea": "Alanin und Pyruvat",
+        "correctReasoning": "Ihre Seitenketten enthalten Carboxylatgruppen. Alanin besitzt denselben C3-Kohlenstoffrahmen. Die Nettoladung kann trotzdem null sein.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Seitenketten enthalten Carboxylatgruppen.",
+          "B": "Das beschreibt Transaminierung; Decarboxylierung entfernt eine Carboxylgruppe als CO₂ und kann ein biogenes Amin erzeugen.",
+          "C": "Alanin besitzt denselben C3-Kohlenstoffrahmen.",
+          "D": "Die Nettoladung kann trotzdem null sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Decarboxylierung, L-DOPA, Basische Seitenketten, pI-Berechnung.",
+      "options": [
+        {
+          "text": "Decarboxylierung von L-DOPA kann Dopamin liefern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Für eine Aminosäure ohne ionisierbare Seitenkette mit pKa 2 und 10 beträgt pI 12.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lysin ist wegen einer Seitenketten-Carboxylgruppe eine typische saure Aminosäure.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei Aminosäuredecarboxylierung wird die Aminogruppe an eine α-Ketosäure übertragen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dopamin besitzt das entsprechende Catecholamin-Gerüst. B: Die pKa-Werte um die ungeladene Spezies werden gemittelt: pI=(2+10)/2=6. C: Lysin und Arginin besitzen bei physiologischem pH typischerweise positiv geladene Seitenketten. Seine Seitenkette enthält eine Aminogruppe. D: Das beschreibt Transaminierung; Decarboxylierung entfernt eine Carboxylgruppe als CO₂ und kann ein biogenes Amin erzeugen. Quelle: Originalunterlagen, PDF-S. 4–5, 7–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Decarboxylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Decarboxylierung"
+      ],
+      "questionGoal": "Decarboxylierung",
+      "structuredExplanation": {
+        "coreIdea": "Decarboxylierung",
+        "correctReasoning": "Dopamin besitzt das entsprechende Catecholamin-Gerüst.",
+        "wrongAnswerExplanations": {
+          "A": "Dopamin besitzt das entsprechende Catecholamin-Gerüst.",
+          "B": "Die pKa-Werte um die ungeladene Spezies werden gemittelt: pI=(2+10)/2=6.",
+          "C": "Lysin und Arginin besitzen bei physiologischem pH typischerweise positiv geladene Seitenketten. Seine Seitenkette enthält eine Aminogruppe.",
+          "D": "Das beschreibt Transaminierung; Decarboxylierung entfernt eine Carboxylgruppe als CO₂ und kann ein biogenes Amin erzeugen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu L-DOPA, Amphoterie, Arginin, pH über pI.",
+      "options": [
+        {
+          "text": "Decarboxylierung von L-DOPA kann Dopamin liefern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Übergang –NH₂→–NH₃⁺ ist eine Protonenabgabe; der Übergang –COOH→–COO⁻ ist eine Protonenaufnahme.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Guanidiniumgruppe ist das charakteristische Merkmal von Serin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Oberhalb ihres pI ist die mittlere Nettoladung einer Aminosäure negativer als null.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dopamin besitzt das entsprechende Catecholamin-Gerüst. B: Die Richtungen sind vertauscht: –NH₂ nimmt H⁺ auf; –COOH gibt H⁺ ab. NH₃⁺ und COO⁻ können ihrerseits die korrespondierenden Gegenrollen erfüllen. C: Arginin enthält eine Guanidiniumgruppe in der Seitenkette. Serin besitzt eine Hydroxymethylgruppe. D: Höherer pH begünstigt Deprotonierung. Quelle: Originalunterlagen, PDF-S. 4–5, 7–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "L-DOPA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "L-DOPA"
+      ],
+      "questionGoal": "L-DOPA",
+      "structuredExplanation": {
+        "coreIdea": "L-DOPA",
+        "correctReasoning": "Dopamin besitzt das entsprechende Catecholamin-Gerüst. Höherer pH begünstigt Deprotonierung.",
+        "wrongAnswerExplanations": {
+          "A": "Dopamin besitzt das entsprechende Catecholamin-Gerüst.",
+          "B": "Die Richtungen sind vertauscht: –NH₂ nimmt H⁺ auf; –COOH gibt H⁺ ab. NH₃⁺ und COO⁻ können ihrerseits die korrespondierenden Gegenrollen erfüllen.",
+          "C": "Arginin enthält eine Guanidiniumgruppe in der Seitenkette. Serin besitzt eine Hydroxymethylgruppe.",
+          "D": "Höherer pH begünstigt Deprotonierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Amphoterie, Pufferbereich, Cystein, Transaminierung.",
+      "options": [
+        {
+          "text": "Cystein besitzt dieselbe Thioetherfunktion wie Methionin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein ionisierbares Aminosäure-Zentrum puffert besonders im Bereich seines pKa.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei Transaminierung wird die Carboxylgruppe als CO₂ entfernt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aminosäuren können je nach Gruppe und pH Protonen aufnehmen oder abgeben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Cystein trägt eine Thiolgruppe; Methionin einen Thioether. B: Säure- und Basenform müssen relevant vorhanden sein. C: Das ist Decarboxylierung; Transaminierung überträgt eine Aminogruppe zwischen Aminosäure und Ketosäure. D: Saure und basische Funktionen sind kombiniert. Quelle: Originalunterlagen, PDF-S. 4–5, 7–10, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Amphoterie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Amphoterie"
+      ],
+      "questionGoal": "Amphoterie",
+      "structuredExplanation": {
+        "coreIdea": "Amphoterie",
+        "correctReasoning": "Säure- und Basenform müssen relevant vorhanden sein. Saure und basische Funktionen sind kombiniert.",
+        "wrongAnswerExplanations": {
+          "A": "Cystein trägt eine Thiolgruppe; Methionin einen Thioether.",
+          "B": "Säure- und Basenform müssen relevant vorhanden sein.",
+          "C": "Das ist Decarboxylierung; Transaminierung überträgt eine Aminogruppe zwischen Aminosäure und Ketosäure.",
+          "D": "Saure und basische Funktionen sind kombiniert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Pufferbereich, Disulfidreduktion, Aromatische Seitenketten, α-Aminosäure.",
+      "options": [
+        {
+          "text": "Reduktion einer Disulfidbindung erzeugt zwingend eine neue Peptidbindung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Phenylalanin, Tyrosin und Tryptophan besitzen aromatische Seitenkettenanteile.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei einer α-Aminosäure sitzen Amino- und Carboxylgruppe am selben α-C-Atom.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein ionisierbares Aminosäure-Zentrum puffert besonders im Bereich seines pKa.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Reduktion einer Disulfidbindung kann zwei Thiolgruppen zurückbilden. Es handelt sich um eine Redoxumwandlung des Schwefels. B: Die Ringsysteme sind kennzeichnend. C: Das α-C trägt zusätzlich Seitenkette und H, mit Prolinbesonderheit. D: Säure- und Basenform müssen relevant vorhanden sein. Quelle: Originalunterlagen, PDF-S. 3–5, 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Pufferbereich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pufferbereich"
+      ],
+      "questionGoal": "Pufferbereich",
+      "structuredExplanation": {
+        "coreIdea": "Pufferbereich",
+        "correctReasoning": "Die Ringsysteme sind kennzeichnend. Das α-C trägt zusätzlich Seitenkette und H, mit Prolinbesonderheit. Säure- und Basenform müssen relevant vorhanden sein.",
+        "wrongAnswerExplanations": {
+          "A": "Reduktion einer Disulfidbindung kann zwei Thiolgruppen zurückbilden. Es handelt sich um eine Redoxumwandlung des Schwefels.",
+          "B": "Die Ringsysteme sind kennzeichnend.",
+          "C": "Das α-C trägt zusätzlich Seitenkette und H, mit Prolinbesonderheit.",
+          "D": "Säure- und Basenform müssen relevant vorhanden sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Disulfidreduktion, Nettoladung, Zwitterion, Glycin.",
+      "options": [
+        {
+          "text": "Reduktion einer Disulfidbindung erzeugt zwingend eine neue Peptidbindung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Nettoladung erfordert die Bilanz aller ionisierbaren Gruppen inklusive Seitenkette.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Glycin besitzt am α-C vier unterschiedliche Substituenten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Zwitterion darf definitionsgemäss keine positive Ladungsgruppe besitzen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Reduktion einer Disulfidbindung kann zwei Thiolgruppen zurückbilden. Es handelt sich um eine Redoxumwandlung des Schwefels. B: Saure und basische Seitenketten verändern die Bilanz. C: Glycin ist wegen zweier H-Atome am α-C achiral. Die fehlende Substituentenverschiedenheit verhindert dieses Zentrum. D: Ein Zwitterion besitzt zugleich positive und negative Ladungsgruppen. Die Nettoladung kann trotzdem null sein. Quelle: Originalunterlagen, PDF-S. 3–5, 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Disulfidreduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Disulfidreduktion"
+      ],
+      "questionGoal": "Disulfidreduktion",
+      "structuredExplanation": {
+        "coreIdea": "Disulfidreduktion",
+        "correctReasoning": "Saure und basische Seitenketten verändern die Bilanz.",
+        "wrongAnswerExplanations": {
+          "A": "Reduktion einer Disulfidbindung kann zwei Thiolgruppen zurückbilden. Es handelt sich um eine Redoxumwandlung des Schwefels.",
+          "B": "Saure und basische Seitenketten verändern die Bilanz.",
+          "C": "Glycin ist wegen zweier H-Atome am α-C achiral. Die fehlende Substituentenverschiedenheit verhindert dieses Zentrum.",
+          "D": "Ein Zwitterion besitzt zugleich positive und negative Ladungsgruppen. Die Nettoladung kann trotzdem null sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc11_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC11",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Nettoladung, α-Aminosäure, pI-Berechnung, L-Konfiguration.",
+      "options": [
+        {
+          "text": "Bei jeder α-Aminosäure ist die Aminogruppe direkt an das Carboxyl-O gebunden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Für eine Aminosäure ohne ionisierbare Seitenkette mit pKa 2 und 10 beträgt pI 12.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Proteinogene chirale Aminosäuren werden überwiegend in L-Konfiguration eingebaut.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Nettoladung erfordert die Bilanz aller ionisierbaren Gruppen inklusive Seitenkette.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Bei einer α-Aminosäure sitzen Amino- und Carboxylgruppe am selben α-C-Atom. Das α-C trägt zusätzlich Seitenkette und H, mit Prolinbesonderheit. B: Die pKa-Werte um die ungeladene Spezies werden gemittelt: pI=(2+10)/2=6. C: Relative Konfiguration und Drehvorzeichen sind verschieden. D: Saure und basische Seitenketten verändern die Bilanz. Quelle: Originalunterlagen, PDF-S. 3, 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC11",
+        "Nettoladung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nettoladung"
+      ],
+      "questionGoal": "Nettoladung",
+      "structuredExplanation": {
+        "coreIdea": "Nettoladung",
+        "correctReasoning": "Relative Konfiguration und Drehvorzeichen sind verschieden. Saure und basische Seitenketten verändern die Bilanz.",
+        "wrongAnswerExplanations": {
+          "A": "Bei einer α-Aminosäure sitzen Amino- und Carboxylgruppe am selben α-C-Atom. Das α-C trägt zusätzlich Seitenkette und H, mit Prolinbesonderheit.",
+          "B": "Die pKa-Werte um die ungeladene Spezies werden gemittelt: pI=(2+10)/2=6.",
+          "C": "Relative Konfiguration und Drehvorzeichen sind verschieden.",
+          "D": "Saure und basische Seitenketten verändern die Bilanz."
+        }
+      }
+    }
+  ]
+}

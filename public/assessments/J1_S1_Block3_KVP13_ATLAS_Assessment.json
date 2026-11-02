@@ -1,0 +1,1316 @@
+{
+  "id": "assessment_j1_s1_block3_kvp13_20261102",
+  "lectureCode": "KVP13",
+  "title": "Elektrizität, Magnetismus und elektrische Sicherheit",
+  "block": "Block 3",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP13-Elektrizitaet-Sicherheit. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Sicherheitsfragen sind Grundlagen, keine Anleitung zu Arbeiten an Netzspannung. Strom-Zeit-Gefährdung nicht als universelle Todesstromschwelle formuliert; RCD nicht bei beliebigem ΔI sofort, keine universelle Auslösezeit. SUVA/BFU-Primärinformationen gegengeprüft. μ0-Wert seit2019 nur Näherung (BIPM), Spin nicht als klassische Rotation. Rechenbeispiele explizit idealisiert.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Magnetfelder von Strömen und Lorentzkraft erklären und berechnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Induktionsspannung und Generatorprinzip anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Wechselspannung, Effektivwerte, Phase und kapazitiven Blindwiderstand erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Körperstrom und zeit-/wegabhängige Gefährdung im Modell beurteilen."
+    },
+    {
+      "id": "lo5",
+      "text": "Fehlerstromschutz und Grenzen vereinfachter Sicherheitsschwellen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvp13_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Für einen langen geraden Leiter gilt B = μ0I/(2πr). I verdoppelt sich, r ebenfalls. Wie ändert sich B?",
+      "options": [
+        {
+          "text": "Es sinkt auf ein Viertel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es bleibt gleich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es halbiert sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es verdoppelt sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es vervierfacht sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Abhängigkeit ist nicht 1/(Ir). B: Der Quotient I/r bleibt konstant. C: Die gleichzeitig grössere Stromstärke wurde übersehen. D: Die gleichzeitig grössere Entfernung wurde übersehen. E: I und r wirken hier nicht beide im Zähler. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Leiterfeld"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leiterfeld"
+      ],
+      "questionGoal": "Leiterfeld",
+      "structuredExplanation": {
+        "coreIdea": "Leiterfeld",
+        "correctReasoning": "Der Quotient I/r bleibt konstant.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abhängigkeit ist nicht 1/(Ir).",
+          "C": "Die gleichzeitig grössere Stromstärke wurde übersehen.",
+          "D": "Die gleichzeitig grössere Entfernung wurde übersehen.",
+          "E": "I und r wirken hier nicht beide im Zähler."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "I = 10 A, r = 0,10 m. Verwenden Sie μ0 ≈ 4π×10⁻⁷ T·m/A. Wie gross ist B im Langdrahtmodell?",
+      "options": [
+        {
+          "text": "2 µT",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "200 µT",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "20 mT",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,2 T",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "20 µT",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Entfernung ist 0,10 m, nicht 1 m. B: Die Rechnung ist um Faktor zehn zu gross. C: Die Mikro-/Milli-Präfixe wurden verwechselt. D: Die Zehnerpotenz wurde nicht korrekt berücksichtigt. E: μ0I/(2πr) = 2×10⁻⁵ T. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Magnetfeld berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Magnetfeld berechnen"
+      ],
+      "questionGoal": "Magnetfeld berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Magnetfeld berechnen",
+        "correctReasoning": "μ0I/(2πr) = 2×10⁻⁵ T.",
+        "wrongAnswerExplanations": {
+          "A": "Die Entfernung ist 0,10 m, nicht 1 m.",
+          "B": "Die Rechnung ist um Faktor zehn zu gross.",
+          "C": "Die Mikro-/Milli-Präfixe wurden verwechselt.",
+          "D": "Die Zehnerpotenz wurde nicht korrekt berücksichtigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «elektrischer Strom, Magnetfeld und magnetische Einheiten».",
+      "options": [
+        {
+          "text": "Spin ist im quantenmechanischen Sinn einfach ein klassisch rotierendes kleines Kügelchen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein elektrischer Strom kann ein Magnetfeld erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die magnetische Flussdichte B wird im SI in Weber statt Tesla angegeben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein ruhender Stabmagnet besitzt isoliert nur einen Nordpol ohne Südpol.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die bildhafte „Eigenrotation“ ist keine wörtliche klassische Beschreibung. B: Bewegte Ladung ist eine magnetische Feldquelle. C: Weber ist die Einheit des magnetischen Flusses, Tesla die Flussdichte. D: Der gewöhnliche Stabmagnet hat beide Pole. Quelle: Originalunterlagen, PDF-S. 6–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Magnetische Grundbegriffe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Magnetische Grundbegriffe"
+      ],
+      "questionGoal": "Magnetische Grundbegriffe",
+      "structuredExplanation": {
+        "coreIdea": "Magnetische Grundbegriffe",
+        "correctReasoning": "Bewegte Ladung ist eine magnetische Feldquelle.",
+        "wrongAnswerExplanations": {
+          "A": "Die bildhafte „Eigenrotation“ ist keine wörtliche klassische Beschreibung.",
+          "B": "Bewegte Ladung ist eine magnetische Feldquelle.",
+          "C": "Weber ist die Einheit des magnetischen Flusses, Tesla die Flussdichte.",
+          "D": "Der gewöhnliche Stabmagnet hat beide Pole."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Eine Ladung bewegt sich parallel zu einem homogenen Magnetfeld. Wie gross ist die magnetische Lorentzkraft?",
+      "options": [
+        {
+          "text": "Immer entgegengesetzt zur Geschwindigkeit",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "qvB als maximaler Wert",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Null",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "mv² unabhängig von B",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "qB/v",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die magnetische Kraft steht bei nichtparalleler Bewegung senkrecht zu v. B: Dies gilt für senkrechte Bewegung. C: Der Kreuzproduktbetrag enthält sin(0) = 0. D: Dieser Ausdruck ist weder die richtige Formel noch eine Kraft ohne Längendivision. E: Dies ist nicht die Kraftformel. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Lorentzkraftwinkel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lorentzkraftwinkel"
+      ],
+      "questionGoal": "Lorentzkraftwinkel",
+      "structuredExplanation": {
+        "coreIdea": "Lorentzkraftwinkel",
+        "correctReasoning": "Der Kreuzproduktbetrag enthält sin(0) = 0.",
+        "wrongAnswerExplanations": {
+          "A": "Die magnetische Kraft steht bei nichtparalleler Bewegung senkrecht zu v.",
+          "B": "Dies gilt für senkrechte Bewegung.",
+          "D": "Dieser Ausdruck ist weder die richtige Formel noch eine Kraft ohne Längendivision.",
+          "E": "Dies ist nicht die Kraftformel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Für senkrechten Eintritt gilt R = mv/(B·Betrag q). Bei gleichem Teilchen und gleicher Geschwindigkeit verdoppelt sich B. Was geschieht mit R?",
+      "options": [
+        {
+          "text": "R bleibt gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "R halbiert sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "R wird negativ als geometrischer Radius.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "R vervierfacht sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "R verdoppelt sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Feldstärke bestimmt die Krümmung mit. B: R ist umgekehrt proportional zu B. C: Der Radiusbetrag bleibt positiv; das Ladungsvorzeichen bestimmt die Krümmungsrichtung. D: B steht nicht quadratisch im Zähler. E: Dies vertauscht die Abhängigkeit. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Bahn im Magnetfeld"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bahn im Magnetfeld"
+      ],
+      "questionGoal": "Bahn im Magnetfeld",
+      "structuredExplanation": {
+        "coreIdea": "Bahn im Magnetfeld",
+        "correctReasoning": "R ist umgekehrt proportional zu B.",
+        "wrongAnswerExplanations": {
+          "A": "Die Feldstärke bestimmt die Krümmung mit.",
+          "C": "Der Radiusbetrag bleibt positiv; das Ladungsvorzeichen bestimmt die Krümmungsrichtung.",
+          "D": "B steht nicht quadratisch im Zähler.",
+          "E": "Dies vertauscht die Abhängigkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «magnetische Lorentzkraft und Teilchenbahn».",
+      "options": [
+        {
+          "text": "Grössere Geschwindigkeit vergrössert bei gleichem B und gleichem Teilchen den Kreisbahnradius.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Zur Interpretation einer magnetisch gekrümmten Ionenbahn müssen Bewegungsbedingungen berücksichtigt werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Umkehr des Ladungsvorzeichens lässt bei gleichem v und B die Kraftrichtung unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein reines stationäres Magnetfeld ändert bei idealer Bewegung den Geschwindigkeitsbetrag eines Teilchens nicht.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: R ist proportional zu v. B: Der Radius hängt von m, v, Ladungsbetrag und B ab. C: Die Richtung kehrt sich um. D: Die Kraft steht senkrecht zur momentanen Bewegung und verrichtet keine Arbeit. Quelle: Originalunterlagen, PDF-S. 10–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Magnetische Kraft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Magnetische Kraft"
+      ],
+      "questionGoal": "Magnetische Kraft",
+      "structuredExplanation": {
+        "coreIdea": "Magnetische Kraft",
+        "correctReasoning": "R ist proportional zu v. Der Radius hängt von m, v, Ladungsbetrag und B ab. Die Kraft steht senkrecht zur momentanen Bewegung und verrichtet keine Arbeit.",
+        "wrongAnswerExplanations": {
+          "A": "R ist proportional zu v.",
+          "B": "Der Radius hängt von m, v, Ladungsbetrag und B ab.",
+          "C": "Die Richtung kehrt sich um.",
+          "D": "Die Kraft steht senkrecht zur momentanen Bewegung und verrichtet keine Arbeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Ein Leiter der Länge 0,20 m bewegt sich senkrecht zu B = 0,50 T mit 3 m/s; die Geometrie entspricht U = Blv. Welche Spannung entsteht?",
+      "options": [
+        {
+          "text": "30 V",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1,2 V",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,033 V",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3 V",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,30 V",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Meter- und Zentimeterwerte wurden vermischt. B: Die Grössen wurden nicht korrekt multipliziert. C: Hier wurde durch die Geschwindigkeit dividiert. D: Die Leiterlänge wurde um Faktor zehn falsch eingesetzt. E: 0,50×0,20×3 = 0,30. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Bewegungsinduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bewegungsinduktion"
+      ],
+      "questionGoal": "Bewegungsinduktion",
+      "structuredExplanation": {
+        "coreIdea": "Bewegungsinduktion",
+        "correctReasoning": "0,50×0,20×3 = 0,30.",
+        "wrongAnswerExplanations": {
+          "A": "Meter- und Zentimeterwerte wurden vermischt.",
+          "B": "Die Grössen wurden nicht korrekt multipliziert.",
+          "C": "Hier wurde durch die Geschwindigkeit dividiert.",
+          "D": "Die Leiterlänge wurde um Faktor zehn falsch eingesetzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Die Fläche einer rotierenden Einzelschleife verdoppelt sich bei gleichem B und gleicher Winkelgeschwindigkeit. Wie ändert sich die Spannungsscheitelamplitude Û = ABω?",
+      "options": [
+        {
+          "text": "Sie vervierfacht sich allein deshalb.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie bleibt gleich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie wird zu einer konstanten Gleichspannung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie halbiert sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Fläche ist bereits gegeben und wird nicht nochmals quadriert. B: Û ist proportional zur Fläche. C: Die Fläche steht ausdrücklich in der Formel. D: Die Drehung erzeugt weiterhin einen zeitlichen Wechsel. E: Die Abhängigkeit ist nicht invers. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Generatoramplitude"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Generatoramplitude"
+      ],
+      "questionGoal": "Generatoramplitude",
+      "structuredExplanation": {
+        "coreIdea": "Generatoramplitude",
+        "correctReasoning": "Û ist proportional zur Fläche.",
+        "wrongAnswerExplanations": {
+          "A": "Die Fläche ist bereits gegeben und wird nicht nochmals quadriert.",
+          "C": "Die Fläche steht ausdrücklich in der Formel.",
+          "D": "Die Drehung erzeugt weiterhin einen zeitlichen Wechsel.",
+          "E": "Die Abhängigkeit ist nicht invers."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Bewegungsinduktion und Generator».",
+      "options": [
+        {
+          "text": "Ladungstrennung in einem bewegten Leiter kann eine Spannung erzeugen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein idealer Generator liefert elektrische Energie ohne mechanischen Energieeinsatz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Generatorfrequenz hängt von der Rotationsfrequenz ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein zeitlich konstantes räumliches B schliesst Induktion an einer rotierenden Schleife aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Lorentzkraft und elektrisches Gegenfeld wirken zusammen. B: Energieumwandlung braucht eine Quelle. C: Die periodische Drehung bestimmt den zeitlichen Verlauf. D: Auch die veränderte Orientierung der Schleife kann den magnetischen Fluss ändern. Quelle: Originalunterlagen, PDF-S. 15–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Induktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Induktion"
+      ],
+      "questionGoal": "Induktion",
+      "structuredExplanation": {
+        "coreIdea": "Induktion",
+        "correctReasoning": "Lorentzkraft und elektrisches Gegenfeld wirken zusammen. Die periodische Drehung bestimmt den zeitlichen Verlauf.",
+        "wrongAnswerExplanations": {
+          "A": "Lorentzkraft und elektrisches Gegenfeld wirken zusammen.",
+          "B": "Energieumwandlung braucht eine Quelle.",
+          "C": "Die periodische Drehung bestimmt den zeitlichen Verlauf.",
+          "D": "Auch die veränderte Orientierung der Schleife kann den magnetischen Fluss ändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Eine sinusförmige Spannung hat Ueff = 230 V. Wie gross ist Û ungefähr?",
+      "options": [
+        {
+          "text": "230 V",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "325 V",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "460 V",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "163 V",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "650 V",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Effektiv- und Scheitelwert sind beim Sinus verschieden. B: Û = √2×230 V. C: Das Doppelte des Effektivwerts ist nicht der Scheitelwert. D: Dies ist 230/√2 statt 230√2. E: Dies ist die Spitze-Spitze-Spannung. Quelle: Originalunterlagen, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Effektivwert"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Effektivwert"
+      ],
+      "questionGoal": "Effektivwert",
+      "structuredExplanation": {
+        "coreIdea": "Effektivwert",
+        "correctReasoning": "Û = √2×230 V.",
+        "wrongAnswerExplanations": {
+          "A": "Effektiv- und Scheitelwert sind beim Sinus verschieden.",
+          "C": "Das Doppelte des Effektivwerts ist nicht der Scheitelwert.",
+          "D": "Dies ist 230/√2 statt 230√2.",
+          "E": "Dies ist die Spitze-Spitze-Spannung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Frequenz, Periodendauer und Kreisfrequenz».",
+      "options": [
+        {
+          "text": "ω = 2πf beträgt bei 50 Hz ungefähr 314 rad/s.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die positive und negative Halbwelle machen die elektrische Frequenz zu 100 Hz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei f = 50 Hz beträgt die Periodendauer 20 ms.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "50 Hz bedeutet 50 vollständige Perioden pro Minute.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Kreisfrequenz und Frequenz unterscheiden sich um 2π. B: Die vollständige Periode bleibt 50 Hz; biologische Wirkung beider Halbwellen ändert diese Definition nicht. C: T = 1/f. D: Es sind 50 Perioden pro Sekunde. Quelle: Originalunterlagen, PDF-S. 22,26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Sinusgrössen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sinusgrössen"
+      ],
+      "questionGoal": "Sinusgrössen",
+      "structuredExplanation": {
+        "coreIdea": "Sinusgrössen",
+        "correctReasoning": "Kreisfrequenz und Frequenz unterscheiden sich um 2π. T = 1/f.",
+        "wrongAnswerExplanations": {
+          "A": "Kreisfrequenz und Frequenz unterscheiden sich um 2π.",
+          "B": "Die vollständige Periode bleibt 50 Hz; biologische Wirkung beider Halbwellen ändert diese Definition nicht.",
+          "C": "T = 1/f.",
+          "D": "Es sind 50 Perioden pro Sekunde."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Bei idealer sinusförmiger Spannung am Kondensator gilt I = C dU/dt. Wie liegt die Stromphase zur Spannungsphase?",
+      "options": [
+        {
+          "text": "Der Strom bleibt für jede Wechselspannung exakt null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Strom hat zwangsläufig die doppelte Frequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide sind wie beim reinen Widerstand immer phasengleich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Strom folgt um 90° nach.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Strom eilt um 90° voraus.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auf- und Entladung erzeugen Strom. B: Die Ableitung ändert die Sinusfrequenz nicht. C: Kapazität verursacht eine Phasenverschiebung. D: Dies ist die umgekehrte Phasenlage. E: Die Ableitung eines Sinus ist ein Cosinus. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Kondensatorphase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kondensatorphase"
+      ],
+      "questionGoal": "Kondensatorphase",
+      "structuredExplanation": {
+        "coreIdea": "Kondensatorphase",
+        "correctReasoning": "Die Ableitung eines Sinus ist ein Cosinus.",
+        "wrongAnswerExplanations": {
+          "A": "Auf- und Entladung erzeugen Strom.",
+          "B": "Die Ableitung ändert die Sinusfrequenz nicht.",
+          "C": "Kapazität verursacht eine Phasenverschiebung.",
+          "D": "Dies ist die umgekehrte Phasenlage."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «ohmscher und kapazitiver Wechselstromwiderstand».",
+      "options": [
+        {
+          "text": "Der kapazitive Blindwiderstand steigt mit der Frequenz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Für einen idealen ohmschen Widerstand sind sinusförmiger Strom und Spannung phasengleich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der Begriff Blindwiderstand bedeutet, dass jede Frequenzabhängigkeit entfällt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein idealer vollständig geladener Kondensator trägt bei konstanter Gleichspannung keinen stationären Leitungsstrom.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: XC = 1/(2πfC) sinkt. B: I(t) = U(t)/R. C: Gerade die Frequenzabhängigkeit ist wesentlich. D: Nach der Umladung ist dU/dt = 0. Quelle: Originalunterlagen, PDF-S. 22–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Widerstand und Kapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Widerstand und Kapazität"
+      ],
+      "questionGoal": "Widerstand und Kapazität",
+      "structuredExplanation": {
+        "coreIdea": "Widerstand und Kapazität",
+        "correctReasoning": "I(t) = U(t)/R. Nach der Umladung ist dU/dt = 0.",
+        "wrongAnswerExplanations": {
+          "A": "XC = 1/(2πfC) sinkt.",
+          "B": "I(t) = U(t)/R.",
+          "C": "Gerade die Frequenzabhängigkeit ist wesentlich.",
+          "D": "Nach der Umladung ist dU/dt = 0."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "C = 1 µF, f = 50 Hz. Wie gross ist XC = 1/(2πfC) ungefähr?",
+      "options": [
+        {
+          "text": "50 Ω",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,314 Ω",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3,18 kΩ",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "318 kΩ",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3,18 Ω",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Frequenz ist nicht gleich dem Blindwiderstand. B: Dies entspricht nicht dem Kehrwert des korrekten Produkts. C: 1/(2π×50×10⁻⁶) ≈ 3183 Ω. D: Dies wäre ein um Faktor 100 kleineres C bei gleichem f. E: Das Mikropräfix wurde um Faktor 1000 falsch berücksichtigt. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Blindwiderstand rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blindwiderstand rechnen"
+      ],
+      "questionGoal": "Blindwiderstand rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Blindwiderstand rechnen",
+        "correctReasoning": "1/(2π×50×10⁻⁶) ≈ 3183 Ω.",
+        "wrongAnswerExplanations": {
+          "A": "Die Frequenz ist nicht gleich dem Blindwiderstand.",
+          "B": "Dies entspricht nicht dem Kehrwert des korrekten Produkts.",
+          "D": "Dies wäre ein um Faktor 100 kleineres C bei gleichem f.",
+          "E": "Das Mikropräfix wurde um Faktor 1000 falsch berücksichtigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Reine Modellrechnung: U = 230 V, angenommener Gesamtwiderstand R = 1000 Ω. Welcher Strom folgt aus I = U/R?",
+      "options": [
+        {
+          "text": "23 mA",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2,3 mA",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "230 mA",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "1 mA",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "230 A",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Division ist um Faktor zehn zu klein. B: Die Rechnung ist um Faktor 100 zu klein. C: 230/1000 A = 0,230 A. D: Dies folgt nicht aus den vorgegebenen Werten. E: Der Widerstand wurde nicht dividiert. Quelle: Originalunterlagen, PDF-S. 28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Körperstrom-Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Körperstrom-Modell"
+      ],
+      "questionGoal": "Körperstrom-Modell",
+      "structuredExplanation": {
+        "coreIdea": "Körperstrom-Modell",
+        "correctReasoning": "230/1000 A = 0,230 A.",
+        "wrongAnswerExplanations": {
+          "A": "Die Division ist um Faktor zehn zu klein.",
+          "B": "Die Rechnung ist um Faktor 100 zu klein.",
+          "D": "Dies folgt nicht aus den vorgegebenen Werten.",
+          "E": "Der Widerstand wurde nicht dividiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Stromweg, Einwirkdauer und Körperwiderstand».",
+      "options": [
+        {
+          "text": "Ein einziger mA-Wert trennt für alle Menschen und Dauern sicher ungefährlich von tödlich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Feuchte Haut kann den Kontaktwiderstand verringern und bei gleicher Spannung den Strom erhöhen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gleichstrom ist unabhängig von Stärke und Dauer stets ungefährlich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Stromweg und Einwirkdauer beeinflussen die Gefährdung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Gefährdung ist kontext- und zeitabhängig. B: Dies folgt aus dem Widerstandsmodell. C: Auch Gleichstrom kann schwere Schäden verursachen. D: Der Strom am Herzen und die Zeit sind wesentlich. Quelle: Originalunterlagen, PDF-S. 27–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Stromgefährdung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stromgefährdung"
+      ],
+      "questionGoal": "Stromgefährdung",
+      "structuredExplanation": {
+        "coreIdea": "Stromgefährdung",
+        "correctReasoning": "Dies folgt aus dem Widerstandsmodell. Der Strom am Herzen und die Zeit sind wesentlich.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gefährdung ist kontext- und zeitabhängig.",
+          "B": "Dies folgt aus dem Widerstandsmodell.",
+          "C": "Auch Gleichstrom kann schwere Schäden verursachen.",
+          "D": "Der Strom am Herzen und die Zeit sind wesentlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Ein Leiter führt 5,00 A zum Verbraucher, der Rückleiter 4,96 A zurück. Welche Differenz erfasst das idealisierte RCD-Messprinzip?",
+      "options": [
+        {
+          "text": "9,96 A",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0 A allein weil beide Ströme ähnlich sind.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,04 mA",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "40 mA",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "4,96 A",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Summe der Beträge. B: Die Differenz ist nicht null. C: Ampere wurden nicht korrekt in Milliampere umgerechnet. D: 5,00−4,96 = 0,04 A. E: Dies ist der Rückstrom, nicht die Differenz. Quelle: Originalunterlagen, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "RCD-Prinzip"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RCD-Prinzip"
+      ],
+      "questionGoal": "RCD-Prinzip",
+      "structuredExplanation": {
+        "coreIdea": "RCD-Prinzip",
+        "correctReasoning": "5,00−4,96 = 0,04 A.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Summe der Beträge.",
+          "B": "Die Differenz ist nicht null.",
+          "C": "Ampere wurden nicht korrekt in Milliampere umgerechnet.",
+          "E": "Dies ist der Rückstrom, nicht die Differenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Fehlerstromschutz und Überstromschutz».",
+      "options": [
+        {
+          "text": "Eine Überstromsicherung und ein RCD überwachen zwingend exakt dieselbe Grösse.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein RCD überwacht eine Stromdifferenz zwischen Hin- und Rückweg.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein 30-mA-RCD ist zusätzlicher Schutz, keine Erlaubnis zur Berührung spannungsführender Teile.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder FI löst definitionsgemäss schon bei jedem beliebig kleinen von null verschiedenen Strom sofort aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Überstrom und Differenzstrom sind verschiedene Schutzprinzipien. B: Ein anderer Abflussweg kann eine Differenz erzeugen. C: Er verhindert nicht jeden möglichen Unfallmechanismus. D: Es gibt Bemessungswerte und zeitabhängige Auslösekennlinien. Quelle: Originalunterlagen, PDF-S. 29–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Schutzgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schutzgrenzen"
+      ],
+      "questionGoal": "Schutzgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Schutzgrenzen",
+        "correctReasoning": "Ein anderer Abflussweg kann eine Differenz erzeugen. Er verhindert nicht jeden möglichen Unfallmechanismus.",
+        "wrongAnswerExplanations": {
+          "A": "Überstrom und Differenzstrom sind verschiedene Schutzprinzipien.",
+          "B": "Ein anderer Abflussweg kann eine Differenz erzeugen.",
+          "C": "Er verhindert nicht jeden möglichen Unfallmechanismus.",
+          "D": "Es gibt Bemessungswerte und zeitabhängige Auslösekennlinien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Bei gleicher angelegter Spannung halbiert sich im vereinfachten ohmschen Modell der Körpergesamtwiderstand. Was geschieht mit I?",
+      "options": [
+        {
+          "text": "I wird zwingend null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "I verändert nur seine Frequenz, nicht seinen Betrag.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "I verdoppelt sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "I bleibt wegen konstanter Spannung gleich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "I halbiert sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein kleinerer Widerstand unterbricht den Strom nicht. B: R verändert im Modell den Betrag. C: I = U/R. D: Der Widerstand ist ebenfalls bestimmend. E: Dies vertauscht die inverse Abhängigkeit. Quelle: Originalunterlagen, PDF-S. 26–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Modellabhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modellabhängigkeit"
+      ],
+      "questionGoal": "Modellabhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Modellabhängigkeit",
+        "correctReasoning": "I = U/R.",
+        "wrongAnswerExplanations": {
+          "A": "Ein kleinerer Widerstand unterbricht den Strom nicht.",
+          "B": "R verändert im Modell den Betrag.",
+          "D": "Der Widerstand ist ebenfalls bestimmend.",
+          "E": "Dies vertauscht die inverse Abhängigkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvp13_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVP13",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «physikalische Näherungen und Grenzen elektrischer Schutzangaben».",
+      "options": [
+        {
+          "text": "Der angenommene Körperwiderstand von 1000 Ω ist ein Rechenmodell, kein für jede Berührung fester Personenwert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein einzelner Stromwert definiert unabhängig von Stromweg und Dauer für alle Personen eine scharfe Todesschwelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "μ0 ≈ 4π×10⁻⁷ T·m/A ist für diese Rechnungen eine geeignete Näherung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder RCD hat unabhängig von Typ und Fehlerstrom denselben vollständigen Zeit-Strom-Verlauf.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Kontakt und Stromweg können variieren. B: Gefährdung hängt auch von Dauer, Weg und Kontaktbedingungen ab. C: Seit der SI-Neudefinition ist dieser Wert nicht mehr exakt definierend. D: Auslösecharakteristik und Prüfbedingungen müssen unterschieden werden. Quelle: Originalunterlagen, PDF-S. 8,28–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVP13",
+        "Näherung und Sicherheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Näherung und Sicherheit"
+      ],
+      "questionGoal": "Näherung und Sicherheit",
+      "structuredExplanation": {
+        "coreIdea": "Näherung und Sicherheit",
+        "correctReasoning": "Kontakt und Stromweg können variieren. Seit der SI-Neudefinition ist dieser Wert nicht mehr exakt definierend.",
+        "wrongAnswerExplanations": {
+          "A": "Kontakt und Stromweg können variieren.",
+          "B": "Gefährdung hängt auch von Dauer, Weg und Kontaktbedingungen ab.",
+          "C": "Seit der SI-Neudefinition ist dieser Wert nicht mehr exakt definierend.",
+          "D": "Auslösecharakteristik und Prüfbedingungen müssen unterschieden werden."
+        }
+      }
+    }
+  ]
+}

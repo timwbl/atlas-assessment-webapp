@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block4_kvb20_20261102",
+  "lectureCode": "KVB20",
+  "title": "Mikroorganismen: Zelltypen, Ökologie und Infektion",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB20_Mikroorganismen. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Historische Fünf-Reiche-Einteilung wird nicht als einzig aktuelle Taxonomie geprüft. Veraltete pauschale Zahlen zum Verhältnis Bakterien/Menschenzellen, absolute Keimfreiheit bei Geburt und zeitgebundene COVID-Statistiken sind nicht als Prüfungsfakten übernommen. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Pro- und eukaryotische Zellorganisation sowie die Grenzen vereinfachter Klassifikationen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Ökologische, biotechnologische und physiologische Funktionen von Mikroorganismen zuordnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Mikrobiota, Besiedelung, Infektion und Erkrankung unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Zelluläre Infektionserreger und Viren funktionell vergleichen sowie Herausforderungen durch Resistenzen einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb20_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein Mikroorganismus besitzt cytosolische Ribosomen, aber keinen membranumhüllten Zellkern. Welche Einordnung wird dadurch gestützt?",
+      "options": [
+        {
+          "text": "Prokaryotische Zellorganisation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Virus mit ausschliesslich kapsidständigen Ribosomen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein typischer Pilz mit kernhüllenfreiem Cytoplasma.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Protozoon ohne eukaryotische Zellorganisation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine kernlose Zelle beweise allein immer eine bestimmte Bakterienspezies.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die DNA liegt ohne Kernhülle im Zellraum. B: Viren besitzen keine eigene Ribosomenmaschinerie. C: Pilze sind Eukaryoten. D: Protozoen besitzen eukaryotische Organisation. E: Das Merkmal erlaubt keine eindeutige Speziesbestimmung. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Zellkern"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellkern"
+      ],
+      "questionGoal": "Zellkern",
+      "structuredExplanation": {
+        "coreIdea": "Zellkern",
+        "correctReasoning": "Die DNA liegt ohne Kernhülle im Zellraum.",
+        "wrongAnswerExplanations": {
+          "B": "Viren besitzen keine eigene Ribosomenmaschinerie.",
+          "C": "Pilze sind Eukaryoten.",
+          "D": "Protozoen besitzen eukaryotische Organisation.",
+          "E": "Das Merkmal erlaubt keine eindeutige Speziesbestimmung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Welche Kombination beschreibt typische bakterielle cytosolische Ribosomen?",
+      "options": [
+        {
+          "text": "70S aus 50S- und 30S-Untereinheit.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "80S aus 60S und 40S.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "70S aus 40S und 30S.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "80S aus 50S und 30S.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "50S aus 30S und 20S.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sedimentationskoeffizienten sind nicht einfach additiv. B: Dies ist der eukaryotische cytosolische Typ. C: Die grosse bakterielle Untereinheit ist 50S. D: Gesamttyp und Untereinheiten passen nicht zusammen. E: Dies beschreibt nicht das bakterielle Gesamtribosom. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Ribosomen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ribosomen"
+      ],
+      "questionGoal": "Ribosomen",
+      "structuredExplanation": {
+        "coreIdea": "Ribosomen",
+        "correctReasoning": "Sedimentationskoeffizienten sind nicht einfach additiv.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist der eukaryotische cytosolische Typ.",
+          "C": "Die grosse bakterielle Untereinheit ist 50S.",
+          "D": "Gesamttyp und Untereinheiten passen nicht zusammen.",
+          "E": "Dies beschreibt nicht das bakterielle Gesamtribosom."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein einzelliger Organismus besitzt Zellkern und eukaryotische Organellen und wird zur alkoholischen Gärung verwendet. Welcher Vertreter passt?",
+      "options": [
+        {
+          "text": "Escherichia coli.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Milchsäurebakterium.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Bakteriophage.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hefe.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine photosynthetische Cyanobakterienzelle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieses Bakterium besitzt keinen eukaryotischen Zellkern. B: Es besitzt prokaryotische statt eukaryotischer Organisation. C: Er ist azellulär und besitzt keine Organellen. D: Hefen sind eukaryotische Pilze. E: Auch sie ist prokaryotisch. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Pilze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pilze"
+      ],
+      "questionGoal": "Pilze",
+      "structuredExplanation": {
+        "coreIdea": "Pilze",
+        "correctReasoning": "Hefen sind eukaryotische Pilze.",
+        "wrongAnswerExplanations": {
+          "A": "Dieses Bakterium besitzt keinen eukaryotischen Zellkern.",
+          "B": "Es besitzt prokaryotische statt eukaryotischer Organisation.",
+          "C": "Er ist azellulär und besitzt keine Organellen.",
+          "E": "Auch sie ist prokaryotisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Warum sind mikrobielle Zersetzer für Stoffkreisläufe wichtig?",
+      "options": [
+        {
+          "text": "Sie fixieren in jedem Fall selbst Sonnenenergie statt organisches Material abzubauen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie speichern alle Elemente dauerhaft ohne Wiederfreisetzung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie machen organische Nährstoffe für alle übrigen Organismen grundsätzlich unzugänglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie führen Elemente aus organischem Material wieder in nutzbare Verbindungen über.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ihre einzige Funktion ist die Vermehrung menschlicher Pathogene.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zersetzung ist nicht gleich Photosynthese. B: Mineralisierung führt Bausteine in Kreisläufe zurück. C: Abbau kann ihre erneute Nutzung ermöglichen. D: Abbau und Recycling verbinden die Nahrungskette. E: Zersetzer haben eine breitere ökologische Rolle. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Reduzenten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reduzenten"
+      ],
+      "questionGoal": "Reduzenten",
+      "structuredExplanation": {
+        "coreIdea": "Reduzenten",
+        "correctReasoning": "Abbau und Recycling verbinden die Nahrungskette.",
+        "wrongAnswerExplanations": {
+          "A": "Zersetzung ist nicht gleich Photosynthese.",
+          "B": "Mineralisierung führt Bausteine in Kreisläufe zurück.",
+          "C": "Abbau kann ihre erneute Nutzung ermöglichen.",
+          "E": "Zersetzer haben eine breitere ökologische Rolle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Welche Paarung von Mikroorganismus und Nutzung passt zur Vorlesung?",
+      "options": [
+        {
+          "text": "Hefen als eigentliche Produzenten der Milchansäuerung in Joghurt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Penicillium als stickstofffixierendes Wurzelknöllchenbakterium.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lactobacillen und Joghurtherstellung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Knöllchenbakterien als klassische Erreger der Malaria.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Plasmodien als Produzenten des Antibiotikums Penicillin.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Kursbeispiel ordnet dies Milchsäurebakterien zu. B: Es ist ein Pilz, kein solches Bakterium. C: Ihre Fermentation wird in der Lebensmittelproduktion genutzt. D: Malaria wird durch Plasmodien verursacht. E: Penicillium ist das entsprechende Kursbeispiel. Quelle: Originalunterlagen, PDF-S. 15,19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Biotechnologie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biotechnologie"
+      ],
+      "questionGoal": "Biotechnologie",
+      "structuredExplanation": {
+        "coreIdea": "Biotechnologie",
+        "correctReasoning": "Ihre Fermentation wird in der Lebensmittelproduktion genutzt.",
+        "wrongAnswerExplanations": {
+          "A": "Das Kursbeispiel ordnet dies Milchsäurebakterien zu.",
+          "B": "Es ist ein Pilz, kein solches Bakterium.",
+          "D": "Malaria wird durch Plasmodien verursacht.",
+          "E": "Penicillium ist das entsprechende Kursbeispiel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Was bezeichnet die Mikrobiota eines Darmabschnitts am besten?",
+      "options": [
+        {
+          "text": "Die Gesamtheit ausschliesslich menschlicher Darmepithelzellen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die dort vorkommende mikrobielle Gemeinschaft.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur invasive Bakterien mit sicherer Krankheitsursache.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich das freie Genmaterial ohne zugehörige Mikroorganismen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur die nach einer Antibiotikatherapie übrig gebliebenen resistenten Arten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mikrobiota bezeichnet die mikrobielle Gemeinschaft. B: Der Begriff beschreibt Besiedelung eines Lebensraums. C: Auch Kommensalen gehören dazu. D: Der Gemeinschaftsbegriff umfasst die Organismen. E: Der Begriff ist nicht auf diesen Zustand begrenzt. Quelle: Originalunterlagen, PDF-S. 19–21,32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Mikrobiota"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mikrobiota"
+      ],
+      "questionGoal": "Mikrobiota",
+      "structuredExplanation": {
+        "coreIdea": "Mikrobiota",
+        "correctReasoning": "Der Begriff beschreibt Besiedelung eines Lebensraums.",
+        "wrongAnswerExplanations": {
+          "A": "Mikrobiota bezeichnet die mikrobielle Gemeinschaft.",
+          "C": "Auch Kommensalen gehören dazu.",
+          "D": "Der Gemeinschaftsbegriff umfasst die Organismen.",
+          "E": "Der Begriff ist nicht auf diesen Zustand begrenzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein Bakterium wird bei einer gesunden Person auf einer Schleimhaut gefunden. Welche Schlussfolgerung ist am besten begründet?",
+      "options": [
+        {
+          "text": "Jede Besiedelung ist definitionsgemäss eine symptomatische Infektionskrankheit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Nachweis allein identifiziert bereits die Ursache jeder späteren Erkrankung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein asymptomatischer Stamm kann unter keinen Umständen opportunistisch krank machen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Nachweis allein beweist noch keine Erkrankung.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ein gesunder Wirt muss jede Schleimhaut dauerhaft steril halten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kolonisation und Erkrankung sind verschieden. B: Ein kausaler Zusammenhang benötigt weitere Belege. C: Wirt und Eintrittsort beeinflussen Pathogenität. D: Besiedelung und Krankheitsverursachung sind zu unterscheiden. E: Normale mikrobielle Besiedelung ist häufig. Quelle: Originalunterlagen, PDF-S. 19–24,32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Besiedelung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Besiedelung"
+      ],
+      "questionGoal": "Besiedelung",
+      "structuredExplanation": {
+        "coreIdea": "Besiedelung",
+        "correctReasoning": "Besiedelung und Krankheitsverursachung sind zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "Kolonisation und Erkrankung sind verschieden.",
+          "B": "Ein kausaler Zusammenhang benötigt weitere Belege.",
+          "C": "Wirt und Eintrittsort beeinflussen Pathogenität.",
+          "E": "Normale mikrobielle Besiedelung ist häufig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Warum benötigen Viren für ihre Vermehrung lebende Wirtszellen?",
+      "options": [
+        {
+          "text": "Sie besitzen eigene Ribosomen, benötigen aber stets die Wirtszellwand.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie verfügen nicht über eine vollständige eigene zelluläre Replikations- und Proteinsynthesemaschinerie.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie teilen sich wie Bakterien und benötigen nur deren Nährstoffe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie benötigen Wirte nur für den Transport, nie für Biosynthese.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie besitzen kein Genom und leihen daher die gesamte Sequenzinformation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Viren haben keine autonome Ribosomenmaschinerie. B: Ihre Vermehrung nutzt Wirtsfunktionen. C: Virusvermehrung erfolgt durch Komponentensynthese und Assembly. D: Die Wirtsmaschinerie ist zentral. E: Virale Genome tragen eigene genetische Information. Quelle: Originalunterlagen, PDF-S. 26–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Virusabhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Virusabhängigkeit"
+      ],
+      "questionGoal": "Virusabhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Virusabhängigkeit",
+        "correctReasoning": "Ihre Vermehrung nutzt Wirtsfunktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Viren haben keine autonome Ribosomenmaschinerie.",
+          "C": "Virusvermehrung erfolgt durch Komponentensynthese und Assembly.",
+          "D": "Die Wirtsmaschinerie ist zentral.",
+          "E": "Virale Genome tragen eigene genetische Information."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein Bakteriophage vermehrt sich in einer passenden Bakterienkultur. Was ist dadurch gezeigt?",
+      "options": [
+        {
+          "text": "Alle Viren infizieren ausschliesslich tierische Zellen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Auch Bakterien können Viruswirte sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bakteriophagen vermehren sich unabhängig von jeder Wirtszelle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Befund beweist eine eukaryotische Natur der Bakterien.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jeder Phage kann deshalb jede Bakterienart gleich gut infizieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Phagen sind gerade bakterielle Viren. B: Der Wirtsbegriff ist nicht auf menschliche Zellen beschränkt. C: Die passende Kultur enthält ihre Wirtszellen. D: Virusanfälligkeit definiert keine Eukaryoten. E: Wirtsspezifität bleibt relevant. Quelle: Originalunterlagen, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Wirtsspektrum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wirtsspektrum"
+      ],
+      "questionGoal": "Wirtsspektrum",
+      "structuredExplanation": {
+        "coreIdea": "Wirtsspektrum",
+        "correctReasoning": "Der Wirtsbegriff ist nicht auf menschliche Zellen beschränkt.",
+        "wrongAnswerExplanations": {
+          "A": "Phagen sind gerade bakterielle Viren.",
+          "C": "Die passende Kultur enthält ihre Wirtszellen.",
+          "D": "Virusanfälligkeit definiert keine Eukaryoten.",
+          "E": "Wirtsspezifität bleibt relevant."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Auf einer logarithmischen Skala nimmt ein Wert um eine Zehnerpotenz zu. Welcher Faktor ist gemeint?",
+      "options": [
+        {
+          "text": "Faktor 2.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Faktor 10.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Faktor 100.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Faktor 1000.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine additive Zunahme um genau 10 Einheiten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist eine Verdopplung, keine Zehnerpotenz. B: Eine Potenzstufe zur Basis zehn entspricht Verzehnfachung. C: Dies entspricht zwei Zehnerpotenzen. D: Dies entspricht drei Zehnerpotenzen. E: Eine Potenzänderung bezeichnet einen Multiplikationsfaktor. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Grössenskala"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grössenskala"
+      ],
+      "questionGoal": "Grössenskala",
+      "structuredExplanation": {
+        "coreIdea": "Grössenskala",
+        "correctReasoning": "Eine Potenzstufe zur Basis zehn entspricht Verzehnfachung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist eine Verdopplung, keine Zehnerpotenz.",
+          "C": "Dies entspricht zwei Zehnerpotenzen.",
+          "D": "Dies entspricht drei Zehnerpotenzen.",
+          "E": "Eine Potenzänderung bezeichnet einen Multiplikationsfaktor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Warum kann eine Antibiotikaresistenz die Behandlung bakterieller Infektionen erschweren?",
+      "options": [
+        {
+          "text": "Resistenz bedeutet fehlende Immunität des Menschen gegen den Wirkstoff.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Resistenz gegen ein Mittel bedeutet automatisch Resistenz gegen alle Klassen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Wirksamkeit eines betroffenen Antibiotikums gegen den Erreger ist vermindert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Resistenz bedeutet ausschliesslich eine Arzneimittelallergie des Wirts.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede Resistenz vermindert gleichzeitig zwingend die Vermehrungsfähigkeit auf null.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie betrifft hier die Bakterien-Wirkstoff-Beziehung. B: Resistenzmechanismen sind nicht zwangsläufig universell. C: Dadurch können passende Behandlungsmöglichkeiten begrenzt sein. D: Allergie ist ein anderer Mechanismus. E: Resistente Populationen können weiter wachsen. Quelle: Originalunterlagen, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Resistenzfolgen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Resistenzfolgen"
+      ],
+      "questionGoal": "Resistenzfolgen",
+      "structuredExplanation": {
+        "coreIdea": "Resistenzfolgen",
+        "correctReasoning": "Dadurch können passende Behandlungsmöglichkeiten begrenzt sein.",
+        "wrongAnswerExplanations": {
+          "A": "Sie betrifft hier die Bakterien-Wirkstoff-Beziehung.",
+          "B": "Resistenzmechanismen sind nicht zwangsläufig universell.",
+          "D": "Allergie ist ein anderer Mechanismus.",
+          "E": "Resistente Populationen können weiter wachsen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Was verdeutlicht die Betrachtung des Menschen zusammen mit seinen mikrobiellen Gemeinschaften besonders?",
+      "options": [
+        {
+          "text": "Alle Mikroorganismen sind für den Menschen stets ausschliesslich schädlich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Gemeinschaft ist an allen Körperstellen identisch zusammengesetzt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Wechselwirkung muss jederzeit beide Partner begünstigen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wirtsfunktionen können durch mikrobielle Stoffwechselleistungen beeinflusst werden.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Nur mikrobielle Gene, aber nie deren Stoffwechselprodukte beeinflussen den Wirt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Viele Beziehungen können nützen oder kontextabhängig sein. B: Lokale Bedingungen unterscheiden sich. C: Auch neutrale und schädliche Beziehungen sind möglich. D: Der Organismus lebt in funktionellen Wechselbeziehungen. E: Produkte und andere Interaktionen können beitragen. Quelle: Originalunterlagen, PDF-S. 16,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Symbiose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Symbiose"
+      ],
+      "questionGoal": "Symbiose",
+      "structuredExplanation": {
+        "coreIdea": "Symbiose",
+        "correctReasoning": "Der Organismus lebt in funktionellen Wechselbeziehungen.",
+        "wrongAnswerExplanations": {
+          "A": "Viele Beziehungen können nützen oder kontextabhängig sein.",
+          "B": "Lokale Bedingungen unterscheiden sich.",
+          "C": "Auch neutrale und schädliche Beziehungen sind möglich.",
+          "E": "Produkte und andere Interaktionen können beitragen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Mikroorganismen werden nach Zellhülle, Zellkern und Organisationsform verglichen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Bakterien besitzen eine Plasmamembran.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Virus besitzt dieselbe vollständige Zellorganisation wie eine Bakterienzelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jeder mikroskopisch kleine Erreger ist prokaryotisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle einzelligen Pilze gehören deshalb zu den Prokaryoten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese grenzt ihren Zellraum ab. B: Viren sind azellulär. C: Auch eukaryotische Erreger können mikroskopisch sein. D: Einzelligkeit macht eine eukaryotische Hefe nicht prokaryotisch. Quelle: Originalunterlagen, PDF-S. 8–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Zelltypenvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zelltypenvergleich"
+      ],
+      "questionGoal": "Zelltypenvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Zelltypenvergleich",
+        "correctReasoning": "Diese grenzt ihren Zellraum ab.",
+        "wrongAnswerExplanations": {
+          "A": "Diese grenzt ihren Zellraum ab.",
+          "B": "Viren sind azellulär.",
+          "C": "Auch eukaryotische Erreger können mikroskopisch sein.",
+          "D": "Einzelligkeit macht eine eukaryotische Hefe nicht prokaryotisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein unbekannter mikroskopischer Organismus wird systematisch eingeordnet. Welche Aussagen zur Einteilung sind richtig?",
+      "options": [
+        {
+          "text": "Mycoplasmen besitzen keine typische Peptidoglycanzellwand.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Archaeen und Bakterien sind verschiedene Gruppen mit prokaryotischer Zellorganisation.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Protozoen sind eukaryotische Einzeller.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die geringe Grösse allein beweist eine bakterielle Abstammung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie zeigen die Grenze einer pauschalen Zellwandaussage. B: Beide besitzen keinen eukaryotischen membranumhüllten Kern. C: Sie unterscheiden sich von Bakterien in der Zellorganisation. D: Grösse ist kein hinreichendes Klassifikationsmerkmal. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Abgrenzung von Gruppen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abgrenzung von Gruppen"
+      ],
+      "questionGoal": "Abgrenzung von Gruppen",
+      "structuredExplanation": {
+        "coreIdea": "Abgrenzung von Gruppen",
+        "correctReasoning": "Sie zeigen die Grenze einer pauschalen Zellwandaussage. Beide besitzen keinen eukaryotischen membranumhüllten Kern. Sie unterscheiden sich von Bakterien in der Zellorganisation.",
+        "wrongAnswerExplanations": {
+          "A": "Sie zeigen die Grenze einer pauschalen Zellwandaussage.",
+          "B": "Beide besitzen keinen eukaryotischen membranumhüllten Kern.",
+          "C": "Sie unterscheiden sich von Bakterien in der Zellorganisation.",
+          "D": "Grösse ist kein hinreichendes Klassifikationsmerkmal."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Mikroorganismen werden in Stoffkreisläufen und zur industriellen Synthese genutzt. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Mikrobielle Primärproduzenten können Nahrungsketten unterstützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Antibiotika können grundsätzlich nicht von Mikroorganismen gebildet werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mikroorganismen können organische Verbindungen industriell herstellen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zersetzung organischer Stoffe ist für chemische Kreisläufe bedeutungslos.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie erzeugen organisches Material aus geeigneten Ausgangsstoffen. B: Einige Mikroorganismen produzieren solche Substanzen. C: Ihre Stoffwechselwege werden biotechnologisch genutzt. D: Sie ist ein zentraler Recyclingprozess. Quelle: Originalunterlagen, PDF-S. 15–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Mikrobielle Leistungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mikrobielle Leistungen"
+      ],
+      "questionGoal": "Mikrobielle Leistungen",
+      "structuredExplanation": {
+        "coreIdea": "Mikrobielle Leistungen",
+        "correctReasoning": "Sie erzeugen organisches Material aus geeigneten Ausgangsstoffen. Ihre Stoffwechselwege werden biotechnologisch genutzt.",
+        "wrongAnswerExplanations": {
+          "A": "Sie erzeugen organisches Material aus geeigneten Ausgangsstoffen.",
+          "B": "Einige Mikroorganismen produzieren solche Substanzen.",
+          "C": "Ihre Stoffwechselwege werden biotechnologisch genutzt.",
+          "D": "Sie ist ein zentraler Recyclingprozess."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein Keim wird an verschiedenen Körperstellen mit und ohne Symptome gefunden. Welche Aussagen zur Bedeutung sind richtig?",
+      "options": [
+        {
+          "text": "Eine Besiedelung führt bei jedem Menschen zwingend zu derselben Erkrankung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Bedeutung eines Keims hängt auch vom besiedelten Ort ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Kolonisation und invasive Infektion setzen denselben Gewebeschaden voraus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mikrobielle Gemeinschaften können permanent oder vorübergehend vorkommen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Wirt, Ort und Erregereigenschaften wirken zusammen. B: Wirtsumgebung und Barrieren beeinflussen Folgen. C: Besiedelung ist nicht gleich invasiver Erkrankung mit entsprechendem Schaden. D: Besiedelung kann unterschiedliche Dauer haben. Quelle: Originalunterlagen, PDF-S. 20–24,32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Mikrobiota und Krankheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mikrobiota und Krankheit"
+      ],
+      "questionGoal": "Mikrobiota und Krankheit",
+      "structuredExplanation": {
+        "coreIdea": "Mikrobiota und Krankheit",
+        "correctReasoning": "Wirtsumgebung und Barrieren beeinflussen Folgen. Besiedelung kann unterschiedliche Dauer haben.",
+        "wrongAnswerExplanations": {
+          "A": "Wirt, Ort und Erregereigenschaften wirken zusammen.",
+          "B": "Wirtsumgebung und Barrieren beeinflussen Folgen.",
+          "C": "Besiedelung ist nicht gleich invasiver Erkrankung mit entsprechendem Schaden.",
+          "D": "Besiedelung kann unterschiedliche Dauer haben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Viruspartikel werden mit eigenständig lebenden Zellen verglichen. Welche Aussagen zu Bestandteilen und Vermehrung sind richtig?",
+      "options": [
+        {
+          "text": "Viren besitzen generell einen eigenen vollständigen Kohlenstoffstoffwechsel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Infektiosität beweist allein eine vollständige zelluläre Organisation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Viren enthalten Nucleinsäure und Protein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Wirtsabhängigkeit begrenzt die autonome Vermehrung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie nutzen zelluläre Stoffwechselfunktionen. B: Auch azelluläre Einheiten können infektiös sein. C: Diese sind grundlegende Bestandteile infektiöser Partikel. D: Eine lebende geeignete Zelle ist erforderlich. Quelle: Originalunterlagen, PDF-S. 26–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Viren und Leben"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Viren und Leben"
+      ],
+      "questionGoal": "Viren und Leben",
+      "structuredExplanation": {
+        "coreIdea": "Viren und Leben",
+        "correctReasoning": "Diese sind grundlegende Bestandteile infektiöser Partikel. Eine lebende geeignete Zelle ist erforderlich.",
+        "wrongAnswerExplanations": {
+          "A": "Sie nutzen zelluläre Stoffwechselfunktionen.",
+          "B": "Auch azelluläre Einheiten können infektiös sein.",
+          "C": "Diese sind grundlegende Bestandteile infektiöser Partikel.",
+          "D": "Eine lebende geeignete Zelle ist erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Pilze, Bakterien und Viren sollen anhand ihrer grundlegenden Organisation unterschieden werden. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Ein Pilz und ein Bakterium gehören unterschiedlichen Zellorganisationstypen an.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder einzellige Organismus muss ein Bakterium sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Auch eukaryotische Mikroorganismen können Krankheiten verursachen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Viren vermehren sich regulär durch Zweiteilung eines vollständigen Virions.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Pilze sind eukaryotisch, Bakterien prokaryotisch. B: Es gibt zahlreiche eukaryotische Einzeller. C: Pathogenität ist nicht auf Bakterien beschränkt. D: Neue Partikel werden aus Komponenten aufgebaut. Quelle: Originalunterlagen, PDF-S. 8–12,24–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Erregergruppen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erregergruppen"
+      ],
+      "questionGoal": "Erregergruppen",
+      "structuredExplanation": {
+        "coreIdea": "Erregergruppen",
+        "correctReasoning": "Pilze sind eukaryotisch, Bakterien prokaryotisch. Pathogenität ist nicht auf Bakterien beschränkt.",
+        "wrongAnswerExplanations": {
+          "A": "Pilze sind eukaryotisch, Bakterien prokaryotisch.",
+          "B": "Es gibt zahlreiche eukaryotische Einzeller.",
+          "C": "Pathogenität ist nicht auf Bakterien beschränkt.",
+          "D": "Neue Partikel werden aus Komponenten aufgebaut."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ausbrüche und Resistenzentwicklungen werden epidemiologisch eingeordnet. Welche Aussagen und Grenzen sind richtig?",
+      "options": [
+        {
+          "text": "Neue Virusausbrüche können Gesundheitsversorgung und Überwachung herausfordern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Resistenzen können Behandlungen verlängern oder erschweren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine hohe Resistenzhäufigkeit bedeutet automatisch eine geringere klinische Bedeutung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vergangene Fallzahlen sind ohne Datum stets unveränderte aktuelle Angaben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Erregerdynamik ist kein rein historisches Phänomen. B: Sie können die Zahl wirksamer Optionen vermindern. C: Sie kann die Versorgung stärker belasten. D: Epidemiologische Daten sind zeitgebunden. Quelle: Originalunterlagen, PDF-S. 28–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Infektiologische Herausforderungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Infektiologische Herausforderungen"
+      ],
+      "questionGoal": "Infektiologische Herausforderungen",
+      "structuredExplanation": {
+        "coreIdea": "Infektiologische Herausforderungen",
+        "correctReasoning": "Erregerdynamik ist kein rein historisches Phänomen. Sie können die Zahl wirksamer Optionen vermindern.",
+        "wrongAnswerExplanations": {
+          "A": "Erregerdynamik ist kein rein historisches Phänomen.",
+          "B": "Sie können die Zahl wirksamer Optionen vermindern.",
+          "C": "Sie kann die Versorgung stärker belasten.",
+          "D": "Epidemiologische Daten sind zeitgebunden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb20_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB20",
+      "stem": "Ein mikrobieller Stamm wird auf Nutzen und mögliches Krankheitspotenzial beurteilt. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Derselbe Artname genügt nicht immer zur Aussage über Pathogenität eines Stamms.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Biotechnologische Nutzung schliesst jede mögliche pathogene Eigenschaft aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Mikroorganismus kann nützliche Stoffwechselprodukte liefern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Derselbe Stamm muss bei Nachweis im Darmlumen und im Liquor dieselbe klinische Bedeutung haben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eigenschaften können stammspezifisch sein. B: Nutzung und Gefährdung sind getrennt zu bewerten. C: Mikrobielle Aktivität ist nicht nur schädlich. D: Die Bedeutung hängt neben dem Stamm auch vom Fundort und klinischen Kontext ab. Quelle: Originalunterlagen, PDF-S. 16,19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB20",
+        "Kontextabhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kontextabhängigkeit"
+      ],
+      "questionGoal": "Kontextabhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Kontextabhängigkeit",
+        "correctReasoning": "Eigenschaften können stammspezifisch sein. Mikrobielle Aktivität ist nicht nur schädlich.",
+        "wrongAnswerExplanations": {
+          "A": "Eigenschaften können stammspezifisch sein.",
+          "B": "Nutzung und Gefährdung sind getrennt zu bewerten.",
+          "C": "Mikrobielle Aktivität ist nicht nur schädlich.",
+          "D": "Die Bedeutung hängt neben dem Stamm auch vom Fundort und klinischen Kontext ab."
+        }
+      }
+    }
+  ]
+}

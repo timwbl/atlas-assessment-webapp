@@ -6,6 +6,7 @@ import {
   type SemesterId
 } from "./summaryDownloads";
 import type { Assessment } from "./types";
+import { assessmentMatchesLibraryBlock } from "./assessmentCatalog";
 
 const STORAGE_KEY = "atlas-assessment-library-selection-v1";
 
@@ -49,39 +50,14 @@ export function clearAssessmentLibrarySelection(): void {
 }
 
 export function rememberAssessmentLibrarySelectionFromAssessment(assessment: Assessment): void {
-  const match = findAssessmentLibraryBlock(assessment.block);
+  const match = findAssessmentLibraryBlock(assessment);
   if (match) saveAssessmentLibrarySelection(match.semester, match.blockId);
 }
 
-function findAssessmentLibraryBlock(assessmentBlock: string): { semester: SemesterId; blockId: string } | null {
+function findAssessmentLibraryBlock(assessment: Assessment): { semester: SemesterId; blockId: string } | null {
   for (const semester of DOWNLOAD_SEMESTERS) {
-    const block = blocksForSemester(semester.id).find((item) => blockMatches(assessmentBlock, item.title, item.matchTerms || []));
+    const block = blocksForSemester(semester.id).find((item) => assessmentMatchesLibraryBlock(assessment, item));
     if (block) return { semester: semester.id, blockId: block.id };
   }
   return null;
-}
-
-function blockMatches(assessmentBlock: string, selectedBlockTitle: string, matchTerms: string[]): boolean {
-  const normalizedAssessment = normalizeText(assessmentBlock);
-  const normalizedSelected = normalizeText(selectedBlockTitle);
-  const normalizedTerms = matchTerms.map(normalizeText);
-
-  if (
-    normalizedAssessment === normalizedSelected
-    || normalizedTerms.some((term) => term && normalizedAssessment.includes(term))
-  ) {
-    return true;
-  }
-
-  const assessmentNumber = String(assessmentBlock || "").match(/\d+/)?.[0] || "";
-  const selectedNumber = selectedBlockTitle.match(/\d+/)?.[0] || "";
-  return !!assessmentNumber && assessmentNumber === selectedNumber;
-}
-
-function normalizeText(value: string): string {
-  return String(value || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim();
 }

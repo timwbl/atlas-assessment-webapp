@@ -1,0 +1,1316 @@
+{
+  "id": "assessment_j1_s1_block1_kvc08_20261102",
+  "lectureCode": "KVC08",
+  "title": "Wasser",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC8 - Wasser. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Neutralität wird temperaturabhängig erklärt; pH 7 gilt für das genannte 25-Grad-Modell. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Molekülgeometrie, Polarität und Wasserstoffbrücken erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Dichteanomalie und thermische Eigenschaften auf Wechselwirkungen beziehen."
+    },
+    {
+      "id": "lo3",
+      "text": "Hydratation, hydrophoben Effekt, CO2-Lösung und Autoprotolyse unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc08_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Welche Kombination beschreibt ein einzelnes H₂O-Molekül am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Linear und unpolar.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Tetraedrische Atomgeometrie mit vier H-Atomen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Gewinkelt und polar.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Gewinkelt, aber mit vollständig aufgehobenen O–H-Dipolen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Linear und polar trotz gleichgerichtet aufgehobener Bindungsdipole.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das H₂O-Molekül ist nicht linear; seine gewinkelte Geometrie lässt ein Gesamtdipolmoment bestehen. B: Vier tetraedrische Elektronenrichtungen bedeuten nicht vier H-Atome; zwei Richtungen sind freie Paare. C: Zwei Bindungen und zwei freie Paare erzeugen eine gewinkelte Atomgeometrie; die Bindungsdipole heben sich nicht auf. D: Die gewinkelte Anordnung verhindert die vollständige Dipolkompensation. E: Bei einer linearen symmetrischen Anordnung gleichartiger O–H-Dipole würden sie sich aufheben; Wasser ist gewinkelt. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Wassergeometrie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wassergeometrie"
+      ],
+      "questionGoal": "Wassergeometrie",
+      "structuredExplanation": {
+        "coreIdea": "Wassergeometrie",
+        "correctReasoning": "Zwei Bindungen und zwei freie Paare erzeugen eine gewinkelte Atomgeometrie; die Bindungsdipole heben sich nicht auf.",
+        "wrongAnswerExplanations": {
+          "A": "Das H₂O-Molekül ist nicht linear; seine gewinkelte Geometrie lässt ein Gesamtdipolmoment bestehen.",
+          "B": "Vier tetraedrische Elektronenrichtungen bedeuten nicht vier H-Atome; zwei Richtungen sind freie Paare.",
+          "D": "Die gewinkelte Anordnung verhindert die vollständige Dipolkompensation.",
+          "E": "Bei einer linearen symmetrischen Anordnung gleichartiger O–H-Dipole würden sie sich aufheben; Wasser ist gewinkelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Wie ist die Elektronendichte einer O–H-Bindung verteilt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vollständig als freies Elektron am H ohne kovalente Bindung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zum H verschoben: O trägt δ+ und H δ−.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Zum O verschoben: O trägt δ− und H δ+.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Mit einer ganzzahligen Ladung von +2 am O und −1 an jedem H.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Symmetrisch, weil O und H identische Elektronegativität haben.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die O–H-Bindung bleibt kovalent; ein isoliertes Elektron am H beschreibt sie nicht. B: O ist elektronegativer; die angegebenen Partialladungsvorzeichen sind vertauscht. C: O ist elektronegativer als H; die kovalente Bindung ist polar, ohne aus freien ganzzahlig geladenen Ionen zu bestehen. D: Ganzzahlige freie Ionenladungen sind nicht mit den Partialladungen des neutralen H₂O gleichzusetzen. E: O und H haben unterschiedliche Elektronegativitäten, sodass die Elektronendichte nicht symmetrisch ist. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "O–H-Polarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "O–H-Polarität"
+      ],
+      "questionGoal": "O–H-Polarität",
+      "structuredExplanation": {
+        "coreIdea": "O–H-Polarität",
+        "correctReasoning": "O ist elektronegativer als H; die kovalente Bindung ist polar, ohne aus freien ganzzahlig geladenen Ionen zu bestehen.",
+        "wrongAnswerExplanations": {
+          "A": "Die O–H-Bindung bleibt kovalent; ein isoliertes Elektron am H beschreibt sie nicht.",
+          "B": "O ist elektronegativer; die angegebenen Partialladungsvorzeichen sind vertauscht.",
+          "D": "Ganzzahlige freie Ionenladungen sind nicht mit den Partialladungen des neutralen H₂O gleichzusetzen.",
+          "E": "O und H haben unterschiedliche Elektronegativitäten, sodass die Elektronendichte nicht symmetrisch ist."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Welche Kombination erlaubt Wasser, zugleich Wasserstoffbrückendonor und -akzeptor zu sein?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein permanentes freies Proton ohne gebundenes H.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ausschliesslich die Masse des Sauerstoffkerns.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Zwei unpolare O–H-Bindungen ohne freie Paare.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zwei freie Elektronenpaare am H und keine am O.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Polare O–H-Bindungen und freie Elektronenpaare am O.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Ein kovalent gebundenes H kann Donor sein; ein freies Proton ist dafür nicht erforderlich. B: Die Masse des Kerns begründet weder Donor- noch Akzeptorgruppen. C: Die O–H-Bindungen sind polar und O besitzt freie Paare. D: Die freien Elektronenpaare liegen am O, nicht am H. E: Gebundenes H kann eine H-Brücke spenden; das freie Elektronenpaar am O kann eine annehmen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "H-Brückenrollen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "H-Brückenrollen"
+      ],
+      "questionGoal": "H-Brückenrollen",
+      "structuredExplanation": {
+        "coreIdea": "H-Brückenrollen",
+        "correctReasoning": "Gebundenes H kann eine H-Brücke spenden; das freie Elektronenpaar am O kann eine annehmen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein kovalent gebundenes H kann Donor sein; ein freies Proton ist dafür nicht erforderlich.",
+          "B": "Die Masse des Kerns begründet weder Donor- noch Akzeptorgruppen.",
+          "C": "Die O–H-Bindungen sind polar und O besitzt freie Paare.",
+          "D": "Die freien Elektronenpaare liegen am O, nicht am H."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Was unterscheidet flüssiges Wasser von gewöhnlichem Eis bei Betrachtung der H-Brückenstruktur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beim Schmelzen werden alle kovalenten O–H-Bindungen getrennt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "In der Flüssigkeit wird das Netzwerk fortlaufend umgeordnet.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "In der Flüssigkeit sind keine H-Brücken mehr möglich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "In der Flüssigkeit bleiben alle Nachbarschaften dauerhaft wie im Kristall fixiert.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Flüssigkeit besitzt zwangsläufig ein grösseres starres Kristallgitter als Eis.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Schmelzen verändert überwiegend intermolekulare Ordnung, nicht die kovalente Identität jedes H₂O. B: Flüssiges Wasser behält viele H-Brücken, aber ohne starre weitreichende Ordnung; Bindungen bilden und lösen sich dynamisch. C: Auch flüssiges Wasser besitzt viele H-Brücken, die sich dynamisch umordnen. D: Die Nachbarschaften im flüssigen Netzwerk sind nicht dauerhaft wie im Kristall fixiert. E: Die Flüssigkeit besitzt gerade kein grösseres starres Eisgitter. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Flüssiges Netzwerk"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Flüssiges Netzwerk"
+      ],
+      "questionGoal": "Flüssiges Netzwerk",
+      "structuredExplanation": {
+        "coreIdea": "Flüssiges Netzwerk",
+        "correctReasoning": "Flüssiges Wasser behält viele H-Brücken, aber ohne starre weitreichende Ordnung; Bindungen bilden und lösen sich dynamisch.",
+        "wrongAnswerExplanations": {
+          "A": "Schmelzen verändert überwiegend intermolekulare Ordnung, nicht die kovalente Identität jedes H₂O.",
+          "C": "Auch flüssiges Wasser besitzt viele H-Brücken, die sich dynamisch umordnen.",
+          "D": "Die Nachbarschaften im flüssigen Netzwerk sind nicht dauerhaft wie im Kristall fixiert.",
+          "E": "Die Flüssigkeit besitzt gerade kein grösseres starres Eisgitter."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Warum schwimmt gewöhnliches Eis auf flüssigem Wasser nahe 0 °C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Eis besitzt weniger Volumen pro gleicher Masse als die Flüssigkeit.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Wassermoleküle verlieren beim Gefrieren Sauerstoffatome.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Dichte des Eises muss höher sein, weil es fest ist.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Molekülmasse von H₂O wird beim Gefrieren halbiert.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sein offenes H-Brückennetzwerk führt zu geringerer Dichte.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Kleineres Volumen pro Masse würde höhere Dichte und nicht das Schwimmen erklären. B: Beim Gefrieren bleiben die O-Atome der Moleküle erhalten. C: Fest bedeutet nicht grundsätzlich dichter; gewöhnliches Eis besitzt ein offeneres Netzwerk. D: Die molare Masse von H₂O ändert sich beim Phasenübergang nicht. E: Die Struktur beansprucht mehr Volumen pro Masse; der feste Aggregatzustand allein legt die Dichte nicht fest. Quelle: Originalunterlagen, PDF-S. 7,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Eisdichte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eisdichte"
+      ],
+      "questionGoal": "Eisdichte",
+      "structuredExplanation": {
+        "coreIdea": "Eisdichte",
+        "correctReasoning": "Die Struktur beansprucht mehr Volumen pro Masse; der feste Aggregatzustand allein legt die Dichte nicht fest.",
+        "wrongAnswerExplanations": {
+          "A": "Kleineres Volumen pro Masse würde höhere Dichte und nicht das Schwimmen erklären.",
+          "B": "Beim Gefrieren bleiben die O-Atome der Moleküle erhalten.",
+          "C": "Fest bedeutet nicht grundsätzlich dichter; gewöhnliches Eis besitzt ein offeneres Netzwerk.",
+          "D": "Die molare Masse von H₂O ändert sich beim Phasenübergang nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Reines Wasser wird bei Normaldruck langsam von 10 auf 0 °C abgekühlt. Welcher Verlauf ist qualitativ richtig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Dichte steigt im gesamten Intervall bis 0 °C weiter.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Dichtemaximum liegt bei 0 °C direkt vor dem Gefrieren.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Dichte bleibt im ganzen Intervall konstant.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Dichte steigt zunächst bis ungefähr 4 °C und sinkt darunter wieder.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die Dichte sinkt im gesamten Intervall gleichmässig.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Unterhalb etwa 4 °C setzt die Dichteabnahme wieder ein. B: Das Maximum liegt ungefähr bei 4 °C und nicht am Gefrierpunkt. C: Thermische Kontraktion und Netzwerkbildung führen zu einem veränderlichen Verlauf. D: Zwischen normaler thermischer Kontraktion und zunehmend offener H-Brückenstruktur entsteht ein Maximum bei ungefähr 4 °C. E: Von 10 auf etwa 4 °C nimmt die Dichte zunächst zu, nicht durchgehend ab. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Dichteanomalie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dichteanomalie"
+      ],
+      "questionGoal": "Dichteanomalie",
+      "structuredExplanation": {
+        "coreIdea": "Dichteanomalie",
+        "correctReasoning": "Zwischen normaler thermischer Kontraktion und zunehmend offener H-Brückenstruktur entsteht ein Maximum bei ungefähr 4 °C.",
+        "wrongAnswerExplanations": {
+          "A": "Unterhalb etwa 4 °C setzt die Dichteabnahme wieder ein.",
+          "B": "Das Maximum liegt ungefähr bei 4 °C und nicht am Gefrierpunkt.",
+          "C": "Thermische Kontraktion und Netzwerkbildung führen zu einem veränderlichen Verlauf.",
+          "E": "Von 10 auf etwa 4 °C nimmt die Dichte zunächst zu, nicht durchgehend ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Wasser und ein Stoff mit kleinerer spezifischer Wärmekapazität erhalten pro Gramm dieselbe Wärme, ohne Phasenübergang. Was folgt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Wasser erfährt den kleineren Temperaturanstieg.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Der Temperaturanstieg ist unabhängig von der Wärmekapazität.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Beide müssen dieselbe Temperaturänderung haben, weil die Masse gleich ist.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Wasser erfährt den grösseren Temperaturanstieg.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Wasser muss dadurch immer gefrieren.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Aus Q=mcΔT folgt ΔT=Q/(mc); grösseres c dämpft den Temperaturanstieg. B: Aus ΔT=Q/(mc) folgt die unmittelbare inverse Abhängigkeit von c. C: Gleiche Masse und Wärme reichen ohne Kenntnis von c nicht für gleiche ΔT. D: Grösseres c erfordert mehr Wärme pro Kelvin und führt hier zum kleineren Anstieg. E: Die Wärmezufuhr ohne Phasenwechsel erzwingt kein Gefrieren. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Wärmekapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wärmekapazität"
+      ],
+      "questionGoal": "Wärmekapazität",
+      "structuredExplanation": {
+        "coreIdea": "Wärmekapazität",
+        "correctReasoning": "Aus Q=mcΔT folgt ΔT=Q/(mc); grösseres c dämpft den Temperaturanstieg.",
+        "wrongAnswerExplanations": {
+          "B": "Aus ΔT=Q/(mc) folgt die unmittelbare inverse Abhängigkeit von c.",
+          "C": "Gleiche Masse und Wärme reichen ohne Kenntnis von c nicht für gleiche ΔT.",
+          "D": "Grösseres c erfordert mehr Wärme pro Kelvin und führt hier zum kleineren Anstieg.",
+          "E": "Die Wärmezufuhr ohne Phasenwechsel erzwingt kein Gefrieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Welche Energiebilanz erklärt die Kühlung einer Flüssigkeitsoberfläche durch Verdampfung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei jedem verdampften Molekül wird eine O–H-Bindung gespalten und dadurch Wärme frei.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur der atmosphärische Sauerstoff wird verdampft; Wasser bleibt unverändert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Verdampfungsenthalpie von Wasser ist negativ.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Für den Übergang in die Gasphase wird Energie benötigt, die der verbleibenden Flüssigkeit entzogen werden kann.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Verdampfung setzt grundsätzlich dieselbe Wärme frei wie Kondensation.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Verdampfung spaltet nicht gewöhnlich die kovalenten O–H-Bindungen; deren Spaltung würde zudem Energie benötigen. B: Das verdampfende Material ist Wasser selbst, nicht nur gelöster Sauerstoff. C: Die Verdampfungsenthalpie ist positiv; der Übergang in die Gasphase benötigt Energie. D: Verdampfung überwindet intermolekulare Anziehung und ist endotherm; Wärmeentzug kann die Restflüssigkeit kühlen. E: Kondensation setzt Wärme frei, Verdampfung nimmt sie umgekehrt auf. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Verdampfungskühlung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verdampfungskühlung"
+      ],
+      "questionGoal": "Verdampfungskühlung",
+      "structuredExplanation": {
+        "coreIdea": "Verdampfungskühlung",
+        "correctReasoning": "Verdampfung überwindet intermolekulare Anziehung und ist endotherm; Wärmeentzug kann die Restflüssigkeit kühlen.",
+        "wrongAnswerExplanations": {
+          "A": "Verdampfung spaltet nicht gewöhnlich die kovalenten O–H-Bindungen; deren Spaltung würde zudem Energie benötigen.",
+          "B": "Das verdampfende Material ist Wasser selbst, nicht nur gelöster Sauerstoff.",
+          "C": "Die Verdampfungsenthalpie ist positiv; der Übergang in die Gasphase benötigt Energie.",
+          "E": "Kondensation setzt Wärme frei, Verdampfung nimmt sie umgekehrt auf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Welche Orientierung ist in der ersten Hydrathülle eines einfachen Kations bevorzugt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die H-Seiten weisen bevorzugt zum Kation.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Wassermoleküle werden ausschliesslich unpolar linear.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die O-Seite der Wasserdipole weist zum Kation.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Alle O–H-Bindungen zeigen mit identischen positiven Partialladungen zum Kation.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Orientierung bleibt unabhängig von der Ionenladung vollkommen zufällig.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die H-Seite ist positiv partiell geladen und wird von einem Kation nicht bevorzugt angezogen. B: Hydratation macht das gewinkelte Molekül nicht linear und unpolar. C: Die negative O-Partialladung wechselwirkt günstig mit der positiven Ionenladung; Hydratation ist dynamisch, aber nicht ohne Orientierung. D: Die O- und H-Seite haben entgegengesetzte, nicht identisch positive Partialladungen. E: Die Ionenladung beeinflusst die Orientierung des Wasserdipols gerade. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Kationenhydration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kationenhydration"
+      ],
+      "questionGoal": "Kationenhydration",
+      "structuredExplanation": {
+        "coreIdea": "Kationenhydration",
+        "correctReasoning": "Die negative O-Partialladung wechselwirkt günstig mit der positiven Ionenladung; Hydratation ist dynamisch, aber nicht ohne Orientierung.",
+        "wrongAnswerExplanations": {
+          "A": "Die H-Seite ist positiv partiell geladen und wird von einem Kation nicht bevorzugt angezogen.",
+          "B": "Hydratation macht das gewinkelte Molekül nicht linear und unpolar.",
+          "D": "Die O- und H-Seite haben entgegengesetzte, nicht identisch positive Partialladungen.",
+          "E": "Die Ionenladung beeinflusst die Orientierung des Wasserdipols gerade."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Welche Orientierung ist bei einem einfachen Anion gegenüber einem Kation umgekehrt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die negative O-Seite wird noch stärker zum negativen Ion gezogen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hydratation ist ausschliesslich bei positiv geladenen Ionen möglich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die positiven H-Seiten des Wassers können zum Anion zeigen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Das Anion entfernt in jedem Fall beide H-Atome des Wassers.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Alle Hydrathüllen besitzen unabhängig vom Vorzeichen dieselbe O-Einwärtsorientierung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Negative O-Partialladung und negatives Ion begünstigen keine O-einwärts-Anziehung. B: Auch Anionen werden hydratisiert; die Dipolorientierung unterscheidet sich von Kationen. C: Der positive Bereich des Wasserdipols wechselwirkt bevorzugt mit einem negativen Ion. D: Hydratation muss die O–H-Bindungen nicht abspalten. E: Das Vorzeichen der Ionenladung beeinflusst, welche Seite des Wassers nach innen zeigt. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Anionenhydration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anionenhydration"
+      ],
+      "questionGoal": "Anionenhydration",
+      "structuredExplanation": {
+        "coreIdea": "Anionenhydration",
+        "correctReasoning": "Der positive Bereich des Wasserdipols wechselwirkt bevorzugt mit einem negativen Ion.",
+        "wrongAnswerExplanations": {
+          "A": "Negative O-Partialladung und negatives Ion begünstigen keine O-einwärts-Anziehung.",
+          "B": "Auch Anionen werden hydratisiert; die Dipolorientierung unterscheidet sich von Kationen.",
+          "D": "Hydratation muss die O–H-Bindungen nicht abspalten.",
+          "E": "Das Vorzeichen der Ionenladung beeinflusst, welche Seite des Wassers nach innen zeigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Zwei ähnliche organische Gerüste unterscheiden sich durch eine zusätzliche zugängliche OH-Gruppe. Welche Wirkung auf Wasserwechselwirkungen ist am ehesten zu erwarten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine OH-Gruppe kann H-Brücken nur zu Kohlenwasserstoffketten bilden.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zusätzliche H-Brückenmöglichkeiten können die Wasserlöslichkeit erhöhen.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die OH-Gruppe macht das gesamte Molekül zwingend zu einem freien Ion.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Gesamtstruktur spielt dann für die Löslichkeit keine Rolle mehr.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine OH-Gruppe verhindert grundsätzlich jeden Kontakt mit Wasser.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Unpolare Kohlenwasserstoffketten besitzen nicht die typischen Akzeptorgruppen; Wasser kann mit OH H-Brücken bilden. B: Eine polare OH-Gruppe ermöglicht Wasserwechselwirkungen; ihre Wirkung hängt aber weiterhin vom gesamten Molekül ab. C: Ein Alkohol-OH ist nicht unter allen Bedingungen ionisiert. D: Auch mit OH bleibt das Verhältnis von polaren und apolaren Bereichen für Löslichkeit wichtig. E: Eine zugängliche OH-Gruppe ermöglicht gerade günstige Kontakte zu Wasser. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Polare und apolare Gruppen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polare und apolare Gruppen"
+      ],
+      "questionGoal": "Polare und apolare Gruppen",
+      "structuredExplanation": {
+        "coreIdea": "Polare und apolare Gruppen",
+        "correctReasoning": "Eine polare OH-Gruppe ermöglicht Wasserwechselwirkungen; ihre Wirkung hängt aber weiterhin vom gesamten Molekül ab.",
+        "wrongAnswerExplanations": {
+          "A": "Unpolare Kohlenwasserstoffketten besitzen nicht die typischen Akzeptorgruppen; Wasser kann mit OH H-Brücken bilden.",
+          "C": "Ein Alkohol-OH ist nicht unter allen Bedingungen ionisiert.",
+          "D": "Auch mit OH bleibt das Verhältnis von polaren und apolaren Bereichen für Löslichkeit wichtig.",
+          "E": "Eine zugängliche OH-Gruppe ermöglicht gerade günstige Kontakte zu Wasser."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Welche Erklärung passt zur Zusammenlagerung apolarer Flächen in Wasser?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Apolare Flächen tragen definitionsgemäss starke entgegengesetzte Ionenladungen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Zusammenlagerung kann die ungünstige Einschränkung des umgebenden Wassers vermindern.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Wassermoleküle im gesamten Gefäss verlieren dabei ihre Dipolmomente.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zwischen allen Alkylketten entstehen neue kovalente Bindungen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Trennung von Wasser und Alkylketten kann keinerlei Entropiebeitrag besitzen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Apolare Flächen sind nicht durch starke gegensätzliche Ionenladungen definiert. B: Der hydrophobe Effekt ist ein Lösungsphänomen mit wichtigen Wasser- und Entropiebeiträgen; Dispersion kann zusätzlich stabilisieren. C: Wasser behält seine molekularen Dipole während der Umordnung. D: Hydrophobe Zusammenlagerung setzt keine kovalente Polymerisation der Alkylketten voraus. E: Die Änderung der Wasserorganisation liefert gerade einen relevanten Entropiebeitrag. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Hydrophober Effekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrophober Effekt"
+      ],
+      "questionGoal": "Hydrophober Effekt",
+      "structuredExplanation": {
+        "coreIdea": "Hydrophober Effekt",
+        "correctReasoning": "Der hydrophobe Effekt ist ein Lösungsphänomen mit wichtigen Wasser- und Entropiebeiträgen; Dispersion kann zusätzlich stabilisieren.",
+        "wrongAnswerExplanations": {
+          "A": "Apolare Flächen sind nicht durch starke gegensätzliche Ionenladungen definiert.",
+          "C": "Wasser behält seine molekularen Dipole während der Umordnung.",
+          "D": "Hydrophobe Zusammenlagerung setzt keine kovalente Polymerisation der Alkylketten voraus.",
+          "E": "Die Änderung der Wasserorganisation liefert gerade einen relevanten Entropiebeitrag."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu CO2 in Wasser, Autoprotolyse, Wasserstoffbrücken, Verdampfung.",
+      "options": [
+        {
+          "text": "Gelöstes CO₂ steht über CO₂ + H₂O ⇌ H₂CO₃ mit Kohlensäure und weiteren Dissoziationsprodukten im Gleichgewicht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Für die Autoprotolyse gilt 2 H₂O ⇌ H₃O⁺ + OH⁻.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Verdampfung kühlt nur, wenn dabei neue kovalente O–H-Bindungen gespalten werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wasser kann nur H-Brücken spenden, aber keine annehmen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die chemische Hydratation ergänzt die physikalische Lösung; die Kohlensäure kann weiter zu HCO₃⁻ und H₃O⁺ reagieren. B: Ein Wassermolekül spendet, das andere akzeptiert ein Proton; Atome und Ladung sind ausgeglichen. C: Verdampfung benötigt Energie und kann die verbleibende Flüssigkeit kühlen. Intermolekulare Wechselwirkungen werden überwunden. D: Ein Wassermolekül kann als H-Brückendonor und als Akzeptor wirken. Freie Elektronenpaare erlauben Akzeptorwirkung. Quelle: Originalunterlagen, PDF-S. 6, 11, 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "CO2 in Wasser"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CO2 in Wasser"
+      ],
+      "questionGoal": "CO2 in Wasser",
+      "structuredExplanation": {
+        "coreIdea": "CO2 in Wasser",
+        "correctReasoning": "Die chemische Hydratation ergänzt die physikalische Lösung; die Kohlensäure kann weiter zu HCO₃⁻ und H₃O⁺ reagieren. Ein Wassermolekül spendet, das andere akzeptiert ein Proton; Atome und Ladung sind ausgeglichen.",
+        "wrongAnswerExplanations": {
+          "A": "Die chemische Hydratation ergänzt die physikalische Lösung; die Kohlensäure kann weiter zu HCO₃⁻ und H₃O⁺ reagieren.",
+          "B": "Ein Wassermolekül spendet, das andere akzeptiert ein Proton; Atome und Ladung sind ausgeglichen.",
+          "C": "Verdampfung benötigt Energie und kann die verbleibende Flüssigkeit kühlen. Intermolekulare Wechselwirkungen werden überwunden.",
+          "D": "Ein Wassermolekül kann als H-Brückendonor und als Akzeptor wirken. Freie Elektronenpaare erlauben Akzeptorwirkung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Autoprotolyse, Neutralität, Flüssiges Wasser, Kationenhydratation.",
+      "options": [
+        {
+          "text": "Zwei Wassermoleküle können H3O+ und OH− bilden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei der Hydratation eines Kations richten Wassermoleküle bevorzugt ihre O-Seite zum Ion.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Neutralität bedeutet bei jeder Temperatur zwangsläufig exakt pH 7.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wasserstoffbrücken werden in flüssigem Wasser laufend gelöst und neu gebildet.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es ist eine Protonenübertragung. B: Entgegengesetzte Ladungen begünstigen die Orientierung. C: In neutralem Wasser sind die Aktivitäten von H3O+ und OH− gleich. Das Ionenprodukt ist temperaturabhängig. D: Das Netzwerk ist dynamisch. Quelle: Originalunterlagen, PDF-S. 8, 14, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Autoprotolyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autoprotolyse"
+      ],
+      "questionGoal": "Autoprotolyse",
+      "structuredExplanation": {
+        "coreIdea": "Autoprotolyse",
+        "correctReasoning": "Es ist eine Protonenübertragung. Entgegengesetzte Ladungen begünstigen die Orientierung. Das Netzwerk ist dynamisch.",
+        "wrongAnswerExplanations": {
+          "A": "Es ist eine Protonenübertragung.",
+          "B": "Entgegengesetzte Ladungen begünstigen die Orientierung.",
+          "C": "In neutralem Wasser sind die Aktivitäten von H3O+ und OH− gleich. Das Ionenprodukt ist temperaturabhängig.",
+          "D": "Das Netzwerk ist dynamisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Neutralität, Bindungsebenen, Eisstruktur, Anionenhydratation.",
+      "options": [
+        {
+          "text": "Neutralität bedeutet bei jeder Temperatur zwangsläufig exakt pH 7.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beim Schmelzen von Eis bleiben die Wassermoleküle überwiegend kovalent intakt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gewöhnliches Eis sinkt in reinem Wasser, weil es dichter ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei einem Anion zeigt bevorzugt die negative O-Seite direkt zum Ion.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: In neutralem Wasser sind die Aktivitäten von H3O+ und OH− gleich. Das Ionenprodukt ist temperaturabhängig. B: Vor allem intermolekulare Ordnung verändert sich. C: Das offene Netzwerk gewöhnlichen Eises erklärt seine geringere Dichte gegenüber flüssigem Wasser nahe dem Gefrierpunkt. Die offenere Anordnung benötigt mehr Volumen. D: Bei einem Anion können die H-Seiten der Wassermoleküle zum Ion zeigen. Die positive Partialladung der H-Atome ist günstig. Quelle: Originalunterlagen, PDF-S. 7–11, 14, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Neutralität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neutralität"
+      ],
+      "questionGoal": "Neutralität",
+      "structuredExplanation": {
+        "coreIdea": "Neutralität",
+        "correctReasoning": "Vor allem intermolekulare Ordnung verändert sich.",
+        "wrongAnswerExplanations": {
+          "A": "In neutralem Wasser sind die Aktivitäten von H3O+ und OH− gleich. Das Ionenprodukt ist temperaturabhängig.",
+          "B": "Vor allem intermolekulare Ordnung verändert sich.",
+          "C": "Das offene Netzwerk gewöhnlichen Eises erklärt seine geringere Dichte gegenüber flüssigem Wasser nahe dem Gefrierpunkt. Die offenere Anordnung benötigt mehr Volumen.",
+          "D": "Bei einem Anion können die H-Seiten der Wassermoleküle zum Ion zeigen. Die positive Partialladung der H-Atome ist günstig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Bindungsebenen, Oberflächenspannung, Dichtemaximum, Polare Stoffe.",
+      "options": [
+        {
+          "text": "Oberflächenspannung ist unabhängig von allen intermolekularen Kräften.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Polare Gruppen können durch Dipolwechselwirkungen oder H-Brücken die Wasserlöslichkeit erhöhen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Beim Schmelzen von Eis bleiben die Wassermoleküle überwiegend kovalent intakt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Dichte reinen Wassers steigt bei Normaldruck unterhalb 4 °C bis zum Gefrieren ständig weiter.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Kohäsive Wechselwirkungen tragen zur Oberflächenspannung von Wasser bei. Die Oberfläche besitzt eine energetische Bedeutung. B: Die Gesamtstruktur bestimmt das Ausmass. C: Vor allem intermolekulare Ordnung verändert sich. D: Reines Wasser besitzt bei Normaldruck ungefähr bei 4 °C ein Dichtemaximum. Das zunehmende offene Netzwerk senkt die Dichte. Quelle: Originalunterlagen, PDF-S. 7–12, 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Bindungsebenen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindungsebenen"
+      ],
+      "questionGoal": "Bindungsebenen",
+      "structuredExplanation": {
+        "coreIdea": "Bindungsebenen",
+        "correctReasoning": "Die Gesamtstruktur bestimmt das Ausmass. Vor allem intermolekulare Ordnung verändert sich.",
+        "wrongAnswerExplanations": {
+          "A": "Kohäsive Wechselwirkungen tragen zur Oberflächenspannung von Wasser bei. Die Oberfläche besitzt eine energetische Bedeutung.",
+          "B": "Die Gesamtstruktur bestimmt das Ausmass.",
+          "C": "Vor allem intermolekulare Ordnung verändert sich.",
+          "D": "Reines Wasser besitzt bei Normaldruck ungefähr bei 4 °C ein Dichtemaximum. Das zunehmende offene Netzwerk senkt die Dichte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Oberflächenspannung, Dipol und Ion, Wärmekapazität, Hydrophober Effekt.",
+      "options": [
+        {
+          "text": "Hohe Wärmekapazität bedeutet besonders starke Temperaturänderung bei wenig Wärme.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Partialladung eines Wassermoleküls ist nicht dieselbe Grösse wie die ganzzahlige Ladung eines Ions.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der hydrophobe Effekt erfordert kovalente Bindungen zwischen Wasser und Alkylketten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Kohäsive Wechselwirkungen tragen zur Oberflächenspannung von Wasser bei.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die hohe Wärmekapazität von Wasser dämpft Temperaturänderungen bei gegebener Wärmezufuhr. Mehr Wärme ist pro Temperaturänderung nötig. B: Die Atome sind kovalent verbunden. C: Zusammenlagerung apolarer Flächen kann die Einschränkung umgebender Wassermoleküle vermindern. Er beruht auf Lösungs- und Entropieeffekten. D: Die Oberfläche besitzt eine energetische Bedeutung. Quelle: Originalunterlagen, PDF-S. 4–5, 12, 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Oberflächenspannung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Oberflächenspannung"
+      ],
+      "questionGoal": "Oberflächenspannung",
+      "structuredExplanation": {
+        "coreIdea": "Oberflächenspannung",
+        "correctReasoning": "Die Atome sind kovalent verbunden. Die Oberfläche besitzt eine energetische Bedeutung.",
+        "wrongAnswerExplanations": {
+          "A": "Die hohe Wärmekapazität von Wasser dämpft Temperaturänderungen bei gegebener Wärmezufuhr. Mehr Wärme ist pro Temperaturänderung nötig.",
+          "B": "Die Atome sind kovalent verbunden.",
+          "C": "Zusammenlagerung apolarer Flächen kann die Einschränkung umgebender Wassermoleküle vermindern. Er beruht auf Lösungs- und Entropieeffekten.",
+          "D": "Die Oberfläche besitzt eine energetische Bedeutung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Dipol und Ion, Lösungsvorgang, Verdampfung, Molekülgeometrie.",
+      "options": [
+        {
+          "text": "Eine Partialladung eines Wassermoleküls ist nicht dieselbe Grösse wie die ganzzahlige Ladung eines Ions.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Verdampfung benötigt Energie und kann die verbleibende Flüssigkeit kühlen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Hydratation garantiert, dass jedes beliebige Salz unbegrenzt wasserlöslich ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Wassermolekül ist gewinkelt und besitzt ein permanentes Dipolmoment.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Atome sind kovalent verbunden. B: Intermolekulare Wechselwirkungen werden überwunden. C: Salzlöslichkeit hängt vom Zusammenspiel von Gitter- und Solvatationseffekten ab. Auch die Festkörperstabilität ist wichtig. D: Die Bindungsdipole heben sich nicht auf. Quelle: Originalunterlagen, PDF-S. 3–5, 11, 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Dipol und Ion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dipol und Ion"
+      ],
+      "questionGoal": "Dipol und Ion",
+      "structuredExplanation": {
+        "coreIdea": "Dipol und Ion",
+        "correctReasoning": "Die Atome sind kovalent verbunden. Intermolekulare Wechselwirkungen werden überwunden. Die Bindungsdipole heben sich nicht auf.",
+        "wrongAnswerExplanations": {
+          "A": "Die Atome sind kovalent verbunden.",
+          "B": "Intermolekulare Wechselwirkungen werden überwunden.",
+          "C": "Salzlöslichkeit hängt vom Zusammenspiel von Gitter- und Solvatationseffekten ab. Auch die Festkörperstabilität ist wichtig.",
+          "D": "Die Bindungsdipole heben sich nicht auf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Lösungsvorgang, Hydroxidkonzentration, Kationenhydratation, Elektronegativität.",
+      "options": [
+        {
+          "text": "Im O–H-Bindungspaar ist der Wasserstoff der stärker elektronegative Partner.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei 25 °C und idealisiertem Kw = 10^−14 steigt bei sinkender H3O+-Konzentration die OH−-Konzentration.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Hydratation garantiert, dass jedes beliebige Salz unbegrenzt wasserlöslich ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die positiv partiell geladene H-Seite richtet sich bevorzugt auf ein Kation.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im O–H-Bindungspaar wird Elektronendichte stärker zum Sauerstoff gezogen. Sauerstoff trägt eine negative Partialladung. B: Ihr Produkt ist im Gleichgewicht festgelegt. C: Salzlöslichkeit hängt vom Zusammenspiel von Gitter- und Solvatationseffekten ab. Auch die Festkörperstabilität ist wichtig. D: Bei der Hydratation eines Kations richten Wassermoleküle bevorzugt ihre O-Seite zum Ion. Entgegengesetzte Ladungen begünstigen die Orientierung. Quelle: Originalunterlagen, PDF-S. 4, 14, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Lösungsvorgang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lösungsvorgang"
+      ],
+      "questionGoal": "Lösungsvorgang",
+      "structuredExplanation": {
+        "coreIdea": "Lösungsvorgang",
+        "correctReasoning": "Ihr Produkt ist im Gleichgewicht festgelegt.",
+        "wrongAnswerExplanations": {
+          "A": "Im O–H-Bindungspaar wird Elektronendichte stärker zum Sauerstoff gezogen. Sauerstoff trägt eine negative Partialladung.",
+          "B": "Ihr Produkt ist im Gleichgewicht festgelegt.",
+          "C": "Salzlöslichkeit hängt vom Zusammenspiel von Gitter- und Solvatationseffekten ab. Auch die Festkörperstabilität ist wichtig.",
+          "D": "Bei der Hydratation eines Kations richten Wassermoleküle bevorzugt ihre O-Seite zum Ion. Entgegengesetzte Ladungen begünstigen die Orientierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc08_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC08",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Hydroxidkonzentration, Molekülgeometrie, Anionenhydratation, Wasserstoffbrücken.",
+      "options": [
+        {
+          "text": "Wasser ist wegen einer linearen symmetrischen Geometrie unpolar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei einem Anion zeigt bevorzugt die negative O-Seite direkt zum Ion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei 25 °C und idealisiertem Kw = 10^−14 steigt bei sinkender H3O+-Konzentration die OH−-Konzentration.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Wassermolekül kann als H-Brückendonor und als Akzeptor wirken.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Wassermolekül ist gewinkelt und besitzt ein permanentes Dipolmoment. Die Bindungsdipole heben sich nicht auf. B: Bei einem Anion können die H-Seiten der Wassermoleküle zum Ion zeigen. Die positive Partialladung der H-Atome ist günstig. C: Ihr Produkt ist im Gleichgewicht festgelegt. D: Freie Elektronenpaare erlauben Akzeptorwirkung. Quelle: Originalunterlagen, PDF-S. 3, 6, 14, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC08",
+        "Hydroxidkonzentration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydroxidkonzentration"
+      ],
+      "questionGoal": "Hydroxidkonzentration",
+      "structuredExplanation": {
+        "coreIdea": "Hydroxidkonzentration",
+        "correctReasoning": "Ihr Produkt ist im Gleichgewicht festgelegt. Freie Elektronenpaare erlauben Akzeptorwirkung.",
+        "wrongAnswerExplanations": {
+          "A": "Das Wassermolekül ist gewinkelt und besitzt ein permanentes Dipolmoment. Die Bindungsdipole heben sich nicht auf.",
+          "B": "Bei einem Anion können die H-Seiten der Wassermoleküle zum Ion zeigen. Die positive Partialladung der H-Atome ist günstig.",
+          "C": "Ihr Produkt ist im Gleichgewicht festgelegt.",
+          "D": "Freie Elektronenpaare erlauben Akzeptorwirkung."
+        }
+      }
+    }
+  ]
+}

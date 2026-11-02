@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs02_20261102",
+  "lectureCode": "KVBS02",
+  "title": "Datentypen und deskriptive Statistik",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS02 - Variablen und deskriptive Statistik. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Boxplot-Enden nach Tukey-Konvention präzisiert: beobachtete Grenzwerte innerhalb der 1,5-IQR-Fences, nicht zwingend exakt an der Fence. Stichproben-SD verwendet n−1. Zahlenbeispiele sind synthetisch.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Numerische, nominale, ordinale und binäre Variablen unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Geeignete Grafiken und Häufigkeitsdarstellungen auswählen und interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Mittelwert, Median und Modalwert berechnen und gegeneinander abgrenzen."
+    },
+    {
+      "id": "lo4",
+      "text": "Standardabweichung, IQR und Spannweite berechnen und ihre Empfindlichkeit erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Boxplots und schiefe Verteilungen sachgerecht interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs02_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Die Kategorien einer Schmerzangabe lauten leicht, mittel und stark. Welche Einordnung folgt daraus unmittelbar?",
+      "options": [
+        {
+          "text": "Numerisch kontinuierlich mit bekannten gleichen Abständen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kategorisch geordnet",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine konstante Grösse ohne Variation",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Numerisch diskret allein wegen drei möglicher Kategorien",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Kategorisch ungeordnet",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Wörter legen keine gleichen quantitativen Abstände fest. B: Die Kategorien besitzen eine Reihenfolge, aber keinen festgelegten gleichen Messabstand. C: Verschiedene Personen können verschiedene Kategorien angeben. D: Eine endliche Kategorienzahl macht die Variable noch nicht zu einer Zählgrösse. E: Die inhaltliche Reihenfolge würde damit übersehen. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Ordinalskalierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ordinalskalierung"
+      ],
+      "questionGoal": "Ordinalskalierung",
+      "structuredExplanation": {
+        "coreIdea": "Ordinalskalierung",
+        "correctReasoning": "Die Kategorien besitzen eine Reihenfolge, aber keinen festgelegten gleichen Messabstand.",
+        "wrongAnswerExplanations": {
+          "A": "Die Wörter legen keine gleichen quantitativen Abstände fest.",
+          "C": "Verschiedene Personen können verschiedene Kategorien angeben.",
+          "D": "Eine endliche Kategorienzahl macht die Variable noch nicht zu einer Zählgrösse.",
+          "E": "Die inhaltliche Reihenfolge würde damit übersehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "In einer Befragung wird die Zahl der Atemwegsinfekte im letzten Jahr erfasst. Welcher Datentyp passt am besten?",
+      "options": [
+        {
+          "text": "Numerisch diskret",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Binär mit genau zwei Ausprägungen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Numerisch kontinuierlich",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nominal ohne natürliche Reihenfolge",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ordinal mit unbekannten Abständen zwischen den Zählwerten",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es werden abzählbare Ereignisse gezählt. B: Es sind auch null, eins, zwei und weitere Anzahlen möglich. C: Bruchteile eines gezählten Ereignisses sind hier keine zulässigen Werte. D: Die Zahlen besitzen eine quantitative Reihenfolge. E: Zwischen benachbarten Zählwerten liegt jeweils genau ein Ereignis. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Zählvariable"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zählvariable"
+      ],
+      "questionGoal": "Zählvariable",
+      "structuredExplanation": {
+        "coreIdea": "Zählvariable",
+        "correctReasoning": "Es werden abzählbare Ereignisse gezählt.",
+        "wrongAnswerExplanations": {
+          "B": "Es sind auch null, eins, zwei und weitere Anzahlen möglich.",
+          "C": "Bruchteile eines gezählten Ereignisses sind hier keine zulässigen Werte.",
+          "D": "Die Zahlen besitzen eine quantitative Reihenfolge.",
+          "E": "Zwischen benachbarten Zählwerten liegt jeweils genau ein Ereignis."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Zum Thema «Zahlenkodierung und statistischer Datentyp»: Beurteilen Sie die Einordnung kodierter Variablen.",
+      "options": [
+        {
+          "text": "Jede Variable mit Zahlen als Bezeichnungen ist zwingend kontinuierlich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Blutgruppen A, B, AB und 0 können nominal erfasst werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Kodierung der Blutgruppen mit 1 bis 4 macht ihren Mittelwert automatisch biologisch sinnvoll.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Ja-Nein-Angabe ist allein wegen möglicher 0/1-Kodierung kontinuierlich.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zahlen können auch reine Kategoriekodes sein. B: Es besteht keine natürliche Rangfolge dieser Kategorien. C: Die Zahlenkodierung schafft keine quantitative Skala. D: Zwei Ausprägungen bleiben binär und werden nicht kontinuierlich. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Kodierung und Datentyp"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kodierung und Datentyp"
+      ],
+      "questionGoal": "Kodierung und Datentyp",
+      "structuredExplanation": {
+        "coreIdea": "Kodierung und Datentyp",
+        "correctReasoning": "Es besteht keine natürliche Rangfolge dieser Kategorien.",
+        "wrongAnswerExplanations": {
+          "A": "Zahlen können auch reine Kategoriekodes sein.",
+          "B": "Es besteht keine natürliche Rangfolge dieser Kategorien.",
+          "C": "Die Zahlenkodierung schafft keine quantitative Skala.",
+          "D": "Zwei Ausprägungen bleiben binär und werden nicht kontinuierlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Die Verteilung einer kontinuierlichen Cholesterinkonzentration in 200 Proben soll dargestellt werden. Welche Grafik ist dafür besonders geeignet?",
+      "options": [
+        {
+          "text": "Eine Überlebenskurve ohne Zeitbezug",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Histogramm der Messwerte",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Balken je Wohnkanton ohne Cholesterinangabe",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Kreisdiagramm mit einer eigenen Kategorie für jeden exakten Messwert",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein einzelner Mittelwert ohne Streuungsangabe als vollständige Verteilung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie beantwortet eine andere Fragestellung. B: Es zeigt die Häufigkeitsverteilung über numerische Intervalle. C: Die gewünschte Messwertverteilung wird damit nicht dargestellt. D: Dies erschwert die Darstellung einer kontinuierlichen Verteilung erheblich. E: Ein Lagewert enthält weder Verteilungsform noch Streuung. Quelle: Originalunterlagen, PDF-S. 6–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Grafikauswahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grafikauswahl"
+      ],
+      "questionGoal": "Grafikauswahl",
+      "structuredExplanation": {
+        "coreIdea": "Grafikauswahl",
+        "correctReasoning": "Es zeigt die Häufigkeitsverteilung über numerische Intervalle.",
+        "wrongAnswerExplanations": {
+          "A": "Sie beantwortet eine andere Fragestellung.",
+          "C": "Die gewünschte Messwertverteilung wird damit nicht dargestellt.",
+          "D": "Dies erschwert die Darstellung einer kontinuierlichen Verteilung erheblich.",
+          "E": "Ein Lagewert enthält weder Verteilungsform noch Streuung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Drei Konzentrationen betragen 2, 4 und 6 mmol/l. Wie gross ist ihr arithmetischer Mittelwert?",
+      "options": [
+        {
+          "text": "6 mmol/l",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3 mmol/l",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2 mmol/l",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "12 mmol/l",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "4 mmol/l",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der grösste Einzelwert, nicht der Mittelwert. B: Die Beobachtungszahl wurde mit der Messgrösse verwechselt. C: Dies ist der kleinste Einzelwert. D: Dies ist die Summe ohne Division durch die Anzahl. E: Die Summe 12 wird durch drei Beobachtungen geteilt. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Mittelwert berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mittelwert berechnen"
+      ],
+      "questionGoal": "Mittelwert berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Mittelwert berechnen",
+        "correctReasoning": "Die Summe 12 wird durch drei Beobachtungen geteilt.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der grösste Einzelwert, nicht der Mittelwert.",
+          "B": "Die Beobachtungszahl wurde mit der Messgrösse verwechselt.",
+          "C": "Dies ist der kleinste Einzelwert.",
+          "D": "Dies ist die Summe ohne Division durch die Anzahl."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Zum Thema «Mittelwert, Median und Modalwert»: Beurteilen Sie die Eigenschaften von Lagekennzahlen.",
+      "options": [
+        {
+          "text": "Der Mittelwert hängt von allen beobachteten Zahlenwerten ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Modalwert muss bei jeder Datenreihe eindeutig sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die üblichen mittleren Rangpositionen werden an der sortierten Messreihe bestimmt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei gerader Beobachtungszahl wird der übliche Stichprobenmedian aus den beiden mittleren Werten gebildet.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Jede Beobachtung trägt zur Summe bei. B: Mehrere Werte können dieselbe maximale Häufigkeit besitzen. C: Sortierung ist für die Medianbestimmung erforderlich. D: Er ist dann ihr arithmetisches Mittel. Quelle: Originalunterlagen, PDF-S. 19–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Mittelwert und Median"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mittelwert und Median"
+      ],
+      "questionGoal": "Mittelwert und Median",
+      "structuredExplanation": {
+        "coreIdea": "Mittelwert und Median",
+        "correctReasoning": "Jede Beobachtung trägt zur Summe bei. Sortierung ist für die Medianbestimmung erforderlich. Er ist dann ihr arithmetisches Mittel.",
+        "wrongAnswerExplanations": {
+          "A": "Jede Beobachtung trägt zur Summe bei.",
+          "B": "Mehrere Werte können dieselbe maximale Häufigkeit besitzen.",
+          "C": "Sortierung ist für die Medianbestimmung erforderlich.",
+          "D": "Er ist dann ihr arithmetisches Mittel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Die sortierten Messwerte lauten 2, 3, 5 und 10. Welcher Median ergibt sich nach der üblichen Stichprobenkonvention?",
+      "options": [
+        {
+          "text": "10",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "20",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "4",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "5",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der Maximalwert. B: Dies ist die Summe aller Werte. C: Dies berücksichtigt nur den unteren der beiden mittleren Werte. D: Die beiden mittleren Werte 3 und 5 ergeben im Mittel 4. E: Dies berücksichtigt nur den oberen der beiden mittleren Werte. Quelle: Originalunterlagen, PDF-S. 22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Median berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Median berechnen"
+      ],
+      "questionGoal": "Median berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Median berechnen",
+        "correctReasoning": "Die beiden mittleren Werte 3 und 5 ergeben im Mittel 4.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der Maximalwert.",
+          "B": "Dies ist die Summe aller Werte.",
+          "C": "Dies berücksichtigt nur den unteren der beiden mittleren Werte.",
+          "E": "Dies berücksichtigt nur den oberen der beiden mittleren Werte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Die Messreihe lautet 1, 2, 2, 3, 4. Welcher Wert ist der Modus?",
+      "options": [
+        {
+          "text": "2,4",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der Mittelwert, nicht der häufigste Einzelwert. B: Dieser Wert kommt nur einmal vor. C: Der Maximalwert ist nicht automatisch der Modus. D: Dieser Wert wurde gar nicht beobachtet. E: Der Wert 2 kommt am häufigsten vor. Quelle: Originalunterlagen, PDF-S. 9,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Modalwert"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modalwert"
+      ],
+      "questionGoal": "Modalwert",
+      "structuredExplanation": {
+        "coreIdea": "Modalwert",
+        "correctReasoning": "Der Wert 2 kommt am häufigsten vor.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der Mittelwert, nicht der häufigste Einzelwert.",
+          "B": "Dieser Wert kommt nur einmal vor.",
+          "C": "Der Maximalwert ist nicht automatisch der Modus.",
+          "D": "Dieser Wert wurde gar nicht beobachtet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Der grösste Wert einer Stichprobe wird durch einen deutlich höheren Wert ersetzt. Alle anderen Beobachtungen bleiben unverändert. Beurteilen Sie die möglichen Folgen.",
+      "options": [
+        {
+          "text": "Die Spannweite steigt, wenn der bisherige Maximalwert erhöht wird und das Minimum gleich bleibt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der arithmetische Mittelwert steigt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine solche Änderung kann die Standardabweichung grundsätzlich nicht beeinflussen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Median muss im selben Verhältnis wie der Maximalwert steigen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Maximum minus Minimum wird grösser. B: Die Summe nimmt bei unveränderter Beobachtungszahl zu. C: Die quadrierten Abweichungen reagieren auf weit entfernte Werte. D: Solange die mittleren Rangpositionen unverändert sind, kann der Median gleich bleiben. Quelle: Originalunterlagen, PDF-S. 19,31,36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Ausreisserempfindlichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ausreisserempfindlichkeit"
+      ],
+      "questionGoal": "Ausreisserempfindlichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Ausreisserempfindlichkeit",
+        "correctReasoning": "Maximum minus Minimum wird grösser. Die Summe nimmt bei unveränderter Beobachtungszahl zu.",
+        "wrongAnswerExplanations": {
+          "A": "Maximum minus Minimum wird grösser.",
+          "B": "Die Summe nimmt bei unveränderter Beobachtungszahl zu.",
+          "C": "Die quadrierten Abweichungen reagieren auf weit entfernte Werte.",
+          "D": "Solange die mittleren Rangpositionen unverändert sind, kann der Median gleich bleiben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Für eine Verteilung sind Q1 = 42 und Q3 = 58 angegeben. Wie gross ist der Interquartilsabstand?",
+      "options": [
+        {
+          "text": "50",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "8",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "100",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "16",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "58",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der Mittelwert der beiden Quartile. B: Hier wurde die Quartilsdifferenz zusätzlich halbiert. C: Dies ist die Summe der beiden Quartile. D: IQR ist Q3 minus Q1. E: Das obere Quartil allein ist keine Streuungsdifferenz. Quelle: Originalunterlagen, PDF-S. 26,33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Interquartilsabstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interquartilsabstand"
+      ],
+      "questionGoal": "Interquartilsabstand",
+      "structuredExplanation": {
+        "coreIdea": "Interquartilsabstand",
+        "correctReasoning": "IQR ist Q3 minus Q1.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der Mittelwert der beiden Quartile.",
+          "B": "Hier wurde die Quartilsdifferenz zusätzlich halbiert.",
+          "C": "Dies ist die Summe der beiden Quartile.",
+          "E": "Das obere Quartil allein ist keine Streuungsdifferenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Für die Werte 2, 4 und 6 ist der Mittelwert 4. Welche Stichprobenstandardabweichung ergibt sich mit dem Nenner n−1?",
+      "options": [
+        {
+          "text": "1,63",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "8",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser Wert entsteht ungefähr bei Division durch n statt n−1. B: Die Werte sind verschieden und weisen eine Streuung auf. C: Dies ist die Stichprobenvarianz, noch ohne Quadratwurzel. D: Die quadrierten Abweichungen ergeben 8; geteilt durch 2 ist die Varianz 4 und deren Wurzel 2. E: Dies ist die Summe der quadrierten Abweichungen. Quelle: Originalunterlagen, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Stichprobenstandardabweichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stichprobenstandardabweichung"
+      ],
+      "questionGoal": "Stichprobenstandardabweichung",
+      "structuredExplanation": {
+        "coreIdea": "Stichprobenstandardabweichung",
+        "correctReasoning": "Die quadrierten Abweichungen ergeben 8; geteilt durch 2 ist die Varianz 4 und deren Wurzel 2.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser Wert entsteht ungefähr bei Division durch n statt n−1.",
+          "B": "Die Werte sind verschieden und weisen eine Streuung auf.",
+          "C": "Dies ist die Stichprobenvarianz, noch ohne Quadratwurzel.",
+          "E": "Dies ist die Summe der quadrierten Abweichungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Zum Thema «Varianz, Standardabweichung und ihre Einheiten»: Beurteilen Sie die Interpretation von Streumassen.",
+      "options": [
+        {
+          "text": "Bei identischen Messwerten ist die Standardabweichung null.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Varianz einer Konzentration in mmol/l wird ebenfalls in mmol/l angegeben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Standardabweichung besitzt dieselbe Einheit wie die Messwerte.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Standardabweichung ist definitionsgemäss die Unsicherheit des geschätzten Mittelwerts.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Alle Abweichungen vom Mittelwert verschwinden. B: Die Varianzeinheit ist das Quadrat der Messwerteinheit. C: Die Quadratwurzel hebt die quadrierte Einheit der Varianz auf. D: Sie beschreibt die Streuung der Einzelwerte; der Standardfehler ist davon zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 33–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Einheiten und Bedeutung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Einheiten und Bedeutung"
+      ],
+      "questionGoal": "Einheiten und Bedeutung",
+      "structuredExplanation": {
+        "coreIdea": "Einheiten und Bedeutung",
+        "correctReasoning": "Alle Abweichungen vom Mittelwert verschwinden. Die Quadratwurzel hebt die quadrierte Einheit der Varianz auf.",
+        "wrongAnswerExplanations": {
+          "A": "Alle Abweichungen vom Mittelwert verschwinden.",
+          "B": "Die Varianzeinheit ist das Quadrat der Messwerteinheit.",
+          "C": "Die Quadratwurzel hebt die quadrierte Einheit der Varianz auf.",
+          "D": "Sie beschreibt die Streuung der Einzelwerte; der Standardfehler ist davon zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Ein Boxplot zeigt Q1 = 10, Median = 12 und Q3 = 18. Welche Aussage ist unmittelbar richtig?",
+      "options": [
+        {
+          "text": "Der Mittelwert beträgt zwingend 12.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte Spannweite beträgt zwingend 8.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Verteilung besitzt keine Ausreisser.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der IQR beträgt 8.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Alle Beobachtungen liegen zwischen 10 und 18.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Medianlinie bestimmt den Mittelwert nicht. B: Minimum und Maximum können ausserhalb der Box liegen. C: Quartile und Median allein schliessen solche Werte nicht aus. D: Die Box reicht vom unteren zum oberen Quartil. E: Die Box beschreibt den mittleren Teil der Verteilung. Quelle: Originalunterlagen, PDF-S. 26–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Boxplot lesen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Boxplot lesen"
+      ],
+      "questionGoal": "Boxplot lesen",
+      "structuredExplanation": {
+        "coreIdea": "Boxplot lesen",
+        "correctReasoning": "Die Box reicht vom unteren zum oberen Quartil.",
+        "wrongAnswerExplanations": {
+          "A": "Die Medianlinie bestimmt den Mittelwert nicht.",
+          "B": "Minimum und Maximum können ausserhalb der Box liegen.",
+          "C": "Quartile und Median allein schliessen solche Werte nicht aus.",
+          "E": "Die Box beschreibt den mittleren Teil der Verteilung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Zum Thema «Tukey-Boxplot, Whisker und Ausreisser»: Beurteilen Sie einen Boxplot nach der üblichen Tukey-Konvention.",
+      "options": [
+        {
+          "text": "Die Whisker reichen bis zu beobachteten Werten innerhalb der festgelegten 1,5-IQR-Grenzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein einzeln markierter Punkt kann eine zur übrigen Verteilung ungewöhnliche Beobachtung anzeigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein so markierter Wert ist allein deshalb nachweislich ein Messfehler.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jeder Whisker muss exakt bei Q1−1,5 IQR beziehungsweise Q3+1,5 IQR enden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie enden gewöhnlich am äussersten noch innerhalb der Grenzen liegenden Datenwert. B: Die Markierung beruht auf der gewählten Boxplotregel. C: Eine ungewöhnliche Beobachtung kann korrekt gemessen sein. D: Die Grenzwerte und die tatsächlich beobachteten Whisker-Endwerte sind zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 27–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Whisker und Ausreisser"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Whisker und Ausreisser"
+      ],
+      "questionGoal": "Whisker und Ausreisser",
+      "structuredExplanation": {
+        "coreIdea": "Whisker und Ausreisser",
+        "correctReasoning": "Sie enden gewöhnlich am äussersten noch innerhalb der Grenzen liegenden Datenwert. Die Markierung beruht auf der gewählten Boxplotregel.",
+        "wrongAnswerExplanations": {
+          "A": "Sie enden gewöhnlich am äussersten noch innerhalb der Grenzen liegenden Datenwert.",
+          "B": "Die Markierung beruht auf der gewählten Boxplotregel.",
+          "C": "Eine ungewöhnliche Beobachtung kann korrekt gemessen sein.",
+          "D": "Die Grenzwerte und die tatsächlich beobachteten Whisker-Endwerte sind zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Eine Konzentration ist stark rechtsschief mit wenigen sehr hohen Werten verteilt. Welche Kombination beschreibt ihre Lage und Streuung häufig sinnvoll robust?",
+      "options": [
+        {
+          "text": "Nur Maximum und Summe",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der nominale Kategoriekode und dessen Quadrat",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur die Zahl der Messungen als Lage- und Streumass",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mittelwert und Standardabweichung als garantiert ausreisserunempfindliche Masse",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Median und Interquartilsabstand",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese Kombination beschreibt das typische Zentrum schlecht. B: Die Variable ist eine numerische Konzentration. C: Die Stichprobengrösse beschreibt weder Zentrum noch Streuung. D: Beide reagieren auf extreme Werte. E: Beide Kennzahlen sind gegenüber wenigen extremen Werten vergleichsweise robust. Quelle: Originalunterlagen, PDF-S. 31–32,36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Schiefe Verteilung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schiefe Verteilung"
+      ],
+      "questionGoal": "Schiefe Verteilung",
+      "structuredExplanation": {
+        "coreIdea": "Schiefe Verteilung",
+        "correctReasoning": "Beide Kennzahlen sind gegenüber wenigen extremen Werten vergleichsweise robust.",
+        "wrongAnswerExplanations": {
+          "A": "Diese Kombination beschreibt das typische Zentrum schlecht.",
+          "B": "Die Variable ist eine numerische Konzentration.",
+          "C": "Die Stichprobengrösse beschreibt weder Zentrum noch Streuung.",
+          "D": "Beide reagieren auf extreme Werte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Zum Thema «statistische Grafiken und Verteilungsform»: Beurteilen Sie die Auswahl und Aussagekraft statistischer Grafiken.",
+      "options": [
+        {
+          "text": "Ein Scatterplot kann den Zusammenhang zweier numerischer Variablen darstellen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Histogramm erhält dieselbe Form unabhängig von der gewählten Klasseneinteilung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine logarithmische Transformation garantiert bei beliebigen Daten eine Normalverteilung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine bimodale Verteilung kann durch eine einzige Lagekennzahl unzureichend beschrieben sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Jeder Punkt erhält Koordinaten aus beiden Variablen. B: Klassenbreiten und Grenzen beeinflussen das sichtbare Muster. C: Sie kann Schiefe vermindern, garantiert aber keine bestimmte Verteilungsform. D: Zwei Häufungszentren können bei alleiniger Mittelwertangabe verborgen bleiben. Quelle: Originalunterlagen, PDF-S. 11,30–32,37–39.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Darstellungsformen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Darstellungsformen"
+      ],
+      "questionGoal": "Darstellungsformen",
+      "structuredExplanation": {
+        "coreIdea": "Darstellungsformen",
+        "correctReasoning": "Jeder Punkt erhält Koordinaten aus beiden Variablen. Zwei Häufungszentren können bei alleiniger Mittelwertangabe verborgen bleiben.",
+        "wrongAnswerExplanations": {
+          "A": "Jeder Punkt erhält Koordinaten aus beiden Variablen.",
+          "B": "Klassenbreiten und Grenzen beeinflussen das sichtbare Muster.",
+          "C": "Sie kann Schiefe vermindern, garantiert aber keine bestimmte Verteilungsform.",
+          "D": "Zwei Häufungszentren können bei alleiniger Mittelwertangabe verborgen bleiben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Vier von zehn Beobachtungen gehören zur Kategorie A. Welcher relative Anteil ergibt sich?",
+      "options": [
+        {
+          "text": "10 Prozent",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "60 Prozent",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "40 Prozent",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "250 Prozent",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "4 Prozent",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre eine von zehn Beobachtungen. B: Dies ist der Anteil ausserhalb von A. C: Die relative Häufigkeit ist 4 geteilt durch 10. D: Hier wurde das Verhältnis umgekehrt und anschliessend skaliert. E: Die absolute Häufigkeit wurde als Prozentwert übernommen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Relative Häufigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Relative Häufigkeit"
+      ],
+      "questionGoal": "Relative Häufigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Relative Häufigkeit",
+        "correctReasoning": "Die relative Häufigkeit ist 4 geteilt durch 10.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre eine von zehn Beobachtungen.",
+          "B": "Dies ist der Anteil ausserhalb von A.",
+          "D": "Hier wurde das Verhältnis umgekehrt und anschliessend skaliert.",
+          "E": "Die absolute Häufigkeit wurde als Prozentwert übernommen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Alle Messwerte werden von Metern in Zentimeter umgerechnet. Beurteilen Sie die Folgen.",
+      "options": [
+        {
+          "text": "Die Standardabweichung wird mit 100 multipliziert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Varianz bleibt numerisch unverändert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Mittelwert wird mit 100 multipliziert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Median wird bei dieser Umrechnung zu einem nominalen Merkmal.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie besitzt dieselbe Längeneinheit wie die Messwerte. B: Sie wird mit dem Quadrat des Umrechnungsfaktors multipliziert. C: Der Mittelwert folgt derselben linearen Skalierung wie die Einzelwerte. D: Eine Einheitenumrechnung ändert den numerischen Datentyp nicht. Quelle: Originalunterlagen, PDF-S. 20,33–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Lineare Umrechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lineare Umrechnung"
+      ],
+      "questionGoal": "Lineare Umrechnung",
+      "structuredExplanation": {
+        "coreIdea": "Lineare Umrechnung",
+        "correctReasoning": "Sie besitzt dieselbe Längeneinheit wie die Messwerte. Der Mittelwert folgt derselben linearen Skalierung wie die Einzelwerte.",
+        "wrongAnswerExplanations": {
+          "A": "Sie besitzt dieselbe Längeneinheit wie die Messwerte.",
+          "B": "Sie wird mit dem Quadrat des Umrechnungsfaktors multipliziert.",
+          "C": "Der Mittelwert folgt derselben linearen Skalierung wie die Einzelwerte.",
+          "D": "Eine Einheitenumrechnung ändert den numerischen Datentyp nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Die sortierten Werte 1, 2, 3, 4, 5 werden geändert, indem 5 durch 100 ersetzt wird. Was geschieht mit dem Median?",
+      "options": [
+        {
+          "text": "Er ist wegen der ungeraden Beobachtungszahl nicht definiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er steigt auf 22.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er bleibt 3.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Er steigt auf 100.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er sinkt auf 1.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei fünf Beobachtungen ist der dritte sortierte Wert der Median. B: 22 ist der neue Mittelwert der geänderten Reihe. C: Die mittlere Rangposition enthält weiterhin den Wert 3. D: Das Maximum ist nicht der Median. E: Das Minimum wird dadurch nicht zur Mitte. Quelle: Originalunterlagen, PDF-S. 19–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Robuste Lage"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Robuste Lage"
+      ],
+      "questionGoal": "Robuste Lage",
+      "structuredExplanation": {
+        "coreIdea": "Robuste Lage",
+        "correctReasoning": "Die mittlere Rangposition enthält weiterhin den Wert 3.",
+        "wrongAnswerExplanations": {
+          "A": "Bei fünf Beobachtungen ist der dritte sortierte Wert der Median.",
+          "B": "22 ist der neue Mittelwert der geänderten Reihe.",
+          "D": "Das Maximum ist nicht der Median.",
+          "E": "Das Minimum wird dadurch nicht zur Mitte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs02_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS02",
+      "stem": "Zum Thema «deskriptive Zusammenfassung einer Stichprobe»: Beurteilen Sie, was aus einer rein deskriptiven Stichprobenauswertung folgt.",
+      "options": [
+        {
+          "text": "Mittelwert und Streuung können die beobachteten Daten zusammenfassen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Stichprobenmittelwert ist allein deshalb exakt gleich dem unbekannten Populationsmittelwert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Wahl der Kennzahlen sollte zum Datentyp und zur Verteilungsform passen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine kompakte Zusammenfassung macht die Prüfung auffälliger Einzelwerte grundsätzlich überflüssig.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ist eine Aufgabe der deskriptiven Statistik. B: Ein Stichprobenwert kann durch Zufallsvariation abweichen. C: Eine Kategorienkodierung und eine kontinuierliche Messung verlangen unterschiedliche Beschreibungen. D: Grafiken und Datenprüfung können Fehler oder wichtige Teilgruppen sichtbar machen. Quelle: Originalunterlagen, PDF-S. 3,18,40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS02",
+        "Deskription und Schlussfolgerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Deskription und Schlussfolgerung"
+      ],
+      "questionGoal": "Deskription und Schlussfolgerung",
+      "structuredExplanation": {
+        "coreIdea": "Deskription und Schlussfolgerung",
+        "correctReasoning": "Dies ist eine Aufgabe der deskriptiven Statistik. Eine Kategorienkodierung und eine kontinuierliche Messung verlangen unterschiedliche Beschreibungen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist eine Aufgabe der deskriptiven Statistik.",
+          "B": "Ein Stichprobenwert kann durch Zufallsvariation abweichen.",
+          "C": "Eine Kategorienkodierung und eine kontinuierliche Messung verlangen unterschiedliche Beschreibungen.",
+          "D": "Grafiken und Datenprüfung können Fehler oder wichtige Teilgruppen sichtbar machen."
+        }
+      }
+    }
+  ]
+}

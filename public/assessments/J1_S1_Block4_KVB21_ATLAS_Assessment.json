@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block4_kvb21_20261102",
+  "lectureCode": "KVB21",
+  "title": "Transkription und RNA-Prozessierung",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB21_Transkription Vorlesung_2025_Fotiadis. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Keine universelle TATA-Box-Pflicht, keine ausschliessliche Protein-Codierung sämtlicher Exons und keine pauschal identische Exonucleasekorrektur von RNA-Pol II und DNA-Polymerasen behauptet. Prozessierung kann cotranskriptionell beginnen. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "RNA-Typen, Synthesepolarität und DNA-Stränge funktionell unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Bakterielle Promotorerkennung, Elongation und Termination erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Eukaryotische Polymerasen und Initiationsfaktoren zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Capping, Polyadenylierung, Spleissen und RNA-Editing vergleichen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb21_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Der codierende DNA-Strang lautet 5′-ATGC-3′. Welche entsprechende RNA-Sequenz entsteht?",
+      "options": [
+        {
+          "text": "5′-AUGC-3′.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "5′-TACG-3′.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3′-AUGC-5′.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "5′-UACG-3′.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5′-GCAT-3′.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Sequenz entspricht ihm mit U statt T. B: Dies ist keine entsprechende RNA-Sequenz. C: Die gleiche Buchstabenfolge hätte falsche Polarität. D: Hier wurde statt Sequenzentsprechung Komplementarität angenommen. E: Dies entspricht der umgekehrten DNA-Reihenfolge. Quelle: Originalunterlagen, PDF-S. 4,6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Codierender Strang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Codierender Strang"
+      ],
+      "questionGoal": "Codierender Strang",
+      "structuredExplanation": {
+        "coreIdea": "Codierender Strang",
+        "correctReasoning": "Die Sequenz entspricht ihm mit U statt T.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist keine entsprechende RNA-Sequenz.",
+          "C": "Die gleiche Buchstabenfolge hätte falsche Polarität.",
+          "D": "Hier wurde statt Sequenzentsprechung Komplementarität angenommen.",
+          "E": "Dies entspricht der umgekehrten DNA-Reihenfolge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Was unterscheidet eine transkribierende RNA-Polymerase von einer replikativen DNA-Polymerase?",
+      "options": [
+        {
+          "text": "Sie kann ohne vorhandenen Primer beginnen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie liest keine Matrizeninformation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie verwendet ausschliesslich dNTPs.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie synthetisiert grundsätzlich 3′→5′.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie baut Thymin statt Uracil ein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie benötigt dabei weiterhin eine DNA-Matrize. B: Basenpaarung bestimmt die RNA-Sequenz. C: Transkription verwendet Ribonucleosidtriphosphate. D: RNA wächst in 5′→3′-Richtung. E: Reguläre RNA enthält Uracil. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "RNA-Synthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RNA-Synthese"
+      ],
+      "questionGoal": "RNA-Synthese",
+      "structuredExplanation": {
+        "coreIdea": "RNA-Synthese",
+        "correctReasoning": "Sie benötigt dabei weiterhin eine DNA-Matrize.",
+        "wrongAnswerExplanations": {
+          "B": "Basenpaarung bestimmt die RNA-Sequenz.",
+          "C": "Transkription verwendet Ribonucleosidtriphosphate.",
+          "D": "RNA wächst in 5′→3′-Richtung.",
+          "E": "Reguläre RNA enthält Uracil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Bakterielle RNA-Polymerase findet ihren Promotor schlecht, obwohl die katalytische Funktion intakt ist. Was könnte fehlen?",
+      "options": [
+        {
+          "text": "Ein Elongationsfaktor der Translation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Transkriptionsterminationsfaktor wie Rho.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine DNA-Ligase für das Replikationsende.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein eukaryotischer allgemeiner Pol-II-Faktor.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein geeigneter Sigmafaktor.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er fördert nicht die bakterielle Promotorerkennung. B: Er betrifft vor allem die Beendigung, nicht die Promotersuche. C: Sie ist kein Sigma-Ersatz. D: Er ersetzt nicht den bakteriellen Sigmafaktor. E: Er unterstützt sequenzspezifische Promotorerkennung. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Sigmafaktor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sigmafaktor"
+      ],
+      "questionGoal": "Sigmafaktor",
+      "structuredExplanation": {
+        "coreIdea": "Sigmafaktor",
+        "correctReasoning": "Er unterstützt sequenzspezifische Promotorerkennung.",
+        "wrongAnswerExplanations": {
+          "A": "Er fördert nicht die bakterielle Promotorerkennung.",
+          "B": "Er betrifft vor allem die Beendigung, nicht die Promotersuche.",
+          "C": "Sie ist kein Sigma-Ersatz.",
+          "D": "Er ersetzt nicht den bakteriellen Sigmafaktor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Eine Mutation verändert die bakterielle −10-Region. Welcher Schritt ist besonders unmittelbar betroffen?",
+      "options": [
+        {
+          "text": "Erkennung und Initiation am Promotor.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Erkennung des Stopcodons im Ribosom.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Anheftung des Poly-A-Schwanzes an reife mRNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aminosäurebeladung der Initiator-tRNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Freisetzung der fertigen Polypeptidkette.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Region trägt zur Startkontrolle bei. B: Die −10-Region ist ein DNA-Promotorelement. C: Dies ist keine bakterielle Promotorinitiationsreaktion. D: Sie gehört zur Translation. E: Diese liegt zeitlich und funktionell später. Quelle: Originalunterlagen, PDF-S. 4,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Promotor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Promotor"
+      ],
+      "questionGoal": "Promotor",
+      "structuredExplanation": {
+        "coreIdea": "Promotor",
+        "correctReasoning": "Die Region trägt zur Startkontrolle bei.",
+        "wrongAnswerExplanations": {
+          "B": "Die −10-Region ist ein DNA-Promotorelement.",
+          "C": "Dies ist keine bakterielle Promotorinitiationsreaktion.",
+          "D": "Sie gehört zur Translation.",
+          "E": "Diese liegt zeitlich und funktionell später."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Welche Kombination unterstützt die bakterielle Rho-unabhängige Transkriptionstermination?",
+      "options": [
+        {
+          "text": "ATP-abhängige Verfolgung der Polymerase durch Rho.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "RNA-Haarnadel und nachfolgende U-reiche Sequenz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Paarung von Shine-Dalgarno-Sequenz und rRNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein AUG-Startcodon mit passender Initiator-tRNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Stopcodon mit proteinärem Releasefaktor.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist Rho-abhängige Termination. B: Sie destabilisieren den Elongationskomplex. C: Dies betrifft die bakterielle Translationsinitiation. D: Dies initiiert Translation. E: Dies beendet Translation statt Transkription. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Intrinsische Termination"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intrinsische Termination"
+      ],
+      "questionGoal": "Intrinsische Termination",
+      "structuredExplanation": {
+        "coreIdea": "Intrinsische Termination",
+        "correctReasoning": "Sie destabilisieren den Elongationskomplex.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist Rho-abhängige Termination.",
+          "C": "Dies betrifft die bakterielle Translationsinitiation.",
+          "D": "Dies initiiert Translation.",
+          "E": "Dies beendet Translation statt Transkription."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Die Synthese protein-codierender nukleärer Prä-mRNA ist selektiv gestört. Welche Polymerase ist besonders relevant?",
+      "options": [
+        {
+          "text": "Telomerase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "DNA-Polymerase δ.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "RNA-Polymerase II.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "RNA-Polymerase I.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "RNA-Polymerase III.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie verlängert Chromosomenenden. B: Sie synthetisiert DNA. C: Sie transkribiert diese Gene. D: Sie bildet den grossen rRNA-Vorläufer. E: Sie bildet unter anderem tRNAs und 5S-rRNA. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Polymerasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polymerasen"
+      ],
+      "questionGoal": "Polymerasen",
+      "structuredExplanation": {
+        "coreIdea": "Polymerasen",
+        "correctReasoning": "Sie transkribiert diese Gene.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verlängert Chromosomenenden.",
+          "B": "Sie synthetisiert DNA.",
+          "D": "Sie bildet den grossen rRNA-Vorläufer.",
+          "E": "Sie bildet unter anderem tRNAs und 5S-rRNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Welche Funktion besitzt das TATA-Bindeprotein bei einem entsprechenden eukaryotischen Promotor?",
+      "options": [
+        {
+          "text": "DNA-Erkennung als Teil des Initiationsapparats.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Katalyse der RNA-Verlängerung anstelle von Pol II.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Erkennung des Polyadenylierungssignals am RNA-3′-Ende.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Katalyse der Intronentfernung im Spleissosom.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Erkennung der bakteriellen −10-Region als Sigmauntereinheit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: TBP ist Bestandteil von TFIID. B: TBP ist ein DNA-bindender Initiationsfaktor. C: Dies erfolgt durch Prozessierungsfaktoren. D: Dies ist keine unmittelbare TBP-Funktion. E: TBP und Sigma erfüllen unterschiedliche Systeme. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Basale Faktoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Basale Faktoren"
+      ],
+      "questionGoal": "Basale Faktoren",
+      "structuredExplanation": {
+        "coreIdea": "Basale Faktoren",
+        "correctReasoning": "TBP ist Bestandteil von TFIID.",
+        "wrongAnswerExplanations": {
+          "B": "TBP ist ein DNA-bindender Initiationsfaktor.",
+          "C": "Dies erfolgt durch Prozessierungsfaktoren.",
+          "D": "Dies ist keine unmittelbare TBP-Funktion.",
+          "E": "TBP und Sigma erfüllen unterschiedliche Systeme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Warum kann die CTD der RNA-Polymerase II Transkription und Prozessierung koordinieren?",
+      "options": [
+        {
+          "text": "Sie kodiert selbst den Poly-A-Schwanz jeder mRNA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie übernimmt selbst die gesamte RNA-Prozessierung, sodass keine weiteren Faktoren nötig sind.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jeder CTD-Phosphorylierungszustand rekrutiert zwangsläufig genau dieselben Faktoren gleich stark.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie schneidet als alleinige Nuclease sämtliche Introns heraus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unterschiedliche Phosphorylierungsmuster rekrutieren passende Faktoren.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Schwanz wird matrizenunabhängig angefügt. B: Die CTD dient als regulierte Plattform für rekrutierte Faktoren. C: Unterschiedliche Muster beeinflussen die Auswahl und zeitliche Kopplung. D: Sie rekrutiert Faktoren statt jedes Spleissen selbst zu katalysieren. E: Die CTD dient als dynamische Interaktionsplattform. Quelle: Originalunterlagen, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "CTD-Kopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CTD-Kopplung"
+      ],
+      "questionGoal": "CTD-Kopplung",
+      "structuredExplanation": {
+        "coreIdea": "CTD-Kopplung",
+        "correctReasoning": "Die CTD dient als dynamische Interaktionsplattform.",
+        "wrongAnswerExplanations": {
+          "A": "Der Schwanz wird matrizenunabhängig angefügt.",
+          "B": "Die CTD dient als regulierte Plattform für rekrutierte Faktoren.",
+          "C": "Unterschiedliche Muster beeinflussen die Auswahl und zeitliche Kopplung.",
+          "D": "Sie rekrutiert Faktoren statt jedes Spleissen selbst zu katalysieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Welches Merkmal beschreibt die typische eukaryotische mRNA-Kappe?",
+      "options": [
+        {
+          "text": "Eine normale 3′-5′-Bindung an unverändertem Cytidin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Poly-A-Schwanz direkt am 5′-Ende.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein DNA-Primer mit Desoxythymidin am 5′-Ende.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Modifiziertes Guanosin mit 5′-5′-Triphosphatverknüpfung.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine 2′-5′-Lariatverknüpfung eines Introns.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die typische Kappe besitzt modifiziertes Guanosin und 5′-5′-Bindung. B: Polyadenylierung betrifft gewöhnlich das 3′-Ende. C: Die Kappe ist keine Primer-DNA. D: Die ungewöhnliche Bindung schützt das RNA-Ende. E: Dies ist ein Spleisszwischenprodukt, nicht die Kappe. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "5′-Cap"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "5′-Cap"
+      ],
+      "questionGoal": "5′-Cap",
+      "structuredExplanation": {
+        "coreIdea": "5′-Cap",
+        "correctReasoning": "Die ungewöhnliche Bindung schützt das RNA-Ende.",
+        "wrongAnswerExplanations": {
+          "A": "Die typische Kappe besitzt modifiziertes Guanosin und 5′-5′-Bindung.",
+          "B": "Polyadenylierung betrifft gewöhnlich das 3′-Ende.",
+          "C": "Die Kappe ist keine Primer-DNA.",
+          "E": "Dies ist ein Spleisszwischenprodukt, nicht die Kappe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Eine Prä-mRNA enthält Introns. Welche Veränderung erzeugt im Regelfall die gespleisste RNA?",
+      "options": [
+        {
+          "text": "Die Introns werden entfernt und die genomische DNA entsprechend verkürzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Exons werden entfernt und nur Introns verknüpft.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Introns werden entfernt und Exons verknüpft.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die RNA wird nur am 3′-Ende polyadenyliert, Introns bleiben unverändert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jedes erhaltene Exon muss vollständig proteincodierend sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Spleissen verändert das Transkript, nicht entsprechend das Genom. B: Im Regelfall bleiben die Exons erhalten. C: Die verbleibenden Abschnitte bilden das reife Transkript. D: Polyadenylierung ersetzt keine Intronentfernung. E: Auch nichttranslatierte Exonabschnitte existieren. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Spleissen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spleissen"
+      ],
+      "questionGoal": "Spleissen",
+      "structuredExplanation": {
+        "coreIdea": "Spleissen",
+        "correctReasoning": "Die verbleibenden Abschnitte bilden das reife Transkript.",
+        "wrongAnswerExplanations": {
+          "A": "Spleissen verändert das Transkript, nicht entsprechend das Genom.",
+          "B": "Im Regelfall bleiben die Exons erhalten.",
+          "D": "Polyadenylierung ersetzt keine Intronentfernung.",
+          "E": "Auch nichttranslatierte Exonabschnitte existieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Eine C→U-Änderung macht aus CAA das Stopcodon UAA. Welche Folge kann entstehen?",
+      "options": [
+        {
+          "text": "Das zugrunde liegende Gen muss ebenfalls dauerhaft C→T mutiert sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein verkürztes Protein bei unverändertem zugrunde liegendem Gen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Translation wird zwingend bis zum ursprünglichen Ende unverändert fortgesetzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es entsteht ausschliesslich eine alternative Spleissstelle ohne Sequenzänderung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Protein wird dadurch am N-Terminus verlängert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: RNA-Editing kann ohne entsprechende DNA-Änderung erfolgen. B: Das Beispiel illustriert RNA-Editing. C: UAA kann vorzeitige Termination auslösen. D: Der Stamm beschreibt Basenediting, nicht nur Spleissen. E: Ein neues Stopcodon kann C-terminal verkürzen. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "ApoB-Editing"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ApoB-Editing"
+      ],
+      "questionGoal": "ApoB-Editing",
+      "structuredExplanation": {
+        "coreIdea": "ApoB-Editing",
+        "correctReasoning": "Das Beispiel illustriert RNA-Editing.",
+        "wrongAnswerExplanations": {
+          "A": "RNA-Editing kann ohne entsprechende DNA-Änderung erfolgen.",
+          "C": "UAA kann vorzeitige Termination auslösen.",
+          "D": "Der Stamm beschreibt Basenediting, nicht nur Spleissen.",
+          "E": "Ein neues Stopcodon kann C-terminal verkürzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Warum benötigt die Poly-A-Polymerase für die Schwanzbildung keine passende DNA-Matrize?",
+      "options": [
+        {
+          "text": "Sie fügt wiederholt Adenosinreste am RNA-Ende an.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie kopiert eine Poly-T-Sequenz am genomischen Ende.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie benötigt dafür ein Ribosom als Sequenzvorlage.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie verwendet nur UTP und erzeugt danach Adenosin durch Editing.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie verlängert die genomische DNA statt das RNA-3′-Ende.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Sequenz wird nicht von einer DNA abgelesen. B: Der Schwanz wird ohne passende DNA-Matrize angefügt. C: Ribosomen bestimmen keine Poly-A-Sequenz. D: Sie polymerisiert Adenosin aus ATP. E: Das Produkt ist der RNA-Schwanz. Quelle: Originalunterlagen, PDF-S. 8,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Polyadenylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polyadenylierung"
+      ],
+      "questionGoal": "Polyadenylierung",
+      "structuredExplanation": {
+        "coreIdea": "Polyadenylierung",
+        "correctReasoning": "Die Sequenz wird nicht von einer DNA abgelesen.",
+        "wrongAnswerExplanations": {
+          "B": "Der Schwanz wird ohne passende DNA-Matrize angefügt.",
+          "C": "Ribosomen bestimmen keine Poly-A-Sequenz.",
+          "D": "Sie polymerisiert Adenosin aus ATP.",
+          "E": "Das Produkt ist der RNA-Schwanz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "RNA-Arten werden nach ihrer Funktion und ihrem Wirkort unterschieden. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Jede transkribierte RNA muss zu Protein übersetzt werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "rRNA ist ausschliesslich eine kurzlebige Vorlage für die Proteinsynthese.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nukleäre Transkription und cytosolische Translation sind bei Eukaryoten räumlich identisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "tRNA koppelt Codonerkennung an Aminosäurebereitstellung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele RNAs erfüllen direkt ihre Funktion. B: Sie ist funktioneller Ribosomenbestandteil, keine reine mRNA-Vorlage. C: Die Kernhülle trennt diese Vorgänge. D: Sie ist ein Adapter der Translation. Quelle: Originalunterlagen, PDF-S. 2–3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "RNA-Funktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RNA-Funktionen"
+      ],
+      "questionGoal": "RNA-Funktionen",
+      "structuredExplanation": {
+        "coreIdea": "RNA-Funktionen",
+        "correctReasoning": "Sie ist ein Adapter der Translation.",
+        "wrongAnswerExplanations": {
+          "A": "Viele RNAs erfüllen direkt ihre Funktion.",
+          "B": "Sie ist funktioneller Ribosomenbestandteil, keine reine mRNA-Vorlage.",
+          "C": "Die Kernhülle trennt diese Vorgänge.",
+          "D": "Sie ist ein Adapter der Translation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "RNA-Polymerase verlängert einen komplementären Strang aus Nucleotiden. Welche Aussagen zur Reaktionschemie sind richtig?",
+      "options": [
+        {
+          "text": "Beim Einbau bleibt die Base Bestandteil des RNA-Nucleotids.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "RNA wird in 5′→3′-Richtung verlängert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "RNA-Polymerasen verwenden generell nur Desoxyribose.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Pyrophosphatfreisetzung und dessen Hydrolyse unterstützen den Aufbau.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Sequenzinformation bleibt in den eingebauten Basen erhalten. B: Nucleotide werden am 3′-Ende angefügt. C: RNA enthält Ribose. D: Aktivierte NTPs liefern die Energie. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Reaktionschemie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionschemie"
+      ],
+      "questionGoal": "Reaktionschemie",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionschemie",
+        "correctReasoning": "Die Sequenzinformation bleibt in den eingebauten Basen erhalten. Nucleotide werden am 3′-Ende angefügt. Aktivierte NTPs liefern die Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Die Sequenzinformation bleibt in den eingebauten Basen erhalten.",
+          "B": "Nucleotide werden am 3′-Ende angefügt.",
+          "C": "RNA enthält Ribose.",
+          "D": "Aktivierte NTPs liefern die Energie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Bakterielle Transkription wird begonnen und später beendet. Welche Aussagen zu Sigma, Rho und Signalen sind richtig?",
+      "options": [
+        {
+          "text": "Die RNA-Sequenz ist zur DNA-Matrize parallel und identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Rho kann ATP-abhängig an RNA wirken.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Stopcodon beendet unmittelbar jede RNA-Polymerase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sigmafaktoren können die Auswahl von Promotoren beeinflussen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist komplementär und antiparallel. B: Rho unterstützt eine Form der Termination. C: Stopcodons werden primär bei Translation erkannt. D: Verschiedene Faktoren erkennen unterschiedliche Signale. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Bakterielle Transkription"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bakterielle Transkription"
+      ],
+      "questionGoal": "Bakterielle Transkription",
+      "structuredExplanation": {
+        "coreIdea": "Bakterielle Transkription",
+        "correctReasoning": "Rho unterstützt eine Form der Termination. Verschiedene Faktoren erkennen unterschiedliche Signale.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist komplementär und antiparallel.",
+          "B": "Rho unterstützt eine Form der Termination.",
+          "C": "Stopcodons werden primär bei Translation erkannt.",
+          "D": "Verschiedene Faktoren erkennen unterschiedliche Signale."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Eukaryotische RNA-Polymerasen teilen verschiedene Genklassen untereinander auf. Welche Zuordnungen sind richtig?",
+      "options": [
+        {
+          "text": "RNA-Polymerase III transkribiert tRNA-Gene.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle eukaryotischen Promotoren besitzen zwingend dieselbe TATA-Sequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "RNA-Polymerase II ist die Hauptpolymerase der nukleären tRNA-Synthese.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "RNA-Polymerase I bildet einen grossen rRNA-Vorläufer.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie bildet zudem unter anderem 5S-rRNA. B: Promotorarchitekturen sind verschieden. C: Nukleäre tRNAs werden überwiegend von Pol III transkribiert. D: Dieser wird im Nucleolus prozessiert. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Eukaryotische Polymerasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eukaryotische Polymerasen"
+      ],
+      "questionGoal": "Eukaryotische Polymerasen",
+      "structuredExplanation": {
+        "coreIdea": "Eukaryotische Polymerasen",
+        "correctReasoning": "Sie bildet zudem unter anderem 5S-rRNA. Dieser wird im Nucleolus prozessiert.",
+        "wrongAnswerExplanations": {
+          "A": "Sie bildet zudem unter anderem 5S-rRNA.",
+          "B": "Promotorarchitekturen sind verschieden.",
+          "C": "Nukleäre tRNAs werden überwiegend von Pol III transkribiert.",
+          "D": "Dieser wird im Nucleolus prozessiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Eine eukaryotische prä-mRNA wird gekappt, gespleisst und für ihre weitere Nutzung vorbereitet. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die 5′-Kappe kann Stabilität und Export unterstützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Polyadenylierung entfernt grundsätzlich das 5′-Cap.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Spleissosomen katalysieren die Entfernung vieler Introns.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Exons sind definitionsgemäss ausnahmslos proteincodierend.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie wird von spezifischen Proteinen erkannt. B: Die Modifikationen betreffen unterschiedliche Enden. C: Dabei werden Exons miteinander verbunden. D: Sie können auch untranslatierte Bereiche enthalten. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Prozessierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Prozessierung"
+      ],
+      "questionGoal": "Prozessierung",
+      "structuredExplanation": {
+        "coreIdea": "Prozessierung",
+        "correctReasoning": "Sie wird von spezifischen Proteinen erkannt. Dabei werden Exons miteinander verbunden.",
+        "wrongAnswerExplanations": {
+          "A": "Sie wird von spezifischen Proteinen erkannt.",
+          "B": "Die Modifikationen betreffen unterschiedliche Enden.",
+          "C": "Dabei werden Exons miteinander verbunden.",
+          "D": "Sie können auch untranslatierte Bereiche enthalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "RNA-Editing und alternatives Spleissen verändern die Information reifer Transkripte auf verschiedene Weise. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Editing kann eine einzelne RNA-Base verändern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Spleissen verändert die Kombination verbleibender RNA-Abschnitte.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Beide Vorgänge erfordern eine entsprechende Mutation der genomischen DNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein neu entstehendes Stopcodon muss die Proteinsequenz unverändert lassen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: ApoB liefert ein Beispiel. B: Introns werden entfernt. C: RNA-Veränderungen können ohne Genmutation erfolgen. D: Es kann vorzeitigen Kettenabbruch erzeugen. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Spleissen und Editing"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spleissen und Editing"
+      ],
+      "questionGoal": "Spleissen und Editing",
+      "structuredExplanation": {
+        "coreIdea": "Spleissen und Editing",
+        "correctReasoning": "ApoB liefert ein Beispiel. Introns werden entfernt.",
+        "wrongAnswerExplanations": {
+          "A": "ApoB liefert ein Beispiel.",
+          "B": "Introns werden entfernt.",
+          "C": "RNA-Veränderungen können ohne Genmutation erfolgen.",
+          "D": "Es kann vorzeitigen Kettenabbruch erzeugen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Transkription und Translation laufen in pro- und eukaryotischen Zellen unter unterschiedlichen räumlichen Bedingungen ab. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Nukleäre mRNA muss für cytosolische Translation exportiert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei Bakterien kann Translation bereits während der Transkription beginnen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Kernhülle erlaubt bei Eukaryoten regulär die Translation jeder prä-mRNA schon während ihrer nukleären Synthese.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bakterielle RNA benötigt grundsätzlich menschliche Spleissosomen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Transport über Kernporen ist erforderlich. B: Eine Kernhülle trennt die Prozesse nicht. C: Nukleäre Transkription und cytosolische Translation sind räumlich getrennt. D: Dies ist kein allgemeines bakterielles Prinzip. Quelle: Originalunterlagen, PDF-S. 2,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Kompartimentierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompartimentierung"
+      ],
+      "questionGoal": "Kompartimentierung",
+      "structuredExplanation": {
+        "coreIdea": "Kompartimentierung",
+        "correctReasoning": "Der Transport über Kernporen ist erforderlich. Eine Kernhülle trennt die Prozesse nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Der Transport über Kernporen ist erforderlich.",
+          "B": "Eine Kernhülle trennt die Prozesse nicht.",
+          "C": "Nukleäre Transkription und cytosolische Translation sind räumlich getrennt.",
+          "D": "Dies ist kein allgemeines bakterielles Prinzip."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb21_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB21",
+      "stem": "Transkriptionsstart und RNA-Prozessierung werden miteinander koordiniert. Welche Aussagen zu Faktoren und CTD sind richtig?",
+      "options": [
+        {
+          "text": "Jede RNA-Endmodifikation beginnt erst lange nach abgeschlossener Transkription.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Transkriptionsfaktoren unterstützen die Initiationskomplexbildung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle chemischen Prozessierungsschritte werden allein vom Mediator katalysiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die CTD kann Prozessierungsfaktoren rekrutieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Manche Vorgänge beginnen bereits cotranskriptionell. B: Sie ermöglichen geregelten Start. C: Dafür arbeiten verschiedene spezialisierte Faktoren. D: Dies verbindet RNA-Synthese und Reifung. Quelle: Originalunterlagen, PDF-S. 14–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB21",
+        "Koordinierte Genexpression"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Koordinierte Genexpression"
+      ],
+      "questionGoal": "Koordinierte Genexpression",
+      "structuredExplanation": {
+        "coreIdea": "Koordinierte Genexpression",
+        "correctReasoning": "Sie ermöglichen geregelten Start. Dies verbindet RNA-Synthese und Reifung.",
+        "wrongAnswerExplanations": {
+          "A": "Manche Vorgänge beginnen bereits cotranskriptionell.",
+          "B": "Sie ermöglichen geregelten Start.",
+          "C": "Dafür arbeiten verschiedene spezialisierte Faktoren.",
+          "D": "Dies verbindet RNA-Synthese und Reifung."
+        }
+      }
+    }
+  ]
+}

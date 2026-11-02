@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block1_kvb13_14_20261102",
+  "lectureCode": "KVB13/14",
+  "title": "Chemische Mechanismen der Glykolyse",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB13&14 - Biochemie der Energiegewinnung. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die tatsächliche Datei KVB13/14 umfasst beide chemischen Glykolysevorlesungen, obwohl Folientitel und offizieller Katalog abweichende Nummern führen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Stöchiometrie, ATP-Investition und ATP-Bildung der Glykolyse erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Phosphoryltransfer und den Mechanismus der Phosphoglyceratmutase verstehen."
+    },
+    {
+      "id": "lo3",
+      "text": "Keto-Enol- und Imin-Enamin-Tautomerie sowie die Aldolasespaltung erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Oxidation durch NAD+ und Bildung energiereicher Zwischenprodukte erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb13_14_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Aus einer Glucose entstehen in der Glykolyse zwei Pyruvate. Welche Kohlenstoffbilanz passt dazu?",
+      "options": [
+        {
+          "text": "Ein C6-Körper bildet zwei C4-Körper durch CO2-Fixierung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein C6-Körper liefert einen C3-Körper und drei CO2.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein C6-Körper wird in drei C2-Körper gespalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwei C6-Körper werden zu einem C3-Körper kondensiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein C6-Körper wird in zwei C3-Körper überführt, ohne netto CO2 abzuspalten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es findet keine solche Netto-Carboxylierung statt. B: Das wäre keine Bilanz der Glykolyse. C: Acetyl-CoA entsteht erst durch eine anschliessende Reaktion. D: Die Glykolyse ist ein Abbauweg. E: Die Kohlenstoffatome bleiben bis zum Pyruvat erhalten. Quelle: Originalunterlagen, PDF-S. 5,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Kohlenstoffbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kohlenstoffbilanz"
+      ],
+      "questionGoal": "Kohlenstoffbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Kohlenstoffbilanz",
+        "correctReasoning": "Die Kohlenstoffatome bleiben bis zum Pyruvat erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Es findet keine solche Netto-Carboxylierung statt.",
+          "B": "Das wäre keine Bilanz der Glykolyse.",
+          "C": "Acetyl-CoA entsteht erst durch eine anschliessende Reaktion.",
+          "D": "Die Glykolyse ist ein Abbauweg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Eine Glucose durchläuft die vollständige Glykolyse. Warum liefern die beiden ATP-bildenden Reaktionstypen zusammen vier ATP, obwohl es nur zwei solche Schritte gibt?",
+      "options": [
+        {
+          "text": "Jede Phosphatgruppe des ATP wird getrennt als ATP gezählt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ab der Spaltung laufen die Reaktionen je zweimal pro Glucose ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die ATP-Synthase verdoppelt alle Produkte der Glykolyse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die beiden investierten ATP werden als neu gebildete ATP mitgezählt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jeder ATP-bildende Schritt erzeugt zwei ATP aus einem ADP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein ATP-Molekül ist eine einzelne stöchiometrische Einheit. B: Zwei Triosephosphate durchlaufen die zweite Hälfte. C: Die Glykolyse benötigt hierfür keine ATP-Synthase. D: Die Investition muss von der Bruttobildung abgezogen werden. E: Je Phosphorylübertragung entsteht ein ATP aus einem ADP. Quelle: Originalunterlagen, PDF-S. 7–9,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "ATP-Bilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ATP-Bilanz"
+      ],
+      "questionGoal": "ATP-Bilanz",
+      "structuredExplanation": {
+        "coreIdea": "ATP-Bilanz",
+        "correctReasoning": "Zwei Triosephosphate durchlaufen die zweite Hälfte.",
+        "wrongAnswerExplanations": {
+          "A": "Ein ATP-Molekül ist eine einzelne stöchiometrische Einheit.",
+          "C": "Die Glykolyse benötigt hierfür keine ATP-Synthase.",
+          "D": "Die Investition muss von der Bruttobildung abgezogen werden.",
+          "E": "Je Phosphorylübertragung entsteht ein ATP aus einem ADP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Welcher Teil des ATP wird bei der Hexokinase-Reaktion auf Glucose übertragen?",
+      "options": [
+        {
+          "text": "Die Phosphatgruppe, die direkt mit Ribose verestert ist.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Ribose zusammen mit Adenin.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die terminale Phosphorylgruppe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Adeninbase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die gesamte Triphosphatkette unter Bildung von AMP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Übertragen wird die äusserste Phosphorylgruppe. B: Adenosin wird nicht auf Glucose übertragen. C: Die Glucose-OH-Gruppe greift am terminalen Phosphor an; ADP geht ab. D: Die Base bleibt Bestandteil des ADP. E: Die Hexokinase bildet ADP, nicht AMP, als Nukleotidprodukt. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Phosphoryltransfer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphoryltransfer"
+      ],
+      "questionGoal": "Phosphoryltransfer",
+      "structuredExplanation": {
+        "coreIdea": "Phosphoryltransfer",
+        "correctReasoning": "Die Glucose-OH-Gruppe greift am terminalen Phosphor an; ADP geht ab.",
+        "wrongAnswerExplanations": {
+          "A": "Übertragen wird die äusserste Phosphorylgruppe.",
+          "B": "Adenosin wird nicht auf Glucose übertragen.",
+          "D": "Die Base bleibt Bestandteil des ADP.",
+          "E": "Die Hexokinase bildet ADP, nicht AMP, als Nukleotidprodukt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Welches Paar enthält die beiden Substrate, aus denen die Glykolyse direkt eine Phosphorylgruppe auf ADP überträgt?",
+      "options": [
+        {
+          "text": "3-Phosphoglycerat und 2-Phosphoglycerat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glucose-6-phosphat und Fructose-6-phosphat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fructose-1,6-bisphosphat und Dihydroxyacetonphosphat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Pyruvat und Lactat.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1,3-Bisphosphoglycerat und Phosphoenolpyruvat.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Mutase verschiebt Phosphat, bildet aber kein ATP. B: Diese Stoffe sind keine ATP-bildenden Phosphatdonoren der Glykolyse. C: Diese gehören zur Spaltungs- und Isomerisierungsphase. D: Beide sind nicht die Phosphatdonoren dieser Schritte. E: Diese liefern ATP in den Schritten 7 und 10. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Phosphatdonoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphatdonoren"
+      ],
+      "questionGoal": "Phosphatdonoren",
+      "structuredExplanation": {
+        "coreIdea": "Phosphatdonoren",
+        "correctReasoning": "Diese liefern ATP in den Schritten 7 und 10.",
+        "wrongAnswerExplanations": {
+          "A": "Die Mutase verschiebt Phosphat, bildet aber kein ATP.",
+          "B": "Diese Stoffe sind keine ATP-bildenden Phosphatdonoren der Glykolyse.",
+          "C": "Diese gehören zur Spaltungs- und Isomerisierungsphase.",
+          "D": "Beide sind nicht die Phosphatdonoren dieser Schritte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q05",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Welche Zwischenstufe erklärt die Verschiebung des Phosphats von Position 3 nach Position 2 im dargestellten Mutasemechanismus?",
+      "options": [
+        {
+          "text": "Ein freies Glycerol, das anschliessend zweimal phosphoryliert wird.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Fructose-2,6-bisphosphat durch ATP-Verbrauch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Phosphoenolpyruvat durch CO2-Abspaltung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2,3-Bisphosphoglycerat zwischen zwei Übertragungen mit Phosphohistidin.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "1,3-Bisphosphoglycerat durch Oxidation mit NAD+.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Substrat wird nicht erst vollständig dephosphoryliert und reduziert. B: Dies ist ein anderer Stoff und Regulationsweg. C: PEP entsteht durch Wasserabspaltung, nicht durch Decarboxylierung. D: Das Enzym phosphoryliert erst Position 2 und erhält dann das Phosphat von Position 3 zurück. E: Dies gehört zum vorangehenden GAPDH-Schritt. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Phosphoglyceratmutase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphoglyceratmutase"
+      ],
+      "questionGoal": "Phosphoglyceratmutase",
+      "structuredExplanation": {
+        "coreIdea": "Phosphoglyceratmutase",
+        "correctReasoning": "Das Enzym phosphoryliert erst Position 2 und erhält dann das Phosphat von Position 3 zurück.",
+        "wrongAnswerExplanations": {
+          "A": "Das Substrat wird nicht erst vollständig dephosphoryliert und reduziert.",
+          "B": "Dies ist ein anderer Stoff und Regulationsweg.",
+          "C": "PEP entsteht durch Wasserabspaltung, nicht durch Decarboxylierung.",
+          "E": "Dies gehört zum vorangehenden GAPDH-Schritt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Wie können Glucose-6-phosphat und Fructose-6-phosphat ohne Änderung ihrer Summenformel ineinander überführt werden?",
+      "options": [
+        {
+          "text": "Durch Abspaltung eines C-Atoms als CO2.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Durch Übertragung einer zusätzlichen Phosphorylgruppe aus ATP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Durch vollständige Reduktion beider Carbonylgruppen mit NADH.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Durch Protonenverschiebung über eine Enediol-Zwischenstufe.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Durch Austausch einer Phosphatgruppe gegen eine Aminogruppe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies würde die Kohlenstoffbilanz verändern. B: Dabei entstünde ein anderes phosphoryliertes Produkt. C: Die Isomerisierung benötigt keine Netto-Reduktion. D: Dadurch verschiebt sich die Position der Carbonylgruppe. E: Das ist keine Aldose-Ketose-Isomerisierung. Quelle: Originalunterlagen, PDF-S. 15–16,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Aldose-Ketose-Isomerisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aldose-Ketose-Isomerisierung"
+      ],
+      "questionGoal": "Aldose-Ketose-Isomerisierung",
+      "structuredExplanation": {
+        "coreIdea": "Aldose-Ketose-Isomerisierung",
+        "correctReasoning": "Dadurch verschiebt sich die Position der Carbonylgruppe.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde die Kohlenstoffbilanz verändern.",
+          "B": "Dabei entstünde ein anderes phosphoryliertes Produkt.",
+          "C": "Die Isomerisierung benötigt keine Netto-Reduktion.",
+          "E": "Das ist keine Aldose-Ketose-Isomerisierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Nach der Aldolasespaltung kann nur Glycerinaldehyd-3-phosphat direkt in den nächsten Glykolyseschritt eintreten. Wie wird der andere C3-Anteil nutzbar?",
+      "options": [
+        {
+          "text": "Dihydroxyacetonphosphat wird zu Acetyl-CoA decarboxyliert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Dihydroxyacetonphosphat wird zu Glycerinaldehyd-3-phosphat isomerisiert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Dihydroxyacetonphosphat wird ohne Isomerisierung direkt durch Pyruvatkinase umgesetzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dihydroxyacetonphosphat muss erst mit einem zweiten C3-Körper zu Glucose kondensieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Dihydroxyacetonphosphat wird unverändert durch GAPDH oxidiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist nicht der Anschluss an die untere Glykolyse. B: Die Triosephosphatisomerase verbindet beide Trioseformen. C: Pyruvatkinase verwendet PEP; DHAP muss zunächst zu G3P isomerisiert werden. D: Die Isomerisierung ermöglicht den direkten Eintritt als G3P. E: Das GAPDH-Substrat ist Glycerinaldehyd-3-phosphat. Quelle: Originalunterlagen, PDF-S. 5,15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Triosephosphatisomerase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Triosephosphatisomerase"
+      ],
+      "questionGoal": "Triosephosphatisomerase",
+      "structuredExplanation": {
+        "coreIdea": "Triosephosphatisomerase",
+        "correctReasoning": "Die Triosephosphatisomerase verbindet beide Trioseformen.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist nicht der Anschluss an die untere Glykolyse.",
+          "C": "Pyruvatkinase verwendet PEP; DHAP muss zunächst zu G3P isomerisiert werden.",
+          "D": "Die Isomerisierung ermöglicht den direkten Eintritt als G3P.",
+          "E": "Das GAPDH-Substrat ist Glycerinaldehyd-3-phosphat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q08",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Welche Funktion besitzt die Lysin-Seitenkette im dargestellten Klasse-I-Aldolase-Mechanismus?",
+      "options": [
+        {
+          "text": "Sie wird als freies Lysin stöchiometrisch an jedes Produkt angehängt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie bildet vorübergehend eine kovalente Iminbindung mit dem Substrat.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie phosphoryliert ADP unmittelbar zu ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie liefert das NAD+ für die Oxidation des Substrats.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie spaltet die Phosphatester durch Wasseranlagerung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Seitenkette wird nach Hydrolyse regeneriert. B: Die Schiff-Base stabilisiert Zwischenzustände der C–C-Spaltung. C: Die Aldolase bildet kein ATP. D: Die Aldolasespaltung ist nicht der NAD+-abhängige Oxidationsschritt. E: Die entscheidende Spaltung betrifft eine C–C-Bindung. Quelle: Originalunterlagen, PDF-S. 17–18,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Aldolase-Lysin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aldolase-Lysin"
+      ],
+      "questionGoal": "Aldolase-Lysin",
+      "structuredExplanation": {
+        "coreIdea": "Aldolase-Lysin",
+        "correctReasoning": "Die Schiff-Base stabilisiert Zwischenzustände der C–C-Spaltung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Seitenkette wird nach Hydrolyse regeneriert.",
+          "C": "Die Aldolase bildet kein ATP.",
+          "D": "Die Aldolasespaltung ist nicht der NAD+-abhängige Oxidationsschritt.",
+          "E": "Die entscheidende Spaltung betrifft eine C–C-Bindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Welche Produkte entstehen aus Fructose-1,6-bisphosphat durch die Aldolase?",
+      "options": [
+        {
+          "text": "Glucose-6-phosphat und anorganisches Phosphat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei Moleküle Phosphoenolpyruvat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zwei Pyruvate.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3-Phosphoglycerat und Acetyl-CoA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Dihydroxyacetonphosphat und Glycerinaldehyd-3-phosphat.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das wäre eine andere Reaktionsart und keine C–C-Spaltung. B: PEP entsteht später durch Enolase. C: Diese entstehen erst nach weiteren Schritten. D: Diese Kombination passt nicht zu Kohlenstoff- und Reaktionsbilanz. E: Die C3–C4-Bindung des C6-Substrats wird gespalten. Quelle: Originalunterlagen, PDF-S. 17–18,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Aldolasespaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aldolasespaltung"
+      ],
+      "questionGoal": "Aldolasespaltung",
+      "structuredExplanation": {
+        "coreIdea": "Aldolasespaltung",
+        "correctReasoning": "Die C3–C4-Bindung des C6-Substrats wird gespalten.",
+        "wrongAnswerExplanations": {
+          "A": "Das wäre eine andere Reaktionsart und keine C–C-Spaltung.",
+          "B": "PEP entsteht später durch Enolase.",
+          "C": "Diese entstehen erst nach weiteren Schritten.",
+          "D": "Diese Kombination passt nicht zu Kohlenstoff- und Reaktionsbilanz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q10",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Was wird bei der Oxidation von Glycerinaldehyd-3-phosphat auf NAD+ übertragen?",
+      "options": [
+        {
+          "text": "Ein Proton ohne Elektronen, sodass NAD+ unverändert oxidiert bleibt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine freie Phosphorylgruppe aus ATP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Sauerstoffmolekül als terminaler Akzeptor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Hydridäquivalent zum Nicotinamidring.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ein gesamter Acetylrest auf die Adeninbase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Für die Reduktion sind Elektronen erforderlich. B: ATP ist kein Phosphatdonor dieser Reaktion. C: Die Reaktion verwendet NAD+ und kein O2 als Akzeptor. D: NAD+ wird dabei zu NADH reduziert. E: Das beschreibt weder die Gruppe noch den Akzeptorort. Quelle: Originalunterlagen, PDF-S. 19–20,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "GAPDH-Hydridtransfer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GAPDH-Hydridtransfer"
+      ],
+      "questionGoal": "GAPDH-Hydridtransfer",
+      "structuredExplanation": {
+        "coreIdea": "GAPDH-Hydridtransfer",
+        "correctReasoning": "NAD+ wird dabei zu NADH reduziert.",
+        "wrongAnswerExplanations": {
+          "A": "Für die Reduktion sind Elektronen erforderlich.",
+          "B": "ATP ist kein Phosphatdonor dieser Reaktion.",
+          "C": "Die Reaktion verwendet NAD+ und kein O2 als Akzeptor.",
+          "E": "Das beschreibt weder die Gruppe noch den Akzeptorort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q11",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Weshalb geht die Energie der G3P-Oxidation nicht vollständig als Wärme verloren?",
+      "options": [
+        {
+          "text": "Ein enzymgebundener Thioester ermöglicht die anschliessende Bildung von 1,3-Bisphosphoglycerat.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der gesamte Proteinrest der GAPDH wird auf das Produkt übertragen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Phosphat wird aus einem zuvor verbrauchten GTP übernommen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Carbonylgruppe bleibt während der Reaktion ohne Oxidationsänderung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Reaktion erzeugt ATP direkt an der NAD+-Bindungsstelle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Oxidation und Phosphateinbau sind über ein aktiviertes Zwischenprodukt gekoppelt. B: Das Enzym wird regeneriert, nicht als Bestandteil des Produkts verbraucht. C: GTP ist hier kein notwendiger Donor. D: G3P wird tatsächlich oxidiert. E: ATP entsteht erst im anschliessenden Phosphoglyceratkinase-Schritt. Quelle: Originalunterlagen, PDF-S. 19–20,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Thioesterkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Thioesterkopplung"
+      ],
+      "questionGoal": "Thioesterkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Thioesterkopplung",
+        "correctReasoning": "Oxidation und Phosphateinbau sind über ein aktiviertes Zwischenprodukt gekoppelt.",
+        "wrongAnswerExplanations": {
+          "B": "Das Enzym wird regeneriert, nicht als Bestandteil des Produkts verbraucht.",
+          "C": "GTP ist hier kein notwendiger Donor.",
+          "D": "G3P wird tatsächlich oxidiert.",
+          "E": "ATP entsteht erst im anschliessenden Phosphoglyceratkinase-Schritt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Welche chemische Veränderung katalysiert die Enolase bei der Bildung von Phosphoenolpyruvat?",
+      "options": [
+        {
+          "text": "Hydrolyse von PEP unter Bildung von freiem Phosphat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "ATP-abhängige Phosphorylierung von Glycerat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CO2-Abspaltung aus 3-Phosphoglycerat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wasserabspaltung aus 2-Phosphoglycerat.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Reduktion von Pyruvat mit NADH.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das wäre die umgekehrte stoffliche Richtung und beschreibt nicht die Enolasereaktion. B: Bei der Enolasereaktion wird kein ATP verbraucht. C: Die Kohlenstoffzahl bleibt bei diesem Schritt gleich. D: Die Dehydratisierung erzeugt das Enolphosphat PEP. E: Das ist die LDH-Reaktion. Quelle: Originalunterlagen, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Enolase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enolase"
+      ],
+      "questionGoal": "Enolase",
+      "structuredExplanation": {
+        "coreIdea": "Enolase",
+        "correctReasoning": "Die Dehydratisierung erzeugt das Enolphosphat PEP.",
+        "wrongAnswerExplanations": {
+          "A": "Das wäre die umgekehrte stoffliche Richtung und beschreibt nicht die Enolasereaktion.",
+          "B": "Bei der Enolasereaktion wird kein ATP verbraucht.",
+          "C": "Die Kohlenstoffzahl bleibt bei diesem Schritt gleich.",
+          "E": "Das ist die LDH-Reaktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Eine Glucose durchläuft die vollständige Glykolyse. Welche Aussagen zur Netto- und Bruttobilanz stimmen?",
+      "options": [
+        {
+          "text": "Die beiden Pyruvate enthalten zusammen nur drei der ursprünglichen sechs C-Atome.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei ATP werden in der Vorbereitungsphase investiert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Vier ATP werden brutto in der zweiten Phase gebildet.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Netto-ATP-Ausbeute beträgt sechs ATP.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zusammen enthalten sie sechs C-Atome. B: Hexokinase und Phosphofructokinase verbrauchen je eines. C: Zwei ATP-bildende Schritte laufen je zweimal ab. D: Netto entstehen vier minus zwei, also zwei ATP. Quelle: Originalunterlagen, PDF-S. 5,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Bilanz der Glykolyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bilanz der Glykolyse"
+      ],
+      "questionGoal": "Bilanz der Glykolyse",
+      "structuredExplanation": {
+        "coreIdea": "Bilanz der Glykolyse",
+        "correctReasoning": "Hexokinase und Phosphofructokinase verbrauchen je eines. Zwei ATP-bildende Schritte laufen je zweimal ab.",
+        "wrongAnswerExplanations": {
+          "A": "Zusammen enthalten sie sechs C-Atome.",
+          "B": "Hexokinase und Phosphofructokinase verbrauchen je eines.",
+          "C": "Zwei ATP-bildende Schritte laufen je zweimal ab.",
+          "D": "Netto entstehen vier minus zwei, also zwei ATP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q14",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Eine Kinase überträgt eine Phosphorylgruppe zwischen Substrat und Nukleotid. Welche mechanistischen Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jede Phosphatesterbindung besitzt dasselbe Phosphorylgruppen-Übertragungspotenzial wie PEP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beim phosphorylierten Produkt entsteht eine neue Bindung zwischen einem Substratsauerstoff und Phosphor.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "ATP muss vor einer Kinase-Reaktion zwingend frei zu AMP und Pyrophosphat zerfallen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die dargestellte assoziative Übertragung besitzt am Phosphor eine trigonal-bipyramidale Übergangsanordnung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die freie Energie der Hydrolyse unterscheidet sich je nach Verbindung. B: Der Phosphoryltransfer verknüpft den Akzeptor mit Phosphat. C: Die dargestellten Kinasen übertragen eine Gruppe direkt unter ADP-Bildung. D: Das entspricht dem besprochenen Angriff und Austritt am Phosphor. Quelle: Originalunterlagen, PDF-S. 6–9,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Phosphoryltransfer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphoryltransfer"
+      ],
+      "questionGoal": "Phosphoryltransfer",
+      "structuredExplanation": {
+        "coreIdea": "Phosphoryltransfer",
+        "correctReasoning": "Der Phosphoryltransfer verknüpft den Akzeptor mit Phosphat. Das entspricht dem besprochenen Angriff und Austritt am Phosphor.",
+        "wrongAnswerExplanations": {
+          "A": "Die freie Energie der Hydrolyse unterscheidet sich je nach Verbindung.",
+          "B": "Der Phosphoryltransfer verknüpft den Akzeptor mit Phosphat.",
+          "C": "Die dargestellten Kinasen übertragen eine Gruppe direkt unter ADP-Bildung.",
+          "D": "Das entspricht dem besprochenen Angriff und Austritt am Phosphor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q15",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Phosphoglyceratmutase verschiebt die Phosphatposition. Welche Aussagen zum dargestellten Zyklus stimmen?",
+      "options": [
+        {
+          "text": "Der Histidinrest verlässt das Enzym dauerhaft als Produkt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Schritt erzeugt netto ein ATP aus ADP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Histidinrest des Enzyms trägt vorübergehend eine Phosphatgruppe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Zwischenprodukt trägt Phosphat an C2 und C3.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er wird im katalytischen Zyklus regeneriert. B: Die Mutase verschiebt die Phosphatposition, ohne ATP-Bildung. C: Das Enzym ist kovalent am Gruppentransfer beteiligt. D: Es handelt sich um 2,3-Bisphosphoglycerat. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Mutasezyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mutasezyklus"
+      ],
+      "questionGoal": "Mutasezyklus",
+      "structuredExplanation": {
+        "coreIdea": "Mutasezyklus",
+        "correctReasoning": "Das Enzym ist kovalent am Gruppentransfer beteiligt. Es handelt sich um 2,3-Bisphosphoglycerat.",
+        "wrongAnswerExplanations": {
+          "A": "Er wird im katalytischen Zyklus regeneriert.",
+          "B": "Die Mutase verschiebt die Phosphatposition, ohne ATP-Bildung.",
+          "C": "Das Enzym ist kovalent am Gruppentransfer beteiligt.",
+          "D": "Es handelt sich um 2,3-Bisphosphoglycerat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Aldose und Ketose werden enzymatisch ineinander überführt. Welche Aussagen zur Tautomerie stimmen?",
+      "options": [
+        {
+          "text": "Die G6P/F6P-Isomerisierung benötigt eine Änderung der Kohlenstoffzahl.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Enediol ist ein Molekül mit zwei voneinander völlig unabhängigen gesättigten Alkoholen ohne Doppelbindung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Enzyme können die Protonenübertragung stereoselektiv katalysieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Tautomere unterscheiden sich in Protonenposition und Doppelbindungsanordnung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide Stoffe sind C6-Körper. B: Die Enediolgruppe enthält eine C=C-Bindung mit zwei OH-Gruppen. C: Das aktive Zentrum schafft eine gerichtete chemische Umgebung. D: Sie können durch Protonentransfer ineinander übergehen. Quelle: Originalunterlagen, PDF-S. 15–16,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Tautomerie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tautomerie"
+      ],
+      "questionGoal": "Tautomerie",
+      "structuredExplanation": {
+        "coreIdea": "Tautomerie",
+        "correctReasoning": "Das aktive Zentrum schafft eine gerichtete chemische Umgebung. Sie können durch Protonentransfer ineinander übergehen.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Stoffe sind C6-Körper.",
+          "B": "Die Enediolgruppe enthält eine C=C-Bindung mit zwei OH-Gruppen.",
+          "C": "Das aktive Zentrum schafft eine gerichtete chemische Umgebung.",
+          "D": "Sie können durch Protonentransfer ineinander übergehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q17",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Klasse-I-Aldolase spaltet Fructose-1,6-bisphosphat. Welche Aussagen zum katalytischen Zyklus stimmen?",
+      "options": [
+        {
+          "text": "Imin- und Enaminformen treten im Mechanismus auf.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Lysinbindung an das Substrat bleibt im Endprodukt dauerhaft erhalten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei der dargestellten Spaltung wird eine C–C-Bindung gelöst.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Spaltung erfordert unmittelbar die Reduktion von NAD+.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die kovalente Bindung an Lysin ermöglicht diese Zwischenstufen. B: Hydrolyse setzt das Produkt frei und regeneriert die Seitenkette. C: Die Verbindung zwischen C3 und C4 wird gespalten. D: NAD+ wird erst beim GAPDH-Schritt reduziert. Quelle: Originalunterlagen, PDF-S. 17–18,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Aldolasezyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aldolasezyklus"
+      ],
+      "questionGoal": "Aldolasezyklus",
+      "structuredExplanation": {
+        "coreIdea": "Aldolasezyklus",
+        "correctReasoning": "Die kovalente Bindung an Lysin ermöglicht diese Zwischenstufen. Die Verbindung zwischen C3 und C4 wird gespalten.",
+        "wrongAnswerExplanations": {
+          "A": "Die kovalente Bindung an Lysin ermöglicht diese Zwischenstufen.",
+          "B": "Hydrolyse setzt das Produkt frei und regeneriert die Seitenkette.",
+          "C": "Die Verbindung zwischen C3 und C4 wird gespalten.",
+          "D": "NAD+ wird erst beim GAPDH-Schritt reduziert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "GAPDH koppelt Oxidation und Einbau von anorganischem Phosphat. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Eine Cystein-Seitenkette beteiligt sich kovalent am Reaktionsablauf.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "NADH entsteht als reduzierter Cofaktor.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das zweite Phosphat des 1,3-Bisphosphoglycerats stammt aus ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der nächste Schritt benötigt nochmals ATP, um ATP herstellen zu können.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ermöglicht Hemi-Thioacetal und Thioester. B: NAD+ nimmt ein Hydridäquivalent auf. C: Es stammt aus anorganischem Phosphat. D: Die Phosphoglyceratkinase überträgt die energiereiche Gruppe direkt auf ADP. Quelle: Originalunterlagen, PDF-S. 19–20,23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "GAPDH-Kopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GAPDH-Kopplung"
+      ],
+      "questionGoal": "GAPDH-Kopplung",
+      "structuredExplanation": {
+        "coreIdea": "GAPDH-Kopplung",
+        "correctReasoning": "Sie ermöglicht Hemi-Thioacetal und Thioester. NAD+ nimmt ein Hydridäquivalent auf.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ermöglicht Hemi-Thioacetal und Thioester.",
+          "B": "NAD+ nimmt ein Hydridäquivalent auf.",
+          "C": "Es stammt aus anorganischem Phosphat.",
+          "D": "Die Phosphoglyceratkinase überträgt die energiereiche Gruppe direkt auf ADP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Die Reaktionen von 3-Phosphoglycerat bis Pyruvat werden verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Pyruvatkinase phosphoryliert Pyruvat unter ATP-Verbrauch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Phosphatverschiebung durch Mutase und die Wasserabspaltung durch Enolase sind dieselbe Reaktion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Bildung der stabilen Ketoform des Pyruvats begünstigt die PEP-Reaktion.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Enolase erzeugt durch Wasserabspaltung PEP.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: In der Glykolyserichtung überträgt PEP Phosphat auf ADP. B: Es sind zwei verschiedene chemische Schritte. C: Die Tautomerisierung trägt zur günstigen Gesamtreaktion bei. D: Der Schritt ist eine Dehydratisierung. Quelle: Originalunterlagen, PDF-S. 21–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Untere Glykolyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Untere Glykolyse"
+      ],
+      "questionGoal": "Untere Glykolyse",
+      "structuredExplanation": {
+        "coreIdea": "Untere Glykolyse",
+        "correctReasoning": "Die Tautomerisierung trägt zur günstigen Gesamtreaktion bei. Der Schritt ist eine Dehydratisierung.",
+        "wrongAnswerExplanations": {
+          "A": "In der Glykolyserichtung überträgt PEP Phosphat auf ADP.",
+          "B": "Es sind zwei verschiedene chemische Schritte.",
+          "C": "Die Tautomerisierung trägt zur günstigen Gesamtreaktion bei.",
+          "D": "Der Schritt ist eine Dehydratisierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb13_14_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB13/14",
+      "stem": "Ein Hemmstoff blockiert GAPDH vollständig. Welche unmittelbaren Folgen ergeben sich für Glucose, die diesen Weg durchlaufen soll?",
+      "options": [
+        {
+          "text": "Die ATP-bildenden unteren Schritte erhalten aus diesem Glucosefluss unverändert ihre Substrate.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die NADH-Bildung des GAPDH-Schritts fällt aus.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die zwei vorher investierten ATP werden durch die Blockade automatisch zurückgewonnen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der normale Zufluss zu 1,3-Bisphosphoglycerat wird unterbrochen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der blockierte Zufluss begrenzt die nachgeschalteten Reaktionen. B: Die Substratoxidation ist blockiert. C: Eine solche automatische Rückgewinnung findet nicht statt. D: Das Produkt entsteht an der blockierten Stelle. Quelle: Originalunterlagen, PDF-S. 5,19–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB13/14",
+        "Reaktionskette unterbrechen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionskette unterbrechen"
+      ],
+      "questionGoal": "Reaktionskette unterbrechen",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionskette unterbrechen",
+        "correctReasoning": "Die Substratoxidation ist blockiert. Das Produkt entsteht an der blockierten Stelle.",
+        "wrongAnswerExplanations": {
+          "A": "Der blockierte Zufluss begrenzt die nachgeschalteten Reaktionen.",
+          "B": "Die Substratoxidation ist blockiert.",
+          "C": "Eine solche automatische Rückgewinnung findet nicht statt.",
+          "D": "Das Produkt entsteht an der blockierten Stelle."
+        }
+      }
+    }
+  ]
+}

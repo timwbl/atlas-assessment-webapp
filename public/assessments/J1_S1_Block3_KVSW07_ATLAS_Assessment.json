@@ -1,0 +1,1318 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw07_20261102",
+  "lectureCode": "KVSW07",
+  "title": "Chemische Synapsen, Transmitter und Exozytose",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW07 - Synaptische Uebertragung 1. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Klinische Folienbeispiele werden als Mechanismen, nicht als Behandlungsempfehlungen geprüft. Myasthenie nicht auf ausnahmslos einen Antikörpertyp verallgemeinert. Synapsenzahlen nicht als exakte universelle Fakten abgefragt. Originalfiguren PDF6,9,11–18 visuell geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Elektrische und chemische Synapsen strukturell und funktionell unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Synapsenposition, aktive Zone und postsynaptische Spezialisierung einordnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Transmitterklassen, Synthese, Speicherung und Entfernung erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "AP-gekoppelte calciumabhängige Vesikelfusion erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Synaptische Zeitfolge und retrograde Modulation interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw07_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welche Struktur erlaubt besonders direkten elektrischen Austausch zwischen benachbarten Nervenzellen?",
+      "options": [
+        {
+          "text": "Ein ausschliesslich transmittergefüllter Spalt ohne leitende Zellverbindung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Vesikelfusion als alleinige elektrische Verbindung beider Cytoplasmen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gap-Junction-Kanäle zwischen ihren Cytoplasmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur eine gemeinsame extrazelluläre Rezeptorbindestelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein postsynaptischer GPCR ohne direkten Kanal zwischen den Zellen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies beschreibt keine direkte elektrische Kopplung. B: Dies ist chemische Freisetzung, kein Gap-Junction-Kanal. C: Sie stellen einen niederohmigen direkten Weg her. D: Sie verbindet die Cytoplasmen nicht unmittelbar. E: Er vermittelt indirekte Signalwege statt elektrischer Zellbrücke. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Elektrische Synapse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektrische Synapse"
+      ],
+      "questionGoal": "Elektrische Synapse",
+      "structuredExplanation": {
+        "coreIdea": "Elektrische Synapse",
+        "correctReasoning": "Sie stellen einen niederohmigen direkten Weg her.",
+        "wrongAnswerExplanations": {
+          "A": "Dies beschreibt keine direkte elektrische Kopplung.",
+          "B": "Dies ist chemische Freisetzung, kein Gap-Junction-Kanal.",
+          "D": "Sie verbindet die Cytoplasmen nicht unmittelbar.",
+          "E": "Er vermittelt indirekte Signalwege statt elektrischer Zellbrücke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q02",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Ein Axonendknöpfchen kontaktiert den Zellkörper eines anderen Neurons. Wie heisst diese Anordnung?",
+      "options": [
+        {
+          "text": "Neuromuskulär",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Axodendritisch",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dendrodendritisch",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Axosomatisch",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Axoaxonisch",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Ziel ist ein Neuron, keine Muskelfaser. B: Dabei liegt der Kontakt am Dendriten. C: Hier ist die sendende Struktur ein Axon. D: Soma bezeichnet den Zellkörper. E: Dabei ist ein anderes Axon das Ziel. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Synapsenposition"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Synapsenposition"
+      ],
+      "questionGoal": "Synapsenposition",
+      "structuredExplanation": {
+        "coreIdea": "Synapsenposition",
+        "correctReasoning": "Soma bezeichnet den Zellkörper.",
+        "wrongAnswerExplanations": {
+          "A": "Das Ziel ist ein Neuron, keine Muskelfaser.",
+          "B": "Dabei liegt der Kontakt am Dendriten.",
+          "C": "Hier ist die sendende Struktur ein Axon.",
+          "E": "Dabei ist ein anderes Axon das Ziel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «prä- und postsynaptische Struktur einer chemischen Synapse».",
+      "options": [
+        {
+          "text": "Jede Synapse muss dieselbe Grösse und Zahl aktiver Zonen besitzen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine postsynaptische Verdichtung kann Rezeptoren und Gerüstproteine enthalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die aktive Zone ist der Ort der postsynaptischen DNA-Replikation.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine chemische Synapse verbindet die Cytoplasmen direkt durch einen offenen Gap-Junction-Kanal.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die gezeigten Synapsentypen unterscheiden sich. B: Die Empfangsseite ist strukturell organisiert. C: Sie bezeichnet die präsynaptische Freisetzungsspezialisierung. D: Dies beschreibt elektrische Kopplung, nicht den chemischen Spalt. Quelle: Originalunterlagen, PDF-S. 5–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Synapsenstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Synapsenstruktur"
+      ],
+      "questionGoal": "Synapsenstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Synapsenstruktur",
+        "correctReasoning": "Die Empfangsseite ist strukturell organisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Die gezeigten Synapsentypen unterscheiden sich.",
+          "B": "Die Empfangsseite ist strukturell organisiert.",
+          "C": "Sie bezeichnet die präsynaptische Freisetzungsspezialisierung.",
+          "D": "Dies beschreibt elektrische Kopplung, nicht den chemischen Spalt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welche Reihenfolge passt zur schnellen chemischen Übertragung?",
+      "options": [
+        {
+          "text": "Exozytose → erstes Ca²⁺-Signal als ausschliessliche Folge → AP im sendenden Axon.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Postsynaptisches AP → Vesikelfusion → erstes präsynaptisches AP zwingend.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Präsynaptisches AP → Ca²⁺-Einstrom → Exozytose → postsynaptische Antwort.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Transmitterabbau → Vesikelfusion ohne vorausgehende Aktivierung → Ca²⁺-Einstrom.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Gap-Junction-Öffnung → freier Transfer ganzer Vesikel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Calcium ist der unmittelbare Freisetzungstrigger. B: Dies vertauscht die typische Vorwärtskaskade. C: Die Depolarisation koppelt über Calcium an Freisetzung. D: Der Abbau löst die beschriebene Kaskade nicht aus. E: Gap Junctions transportieren keine Vesikel. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Zeitfolge der Übertragung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitfolge der Übertragung"
+      ],
+      "questionGoal": "Zeitfolge der Übertragung",
+      "structuredExplanation": {
+        "coreIdea": "Zeitfolge der Übertragung",
+        "correctReasoning": "Die Depolarisation koppelt über Calcium an Freisetzung.",
+        "wrongAnswerExplanations": {
+          "A": "Calcium ist der unmittelbare Freisetzungstrigger.",
+          "B": "Dies vertauscht die typische Vorwärtskaskade.",
+          "D": "Der Abbau löst die beschriebene Kaskade nicht aus.",
+          "E": "Gap Junctions transportieren keine Vesikel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Präsynaptische spannungsabhängige Ca²⁺-Kanäle werden blockiert; ein AP erreicht das Endknöpfchen weiterhin. Welche Folge ist am unmittelbarsten zu erwarten?",
+      "options": [
+        {
+          "text": "Die AP-gekoppelte Transmitterfreisetzung nimmt ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Freisetzung muss trotz blockiertem Ca-Einstrom unverändert sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Postsynaptische Rezeptoren werden unmittelbar vollständig entfernt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die AP-Ankunft garantiert immer dieselbe Vesikelzahl unabhängig vom Calcium.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur der ACh-Abbau wird durch die präsynaptische Blockade unmittelbar beschleunigt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Calciumtrigger für Vesikelfusion fehlt oder ist vermindert. B: Calcium koppelt das AP an Vesikelfusion. C: Die Blockade ist präsynaptisch. D: Freisetzung hängt von der Calciumkopplung ab. E: Der direkte Angriff liegt bei der Freisetzung. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Calciumblockade"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Calciumblockade"
+      ],
+      "questionGoal": "Calciumblockade",
+      "structuredExplanation": {
+        "coreIdea": "Calciumblockade",
+        "correctReasoning": "Der Calciumtrigger für Vesikelfusion fehlt oder ist vermindert.",
+        "wrongAnswerExplanations": {
+          "B": "Calcium koppelt das AP an Vesikelfusion.",
+          "C": "Die Blockade ist präsynaptisch.",
+          "D": "Freisetzung hängt von der Calciumkopplung ab.",
+          "E": "Der direkte Angriff liegt bei der Freisetzung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Calciumsensoren, SNARE-Fusion und Vesikelrecycling».",
+      "options": [
+        {
+          "text": "Synaptotagmin ist an der calciumabhängigen Kopplung zur Fusion beteiligt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Botulinumtoxin verstärkt Freisetzung durch Aufbau zusätzlicher SNARE-Komplexe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nach Fusion kann Vesikelmembran durch Endozytose zurückgewonnen werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "SNARE-Proteine unterstützen die Fusion von Vesikel- und Zellmembran.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es ist ein wichtiger Calcium-Sensor im Freisetzungsapparat. B: Es spaltet bestimmte SNARE-Proteine und hemmt Freisetzung. C: Recycling erhält den Vesikelbestand bei wiederholter Freisetzung. D: Sie vermitteln den Fusionsapparat. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Vesikelproteine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vesikelproteine"
+      ],
+      "questionGoal": "Vesikelproteine",
+      "structuredExplanation": {
+        "coreIdea": "Vesikelproteine",
+        "correctReasoning": "Es ist ein wichtiger Calcium-Sensor im Freisetzungsapparat. Recycling erhält den Vesikelbestand bei wiederholter Freisetzung. Sie vermitteln den Fusionsapparat.",
+        "wrongAnswerExplanations": {
+          "A": "Es ist ein wichtiger Calcium-Sensor im Freisetzungsapparat.",
+          "B": "Es spaltet bestimmte SNARE-Proteine und hemmt Freisetzung.",
+          "C": "Recycling erhält den Vesikelbestand bei wiederholter Freisetzung.",
+          "D": "Sie vermitteln den Fusionsapparat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welcher Weg passt zur Bildung von Peptidneurotransmittern?",
+      "options": [
+        {
+          "text": "Synthese des fertigen Peptids allein durch lokale Cholinacetyltransferase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliessliche Synthese an freien Ribosomen im synaptischen Spalt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Synthese eines Vorläuferproteins im Soma, Verarbeitung und Transport in sekretorischen Vesikeln.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Direkte Aufnahme einer fertigen RNA als aktiver Peptidtransmitter.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliessliche Umwandlung von Glutamat zu GABA im Terminal.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese synthetisiert ACh, kein Vorläuferpeptid. B: Proteinsynthese erfolgt intrazellulär. C: ER/Golgi und axonaler Transport sind beteiligt. D: RNA und Peptid sind verschiedene Moleküle. E: Dies beschreibt einen kleinen Transmitter, nicht Neuropeptidproduktion. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Peptidsynthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Peptidsynthese"
+      ],
+      "questionGoal": "Peptidsynthese",
+      "structuredExplanation": {
+        "coreIdea": "Peptidsynthese",
+        "correctReasoning": "ER/Golgi und axonaler Transport sind beteiligt.",
+        "wrongAnswerExplanations": {
+          "A": "Diese synthetisiert ACh, kein Vorläuferpeptid.",
+          "B": "Proteinsynthese erfolgt intrazellulär.",
+          "D": "RNA und Peptid sind verschiedene Moleküle.",
+          "E": "Dies beschreibt einen kleinen Transmitter, nicht Neuropeptidproduktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welche Ausgangsstoffe verwendet die Cholinacetyltransferase?",
+      "options": [
+        {
+          "text": "Cholin und S-Adenosylmethionin als Acetylspender.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glutamat und Pyridoxalphosphat als Acetylspender.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Cholin und Acetyl-CoA.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Acetylcholin und Wasser als Synthesevorstufen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Tyrosin und Dopamin.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: SAM ist ein Methylgruppen-, kein Acetylspender dieser Reaktion. B: Dies betrifft nicht die Cholinacetyltransferase. C: Die Acetylgruppe wird auf Cholin übertragen. D: Das ist die Richtung der enzymatischen Spaltung. E: Dies sind keine Edukte der ACh-Synthese. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Acetylcholin-Synthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Acetylcholin-Synthese"
+      ],
+      "questionGoal": "Acetylcholin-Synthese",
+      "structuredExplanation": {
+        "coreIdea": "Acetylcholin-Synthese",
+        "correctReasoning": "Die Acetylgruppe wird auf Cholin übertragen.",
+        "wrongAnswerExplanations": {
+          "A": "SAM ist ein Methylgruppen-, kein Acetylspender dieser Reaktion.",
+          "B": "Dies betrifft nicht die Cholinacetyltransferase.",
+          "D": "Das ist die Richtung der enzymatischen Spaltung.",
+          "E": "Dies sind keine Edukte der ACh-Synthese."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Aminosäure-, Peptid- und andere Transmitter».",
+      "options": [
+        {
+          "text": "Dopamin ist ein Peptid aus vielen Aminosäuren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glutamat und GABA gehören zu den Aminosäuretransmittern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Neuropeptide und kleine Transmitter unterscheiden sich in ihrem typischen Syntheseweg.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Alle Transmitter werden unverändert durch dieselbe Acetylcholinesterase entfernt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dopamin ist ein biogenes Amin. B: Sie sind kleine stickstoffhaltige Transmitter. C: Peptide nutzen den sekretorischen Proteinweg. D: Entfernungsmechanismen sind transmitterabhängig. Quelle: Originalunterlagen, PDF-S. 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Transmitterklassen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transmitterklassen"
+      ],
+      "questionGoal": "Transmitterklassen",
+      "structuredExplanation": {
+        "coreIdea": "Transmitterklassen",
+        "correctReasoning": "Sie sind kleine stickstoffhaltige Transmitter. Peptide nutzen den sekretorischen Proteinweg.",
+        "wrongAnswerExplanations": {
+          "A": "Dopamin ist ein biogenes Amin.",
+          "B": "Sie sind kleine stickstoffhaltige Transmitter.",
+          "C": "Peptide nutzen den sekretorischen Proteinweg.",
+          "D": "Entfernungsmechanismen sind transmitterabhängig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Was beendet das ACh-Signal im synaptischen Spalt wesentlich mit?",
+      "options": [
+        {
+          "text": "Oxidation zu Glutamat durch GAD.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Direkte Aufnahme des vollständigen Rezeptors als einziger ACh-Abbau.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Spaltung durch Acetylcholinesterase zu Cholin und Acetat.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Unbegrenzte Speicherung sämtlichen freigesetzten AChs im Spalt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Umwandlung zu Dopamin durch Tyrosinhydroxylase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: GAD decarboxyliert Glutamat zu GABA. B: Rezeptorumsatz ist nicht der beschriebene Spaltungsweg. C: So sinkt die verfügbare ACh-Konzentration. D: Das würde das Signal nicht beenden. E: Das ist kein ACh-Abbauweg. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Acetylcholinabbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Acetylcholinabbau"
+      ],
+      "questionGoal": "Acetylcholinabbau",
+      "structuredExplanation": {
+        "coreIdea": "Acetylcholinabbau",
+        "correctReasoning": "So sinkt die verfügbare ACh-Konzentration.",
+        "wrongAnswerExplanations": {
+          "A": "GAD decarboxyliert Glutamat zu GABA.",
+          "B": "Rezeptorumsatz ist nicht der beschriebene Spaltungsweg.",
+          "D": "Das würde das Signal nicht beenden.",
+          "E": "Das ist kein ACh-Abbauweg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Transmitterentfernung und Wiederaufnahme».",
+      "options": [
+        {
+          "text": "Cholin kann nach ACh-Spaltung wieder aufgenommen werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Diffusion und Transport können die Verfügbarkeit eines Transmitters nicht beeinflussen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gliazellen können zur Entfernung von Glutamat aus dem Extrazellulärraum beitragen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jedes ACh-Molekül muss als intaktes ACh über den Cholintransporter zurückkehren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es dient erneut als Synthesebaustein. B: Beide verändern seine örtliche Konzentration. C: Die Abbildung zeigt gliale Transporter. D: Dieser transportiert Cholin, nicht das vollständige ACh. Quelle: Originalunterlagen, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Entfernung und Recycling"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entfernung und Recycling"
+      ],
+      "questionGoal": "Entfernung und Recycling",
+      "structuredExplanation": {
+        "coreIdea": "Entfernung und Recycling",
+        "correctReasoning": "Es dient erneut als Synthesebaustein. Die Abbildung zeigt gliale Transporter.",
+        "wrongAnswerExplanations": {
+          "A": "Es dient erneut als Synthesebaustein.",
+          "B": "Beide verändern seine örtliche Konzentration.",
+          "C": "Die Abbildung zeigt gliale Transporter.",
+          "D": "Dieser transportiert Cholin, nicht das vollständige ACh."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welche Energiequelle wird in der Vesikelabbildung für die Transmitterbeladung vorbereitet?",
+      "options": [
+        {
+          "text": "Eine ATP-abhängige Protonenpumpe erzeugt einen H⁺-Gradienten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Na/K-ATPase erzeugt als alleiniger vesikulärer Mechanismus ATP aus Transmitter.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ungekoppelte Diffusion muss sämtliche Transmitter gegen jede Konzentration aufnehmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der niedrige vesikuläre pH ersetzt jede Funktion spezifischer Transporter.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine mitochondriale Atmungskette muss in jedem Vesikel vorhanden sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vesikuläre Transporter können diesen Gradienten nutzen. B: Die vesikuläre Protonenpumpe verbraucht ATP. C: Gegengradiententransport benötigt Energie beziehungsweise Kopplung. D: Gradient und Transporter wirken zusammen. E: Die Membran-Protonenpumpe stellt den Gradient bereit. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Vesikelbeladung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vesikelbeladung"
+      ],
+      "questionGoal": "Vesikelbeladung",
+      "structuredExplanation": {
+        "coreIdea": "Vesikelbeladung",
+        "correctReasoning": "Vesikuläre Transporter können diesen Gradienten nutzen.",
+        "wrongAnswerExplanations": {
+          "B": "Die vesikuläre Protonenpumpe verbraucht ATP.",
+          "C": "Gegengradiententransport benötigt Energie beziehungsweise Kopplung.",
+          "D": "Gradient und Transporter wirken zusammen.",
+          "E": "Die Membran-Protonenpumpe stellt den Gradient bereit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Vesikelexozytose und Endozytose».",
+      "options": [
+        {
+          "text": "Endozytose bezeichnet ausschliesslich die chemische Spaltung eines Transmitters.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei Exozytose wird der Vesikelinhalt nach aussen freigesetzt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Zurückgewonnene Vesikel können erneut beladen werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder Vesikelbestand bleibt bei wiederholter Exozytose ohne Recycling unbegrenzt erhalten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie bezeichnet Aufnahme durch Membraneinstülpung und Abschnürung. B: Vesikel- und Plasmamembran fusionieren. C: Das ermöglicht wiederholte Freisetzungszyklen. D: Ohne Nachschub kann der verfügbare Bestand abnehmen. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Endozytose und Exozytose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endozytose und Exozytose"
+      ],
+      "questionGoal": "Endozytose und Exozytose",
+      "structuredExplanation": {
+        "coreIdea": "Endozytose und Exozytose",
+        "correctReasoning": "Vesikel- und Plasmamembran fusionieren. Das ermöglicht wiederholte Freisetzungszyklen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie bezeichnet Aufnahme durch Membraneinstülpung und Abschnürung.",
+          "B": "Vesikel- und Plasmamembran fusionieren.",
+          "C": "Das ermöglicht wiederholte Freisetzungszyklen.",
+          "D": "Ohne Nachschub kann der verfügbare Bestand abnehmen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Warum folgt die postsynaptische Antwort bei einer chemischen Synapse nicht exakt gleichzeitig auf den Beginn des präsynaptischen APs?",
+      "options": [
+        {
+          "text": "Jedes postsynaptische Potential benötigt zuerst eine neue Genmutation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Verzögerung beruht zwingend nur auf dem Verstärker.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Freisetzung kann bereits ohne jede präsynaptische Aktivierung als identischer evozierter Ablauf gelten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Transmitter muss zuerst den gesamten Kreislauf passieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Calciumeinstrom, Freisetzung, Diffusion und Rezeptoraktivierung benötigen Zeit.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Schnelle Übertragung benötigt keine solche Änderung. B: Biologische Schritte benötigen Zeit. C: Das AP löst die Calcium-Fusionskette aus. D: Chemische Synapsen übertragen lokal über den Spalt. E: Die Übertragung umfasst mehrere aufeinanderfolgende Schritte. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Synaptische Verzögerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Synaptische Verzögerung"
+      ],
+      "questionGoal": "Synaptische Verzögerung",
+      "structuredExplanation": {
+        "coreIdea": "Synaptische Verzögerung",
+        "correctReasoning": "Die Übertragung umfasst mehrere aufeinanderfolgende Schritte.",
+        "wrongAnswerExplanations": {
+          "A": "Schnelle Übertragung benötigt keine solche Änderung.",
+          "B": "Biologische Schritte benötigen Zeit.",
+          "C": "Das AP löst die Calcium-Fusionskette aus.",
+          "D": "Chemische Synapsen übertragen lokal über den Spalt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Was ist am dargestellten Endocannabinoid-Signal retrograd?",
+      "options": [
+        {
+          "text": "Das präsynaptische Signal wird allein entlang desselben Axons nach proximal geleitet.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein präsynaptisch freigesetztes Signal aktiviert ausschliesslich postsynaptische Rezeptoren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ACh wird im Spalt zu Cholin abgebaut.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die postsynaptische Membran transportiert ein vollständiges AP durch den Spalt zurück.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein postsynaptisch erzeugtes Signal vermindert präsynaptische Transmitterfreisetzung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist nicht die gemeinte postsynaptisch-präsynaptische Botenwirkung. B: Das ist die klassische Vorwärtsrichtung. C: Dies ist Signalbeendigung, keine retrograde Endocannabinoidwirkung. D: Die Rückwirkung ist chemisch vermittelt. E: Es wirkt entgegen der gewöhnlichen Vorwärtsrichtung der chemischen Übertragung. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Retrogrades Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Retrogrades Signal"
+      ],
+      "questionGoal": "Retrogrades Signal",
+      "structuredExplanation": {
+        "coreIdea": "Retrogrades Signal",
+        "correctReasoning": "Es wirkt entgegen der gewöhnlichen Vorwärtsrichtung der chemischen Übertragung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist nicht die gemeinte postsynaptisch-präsynaptische Botenwirkung.",
+          "B": "Das ist die klassische Vorwärtsrichtung.",
+          "C": "Dies ist Signalbeendigung, keine retrograde Endocannabinoidwirkung.",
+          "D": "Die Rückwirkung ist chemisch vermittelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Richtung chemischer und elektrischer Übertragung».",
+      "options": [
+        {
+          "text": "Dies schliesst jeden postsynaptischen Einfluss auf die Präsynapse aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede elektrische Synapse muss unter allen Bedingungen exakt symmetrisch leiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die klassische schnelle chemische Übertragung ist durch prä- und postsynaptische Spezialisierung gerichtet.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Elektrische Kopplung kann schnelle direkte Ströme zwischen Zellen erlauben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Retrograde Botenstoffe zeigen eine Rückmeldung. B: Kanalzusammensetzung und Gating können Eigenschaften verändern. C: Freisetzungs- und Empfangsapparat sind unterschiedlich angeordnet. D: Dafür dienen Gap Junctions. Quelle: Originalunterlagen, PDF-S. 5,19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Übertragungsrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Übertragungsrichtung"
+      ],
+      "questionGoal": "Übertragungsrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Übertragungsrichtung",
+        "correctReasoning": "Freisetzungs- und Empfangsapparat sind unterschiedlich angeordnet. Dafür dienen Gap Junctions.",
+        "wrongAnswerExplanations": {
+          "A": "Retrograde Botenstoffe zeigen eine Rückmeldung.",
+          "B": "Kanalzusammensetzung und Gating können Eigenschaften verändern.",
+          "C": "Freisetzungs- und Empfangsapparat sind unterschiedlich angeordnet.",
+          "D": "Dafür dienen Gap Junctions."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welche Struktur wird bei einer axoaxonischen Synapse unmittelbar kontaktiert?",
+      "options": [
+        {
+          "text": "Nur der Zellkern des Zielneurons.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur der Muskel-Sehnen-Übergang.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Blutbahn als entferntes Ziel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Axon beziehungsweise seine Terminalregion.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Nur ein dendritischer Spine.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser ist nicht das Axon. B: Dies ist keine axoaxonische Synapse. C: Dies bezeichnet keinen Axonkontakt. D: Die Bezeichnung nennt das axonale Zielkompartiment. E: Dies wäre axodendritisch. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Axoaxonischer Kontakt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Axoaxonischer Kontakt"
+      ],
+      "questionGoal": "Axoaxonischer Kontakt",
+      "structuredExplanation": {
+        "coreIdea": "Axoaxonischer Kontakt",
+        "correctReasoning": "Die Bezeichnung nennt das axonale Zielkompartiment.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser ist nicht das Axon.",
+          "B": "Dies ist keine axoaxonische Synapse.",
+          "C": "Dies bezeichnet keinen Axonkontakt.",
+          "E": "Dies wäre axodendritisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «aktive Zonen und Wirksamkeit der Freisetzung».",
+      "options": [
+        {
+          "text": "Der Nachweis eines Vesikels beweist dessen erfolgreiche Fusion beim nächsten AP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehr aktive Zonen können mehr Freisetzungsorte bereitstellen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mehr aktive Zonen beweisen ohne weitere Angaben eine höhere postsynaptische AP-Amplitude.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Defekt der Fusion kann trotz vorhandener gefüllter Vesikel die Übertragung vermindern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Freisetzung ist ein regulierter wahrscheinlicher Vorgang. B: Die Folien vergleichen unterschiedlich grosse Synapsen. C: AP-Amplitude und gesamte Übertragungsstärke sind nicht gleichzusetzen. D: Speicherung allein genügt nicht zur Freisetzung. Quelle: Originalunterlagen, PDF-S. 6,9,16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Struktur-Funktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Struktur-Funktion"
+      ],
+      "questionGoal": "Struktur-Funktion",
+      "structuredExplanation": {
+        "coreIdea": "Struktur-Funktion",
+        "correctReasoning": "Die Folien vergleichen unterschiedlich grosse Synapsen. Speicherung allein genügt nicht zur Freisetzung.",
+        "wrongAnswerExplanations": {
+          "A": "Freisetzung ist ein regulierter wahrscheinlicher Vorgang.",
+          "B": "Die Folien vergleichen unterschiedlich grosse Synapsen.",
+          "C": "AP-Amplitude und gesamte Übertragungsstärke sind nicht gleichzusetzen.",
+          "D": "Speicherung allein genügt nicht zur Freisetzung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Welche Reaktion bildet GABA aus Glutamat?",
+      "options": [
+        {
+          "text": "Decarboxylierung durch Glutamatdecarboxylase.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Hydrolyse durch Acetylcholinesterase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Phosphorylierung von Dopamin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Polymerisation mehrerer Glutamatmoleküle zu einem Peptid.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Acetylierung durch Cholinacetyltransferase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Carboxylgruppe wird als CO₂ entfernt. B: Dieses Enzym spaltet ACh. C: Dies bildet kein GABA. D: GABA ist kein solches Polymer. E: Dieses Enzym bildet ACh. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "GABA-Bildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GABA-Bildung"
+      ],
+      "questionGoal": "GABA-Bildung",
+      "structuredExplanation": {
+        "coreIdea": "GABA-Bildung",
+        "correctReasoning": "Eine Carboxylgruppe wird als CO₂ entfernt.",
+        "wrongAnswerExplanations": {
+          "B": "Dieses Enzym spaltet ACh.",
+          "C": "Dies bildet kein GABA.",
+          "D": "GABA ist kein solches Polymer.",
+          "E": "Dieses Enzym bildet ACh."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw07_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «präsynaptische Freisetzung und postsynaptische Rezeptorwirkung».",
+      "options": [
+        {
+          "text": "Weniger postsynaptische funktionsfähige ACh-Rezeptoren kann die Endplattenantwort vermindern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aus einer kleinen Antwort lässt sich ohne weitere Experimente eindeutig nur ein einziger Defekt ableiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine AChE-Hemmung und eine SNARE-Spaltung wirken am gleichen molekularen Schritt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Hemmung präsynaptischer Freisetzung kann die postsynaptische Antwort verkleinern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Empfangskapazität sinkt. B: Synthese, Freisetzung, Abbau und Rezeptoren können beitragen. C: Die eine verändert Abbau, die andere Freisetzung. D: Weniger Transmitter erreicht die Rezeptoren. Quelle: Originalunterlagen, PDF-S. 14–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW07",
+        "Eingriffsorte unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eingriffsorte unterscheiden"
+      ],
+      "questionGoal": "Eingriffsorte unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Eingriffsorte unterscheiden",
+        "correctReasoning": "Die Empfangskapazität sinkt. Weniger Transmitter erreicht die Rezeptoren.",
+        "wrongAnswerExplanations": {
+          "A": "Die Empfangskapazität sinkt.",
+          "B": "Synthese, Freisetzung, Abbau und Rezeptoren können beitragen.",
+          "C": "Die eine verändert Abbau, die andere Freisetzung.",
+          "D": "Weniger Transmitter erreicht die Rezeptoren."
+        }
+      }
+    }
+  ]
+}

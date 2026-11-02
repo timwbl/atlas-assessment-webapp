@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block1_kvp07_08_20261102",
+  "lectureCode": "KVP07/08",
+  "title": "Optik und Mikroskopie",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP07&08 - Optik, Mikroskopie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Auflösungsfragen verwenden die Proportionalität d∝λ/NA und vergleichen dasselbe Kriterium; unterschiedliche Abbe-/Rayleigh-Vorfaktoren werden nicht vermischt. Winkel zum Lot und die Dünnlinsen-/paraxiale Näherung sind berücksichtigt. Elektronenladungs-Vorzeichen gegenüber der vereinfachten Foliennotation präzisiert. Vorlesungsbasis HS2021 nach eigener Quellenangabe der bereitgestellten Folien; diese Herkunft bleibt trotz Zuordnung zum Lehrunterlagenbestand HS2025 sichtbar.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Reflexion, Brechung, Totalreflexion und Dispersion geometrisch erklären und berechnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Wellenlänge, Beugung und Interferenz mit dem Auflösungsvermögen verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Dünne Linsen und den Strahlengang von Objektiv, Okular und Feldlinse anwenden."
+    },
+    {
+      "id": "lo4",
+      "text": "Numerische Apertur und die Prinzipien des Licht- und Elektronenmikroskops erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvp07_08_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Ein Strahl trifft unter 30° zum Lot auf einen ebenen Spiegel. Welcher Winkel liegt zwischen reflektiertem Strahl und Lot?",
+      "options": [
+        {
+          "text": "0°.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "30°.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "15°.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "90°.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "60°.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0° zum Lot würde senkrechten Einfall voraussetzen; vorgegeben sind 30°. B: Einfalls- und Reflexionswinkel werden beide gegen das Lot gemessen und sind gleich. C: 15° würde den vorgegebenen Einfallswinkel halbieren; das Reflexionsgesetz verlangt gleiche Lotwinkel. D: 90° zum Lot wäre ein entlang der Oberfläche verlaufender Strahl, nicht der reflektierte Strahl dieses Einfalls. E: 60° ist hier der Winkel zur Spiegelebene; gefragt ist der Winkel zum Lot. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Reflexionswinkel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reflexionswinkel"
+      ],
+      "questionGoal": "Reflexionswinkel",
+      "structuredExplanation": {
+        "coreIdea": "Reflexionswinkel",
+        "correctReasoning": "Einfalls- und Reflexionswinkel werden beide gegen das Lot gemessen und sind gleich.",
+        "wrongAnswerExplanations": {
+          "A": "0° zum Lot würde senkrechten Einfall voraussetzen; vorgegeben sind 30°.",
+          "C": "15° würde den vorgegebenen Einfallswinkel halbieren; das Reflexionsgesetz verlangt gleiche Lotwinkel.",
+          "D": "90° zum Lot wäre ein entlang der Oberfläche verlaufender Strahl, nicht der reflektierte Strahl dieses Einfalls.",
+          "E": "60° ist hier der Winkel zur Spiegelebene; gefragt ist der Winkel zum Lot."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Licht tritt von Luft mit n1=1.00 unter 30° zum Lot in ein Medium mit n2=1.50 ein. Welcher Brechungswinkel folgt ungefähr?",
+      "options": [
+        {
+          "text": "48.6°.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "30°.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "19.5°.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "60°.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "45°.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 48,6° ergibt sich aus der fälschlich umgekehrten Indexrelation 1,5/1 statt 1/1,5. B: Bei verschiedenen Brechungsindizes bleibt der Lotwinkel hier nicht 30°; n1 sinα muss n2 sinβ entsprechen. C: sinβ=(1/1.5)sin30°=1/3; es wird zum Lot gebrochen. D: 60° läge weiter vom Lot weg; der Übergang von Luft in Glas bricht den Strahl in diesem Fall zum Lot. E: 45° entsteht nicht aus dem Brechungsgesetz; die Sinuswerte und nicht die Winkel selbst werden mit der Indexrelation verknüpft. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Brechungsgesetz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Brechungsgesetz"
+      ],
+      "questionGoal": "Brechungsgesetz",
+      "structuredExplanation": {
+        "coreIdea": "Brechungsgesetz",
+        "correctReasoning": "sinβ=(1/1.5)sin30°=1/3; es wird zum Lot gebrochen.",
+        "wrongAnswerExplanations": {
+          "A": "48,6° ergibt sich aus der fälschlich umgekehrten Indexrelation 1,5/1 statt 1/1,5.",
+          "B": "Bei verschiedenen Brechungsindizes bleibt der Lotwinkel hier nicht 30°; n1 sinα muss n2 sinβ entsprechen.",
+          "D": "60° läge weiter vom Lot weg; der Übergang von Luft in Glas bricht den Strahl in diesem Fall zum Lot.",
+          "E": "45° entsteht nicht aus dem Brechungsgesetz; die Sinuswerte und nicht die Winkel selbst werden mit der Indexrelation verknüpft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Welche Grösse bleibt beim Übergang monochromatischen Lichts von Luft in Glas unverändert?",
+      "options": [
+        {
+          "text": "Die Wellenlänge.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Frequenz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der Brechungsindex.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Winkel zum Lot bei jedem Einfallswinkel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Phasengeschwindigkeit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mit v=c0/n und unverändertem f wird λ=v/f im Glas kürzer. B: Die Frequenz wird durch die Quelle festgelegt; mit kleinerem c=λf wird die Wellenlänge im Glas kürzer. C: Der Brechungsindex ist eine Materialeigenschaft bei der betrachteten Frequenz und unterscheidet sich hier zwischen Luft und Glas. D: Ausser bei besonderen Einfallsbedingungen ändert die Brechung den Lotwinkel; eine universelle Winkelkonstanz gibt es nicht. E: Die Phasengeschwindigkeit sinkt im Glas entsprechend seinem höheren Brechungsindex. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Frequenz an Grenzfläche"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Frequenz an Grenzfläche"
+      ],
+      "questionGoal": "Frequenz an Grenzfläche",
+      "structuredExplanation": {
+        "coreIdea": "Frequenz an Grenzfläche",
+        "correctReasoning": "Die Frequenz wird durch die Quelle festgelegt; mit kleinerem c=λf wird die Wellenlänge im Glas kürzer.",
+        "wrongAnswerExplanations": {
+          "A": "Mit v=c0/n und unverändertem f wird λ=v/f im Glas kürzer.",
+          "C": "Der Brechungsindex ist eine Materialeigenschaft bei der betrachteten Frequenz und unterscheidet sich hier zwischen Luft und Glas.",
+          "D": "Ausser bei besonderen Einfallsbedingungen ändert die Brechung den Lotwinkel; eine universelle Winkelkonstanz gibt es nicht.",
+          "E": "Die Phasengeschwindigkeit sinkt im Glas entsprechend seinem höheren Brechungsindex."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Wann ist Totalreflexion an einer verlustfreien Grenzfläche möglich?",
+      "options": [
+        {
+          "text": "Von höherem zu niedrigerem n bei Einfallswinkel oberhalb des Grenzwinkels.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Von höherem zu niedrigerem n nur bei senkrechtem Einfall.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Von niedrigerem zu höherem n bei jedem Winkel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur wenn beide Medien exakt denselben Index haben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur bei Winkeln unterhalb des Grenzwinkels beim Übergang von Glas zu Luft.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Bedingung folgt aus sinαGrenz=n2/n1<1; α muss oberhalb dieses Grenzwerts liegen. B: Senkrechter Einfall liegt gerade unterhalb des Grenzwinkels und erlaubt Transmission statt Totalreflexion. C: Vom niedrigeren zum höheren Index existiert der hier erforderliche Grenzwinkel nicht; ein gebrochener Strahl bleibt möglich. D: Bei gleichen Indizes gibt es keine solche optische Grenzfläche mit einem Totalreflexionsbereich. E: Unterhalb des Grenzwinkels tritt beim Übergang von Glas zu Luft neben Reflexion noch ein propagierender gebrochener Anteil auf. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Totalreflexionsbedingung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Totalreflexionsbedingung"
+      ],
+      "questionGoal": "Totalreflexionsbedingung",
+      "structuredExplanation": {
+        "coreIdea": "Totalreflexionsbedingung",
+        "correctReasoning": "Die Bedingung folgt aus sinαGrenz=n2/n1<1; α muss oberhalb dieses Grenzwerts liegen.",
+        "wrongAnswerExplanations": {
+          "B": "Senkrechter Einfall liegt gerade unterhalb des Grenzwinkels und erlaubt Transmission statt Totalreflexion.",
+          "C": "Vom niedrigeren zum höheren Index existiert der hier erforderliche Grenzwinkel nicht; ein gebrochener Strahl bleibt möglich.",
+          "D": "Bei gleichen Indizes gibt es keine solche optische Grenzfläche mit einem Totalreflexionsbereich.",
+          "E": "Unterhalb des Grenzwinkels tritt beim Übergang von Glas zu Luft neben Reflexion noch ein propagierender gebrochener Anteil auf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Welcher Grenzwinkel folgt für Licht von Glas n1=1.50 nach Luft n2=1.00?",
+      "options": [
+        {
+          "text": "Ungefähr 30.0°.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ungefähr 60.0°.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ungefähr 19.5°.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ungefähr 90.0°.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ungefähr 41.8°.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: sin30°=0,5 unterschätzt das erforderliche Verhältnis n2/n1=2/3. B: sin60° ist ungefähr 0,866 und nicht das geforderte Indexverhältnis 0,667. C: 19,5° gehört hier nicht zu arcsin(1/1,5); sein Sinus ist nur ungefähr 1/3 statt 2/3. D: 90° wäre beim Grenzfall der Winkel des gebrochenen Strahls; gefragt ist der kleinere Einfallsgrenzwinkel im Glas. E: sinαGrenz=1/1.5=2/3; der Winkel wird zum Lot gemessen. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Grenzwinkel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzwinkel"
+      ],
+      "questionGoal": "Grenzwinkel",
+      "structuredExplanation": {
+        "coreIdea": "Grenzwinkel",
+        "correctReasoning": "sinαGrenz=1/1.5=2/3; der Winkel wird zum Lot gemessen.",
+        "wrongAnswerExplanations": {
+          "A": "sin30°=0,5 unterschätzt das erforderliche Verhältnis n2/n1=2/3.",
+          "B": "sin60° ist ungefähr 0,866 und nicht das geforderte Indexverhältnis 0,667.",
+          "C": "19,5° gehört hier nicht zu arcsin(1/1,5); sein Sinus ist nur ungefähr 1/3 statt 2/3.",
+          "D": "90° wäre beim Grenzfall der Winkel des gebrochenen Strahls; gefragt ist der kleinere Einfallsgrenzwinkel im Glas."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Warum wird violettes Licht in einem Glasprisma mit normaler Dispersion stärker abgelenkt als rotes?",
+      "options": [
+        {
+          "text": "Die Frequenz violetten Lichts halbiert sich beim Eintritt ins Glas.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Violettes Licht hat im Vakuum eine höhere Geschwindigkeit als rotes.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Rotes Licht besitzt grundsätzlich den grösseren Brechungsindex bei normaler Dispersion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Brechungsindex ist für Violett grösser.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Das Prisma erzeugt erst die unterschiedlichen Frequenzen aus einer einzigen monochromatischen Frequenz.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Passive Brechung halbiert die Frequenz nicht; Frequenz bleibt beim Übergang erhalten, während Geschwindigkeit und Wellenlänge sich ändern. B: Im Vakuum besitzen beide Farben dieselbe Ausbreitungsgeschwindigkeit c; die Ablenkungsdifferenz entsteht erst aus n(λ) im Glas. C: Bei normaler Dispersion im betrachteten Bereich liegt der Index für Violett höher, nicht für Rot. D: Die Wellenlängenabhängigkeit des Brechungsindex zerlegt eine Mischung vorhandener Frequenzen. E: Das Prisma trennt bereits im einfallenden Licht enthaltene Frequenzen räumlich; es erzeugt sie nicht aus einem monochromatischen Strahl. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Normale Dispersion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Normale Dispersion"
+      ],
+      "questionGoal": "Normale Dispersion",
+      "structuredExplanation": {
+        "coreIdea": "Normale Dispersion",
+        "correctReasoning": "Die Wellenlängenabhängigkeit des Brechungsindex zerlegt eine Mischung vorhandener Frequenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Passive Brechung halbiert die Frequenz nicht; Frequenz bleibt beim Übergang erhalten, während Geschwindigkeit und Wellenlänge sich ändern.",
+          "B": "Im Vakuum besitzen beide Farben dieselbe Ausbreitungsgeschwindigkeit c; die Ablenkungsdifferenz entsteht erst aus n(λ) im Glas.",
+          "C": "Bei normaler Dispersion im betrachteten Bereich liegt der Index für Violett höher, nicht für Rot.",
+          "E": "Das Prisma trennt bereits im einfallenden Licht enthaltene Frequenzen räumlich; es erzeugt sie nicht aus einem monochromatischen Strahl."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Zwei kohärente Wellen gleicher Amplitude und gleicher ursprünglicher Phase treffen mit Gangunterschied λ/2 zusammen. Was entsteht am betrachteten Punkt?",
+      "options": [
+        {
+          "text": "Konstruktive Interferenz mit doppelter Frequenz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Immer unveränderte Intensität wie bei nur einer Welle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Welle mit halber Frequenz ohne Interferenz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Destruktive Interferenz bis zur Auslöschung im idealen Fall.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Konstruktive Interferenz mit doppelter Amplitude.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Lineare Überlagerung verdoppelt die Frequenz nicht, und die gegenphasigen Felder löschen sich am betrachteten Punkt aus. B: Bei kohärenten Wellen hängt die lokale Intensität von der relativen Phase ab und ist deshalb nicht stets die Einzelwellenintensität. C: Ein passiver Gangunterschied halbiert die Frequenz der Wellen nicht; er verändert ihre relative Phase. D: λ/2 entspricht π Phasendifferenz; gleiche gegenphasige Amplituden kompensieren sich. E: Doppelte Amplitude erfordert hier gleiche Phase; λ/2 Gangunterschied erzeugt stattdessen Gegenphase. Quelle: Originalunterlagen, PDF-S. 20–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Interferenzbedingung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interferenzbedingung"
+      ],
+      "questionGoal": "Interferenzbedingung",
+      "structuredExplanation": {
+        "coreIdea": "Interferenzbedingung",
+        "correctReasoning": "λ/2 entspricht π Phasendifferenz; gleiche gegenphasige Amplituden kompensieren sich.",
+        "wrongAnswerExplanations": {
+          "A": "Lineare Überlagerung verdoppelt die Frequenz nicht, und die gegenphasigen Felder löschen sich am betrachteten Punkt aus.",
+          "B": "Bei kohärenten Wellen hängt die lokale Intensität von der relativen Phase ab und ist deshalb nicht stets die Einzelwellenintensität.",
+          "C": "Ein passiver Gangunterschied halbiert die Frequenz der Wellen nicht; er verändert ihre relative Phase.",
+          "E": "Doppelte Amplitude erfordert hier gleiche Phase; λ/2 Gangunterschied erzeugt stattdessen Gegenphase."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Ein Gitter hat d=2.0 µm und wird senkrecht mit λ=500 nm beleuchtet. Welcher Winkel gehört zum Maximum erster Ordnung?",
+      "options": [
+        {
+          "text": "Ungefähr 90.0°.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ungefähr 45.0°.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ungefähr 7.2°.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ungefähr 30.0°.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ungefähr 14.5°.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 90° würde d sinα=2000 nm ergeben und gehört nicht zur ersten Ordnung mit 500 nm Gangunterschied. B: sin45°≈0,707 erfüllt für k=1 nicht d sinα=500 nm. C: Für 7,2° ist sinα ungefähr 0,125 statt 0,25; der erste Ordnungswinkel wurde zu klein berechnet. D: 30° würde bei diesen Werten k=2 entsprechen, weil d sin30°=1000 nm. E: d sinα=kλ mit k=1 ergibt sinα=0.25. Quelle: Originalunterlagen, PDF-S. 24–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Gitterbeugung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gitterbeugung"
+      ],
+      "questionGoal": "Gitterbeugung",
+      "structuredExplanation": {
+        "coreIdea": "Gitterbeugung",
+        "correctReasoning": "d sinα=kλ mit k=1 ergibt sinα=0.25.",
+        "wrongAnswerExplanations": {
+          "A": "90° würde d sinα=2000 nm ergeben und gehört nicht zur ersten Ordnung mit 500 nm Gangunterschied.",
+          "B": "sin45°≈0,707 erfüllt für k=1 nicht d sinα=500 nm.",
+          "C": "Für 7,2° ist sinα ungefähr 0,125 statt 0,25; der erste Ordnungswinkel wurde zu klein berechnet.",
+          "D": "30° würde bei diesen Werten k=2 entsprechen, weil d sin30°=1000 nm."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Eine dünne Sammellinse hat f=10 cm. Ein realer Gegenstand steht in g=15 cm Abstand. Wo liegt das reelle Bild?",
+      "options": [
+        {
+          "text": "6 cm hinter der Linse.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "30 cm hinter der Linse.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Unendlich weit entfernt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "15 cm hinter der Linse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "30 cm vor der Linse als virtuelles Bild.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 6 cm ergibt sich bei falschem Addieren der Kehrwerte; zur Bildweite gilt 1/b=1/f−1/g. B: 1/b=1/10−1/15=1/30 cm⁻¹; b ist positiv. C: Ein Bild im Unendlichen entsteht bei g=f; der Gegenstand liegt hier jedoch bei 15 statt 10 cm. D: g=b=15 cm ergäbe f=7,5 cm und ist mit der vorgegebenen Brennweite 10 cm nicht vereinbar. E: Da g>f ist, ergibt die Linsenformel hier b>0: Das Bild ist reell hinter der Linse statt virtuell davor. Quelle: Originalunterlagen, PDF-S. 43–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Linsenrechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Linsenrechnung"
+      ],
+      "questionGoal": "Linsenrechnung",
+      "structuredExplanation": {
+        "coreIdea": "Linsenrechnung",
+        "correctReasoning": "1/b=1/10−1/15=1/30 cm⁻¹; b ist positiv.",
+        "wrongAnswerExplanations": {
+          "A": "6 cm ergibt sich bei falschem Addieren der Kehrwerte; zur Bildweite gilt 1/b=1/f−1/g.",
+          "C": "Ein Bild im Unendlichen entsteht bei g=f; der Gegenstand liegt hier jedoch bei 15 statt 10 cm.",
+          "D": "g=b=15 cm ergäbe f=7,5 cm und ist mit der vorgegebenen Brennweite 10 cm nicht vereinbar.",
+          "E": "Da g>f ist, ergibt die Linsenformel hier b>0: Das Bild ist reell hinter der Linse statt virtuell davor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Bei g=15 cm und b=30 cm einer Sammellinse: Wie gross ist der Betrag des linearen Bildmassstabs und wie ist die Orientierung?",
+      "options": [
+        {
+          "text": "2, umgekehrt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "1, umgekehrt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0.5, aufrecht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2, aufrecht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.5, umgekehrt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Betrag ist b/g=2; das reelle Bild einer einzelnen Sammellinse ist hier invertiert. B: Ein Betragsmassstab von 1 würde g=b voraussetzen; hier ist die Bildweite doppelt so gross. C: 0,5 verwendet das umgekehrte Verhältnis g/b; zusätzlich ist das reelle Bild hier nicht aufrecht. D: Der Betragsmassstab 2 stimmt, aber das reelle Bild dieser einzelnen Sammellinse ist umgekehrt. E: Die Orientierung stimmt, doch der Betrag ist b/g=30/15=2 statt g/b=0,5. Quelle: Originalunterlagen, PDF-S. 44,49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Bildmassstab"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bildmassstab"
+      ],
+      "questionGoal": "Bildmassstab",
+      "structuredExplanation": {
+        "coreIdea": "Bildmassstab",
+        "correctReasoning": "Der Betrag ist b/g=2; das reelle Bild einer einzelnen Sammellinse ist hier invertiert.",
+        "wrongAnswerExplanations": {
+          "B": "Ein Betragsmassstab von 1 würde g=b voraussetzen; hier ist die Bildweite doppelt so gross.",
+          "C": "0,5 verwendet das umgekehrte Verhältnis g/b; zusätzlich ist das reelle Bild hier nicht aufrecht.",
+          "D": "Der Betragsmassstab 2 stimmt, aber das reelle Bild dieser einzelnen Sammellinse ist umgekehrt.",
+          "E": "Die Orientierung stimmt, doch der Betrag ist b/g=30/15=2 statt g/b=0,5."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Die Beleuchtungswellenlänge wird bei gleicher numerischer Apertur halbiert. Wie ändert sich die beugungsbedingte kleinste trennbare Struktur im gleichen Auflösungskriterium näherungsweise?",
+      "options": [
+        {
+          "text": "Sie halbiert sich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie wird allein durch die Okularvergrösserung festgelegt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie bleibt gleich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie vervierfacht sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Für ein festes Kriterium gilt d proportional zu λ/NA; kürzere Wellenlänge verbessert die Auflösung. B: Eine Verdopplung der kleinsten trennbaren Struktur wäre bei längerer und nicht bei halbierter Wellenlänge zu erwarten. C: Okularvergrösserung stellt vorhandene Details grösser dar, ersetzt aber keine vom Objektiv nicht aufgelöste Strukturinformation. D: Bei festgehaltener NA ist die Auflösungsgrenze proportional zu λ und bleibt daher nicht unverändert. E: Ein Faktor vier folgt nicht aus der linearen λ-Abhängigkeit des gleichen Auflösungskriteriums. Quelle: Originalunterlagen, PDF-S. 31–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Auflösungsvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Auflösungsvergleich"
+      ],
+      "questionGoal": "Auflösungsvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Auflösungsvergleich",
+        "correctReasoning": "Für ein festes Kriterium gilt d proportional zu λ/NA; kürzere Wellenlänge verbessert die Auflösung.",
+        "wrongAnswerExplanations": {
+          "B": "Eine Verdopplung der kleinsten trennbaren Struktur wäre bei längerer und nicht bei halbierter Wellenlänge zu erwarten.",
+          "C": "Okularvergrösserung stellt vorhandene Details grösser dar, ersetzt aber keine vom Objektiv nicht aufgelöste Strukturinformation.",
+          "D": "Bei festgehaltener NA ist die Auflösungsgrenze proportional zu λ und bleibt daher nicht unverändert.",
+          "E": "Ein Faktor vier folgt nicht aus der linearen λ-Abhängigkeit des gleichen Auflösungskriteriums."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Welche Kombination beschreibt das Elektronenmikroskop korrekt?",
+      "options": [
+        {
+          "text": "Sichtbare Photonen; Fokussierung ausschliesslich durch eine Glaslupe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Längere Elektronenwellenlänge als sichtbares Licht als Ursache höherer Auflösung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kurze de-Broglie-Wellenlänge; Fokussierung durch elektrische/magnetische Felder.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Elektronen ohne Welleneigenschaften; deshalb keine Beugung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur mechanische Spiegel ohne Felder; Elektronen reagieren nicht auf Ladung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sichtbare Photonen und eine Glaslupe beschreiben Lichtoptik; das Elektronenmikroskop verwendet einen gelenkten Elektronenstrahl. B: Eine längere verwendete Wellenlänge würde die Beugungsgrenze verschlechtern; schnelle Elektronen ermöglichen im Gegenteil sehr kurze Materiewellenlängen. C: Elektronen haben λ=h/p und werden durch elektromagnetische Kräfte gelenkt; kürzere λ kann eine höhere Auflösung ermöglichen. D: Elektronen besitzen Materiewelleneigenschaften und können gebeugt werden; gerade ihre kurze Wellenlänge ist für hohe Auflösung wichtig. E: Elektronen tragen Ladung und werden durch elektrische und magnetische Felder beeinflusst; mechanische Spiegel ersetzen diese Elektronenoptik nicht. Quelle: Originalunterlagen, PDF-S. 37–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Elektronenoptik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektronenoptik"
+      ],
+      "questionGoal": "Elektronenoptik",
+      "structuredExplanation": {
+        "coreIdea": "Elektronenoptik",
+        "correctReasoning": "Elektronen haben λ=h/p und werden durch elektromagnetische Kräfte gelenkt; kürzere λ kann eine höhere Auflösung ermöglichen.",
+        "wrongAnswerExplanations": {
+          "A": "Sichtbare Photonen und eine Glaslupe beschreiben Lichtoptik; das Elektronenmikroskop verwendet einen gelenkten Elektronenstrahl.",
+          "B": "Eine längere verwendete Wellenlänge würde die Beugungsgrenze verschlechtern; schnelle Elektronen ermöglichen im Gegenteil sehr kurze Materiewellenlängen.",
+          "D": "Elektronen besitzen Materiewelleneigenschaften und können gebeugt werden; gerade ihre kurze Wellenlänge ist für hohe Auflösung wichtig.",
+          "E": "Elektronen tragen Ladung und werden durch elektrische und magnetische Felder beeinflusst; mechanische Spiegel ersetzen diese Elektronenoptik nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zu Reflexion und Brechung.",
+      "options": [
+        {
+          "text": "Beim Übergang in ein Medium mit höherem n steigt die Lichtgeschwindigkeit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Totalreflexion ist bei Übergang vom niedrigeren zum höheren n stets möglich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Wellenlänge ändert sich bei gleichbleibender Frequenz proportional zur Phasengeschwindigkeit.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Reflexionswinkel werden zum Lot gemessen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: c=c0/n sinkt. B: Sie benötigt n1>n2 und einen ausreichend grossen Einfallswinkel. C: Dies folgt aus c=λf. D: Die Winkelkonvention ist für das Reflexionsgesetz wesentlich. Quelle: Originalunterlagen, PDF-S. 7,10–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Grenzflächen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzflächen"
+      ],
+      "questionGoal": "Grenzflächen",
+      "structuredExplanation": {
+        "coreIdea": "Grenzflächen",
+        "correctReasoning": "Dies folgt aus c=λf. Die Winkelkonvention ist für das Reflexionsgesetz wesentlich.",
+        "wrongAnswerExplanations": {
+          "A": "c=c0/n sinkt.",
+          "B": "Sie benötigt n1>n2 und einen ausreichend grossen Einfallswinkel.",
+          "C": "Dies folgt aus c=λf.",
+          "D": "Die Winkelkonvention ist für das Reflexionsgesetz wesentlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen für ein Glasprisma mit normaler Dispersion und ein Gitter bei senkrechtem Einfall.",
+      "options": [
+        {
+          "text": "Am gleichen Gitter ist der Beugungswinkel einer festen Ordnung für längere λ grösser.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Brechung und Gitterbeugung müssen deshalb dieselbe Reihenfolge aller Farben ergeben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Im Glasprisma wird violettes Licht typischerweise stärker gebrochen als rotes.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Frequenz eines monochromatischen Strahls wird durch passive Brechung nicht beliebig umgewandelt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: sinα=kλ/d. B: Die zugrundeliegenden Winkelbeziehungen unterscheiden sich. C: Der Index ist im normalen sichtbaren Dispersionsbereich für Violett höher. D: Die Quelle legt die Frequenz fest; c und λ ändern sich. Quelle: Originalunterlagen, PDF-S. 16–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Dispersion und Beugung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dispersion und Beugung"
+      ],
+      "questionGoal": "Dispersion und Beugung",
+      "structuredExplanation": {
+        "coreIdea": "Dispersion und Beugung",
+        "correctReasoning": "sinα=kλ/d. Der Index ist im normalen sichtbaren Dispersionsbereich für Violett höher. Die Quelle legt die Frequenz fest; c und λ ändern sich.",
+        "wrongAnswerExplanations": {
+          "A": "sinα=kλ/d.",
+          "B": "Die zugrundeliegenden Winkelbeziehungen unterscheiden sich.",
+          "C": "Der Index ist im normalen sichtbaren Dispersionsbereich für Violett höher.",
+          "D": "Die Quelle legt die Frequenz fest; c und λ ändern sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zur Wellenoptik.",
+      "options": [
+        {
+          "text": "Nach Huygens kann jeder Punkt einer Wellenfront als Ausgangspunkt von Elementarwellen betrachtet werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Beugung verschwindet grundsätzlich, wenn die Öffnung ungefähr so gross wie λ ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Destruktive Interferenz zweier gleicher Wellen am Punkt beweist Vernichtung der Gesamtenergie im gesamten Raum.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Interferenz bedeutet die Addition von Frequenzen statt von Auslenkungen bzw. Feldern.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Überlagerung konstruiert die nächste Wellenfront. B: In diesem Bereich werden Beugungseffekte besonders relevant. C: Energie wird räumlich umverteilt; lokale Auslöschung ist keine globale Energievernichtung. D: Bei Überlagerung werden die momentanen Amplituden/Felder addiert. Quelle: Originalunterlagen, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Wellenbeschreibung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wellenbeschreibung"
+      ],
+      "questionGoal": "Wellenbeschreibung",
+      "structuredExplanation": {
+        "coreIdea": "Wellenbeschreibung",
+        "correctReasoning": "Ihre Überlagerung konstruiert die nächste Wellenfront.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Überlagerung konstruiert die nächste Wellenfront.",
+          "B": "In diesem Bereich werden Beugungseffekte besonders relevant.",
+          "C": "Energie wird räumlich umverteilt; lokale Auslöschung ist keine globale Energievernichtung.",
+          "D": "Bei Überlagerung werden die momentanen Amplituden/Felder addiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zum einfachen Lichtmikroskop.",
+      "options": [
+        {
+          "text": "Das Objektiv erzeugt ein reelles umgekehrtes Zwischenbild.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Liegt das Zwischenbild in der Brennebene des Okulars, treten die betreffenden Strahlen näherungsweise parallel aus.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Okular muss das Zwischenbild stets direkt auf einen entfernten Schirm projizieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein virtuelles Bild ist ohne weitere Optik direkt auf einem Schirm auffangbar.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dieses wird anschliessend mit dem Okular betrachtet. B: Das virtuelle Bild liegt dann im Unendlichen. C: Im beschriebenen entspannten Sehen erzeugt es ein virtuelles Bild mit parallelen austretenden Strahlen. D: Nur gedachte Rückverlängerungen treffen sich dort. Quelle: Originalunterlagen, PDF-S. 43–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Mikroskopstrahlengang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mikroskopstrahlengang"
+      ],
+      "questionGoal": "Mikroskopstrahlengang",
+      "structuredExplanation": {
+        "coreIdea": "Mikroskopstrahlengang",
+        "correctReasoning": "Dieses wird anschliessend mit dem Okular betrachtet. Das virtuelle Bild liegt dann im Unendlichen.",
+        "wrongAnswerExplanations": {
+          "A": "Dieses wird anschliessend mit dem Okular betrachtet.",
+          "B": "Das virtuelle Bild liegt dann im Unendlichen.",
+          "C": "Im beschriebenen entspannten Sehen erzeugt es ein virtuelles Bild mit parallelen austretenden Strahlen.",
+          "D": "Nur gedachte Rückverlängerungen treffen sich dort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zum beugungsbegrenzten Auflösungsvermögen.",
+      "options": [
+        {
+          "text": "Eine beliebig hohe Okularvergrösserung beseitigt eine nicht aufgelöste Objektivstruktur.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die numerische Apertur enthält Brechungsindex und halben Öffnungswinkel: NA=n sinσ.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Grössere NA kann bei gleicher λ kleinere Strukturen trennbar machen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Immersionsöl verbessert die beugungsbegrenzte Auflösung nur durch höhere Helligkeit bei unveränderter numerischer Apertur.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Leere Vergrösserung fügt keine fehlende Strukturinformation hinzu. B: Sie beschreibt, welche Winkelanteile erfasst werden. C: Die Auflösungsgrenze skaliert invers mit NA. D: Öl erhöht die nutzbare optische Kopplung und kann über n und erfasste Winkel eine grössere NA ermöglichen. Quelle: Originalunterlagen, PDF-S. 32–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Apertur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Apertur"
+      ],
+      "questionGoal": "Apertur",
+      "structuredExplanation": {
+        "coreIdea": "Apertur",
+        "correctReasoning": "Sie beschreibt, welche Winkelanteile erfasst werden. Die Auflösungsgrenze skaliert invers mit NA.",
+        "wrongAnswerExplanations": {
+          "A": "Leere Vergrösserung fügt keine fehlende Strukturinformation hinzu.",
+          "B": "Sie beschreibt, welche Winkelanteile erfasst werden.",
+          "C": "Die Auflösungsgrenze skaliert invers mit NA.",
+          "D": "Öl erhöht die nutzbare optische Kopplung und kann über n und erfasste Winkel eine grössere NA ermöglichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zur dünnen Sammellinse mit f>0 und realem Gegenstand.",
+      "options": [
+        {
+          "text": "Bei g=f sind die austretenden Strahlen eines Gegenstandspunktes näherungsweise parallel.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei g<f entsteht ein reelles umgekehrtes Bild hinter der Linse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei g=2f liegt das reelle Bild bei b=2f.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei f<g<2f ist das reelle Bild vergrössert.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Bildweite geht im idealen Modell gegen unendlich. B: Es entsteht ein aufrechtes virtuelles Bild auf der Gegenstandsseite. C: Die Linsenformel ergibt einen Betragsmassstab eins. D: Aus der Linsenformel folgt b>2f und b/g>1. Quelle: Originalunterlagen, PDF-S. 44–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Reelle und virtuelle Bilder"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reelle und virtuelle Bilder"
+      ],
+      "questionGoal": "Reelle und virtuelle Bilder",
+      "structuredExplanation": {
+        "coreIdea": "Reelle und virtuelle Bilder",
+        "correctReasoning": "Die Bildweite geht im idealen Modell gegen unendlich. Die Linsenformel ergibt einen Betragsmassstab eins. Aus der Linsenformel folgt b>2f und b/g>1.",
+        "wrongAnswerExplanations": {
+          "A": "Die Bildweite geht im idealen Modell gegen unendlich.",
+          "B": "Es entsteht ein aufrechtes virtuelles Bild auf der Gegenstandsseite.",
+          "C": "Die Linsenformel ergibt einen Betragsmassstab eins.",
+          "D": "Aus der Linsenformel folgt b>2f und b/g>1."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zur Feldlinse im beschriebenen Mikroskop.",
+      "options": [
+        {
+          "text": "Sie muss im Dünnlinsenmodell den Bildmassstab am Ort des Zwischenbilds verändern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ohne Feldlinse gelangt definitionsgemäss überhaupt kein Licht ins Okular.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Feldlinse am Zwischenbild ersetzt das Objektiv als einzige abbildende Linse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie kann mehr Strahlen vom Bildrand in das Okular lenken und das Gesichtsfeld vergrössern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Am Zwischenbildpunkt bleibt dieser in der beschriebenen Anordnung erhalten. B: Es kann ein kleineres Gesichtsfeld bleiben. C: Objektiv und Okular behalten ihre Aufgaben. D: Dies vermindert die geometrische Begrenzung des sichtbaren Ausschnitts. Quelle: Originalunterlagen, PDF-S. 50–52.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Feldlinse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Feldlinse"
+      ],
+      "questionGoal": "Feldlinse",
+      "structuredExplanation": {
+        "coreIdea": "Feldlinse",
+        "correctReasoning": "Dies vermindert die geometrische Begrenzung des sichtbaren Ausschnitts.",
+        "wrongAnswerExplanations": {
+          "A": "Am Zwischenbildpunkt bleibt dieser in der beschriebenen Anordnung erhalten.",
+          "B": "Es kann ein kleineres Gesichtsfeld bleiben.",
+          "C": "Objektiv und Okular behalten ihre Aufgaben.",
+          "D": "Dies vermindert die geometrische Begrenzung des sichtbaren Ausschnitts."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp07_08_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP07/08",
+      "stem": "Beurteilen Sie die Aussagen zur Elektronenoptik.",
+      "options": [
+        {
+          "text": "Ein elektrisches Feld übt auf ein Elektron eine Kraft entgegen der Feldrichtung aus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die magnetische Lorentzkraft muss parallel zur Geschwindigkeit wirken und beschleunigt im reinen Magnetfeld die Energie.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Elektron gewinnt beim Durchlaufen einer Beschleunigungsspannung des Betrags U aus Ruhe kinetische Energie eU.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die de-Broglie-Wellenlänge wächst bei grösserem Impuls.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für q=−e gilt F=qE. B: q(v×B) steht senkrecht zu v und verrichtet ideal keine Arbeit. C: Die Energiebilanz gilt; bei hohen Geschwindigkeiten ist für p eine relativistische Rechnung nötig. D: λ=h/p nimmt ab. Quelle: Originalunterlagen, PDF-S. 38–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP07/08",
+        "Elektronenbewegung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektronenbewegung"
+      ],
+      "questionGoal": "Elektronenbewegung",
+      "structuredExplanation": {
+        "coreIdea": "Elektronenbewegung",
+        "correctReasoning": "Für q=−e gilt F=qE. Die Energiebilanz gilt; bei hohen Geschwindigkeiten ist für p eine relativistische Rechnung nötig.",
+        "wrongAnswerExplanations": {
+          "A": "Für q=−e gilt F=qE.",
+          "B": "q(v×B) steht senkrecht zu v und verrichtet ideal keine Arbeit.",
+          "C": "Die Energiebilanz gilt; bei hohen Geschwindigkeiten ist für p eine relativistische Rechnung nötig.",
+          "D": "λ=h/p nimmt ab."
+        }
+      }
+    }
+  ]
+}

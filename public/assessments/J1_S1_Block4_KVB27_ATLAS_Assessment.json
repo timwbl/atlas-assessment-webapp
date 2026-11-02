@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block4_kvb27_20261102",
+  "lectureCode": "KVB27",
+  "title": "Bakterien",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB27_Bakterien. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Typische Merkmale von absoluten Regeln getrennt: Archaeen, lineare/mehrere Chromosomen und fehlende Zellwand berücksichtigt. Biofilm-Toleranz nicht mit erblicher Resistenz gleichgesetzt. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Bakterielle Zellorganisation und wesentliche Unterschiede zu Eukaryoten erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Membran, Peptidoglycan und grampositive/gramnegative Zellhülle unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Pili, Kapsel, Biofilm und Flagellen funktionell zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Wachstum, Oberflächen-Volumen-Verhältnis und Endosporen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb27_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Was bezeichnet das Nukleoid einer typischen Bakterienzelle?",
+      "options": [
+        {
+          "text": "Ein von Kernhülle umschlossener Chromosomensatz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein einzelnes obligatorisches Resistenzplasmid.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der ribosomenfreie Raum ausserhalb der Cytoplasmamembran.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Den nicht kernmembranumhüllten Bereich mit dem Bakterienchromosom.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der gesamte peptidoglycanhaltige Zellwandsack.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bakterien besitzen keine solche Kernhülle. B: Nukleoid und fakultative Plasmide sind verschieden. C: Das Nukleoid liegt im Zellinneren. D: Bakterien besitzen keinen eukaryotischen Zellkern. E: Dieser ist nicht die chromosomale Region. Quelle: Originalunterlagen, PDF-S. 4,6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Nukleoid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nukleoid"
+      ],
+      "questionGoal": "Nukleoid",
+      "structuredExplanation": {
+        "coreIdea": "Nukleoid",
+        "correctReasoning": "Bakterien besitzen keinen eukaryotischen Zellkern.",
+        "wrongAnswerExplanations": {
+          "A": "Bakterien besitzen keine solche Kernhülle.",
+          "B": "Nukleoid und fakultative Plasmide sind verschieden.",
+          "C": "Das Nukleoid liegt im Zellinneren.",
+          "E": "Dieser ist nicht die chromosomale Region."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q02",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Untereinheiten bilden das bakterielle 70S-Ribosom?",
+      "options": [
+        {
+          "text": "30S und 40S.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "20S und 50S.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "40S und 60S.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "70S und 80S.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "30S und 50S.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die grosse bakterielle Untereinheit ist 50S. B: Diese Kombination beschreibt kein bakterielles Standardribosom. C: Dies sind die eukaryotischen cytosolischen Untereinheiten. D: Dies sind Gesamtbezeichnungen verschiedener Ribosomentypen. E: Sedimentationskoeffizienten addieren sich nicht arithmetisch. Quelle: Originalunterlagen, PDF-S. 4,8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Ribosomen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ribosomen"
+      ],
+      "questionGoal": "Ribosomen",
+      "structuredExplanation": {
+        "coreIdea": "Ribosomen",
+        "correctReasoning": "Sedimentationskoeffizienten addieren sich nicht arithmetisch.",
+        "wrongAnswerExplanations": {
+          "A": "Die grosse bakterielle Untereinheit ist 50S.",
+          "B": "Diese Kombination beschreibt kein bakterielles Standardribosom.",
+          "C": "Dies sind die eukaryotischen cytosolischen Untereinheiten.",
+          "D": "Dies sind Gesamtbezeichnungen verschiedener Ribosomentypen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Wo ist bei einem atmenden Bakterium ohne Mitochondrien die respiratorische Energiekonservierung lokalisiert?",
+      "options": [
+        {
+          "text": "An der Cytoplasmamembran.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich an einer äusseren Kapselschicht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "An der äusseren Membran jedes gramnegativen Bakteriums.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur an frei gelösten DNA-Molekülen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "An einer membranumhüllten Kernmembran wie bei Eukaryoten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dort können Atmungskette und ATP-Synthase arbeiten. B: Die Kapsel ist keine energiekonservierende Membran. C: Die zentrale respiratorische Kopplung liegt an der Cytoplasmamembran. D: Die elektrochemische Kopplung benötigt eine Membran. E: Diese fehlt Bakterien. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Energiegewinnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiegewinnung"
+      ],
+      "questionGoal": "Energiegewinnung",
+      "structuredExplanation": {
+        "coreIdea": "Energiegewinnung",
+        "correctReasoning": "Dort können Atmungskette und ATP-Synthase arbeiten.",
+        "wrongAnswerExplanations": {
+          "B": "Die Kapsel ist keine energiekonservierende Membran.",
+          "C": "Die zentrale respiratorische Kopplung liegt an der Cytoplasmamembran.",
+          "D": "Die elektrochemische Kopplung benötigt eine Membran.",
+          "E": "Diese fehlt Bakterien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Warum schützt Peptidoglycan vor osmotischer Lyse?",
+      "options": [
+        {
+          "text": "Es entfernt aktiv sämtliche intrazellulären Osmolyte.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sein vernetztes Gerüst begrenzt die Ausdehnung bei hohem Innendruck.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es ersetzt die selektive Cytoplasmamembran vollständig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es gleicht Innen- und Aussenosmolarität grundsätzlich augenblicklich an.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es hydrolysiert alle einströmenden Wassermoleküle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Wand ist keine entsprechende Pumpe. B: Der Mureinsacculus trägt zur mechanischen Stabilität bei. C: Die Membran bleibt für Abgrenzung und Transport nötig. D: Mechanischer Halt erfordert keine solche Angleichung. E: Stabilisierung beruht auf dem vernetzten Gerüst. Quelle: Originalunterlagen, PDF-S. 11–13,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Mureinfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mureinfunktion"
+      ],
+      "questionGoal": "Mureinfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Mureinfunktion",
+        "correctReasoning": "Der Mureinsacculus trägt zur mechanischen Stabilität bei.",
+        "wrongAnswerExplanations": {
+          "A": "Die Wand ist keine entsprechende Pumpe.",
+          "C": "Die Membran bleibt für Abgrenzung und Transport nötig.",
+          "D": "Mechanischer Halt erfordert keine solche Angleichung.",
+          "E": "Stabilisierung beruht auf dem vernetzten Gerüst."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Eine Zelle bleibt nach der Gramfärbung violett. Welche Zellhülleneigenschaft passt typischerweise?",
+      "options": [
+        {
+          "text": "Eine dicke Peptidoglycanschicht einer grampositiven Zelle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine dünne Mureinschicht mit typischer äusserer Membran.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine fehlende Mureinschicht wie bei Mycoplasmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine ausschliessliche Zunahme der Kapseldicke ohne entsprechende Wand.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das ausschliessliche Vorhandensein vieler Flagellen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie hält den Farbstoffkomplex bei der Differenzialentfärbung zurück. B: Dies passt eher zur gramnegativen Architektur. C: Dies erklärt keine typische grampositive Reaktion. D: Kapsel und Gramwand sind verschieden. E: Flagellenzahl bestimmt nicht die Gramreaktion. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Gramreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gramreaktion"
+      ],
+      "questionGoal": "Gramreaktion",
+      "structuredExplanation": {
+        "coreIdea": "Gramreaktion",
+        "correctReasoning": "Sie hält den Farbstoffkomplex bei der Differenzialentfärbung zurück.",
+        "wrongAnswerExplanations": {
+          "B": "Dies passt eher zur gramnegativen Architektur.",
+          "C": "Dies erklärt keine typische grampositive Reaktion.",
+          "D": "Kapsel und Gramwand sind verschieden.",
+          "E": "Flagellenzahl bestimmt nicht die Gramreaktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Struktur wird durch Lysozym unmittelbar angegriffen?",
+      "options": [
+        {
+          "text": "Die glycosidische Verbindung zwischen Zuckerbausteinen des Peptidoglycans.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Peptidquerverbindungen als Transpeptidasehemmung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Phospholipide der Cytoplasmamembran als Detergenswirkung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Phosphodiesterbindungen der bakteriellen DNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ribosomale Peptidyltransferase als Translationshemmung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dadurch wird das stabilisierende Mureinnetz geschwächt. B: Dies ist eher das klassische β-Lactam-Ziel. C: Lysozym spaltet Mureinzuckerbindungen. D: Dies wäre Nukleasewirkung. E: Dies ist kein unmittelbares Lysozymziel. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Lysozym"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lysozym"
+      ],
+      "questionGoal": "Lysozym",
+      "structuredExplanation": {
+        "coreIdea": "Lysozym",
+        "correctReasoning": "Dadurch wird das stabilisierende Mureinnetz geschwächt.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist eher das klassische β-Lactam-Ziel.",
+          "C": "Lysozym spaltet Mureinzuckerbindungen.",
+          "D": "Dies wäre Nukleasewirkung.",
+          "E": "Dies ist kein unmittelbares Lysozymziel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Warum wirkt ein ausschliesslicher Hemmstoff der Peptidoglycansynthese nicht über diesen Mechanismus gegen Mycoplasmen?",
+      "options": [
+        {
+          "text": "Eine besonders dicke Peptidoglycanschicht verhindert jedes β-Lactamziel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mycoplasmen besitzen keine Peptidoglycanzellwand.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle ihre PBP besitzen zwingend dieselbe mecA-vermittelte Veränderung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die äussere Membran bindet jeden Wirkstoff irreversibel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie vermehren sich grundsätzlich ohne Proteinsynthese.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zellwand fehlt, statt besonders dick zu sein. B: Das entsprechende Angriffsziel fehlt. C: Das Fehlen der Wand ist die grundlegende Erklärung. D: Mycoplasmen besitzen keine typische gramnegative Aussenmembran. E: Auch Mycoplasmen benötigen Translation. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Mycoplasmen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mycoplasmen"
+      ],
+      "questionGoal": "Mycoplasmen",
+      "structuredExplanation": {
+        "coreIdea": "Mycoplasmen",
+        "correctReasoning": "Das entsprechende Angriffsziel fehlt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zellwand fehlt, statt besonders dick zu sein.",
+          "C": "Das Fehlen der Wand ist die grundlegende Erklärung.",
+          "D": "Mycoplasmen besitzen keine typische gramnegative Aussenmembran.",
+          "E": "Auch Mycoplasmen benötigen Translation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Ein Bakterium haftet durch spezifische Oberflächenproteine an Epithelrezeptoren. Welche Struktur ist dafür besonders typisch?",
+      "options": [
+        {
+          "text": "Rotierende Flagellen als primäre spezifische Adhäsine im Kursmodell.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der intrazelluläre Nucleoidbereich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Mureinnetz als alleiniger spezifischer Haftpili-Ersatz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Intrazelluläre Speichergranula.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Adhäsintragende Fimbrien beziehungsweise Haftpili.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Flagellen vermitteln vor allem Motilität. B: Er bindet nicht direkt an äussere Epithelrezeptoren. C: Spezifische Adhäsine sind hier charakteristisch. D: Diese dienen nicht der typischen Rezeptoradhäsion. E: Sie unterstützen Kolonisation durch spezifische Bindung. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Haftpili"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Haftpili"
+      ],
+      "questionGoal": "Haftpili",
+      "structuredExplanation": {
+        "coreIdea": "Haftpili",
+        "correctReasoning": "Sie unterstützen Kolonisation durch spezifische Bindung.",
+        "wrongAnswerExplanations": {
+          "A": "Flagellen vermitteln vor allem Motilität.",
+          "B": "Er bindet nicht direkt an äussere Epithelrezeptoren.",
+          "C": "Spezifische Adhäsine sind hier charakteristisch.",
+          "D": "Diese dienen nicht der typischen Rezeptoradhäsion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Funktion haben Konjugationspili im beschriebenen System?",
+      "options": [
+        {
+          "text": "Sie bilden primär den rotierenden Antrieb beim Schwimmen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie vermitteln ausschliesslich Aufnahme freier DNA ohne Donorkontakt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie unterstützen den Kontakt für DNA-Transfer zwischen Bakterien.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sie verpacken DNA in Phagenkapside.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie ersetzen die Teilungsspindel bei eukaryotischer Mitose.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dafür dienen Flagellen. B: Dies beschreibt Transformation, nicht Konjugation. C: Dadurch können beispielsweise Plasmide weitergegeben werden. D: Das gehört zum phagenvermittelten Transfer. E: Konjugation ist ein bakterieller Kontaktmechanismus. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Konjugation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konjugation"
+      ],
+      "questionGoal": "Konjugation",
+      "structuredExplanation": {
+        "coreIdea": "Konjugation",
+        "correctReasoning": "Dadurch können beispielsweise Plasmide weitergegeben werden.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür dienen Flagellen.",
+          "B": "Dies beschreibt Transformation, nicht Konjugation.",
+          "D": "Das gehört zum phagenvermittelten Transfer.",
+          "E": "Konjugation ist ein bakterieller Kontaktmechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Funktion einer Bakterienkapsel ist besonders relevant für die Wirtsabwehr?",
+      "options": [
+        {
+          "text": "Sie hydrolysiert grundsätzlich jedes Antibiotikum.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie kann die Phagozytose erschweren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie führt selbst die bakterielle Translation aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie ersetzt das stabilisierende Peptidoglycan vollständig.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie garantiert unabhängig vom Wirt immer eine Infektionskrankheit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kapselschutz ist keine universelle β-Lactamasefunktion. B: Die periphere Hülle kann Erkennung und Aufnahme beeinträchtigen. C: Dies übernehmen Ribosomen. D: Kapsel und Murein erfüllen unterschiedliche Aufgaben. E: Ein Virulenzfaktor allein ist kein Krankheitsbeweis. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Kapsel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kapsel"
+      ],
+      "questionGoal": "Kapsel",
+      "structuredExplanation": {
+        "coreIdea": "Kapsel",
+        "correctReasoning": "Die periphere Hülle kann Erkennung und Aufnahme beeinträchtigen.",
+        "wrongAnswerExplanations": {
+          "A": "Kapselschutz ist keine universelle β-Lactamasefunktion.",
+          "C": "Dies übernehmen Ribosomen.",
+          "D": "Kapsel und Murein erfüllen unterschiedliche Aufgaben.",
+          "E": "Ein Virulenzfaktor allein ist kein Krankheitsbeweis."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Beschreibung passt zur typischen bakteriellen Flagelle?",
+      "options": [
+        {
+          "text": "Ein schlagendes 9+2-Mikrotubulensystem.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Adhäsin-Fimbrie ohne rotierenden Basalapparat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine ausschliesslich polysaccharidische Gleitschicht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein rotierendes Filament mit Haken und membranverankertem Basalapparat.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ein hohles DNA-Transferpilus ohne Motilitätsapparat.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies passt zu eukaryotischen beweglichen Zilien. B: Dies ist ein anderer Anhangstyp. C: Das ist keine typische Flagellenarchitektur. D: Diese Struktur kann der Motilität dienen. E: Konjugationspilus und Flagelle unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 20–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Flagelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Flagelle"
+      ],
+      "questionGoal": "Flagelle",
+      "structuredExplanation": {
+        "coreIdea": "Flagelle",
+        "correctReasoning": "Diese Struktur kann der Motilität dienen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies passt zu eukaryotischen beweglichen Zilien.",
+          "B": "Dies ist ein anderer Anhangstyp.",
+          "C": "Das ist keine typische Flagellenarchitektur.",
+          "E": "Konjugationspilus und Flagelle unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Eine Kultur startet mit 200 Zellen und verdoppelt sich unter idealen Bedingungen alle 30 Minuten. Wie viele Zellen entstehen nach 2 Stunden?",
+      "options": [
+        {
+          "text": "3200.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "204.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "12000.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1600.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "800.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vier Verdopplungen ergeben 200 × 2⁴. B: Pro Generation wird nicht nur eine Zelle addiert. C: Die Zeit in Minuten ist nicht direkt der Wachstumsfaktor. D: Dies entspricht nur drei Verdopplungen. E: Dies berücksichtigt nur zwei Verdopplungen. Quelle: Originalunterlagen, PDF-S. 25–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Exponentielles Wachstum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exponentielles Wachstum"
+      ],
+      "questionGoal": "Exponentielles Wachstum",
+      "structuredExplanation": {
+        "coreIdea": "Exponentielles Wachstum",
+        "correctReasoning": "Vier Verdopplungen ergeben 200 × 2⁴.",
+        "wrongAnswerExplanations": {
+          "B": "Pro Generation wird nicht nur eine Zelle addiert.",
+          "C": "Die Zeit in Minuten ist nicht direkt der Wachstumsfaktor.",
+          "D": "Dies entspricht nur drei Verdopplungen.",
+          "E": "Dies berücksichtigt nur zwei Verdopplungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zum Thema «Zellorganisation» treffen zu?",
+      "options": [
+        {
+          "text": "Jede Bakterienart besitzt zwingend genau ein ringförmiges Chromosom.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes Plasmid muss bei jedem Bakterium ins Chromosom integriert vorliegen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Prokaryoten sind Bakterien.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bakterien besitzen typischerweise keine membranumhüllten Zellkerne.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es gibt Arten mit mehreren oder linearen Chromosomen. B: Plasmide können als extrachromosomale Replikons vorkommen. C: Auch Archaeen gehören zu den Prokaryoten. D: Ihre chromosomale DNA liegt im Nukleoid. Quelle: Originalunterlagen, PDF-S. 4–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Zellorganisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellorganisation"
+      ],
+      "questionGoal": "Zellorganisation",
+      "structuredExplanation": {
+        "coreIdea": "Zellorganisation",
+        "correctReasoning": "Ihre chromosomale DNA liegt im Nukleoid.",
+        "wrongAnswerExplanations": {
+          "A": "Es gibt Arten mit mehreren oder linearen Chromosomen.",
+          "B": "Plasmide können als extrachromosomale Replikons vorkommen.",
+          "C": "Auch Archaeen gehören zu den Prokaryoten.",
+          "D": "Ihre chromosomale DNA liegt im Nukleoid."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zum Thema «Zellhülle» treffen zu?",
+      "options": [
+        {
+          "text": "Gramnegative Bakterien besitzen typischerweise eine äussere Membran.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Grampositive Bakterien besitzen typischerweise eine dicke Peptidoglycanschicht.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die äussere Membran gramnegativer Bakterien ist identisch mit deren Peptidoglycanschicht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Cytoplasmamembran vermittelt selektiven Stofftransport.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie liegt ausserhalb der dünnen Peptidoglycanschicht. B: Dies unterscheidet die typische Architektur von gramnegativen Zellen. C: Membran und Murein sind verschiedene Strukturen. D: Sie grenzt das Reaktionsmilieu ab. Quelle: Originalunterlagen, PDF-S. 9–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Zellhülle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellhülle"
+      ],
+      "questionGoal": "Zellhülle",
+      "structuredExplanation": {
+        "coreIdea": "Zellhülle",
+        "correctReasoning": "Sie liegt ausserhalb der dünnen Peptidoglycanschicht. Dies unterscheidet die typische Architektur von gramnegativen Zellen. Sie grenzt das Reaktionsmilieu ab.",
+        "wrongAnswerExplanations": {
+          "A": "Sie liegt ausserhalb der dünnen Peptidoglycanschicht.",
+          "B": "Dies unterscheidet die typische Architektur von gramnegativen Zellen.",
+          "C": "Membran und Murein sind verschiedene Strukturen.",
+          "D": "Sie grenzt das Reaktionsmilieu ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zum Thema «Zellwandziele» treffen zu?",
+      "options": [
+        {
+          "text": "Eine geschädigte Zellwand kann bei ungünstigem osmotischem Milieu zur Lyse beitragen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Gramfärbung bestimmt allein eindeutig die Bakterienspezies.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lysozym und β-Lactame greifen verschiedene Aspekte des Mureinsystems an.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "β-Lactame wirken primär durch Auflösung jeder Phospholipidmembran.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die mechanische Stabilität ist vermindert. B: Form und Färbung liefern Hinweise, keine vollständige Speziesidentifikation. C: Lysozym spaltet Zuckerbindungen; β-Lactame hemmen die Quervernetzung. D: Ihr klassisches Ziel sind penicillinbindende Proteine. Quelle: Originalunterlagen, PDF-S. 11–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Zellwandziele"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellwandziele"
+      ],
+      "questionGoal": "Zellwandziele",
+      "structuredExplanation": {
+        "coreIdea": "Zellwandziele",
+        "correctReasoning": "Die mechanische Stabilität ist vermindert. Lysozym spaltet Zuckerbindungen; β-Lactame hemmen die Quervernetzung.",
+        "wrongAnswerExplanations": {
+          "A": "Die mechanische Stabilität ist vermindert.",
+          "B": "Form und Färbung liefern Hinweise, keine vollständige Speziesidentifikation.",
+          "C": "Lysozym spaltet Zuckerbindungen; β-Lactame hemmen die Quervernetzung.",
+          "D": "Ihr klassisches Ziel sind penicillinbindende Proteine."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zum Thema «Periphere Strukturen» treffen zu?",
+      "options": [
+        {
+          "text": "Haftpili und Konjugationspili können unterschiedliche Funktionen haben.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Vorhandensein von Pili beweist aktive Fortbewegung durch Rotation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Schleimschicht kann Anhaftung an inerte Oberflächen fördern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede Kapsel besteht aus Peptidoglycan.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Adhäsion und DNA-Transfer sind zu unterscheiden. B: Typische rotierende Antriebe sind Flagellen. C: Dies kann zur Biofilmbildung beitragen. D: Viele bestehen aus Polysacchariden, manche aus Polypeptiden. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Periphere Strukturen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Periphere Strukturen"
+      ],
+      "questionGoal": "Periphere Strukturen",
+      "structuredExplanation": {
+        "coreIdea": "Periphere Strukturen",
+        "correctReasoning": "Adhäsion und DNA-Transfer sind zu unterscheiden. Dies kann zur Biofilmbildung beitragen.",
+        "wrongAnswerExplanations": {
+          "A": "Adhäsion und DNA-Transfer sind zu unterscheiden.",
+          "B": "Typische rotierende Antriebe sind Flagellen.",
+          "C": "Dies kann zur Biofilmbildung beitragen.",
+          "D": "Viele bestehen aus Polysacchariden, manche aus Polypeptiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zu Biofilmen treffen zu?",
+      "options": [
+        {
+          "text": "Biofilmbildung kann die Bekämpfung einer Population erschweren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine extrazelluläre Matrix kann eine Bakteriengemeinschaft umgeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "In Biofilmen muss jedes Bakterium dieselbe Stoffwechselaktivität besitzen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Biofilmwachstum bedeutet automatisch eine neue erblich erworbene Resistenzmutation.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Matrix und veränderte Physiologie können dazu beitragen. B: Sie bildet ein gemeinschaftliches Schutzmilieu. C: Mikromilieus und Wachstumszustände können verschieden sein. D: Phänotypische Toleranz und genetische Resistenz sind zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Biofilm"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biofilm"
+      ],
+      "questionGoal": "Biofilm",
+      "structuredExplanation": {
+        "coreIdea": "Biofilm",
+        "correctReasoning": "Matrix und veränderte Physiologie können dazu beitragen. Sie bildet ein gemeinschaftliches Schutzmilieu.",
+        "wrongAnswerExplanations": {
+          "A": "Matrix und veränderte Physiologie können dazu beitragen.",
+          "B": "Sie bildet ein gemeinschaftliches Schutzmilieu.",
+          "C": "Mikromilieus und Wachstumszustände können verschieden sein.",
+          "D": "Phänotypische Toleranz und genetische Resistenz sind zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zum Thema «Motilität» treffen zu?",
+      "options": [
+        {
+          "text": "Bakterielle Flagellen und eukaryotische Zilien sind strukturell identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Flagellin ist ein wichtiger Bestandteil des bakteriellen Flagellenfilaments.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Peritrich bedeutet, dass Flagellen über die Zelloberfläche verteilt sind.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Alle Bakterien besitzen obligatorisch Flagellen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Rotationsapparat und Mikrotubulen-Zilium unterscheiden sich. B: Es bildet dessen Proteinpolymer. C: Dies unterscheidet sich von ausschliesslich polarer Begeisselung. D: Flagellen sind fakultative Strukturen. Quelle: Originalunterlagen, PDF-S. 20–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Motilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Motilität"
+      ],
+      "questionGoal": "Motilität",
+      "structuredExplanation": {
+        "coreIdea": "Motilität",
+        "correctReasoning": "Es bildet dessen Proteinpolymer. Dies unterscheidet sich von ausschliesslich polarer Begeisselung.",
+        "wrongAnswerExplanations": {
+          "A": "Rotationsapparat und Mikrotubulen-Zilium unterscheiden sich.",
+          "B": "Es bildet dessen Proteinpolymer.",
+          "C": "Dies unterscheidet sich von ausschliesslich polarer Begeisselung.",
+          "D": "Flagellen sind fakultative Strukturen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zum Thema «Wachstumspotential» treffen zu?",
+      "options": [
+        {
+          "text": "Exponentielles Wachstum bleibt auch ohne Nährstoffe unbegrenzt bestehen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hohe Ribosomendichte kann schnelle Proteinproduktion unterstützen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Binäre Teilung erzeugt pro Generation zwingend nur eine zusätzliche Zelle pro Gesamtkultur.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein grosses Oberflächen-Volumen-Verhältnis begünstigt den Stoffaustausch kleiner Zellen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ressourcen und Umweltbedingungen begrenzen das Wachstum. B: Diese ermöglicht unter günstigen Bedingungen rasches Wachstum. C: Jede teilungsfähige Zelle kann sich verdoppeln. D: Relativ zum Volumen steht viel Austauschfläche bereit. Quelle: Originalunterlagen, PDF-S. 25–28,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Wachstumspotential"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wachstumspotential"
+      ],
+      "questionGoal": "Wachstumspotential",
+      "structuredExplanation": {
+        "coreIdea": "Wachstumspotential",
+        "correctReasoning": "Diese ermöglicht unter günstigen Bedingungen rasches Wachstum. Relativ zum Volumen steht viel Austauschfläche bereit.",
+        "wrongAnswerExplanations": {
+          "A": "Ressourcen und Umweltbedingungen begrenzen das Wachstum.",
+          "B": "Diese ermöglicht unter günstigen Bedingungen rasches Wachstum.",
+          "C": "Jede teilungsfähige Zelle kann sich verdoppeln.",
+          "D": "Relativ zum Volumen steht viel Austauschfläche bereit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb27_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB27",
+      "stem": "Welche Aussagen zur bakteriellen Endosporenbildung treffen zu?",
+      "options": [
+        {
+          "text": "Unter geeigneten Bedingungen kann eine Spore wieder auskeimen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Endospore vermehrt sich während der Ruhephase durch fortgesetzte binäre Teilung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie ist die regelhafte Vermehrungsform aller Bakterien.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie bildet bei bestimmten Arten widerstandsfähige Dauerstadien.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dadurch entsteht eine metabolisch aktive vegetative Zelle. B: Sie ist ein Überdauerungsstadium, keine aktiv teilende Zellform. C: Viele Arten bilden keine Endosporen; die Bildung erhöht die Zahl nicht wie Teilung. D: Sie dient dem Überdauern ungünstiger Bedingungen. Quelle: Originalunterlagen, PDF-S. 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB27",
+        "Endosporen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endosporen"
+      ],
+      "questionGoal": "Endosporen",
+      "structuredExplanation": {
+        "coreIdea": "Endosporen",
+        "correctReasoning": "Dadurch entsteht eine metabolisch aktive vegetative Zelle. Sie dient dem Überdauern ungünstiger Bedingungen.",
+        "wrongAnswerExplanations": {
+          "A": "Dadurch entsteht eine metabolisch aktive vegetative Zelle.",
+          "B": "Sie ist ein Überdauerungsstadium, keine aktiv teilende Zellform.",
+          "C": "Viele Arten bilden keine Endosporen; die Bildung erhöht die Zahl nicht wie Teilung.",
+          "D": "Sie dient dem Überdauern ungünstiger Bedingungen."
+        }
+      }
+    }
+  ]
+}

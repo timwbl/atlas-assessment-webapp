@@ -1,0 +1,1321 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs06_20261102",
+  "lectureCode": "KVBS06",
+  "title": "Relatives Risiko, Odds Ratio und logarithmische Inferenz",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS06 - BinaereDaten_RelativesRisiko_OddsRatio_2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die Folienbehauptung, in Fall-Kontroll-Studien könne man „nichts anderes“ als OR berechnen, wird auf fehlende absolute Risiken ohne Zusatzinformation präzisiert. HR und RR bleiben als unterschiedliche Masse benannt. Log-Inferenz setzt geeignete positive Ereigniszahlen und unabhängige Gruppen voraus. Synthetische Rechenbeispiele.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "RR, relative und absolute Risikoreduktion vergleichen."
+    },
+    {
+      "id": "lo2",
+      "text": "Risiko, Odds und Odds Ratio berechnen und unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Fall-Kontroll-Stichproben und die Seltenheitsapproximation einordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Logarithmische RR-Intervalle und Teststatistiken berechnen."
+    },
+    {
+      "id": "lo5",
+      "text": "Relative Effekte zusammen mit Ausgangsrisiko, NNT und Unsicherheit interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs06_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Unter Behandlung erkranken 12/100, unter Kontrolle 20/100. Wie gross ist RR = Risiko Behandlung/Risiko Kontrolle?",
+      "options": [
+        {
+          "text": "0,32",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,08",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1,67",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,60",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "0,40",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Summe der Risiken. B: Dies ist die absolute Risikoreduktion. C: Dies ist das umgekehrte Risikoverhältnis. D: 0,12/0,20 = 0,60. E: Dies ist die relative Risikoreduktion. Quelle: Originalunterlagen, PDF-S. 4,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Relatives Risiko"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Relatives Risiko"
+      ],
+      "questionGoal": "Relatives Risiko",
+      "structuredExplanation": {
+        "coreIdea": "Relatives Risiko",
+        "correctReasoning": "0,12/0,20 = 0,60.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Summe der Risiken.",
+          "B": "Dies ist die absolute Risikoreduktion.",
+          "C": "Dies ist das umgekehrte Risikoverhältnis.",
+          "E": "Dies ist die relative Risikoreduktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Für einen unerwünschten Endpunkt beträgt RR = 0,75. Welche relative Risikoreduktion entspricht dem?",
+      "options": [
+        {
+          "text": "75 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "25 %",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "133 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,75 Prozentpunkte",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−25 % zwingend",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der verbleibende Anteil des Vergleichsrisikos. B: RRR = 1−0,75 = 0,25. C: Der Kehrwert von RR ist keine RRR. D: Eine absolute Risikodifferenz folgt ohne Ausgangsrisiko nicht. E: Bei dieser Reihenfolge ist ein RR unter 1 eine relative Risikosenkung. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Relative Risikoreduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Relative Risikoreduktion"
+      ],
+      "questionGoal": "Relative Risikoreduktion",
+      "structuredExplanation": {
+        "coreIdea": "Relative Risikoreduktion",
+        "correctReasoning": "RRR = 1−0,75 = 0,25.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der verbleibende Anteil des Vergleichsrisikos.",
+          "C": "Der Kehrwert von RR ist keine RRR.",
+          "D": "Eine absolute Risikodifferenz folgt ohne Ausgangsrisiko nicht.",
+          "E": "Bei dieser Reihenfolge ist ein RR unter 1 eine relative Risikosenkung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «relative Risiken und absolute Effekte».",
+      "options": [
+        {
+          "text": "Dasselbe RR erzwingt bei allen Populationen dieselbe NNT.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "RR = 0 ist der allgemeine Nullwert für keinen Unterschied.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "RR = 0 ist bei positiven Vergleichsrisiken der Nullwert für keinen Unterschied.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dasselbe RR kann bei verschiedenen Ausgangsrisiken unterschiedliche ARR ergeben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: NNT hängt vom absoluten Effekt ab. B: Der Nullwert des Risikoverhältnisses ist 1. C: Gleiche Risiken ergeben den Quotienten eins. D: ARR = Kontrollrisiko×(1−RR). Quelle: Originalunterlagen, PDF-S. 5–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Relative und absolute Effekte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Relative und absolute Effekte"
+      ],
+      "questionGoal": "Relative und absolute Effekte",
+      "structuredExplanation": {
+        "coreIdea": "Relative und absolute Effekte",
+        "correctReasoning": "ARR = Kontrollrisiko×(1−RR).",
+        "wrongAnswerExplanations": {
+          "A": "NNT hängt vom absoluten Effekt ab.",
+          "B": "Der Nullwert des Risikoverhältnisses ist 1.",
+          "C": "Gleiche Risiken ergeben den Quotienten eins.",
+          "D": "ARR = Kontrollrisiko×(1−RR)."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "RR = 0,60 gilt in zwei hypothetischen Populationen. In Population A beträgt das Kontrollrisiko 50 %, in B 5 %. Welche ARR ergibt sich in B?",
+      "options": [
+        {
+          "text": "2 Prozentpunkte",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "30 Prozentpunkte",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "40 Prozentpunkte",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 Prozentpunkte",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3 Prozentpunkte",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Behandlungsrisiko = 3 %; 5−3 = 2 Prozentpunkte. B: Dies ist das Behandlungsrisiko in A. C: 40 % ist die relative Risikoreduktion. D: Dies ist ARR in Population A. E: Dies ist das verbleibende Behandlungsrisiko. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Ausgangsrisiko"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ausgangsrisiko"
+      ],
+      "questionGoal": "Ausgangsrisiko",
+      "structuredExplanation": {
+        "coreIdea": "Ausgangsrisiko",
+        "correctReasoning": "Behandlungsrisiko = 3 %; 5−3 = 2 Prozentpunkte.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist das Behandlungsrisiko in A.",
+          "C": "40 % ist die relative Risikoreduktion.",
+          "D": "Dies ist ARR in Population A.",
+          "E": "Dies ist das verbleibende Behandlungsrisiko."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Das Ereignisrisiko ist 0,20. Wie gross sind die Odds des Ereignisses?",
+      "options": [
+        {
+          "text": "0,25",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0,20",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,80",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Odds = 0,20/(1−0,20). B: Dies ist das Risiko. C: Dies sind die Odds des Nichtereignisses. D: Dies ist die Nichtereigniswahrscheinlichkeit. E: Dies ist der Kehrwert des Risikos. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Odds berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Odds berechnen"
+      ],
+      "questionGoal": "Odds berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Odds berechnen",
+        "correctReasoning": "Odds = 0,20/(1−0,20).",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist das Risiko.",
+          "C": "Dies sind die Odds des Nichtereignisses.",
+          "D": "Dies ist die Nichtereigniswahrscheinlichkeit.",
+          "E": "Dies ist der Kehrwert des Risikos."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Risiko und Ereignisodds».",
+      "options": [
+        {
+          "text": "Risiko ist Ereignisse geteilt durch alle Personen der Gruppe.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Odds können grösser als eins sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei einem Risiko von 0,5 sind die Ereignisodds 1.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Odds Ratio von 2 bedeutet bei jedem Ausgangsrisiko eine Risikoverdoppelung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Nenner enthält Ereignisse und Nichtereignisse. B: Bei Risiko über 0,5 ist p/(1−p) grösser als eins. C: Ereignis und Nichtereignis sind gleich wahrscheinlich. D: OR und RR unterscheiden sich insbesondere bei häufigen Ereignissen. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Odds und Risiko"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Odds und Risiko"
+      ],
+      "questionGoal": "Odds und Risiko",
+      "structuredExplanation": {
+        "coreIdea": "Odds und Risiko",
+        "correctReasoning": "Der Nenner enthält Ereignisse und Nichtereignisse. Bei Risiko über 0,5 ist p/(1−p) grösser als eins. Ereignis und Nichtereignis sind gleich wahrscheinlich.",
+        "wrongAnswerExplanations": {
+          "A": "Der Nenner enthält Ereignisse und Nichtereignisse.",
+          "B": "Bei Risiko über 0,5 ist p/(1−p) grösser als eins.",
+          "C": "Ereignis und Nichtereignis sind gleich wahrscheinlich.",
+          "D": "OR und RR unterscheiden sich insbesondere bei häufigen Ereignissen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Gruppe A: 20 Ereignisse und 80 Nichtereignisse. Gruppe B: 40 Ereignisse und 60 Nichtereignisse. Welches OR ergibt A gegenüber B?",
+      "options": [
+        {
+          "text": "0,25",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,375",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,50",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2,67",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,20",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies sind nur die Odds in A. B: (20/80)/(40/60) = 0,375. C: Dies ist RR = 0,20/0,40. D: Dies ist das umgekehrte OR. E: Dies ist das Risiko in A. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Odds Ratio berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Odds Ratio berechnen"
+      ],
+      "questionGoal": "Odds Ratio berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Odds Ratio berechnen",
+        "correctReasoning": "(20/80)/(40/60) = 0,375.",
+        "wrongAnswerExplanations": {
+          "A": "Dies sind nur die Odds in A.",
+          "C": "Dies ist RR = 0,20/0,40.",
+          "D": "Dies ist das umgekehrte OR.",
+          "E": "Dies ist das Risiko in A."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Die Odds eines Ereignisses betragen 3. Welches Risiko entspricht dem?",
+      "options": [
+        {
+          "text": "0,50",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,25",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,333",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,75",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspräche Odds von 1. B: Dies ist die Wahrscheinlichkeit des Nichtereignisses. C: Der Kehrwert der Odds ist nicht das Ereignisrisiko. D: Eine Wahrscheinlichkeit kann nicht grösser als 1 sein. E: p = Odds/(1+Odds) = 3/4. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Odds rückrechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Odds rückrechnen"
+      ],
+      "questionGoal": "Odds rückrechnen",
+      "structuredExplanation": {
+        "coreIdea": "Odds rückrechnen",
+        "correctReasoning": "p = Odds/(1+Odds) = 3/4.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspräche Odds von 1.",
+          "B": "Dies ist die Wahrscheinlichkeit des Nichtereignisses.",
+          "C": "Der Kehrwert der Odds ist nicht das Ereignisrisiko.",
+          "D": "Eine Wahrscheinlichkeit kann nicht grösser als 1 sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q09",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Zum Thema «Fall-Kontroll-Auswahl und Populationsrisiken»: Beurteilen Sie Aussagen zur üblichen Fall-Kontroll-Stichprobe ohne bekannte populationsbezogene Auswahlanteile.",
+      "options": [
+        {
+          "text": "Der Fallanteil in der Stichprobe ist direkt das Populationsrisiko.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Odds Ratio kann unter geeignetem Auswahlverfahren aus der Vierfeldertafel geschätzt werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Aus derselben Tabelle folgt ohne Zusatzinformation immer direkt die ARR.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zahl der Fälle und Kontrollen wird durch das Auswahlverfahren mitbestimmt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dafür fehlen die populationsbezogenen Nenner. B: Das Verhältnis der Expositionsodds erlaubt den üblichen Assoziationsvergleich. C: Absolute Erkrankungsrisiken sind nicht allein daraus identifizierbar. D: Sie ist nicht einfach die natürliche Erkrankungshäufigkeit der Population. Quelle: Originalunterlagen, PDF-S. 13–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Fall-Kontroll-Design"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fall-Kontroll-Design"
+      ],
+      "questionGoal": "Fall-Kontroll-Design",
+      "structuredExplanation": {
+        "coreIdea": "Fall-Kontroll-Design",
+        "correctReasoning": "Das Verhältnis der Expositionsodds erlaubt den üblichen Assoziationsvergleich. Sie ist nicht einfach die natürliche Erkrankungshäufigkeit der Population.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür fehlen die populationsbezogenen Nenner.",
+          "B": "Das Verhältnis der Expositionsodds erlaubt den üblichen Assoziationsvergleich.",
+          "C": "Absolute Erkrankungsrisiken sind nicht allein daraus identifizierbar.",
+          "D": "Sie ist nicht einfach die natürliche Erkrankungshäufigkeit der Population."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Wann liegt die OR numerisch häufig nahe bei der RR?",
+      "options": [
+        {
+          "text": "Nur wenn eine Gruppe exakt keine Nichtereignisse hat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sobald OR grösser als 1 ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sobald beide Gruppen gleich gross sind.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wenn das Ereignis in beiden Vergleichsgruppen selten ist.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Wenn das Ereignis in beiden Gruppen sehr häufig ist.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dann sind gewöhnliche Odds sogar unendlich. B: Die Richtung allein genügt nicht. C: Gleiche n erzwingen keine kleinen Risiken. D: Dann ist 1−p jeweils nahe 1, sodass Odds ungefähr p sind. E: Dann unterscheiden sich Odds besonders von Risiken. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Seltene Ereignisse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Seltene Ereignisse"
+      ],
+      "questionGoal": "Seltene Ereignisse",
+      "structuredExplanation": {
+        "coreIdea": "Seltene Ereignisse",
+        "correctReasoning": "Dann ist 1−p jeweils nahe 1, sodass Odds ungefähr p sind.",
+        "wrongAnswerExplanations": {
+          "A": "Dann sind gewöhnliche Odds sogar unendlich.",
+          "B": "Die Richtung allein genügt nicht.",
+          "C": "Gleiche n erzwingen keine kleinen Risiken.",
+          "E": "Dann unterscheiden sich Odds besonders von Risiken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Alle Fälle und eine zufällige Zehntelstichprobe der Nichterkrankten beider Gruppen werden verwendet. Beurteilen Sie die ideale Rechnung ohne Rundungsfehler.",
+      "options": [
+        {
+          "text": "Die Ereignisodds jeder Gruppe werden um denselben Faktor erhöht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Stichprobenrisiken bleiben unverändert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das OR muss dadurch verzehnfacht werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das ursprüngliche OR bleibt bei diesem proportionalen Sampling erhalten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Nichtereignisnenner wird jeweils durch zehn geteilt. B: Das Entfernen von Nichterkrankten verändert deren Nenner. C: Der gemeinsame Faktor kürzt sich im Verhältnis. D: Dies ist die rechnerische Grundlage der dargestellten Stichprobeninvarianz. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Auswahl von Kontrollen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Auswahl von Kontrollen"
+      ],
+      "questionGoal": "Auswahl von Kontrollen",
+      "structuredExplanation": {
+        "coreIdea": "Auswahl von Kontrollen",
+        "correctReasoning": "Der Nichtereignisnenner wird jeweils durch zehn geteilt. Dies ist die rechnerische Grundlage der dargestellten Stichprobeninvarianz.",
+        "wrongAnswerExplanations": {
+          "A": "Der Nichtereignisnenner wird jeweils durch zehn geteilt.",
+          "B": "Das Entfernen von Nichterkrankten verändert deren Nenner.",
+          "C": "Der gemeinsame Faktor kürzt sich im Verhältnis.",
+          "D": "Dies ist die rechnerische Grundlage der dargestellten Stichprobeninvarianz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Unabhängige Gruppen: 20/100 und 40/100 Ereignisse. Welche Varianzschätzung für ln(RR) folgt aus 1/a−1/n1+1/c−1/n2?",
+      "options": [
+        {
+          "text": "0,235",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−0,055",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,50",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,075",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,055",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist ungefähr der SE nach dem Wurzelziehen. B: Eine Varianz kann nicht negativ sein; die Reihenfolge der Terme wurde vertauscht. C: Dies ist das RR. D: Die beiden Nennerkorrekturen wurden weggelassen. E: 1/20−1/100+1/40−1/100 = 0,055. Quelle: Originalunterlagen, PDF-S. 18,27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Log-RR-Standardfehler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Log-RR-Standardfehler"
+      ],
+      "questionGoal": "Log-RR-Standardfehler",
+      "structuredExplanation": {
+        "coreIdea": "Log-RR-Standardfehler",
+        "correctReasoning": "1/20−1/100+1/40−1/100 = 0,055.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist ungefähr der SE nach dem Wurzelziehen.",
+          "B": "Eine Varianz kann nicht negativ sein; die Reihenfolge der Terme wurde vertauscht.",
+          "C": "Dies ist das RR.",
+          "D": "Die beiden Nennerkorrekturen wurden weggelassen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Log-RR und exponentiierte Intervallgrenzen».",
+      "options": [
+        {
+          "text": "Exponentiierte Intervallgrenzen sind positiv.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein symmetrisches Intervall für ln(RR) wird nach Exponentiation allgemein additiv symmetrisch um RR.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ln(1) = 0 ist der Nullwert auf der Log-RR-Skala.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein gewöhnliches RR-Intervall muss um null zentriert sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Exponentialfunktion hat nur positive Werte. B: Exponentiation ist nicht linear; die Abstände auf der RR-Skala sind meist verschieden. C: Gleiche Risiken entsprechen RR = 1. D: Der Nullwert für ein Risikoverhältnis ist 1. Quelle: Originalunterlagen, PDF-S. 19–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Logarithmische Skala"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Logarithmische Skala"
+      ],
+      "questionGoal": "Logarithmische Skala",
+      "structuredExplanation": {
+        "coreIdea": "Logarithmische Skala",
+        "correctReasoning": "Die Exponentialfunktion hat nur positive Werte. Gleiche Risiken entsprechen RR = 1.",
+        "wrongAnswerExplanations": {
+          "A": "Die Exponentialfunktion hat nur positive Werte.",
+          "B": "Exponentiation ist nicht linear; die Abstände auf der RR-Skala sind meist verschieden.",
+          "C": "Gleiche Risiken entsprechen RR = 1.",
+          "D": "Der Nullwert für ein Risikoverhältnis ist 1."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Ein Konfidenzintervall für ln(RR) hat Grenzen ln(0,5) und ln(0,8). Welches RR-Intervall folgt?",
+      "options": [
+        {
+          "text": "ln(0,5) bis ln(0,8)",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,5 bis 0,8",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "−0,5 bis −0,8",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0 bis 1,3",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2 bis 1,25",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies bleibt auf der logarithmischen Skala. B: Exponentiation hebt die Logarithmierung auf. C: RR kann hier nicht negativ sein. D: Die Grenzen werden einzeln transformiert, nicht addiert. E: Das sind Kehrwerte statt Exponentialrücktransformationen. Quelle: Originalunterlagen, PDF-S. 28–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Intervall rücktransformieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intervall rücktransformieren"
+      ],
+      "questionGoal": "Intervall rücktransformieren",
+      "structuredExplanation": {
+        "coreIdea": "Intervall rücktransformieren",
+        "correctReasoning": "Exponentiation hebt die Logarithmierung auf.",
+        "wrongAnswerExplanations": {
+          "A": "Dies bleibt auf der logarithmischen Skala.",
+          "C": "RR kann hier nicht negativ sein.",
+          "D": "Die Grenzen werden einzeln transformiert, nicht addiert.",
+          "E": "Das sind Kehrwerte statt Exponentialrücktransformationen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "ln(RR) = −0,40 und SE[ln(RR)] = 0,20. Welches z ergibt sich gegen RR = 1?",
+      "options": [
+        {
+          "text": "−0,5",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−0,08",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "−2",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "−7",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+2 zwingend",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Quotient wurde umgekehrt. B: Das Produkt ist keine standardisierte Abweichung. C: Der Nullwert ist ln(1) = 0; −0,40/0,20 = −2. D: Hier wurde fälschlich 1 statt ln(1) abgezogen. E: Die vorzeichenbehaftete Statistik bleibt negativ; erst für den zweiseitigen Tail wird ihr Betrag verwendet. Quelle: Originalunterlagen, PDF-S. 30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "RR-Teststatistik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RR-Teststatistik"
+      ],
+      "questionGoal": "RR-Teststatistik",
+      "structuredExplanation": {
+        "coreIdea": "RR-Teststatistik",
+        "correctReasoning": "Der Nullwert ist ln(1) = 0; −0,40/0,20 = −2.",
+        "wrongAnswerExplanations": {
+          "A": "Der Quotient wurde umgekehrt.",
+          "B": "Das Produkt ist keine standardisierte Abweichung.",
+          "D": "Hier wurde fälschlich 1 statt ln(1) abgezogen.",
+          "E": "Die vorzeichenbehaftete Statistik bleibt negativ; erst für den zweiseitigen Tail wird ihr Betrag verwendet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Ein RR wird mit 0,64 und einem 95%-Intervall von 0,39 bis 1,08 geschätzt. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Das Intervall ist auch mit einer kleinen relativen Risikoerhöhung vereinbar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die fehlende Signifikanz beweist Unwirksamkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Intervall schliesst gleiche Risiken aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Punktschätzer spricht in dieser Vergleichsrichtung für ein niedrigeres Ereignisrisiko.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine obere Grenze liegt über 1. B: Die Unsicherheit umfasst verschiedene Effekte. C: RR = 1 ist enthalten. D: RR liegt unter 1. Quelle: Originalunterlagen, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "RR-Intervall interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RR-Intervall interpretieren"
+      ],
+      "questionGoal": "RR-Intervall interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "RR-Intervall interpretieren",
+        "correctReasoning": "Seine obere Grenze liegt über 1. RR liegt unter 1.",
+        "wrongAnswerExplanations": {
+          "A": "Seine obere Grenze liegt über 1.",
+          "B": "Die Unsicherheit umfasst verschiedene Effekte.",
+          "C": "RR = 1 ist enthalten.",
+          "D": "RR liegt unter 1."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "ln(RR) = 0, SE = 0,10. Welches 95%-Intervall ergibt sich auf der RR-Skala ungefähr? Gegeben: exp(−0,196) ≈ 0,822; exp(0,196) ≈ 1,216.",
+      "options": [
+        {
+          "text": "0,804 bis 1,196",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−0,196 bis +0,196",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,10 bis 1,96",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−0,822 bis +1,216",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,822 bis 1,216",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die additive Normalformel wurde direkt auf RR statt auf ln(RR) angewandt. B: Dies ist das Intervall für ln(RR). C: SE und kritischer Faktor sind keine Intervallgrenzen. D: Exponentiation ergibt keine negative Untergrenze. E: Zuerst 0 ± 1,96×0,10, dann beide Grenzen exponentieren. Quelle: Originalunterlagen, PDF-S. 28–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Log-RR-Intervall rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Log-RR-Intervall rechnen"
+      ],
+      "questionGoal": "Log-RR-Intervall rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Log-RR-Intervall rechnen",
+        "correctReasoning": "Zuerst 0 ± 1,96×0,10, dann beide Grenzen exponentieren.",
+        "wrongAnswerExplanations": {
+          "A": "Die additive Normalformel wurde direkt auf RR statt auf ln(RR) angewandt.",
+          "B": "Dies ist das Intervall für ln(RR).",
+          "C": "SE und kritischer Faktor sind keine Intervallgrenzen.",
+          "D": "Exponentiation ergibt keine negative Untergrenze."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Ausgangsrisiko, ARR und NNT».",
+      "options": [
+        {
+          "text": "Bei gleichem RR führt ein niedrigeres Kontrollrisiko zu kleinerer ARR und grösserer positiver NNT.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein relatives Risikomass allein reicht nicht zur Berechnung der NNT.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine relative Senkung um 40 % bedeutet immer 40 Prozentpunkte weniger Ereignisse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "NNT-Werte verschiedener Zeiträume sind ohne Weiteres austauschbar.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies folgt aus ARR = Kontrollrisiko×(1−RR). B: Zusätzlich wird das absolute Ausgangsrisiko benötigt. C: Das verwechselt relative und absolute Änderung. D: Der Zeitraum bestimmt die kumulativen Risiken. Quelle: Originalunterlagen, PDF-S. 6–9,36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Absolute Nutzenkommunikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Absolute Nutzenkommunikation"
+      ],
+      "questionGoal": "Absolute Nutzenkommunikation",
+      "structuredExplanation": {
+        "coreIdea": "Absolute Nutzenkommunikation",
+        "correctReasoning": "Dies folgt aus ARR = Kontrollrisiko×(1−RR). Zusätzlich wird das absolute Ausgangsrisiko benötigt.",
+        "wrongAnswerExplanations": {
+          "A": "Dies folgt aus ARR = Kontrollrisiko×(1−RR).",
+          "B": "Zusätzlich wird das absolute Ausgangsrisiko benötigt.",
+          "C": "Das verwechselt relative und absolute Änderung.",
+          "D": "Der Zeitraum bestimmt die kumulativen Risiken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Kontrollrisiko 10 %, RR unter Behandlung 0,8, gleicher Zeitraum. Welche NNT folgt?",
+      "options": [
+        {
+          "text": "5",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "80",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "50",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "12,5",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "10",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 20 % relative Reduktion wurden als absolute 0,20 eingesetzt. B: Dies ist die Prozentdarstellung des RR. C: Behandlungsrisiko 8 %, ARR 2 Prozentpunkte, NNT = 1/0,02. D: Dies ist der Kehrwert des Behandlungsrisikos. E: Der Kehrwert des Kontrollrisikos ist nicht die NNT. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "NNT aus RR"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NNT aus RR"
+      ],
+      "questionGoal": "NNT aus RR",
+      "structuredExplanation": {
+        "coreIdea": "NNT aus RR",
+        "correctReasoning": "Behandlungsrisiko 8 %, ARR 2 Prozentpunkte, NNT = 1/0,02.",
+        "wrongAnswerExplanations": {
+          "A": "20 % relative Reduktion wurden als absolute 0,20 eingesetzt.",
+          "B": "Dies ist die Prozentdarstellung des RR.",
+          "D": "Dies ist der Kehrwert des Behandlungsrisikos.",
+          "E": "Der Kehrwert des Kontrollrisikos ist nicht die NNT."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs06_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «RR, OR und Hazard Ratio».",
+      "options": [
+        {
+          "text": "Bei Vertauschen der Gruppen wird ein positives RR zu seinem Kehrwert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "RR, OR und Risikodifferenz besitzen denselben Nullwert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Hazard Ratio darf grundsätzlich ohne Annahmen als identisches RR bezeichnet werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Hazard Ratio und ein kumulatives RR sind unterschiedliche Effektmasse.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Risikonumerator- und Nennergruppe wechseln. B: RR und OR haben Nullwert 1, die Risikodifferenz null. C: Eine solche Gleichsetzung kann in die Irre führen. D: Das eine betrifft momentane Ereignisraten im Zeitverlauf, das andere zeitbezogene Risiken. Quelle: Originalunterlagen, PDF-S. 33,39–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS06",
+        "Effektmasse korrekt benennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Effektmasse korrekt benennen"
+      ],
+      "questionGoal": "Effektmasse korrekt benennen",
+      "structuredExplanation": {
+        "coreIdea": "Effektmasse korrekt benennen",
+        "correctReasoning": "Die Risikonumerator- und Nennergruppe wechseln. Das eine betrifft momentane Ereignisraten im Zeitverlauf, das andere zeitbezogene Risiken.",
+        "wrongAnswerExplanations": {
+          "A": "Die Risikonumerator- und Nennergruppe wechseln.",
+          "B": "RR und OR haben Nullwert 1, die Risikodifferenz null.",
+          "C": "Eine solche Gleichsetzung kann in die Irre führen.",
+          "D": "Das eine betrifft momentane Ereignisraten im Zeitverlauf, das andere zeitbezogene Risiken."
+        }
+      }
+    }
+  ]
+}

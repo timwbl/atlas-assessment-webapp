@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block3_fppsignal_20261102",
+  "lectureCode": "FPPSIGNAL",
+  "title": "Fachpraktikum Physik: digitale Signalerfassung",
+  "block": "Block 3",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr; Lehrunterlagenbestand HS2025. FPP-Originalskript v1.0 ohne eindeutig datierte Ausgabe im Dokument. FPP - Fachpraktikum Physik. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Block3-Zuordnung nach offiziellen Lernzielen PDF11 (ref_1fe7498fde85). Originalskript „Fachpraktika Physik 1. Studienjahr“, v1.0, im Dokument kein eindeutiges Ausgabejahr; Fragen beziehen sich nur auf Kapitel D, PDF36–52. Nyquist-Begriffe gegenüber Skript korrigiert: Sampler-Nyquistfrequenz fs/2, Signal-Nyquistrate 2fmax; praktische Basisbanderfassung mit Reserve, Grenzfall fs=2f phasenabhängig. Ergänzende technische Primärdokumentation: Analog Devices MT-002, Texas Instruments AN-236 und NI zu FFT/Fensterung. Keine universelle Pflicht galvanischer Trennung sämtlicher Elektrogeräte aus der pauschalen Skriptformulierung abgeleitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Analog-Digital-Wandlung, Abtastung und Amplitudenquantisierung erklären und unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Abtastrate und Bandbegrenzung sinnvoll wählen sowie Unterabtastung und Aliasing diagnostizieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Frequenzspektren und den Einfluss der Dauer des ausgewählten Signalabschnitts interpretieren."
+    },
+    {
+      "id": "lo4",
+      "text": "Verstärkung, Sättigung und Rauschen hinsichtlich Signaldauer, Anstiegszeit und Amplitudenmessung beurteilen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_fppsignal_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein idealer ADC besitzt 8 Bit und einen gesamten Eingangsbereich von 1.00 V. Wie gross ist die ideale Schrittweite näherungsweise?",
+      "options": [
+        {
+          "text": "1.0 mV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "256 mV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "7.8 mV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3.9 mV.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "125 mV.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 1,0 mV würde etwa tausend gleich grosse Schritte über 1 V erfordern; 8 Bit liefern nur 256 Stufen. B: 256 mV verwechselt die Stufenzahl 2⁸ mit einem Spannungsabstand; die Gesamtspanne muss durch 256 geteilt werden. C: 7,8 mV entsprechen ungefähr 1 V/128 und damit der Schrittweite bei einem Bit weniger, also etwa 7 Bit. D: 8 Bit ergeben 256 Stufen; 1 V/256≈3.906 mV. Die Schrittweite ist von einer vollständigen realen Fehlerbilanz zu unterscheiden. E: 125 mV entsprechen 1 V/8; die Bit-Zahl darf nicht als Anzahl der Stufen eingesetzt werden. Quelle: Originalunterlagen, PDF-S. 38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "8-Bit-Quantisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "8-Bit-Quantisierung"
+      ],
+      "questionGoal": "8-Bit-Quantisierung",
+      "structuredExplanation": {
+        "coreIdea": "8-Bit-Quantisierung",
+        "correctReasoning": "8 Bit ergeben 256 Stufen; 1 V/256≈3.906 mV. Die Schrittweite ist von einer vollständigen realen Fehlerbilanz zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "1,0 mV würde etwa tausend gleich grosse Schritte über 1 V erfordern; 8 Bit liefern nur 256 Stufen.",
+          "B": "256 mV verwechselt die Stufenzahl 2⁸ mit einem Spannungsabstand; die Gesamtspanne muss durch 256 geteilt werden.",
+          "C": "7,8 mV entsprechen ungefähr 1 V/128 und damit der Schrittweite bei einem Bit weniger, also etwa 7 Bit.",
+          "E": "125 mV entsprechen 1 V/8; die Bit-Zahl darf nicht als Anzahl der Stufen eingesetzt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein ADC wird bei gleichem Spannungsbereich von 8 auf 9 Bit umgestellt. Was ändert sich ideal?",
+      "options": [
+        {
+          "text": "Die Zahl der Amplitudenstufen steigt nur um eins.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die höchste enthaltene Signalfrequenz verdoppelt sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Abtastrate verdoppelt sich zwingend.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zahl der Amplitudenstufen verdoppelt sich, die Schrittweite halbiert sich.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Das gesamte analoge Rauschen verschwindet.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein zusätzliches Bit verdoppelt 2^N mögliche Codes; die Stufenzahl steigt nicht bloss von 256 auf 257. B: Die analoge Signalfrequenz wird durch das Eingangssignal bestimmt und ändert sich nicht durch die Amplitudenquantisierung. C: Abtastrate und Amplituden-Bittiefe sind getrennte Geräteeigenschaften; eine höhere Bit-Zahl erzwingt kein höheres fs. D: 2⁹/2⁸=2; die Amplitudenquantisierung ändert sich, nicht automatisch Zeitauflösung oder Rauschen. E: Mehr Codes können Quantisierungsfehler verkleinern, beseitigen aber nicht das bereits vor dem ADC vorhandene analoge Rauschen. Quelle: Originalunterlagen, PDF-S. 38,48.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Bit-Zahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bit-Zahl"
+      ],
+      "questionGoal": "Bit-Zahl",
+      "structuredExplanation": {
+        "coreIdea": "Bit-Zahl",
+        "correctReasoning": "2⁹/2⁸=2; die Amplitudenquantisierung ändert sich, nicht automatisch Zeitauflösung oder Rauschen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein zusätzliches Bit verdoppelt 2^N mögliche Codes; die Stufenzahl steigt nicht bloss von 256 auf 257.",
+          "B": "Die analoge Signalfrequenz wird durch das Eingangssignal bestimmt und ändert sich nicht durch die Amplitudenquantisierung.",
+          "C": "Abtastrate und Amplituden-Bittiefe sind getrennte Geräteeigenschaften; eine höhere Bit-Zahl erzwingt kein höheres fs.",
+          "E": "Mehr Codes können Quantisierungsfehler verkleinern, beseitigen aber nicht das bereits vor dem ADC vorhandene analoge Rauschen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein 5-Hz-Sinus wird mit 100 Samples/s aufgenommen. Wie viele Messpunkte liegen pro Periode vor?",
+      "options": [
+        {
+          "text": "50.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "20.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "500.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 50 Punkte pro Periode würden bei 5 Hz eine Abtastrate von 250 Samples/s benötigen. B: Eine Periode dauert 0.20 s; 100×0.20=20 Samples pro Periode. C: 500 entsteht aus Multiplikation von 100 mit 5; Samples pro Periode berechnet man als fs/f. D: 10 Punkte pro Periode wären hier bei 50 Samples/s oder bei einem 10-Hz-Signal zu erwarten. E: 5 ist die Signalfrequenz pro Sekunde, nicht die Zahl der bei 100 Samples/s auf eine Periode entfallenden Punkte. Quelle: Originalunterlagen, PDF-S. 38–39,47.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Samples pro Periode"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Samples pro Periode"
+      ],
+      "questionGoal": "Samples pro Periode",
+      "structuredExplanation": {
+        "coreIdea": "Samples pro Periode",
+        "correctReasoning": "Eine Periode dauert 0.20 s; 100×0.20=20 Samples pro Periode.",
+        "wrongAnswerExplanations": {
+          "A": "50 Punkte pro Periode würden bei 5 Hz eine Abtastrate von 250 Samples/s benötigen.",
+          "C": "500 entsteht aus Multiplikation von 100 mit 5; Samples pro Periode berechnet man als fs/f.",
+          "D": "10 Punkte pro Periode wären hier bei 50 Samples/s oder bei einem 10-Hz-Signal zu erwarten.",
+          "E": "5 ist die Signalfrequenz pro Sekunde, nicht die Zahl der bei 100 Samples/s auf eine Periode entfallenden Punkte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Welche Zeit liegt zwischen regelmässigen Abtastungen bei fs=200 Hz?",
+      "options": [
+        {
+          "text": "0.5 ms.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "5 ms.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "2 ms.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 ms.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "200 ms.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,5 ms entsprächen fs=2000 Hz; das ist die zehnfache vorgegebene Abtastrate. B: Δt=1/fs=0.005 s=5 ms. C: 2 ms gehören zu 500 Hz und nicht zu 200 Hz. D: 20 ms entsprechen 50 Samples/s und sind um Faktor vier zu lang. E: 200 ms sind die Periode einer 5-Hz-Schwingung; die Sampleperiode eines 200-Hz-Samplers beträgt nur 5 ms. Quelle: Originalunterlagen, PDF-S. 38–39.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Abtastintervall"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abtastintervall"
+      ],
+      "questionGoal": "Abtastintervall",
+      "structuredExplanation": {
+        "coreIdea": "Abtastintervall",
+        "correctReasoning": "Δt=1/fs=0.005 s=5 ms.",
+        "wrongAnswerExplanations": {
+          "A": "0,5 ms entsprächen fs=2000 Hz; das ist die zehnfache vorgegebene Abtastrate.",
+          "C": "2 ms gehören zu 500 Hz und nicht zu 200 Hz.",
+          "D": "20 ms entsprechen 50 Samples/s und sind um Faktor vier zu lang.",
+          "E": "200 ms sind die Periode einer 5-Hz-Schwingung; die Sampleperiode eines 200-Hz-Samplers beträgt nur 5 ms."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein analog bandbegrenztes Signal enthält Komponenten bis 40 Hz. Welche der angebotenen Raten liegt mit Abstand oberhalb der theoretischen Basisband-Grenze?",
+      "options": [
+        {
+          "text": "20 Hz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "80 Hz exakt ohne Reserve.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "40 Hz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "60 Hz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "200 Hz.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 20 Hz liegen sogar unter der höchsten Signalfrequenz 40 Hz und weit unter der Basisband-Nyquistrate 80 Hz. B: 80 Hz liegen exakt an der theoretischen Grenzrate und bieten nicht den ausdrücklich geforderten Abstand für praktische Erfassung. C: 40 Hz entsprechen nur einem Sample pro Periode der höchsten Komponente und genügen für ihre Erfassung nicht. D: 60 Hz liegen unter 2×40 Hz und können Komponenten nahe 40 Hz ins Basisband zurückfalten. E: Für gewöhnliche Basisbanderfassung muss fs>2fmax gelten; reale Filter und zeitliche Formtreue sprechen für Reserve oberhalb 80 Hz. Quelle: Originalunterlagen, PDF-S. 38–39,47–50.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Basisband-Abtastung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Basisband-Abtastung"
+      ],
+      "questionGoal": "Basisband-Abtastung",
+      "structuredExplanation": {
+        "coreIdea": "Basisband-Abtastung",
+        "correctReasoning": "Für gewöhnliche Basisbanderfassung muss fs>2fmax gelten; reale Filter und zeitliche Formtreue sprechen für Reserve oberhalb 80 Hz.",
+        "wrongAnswerExplanations": {
+          "A": "20 Hz liegen sogar unter der höchsten Signalfrequenz 40 Hz und weit unter der Basisband-Nyquistrate 80 Hz.",
+          "B": "80 Hz liegen exakt an der theoretischen Grenzrate und bieten nicht den ausdrücklich geforderten Abstand für praktische Erfassung.",
+          "C": "40 Hz entsprechen nur einem Sample pro Periode der höchsten Komponente und genügen für ihre Erfassung nicht.",
+          "D": "60 Hz liegen unter 2×40 Hz und können Komponenten nahe 40 Hz ins Basisband zurückfalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein reiner 8-Hz-Sinus wird ohne geeigneten Vorfilter mit fs=10 Hz aufgenommen. Welche scheinbare Frequenz kann im Bereich 0 bis fs/2 auftreten?",
+      "options": [
+        {
+          "text": "8 Hz als einzig mögliche unveränderte Darstellung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2 Hz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "18 Hz als Basisbandfrequenz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10 Hz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "16 Hz.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 8 Hz liegen oberhalb fs/2=5 Hz und sind aus dieser unterabgetasteten Folge nicht als einzig mögliche Basisbanddarstellung identifizierbar. B: Die Probenfolge kann eine 2-Hz-Komponente repräsentieren: Betrag von 8−10 Hz; die ursprüngliche Frequenz ist ohne Zusatzwissen nicht eindeutig. C: 18 Hz sind zwar eine mögliche höhere Aliaspartnerfrequenz, liegen aber nicht im verlangten Basisband 0 bis 5 Hz. D: 10 Hz sind die Abtastrate, nicht die hier gefaltete Sinusfrequenz; sie liegen zudem ausserhalb der angegebenen ersten Nyquistzone. E: 16 Hz liegen ausserhalb 0 bis 5 Hz und sind auch nicht die gesuchte gefaltete Frequenz. Quelle: Originalunterlagen, PDF-S. 38–39,49–50.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Aliasfrequenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aliasfrequenz"
+      ],
+      "questionGoal": "Aliasfrequenz",
+      "structuredExplanation": {
+        "coreIdea": "Aliasfrequenz",
+        "correctReasoning": "Die Probenfolge kann eine 2-Hz-Komponente repräsentieren: Betrag von 8−10 Hz; die ursprüngliche Frequenz ist ohne Zusatzwissen nicht eindeutig.",
+        "wrongAnswerExplanations": {
+          "A": "8 Hz liegen oberhalb fs/2=5 Hz und sind aus dieser unterabgetasteten Folge nicht als einzig mögliche Basisbanddarstellung identifizierbar.",
+          "C": "18 Hz sind zwar eine mögliche höhere Aliaspartnerfrequenz, liegen aber nicht im verlangten Basisband 0 bis 5 Hz.",
+          "D": "10 Hz sind die Abtastrate, nicht die hier gefaltete Sinusfrequenz; sie liegen zudem ausserhalb der angegebenen ersten Nyquistzone.",
+          "E": "16 Hz liegen ausserhalb 0 bis 5 Hz und sind auch nicht die gesuchte gefaltete Frequenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein Sinus mit 5 Hz wird genau mit 10 Hz abgetastet; alle Messpunkte treffen zufällig seine Nulldurchgänge. Welche Schlussfolgerung ist korrekt?",
+      "options": [
+        {
+          "text": "Genau zwei Samples pro Periode garantieren unabhängig von Phase eine genaue Amplitudenbestimmung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Samples können null erscheinen, obwohl eine Schwingung vorhanden ist.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Schwingung muss durch den ADC physikalisch gestoppt worden sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die wahre Amplitude ist dadurch sicher als null bewiesen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Bit-Zahl allein beseitigt dieses Zeitabtastproblem.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei exakt zwei Punkten pro Periode ist die Darstellung phasenabhängig; bei den angegebenen Nulldurchgängen wird die Amplitude gerade nicht erfasst. B: Der Gleichheitsfall ist phasenempfindlich; praktische Erfassung benötigt Abstand zur Grenze und ausreichende Abtastung. C: Der ADC beobachtet das Signal zu bestimmten Zeiten und stoppt die analoge Schwingung nicht physikalisch. D: Messpunkte auf Nulldurchgängen legen nur die gemessenen Werte fest; sie beweisen nicht das Fehlen zwischenliegender Amplitudenmaxima. E: Mehr Amplitudenstufen verändern die Lage der Samplezeitpunkte nicht und beheben die fehlenden zeitlichen Informationen nicht. Quelle: Originalunterlagen, PDF-S. 38–39,48.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Exakter Grenzfall"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exakter Grenzfall"
+      ],
+      "questionGoal": "Exakter Grenzfall",
+      "structuredExplanation": {
+        "coreIdea": "Exakter Grenzfall",
+        "correctReasoning": "Der Gleichheitsfall ist phasenempfindlich; praktische Erfassung benötigt Abstand zur Grenze und ausreichende Abtastung.",
+        "wrongAnswerExplanations": {
+          "A": "Bei exakt zwei Punkten pro Periode ist die Darstellung phasenabhängig; bei den angegebenen Nulldurchgängen wird die Amplitude gerade nicht erfasst.",
+          "C": "Der ADC beobachtet das Signal zu bestimmten Zeiten und stoppt die analoge Schwingung nicht physikalisch.",
+          "D": "Messpunkte auf Nulldurchgängen legen nur die gemessenen Werte fest; sie beweisen nicht das Fehlen zwischenliegender Amplitudenmaxima.",
+          "E": "Mehr Amplitudenstufen verändern die Lage der Samplezeitpunkte nicht und beheben die fehlenden zeitlichen Informationen nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein Signal wird mit fs=100 Hz über 10 s aufgenommen und die gesamten 1000 Samples werden transformiert. Welcher Frequenz-Binabstand folgt?",
+      "options": [
+        {
+          "text": "1 Hz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10 Hz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0.01 Hz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 Hz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.10 Hz.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 1 Hz wäre bei derselben Beziehung der Rasterabstand eines 1-s-Fensters. B: 10 Hz ist der Kehrwert von 0,1 s und nicht der gegebenen Fensterdauer 10 s. C: 0,01 Hz würde eine Beobachtungsdauer von 100 s statt der gegebenen 10 s erfordern. D: 100 Hz ist die Abtastrate; der Binabstand ergibt sich erst durch Division durch alle 1000 Samples. E: Δf=fs/N=1/T=0.10 Hz; die tatsächliche Trennschärfe hängt zusätzlich von Fenster und Signal ab. Quelle: Originalunterlagen, PDF-S. 39–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "FFT-Binabstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "FFT-Binabstand"
+      ],
+      "questionGoal": "FFT-Binabstand",
+      "structuredExplanation": {
+        "coreIdea": "FFT-Binabstand",
+        "correctReasoning": "Δf=fs/N=1/T=0.10 Hz; die tatsächliche Trennschärfe hängt zusätzlich von Fenster und Signal ab.",
+        "wrongAnswerExplanations": {
+          "A": "1 Hz wäre bei derselben Beziehung der Rasterabstand eines 1-s-Fensters.",
+          "B": "10 Hz ist der Kehrwert von 0,1 s und nicht der gegebenen Fensterdauer 10 s.",
+          "C": "0,01 Hz würde eine Beobachtungsdauer von 100 s statt der gegebenen 10 s erfordern.",
+          "D": "100 Hz ist die Abtastrate; der Binabstand ergibt sich erst durch Division durch alle 1000 Samples."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Für zwei nahe Frequenzkomponenten wird bei gleichem fs das ausgewertete Zeitfenster verlängert. Welche Wirkung ist grundsätzlich zu erwarten?",
+      "options": [
+        {
+          "text": "Eine vollständige Beseitigung sämtlicher Messfehler.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein höherer Frequenzrasterabstand und schlechtere Trennung in jedem Fall.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein automatisch höherer Nyquist-Grenzwert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Verdopplung jeder analogen Amplitude unabhängig vom Signal.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein kleinerer Frequenzrasterabstand und bessere Möglichkeit, nahe Komponenten zu trennen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein längeres Fenster kann das Frequenzraster verbessern, beseitigt aber weder jeden Störer noch systematische Messfehler. B: Bei längerem Fenster nimmt Δf=1/T ab und nicht zu; die grundsätzliche Rastertrennung wird feiner. C: Die Nyquist-Grenze bleibt fs/2; eine längere Auswertedauer bei gleichem fs verschiebt sie nicht. D: Die analoge Amplitude wird durch die betrachtete Fensterdauer nicht automatisch verdoppelt; sie gehört zum Eingangssignal. E: Die Beobachtungsdauer bestimmt die spektrale Auflösungsskala; fs/2 hängt dagegen nur von der Abtastrate ab. Quelle: Originalunterlagen, PDF-S. 41,49–51.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Länge des Zeitfensters"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Länge des Zeitfensters"
+      ],
+      "questionGoal": "Länge des Zeitfensters",
+      "structuredExplanation": {
+        "coreIdea": "Länge des Zeitfensters",
+        "correctReasoning": "Die Beobachtungsdauer bestimmt die spektrale Auflösungsskala; fs/2 hängt dagegen nur von der Abtastrate ab.",
+        "wrongAnswerExplanations": {
+          "A": "Ein längeres Fenster kann das Frequenzraster verbessern, beseitigt aber weder jeden Störer noch systematische Messfehler.",
+          "B": "Bei längerem Fenster nimmt Δf=1/T ab und nicht zu; die grundsätzliche Rastertrennung wird feiner.",
+          "C": "Die Nyquist-Grenze bleibt fs/2; eine längere Auswertedauer bei gleichem fs verschiebt sie nicht.",
+          "D": "Die analoge Amplitude wird durch die betrachtete Fensterdauer nicht automatisch verdoppelt; sie gehört zum Eingangssignal."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Im Praktikum wird vor dem ADC verstärkt; nach Digitalisierung dividiert die Software die Werte wieder durch den Gain. Was kann eine geeignete höhere Verstärkung bewirken?",
+      "options": [
+        {
+          "text": "Eine beliebig starke Verstärkung ohne Risiko von Sättigung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine sichere Beseitigung von Aliasing bei unverändertem fs.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bessere Ausnutzung des ADC-Bereichs, ohne dass die korrekt rückskalierte Signalamplitude steigen muss.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Verdopplung der Zahl der ADC-Bits im Chip.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine zwingend entsprechend höhere zurückgerechnete physiologische Amplitude.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei zu grossem Gain wird der Eingangsbereich überschritten; abgeschnittene Spitzen werden durch Rückskalierung nicht rekonstruiert. B: Aliasing entsteht aus unzureichender Zeitabtastung beziehungsweise Bandbegrenzung und wird durch Gain allein nicht sicher verhindert. C: Der Gain kann die Quantisierung bezogen auf das Eingangssignal verbessern; zu grosser Gain führt zum Clipping. D: Analoge Verstärkung verändert nicht die physisch implementierte Bit-Zahl des ADC. E: Die Software dividiert durch den eingestellten Gain zurück; eine höhere Verstärkung muss die geschätzte physiologische Eingangsamplitude deshalb nicht erhöhen. Quelle: Originalunterlagen, PDF-S. 47–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Verstärkung und Anzeige"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verstärkung und Anzeige"
+      ],
+      "questionGoal": "Verstärkung und Anzeige",
+      "structuredExplanation": {
+        "coreIdea": "Verstärkung und Anzeige",
+        "correctReasoning": "Der Gain kann die Quantisierung bezogen auf das Eingangssignal verbessern; zu grosser Gain führt zum Clipping.",
+        "wrongAnswerExplanations": {
+          "A": "Bei zu grossem Gain wird der Eingangsbereich überschritten; abgeschnittene Spitzen werden durch Rückskalierung nicht rekonstruiert.",
+          "B": "Aliasing entsteht aus unzureichender Zeitabtastung beziehungsweise Bandbegrenzung und wird durch Gain allein nicht sicher verhindert.",
+          "D": "Analoge Verstärkung verändert nicht die physisch implementierte Bit-Zahl des ADC.",
+          "E": "Die Software dividiert durch den eingestellten Gain zurück; eine höhere Verstärkung muss die geschätzte physiologische Eingangsamplitude deshalb nicht erhöhen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Nach Erhöhen des Vorverstärkers zeigt ein zuvor runder Sinus flache obere und untere Plateaus. Welche Erklärung ist am wahrscheinlichsten?",
+      "options": [
+        {
+          "text": "Die ursprüngliche Frequenz hat sich durch die Anzeige sicher halbiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Sensor misst nun ohne jedes Rauschen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der ADC- oder Verstärkereingang wird ausserhalb seines linearen Bereichs übersteuert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Zeitfenster ist zwingend exakt auf eine Periode verkürzt worden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Zahl der ADC-Stufen ist dadurch unendlich gross geworden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Flache Spitzen nach Gain-Erhöhung zeigen keine sichere Halbierung der ursprünglichen Frequenz; sie sind charakteristisch für Amplitudenbegrenzung. B: Clipping kann mit Rauschen gleichzeitig auftreten; eine gesättigte Kurve beweist keine rauschfreie Messung. C: Übersteuerung begrenzt Spitzen und verfälscht Amplitude sowie Form; nachträgliches Rückskalieren stellt verlorene Spitzen nicht wieder her. D: Eine Verkürzung des Zeitfensters wird durch den Vorverstärker nicht erzwungen und erklärt keine systematisch abgeschnittenen Spitzen. E: Die endliche Anzahl digitaler Codes bleibt bestehen; Übersteuerung erzeugt keine unendliche Auflösung. Quelle: Originalunterlagen, PDF-S. 36,48–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Clipping"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Clipping"
+      ],
+      "questionGoal": "Clipping",
+      "structuredExplanation": {
+        "coreIdea": "Clipping",
+        "correctReasoning": "Übersteuerung begrenzt Spitzen und verfälscht Amplitude sowie Form; nachträgliches Rückskalieren stellt verlorene Spitzen nicht wieder her.",
+        "wrongAnswerExplanations": {
+          "A": "Flache Spitzen nach Gain-Erhöhung zeigen keine sichere Halbierung der ursprünglichen Frequenz; sie sind charakteristisch für Amplitudenbegrenzung.",
+          "B": "Clipping kann mit Rauschen gleichzeitig auftreten; eine gesättigte Kurve beweist keine rauschfreie Messung.",
+          "D": "Eine Verkürzung des Zeitfensters wird durch den Vorverstärker nicht erzwungen und erklärt keine systematisch abgeschnittenen Spitzen.",
+          "E": "Die endliche Anzahl digitaler Codes bleibt bestehen; Übersteuerung erzeugt keine unendliche Auflösung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Ein kleiner Biosignalpuls liegt nahe am Rauschpegel. Was ist bei der Bestimmung von Beginn und Anstiegszeit zu erwarten?",
+      "options": [
+        {
+          "text": "Ein einzelner Rauschpeak beweist eine verkürzte wahre physiologische Anstiegszeit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede digitale Aufnahme enthält definitionsgemäss kein Rauschen mehr.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Anstiegszeit wird durch grössere Dateigrösse automatisch exakt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Festlegung von Schwellenübertritten wird unsicher und kann zwischen Messungen schwanken.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Rauschen erhöht nur die Frequenz, aber beeinflusst keine Zeitmarke.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein einzelner Peak kann Störung sein; er beweist keine echte Verkürzung des physiologischen Pulsanstiegs. B: Digitalisierung speichert auch überlagertes Rauschen beziehungsweise Artefakte und macht die Aufnahme nicht definitionsgemäss störungsfrei. C: Mehr Dateibytes allein liefern keine exakte Zeitmarke; relevant sind Abtastung, Signalform, Amplitudenauflösung und Rauschen. D: Überlagertes Rauschen verändert gemessene lokale Amplituden und damit daraus abgeleitete Zeitpunkte. E: Rauschen verändert lokale Spannungswerte und kann dadurch auch den Zeitpunkt eines Schwellenübertritts verschieben. Quelle: Originalunterlagen, PDF-S. 36,52.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Rauschen und Anstiegszeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rauschen und Anstiegszeit"
+      ],
+      "questionGoal": "Rauschen und Anstiegszeit",
+      "structuredExplanation": {
+        "coreIdea": "Rauschen und Anstiegszeit",
+        "correctReasoning": "Überlagertes Rauschen verändert gemessene lokale Amplituden und damit daraus abgeleitete Zeitpunkte.",
+        "wrongAnswerExplanations": {
+          "A": "Ein einzelner Peak kann Störung sein; er beweist keine echte Verkürzung des physiologischen Pulsanstiegs.",
+          "B": "Digitalisierung speichert auch überlagertes Rauschen beziehungsweise Artefakte und macht die Aufnahme nicht definitionsgemäss störungsfrei.",
+          "C": "Mehr Dateibytes allein liefern keine exakte Zeitmarke; relevant sind Abtastung, Signalform, Amplitudenauflösung und Rauschen.",
+          "E": "Rauschen verändert lokale Spannungswerte und kann dadurch auch den Zeitpunkt eines Schwellenübertritts verschieben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zur Digitalisierung.",
+      "options": [
+        {
+          "text": "Eine exakt bekannte Samplezeit macht den Amplitudenwert beliebig genau.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Abtastrate bestimmt den zeitlichen Abstand der Samples.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Quantisierung ordnet analoge Amplituden einer endlichen Zahl numerischer Stufen zu.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine höhere Bit-Zahl erhöht bei unverändertem fs die Anzahl Samples pro Sekunde.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zeitauflösung und Amplitudenquantisierung sind getrennte Grenzen. B: Δt=1/fs. C: Daraus entsteht eine begrenzte Amplitudenauflösung. D: Sie erhöht die Amplitudenstufen, nicht die Abtastfrequenz. Quelle: Originalunterlagen, PDF-S. 36–38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Zwei Auflösungsachsen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zwei Auflösungsachsen"
+      ],
+      "questionGoal": "Zwei Auflösungsachsen",
+      "structuredExplanation": {
+        "coreIdea": "Zwei Auflösungsachsen",
+        "correctReasoning": "Δt=1/fs. Daraus entsteht eine begrenzte Amplitudenauflösung.",
+        "wrongAnswerExplanations": {
+          "A": "Zeitauflösung und Amplitudenquantisierung sind getrennte Grenzen.",
+          "B": "Δt=1/fs.",
+          "C": "Daraus entsteht eine begrenzte Amplitudenauflösung.",
+          "D": "Sie erhöht die Amplitudenstufen, nicht die Abtastfrequenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zur gewöhnlichen Basisbanderfassung.",
+      "options": [
+        {
+          "text": "Bei fs=100 Hz ist jede beliebige Frequenz bis 100 Hz unverfälscht erfassbar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die theoretische Nyquist-Rate eines Basisbandsignals ist zweimal seine höchste relevante Frequenz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine analoge Tiefpassbegrenzung vor dem ADC kann unerwünschte hochfrequente Komponenten vor dem Aliasing abschwächen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei fs=100 Hz liegt die Nyquist-Grenze des Samplers bei 50 Hz.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die erste Nyquistzone reicht nur bis 50 Hz. B: Diese Rate ist von der Nyquistfrequenz eines gegebenen Samplers zu unterscheiden. C: Nachträgliche Filterung kann bereits gefaltete Information nicht eindeutig entmischen. D: Sie ist fs/2, nicht 2fs. Quelle: Originalunterlagen, PDF-S. 38–39,47–50.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Nyquist und Vorfilter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nyquist und Vorfilter"
+      ],
+      "questionGoal": "Nyquist und Vorfilter",
+      "structuredExplanation": {
+        "coreIdea": "Nyquist und Vorfilter",
+        "correctReasoning": "Diese Rate ist von der Nyquistfrequenz eines gegebenen Samplers zu unterscheiden. Nachträgliche Filterung kann bereits gefaltete Information nicht eindeutig entmischen. Sie ist fs/2, nicht 2fs.",
+        "wrongAnswerExplanations": {
+          "A": "Die erste Nyquistzone reicht nur bis 50 Hz.",
+          "B": "Diese Rate ist von der Nyquistfrequenz eines gegebenen Samplers zu unterscheiden.",
+          "C": "Nachträgliche Filterung kann bereits gefaltete Information nicht eindeutig entmischen.",
+          "D": "Sie ist fs/2, nicht 2fs."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zur Unterabtastung.",
+      "options": [
+        {
+          "text": "Eine höhere Bit-Zahl beseitigt Zeit-Aliasing bei gleicher unzureichender Abtastrate.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein veränderter scheinbarer Rhythmus bei Änderung von fs kann auf Aliasing hinweisen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die wahre Ausgangsfrequenz ist aus jeder unterabgetasteten Einzelaufnahme ohne Zusatzwissen eindeutig rekonstruierbar.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine zu niedrige Abtastrate bewirkt nur eine geringere Amplitude, aber keine scheinbar andere Frequenz.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehr Amplitudenstufen ersetzen keine zeitlichen Samples. B: Das zugrunde liegende analoge Signal muss sich dabei nicht geändert haben. C: Verschiedene analoge Frequenzen können dieselbe Probenfolge erzeugen. D: Höhere Frequenzen können als niedrigere erscheinen. Quelle: Originalunterlagen, PDF-S. 38–39,47–50.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Aliasingdiagnose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aliasingdiagnose"
+      ],
+      "questionGoal": "Aliasingdiagnose",
+      "structuredExplanation": {
+        "coreIdea": "Aliasingdiagnose",
+        "correctReasoning": "Das zugrunde liegende analoge Signal muss sich dabei nicht geändert haben.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr Amplitudenstufen ersetzen keine zeitlichen Samples.",
+          "B": "Das zugrunde liegende analoge Signal muss sich dabei nicht geändert haben.",
+          "C": "Verschiedene analoge Frequenzen können dieselbe Probenfolge erzeugen.",
+          "D": "Höhere Frequenzen können als niedrigere erscheinen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zur FFT-Auswertung.",
+      "options": [
+        {
+          "text": "Die Fensterfunktion kann den spektralen Verlauf beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein reines Amplitudenspektrum enthält automatisch sämtliche Phasenbeziehungen für eine eindeutige Rekonstruktion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein unendlich langer idealer Sinus muss ein kontinuierlich breites Frequenzband besitzen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Amplituden-Frequenzspektrum zeigt die relativen Beiträge verschiedener Frequenzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Abschneiden und Gewichtung des Zeitabschnitts beeinflussen die spektrale Darstellung. B: Die Phaseninformation ist darin nicht vollständig dargestellt. C: Er besitzt eine einzelne Frequenz; endliche Ausschnitte und Fenster verbreitern das beobachtete Spektrum. D: Die FFT liefert eine diskrete Frequenzzerlegung der Daten. Quelle: Originalunterlagen, PDF-S. 39–41,49–51.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Frequenzdarstellung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Frequenzdarstellung"
+      ],
+      "questionGoal": "Frequenzdarstellung",
+      "structuredExplanation": {
+        "coreIdea": "Frequenzdarstellung",
+        "correctReasoning": "Abschneiden und Gewichtung des Zeitabschnitts beeinflussen die spektrale Darstellung. Die FFT liefert eine diskrete Frequenzzerlegung der Daten.",
+        "wrongAnswerExplanations": {
+          "A": "Abschneiden und Gewichtung des Zeitabschnitts beeinflussen die spektrale Darstellung.",
+          "B": "Die Phaseninformation ist darin nicht vollständig dargestellt.",
+          "C": "Er besitzt eine einzelne Frequenz; endliche Ausschnitte und Fenster verbreitern das beobachtete Spektrum.",
+          "D": "Die FFT liefert eine diskrete Frequenzzerlegung der Daten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen bei unveränderter Abtastrate.",
+      "options": [
+        {
+          "text": "Ein längeres Aufnahmefenster enthält mehr Samples.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine breitere Spektrallinie beweist unabhängig von Fenster und Rauschen mehrere reale Oszillatoren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur ein höheres fs verbessert bei festgehaltener Dauer automatisch den Binabstand.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der FFT-Binabstand wird bei doppelter Aufnahmedauer halbiert.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: N=fsT. B: Endliche Beobachtung und Fenster können Breite erzeugen. C: Bei N=fsT bleibt fs/N=1/T gleich. D: Δf=1/T. Quelle: Originalunterlagen, PDF-S. 41,49–51.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Zeitfenster"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitfenster"
+      ],
+      "questionGoal": "Zeitfenster",
+      "structuredExplanation": {
+        "coreIdea": "Zeitfenster",
+        "correctReasoning": "N=fsT. Δf=1/T.",
+        "wrongAnswerExplanations": {
+          "A": "N=fsT.",
+          "B": "Endliche Beobachtung und Fenster können Breite erzeugen.",
+          "C": "Bei N=fsT bleibt fs/N=1/T gleich.",
+          "D": "Δf=1/T."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zum Vorverstärker.",
+      "options": [
+        {
+          "text": "Eine höhere Verstärkung verbessert nicht automatisch das Verhältnis eines gemeinsam mitverstärkten Nutzsignals und Störsignals.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Im passenden linearen Bereich kann Gain die eingangsbezogene Quantisierungsstufe verkleinern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nach Clipping lässt sich die wahre Spitzenspannung durch Division durch den Gain exakt wiederherstellen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zu geringe Verstärkung kann nur wenige ADC-Stufen für den interessierenden Ausschlag nutzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide können im selben Verhältnis ansteigen. B: Die ADC-Schrittweite wird durch den Gain auf den Eingang zurückbezogen. C: Die abgeschnittene Information ist verloren. D: Die Eingangsauflösung wird dann unzureichend ausgenutzt. Quelle: Originalunterlagen, PDF-S. 38,47–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Gain und Quantisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gain und Quantisierung"
+      ],
+      "questionGoal": "Gain und Quantisierung",
+      "structuredExplanation": {
+        "coreIdea": "Gain und Quantisierung",
+        "correctReasoning": "Beide können im selben Verhältnis ansteigen. Die ADC-Schrittweite wird durch den Gain auf den Eingang zurückbezogen. Die Eingangsauflösung wird dann unzureichend ausgenutzt.",
+        "wrongAnswerExplanations": {
+          "A": "Beide können im selben Verhältnis ansteigen.",
+          "B": "Die ADC-Schrittweite wird durch den Gain auf den Eingang zurückbezogen.",
+          "C": "Die abgeschnittene Information ist verloren.",
+          "D": "Die Eingangsauflösung wird dann unzureichend ausgenutzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zur Biosignalaufnahme.",
+      "options": [
+        {
+          "text": "Eine digitale Darstellung unterscheidet automatisch jeden Muskelartefakt sicher von einem Herzsignal.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine AC-Kopplung entfernt beziehungsweise unterdrückt den Gleichanteil und sehr langsame Anteile.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine physiologische Amplitude kann aus einem gesättigten Plateau ohne weitere Daten sicher bestimmt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine perfekte Frequenzanzeige garantiert eine rauschfreie Bestimmung jedes Pulsbeginns.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Messung und Interpretation benötigen geeignete Kontrollen und Analyse. B: Dies kann eine grössere Verstärkung des interessierenden Wechselanteils ermöglichen. C: Übersteuerung begrenzt die Anzeige und verliert Spitzeninformation. D: Frequenzschätzung und lokale Zeitmarkierung haben unterschiedliche Unsicherheiten. Quelle: Originalunterlagen, PDF-S. 36,41–43,52.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Biologische Signale"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biologische Signale"
+      ],
+      "questionGoal": "Biologische Signale",
+      "structuredExplanation": {
+        "coreIdea": "Biologische Signale",
+        "correctReasoning": "Dies kann eine grössere Verstärkung des interessierenden Wechselanteils ermöglichen.",
+        "wrongAnswerExplanations": {
+          "A": "Messung und Interpretation benötigen geeignete Kontrollen und Analyse.",
+          "B": "Dies kann eine grössere Verstärkung des interessierenden Wechselanteils ermöglichen.",
+          "C": "Übersteuerung begrenzt die Anzeige und verliert Spitzeninformation.",
+          "D": "Frequenzschätzung und lokale Zeitmarkierung haben unterschiedliche Unsicherheiten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fppsignal_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPPSIGNAL",
+      "stem": "Beurteilen Sie die Aussagen zur Interpretation verrauschter Aufnahmen.",
+      "options": [
+        {
+          "text": "Abtastrate, Amplitudenbereich und Rauschen müssen gemeinsam zur Messfrage passen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder einzelne hohe Datenpunkt muss eine reale physiologische Spitze sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein niedrigerer digitaler Anzeigemassstab verändert die tatsächliche Sensorauflösung bereits rückwirkend.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein grösseres Signal gegenüber gleichem Hintergrundrauschen erleichtert gewöhnlich die Markierung seines Beginns.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Grenzen können sowohl Form als auch zeitliche Kennwerte verfälschen. B: Rauschen oder Artefakte können einzelne Werte erhöhen. C: Zoom ändert nur die Darstellung vorhandener Daten. D: Ein besseres Signal-Rausch-Verhältnis verringert die Schwellenunsicherheit. Quelle: Originalunterlagen, PDF-S. 36,47–52.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPPSIGNAL",
+        "Messstrategie und Rauschen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messstrategie und Rauschen"
+      ],
+      "questionGoal": "Messstrategie und Rauschen",
+      "structuredExplanation": {
+        "coreIdea": "Messstrategie und Rauschen",
+        "correctReasoning": "Die Grenzen können sowohl Form als auch zeitliche Kennwerte verfälschen. Ein besseres Signal-Rausch-Verhältnis verringert die Schwellenunsicherheit.",
+        "wrongAnswerExplanations": {
+          "A": "Die Grenzen können sowohl Form als auch zeitliche Kennwerte verfälschen.",
+          "B": "Rauschen oder Artefakte können einzelne Werte erhöhen.",
+          "C": "Zoom ändert nur die Darstellung vorhandener Daten.",
+          "D": "Ein besseres Signal-Rausch-Verhältnis verringert die Schwellenunsicherheit."
+        }
+      }
+    }
+  ]
+}

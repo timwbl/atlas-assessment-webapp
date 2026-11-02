@@ -1,0 +1,1314 @@
+{
+  "id": "assessment_j1_s1_block4_kvb31_32_20261102",
+  "lectureCode": "KVB31/32",
+  "title": "Transgene Organismen und Genome Editing",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB31&32_Transgene_Organismen_2025_Albrecht. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Keimbahnvererbung klar von somatischer Veränderung getrennt. Poly-A-Signal nicht als Translationstermination übernommen. NHEJ erzeugt nicht zwingend Knockouts. Kernklone nicht als in mtDNA/Epigenetik vollständig identisch dargestellt; Primärbelege zu CRISPR in review/block4_notes.md.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Transgenese und Anwendungen in Forschung und Produktion erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Pronukleusinjektion, ES-Zell-Methode und Kerntransfer unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Gezieltes Gene Targeting, Selektion, Chimären und Vererbung erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "CRISPR/Cas9 sowie NHEJ und HDR mechanistisch einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb31_32_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Eigenschaft ermöglicht die Weitergabe eines stabil eingeführten Transgens an Nachkommen?",
+      "options": [
+        {
+          "text": "Eine einzelne Zellkultur exprimiert es nach Transfektion für einige Stunden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es wird vorübergehend in isolierten Leberzellen exprimiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das gereinigte Transgenprotein wird ins Blut injiziert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es liegt nur als freie DNA ausserhalb der Zellen vor.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Transgen ist in keimbahnbeitragenden Zellen vorhanden.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Transiente Kultur-Expression belegt keine Keimbahnintegration. B: Somatische Expression allein ist nicht erblich. C: Proteinverabreichung integriert keine Erbinformation. D: Extrazelluläre DNA ist kein stabiler Keimbahnbestandteil. E: Nur eine entsprechende Keimbahnbeteiligung ermöglicht reguläre Vererbung. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Keimbahntransgenese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Keimbahntransgenese"
+      ],
+      "questionGoal": "Keimbahntransgenese",
+      "structuredExplanation": {
+        "coreIdea": "Keimbahntransgenese",
+        "correctReasoning": "Nur eine entsprechende Keimbahnbeteiligung ermöglicht reguläre Vererbung.",
+        "wrongAnswerExplanations": {
+          "A": "Transiente Kultur-Expression belegt keine Keimbahnintegration.",
+          "B": "Somatische Expression allein ist nicht erblich.",
+          "C": "Proteinverabreichung integriert keine Erbinformation.",
+          "D": "Extrazelluläre DNA ist kein stabiler Keimbahnbestandteil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Ein humanes Protein soll in der Milch transgener Tiere produziert werden. Welche Konstruktion passt am besten?",
+      "options": [
+        {
+          "text": "Nur die Proteinsequenz als gereinigtes Protein im Pronukleus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich ein Polyadenylierungssignal ohne Promotor und Gen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein gewebsunabhängiger Promotor ohne Protein-kodierende Sequenz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Milchdrüsenspezifischer Promotor vor der kodierenden Sequenz mit geeigneten 3′-Signalen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine Promotordeletionskassette ohne alternativen Transkriptionsstart.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist keine vererbbare DNA-Expressionskassette. B: Das Signal allein stellt weder Transkriptionsstart noch Produktsequenz bereit. C: Ein Promotor allein kodiert das Produkt nicht. D: Der Promotor richtet die Expression auf das gewünschte Gewebe aus. E: Sie ermöglicht keine gezielte Expression des gewünschten Produkts. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Gewebespezifische Expression"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gewebespezifische Expression"
+      ],
+      "questionGoal": "Gewebespezifische Expression",
+      "structuredExplanation": {
+        "coreIdea": "Gewebespezifische Expression",
+        "correctReasoning": "Der Promotor richtet die Expression auf das gewünschte Gewebe aus.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist keine vererbbare DNA-Expressionskassette.",
+          "B": "Das Signal allein stellt weder Transkriptionsstart noch Produktsequenz bereit.",
+          "C": "Ein Promotor allein kodiert das Produkt nicht.",
+          "E": "Sie ermöglicht keine gezielte Expression des gewünschten Produkts."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Einschränkung ist für die klassische Pronukleus-Mikroinjektion besonders typisch?",
+      "options": [
+        {
+          "text": "Jede injizierte Zygote liefert garantiert eine gleich exprimierende transgene Linie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Integration erfolgt gewöhnlich an nicht gezielt festgelegten Genomstellen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie ersetzt grundsätzlich exakt ein bestimmtes Zielallel durch homologe Rekombination.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie erzeugt ausschliesslich transiente Expression ohne mögliche Integration.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie benötigt zwingend vorher selektierte embryonale Stammzellen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Effizienz und Expressionsstärke variieren. B: Positionseffekte und Insertionsmutagenese können die Linie beeinflussen. C: Das kennzeichnet gezieltes Targeting, nicht klassische Zufallsintegration. D: Eine stabile Integration ist gerade Ziel der Methode. E: DNA wird direkt in die Zygote injiziert. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Pronukleusinjektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pronukleusinjektion"
+      ],
+      "questionGoal": "Pronukleusinjektion",
+      "structuredExplanation": {
+        "coreIdea": "Pronukleusinjektion",
+        "correctReasoning": "Positionseffekte und Insertionsmutagenese können die Linie beeinflussen.",
+        "wrongAnswerExplanations": {
+          "A": "Effizienz und Expressionsstärke variieren.",
+          "C": "Das kennzeichnet gezieltes Targeting, nicht klassische Zufallsintegration.",
+          "D": "Eine stabile Integration ist gerade Ziel der Methode.",
+          "E": "DNA wird direkt in die Zygote injiziert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Zwei Mauslinien tragen dieselbe Transgenkassette, exprimieren sie aber unterschiedlich stark. Welche Erklärung passt?",
+      "options": [
+        {
+          "text": "Eine cDNA enthält definitionsgemäss alle regulatorischen Eigenschaften jedes Genomortes.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verschiedene Integrationsorte beeinflussen die lokale Regulation.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Transgen muss deswegen in beiden Linien fehlen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Unterschied beweist eine abweichende Codonbedeutung in jeder Linie.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Identische Promotorsequenzen garantieren unabhängig vom Integrationsort identische Expression.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die isolierte cDNA ersetzt keine Chromatinumgebung. B: Chromatinumgebung und benachbarte Elemente können die Expression verändern. C: Unterschiedliche Expression ist auch bei vorhandenem Transgen möglich. D: Der genetische Code wird nicht durch den Integrationsort geändert. E: Der genomische Kontext kann trotzdem verschieden sein. Quelle: Originalunterlagen, PDF-S. 17–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Positionseffekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positionseffekt"
+      ],
+      "questionGoal": "Positionseffekt",
+      "structuredExplanation": {
+        "coreIdea": "Positionseffekt",
+        "correctReasoning": "Chromatinumgebung und benachbarte Elemente können die Expression verändern.",
+        "wrongAnswerExplanations": {
+          "A": "Die isolierte cDNA ersetzt keine Chromatinumgebung.",
+          "C": "Unterschiedliche Expression ist auch bei vorhandenem Transgen möglich.",
+          "D": "Der genetische Code wird nicht durch den Integrationsort geändert.",
+          "E": "Der genomische Kontext kann trotzdem verschieden sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q05",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Was kennzeichnet embryonale Stammzellen im beschriebenen ES-Zell-Verfahren?",
+      "options": [
+        {
+          "text": "Sie sind bereits ausschliesslich auf reife Erythrozyten festgelegt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie können zu verschiedenen Zelltypen der drei Keimblätter beitragen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie können nach genetischer Veränderung niemals mehr differenzieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede ES-Zelle bildet unter allen Bedingungen allein einen vollständigen Organismus inklusive extraembryonaler Gewebe.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ihr Genom besteht nur aus dem eingeführten Transgen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: ES-Zellen haben eine breitere Differenzierungspotenz. B: Diese Pluripotenz ermöglicht breite Beiträge in Chimären. C: Geeignete veränderte ES-Zellen können weiter zur Entwicklung beitragen. D: Dies verwechselt Pluripotenz mit Totipotenz. E: Das übrige zelluläre Genom bleibt vorhanden. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Pluripotenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pluripotenz"
+      ],
+      "questionGoal": "Pluripotenz",
+      "structuredExplanation": {
+        "coreIdea": "Pluripotenz",
+        "correctReasoning": "Diese Pluripotenz ermöglicht breite Beiträge in Chimären.",
+        "wrongAnswerExplanations": {
+          "A": "ES-Zellen haben eine breitere Differenzierungspotenz.",
+          "C": "Geeignete veränderte ES-Zellen können weiter zur Entwicklung beitragen.",
+          "D": "Dies verwechselt Pluripotenz mit Totipotenz.",
+          "E": "Das übrige zelluläre Genom bleibt vorhanden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Warum ist die nach ES-Zell-Injektion entstehende Maus zunächst eine Chimäre?",
+      "options": [
+        {
+          "text": "Sämtliche Zellen haben zwingend beide Zielallele ausgeschaltet.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es enthält definitionsgemäss nur extrazelluläre Fremd-DNA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede einzelne Zelle besitzt obligatorisch zwei vollständige Zellkerne.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Tier besitzt ausschliesslich mütterliche Zellen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ihre Zellpopulationen können aus Wirtsblastozyste und injizierten ES-Zellen stammen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der ES-Zell-Beitrag und der Allelstatus müssen geprüft werden. B: Die genetisch verschiedenen Zellen sind Bestandteil des Tiers. C: Chimärismus bezeichnet verschiedene Zellpopulationen, keine notwendige Zweikernigkeit. D: Auch die injizierten ES-Zellen können beitragen. E: Damit enthält sie Zellen verschiedener genetischer Herkunft. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Chimäre"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chimäre"
+      ],
+      "questionGoal": "Chimäre",
+      "structuredExplanation": {
+        "coreIdea": "Chimäre",
+        "correctReasoning": "Damit enthält sie Zellen verschiedener genetischer Herkunft.",
+        "wrongAnswerExplanations": {
+          "A": "Der ES-Zell-Beitrag und der Allelstatus müssen geprüft werden.",
+          "B": "Die genetisch verschiedenen Zellen sind Bestandteil des Tiers.",
+          "C": "Chimärismus bezeichnet verschiedene Zellpopulationen, keine notwendige Zweikernigkeit.",
+          "D": "Auch die injizierten ES-Zellen können beitragen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q07",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Ein Targetingvektor trägt neo innerhalb und tk ausserhalb der Homologiearme. Welches Profil wird durch die beschriebene Kombination aus positiver Selektion und Ganciclovir begünstigt?",
+      "options": [
+        {
+          "text": "Ausschliesslich Zellen mit möglichst vielen zufälligen tk-Integrationen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "neo-negativ und tk-positiv.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "neo-negativ und tk-negativ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "neo-positiv und tk-negativ.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "neo-positiv und tk-positiv.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: tk erhöht gerade die Empfindlichkeit gegen Ganciclovir. B: Ohne Resistenzmarker fehlt positive Selektion; tk vermittelt Ganciclovirempfindlichkeit. C: Nichtintegrierte Zellen scheitern an der positiven Selektion. D: Gezielter Austausch kann neo integrieren, ohne das ausserhalb liegende tk mitzunehmen. E: Diese Zellen können an der negativen Selektion scheitern. Quelle: Originalunterlagen, PDF-S. 25–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Positiv-Negativ-Selektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positiv-Negativ-Selektion"
+      ],
+      "questionGoal": "Positiv-Negativ-Selektion",
+      "structuredExplanation": {
+        "coreIdea": "Positiv-Negativ-Selektion",
+        "correctReasoning": "Gezielter Austausch kann neo integrieren, ohne das ausserhalb liegende tk mitzunehmen.",
+        "wrongAnswerExplanations": {
+          "A": "tk erhöht gerade die Empfindlichkeit gegen Ganciclovir.",
+          "B": "Ohne Resistenzmarker fehlt positive Selektion; tk vermittelt Ganciclovirempfindlichkeit.",
+          "C": "Nichtintegrierte Zellen scheitern an der positiven Selektion.",
+          "E": "Diese Zellen können an der negativen Selektion scheitern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Zwei heterozygote Tiere (+/−) werden gekreuzt. Unter mendelscher Vererbung ohne Viabilitätsunterschiede: Welcher Anteil der Nachkommen ist −/−?",
+      "options": [
+        {
+          "text": "Alle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Drei Viertel.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Keiner.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Hälfte.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Viertel.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beide Eltern können auch ein Plusallel übertragen. B: Dies ist der Anteil mit mindestens einem Minusallel. C: Beide Eltern können das Minusallel übertragen. D: Dies ist der erwartete Anteil Heterozygoter, nicht Homozygoter −/−. E: Die Kombinationen +/+, +/−, −/+ und −/− sind gleich wahrscheinlich. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Kreuzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kreuzung"
+      ],
+      "questionGoal": "Kreuzung",
+      "structuredExplanation": {
+        "coreIdea": "Kreuzung",
+        "correctReasoning": "Die Kombinationen +/+, +/−, −/+ und −/− sind gleich wahrscheinlich.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Eltern können auch ein Plusallel übertragen.",
+          "B": "Dies ist der Anteil mit mindestens einem Minusallel.",
+          "C": "Beide Eltern können das Minusallel übertragen.",
+          "D": "Dies ist der erwartete Anteil Heterozygoter, nicht Homozygoter −/−."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Was ist beim somatischen Kerntransfer der entscheidende Beitrag der entkernten Eizelle?",
+      "options": [
+        {
+          "text": "Sie garantiert identische mitochondriale DNA mit dem Kernspender.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ihr Cytoplasma ermöglicht Reprogrammierung und frühe Entwicklung des übertragenen Kerns.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie beseitigt gezielt jede einzelne DNA-Sequenz des Spenderkerns.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie liefert einen zweiten vollständigen mütterlichen Zellkern zur gewöhnlichen Befruchtung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie macht sämtliche Nachkommen ohne weitere Eingriffe transgen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mitochondrien stammen überwiegend aus der Eizelle. B: Der Kern stammt von der Spenderzelle; Eizellfaktoren unterstützen den Neustart. C: Der Spenderkern liefert gerade die Kerninformation. D: Der eigene Kern wurde entfernt. E: Klonierung allein führt kein zusätzliches Transgen ein. Quelle: Originalunterlagen, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Kerntransfer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kerntransfer"
+      ],
+      "questionGoal": "Kerntransfer",
+      "structuredExplanation": {
+        "coreIdea": "Kerntransfer",
+        "correctReasoning": "Der Kern stammt von der Spenderzelle; Eizellfaktoren unterstützen den Neustart.",
+        "wrongAnswerExplanations": {
+          "A": "Mitochondrien stammen überwiegend aus der Eizelle.",
+          "C": "Der Spenderkern liefert gerade die Kerninformation.",
+          "D": "Der eigene Kern wurde entfernt.",
+          "E": "Klonierung allein führt kein zusätzliches Transgen ein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Kombination lenkt das übliche Cas9-System zur gewählten Zielregion?",
+      "options": [
+        {
+          "text": "Eine beliebige RNA unabhängig von ihrer Sequenz und jedem PAM.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Komplementäre Leit-RNA und ein geeignetes benachbartes PAM.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine homologe Reparaturvorlage ohne Leit-RNA und ohne Zielerkennung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur die Expression von Cas9 ohne passende Leit-RNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur ein passendes PAM ohne komplementäre Leit-RNA.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zielerkennung ist sequenzabhängig. B: RNA-Basenpaarung und PAM-Erkennung ermöglichen Zielbindung und Schnitt. C: Die Vorlage allein lenkt das Cas9-System nicht zur Schnittstelle. D: Cas9 benötigt die RNA-vermittelte Sequenzspezifität. E: PAM allein legt die programmierte Zielsequenz nicht fest. Quelle: Originalunterlagen, PDF-S. 32–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Cas9-Zielerkennung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cas9-Zielerkennung"
+      ],
+      "questionGoal": "Cas9-Zielerkennung",
+      "structuredExplanation": {
+        "coreIdea": "Cas9-Zielerkennung",
+        "correctReasoning": "RNA-Basenpaarung und PAM-Erkennung ermöglichen Zielbindung und Schnitt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zielerkennung ist sequenzabhängig.",
+          "C": "Die Vorlage allein lenkt das Cas9-System nicht zur Schnittstelle.",
+          "D": "Cas9 benötigt die RNA-vermittelte Sequenzspezifität.",
+          "E": "PAM allein legt die programmierte Zielsequenz nicht fest."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q11",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Nach Cas9-Schnitt wird eine kleine Insertion im Zielgen gefunden. Welche Interpretation ist am besten?",
+      "options": [
+        {
+          "text": "Der Befund beweist zwingend HDR mit einer externen Vorlage.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cas9 selbst synthetisiert alle eingefügten Nucleotide als DNA-Polymerase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NHEJ kann solche Indels erzeugen; ob ein Funktionsverlust vorliegt, muss geprüft werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "NHEJ erfordert immer zwei vollständige homologe Chromosomen als Kopiervorlage.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede reparierte Schnittstelle ist garantiert ein vollständiger Genverlust.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine kleine Insertion kann ohne solche Vorlage entstehen. B: Cas9 ist primär eine Endonuclease. C: Nicht jede Reparatur und nicht jedes Indel führt zwingend zum Knockout. D: Der Weg kann Enden ohne entsprechende homologe Vorlage verknüpfen. E: Reparatur kann auch funktionserhaltend verlaufen. Quelle: Originalunterlagen, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "NHEJ"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NHEJ"
+      ],
+      "questionGoal": "NHEJ",
+      "structuredExplanation": {
+        "coreIdea": "NHEJ",
+        "correctReasoning": "Nicht jede Reparatur und nicht jedes Indel führt zwingend zum Knockout.",
+        "wrongAnswerExplanations": {
+          "A": "Eine kleine Insertion kann ohne solche Vorlage entstehen.",
+          "B": "Cas9 ist primär eine Endonuclease.",
+          "D": "Der Weg kann Enden ohne entsprechende homologe Vorlage verknüpfen.",
+          "E": "Reparatur kann auch funktionserhaltend verlaufen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Ergänzung unterstützt die gezielte Einführung einer vorgegebenen Sequenzänderung über HDR?",
+      "options": [
+        {
+          "text": "Ausschliesslich mehr Ganciclovir ohne Targetingkonstrukt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur ein längerer unspezifischer Hitzeschritt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine geeignete homologe DNA-Reparaturvorlage mit der gewünschten Änderung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Vollständige Entfernung aller zellulären Reparaturenzyme.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine zweite beliebige RNA ohne Zielkomplementarität.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Selektion ersetzt keine Reparaturinformation. B: Dies kodiert keine gewünschte Sequenzänderung. C: Die zelluläre Reparatur kann diese Information übernehmen. D: HDR benötigt zelluläre Reparaturfunktionen. E: Sie liefert keine definierte homologe DNA-Vorlage. Quelle: Originalunterlagen, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "HDR"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HDR"
+      ],
+      "questionGoal": "HDR",
+      "structuredExplanation": {
+        "coreIdea": "HDR",
+        "correctReasoning": "Die zelluläre Reparatur kann diese Information übernehmen.",
+        "wrongAnswerExplanations": {
+          "A": "Selektion ersetzt keine Reparaturinformation.",
+          "B": "Dies kodiert keine gewünschte Sequenzänderung.",
+          "D": "HDR benötigt zelluläre Reparaturfunktionen.",
+          "E": "Sie liefert keine definierte homologe DNA-Vorlage."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «Anwendungen» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Krankheitsmodell bildet automatisch sämtliche Aspekte der menschlichen Erkrankung ab.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine rein somatische Genänderung wird regelhaft an alle Nachkommen vererbt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Knock-out-Tier beweist ohne weitere Kontrollen jede physiologische Funktion seines Zielgens.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gene farming kann Tiere zur Produktion therapeutischer Proteine nutzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Spezies- und Modellunterschiede begrenzen die Übertragbarkeit. B: Vererbung benötigt einen entsprechenden Keimbahnbeitrag. C: Kompensation, Hintergrund und Modellgrenzen müssen berücksichtigt werden. D: Das Zielprotein wird in geeigneten Geweben exprimiert. Quelle: Originalunterlagen, PDF-S. 3,6–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Anwendungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anwendungen"
+      ],
+      "questionGoal": "Anwendungen",
+      "structuredExplanation": {
+        "coreIdea": "Anwendungen",
+        "correctReasoning": "Das Zielprotein wird in geeigneten Geweben exprimiert.",
+        "wrongAnswerExplanations": {
+          "A": "Spezies- und Modellunterschiede begrenzen die Übertragbarkeit.",
+          "B": "Vererbung benötigt einen entsprechenden Keimbahnbeitrag.",
+          "C": "Kompensation, Hintergrund und Modellgrenzen müssen berücksichtigt werden.",
+          "D": "Das Zielprotein wird in geeigneten Geweben exprimiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «Expressionskassette» treffen zu?",
+      "options": [
+        {
+          "text": "Ein gewebespezifischer Promotor kann die Transkription räumlich begrenzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Integrationsereignis kann ein endogenes Gen stören.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Polyadenylierungssignal ist gleichbedeutend mit einem Stopcodon.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gleiche Transgenkassetten können durch verschiedene Integrationsorte unterschiedlich exprimiert werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er beeinflusst die Genaktivität in bestimmten Zelltypen. B: Dies ist ein Risiko der Insertionsmutagenese. C: Es betrifft RNA-Prozessierung; Stopcodons beenden die Translation. D: Positionseffekte verändern den regulatorischen Kontext. Quelle: Originalunterlagen, PDF-S. 7,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Expressionskassette"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Expressionskassette"
+      ],
+      "questionGoal": "Expressionskassette",
+      "structuredExplanation": {
+        "coreIdea": "Expressionskassette",
+        "correctReasoning": "Er beeinflusst die Genaktivität in bestimmten Zelltypen. Dies ist ein Risiko der Insertionsmutagenese. Positionseffekte verändern den regulatorischen Kontext.",
+        "wrongAnswerExplanations": {
+          "A": "Er beeinflusst die Genaktivität in bestimmten Zelltypen.",
+          "B": "Dies ist ein Risiko der Insertionsmutagenese.",
+          "C": "Es betrifft RNA-Prozessierung; Stopcodons beenden die Translation.",
+          "D": "Positionseffekte verändern den regulatorischen Kontext."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «ES-Zellen und Keimbahn» treffen zu?",
+      "options": [
+        {
+          "text": "Genetisch veränderte ES-Zellen können vor Embryoinjektion in Kultur untersucht werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede sichtbare Chimäre überträgt die Veränderung sicher über ihre Keimbahn.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Chimäre ist definitionsgemäss in jeder Zelle für dasselbe Allel heterozygot.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nach Keimbahnübertragung können definierte heterozygote Linien aufgebaut werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies erlaubt die Auswahl geeigneter Klone. B: Der Beitrag zur Keimbahn muss nachgewiesen werden. C: Sie enthält genetisch verschiedene Zellpopulationen. D: Weitere Kreuzungen ermöglichen homozygote Tiere. Quelle: Originalunterlagen, PDF-S. 20–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "ES-Zellen und Keimbahn"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ES-Zellen und Keimbahn"
+      ],
+      "questionGoal": "ES-Zellen und Keimbahn",
+      "structuredExplanation": {
+        "coreIdea": "ES-Zellen und Keimbahn",
+        "correctReasoning": "Dies erlaubt die Auswahl geeigneter Klone. Weitere Kreuzungen ermöglichen homozygote Tiere.",
+        "wrongAnswerExplanations": {
+          "A": "Dies erlaubt die Auswahl geeigneter Klone.",
+          "B": "Der Beitrag zur Keimbahn muss nachgewiesen werden.",
+          "C": "Sie enthält genetisch verschiedene Zellpopulationen.",
+          "D": "Weitere Kreuzungen ermöglichen homozygote Tiere."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «Selektionslogik» treffen zu?",
+      "options": [
+        {
+          "text": "neo erlaubt positive Auswahl geeigneter resistenter Zellen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Selektionsprofil allein ersetzt jede molekulare Kontrolle des Zielortes.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Lage des tk-Markers ausserhalb der Homologiearme ist für die negative Selektion wichtig.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "tk macht die Zelle im beschriebenen System gegen Ganciclovir resistent.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nicht resistente Zellen werden unter entsprechender Selektion eliminiert. B: Auch ausgewählte Klone müssen genotypisiert werden. C: Bei korrektem Austausch muss er nicht mit integriert werden. D: Die Thymidinkinase aktiviert den Stoff zu einem toxischen Produkt. Quelle: Originalunterlagen, PDF-S. 25–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Selektionslogik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektionslogik"
+      ],
+      "questionGoal": "Selektionslogik",
+      "structuredExplanation": {
+        "coreIdea": "Selektionslogik",
+        "correctReasoning": "Nicht resistente Zellen werden unter entsprechender Selektion eliminiert. Bei korrektem Austausch muss er nicht mit integriert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Nicht resistente Zellen werden unter entsprechender Selektion eliminiert.",
+          "B": "Auch ausgewählte Klone müssen genotypisiert werden.",
+          "C": "Bei korrektem Austausch muss er nicht mit integriert werden.",
+          "D": "Die Thymidinkinase aktiviert den Stoff zu einem toxischen Produkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «Klonen» treffen zu?",
+      "options": [
+        {
+          "text": "Ein somatischer Kern kann unter geeigneten Bedingungen Entwicklung nach Reprogrammierung ermöglichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Klonierung bedeutet zwingend Einführung eines artfremden Gens.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Kerntransferklon muss in jedem Umwelt- und Epigenetikmerkmal mit dem Spender identisch sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Kern- und mitochondriale Abstammung können auseinanderfallen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ist das Prinzip des Dolly-Beispiels. B: Kerntransfer und Transgenese sind verschiedene Begriffe. C: Entwicklung und Umwelt können Unterschiede erzeugen. D: Kernspender und Eizellspender tragen verschiedene Komponenten bei. Quelle: Originalunterlagen, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Klonen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Klonen"
+      ],
+      "questionGoal": "Klonen",
+      "structuredExplanation": {
+        "coreIdea": "Klonen",
+        "correctReasoning": "Dies ist das Prinzip des Dolly-Beispiels. Kernspender und Eizellspender tragen verschiedene Komponenten bei.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist das Prinzip des Dolly-Beispiels.",
+          "B": "Kerntransfer und Transgenese sind verschiedene Begriffe.",
+          "C": "Entwicklung und Umwelt können Unterschiede erzeugen.",
+          "D": "Kernspender und Eizellspender tragen verschiedene Komponenten bei."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «CRISPR-Komponenten» treffen zu?",
+      "options": [
+        {
+          "text": "Die nachfolgende Zellreparatur beeinflusst das endgültige Editierergebnis.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "PAM-Erkennung macht die Komplementarität der Leit-RNA grundsätzlich überflüssig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Cas9 schneidet DNA als RNA-gelenkte Endonuclease.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Leit-RNA ist die homologe DNA-Vorlage der HDR.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Schnitt allein legt noch nicht jede Endsequenz fest. B: Für das übliche System sind beide Voraussetzungen relevant. C: Die Leit-RNA vermittelt einen Teil der Sequenzspezifität. D: Leit-RNA und Reparaturvorlage erfüllen verschiedene Aufgaben. Quelle: Originalunterlagen, PDF-S. 32–34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "CRISPR-Komponenten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CRISPR-Komponenten"
+      ],
+      "questionGoal": "CRISPR-Komponenten",
+      "structuredExplanation": {
+        "coreIdea": "CRISPR-Komponenten",
+        "correctReasoning": "Der Schnitt allein legt noch nicht jede Endsequenz fest. Die Leit-RNA vermittelt einen Teil der Sequenzspezifität.",
+        "wrongAnswerExplanations": {
+          "A": "Der Schnitt allein legt noch nicht jede Endsequenz fest.",
+          "B": "Für das übliche System sind beide Voraussetzungen relevant.",
+          "C": "Die Leit-RNA vermittelt einen Teil der Sequenzspezifität.",
+          "D": "Leit-RNA und Reparaturvorlage erfüllen verschiedene Aufgaben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «Reparaturfolgen» treffen zu?",
+      "options": [
+        {
+          "text": "Jeder Cas9-Schnitt führt mit hundertprozentiger Sicherheit zu derselben Mutation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "HDR kann eine bereitgestellte Sequenzinformation gezielt übernehmen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "NHEJ kann kleine Deletionen oder Insertionen erzeugen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jedes Indel muss den Leserahmen verschieben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Reparaturresultate und Effizienz variieren. B: Das ermöglicht definierte Änderungen bei geeigneten Bedingungen. C: Solche Änderungen können den Leserahmen verändern. D: Ein Vielfaches von drei kann den Rahmen erhalten. Quelle: Originalunterlagen, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Reparaturfolgen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reparaturfolgen"
+      ],
+      "questionGoal": "Reparaturfolgen",
+      "structuredExplanation": {
+        "coreIdea": "Reparaturfolgen",
+        "correctReasoning": "Das ermöglicht definierte Änderungen bei geeigneten Bedingungen. Solche Änderungen können den Leserahmen verändern.",
+        "wrongAnswerExplanations": {
+          "A": "Reparaturresultate und Effizienz variieren.",
+          "B": "Das ermöglicht definierte Änderungen bei geeigneten Bedingungen.",
+          "C": "Solche Änderungen können den Leserahmen verändern.",
+          "D": "Ein Vielfaches von drei kann den Rahmen erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb31_32_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB31/32",
+      "stem": "Welche Aussagen zum Thema «Methodenvergleich» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Knock-in kann neue Sequenzinformation an einem definierten Ort einbringen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein rein somatischer Gentransfer im adulten Tier belegt bereits eine Keimbahnübertragung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pronukleusinjektion und ES-Targeting unterscheiden sich in der Kontrolle über den Integrationsort.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Knock-down und eine DNA-Deletion bedeuten definitionsgemäss dasselbe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies unterscheidet ihn von einem reinen Funktionsverlust. B: Erbliche Weitergabe erfordert einen Beitrag der Veränderung zur Keimbahn. C: Klassische Injektion integriert zufällig, homologes Targeting zielt auf einen Ort. D: Knock-down vermindert Expression ohne notwendige Genomdeletion. Quelle: Originalunterlagen, PDF-S. 3–34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB31/32",
+        "Methodenvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methodenvergleich"
+      ],
+      "questionGoal": "Methodenvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Methodenvergleich",
+        "correctReasoning": "Dies unterscheidet ihn von einem reinen Funktionsverlust. Klassische Injektion integriert zufällig, homologes Targeting zielt auf einen Ort.",
+        "wrongAnswerExplanations": {
+          "A": "Dies unterscheidet ihn von einem reinen Funktionsverlust.",
+          "B": "Erbliche Weitergabe erfordert einen Beitrag der Veränderung zur Keimbahn.",
+          "C": "Klassische Injektion integriert zufällig, homologes Targeting zielt auf einen Ort.",
+          "D": "Knock-down vermindert Expression ohne notwendige Genomdeletion."
+        }
+      }
+    }
+  ]
+}

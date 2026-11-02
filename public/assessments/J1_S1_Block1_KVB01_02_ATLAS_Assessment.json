@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block1_kvb01_02_20261102",
+  "lectureCode": "KVB01/02",
+  "title": "Entwicklung des Lebens – Zellen und Kompartimentierung",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB1&2 - Entwicklung des Lebens. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die Inhalte werden nach dem tatsächlichen gemeinsamen Foliensatz KVB1/2 gebündelt. Archaeen werden nicht pauschal mit bakteriellen Mureinzellwänden gleichgesetzt; vereinfachte Kompartimentierungsregeln werden als räumliches Modell verwendet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Zellbegriff, Domänen und gemeinsame molekulare Grundlagen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Zellgrösse, Zellabschluss und Stoffwechselleistungen verschiedener Zelltypen vergleichen."
+    },
+    {
+      "id": "lo3",
+      "text": "Organellen und die funktionelle Bedeutung der Kompartimentierung zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Die evolutionäre Entstehung und den Proteinimport von Organellen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb01_02_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Warum werden Viren im Zellkonzept der Vorlesung von eigenständig lebensfähigen Zellen abgegrenzt?",
+      "options": [
+        {
+          "text": "Sie benötigen für ihre Vermehrung die Stoffwechsel- und Syntheseleistungen einer Wirtszelle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie können sich grundsätzlich nicht evolutionär verändern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie besitzen einen vollständig eigenständigen ribosomalen Syntheseapparat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine umhüllte Form ist bereits eine vollständige eigenständig lebende Zelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie enthalten grundsätzlich keine genetische Information.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Viren besitzen keinen eigenständigen vollständigen Zellstoffwechsel. B: Virale Populationen können evolvieren. C: Virale Vermehrung nutzt Ribosomen der Wirtszelle. D: Eine Virushülle ist keine vollständige zelluläre Organisation. E: Virale Genome können DNA oder RNA sein. Quelle: Originalunterlagen, PDF-S. 5–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Zellbegriff"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellbegriff"
+      ],
+      "questionGoal": "Zellbegriff",
+      "structuredExplanation": {
+        "coreIdea": "Zellbegriff",
+        "correctReasoning": "Viren besitzen keinen eigenständigen vollständigen Zellstoffwechsel.",
+        "wrongAnswerExplanations": {
+          "B": "Virale Populationen können evolvieren.",
+          "C": "Virale Vermehrung nutzt Ribosomen der Wirtszelle.",
+          "D": "Eine Virushülle ist keine vollständige zelluläre Organisation.",
+          "E": "Virale Genome können DNA oder RNA sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Eine Zelle besitzt DNA und Ribosomen, aber keinen membranumhüllten Zellkern. Welche Zuordnung ist damit am ehesten vereinbar?",
+      "options": [
+        {
+          "text": "Eine tierische Zelle allein wegen vorhandener Ribosomen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Pflanzenzelle allein wegen vorhandener DNA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein prokaryotischer Zelltyp.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Pilz allein wegen fehlender Photosynthese.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Virus mit vollständigem Zellstoffwechsel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ribosomen kommen auch in Prokaryoten vor. B: Auch Pflanzenzellen besitzen einen echten Zellkern. C: Das Fehlen einer Kernhülle ist das zentrale Unterscheidungsmerkmal. D: Pilze sind Eukaryoten mit Zellkern. E: Die beschriebenen Zellstrukturen kennzeichnen keine Viruspartikel. Quelle: Originalunterlagen, PDF-S. 7,19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Prokaryoten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Prokaryoten"
+      ],
+      "questionGoal": "Prokaryoten",
+      "structuredExplanation": {
+        "coreIdea": "Prokaryoten",
+        "correctReasoning": "Das Fehlen einer Kernhülle ist das zentrale Unterscheidungsmerkmal.",
+        "wrongAnswerExplanations": {
+          "A": "Ribosomen kommen auch in Prokaryoten vor.",
+          "B": "Auch Pflanzenzellen besitzen einen echten Zellkern.",
+          "D": "Pilze sind Eukaryoten mit Zellkern.",
+          "E": "Die beschriebenen Zellstrukturen kennzeichnen keine Viruspartikel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Der Radius einer kugelförmigen Zelle verdoppelt sich. Wie verändert sich das Verhältnis Oberfläche zu Volumen?",
+      "options": [
+        {
+          "text": "Es vervierfacht sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es halbiert sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es verachtfacht sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es bleibt unverändert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es verdoppelt sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies beschreibt nur die Zunahme der Oberfläche. B: Oberfläche wächst mit r², Volumen mit r³; ihr Verhältnis ist proportional zu 1/r. C: Dies beschreibt nur die Zunahme des Volumens. D: Oberfläche und Volumen skalieren unterschiedlich. E: Das Volumen nimmt stärker zu als die Oberfläche. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Oberfläche und Volumen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Oberfläche und Volumen"
+      ],
+      "questionGoal": "Oberfläche und Volumen",
+      "structuredExplanation": {
+        "coreIdea": "Oberfläche und Volumen",
+        "correctReasoning": "Oberfläche wächst mit r², Volumen mit r³; ihr Verhältnis ist proportional zu 1/r.",
+        "wrongAnswerExplanations": {
+          "A": "Dies beschreibt nur die Zunahme der Oberfläche.",
+          "C": "Dies beschreibt nur die Zunahme des Volumens.",
+          "D": "Oberfläche und Volumen skalieren unterschiedlich.",
+          "E": "Das Volumen nimmt stärker zu als die Oberfläche."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Warum kann eine Pflanzenzelle in hypotoner Umgebung turgeszent bleiben, während eine Tierzelle eher lysiert?",
+      "options": [
+        {
+          "text": "Die Tierzelle besitzt einen höheren schützenden Turgordruck.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Zellwand verhindert den Wassereinstrom durch eine vollständig hydrophobe Barriere.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Turgor entsteht ausschliesslich durch aktive Wasserpumpen gegen Osmose.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zellwand entwickelt einen mechanischen Gegendruck zum Wassereinstrom.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Pflanzenmembran lässt grundsätzlich kein Wasser passieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ohne feste Zellwand fehlt ein vergleichbarer Gegendruck. B: Die Plasmamembran reguliert die Passage; die Wand liefert vor allem mechanischen Gegendruck. C: Osmotischer Wassereinstrom und Wandgegendruck erklären den Turgor. D: Dieser Gegendruck begrenzt die Volumenzunahme. E: Auch Pflanzenmembranen sind für Wasser permeabel. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Turgor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Turgor"
+      ],
+      "questionGoal": "Turgor",
+      "structuredExplanation": {
+        "coreIdea": "Turgor",
+        "correctReasoning": "Dieser Gegendruck begrenzt die Volumenzunahme.",
+        "wrongAnswerExplanations": {
+          "A": "Ohne feste Zellwand fehlt ein vergleichbarer Gegendruck.",
+          "B": "Die Plasmamembran reguliert die Passage; die Wand liefert vor allem mechanischen Gegendruck.",
+          "C": "Osmotischer Wassereinstrom und Wandgegendruck erklären den Turgor.",
+          "E": "Auch Pflanzenmembranen sind für Wasser permeabel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Lysosomale Proteasen benötigen ein saures Milieu. Welche Leistung der Kompartimentierung ist hier besonders wichtig?",
+      "options": [
+        {
+          "text": "Alle Zellräume werden auf denselben pH gezwungen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Proteasen müssen ohne Kontakt zu Wasser arbeiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein geeigneter pH kann lokal aufrechterhalten werden, ohne das ganze Cytosol gleich anzusäuern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Alle lysosomalen Enzyme werden für ihre Wirkung dauerhaft ins Cytosol ausgeschleust.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jeder Stofftransport zwischen Räumen wird vollständig ausgeschlossen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gerade unterschiedliche Milieus werden ermöglicht. B: Die lysosomalen Hydrolysen benötigen Wasser. C: Membranbegrenzung und Transport ermöglichen unterschiedliche Milieus. D: Ihr saures Arbeitsmilieu wird vor allem im lysosomalen Lumen bereitgestellt. E: Regulierter Austausch bleibt erforderlich. Quelle: Originalunterlagen, PDF-S. 28,43.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Getrennte Milieus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Getrennte Milieus"
+      ],
+      "questionGoal": "Getrennte Milieus",
+      "structuredExplanation": {
+        "coreIdea": "Getrennte Milieus",
+        "correctReasoning": "Membranbegrenzung und Transport ermöglichen unterschiedliche Milieus.",
+        "wrongAnswerExplanations": {
+          "A": "Gerade unterschiedliche Milieus werden ermöglicht.",
+          "B": "Die lysosomalen Hydrolysen benötigen Wasser.",
+          "D": "Ihr saures Arbeitsmilieu wird vor allem im lysosomalen Lumen bereitgestellt.",
+          "E": "Regulierter Austausch bleibt erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Welche räumliche Beziehung passt zur Entstehung und Organisation von Kernhülle und ER?",
+      "options": [
+        {
+          "text": "Die innere Kernmembran geht direkt in die Plasmamembran über.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das ER-Lumen ist direkt mit dem Nucleoplasma verbunden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Kernhülle besitzt nur ein einziges Membranblatt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die äussere Kernmembran geht in die ER-Membran über.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der perinukleäre Raum gehört topologisch zum Cytosol.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Direkte Kontinuität besteht zwischen äusserer Kernmembran und ER. B: Das perinukleäre Lumen ist mit dem ER-Lumen verbunden; das Nucleoplasma ist membranbegrenzt. C: Die Kernhülle umfasst zwei Lipiddoppelschichten. D: Das perinukleäre Lumen ist mit dem ER-Lumen verbunden. E: Er ist vom Cytosol getrennt und mit dem ER-Lumen kontinuierlich. Quelle: Originalunterlagen, PDF-S. 35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Kernhülle und ER"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kernhülle und ER"
+      ],
+      "questionGoal": "Kernhülle und ER",
+      "structuredExplanation": {
+        "coreIdea": "Kernhülle und ER",
+        "correctReasoning": "Das perinukleäre Lumen ist mit dem ER-Lumen verbunden.",
+        "wrongAnswerExplanations": {
+          "A": "Direkte Kontinuität besteht zwischen äusserer Kernmembran und ER.",
+          "B": "Das perinukleäre Lumen ist mit dem ER-Lumen verbunden; das Nucleoplasma ist membranbegrenzt.",
+          "C": "Die Kernhülle umfasst zwei Lipiddoppelschichten.",
+          "E": "Er ist vom Cytosol getrennt und mit dem ER-Lumen kontinuierlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Welche Kombination unterstützt besonders die endosymbiotische Herkunft von Mitochondrien?",
+      "options": [
+        {
+          "text": "Die Atmungskette allein beweist eine Entstehung aus dem Golgi-Apparat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständige Unabhängigkeit von sämtlichen Kernproteinen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Identische Herkunft von Chloroplasten und Zellkern aus Cyanobakterien.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eigene genetische Information und bakterielle Verwandtschaft ihrer Vorfahren.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Alle mitochondrialen Proteine werden ausschliesslich an eigenen Ribosomen synthetisiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine ähnliche Funktion allein begründet diesen Entstehungsweg nicht. B: Heutige Mitochondrien benötigen zahlreiche kerncodierte Proteine. C: Das Modell unterscheidet diese Entstehungswege. D: Diese Merkmale passen zur Aufnahme eines bakteriellen Endosymbionten. E: Die meisten mitochondrialen Proteine sind kerncodiert und werden importiert. Quelle: Originalunterlagen, PDF-S. 36–39.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Endosymbiose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endosymbiose"
+      ],
+      "questionGoal": "Endosymbiose",
+      "structuredExplanation": {
+        "coreIdea": "Endosymbiose",
+        "correctReasoning": "Diese Merkmale passen zur Aufnahme eines bakteriellen Endosymbionten.",
+        "wrongAnswerExplanations": {
+          "A": "Eine ähnliche Funktion allein begründet diesen Entstehungsweg nicht.",
+          "B": "Heutige Mitochondrien benötigen zahlreiche kerncodierte Proteine.",
+          "C": "Das Modell unterscheidet diese Entstehungswege.",
+          "E": "Die meisten mitochondrialen Proteine sind kerncodiert und werden importiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Warum werden viele mitochondriale Proteine im Cytosol synthetisiert und anschliessend importiert?",
+      "options": [
+        {
+          "text": "Viele Gene des ursprünglichen Endosymbionten wurden im Verlauf der Evolution in den Zellkern verlagert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle mitochondrialen mRNAs müssen für die Translation zunächst in den Zellkern zurückkehren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mitochondrien enthalten grundsätzlich keine DNA mehr.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Proteinimport erfolgt regulär durch direkte ER-Golgi-Vesikelfusion mit der Matrix.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jedes kerncodierte Protein gelangt nach der Translation ohne Zielinformation in die Matrix.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Produkte kerncodierter Gene müssen ihren Organellzielort erreichen. B: Kerncodierte und mitochondriale Gene besitzen verschiedene Expressionsorte. C: Sie besitzen weiterhin ein eigenes Genom. D: Mitochondrialer Import nutzt spezifische Translokationssysteme statt des gewöhnlichen sekretorischen Vesikelwegs. E: Gezielter Import erfordert passende Erkennung und Transportmechanismen. Quelle: Originalunterlagen, PDF-S. 39–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Gentransfer und Import"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gentransfer und Import"
+      ],
+      "questionGoal": "Gentransfer und Import",
+      "structuredExplanation": {
+        "coreIdea": "Gentransfer und Import",
+        "correctReasoning": "Die Produkte kerncodierter Gene müssen ihren Organellzielort erreichen.",
+        "wrongAnswerExplanations": {
+          "B": "Kerncodierte und mitochondriale Gene besitzen verschiedene Expressionsorte.",
+          "C": "Sie besitzen weiterhin ein eigenes Genom.",
+          "D": "Mitochondrialer Import nutzt spezifische Translokationssysteme statt des gewöhnlichen sekretorischen Vesikelwegs.",
+          "E": "Gezielter Import erfordert passende Erkennung und Transportmechanismen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Eine Zelle benötigt eine starke oxidative ATP-Bildung. Welches Organell ist dafür im gezeigten eukaryotischen Zellmodell besonders relevant?",
+      "options": [
+        {
+          "text": "Die zentrale Vakuole.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Centrosom.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Lysosom.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Mitochondrium.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der Golgi-Apparat.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ihre Hauptfunktionen betreffen unter anderem Speicherung und Abbau. B: Es organisiert vor allem Mikrotubuli. C: Es dient dem hydrolytischen Abbau, nicht der oxidativen Phosphorylierung. D: Seine innere Membran trägt die oxidative Phosphorylierung. E: Er modifiziert und sortiert Stoffe im sekretorischen Weg. Quelle: Originalunterlagen, PDF-S. 29–32,42.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Organellfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Organellfunktion"
+      ],
+      "questionGoal": "Organellfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Organellfunktion",
+        "correctReasoning": "Seine innere Membran trägt die oxidative Phosphorylierung.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Hauptfunktionen betreffen unter anderem Speicherung und Abbau.",
+          "B": "Es organisiert vor allem Mikrotubuli.",
+          "C": "Es dient dem hydrolytischen Abbau, nicht der oxidativen Phosphorylierung.",
+          "E": "Er modifiziert und sortiert Stoffe im sekretorischen Weg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Warum können Bakterien in einem Biofilm auf einem Implantat besonders schwer zu beseitigen sein?",
+      "options": [
+        {
+          "text": "Biofilme besitzen grundsätzlich keinerlei Kommunikation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Biofilm benötigt keine lebensfähigen Mikroorganismen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Gemeinschaft und ihre Matrix können Schutz gegenüber Abwehr und antimikrobieller Behandlung bieten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Matrix verleiht jedem enthaltenen Bakterium automatisch eine vererbbare Antibiotikaresistenzmutation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Ablösung kann niemals weitere Infektionen auslösen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Folie betont Kommunikation und Funktionsteilung. B: Er ist eine organisierte mikrobielle Lebensform. C: Biofilmorganisation verändert Zugänglichkeit und Physiologie. D: Biofilmbedingte Toleranz und genetisch vererbte Resistenz sind nicht gleichzusetzen. E: Abgelöste Zellen können neue Infektionsorte erreichen. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Biofilm"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biofilm"
+      ],
+      "questionGoal": "Biofilm",
+      "structuredExplanation": {
+        "coreIdea": "Biofilm",
+        "correctReasoning": "Biofilmorganisation verändert Zugänglichkeit und Physiologie.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folie betont Kommunikation und Funktionsteilung.",
+          "B": "Er ist eine organisierte mikrobielle Lebensform.",
+          "D": "Biofilmbedingte Toleranz und genetisch vererbte Resistenz sind nicht gleichzusetzen.",
+          "E": "Abgelöste Zellen können neue Infektionsorte erreichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Warum sind spezielle Stoffwechselleistungen von Pflanzen, Pilzen und Bakterien auch für die Medizin relevant?",
+      "options": [
+        {
+          "text": "Jeder Sekundärstoff wird in identischer Menge für die basale ATP-Bildung aller Organismen benötigt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jeder Naturstoff ist unabhängig von seiner Dosis harmlos.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie liefern strukturell vielfältige Stoffe, aus denen Arzneistoffe gewonnen oder entwickelt werden können.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur tierische Zellen können biologisch aktive Moleküle bilden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Alle Organismen synthetisieren exakt dieselben Sekundärstoffe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sekundärstoffe sind nicht universell identische Energieträger des Grundstoffwechsels. B: Biologische Aktivität kann auch toxische Wirkungen einschliessen. C: Die Folien nennen unter anderem Antibiotika und pflanzliche Wirkstoffe. D: Die Beispiele zeigen zahlreiche andere Produzenten. E: Spezialisierte Biosynthesewege unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 23–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Sekundärstoffe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekundärstoffe"
+      ],
+      "questionGoal": "Sekundärstoffe",
+      "structuredExplanation": {
+        "coreIdea": "Sekundärstoffe",
+        "correctReasoning": "Die Folien nennen unter anderem Antibiotika und pflanzliche Wirkstoffe.",
+        "wrongAnswerExplanations": {
+          "A": "Sekundärstoffe sind nicht universell identische Energieträger des Grundstoffwechsels.",
+          "B": "Biologische Aktivität kann auch toxische Wirkungen einschliessen.",
+          "D": "Die Beispiele zeigen zahlreiche andere Produzenten.",
+          "E": "Spezialisierte Biosynthesewege unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Warum ist eine abgegrenzte innere Mitochondrienmembran für die ATP-Gewinnung wichtig?",
+      "options": [
+        {
+          "text": "Sie verhindert dauerhaft jede Protonenbewegung durch Transportproteine.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Atmungskette setzt ihr gesamtes ATP unmittelbar durch Substratkettenphosphorylierung frei.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie macht einen Energieunterschied zwischen den Seiten überflüssig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "ATP entsteht allein durch gleichmässige Verteilung der Protonen ohne Kopplungsenzym.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie erlaubt die Ausbildung einer elektrochemischen Protonendifferenz.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gezielter Protonentransport ist Teil der Funktion. B: Die Membran ermöglicht gerade die chemiosmotische Kopplung. C: Gerade dieser Unterschied treibt die Kopplung an. D: Die ATP-Synthase koppelt den gerichteten Rückfluss an ATP-Bildung. E: Der Rückfluss kann an ATP-Synthese gekoppelt werden. Quelle: Originalunterlagen, PDF-S. 45.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Protonengradient"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Protonengradient"
+      ],
+      "questionGoal": "Protonengradient",
+      "structuredExplanation": {
+        "coreIdea": "Protonengradient",
+        "correctReasoning": "Der Rückfluss kann an ATP-Synthese gekoppelt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Gezielter Protonentransport ist Teil der Funktion.",
+          "B": "Die Membran ermöglicht gerade die chemiosmotische Kopplung.",
+          "C": "Gerade dieser Unterschied treibt die Kopplung an.",
+          "D": "Die ATP-Synthase koppelt den gerichteten Rückfluss an ATP-Bildung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Zelluläres Leben wird nach Domänen und gemeinsamen molekularen Merkmalen verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Alle Eukaryoten sind mehrzellig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "DNA/RNA, Proteine und Membranen sind grundlegende zelluläre Komponenten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bakterien, Archaeen und Eukaryoten werden als drei Domänen unterschieden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Auch Pilze sind Eukaryoten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es existieren zahlreiche einzellige Eukaryoten. B: Die molekularen Prinzipien sind weitgehend gemeinsam. C: Dies ist die in der Vorlesung verwendete Einteilung. D: Ihre Zellen besitzen einen echten Zellkern. Quelle: Originalunterlagen, PDF-S. 7–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Domänen und Gemeinsamkeiten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Domänen und Gemeinsamkeiten"
+      ],
+      "questionGoal": "Domänen und Gemeinsamkeiten",
+      "structuredExplanation": {
+        "coreIdea": "Domänen und Gemeinsamkeiten",
+        "correctReasoning": "Die molekularen Prinzipien sind weitgehend gemeinsam. Dies ist die in der Vorlesung verwendete Einteilung. Ihre Zellen besitzen einen echten Zellkern.",
+        "wrongAnswerExplanations": {
+          "A": "Es existieren zahlreiche einzellige Eukaryoten.",
+          "B": "Die molekularen Prinzipien sind weitgehend gemeinsam.",
+          "C": "Dies ist die in der Vorlesung verwendete Einteilung.",
+          "D": "Ihre Zellen besitzen einen echten Zellkern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Zellwände verschiedener Organismengruppen werden gegenübergestellt. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Pflanzliche Zellwände enthalten Cellulose.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Pilzzellwände enthalten unter anderem Chitin.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Tierische Zellen besitzen regelhaft eine Mureinzellwand.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die äussere Membran ist das typische Kennzeichen grampositiver Bakterien.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie trägt zur mechanischen Stabilität bei. B: Ihre Zusammensetzung unterscheidet sich von Pflanzenwänden. C: Murein ist ein Merkmal bakterieller Zellwände. D: Sie ist charakteristisch für gramnegative Bakterien. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Zellabschluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellabschluss"
+      ],
+      "questionGoal": "Zellabschluss",
+      "structuredExplanation": {
+        "coreIdea": "Zellabschluss",
+        "correctReasoning": "Sie trägt zur mechanischen Stabilität bei. Ihre Zusammensetzung unterscheidet sich von Pflanzenwänden.",
+        "wrongAnswerExplanations": {
+          "A": "Sie trägt zur mechanischen Stabilität bei.",
+          "B": "Ihre Zusammensetzung unterscheidet sich von Pflanzenwänden.",
+          "C": "Murein ist ein Merkmal bakterieller Zellwände.",
+          "D": "Sie ist charakteristisch für gramnegative Bakterien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Eine Zellskizze soll nach den Organellfunktionen beschriftet werden. Welche Zuordnungen sind richtig?",
+      "options": [
+        {
+          "text": "Lysosomen beteiligen sich am Abbau von Makromolekülen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Golgi-Apparat ist der zentrale Ort der oxidativen Phosphorylierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Chloroplasten ermöglichen Photosynthese.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das raue ER ist der Hauptort des Abbaus kompletter Organellen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Hydrolasen zerlegen aufgenommene Stoffe. B: Diese findet an der inneren Mitochondrienmembran statt. C: Sie bilden dafür spezialisierte Reaktionsräume. D: Das raue ER synthetisiert insbesondere sekretorische und Membranproteine; Organellabbau erfolgt unter anderem lysosomal. Quelle: Originalunterlagen, PDF-S. 28–32,42.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Organellzuordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Organellzuordnung"
+      ],
+      "questionGoal": "Organellzuordnung",
+      "structuredExplanation": {
+        "coreIdea": "Organellzuordnung",
+        "correctReasoning": "Ihre Hydrolasen zerlegen aufgenommene Stoffe. Sie bilden dafür spezialisierte Reaktionsräume.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Hydrolasen zerlegen aufgenommene Stoffe.",
+          "B": "Diese findet an der inneren Mitochondrienmembran statt.",
+          "C": "Sie bilden dafür spezialisierte Reaktionsräume.",
+          "D": "Das raue ER synthetisiert insbesondere sekretorische und Membranproteine; Organellabbau erfolgt unter anderem lysosomal."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Eine Zelle unterhält unterschiedliche Reaktionsmilieus. Welche Vorteile und Anforderungen ergeben sich daraus?",
+      "options": [
+        {
+          "text": "Auch Signalwege können räumlich organisiert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die räumliche Nähe von Enzym und Substrat kann Reaktionen begünstigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Inkompatible Prozesse können in unterschiedlichen Milieus stattfinden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Kompartimentierung macht Membrantransport grundsätzlich unnötig.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Vorlesung nennt Signaltransduktion als Beispiel. B: Kompartimente können passende Komponenten konzentrieren. C: Lokale Bedingungen verhindern unerwünschte Wechselwirkungen. D: Austausch zwischen den Räumen bleibt erforderlich. Quelle: Originalunterlagen, PDF-S. 28,42–46.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Nutzen der Kompartimentierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nutzen der Kompartimentierung"
+      ],
+      "questionGoal": "Nutzen der Kompartimentierung",
+      "structuredExplanation": {
+        "coreIdea": "Nutzen der Kompartimentierung",
+        "correctReasoning": "Die Vorlesung nennt Signaltransduktion als Beispiel. Kompartimente können passende Komponenten konzentrieren. Lokale Bedingungen verhindern unerwünschte Wechselwirkungen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Vorlesung nennt Signaltransduktion als Beispiel.",
+          "B": "Kompartimente können passende Komponenten konzentrieren.",
+          "C": "Lokale Bedingungen verhindern unerwünschte Wechselwirkungen.",
+          "D": "Austausch zwischen den Räumen bleibt erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Mitochondrien und Chloroplasten werden im Endosymbiosemodell eingeordnet. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Das menschliche mitochondriale Genom codiert sämtliche mitochondrialen Proteine.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gentransfer zum Kern macht den Import von Organellproteinen entbehrlich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mitochondrien werden auf bakterielle Vorfahren zurückgeführt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Chloroplasten werden mit cyanobakteriellen Vorfahren verknüpft.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Grossteil ist kerncodiert. B: Er macht den Import der entsprechenden Produkte erforderlich. C: Das Modell beschreibt eine endosymbiotische Aufnahme. D: Dies erklärt ihre photosynthetischen Eigenschaften. Quelle: Originalunterlagen, PDF-S. 36–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Organellherkunft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Organellherkunft"
+      ],
+      "questionGoal": "Organellherkunft",
+      "structuredExplanation": {
+        "coreIdea": "Organellherkunft",
+        "correctReasoning": "Das Modell beschreibt eine endosymbiotische Aufnahme. Dies erklärt ihre photosynthetischen Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "A": "Der Grossteil ist kerncodiert.",
+          "B": "Er macht den Import der entsprechenden Produkte erforderlich.",
+          "C": "Das Modell beschreibt eine endosymbiotische Aufnahme.",
+          "D": "Dies erklärt ihre photosynthetischen Eigenschaften."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Zelltypen unterschiedlicher Organismen werden nach Genom und Stoffwechsel verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Zelltypen können sich in ihren Biosynthesewegen unterscheiden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Grössere Organismen bestehen grundsätzlich nur aus entsprechend grösseren Zellen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Organismen nutzen ausschliesslich organischen Kohlenstoff.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein grösseres Genom bedeutet nicht einfach proportional mehr anatomische Komplexität.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Spezialisierte Stoffwechselleistungen sind ein Unterscheidungsmerkmal. B: Grössenunterschiede beruhen wesentlich auf unterschiedlichen Zellzahlen. C: Autotrophe Organismen können anorganischen Kohlenstoff assimilieren. D: Genomgrösse allein ist kein allgemeiner Komplexitätsmassstab. Quelle: Originalunterlagen, PDF-S. 13,22–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Vielfalt von Zellen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vielfalt von Zellen"
+      ],
+      "questionGoal": "Vielfalt von Zellen",
+      "structuredExplanation": {
+        "coreIdea": "Vielfalt von Zellen",
+        "correctReasoning": "Spezialisierte Stoffwechselleistungen sind ein Unterscheidungsmerkmal. Genomgrösse allein ist kein allgemeiner Komplexitätsmassstab.",
+        "wrongAnswerExplanations": {
+          "A": "Spezialisierte Stoffwechselleistungen sind ein Unterscheidungsmerkmal.",
+          "B": "Grössenunterschiede beruhen wesentlich auf unterschiedlichen Zellzahlen.",
+          "C": "Autotrophe Organismen können anorganischen Kohlenstoff assimilieren.",
+          "D": "Genomgrösse allein ist kein allgemeiner Komplexitätsmassstab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Ein markierter Stoff wird zwischen Zellräumen verfolgt. Welche topologischen Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die mitochondriale Matrix ist durch zwei Hüllmembranen vom Cytosol getrennt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Vesikelfusion mischt regelhaft das Vesikellumen direkt mit dem Cytosol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das ER-Lumen ist vom Cytosol durch eine Membran getrennt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Membranseiten werden bei jedem Vesikeltransport beliebig vertauscht.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Aussen- und Innenmembran liegen auf diesem Weg. B: Das Lumen bleibt von der cytosolischen Seite getrennt. C: Die ER-Membran begrenzt den luminalen Raum. D: Die Membrantopologie bleibt grundsätzlich erhalten. Quelle: Originalunterlagen, PDF-S. 33–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Topologie der Zellräume"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Topologie der Zellräume"
+      ],
+      "questionGoal": "Topologie der Zellräume",
+      "structuredExplanation": {
+        "coreIdea": "Topologie der Zellräume",
+        "correctReasoning": "Aussen- und Innenmembran liegen auf diesem Weg. Die ER-Membran begrenzt den luminalen Raum.",
+        "wrongAnswerExplanations": {
+          "A": "Aussen- und Innenmembran liegen auf diesem Weg.",
+          "B": "Das Lumen bleibt von der cytosolischen Seite getrennt.",
+          "C": "Die ER-Membran begrenzt den luminalen Raum.",
+          "D": "Die Membrantopologie bleibt grundsätzlich erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb01_02_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB01/02",
+      "stem": "Ein vereinfachtes Zellmodell wird mit Einzellern und Biofilmen verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Bakterien können in Gemeinschaften mit Funktionsteilung vorkommen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Zellwand schliesst eine Plasmamembran aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Einzeller können alle grundlegenden Lebensleistungen in einer Zelle vereinen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Fehlen eines Zellkerns bedeutet das Fehlen genetischer Information.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Biofilme illustrieren diese Organisation. B: Zellwandtragende Zellen besitzen zusätzlich eine Membran. C: Mehrzelligkeit ist kein notwendiges Merkmal des Lebens. D: Prokaryoten besitzen DNA ohne Kernhülle. Quelle: Originalunterlagen, PDF-S. 5–7,18–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB01/02",
+        "Grenzen vereinfachter Zellmodelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzen vereinfachter Zellmodelle"
+      ],
+      "questionGoal": "Grenzen vereinfachter Zellmodelle",
+      "structuredExplanation": {
+        "coreIdea": "Grenzen vereinfachter Zellmodelle",
+        "correctReasoning": "Biofilme illustrieren diese Organisation. Mehrzelligkeit ist kein notwendiges Merkmal des Lebens.",
+        "wrongAnswerExplanations": {
+          "A": "Biofilme illustrieren diese Organisation.",
+          "B": "Zellwandtragende Zellen besitzen zusätzlich eine Membran.",
+          "C": "Mehrzelligkeit ist kein notwendiges Merkmal des Lebens.",
+          "D": "Prokaryoten besitzen DNA ohne Kernhülle."
+        }
+      }
+    }
+  ]
+}

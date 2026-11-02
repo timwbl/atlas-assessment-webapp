@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block3_kvb17_20261102",
+  "lectureCode": "KVB17",
+  "title": "Signaltransduktion über G-Protein-gekoppelte Rezeptoren",
+  "block": "Block 3",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB17 - Signaltransduktion_GPCRs_Fotiadis. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. GPCR-Zahlen und vereinfachte Universalbehauptungen zu Cyclasen/PLC nicht als zeitlose Fakten übernommen. GEF korrekt als Guanin-Nukleotid-Austauschfaktor; βγ-Signalwege zugelassen. Cholera nur mechanistisch, ohne Therapie- oder Mortalitätsempfehlungen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Rezeptorfamilien, Membrantopologie und Signaltransduktionsprinzip unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Aktivierungs- und Abschaltzyklus heterotrimerer G-Proteine erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "G-Proteine mit Effektoren und Second-Messenger-Wegen verknüpfen."
+    },
+    {
+      "id": "lo4",
+      "text": "Choleratoxin und Rezeptordesensitivierung mechanistisch erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "cAMP/PKA-, PLC/IP3/DAG-Signale und Signalverstärkung anwenden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvb17_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Ein hydrophiler Botenstoff passiert die Lipiddoppelschicht kaum. Welcher Rezeptorort ermöglicht dennoch eine direkte Signalaufnahme?",
+      "options": [
+        {
+          "text": "Ein ausschliesslich intrazellulärer freier Rezeptor ohne Aufnahmemechanismus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die hydrophobe Membranmitte ohne Proteinbindungsstelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Kernrezeptor, dessen Ligandenbindestelle ausschliesslich im Zellkern liegt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur eine intrazelluläre Kinase ohne Kontakt zum Aussenraum.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die extrazelluläre Bindungsdomäne eines Membranrezeptors.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der hydrophile Stoff erreicht ihn hier kaum. B: Sie liefert keinen passenden extrazellulären Rezeptorzugang. C: Der beschriebene Stoff passiert die Membran schlecht. D: Sie empfängt ohne Kopplung das äussere Signal nicht direkt. E: Die intrazelluläre Antwort erfordert keinen Eintritt des Liganden. Quelle: Originalunterlagen, PDF-S. 2–3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Rezeptorort"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rezeptorort"
+      ],
+      "questionGoal": "Rezeptorort",
+      "structuredExplanation": {
+        "coreIdea": "Rezeptorort",
+        "correctReasoning": "Die intrazelluläre Antwort erfordert keinen Eintritt des Liganden.",
+        "wrongAnswerExplanations": {
+          "A": "Der hydrophile Stoff erreicht ihn hier kaum.",
+          "B": "Sie liefert keinen passenden extrazellulären Rezeptorzugang.",
+          "C": "Der beschriebene Stoff passiert die Membran schlecht.",
+          "D": "Sie empfängt ohne Kopplung das äussere Signal nicht direkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Welche Architektur beschreibt einen typischen GPCR?",
+      "options": [
+        {
+          "text": "Ein Connexon aus sechs Connexinen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein lösliches Tetramer ohne Membrandomäne.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Polypeptidkette mit sieben Transmembranhelices.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Rezeptor mit zwingend eigener Tyrosinkinasedomäne.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Kanal aus fünf nikotinergen Untereinheiten als identisches Grundprinzip.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies gehört zu Gap Junctions. B: Dies ist nicht die typische GPCR-Topologie. C: Dies ist das konservierte heptahelicale Grundprinzip. D: GPCRs koppeln primär an G-Proteine, nicht über eine solche Pflichtdomäne. E: Ein nikotinerger Rezeptor ist eine andere Rezeptorfamilie. Quelle: Originalunterlagen, PDF-S. 5,7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "GPCR-Struktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GPCR-Struktur"
+      ],
+      "questionGoal": "GPCR-Struktur",
+      "structuredExplanation": {
+        "coreIdea": "GPCR-Struktur",
+        "correctReasoning": "Dies ist das konservierte heptahelicale Grundprinzip.",
+        "wrongAnswerExplanations": {
+          "A": "Dies gehört zu Gap Junctions.",
+          "B": "Dies ist nicht die typische GPCR-Topologie.",
+          "D": "GPCRs koppeln primär an G-Proteine, nicht über eine solche Pflichtdomäne.",
+          "E": "Ein nikotinerger Rezeptor ist eine andere Rezeptorfamilie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «ionotrope, G-Protein-gekoppelte und kinasegekoppelte Rezeptoren».",
+      "options": [
+        {
+          "text": "Alle Rezeptoren müssen an der Plasmamembran liegen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein GPCR muss jedes gebundene Ligandenmolekül selbst ins Cytosol transportieren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Rezeptorkinasen müssen als Rezeptor selbst eine ligandengesteuerte Ionenpore besitzen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ligandengesteuerte Kanäle und GPCRs können dasselbe äussere Signal auf verschiedene Weise umsetzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es gibt auch intrazelluläre Rezeptoren. B: Konformationsübertragung genügt. C: Kinasekopplung und ionotrope Pore sind verschiedene Rezeptorprinzipien. D: Direkter Kanalmechanismus und G-Protein-Kopplung sind unterscheidbar. Quelle: Originalunterlagen, PDF-S. 3–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Rezeptoren unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rezeptoren unterscheiden"
+      ],
+      "questionGoal": "Rezeptoren unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Rezeptoren unterscheiden",
+        "correctReasoning": "Direkter Kanalmechanismus und G-Protein-Kopplung sind unterscheidbar.",
+        "wrongAnswerExplanations": {
+          "A": "Es gibt auch intrazelluläre Rezeptoren.",
+          "B": "Konformationsübertragung genügt.",
+          "C": "Kinasekopplung und ionotrope Pore sind verschiedene Rezeptorprinzipien.",
+          "D": "Direkter Kanalmechanismus und G-Protein-Kopplung sind unterscheidbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Was fördert der aktivierte GPCR am heterotrimeren G-Protein?",
+      "options": [
+        {
+          "text": "GDP-Abgabe und anschliessende GTP-Bindung an Gα.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Direkte Phosphorylierung des gebundenen GDP als obligater Mechanismus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hydrolyse von GTP zur Aktivierung von Gα.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Austausch von GDP gegen cAMP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Phosphorylierung des GPCR durch Arrestin als unmittelbarer Nukleotidaustausch.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Rezeptor wirkt als Austauschfaktor. B: GPCR fördern Nukleotidaustausch statt diesen Phosphoryltransfer. C: GTP-Hydrolyse beendet gewöhnlich die aktive Phase. D: Die aktive Schalterform bindet GTP. E: GRK/Arrestin betreffen Desensitivierung, nicht diesen Austausch. Quelle: Originalunterlagen, PDF-S. 8,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Nukleotidaustausch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nukleotidaustausch"
+      ],
+      "questionGoal": "Nukleotidaustausch",
+      "structuredExplanation": {
+        "coreIdea": "Nukleotidaustausch",
+        "correctReasoning": "Der Rezeptor wirkt als Austauschfaktor.",
+        "wrongAnswerExplanations": {
+          "B": "GPCR fördern Nukleotidaustausch statt diesen Phosphoryltransfer.",
+          "C": "GTP-Hydrolyse beendet gewöhnlich die aktive Phase.",
+          "D": "Die aktive Schalterform bindet GTP.",
+          "E": "GRK/Arrestin betreffen Desensitivierung, nicht diesen Austausch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Welche Reaktion führt Gα typischerweise in den inaktiven Zustand zurück?",
+      "options": [
+        {
+          "text": "Spaltung von PIP2 zu IP3 und DAG.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydrolyse von GTP zu GDP und Pi.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Phosphorylierung jedes GDP zu GTP ohne Austausch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hydrolyse von ATP zu cAMP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Bindung von zusätzlichem Agonisten als allgemeiner Abschaltmechanismus.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist eine PLC-Reaktion. B: Die GTPase-Reaktion beendet den aktiven Schalterzustand. C: Dies ist nicht der gezeigte Abschaltweg. D: Dies gehört zur Adenylylcyclase. E: Agonistenbindung fördert gewöhnlich Aktivierung. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Signalabschaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Signalabschaltung"
+      ],
+      "questionGoal": "Signalabschaltung",
+      "structuredExplanation": {
+        "coreIdea": "Signalabschaltung",
+        "correctReasoning": "Die GTPase-Reaktion beendet den aktiven Schalterzustand.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist eine PLC-Reaktion.",
+          "C": "Dies ist nicht der gezeigte Abschaltweg.",
+          "D": "Dies gehört zur Adenylylcyclase.",
+          "E": "Agonistenbindung fördert gewöhnlich Aktivierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «heterotrimeres G-Protein und Membranassoziation».",
+      "options": [
+        {
+          "text": "Lipidanker können die Membranassoziation unterstützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nur α kann je ein Signal vermitteln, βγ ist immer funktionslos.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gα wechselt im gewöhnlichen Zyklus zwischen GDP- und GTP-gebundenen Zuständen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es besitzt α-, β- und γ-Untereinheiten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Folie zeigt Modifikationen an α und γ. B: Auch βγ kann Effektoren modulieren. C: Dies ist ein Nukleotidschalter ohne Genomintegration. D: Diese bilden das namensgebende Heterotrimer. Quelle: Originalunterlagen, PDF-S. 9–11,18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Heterotrimeres G-Protein"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Heterotrimeres G-Protein"
+      ],
+      "questionGoal": "Heterotrimeres G-Protein",
+      "structuredExplanation": {
+        "coreIdea": "Heterotrimeres G-Protein",
+        "correctReasoning": "Die Folie zeigt Modifikationen an α und γ. Dies ist ein Nukleotidschalter ohne Genomintegration. Diese bilden das namensgebende Heterotrimer.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folie zeigt Modifikationen an α und γ.",
+          "B": "Auch βγ kann Effektoren modulieren.",
+          "C": "Dies ist ein Nukleotidschalter ohne Genomintegration.",
+          "D": "Diese bilden das namensgebende Heterotrimer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Ein aktivierter Gs-gekoppelter Rezeptor stimuliert die Adenylylcyclase. Welche Folge passt?",
+      "options": [
+        {
+          "text": "Die Cyclase hydrolysiert cAMP zu AMP und aktiviert dadurch PKA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Cyclase spaltet PIP2 direkt zu IP3 und DAG.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gαs aktiviert PKA ausschliesslich durch Einbau von GTP in deren regulatorische Untereinheit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gs hemmt die cAMP-Bildung wie der klassische Gi-Weg.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "cAMP steigt und kann PKA aktivieren.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: PDE baut cAMP ab; die Cyclase bildet es. B: Dies ist PLC-Funktion. C: cAMP bindet an die regulatorischen Untereinheiten. D: Gs stimuliert hier die Cyclase. E: Die Cyclase bildet cAMP aus ATP. Quelle: Originalunterlagen, PDF-S. 18–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Gs-Weg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gs-Weg"
+      ],
+      "questionGoal": "Gs-Weg",
+      "structuredExplanation": {
+        "coreIdea": "Gs-Weg",
+        "correctReasoning": "Die Cyclase bildet cAMP aus ATP.",
+        "wrongAnswerExplanations": {
+          "A": "PDE baut cAMP ab; die Cyclase bildet es.",
+          "B": "Dies ist PLC-Funktion.",
+          "C": "cAMP bindet an die regulatorischen Untereinheiten.",
+          "D": "Gs stimuliert hier die Cyclase."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Welche Kombination passt zum klassischen Gi-Signalweg?",
+      "options": [
+        {
+          "text": "Stimulation der Cyclase und vermehrtes cAMP wie im Gs-Weg.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Aktivierung von PLCβ als klassischer unmittelbarer Gq-Weg.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hemmung bestimmter Adenylylcyclasen und damit verminderte cAMP-Bildung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aktivierung der retinalen cGMP-PDE als klassische Transducinwirkung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Direkte Phosphorylierung von GDP zu GTP am Rezeptor.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gi kann bestimmte Cyclasen hemmen. B: Dies beschreibt Gq statt Gi. C: Gi steht für die inhibitorische Kopplung in diesem Vergleich. D: Dies gehört zu Gt. E: Der Schaltweg nutzt Nukleotidaustausch. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Gi-Weg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gi-Weg"
+      ],
+      "questionGoal": "Gi-Weg",
+      "structuredExplanation": {
+        "coreIdea": "Gi-Weg",
+        "correctReasoning": "Gi steht für die inhibitorische Kopplung in diesem Vergleich.",
+        "wrongAnswerExplanations": {
+          "A": "Gi kann bestimmte Cyclasen hemmen.",
+          "B": "Dies beschreibt Gq statt Gi.",
+          "D": "Dies gehört zu Gt.",
+          "E": "Der Schaltweg nutzt Nukleotidaustausch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Gs, Gi, Gq, Transducin und ihre Effektoren».",
+      "options": [
+        {
+          "text": "Alle G-Protein-Familien haben unabhängig vom Rezeptor denselben Effektor.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "G-Protein-Untereinheiten können Ionenkanäle beeinflussen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gq kann PLCβ aktivieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Transducin erhöht in der Phototransduktion cGMP durch Hemmung der PDE.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Klassen koppeln unterschiedlich. B: Nicht jeder Effekt benötigt zuerst eine lösliche Kinasekaskade. C: So entstehen IP3 und DAG. D: Es aktiviert die cGMP-PDE und senkt cGMP. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Effektoren zuordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Effektoren zuordnen"
+      ],
+      "questionGoal": "Effektoren zuordnen",
+      "structuredExplanation": {
+        "coreIdea": "Effektoren zuordnen",
+        "correctReasoning": "Nicht jeder Effekt benötigt zuerst eine lösliche Kinasekaskade. So entstehen IP3 und DAG.",
+        "wrongAnswerExplanations": {
+          "A": "Die Klassen koppeln unterschiedlich.",
+          "B": "Nicht jeder Effekt benötigt zuerst eine lösliche Kinasekaskade.",
+          "C": "So entstehen IP3 und DAG.",
+          "D": "Es aktiviert die cGMP-PDE und senkt cGMP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Welche Membrankomponente dient im behandelten Choleratoxinmechanismus als Bindungspartner?",
+      "options": [
+        {
+          "text": "Das heterotrimere Gs-Protein an der äusseren Zelloberfläche.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein muskarinerger Acetylcholinrezeptor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die katalytische Untereinheit der PKA im Cytosol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "PIP2 als identischer Name für GM1.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Gangliosid GM1.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gs liegt membranassoziiert auf der cytosolischen Seite. B: Dieser ist nicht der beschriebene GM1-Bindungspartner. C: Sie ist kein äusserer Bindungsrezeptor für das Toxin. D: Phosphoinositid und Gangliosid sind verschiedene Lipide. E: Die B-Untereinheiten vermitteln die Bindung an dieses Membranlipid. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Toxinbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Toxinbindung"
+      ],
+      "questionGoal": "Toxinbindung",
+      "structuredExplanation": {
+        "coreIdea": "Toxinbindung",
+        "correctReasoning": "Die B-Untereinheiten vermitteln die Bindung an dieses Membranlipid.",
+        "wrongAnswerExplanations": {
+          "A": "Gs liegt membranassoziiert auf der cytosolischen Seite.",
+          "B": "Dieser ist nicht der beschriebene GM1-Bindungspartner.",
+          "C": "Sie ist kein äusserer Bindungsrezeptor für das Toxin.",
+          "D": "Phosphoinositid und Gangliosid sind verschiedene Lipide."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Choleratoxin und persistierende Gs-Aktivierung».",
+      "options": [
+        {
+          "text": "Die Modifikation beschleunigt GTP-Hydrolyse und schaltet Gαs dauerhaft aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die A-Komponente katalysiert ADP-Ribosylierung von Gαs.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Anhaltende Cyclaseaktivierung erhöht cAMP.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Toxin wirkt ausschliesslich durch direkte Zerstörung sämtlicher Enterozyten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie behindert die normale Abschaltung. B: NAD⁺ dient als ADP-Ribosyl-Donor. C: Das Sekretionssignal wird dadurch übermässig verstärkt. D: Der behandelte Mechanismus ist eine Signaltransduktionsstörung. Quelle: Originalunterlagen, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Choleratoxin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Choleratoxin"
+      ],
+      "questionGoal": "Choleratoxin",
+      "structuredExplanation": {
+        "coreIdea": "Choleratoxin",
+        "correctReasoning": "NAD⁺ dient als ADP-Ribosyl-Donor. Das Sekretionssignal wird dadurch übermässig verstärkt.",
+        "wrongAnswerExplanations": {
+          "A": "Sie behindert die normale Abschaltung.",
+          "B": "NAD⁺ dient als ADP-Ribosyl-Donor.",
+          "C": "Das Sekretionssignal wird dadurch übermässig verstärkt.",
+          "D": "Der behandelte Mechanismus ist eine Signaltransduktionsstörung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Welche Richtung erklärt das sekretorische Signal nach persistierender Gαs-Aktivierung?",
+      "options": [
+        {
+          "text": "Weniger Cyclaseaktivität und weniger cAMP als Folge persistierend aktivem Gαs.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehr cAMP ausschliesslich durch Hemmung der PIP2-Spaltung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mehr Cyclaseaktivität → mehr cAMP → verstärkte sekretorische Transportprozesse.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Gαs-Hydrolyse und sofortige Abschaltung als Wirkung des Toxins.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Verminderte PKA-Aktivierung trotz erhöhter cAMP-Bildung als klassische Kette.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Vorzeichen ist umgekehrt. B: Gs stimuliert primär die Adenylylcyclase. C: Wasser kann dem erhöhten Elektrolyttransport folgen. D: Das Toxin hemmt die normale GTPaseabschaltung. E: cAMP aktiviert im klassischen Modell PKA. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Cholera-Kaskade"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cholera-Kaskade"
+      ],
+      "questionGoal": "Cholera-Kaskade",
+      "structuredExplanation": {
+        "coreIdea": "Cholera-Kaskade",
+        "correctReasoning": "Wasser kann dem erhöhten Elektrolyttransport folgen.",
+        "wrongAnswerExplanations": {
+          "A": "Das Vorzeichen ist umgekehrt.",
+          "B": "Gs stimuliert primär die Adenylylcyclase.",
+          "D": "Das Toxin hemmt die normale GTPaseabschaltung.",
+          "E": "cAMP aktiviert im klassischen Modell PKA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «GRK, Arrestin und Rezeptorinternalisierung».",
+      "options": [
+        {
+          "text": "Arrestinbindung muss die G-Protein-Kopplung immer dauerhaft maximal verstärken.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Desensitivierung und GTP-Hydrolyse sind identische chemische Reaktionen am selben Molekül.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "GRKs können aktivierte GPCRs phosphorylieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Internalisierte Rezeptoren können recycelt oder abgebaut werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie kann diese Kopplung begrenzen und weitere Wege vermitteln. B: Sie regulieren verschiedene Ebenen. C: Dies unterstützt nachgeschaltete Regulation. D: Die Endozytose bedeutet nicht zwangsläufig irreversible Vernichtung. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Desensitivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Desensitivierung"
+      ],
+      "questionGoal": "Desensitivierung",
+      "structuredExplanation": {
+        "coreIdea": "Desensitivierung",
+        "correctReasoning": "Dies unterstützt nachgeschaltete Regulation. Die Endozytose bedeutet nicht zwangsläufig irreversible Vernichtung.",
+        "wrongAnswerExplanations": {
+          "A": "Sie kann diese Kopplung begrenzen und weitere Wege vermitteln.",
+          "B": "Sie regulieren verschiedene Ebenen.",
+          "C": "Dies unterstützt nachgeschaltete Regulation.",
+          "D": "Die Endozytose bedeutet nicht zwangsläufig irreversible Vernichtung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Woran bindet cAMP im klassischen PKA-Holoenzymmodell zunächst?",
+      "options": [
+        {
+          "text": "An regulatorische Untereinheiten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "An die katalytischen Untereinheiten als deren ATP-Ersatz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "An Gα als Ersatz für dessen GTP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "An die extrazelluläre Agonistenbindestelle des GPCR.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "An PIP2 zur unmittelbaren Freisetzung von IP3.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dadurch wird die Hemmung der katalytischen Untereinheiten gelöst. B: cAMP reguliert über die R-Untereinheiten. C: Dies ist nicht die PKA-Aktivierung. D: cAMP wirkt intrazellulär nachgeschaltet. E: Dies ist ein anderer Signalzweig. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "PKA-Aktivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PKA-Aktivierung"
+      ],
+      "questionGoal": "PKA-Aktivierung",
+      "structuredExplanation": {
+        "coreIdea": "PKA-Aktivierung",
+        "correctReasoning": "Dadurch wird die Hemmung der katalytischen Untereinheiten gelöst.",
+        "wrongAnswerExplanations": {
+          "B": "cAMP reguliert über die R-Untereinheiten.",
+          "C": "Dies ist nicht die PKA-Aktivierung.",
+          "D": "cAMP wirkt intrazellulär nachgeschaltet.",
+          "E": "Dies ist ein anderer Signalzweig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Welche Reaktion senkt cAMP unmittelbar?",
+      "options": [
+        {
+          "text": "Hydrolyse durch eine Phosphodiesterase zu AMP.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "ATP-Cyclisierung durch Adenylylcyclase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "PIP2-Spaltung durch PLCβ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "GTP-Hydrolyse durch Gα als direkte cAMP-Hydrolyse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Abspaltung eines Phosphats durch eine Proteinkinase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: So wird der Second Messenger abgebaut. B: Dies bildet statt senkt cAMP. C: Sie bildet IP3 und DAG. D: Sie beendet ein vorgeschaltetes Signal, spaltet aber nicht cAMP selbst. E: PDE öffnet die zyklische Phosphodiesterbindung. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "cAMP beenden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "cAMP beenden"
+      ],
+      "questionGoal": "cAMP beenden",
+      "structuredExplanation": {
+        "coreIdea": "cAMP beenden",
+        "correctReasoning": "So wird der Second Messenger abgebaut.",
+        "wrongAnswerExplanations": {
+          "B": "Dies bildet statt senkt cAMP.",
+          "C": "Sie bildet IP3 und DAG.",
+          "D": "Sie beendet ein vorgeschaltetes Signal, spaltet aber nicht cAMP selbst.",
+          "E": "PDE öffnet die zyklische Phosphodiesterbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «PLC-Produkte IP3 und DAG».",
+      "options": [
+        {
+          "text": "IP3 und cAMP sind lediglich zwei Namen für dasselbe Molekül.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "DAG diffundiert als wasserlöslicher Botenstoff frei durch das gesamte Cytosol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "IP3 kann Calciumfreisetzung aus intrazellulären Speichern auslösen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "PLC-Spaltung von PIP2 erzeugt IP3 und DAG.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie sind chemisch und funktionell verschiedene Messenger. B: Es bleibt überwiegend membranassoziiert. C: Es bindet an entsprechende Speicherkanäle. D: Die Produkte verteilen sich unterschiedlich. Quelle: Originalunterlagen, PDF-S. 18,22–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "IP3 und DAG"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "IP3 und DAG"
+      ],
+      "questionGoal": "IP3 und DAG",
+      "structuredExplanation": {
+        "coreIdea": "IP3 und DAG",
+        "correctReasoning": "Es bindet an entsprechende Speicherkanäle. Die Produkte verteilen sich unterschiedlich.",
+        "wrongAnswerExplanations": {
+          "A": "Sie sind chemisch und funktionell verschiedene Messenger.",
+          "B": "Es bleibt überwiegend membranassoziiert.",
+          "C": "Es bindet an entsprechende Speicherkanäle.",
+          "D": "Die Produkte verteilen sich unterschiedlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Ein Signal erhöht IP3, der extrazelluläre Ca²⁺-Einstrom wird im Modell zunächst ausgeblendet. Welche Quelle kann das Cytosol dennoch mit Calcium versorgen?",
+      "options": [
+        {
+          "text": "Intrazelluläre Speicher, insbesondere das ER.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich der extrazelluläre Raum trotz ausgeblendetem Einstrom.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "DAG als kovalent gebundener Calciumspeicher.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die direkte Aktivierung plasmalemmaler Calciumkanäle als rein intrazelluläre Quelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "cAMP als calciumhaltiges Nucleotid.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: IP3-Rezeptoren vermitteln die Freisetzung. B: Der Stamm fragt nach einer verbleibenden intrazellulären Quelle. C: DAG ist kein solcher Ionenspeicher. D: Diese Kanäle würden Calcium aus dem hier ausgeblendeten Extrazellulärraum liefern. E: cAMP enthält kein gespeichertes Calcium. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Calciumfreisetzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Calciumfreisetzung"
+      ],
+      "questionGoal": "Calciumfreisetzung",
+      "structuredExplanation": {
+        "coreIdea": "Calciumfreisetzung",
+        "correctReasoning": "IP3-Rezeptoren vermitteln die Freisetzung.",
+        "wrongAnswerExplanations": {
+          "B": "Der Stamm fragt nach einer verbleibenden intrazellulären Quelle.",
+          "C": "DAG ist kein solcher Ionenspeicher.",
+          "D": "Diese Kanäle würden Calcium aus dem hier ausgeblendeten Extrazellulärraum liefern.",
+          "E": "cAMP enthält kein gespeichertes Calcium."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «lokale Verteilung und Abbau von Second Messengern».",
+      "options": [
+        {
+          "text": "Second Messenger können lokal begrenzte Signale erzeugen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Signal kann nur enden, wenn sämtliche Rezeptoren neu synthetisiert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jeder Second Messenger ist ein Protein, das an der Zelloberfläche verbleibt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "cAMP und DAG können unterschiedliche Effektoren ansprechen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Bildung, Abbau und Kompartimente begrenzen ihre Verteilung. B: Messengerabbau und GTPase-Zyklus erlauben schnelle Abschaltung. C: cAMP, IP3 und Calcium sind keine solchen Proteine. D: PKA und bestimmte PKC-Wege sind Beispiele. Quelle: Originalunterlagen, PDF-S. 18–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Messenger-Organisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messenger-Organisation"
+      ],
+      "questionGoal": "Messenger-Organisation",
+      "structuredExplanation": {
+        "coreIdea": "Messenger-Organisation",
+        "correctReasoning": "Bildung, Abbau und Kompartimente begrenzen ihre Verteilung. PKA und bestimmte PKC-Wege sind Beispiele.",
+        "wrongAnswerExplanations": {
+          "A": "Bildung, Abbau und Kompartimente begrenzen ihre Verteilung.",
+          "B": "Messengerabbau und GTPase-Zyklus erlauben schnelle Abschaltung.",
+          "C": "cAMP, IP3 und Calcium sind keine solchen Proteine.",
+          "D": "PKA und bestimmte PKC-Wege sind Beispiele."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Ein aktiviertes Enzym aktiviert mehrere nachgeschaltete Enzyme, die wiederum viele Substrate umsetzen. Welches Prinzip wird deutlich?",
+      "options": [
+        {
+          "text": "Reine stöchiometrische Weitergabe ohne katalytische Vervielfachung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Signalabschaltung durch raschen Messengerabbau.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Desensitivierung durch Rezeptorinternalisierung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Direkter Ionentransport durch ein einzelnes offenes Kanalprotein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Katalytische Signalverstärkung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Stamm beschreibt mehrere aktivierte Moleküle pro Stufe. B: Hier geht es um Verstärkung, nicht Beendigung. C: Diese vermindert typischerweise die Kopplung. D: Das erklärt nicht die beschriebene Enzymkaskade. E: Eine kleine Eingangszahl kann viele nachgeschaltete Ereignisse auslösen. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Verstärkung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verstärkung"
+      ],
+      "questionGoal": "Verstärkung",
+      "structuredExplanation": {
+        "coreIdea": "Verstärkung",
+        "correctReasoning": "Eine kleine Eingangszahl kann viele nachgeschaltete Ereignisse auslösen.",
+        "wrongAnswerExplanations": {
+          "A": "Der Stamm beschreibt mehrere aktivierte Moleküle pro Stufe.",
+          "B": "Hier geht es um Verstärkung, nicht Beendigung.",
+          "C": "Diese vermindert typischerweise die Kopplung.",
+          "D": "Das erklärt nicht die beschriebene Enzymkaskade."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvb17_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVB17",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Nukleotidschalter und Enzymregulation im GPCR-Signalweg».",
+      "options": [
+        {
+          "text": "Ein GEF aktiviert Gα hauptsächlich durch direkte Phosphorylierung des gebundenen GDP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Adenylylcyclase muss als Naturgesetz dieselbe Membrantopologie und Gα-Regulation besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein GEF fördert Nukleotidaustausch, eine GTPase hydrolysiert gebundenes GTP.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein aktivierter Rezeptor kann nacheinander mehrere G-Proteine beeinflussen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein GEF fördert die GDP-Abgabe und anschliessende GTP-Bindung. B: Die Vorlesung behandelt vor allem klassische membranständige Vertreter, keine universelle Aussage aller Isoformen. C: Die beiden Vorgänge sind zu unterscheiden. D: Dies trägt zur Verstärkung bei. Quelle: Originalunterlagen, PDF-S. 7–12,20,24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVB17",
+        "Präzise Grenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Präzise Grenzen"
+      ],
+      "questionGoal": "Präzise Grenzen",
+      "structuredExplanation": {
+        "coreIdea": "Präzise Grenzen",
+        "correctReasoning": "Die beiden Vorgänge sind zu unterscheiden. Dies trägt zur Verstärkung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Ein GEF fördert die GDP-Abgabe und anschliessende GTP-Bindung.",
+          "B": "Die Vorlesung behandelt vor allem klassische membranständige Vertreter, keine universelle Aussage aller Isoformen.",
+          "C": "Die beiden Vorgänge sind zu unterscheiden.",
+          "D": "Dies trägt zur Verstärkung bei."
+        }
+      }
+    }
+  ]
+}

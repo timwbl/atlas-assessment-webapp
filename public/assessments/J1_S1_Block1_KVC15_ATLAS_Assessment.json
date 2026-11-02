@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block1_kvc15_20261102",
+  "lectureCode": "KVC15",
+  "title": "Säuren, Basen und Puffer",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC15 - Säure-Base-Reaktionen. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. pH 0–14 wird nicht als absolute physikalische Grenze übernommen. Rechnerische Näherungen und Temperatur sind ausdrücklich genannt. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Brønsted-Säuren, Basen und korrespondierende Paare zuordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "pH, Kw, Ka und pKa unter definierten Bedingungen anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Henderson-Hasselbalch, Pufferwirkung und physiologische Puffersysteme erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc15_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Welche Beschreibung kennzeichnet eine Brønsted-Base?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie muss in Wasser vollständig ungeladen sein.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie muss in jeder Struktur eine OH-Gruppe enthalten.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie ist definitionsgemäss nur ein Elektronenakzeptor ohne Protonenbezug.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie nimmt ein Proton auf.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Sie gibt definitionsgemäss ein Proton ab.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Basen können neutral oder geladen vorliegen; Ungeladenheit ist keine Definitionsbedingung. B: Auch Amine ohne OH-Gruppe können Protonen aufnehmen. C: Ein reiner Elektronenpaarakzeptor gehört zum Lewis-Säurebegriff, nicht zur Brønsted-Base. D: Brønsted definiert Säure als Protonendonator und Base als Protonenakzeptor; andere Säure-Base-Konzepte sind zu unterscheiden. E: Protonenabgabe ist die Brønsted-Säuredefinition. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Brønsted-Base"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Brønsted-Base"
+      ],
+      "questionGoal": "Brønsted-Base",
+      "structuredExplanation": {
+        "coreIdea": "Brønsted-Base",
+        "correctReasoning": "Brønsted definiert Säure als Protonendonator und Base als Protonenakzeptor; andere Säure-Base-Konzepte sind zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "Basen können neutral oder geladen vorliegen; Ungeladenheit ist keine Definitionsbedingung.",
+          "B": "Auch Amine ohne OH-Gruppe können Protonen aufnehmen.",
+          "C": "Ein reiner Elektronenpaarakzeptor gehört zum Lewis-Säurebegriff, nicht zur Brønsted-Base.",
+          "E": "Protonenabgabe ist die Brønsted-Säuredefinition."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Welches Paar unterscheidet sich genau um ein Proton und ist ein korrespondierendes Säure-Base-Paar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "H₂O/CO₂.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "H₃PO₄/PO₄³⁻.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "NH₄⁺/NH₃.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "CH₄/CH₃OH.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "HCl/NaOH.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: H₂O und CO₂ unterscheiden sich im Atomgerüst, nicht um ein H⁺. B: H₃PO₄ und PO₄³⁻ unterscheiden sich um drei Protonen statt eines. C: NH₄⁺ gibt ein H⁺ zu NH₃ ab; H₃PO₄ und PO₄³⁻ liegen drei Deprotonierungsschritte auseinander. D: Methan und Methanol unterscheiden sich zusätzlich durch O. E: HCl und NaOH sind Reaktionspartner, aber kein durch genau ein Proton verwandtes Paar. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Korrespondierendes Paar"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Korrespondierendes Paar"
+      ],
+      "questionGoal": "Korrespondierendes Paar",
+      "structuredExplanation": {
+        "coreIdea": "Korrespondierendes Paar",
+        "correctReasoning": "NH₄⁺ gibt ein H⁺ zu NH₃ ab; H₃PO₄ und PO₄³⁻ liegen drei Deprotonierungsschritte auseinander.",
+        "wrongAnswerExplanations": {
+          "A": "H₂O und CO₂ unterscheiden sich im Atomgerüst, nicht um ein H⁺.",
+          "B": "H₃PO₄ und PO₄³⁻ unterscheiden sich um drei Protonen statt eines.",
+          "D": "Methan und Methanol unterscheiden sich zusätzlich durch O.",
+          "E": "HCl und NaOH sind Reaktionspartner, aber kein durch genau ein Proton verwandtes Paar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Zwei Säuren haben pKa 3 und 6 im selben Lösungsmittel. Welche Aussage ist richtig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "pKa 3 bedeutet eine dreimal grössere molare Masse.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Säure mit pKa 6 hat ein tausendfach grösseres Ka.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Beide haben gleiches Ka, weil pKa dimensionslos ist.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Säure mit pKa 3 hat das grössere Ka und ist stärker.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Der höhere pKa garantiert vollständigere Dissoziation bei gleicher Konzentration.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: pKa ist eine logarithmische Gleichgewichtskonstante und keine Massenzahl. B: Ein höherer pKa ergibt ein kleineres Ka; die Richtung des Faktors 1000 ist vertauscht. C: Dimensionslosigkeit macht zwei unterschiedliche Zahlenwerte von Ka nicht gleich. D: Ka=10^(−pKa); pKa 3 entspricht einem um Faktor 1000 grösseren Ka als pKa 6. E: Höherer pKa bedeutet bei vergleichbaren Bedingungen gerade geringere Säurestärke. Quelle: Originalunterlagen, PDF-S. 5–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Säurestärke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Säurestärke"
+      ],
+      "questionGoal": "Säurestärke",
+      "structuredExplanation": {
+        "coreIdea": "Säurestärke",
+        "correctReasoning": "Ka=10^(−pKa); pKa 3 entspricht einem um Faktor 1000 grösseren Ka als pKa 6.",
+        "wrongAnswerExplanations": {
+          "A": "pKa ist eine logarithmische Gleichgewichtskonstante und keine Massenzahl.",
+          "B": "Ein höherer pKa ergibt ein kleineres Ka; die Richtung des Faktors 1000 ist vertauscht.",
+          "C": "Dimensionslosigkeit macht zwei unterschiedliche Zahlenwerte von Ka nicht gleich.",
+          "E": "Höherer pKa bedeutet bei vergleichbaren Bedingungen gerade geringere Säurestärke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Welche pH-Näherung gilt für 1.0×10⁻³ mol/l einer vollständig dissoziierten einprotonigen Säure bei idealem Verhalten und vernachlässigbarer Wasserautoprotolyse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "pH 3.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "pH 0.003.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "pH 7.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "pH 1.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "pH 11.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: pH≈−log10([H₃O⁺]/1 mol/l)=3. B: Der Logarithmus einer Konzentration wird nicht als linearer Zahlenwert 0.003 ausgegeben. C: pH 7 gehört nicht zu dieser hinreichend konzentrierten starken Säure. D: pH 1 entspräche im idealen Modell 10⁻¹ und nicht 10⁻³ mol/l. E: pH 11 wäre unter diesem Modell basisch statt sauer. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Starke Säure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Starke Säure"
+      ],
+      "questionGoal": "Starke Säure",
+      "structuredExplanation": {
+        "coreIdea": "Starke Säure",
+        "correctReasoning": "pH≈−log10([H₃O⁺]/1 mol/l)=3.",
+        "wrongAnswerExplanations": {
+          "B": "Der Logarithmus einer Konzentration wird nicht als linearer Zahlenwert 0.003 ausgegeben.",
+          "C": "pH 7 gehört nicht zu dieser hinreichend konzentrierten starken Säure.",
+          "D": "pH 1 entspräche im idealen Modell 10⁻¹ und nicht 10⁻³ mol/l.",
+          "E": "pH 11 wäre unter diesem Modell basisch statt sauer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Bei 25 °C sei Kw näherungsweise 10⁻¹⁴. Welche OH⁻-Konzentration gehört zu [H₃O⁺]=10⁻³ mol/l im idealisierten Modell?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10⁻¹¹ mol/l.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "10⁻¹⁴ mol/l.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "10¹¹ mol/l.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "10⁻⁷ mol/l.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "10⁻³ mol/l.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: [OH⁻]=Kw/[H₃O⁺]=10⁻¹¹ mol/l unter der genannten Konzentrationsnäherung. B: Kw selbst ist das Produkt; es ist nicht die einzelne OH⁻-Konzentration. C: Es wurde die Division beziehungsweise der negative Exponent umgekehrt. D: 10⁻⁷ mol/l OH⁻ passt bei gleichem Kw zu neutralem 10⁻⁷ H₃O⁺, nicht zur Probe. E: Gleiche 10⁻³-Konzentrationen hätten das Produkt 10⁻⁶ und nicht 10⁻¹⁴. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Ionenprodukt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionenprodukt"
+      ],
+      "questionGoal": "Ionenprodukt",
+      "structuredExplanation": {
+        "coreIdea": "Ionenprodukt",
+        "correctReasoning": "[OH⁻]=Kw/[H₃O⁺]=10⁻¹¹ mol/l unter der genannten Konzentrationsnäherung.",
+        "wrongAnswerExplanations": {
+          "B": "Kw selbst ist das Produkt; es ist nicht die einzelne OH⁻-Konzentration.",
+          "C": "Es wurde die Division beziehungsweise der negative Exponent umgekehrt.",
+          "D": "10⁻⁷ mol/l OH⁻ passt bei gleichem Kw zu neutralem 10⁻⁷ H₃O⁺, nicht zur Probe.",
+          "E": "Gleiche 10⁻³-Konzentrationen hätten das Produkt 10⁻⁶ und nicht 10⁻¹⁴."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Welche Aussage definiert neutrales Wasser unabhängig von einer festen Temperaturzahl am besten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es liegt immer die gleiche Konzentration H₂ und O₂ vor.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Aktivitäten von H₃O⁺ und OH⁻ sind gleich.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "H₃O⁺ fehlt vollständig, OH⁻ bleibt vorhanden.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der pH beträgt bei jeder Temperatur exakt 7.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Lösung enthält keinerlei Ionen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: H₂/O₂-Mengen definieren keine Säure-Base-Neutralität. B: Neutralität ist Gleichheit der beiden Aktivitäten; der zugehörige pH hängt über Kw von der Temperatur ab. C: Neutralität benötigt Gleichheit und nicht völliges Fehlen einer der beiden Ionenarten. D: pH 7 folgt nur für das passende Kw, typischerweise bei 25 °C in Wasser. E: Neutrales Wasser enthält aufgrund der Autoprotolyse trotzdem Ionen. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Neutralität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neutralität"
+      ],
+      "questionGoal": "Neutralität",
+      "structuredExplanation": {
+        "coreIdea": "Neutralität",
+        "correctReasoning": "Neutralität ist Gleichheit der beiden Aktivitäten; der zugehörige pH hängt über Kw von der Temperatur ab.",
+        "wrongAnswerExplanations": {
+          "A": "H₂/O₂-Mengen definieren keine Säure-Base-Neutralität.",
+          "C": "Neutralität benötigt Gleichheit und nicht völliges Fehlen einer der beiden Ionenarten.",
+          "D": "pH 7 folgt nur für das passende Kw, typischerweise bei 25 °C in Wasser.",
+          "E": "Neutrales Wasser enthält aufgrund der Autoprotolyse trotzdem Ionen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Ein Puffer hat pKa=6.0 und [A⁻]/[HA]=10. Welcher pH folgt näherungsweise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7.0.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "60.0.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "10.0.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "5.0.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "6.0.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: pH=pKa+log10(10)=6+1=7. B: pKa und Verhältnis werden logarithmisch kombiniert, nicht miteinander multipliziert. C: Der pH ist nicht gleich dem linearen Konzentrationsverhältnis zehn. D: pH 5 entsteht durch Vertauschen des Base/Säure-Verhältnisses. E: pH=pKa erfordert das Verhältnis eins statt zehn. Quelle: Originalunterlagen, PDF-S. 6,16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Puffergleichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Puffergleichung"
+      ],
+      "questionGoal": "Puffergleichung",
+      "structuredExplanation": {
+        "coreIdea": "Puffergleichung",
+        "correctReasoning": "pH=pKa+log10(10)=6+1=7.",
+        "wrongAnswerExplanations": {
+          "B": "pKa und Verhältnis werden logarithmisch kombiniert, nicht miteinander multipliziert.",
+          "C": "Der pH ist nicht gleich dem linearen Konzentrationsverhältnis zehn.",
+          "D": "pH 5 entsteht durch Vertauschen des Base/Säure-Verhältnisses.",
+          "E": "pH=pKa erfordert das Verhältnis eins statt zehn."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Welche Komponente eines HA/A⁻-Puffers fängt zugegebene Protonen überwiegend ab?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keine Komponente; ein Puffer verhindert jede chemische Reaktion.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "HA durch Abspaltung weiterer Protonen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "A⁻ durch Umwandlung in ein irreversibles Gas in jedem Puffersystem.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "A⁻ durch Bildung von HA.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Nur das Gegenion unabhängig von dessen Eigenschaften.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Puffer wirkt gerade durch chemische Gleichgewichtsverschiebung, nicht durch Reaktionsverbot. B: Zusätzliche Protonen würden eine Säurezugabe nicht abfangen; die Basenform bindet sie. C: Eine Gasbildung ist keine allgemeine Bedingung eines Säure-Base-Puffers. D: Die konjugierte Base bindet H⁺ und begrenzt den pH-Abfall, solange genügend Pufferkapazität vorhanden ist. E: Ein beliebiges Gegenion übernimmt nicht die spezifische Protonenpufferung des A⁻. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Puffer bei Säurezugabe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Puffer bei Säurezugabe"
+      ],
+      "questionGoal": "Puffer bei Säurezugabe",
+      "structuredExplanation": {
+        "coreIdea": "Puffer bei Säurezugabe",
+        "correctReasoning": "Die konjugierte Base bindet H⁺ und begrenzt den pH-Abfall, solange genügend Pufferkapazität vorhanden ist.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Puffer wirkt gerade durch chemische Gleichgewichtsverschiebung, nicht durch Reaktionsverbot.",
+          "B": "Zusätzliche Protonen würden eine Säurezugabe nicht abfangen; die Basenform bindet sie.",
+          "C": "Eine Gasbildung ist keine allgemeine Bedingung eines Säure-Base-Puffers.",
+          "E": "Ein beliebiges Gegenion übernimmt nicht die spezifische Protonenpufferung des A⁻."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Zwei Puffer besitzen denselben pH und dasselbe HA/A⁻-Verhältnis, aber unterschiedliche Gesamtkonzentration. Was gilt bei sonst gleichen Bedingungen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Kapazität hängt ausschliesslich vom Probenvolumen ab, nicht von Konzentration.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur der verdünntere Puffer kann überhaupt Protonen binden.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Beide haben zwingend dieselbe Kapazität, weil der pH gleich ist.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Eine höhere Gesamtkonzentration ändert zwingend das Verhältnis auf 1:1.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Der konzentriertere Puffer kann mehr zugegebene Säure/Base abfangen.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Bei gleichem Volumen spielt die Stoffmengenkonzentration eine wesentliche Rolle. B: Auch ein konzentrierterer Puffer kann Protonen aufnehmen und besitzt mehr Kapazität. C: Gleicher pH legt das Verhältnis fest, aber nicht die verfügbare Pufferstoffmenge. D: Eine Änderung beider Konzentrationen um denselben Faktor lässt ihr Verhältnis unverändert. E: Der pH hängt vom Verhältnis ab; die verfügbare Stoffmenge der Pufferkomponenten bestimmt wesentlich die Kapazität. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Pufferkapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pufferkapazität"
+      ],
+      "questionGoal": "Pufferkapazität",
+      "structuredExplanation": {
+        "coreIdea": "Pufferkapazität",
+        "correctReasoning": "Der pH hängt vom Verhältnis ab; die verfügbare Stoffmenge der Pufferkomponenten bestimmt wesentlich die Kapazität.",
+        "wrongAnswerExplanations": {
+          "A": "Bei gleichem Volumen spielt die Stoffmengenkonzentration eine wesentliche Rolle.",
+          "B": "Auch ein konzentrierterer Puffer kann Protonen aufnehmen und besitzt mehr Kapazität.",
+          "C": "Gleicher pH legt das Verhältnis fest, aber nicht die verfügbare Pufferstoffmenge.",
+          "D": "Eine Änderung beider Konzentrationen um denselben Faktor lässt ihr Verhältnis unverändert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Für das vereinfachte Bicarbonatsystem gilt pH=6.1+log([HCO₃⁻]/[CO₂]). Welcher pH folgt bei einem Verhältnis von 20?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ungefähr 6.1.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ungefähr 7.4.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ungefähr 26.1.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ungefähr 5.0.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ungefähr 8.8.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 6.1 wäre das Ergebnis bei Verhältnis eins, nicht zwanzig. B: log10(20)≈1.30; damit ergibt sich 7.40 unter den Modellannahmen. C: Das Verhältnis 20 wird nicht linear zum pKa addiert. D: Das Ergebnis liegt über pKa; ein Wert um 5 hätte die falsche Richtung. E: 8.8 folgt nicht aus log10(20)≈1.30. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Bicarbonatmodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bicarbonatmodell"
+      ],
+      "questionGoal": "Bicarbonatmodell",
+      "structuredExplanation": {
+        "coreIdea": "Bicarbonatmodell",
+        "correctReasoning": "log10(20)≈1.30; damit ergibt sich 7.40 unter den Modellannahmen.",
+        "wrongAnswerExplanations": {
+          "A": "6.1 wäre das Ergebnis bei Verhältnis eins, nicht zwanzig.",
+          "C": "Das Verhältnis 20 wird nicht linear zum pKa addiert.",
+          "D": "Das Ergebnis liegt über pKa; ein Wert um 5 hätte die falsche Richtung.",
+          "E": "8.8 folgt nicht aus log10(20)≈1.30."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Was unterscheidet den Bicarbonatpuffer im Organismus von einem vollständig geschlossenen Reagenzglas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Puffer benötigt keinerlei Wasser.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "CO₂ kann über die Lunge ausgetauscht werden.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die HCO₃⁻-Konzentration ist bei allen Menschen und Zuständen mathematisch konstant.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Henderson-Hasselbalch-Beziehung wird zu einer Massenerhaltung ohne Gleichgewicht.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Bicarbonat kann keine Protonen aufnehmen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die betrachtete Protonierung/Deprotonierung findet gerade im wässrigen Milieu statt. B: Gastransport und Ventilation beeinflussen die CO₂-Komponente; das System ist physiologisch offen. C: Bicarbonatkonzentration und Regulation können sich verändern und sind nicht mathematisch konstant. D: Die Gleichgewichtsbeziehung bleibt sinnvoll; Offenheit ergänzt regulierbare CO₂-Flüsse. E: Bicarbonat ist die protonenaufnehmende Basenkomponente dieses Puffers. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Offenes Puffersystem"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Offenes Puffersystem"
+      ],
+      "questionGoal": "Offenes Puffersystem",
+      "structuredExplanation": {
+        "coreIdea": "Offenes Puffersystem",
+        "correctReasoning": "Gastransport und Ventilation beeinflussen die CO₂-Komponente; das System ist physiologisch offen.",
+        "wrongAnswerExplanations": {
+          "A": "Die betrachtete Protonierung/Deprotonierung findet gerade im wässrigen Milieu statt.",
+          "C": "Bicarbonatkonzentration und Regulation können sich verändern und sind nicht mathematisch konstant.",
+          "D": "Die Gleichgewichtsbeziehung bleibt sinnvoll; Offenheit ergänzt regulierbare CO₂-Flüsse.",
+          "E": "Bicarbonat ist die protonenaufnehmende Basenkomponente dieses Puffers."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Welche Aussage gilt am Äquivalenzpunkt einer schwachen einprotonigen Säure mit starker Base bei 25 °C typischerweise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der pH kann wegen der konjugierten Base über 7 liegen.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Hälfte der Säure ist noch unneutralisiert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Stoffmenge zugegebener OH⁻ ist dann grundsätzlich null.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Der pH muss genau dem pKa entsprechen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Der pH muss definitionsgemäss 7 sein.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Äquivalenz ist stöchiometrisch definiert; die gebildete konjugierte Base kann mit Wasser basisch reagieren. B: Am Äquivalenzpunkt ist die stöchiometrische Neutralisation vollständig. C: OH⁻ wurde bis zur Äquivalenz in einer entsprechenden Menge zugegeben, nicht in Menge null. D: pH≈pKa gehört zur Halbäquivalenz, nicht zum Äquivalenzpunkt. E: Stöchiometrische Äquivalenz garantiert keinen neutralen pH bei einer schwachen Säure. Quelle: Originalunterlagen, PDF-S. 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Titration schwacher Säure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Titration schwacher Säure"
+      ],
+      "questionGoal": "Titration schwacher Säure",
+      "structuredExplanation": {
+        "coreIdea": "Titration schwacher Säure",
+        "correctReasoning": "Äquivalenz ist stöchiometrisch definiert; die gebildete konjugierte Base kann mit Wasser basisch reagieren.",
+        "wrongAnswerExplanations": {
+          "B": "Am Äquivalenzpunkt ist die stöchiometrische Neutralisation vollständig.",
+          "C": "OH⁻ wurde bis zur Äquivalenz in einer entsprechenden Menge zugegeben, nicht in Menge null.",
+          "D": "pH≈pKa gehört zur Halbäquivalenz, nicht zum Äquivalenzpunkt.",
+          "E": "Stöchiometrische Äquivalenz garantiert keinen neutralen pH bei einer schwachen Säure."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Puffermechanismus, Titration, Korrespondierendes Paar, Schwache Säure.",
+      "options": [
+        {
+          "text": "Zugefügte Protonen können von der Basenkomponente eines Puffers aufgenommen werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Schwach bedeutet definitionsgemäss nur, dass die eingesetzte Konzentration klein ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Am Halbäquivalenzpunkt einer passenden schwachen einprotonigen Säure gilt näherungsweise pH = pKa.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Essigsäure und Acetat unterscheiden sich um ein vollständiges Kohlenstoffatom.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Puffersystem mildert die Änderung. B: Eine schwache Säure liegt unter üblichen Bedingungen nicht vollständig dissoziiert vor. Säurestärke und Konzentration sind verschieden. C: Säure und konjugierte Base sind etwa gleich vorhanden. D: Essigsäure und Acetat unterscheiden sich um ein Proton. Die Atomverknüpfung des Säurerests bleibt erhalten. Quelle: Originalunterlagen, PDF-S. 4–5, 8, 12–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Puffermechanismus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Puffermechanismus"
+      ],
+      "questionGoal": "Puffermechanismus",
+      "structuredExplanation": {
+        "coreIdea": "Puffermechanismus",
+        "correctReasoning": "Das Puffersystem mildert die Änderung. Säure und konjugierte Base sind etwa gleich vorhanden.",
+        "wrongAnswerExplanations": {
+          "A": "Das Puffersystem mildert die Änderung.",
+          "B": "Eine schwache Säure liegt unter üblichen Bedingungen nicht vollständig dissoziiert vor. Säurestärke und Konzentration sind verschieden.",
+          "C": "Säure und konjugierte Base sind etwa gleich vorhanden.",
+          "D": "Essigsäure und Acetat unterscheiden sich um ein Proton. Die Atomverknüpfung des Säurerests bleibt erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Titration, Äquivalenzpunkt, pKa, Henderson-Hasselbalch.",
+      "options": [
+        {
+          "text": "Ein kleinerer pKa bezeichnet unter vergleichbaren Bedingungen eine stärkere Säure.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Am Halbäquivalenzpunkt einer passenden schwachen einprotonigen Säure gilt näherungsweise pH = pKa.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Für ein geeignetes Pufferpaar gilt pH = pKa + log([Base]/[Säure]).",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei der Titration von Essigsäure mit NaOH liegt der Äquivalenzpunkt bei 25 °C genau bei pH 7.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: pKa ist der negative dekadische Logarithmus von Ka. B: Säure und konjugierte Base sind etwa gleich vorhanden. C: Das Verhältnis ist Base zu Säure. D: Das gebildete Acetat reagiert basisch; der Äquivalenz-pH liegt typischerweise über 7. Quelle: Originalunterlagen, PDF-S. 5–6, 12–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Titration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Titration"
+      ],
+      "questionGoal": "Titration",
+      "structuredExplanation": {
+        "coreIdea": "Titration",
+        "correctReasoning": "pKa ist der negative dekadische Logarithmus von Ka. Säure und konjugierte Base sind etwa gleich vorhanden. Das Verhältnis ist Base zu Säure.",
+        "wrongAnswerExplanations": {
+          "A": "pKa ist der negative dekadische Logarithmus von Ka.",
+          "B": "Säure und konjugierte Base sind etwa gleich vorhanden.",
+          "C": "Das Verhältnis ist Base zu Säure.",
+          "D": "Das gebildete Acetat reagiert basisch; der Äquivalenz-pH liegt typischerweise über 7."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Äquivalenzpunkt, Phosphatpuffer, Ionenprodukt, Puffermitte.",
+      "options": [
+        {
+          "text": "Bei gleichen Aktivitäten von Säure- und Basenform ist pH=pKa+1.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei der Titration von Essigsäure mit NaOH liegt der Äquivalenzpunkt bei 25 °C genau bei pH 7.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "H2PO4− und HPO4^2− bilden ein physiologisch relevantes korrespondierendes Paar.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Kw ist die Summe der beiden Ionenaktivitäten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Logarithmus des Verhältnisses eins ist null; daher pH=pKa. B: Das gebildete Acetat reagiert basisch; der Äquivalenz-pH liegt typischerweise über 7. C: Eine geeignete Stufe liegt im physiologischen Bereich. D: Für Wasser gilt im Gleichgewicht Kw = a(H3O+)·a(OH−). Es handelt sich um ein Produkt. Quelle: Originalunterlagen, PDF-S. 7, 13–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Äquivalenzpunkt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Äquivalenzpunkt"
+      ],
+      "questionGoal": "Äquivalenzpunkt",
+      "structuredExplanation": {
+        "coreIdea": "Äquivalenzpunkt",
+        "correctReasoning": "Eine geeignete Stufe liegt im physiologischen Bereich.",
+        "wrongAnswerExplanations": {
+          "A": "Der Logarithmus des Verhältnisses eins ist null; daher pH=pKa.",
+          "B": "Das gebildete Acetat reagiert basisch; der Äquivalenz-pH liegt typischerweise über 7.",
+          "C": "Eine geeignete Stufe liegt im physiologischen Bereich.",
+          "D": "Für Wasser gilt im Gleichgewicht Kw = a(H3O+)·a(OH−). Es handelt sich um ein Produkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Phosphatpuffer, Kohlensäurepuffer, pH-Wert, Pufferrechnung.",
+      "options": [
+        {
+          "text": "Bei pKa = 6 und Base/Säure = 10 ergibt die Näherung pH = 7.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "H2PO4− und HPO4^2− bilden ein physiologisch relevantes korrespondierendes Paar.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "10^−3 mol/L H3O+ entspricht im idealen Modell pH −3.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Seine Wirkung im Organismus ist vollständig unabhängig von Lunge und Niere.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: log10 ist eins. B: Eine geeignete Stufe liegt im physiologischen Bereich. C: Idealisiert ergibt [H3O+] = 10^−3 mol/L einen pH von 3. pH ist der negative dekadische Logarithmus. D: Das physiologische CO2/HCO3−-System ist mit Atmung und renaler Regulation gekoppelt. Es handelt sich um ein offenes reguliertes System. Quelle: Originalunterlagen, PDF-S. 6–7, 16, 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Phosphatpuffer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphatpuffer"
+      ],
+      "questionGoal": "Phosphatpuffer",
+      "structuredExplanation": {
+        "coreIdea": "Phosphatpuffer",
+        "correctReasoning": "log10 ist eins. Eine geeignete Stufe liegt im physiologischen Bereich.",
+        "wrongAnswerExplanations": {
+          "A": "log10 ist eins.",
+          "B": "Eine geeignete Stufe liegt im physiologischen Bereich.",
+          "C": "Idealisiert ergibt [H3O+] = 10^−3 mol/L einen pH von 3. pH ist der negative dekadische Logarithmus.",
+          "D": "Das physiologische CO2/HCO3−-System ist mit Atmung und renaler Regulation gekoppelt. Es handelt sich um ein offenes reguliertes System."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Kohlensäurepuffer, Physiologische Relation, Verdünnung starker Säure, Pufferkapazität.",
+      "options": [
+        {
+          "text": "Für pKa' = 6.1 und HCO3−/gelöstes CO2 = 20 ergibt sich ungefähr pH 7.4.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine zehnfache Verdünnung einer ideal vollständig dissoziierten starken einprotonigen Säure senkt bei vernachlässigbarer Wasserautoprotolyse den pH um eins.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das physiologische CO2/HCO3−-System ist mit Atmung und renaler Regulation gekoppelt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Gleiches Verhältnis garantiert unabhängig von der Gesamtmenge identische Pufferkapazität.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: 6.1 + log20 ist ungefähr 7.4. B: Durch zehnfache Verdünnung sinkt [H₃O⁺] auf ein Zehntel; pH=−log10[H₃O⁺] steigt dadurch um eins statt zu sinken. C: Es handelt sich um ein offenes reguliertes System. D: Mehr Gesamtpuffer bei gleichem Komponentenverhältnis kann die Kapazität erhöhen, ohne den AusgangspH stark zu verändern. Die verfügbare Stoffmenge zählt. Quelle: Originalunterlagen, PDF-S. 7, 16, 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Kohlensäurepuffer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kohlensäurepuffer"
+      ],
+      "questionGoal": "Kohlensäurepuffer",
+      "structuredExplanation": {
+        "coreIdea": "Kohlensäurepuffer",
+        "correctReasoning": "6.1 + log20 ist ungefähr 7.4. Es handelt sich um ein offenes reguliertes System.",
+        "wrongAnswerExplanations": {
+          "A": "6.1 + log20 ist ungefähr 7.4.",
+          "B": "Durch zehnfache Verdünnung sinkt [H₃O⁺] auf ein Zehntel; pH=−log10[H₃O⁺] steigt dadurch um eins statt zu sinken.",
+          "C": "Es handelt sich um ein offenes reguliertes System.",
+          "D": "Mehr Gesamtpuffer bei gleichem Komponentenverhältnis kann die Kapazität erhöhen, ohne den AusgangspH stark zu verändern. Die verfügbare Stoffmenge zählt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Physiologische Relation, Neutralität und Temperatur, Schwache Säure, Brønsted-Säure. Berücksichtigen Sie auch die Beziehung zwischen pKa und pKb eines korrespondierenden Paars.",
+      "options": [
+        {
+          "text": "Für ein korrespondierendes Säure-Base-Paar gilt in Wasser bei 25 °C näherungsweise pKa + pKb = 7.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Brønsted-Säure kann ein Proton abgeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Für pKa' = 6.1 und HCO3−/gelöstes CO2 = 20 ergibt sich ungefähr pH 7.4.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine schwache Säure liegt unter üblichen Bedingungen nicht vollständig dissoziiert vor.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für dasselbe konjugierte Paar gilt Ka·Kb=Kw und daher pKa+pKb=pKw≈14 bei 25 °C, nicht 7. B: Der Begriff bezieht sich auf Protonenübertragung. C: 6.1 + log20 ist ungefähr 7.4. D: Säurestärke und Konzentration sind verschieden. Quelle: Originalunterlagen, PDF-S. 4–9, 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Physiologische Relation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Physiologische Relation"
+      ],
+      "questionGoal": "Physiologische Relation",
+      "structuredExplanation": {
+        "coreIdea": "Physiologische Relation",
+        "correctReasoning": "Der Begriff bezieht sich auf Protonenübertragung. 6.1 + log20 ist ungefähr 7.4. Säurestärke und Konzentration sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Für dasselbe konjugierte Paar gilt Ka·Kb=Kw und daher pKa+pKb=pKw≈14 bei 25 °C, nicht 7.",
+          "B": "Der Begriff bezieht sich auf Protonenübertragung.",
+          "C": "6.1 + log20 ist ungefähr 7.4.",
+          "D": "Säurestärke und Konzentration sind verschieden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Neutralität und Temperatur, Grenzen der Skala, Henderson-Hasselbalch, Brønsted-Base.",
+      "options": [
+        {
+          "text": "In derselben Gleichung steht stets log([Säure]/[Base]) mit positivem Vorzeichen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Neutralität ist bei jeder Temperatur und jedem Lösungsmittel gleichbedeutend mit pH 7.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Brønsted-Base muss bereits eine OH−-Gruppe enthalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sehr konzentrierte Lösungen können pH-Werte ausserhalb des gebräuchlichen Bereichs 0 bis 14 besitzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für ein geeignetes Pufferpaar gilt pH = pKa + log([Base]/[Säure]). Das Verhältnis ist Base zu Säure. B: Neutralität bedeutet gleiche H3O+- und OH−-Aktivitäten; der neutrale pH hängt von der Temperatur ab. Kw und das Lösungsmittel sind zu beachten. C: Eine Brønsted-Base kann ein Proton aufnehmen. Auch Amine können Protonen aufnehmen. D: Die Skala ist logarithmisch und aktivitätsbezogen. Quelle: Originalunterlagen, PDF-S. 3–4, 6–7, 9, 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Neutralität und Temperatur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neutralität und Temperatur"
+      ],
+      "questionGoal": "Neutralität und Temperatur",
+      "structuredExplanation": {
+        "coreIdea": "Neutralität und Temperatur",
+        "correctReasoning": "Die Skala ist logarithmisch und aktivitätsbezogen.",
+        "wrongAnswerExplanations": {
+          "A": "Für ein geeignetes Pufferpaar gilt pH = pKa + log([Base]/[Säure]). Das Verhältnis ist Base zu Säure.",
+          "B": "Neutralität bedeutet gleiche H3O+- und OH−-Aktivitäten; der neutrale pH hängt von der Temperatur ab. Kw und das Lösungsmittel sind zu beachten.",
+          "C": "Eine Brønsted-Base kann ein Proton aufnehmen. Auch Amine können Protonen aufnehmen.",
+          "D": "Die Skala ist logarithmisch und aktivitätsbezogen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc15_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC15",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Grenzen der Skala, Brønsted-Säure, Puffermitte, Korrespondierendes Paar.",
+      "options": [
+        {
+          "text": "Eine Brønsted-Säure ist definitionsgemäss ein ausschliesslicher Elektronendonator ohne Protonenbezug.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sehr konzentrierte Lösungen können pH-Werte ausserhalb des gebräuchlichen Bereichs 0 bis 14 besitzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleichen Aktivitäten von Säure- und Basenform ist pH=pKa+1.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Essigsäure und Acetat unterscheiden sich um ein Proton.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine Brønsted-Säure kann ein Proton abgeben. Der Begriff bezieht sich auf Protonenübertragung. B: Die Skala ist logarithmisch und aktivitätsbezogen. C: Der Logarithmus des Verhältnisses eins ist null; daher pH=pKa. D: Die Atomverknüpfung des Säurerests bleibt erhalten. Quelle: Originalunterlagen, PDF-S. 3–5, 9, 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC15",
+        "Grenzen der Skala"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzen der Skala"
+      ],
+      "questionGoal": "Grenzen der Skala",
+      "structuredExplanation": {
+        "coreIdea": "Grenzen der Skala",
+        "correctReasoning": "Die Skala ist logarithmisch und aktivitätsbezogen. Die Atomverknüpfung des Säurerests bleibt erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Brønsted-Säure kann ein Proton abgeben. Der Begriff bezieht sich auf Protonenübertragung.",
+          "B": "Die Skala ist logarithmisch und aktivitätsbezogen.",
+          "C": "Der Logarithmus des Verhältnisses eins ist null; daher pH=pKa.",
+          "D": "Die Atomverknüpfung des Säurerests bleibt erhalten."
+        }
+      }
+    }
+  ]
+}

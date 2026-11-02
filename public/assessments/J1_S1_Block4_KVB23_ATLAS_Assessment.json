@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block4_kvb23_20261102",
+  "lectureCode": "KVB23",
+  "title": "Regulation der Genexpression",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB23_Genexpression 2025_Fotiadis. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Lac-Induktor präzisiert als Allolactose. Histon- und DNA-Modifikation getrennt. Kein universelles starres 30-nm-Fasermodell geprüft; RNAi kann Abbau oder Translationshemmung bewirken und ist nicht mit genomischem Knock-out identisch. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Repression, Aktivierung und lac-Operon mechanistisch erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Chromatinumbau, Histonmodifikation und DNA-Methylierung unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "DNA-bindende Transkriptionsfaktoren und Steroidrezeptoren funktionell zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "RNA-Prozessierung, Export und RNA-Interferenz als Regulationsebenen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb23_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Ein Induktor vermindert die DNA-Bindung eines Repressors. Was kann folgen?",
+      "options": [
+        {
+          "text": "Die Transkription muss trotz Repressorablösung vollständig blockiert bleiben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Induktor muss dabei den Operator dauerhaft mutieren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Bindung verstärkt zwingend die Repressor-Operator-Affinität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die zuvor unterdrückte Transkription wird ermöglicht.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der Induktor muss den Repressor vor jedem Transkriptionsstart zwingend proteolytisch abbauen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Repressorablösung kann die Blockade aufheben. B: Allosterische Regulation benötigt keine Sequenzänderung. C: Im Stamm wird diese Bindung vermindert. D: Die Hemmung der Startregion fällt weg. E: Im klassischen Modell genügt die allosterische Änderung seiner DNA-Bindung. Quelle: Originalunterlagen, PDF-S. 3–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Derepression"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Derepression"
+      ],
+      "questionGoal": "Derepression",
+      "structuredExplanation": {
+        "coreIdea": "Derepression",
+        "correctReasoning": "Die Hemmung der Startregion fällt weg.",
+        "wrongAnswerExplanations": {
+          "A": "Repressorablösung kann die Blockade aufheben.",
+          "B": "Allosterische Regulation benötigt keine Sequenzänderung.",
+          "C": "Im Stamm wird diese Bindung vermindert.",
+          "E": "Im klassischen Modell genügt die allosterische Änderung seiner DNA-Bindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Mehrere bakterielle Gene werden von einem gemeinsamen Promotor in eine mRNA transkribiert. Was ist beschrieben?",
+      "options": [
+        {
+          "text": "Ein Regulon, das definitionsgemäss nur ein gemeinsames Transkript besitzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein einzelnes eukaryotisches Monocistron als einzige Möglichkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Operator ohne zugehörige Gene und Promotor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Operon mit polycistronischem Transkript.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ein Polysom als DNA-Transkriptionseinheit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Regulon kann mehrere getrennte Operons umfassen. B: Mehrere gemeinsam transkribierte bakterielle Gene bilden ein Operon. C: Der Operator ist ein regulatorischer DNA-Abschnitt. D: Die Gene können gemeinsam reguliert werden. E: Ein Polysom bezeichnet mehrere Ribosomen auf mRNA. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Operon"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Operon"
+      ],
+      "questionGoal": "Operon",
+      "structuredExplanation": {
+        "coreIdea": "Operon",
+        "correctReasoning": "Die Gene können gemeinsam reguliert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Regulon kann mehrere getrennte Operons umfassen.",
+          "B": "Mehrere gemeinsam transkribierte bakterielle Gene bilden ein Operon.",
+          "C": "Der Operator ist ein regulatorischer DNA-Abschnitt.",
+          "E": "Ein Polysom bezeichnet mehrere Ribosomen auf mRNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Welche Veränderung ermöglicht im klassischen lac-Modell die Derepression bei verfügbarem Induktor?",
+      "options": [
+        {
+          "text": "Der Induktor besetzt den Operator direkt und verdrängt den Repressor allein durch konkurrierende DNA-Bindung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Induktor bindet an den Repressor und erhöht dessen Operatoraffinität.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Allosterische Änderung des Lac-Repressors vermindert seine Operatorbindung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "CAP-cAMP entfernt den Repressor durch direkte proteolytische Spaltung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Induktor aktiviert ausschliesslich die katalytische RNA-Polymerase, ohne die Repressorbindung zu verändern.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Induktor bindet im klassischen Modell an den Repressor. B: Derepression benötigt eine verminderte Repressorbindung. C: Allolactose kann die Repression aufheben. D: Positive CAP-Regulation ist von allosterischer Derepression zu unterscheiden. E: Der gefragte Derepressionsschritt betrifft die Repressor-Operator-Bindung. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "lac-Repressor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "lac-Repressor"
+      ],
+      "questionGoal": "lac-Repressor",
+      "structuredExplanation": {
+        "coreIdea": "lac-Repressor",
+        "correctReasoning": "Allolactose kann die Repression aufheben.",
+        "wrongAnswerExplanations": {
+          "A": "Der Induktor bindet im klassischen Modell an den Repressor.",
+          "B": "Derepression benötigt eine verminderte Repressorbindung.",
+          "D": "Positive CAP-Regulation ist von allosterischer Derepression zu unterscheiden.",
+          "E": "Der gefragte Derepressionsschritt betrifft die Repressor-Operator-Bindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Was beschreibt positive Transkriptionsregulation unmittelbar?",
+      "options": [
+        {
+          "text": "Ein Repressor blockiert die RNA-Polymerase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Induktor vermindert die Bindung eines repressiven Proteins.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine miRNA hemmt die Translation einer vorhandenen mRNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Proteasom baut ein fertiges Genprodukt ab.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Aktivator erleichtert einen produktiven Transkriptionsstart.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist negative Regulation. B: Dies ist Derepression einer negativen Kontrolle. C: Dies ist posttranskriptionale Regulation. D: Dies reguliert Proteinmenge nach der Translation. E: Er unterstützt die Startmaschinerie. Quelle: Originalunterlagen, PDF-S. 3–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Positive Regulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positive Regulation"
+      ],
+      "questionGoal": "Positive Regulation",
+      "structuredExplanation": {
+        "coreIdea": "Positive Regulation",
+        "correctReasoning": "Er unterstützt die Startmaschinerie.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist negative Regulation.",
+          "B": "Dies ist Derepression einer negativen Kontrolle.",
+          "C": "Dies ist posttranskriptionale Regulation.",
+          "D": "Dies reguliert Proteinmenge nach der Translation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Warum kann Acetylierung von Histonlysin die Zugänglichkeit der DNA erhöhen?",
+      "options": [
+        {
+          "text": "Sie neutralisiert positive Lysinseitenketten und verändert Chromatinkontakte.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie erhöht die positive Ladung der Lysinreste.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie verändert zwingend die DNA-Basenfolge des Promotors.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Histonacetylierung ist chemisch identisch mit der Methylierung aller benachbarten CpG-Basen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie muss in jedem genomischen Kontext alle Gene gleich stark aktivieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies kann eine offenere Struktur begünstigen. B: Acetylierung neutralisiert deren positive Ladung. C: Histonmodifikation ändert nicht notwendig die Sequenz. D: Proteinacetylierung und DNA-Methylierung sind verschiedene Modifikationen. E: Wirkungen hängen von Kontext und weiteren Faktoren ab. Quelle: Originalunterlagen, PDF-S. 11–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Histonacetylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Histonacetylierung"
+      ],
+      "questionGoal": "Histonacetylierung",
+      "structuredExplanation": {
+        "coreIdea": "Histonacetylierung",
+        "correctReasoning": "Dies kann eine offenere Struktur begünstigen.",
+        "wrongAnswerExplanations": {
+          "B": "Acetylierung neutralisiert deren positive Ladung.",
+          "C": "Histonmodifikation ändert nicht notwendig die Sequenz.",
+          "D": "Proteinacetylierung und DNA-Methylierung sind verschiedene Modifikationen.",
+          "E": "Wirkungen hängen von Kontext und weiteren Faktoren ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Ein Genaktivitätszustand bleibt nach Zellteilung erhalten, ohne dass die DNA-Basenfolge verändert wurde. Welche Erklärung passt?",
+      "options": [
+        {
+          "text": "Wiederherstellung eines regulatorischen DNA-Methylierungsmusters.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine notwendige Änderung der kodierenden DNA-Sequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein ausschliesslich kurzlebiger mRNA-Abbau ohne jede Erhaltung nach Teilung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Crossover, das zwangsläufig die Basenfolge verändert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Verlust des gesamten betreffenden Chromosoms.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies kann epigenetische Zustände erhalten. B: Im Stamm bleibt die Basenfolge gleich. C: Dies erklärt den vererbten Aktivitätszustand nicht allein. D: Dies ist keine erforderliche Erklärung für den beschriebenen Zustand. E: Dann wäre die Erbinformation nicht unverändert erhalten. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Epigenetik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Epigenetik"
+      ],
+      "questionGoal": "Epigenetik",
+      "structuredExplanation": {
+        "coreIdea": "Epigenetik",
+        "correctReasoning": "Dies kann epigenetische Zustände erhalten.",
+        "wrongAnswerExplanations": {
+          "B": "Im Stamm bleibt die Basenfolge gleich.",
+          "C": "Dies erklärt den vererbten Aktivitätszustand nicht allein.",
+          "D": "Dies ist keine erforderliche Erklärung für den beschriebenen Zustand.",
+          "E": "Dann wäre die Erbinformation nicht unverändert erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Welcher Strukturanteil vermittelt besonders die Dimerisierung eines klassischen Leucin-Zipper-Proteins?",
+      "options": [
+        {
+          "text": "Die basische DNA-Binderegion allein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Methylgruppe eines freien DNA-Nucleotids.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hydrophobe Kontakte zwischen helikalen Bereichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Cystein-Histidin-Zinkkoordinationsmotiv.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine katalytische RNA-Haarnadel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Zipper-Dimerisierungsteil ist davon funktionell zu trennen. B: Sie bildet nicht den Proteindimerkontakt. C: Sie stabilisieren einen Coiled-coil. D: Dies kennzeichnet eher einen Zinkfinger. E: Der Leucin-Zipper ist eine Proteinstruktur. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Leucin-Zipper"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leucin-Zipper"
+      ],
+      "questionGoal": "Leucin-Zipper",
+      "structuredExplanation": {
+        "coreIdea": "Leucin-Zipper",
+        "correctReasoning": "Sie stabilisieren einen Coiled-coil.",
+        "wrongAnswerExplanations": {
+          "A": "Der Zipper-Dimerisierungsteil ist davon funktionell zu trennen.",
+          "B": "Sie bildet nicht den Proteindimerkontakt.",
+          "D": "Dies kennzeichnet eher einen Zinkfinger.",
+          "E": "Der Leucin-Zipper ist eine Proteinstruktur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Welche Rolle besitzt Zn2+ im Zinkfinger eines Transkriptionsfaktors?",
+      "options": [
+        {
+          "text": "Es dient als C1-Gruppendonor für jede DNA-Base.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es erzeugt ATP für die Transkriptionsinitiation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es ersetzt durch unspezifische elektrostatische Anziehung jede sequenzspezifische Protein-DNA-Erkennung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Stabilisierung einer gefalteten Bindungsdomäne.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Es muss die DNA vor der Bindung obligatorisch an jedem Erkennungsmotiv spalten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zink stabilisiert die Struktur, liefert keine Methylgruppe. B: Das ist keine Zinkfingerfunktion. C: Zink stabilisiert die Erkennungsdomäne, hebt deren molekulare Spezifität aber nicht auf. D: Cys- und/oder His-Reste können das Metall koordinieren. E: Ein struktureller Zinkfinger ist nicht zwingend eine DNA-spaltende Nuclease. Quelle: Originalunterlagen, PDF-S. 22–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Zinkfinger"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zinkfinger"
+      ],
+      "questionGoal": "Zinkfinger",
+      "structuredExplanation": {
+        "coreIdea": "Zinkfinger",
+        "correctReasoning": "Cys- und/oder His-Reste können das Metall koordinieren.",
+        "wrongAnswerExplanations": {
+          "A": "Zink stabilisiert die Struktur, liefert keine Methylgruppe.",
+          "B": "Das ist keine Zinkfingerfunktion.",
+          "C": "Zink stabilisiert die Erkennungsdomäne, hebt deren molekulare Spezifität aber nicht auf.",
+          "E": "Ein struktureller Zinkfinger ist nicht zwingend eine DNA-spaltende Nuclease."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Ein ligandenaktivierter Rezeptor bindet ein Hormone-response-Element. Welche Funktion wird dadurch unterstützt?",
+      "options": [
+        {
+          "text": "Direkte Öffnung einer ionotropen Pore durch dasselbe DNA-Motiv.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Regulation der Transkription entsprechender Zielgene.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Unmittelbare Hemmung des Ribosoms ohne Genkontakt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich Abbau der hormonbindenden Domäne.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Kovalente Verlängerung der Telomere durch den Rezeptor.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Response-Element ist eine regulatorische DNA-Sequenz. B: Der Rezeptor wirkt als Transkriptionsfaktor. C: Der beschriebene Mechanismus bindet DNA. D: Der aktivierte Rezeptor reguliert Genexpression. E: Dies ist keine typische Steroidrezeptorfunktion. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Steroidrezeptor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Steroidrezeptor"
+      ],
+      "questionGoal": "Steroidrezeptor",
+      "structuredExplanation": {
+        "coreIdea": "Steroidrezeptor",
+        "correctReasoning": "Der Rezeptor wirkt als Transkriptionsfaktor.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Response-Element ist eine regulatorische DNA-Sequenz.",
+          "C": "Der beschriebene Mechanismus bindet DNA.",
+          "D": "Der aktivierte Rezeptor reguliert Genexpression.",
+          "E": "Dies ist keine typische Steroidrezeptorfunktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Wie können bei gleicher DNA-Sequenz unterschiedliche Proteinisoformen entstehen?",
+      "options": [
+        {
+          "text": "Ausschliesslich durch eine unterschiedliche Codonbedeutung in jedem Gewebe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur durch obligatorische dauerhafte Deletion sämtlicher alternativer Exons.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur durch Zufallsaustausch von Aminosäuren am Ribosom.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur durch getrennte identische Gene für jede Exonkombination.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unterschiedliche Exonkombinationen werden in reifen Transkripten verbunden.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Isoformen können bei gleichem Code durch Prozessierung entstehen. B: Alternatives Spleissen benötigt keine Genomdeletion. C: Regulierte Isoformen sind keine beliebige Fehltranslation. D: Ein Gen kann mehrere Transkriptvarianten liefern. E: Die RNA-Verarbeitung verändert das Produktmuster. Quelle: Originalunterlagen, PDF-S. 25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Alternatives Spleissen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alternatives Spleissen"
+      ],
+      "questionGoal": "Alternatives Spleissen",
+      "structuredExplanation": {
+        "coreIdea": "Alternatives Spleissen",
+        "correctReasoning": "Die RNA-Verarbeitung verändert das Produktmuster.",
+        "wrongAnswerExplanations": {
+          "A": "Isoformen können bei gleichem Code durch Prozessierung entstehen.",
+          "B": "Alternatives Spleissen benötigt keine Genomdeletion.",
+          "C": "Regulierte Isoformen sind keine beliebige Fehltranslation.",
+          "D": "Ein Gen kann mehrere Transkriptvarianten liefern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Wie verleiht eine kleine regulatorische RNA einem Effektor-Komplex Zielspezifität?",
+      "options": [
+        {
+          "text": "Durch beliebige Bindung an jedes Protein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Durch ausschliessliche Bindung an den DNA-Replikationsorigin.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Durch ausschliessliche Erkennung einer entsprechenden Aminosäuresequenz des Zielproteins.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Durch Basenpaarung mit geeigneten Ziel-RNA-Sequenzen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Durch zwingende Deletion des Zielgens vor jeder Bindung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sequenzkomplementarität zur Ziel-RNA ist entscheidend. B: Dies beschreibt keine RNAi-Zielsteuerung. C: Die kleine RNA vermittelt Zielspezifität vor allem über Nukleinsäure-Basenpaarung. D: Die Sequenz vermittelt gezielte Regulation. E: RNA-basierte Regulation benötigt keine Genomdeletion. Quelle: Originalunterlagen, PDF-S. 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "RNA-Interferenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RNA-Interferenz"
+      ],
+      "questionGoal": "RNA-Interferenz",
+      "structuredExplanation": {
+        "coreIdea": "RNA-Interferenz",
+        "correctReasoning": "Die Sequenz vermittelt gezielte Regulation.",
+        "wrongAnswerExplanations": {
+          "A": "Sequenzkomplementarität zur Ziel-RNA ist entscheidend.",
+          "B": "Dies beschreibt keine RNAi-Zielsteuerung.",
+          "C": "Die kleine RNA vermittelt Zielspezifität vor allem über Nukleinsäure-Basenpaarung.",
+          "E": "RNA-basierte Regulation benötigt keine Genomdeletion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Nach Zugabe einer passenden kleinen RNA sinkt die Proteinmenge, das Gen bleibt vorhanden. Welche Bezeichnung passt?",
+      "options": [
+        {
+          "text": "Genomischer Knock-out als zwingend nachgewiesene Erklärung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Überexpression des Zielproteins.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gene Targeting mit sicherer homozygoter Deletion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vermehrung der Ziel-mRNA als hinreichende Definition.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Knock-down der Genexpression.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Gen ist ausdrücklich noch vorhanden. B: Die Proteinmenge nimmt ab. C: Dafür fehlt der Nachweis einer DNA-Veränderung. D: Der beobachtete Effekt ist eine verminderte Proteinexpression. E: Verminderte Expression ist kein zwingender Genverlust. Quelle: Originalunterlagen, PDF-S. 30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Knock-down"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Knock-down"
+      ],
+      "questionGoal": "Knock-down",
+      "structuredExplanation": {
+        "coreIdea": "Knock-down",
+        "correctReasoning": "Verminderte Expression ist kein zwingender Genverlust.",
+        "wrongAnswerExplanations": {
+          "A": "Das Gen ist ausdrücklich noch vorhanden.",
+          "B": "Die Proteinmenge nimmt ab.",
+          "C": "Dafür fehlt der Nachweis einer DNA-Veränderung.",
+          "D": "Der beobachtete Effekt ist eine verminderte Proteinexpression."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Am lac-Operon werden Derepression, Stofftransport und Enzymbildung voneinander getrennt. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Derepression muss allein bereits maximal mögliche Transkription erzeugen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Repressor und Operator sind beide regulatorische Proteinmoleküle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "LacZ und LacY haben verschiedene Funktionen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Operator ist das Protein, das Lactose transportiert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zusätzliche Aktivierung kann erforderlich sein. B: Der Operator ist DNA, der Repressor ein Protein. C: Abbauenzym und Permease ergänzen sich. D: LacY ist ein Transportprotein; der Operator ist DNA. Quelle: Originalunterlagen, PDF-S. 3–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Operonlogik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Operonlogik"
+      ],
+      "questionGoal": "Operonlogik",
+      "structuredExplanation": {
+        "coreIdea": "Operonlogik",
+        "correctReasoning": "Abbauenzym und Permease ergänzen sich.",
+        "wrongAnswerExplanations": {
+          "A": "Zusätzliche Aktivierung kann erforderlich sein.",
+          "B": "Der Operator ist DNA, der Repressor ein Protein.",
+          "C": "Abbauenzym und Permease ergänzen sich.",
+          "D": "LacY ist ein Transportprotein; der Operator ist DNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Histone werden modifiziert und Nucleosomen umgelagert. Welche Aussagen zur Chromatinzugänglichkeit sind richtig?",
+      "options": [
+        {
+          "text": "Histondeacetylasen können acetylierte Lysinreste wieder deacetylieren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Euchromatin ist definitionsgemäss stärker verdichtet als Heterochromatin.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Histonmodifikation kann Genaktivität ohne Änderung der DNA-Sequenz beeinflussen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nucleosomen können den Zugang zum Promotor erschweren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Modifikation ist reversibel. B: Typischerweise ist es zugänglicher. C: Chromatinumgebung und Zugänglichkeit können verändert werden. D: Chromatin beeinflusst die Bindbarkeit der DNA. Quelle: Originalunterlagen, PDF-S. 10–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Chromatinzugang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chromatinzugang"
+      ],
+      "questionGoal": "Chromatinzugang",
+      "structuredExplanation": {
+        "coreIdea": "Chromatinzugang",
+        "correctReasoning": "Die Modifikation ist reversibel. Chromatinumgebung und Zugänglichkeit können verändert werden. Chromatin beeinflusst die Bindbarkeit der DNA.",
+        "wrongAnswerExplanations": {
+          "A": "Die Modifikation ist reversibel.",
+          "B": "Typischerweise ist es zugänglicher.",
+          "C": "Chromatinumgebung und Zugänglichkeit können verändert werden.",
+          "D": "Chromatin beeinflusst die Bindbarkeit der DNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Ein regulatorisches DNA-Methylierungsmuster wird nach Replikation ergänzt. Welche Aussagen zur epigenetischen Regulation sind richtig?",
+      "options": [
+        {
+          "text": "Cytosinmethylierung kann Genaktivität beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "5-Methylcytosin paart deshalb regelhaft nur noch mit Adenin.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Methylierungsmuster können nach Replikation enzymatisch ergänzt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede Methylierung ist irreversibel und bedeutet eine Deletion.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Methylierungsleser können regulatorische Faktoren rekrutieren. B: Die klassische C-G-Paarung bleibt grundsätzlich erhalten. C: Dies trägt zur zellulären Erinnerung bei. D: Sie ist weder notwendige Deletion noch universell irreversibel. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "DNA-Methylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Methylierung"
+      ],
+      "questionGoal": "DNA-Methylierung",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Methylierung",
+        "correctReasoning": "Methylierungsleser können regulatorische Faktoren rekrutieren. Dies trägt zur zellulären Erinnerung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Methylierungsleser können regulatorische Faktoren rekrutieren.",
+          "B": "Die klassische C-G-Paarung bleibt grundsätzlich erhalten.",
+          "C": "Dies trägt zur zellulären Erinnerung bei.",
+          "D": "Sie ist weder notwendige Deletion noch universell irreversibel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "DNA-bindende Transkriptionsfaktoren besitzen unterschiedliche Faltungs- und Dimerisierungsmotive. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Helix-turn-helix-Motive können sequenzspezifische DNA-Erkennung unterstützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Zn2+ muss in jedem Zinkfinger als Redoxcoenzym arbeiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Heterodimerisierung kann die Auswahl erkannter Sequenzen verändern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Leucin-Zipper und Zinkfinger sind identische chemische Strukturen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine Helix kann in der grossen Furche binden. B: Hier dient es wesentlich der Strukturstabilisierung. C: Unterschiedliche Partner erweitern die Kombinationsmöglichkeiten. D: Sie nutzen unterschiedliche Strukturprinzipien. Quelle: Originalunterlagen, PDF-S. 20–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "DNA-Bindemotive"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Bindemotive"
+      ],
+      "questionGoal": "DNA-Bindemotive",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Bindemotive",
+        "correctReasoning": "Eine Helix kann in der grossen Furche binden. Unterschiedliche Partner erweitern die Kombinationsmöglichkeiten.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Helix kann in der grossen Furche binden.",
+          "B": "Hier dient es wesentlich der Strukturstabilisierung.",
+          "C": "Unterschiedliche Partner erweitern die Kombinationsmöglichkeiten.",
+          "D": "Sie nutzen unterschiedliche Strukturprinzipien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Ein intrazellulärer Steroidrezeptor wird im dargestellten Modell durch seinen Liganden reguliert. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Alle Hormone benutzen zwingend dieses identische Rezeptorprinzip.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Chaperoninteraktionen können die Rezeptoraktivierung beeinflussen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die DNA-Bindungsdomäne ist mit der Hormonbindungsdomäne identisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein intrazellulärer Steroidrezeptor kann ligandengesteuert DNA binden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es existieren viele andere Signalwege. B: Hsp90 ist im Modell beteiligt. C: Die Domänen erfüllen unterschiedliche Aufgaben. D: Das verbindet Hormonsignal und Genexpression. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Hormonelle Genregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hormonelle Genregulation"
+      ],
+      "questionGoal": "Hormonelle Genregulation",
+      "structuredExplanation": {
+        "coreIdea": "Hormonelle Genregulation",
+        "correctReasoning": "Hsp90 ist im Modell beteiligt. Das verbindet Hormonsignal und Genexpression.",
+        "wrongAnswerExplanations": {
+          "A": "Es existieren viele andere Signalwege.",
+          "B": "Hsp90 ist im Modell beteiligt.",
+          "C": "Die Domänen erfüllen unterschiedliche Aufgaben.",
+          "D": "Das verbindet Hormonsignal und Genexpression."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Eine transkribierte RNA wird prozessiert und für den Export kontrolliert. Welche Aussagen zu späteren Regulationsebenen sind richtig?",
+      "options": [
+        {
+          "text": "RNA-bindende Faktoren unterstützen Qualitätskontrolle und Export.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Kontrolle am Export ist gleichbedeutend mit einer Promotormutation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "RNA-Prozessierung beeinflusst die entstehenden Transkriptvarianten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede unfertige Prä-mRNA wird ungeprüft wie reife mRNA exportiert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Reifung und Transport werden koordiniert. B: Es sind verschiedene Regulationsebenen. C: Sie kann die Produktvielfalt verändern. D: Export unterliegt Qualitätskontrollen. Quelle: Originalunterlagen, PDF-S. 25–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "RNA-Verarbeitung und Export"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RNA-Verarbeitung und Export"
+      ],
+      "questionGoal": "RNA-Verarbeitung und Export",
+      "structuredExplanation": {
+        "coreIdea": "RNA-Verarbeitung und Export",
+        "correctReasoning": "Reifung und Transport werden koordiniert. Sie kann die Produktvielfalt verändern.",
+        "wrongAnswerExplanations": {
+          "A": "Reifung und Transport werden koordiniert.",
+          "B": "Es sind verschiedene Regulationsebenen.",
+          "C": "Sie kann die Produktvielfalt verändern.",
+          "D": "Export unterliegt Qualitätskontrollen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Kleine regulatorische RNAs beeinflussen Zieltranskripte. Welche Aussagen zu Vorläufern und Wirkung sind richtig?",
+      "options": [
+        {
+          "text": "Ein RNA-Effektor-Komplex kann Ziel-mRNA-Abbau oder Translationshemmung fördern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine miRNA muss selbst ein langes Enzymprotein codieren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "miRNAs können aus gefalteten Vorläufern prozessiert werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Knock-down und genomischer Knock-out sind notwendigerweise identisch.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Wirkung hängt vom jeweiligen System ab. B: Sie kann direkt als regulatorische RNA wirken. C: Spezialisierte Enzyme erzeugen die kleinen RNAs. D: Die zugrunde liegenden Veränderungen unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Kleine RNAs"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kleine RNAs"
+      ],
+      "questionGoal": "Kleine RNAs",
+      "structuredExplanation": {
+        "coreIdea": "Kleine RNAs",
+        "correctReasoning": "Die Wirkung hängt vom jeweiligen System ab. Spezialisierte Enzyme erzeugen die kleinen RNAs.",
+        "wrongAnswerExplanations": {
+          "A": "Die Wirkung hängt vom jeweiligen System ab.",
+          "B": "Sie kann direkt als regulatorische RNA wirken.",
+          "C": "Spezialisierte Enzyme erzeugen die kleinen RNAs.",
+          "D": "Die zugrunde liegenden Veränderungen unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb23_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB23",
+      "stem": "Zwei Zellen mit weitgehend gleichem Genom bilden verschiedene Proteinmengen. Welche Aussagen zu möglichen Regulationsebenen sind richtig?",
+      "options": [
+        {
+          "text": "Jede Verringerung eines Proteins beweist eine Genmutation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Proteinmenge kann sich auch bei unveränderter Transkriptionsrate verändern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Genregulation ist ausschliesslich ein Ein-Aus-Schalter ohne Abstufungen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zellen mit weitgehend gleichem Genom können verschiedene Transkriptome besitzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele regulatorische Mechanismen sind möglich. B: Prozessierung, Translation und Abbau wirken zusätzlich. C: Expressionsstärken können fein reguliert werden. D: Unterschiedliche Gene werden verschieden stark exprimiert. Quelle: Originalunterlagen, PDF-S. 9,18,25–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB23",
+        "Mehrstufige Regulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mehrstufige Regulation"
+      ],
+      "questionGoal": "Mehrstufige Regulation",
+      "structuredExplanation": {
+        "coreIdea": "Mehrstufige Regulation",
+        "correctReasoning": "Prozessierung, Translation und Abbau wirken zusätzlich. Unterschiedliche Gene werden verschieden stark exprimiert.",
+        "wrongAnswerExplanations": {
+          "A": "Viele regulatorische Mechanismen sind möglich.",
+          "B": "Prozessierung, Translation und Abbau wirken zusätzlich.",
+          "C": "Expressionsstärken können fein reguliert werden.",
+          "D": "Unterschiedliche Gene werden verschieden stark exprimiert."
+        }
+      }
+    }
+  ]
+}

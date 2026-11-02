@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block1_kvb10_11_20261102",
+  "lectureCode": "KVB10/11",
+  "title": "Ernährung und energetische Kopplung",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB10&11 - Ernährung und Energie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Keine Übernahme veralteter Alkoholgrenzen oder pauschaler Krebspräventionsaussagen; Ernährungsempfehlungen werden als allgemeine Prinzipien und nicht als individuelle Therapie abgefragt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Freie Energie, Reaktionskopplung und aktivierte Trägermoleküle erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Stufen des Nährstoffabbaus und Grundbilanz der Glykolyse beschreiben."
+    },
+    {
+      "id": "lo3",
+      "text": "Funktionen der Nahrungsbestandteile und Grundprinzipien ausgewogener Ernährung verstehen."
+    },
+    {
+      "id": "lo4",
+      "text": "Mangelrisiken und besondere Anforderungen verschiedener Lebensphasen begründen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb10_11_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Eine Reaktion hat ΔG° = +13,8 kJ/mol und wird mit ATP-Hydrolyse mit ΔG° = −30,5 kJ/mol gekoppelt. Wie lautet ΔG° der Gesamtreaktion?",
+      "options": [
+        {
+          "text": "+16,7 kJ/mol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0 kJ/mol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "+44,3 kJ/mol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−44,3 kJ/mol.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−16,7 kJ/mol.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieses Vorzeichen widerspricht der Addition. B: Die beiden Beiträge heben sich nicht vollständig auf. C: Beide Beträge werden fälschlich positiv addiert. D: Dabei würde der positive Beitrag fälschlich subtrahiert. E: Die freien Standardreaktionsenergien werden addiert. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Energiekopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiekopplung"
+      ],
+      "questionGoal": "Energiekopplung",
+      "structuredExplanation": {
+        "coreIdea": "Energiekopplung",
+        "correctReasoning": "Die freien Standardreaktionsenergien werden addiert.",
+        "wrongAnswerExplanations": {
+          "A": "Dieses Vorzeichen widerspricht der Addition.",
+          "B": "Die beiden Beiträge heben sich nicht vollständig auf.",
+          "C": "Beide Beträge werden fälschlich positiv addiert.",
+          "D": "Dabei würde der positive Beitrag fälschlich subtrahiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Weshalb genügt es nicht, ATP irgendwo in derselben Lösung zu hydrolysieren, um jede beliebige endergone Reaktion anzutreiben?",
+      "options": [
+        {
+          "text": "Eine negative freie Gesamtreaktionsenergie verhindert grundsätzlich jeden Umsatz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "ATP-Hydrolyse ist unter Zellbedingungen immer endergon.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Reaktionswege müssen mechanistisch gekoppelt sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "ATP kann nur bei vollständigem Sauerstoffmangel hydrolysiert werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Enzyme können die freie Reaktionsenergie beliebig verändern.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie begünstigt die entsprechende Richtung thermodynamisch. B: Sie ist typischerweise stark exergon. C: Energieübertragung erfordert einen gekoppelten Reaktionsweg, etwa Gruppenübertragung. D: ATP-Hydrolyse ist nicht auf anaerobe Bedingungen beschränkt. E: Katalysatoren ändern ΔG nicht. Quelle: Originalunterlagen, PDF-S. 6–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Gekoppelte Reaktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gekoppelte Reaktionen"
+      ],
+      "questionGoal": "Gekoppelte Reaktionen",
+      "structuredExplanation": {
+        "coreIdea": "Gekoppelte Reaktionen",
+        "correctReasoning": "Energieübertragung erfordert einen gekoppelten Reaktionsweg, etwa Gruppenübertragung.",
+        "wrongAnswerExplanations": {
+          "A": "Sie begünstigt die entsprechende Richtung thermodynamisch.",
+          "B": "Sie ist typischerweise stark exergon.",
+          "D": "ATP-Hydrolyse ist nicht auf anaerobe Bedingungen beschränkt.",
+          "E": "Katalysatoren ändern ΔG nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q03",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Welches Molekül überträgt bei vielen Stoffwechselreaktionen eine Phosphorylgruppe auf ein Substrat?",
+      "options": [
+        {
+          "text": "Sauerstoff.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "FADH2.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Coenzym A.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "ATP.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "NADH.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sauerstoff dient in der Atmungskette als Elektronenakzeptor. B: FADH2 ist ein reduzierter Elektronenüberträger. C: Coenzym A trägt insbesondere Acylgruppen. D: ATP kann eine Phosphorylgruppe übertragen und dabei zu ADP werden. E: NADH überträgt Reduktionsäquivalente. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Energieträger"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energieträger"
+      ],
+      "questionGoal": "Energieträger",
+      "structuredExplanation": {
+        "coreIdea": "Energieträger",
+        "correctReasoning": "ATP kann eine Phosphorylgruppe übertragen und dabei zu ADP werden.",
+        "wrongAnswerExplanations": {
+          "A": "Sauerstoff dient in der Atmungskette als Elektronenakzeptor.",
+          "B": "FADH2 ist ein reduzierter Elektronenüberträger.",
+          "C": "Coenzym A trägt insbesondere Acylgruppen.",
+          "E": "NADH überträgt Reduktionsäquivalente."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Phosphoenolpyruvat überträgt eine Phosphorylgruppe direkt auf ADP. Wie heisst diese Form der ATP-Bildung?",
+      "options": [
+        {
+          "text": "Oxidative Decarboxylierung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Photophosphorylierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Proteolytische Aktivierung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Oxidative Phosphorylierung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Substratkettenphosphorylierung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dabei werden CO2-Abspaltung und Oxidation gekoppelt. B: Hier fehlt eine lichtgetriebene Reaktion. C: Dabei wird ein Protein gespalten, nicht ADP phosphoryliert. D: Diese koppelt ATP-Synthese an einen Protonengradienten der Atmungskette. E: Ein phosphoryliertes Stoffwechselsubstrat liefert die Gruppe direkt an ADP. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Substratkettenphosphorylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Substratkettenphosphorylierung"
+      ],
+      "questionGoal": "Substratkettenphosphorylierung",
+      "structuredExplanation": {
+        "coreIdea": "Substratkettenphosphorylierung",
+        "correctReasoning": "Ein phosphoryliertes Stoffwechselsubstrat liefert die Gruppe direkt an ADP.",
+        "wrongAnswerExplanations": {
+          "A": "Dabei werden CO2-Abspaltung und Oxidation gekoppelt.",
+          "B": "Hier fehlt eine lichtgetriebene Reaktion.",
+          "C": "Dabei wird ein Protein gespalten, nicht ADP phosphoryliert.",
+          "D": "Diese koppelt ATP-Synthese an einen Protonengradienten der Atmungskette."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q05",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Pro Glucose werden zwei ATP investiert und vier ATP gebildet. Wie hoch ist der Netto-ATP-Gewinn der Glykolyse?",
+      "options": [
+        {
+          "text": "0 ATP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "4 ATP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "6 ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1 ATP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2 ATP.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die ATP-Bildung übersteigt den Verbrauch. B: Das ist die Bruttobildung ohne Investitionsphase. C: Verbrauch und Bildung dürfen nicht addiert werden. D: Die Bilanz bezieht sich auf eine Glucose, nicht auf ein einzelnes Pyruvat. E: Vier minus zwei ergibt zwei netto. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Glykolysebilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glykolysebilanz"
+      ],
+      "questionGoal": "Glykolysebilanz",
+      "structuredExplanation": {
+        "coreIdea": "Glykolysebilanz",
+        "correctReasoning": "Vier minus zwei ergibt zwei netto.",
+        "wrongAnswerExplanations": {
+          "A": "Die ATP-Bildung übersteigt den Verbrauch.",
+          "B": "Das ist die Bruttobildung ohne Investitionsphase.",
+          "C": "Verbrauch und Bildung dürfen nicht addiert werden.",
+          "D": "Die Bilanz bezieht sich auf eine Glucose, nicht auf ein einzelnes Pyruvat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Was ist die unmittelbare Hauptfunktion der Atmungskette im gestuften Nährstoffabbau?",
+      "options": [
+        {
+          "text": "Hydrolyse von Nahrungsproteinen zu Aminosäuren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Spaltung von Glucose in zwei Pyruvatmoleküle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Elektronenübertragung auf Sauerstoff und Aufbau eines für ATP-Synthese nutzbaren Gradienten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aufbau von Stärke aus Glucose im menschlichen Muskel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Direkte Umwandlung von Acetyl-CoA in Lactat.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist ein vorgelagerter Verdauungsschritt. B: Das leistet die Glykolyse. C: Die oxidative Phosphorylierung verbindet Redoxenergie mit ATP-Bildung. D: Menschen speichern Glucose als Glykogen, nicht Stärke. E: Das beschreibt weder Atmungskette noch ihre Funktion. Quelle: Originalunterlagen, PDF-S. 11–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Nährstoffoxidation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nährstoffoxidation"
+      ],
+      "questionGoal": "Nährstoffoxidation",
+      "structuredExplanation": {
+        "coreIdea": "Nährstoffoxidation",
+        "correctReasoning": "Die oxidative Phosphorylierung verbindet Redoxenergie mit ATP-Bildung.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist ein vorgelagerter Verdauungsschritt.",
+          "B": "Das leistet die Glykolyse.",
+          "D": "Menschen speichern Glucose als Glykogen, nicht Stärke.",
+          "E": "Das beschreibt weder Atmungskette noch ihre Funktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Zwei Personen essen gleich viele Kilokalorien. Warum kann ihre Nährstoffversorgung dennoch deutlich verschieden sein?",
+      "options": [
+        {
+          "text": "Nährstoffbedarf ist bei jedem Alter und jeder Tätigkeit identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Wasserzufuhr bestimmt allein die Proteinzufuhr.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Vitaminbedarf wird definitionsgemäss allein aus der Kalorienzahl gedeckt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Lebensmittel mit gleichem Energiegehalt haben dieselbe Zusammensetzung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lebensmittel können bei gleicher Energiezufuhr unterschiedliche Mengen essenzieller Nährstoffe liefern.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bedarf hängt unter anderem von Lebensphase und Belastung ab. B: Wasser und Protein sind unterschiedliche Nahrungsbestandteile. C: Kalorien garantieren keine Vitaminzufuhr. D: Makro- und Mikronährstoffmuster unterscheiden sich. E: Energiegehalt und Nährstoffdichte sind verschiedene Eigenschaften. Quelle: Originalunterlagen, PDF-S. 5,22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Bedarf und Versorgung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bedarf und Versorgung"
+      ],
+      "questionGoal": "Bedarf und Versorgung",
+      "structuredExplanation": {
+        "coreIdea": "Bedarf und Versorgung",
+        "correctReasoning": "Energiegehalt und Nährstoffdichte sind verschiedene Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "A": "Bedarf hängt unter anderem von Lebensphase und Belastung ab.",
+          "B": "Wasser und Protein sind unterschiedliche Nahrungsbestandteile.",
+          "C": "Kalorien garantieren keine Vitaminzufuhr.",
+          "D": "Makro- und Mikronährstoffmuster unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Warum kann ein Teil der Nahrungsfasern den Darmmikroorganismen als Substrat dienen, obwohl menschliche Verdauungsenzyme ihn nicht spalten?",
+      "options": [
+        {
+          "text": "Mikroorganismen benötigen für den Abbau keinerlei Enzyme.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Fasern werden grundsätzlich unverändert im Blut transportiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fasern bestehen ausschliesslich aus essenziellen Aminosäuren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Fasern werden bereits im menschlichen Magen zu Glucose gespalten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mikroorganismen verfügen über andere enzymatische Abbaumöglichkeiten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch mikrobielle Stoffwechselreaktionen sind enzymkatalysiert. B: Sie wirken vor allem im Darmlumen und über mikrobielle Produkte. C: Viele Fasern sind Polysaccharide; Lignin gehört ebenfalls dazu. D: Dann wären sie keine entsprechend unverdaulichen Fasern. E: Unverdaulich für den Menschen bedeutet nicht unzugänglich für alle Mikroorganismen. Quelle: Originalunterlagen, PDF-S. 33–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Nahrungsfasern"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nahrungsfasern"
+      ],
+      "questionGoal": "Nahrungsfasern",
+      "structuredExplanation": {
+        "coreIdea": "Nahrungsfasern",
+        "correctReasoning": "Unverdaulich für den Menschen bedeutet nicht unzugänglich für alle Mikroorganismen.",
+        "wrongAnswerExplanations": {
+          "A": "Auch mikrobielle Stoffwechselreaktionen sind enzymkatalysiert.",
+          "B": "Sie wirken vor allem im Darmlumen und über mikrobielle Produkte.",
+          "C": "Viele Fasern sind Polysaccharide; Lignin gehört ebenfalls dazu.",
+          "D": "Dann wären sie keine entsprechend unverdaulichen Fasern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q09",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Warum ist ein vollständiger Verzicht auf Nahrungsfett kein sinnvolles allgemeines Ernährungsprinzip?",
+      "options": [
+        {
+          "text": "Nur Fette und keine anderen Nährstoffe liefern Energie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes Fett senkt unabhängig von Menge und Zusammensetzung das Krankheitsrisiko.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Fettsäuren können in ausreichender Menge aus Glucose neu synthetisiert werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Membranlipide bestehen ausschliesslich aus aufgenommenem Cholesterin.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Fette liefern unter anderem essenzielle Fettsäuren und unterstützen die Versorgung mit fettlöslichen Vitaminen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch Kohlenhydrate und Proteine liefern Energie. B: Wirkungen hängen von Zusammensetzung und Ernährungskontext ab. C: Bestimmte Fettsäuren sind essenziell. D: Membranen enthalten zahlreiche Lipidklassen. E: Fette besitzen Funktionen über die Energiezufuhr hinaus. Quelle: Originalunterlagen, PDF-S. 51–53.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Fettfunktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fettfunktionen"
+      ],
+      "questionGoal": "Fettfunktionen",
+      "structuredExplanation": {
+        "coreIdea": "Fettfunktionen",
+        "correctReasoning": "Fette besitzen Funktionen über die Energiezufuhr hinaus.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Kohlenhydrate und Proteine liefern Energie.",
+          "B": "Wirkungen hängen von Zusammensetzung und Ernährungskontext ab.",
+          "C": "Bestimmte Fettsäuren sind essenziell.",
+          "D": "Membranen enthalten zahlreiche Lipidklassen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Eine strikt vegane Ernährung wird ohne angereicherte Lebensmittel oder Supplemente zusammengestellt. Welcher Nährstoff erfordert besonders verlässliche zusätzliche Sicherung?",
+      "options": [
+        {
+          "text": "Vitamin B12.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nahrungsfasern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vitamin C.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Linolsäure.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Stärke.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nicht angereicherte pflanzliche Lebensmittel sind keine verlässliche B12-Quelle. B: Eine vielfältige pflanzliche Kost kann reich an Fasern sein. C: Früchte und Gemüse können reichlich Vitamin C liefern. D: Pflanzliche Öle können diese essenzielle Fettsäure liefern. E: Viele pflanzliche Grundnahrungsmittel enthalten Stärke. Quelle: Originalunterlagen, PDF-S. 31–32,46–47.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Vitamin B12"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin B12"
+      ],
+      "questionGoal": "Vitamin B12",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin B12",
+        "correctReasoning": "Nicht angereicherte pflanzliche Lebensmittel sind keine verlässliche B12-Quelle.",
+        "wrongAnswerExplanations": {
+          "B": "Eine vielfältige pflanzliche Kost kann reich an Fasern sein.",
+          "C": "Früchte und Gemüse können reichlich Vitamin C liefern.",
+          "D": "Pflanzliche Öle können diese essenzielle Fettsäure liefern.",
+          "E": "Viele pflanzliche Grundnahrungsmittel enthalten Stärke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Warum kann eine ältere Person trotz vermindertem Energiebedarf besonders auf ausreichende Proteinversorgung achten müssen?",
+      "options": [
+        {
+          "text": "Verminderter Appetit und eine schlechtere anabole Antwort können den Muskelerhalt erschweren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Chronische Erkrankungen senken den Proteinbedarf immer auf null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Muskelproteine benötigen im Alter keine Aminosäuren mehr.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jeder verminderte Energiebedarf bedeutet proportional verminderten Bedarf aller Nährstoffe.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Proteine werden im Alter ausschliesslich als Fett gespeichert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Proteinversorgung und Muskelfunktion bleiben auch bei geringerem Energiebedarf wichtig. B: Erkrankungen können den Bedarf sogar erhöhen. C: Proteinumsatz besteht weiterhin. D: Energie- und Mikronährstoff- beziehungsweise Proteinbedarf verändern sich nicht zwingend parallel. E: Sie erfüllen weiterhin Struktur- und Stoffwechselfunktionen. Quelle: Originalunterlagen, PDF-S. 43–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Ernährung im Alter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ernährung im Alter"
+      ],
+      "questionGoal": "Ernährung im Alter",
+      "structuredExplanation": {
+        "coreIdea": "Ernährung im Alter",
+        "correctReasoning": "Proteinversorgung und Muskelfunktion bleiben auch bei geringerem Energiebedarf wichtig.",
+        "wrongAnswerExplanations": {
+          "B": "Erkrankungen können den Bedarf sogar erhöhen.",
+          "C": "Proteinumsatz besteht weiterhin.",
+          "D": "Energie- und Mikronährstoff- beziehungsweise Proteinbedarf verändern sich nicht zwingend parallel.",
+          "E": "Sie erfüllen weiterhin Struktur- und Stoffwechselfunktionen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Welche Zuordnung von Mangel und Folge ist richtig?",
+      "options": [
+        {
+          "text": "Folatmangel – verbesserter Neuralrohrschluss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vitamin-C-Mangel – Skorbut.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Vitamin-B12-Mangel – ausschliesslich Hyperglykämie.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vitamin-D-Mangel im Kindesalter – Pellagra.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Niacinmangel – Rachitis.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine unzureichende Folatversorgung erhöht das Risiko für Neuralrohrdefekte. B: Vitamin C wird für normale Kollagenreifung benötigt. C: B12-Mangel kann unter anderem Anämie und neurologische Störungen verursachen. D: Rachitis ist eine typische Folge; Pellagra gehört zum Niacinmangel. E: Niacinmangel verursacht Pellagra, nicht die typische Vitamin-D-Mangelkrankheit. Quelle: Originalunterlagen, PDF-S. 31–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Mangelzeichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mangelzeichen"
+      ],
+      "questionGoal": "Mangelzeichen",
+      "structuredExplanation": {
+        "coreIdea": "Mangelzeichen",
+        "correctReasoning": "Vitamin C wird für normale Kollagenreifung benötigt.",
+        "wrongAnswerExplanations": {
+          "A": "Eine unzureichende Folatversorgung erhöht das Risiko für Neuralrohrdefekte.",
+          "C": "B12-Mangel kann unter anderem Anämie und neurologische Störungen verursachen.",
+          "D": "Rachitis ist eine typische Folge; Pellagra gehört zum Niacinmangel.",
+          "E": "Niacinmangel verursacht Pellagra, nicht die typische Vitamin-D-Mangelkrankheit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Zwei chemische Reaktionen werden energetisch gekoppelt. Welche Aussagen zur freien Energie stimmen?",
+      "options": [
+        {
+          "text": "Ein Enzym muss für eine endergone Reaktion die Gleichgewichtskonstante umkehren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine exergone Reaktion läuft zwangsläufig ohne Aktivierungsbarriere ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die tatsächliche freie Reaktionsenergie hängt auch von Konzentrationen ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die freien Reaktionsenergien gekoppelter Teilschritte addieren sich.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es kann Kopplung ermöglichen, verändert aber nicht das Gleichgewicht der isolierten Reaktion. B: Thermodynamik und Reaktionsgeschwindigkeit sind zu trennen. C: ΔG unterscheidet sich unter anderem über den Reaktionsquotienten von ΔG°. D: Für die Gesamtreaktion werden die Beiträge summiert. Quelle: Originalunterlagen, PDF-S. 6–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Freie Energie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Freie Energie"
+      ],
+      "questionGoal": "Freie Energie",
+      "structuredExplanation": {
+        "coreIdea": "Freie Energie",
+        "correctReasoning": "ΔG unterscheidet sich unter anderem über den Reaktionsquotienten von ΔG°. Für die Gesamtreaktion werden die Beiträge summiert.",
+        "wrongAnswerExplanations": {
+          "A": "Es kann Kopplung ermöglichen, verändert aber nicht das Gleichgewicht der isolierten Reaktion.",
+          "B": "Thermodynamik und Reaktionsgeschwindigkeit sind zu trennen.",
+          "C": "ΔG unterscheidet sich unter anderem über den Reaktionsquotienten von ΔG°.",
+          "D": "Für die Gesamtreaktion werden die Beiträge summiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Nährstoffe werden schrittweise abgebaut und ihre Energie auf Träger übertragen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Viele Nährstoffe können über Acetyl-CoA in gemeinsame Abbauwege eintreten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei der Glykolyse wird der gesamte Glucosekohlenstoff unmittelbar als CO2 freigesetzt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NADH trägt Reduktionsäquivalente.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "ATP-Bildung erfordert ausnahmslos eine Atmungskette.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Acetyl-CoA ist ein zentraler Stoffwechselknoten. B: Die zwei Pyruvate enthalten weiterhin insgesamt sechs C-Atome. C: Es verbindet oxidative Abbauschritte mit Elektronenübertragung. D: Auch Substratkettenphosphorylierung bildet ATP. Quelle: Originalunterlagen, PDF-S. 8–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Träger und Stofffluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Träger und Stofffluss"
+      ],
+      "questionGoal": "Träger und Stofffluss",
+      "structuredExplanation": {
+        "coreIdea": "Träger und Stofffluss",
+        "correctReasoning": "Acetyl-CoA ist ein zentraler Stoffwechselknoten. Es verbindet oxidative Abbauschritte mit Elektronenübertragung.",
+        "wrongAnswerExplanations": {
+          "A": "Acetyl-CoA ist ein zentraler Stoffwechselknoten.",
+          "B": "Die zwei Pyruvate enthalten weiterhin insgesamt sechs C-Atome.",
+          "C": "Es verbindet oxidative Abbauschritte mit Elektronenübertragung.",
+          "D": "Auch Substratkettenphosphorylierung bildet ATP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Eine Ernährung wird nach Wasser und Mikronährstoffdichte beurteilt. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Gemüse und Früchte können eine hohe Mikronährstoffdichte aufweisen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine abwechslungsreiche Ernährung kann durch beliebig hohe Dosen eines einzelnen Vitamins vollständig ersetzt werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Erwachsenen benötigen unabhängig von Hitze und Aktivität exakt dieselbe Trinkmenge.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wasser dient als Lösungsmittel und Reaktionspartner.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie liefern im Verhältnis zur Energie oft viele Mikronährstoffe. B: Ein einzelner Stoff ersetzt kein ausgewogenes Nährstoffmuster. C: Der Bedarf hängt von Bedingungen und individuellen Faktoren ab. D: Es besitzt Transport- und Stoffwechselfunktionen. Quelle: Originalunterlagen, PDF-S. 22–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Wasser und Nahrung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasser und Nahrung"
+      ],
+      "questionGoal": "Wasser und Nahrung",
+      "structuredExplanation": {
+        "coreIdea": "Wasser und Nahrung",
+        "correctReasoning": "Sie liefern im Verhältnis zur Energie oft viele Mikronährstoffe. Es besitzt Transport- und Stoffwechselfunktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie liefern im Verhältnis zur Energie oft viele Mikronährstoffe.",
+          "B": "Ein einzelner Stoff ersetzt kein ausgewogenes Nährstoffmuster.",
+          "C": "Der Bedarf hängt von Bedingungen und individuellen Faktoren ab.",
+          "D": "Es besitzt Transport- und Stoffwechselfunktionen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Fasern und resistente Stärke gelangen unterschiedlich weit durch die Verdauung. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jede Nahrungsfaser wird mit identischer Geschwindigkeit vollständig fermentiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle stärkehaltigen Speisen sind unter allen Zubereitungsbedingungen gleich rasch verdaulich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fasern können zur Sättigung und Stuhlregulation beitragen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Resistente Stärke entgeht zumindest teilweise der Dünndarmverdauung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Art und Abbaubarkeit unterscheiden sich. B: Struktur und Zubereitung beeinflussen die Zugänglichkeit. C: Volumen, Wasserbindung und Fermentation tragen dazu bei. D: Ihre Zugänglichkeit für menschliche Enzyme ist vermindert. Quelle: Originalunterlagen, PDF-S. 33–36,42.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Fasern und Stärke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fasern und Stärke"
+      ],
+      "questionGoal": "Fasern und Stärke",
+      "structuredExplanation": {
+        "coreIdea": "Fasern und Stärke",
+        "correctReasoning": "Volumen, Wasserbindung und Fermentation tragen dazu bei. Ihre Zugänglichkeit für menschliche Enzyme ist vermindert.",
+        "wrongAnswerExplanations": {
+          "A": "Art und Abbaubarkeit unterscheiden sich.",
+          "B": "Struktur und Zubereitung beeinflussen die Zugänglichkeit.",
+          "C": "Volumen, Wasserbindung und Fermentation tragen dazu bei.",
+          "D": "Ihre Zugänglichkeit für menschliche Enzyme ist vermindert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Nahrungsprotein und Nahrungsfett werden nach ihren Funktionen verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Sämtliche Lipide haben ausschliesslich eine Speicherfunktion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Albumin ist vor allem ein Verdauungsenzym.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Triacylglycerine sind eine wichtige Energiespeicherform.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Proteine liefern Aminosäuren für Enzyme, Rezeptoren und Strukturproteine.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Membranen und Signalwege benötigen ebenfalls Lipide. B: Albumin ist insbesondere ein Plasma-Transportprotein mit kolloidosmotischer Bedeutung. C: Sie speichern Fettsäuren energiereich. D: Aminosäuren dienen dem Aufbau und Ersatz körpereigener Proteine. Quelle: Originalunterlagen, PDF-S. 43–46,51–53.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Makronährstofffunktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Makronährstofffunktionen"
+      ],
+      "questionGoal": "Makronährstofffunktionen",
+      "structuredExplanation": {
+        "coreIdea": "Makronährstofffunktionen",
+        "correctReasoning": "Sie speichern Fettsäuren energiereich. Aminosäuren dienen dem Aufbau und Ersatz körpereigener Proteine.",
+        "wrongAnswerExplanations": {
+          "A": "Membranen und Signalwege benötigen ebenfalls Lipide.",
+          "B": "Albumin ist insbesondere ein Plasma-Transportprotein mit kolloidosmotischer Bedeutung.",
+          "C": "Sie speichern Fettsäuren energiereich.",
+          "D": "Aminosäuren dienen dem Aufbau und Ersatz körpereigener Proteine."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Körpergewicht und Mikronährstoffversorgung werden gemeinsam beurteilt. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Ein normales Körpergewicht schliesst jeden Vitaminmangel aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Übergewicht und Adipositas erhöhen das Risiko für mehrere chronische Krankheiten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede Person mit Adipositas entwickelt zwingend dieselbe Erkrankung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Adipositas kann mit einem Mikronährstoffmangel gleichzeitig vorkommen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Gewicht allein erfasst die Nährstoffversorgung nicht. B: Die Folien nennen unter anderem Typ-2-Diabetes und Hypertonie. C: Ein erhöhtes Risiko ist keine sichere individuelle Vorhersage. D: Hohe Energiezufuhr garantiert keine ausreichende Nährstoffdichte. Quelle: Originalunterlagen, PDF-S. 21,31–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Risiko und Mangel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Risiko und Mangel"
+      ],
+      "questionGoal": "Risiko und Mangel",
+      "structuredExplanation": {
+        "coreIdea": "Risiko und Mangel",
+        "correctReasoning": "Die Folien nennen unter anderem Typ-2-Diabetes und Hypertonie. Hohe Energiezufuhr garantiert keine ausreichende Nährstoffdichte.",
+        "wrongAnswerExplanations": {
+          "A": "Gewicht allein erfasst die Nährstoffversorgung nicht.",
+          "B": "Die Folien nennen unter anderem Typ-2-Diabetes und Hypertonie.",
+          "C": "Ein erhöhtes Risiko ist keine sichere individuelle Vorhersage.",
+          "D": "Hohe Energiezufuhr garantiert keine ausreichende Nährstoffdichte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Eine Ernährung soll an Wachstum oder höheres Alter angepasst werden. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Eine ausreichende Kalorienzufuhr beweist bei einem Kind eine vollständige B12-Versorgung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wachstum verändert den Energie- und Nährstoffbedarf.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Erwachsenenempfehlungen lassen sich unverändert auf jedes Kleinkind übertragen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei geringem Appetit ist die Nährstoffdichte besonders relevant.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Energieversorgung und B12-Zufuhr sind getrennt zu beurteilen. B: Aufbau neuer Gewebe verlangt zusätzliche Ressourcen. C: Alter und Entwicklung erfordern angepasste Versorgung. D: Weniger Nahrung muss weiterhin wesentliche Nährstoffe liefern. Quelle: Originalunterlagen, PDF-S. 5,43–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Lebensphasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lebensphasen"
+      ],
+      "questionGoal": "Lebensphasen",
+      "structuredExplanation": {
+        "coreIdea": "Lebensphasen",
+        "correctReasoning": "Aufbau neuer Gewebe verlangt zusätzliche Ressourcen. Weniger Nahrung muss weiterhin wesentliche Nährstoffe liefern.",
+        "wrongAnswerExplanations": {
+          "A": "Energieversorgung und B12-Zufuhr sind getrennt zu beurteilen.",
+          "B": "Aufbau neuer Gewebe verlangt zusätzliche Ressourcen.",
+          "C": "Alter und Entwicklung erfordern angepasste Versorgung.",
+          "D": "Weniger Nahrung muss weiterhin wesentliche Nährstoffe liefern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb10_11_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB10/11",
+      "stem": "Eine Werbeaussage über einzelne Lebensmittel wird wissenschaftlich geprüft. Welche Aussagen helfen bei der Einordnung?",
+      "options": [
+        {
+          "text": "Eine antioxidative Wirkung im Reagenzglas beweist noch keinen klinischen Nutzen eines Lebensmittels.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Zusammensetzung der gesamten Ernährung ist für ihre Beurteilung relevant.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Bezeichnung Superfood garantiert die Überlegenheit gegenüber einheimischen Lebensmitteln.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein einzelnes Lebensmittel kann unabhängig von der übrigen Ernährung sämtliche chronischen Krankheiten verhindern.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mechanismus und Nutzen beim Menschen benötigen unterschiedliche Evidenz. B: Einzelne Lebensmittel sind im Ernährungsmuster einzuordnen. C: Ein Marketingbegriff ersetzt keinen Nährstoff- oder Wirkungsvergleich. D: Ein solcher universeller Schutz ist nicht belegt. Quelle: Originalunterlagen, PDF-S. 30,38,55–59.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB10/11",
+        "Ernährungsaussagen bewerten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ernährungsaussagen bewerten"
+      ],
+      "questionGoal": "Ernährungsaussagen bewerten",
+      "structuredExplanation": {
+        "coreIdea": "Ernährungsaussagen bewerten",
+        "correctReasoning": "Mechanismus und Nutzen beim Menschen benötigen unterschiedliche Evidenz. Einzelne Lebensmittel sind im Ernährungsmuster einzuordnen.",
+        "wrongAnswerExplanations": {
+          "A": "Mechanismus und Nutzen beim Menschen benötigen unterschiedliche Evidenz.",
+          "B": "Einzelne Lebensmittel sind im Ernährungsmuster einzuordnen.",
+          "C": "Ein Marketingbegriff ersetzt keinen Nährstoff- oder Wirkungsvergleich.",
+          "D": "Ein solcher universeller Schutz ist nicht belegt."
+        }
+      }
+    }
+  ]
+}

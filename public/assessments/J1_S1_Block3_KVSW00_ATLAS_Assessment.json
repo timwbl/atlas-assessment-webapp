@@ -1,0 +1,1318 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw00_20261102",
+  "lectureCode": "KVSW00",
+  "title": "Grundprinzipien physiologischer Informationsverarbeitung",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW00_Einfuehrung_02. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Fachliche Einführung separat vom Organisations-/Literaturteil; letztere nicht abgefragt. Einführungsfragen auf Konzeptniveau; keine universelle Gleichsetzung aller Zelltypen oder spezifische Therapieempfehlung. Watermaze als kontrollbedürftiger Funktionsversuch eingeordnet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Physiologische Funktionen über Zellen, Organe und Organismus verknüpfen."
+    },
+    {
+      "id": "lo2",
+      "text": "Membrantransport und Membranpotential als Funktionsgrundlagen erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Aktionspotential und synaptische Signalübertragung unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Sensorische Transduktion und Weiterleitung einordnen."
+    },
+    {
+      "id": "lo5",
+      "text": "Experimentelle Funktionsstörungen und Lernen vorsichtig interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw00_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Welche Untersuchung richtet sich am unmittelbarsten auf eine physiologische Funktion?",
+      "options": [
+        {
+          "text": "Wie ein definierter Ionenstrom die elektrische Antwort einer Zelle verändert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Welche Form eine Zelle im fixierten Schnitt besitzt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Welche Lage ein Organ im Präparat einnimmt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Welche Färbung das Gewebe unter dem Mikroskop annimmt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Wie ein Organ in einer anatomischen Nomenklatur benannt wird.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie untersucht einen dynamischen funktionellen Zusammenhang. B: Dies ist zunächst eine morphologische Beschreibung. C: Topographie ist zunächst eine Strukturfrage. D: Eine Färbeeigenschaft ist noch keine Funktionsanalyse. E: Benennung allein erklärt seine Funktion nicht. Quelle: Originalunterlagen, PDF-S. 2–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Physiologische Frage"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Physiologische Frage"
+      ],
+      "questionGoal": "Physiologische Frage",
+      "structuredExplanation": {
+        "coreIdea": "Physiologische Frage",
+        "correctReasoning": "Sie untersucht einen dynamischen funktionellen Zusammenhang.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist zunächst eine morphologische Beschreibung.",
+          "C": "Topographie ist zunächst eine Strukturfrage.",
+          "D": "Eine Färbeeigenschaft ist noch keine Funktionsanalyse.",
+          "E": "Benennung allein erklärt seine Funktion nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q02",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Warum kann eine Membran trotz einer Stoffkonzentrationsdifferenz den Austausch begrenzen?",
+      "options": [
+        {
+          "text": "Die Transportrate hängt auch von der Membranpermeabilität und verfügbaren Transportwegen ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Konzentrationsdifferenz allein bestimmt unabhängig von der Membran den Fluss.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein vorhandener Konzentrationsgradient erzwingt sofort gleiche Konzentrationen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Stoffe besitzen in derselben Membran dieselbe Permeabilität.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Kanal transportiert seine Ionen immer gegen jede elektrochemische Triebkraft.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Gradient allein garantiert keine freie Passage. B: Permeabilität und Transportwege beeinflussen ihn zusätzlich. C: Eine Barriere kann den Austausch verlangsamen. D: Ladung, Grösse und Transportwege unterscheiden sich. E: Passiver Fluss folgt der verfügbaren Triebkraft. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Membran und Transport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membran und Transport"
+      ],
+      "questionGoal": "Membran und Transport",
+      "structuredExplanation": {
+        "coreIdea": "Membran und Transport",
+        "correctReasoning": "Ein Gradient allein garantiert keine freie Passage.",
+        "wrongAnswerExplanations": {
+          "B": "Permeabilität und Transportwege beeinflussen ihn zusätzlich.",
+          "C": "Eine Barriere kann den Austausch verlangsamen.",
+          "D": "Ladung, Grösse und Transportwege unterscheiden sich.",
+          "E": "Passiver Fluss folgt der verfügbaren Triebkraft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q03",
+      "type": "KPRIM",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «gemeinsame zelluläre Prinzipien physiologischer Funktionen».",
+      "options": [
+        {
+          "text": "Eine molekulare Funktionsänderung kann grundsätzlich keine Organfunktion beeinflussen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Transportproteine verbinden molekulare Struktur mit Zellfunktion.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle Zellen haben deshalb identische Signalantworten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur Nervenzellen besitzen Membranpotentiale.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Molekulare, zelluläre und Organismusebenen sind funktionell verknüpft. B: Ihre Eigenschaften bestimmen den Stoff- und Ladungsaustausch. C: Gemeinsame Prinzipien bedeuten keine identische Ausstattung. D: Auch andere Zelltypen können transmembrane Spannungen aufweisen. Quelle: Originalunterlagen, PDF-S. 3,7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Gemeinsame Zellprinzipien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gemeinsame Zellprinzipien"
+      ],
+      "questionGoal": "Gemeinsame Zellprinzipien",
+      "structuredExplanation": {
+        "coreIdea": "Gemeinsame Zellprinzipien",
+        "correctReasoning": "Ihre Eigenschaften bestimmen den Stoff- und Ladungsaustausch.",
+        "wrongAnswerExplanations": {
+          "A": "Molekulare, zelluläre und Organismusebenen sind funktionell verknüpft.",
+          "B": "Ihre Eigenschaften bestimmen den Stoff- und Ladungsaustausch.",
+          "C": "Gemeinsame Prinzipien bedeuten keine identische Ausstattung.",
+          "D": "Auch andere Zelltypen können transmembrane Spannungen aufweisen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q04",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Eine Mikroelektrode befindet sich im Cytoplasma, die Referenz aussen. Das Gerät zeigt −65 mV. Was bedeutet dies bei Vm = innen−aussen?",
+      "options": [
+        {
+          "text": "Die Messung zeigt direkt eine Stromstärke von 65 mA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte Lösung im Zellinnern besteht aus negativen Ionen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Zellinnere liegt um 65 mV positiver.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Zellinnere liegt um 65 mV negativer als die Referenz aussen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Zelle besitzt keinen Spannungsunterschied.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Millivolt sind Spannungs-, nicht Stromeinheiten. B: Eine Spannung erfordert keine solche vollständige Ladungszusammensetzung. C: Dies vertauscht das Vorzeichen. D: Das Vorzeichen folgt der angegebenen Differenz. E: −65 mV ist ein Spannungsunterschied. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Membranpotential messen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranpotential messen"
+      ],
+      "questionGoal": "Membranpotential messen",
+      "structuredExplanation": {
+        "coreIdea": "Membranpotential messen",
+        "correctReasoning": "Das Vorzeichen folgt der angegebenen Differenz.",
+        "wrongAnswerExplanations": {
+          "A": "Millivolt sind Spannungs-, nicht Stromeinheiten.",
+          "B": "Eine Spannung erfordert keine solche vollständige Ladungszusammensetzung.",
+          "C": "Dies vertauscht das Vorzeichen.",
+          "E": "−65 mV ist ein Spannungsunterschied."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q05",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Nach einer Stimulation wird im Axon eine schnelle vorübergehende Änderung des Membranpotentials registriert. Welche Grösse wurde hier unmittelbar gemessen?",
+      "options": [
+        {
+          "text": "Eine elektrische Potentialdifferenz im Zeitverlauf",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Stärke des Membranstroms als direkte Messgrösse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Anzahl gleichzeitig geöffneter Einzelkanäle ohne weitere Annahmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Transmitterkonzentration im synaptischen Spalt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die K+-Konzentration als unmittelbar abgelesener Messwert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das intrazelluläre Signal ist eine Spannungsänderung. B: Eine Spannungsregistrierung misst nicht unmittelbar Strom. C: V_m allein bestimmt diese Zahl nicht eindeutig. D: Dafür wäre ein anderer Messansatz nötig. E: Die Spannung hängt nicht nur von einer Konzentration ab. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Aktionspotential als Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktionspotential als Signal"
+      ],
+      "questionGoal": "Aktionspotential als Signal",
+      "structuredExplanation": {
+        "coreIdea": "Aktionspotential als Signal",
+        "correctReasoning": "Das intrazelluläre Signal ist eine Spannungsänderung.",
+        "wrongAnswerExplanations": {
+          "B": "Eine Spannungsregistrierung misst nicht unmittelbar Strom.",
+          "C": "V_m allein bestimmt diese Zahl nicht eindeutig.",
+          "D": "Dafür wäre ein anderer Messansatz nötig.",
+          "E": "Die Spannung hängt nicht nur von einer Konzentration ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Zum Thema «elektrische und chemische Schritte einer Synapse»: Beurteilen Sie die Signalfolge an der dargestellten chemischen Synapse.",
+      "options": [
+        {
+          "text": "Der synaptische Spalt wird durch ein unverändert hindurchlaufendes intrazelluläres AP überbrückt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Transmitter vermittelt im Spalt den chemischen Teil der Übertragung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Im präsynaptischen Axon läuft ein elektrisches Signal.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "In der postsynaptischen Zelle entsteht wieder eine elektrische Antwort.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Hier vermittelt ein chemisches Signal die Übertragung. B: Präsynaptische elektrische Aktivität wird chemisch auf die nächste Zelle übertragen. C: Die Folie zeigt dort ein Aktionspotential. D: Ein EPSP ist eine Membranpotentialänderung. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Elektrisch und chemisch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektrisch und chemisch"
+      ],
+      "questionGoal": "Elektrisch und chemisch",
+      "structuredExplanation": {
+        "coreIdea": "Elektrisch und chemisch",
+        "correctReasoning": "Präsynaptische elektrische Aktivität wird chemisch auf die nächste Zelle übertragen. Die Folie zeigt dort ein Aktionspotential. Ein EPSP ist eine Membranpotentialänderung.",
+        "wrongAnswerExplanations": {
+          "A": "Hier vermittelt ein chemisches Signal die Übertragung.",
+          "B": "Präsynaptische elektrische Aktivität wird chemisch auf die nächste Zelle übertragen.",
+          "C": "Die Folie zeigt dort ein Aktionspotential.",
+          "D": "Ein EPSP ist eine Membranpotentialänderung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q07",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Wofür steht EPSP im gezeigten Neuronenpaar?",
+      "options": [
+        {
+          "text": "Ein hemmendes postsynaptisches Potential.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das fortgeleitete präsynaptische Aktionspotential.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein erregender postsynaptischer Strom statt eines Potentials.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Ruhepotential ohne synaptische Antwort.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Erregendes postsynaptisches Potential",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre IPSP. B: Das EPSP entsteht postsynaptisch und ist graduell. C: Strom und Spannung sind verschiedene Messgrössen. D: EPSP bezeichnet eine ausgelöste Änderung. E: Es ist die elektrische Antwort der empfangenden Zelle. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "EPSP zuordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "EPSP zuordnen"
+      ],
+      "questionGoal": "EPSP zuordnen",
+      "structuredExplanation": {
+        "coreIdea": "EPSP zuordnen",
+        "correctReasoning": "Es ist die elektrische Antwort der empfangenden Zelle.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre IPSP.",
+          "B": "Das EPSP entsteht postsynaptisch und ist graduell.",
+          "C": "Strom und Spannung sind verschiedene Messgrössen.",
+          "D": "EPSP bezeichnet eine ausgelöste Änderung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "In der Abbildung hat ein präsynaptisches AP eine Skala von 60 mV, das EPSP eine Skala von 1 mV. Welcher Schluss ist gerechtfertigt?",
+      "options": [
+        {
+          "text": "Gleich hohe Druckkurven belegen gleiche Spannungsamplituden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die dargestellten Spannungsantworten unterscheiden sich deutlich in der Grössenordnung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die postsynaptische Antwort ist zwingend ein vollständiges AP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine kleinere EPSP-Amplitude beweist fehlende Signalwirkung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die beiden Skalierungen messen statt Spannung verschiedene Stromstärken.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterschiedliche Skalierungen verhindern diesen Schluss. B: Die jeweiligen Achsenskalierungen müssen berücksichtigt werden. C: Ein EPSP ist keine notwendige AP-Auslösung. D: Auch kleine Antworten können sich summieren. E: Beide Angaben in mV sind Spannungen. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Kurven vergleichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kurven vergleichen"
+      ],
+      "questionGoal": "Kurven vergleichen",
+      "structuredExplanation": {
+        "coreIdea": "Kurven vergleichen",
+        "correctReasoning": "Die jeweiligen Achsenskalierungen müssen berücksichtigt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Unterschiedliche Skalierungen verhindern diesen Schluss.",
+          "C": "Ein EPSP ist keine notwendige AP-Auslösung.",
+          "D": "Auch kleine Antworten können sich summieren.",
+          "E": "Beide Angaben in mV sind Spannungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «axonale Fortleitung und synaptische Übertragung».",
+      "options": [
+        {
+          "text": "Eine Störung der Synapse kann eine nachgeschaltete Antwort trotz ankommendem AP verändern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausbreitung entlang eines Axons und Übertragung auf eine zweite Zelle sind unterschiedliche Schritte.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jeder Abschnitt eines Axons ist eine chemische Synapse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein ankommendes AP und eine postsynaptische Antwort sind dieselbe Messung am selben Ort.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Übertragung ist ein eigener Funktionsschritt. B: Der erste betrifft eine Zellmembran, der zweite die Zellverbindung. C: Innerhalb des Axons erfolgt die Erregungsausbreitung elektrisch. D: Sie stammen aus verschiedenen Zellen beziehungsweise Kompartimenten. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Weiterleitung und Übertragung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Weiterleitung und Übertragung"
+      ],
+      "questionGoal": "Weiterleitung und Übertragung",
+      "structuredExplanation": {
+        "coreIdea": "Weiterleitung und Übertragung",
+        "correctReasoning": "Die Übertragung ist ein eigener Funktionsschritt. Der erste betrifft eine Zellmembran, der zweite die Zellverbindung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Übertragung ist ein eigener Funktionsschritt.",
+          "B": "Der erste betrifft eine Zellmembran, der zweite die Zellverbindung.",
+          "C": "Innerhalb des Axons erfolgt die Erregungsausbreitung elektrisch.",
+          "D": "Sie stammen aus verschiedenen Zellen beziehungsweise Kompartimenten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q10",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Was bezeichnet Transduktion in der dargestellten Sinneskette am besten?",
+      "options": [
+        {
+          "text": "Die Umwandlung eines Generatorpotentials in eine AP-Folge.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Fortleitung bereits ausgelöster APs im Axon.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Umwandlung eines geeigneten Reizes in ein zelluläres Signal.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die bewusste Interpretation des Signals im Cortex.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Freisetzung eines Transmitters als einzige Definition jeder Sinnestransduktion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wird hier Transformation genannt. B: Das ist Propagation. C: Ein Sensor übersetzt physikalische oder chemische Einwirkung. D: Dies ist Wahrnehmungsverarbeitung nach der Reizaufnahme. E: Transduktion beginnt mit der Umsetzung des Reizes in der Sensorzelle. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Sensorische Transduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sensorische Transduktion"
+      ],
+      "questionGoal": "Sensorische Transduktion",
+      "structuredExplanation": {
+        "coreIdea": "Sensorische Transduktion",
+        "correctReasoning": "Ein Sensor übersetzt physikalische oder chemische Einwirkung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wird hier Transformation genannt.",
+          "B": "Das ist Propagation.",
+          "D": "Dies ist Wahrnehmungsverarbeitung nach der Reizaufnahme.",
+          "E": "Transduktion beginnt mit der Umsetzung des Reizes in der Sensorzelle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Sinnesmodalität und gemeinsame AP-Signalform».",
+      "options": [
+        {
+          "text": "Licht und Schall sind unterschiedliche adäquate Reizarten für entsprechende Sensoren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aus der gemeinsamen AP-Form folgt eine identische Wahrnehmung aller Sinne.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verschiedene Sinnesbahnen können Aktionspotentiale als gemeinsame Signalform nutzen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede sensorische Nervenfaser transportiert Lichtwellen bis ins Gehirn.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Aufnahme setzt unterschiedliche Transduktionsmechanismen voraus. B: Bahnen und Verarbeitungskontext unterscheiden sich. C: Die Signalform allein ist nicht die gesamte Modalitätsinformation. D: Nach der Umwandlung werden neuronale Signale weitergeleitet. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Sinnesmodalitäten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sinnesmodalitäten"
+      ],
+      "questionGoal": "Sinnesmodalitäten",
+      "structuredExplanation": {
+        "coreIdea": "Sinnesmodalitäten",
+        "correctReasoning": "Ihre Aufnahme setzt unterschiedliche Transduktionsmechanismen voraus. Die Signalform allein ist nicht die gesamte Modalitätsinformation.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Aufnahme setzt unterschiedliche Transduktionsmechanismen voraus.",
+          "B": "Bahnen und Verarbeitungskontext unterscheiden sich.",
+          "C": "Die Signalform allein ist nicht die gesamte Modalitätsinformation.",
+          "D": "Nach der Umwandlung werden neuronale Signale weitergeleitet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Im Schema folgen auf Sensor und Transduktion Aktionspotentiale in der afferenten Bahn. Welcher Schritt ist mit Transformation hier gemeint?",
+      "options": [
+        {
+          "text": "Die unmittelbare Öffnung eines mechanosensitiven Kanals durch Druck.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die passive Ausbreitung eines schon bestehenden Generatorpotentials allein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Fortleitung eines bereits vorhandenen APs im Axon.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Überführung der sensorischen elektrischen Antwort in ein AP-Muster.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die bewusste Zuordnung des Reizes zu einer Sinnesmodalität.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies gehört zur Transduktion. B: Transformation bezeichnet hier die Umsetzung in APs. C: Das ist Propagation. D: Der Reiz wird für die neuronale Weiterleitung kodiert. E: Dies ist nachgeschaltete Verarbeitung. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Transformation zuordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transformation zuordnen"
+      ],
+      "questionGoal": "Transformation zuordnen",
+      "structuredExplanation": {
+        "coreIdea": "Transformation zuordnen",
+        "correctReasoning": "Der Reiz wird für die neuronale Weiterleitung kodiert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies gehört zur Transduktion.",
+          "B": "Transformation bezeichnet hier die Umsetzung in APs.",
+          "C": "Das ist Propagation.",
+          "E": "Dies ist nachgeschaltete Verarbeitung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Membranproteinänderung und Zellfunktion».",
+      "options": [
+        {
+          "text": "Veränderte Kanalaktivität kann die Informationsverarbeitung einer Zelle beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Arzneimittel kann durch Eingriff in die Signalübertragung wirken.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede Kanalveränderung führt zwingend zu derselben Krankheit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Proteinveränderung muss stets eine sichtbare Änderung der Organform erzeugen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ionenströme bestimmen elektrische Antworten mit. B: Die Folien nennen dies als allgemeines Wirkprinzip. C: Die Folgen hängen von Kanal, Zelle und Veränderung ab. D: Funktionelle Störungen können ohne solche sichtbaren Veränderungen bestehen. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Membranproteine und Krankheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranproteine und Krankheit"
+      ],
+      "questionGoal": "Membranproteine und Krankheit",
+      "structuredExplanation": {
+        "coreIdea": "Membranproteine und Krankheit",
+        "correctReasoning": "Ionenströme bestimmen elektrische Antworten mit. Die Folien nennen dies als allgemeines Wirkprinzip.",
+        "wrongAnswerExplanations": {
+          "A": "Ionenströme bestimmen elektrische Antworten mit.",
+          "B": "Die Folien nennen dies als allgemeines Wirkprinzip.",
+          "C": "Die Folgen hängen von Kanal, Zelle und Veränderung ab.",
+          "D": "Funktionelle Störungen können ohne solche sichtbaren Veränderungen bestehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Eine behandelte Tiergruppe findet die versteckte Plattform schlechter. Welche zusätzliche Prüfung ist für eine spezifische Interpretation als Lernstörung besonders wichtig?",
+      "options": [
+        {
+          "text": "Ob jede behandelte Gruppe zwingend dieselbe Testlatenz wie die Kontrolle hat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ob die längere Suchzeit allein ohne motorische Kontrolle einen Gedächtnisverlust beweist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ob ein geringeres Schwimmtempo durch die Auswertung grundsätzlich ignoriert werden darf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ob der Test ohne Kontrollbedingung spezifisch nur Lernen misst.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ob Wahrnehmung, Schwimmfähigkeit und Motivation die Aufgabenleistung erklären könnten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Leistungsänderung muss erklärt, nicht per Definition ausgeschlossen werden. B: Andere Leistungsursachen sind möglich. C: Motorik kann die Suchleistung verfälschen. D: Kontrollen helfen andere Ursachen auszuschliessen. E: Die Verhaltensleistung hängt nicht ausschliesslich vom Gedächtnis ab. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Watermaze-Experiment"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Watermaze-Experiment"
+      ],
+      "questionGoal": "Watermaze-Experiment",
+      "structuredExplanation": {
+        "coreIdea": "Watermaze-Experiment",
+        "correctReasoning": "Die Verhaltensleistung hängt nicht ausschliesslich vom Gedächtnis ab.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Leistungsänderung muss erklärt, nicht per Definition ausgeschlossen werden.",
+          "B": "Andere Leistungsursachen sind möglich.",
+          "C": "Motorik kann die Suchleistung verfälschen.",
+          "D": "Kontrollen helfen andere Ursachen auszuschliessen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Welche Schlussfolgerung trifft das dargestellte Lernexperiment am vorsichtigsten?",
+      "options": [
+        {
+          "text": "Die Manipulation beweist bereits ohne Kontrollen eine ausschliessliche Gedächtnisfunktion des Proteins.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die verminderte Leistung beweist den vollständigen Verlust jedes Gedächtnisinhalts.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Proteinwirkung muss ausschliesslich auf veränderter Organform beruhen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die manipulierte Membranfunktion kann für die beobachtete Lernaufgabe bedeutsam sein, sofern andere Leistungsursachen kontrolliert sind.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine unveränderte Schwimmgeschwindigkeit allein schliesst jede sensorische Störung aus.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Andere Leistungsfaktoren können beitragen. B: Das Experiment prüft eine bestimmte Aufgabe. C: Membranfunktionsänderung kann ohne solche Formänderung wirken. D: Die Interpretation bleibt an Manipulation, Aufgabe und Kontrollen gebunden. E: Motorik- und Wahrnehmungskontrollen sind verschieden. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Lernen und Zellfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lernen und Zellfunktion"
+      ],
+      "questionGoal": "Lernen und Zellfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Lernen und Zellfunktion",
+        "correctReasoning": "Die Interpretation bleibt an Manipulation, Aufgabe und Kontrollen gebunden.",
+        "wrongAnswerExplanations": {
+          "A": "Andere Leistungsfaktoren können beitragen.",
+          "B": "Das Experiment prüft eine bestimmte Aufgabe.",
+          "C": "Membranfunktionsänderung kann ohne solche Formänderung wirken.",
+          "E": "Motorik- und Wahrnehmungskontrollen sind verschieden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «molekulare Eingriffe und Verhaltensmessung».",
+      "options": [
+        {
+          "text": "Ein Vergleich mit geeigneten Kontrollbedingungen verbessert die Funktionszuordnung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aus einer Verhaltensänderung ist das betroffene Molekül ohne weitere Untersuchung eindeutig ablesbar.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine physiologische Erklärung darf chemische oder physikalische Prozesse grundsätzlich nicht verwenden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine molekulare Veränderung kann bis auf Organismusverhalten wirken.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er grenzt alternative Erklärungen ein. B: Mehrere Mechanismen können dieselbe Leistung verändern. C: Physiologie baut gerade auch auf diesen Grundlagen auf. D: Zelluläre und systemische Ebenen sind funktionell verbunden. Quelle: Originalunterlagen, PDF-S. 2,13,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Erklärungsebenen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erklärungsebenen"
+      ],
+      "questionGoal": "Erklärungsebenen",
+      "structuredExplanation": {
+        "coreIdea": "Erklärungsebenen",
+        "correctReasoning": "Er grenzt alternative Erklärungen ein. Zelluläre und systemische Ebenen sind funktionell verbunden.",
+        "wrongAnswerExplanations": {
+          "A": "Er grenzt alternative Erklärungen ein.",
+          "B": "Mehrere Mechanismen können dieselbe Leistung verändern.",
+          "C": "Physiologie baut gerade auch auf diesen Grundlagen auf.",
+          "D": "Zelluläre und systemische Ebenen sind funktionell verbunden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Ein Membrankanal wird selektiv blockiert. Welche Grösse kann sich als direkte funktionelle Folge ändern?",
+      "options": [
+        {
+          "text": "Die Zahl aller DNA-Basen der Zelle muss sich sofort ändern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Konzentrationsgradient aller Ionen verschwindet augenblicklich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Leitfähigkeit der Membran für die vom Kanal getragenen Ionen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder andere Kanal wird automatisch ebenfalls blockiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Leitfähigkeit bleibt definitionsgemäss unverändert, solange die Membranfläche gleich ist.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kanalblockade verändert nicht notwendig die DNA. B: Vorhandene Gradienten werden nicht sofort vollständig beseitigt. C: Blockierte Kanäle vermindern diesen verfügbaren Transportweg. D: Die Blockade ist im Stamm selektiv. E: Die Zahl verfügbarer leitender Kanäle kann sich ändern. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Kanalblockade als Eingriff"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kanalblockade als Eingriff"
+      ],
+      "questionGoal": "Kanalblockade als Eingriff",
+      "structuredExplanation": {
+        "coreIdea": "Kanalblockade als Eingriff",
+        "correctReasoning": "Blockierte Kanäle vermindern diesen verfügbaren Transportweg.",
+        "wrongAnswerExplanations": {
+          "A": "Kanalblockade verändert nicht notwendig die DNA.",
+          "B": "Vorhandene Gradienten werden nicht sofort vollständig beseitigt.",
+          "D": "Die Blockade ist im Stamm selektiv.",
+          "E": "Die Zahl verfügbarer leitender Kanäle kann sich ändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Spannung, Strom und unmittelbare Messgrössen».",
+      "options": [
+        {
+          "text": "Membranpotential ist eine Spannungsdifferenz.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine elektrische Antwort erlaubt ohne Zusatzdaten das Zählen aller Transmittermoleküle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Volt und ein Ampere bezeichnen dieselbe physikalische Grösse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein AP ist ein zeitlicher Verlauf des Membranpotentials.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie wird etwa in Millivolt angegeben. B: Die Zuordnung ist nicht eindeutig unmittelbar gegeben. C: Ampere bezeichnet Stromstärke. D: Es ist keine konstante Batterieanzeige. Quelle: Originalunterlagen, PDF-S. 8–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Messgrössen auseinanderhalten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messgrössen auseinanderhalten"
+      ],
+      "questionGoal": "Messgrössen auseinanderhalten",
+      "structuredExplanation": {
+        "coreIdea": "Messgrössen auseinanderhalten",
+        "correctReasoning": "Sie wird etwa in Millivolt angegeben. Es ist keine konstante Batterieanzeige.",
+        "wrongAnswerExplanations": {
+          "A": "Sie wird etwa in Millivolt angegeben.",
+          "B": "Die Zuordnung ist nicht eindeutig unmittelbar gegeben.",
+          "C": "Ampere bezeichnet Stromstärke.",
+          "D": "Es ist keine konstante Batterieanzeige."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Zwei Sinnesbahnen führen ähnlich geformte APs. Welche Information bleibt zur Unterscheidung des Sinneseindrucks bedeutsam?",
+      "options": [
+        {
+          "text": "Die AP-Amplitude allein benennt jede Sinnesmodalität eindeutig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Sinnesbahnen erzeugen deshalb dieselbe Wahrnehmung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Welche Bahn und welche nachgeschalteten Netzwerke aktiv sind.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur die absolute Axonlänge legt unabhängig vom Zielgebiet die Modalität fest.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Zahl der Spikes allein ersetzt jede Information über den aktivierten Sinnesweg.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die aktivierte Bahn ist wesentlich. B: Gemeinsame Signalform bedeutet nicht gemeinsame Modalität. C: Die Identität des aktivierten Systems trägt zur Modalität bei. D: Verschaltung und Zielgebiete sind wichtig. E: Muster und Bahn tragen gemeinsam Information. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Modalitätsinformation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modalitätsinformation"
+      ],
+      "questionGoal": "Modalitätsinformation",
+      "structuredExplanation": {
+        "coreIdea": "Modalitätsinformation",
+        "correctReasoning": "Die Identität des aktivierten Systems trägt zur Modalität bei.",
+        "wrongAnswerExplanations": {
+          "A": "Die aktivierte Bahn ist wesentlich.",
+          "B": "Gemeinsame Signalform bedeutet nicht gemeinsame Modalität.",
+          "D": "Verschaltung und Zielgebiete sind wichtig.",
+          "E": "Muster und Bahn tragen gemeinsam Information."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw00_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW00",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Verknüpfung von Zell- und Organismusfunktion».",
+      "options": [
+        {
+          "text": "Gemeinsame Zellprinzipien können sehr verschiedene Organfunktionen ermöglichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Reaktionen auf Information können auf verschiedenen biologischen Ebenen untersucht werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Organfunktion ist vollständig unabhängig von Zellfunktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Untersuchung an einer Zellart beweist automatisch identische quantitative Werte in jeder anderen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die konkrete Ausstattung und Vernetzung bestimmen die Nutzung. B: Die Vorlesung verbindet molekulare, zelluläre und Verhaltensbeispiele. C: Zellen bilden die funktionellen Bausteine des Organs. D: Generalisierung benötigt eine passende Grundlage. Quelle: Originalunterlagen, PDF-S. 3–5,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW00",
+        "Von Zelle zu Organismus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Von Zelle zu Organismus"
+      ],
+      "questionGoal": "Von Zelle zu Organismus",
+      "structuredExplanation": {
+        "coreIdea": "Von Zelle zu Organismus",
+        "correctReasoning": "Die konkrete Ausstattung und Vernetzung bestimmen die Nutzung. Die Vorlesung verbindet molekulare, zelluläre und Verhaltensbeispiele.",
+        "wrongAnswerExplanations": {
+          "A": "Die konkrete Ausstattung und Vernetzung bestimmen die Nutzung.",
+          "B": "Die Vorlesung verbindet molekulare, zelluläre und Verhaltensbeispiele.",
+          "C": "Zellen bilden die funktionellen Bausteine des Organs.",
+          "D": "Generalisierung benötigt eine passende Grundlage."
+        }
+      }
+    }
+  ]
+}

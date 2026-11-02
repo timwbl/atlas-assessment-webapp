@@ -1,0 +1,1320 @@
+{
+  "id": "assessment_j1_s1_block1_kvc10_20261102",
+  "lectureCode": "KVC10",
+  "title": "Terpene und Steroide",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC10 - Terpene&Steroide. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Der Vitamin-D-Photostart wird präzise auf 7-Dehydrocholesterin bezogen. Allgemeine Terpenklassifikation und sauerstoffhaltige Terpenoide werden nicht gleichgesetzt. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Isopreneinheiten und gemeinsame biosynthetische Herkunft erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Ausgewählte Terpene und Redoxcofaktoren strukturell und funktionell zuordnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Cholesterin, Steroidhormone und Vitamin-D-Vorstufen unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc10_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Wie viele formale Isopreneinheiten bilden das typische C20-Gerüst eines Diterpens?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fünf.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zwei.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Vier.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Acht.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Drei.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Fünf C5-Einheiten würden C25 ergeben. B: Zwei C5-Einheiten ergeben nur C10 statt C20. C: Eine formale Isopreneinheit besitzt fünf C; 20/5=4. D: Acht C5-Einheiten gehören zu einem C40-Gerüst. E: Drei C5-Einheiten ergeben C15 statt C20. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "C5-Bausteine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "C5-Bausteine"
+      ],
+      "questionGoal": "C5-Bausteine",
+      "structuredExplanation": {
+        "coreIdea": "C5-Bausteine",
+        "correctReasoning": "Eine formale Isopreneinheit besitzt fünf C; 20/5=4.",
+        "wrongAnswerExplanations": {
+          "A": "Fünf C5-Einheiten würden C25 ergeben.",
+          "B": "Zwei C5-Einheiten ergeben nur C10 statt C20.",
+          "D": "Acht C5-Einheiten gehören zu einem C40-Gerüst.",
+          "E": "Drei C5-Einheiten ergeben C15 statt C20."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welches typische Gerüst gehört zu einem Monoterpen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C10.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "C20.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "C5.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "C15.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "C30.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Monoterpene bestehen formal aus zwei C5-Einheiten; die anderen Zahlen gehören zu anderen Klassen. B: C20 ist das Diterpengerüst. C: C5 ist nur eine formale Isopreneinheit, nicht das typische Monoterpengerüst. D: C15 ist typisch für Sesquiterpene. E: C30 ist das Triterpengerüst. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Terpenklasse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Terpenklasse"
+      ],
+      "questionGoal": "Terpenklasse",
+      "structuredExplanation": {
+        "coreIdea": "Terpenklasse",
+        "correctReasoning": "Monoterpene bestehen formal aus zwei C5-Einheiten; die anderen Zahlen gehören zu anderen Klassen.",
+        "wrongAnswerExplanations": {
+          "B": "C20 ist das Diterpengerüst.",
+          "C": "C5 ist nur eine formale Isopreneinheit, nicht das typische Monoterpengerüst.",
+          "D": "C15 ist typisch für Sesquiterpene.",
+          "E": "C30 ist das Triterpengerüst."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Wie wird das C30-Gerüst von Squalen formal klassifiziert?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Monoterpen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Tetraterpen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Diterpen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Triterpen.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Sesquiterpen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Monoterpen besitzt typischerweise C10 und nicht C30. B: Ein Tetraterpen besitzt typischerweise C40. C: Ein Diterpen besitzt typischerweise C20. D: Sechs C5-Einheiten ergeben C30 und damit die Triterpenklasse. E: Ein Sesquiterpen besitzt typischerweise C15. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Squalen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Squalen"
+      ],
+      "questionGoal": "Squalen",
+      "structuredExplanation": {
+        "coreIdea": "Squalen",
+        "correctReasoning": "Sechs C5-Einheiten ergeben C30 und damit die Triterpenklasse.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Monoterpen besitzt typischerweise C10 und nicht C30.",
+          "B": "Ein Tetraterpen besitzt typischerweise C40.",
+          "C": "Ein Diterpen besitzt typischerweise C20.",
+          "E": "Ein Sesquiterpen besitzt typischerweise C15."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "β-Carotin besitzt ein C40-Gerüst. Wie viele formale C5-Einheiten enthält es?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sechs.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vier.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Zehn.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Acht.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Fünf.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Sechs C5-Einheiten ergeben C30 wie bei Squalen. B: Vier C5-Einheiten würden C20 statt C40 ergeben. C: Zehn C5-Einheiten würden C50 statt C40 ergeben. D: 40/5=8; dies entspricht einem Tetraterpengerüst. E: Fünf C5-Einheiten ergäben C25. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Carotingerüst"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Carotingerüst"
+      ],
+      "questionGoal": "Carotingerüst",
+      "structuredExplanation": {
+        "coreIdea": "Carotingerüst",
+        "correctReasoning": "40/5=8; dies entspricht einem Tetraterpengerüst.",
+        "wrongAnswerExplanations": {
+          "A": "Sechs C5-Einheiten ergeben C30 wie bei Squalen.",
+          "B": "Vier C5-Einheiten würden C20 statt C40 ergeben.",
+          "C": "Zehn C5-Einheiten würden C50 statt C40 ergeben.",
+          "E": "Fünf C5-Einheiten ergäben C25."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welche Bausteine werden unmittelbar zur Verknüpfung von C5-Einheiten in der Isoprenoidbiosynthese genutzt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Freie Cholesterinringe und Cortisol.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "ATP und ADP als C5-Kohlenstoffgerüste.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Glycin und Alanin.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Freie Glucose und Galactose.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "IPP und DMAPP.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Cholesterin und Cortisol sind viel grössere Produkte, nicht die unmittelbaren C5-Vorstufen. B: ATP kann Energie liefern, aber seine C-Struktur ersetzt die Isoprenbausteine nicht. C: Die Aminosäuren sind keine IPP/DMAPP-C5-Gerüstbausteine. D: Glucose und Galactose sind C6-Zucker, nicht die direkt verknüpften aktivierten Isoprenbausteine. E: IPP/DMAPP sind aktivierte C5-Bausteine; ATP kann Energie liefern, ist aber nicht dieser C5-Gerüstbaustein. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Biosynthetische Bausteine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biosynthetische Bausteine"
+      ],
+      "questionGoal": "Biosynthetische Bausteine",
+      "structuredExplanation": {
+        "coreIdea": "Biosynthetische Bausteine",
+        "correctReasoning": "IPP/DMAPP sind aktivierte C5-Bausteine; ATP kann Energie liefern, ist aber nicht dieser C5-Gerüstbaustein.",
+        "wrongAnswerExplanations": {
+          "A": "Cholesterin und Cortisol sind viel grössere Produkte, nicht die unmittelbaren C5-Vorstufen.",
+          "B": "ATP kann Energie liefern, aber seine C-Struktur ersetzt die Isoprenbausteine nicht.",
+          "C": "Die Aminosäuren sind keine IPP/DMAPP-C5-Gerüstbausteine.",
+          "D": "Glucose und Galactose sind C6-Zucker, nicht die direkt verknüpften aktivierten Isoprenbausteine."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welche funktionelle Gruppe kennzeichnet Menthol gegenüber einem reinen Monoterpen-Kohlenwasserstoff?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine Phosphatgruppe.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine Amidgruppe.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine Alkoholgruppe.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine Carbonsäuregruppe.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine Aldehydgruppe.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die charakteristische Gruppe ist nicht phosphoryliert. B: Es fehlt die direkte Carbonyl-N-Gruppe eines Amids. C: Menthol ist ein Monoterpenoid mit einer OH-Gruppe an gesättigtem C. D: Menthol besitzt OH statt COOH und ist daher keine Carbonsäure. E: Seine OH-Gruppe ist keine CHO-Aldehydgruppe. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Mentholgruppe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mentholgruppe"
+      ],
+      "questionGoal": "Mentholgruppe",
+      "structuredExplanation": {
+        "coreIdea": "Mentholgruppe",
+        "correctReasoning": "Menthol ist ein Monoterpenoid mit einer OH-Gruppe an gesättigtem C.",
+        "wrongAnswerExplanations": {
+          "A": "Die charakteristische Gruppe ist nicht phosphoryliert.",
+          "B": "Es fehlt die direkte Carbonyl-N-Gruppe eines Amids.",
+          "D": "Menthol besitzt OH statt COOH und ist daher keine Carbonsäure.",
+          "E": "Seine OH-Gruppe ist keine CHO-Aldehydgruppe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welche Oxidationsänderung überführt die entsprechende Endgruppe von Retinol in Retinal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Carboxylat → Amid.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Primärer Alkohol → Aldehyd.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ether → Thiol.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Keton → sekundärer Alkohol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Aldehyd → Carbonsäureester.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Es wird keine Carboxylat-Amid-Umsetzung benötigt. B: Retinol trägt am Kettenende CH₂OH, Retinal CHO; der C-Rahmen kann dabei erhalten bleiben. C: Der Endgruppenwechsel betrifft O-Oxidation und keinen Einbau von Schwefel. D: Retinol besitzt keinen sekundären Keton/Alkohol-Umsatz am betrachteten Ende. E: Retinal trägt einen Aldehyd; die Frage startet beim Alkohol Retinol. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Retinol und Retinal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Retinol und Retinal"
+      ],
+      "questionGoal": "Retinol und Retinal",
+      "structuredExplanation": {
+        "coreIdea": "Retinol und Retinal",
+        "correctReasoning": "Retinol trägt am Kettenende CH₂OH, Retinal CHO; der C-Rahmen kann dabei erhalten bleiben.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird keine Carboxylat-Amid-Umsetzung benötigt.",
+          "C": "Der Endgruppenwechsel betrifft O-Oxidation und keinen Einbau von Schwefel.",
+          "D": "Retinol besitzt keinen sekundären Keton/Alkohol-Umsatz am betrachteten Ende.",
+          "E": "Retinal trägt einen Aldehyd; die Frage startet beim Alkohol Retinol."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welche Kombination erklärt die Eignung von Ubiquinon als mobiler Membranredoxträger?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drei veresterte Fettsäuren ohne Chinonfunktion.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Redoxaktiver Chinonkopf und lipophile Isoprenoidseitenkette.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ein reines Phosphatpolymer ohne organischen Anteil.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein ausschliesslich hydrophiles Peptidrückgrat ohne Redoxgruppe.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein ungeladener Zucker ohne konjugierte Gruppe und ohne Seitenkette.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: TAG-Aufbau aus drei Acylketten ist vom Chinon-Isoprenoid-Aufbau verschieden. B: Der Kopf kann Redoxäquivalente aufnehmen/abgeben; die Isoprenoidkette begünstigt die Membranlokalisation. C: Ein reines Phosphatpolymer hätte weder die benötigte organische Redoxgruppe noch die Membranverankerung. D: Ubiquinon ist kein Polypeptid und besitzt einen lipophilen Anteil. E: Ein Zucker ohne Chinonkopf würde den beschriebenen Redoxmechanismus nicht erklären. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Ubiquinon-Aufbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ubiquinon-Aufbau"
+      ],
+      "questionGoal": "Ubiquinon-Aufbau",
+      "structuredExplanation": {
+        "coreIdea": "Ubiquinon-Aufbau",
+        "correctReasoning": "Der Kopf kann Redoxäquivalente aufnehmen/abgeben; die Isoprenoidkette begünstigt die Membranlokalisation.",
+        "wrongAnswerExplanations": {
+          "A": "TAG-Aufbau aus drei Acylketten ist vom Chinon-Isoprenoid-Aufbau verschieden.",
+          "C": "Ein reines Phosphatpolymer hätte weder die benötigte organische Redoxgruppe noch die Membranverankerung.",
+          "D": "Ubiquinon ist kein Polypeptid und besitzt einen lipophilen Anteil.",
+          "E": "Ein Zucker ohne Chinonkopf würde den beschriebenen Redoxmechanismus nicht erklären."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welche Rolle passt zu α-Tocopherol in einer lipidreichen Umgebung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Primärer Na⁺-Kanal der Membran.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Abspaltung aller Phosphatgruppen aus DNA.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Strukturelle Umwandlung jeder Fettsäure in Glucose.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Lipophiler antioxidativer Redoxschutz.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Kovalente Verknüpfung von Aminosäuren am Ribosom.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Na⁺-Kanal ist ein Membranprotein, nicht dieser niedermolekulare Antioxidans. B: Vitamin E ist kein allgemeines DNA-Dephosphorylierungsenzym. C: Oxidationsschutz ist nicht die direkte Gerüstumwandlung von Fettsäuren in Glucose. D: α-Tocopherol ist Vitamin E und kann oxidative Kettenreaktionen in Lipidbereichen begrenzen. E: Ribosomale Peptidsynthese ist keine Funktion des Tocopherols. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Vitamin E"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin E"
+      ],
+      "questionGoal": "Vitamin E",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin E",
+        "correctReasoning": "α-Tocopherol ist Vitamin E und kann oxidative Kettenreaktionen in Lipidbereichen begrenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Na⁺-Kanal ist ein Membranprotein, nicht dieser niedermolekulare Antioxidans.",
+          "B": "Vitamin E ist kein allgemeines DNA-Dephosphorylierungsenzym.",
+          "C": "Oxidationsschutz ist nicht die direkte Gerüstumwandlung von Fettsäuren in Glucose.",
+          "E": "Ribosomale Peptidsynthese ist keine Funktion des Tocopherols."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Wie ist das typische Steroidgrundgerüst aufgebaut?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein offenes Polymer aus sechs Peptidbindungen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Drei Sechsringe und ein Fünfring sind miteinander verbunden.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ein einziger unverzweigter C27-Ring.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zwei Fünfringe und zwei isolierte Glycerinreste.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Vier voneinander getrennte aromatische Sechsringe.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Peptidrückgrat ist keine Ringstruktur des Steroidgrundgerüsts. B: Das tetracyclische Steroidgerüst ist ein zusammenhängendes fusioniertes Ringsystem. C: Cholesterin besitzt mehrere fusionierte Ringe, keinen einzigen C27-Makrocyclus. D: Die Ringzahlen und die isolierten Glycerinreste entsprechen dem Steroidkern nicht. E: Die vier Steroidringe sind fusioniert, nicht getrennte aromatische Sechsringe. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Steroidkern"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Steroidkern"
+      ],
+      "questionGoal": "Steroidkern",
+      "structuredExplanation": {
+        "coreIdea": "Steroidkern",
+        "correctReasoning": "Das tetracyclische Steroidgerüst ist ein zusammenhängendes fusioniertes Ringsystem.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Peptidrückgrat ist keine Ringstruktur des Steroidgrundgerüsts.",
+          "C": "Cholesterin besitzt mehrere fusionierte Ringe, keinen einzigen C27-Makrocyclus.",
+          "D": "Die Ringzahlen und die isolierten Glycerinreste entsprechen dem Steroidkern nicht.",
+          "E": "Die vier Steroidringe sind fusioniert, nicht getrennte aromatische Sechsringe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welche Verbindung ist ein biosynthetischer Vorläufer von Steroidhormonen wie Cortisol und Testosteron?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Glycogen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Hämoglobin.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Cholesterin.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Triacylglycerid als unverändertes Gerüst.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Cellulose.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Glycogen ist ein Glucosepolymer und kein unmittelbares Steroidgerüst. B: Hämoglobin ist ein Protein und kein biosynthetischer Steroidgerüstvorläufer. C: Steroidhormone entstehen durch Modifikationen des cholesterinabgeleiteten Steroidgerüsts. D: TAG besitzt Glycerin und Acylketten, nicht das unveränderte Vorläuferringsystem. E: Cellulose ist ein β-Glucosepolymer ohne Steroidkern. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Cholesterinvorstufe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cholesterinvorstufe"
+      ],
+      "questionGoal": "Cholesterinvorstufe",
+      "structuredExplanation": {
+        "coreIdea": "Cholesterinvorstufe",
+        "correctReasoning": "Steroidhormone entstehen durch Modifikationen des cholesterinabgeleiteten Steroidgerüsts.",
+        "wrongAnswerExplanations": {
+          "A": "Glycogen ist ein Glucosepolymer und kein unmittelbares Steroidgerüst.",
+          "B": "Hämoglobin ist ein Protein und kein biosynthetischer Steroidgerüstvorläufer.",
+          "D": "TAG besitzt Glycerin und Acylketten, nicht das unveränderte Vorläuferringsystem.",
+          "E": "Cellulose ist ein β-Glucosepolymer ohne Steroidkern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Welches unmittelbare Substrat wird beim UVB-Photostart der Vitamin-D3-Bildung in der Haut umgesetzt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retinal.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "7-Dehydrocholesterin.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Cortisol.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "α-Tocopherol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Unverändertes Cholesterin ohne Vorstufenmodifikation.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Retinal gehört zur Vitamin-A-/Sehphotochemie. B: UVB öffnet das Ringsystem von 7-Dehydrocholesterin zu Prävitamin D3; daraus folgt die weitere Umwandlung. C: Cortisol ist ein bereits modifiziertes Steroidhormon, nicht das Haut-Photostartsubstrat. D: α-Tocopherol ist Vitamin E und nicht das Sterolsubstrat der D3-Bildung. E: Der unmittelbare UVB-Vorläufer ist die 7-Dehydroform und nicht unverändertes Cholesterin. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Vitamin-D-Photostart"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin-D-Photostart"
+      ],
+      "questionGoal": "Vitamin-D-Photostart",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin-D-Photostart",
+        "correctReasoning": "UVB öffnet das Ringsystem von 7-Dehydrocholesterin zu Prävitamin D3; daraus folgt die weitere Umwandlung.",
+        "wrongAnswerExplanations": {
+          "A": "Retinal gehört zur Vitamin-A-/Sehphotochemie.",
+          "C": "Cortisol ist ein bereits modifiziertes Steroidhormon, nicht das Haut-Photostartsubstrat.",
+          "D": "α-Tocopherol ist Vitamin E und nicht das Sterolsubstrat der D3-Bildung.",
+          "E": "Der unmittelbare UVB-Vorläufer ist die 7-Dehydroform und nicht unverändertes Cholesterin."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Squalencyclisierung, Steroidhormone, Diterpen, Menthol.",
+      "options": [
+        {
+          "text": "Testosteron, Estron und Cortisol sind cholesterinabgeleitete Steroidhormone.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Squalen wird über weitere Schritte zu cyclischen Sterolvorstufen wie Lanosterin umgesetzt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Retinol besitzt ein unverändertes C5-Gerüst.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Menthol ist ein tetracyclisches Steroidhormon mit C27-Gerüst.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Biosynthese verändert das Sterolgerüst. B: Cyclisierung erzeugt ein zusammenhängendes Ringsystem. C: Retinol besitzt ein C20-Gerüst und wird den Diterpenoiden zugeordnet. Vier formale C5-Einheiten ergeben C20. D: Menthol ist ein sauerstoffhaltiges Monoterpenderivat mit Alkoholgruppe. Sein Grundgerüst ist monoterpenoid. Quelle: Originalunterlagen, PDF-S. 4–5, 7, 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Squalencyclisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Squalencyclisierung"
+      ],
+      "questionGoal": "Squalencyclisierung",
+      "structuredExplanation": {
+        "coreIdea": "Squalencyclisierung",
+        "correctReasoning": "Ihre Biosynthese verändert das Sterolgerüst. Cyclisierung erzeugt ein zusammenhängendes Ringsystem.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Biosynthese verändert das Sterolgerüst.",
+          "B": "Cyclisierung erzeugt ein zusammenhängendes Ringsystem.",
+          "C": "Retinol besitzt ein C20-Gerüst und wird den Diterpenoiden zugeordnet. Vier formale C5-Einheiten ergeben C20.",
+          "D": "Menthol ist ein sauerstoffhaltiges Monoterpenderivat mit Alkoholgruppe. Sein Grundgerüst ist monoterpenoid."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Steroidhormone, Vitamin D, Triterpen, Tocopherol.",
+      "options": [
+        {
+          "text": "Squalen besitzt dreissig Kohlenstoffatome.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Testosteron, Estron und Cortisol sind cholesterinabgeleitete Steroidhormone.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Unverändertes Cholesterin ist im Haut-Photostart ohne weitere Vorstufe das einzige direkte Substrat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "α-Tocopherol gehört zu Vitamin E und besitzt antioxidative Redoxfunktion.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sechs C5-Einheiten ergeben C30. B: Ihre Biosynthese verändert das Sterolgerüst. C: UVB-Licht leitet in der Haut die Umwandlung von 7-Dehydrocholesterin zu Prävitamin D3 ein. 7-Dehydrocholesterin ist die präzisierte unmittelbare Vorstufe. D: Es ist ein niedermolekularer lipophiler Stoff. Quelle: Originalunterlagen, PDF-S. 5–6, 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Steroidhormone"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Steroidhormone"
+      ],
+      "questionGoal": "Steroidhormone",
+      "structuredExplanation": {
+        "coreIdea": "Steroidhormone",
+        "correctReasoning": "Sechs C5-Einheiten ergeben C30. Ihre Biosynthese verändert das Sterolgerüst. Es ist ein niedermolekularer lipophiler Stoff.",
+        "wrongAnswerExplanations": {
+          "A": "Sechs C5-Einheiten ergeben C30.",
+          "B": "Ihre Biosynthese verändert das Sterolgerüst.",
+          "C": "UVB-Licht leitet in der Haut die Umwandlung von 7-Dehydrocholesterin zu Prävitamin D3 ein. 7-Dehydrocholesterin ist die präzisierte unmittelbare Vorstufe.",
+          "D": "Es ist ein niedermolekularer lipophiler Stoff."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Vitamin D, Vitamin A, Tetraterpen, Ubiquinon.",
+      "options": [
+        {
+          "text": "Ubiquinon ist ein wasserlösliches Polypeptid ohne lipophilen Anteil.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Unverändertes Cholesterin ist im Haut-Photostart ohne weitere Vorstufe das einzige direkte Substrat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "β-Carotin gehört wegen seiner Farbe zu den C5-Monoterpenen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Retinol und Retinal unterscheiden sich unter anderem durch Alkohol- beziehungsweise Aldehydfunktion.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ubiquinon besitzt einen redoxaktiven Chinonkopf und eine lipophile Isoprenoidseitenkette. Beide Strukturanteile unterstützen seine Membranfunktion. B: UVB-Licht leitet in der Haut die Umwandlung von 7-Dehydrocholesterin zu Prävitamin D3 ein. 7-Dehydrocholesterin ist die präzisierte unmittelbare Vorstufe. C: β-Carotin besitzt ein C40-Gerüst. Acht formale Isopreneinheiten ergeben C40. D: Oxidation verändert Alkohol zu Aldehyd. Quelle: Originalunterlagen, PDF-S. 5–6, 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Vitamin D"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin D"
+      ],
+      "questionGoal": "Vitamin D",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin D",
+        "correctReasoning": "Oxidation verändert Alkohol zu Aldehyd.",
+        "wrongAnswerExplanations": {
+          "A": "Ubiquinon besitzt einen redoxaktiven Chinonkopf und eine lipophile Isoprenoidseitenkette. Beide Strukturanteile unterstützen seine Membranfunktion.",
+          "B": "UVB-Licht leitet in der Haut die Umwandlung von 7-Dehydrocholesterin zu Prävitamin D3 ein. 7-Dehydrocholesterin ist die präzisierte unmittelbare Vorstufe.",
+          "C": "β-Carotin besitzt ein C40-Gerüst. Acht formale Isopreneinheiten ergeben C40.",
+          "D": "Oxidation verändert Alkohol zu Aldehyd."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Vitamin A, Terpenoidvielfalt, Mevalonatweg, Steroidgerüst.",
+      "options": [
+        {
+          "text": "Das typische Steroidgrundgerüst besteht aus vier miteinander verbundenen Ringen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Retinol und Retinal unterscheiden sich unter anderem durch Alkohol- beziehungsweise Aldehydfunktion.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mevalonat ist das fertige viergliedrige Ringsystem eines Steroidhormons.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zahl der C5-Bausteine allein legt bereits jede Ringverknüpfung eines Terpens eindeutig fest.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Drei Sechsringe und ein Fünfring bilden den Kern. B: Oxidation verändert Alkohol zu Aldehyd. C: Mevalonat ist ein Zwischenprodukt der Bildung aktivierter Isoprenbausteine, nicht das fertige Steroidgerüst. D: Verknüpfung, Cyclisierung und weitere Modifikation können bei ähnlicher Herkunft verschiedene Strukturen erzeugen. Quelle: Originalunterlagen, PDF-S. 3–5, 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Vitamin A"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin A"
+      ],
+      "questionGoal": "Vitamin A",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin A",
+        "correctReasoning": "Drei Sechsringe und ein Fünfring bilden den Kern. Oxidation verändert Alkohol zu Aldehyd.",
+        "wrongAnswerExplanations": {
+          "A": "Drei Sechsringe und ein Fünfring bilden den Kern.",
+          "B": "Oxidation verändert Alkohol zu Aldehyd.",
+          "C": "Mevalonat ist ein Zwischenprodukt der Bildung aktivierter Isoprenbausteine, nicht das fertige Steroidgerüst.",
+          "D": "Verknüpfung, Cyclisierung und weitere Modifikation können bei ähnlicher Herkunft verschiedene Strukturen erzeugen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Terpenoidvielfalt, Cholesterinpolarität, Aktivierte Bausteine, Cholesterin.",
+      "options": [
+        {
+          "text": "Gemeinsame C5-Bausteine können zu strukturell sehr verschiedenen Isoprenoiden führen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die OH-Gruppe liefert einen polaren Anteil des ansonsten stark lipophilen Cholesterins.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "IPP und DMAPP sind zwei Namen für unverändertes Cholesterin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Cholesterin ist definitionsgemäss ein Triacylglycerid mit drei Fettsäuren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Verknüpfung, Cyclisierung und Modifikation erzeugen Vielfalt. B: Die einzelne OH-Gruppe ist ein wichtiges Polaritätsmerkmal. C: IPP und DMAPP sind aktivierte C5-Bausteine der Isoprenoidbiosynthese. Sie sind wesentlich kleinere Vorstufen. D: Cholesterin ist ein Membranbestandteil und Vorläufer von Steroidhormonen. Das Steroidgerüst unterscheidet sich grundlegend. Quelle: Originalunterlagen, PDF-S. 3–5, 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Terpenoidvielfalt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Terpenoidvielfalt"
+      ],
+      "questionGoal": "Terpenoidvielfalt",
+      "structuredExplanation": {
+        "coreIdea": "Terpenoidvielfalt",
+        "correctReasoning": "Verknüpfung, Cyclisierung und Modifikation erzeugen Vielfalt. Die einzelne OH-Gruppe ist ein wichtiges Polaritätsmerkmal.",
+        "wrongAnswerExplanations": {
+          "A": "Verknüpfung, Cyclisierung und Modifikation erzeugen Vielfalt.",
+          "B": "Die einzelne OH-Gruppe ist ein wichtiges Polaritätsmerkmal.",
+          "C": "IPP und DMAPP sind aktivierte C5-Bausteine der Isoprenoidbiosynthese. Sie sind wesentlich kleinere Vorstufen.",
+          "D": "Cholesterin ist ein Membranbestandteil und Vorläufer von Steroidhormonen. Das Steroidgerüst unterscheidet sich grundlegend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Cholesterinpolarität, Membranredox, Menthol, Isopreneinheit.",
+      "options": [
+        {
+          "text": "Der formale Terpenaufbau lässt sich häufig in C5-Einheiten gliedern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein redoxaktiver Kopf schliesst grundsätzlich jeden lipophilen Molekülanteil aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Menthol ist ein sauerstoffhaltiges Monoterpenderivat mit Alkoholgruppe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die OH-Gruppe liefert einen polaren Anteil des ansonsten stark lipophilen Cholesterins.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die formale Einheit besitzt fünf C-Atome. B: Eine lipophile Seitenkette kann einen Redoxcofaktor in Membranen verankern. Ubiquinon verbindet beide Eigenschaften. C: Sein Grundgerüst ist monoterpenoid. D: Die einzelne OH-Gruppe ist ein wichtiges Polaritätsmerkmal. Quelle: Originalunterlagen, PDF-S. 3–4, 6, 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Cholesterinpolarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cholesterinpolarität"
+      ],
+      "questionGoal": "Cholesterinpolarität",
+      "structuredExplanation": {
+        "coreIdea": "Cholesterinpolarität",
+        "correctReasoning": "Die formale Einheit besitzt fünf C-Atome. Sein Grundgerüst ist monoterpenoid. Die einzelne OH-Gruppe ist ein wichtiges Polaritätsmerkmal.",
+        "wrongAnswerExplanations": {
+          "A": "Die formale Einheit besitzt fünf C-Atome.",
+          "B": "Eine lipophile Seitenkette kann einen Redoxcofaktor in Membranen verankern. Ubiquinon verbindet beide Eigenschaften.",
+          "C": "Sein Grundgerüst ist monoterpenoid.",
+          "D": "Die einzelne OH-Gruppe ist ein wichtiges Polaritätsmerkmal."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Membranredox, Gerüst und Funktion, Tocopherol, Monoterpen.",
+      "options": [
+        {
+          "text": "Ein Monoterpen besteht typischerweise aus nur einer C1-Einheit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "α-Tocopherol ist das Protein des mitochondrialen Komplexes I.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Geringe Änderungen der funktionellen Gruppen eines Steroids können seine biologische Wirkung verändern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein redoxaktiver Kopf schliesst grundsätzlich jeden lipophilen Molekülanteil aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Monoterpengerüst enthält typischerweise zehn Kohlenstoffatome. Zwei C5-Bausteine ergeben C10. B: α-Tocopherol gehört zu Vitamin E und besitzt antioxidative Redoxfunktion. Es ist ein niedermolekularer lipophiler Stoff. C: Bindung und Metabolismus hängen von Details ab. D: Eine lipophile Seitenkette kann einen Redoxcofaktor in Membranen verankern. Ubiquinon verbindet beide Eigenschaften. Quelle: Originalunterlagen, PDF-S. 4–6, 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Membranredox"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranredox"
+      ],
+      "questionGoal": "Membranredox",
+      "structuredExplanation": {
+        "coreIdea": "Membranredox",
+        "correctReasoning": "Bindung und Metabolismus hängen von Details ab.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Monoterpengerüst enthält typischerweise zehn Kohlenstoffatome. Zwei C5-Bausteine ergeben C10.",
+          "B": "α-Tocopherol gehört zu Vitamin E und besitzt antioxidative Redoxfunktion. Es ist ein niedermolekularer lipophiler Stoff.",
+          "C": "Bindung und Metabolismus hängen von Details ab.",
+          "D": "Eine lipophile Seitenkette kann einen Redoxcofaktor in Membranen verankern. Ubiquinon verbindet beide Eigenschaften."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc10_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC10",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Gerüst und Funktion, Isopreneinheit, Ubiquinon, Diterpen.",
+      "options": [
+        {
+          "text": "Geringe Änderungen der funktionellen Gruppen eines Steroids können seine biologische Wirkung verändern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Isopreneinheit enthält definitionsgemäss zehn Kohlenstoffatome.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Retinol besitzt ein C20-Gerüst und wird den Diterpenoiden zugeordnet.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ubiquinon ist ein wasserlösliches Polypeptid ohne lipophilen Anteil.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Bindung und Metabolismus hängen von Details ab. B: Der formale Terpenaufbau lässt sich häufig in C5-Einheiten gliedern. Die formale Einheit besitzt fünf C-Atome. C: Vier formale C5-Einheiten ergeben C20. D: Ubiquinon besitzt einen redoxaktiven Chinonkopf und eine lipophile Isoprenoidseitenkette. Beide Strukturanteile unterstützen seine Membranfunktion. Quelle: Originalunterlagen, PDF-S. 3, 5–6, 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC10",
+        "Gerüst und Funktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gerüst und Funktion"
+      ],
+      "questionGoal": "Gerüst und Funktion",
+      "structuredExplanation": {
+        "coreIdea": "Gerüst und Funktion",
+        "correctReasoning": "Bindung und Metabolismus hängen von Details ab. Vier formale C5-Einheiten ergeben C20.",
+        "wrongAnswerExplanations": {
+          "A": "Bindung und Metabolismus hängen von Details ab.",
+          "B": "Der formale Terpenaufbau lässt sich häufig in C5-Einheiten gliedern. Die formale Einheit besitzt fünf C-Atome.",
+          "C": "Vier formale C5-Einheiten ergeben C20.",
+          "D": "Ubiquinon besitzt einen redoxaktiven Chinonkopf und eine lipophile Isoprenoidseitenkette. Beide Strukturanteile unterstützen seine Membranfunktion."
+        }
+      }
+    }
+  ]
+}

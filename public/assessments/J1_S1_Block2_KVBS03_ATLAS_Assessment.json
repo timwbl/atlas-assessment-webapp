@@ -1,0 +1,1319 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs03_20261102",
+  "lectureCode": "KVBS03",
+  "title": "Normalverteilung, Standardfehler und Konfidenzintervalle",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS03 - Normalverteilung, Standartfehler und 95% Vertrauensintervall. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Präzisierung der Folien: 95%-Überdeckung gilt für das wiederholte Verfahren, nicht als nachträgliche frequentistische Wahrscheinlichkeit des festen Parameters im realisierten Intervall. Grenzwertsatz unter Unabhängigkeit und endlicher Varianz; synthetische Rechenbeispiele.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Logarithmen und logarithmische Skalen interpretieren."
+    },
+    {
+      "id": "lo2",
+      "text": "Normalverteilungen standardisieren und Flächen als Wahrscheinlichkeiten interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Stichprobenverteilung und zentralen Grenzwertsatz erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Standardfehler und Konfidenzintervall des Mittelwerts berechnen."
+    },
+    {
+      "id": "lo5",
+      "text": "Präzision, Streuung und frequentistische Intervallüberdeckung unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs03_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Eine normalverteilte Messgrösse hat μ = 100 und σ = 15. Welcher z-Wert gehört zu x = 130?",
+      "options": [
+        {
+          "text": "2",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "15",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "8,67",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,5",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "30",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: z = (130−100)/15 = 2. B: Dies ist die Standardabweichung in Originaleinheiten. C: Beim Standardisieren muss zuerst der Mittelwert abgezogen werden. D: Der Quotient wurde umgekehrt. E: Dies ist die unstandardisierte Differenz. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Standardisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Standardisierung"
+      ],
+      "questionGoal": "Standardisierung",
+      "structuredExplanation": {
+        "coreIdea": "Standardisierung",
+        "correctReasoning": "z = (130−100)/15 = 2.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist die Standardabweichung in Originaleinheiten.",
+          "C": "Beim Standardisieren muss zuerst der Mittelwert abgezogen werden.",
+          "D": "Der Quotient wurde umgekehrt.",
+          "E": "Dies ist die unstandardisierte Differenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Z sei standardnormalverteilt. Wie gross ist P(Z > 1,96) ungefähr?",
+      "options": [
+        {
+          "text": "2,5 %",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "97,5 %",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "50 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "95 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5 %",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 95 % liegen zentral, die restlichen 5 % verteilen sich symmetrisch auf beide Enden. B: Dies ist P(Z ≤ 1,96). C: Dies wäre die Fläche oberhalb von null. D: Dies ist die zentrale Fläche zwischen −1,96 und +1,96. E: Dies ist die Summe beider äusseren Bereiche. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Normalverteilungstail"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Normalverteilungstail"
+      ],
+      "questionGoal": "Normalverteilungstail",
+      "structuredExplanation": {
+        "coreIdea": "Normalverteilungstail",
+        "correctReasoning": "95 % liegen zentral, die restlichen 5 % verteilen sich symmetrisch auf beide Enden.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist P(Z ≤ 1,96).",
+          "C": "Dies wäre die Fläche oberhalb von null.",
+          "D": "Dies ist die zentrale Fläche zwischen −1,96 und +1,96.",
+          "E": "Dies ist die Summe beider äusseren Bereiche."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Zum Thema «Flächen und Dichte einer Normalverteilung»: Beurteilen Sie Aussagen zur Normalverteilung.",
+      "options": [
+        {
+          "text": "Ungefähr 68 % liegen innerhalb einer Standardabweichung um μ.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Dichtehöhe bei einem Wert ist dessen Punktwahrscheinlichkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein beliebiges normalverteiltes Merkmal hat zwingend den Mittelwert null.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Dichtehöhe am Mittelwert entspricht der Wahrscheinlichkeit, exakt den Mittelwert zu beobachten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ist die zentrale Normalfläche zwischen den z-Werten −1 und +1. B: Bei einer kontinuierlichen Verteilung sind Flächen, nicht einzelne Dichtehöhen, Wahrscheinlichkeiten. C: Nur die Standardnormalverteilung ist auf μ = 0 standardisiert. D: Bei stetiger Verteilung hat ein einzelner exakter Wert Wahrscheinlichkeit null. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Normalflächen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Normalflächen"
+      ],
+      "questionGoal": "Normalflächen",
+      "structuredExplanation": {
+        "coreIdea": "Normalflächen",
+        "correctReasoning": "Dies ist die zentrale Normalfläche zwischen den z-Werten −1 und +1.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die zentrale Normalfläche zwischen den z-Werten −1 und +1.",
+          "B": "Bei einer kontinuierlichen Verteilung sind Flächen, nicht einzelne Dichtehöhen, Wahrscheinlichkeiten.",
+          "C": "Nur die Standardnormalverteilung ist auf μ = 0 standardisiert.",
+          "D": "Bei stetiger Verteilung hat ein einzelner exakter Wert Wahrscheinlichkeit null."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Für X gelten μ = 50 und σ = 8. Welcher Messwert entspricht z = −1,5?",
+      "options": [
+        {
+          "text": "38",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "6,25",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "62",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−12",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "48,5",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: x = 50−1,5×8 = 38. B: Der Quotient μ/σ liefert nicht den gesuchten Messwert. C: Dies entspricht z = +1,5. D: Dies ist nur die Abweichung vom Mittelwert. E: Dabei wurde die Standardabweichung nicht berücksichtigt. Quelle: Originalunterlagen, PDF-S. 12,16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Rücktransformation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rücktransformation"
+      ],
+      "questionGoal": "Rücktransformation",
+      "structuredExplanation": {
+        "coreIdea": "Rücktransformation",
+        "correctReasoning": "x = 50−1,5×8 = 38.",
+        "wrongAnswerExplanations": {
+          "B": "Der Quotient μ/σ liefert nicht den gesuchten Messwert.",
+          "C": "Dies entspricht z = +1,5.",
+          "D": "Dies ist nur die Abweichung vom Mittelwert.",
+          "E": "Dabei wurde die Standardabweichung nicht berücksichtigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Auf einer dekadischen Log-Skala liegen 10 und 100 eine Einheit auseinander. Welcher Bereich hat denselben Abstand?",
+      "options": [
+        {
+          "text": "100 bis 190",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "100 bis 1000",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "10 bis 20",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 bis 200",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1 bis 2",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gleiche absolute Differenzen ergeben keine gleichen Log-Abstände. B: Beide Bereiche entsprechen einer Verzehnfachung. C: Auch hier beträgt der Faktor nur 2. D: Eine Verdoppelung ist kleiner als eine Verzehnfachung. E: Der Faktor 2 ergibt denselben Abstand wie 100 bis 200, nicht wie 10 bis 100. Quelle: Originalunterlagen, PDF-S. 4–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Logarithmische Abstände"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Logarithmische Abstände"
+      ],
+      "questionGoal": "Logarithmische Abstände",
+      "structuredExplanation": {
+        "coreIdea": "Logarithmische Abstände",
+        "correctReasoning": "Beide Bereiche entsprechen einer Verzehnfachung.",
+        "wrongAnswerExplanations": {
+          "A": "Gleiche absolute Differenzen ergeben keine gleichen Log-Abstände.",
+          "C": "Auch hier beträgt der Faktor nur 2.",
+          "D": "Eine Verdoppelung ist kleiner als eine Verzehnfachung.",
+          "E": "Der Faktor 2 ergibt denselben Abstand wie 100 bis 200, nicht wie 10 bis 100."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Für positive x und die Basis 10: Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "log(100) = 2.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "log(1/x) = −log(x).",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Für positive x gilt log(x²) = 2 log(x).",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "log(a+b) = log(a)+log(b) für alle positiven a und b.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: 10 hoch 2 ist 100. B: Der Kehrwert entspricht dem Exponenten −1. C: Die Potenzregel zieht den Exponenten als Faktor vor den Logarithmus. D: Die Summenregel gilt für Produkte, nicht für Summen. Quelle: Originalunterlagen, PDF-S. 4–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Logarithmengesetze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Logarithmengesetze"
+      ],
+      "questionGoal": "Logarithmengesetze",
+      "structuredExplanation": {
+        "coreIdea": "Logarithmengesetze",
+        "correctReasoning": "10 hoch 2 ist 100. Der Kehrwert entspricht dem Exponenten −1. Die Potenzregel zieht den Exponenten als Faktor vor den Logarithmus.",
+        "wrongAnswerExplanations": {
+          "A": "10 hoch 2 ist 100.",
+          "B": "Der Kehrwert entspricht dem Exponenten −1.",
+          "C": "Die Potenzregel zieht den Exponenten als Faktor vor den Logarithmus.",
+          "D": "Die Summenregel gilt für Produkte, nicht für Summen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "36 unabhängige Beobachtungen haben eine Stichprobenstandardabweichung von 12. Wie gross ist der geschätzte Standardfehler ihres Mittelwerts?",
+      "options": [
+        {
+          "text": "6",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "12",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,33",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "72",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist √n, nicht der Standardfehler. B: SE = 12/√36 = 2. C: Dies ist die Streuung der Einzelwerte. D: Hier wurde durch n statt durch √n geteilt. E: Der Standardfehler wird nicht mit √n multipliziert. Quelle: Originalunterlagen, PDF-S. 33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Standardfehler berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Standardfehler berechnen"
+      ],
+      "questionGoal": "Standardfehler berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Standardfehler berechnen",
+        "correctReasoning": "SE = 12/√36 = 2.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist √n, nicht der Standardfehler.",
+          "C": "Dies ist die Streuung der Einzelwerte.",
+          "D": "Hier wurde durch n statt durch √n geteilt.",
+          "E": "Der Standardfehler wird nicht mit √n multipliziert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Die Stichprobengrösse steigt von 25 auf 100, die Einzelwertstandardabweichung bleibt gleich. Wie verändert sich SE des Mittelwerts?",
+      "options": [
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er sinkt auf null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er viertelt sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er halbiert sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehr unabhängige Beobachtungen verringern den Standardfehler. B: Auch bei 100 Beobachtungen bleibt Stichprobenunsicherheit. C: Die Stichprobengrösse geht in den Standardfehler ein. D: SE ist proportional zu 1/√n, nicht zu 1/n. E: √n verdoppelt sich. Quelle: Originalunterlagen, PDF-S. 33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Stichprobengrösse und SE"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stichprobengrösse und SE"
+      ],
+      "questionGoal": "Stichprobengrösse und SE",
+      "structuredExplanation": {
+        "coreIdea": "Stichprobengrösse und SE",
+        "correctReasoning": "√n verdoppelt sich.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr unabhängige Beobachtungen verringern den Standardfehler.",
+          "B": "Auch bei 100 Beobachtungen bleibt Stichprobenunsicherheit.",
+          "C": "Die Stichprobengrösse geht in den Standardfehler ein.",
+          "D": "SE ist proportional zu 1/√n, nicht zu 1/n."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Zum Thema «Streuung der Einzelwerte und Standardfehler des Mittelwerts»: Beurteilen Sie Aussagen zu SD und SE.",
+      "options": [
+        {
+          "text": "Für unabhängige gleichverteilte Werte gilt SE des Mittelwerts = σ/√n.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine kleinere SD muss bei beliebig kleinerem n immer einen kleineren SE bedeuten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "SE und SD sind grundsätzlich dieselbe Kennzahl.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "SD beschreibt die Streuung der Einzelbeobachtungen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Mittelwertbildung reduziert die Varianz auf σ²/n. B: SE hängt zugleich von SD und n ab. C: SE beschreibt die Streuung einer Schätzgrösse über wiederholte Stichproben. D: Sie bezieht sich auf die Verteilung der Messwerte. Quelle: Originalunterlagen, PDF-S. 21,33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "SD und SE"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SD und SE"
+      ],
+      "questionGoal": "SD und SE",
+      "structuredExplanation": {
+        "coreIdea": "SD und SE",
+        "correctReasoning": "Die Mittelwertbildung reduziert die Varianz auf σ²/n. Sie bezieht sich auf die Verteilung der Messwerte.",
+        "wrongAnswerExplanations": {
+          "A": "Die Mittelwertbildung reduziert die Varianz auf σ²/n.",
+          "B": "SE hängt zugleich von SD und n ab.",
+          "C": "SE beschreibt die Streuung einer Schätzgrösse über wiederholte Stichproben.",
+          "D": "Sie bezieht sich auf die Verteilung der Messwerte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Ein Mittelwert ist 100, sein SE ist 2. Welche Grenzen ergeben sich mit der Normalapproximation x̄ ± 1,96 SE?",
+      "options": [
+        {
+          "text": "96,08 bis 103,92",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "99,02 bis 100,98",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "96 bis 104 exakt nach dem Faktor 1,96",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "98 bis 102",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "92,16 bis 107,84",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die halbe Breite ist 1,96×2 = 3,92. B: SE wurde dividiert statt multipliziert. C: Die gerundete Faustregel ±2 SE ist nicht die exakte Rechnung mit 1,96. D: Dies entspricht nur ±1 SE. E: Hier wurde die halbe Breite nochmals verdoppelt. Quelle: Originalunterlagen, PDF-S. 42–43.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Konfidenzintervall berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konfidenzintervall berechnen"
+      ],
+      "questionGoal": "Konfidenzintervall berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Konfidenzintervall berechnen",
+        "correctReasoning": "Die halbe Breite ist 1,96×2 = 3,92.",
+        "wrongAnswerExplanations": {
+          "B": "SE wurde dividiert statt multipliziert.",
+          "C": "Die gerundete Faustregel ±2 SE ist nicht die exakte Rechnung mit 1,96.",
+          "D": "Dies entspricht nur ±1 SE.",
+          "E": "Hier wurde die halbe Breite nochmals verdoppelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Was bezeichnet die Stichprobenverteilung des Mittelwerts?",
+      "options": [
+        {
+          "text": "Die Verteilung aller unbekannten Populationsmittelwerte nach jeder Messung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine nach Grösse sortierte Liste der Originalwerte.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Verteilung der Mittelwerte über gedanklich wiederholte Stichproben gleicher Grösse.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Verteilung der Stichprobengrössen verschiedener Studien.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Häufigkeitsverteilung der Einzelwerte innerhalb genau einer Stichprobe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Populationsparameter bleibt im frequentistischen Modell fest. B: Sortieren erzeugt keine Verteilung wiederholter Mittelwerte. C: Jede Stichprobe liefert einen neuen Mittelwert. D: Hier variiert n statt der berechneten Schätzgrösse. E: Dies ist die empirische Einzelwertverteilung. Quelle: Originalunterlagen, PDF-S. 21,23–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Stichprobenverteilung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stichprobenverteilung"
+      ],
+      "questionGoal": "Stichprobenverteilung",
+      "structuredExplanation": {
+        "coreIdea": "Stichprobenverteilung",
+        "correctReasoning": "Jede Stichprobe liefert einen neuen Mittelwert.",
+        "wrongAnswerExplanations": {
+          "A": "Der Populationsparameter bleibt im frequentistischen Modell fest.",
+          "B": "Sortieren erzeugt keine Verteilung wiederholter Mittelwerte.",
+          "D": "Hier variiert n statt der berechneten Schätzgrösse.",
+          "E": "Dies ist die empirische Einzelwertverteilung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q12",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Zum Thema «zentraler Grenzwertsatz bei unabhängigen identisch verteilten Werten»: Beurteilen Sie Aussagen zum üblichen zentralen Grenzwertsatz für unabhängige identisch verteilte Werte mit endlicher Varianz.",
+      "options": [
+        {
+          "text": "Starke Schiefe kann grössere Stichproben für eine gute Approximation erfordern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Dadurch werden die einzelnen Beobachtungen selbst normalverteilt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei genügend grossem n ist die standardisierte Mittelwertverteilung näherungsweise normal.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Satz erlaubt, beliebige Abhängigkeiten der Werte zu ignorieren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es gibt keine universell ausreichende kleine Stichprobengrösse. B: Ihre ursprüngliche Verteilung ändert sich durch das Stichprobenziehen nicht. C: Die Annäherung betrifft die Verteilung des Mittelwerts. D: Abhängige Daten benötigen passende Voraussetzungen und Varianzmodelle. Quelle: Originalunterlagen, PDF-S. 35–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Zentraler Grenzwertsatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zentraler Grenzwertsatz"
+      ],
+      "questionGoal": "Zentraler Grenzwertsatz",
+      "structuredExplanation": {
+        "coreIdea": "Zentraler Grenzwertsatz",
+        "correctReasoning": "Es gibt keine universell ausreichende kleine Stichprobengrösse. Die Annäherung betrifft die Verteilung des Mittelwerts.",
+        "wrongAnswerExplanations": {
+          "A": "Es gibt keine universell ausreichende kleine Stichprobengrösse.",
+          "B": "Ihre ursprüngliche Verteilung ändert sich durch das Stichprobenziehen nicht.",
+          "C": "Die Annäherung betrifft die Verteilung des Mittelwerts.",
+          "D": "Abhängige Daten benötigen passende Voraussetzungen und Varianzmodelle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q13",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Welche Aussage beschreibt ein frequentistisches 95%-Konfidenzintervall am präzisesten?",
+      "options": [
+        {
+          "text": "Die Wahrscheinlichkeit für einen zufälligen Messfehler ist genau 5 %.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes einzelne berechnete Intervall enthält den Parameter garantiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der feste Parameter ändert seinen Wert mit 95 % Wahrscheinlichkeit nach jeder Stichprobe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "95 % aller Einzelwerte liegen im berechneten Intervall.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Bei oft wiederholter gleicher Stichprobenziehung überdecken ungefähr 95 % der so berechneten Intervalle den festen Parameter.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Überdeckungsrate beschreibt keine individuelle Fehlerursache. B: Auch ein korrektes Verfahren kann den Parameter verfehlen. C: Der Parameter ist im Modell fest. D: Ein Mittelwertintervall ist kein Referenzintervall für Einzelwerte. E: 95 % charakterisiert das Intervallverfahren. Quelle: Originalunterlagen, PDF-S. 44–45.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "95-Prozent-Überdeckung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "95-Prozent-Überdeckung"
+      ],
+      "questionGoal": "95-Prozent-Überdeckung",
+      "structuredExplanation": {
+        "coreIdea": "95-Prozent-Überdeckung",
+        "correctReasoning": "95 % charakterisiert das Intervallverfahren.",
+        "wrongAnswerExplanations": {
+          "A": "Die Überdeckungsrate beschreibt keine individuelle Fehlerursache.",
+          "B": "Auch ein korrektes Verfahren kann den Parameter verfehlen.",
+          "C": "Der Parameter ist im Modell fest.",
+          "D": "Ein Mittelwertintervall ist kein Referenzintervall für Einzelwerte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q14",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Zum Thema «frequentistisches Konfidenzintervall für den Mittelwert»: Beurteilen Sie die Interpretation eines Konfidenzintervalls für μ.",
+      "options": [
+        {
+          "text": "Es umfasst definitionsgemäss 95 % der Population.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es beschreibt die Präzision der Mittelwertschätzung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine enge Schätzung beseitigt automatisch systematische Verzerrung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein realisiertes Intervall enthält μ entweder oder enthält es nicht.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dafür wäre ein anderes, die Einzelwertverteilung betreffendes Intervall nötig. B: Schmalere Intervalle bedeuten bei gleichem Verfahren höhere Präzision. C: Ein präziser Schätzer kann dennoch verzerrt sein. D: Der feste Parameter und die beobachteten Grenzen stehen nach der Berechnung fest. Quelle: Originalunterlagen, PDF-S. 42–45.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Intervallarten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intervallarten"
+      ],
+      "questionGoal": "Intervallarten",
+      "structuredExplanation": {
+        "coreIdea": "Intervallarten",
+        "correctReasoning": "Schmalere Intervalle bedeuten bei gleichem Verfahren höhere Präzision. Der feste Parameter und die beobachteten Grenzen stehen nach der Berechnung fest.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür wäre ein anderes, die Einzelwertverteilung betreffendes Intervall nötig.",
+          "B": "Schmalere Intervalle bedeuten bei gleichem Verfahren höhere Präzision.",
+          "C": "Ein präziser Schätzer kann dennoch verzerrt sein.",
+          "D": "Der feste Parameter und die beobachteten Grenzen stehen nach der Berechnung fest."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Für dieselben Daten wird statt eines 95%- ein 99%-Konfidenzintervall mit Normalapproximation berechnet. Was geschieht?",
+      "options": [
+        {
+          "text": "Der beobachtete Mittelwert steigt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Intervall wird schmaler.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Intervall bleibt zwingend gleich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Intervall wird breiter.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der SE sinkt automatisch.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Konfidenzniveau verändert die Daten nicht. B: Eine höhere Überdeckung erfordert mehr Breite. C: Der kritische Faktor ändert sich. D: Der kritische Faktor steigt von ungefähr 1,96 auf 2,58. E: SE hängt hier von SD und n ab. Quelle: Originalunterlagen, PDF-S. 14,43.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Konfidenzniveau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konfidenzniveau"
+      ],
+      "questionGoal": "Konfidenzniveau",
+      "structuredExplanation": {
+        "coreIdea": "Konfidenzniveau",
+        "correctReasoning": "Der kritische Faktor steigt von ungefähr 1,96 auf 2,58.",
+        "wrongAnswerExplanations": {
+          "A": "Das Konfidenzniveau verändert die Daten nicht.",
+          "B": "Eine höhere Überdeckung erfordert mehr Breite.",
+          "C": "Der kritische Faktor ändert sich.",
+          "E": "SE hängt hier von SD und n ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Zum Thema «Stichprobenvariation und Präzision»: Beurteilen Sie Aussagen zur Stichprobenvariation.",
+      "options": [
+        {
+          "text": "Grössere unabhängige Stichproben liefern im Mittel präzisere Mittelwertschätzungen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Wiederholte Stichproben können unterschiedliche Mittelwerte ergeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein grosser Stichprobenumfang garantiert Repräsentativität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede grössere Stichprobe muss näher an μ liegen als jede kleinere.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Mittelwertverteilung ist bei gleicher Populationsvarianz enger. B: Dies ist zufällige Stichprobenvariation. C: Eine verzerrte Auswahl kann auch bei grossem n bestehen bleiben. D: Eine einzelne Realisierung kann zufällig weiter entfernt sein. Quelle: Originalunterlagen, PDF-S. 23–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Zufällige Präzision"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zufällige Präzision"
+      ],
+      "questionGoal": "Zufällige Präzision",
+      "structuredExplanation": {
+        "coreIdea": "Zufällige Präzision",
+        "correctReasoning": "Ihre Mittelwertverteilung ist bei gleicher Populationsvarianz enger. Dies ist zufällige Stichprobenvariation.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Mittelwertverteilung ist bei gleicher Populationsvarianz enger.",
+          "B": "Dies ist zufällige Stichprobenvariation.",
+          "C": "Eine verzerrte Auswahl kann auch bei grossem n bestehen bleiben.",
+          "D": "Eine einzelne Realisierung kann zufällig weiter entfernt sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Die gesamte Breite eines normalapproximierten 95%-Intervalls ist 7,84. Welcher SE wurde verwendet?",
+      "options": [
+        {
+          "text": "3,92",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1,96",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "7,84",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "4",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die halbe Intervallbreite. B: Dies ist der kritische z-Wert. C: Die gesamte Breite ist nicht der SE. D: Gesamtbreite = 2×1,96×SE; somit SE = 7,84/3,92. E: Hier wurde nur durch 1,96 statt durch 3,92 geteilt. Quelle: Originalunterlagen, PDF-S. 43.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Intervallbreite rückrechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intervallbreite rückrechnen"
+      ],
+      "questionGoal": "Intervallbreite rückrechnen",
+      "structuredExplanation": {
+        "coreIdea": "Intervallbreite rückrechnen",
+        "correctReasoning": "Gesamtbreite = 2×1,96×SE; somit SE = 7,84/3,92.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die halbe Intervallbreite.",
+          "B": "Dies ist der kritische z-Wert.",
+          "C": "Die gesamte Breite ist nicht der SE.",
+          "E": "Hier wurde nur durch 1,96 statt durch 3,92 geteilt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Populationsparameter und Stichprobenstatistik».",
+      "options": [
+        {
+          "text": "Ein Stichprobenanteil kann einen Populationsanteil schätzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "μ bezeichnet häufig den Populationsmittelwert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Kenntnis einer einzelnen Stichprobe macht alle Populationsparameter exakt bekannt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "x̄ muss in jeder Zufallsstichprobe gleich sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine beobachtete Statistik dient zur Parameterschätzung. B: Es ist ein Parameter der Grundgesamtheit. C: Die Inferenz bleibt mit Unsicherheit verbunden. D: Der Stichprobenmittelwert schwankt. Quelle: Originalunterlagen, PDF-S. 18–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Parameter und Statistik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Parameter und Statistik"
+      ],
+      "questionGoal": "Parameter und Statistik",
+      "structuredExplanation": {
+        "coreIdea": "Parameter und Statistik",
+        "correctReasoning": "Eine beobachtete Statistik dient zur Parameterschätzung. Es ist ein Parameter der Grundgesamtheit.",
+        "wrongAnswerExplanations": {
+          "A": "Eine beobachtete Statistik dient zur Parameterschätzung.",
+          "B": "Es ist ein Parameter der Grundgesamtheit.",
+          "C": "Die Inferenz bleibt mit Unsicherheit verbunden.",
+          "D": "Der Stichprobenmittelwert schwankt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "100 Werte stammen aus je 10 eng zusammenhängenden Messungen an 10 Personen. Welche Sorge betrifft SE = SD/√100 am unmittelbarsten?",
+      "options": [
+        {
+          "text": "Die Werte werden durch die Wiederholung nominal.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Standardabweichung muss dann exakt null sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Nenner muss ohne weitere Annahmen immer exakt √10 sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Mittelwert kann grundsätzlich nicht mehr ausgerechnet werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Positive Abhängigkeit innerhalb einer Person kann die Unsicherheit gegenüber dieser Rechnung erhöhen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Datentyp ändert sich dadurch nicht. B: Abhängigkeit beseitigt die Messwertstreuung nicht. C: Die passende Varianz hängt von der tatsächlichen Abhängigkeitsstruktur ab. D: Die arithmetische Berechnung bleibt möglich; betroffen ist die Unsicherheitsmodellierung. E: 100 korrelierte Werte tragen weniger unabhängige Information als 100 unabhängige Werte. Quelle: Originalunterlagen, PDF-S. 33,41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Abhängige Messungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abhängige Messungen"
+      ],
+      "questionGoal": "Abhängige Messungen",
+      "structuredExplanation": {
+        "coreIdea": "Abhängige Messungen",
+        "correctReasoning": "100 korrelierte Werte tragen weniger unabhängige Information als 100 unabhängige Werte.",
+        "wrongAnswerExplanations": {
+          "A": "Der Datentyp ändert sich dadurch nicht.",
+          "B": "Abhängigkeit beseitigt die Messwertstreuung nicht.",
+          "C": "Die passende Varianz hängt von der tatsächlichen Abhängigkeitsstruktur ab.",
+          "D": "Die arithmetische Berechnung bleibt möglich; betroffen ist die Unsicherheitsmodellierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs03_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS03",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Log-Transformation und Verteilung von Mittelwerten».",
+      "options": [
+        {
+          "text": "Jede beliebige schiefe Verteilung wird durch Logarithmieren exakt normal.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Log-Transformation und eine Vergrösserung von n sind derselbe Vorgang.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein annähernd normalverteilter Mittelwert kann aus nicht normalverteilten Einzelwerten entstehen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Logarithmieren positiver rechtsschiefer Messwerte kann ihre Verteilung symmetrischer machen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Transformation garantiert keine bestimmte Verteilungsform. B: Die eine verändert Werte, die andere die Informationsmenge und Mittelwertverteilung. C: Dies ist eine Aussage des Grenzwertsatzes unter geeigneten Voraussetzungen. D: Die Transformation staucht grosse Werte stärker. Quelle: Originalunterlagen, PDF-S. 9–10,35–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS03",
+        "Transformation und Grenzwertsatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transformation und Grenzwertsatz"
+      ],
+      "questionGoal": "Transformation und Grenzwertsatz",
+      "structuredExplanation": {
+        "coreIdea": "Transformation und Grenzwertsatz",
+        "correctReasoning": "Dies ist eine Aussage des Grenzwertsatzes unter geeigneten Voraussetzungen. Die Transformation staucht grosse Werte stärker.",
+        "wrongAnswerExplanations": {
+          "A": "Die Transformation garantiert keine bestimmte Verteilungsform.",
+          "B": "Die eine verändert Werte, die andere die Informationsmenge und Mittelwertverteilung.",
+          "C": "Dies ist eine Aussage des Grenzwertsatzes unter geeigneten Voraussetzungen.",
+          "D": "Die Transformation staucht grosse Werte stärker."
+        }
+      }
+    }
+  ]
+}

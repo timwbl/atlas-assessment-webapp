@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block1_kvp09_10_20261102",
+  "lectureCode": "KVP09/10",
+  "title": "Elektromagnetische Wellen I",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP09&10 - Elektromagnetische Wellen. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Teil A der gemeinsamen Lernziele: Erzeugung, Photonen/Materie, Röntgen. Zeitlich unveränderte gleichförmige Bewegung wird nicht pauschal als Strahlungsquelle ausgegeben. c0=299792458 m/s; Zahlenaufgaben verwenden angegebene Rundungen. Paarbildung im Kernfeld ab 1.022 MeV; Näherungsregeln zur Schwächung nicht universell. NIST XCOM und aktuelle SI-Konstanten ergänzend zur Fehlerkontrolle. Vorlesungsbasis HS2021 nach eigener Quellenangabe der bereitgestellten Folien; diese Herkunft bleibt trotz Zuordnung zum Lehrunterlagenbestand HS2025 sichtbar.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Spektrum, Frequenz, Wellenlänge und Energie elektromagnetischer Wellen quantitativ verknüpfen."
+    },
+    {
+      "id": "lo2",
+      "text": "Entstehung durch zeitlich veränderliche Ladungs-/Dipolverteilungen und transversale Ausbreitung erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Photoeffekt, Compton-Streuung, Paarbildung und ionisierende Wirkung unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Röntgenröhre, Brems- und charakteristische Strahlung sowie exponentielle Abschwächung erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvp09_10_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche Vakuumwellenlänge gehört zu f=100 MHz? c≈3.00×10⁸ m/s.",
+      "options": [
+        {
+          "text": "0.30 m.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "300 m.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3.0 m.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "30 m.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3.0 mm.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,30 m entspräche bei c=3×10⁸ m/s einer Frequenz von 1 GHz statt 100 MHz. B: 300 m gehört zu 1 MHz; die Umrechnung von 100 MHz zu 10⁸ Hz wurde hier verfehlt. C: λ=c/f=3×10⁸/10⁸=3 m; MHz bedeutet 10⁶ Hz. D: 30 m gehört zu 10 MHz und ist für die gegebene Frequenz um den Faktor zehn zu gross. E: 3,0 mm gehört zu 100 GHz und ist um den Faktor tausend kürzer als die gesuchte Wellenlänge. Quelle: Originalunterlagen, PDF-S. 4–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Radiowellenlänge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Radiowellenlänge"
+      ],
+      "questionGoal": "Radiowellenlänge",
+      "structuredExplanation": {
+        "coreIdea": "Radiowellenlänge",
+        "correctReasoning": "λ=c/f=3×10⁸/10⁸=3 m; MHz bedeutet 10⁶ Hz.",
+        "wrongAnswerExplanations": {
+          "A": "0,30 m entspräche bei c=3×10⁸ m/s einer Frequenz von 1 GHz statt 100 MHz.",
+          "B": "300 m gehört zu 1 MHz; die Umrechnung von 100 MHz zu 10⁸ Hz wurde hier verfehlt.",
+          "D": "30 m gehört zu 10 MHz und ist für die gegebene Frequenz um den Faktor zehn zu gross.",
+          "E": "3,0 mm gehört zu 100 GHz und ist um den Faktor tausend kürzer als die gesuchte Wellenlänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Ein blaues Photon hat λ=450 nm, ein rotes λ=650 nm. Welches ist energiereicher und warum?",
+      "options": [
+        {
+          "text": "Nur die Strahlintensität bestimmt die Energie eines einzelnen Photons.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das rote, weil seine Frequenz höher ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide sind gleich energiereich, weil c im Vakuum gleich ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das rote, weil längere Wellen mehr Energie pro Photon bedeuten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das blaue, weil E=hc/λ mit abnehmender λ steigt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Intensität hängt auch von der Zahl ankommender Photonen ab; sie legt die Energie eines einzelnen Photons nicht allein fest. B: Rot hat bei längerer Wellenlänge die kleinere Frequenz f=c/λ, nicht die grössere. C: Gleiches c bedeutet nicht gleiches f oder E; die Wellenlängen und damit die Photonenergien unterscheiden sich. D: Bei einzelnen Photonen gilt E=hc/λ; die längere rote Wellenlänge bedeutet deshalb geringere und nicht höhere Energie. E: Photonenergie hängt von Frequenz beziehungsweise invers von Wellenlänge ab; Intensität betrifft zusätzlich die Photonenzahl. Quelle: Originalunterlagen, PDF-S. 4–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Photonenvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photonenvergleich"
+      ],
+      "questionGoal": "Photonenvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Photonenvergleich",
+        "correctReasoning": "Photonenergie hängt von Frequenz beziehungsweise invers von Wellenlänge ab; Intensität betrifft zusätzlich die Photonenzahl.",
+        "wrongAnswerExplanations": {
+          "A": "Intensität hängt auch von der Zahl ankommender Photonen ab; sie legt die Energie eines einzelnen Photons nicht allein fest.",
+          "B": "Rot hat bei längerer Wellenlänge die kleinere Frequenz f=c/λ, nicht die grössere.",
+          "C": "Gleiches c bedeutet nicht gleiches f oder E; die Wellenlängen und damit die Photonenergien unterscheiden sich.",
+          "D": "Bei einzelnen Photonen gilt E=hc/λ; die längere rote Wellenlänge bedeutet deshalb geringere und nicht höhere Energie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche Photonenergie gehört näherungsweise zur Hα-Linie mit λ=656 nm? hc≈1240 eV·nm.",
+      "options": [
+        {
+          "text": "0.529 eV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "12.4 eV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "18.9 eV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1.89 eV.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "6.56 eV.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,529 ist ungefähr 656/1240; für Energie ist jedoch hc durch λ zu dividieren, nicht umgekehrt. B: 12,4 eV entspräche λ≈100 nm statt der roten Hα-Linie bei 656 nm. C: 18,9 eV ist um den Faktor zehn zu hoch und entspräche ungefähr 65,6 nm. D: E=1240/656≈1.89 eV. E: 6,56 eV folgt nicht aus 1240 eV·nm/656 nm; die Zahl der Wellenlänge darf nicht direkt als Energiewert umgedeutet werden. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Hα-Energie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hα-Energie"
+      ],
+      "questionGoal": "Hα-Energie",
+      "structuredExplanation": {
+        "coreIdea": "Hα-Energie",
+        "correctReasoning": "E=1240/656≈1.89 eV.",
+        "wrongAnswerExplanations": {
+          "A": "0,529 ist ungefähr 656/1240; für Energie ist jedoch hc durch λ zu dividieren, nicht umgekehrt.",
+          "B": "12,4 eV entspräche λ≈100 nm statt der roten Hα-Linie bei 656 nm.",
+          "C": "18,9 eV ist um den Faktor zehn zu hoch und entspräche ungefähr 65,6 nm.",
+          "E": "6,56 eV folgt nicht aus 1240 eV·nm/656 nm; die Zahl der Wellenlänge darf nicht direkt als Energiewert umgedeutet werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche Bewegung erzeugt im behandelten Antennenmodell elektromagnetische Strahlung?",
+      "options": [
+        {
+          "text": "Eine ruhende Punktladung ohne jede zeitliche Änderung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine zeitlich schwingende Ladungsverteilung mit beschleunigten Ladungen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein exakt konstantes elektrisches Dipolmoment ohne Rotation oder Schwingung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine gleichförmig bewegte freie Ladung im Vakuum als allgemeine Strahlungsquelle unabhängig von Beschleunigung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine überall konstante Gleichspannung ohne Einschaltvorgang und ohne Stromänderung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine ruhende Ladung erzeugt ein statisches elektrisches Feld, aber keine laufend abgestrahlte Antennenwelle. B: Der oszillierende Dipol enthält beschleunigte Ladungen; die pauschale Aussage jede Bewegung strahle wird damit präzisiert. C: Ein unveränderliches Dipolmoment beschreibt ein statisches Dipolfeld; die zeitliche Änderung des Dipols fehlt. D: Eine gleichförmig bewegte freie Ladung im Vakuum ist ohne Beschleunigung keine allgemeine Strahlungsquelle dieses Dipolmodells. E: Ein zeitlich konstanter stationärer Spannungszustand liefert ohne Schaltvorgang oder Änderung keinen oszillierenden Strahlungsantrieb. Quelle: Originalunterlagen, PDF-S. 11–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Sendeantenne"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sendeantenne"
+      ],
+      "questionGoal": "Sendeantenne",
+      "structuredExplanation": {
+        "coreIdea": "Sendeantenne",
+        "correctReasoning": "Der oszillierende Dipol enthält beschleunigte Ladungen; die pauschale Aussage jede Bewegung strahle wird damit präzisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Eine ruhende Ladung erzeugt ein statisches elektrisches Feld, aber keine laufend abgestrahlte Antennenwelle.",
+          "C": "Ein unveränderliches Dipolmoment beschreibt ein statisches Dipolfeld; die zeitliche Änderung des Dipols fehlt.",
+          "D": "Eine gleichförmig bewegte freie Ladung im Vakuum ist ohne Beschleunigung keine allgemeine Strahlungsquelle dieses Dipolmodells.",
+          "E": "Ein zeitlich konstanter stationärer Spannungszustand liefert ohne Schaltvorgang oder Änderung keinen oszillierenden Strahlungsantrieb."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Wie stehen E-Feld, B-Feld und Ausbreitungsrichtung einer ebenen elektromagnetischen Welle im Vakuum zueinander?",
+      "options": [
+        {
+          "text": "Sie sind paarweise senkrecht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "B ist parallel zur Ausbreitung, E senkrecht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "E und B sind parallel, beide senkrecht zur Ausbreitung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "E ist parallel zur Ausbreitung, B senkrecht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Alle sind parallel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die ebene Vakuumwelle ist transversal; E×B zeigt in Ausbreitungsrichtung. B: Auch das magnetische Feld ist transversal und nicht parallel zur Ausbreitungsrichtung. C: E und B sind auch untereinander senkrecht; parallel zueinander ergäben sie keinen Poyntingvektor E×B in Ausbreitungsrichtung. D: Das elektrische Feld einer ebenen Vakuumwelle steht quer zur Ausbreitung und nicht längs dazu. E: Wären alle drei Richtungen parallel, wäre die Welle longitudinal statt der betrachteten transversalen Vakuumwelle. Quelle: Originalunterlagen, PDF-S. 13,26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Transversalwelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transversalwelle"
+      ],
+      "questionGoal": "Transversalwelle",
+      "structuredExplanation": {
+        "coreIdea": "Transversalwelle",
+        "correctReasoning": "Die ebene Vakuumwelle ist transversal; E×B zeigt in Ausbreitungsrichtung.",
+        "wrongAnswerExplanations": {
+          "B": "Auch das magnetische Feld ist transversal und nicht parallel zur Ausbreitungsrichtung.",
+          "C": "E und B sind auch untereinander senkrecht; parallel zueinander ergäben sie keinen Poyntingvektor E×B in Ausbreitungsrichtung.",
+          "D": "Das elektrische Feld einer ebenen Vakuumwelle steht quer zur Ausbreitung und nicht längs dazu.",
+          "E": "Wären alle drei Richtungen parallel, wäre die Welle longitudinal statt der betrachteten transversalen Vakuumwelle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Ein Photon mit 5.0 eV löst ein Elektron aus einem Metall mit Austrittsarbeit 2.0 eV. Welche maximale kinetische Energie folgt?",
+      "options": [
+        {
+          "text": "7.0 eV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2.0 eV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3.0 eV.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "5.0 eV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "10.0 eV.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 7,0 eV entsteht durch Addition statt Subtraktion der Austrittsarbeit und würde die verfügbare Photonenergie überschreiten. B: 2,0 eV ist die aufzubringende Austrittsarbeit und nicht die verbleibende maximale Bewegungsenergie. C: Ekin,max=hf−WA=5−2=3 eV. D: 5,0 eV ist die ganze Photonenergie; ein Teil davon wird zur Ablösung benötigt. E: 10,0 eV übersteigt die gesamte Energie des einzelnen 5-eV-Photons und kann ohne weitere Quelle nicht als maximale Elektronenenergie entstehen. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Photoeffekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photoeffekt"
+      ],
+      "questionGoal": "Photoeffekt",
+      "structuredExplanation": {
+        "coreIdea": "Photoeffekt",
+        "correctReasoning": "Ekin,max=hf−WA=5−2=3 eV.",
+        "wrongAnswerExplanations": {
+          "A": "7,0 eV entsteht durch Addition statt Subtraktion der Austrittsarbeit und würde die verfügbare Photonenergie überschreiten.",
+          "B": "2,0 eV ist die aufzubringende Austrittsarbeit und nicht die verbleibende maximale Bewegungsenergie.",
+          "D": "5,0 eV ist die ganze Photonenergie; ein Teil davon wird zur Ablösung benötigt.",
+          "E": "10,0 eV übersteigt die gesamte Energie des einzelnen 5-eV-Photons und kann ohne weitere Quelle nicht als maximale Elektronenenergie entstehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche Beschreibung passt zur Compton-Streuung eines Photons an einem näherungsweise freien Elektron?",
+      "options": [
+        {
+          "text": "Das Elektron emittiert zwingend ein Photon höherer Energie als das einfallende, ohne weitere Energiequelle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Photon wird gestreut und gibt einen Teil seiner Energie und seines Impulses an das Elektron ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Photon wird vollständig in ein Elektron-Positron-Paar umgewandelt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Photon bleibt bei jedem Streuwinkel exakt gleich energiereich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es wird ausschliesslich eine Bindungsschwingung ohne Impulsübertrag angeregt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein anfänglich näherungsweise ruhendes Elektron kann ohne zusätzliche Energiequelle kein zwingend energiereicheres Ausgangsphoton erzeugen. B: Compton-Streuung besitzt ein austretendes Photon mit winkelabhängig verminderter Energie und ein Rückstoss-Elektron. C: Vollständige Umwandlung in Elektron und Positron bezeichnet Paarbildung; beim Compton-Prozess bleibt ein gestreutes Photon erhalten. D: Für endliche Streuwinkel kann das Photon Energie an das Rückstosselektron abgeben; unveränderte Energie bei jedem Winkel ist falsch. E: Die Aufgabe betrifft Streuung an einem näherungsweise freien Elektron, nicht nur eine molekulare Schwingungsanregung ohne Rückstoss. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Compton-Effekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Compton-Effekt"
+      ],
+      "questionGoal": "Compton-Effekt",
+      "structuredExplanation": {
+        "coreIdea": "Compton-Effekt",
+        "correctReasoning": "Compton-Streuung besitzt ein austretendes Photon mit winkelabhängig verminderter Energie und ein Rückstoss-Elektron.",
+        "wrongAnswerExplanations": {
+          "A": "Ein anfänglich näherungsweise ruhendes Elektron kann ohne zusätzliche Energiequelle kein zwingend energiereicheres Ausgangsphoton erzeugen.",
+          "C": "Vollständige Umwandlung in Elektron und Positron bezeichnet Paarbildung; beim Compton-Prozess bleibt ein gestreutes Photon erhalten.",
+          "D": "Für endliche Streuwinkel kann das Photon Energie an das Rückstosselektron abgeben; unveränderte Energie bei jedem Winkel ist falsch.",
+          "E": "Die Aufgabe betrifft Streuung an einem näherungsweise freien Elektron, nicht nur eine molekulare Schwingungsanregung ohne Rückstoss."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche Mindestenergie ist für Elektron-Positron-Paarbildung im Kernfeld näherungsweise nötig, bevor weitere kinetische Energie bereitsteht?",
+      "options": [
+        {
+          "text": "2.044 eV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0.511 MeV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1.022 keV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "13.6 eV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1.022 MeV.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 2,044 eV liegt weit unter einer einzigen Elektronenruheenergie; die hier nötige Skala ist MeV, nicht eV. B: 0,511 MeV ist nur die Ruheenergie eines Elektrons; für Elektron und Positron werden ungefähr zwei solcher Beträge benötigt. C: 1,022 keV verwechselt kilo mit mega und unterschätzt die erforderliche Energie um Faktor tausend. D: 13,6 eV ist eine atomare Wasserstoff-Bindungsenergieskala und liegt weit unter der Paarbildungsenergie. E: Zwei Ruheenergien von je 0.511 MeV sind nötig; der Kern ermöglicht zusätzlich die Impulsbilanz. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Paarbildungsschwelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Paarbildungsschwelle"
+      ],
+      "questionGoal": "Paarbildungsschwelle",
+      "structuredExplanation": {
+        "coreIdea": "Paarbildungsschwelle",
+        "correctReasoning": "Zwei Ruheenergien von je 0.511 MeV sind nötig; der Kern ermöglicht zusätzlich die Impulsbilanz.",
+        "wrongAnswerExplanations": {
+          "A": "2,044 eV liegt weit unter einer einzigen Elektronenruheenergie; die hier nötige Skala ist MeV, nicht eV.",
+          "B": "0,511 MeV ist nur die Ruheenergie eines Elektrons; für Elektron und Positron werden ungefähr zwei solcher Beträge benötigt.",
+          "C": "1,022 keV verwechselt kilo mit mega und unterschätzt die erforderliche Energie um Faktor tausend.",
+          "D": "13,6 eV ist eine atomare Wasserstoff-Bindungsenergieskala und liegt weit unter der Paarbildungsenergie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche Reihenfolge beschreibt die Erzeugung von Röntgenstrahlung in einer üblichen Röhre?",
+      "options": [
+        {
+          "text": "Neutronenaustritt aus der Kathode und Zerfall im Vakuum.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ablenkung sichtbaren Lichts ohne Elektronen als alleiniger Prozess.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Elektronenaustritt an geheizter Kathode, Beschleunigung zur Anode, Abbremsung/Anregung im Anodenmaterial.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Emission ausschliesslich durch Erwärmung des Kühlwassers.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Photonenbeschleunigung von der Anode zur Kathode durch U.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die geheizte Kathode emittiert Elektronen und nicht Neutronen; deren Abbremsung beziehungsweise Schalenanregung erzeugt die Röntgenstrahlung. B: Reine Umlenkung sichtbaren Lichts liefert weder die keV-Energie noch den Elektronen-Anoden-Prozess einer Röntgenröhre. C: Elektronen gewinnen eU und erzeugen bei Wechselwirkung mit der Anode Brems- und charakteristische Strahlung; viel Energie wird zu Wärme. D: Kühlwasser führt die grosse Abwärme ab; es ist nicht die Quelle der im Anodenmaterial erzeugten Röntgenphotonen. E: Photonen sind ungeladen und werden nicht wie Elektronen durch die Röhrenspannung von einer Elektrode zur anderen beschleunigt. Quelle: Originalunterlagen, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Röntgenröhre"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Röntgenröhre"
+      ],
+      "questionGoal": "Röntgenröhre",
+      "structuredExplanation": {
+        "coreIdea": "Röntgenröhre",
+        "correctReasoning": "Elektronen gewinnen eU und erzeugen bei Wechselwirkung mit der Anode Brems- und charakteristische Strahlung; viel Energie wird zu Wärme.",
+        "wrongAnswerExplanations": {
+          "A": "Die geheizte Kathode emittiert Elektronen und nicht Neutronen; deren Abbremsung beziehungsweise Schalenanregung erzeugt die Röntgenstrahlung.",
+          "B": "Reine Umlenkung sichtbaren Lichts liefert weder die keV-Energie noch den Elektronen-Anoden-Prozess einer Röntgenröhre.",
+          "D": "Kühlwasser führt die grosse Abwärme ab; es ist nicht die Quelle der im Anodenmaterial erzeugten Röntgenphotonen.",
+          "E": "Photonen sind ungeladen und werden nicht wie Elektronen durch die Röhrenspannung von einer Elektrode zur anderen beschleunigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Welche minimale Wellenlänge ergibt sich ideal bei U=50 kV? hc≈1240 eV·nm.",
+      "options": [
+        {
+          "text": "24.8 nm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "248 nm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0.0248 nm.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0.248 nm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2.48 nm.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 24,8 nm gehört zu 50 eV und ist um Faktor tausend zu lang. B: 248 nm gehört zu etwa 5 eV; hier wurde die keV-Beschleunigungsenergie um vier Zehnerpotenzen verfehlt. C: Emax=eU=50 000 eV; λmin=1240/50 000 nm=0.0248 nm. D: 0,248 nm entspräche 5 keV statt der maximalen Photonenergie 50 keV bei 50 kV. E: 2,48 nm entspräche nur 500 eV; für die Grenzwellenlänge ist durch 50'000 eV zu dividieren. Quelle: Originalunterlagen, PDF-S. 29–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Grenzwellenlänge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzwellenlänge"
+      ],
+      "questionGoal": "Grenzwellenlänge",
+      "structuredExplanation": {
+        "coreIdea": "Grenzwellenlänge",
+        "correctReasoning": "Emax=eU=50 000 eV; λmin=1240/50 000 nm=0.0248 nm.",
+        "wrongAnswerExplanations": {
+          "A": "24,8 nm gehört zu 50 eV und ist um Faktor tausend zu lang.",
+          "B": "248 nm gehört zu etwa 5 eV; hier wurde die keV-Beschleunigungsenergie um vier Zehnerpotenzen verfehlt.",
+          "D": "0,248 nm entspräche 5 keV statt der maximalen Photonenergie 50 keV bei 50 kV.",
+          "E": "2,48 nm entspräche nur 500 eV; für die Grenzwellenlänge ist durch 50'000 eV zu dividieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Wovon hängt die Energie der charakteristischen Röntgenlinien wesentlich ab?",
+      "options": [
+        {
+          "text": "Nur von der Röhrenstromstärke, unabhängig vom Material.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Von der Beschleunigungsspannung als exakt gleiche Energie für jede Linie.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Von den Energieniveauabständen der Anodenatome.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich von der Entfernung des Detektors.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur von der Kühlwassertemperatur bei sonst gleichen Bedingungen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Röhrenstrom beeinflusst hauptsächlich die Zahl der Elektronen und damit die Strahlungsmenge, nicht die atomaren Linienabstände des Materials. B: Die Spannung setzt die verfügbare Anregungsenergie und die Bremsstrahlungsgrenze; sie macht die verschiedenen atomaren Linien nicht gleich energiereich. C: Die innere Schalenstruktur des Anodenmaterials legt die Linien fest; ausreichende Anregungsenergie muss vorhanden sein. D: Detektorabstand verändert die empfangene Intensität, nicht die Emissionsenergie einer bestimmten atomaren Linie. E: Kühlung ist für den Betrieb wichtig, bestimmt aber nicht anstelle der Schalenenergien die charakteristischen Linien. Quelle: Originalunterlagen, PDF-S. 30–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Charakteristische Linien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Charakteristische Linien"
+      ],
+      "questionGoal": "Charakteristische Linien",
+      "structuredExplanation": {
+        "coreIdea": "Charakteristische Linien",
+        "correctReasoning": "Die innere Schalenstruktur des Anodenmaterials legt die Linien fest; ausreichende Anregungsenergie muss vorhanden sein.",
+        "wrongAnswerExplanations": {
+          "A": "Der Röhrenstrom beeinflusst hauptsächlich die Zahl der Elektronen und damit die Strahlungsmenge, nicht die atomaren Linienabstände des Materials.",
+          "B": "Die Spannung setzt die verfügbare Anregungsenergie und die Bremsstrahlungsgrenze; sie macht die verschiedenen atomaren Linien nicht gleich energiereich.",
+          "D": "Detektorabstand verändert die empfangene Intensität, nicht die Emissionsenergie einer bestimmten atomaren Linie.",
+          "E": "Kühlung ist für den Betrieb wichtig, bestimmt aber nicht anstelle der Schalenenergien die charakteristischen Linien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Für einen homogenen Absorber gilt I=I0e^(−µx) mit µ=0.20 cm⁻¹. Wie gross ist die Halbwertsdicke ungefähr?",
+      "options": [
+        {
+          "text": "0.139 cm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "5.00 cm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3.47 cm.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "10.0 cm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.20 cm.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,139 cm ergibt sich ungefähr aus µ·ln2; für die Dicke muss ln2 jedoch durch µ dividiert werden. B: 5,00 cm ist 1/µ und reduziert I auf 1/e statt auf die Hälfte. C: d½=ln2/µ=0.693/0.20 cm; 1/µ wäre die e-Faltungsdicke. D: 10,0 cm ergibt µx=2 und damit I/I0=e⁻²≈0,135, nicht 0,5. E: 0,20 cm übernimmt den Zahlenwert des Koeffizienten als Länge; bei dieser Dicke ist µx=0,04 und der Primärstrahl kaum halbiert. Quelle: Originalunterlagen, PDF-S. 33–34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Halbwertsdicke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbwertsdicke"
+      ],
+      "questionGoal": "Halbwertsdicke",
+      "structuredExplanation": {
+        "coreIdea": "Halbwertsdicke",
+        "correctReasoning": "d½=ln2/µ=0.693/0.20 cm; 1/µ wäre die e-Faltungsdicke.",
+        "wrongAnswerExplanations": {
+          "A": "0,139 cm ergibt sich ungefähr aus µ·ln2; für die Dicke muss ln2 jedoch durch µ dividiert werden.",
+          "B": "5,00 cm ist 1/µ und reduziert I auf 1/e statt auf die Hälfte.",
+          "D": "10,0 cm ergibt µx=2 und damit I/I0=e⁻²≈0,135, nicht 0,5.",
+          "E": "0,20 cm übernimmt den Zahlenwert des Koeffizienten als Länge; bei dieser Dicke ist µx=0,04 und der Primärstrahl kaum halbiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zu elektromagnetischer Strahlung im Vakuum.",
+      "options": [
+        {
+          "text": "Alle Frequenzen breiten sich im Vakuum mit demselben c aus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Verdopplung der Frequenz verdoppelt bei gleichem c auch die Wellenlänge.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein intensiver Radiostrahl hat deshalb automatisch höhere Energie pro Photon als schwaches Röntgenlicht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verdopplung der Frequenz verdoppelt die Photonenergie.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Vakuumdispersion des klassischen Modells ist frequenzunabhängig. B: λ=c/f halbiert sich. C: Intensität und Energie des einzelnen Photons sind zu unterscheiden. D: E=hf. Quelle: Originalunterlagen, PDF-S. 4–9,24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Spektrum und c"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spektrum und c"
+      ],
+      "questionGoal": "Spektrum und c",
+      "structuredExplanation": {
+        "coreIdea": "Spektrum und c",
+        "correctReasoning": "Die Vakuumdispersion des klassischen Modells ist frequenzunabhängig. E=hf.",
+        "wrongAnswerExplanations": {
+          "A": "Die Vakuumdispersion des klassischen Modells ist frequenzunabhängig.",
+          "B": "λ=c/f halbiert sich.",
+          "C": "Intensität und Energie des einzelnen Photons sind zu unterscheiden.",
+          "D": "E=hf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zum Dipol und zur ebenen Welle.",
+      "options": [
+        {
+          "text": "Ein statischer Dipol muss im stationären Zustand fortlaufend Radiowellen abstrahlen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "E und B sind in der ebenen Vakuumwelle zeitlich in Phase.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Lineare Polarisation legt eine feste Schwingungsrichtung des E-Felds fest.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein elektrischer Dipol kann Gesamtladung null und dennoch ein Dipolmoment besitzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Strahlung benötigt geeignete zeitliche Änderung. B: Ihre Maxima treten am gleichen Ort gleichzeitig auf. C: Dies ist eine Eigenschaft der transversalen Welle. D: Entgegengesetzte räumlich getrennte Ladungen ergeben p=q·Abstand. Quelle: Originalunterlagen, PDF-S. 12–15,26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Felder und Dipol"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Felder und Dipol"
+      ],
+      "questionGoal": "Felder und Dipol",
+      "structuredExplanation": {
+        "coreIdea": "Felder und Dipol",
+        "correctReasoning": "Ihre Maxima treten am gleichen Ort gleichzeitig auf. Dies ist eine Eigenschaft der transversalen Welle. Entgegengesetzte räumlich getrennte Ladungen ergeben p=q·Abstand.",
+        "wrongAnswerExplanations": {
+          "A": "Strahlung benötigt geeignete zeitliche Änderung.",
+          "B": "Ihre Maxima treten am gleichen Ort gleichzeitig auf.",
+          "C": "Dies ist eine Eigenschaft der transversalen Welle.",
+          "D": "Entgegengesetzte räumlich getrennte Ladungen ergeben p=q·Abstand."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zur Wechselwirkung mit Materie.",
+      "options": [
+        {
+          "text": "Die Freisetzung eines Photoelektrons und die Paarbildung haben denselben Schwellenmechanismus von 1.022 MeV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei Compton-Streuung bleibt die Photonenergie auch für grosse Streuwinkel unverändert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Röntgenphotonen besitzen typischerweise genügend Energie zur Ionisation gebundener Elektronen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede beliebig kleine Photonenergie ionisiert jedes beliebige Atom gleich wirksam.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Photoelektrische Absorption muss die Elektronenbindungsenergie überwinden; die Paarbildung besitzt eine eigene Ruheenergieschwelle. B: Das Photon kann Energie und Impuls an das Elektron abgeben; seine Energie sinkt winkelabhängig. C: Ihre keV-Energien übersteigen viele Bindungsenergien. D: Die Energie muss einen geeigneten ionisierenden Übergang ermöglichen. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Ionisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionisation"
+      ],
+      "questionGoal": "Ionisation",
+      "structuredExplanation": {
+        "coreIdea": "Ionisation",
+        "correctReasoning": "Ihre keV-Energien übersteigen viele Bindungsenergien.",
+        "wrongAnswerExplanations": {
+          "A": "Photoelektrische Absorption muss die Elektronenbindungsenergie überwinden; die Paarbildung besitzt eine eigene Ruheenergieschwelle.",
+          "B": "Das Photon kann Energie und Impuls an das Elektron abgeben; seine Energie sinkt winkelabhängig.",
+          "C": "Ihre keV-Energien übersteigen viele Bindungsenergien.",
+          "D": "Die Energie muss einen geeigneten ionisierenden Übergang ermöglichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zu Röntgen- und Gammastrahlung.",
+      "options": [
+        {
+          "text": "Röntgen- und Gammastrahlung unterscheiden sich zwingend durch nicht überlappende Energiegrenzen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Charakteristische Röntgenstrahlung entsteht durch Übergänge im Atomkern der Anode.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Röntgenstrahlung kann bei Abbremsung schneller Elektronen entstehen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Gammaemission kann einen angeregten Kern in einen tieferen Zustand überführen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Bezeichnung ist primär herkunftsbezogen; Energiebereiche können überlappen. B: Sie stammt aus der Elektronenhülle. C: Dies ist Bremsstrahlung. D: Die Energiedifferenz wird als Photon abgegeben. Quelle: Originalunterlagen, PDF-S. 18–20,29–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Herkunft von Strahlung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Herkunft von Strahlung"
+      ],
+      "questionGoal": "Herkunft von Strahlung",
+      "structuredExplanation": {
+        "coreIdea": "Herkunft von Strahlung",
+        "correctReasoning": "Dies ist Bremsstrahlung. Die Energiedifferenz wird als Photon abgegeben.",
+        "wrongAnswerExplanations": {
+          "A": "Die Bezeichnung ist primär herkunftsbezogen; Energiebereiche können überlappen.",
+          "B": "Sie stammt aus der Elektronenhülle.",
+          "C": "Dies ist Bremsstrahlung.",
+          "D": "Die Energiedifferenz wird als Photon abgegeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zur Röntgenröhre.",
+      "options": [
+        {
+          "text": "Die minimale Bremswellenlänge nimmt bei höherem U ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Anode benötigt keine Kühlung, weil die gesamte Elektronenenergie als Röntgenlicht austritt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine höhere Stromstärke verschiebt bei gleichem U die Grenzwellenlänge zwingend zu kürzerem λ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Höhere Beschleunigungsspannung erhöht die maximal mögliche Photonenergie.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: λmin=hc/(eU). B: Ein grosser Anteil wird als Wärme deponiert. C: Sie verändert vor allem die Photonenzahl, nicht eU. D: Emax=eU. Quelle: Originalunterlagen, PDF-S. 29–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Röhrenparameter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Röhrenparameter"
+      ],
+      "questionGoal": "Röhrenparameter",
+      "structuredExplanation": {
+        "coreIdea": "Röhrenparameter",
+        "correctReasoning": "λmin=hc/(eU). Emax=eU.",
+        "wrongAnswerExplanations": {
+          "A": "λmin=hc/(eU).",
+          "B": "Ein grosser Anteil wird als Wärme deponiert.",
+          "C": "Sie verändert vor allem die Photonenzahl, nicht eU.",
+          "D": "Emax=eU."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zur exponentiellen Schwächung eines monochromatischen schmalen Strahlenbündels.",
+      "options": [
+        {
+          "text": "In der e-Faltungsdicke 1/µ verbleibt I0/e.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Halbwertsdicke ist bei jedem Material und jeder Photonenergie gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "µ besitzt die Einheit einer inversen Länge.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nach zwei Halbwertsdicken verbleibt ein Viertel der ungeschwächten Intensität.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist nicht mit ln2/µ identisch. B: µ ist material- und energieabhängig. C: Nur so ist µx dimensionslos. D: Jede Halbwertsdicke multipliziert mit 1/2. Quelle: Originalunterlagen, PDF-S. 33–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Abschwächung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abschwächung"
+      ],
+      "questionGoal": "Abschwächung",
+      "structuredExplanation": {
+        "coreIdea": "Abschwächung",
+        "correctReasoning": "Sie ist nicht mit ln2/µ identisch. Nur so ist µx dimensionslos. Jede Halbwertsdicke multipliziert mit 1/2.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist nicht mit ln2/µ identisch.",
+          "B": "µ ist material- und energieabhängig.",
+          "C": "Nur so ist µx dimensionslos.",
+          "D": "Jede Halbwertsdicke multipliziert mit 1/2."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zur atomaren Emission.",
+      "options": [
+        {
+          "text": "Ein Übergang aus einem höheren in einen tieferen Elektronenzustand kann ein Photon emittieren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine atomare Linie kann bei jedem beliebigen Übergang unabhängig vom Niveauabstand dieselbe Energie besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Farbe einer Linie allein legt deren Intensität vollständig fest.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Bohrmodell gibt jede Bindung aller mehratomigen Moleküle exakt wieder.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die abgegebene Energie folgt aus der Differenz. B: EPhoton entspricht dem jeweiligen Energieniveauabstand. C: Die Intensität hängt auch von Besetzung, Übergangswahrscheinlichkeit und Stoffmenge ab. D: Es ist ein begrenztes Modell, besonders hilfreich für wasserstoffartige Systeme. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Linienspektrum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Linienspektrum"
+      ],
+      "questionGoal": "Linienspektrum",
+      "structuredExplanation": {
+        "coreIdea": "Linienspektrum",
+        "correctReasoning": "Die abgegebene Energie folgt aus der Differenz.",
+        "wrongAnswerExplanations": {
+          "A": "Die abgegebene Energie folgt aus der Differenz.",
+          "B": "EPhoton entspricht dem jeweiligen Energieniveauabstand.",
+          "C": "Die Intensität hängt auch von Besetzung, Übergangswahrscheinlichkeit und Stoffmenge ab.",
+          "D": "Es ist ein begrenztes Modell, besonders hilfreich für wasserstoffartige Systeme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp09_10_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP09/10",
+      "stem": "Beurteilen Sie die Aussagen zu Strahlungsprozessen und Abschirmung.",
+      "options": [
+        {
+          "text": "Die Näherung µ∝Z³λ³ ist bei allen Energien und an allen Absorptionskanten exakt gültig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Beiträge von Photoeffekt, Compton-Streuung und Paarbildung hängen von Photonenergie und Material ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Paarbildung im Kernfeld ist schon mit 100 keV allein energetisch möglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine schmale monochromatische Transmission kann exponentiell abnehmen, obwohl einzelne Photonen ganz verschieden wechselwirken.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist nur eine begrenzte vereinfachte Beschreibung, insbesondere nicht aller Prozesse. B: Eine universelle einzige Potenzregel deckt nicht alle Bereiche ab. C: 100 keV liegt unter 1.022 MeV. D: Der lineare Schwächungskoeffizient beschreibt die Entfernung aus dem Primärstrahl statistisch. Quelle: Originalunterlagen, PDF-S. 20–21,33–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP09/10",
+        "Prozessabhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Prozessabhängigkeit"
+      ],
+      "questionGoal": "Prozessabhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Prozessabhängigkeit",
+        "correctReasoning": "Eine universelle einzige Potenzregel deckt nicht alle Bereiche ab. Der lineare Schwächungskoeffizient beschreibt die Entfernung aus dem Primärstrahl statistisch.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist nur eine begrenzte vereinfachte Beschreibung, insbesondere nicht aller Prozesse.",
+          "B": "Eine universelle einzige Potenzregel deckt nicht alle Bereiche ab.",
+          "C": "100 keV liegt unter 1.022 MeV.",
+          "D": "Der lineare Schwächungskoeffizient beschreibt die Entfernung aus dem Primärstrahl statistisch."
+        }
+      }
+    }
+  ]
+}

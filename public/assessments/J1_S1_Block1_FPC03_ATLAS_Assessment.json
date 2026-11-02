@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block1_fpc03_20261102",
+  "lectureCode": "FPC03",
+  "title": "Kalorimetrie",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. FPC - Fachpraktikum Chemie; EVC03 - Praktikum Kalorimetrie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Seitenangaben beziehen sich auf PDF-Seiten des 35-seitigen Fachpraktikum-Chemie-Skripts, nicht auf dessen gedruckte Seitenzahlen. Ergänzend EVC als zweite Originalquelle. Nur Theorie und Auswertung, keine Organisations- oder Testatfragen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Aufbau, Wärmekapazität und näherungsweise adiabatische Arbeitsweise des Kalorimeters erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Die Energiebilanz beim Erwärmen und Schmelzen von Eis aufstellen und aus Messdaten auswerten."
+    },
+    {
+      "id": "lo3",
+      "text": "Die Neutralisationsenthalpie aus Stoffmenge und Temperaturverlauf bestimmen und Fehlerquellen beurteilen."
+    },
+    {
+      "id": "lo4",
+      "text": "Die Beobachtungen zur Wirkung von Säuren und Laugen auf Gelatine chemisch einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpc03_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Welche Eigenschaft des Styroporbechers rechtfertigt näherungsweise eine adiabatische Bilanz während der kurzen Messung?",
+      "options": [
+        {
+          "text": "Alle Reaktionen im Becher laufen ohne Energieumsatz ab.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Seine Wärmekapazität ist mathematisch exakt null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Wärmeaustausch nur über infrarote Strahlung ist ausgeschlossen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er erzwingt bei jedem Inhalt eine konstante Temperatur.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Geringer Wärmeaustausch mit der Umgebung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Energieumsatz wird gerade durch Temperaturänderungen messbar. B: Die Becherwärmekapazität ist höchstens näherungsweise vernachlässigbar. C: Auch Strahlung und andere Wärmeverluste sind nicht vollständig ausgeschlossen. D: Ein adiabatisches System kann seine Temperatur intern verändern. E: Die geringe Wärmeleitung begrenzt den Wärmeverlust im Messintervall. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Adiabatischer Becher"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Adiabatischer Becher"
+      ],
+      "questionGoal": "Adiabatischer Becher",
+      "structuredExplanation": {
+        "coreIdea": "Adiabatischer Becher",
+        "correctReasoning": "Die geringe Wärmeleitung begrenzt den Wärmeverlust im Messintervall.",
+        "wrongAnswerExplanations": {
+          "A": "Der Energieumsatz wird gerade durch Temperaturänderungen messbar.",
+          "B": "Die Becherwärmekapazität ist höchstens näherungsweise vernachlässigbar.",
+          "C": "Auch Strahlung und andere Wärmeverluste sind nicht vollständig ausgeschlossen.",
+          "D": "Ein adiabatisches System kann seine Temperatur intern verändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Welche Wärme nimmt 0.50 mol flüssiges Wasser bei Erwärmung um 4.0 K auf? Cp = 75 J mol⁻¹ K⁻¹ sei konstant.",
+      "options": [
+        {
+          "text": "300 J.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "37.5 J.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "150 kJ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "9.4 J.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "150 J.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre die Wärme für ein ganzes Mol bei vier Kelvin. B: Dies ist nCp ohne die vier Kelvin Erwärmung. C: Die eingesetzten Einheiten ergeben J, nicht kJ. D: Die Temperaturdifferenz wird multipliziert, nicht dividiert. E: Q=nCpΔT=0.50×75×4.0 J. Quelle: Originalunterlagen, PDF-S. 13,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Molare Wärmekapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Molare Wärmekapazität"
+      ],
+      "questionGoal": "Molare Wärmekapazität",
+      "structuredExplanation": {
+        "coreIdea": "Molare Wärmekapazität",
+        "correctReasoning": "Q=nCpΔT=0.50×75×4.0 J.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre die Wärme für ein ganzes Mol bei vier Kelvin.",
+          "B": "Dies ist nCp ohne die vier Kelvin Erwärmung.",
+          "C": "Die eingesetzten Einheiten ergeben J, nicht kJ.",
+          "D": "Die Temperaturdifferenz wird multipliziert, nicht dividiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Ein Eiswürfel startet bei −12 °C, schmilzt vollständig und endet bei +10 °C. Welche Prozessfolge erfasst seine Energieaufnahme vollständig?",
+      "options": [
+        {
+          "text": "Nur das entstandene Wasser von −12 auf +10 °C erwärmen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eis erwärmen, Eis schmelzen, Schmelzwasser erwärmen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur die Schmelzenthalpie einsetzen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur das Eis bis 0 °C erwärmen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Erwärmen und Verdampfen des Eises.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterhalb 0 °C liegt Eis mit anderer Wärmekapazität vor; der Phasenübergang fehlt. B: Alle drei Beiträge ändern die Enthalpie auf dem Weg zum Endzustand. C: Die Temperaturänderungen von Eis und Schmelzwasser fehlen. D: Schmelzen und anschliessendes Erwärmen des Wassers fehlen. E: Der Endzustand ist flüssiges Wasser, nicht Wasserdampf. Quelle: Originalunterlagen, PDF-S. 13–14,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Wasserbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasserbilanz"
+      ],
+      "questionGoal": "Wasserbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Wasserbilanz",
+        "correctReasoning": "Alle drei Beiträge ändern die Enthalpie auf dem Weg zum Endzustand.",
+        "wrongAnswerExplanations": {
+          "A": "Unterhalb 0 °C liegt Eis mit anderer Wärmekapazität vor; der Phasenübergang fehlt.",
+          "C": "Die Temperaturänderungen von Eis und Schmelzwasser fehlen.",
+          "D": "Schmelzen und anschliessendes Erwärmen des Wassers fehlen.",
+          "E": "Der Endzustand ist flüssiges Wasser, nicht Wasserdampf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Leerer Becher: 8.0 g; mit vorgelegtem Wasser: 158.0 g; nach vollständigem Schmelzen des zugesetzten Eises: 176.0 g. Welche Massen gehören in die Bilanz?",
+      "options": [
+        {
+          "text": "150.0 g vorgelegtes Wasser und 18.0 g Eis.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "158.0 g Wasser und 18.0 g Eis.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "150.0 g Wasser und 168.0 g Eis.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "18.0 g Wasser und 150.0 g Eis.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "176.0 g Wasser und 8.0 g Eis.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wasser ist m2−m1; zugegebenes Eis ist m3−m2. B: Die Bechermasse muss vom Anfangswert abgezogen werden. C: 168.0 g ist die gesamte spätere Wassermasse, nicht die Eismasse. D: Die beiden Differenzmassen sind vertauscht. E: Gesamtwägung und Leerbechermasse sind keine Stoffmassen der beiden Wasseranteile. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Differenzwägung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzwägung"
+      ],
+      "questionGoal": "Differenzwägung",
+      "structuredExplanation": {
+        "coreIdea": "Differenzwägung",
+        "correctReasoning": "Wasser ist m2−m1; zugegebenes Eis ist m3−m2.",
+        "wrongAnswerExplanations": {
+          "B": "Die Bechermasse muss vom Anfangswert abgezogen werden.",
+          "C": "168.0 g ist die gesamte spätere Wassermasse, nicht die Eismasse.",
+          "D": "Die beiden Differenzmassen sind vertauscht.",
+          "E": "Gesamtwägung und Leerbechermasse sind keine Stoffmassen der beiden Wasseranteile."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "In einer idealisierten Messung gibt warmes Wasser 7500 J ab. Das Eis benötigt 468 J zum Erwärmen und sein Schmelzwasser 1500 J zur Erwärmung. Es wurden 0.90 mol Eis vollständig geschmolzen. Wie gross ist ΔfusH?",
+      "options": [
+        {
+          "text": "6.15 kJ/mol.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "−6.15 kJ/mol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "8.33 kJ/mol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "5.53 kJ/mol.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "10.52 kJ/mol.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Für das Schmelzen bleiben 7500−468−1500=5532 J; geteilt durch 0.90 mol ergibt dies 6.15 kJ/mol. B: Das Schmelzen nimmt Wärme auf; die Schmelzenthalpie ist positiv. C: Die abgegebene Wärme wird auch für Temperaturänderungen benötigt. D: 5.53 kJ ist die Schmelzwärme der Probe, noch nicht die molare Enthalpie. E: Die Erwärmungsbeiträge dürfen nicht zur verfügbaren Schmelzwärme addiert werden. Quelle: Originalunterlagen, PDF-S. 13–14,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Schmelzwärme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schmelzwärme"
+      ],
+      "questionGoal": "Schmelzwärme",
+      "structuredExplanation": {
+        "coreIdea": "Schmelzwärme",
+        "correctReasoning": "Für das Schmelzen bleiben 7500−468−1500=5532 J; geteilt durch 0.90 mol ergibt dies 6.15 kJ/mol.",
+        "wrongAnswerExplanations": {
+          "B": "Das Schmelzen nimmt Wärme auf; die Schmelzenthalpie ist positiv.",
+          "C": "Die abgegebene Wärme wird auch für Temperaturänderungen benötigt.",
+          "D": "5.53 kJ ist die Schmelzwärme der Probe, noch nicht die molare Enthalpie.",
+          "E": "Die Erwärmungsbeiträge dürfen nicht zur verfügbaren Schmelzwärme addiert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Warum wird beim Eisversuch die tiefste Temperatur nach dem Mischen zur vereinfachten Auswertung verwendet?",
+      "options": [
+        {
+          "text": "Sie liegt näher am internen Temperaturausgleich vor der erneuten Erwärmung durch die Umgebung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie entspricht immer exakt dem Schmelzpunkt von Wasser.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie ist unabhängig von Eismasse und Anfangstemperatur.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie ist die einzige Temperatur, bei der Wasser eine Wärmekapazität besitzt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie beweist, dass kein Eis erwärmt werden musste.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Spätere Wärmeaufnahme aus dem Raum würde die Bilanz des idealisierten Bechers verfälschen. B: Bei vollständig geschmolzenem Eis kann die Endtemperatur deutlich über 0 °C liegen. C: Beide Grössen beeinflussen die Endtemperatur wesentlich. D: Wasser besitzt auch bei anderen Temperaturen eine Wärmekapazität. E: Das anfangs unterkühlte Eis benötigt einen eigenen Erwärmungsbeitrag. Quelle: Originalunterlagen, PDF-S. 14–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Temperaturminimum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperaturminimum"
+      ],
+      "questionGoal": "Temperaturminimum",
+      "structuredExplanation": {
+        "coreIdea": "Temperaturminimum",
+        "correctReasoning": "Spätere Wärmeaufnahme aus dem Raum würde die Bilanz des idealisierten Bechers verfälschen.",
+        "wrongAnswerExplanations": {
+          "B": "Bei vollständig geschmolzenem Eis kann die Endtemperatur deutlich über 0 °C liegen.",
+          "C": "Beide Grössen beeinflussen die Endtemperatur wesentlich.",
+          "D": "Wasser besitzt auch bei anderen Temperaturen eine Wärmekapazität.",
+          "E": "Das anfangs unterkühlte Eis benötigt einen eigenen Erwärmungsbeitrag."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "20.0 ml HCl mit 2.00 mol/l werden mit derselben Stoffmenge NaOH umgesetzt. Wie viel HCl reagiert?",
+      "options": [
+        {
+          "text": "0.400 mol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0.0400 mol.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "4.00 mol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "40.0 mol.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.0100 mol.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Umrechnung von ml in l ergibt 0.0200 l. B: n=cV=2.00 mol/l×0.0200 l. C: Die Probe enthält nur 20 ml der 2-molaren Lösung. D: Das Volumen darf nicht als 20 Liter eingesetzt werden. E: Hier wurde Volumen durch Konzentration statt mit ihr multipliziert. Quelle: Originalunterlagen, PDF-S. 15,18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Neutralisationsstoffmenge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neutralisationsstoffmenge"
+      ],
+      "questionGoal": "Neutralisationsstoffmenge",
+      "structuredExplanation": {
+        "coreIdea": "Neutralisationsstoffmenge",
+        "correctReasoning": "n=cV=2.00 mol/l×0.0200 l.",
+        "wrongAnswerExplanations": {
+          "A": "Die Umrechnung von ml in l ergibt 0.0200 l.",
+          "C": "Die Probe enthält nur 20 ml der 2-molaren Lösung.",
+          "D": "Das Volumen darf nicht als 20 Liter eingesetzt werden.",
+          "E": "Hier wurde Volumen durch Konzentration statt mit ihr multipliziert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "40.0 g Lösung erwärmen sich um 10.0 K. c=4.18 J g⁻¹ K⁻¹; Kalorimeterwärme und Verluste seien vernachlässigbar. 0.0400 mol HCl werden neutralisiert. Welche molare Reaktionsenthalpie folgt?",
+      "options": [
+        {
+          "text": "+41.8 kJ/mol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−41.8 kJ/mol.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "−1.672 kJ/mol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−418 kJ/mol.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+1.672 kJ/mol.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die beobachtete Erwärmung bedeutet eine exotherme Reaktion. B: Die Lösung nimmt 1672 J auf; die Reaktion gibt diese Wärme ab: −1672/0.0400 J/mol. C: 1.672 kJ ist die Wärme der gesamten Probe; es fehlt die Division durch mol. D: Der Faktor zehn ist in der Rechnung nicht begründet. E: Sowohl das Vorzeichen als auch die Normierung auf Stoffmenge sind falsch. Quelle: Originalunterlagen, PDF-S. 15,18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Neutralisationsenthalpie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neutralisationsenthalpie"
+      ],
+      "questionGoal": "Neutralisationsenthalpie",
+      "structuredExplanation": {
+        "coreIdea": "Neutralisationsenthalpie",
+        "correctReasoning": "Die Lösung nimmt 1672 J auf; die Reaktion gibt diese Wärme ab: −1672/0.0400 J/mol.",
+        "wrongAnswerExplanations": {
+          "A": "Die beobachtete Erwärmung bedeutet eine exotherme Reaktion.",
+          "C": "1.672 kJ ist die Wärme der gesamten Probe; es fehlt die Division durch mol.",
+          "D": "Der Faktor zehn ist in der Rechnung nicht begründet.",
+          "E": "Sowohl das Vorzeichen als auch die Normierung auf Stoffmenge sind falsch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Welcher Term muss bei Vernachlässigung des Bechers in der Bilanz einer exothermen Neutralisation negativ sein?",
+      "options": [
+        {
+          "text": "QReaktion.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Masse der eingesetzten Lösung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die gesamte aufgenommene Wärme der erwärmten Lösung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die molare Wärmekapazität des Wassers.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Betrag der umgesetzten Stoffmenge.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mit Vorzeichen für aufgenommene Wärme gilt QReaktion+QLösung=0 und QLösung>0. B: Eine Stoffmasse kann nicht negativ sein. C: Die Lösung wird wärmer und nimmt Wärme auf. D: Sie ist in diesem Bereich positiv. E: Die Stoffmenge wird positiv eingesetzt; das Vorzeichen steckt in ΔH. Quelle: Originalunterlagen, PDF-S. 14–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Exotherme Reaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exotherme Reaktion"
+      ],
+      "questionGoal": "Exotherme Reaktion",
+      "structuredExplanation": {
+        "coreIdea": "Exotherme Reaktion",
+        "correctReasoning": "Mit Vorzeichen für aufgenommene Wärme gilt QReaktion+QLösung=0 und QLösung>0.",
+        "wrongAnswerExplanations": {
+          "B": "Eine Stoffmasse kann nicht negativ sein.",
+          "C": "Die Lösung wird wärmer und nimmt Wärme auf.",
+          "D": "Sie ist in diesem Bereich positiv.",
+          "E": "Die Stoffmenge wird positiv eingesetzt; das Vorzeichen steckt in ΔH."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Ein Teil der Neutralisationswärme entweicht vor Ablesen der Maximaltemperatur. Welche Verzerrung entsteht bei Auswertung mit Q=mcΔT ohne Verlustkorrektur?",
+      "options": [
+        {
+          "text": "Die Verlustwärme hebt jede Temperaturabhängigkeit auf.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die umgesetzte Stoffmenge verdoppelt sich rechnerisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Enthalpie wird stets stärker negativ geschätzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die molare Enthalpie wird zwangsläufig positiv.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Betrag der exothermen molaren Enthalpie wird unterschätzt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wärmeverlust verschlechtert die einfache Bilanz gerade. B: Der Wärmeverlust ändert nicht die aus cV ermittelte Stoffmenge. C: Ein kleinerer Temperaturanstieg liefert einen kleineren negativen Betrag. D: Der Anstieg kann weiterhin positiv sein; nur sein Betrag ist kleiner. E: Die gemessene Erwärmung und damit die rekonstruierte abgegebene Wärme sind zu klein. Quelle: Originalunterlagen, PDF-S. 14–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Wärmeverluste"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wärmeverluste"
+      ],
+      "questionGoal": "Wärmeverluste",
+      "structuredExplanation": {
+        "coreIdea": "Wärmeverluste",
+        "correctReasoning": "Die gemessene Erwärmung und damit die rekonstruierte abgegebene Wärme sind zu klein.",
+        "wrongAnswerExplanations": {
+          "A": "Wärmeverlust verschlechtert die einfache Bilanz gerade.",
+          "B": "Der Wärmeverlust ändert nicht die aus cV ermittelte Stoffmenge.",
+          "C": "Ein kleinerer Temperaturanstieg liefert einen kleineren negativen Betrag.",
+          "D": "Der Anstieg kann weiterhin positiv sein; nur sein Betrag ist kleiner."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Weshalb verbessert vorsichtiges Rühren die Temperaturmessung des Eis-Wasser-Gemischs?",
+      "options": [
+        {
+          "text": "Es ersetzt die Bestimmung der Eis-Anfangstemperatur.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es erhöht zwingend die molare Schmelzenthalpie des Wassers.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es vermindert lokale Temperaturunterschiede.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es erzeugt aus Wasser zusätzliche Eismasse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es verhindert grundsätzlich jede Wärmeleitung durch den Becher.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Anfangstemperatur bleibt für die Energiebilanz erforderlich. B: Rühren ändert diese Stoffgrösse nicht beliebig. C: Ein repräsentativer Messwert erfordert einen möglichst gleichmässigen Temperaturausgleich. D: Der Hauptzweck ist Durchmischung, keine Massenerzeugung. E: Die äussere Wärmeübertragung wird dadurch nicht vollständig beseitigt. Quelle: Originalunterlagen, PDF-S. 13–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Rühren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rühren"
+      ],
+      "questionGoal": "Rühren",
+      "structuredExplanation": {
+        "coreIdea": "Rühren",
+        "correctReasoning": "Ein repräsentativer Messwert erfordert einen möglichst gleichmässigen Temperaturausgleich.",
+        "wrongAnswerExplanations": {
+          "A": "Die Anfangstemperatur bleibt für die Energiebilanz erforderlich.",
+          "B": "Rühren ändert diese Stoffgrösse nicht beliebig.",
+          "D": "Der Hauptzweck ist Durchmischung, keine Massenerzeugung.",
+          "E": "Die äussere Wärmeübertragung wird dadurch nicht vollständig beseitigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Welche Interpretation passt zum Gelatineversuch mit starker Säure beziehungsweise Lauge?",
+      "options": [
+        {
+          "text": "Ein pH-Wechsel kann Proteine grundsätzlich nicht beeinflussen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Änderungen von Proteinladung und -struktur sowie bei starken Bedingungen chemische Schädigung verändern die Gelstruktur.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur die Bechertemperatur bestimmt die Proteinladung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede sichtbare Änderung beweist die vollständige Spaltung aller Peptidbindungen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die beobachtete Änderung der Gelstruktur lässt sich nur mit einem Phasenübergang reinen Wassers erklären.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Proteine besitzen zahlreiche ionisierbare Gruppen. B: Säure/Base beeinflussen ionisierbare Gruppen; starke Lauge kann zusätzlich hydrolysieren. C: Die Protonierung hängt wesentlich vom pH ab. D: Strukturänderungen und partielle Schädigung können bereits sichtbare Effekte erzeugen. E: Die Säure-/Laugenzugabe verändert Protonierung und Struktur des Proteins und kann chemische Schädigung bewirken. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Gelatinemodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gelatinemodell"
+      ],
+      "questionGoal": "Gelatinemodell",
+      "structuredExplanation": {
+        "coreIdea": "Gelatinemodell",
+        "correctReasoning": "Säure/Base beeinflussen ionisierbare Gruppen; starke Lauge kann zusätzlich hydrolysieren.",
+        "wrongAnswerExplanations": {
+          "A": "Proteine besitzen zahlreiche ionisierbare Gruppen.",
+          "C": "Die Protonierung hängt wesentlich vom pH ab.",
+          "D": "Strukturänderungen und partielle Schädigung können bereits sichtbare Effekte erzeugen.",
+          "E": "Die Säure-/Laugenzugabe verändert Protonierung und Struktur des Proteins und kann chemische Schädigung bewirken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die Aussagen zum einfachen Kalorimeter.",
+      "options": [
+        {
+          "text": "Ein geschlossenes System darf definitionsgemäss keine Energie austauschen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Adiabatisch bedeutet näherungsweise kein Wärmeaustausch über die Systemgrenze.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Adiabatisch bedeutet zwangsläufig überall und jederzeit dieselbe Temperatur.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der reale Styroporbecher ist nur näherungsweise wärmeisoliert.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Geschlossen schliesst Stoffaustausch aus; Energieaustausch kann möglich sein. B: Interne Wärmeübertragung zwischen Reaktion und Lösung bleibt möglich. C: Innerhalb können anfangs Temperaturgradienten bestehen. D: Deckel, Wand und Thermometer erlauben Restwärmefluss. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Systemgrenze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Systemgrenze"
+      ],
+      "questionGoal": "Systemgrenze",
+      "structuredExplanation": {
+        "coreIdea": "Systemgrenze",
+        "correctReasoning": "Interne Wärmeübertragung zwischen Reaktion und Lösung bleibt möglich. Deckel, Wand und Thermometer erlauben Restwärmefluss.",
+        "wrongAnswerExplanations": {
+          "A": "Geschlossen schliesst Stoffaustausch aus; Energieaustausch kann möglich sein.",
+          "B": "Interne Wärmeübertragung zwischen Reaktion und Lösung bleibt möglich.",
+          "C": "Innerhalb können anfangs Temperaturgradienten bestehen.",
+          "D": "Deckel, Wand und Thermometer erlauben Restwärmefluss."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die Aussagen zur Kalorimetrie.",
+      "options": [
+        {
+          "text": "Ein Cp in J mol⁻¹ K⁻¹ darf ohne Umrechnung direkt mit einer Masse in g multipliziert werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beim Abkühlen ist Q des abkühlenden Stoffes mit ΔT=Ende−Anfang negativ.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Q=nCpΔT verwendet bei molarem Cp die Stoffmenge n.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Temperaturdifferenz von 5 °C hat denselben Zahlenwert wie 5 K.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Entweder wird n berechnet oder eine spezifische Kapazität in J g⁻¹ K⁻¹ verwendet. B: Die Vorzeichenkonvention bildet die Wärmeabgabe ab. C: Die Einheiten mol kürzen sich entsprechend. D: Die Differenzskalen sind gleich gross. Quelle: Originalunterlagen, PDF-S. 13,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Wärmekapazität und Einheiten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wärmekapazität und Einheiten"
+      ],
+      "questionGoal": "Wärmekapazität und Einheiten",
+      "structuredExplanation": {
+        "coreIdea": "Wärmekapazität und Einheiten",
+        "correctReasoning": "Die Vorzeichenkonvention bildet die Wärmeabgabe ab. Die Einheiten mol kürzen sich entsprechend. Die Differenzskalen sind gleich gross.",
+        "wrongAnswerExplanations": {
+          "A": "Entweder wird n berechnet oder eine spezifische Kapazität in J g⁻¹ K⁻¹ verwendet.",
+          "B": "Die Vorzeichenkonvention bildet die Wärmeabgabe ab.",
+          "C": "Die Einheiten mol kürzen sich entsprechend.",
+          "D": "Die Differenzskalen sind gleich gross."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die Aussagen zur Bilanz beim Schmelzen.",
+      "options": [
+        {
+          "text": "Die Schmelzenthalpie von Eis ist für den Vorgang fest→flüssig negativ.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Anfangs unterkühltes Eis benötigt vor dem Schmelzen einen Erwärmungsbeitrag.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Schmelzen bei konstantem Druck muss während des gesamten Phasenübergangs die Temperatur erhöhen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei vollständig geschmolzenem Eis entfällt die Erwärmung des Schmelzwassers oberhalb 0 °C.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Schmelzen ist endotherm und benötigt positive Wärme. B: Dieser wird mit Cp des festen Wassers berechnet. C: Während des Phasenübergangs kann Energie bei konstanter Temperatur aufgenommen werden. D: Auch dieser Temperaturanstieg benötigt Wärme. Quelle: Originalunterlagen, PDF-S. 13–14,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Eisschmelzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eisschmelzen"
+      ],
+      "questionGoal": "Eisschmelzen",
+      "structuredExplanation": {
+        "coreIdea": "Eisschmelzen",
+        "correctReasoning": "Dieser wird mit Cp des festen Wassers berechnet.",
+        "wrongAnswerExplanations": {
+          "A": "Schmelzen ist endotherm und benötigt positive Wärme.",
+          "B": "Dieser wird mit Cp des festen Wassers berechnet.",
+          "C": "Während des Phasenübergangs kann Energie bei konstanter Temperatur aufgenommen werden.",
+          "D": "Auch dieser Temperaturanstieg benötigt Wärme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die Aussagen zu Modellannahmen und Fehlern.",
+      "options": [
+        {
+          "text": "Eine relevante Becherwärmekapazität muss in einer genaueren Bilanz berücksichtigt werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ungenaue Massenmessungen werden durch Verwendung von Kelvin grundsätzlich beseitigt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Annahme einer wasserähnlichen Wärmekapazität der Salzlösung ist eine Näherung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine spätere Erwärmung nach dem Eisversuch beweist eine exotherme Schmelzreaktion.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch der Becher nimmt Wärme auf oder gibt sie ab. B: Einheitenwahl korrigiert keinen Wägefehler. C: Die reale Lösungszusammensetzung kann ihre Kapazität verändern. D: Sie kann durch Wärmeaufnahme aus der wärmeren Umgebung entstehen. Quelle: Originalunterlagen, PDF-S. 14–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Messfehler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messfehler"
+      ],
+      "questionGoal": "Messfehler",
+      "structuredExplanation": {
+        "coreIdea": "Messfehler",
+        "correctReasoning": "Auch der Becher nimmt Wärme auf oder gibt sie ab. Die reale Lösungszusammensetzung kann ihre Kapazität verändern.",
+        "wrongAnswerExplanations": {
+          "A": "Auch der Becher nimmt Wärme auf oder gibt sie ab.",
+          "B": "Einheitenwahl korrigiert keinen Wägefehler.",
+          "C": "Die reale Lösungszusammensetzung kann ihre Kapazität verändern.",
+          "D": "Sie kann durch Wärmeaufnahme aus der wärmeren Umgebung entstehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die Aussagen zur Umsetzung von HCl und NaOH.",
+      "options": [
+        {
+          "text": "H₃O⁺ und OH⁻ reagieren netto zu Wasser.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die molare Neutralisationsenthalpie erhält man durch Multiplikation der Probenwärme mit n(HCl).",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleichen Anfangstemperaturen kann ein gemeinsamer Ausgangstemperaturwert verwendet werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Für die Erwärmung wird nur die Masse der Salzsäurelösung verwendet.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Na⁺ und Cl⁻ sind bei der idealisierten starken Neutralisation Zuschauerionen. B: Sie wird durch die tatsächlich umgesetzte Stoffmenge dividiert. C: Unterschiedliche Ausgangswerte würden zusätzliche Mischungsbeiträge erfordern. D: Beide gemischten Lösungen werden erwärmt. Quelle: Originalunterlagen, PDF-S. 15,18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Neutralisationsbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neutralisationsbilanz"
+      ],
+      "questionGoal": "Neutralisationsbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Neutralisationsbilanz",
+        "correctReasoning": "Na⁺ und Cl⁻ sind bei der idealisierten starken Neutralisation Zuschauerionen. Unterschiedliche Ausgangswerte würden zusätzliche Mischungsbeiträge erfordern.",
+        "wrongAnswerExplanations": {
+          "A": "Na⁺ und Cl⁻ sind bei der idealisierten starken Neutralisation Zuschauerionen.",
+          "B": "Sie wird durch die tatsächlich umgesetzte Stoffmenge dividiert.",
+          "C": "Unterschiedliche Ausgangswerte würden zusätzliche Mischungsbeiträge erfordern.",
+          "D": "Beide gemischten Lösungen werden erwärmt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie einen Versuch, in dem bei 0 °C Eis übrig bleibt.",
+      "options": [
+        {
+          "text": "Die Endtemperatur 0 °C beweist, dass keine Energie übertragen wurde.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nicht die gesamte eingewogene Eismasse wurde dann geschmolzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Temperaturplateau kann mit einem Phasenübergang vereinbar sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Formel mit vollständiger Schmelzung der gesamten Eismasse ist dann nicht unverändert anwendbar.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Wärme kann für Erwärmung und Schmelzen aufgenommen worden sein. B: Ein verbleibender Feststoffanteil muss bilanziert werden. C: Latente Wärme verändert den Phasenanteil statt die Temperatur. D: Die Phasenanteile des Endzustands weichen vom Modell ab. Quelle: Originalunterlagen, PDF-S. 14–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Grenzfall Rest-Eis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzfall Rest-Eis"
+      ],
+      "questionGoal": "Grenzfall Rest-Eis",
+      "structuredExplanation": {
+        "coreIdea": "Grenzfall Rest-Eis",
+        "correctReasoning": "Ein verbleibender Feststoffanteil muss bilanziert werden. Latente Wärme verändert den Phasenanteil statt die Temperatur. Die Phasenanteile des Endzustands weichen vom Modell ab.",
+        "wrongAnswerExplanations": {
+          "A": "Wärme kann für Erwärmung und Schmelzen aufgenommen worden sein.",
+          "B": "Ein verbleibender Feststoffanteil muss bilanziert werden.",
+          "C": "Latente Wärme verändert den Phasenanteil statt die Temperatur.",
+          "D": "Die Phasenanteile des Endzustands weichen vom Modell ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen.",
+      "options": [
+        {
+          "text": "Gelatine enthält ionisierbare Gruppen von Aminosäureresten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte Reaktionswärme ist unabhängig von der umgesetzten Stoffmenge gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine exotherme Neutralisation besitzt definitionsgemäss eine positive Reaktionsenthalpie.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine sichtbare Verflüssigung erlaubt bereits die genaue Berechnung einer Reaktionsenthalpie.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Protonierung beeinflusst Wechselwirkungen und Struktur. B: Die Probenwärme skaliert mit der umgesetzten Menge. C: Exotherme Wärmeabgabe entspricht ΔH<0 unter den passenden Druckbedingungen. D: Dafür braucht es quantitative Wärme- und Stoffmengenmessungen. Quelle: Originalunterlagen, PDF-S. 13–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Reaktion und Struktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktion und Struktur"
+      ],
+      "questionGoal": "Reaktion und Struktur",
+      "structuredExplanation": {
+        "coreIdea": "Reaktion und Struktur",
+        "correctReasoning": "Ihre Protonierung beeinflusst Wechselwirkungen und Struktur.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Protonierung beeinflusst Wechselwirkungen und Struktur.",
+          "B": "Die Probenwärme skaliert mit der umgesetzten Menge.",
+          "C": "Exotherme Wärmeabgabe entspricht ΔH<0 unter den passenden Druckbedingungen.",
+          "D": "Dafür braucht es quantitative Wärme- und Stoffmengenmessungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc03_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC03",
+      "stem": "Beurteilen Sie die Aussagen zur Auswertung.",
+      "options": [
+        {
+          "text": "Für das abkühlende warme Wasser wird in der Bilanz ΣQ=0 ein positives Q eingesetzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die molare Schmelzenthalpie wird als Wärmekapazität in J/K angegeben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine unbekannte oder falsche Eis-Anfangstemperatur verfälscht den Erwärmungsbeitrag des festen Eises.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Thermogramm zeigt die Temperatur als Funktion der Zeit.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mit ΔT=Ende−Anfang ist Q des abkühlenden Wassers negativ; alternativ muss die ganze Bilanz ausdrücklich auf Wärmebeträge umgestellt werden. B: Molare Enthalpie ist Energie pro Stoffmenge, etwa kJ/mol; J/K ist die Einheit einer Wärmekapazität. C: Q für Eis hängt von der Differenz bis zum Schmelzpunkt ab. D: Damit lassen sich Verlauf und geeignete Messintervalle beurteilen. Quelle: Originalunterlagen, PDF-S. 13–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC03",
+        "Datenauswertung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Datenauswertung"
+      ],
+      "questionGoal": "Datenauswertung",
+      "structuredExplanation": {
+        "coreIdea": "Datenauswertung",
+        "correctReasoning": "Q für Eis hängt von der Differenz bis zum Schmelzpunkt ab. Damit lassen sich Verlauf und geeignete Messintervalle beurteilen.",
+        "wrongAnswerExplanations": {
+          "A": "Mit ΔT=Ende−Anfang ist Q des abkühlenden Wassers negativ; alternativ muss die ganze Bilanz ausdrücklich auf Wärmebeträge umgestellt werden.",
+          "B": "Molare Enthalpie ist Energie pro Stoffmenge, etwa kJ/mol; J/K ist die Einheit einer Wärmekapazität.",
+          "C": "Q für Eis hängt von der Differenz bis zum Schmelzpunkt ab.",
+          "D": "Damit lassen sich Verlauf und geeignete Messintervalle beurteilen."
+        }
+      }
+    }
+  ]
+}

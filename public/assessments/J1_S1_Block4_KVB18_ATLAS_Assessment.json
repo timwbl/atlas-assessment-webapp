@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block4_kvb18_20261102",
+  "lectureCode": "KVB18",
+  "title": "DNA-Replikation und Reparatur",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB18_DNA Replikation_2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Artspezifische Reparaturmechanismen sind ausdrücklich gekennzeichnet. Telomerase wird als Endverlängerungsenzym und nicht als allgemeines Reparatursystem behandelt. Die pauschale Folienaussage, somatische Zellen hätten niemals Telomerase, ist nicht übernommen. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Semikonservative Replikation, Polarität und erforderliche Enzymfunktionen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Initiation, Leit- und Folgestrangsynthese bei Pro- und Eukaryoten verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Supercoiling, Primerentfernung und Ligation unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Proofreading, Mismatch- und Exzisionsreparatur mechanistisch zuordnen."
+    },
+    {
+      "id": "lo5",
+      "text": "Endreplikationsproblem und Telomerase erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb18_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Bakterien werden von schwerem auf leichtes Stickstoffmedium umgesetzt. Welche DNA-Zusammensetzung erwartet man nach genau einer Replikation?",
+      "options": [
+        {
+          "text": "Jede Doppelhelix enthält einen alten und einen neuen Strang.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nur Doppelhelices aus zwei neuen Strängen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur unveränderte schwere DNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jeder Einzelstrang enthält abwechselnd alte und neue Abschnitte.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine vollständig alte und eine vollständig neue Doppelhelix.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die semikonservative Verteilung der Elternstränge. B: Die alten Stränge bleiben als Matrizen erhalten. C: Im leichten Medium werden neue Stränge synthetisiert. D: Dies beschreibt ein dispersives Modell. E: Dies entspräche konservativer Replikation. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Semikonservative Replikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Semikonservative Replikation"
+      ],
+      "questionGoal": "Semikonservative Replikation",
+      "structuredExplanation": {
+        "coreIdea": "Semikonservative Replikation",
+        "correctReasoning": "Dies ist die semikonservative Verteilung der Elternstränge.",
+        "wrongAnswerExplanations": {
+          "B": "Die alten Stränge bleiben als Matrizen erhalten.",
+          "C": "Im leichten Medium werden neue Stränge synthetisiert.",
+          "D": "Dies beschreibt ein dispersives Modell.",
+          "E": "Dies entspräche konservativer Replikation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Ein DNA-Primer wird verlängert. Welche Gruppe greift das nächste eingebaute Nucleotid an?",
+      "options": [
+        {
+          "text": "Die freie 3′-OH-Gruppe des Primers.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das 3′-Ende des Matrizenstrangs.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die freie 5′-Phosphatgruppe des Primers.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die 2′-OH-Gruppe der Desoxyribose.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Aminogruppe der Matrizenbase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kette wächst dadurch in 5′→3′-Richtung. B: Verlängert wird der neu synthetisierte Strang. C: Die Verlängerung erfolgt nicht am 5′-Ende. D: Desoxyribose besitzt dort keine OH-Gruppe. E: Basenpaarung positioniert; das Rückgrat wird verlängert. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Synthesepolarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Synthesepolarität"
+      ],
+      "questionGoal": "Synthesepolarität",
+      "structuredExplanation": {
+        "coreIdea": "Synthesepolarität",
+        "correctReasoning": "Die Kette wächst dadurch in 5′→3′-Richtung.",
+        "wrongAnswerExplanations": {
+          "B": "Verlängert wird der neu synthetisierte Strang.",
+          "C": "Die Verlängerung erfolgt nicht am 5′-Ende.",
+          "D": "Desoxyribose besitzt dort keine OH-Gruppe.",
+          "E": "Basenpaarung positioniert; das Rückgrat wird verlängert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Warum kann eine Primase die Replikation einleiten, obwohl eine replikative DNA-Polymerase dazu allein nicht ausreicht?",
+      "options": [
+        {
+          "text": "Sie öffnet Doppelstrang-DNA am Origin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie entfernt bereits vorhandene RNA-Primer.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie verbindet benachbarte DNA-Fragmente.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie korrigiert ausschliesslich endständige Fehlpaarungen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie synthetisiert einen RNA-Primer mit verlängerbarem 3′-OH.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist vor allem die Helicasefunktion. B: Primerentfernung leitet keine neue Kette ein. C: Dies übernimmt die Ligase. D: Proofreading liefert keinen Startprimer. E: Die DNA-Polymerase benötigt einen vorhandenen Startpunkt. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Primase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Primase"
+      ],
+      "questionGoal": "Primase",
+      "structuredExplanation": {
+        "coreIdea": "Primase",
+        "correctReasoning": "Die DNA-Polymerase benötigt einen vorhandenen Startpunkt.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist vor allem die Helicasefunktion.",
+          "B": "Primerentfernung leitet keine neue Kette ein.",
+          "C": "Dies übernimmt die Ligase.",
+          "D": "Proofreading liefert keinen Startprimer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Nach Öffnung eines Replikationsursprungs paaren sich die Einzelstränge sofort wieder. Welche fehlende Funktion passt besonders gut?",
+      "options": [
+        {
+          "text": "Hydrolyse von ATP durch DNA-Ligase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Entfernung der Primer durch Exonucleasen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Stabilisierung der Einzelstränge durch bindende Proteine.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verknüpfung benachbarter Okazaki-Fragmente.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Verlängerung linearer Telomersequenzen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ligation stabilisiert keine freigelegten Einzelstränge. B: Diese wirkt später bei der Fragmentreifung. C: SSB beziehungsweise RPA halten freigelegte DNA zugänglich. D: Sie betrifft bereits synthetisierte DNA. E: Dies erklärt die Wiederpaarung am Origin nicht. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Initiation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Initiation"
+      ],
+      "questionGoal": "Initiation",
+      "structuredExplanation": {
+        "coreIdea": "Initiation",
+        "correctReasoning": "SSB beziehungsweise RPA halten freigelegte DNA zugänglich.",
+        "wrongAnswerExplanations": {
+          "A": "Ligation stabilisiert keine freigelegten Einzelstränge.",
+          "B": "Diese wirkt später bei der Fragmentreifung.",
+          "D": "Sie betrifft bereits synthetisierte DNA.",
+          "E": "Dies erklärt die Wiederpaarung am Origin nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Vor einer aktiven Replikationsgabel nimmt die Verdrillung zu. Welche Enzymfunktion baut diesen Stress ab?",
+      "options": [
+        {
+          "text": "Trennung der Basenpaare durch Helicase allein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Synthese zusätzlicher RNA-Primer durch Primase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Schliessen von Einzelstranglücken durch Ligase allein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Stabilisierung offener DNA durch SSB allein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vorübergehendes Schneiden und Wiederverknüpfen von DNA durch Topoisomerasen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie öffnet DNA, beseitigt aber die Torsion nicht allein. B: Primerbildung verändert die Topologie nicht entsprechend. C: Ligation ersetzt keine topoisomeraseabhängige Entspannung. D: SSB verhindern Wiederpaarung, beseitigen aber keine Torsion. E: Dies verändert die topologische Spannung. Quelle: Originalunterlagen, PDF-S. 11–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Torsionsspannung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Torsionsspannung"
+      ],
+      "questionGoal": "Torsionsspannung",
+      "structuredExplanation": {
+        "coreIdea": "Torsionsspannung",
+        "correctReasoning": "Dies verändert die topologische Spannung.",
+        "wrongAnswerExplanations": {
+          "A": "Sie öffnet DNA, beseitigt aber die Torsion nicht allein.",
+          "B": "Primerbildung verändert die Topologie nicht entsprechend.",
+          "C": "Ligation ersetzt keine topoisomeraseabhängige Entspannung.",
+          "D": "SSB verhindern Wiederpaarung, beseitigen aber keine Torsion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Warum entsteht der Folgestrang stückweise?",
+      "options": [
+        {
+          "text": "DNA-Polarität und ausschliessliche 5′→3′-Synthese machen wiederholtes Starten erforderlich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nur der Folgestrang benötigt einen Startprimer.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Folgestrangsynthese verläuft grundsätzlich 3′→5′.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Helicase öffnet die Folgestrangmatrize nur nach jedem Ligationsschritt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ligase zerlegt einen zunächst durchgehenden Folgestrang.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Synthese verläuft dort entgegen der Gabelbewegung. B: Auch der Leitstrang benötigt initial einen Primer. C: Auch sie synthetisiert 5′→3′. D: Die Diskontinuität folgt aus den Synthesepolaritäten. E: Ligase verbindet statt zerschneidet Fragmente. Quelle: Originalunterlagen, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Okazaki-Fragmente"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Okazaki-Fragmente"
+      ],
+      "questionGoal": "Okazaki-Fragmente",
+      "structuredExplanation": {
+        "coreIdea": "Okazaki-Fragmente",
+        "correctReasoning": "Die Synthese verläuft dort entgegen der Gabelbewegung.",
+        "wrongAnswerExplanations": {
+          "B": "Auch der Leitstrang benötigt initial einen Primer.",
+          "C": "Auch sie synthetisiert 5′→3′.",
+          "D": "Die Diskontinuität folgt aus den Synthesepolaritäten.",
+          "E": "Ligase verbindet statt zerschneidet Fragmente."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Eine Polymerase entfernt direkt nach dem Einbau ein falsch gepaartes endständiges Nucleotid. Welche Aktivität ist gemeint?",
+      "options": [
+        {
+          "text": "Helicaseaktivität.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "RNA-abhängige DNA-Synthese.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "DNA-Ligaseaktivität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "5′→3′-Polymeraseaktivität.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3′→5′-Exonucleaseaktivität.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie trennt die beiden Matrizenstränge. B: Diese bezeichnet reverse Transkription. C: Sie schliesst Unterbrechungen im Rückgrat. D: Sie fügt Nucleotide hinzu. E: Sie korrigiert rückwärts am wachsenden Ende. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Proofreading"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Proofreading"
+      ],
+      "questionGoal": "Proofreading",
+      "structuredExplanation": {
+        "coreIdea": "Proofreading",
+        "correctReasoning": "Sie korrigiert rückwärts am wachsenden Ende.",
+        "wrongAnswerExplanations": {
+          "A": "Sie trennt die beiden Matrizenstränge.",
+          "B": "Diese bezeichnet reverse Transkription.",
+          "C": "Sie schliesst Unterbrechungen im Rückgrat.",
+          "D": "Sie fügt Nucleotide hinzu."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Nach Entfernung eines bakteriellen RNA-Primers ist die Lücke mit DNA gefüllt, aber eine Unterbrechung im Rückgrat bleibt. Was fehlt?",
+      "options": [
+        {
+          "text": "Einzelstrangbindendes Protein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Telomerase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Primase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Helicase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "DNA-Ligase.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Bindung allein bildet keine Phosphodiesterbindung. B: Es handelt sich nicht um ein Chromosomenende. C: Ein neuer RNA-Primer würde die Unterbrechung nicht versiegeln. D: Sie öffnet DNA statt sie zu verschliessen. E: Sie verknüpft benachbarte 3′-OH- und 5′-Phosphatenden. Quelle: Originalunterlagen, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Fragmentreifung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fragmentreifung"
+      ],
+      "questionGoal": "Fragmentreifung",
+      "structuredExplanation": {
+        "coreIdea": "Fragmentreifung",
+        "correctReasoning": "Sie verknüpft benachbarte 3′-OH- und 5′-Phosphatenden.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Bindung allein bildet keine Phosphodiesterbindung.",
+          "B": "Es handelt sich nicht um ein Chromosomenende.",
+          "C": "Ein neuer RNA-Primer würde die Unterbrechung nicht versiegeln.",
+          "D": "Sie öffnet DNA statt sie zu verschliessen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Warum kann die Entfernung des äussersten Folgestrangprimers bei linearer DNA zu einer Verkürzung führen?",
+      "options": [
+        {
+          "text": "Das terminale DNA-Stück enthält keine Matrizeninformation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Primase kann grundsätzlich nur am Leitstrang wirken.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Für das Auffüllen fehlt vor dieser Lücke ein verlängerbares 3′-OH-Ende.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Ligase kann die fehlenden Nucleotide selbst synthetisieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Polymerase verlängert jeden frei liegenden 5′-Phosphatrest.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Problem ist der fehlende Startpunkt. B: Sie erzeugt gerade viele Folgestrangprimer. C: Eine DNA-Polymerase kann dort nicht neu beginnen. D: Sie verknüpft vorhandene Enden. E: Sie benötigt ein geeignetes 3′-OH-Ende. Quelle: Originalunterlagen, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Endreplikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endreplikation"
+      ],
+      "questionGoal": "Endreplikation",
+      "structuredExplanation": {
+        "coreIdea": "Endreplikation",
+        "correctReasoning": "Eine DNA-Polymerase kann dort nicht neu beginnen.",
+        "wrongAnswerExplanations": {
+          "A": "Das Problem ist der fehlende Startpunkt.",
+          "B": "Sie erzeugt gerade viele Folgestrangprimer.",
+          "D": "Sie verknüpft vorhandene Enden.",
+          "E": "Sie benötigt ein geeignetes 3′-OH-Ende."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Ein Enzym verlängert eine Telomersequenz mithilfe einer fest assoziierten RNA. Welche Einordnung passt?",
+      "options": [
+        {
+          "text": "DNA-abhängige DNA-Polymerase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "DNA-abhängige RNA-Polymerase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "RNA-abhängige RNA-Polymerase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "RNA-abhängige DNA-Polymerase.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Matrizenunabhängige Poly-A-Polymerase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die beschriebene Matrize ist RNA. B: Das Produkt ist DNA, nicht RNA. C: Das Produkt ist kein RNA-Strang. D: Die RNA dient als interne Matrize der Telomerase. E: Sie verlängert RNA und nutzt keine solche Matrize. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Telomerase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Telomerase"
+      ],
+      "questionGoal": "Telomerase",
+      "structuredExplanation": {
+        "coreIdea": "Telomerase",
+        "correctReasoning": "Die RNA dient als interne Matrize der Telomerase.",
+        "wrongAnswerExplanations": {
+          "A": "Die beschriebene Matrize ist RNA.",
+          "B": "Das Produkt ist DNA, nicht RNA.",
+          "C": "Das Produkt ist kein RNA-Strang.",
+          "E": "Sie verlängert RNA und nutzt keine solche Matrize."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Nach Cytosindesaminierung entsteht Uracil in DNA. Welcher Reparaturbeginn passt zur Basenexzisionsreparatur?",
+      "options": [
+        {
+          "text": "Eine Nuclease entfernt zuerst einen längeren DNA-Abschnitt beidseits der Läsion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Mismatch-Reparatur identifiziert zuerst den neu synthetisierten Strang.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine DNA-Glycosylase entfernt die betroffene Base.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Polymerase entfernt nur ein terminales Fehlpaar durch Proofreading.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ligase verschliesst die DNA ohne vorherige Basenentfernung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspricht eher der NER. B: BER beginnt mit der erkannten beschädigten Base. C: Danach werden Zuckerrest und Rückgrat repariert. D: Die Läsion muss nicht am wachsenden Ende liegen. E: Damit bliebe das Uracil erhalten. Quelle: Originalunterlagen, PDF-S. 24,26–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Basenexzision"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Basenexzision"
+      ],
+      "questionGoal": "Basenexzision",
+      "structuredExplanation": {
+        "coreIdea": "Basenexzision",
+        "correctReasoning": "Danach werden Zuckerrest und Rückgrat repariert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspricht eher der NER.",
+          "B": "BER beginnt mit der erkannten beschädigten Base.",
+          "D": "Die Läsion muss nicht am wachsenden Ende liegen.",
+          "E": "Damit bliebe das Uracil erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "UV-Licht hat eine sperrige Läsion mit Helixverformung erzeugt. Welche Reparaturstrategie passt am besten?",
+      "options": [
+        {
+          "text": "Ein DNA-Abschnitt um die Läsion wird ausgeschnitten und neu synthetisiert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich Entfernung eines terminal falsch eingebauten Nucleotids.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Primär Spaltung der N-glycosidischen Bindung einer einzelnen Uracilbase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich Ligation des unverändert beschädigten Strangs.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur Vermehrung der beschädigten Sequenz durch Replikation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: NER bearbeitet strukturverzerrende Schäden. B: Proofreading erfasst diese interne sperrige Läsion nicht. C: Dies beschreibt typische BER, nicht die sperrige Läsion. D: Der Schaden bliebe bestehen. E: Das ist keine Schadensentfernung. Quelle: Originalunterlagen, PDF-S. 24,28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Nucleotidexzision"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nucleotidexzision"
+      ],
+      "questionGoal": "Nucleotidexzision",
+      "structuredExplanation": {
+        "coreIdea": "Nucleotidexzision",
+        "correctReasoning": "NER bearbeitet strukturverzerrende Schäden.",
+        "wrongAnswerExplanations": {
+          "B": "Proofreading erfasst diese interne sperrige Läsion nicht.",
+          "C": "Dies beschreibt typische BER, nicht die sperrige Läsion.",
+          "D": "Der Schaden bliebe bestehen.",
+          "E": "Das ist keine Schadensentfernung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "DNA wird semikonservativ an verschiedenen Ursprüngen repliziert. Welche Aussagen zu Polarität und Startvoraussetzungen sind richtig?",
+      "options": [
+        {
+          "text": "Jedes eukaryotische Chromosom besitzt regulär nur einen einzigen Replikationsursprung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Replikative DNA-Polymerasen beginnen ohne Primer de novo.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das zentrale Dogma verbietet jede RNA→DNA-Übertragung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Neu synthetisierte DNA verläuft antiparallel zur Matrize.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eukaryotische Chromosomen nutzen viele Origins. B: Ein vorhandenes 3′-OH ist erforderlich. C: Reverse Transkription ist möglich. D: Dies folgt aus komplementärer Basenpaarung und Polarität. Quelle: Originalunterlagen, PDF-S. 3,6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Informationsfluss und Polymerasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Informationsfluss und Polymerasen"
+      ],
+      "questionGoal": "Informationsfluss und Polymerasen",
+      "structuredExplanation": {
+        "coreIdea": "Informationsfluss und Polymerasen",
+        "correctReasoning": "Dies folgt aus komplementärer Basenpaarung und Polarität.",
+        "wrongAnswerExplanations": {
+          "A": "Eukaryotische Chromosomen nutzen viele Origins.",
+          "B": "Ein vorhandenes 3′-OH ist erforderlich.",
+          "C": "Reverse Transkription ist möglich.",
+          "D": "Dies folgt aus komplementärer Basenpaarung und Polarität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "An einer Replikationsgabel arbeiten Polymerase, Gleitring und Primer zusammen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Bakterielle DNA-Polymerase III ist eine wichtige replikative Polymerase.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Okazaki-Fragmente sind Abschnitte des Leitstrangs vor Beginn der Replikation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Auch die eukaryotische Folgestrangsynthese beginnt wiederholt an Primern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Gleitringstruktur erhöht die Prozessivität.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie verlängert neu gebildete DNA-Stränge. B: Sie entstehen bei diskontinuierlicher Folgestrangsynthese. C: Die 5′→3′-Polymerase benötigt vorhandene Startenden. D: Sie hält die Polymerase an der DNA. Quelle: Originalunterlagen, PDF-S. 6,16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Replikationsmaschine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Replikationsmaschine"
+      ],
+      "questionGoal": "Replikationsmaschine",
+      "structuredExplanation": {
+        "coreIdea": "Replikationsmaschine",
+        "correctReasoning": "Sie verlängert neu gebildete DNA-Stränge. Die 5′→3′-Polymerase benötigt vorhandene Startenden. Sie hält die Polymerase an der DNA.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verlängert neu gebildete DNA-Stränge.",
+          "B": "Sie entstehen bei diskontinuierlicher Folgestrangsynthese.",
+          "C": "Die 5′→3′-Polymerase benötigt vorhandene Startenden.",
+          "D": "Sie hält die Polymerase an der DNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Vor und an der Replikationsgabel müssen Verdrillung und Einzelstränge kontrolliert werden. Welche Aussagen zu den Komponenten sind richtig?",
+      "options": [
+        {
+          "text": "Einzelstrangbindungsproteine besitzen als Hauptfunktion die Ligation von Okazaki-Fragmenten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Topoisomerase durchtrennt obligatorisch beide DNA-Stränge.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Topoisomerasen erzeugen vorübergehende Strangunterbrechungen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Helicase trennt die beiden Stränge.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: SSB stabilisieren offene DNA; Ligase verbindet Fragmente. B: Typ-I- und Typ-II-Enzyme unterscheiden sich darin. C: Anschliessende Wiederverknüpfung erhält das Rückgrat. D: Sie löst die Basenpaarung unter Energieverbrauch. Quelle: Originalunterlagen, PDF-S. 10–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Helicase und Topoisomerase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Helicase und Topoisomerase"
+      ],
+      "questionGoal": "Helicase und Topoisomerase",
+      "structuredExplanation": {
+        "coreIdea": "Helicase und Topoisomerase",
+        "correctReasoning": "Anschliessende Wiederverknüpfung erhält das Rückgrat. Sie löst die Basenpaarung unter Energieverbrauch.",
+        "wrongAnswerExplanations": {
+          "A": "SSB stabilisieren offene DNA; Ligase verbindet Fragmente.",
+          "B": "Typ-I- und Typ-II-Enzyme unterscheiden sich darin.",
+          "C": "Anschliessende Wiederverknüpfung erhält das Rückgrat.",
+          "D": "Sie löst die Basenpaarung unter Energieverbrauch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Nach der Folgestrangsynthese werden Primer ersetzt und Fragmente verbunden. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "RNA-Primer müssen durch DNA ersetzt werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Proofreading und Primerentfernung sind identische Funktionen jeder Polymerase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Ligase bildet eine Phosphodiesterbindung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Ligation ersetzt die gesamte vorangehende DNA-Synthese.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dauerhafte Primerreste gehören nicht zum regulären DNA-Endprodukt. B: Sie unterscheiden sich in Substrat und Richtung. C: Sie versiegelt benachbarte DNA-Enden. D: Sie verknüpft vorhandene Abschnitte. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Primer und Ligation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Primer und Ligation"
+      ],
+      "questionGoal": "Primer und Ligation",
+      "structuredExplanation": {
+        "coreIdea": "Primer und Ligation",
+        "correctReasoning": "Dauerhafte Primerreste gehören nicht zum regulären DNA-Endprodukt. Sie versiegelt benachbarte DNA-Enden.",
+        "wrongAnswerExplanations": {
+          "A": "Dauerhafte Primerreste gehören nicht zum regulären DNA-Endprodukt.",
+          "B": "Sie unterscheiden sich in Substrat und Richtung.",
+          "C": "Sie versiegelt benachbarte DNA-Enden.",
+          "D": "Sie verknüpft vorhandene Abschnitte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Basenschäden und verbliebene Replikationsfehler werden über verschiedene Wege korrigiert. Welche Zuordnungen sind richtig?",
+      "options": [
+        {
+          "text": "NER erkennt ausschliesslich falsche Basen am freien 3′-Ende.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Basenglycosylase spaltet zunächst die Bindung zwischen Base und Zucker.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "BER entfernt grundsätzlich zuerst lange DNA-Oligonucleotide beidseits jeder Läsion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mismatch-Reparatur kann nach der Replikation verbliebene Fehlpaarungen korrigieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie erkennt unter anderem sperrige Helixverformungen. B: Dies leitet viele BER-Wege ein. C: Das beschreibt eher NER; BER startet mit Basenentfernung. D: Sie ergänzt die Genauigkeit der Polymerase. Quelle: Originalunterlagen, PDF-S. 24–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Reparaturvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reparaturvergleich"
+      ],
+      "questionGoal": "Reparaturvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Reparaturvergleich",
+        "correctReasoning": "Dies leitet viele BER-Wege ein. Sie ergänzt die Genauigkeit der Polymerase.",
+        "wrongAnswerExplanations": {
+          "A": "Sie erkennt unter anderem sperrige Helixverformungen.",
+          "B": "Dies leitet viele BER-Wege ein.",
+          "C": "Das beschreibt eher NER; BER startet mit Basenentfernung.",
+          "D": "Sie ergänzt die Genauigkeit der Polymerase."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Mismatch-Reparatur soll den neu gebildeten Strang berichtigen. Welche Aussagen zur Strangunterscheidung sind richtig?",
+      "options": [
+        {
+          "text": "Die Korrektur soll den neu synthetisierten Strang treffen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Fehlpaarung beweist, welche der beiden Basen ursprünglich korrekt war.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Im E.-coli-Modell kann verzögerte DNA-Methylierung zur Strangunterscheidung beitragen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei menschlichen Zellen wird derselbe GATC-Methylierungsmechanismus obligatorisch verwendet.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sonst könnte die ursprüngliche Information verändert werden. B: Zusätzliche Stranginformation ist erforderlich. C: Dies ist ein artspezifischer Mechanismus. D: Eukaryotische Strangsignale unterscheiden sich davon. Quelle: Originalunterlagen, PDF-S. 25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Strangwahl bei MMR"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strangwahl bei MMR"
+      ],
+      "questionGoal": "Strangwahl bei MMR",
+      "structuredExplanation": {
+        "coreIdea": "Strangwahl bei MMR",
+        "correctReasoning": "Sonst könnte die ursprüngliche Information verändert werden. Dies ist ein artspezifischer Mechanismus.",
+        "wrongAnswerExplanations": {
+          "A": "Sonst könnte die ursprüngliche Information verändert werden.",
+          "B": "Zusätzliche Stranginformation ist erforderlich.",
+          "C": "Dies ist ein artspezifischer Mechanismus.",
+          "D": "Eukaryotische Strangsignale unterscheiden sich davon."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Lineare Chromosomen besitzen repetitive Enden und einen besonderen Verlängerungsmechanismus. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Telomerase muss deshalb ein RNA-Produkt statt DNA herstellen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Telomer-DNA enthält repetitive Endsequenzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Entfernung eines internen Primers verursacht zwangsläufig dasselbe Endproblem.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Telomerase bringt eine RNA-Matrize im Komplex mit.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Matrize und Produkt sind verschiedene Moleküle. B: Diese gehören zur Organisation linearer Chromosomenenden. C: Interne Lücken besitzen ein angrenzendes verlängerbares Ende. D: Diese ermöglicht die passende DNA-Verlängerung. Quelle: Originalunterlagen, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Telomerfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Telomerfunktion"
+      ],
+      "questionGoal": "Telomerfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Telomerfunktion",
+        "correctReasoning": "Diese gehören zur Organisation linearer Chromosomenenden. Diese ermöglicht die passende DNA-Verlängerung.",
+        "wrongAnswerExplanations": {
+          "A": "Matrize und Produkt sind verschiedene Moleküle.",
+          "B": "Diese gehören zur Organisation linearer Chromosomenenden.",
+          "C": "Interne Lücken besitzen ein angrenzendes verlängerbares Ende.",
+          "D": "Diese ermöglicht die passende DNA-Verlängerung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb18_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB18",
+      "stem": "Eine DNA-Probe wird auf Replikationsfehler und nachträgliche Basenschäden untersucht. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Eine hohe Replikationstreue schliesst spätere DNA-Schäden aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Depurinierung entfernt den Zucker-Phosphat-Rest, lässt aber die Purinbase kovalent gebunden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mehrere aufeinanderfolgende Kontrollstufen erhöhen die Replikationstreue.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Desaminierung kann eine chemisch veränderte Base erzeugen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Schäden können auch nach der Replikation auftreten. B: Dabei geht die Purinbase verloren und eine AP-Stelle entsteht. C: Proofreading und nachgeschaltete Reparatur ergänzen sich. D: Cytosin kann beispielsweise zu Uracil werden. Quelle: Originalunterlagen, PDF-S. 18,24,26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB18",
+        "Mutationsvermeidung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mutationsvermeidung"
+      ],
+      "questionGoal": "Mutationsvermeidung",
+      "structuredExplanation": {
+        "coreIdea": "Mutationsvermeidung",
+        "correctReasoning": "Proofreading und nachgeschaltete Reparatur ergänzen sich. Cytosin kann beispielsweise zu Uracil werden.",
+        "wrongAnswerExplanations": {
+          "A": "Schäden können auch nach der Replikation auftreten.",
+          "B": "Dabei geht die Purinbase verloren und eine AP-Stelle entsteht.",
+          "C": "Proofreading und nachgeschaltete Reparatur ergänzen sich.",
+          "D": "Cytosin kann beispielsweise zu Uracil werden."
+        }
+      }
+    }
+  ]
+}

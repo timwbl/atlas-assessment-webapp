@@ -1,0 +1,1313 @@
+{
+  "id": "assessment_j1_s1_block1_fpb_20261102",
+  "lectureCode": "FPB",
+  "title": "Photometrie – Serumprotein und Messprinzipien",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. FPB - Fachpraktikum Biochemie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Nur fachliche Praktikumstheorie und berechenbare Beispielwerte; keine Administration oder personenbezogenen Messresultate. Epsilon, Transmission und Extinktion mit expliziten Einheiten.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Absorption, Transmission, Extinktion und Absorptionsspektren erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Beer-Lambert-Gesetz mit korrekten Einheiten und Grenzen anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Biuret-Prinzip, Eichung und Rückrechnung auf die Ausgangsprobe verstehen."
+    },
+    {
+      "id": "lo4",
+      "text": "Messfehler und geeignete Kontrollen bei photometrischen Analysen beurteilen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpb_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Lösung lässt 25 % der eingestrahlten Intensität durch. Welcher Zahlenwert ist ihre Transmission T?",
+      "options": [
+        {
+          "text": "0,025.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "25.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,75.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,25.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "4.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das entspräche 2,5 %. B: Als dimensionsloser Bruch wird 25 % durch 100 geteilt. C: Das wäre im idealen reinen Absorptionsmodell der absorbierte Anteil. D: T ist I/I0 und kann als Bruch angegeben werden. E: Das ist der Kehrwert der Transmission. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Transmission"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transmission"
+      ],
+      "questionGoal": "Transmission",
+      "structuredExplanation": {
+        "coreIdea": "Transmission",
+        "correctReasoning": "T ist I/I0 und kann als Bruch angegeben werden.",
+        "wrongAnswerExplanations": {
+          "A": "Das entspräche 2,5 %.",
+          "B": "Als dimensionsloser Bruch wird 25 % durch 100 geteilt.",
+          "C": "Das wäre im idealen reinen Absorptionsmodell der absorbierte Anteil.",
+          "E": "Das ist der Kehrwert der Transmission."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Bei T = 0,01 gilt E = −log10(T). Welche Extinktion ergibt sich?",
+      "options": [
+        {
+          "text": "100.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−2.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,01.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,99.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist 1/T und noch nicht logarithmiert. B: Das Minuszeichen vor dem Logarithmus macht die Extinktion positiv. C: Transmission und Extinktion sind nicht identisch. D: Das ist der ideal absorbierte Anteil, nicht die logarithmische Extinktion. E: 10 hoch minus 2 entspricht einer Transmission von 0,01. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Extinktion berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Extinktion berechnen"
+      ],
+      "questionGoal": "Extinktion berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Extinktion berechnen",
+        "correctReasoning": "10 hoch minus 2 entspricht einer Transmission von 0,01.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist 1/T und noch nicht logarithmiert.",
+          "B": "Das Minuszeichen vor dem Logarithmus macht die Extinktion positiv.",
+          "C": "Transmission und Extinktion sind nicht identisch.",
+          "D": "Das ist der ideal absorbierte Anteil, nicht die logarithmische Extinktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Lösung hat bei 1 cm Lichtweg E = 0,30. Welcher Wert ist bei 2 cm zu erwarten, wenn das Beer-Lambert-Gesetz gilt und alle übrigen Bedingungen gleich bleiben?",
+      "options": [
+        {
+          "text": "0,09.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,15.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,60.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0,90.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,30.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Extinktion wird bei verdoppeltem Weg nicht quadriert. B: Das wäre eine Halbierung statt Verdopplung. C: E ist proportional zur Schichtdicke. D: Ein weiterer Zentimeter fügt bei gleicher Konzentration nochmals 0,30 hinzu. E: Die Extinktion hängt vom Lichtweg ab. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Schichtdicke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schichtdicke"
+      ],
+      "questionGoal": "Schichtdicke",
+      "structuredExplanation": {
+        "coreIdea": "Schichtdicke",
+        "correctReasoning": "E ist proportional zur Schichtdicke.",
+        "wrongAnswerExplanations": {
+          "A": "Die Extinktion wird bei verdoppeltem Weg nicht quadriert.",
+          "B": "Das wäre eine Halbierung statt Verdopplung.",
+          "D": "Ein weiterer Zentimeter fügt bei gleicher Konzentration nochmals 0,30 hinzu.",
+          "E": "Die Extinktion hängt vom Lichtweg ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Probe mit E = 0,80 wird auf die doppelte Gesamtmenge mit Lösungsmittel verdünnt. Welcher Wert ist im linearen Bereich bei gleichem Lichtweg zu erwarten?",
+      "options": [
+        {
+          "text": "0,80.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1,60.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,64.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,20.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,40.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das unveränderte Volumen entlang des Lichtwegs macht die Konzentration nicht unverändert. B: Das entspräche einer Verdopplung der Konzentration. C: Die Extinktion wird bei dieser Verdünnung nicht quadriert. D: Das wäre eine vierfache Verdünnung. E: Die Konzentration halbiert sich. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Konzentration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konzentration"
+      ],
+      "questionGoal": "Konzentration",
+      "structuredExplanation": {
+        "coreIdea": "Konzentration",
+        "correctReasoning": "Die Konzentration halbiert sich.",
+        "wrongAnswerExplanations": {
+          "A": "Das unveränderte Volumen entlang des Lichtwegs macht die Konzentration nicht unverändert.",
+          "B": "Das entspräche einer Verdopplung der Konzentration.",
+          "C": "Die Extinktion wird bei dieser Verdünnung nicht quadriert.",
+          "D": "Das wäre eine vierfache Verdünnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "E ist dimensionslos, c wird in mol/L und d in cm angegeben. Welche Einheit benötigt ε in E = εcd?",
+      "options": [
+        {
+          "text": "L·cm/mol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "L/(mol·cm).",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "mol·cm/L.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "cm/mol.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "mol/(L·cm).",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Längeneinheit würde nicht aufgehoben. B: Sie hebt die Konzentrations- und Längeneinheiten auf. C: Das ist die Einheit von c mal d, nicht deren Kehrwert. D: Der Volumenfaktor fehlt. E: Damit bliebe eine Konzentration zum Quadrat stehen. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Einheit von Epsilon"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Einheit von Epsilon"
+      ],
+      "questionGoal": "Einheit von Epsilon",
+      "structuredExplanation": {
+        "coreIdea": "Einheit von Epsilon",
+        "correctReasoning": "Sie hebt die Konzentrations- und Längeneinheiten auf.",
+        "wrongAnswerExplanations": {
+          "A": "Die Längeneinheit würde nicht aufgehoben.",
+          "C": "Das ist die Einheit von c mal d, nicht deren Kehrwert.",
+          "D": "Der Volumenfaktor fehlt.",
+          "E": "Damit bliebe eine Konzentration zum Quadrat stehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Warum wird zur empfindlichen Konzentrationsmessung häufig nahe dem Absorptionsmaximum des Analyten gemessen?",
+      "options": [
+        {
+          "text": "Dort bewirkt eine Konzentrationsänderung typischerweise eine grosse Änderung der Extinktion.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Maximum beseitigt jede mögliche Störung durch andere Stoffe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur am Maximum besitzt Licht eine Frequenz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Am Maximum ist ε definitionsgemäss null.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Am Maximum ist die Extinktion unabhängig von der Konzentration.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein grosses ε erhöht die Steigung von E gegen c. B: Überlagerte Absorption kann weiterhin stören. C: Jede monochromatische Wellenlänge hat eine zugehörige Frequenz. D: Dort ist ε für die betrachtete Bande besonders gross. E: Im linearen Bereich bleibt E proportional zu c. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Wellenlängenwahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wellenlängenwahl"
+      ],
+      "questionGoal": "Wellenlängenwahl",
+      "structuredExplanation": {
+        "coreIdea": "Wellenlängenwahl",
+        "correctReasoning": "Ein grosses ε erhöht die Steigung von E gegen c.",
+        "wrongAnswerExplanations": {
+          "B": "Überlagerte Absorption kann weiterhin stören.",
+          "C": "Jede monochromatische Wellenlänge hat eine zugehörige Frequenz.",
+          "D": "Dort ist ε für die betrachtete Bande besonders gross.",
+          "E": "Im linearen Bereich bleibt E proportional zu c."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Ein Albuminstandard hat 10 mg/mL. Wie viel Protein enthalten 200 µL dieses Standards?",
+      "options": [
+        {
+          "text": "200 mg.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,2 mg.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,02 mg.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 mg.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2 mg.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mikroliter dürfen nicht als Milliliter eingesetzt werden. B: Dabei fehlt ein Faktor 10. C: Das liegt um den Faktor 100 zu tief. D: 200 µL sind 0,2 und nicht 2 mL. E: 0,200 mL mal 10 mg/mL ergibt 2 mg. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Standard ansetzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Standard ansetzen"
+      ],
+      "questionGoal": "Standard ansetzen",
+      "structuredExplanation": {
+        "coreIdea": "Standard ansetzen",
+        "correctReasoning": "0,200 mL mal 10 mg/mL ergibt 2 mg.",
+        "wrongAnswerExplanations": {
+          "A": "Mikroliter dürfen nicht als Milliliter eingesetzt werden.",
+          "B": "Dabei fehlt ein Faktor 10.",
+          "C": "Das liegt um den Faktor 100 zu tief.",
+          "D": "200 µL sind 0,2 und nicht 2 mL."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Aus der Eichkurve werden 3,5 mg Protein für den Ansatz mit 50 µL ursprünglichem Serum ermittelt. Wie hoch ist dessen Proteinkonzentration?",
+      "options": [
+        {
+          "text": "1,17 g/L.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "175 g/L.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,07 g/L.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "70 g/L.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "7 g/L.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier würde fälschlich das gesamte Reaktionsvolumen als ursprüngliches Serumvolumen verwendet. B: Die Proteinmenge muss durch das eingesetzte Serumvolumen dividiert werden. C: mg/mL und g/L haben denselben Zahlenwert. D: 3,5 mg geteilt durch 0,050 mL ergibt 70 mg/mL, also 70 g/L. E: Das ist um den Faktor 10 zu niedrig. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Serum zurückrechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Serum zurückrechnen"
+      ],
+      "questionGoal": "Serum zurückrechnen",
+      "structuredExplanation": {
+        "coreIdea": "Serum zurückrechnen",
+        "correctReasoning": "3,5 mg geteilt durch 0,050 mL ergibt 70 mg/mL, also 70 g/L.",
+        "wrongAnswerExplanations": {
+          "A": "Hier würde fälschlich das gesamte Reaktionsvolumen als ursprüngliches Serumvolumen verwendet.",
+          "B": "Die Proteinmenge muss durch das eingesetzte Serumvolumen dividiert werden.",
+          "C": "mg/mL und g/L haben denselben Zahlenwert.",
+          "E": "Das ist um den Faktor 10 zu niedrig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Vor Zugabe des Reagenzes werden 50 µL Serum mit 450 µL Kochsalzlösung gemischt. Welcher Vorverdünnungsfaktor liegt vor?",
+      "options": [
+        {
+          "text": "60.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "5.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "50.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "9.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser Faktor würde bereits das spätere Reagenzvolumen einbeziehen. B: Das Gesamtvolumen muss durch 50 und nicht durch 100 µL geteilt werden. C: Die eingesetzte Zahl in µL ist nicht der dimensionslose Verdünnungsfaktor. D: Das Gesamtvolumen von 500 µL ist zehnmal das Serumvolumen. E: Das ist nur das Verhältnis des zugesetzten Verdünners zum Serum. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Vorverdünnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vorverdünnung"
+      ],
+      "questionGoal": "Vorverdünnung",
+      "structuredExplanation": {
+        "coreIdea": "Vorverdünnung",
+        "correctReasoning": "Das Gesamtvolumen von 500 µL ist zehnmal das Serumvolumen.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser Faktor würde bereits das spätere Reagenzvolumen einbeziehen.",
+          "B": "Das Gesamtvolumen muss durch 50 und nicht durch 100 µL geteilt werden.",
+          "C": "Die eingesetzte Zahl in µL ist nicht der dimensionslose Verdünnungsfaktor.",
+          "E": "Das ist nur das Verhältnis des zugesetzten Verdünners zum Serum."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Ein Leeransatz enthält alle Reagenzien und Lösungsmittel, aber kein Protein. Was wird mit ihm vor allem berücksichtigt?",
+      "options": [
+        {
+          "text": "Hintergrundbeiträge des Ansatzes und Messsystems bei der gewählten Wellenlänge.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die unbekannte Proteinkonzentration jeder Probe wird dadurch bereits bestimmt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Eichgerade wird durch einen beliebigen Zahlenwert ersetzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede selektive Störung, die nur in einer Patientenprobe vorkommt, wird automatisch entfernt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Schichtdicke wird dadurch unabhängig von der Küvette festgelegt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Nullabgleich trennt diesen Beitrag vom Analytsignal. B: Dafür braucht es das Probensignal und die Eichung. C: Standards mit bekannten Mengen bleiben nötig. D: Ein allgemeiner Leerwert enthält solche probenspezifischen Störer nicht. E: Die Geometrie bleibt eine eigene Messbedingung. Quelle: Originalunterlagen, PDF-S. 5,10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Leerwert"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leerwert"
+      ],
+      "questionGoal": "Leerwert",
+      "structuredExplanation": {
+        "coreIdea": "Leerwert",
+        "correctReasoning": "Der Nullabgleich trennt diesen Beitrag vom Analytsignal.",
+        "wrongAnswerExplanations": {
+          "B": "Dafür braucht es das Probensignal und die Eichung.",
+          "C": "Standards mit bekannten Mengen bleiben nötig.",
+          "D": "Ein allgemeiner Leerwert enthält solche probenspezifischen Störer nicht.",
+          "E": "Die Geometrie bleibt eine eigene Messbedingung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Probe absorbiert so stark, dass kaum Restlicht ankommt und der Wert ausserhalb des validierten linearen Bereichs liegt. Was ist am sinnvollsten?",
+      "options": [
+        {
+          "text": "Den Verdünnungsfaktor nach der Wiederholungsmessung ignorieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Geeignet verdünnen, erneut messen und den Verdünnungsfaktor berücksichtigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Transmission einfach als Konzentration in g/L notieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Den hohen Wert ohne Prüfung beliebig weit linear extrapolieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Messung ausschliesslich häufiger wiederholen, ohne die unpassenden Bedingungen zu ändern.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dann würde die Ausgangskonzentration unterschätzt. B: So wird im verlässlicheren Messbereich gearbeitet. C: Transmission besitzt nicht diese Bedeutung oder Einheit. D: Linearität und Signalqualität sind dort nicht gesichert. E: Wiederholung allein behebt das Bereichsproblem nicht. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Ausserhalb des Messbereichs"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ausserhalb des Messbereichs"
+      ],
+      "questionGoal": "Ausserhalb des Messbereichs",
+      "structuredExplanation": {
+        "coreIdea": "Ausserhalb des Messbereichs",
+        "correctReasoning": "So wird im verlässlicheren Messbereich gearbeitet.",
+        "wrongAnswerExplanations": {
+          "A": "Dann würde die Ausgangskonzentration unterschätzt.",
+          "C": "Transmission besitzt nicht diese Bedeutung oder Einheit.",
+          "D": "Linearität und Signalqualität sind dort nicht gesichert.",
+          "E": "Wiederholung allein behebt das Bereichsproblem nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Welche Eigenschaft wird bei der Biuret-Proteinbestimmung für die Farbreaktion genutzt?",
+      "options": [
+        {
+          "text": "Die natürliche Eigenfarbe jedes einzelnen Serumproteins wird ohne Reagenz addiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Freie Aminosäuren reagieren grundsätzlich stärker als jedes Protein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich die Zahl der DNA-Basen im Serum wird gemessen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur Disulfidbrücken, aber keine Peptidbindungen können Kupfer komplexieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Peptidgruppen bilden im alkalischen Milieu mit Cu2+ einen farbigen Komplex.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Farbreaktion erzeugt den messbaren Komplex. B: Sie liefern nicht die typische Biuretreaktion. C: Die Methode zielt auf Proteine beziehungsweise Peptidbindungen. D: Die Methode beruht auf Peptidgruppen, nicht ausschliesslich Disulfiden. E: Mehrere Peptidbindungen ermöglichen die charakteristische Reaktion. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Biuret-Prinzip"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biuret-Prinzip"
+      ],
+      "questionGoal": "Biuret-Prinzip",
+      "structuredExplanation": {
+        "coreIdea": "Biuret-Prinzip",
+        "correctReasoning": "Mehrere Peptidbindungen ermöglichen die charakteristische Reaktion.",
+        "wrongAnswerExplanations": {
+          "A": "Die Farbreaktion erzeugt den messbaren Komplex.",
+          "B": "Sie liefern nicht die typische Biuretreaktion.",
+          "C": "Die Methode zielt auf Proteine beziehungsweise Peptidbindungen.",
+          "D": "Die Methode beruht auf Peptidgruppen, nicht ausschliesslich Disulfiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Substanz wird bei verschiedenen Wellenlängen untersucht. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Jede photometrische Messung muss mit sichtbarem Licht erfolgen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Absorptionsspektrum stellt die Wellenlängenabhängigkeit der Absorption dar.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Stoff kann im sichtbaren Bereich farblos sein und dennoch UV-Licht absorbieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der molare Extinktionskoeffizient ist bei allen Wellenlängen identisch.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch UV und weitere Spektralbereiche sind möglich. B: Die spektrale Form liefert qualitative Informationen. C: Sichtbarkeit ist keine Voraussetzung für UV-Absorption. D: ε ist wellenlängenabhängig. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Spektrum und Konzentration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spektrum und Konzentration"
+      ],
+      "questionGoal": "Spektrum und Konzentration",
+      "structuredExplanation": {
+        "coreIdea": "Spektrum und Konzentration",
+        "correctReasoning": "Die spektrale Form liefert qualitative Informationen. Sichtbarkeit ist keine Voraussetzung für UV-Absorption.",
+        "wrongAnswerExplanations": {
+          "A": "Auch UV und weitere Spektralbereiche sind möglich.",
+          "B": "Die spektrale Form liefert qualitative Informationen.",
+          "C": "Sichtbarkeit ist keine Voraussetzung für UV-Absorption.",
+          "D": "ε ist wellenlängenabhängig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Zwei Messungen liefern E = 1 beziehungsweise E = 2. Welche Aussagen treffen im idealen Absorptionsmodell zu?",
+      "options": [
+        {
+          "text": "Bei E = 2 beträgt T 0,01.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei E = 1 beträgt T 0,1.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Verdopplung von E verdoppelt hier auch T.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "E und T besitzen beide die Einheit g/L.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Prozent wird durchgelassen. B: Zehn Prozent werden durchgelassen. C: Die Transmission nimmt logarithmisch verknüpft ab. D: Beide sind dimensionslose Messgrössen. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Transmission und Extinktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transmission und Extinktion"
+      ],
+      "questionGoal": "Transmission und Extinktion",
+      "structuredExplanation": {
+        "coreIdea": "Transmission und Extinktion",
+        "correctReasoning": "Ein Prozent wird durchgelassen. Zehn Prozent werden durchgelassen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Prozent wird durchgelassen.",
+          "B": "Zehn Prozent werden durchgelassen.",
+          "C": "Die Transmission nimmt logarithmisch verknüpft ab.",
+          "D": "Beide sind dimensionslose Messgrössen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Dieselbe Lösung wird in unterschiedlichen Küvetten untersucht. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Eine sichtbar klare Küvette ist automatisch für jede UV-Wellenlänge geeignet.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Küvettenmaterial und Lösungsmittel können im gewählten Bereich selbst absorbieren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine doppelte Füllmenge verdoppelt unabhängig von der Geometrie immer die Extinktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei gleichem Lichtweg ändert zusätzliches Volumen ausserhalb des Strahls die ideale Extinktion nicht.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: UV-Durchlässigkeit hängt vom Material ab. B: Ihre Eignung muss berücksichtigt werden. C: Das Volumen allein ist kein Faktor des Gesetzes. D: Entscheidend sind c und d entlang des Messlichts. Quelle: Originalunterlagen, PDF-S. 8–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Messgeometrie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messgeometrie"
+      ],
+      "questionGoal": "Messgeometrie",
+      "structuredExplanation": {
+        "coreIdea": "Messgeometrie",
+        "correctReasoning": "Ihre Eignung muss berücksichtigt werden. Entscheidend sind c und d entlang des Messlichts.",
+        "wrongAnswerExplanations": {
+          "A": "UV-Durchlässigkeit hängt vom Material ab.",
+          "B": "Ihre Eignung muss berücksichtigt werden.",
+          "C": "Das Volumen allein ist kein Faktor des Gesetzes.",
+          "D": "Entscheidend sind c und d entlang des Messlichts."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Kalibration soll mit Beer-Lambert beschrieben werden. Welche Bedingungen beziehungsweise Grenzen sind relevant?",
+      "options": [
+        {
+          "text": "Bei hoher Konzentration können Wechselwirkungen zu Abweichungen führen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Wellenlänge muss ausreichend definiert sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Streuung darf unter allen Bedingungen als reine Analytabsorption interpretiert werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein bekannter ε-Wert ist unabhängig von Messbedingungen auf jeden Stoff übertragbar.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der lineare Bereich ist begrenzt. B: Breitbandiges Licht kann die einfache Beziehung beeinträchtigen. C: Streuung kann das gemessene Signal verfälschen. D: ε ist stoff- und bedingungsabhängig. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Gesetz anwenden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gesetz anwenden"
+      ],
+      "questionGoal": "Gesetz anwenden",
+      "structuredExplanation": {
+        "coreIdea": "Gesetz anwenden",
+        "correctReasoning": "Der lineare Bereich ist begrenzt. Breitbandiges Licht kann die einfache Beziehung beeinträchtigen.",
+        "wrongAnswerExplanations": {
+          "A": "Der lineare Bereich ist begrenzt.",
+          "B": "Breitbandiges Licht kann die einfache Beziehung beeinträchtigen.",
+          "C": "Streuung kann das gemessene Signal verfälschen.",
+          "D": "ε ist stoff- und bedingungsabhängig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine Eichkurve wird aus bekannten Albuminmengen erstellt. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Eine Eichkurve beseitigt automatisch jeden systematischen Pipettierfehler in unbekannten Proben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Unbekannte Proben müssen unter vergleichbaren Reaktions- und Messbedingungen untersucht werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei der Rückrechnung muss das tatsächlich eingesetzte Ausgangsprobenvolumen berücksichtigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die in der Küvette ermittelte Proteinmenge ist bereits ohne Volumenbezug eine Konzentration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Probenspezifische Fehler können bestehen bleiben. B: Nur so ist die Kalibration sinnvoll übertragbar. C: Die Eichung liefert hier eine Proteinmenge im Ansatz. D: Menge und Konzentration sind verschiedene Grössen. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Eichkurve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eichkurve"
+      ],
+      "questionGoal": "Eichkurve",
+      "structuredExplanation": {
+        "coreIdea": "Eichkurve",
+        "correctReasoning": "Nur so ist die Kalibration sinnvoll übertragbar. Die Eichung liefert hier eine Proteinmenge im Ansatz.",
+        "wrongAnswerExplanations": {
+          "A": "Probenspezifische Fehler können bestehen bleiben.",
+          "B": "Nur so ist die Kalibration sinnvoll übertragbar.",
+          "C": "Die Eichung liefert hier eine Proteinmenge im Ansatz.",
+          "D": "Menge und Konzentration sind verschiedene Grössen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Drei Ansätze derselben Probe werden verglichen. Welche Aussagen sind angemessen?",
+      "options": [
+        {
+          "text": "Eine zusätzliche Verdünnung muss bei der Berechnung nie berücksichtigt werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Stark auseinanderliegende Werte können auf unzureichende Präzision hinweisen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein ungeeigneter Messbereich wird durch Mittelwertbildung allein nicht verlässlich korrigiert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Drei identische Werte beweisen die Abwesenheit jedes systematischen Fehlers.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie verändert die Beziehung zur Ausgangsprobe. B: Wiederholungen machen Streuung sichtbar. C: Die Messbedingungen müssen geeignet sein. D: Ein gemeinsamer Bias kann alle Messungen gleich verschieben. Quelle: Originalunterlagen, PDF-S. 5–6,13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Wiederholungsmessungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wiederholungsmessungen"
+      ],
+      "questionGoal": "Wiederholungsmessungen",
+      "structuredExplanation": {
+        "coreIdea": "Wiederholungsmessungen",
+        "correctReasoning": "Wiederholungen machen Streuung sichtbar. Die Messbedingungen müssen geeignet sein.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verändert die Beziehung zur Ausgangsprobe.",
+          "B": "Wiederholungen machen Streuung sichtbar.",
+          "C": "Die Messbedingungen müssen geeignet sein.",
+          "D": "Ein gemeinsamer Bias kann alle Messungen gleich verschieben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Ein Absorptionssignal wird molekular interpretiert. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Absorption setzt passende Energieübergänge im Stoff voraus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Fluoreszenzstrahlung besitzt bei gewöhnlicher Stokes-Fluoreszenz eine höhere Frequenz als das anregende Licht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Konjugierte Doppelbindungen können das Absorptionsverhalten beeinflussen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Veränderung der chemischen Struktur kann ein Absorptionsspektrum grundsätzlich nicht verändern.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Photonenergie und mögliche Übergänge müssen zusammenpassen. B: Nach Energieverlust ist sie typischerweise energieärmer und langwelliger. C: Art und Anordnung der Chromophore sind relevant. D: Struktur bestimmt die elektronischen Übergänge mit. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Strahlung und Materie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strahlung und Materie"
+      ],
+      "questionGoal": "Strahlung und Materie",
+      "structuredExplanation": {
+        "coreIdea": "Strahlung und Materie",
+        "correctReasoning": "Photonenergie und mögliche Übergänge müssen zusammenpassen. Art und Anordnung der Chromophore sind relevant.",
+        "wrongAnswerExplanations": {
+          "A": "Photonenergie und mögliche Übergänge müssen zusammenpassen.",
+          "B": "Nach Energieverlust ist sie typischerweise energieärmer und langwelliger.",
+          "C": "Art und Anordnung der Chromophore sind relevant.",
+          "D": "Struktur bestimmt die elektronischen Übergänge mit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpb_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPB",
+      "stem": "Eine biologische Probe enthält zusätzlich zum Analyten weitere absorbierende Stoffe. Welche Folgerungen sind richtig?",
+      "options": [
+        {
+          "text": "Jede Extinktion bei der Messwellenlänge stammt zwingend ausschliesslich vom Zielstoff.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine günstige Wellenlängenwahl kann den Einfluss störender Absorption vermindern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Reagenzleerwert beseitigt nicht automatisch jeden probenspezifischen Störeinfluss.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine hohe Empfindlichkeit bedeutet definitionsgemäss vollständige analytische Spezifität.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Andere Absorber und Messartefakte können beitragen. B: Spektrale Unterschiede können genutzt werden. C: Der Störer kann nur in der Probe enthalten sein. D: Empfindlichkeit und Spezifität sind verschiedene Eigenschaften. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPB",
+        "Signal unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Signal unterscheiden"
+      ],
+      "questionGoal": "Signal unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Signal unterscheiden",
+        "correctReasoning": "Spektrale Unterschiede können genutzt werden. Der Störer kann nur in der Probe enthalten sein.",
+        "wrongAnswerExplanations": {
+          "A": "Andere Absorber und Messartefakte können beitragen.",
+          "B": "Spektrale Unterschiede können genutzt werden.",
+          "C": "Der Störer kann nur in der Probe enthalten sein.",
+          "D": "Empfindlichkeit und Spezifität sind verschiedene Eigenschaften."
+        }
+      }
+    }
+  ]
+}

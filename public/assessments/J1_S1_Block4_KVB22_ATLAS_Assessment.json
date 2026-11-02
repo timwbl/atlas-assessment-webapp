@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block4_kvb22_20261102",
+  "lectureCode": "KVB22",
+  "title": "Translation: Code, Ribosomen und Proteinsynthese",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB22_Translation Vorlesung_2025_Fotiadis. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Standard-Decodierung mit bekannten Sonderfällen getrennt; keine universellen Translationsraten. Initiator-tRNAs sind nicht pauschal mit Elongator-tRNAs gleichgesetzt. Energiebilanz ausdrücklich vereinfachtes Elongationsmodell. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Genetischen Code, Leseraster und tRNA-Beladung erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Ribosomenstruktur sowie pro- und eukaryotische Initiation vergleichen."
+    },
+    {
+      "id": "lo3",
+      "text": "Elongation, Energiekopplung, Termination und Wobble erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Polysomen und selektive Hemmung der Translation funktionell einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb22_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Der genetische Code wird als degeneriert bezeichnet. Welche Beziehung zwischen Codons und Aminosäuren ist damit gemeint?",
+      "options": [
+        {
+          "text": "Ein Codon kann gleichzeitig beliebige Aminosäuren spezifizieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Aminosäure besitzt zwingend genau dieselbe Codonzahl.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Codon besteht nur aus zwei statt drei Basen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mehrere Aminosäuren müssen an eine einzelne tRNA gebunden werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mehrere Codons können dieselbe Aminosäure festlegen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Degeneration betrifft mehrere Codons für dieselbe Aminosäure. B: Die Zahl synonymer Codons variiert. C: Der Standardcode wird in Tripletts gelesen. D: Dies folgt nicht aus der Code-Degeneration. E: Die Zuordnung besitzt Redundanz. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Code"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Code"
+      ],
+      "questionGoal": "Code",
+      "structuredExplanation": {
+        "coreIdea": "Code",
+        "correctReasoning": "Die Zuordnung besitzt Redundanz.",
+        "wrongAnswerExplanations": {
+          "A": "Degeneration betrifft mehrere Codons für dieselbe Aminosäure.",
+          "B": "Die Zahl synonymer Codons variiert.",
+          "C": "Der Standardcode wird in Tripletts gelesen.",
+          "D": "Dies folgt nicht aus der Code-Degeneration."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Eine einzelne Base wird früh in eine codierende Sequenz eingefügt. Welche Folge ist besonders naheliegend?",
+      "options": [
+        {
+          "text": "Nur eine zusätzliche Aminosäure bei sonst unverändertem Leserahmen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur das betroffene Codon ändert sich, alle folgenden bleiben sicher gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die tRNAs entfernen die zusätzliche Base grundsätzlich automatisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verschiebung des nachfolgenden Leserasters.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Es ist zwingend eine synonyme Mutation ohne Proteinfolge.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein einzelner Baseneinschub verschiebt gewöhnlich den Rahmen. B: Die Triplettgruppierung kann danach verändert sein. C: tRNAs korrigieren keine solche mRNA-Längenänderung. D: Ein Triplettcode reagiert auf Einfügungen ausserhalb von Dreierschritten. E: Ein einzelner Einschub ist kein gewöhnlicher synonymischer Basenaustausch. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Leseraster"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leseraster"
+      ],
+      "questionGoal": "Leseraster",
+      "structuredExplanation": {
+        "coreIdea": "Leseraster",
+        "correctReasoning": "Ein Triplettcode reagiert auf Einfügungen ausserhalb von Dreierschritten.",
+        "wrongAnswerExplanations": {
+          "A": "Ein einzelner Baseneinschub verschiebt gewöhnlich den Rahmen.",
+          "B": "Die Triplettgruppierung kann danach verändert sein.",
+          "C": "tRNAs korrigieren keine solche mRNA-Längenänderung.",
+          "E": "Ein einzelner Einschub ist kein gewöhnlicher synonymischer Basenaustausch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Welche Komponente koppelt eine passende Aminosäure unter ATP-Verbrauch an ihre tRNA?",
+      "options": [
+        {
+          "text": "Peptidyltransferase des Ribosoms.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Elongationsfaktor mit GTPaseaktivität.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein proteinärer Releasefaktor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aminoacyl-tRNA-Synthetase.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Primase der DNA-Replikation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie verbindet Aminosäuren während der Elongation. B: Er liefert beziehungsweise bewegt beladene tRNAs. C: Er fördert die Kettenfreisetzung am Stopcodon. D: Sie erkennt Aminosäure und geeignete tRNA. E: Sie erzeugt RNA-Primer, keine Aminoacyl-tRNA. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Beladung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Beladung"
+      ],
+      "questionGoal": "Beladung",
+      "structuredExplanation": {
+        "coreIdea": "Beladung",
+        "correctReasoning": "Sie erkennt Aminosäure und geeignete tRNA.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verbindet Aminosäuren während der Elongation.",
+          "B": "Er liefert beziehungsweise bewegt beladene tRNAs.",
+          "C": "Er fördert die Kettenfreisetzung am Stopcodon.",
+          "E": "Sie erzeugt RNA-Primer, keine Aminoacyl-tRNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Wo ist die Aminosäure einer beladenen tRNA gebunden?",
+      "options": [
+        {
+          "text": "Am Anticodonarm der tRNA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Am 5′-Phosphatende der tRNA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "An der mRNA-Kappe des Startcodons.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Am terminalen Adenosin des 3′-CCA-Endes.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Direkt an der rRNA der kleinen Untereinheit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser erkennt das Codon, trägt aber nicht die Aminosäure. B: Die Beladung erfolgt am 3′-CCA-Ende. C: Die Aminosäure ist an tRNA gebunden. D: Eine Esterbindung verknüpft Aminosäure und Ribose. E: rRNA ist nicht der dauerhafte Aminosäureträger. Quelle: Originalunterlagen, PDF-S. 7,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Akzeptorende"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Akzeptorende"
+      ],
+      "questionGoal": "Akzeptorende",
+      "structuredExplanation": {
+        "coreIdea": "Akzeptorende",
+        "correctReasoning": "Eine Esterbindung verknüpft Aminosäure und Ribose.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser erkennt das Codon, trägt aber nicht die Aminosäure.",
+          "B": "Die Beladung erfolgt am 3′-CCA-Ende.",
+          "C": "Die Aminosäure ist an tRNA gebunden.",
+          "E": "rRNA ist nicht der dauerhafte Aminosäureträger."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Wie wird eine typische bakterielle Ribosomenbindestelle erkannt?",
+      "options": [
+        {
+          "text": "Erkennung ausschliesslich über die eukaryotische 5′-Kappe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Shine-Dalgarno-Paarung mit ribosomaler RNA.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Paarung des Startcodons mit einem Sigmafaktor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bindung der grossen Untereinheit an einen DNA-Promotor.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Erkennung eines Stopcodons vor jedem Start durch einen Releasefaktor.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bakterielle Initiation verwendet typischerweise Shine-Dalgarno-Paarung. B: Diese positioniert die kleine Untereinheit nahe dem Start. C: Sigma erkennt Transkriptionspromotoren, nicht das Startcodon. D: Das Ribosom bindet die mRNA. E: Releasefaktoren beenden Translation. Quelle: Originalunterlagen, PDF-S. 13–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Bakterielle Initiation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bakterielle Initiation"
+      ],
+      "questionGoal": "Bakterielle Initiation",
+      "structuredExplanation": {
+        "coreIdea": "Bakterielle Initiation",
+        "correctReasoning": "Diese positioniert die kleine Untereinheit nahe dem Start.",
+        "wrongAnswerExplanations": {
+          "A": "Bakterielle Initiation verwendet typischerweise Shine-Dalgarno-Paarung.",
+          "C": "Sigma erkennt Transkriptionspromotoren, nicht das Startcodon.",
+          "D": "Das Ribosom bindet die mRNA.",
+          "E": "Releasefaktoren beenden Translation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Welche tRNA besetzt beim regulären Start zuerst die P-Stelle?",
+      "options": [
+        {
+          "text": "Die erste elongierende Aminoacyl-tRNA an der A-Stelle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine unbeladene tRNA an der E-Stelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die passende Initiator-tRNA.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein proteinärer Releasefaktor in der P-Stelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine normale Elongator-tRNA unabhängig vom Startcodon.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Initiator-tRNA beginnt direkt in der P-Stelle. B: Die E-Stelle dient dem Austritt. C: Sie unterscheidet sich funktionell von eintretenden Elongator-tRNAs. D: Er erkennt Stopcodons gewöhnlich an der A-Stelle. E: Eine spezialisierte Initiator-tRNA wird benötigt. Quelle: Originalunterlagen, PDF-S. 11,14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Initiator-tRNA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Initiator-tRNA"
+      ],
+      "questionGoal": "Initiator-tRNA",
+      "structuredExplanation": {
+        "coreIdea": "Initiator-tRNA",
+        "correctReasoning": "Sie unterscheidet sich funktionell von eintretenden Elongator-tRNAs.",
+        "wrongAnswerExplanations": {
+          "A": "Die Initiator-tRNA beginnt direkt in der P-Stelle.",
+          "B": "Die E-Stelle dient dem Austritt.",
+          "D": "Er erkennt Stopcodons gewöhnlich an der A-Stelle.",
+          "E": "Eine spezialisierte Initiator-tRNA wird benötigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Welche Komponente trägt wesentlich die Peptidyltransferaseaktivität?",
+      "options": [
+        {
+          "text": "Die kleine ribosomale Untereinheit allein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Aminoacyl-tRNA-Synthetase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "rRNA der grossen Untereinheit.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Elongationsfaktor für Translokation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Anticodon der eintretenden tRNA allein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie ist wesentlich für Decodierung, nicht das Peptidyltransferasezentrum. B: Diese belädt tRNA vor der ribosomalen Peptidbildung. C: Das katalytische Zentrum ist RNA-basiert. D: Er verschiebt das Ribosom, katalysiert nicht die Peptidbindung. E: Codonerkennung ersetzt nicht die ribosomale Katalyse. Quelle: Originalunterlagen, PDF-S. 11–12,16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Peptidbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Peptidbindung"
+      ],
+      "questionGoal": "Peptidbindung",
+      "structuredExplanation": {
+        "coreIdea": "Peptidbindung",
+        "correctReasoning": "Das katalytische Zentrum ist RNA-basiert.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist wesentlich für Decodierung, nicht das Peptidyltransferasezentrum.",
+          "B": "Diese belädt tRNA vor der ribosomalen Peptidbildung.",
+          "D": "Er verschiebt das Ribosom, katalysiert nicht die Peptidbindung.",
+          "E": "Codonerkennung ersetzt nicht die ribosomale Katalyse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Was beschreibt die Translokation während der Elongation?",
+      "options": [
+        {
+          "text": "Beladung einer freien tRNA mit Aminosäure.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vorrücken des Ribosoms mit Verschiebung der tRNA-Besetzung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Übertragung der wachsenden Kette auf die A-Stellen-tRNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Freisetzung des Proteins am Stopcodon.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Anlagerung der ersten Ribosomenuntereinheit an die Startregion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist Aminoacylierung vor der Translation. B: Die nächste mRNA-Triplettposition wird zugänglich. C: Dies ist Peptidyltransfer, nicht die folgende Verschiebung. D: Dies ist Termination. E: Dies gehört zur Initiation. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Translokation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Translokation"
+      ],
+      "questionGoal": "Translokation",
+      "structuredExplanation": {
+        "coreIdea": "Translokation",
+        "correctReasoning": "Die nächste mRNA-Triplettposition wird zugänglich.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist Aminoacylierung vor der Translation.",
+          "C": "Dies ist Peptidyltransfer, nicht die folgende Verschiebung.",
+          "D": "Dies ist Termination.",
+          "E": "Dies gehört zur Initiation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Im vereinfachten Modell werden pro Elongationsschritt ATP→AMP und zwei GTP→GDP umgesetzt. Wie viele energiereiche Bindungen werden beansprucht?",
+      "options": [
+        {
+          "text": "Drei.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vier.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Acht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwei.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: ATP→AMP ist nicht bloss ATP→ADP. B: Die GTP-Schritte und ATP-Aktivierung fehlen darin. C: ATP→AMP zählt mit anschliessender PPi-Hydrolyse als zwei. D: Das Modell enthält keine acht entsprechenden Umsätze. E: Dies zählt nur die zwei GTP-Umsätze. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Energiebilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiebilanz"
+      ],
+      "questionGoal": "Energiebilanz",
+      "structuredExplanation": {
+        "coreIdea": "Energiebilanz",
+        "correctReasoning": "ATP→AMP zählt mit anschliessender PPi-Hydrolyse als zwei.",
+        "wrongAnswerExplanations": {
+          "A": "ATP→AMP ist nicht bloss ATP→ADP.",
+          "B": "Die GTP-Schritte und ATP-Aktivierung fehlen darin.",
+          "D": "Das Modell enthält keine acht entsprechenden Umsätze.",
+          "E": "Dies zählt nur die zwei GTP-Umsätze."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Ein Stopcodon gelangt in die A-Stelle. Was ermöglicht die Freisetzung des Polypeptids?",
+      "options": [
+        {
+          "text": "Eine passende Aminoacyl-tRNA für das Stopcodon.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Freisetzungsfaktor fördert die Hydrolyse der Peptidyl-tRNA-Bindung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die DNA-Polymerase entfernt das Stopcodon aus mRNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Peptidbindung zwischen jeder einzelnen Aminosäure wird gespalten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Initiator-tRNA bindet erneut in die E-Stelle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Im Standardfall erkennt ein Protein das Stopcodon. B: Dadurch wird die Kette vom Träger getrennt. C: DNA-Polymerasen übernehmen keine normale Translationstermination. D: Freigesetzt wird die Kette von der tRNA, nicht vollständig zerlegt. E: Dies erklärt keine Kettenfreisetzung. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Termination"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Termination"
+      ],
+      "questionGoal": "Termination",
+      "structuredExplanation": {
+        "coreIdea": "Termination",
+        "correctReasoning": "Dadurch wird die Kette vom Träger getrennt.",
+        "wrongAnswerExplanations": {
+          "A": "Im Standardfall erkennt ein Protein das Stopcodon.",
+          "C": "DNA-Polymerasen übernehmen keine normale Translationstermination.",
+          "D": "Freigesetzt wird die Kette von der tRNA, nicht vollständig zerlegt.",
+          "E": "Dies erklärt keine Kettenfreisetzung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Warum kann eine tRNA mehr als ein synonymes Codon erkennen?",
+      "options": [
+        {
+          "text": "Die erste und zweite Codonposition sind stets völlig unselektiv.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die tRNA wird vor jeder Bindung mit einer beliebigen neuen Aminosäure beladen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Ribosom verschiebt bei synonymen Codons regulär den Leserahmen um eine Base.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bestimmte Paarungen an der dritten Codonposition sind variabel.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Jede tRNA besitzt mehrere beliebig austauschbare Anticodons gleichzeitig.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Flexibilität betrifft besonders die dritte Position. B: Synonyme Erkennung ändert nicht willkürlich ihre Beladung. C: Wobble betrifft Paarung an der dritten Codonposition, keine regelhafte Leserasterverschiebung. D: Die erste Anticodonposition kann Wobble-Paarungen erlauben. E: Eine definierte Anticodonsequenz kann bestimmte variable Paarungen ermöglichen. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Wobble"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wobble"
+      ],
+      "questionGoal": "Wobble",
+      "structuredExplanation": {
+        "coreIdea": "Wobble",
+        "correctReasoning": "Die erste Anticodonposition kann Wobble-Paarungen erlauben.",
+        "wrongAnswerExplanations": {
+          "A": "Die Flexibilität betrifft besonders die dritte Position.",
+          "B": "Synonyme Erkennung ändert nicht willkürlich ihre Beladung.",
+          "C": "Wobble betrifft Paarung an der dritten Codonposition, keine regelhafte Leserasterverschiebung.",
+          "E": "Eine definierte Anticodonsequenz kann bestimmte variable Paarungen ermöglichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Mehrere Ribosomen übersetzen gleichzeitig dieselbe mRNA. Welcher Vorteil entsteht?",
+      "options": [
+        {
+          "text": "Viele Proteinkopien können parallel entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Protein wird dadurch in umgekehrter Aminosäurereihenfolge gebildet.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die mRNA muss vor jeder Translation genomisch dupliziert werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jedes Ribosom übersetzt nur ein Drittel der Kette, die später ligiert wird.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Beladung der tRNAs wird dadurch ATP-unabhängig.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Transkript wird mehrfach genutzt. B: Mehrere Ribosomen ändern die Leserichtung nicht. C: Mehrere Ribosomen können dieselbe mRNA nutzen. D: Jedes erzeugt im Regelfall ein vollständiges Produkt. E: Polysomen beseitigen diesen Energiebedarf nicht. Quelle: Originalunterlagen, PDF-S. 22–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Polysomen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polysomen"
+      ],
+      "questionGoal": "Polysomen",
+      "structuredExplanation": {
+        "coreIdea": "Polysomen",
+        "correctReasoning": "Ein Transkript wird mehrfach genutzt.",
+        "wrongAnswerExplanations": {
+          "B": "Mehrere Ribosomen ändern die Leserichtung nicht.",
+          "C": "Mehrere Ribosomen können dieselbe mRNA nutzen.",
+          "D": "Jedes erzeugt im Regelfall ein vollständiges Produkt.",
+          "E": "Polysomen beseitigen diesen Energiebedarf nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Codons und Cistrons werden einer mRNA zugeordnet. Welche Aussagen zum Code und Transkript sind richtig?",
+      "options": [
+        {
+          "text": "Ein Stopcodon wird regulär durch Glycin-tRNA erkannt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes AUG einer mRNA muss zwingend als Start dienen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vier Basen erlauben nur 16 verschiedene Tripletts.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine bakterielle mRNA kann mehrere Cistrons tragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Freisetzungsfaktoren vermitteln die Termination. B: Initiationskontext und Leseraster sind wichtig. C: Vier hoch drei ergibt 64; 16 wäre die Zahl der Dupletts. D: Mehrere Proteine können gemeinsam codiert sein. Quelle: Originalunterlagen, PDF-S. 3–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Code und mRNA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Code und mRNA"
+      ],
+      "questionGoal": "Code und mRNA",
+      "structuredExplanation": {
+        "coreIdea": "Code und mRNA",
+        "correctReasoning": "Mehrere Proteine können gemeinsam codiert sein.",
+        "wrongAnswerExplanations": {
+          "A": "Freisetzungsfaktoren vermitteln die Termination.",
+          "B": "Initiationskontext und Leseraster sind wichtig.",
+          "C": "Vier hoch drei ergibt 64; 16 wäre die Zahl der Dupletts.",
+          "D": "Mehrere Proteine können gemeinsam codiert sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Eine tRNA wird gefaltet, mit Aminosäure beladen und an ein Codon gebunden. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Ein Anticodon paart antiparallel mit dem Codon.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine tRNA besitzt definierte Sekundär- und Tertiärstruktur.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die tRNA-Beladung benötigt grundsätzlich keine Spezifität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aminoacylierung von tRNA benötigt ATP, ohne DNA zu synthetisieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies verbindet Nucleinsäureinformation und Aminosäure. B: Kleeblatt und L-Form beschreiben unterschiedliche Ebenen. C: Fehlbeladung kann falsche Aminosäuren liefern. D: ATP aktiviert die Aminosäure für die Beladung. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "tRNA-Struktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "tRNA-Struktur"
+      ],
+      "questionGoal": "tRNA-Struktur",
+      "structuredExplanation": {
+        "coreIdea": "tRNA-Struktur",
+        "correctReasoning": "Dies verbindet Nucleinsäureinformation und Aminosäure. Kleeblatt und L-Form beschreiben unterschiedliche Ebenen. ATP aktiviert die Aminosäure für die Beladung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies verbindet Nucleinsäureinformation und Aminosäure.",
+          "B": "Kleeblatt und L-Form beschreiben unterschiedliche Ebenen.",
+          "C": "Fehlbeladung kann falsche Aminosäuren liefern.",
+          "D": "ATP aktiviert die Aminosäure für die Beladung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Ribosomenuntereinheiten und tRNA-Bindungsstellen werden verglichen. Welche Aussagen zum Aufbau sind richtig?",
+      "options": [
+        {
+          "text": "Ribosomen enthalten RNA und Proteine.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Svedberg-Werte sind nicht einfach additiv.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein 70S-Ribosom besteht aus 40S und 30S.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die A-Stelle ist die ausschliessliche Austrittsstelle entladener tRNAs.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide tragen zu Struktur und Funktion bei. B: Deshalb ergeben 40S und 60S gemeinsam 80S. C: Typisch sind 50S und 30S. D: Dafür dient die E-Stelle. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Ribosomenbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ribosomenbau"
+      ],
+      "questionGoal": "Ribosomenbau",
+      "structuredExplanation": {
+        "coreIdea": "Ribosomenbau",
+        "correctReasoning": "Beide tragen zu Struktur und Funktion bei. Deshalb ergeben 40S und 60S gemeinsam 80S.",
+        "wrongAnswerExplanations": {
+          "A": "Beide tragen zu Struktur und Funktion bei.",
+          "B": "Deshalb ergeben 40S und 60S gemeinsam 80S.",
+          "C": "Typisch sind 50S und 30S.",
+          "D": "Dafür dient die E-Stelle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Die Translation wird in Bakterien und in einer cap-abhängigen eukaryotischen Zelle gestartet. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Initiator- und Elongator-tRNA sind überall zwingend identische Moleküle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die grosse Untereinheit ersetzt die Erkennung des Startkontexts.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei typischer cap-abhängiger Initiation wird die eukaryotische 5′-Region erkannt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die bakterielle Initiation verwendet typischerweise Formylmethionin.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie sind funktionell und strukturell unterscheidbar. B: Korrekte Positionierung bleibt erforderlich. C: Danach wird ein geeigneter Start gesucht. D: Die Initiator-tRNA trägt fMet. Quelle: Originalunterlagen, PDF-S. 13–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Initiationsvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Initiationsvergleich"
+      ],
+      "questionGoal": "Initiationsvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Initiationsvergleich",
+        "correctReasoning": "Danach wird ein geeigneter Start gesucht. Die Initiator-tRNA trägt fMet.",
+        "wrongAnswerExplanations": {
+          "A": "Sie sind funktionell und strukturell unterscheidbar.",
+          "B": "Korrekte Positionierung bleibt erforderlich.",
+          "C": "Danach wird ein geeigneter Start gesucht.",
+          "D": "Die Initiator-tRNA trägt fMet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Während der Elongation wechseln tRNAs ihre Bindungsstellen und die Kette wird verlängert. Welche Aussagen zur Energie und Richtung sind richtig?",
+      "options": [
+        {
+          "text": "Beladene Elongator-tRNA wird zur A-Stelle gebracht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Peptidbindung wird direkt durch ATP-Hydrolyse am Peptidyltransferasezentrum angetrieben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "GTP-abhängige Faktoren unterstützen Anlieferung und Translokation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die wachsende Peptidkette wird bei der Peptidbindung von der A- auf die P-Stellen-tRNA übertragen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Codon-Anticodon-Paarung steuert die Auswahl. B: Die aktivierte tRNA-Bindung liefert den unmittelbaren Antrieb. C: Diese Schritte kosten Energie. D: Sie wird von der P-Stellen-tRNA auf die Aminogruppe der A-Stellen-tRNA übertragen. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Elongationszyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elongationszyklus"
+      ],
+      "questionGoal": "Elongationszyklus",
+      "structuredExplanation": {
+        "coreIdea": "Elongationszyklus",
+        "correctReasoning": "Codon-Anticodon-Paarung steuert die Auswahl. Diese Schritte kosten Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Codon-Anticodon-Paarung steuert die Auswahl.",
+          "B": "Die aktivierte tRNA-Bindung liefert den unmittelbaren Antrieb.",
+          "C": "Diese Schritte kosten Energie.",
+          "D": "Sie wird von der P-Stellen-tRNA auf die Aminogruppe der A-Stellen-tRNA übertragen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Ein Hemmstoff greift bevorzugt bakterielle Ribosomen an. Welche Aussagen zu Selektivität und Grenzen sind richtig?",
+      "options": [
+        {
+          "text": "Mitochondriale Effekte können eine Grenze der Selektivität bilden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Translationshemmer muss stets die DNA-Sequenz zerstören.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Unterschiede bakterieller Ribosomen ermöglichen selektive Hemmung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Hemmung bakterieller Ribosomen beweist Wirksamkeit gegen jedes Virus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mitochondriale Translation ist nicht mit cytosolischer identisch. B: Die Proteinsynthese kann direkt gehemmt werden. C: Arzneistoffe können spezifische Bindungsstellen nutzen. D: Viren nutzen überwiegend Wirtsribosomen. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Translationshemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Translationshemmung"
+      ],
+      "questionGoal": "Translationshemmung",
+      "structuredExplanation": {
+        "coreIdea": "Translationshemmung",
+        "correctReasoning": "Mitochondriale Translation ist nicht mit cytosolischer identisch. Arzneistoffe können spezifische Bindungsstellen nutzen.",
+        "wrongAnswerExplanations": {
+          "A": "Mitochondriale Translation ist nicht mit cytosolischer identisch.",
+          "B": "Die Proteinsynthese kann direkt gehemmt werden.",
+          "C": "Arzneistoffe können spezifische Bindungsstellen nutzen.",
+          "D": "Viren nutzen überwiegend Wirtsribosomen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Eine mRNA wird unterschiedlich lange stabilisiert und mehrfach translatiert. Welche Aussagen zur Proteinmenge sind richtig?",
+      "options": [
+        {
+          "text": "Polysomen kommen ausschliesslich bei Bakterien vor.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die mRNA-Stabilität beeinflusst die Zahl möglicher Translationsrunden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein universeller fester Wert beschreibt jede mRNA-Lebensdauer.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wechselwirkungen zwischen Cap- und Poly-A-gebundenen Faktoren können Translation unterstützen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Eukaryoten bilden sie. B: Längere Verfügbarkeit kann mehr Synthese erlauben. C: Transkripte unterscheiden sich erheblich. D: Die Enden wirken funktionell zusammen. Quelle: Originalunterlagen, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Translationseffizienz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Translationseffizienz"
+      ],
+      "questionGoal": "Translationseffizienz",
+      "structuredExplanation": {
+        "coreIdea": "Translationseffizienz",
+        "correctReasoning": "Längere Verfügbarkeit kann mehr Synthese erlauben. Die Enden wirken funktionell zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Eukaryoten bilden sie.",
+          "B": "Längere Verfügbarkeit kann mehr Synthese erlauben.",
+          "C": "Transkripte unterscheiden sich erheblich.",
+          "D": "Die Enden wirken funktionell zusammen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb22_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB22",
+      "stem": "Eine codierende Sequenz wird verändert. Welche Aussagen zu Leseraster, Synonymie und Kettenlänge sind richtig?",
+      "options": [
+        {
+          "text": "Die Degeneration macht jede Basenmutation funktionell folgenlos.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Leseraster beeinflusst die abgelesenen Codons.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Wobble erlaubt die beliebige Missachtung jedes Stopcodons.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein vorzeitiges Stopcodon kann die Proteinlänge verkürzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele Änderungen verändern Aminosäuren oder Abbruchsignale. B: Gleiche Basenfolge kann unterschiedlich gruppiert werden. C: Reguläre Codonregeln bleiben bestehen. D: Reguläre Termination kann dadurch früher erfolgen. Quelle: Originalunterlagen, PDF-S. 4–5,18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB22",
+        "Decodierungsgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Decodierungsgrenzen"
+      ],
+      "questionGoal": "Decodierungsgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Decodierungsgrenzen",
+        "correctReasoning": "Gleiche Basenfolge kann unterschiedlich gruppiert werden. Reguläre Termination kann dadurch früher erfolgen.",
+        "wrongAnswerExplanations": {
+          "A": "Viele Änderungen verändern Aminosäuren oder Abbruchsignale.",
+          "B": "Gleiche Basenfolge kann unterschiedlich gruppiert werden.",
+          "C": "Reguläre Codonregeln bleiben bestehen.",
+          "D": "Reguläre Termination kann dadurch früher erfolgen."
+        }
+      }
+    }
+  ]
+}

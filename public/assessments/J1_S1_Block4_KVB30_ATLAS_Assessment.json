@@ -1,0 +1,1314 @@
+{
+  "id": "assessment_j1_s1_block4_kvb30_20261102",
+  "lectureCode": "KVB30",
+  "title": "Folat, Vitamin B12 und SAM",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB30_VitamineNucleotidStoffwechsel_WK. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Quelle enthält «Produktion von Acetylcholine» als SAM-Beispiel; nicht übernommen (Cholin-Acetylierung nutzt Acetyl-CoA). B12-Aufnahme und Mangelfaktoren nach NIH geprüft; keine Behauptung ausreichender Darmflora-Versorgung oder überwiegend hereditärer Mängel. Keine Dosierungs-/Therapiefragen. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Vitaminabgeleitete Coenzyme und C1-Übertragung durch Folate erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Folatstoffwechsel mit Purin-, dTMP- und Methioninsynthese verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Vitamin-B12-abhängige Reaktionen und die Kopplung an Folat erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Folat-/B12-Aufnahme und Methioninaktivierung zu SAM unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb30_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Beschreibung passt zu einem vitaminabgeleiteten Coenzym?",
+      "options": [
+        {
+          "text": "Eine Nichtprotein-Komponente, die an enzymatischen Stoff- oder Gruppenübertragungen mitwirkt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Proteinanteil eines Enzyms ohne Cofaktoren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein ausschliesslich strukturelles DNA-Protein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein kompetitiver Hemmstoff ohne physiologische Transferfunktion.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Substratrezeptor, der grundsätzlich selbst ein vollständiges Membranprotein ist.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Vitamin kann als Vorstufe einer aktiven Coenzymform dienen. B: Dies ist eher das Apoenzym. C: Dies definiert kein vitaminabgeleitetes Coenzym. D: Coenzyme unterstützen die jeweilige Katalyse. E: Coenzyme sind keine solche Proteinklasse. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Coenzym"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Coenzym"
+      ],
+      "questionGoal": "Coenzym",
+      "structuredExplanation": {
+        "coreIdea": "Coenzym",
+        "correctReasoning": "Das Vitamin kann als Vorstufe einer aktiven Coenzymform dienen.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist eher das Apoenzym.",
+          "C": "Dies definiert kein vitaminabgeleitetes Coenzym.",
+          "D": "Coenzyme unterstützen die jeweilige Katalyse.",
+          "E": "Coenzyme sind keine solche Proteinklasse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche zentrale Funktion haben Tetrahydrofolat-Derivate?",
+      "options": [
+        {
+          "text": "Sie übertragen vorwiegend Acylgruppen wie Coenzym A.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie übertragen ausschliesslich Phosphatgruppen wie ATP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie übertragen Aminogruppen wie Pyridoxalphosphat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie übertragen C1-Gruppen verschiedener Oxidationsstufen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Sie dienen ausschliesslich als Elektronenträger wie NADH.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Folate dienen der C1-Übertragung. B: Dies ist nicht ihre zentrale Transferfunktion. C: Dies ist eine andere Cofaktorfunktion. D: Die konkrete Folatform bestimmt die verfügbare C1-Einheit. E: THF-Derivate tragen unterschiedliche C1-Gruppen. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "THF"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "THF"
+      ],
+      "questionGoal": "THF",
+      "structuredExplanation": {
+        "coreIdea": "THF",
+        "correctReasoning": "Die konkrete Folatform bestimmt die verfügbare C1-Einheit.",
+        "wrongAnswerExplanations": {
+          "A": "Folate dienen der C1-Übertragung.",
+          "B": "Dies ist nicht ihre zentrale Transferfunktion.",
+          "C": "Dies ist eine andere Cofaktorfunktion.",
+          "E": "THF-Derivate tragen unterschiedliche C1-Gruppen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q03",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche drei Komponenten sind charakteristisch für Folat?",
+      "options": [
+        {
+          "text": "Pteridin, Nicotinamid und Ribose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Adenin, Ribose und drei Phosphate.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Isoalloxazin, Ribitol und Phosphat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Pteridin, p-Aminobenzoat und Glutamat.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Cobaltring, Dimethylbenzimidazol und Cobalt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nicotinamid gehört nicht zum Folatgrundgerüst. B: Dies beschreibt ATP. C: Dies erinnert an Flavinstrukturen, nicht Folat. D: Sie bilden das in der Quelle dargestellte Grundgerüst. E: Dies gehört zur Cobalaminstruktur. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Folatstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Folatstruktur"
+      ],
+      "questionGoal": "Folatstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Folatstruktur",
+        "correctReasoning": "Sie bilden das in der Quelle dargestellte Grundgerüst.",
+        "wrongAnswerExplanations": {
+          "A": "Nicotinamid gehört nicht zum Folatgrundgerüst.",
+          "B": "Dies beschreibt ATP.",
+          "C": "Dies erinnert an Flavinstrukturen, nicht Folat.",
+          "E": "Dies gehört zur Cobalaminstruktur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Warum kann die Hemmung der bakteriellen p-Aminobenzoat-Verwertung selektiv wirken?",
+      "options": [
+        {
+          "text": "Viele Bakterien synthetisieren Folat selbst; Menschen beziehen es aus der Nahrung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Menschliche Zellen synthetisieren Folat vollständig aus denselben drei Vorstufen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Viele Bakterien benötigen grundsätzlich keine Folat-abhängigen Reaktionen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Hemmung trifft ausschliesslich menschliche Methioninsynthase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "p-Aminobenzoat ist der direkte B12-Transportträger im Blut.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die angegriffene Synthesefunktion ist im Menschen nicht entsprechend vorhanden. B: Menschen beziehen Folat extern. C: Die eigene Synthese versorgt solche Reaktionen. D: Der beschriebene Angriff liegt in bakterieller Folatsynthese. E: Dafür dient unter anderem Transcobalamin. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Selektive Folathemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektive Folathemmung"
+      ],
+      "questionGoal": "Selektive Folathemmung",
+      "structuredExplanation": {
+        "coreIdea": "Selektive Folathemmung",
+        "correctReasoning": "Die angegriffene Synthesefunktion ist im Menschen nicht entsprechend vorhanden.",
+        "wrongAnswerExplanations": {
+          "B": "Menschen beziehen Folat extern.",
+          "C": "Die eigene Synthese versorgt solche Reaktionen.",
+          "D": "Der beschriebene Angriff liegt in bakterieller Folatsynthese.",
+          "E": "Dafür dient unter anderem Transcobalamin."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Warum muss oxidierte Folsäure vor ihrer Nutzung als C1-Träger reduziert werden?",
+      "options": [
+        {
+          "text": "Die aktive Trägerform ist Tetrahydrofolat beziehungsweise ein entsprechendes Derivat.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Reduktion erzeugt unmittelbar SAM statt Folatderivate.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die reduzierte Form kann keine C1-Gruppen mehr tragen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es genügt ausschliesslich die Vermehrung der Glutamatkette ohne Reduktion.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Reaktion ersetzt den gesamten Folatstoffwechsel durch Vitamin B12.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Reduktion stellt die funktionelle Folatform bereit. B: SAM entsteht aus Methionin und ATP. C: Gerade THF-Derivate sind funktionelle C1-Träger. D: Oxidationsstufe und Konjugation sind verschiedene Eigenschaften. E: Beide Systeme bleiben verschieden und gekoppelt. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Aktivierung von Folsäure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierung von Folsäure"
+      ],
+      "questionGoal": "Aktivierung von Folsäure",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierung von Folsäure",
+        "correctReasoning": "Die Reduktion stellt die funktionelle Folatform bereit.",
+        "wrongAnswerExplanations": {
+          "B": "SAM entsteht aus Methionin und ATP.",
+          "C": "Gerade THF-Derivate sind funktionelle C1-Träger.",
+          "D": "Oxidationsstufe und Konjugation sind verschiedene Eigenschaften.",
+          "E": "Beide Systeme bleiben verschieden und gekoppelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Reaktion erklärt die Verbindung von Folatversorgung und DNA-Replikation besonders direkt?",
+      "options": [
+        {
+          "text": "Direkte Übertragung einer Methylgruppe von SAM auf UMP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Phosphorylierung von dUMP ohne Veränderung der Base.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Reduktion von ATP zu dATP als einziger Folatweg.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "C1-Übertragung von Methylen-THF bei dUMP → dTMP.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Folat ersetzt als fertige Base unmittelbar Uracil in der DNA, ohne dTMP-Zwischenstufe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die dTMP-Synthase nutzt dUMP und Methylen-THF. B: dTMP entsteht durch Methylierung, nicht nur Phosphorylierung. C: Ribonucleotidreduktion ist nicht diese Folat-C1-Reaktion. D: Ein Mangel kann die Bereitstellung von Thymidylat begrenzen. E: Die Verbindung besteht über C1-Übertragung bei der dTMP-Synthese, nicht direkten Basenersatz durch Folat. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "dTMP und Folat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "dTMP und Folat"
+      ],
+      "questionGoal": "dTMP und Folat",
+      "structuredExplanation": {
+        "coreIdea": "dTMP und Folat",
+        "correctReasoning": "Ein Mangel kann die Bereitstellung von Thymidylat begrenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Die dTMP-Synthase nutzt dUMP und Methylen-THF.",
+          "B": "dTMP entsteht durch Methylierung, nicht nur Phosphorylierung.",
+          "C": "Ribonucleotidreduktion ist nicht diese Folat-C1-Reaktion.",
+          "E": "Die Verbindung besteht über C1-Übertragung bei der dTMP-Synthese, nicht direkten Basenersatz durch Folat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Warum kann Folatmangel neben dTMP auch Purinnucleotide betreffen?",
+      "options": [
+        {
+          "text": "Formyl-THF liefert C1-Einheiten für den Purinringaufbau.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "SAM liefert grundsätzlich alle Purinringatome ohne Folatbeteiligung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Purine werden ausschliesslich durch dieselbe Methylierung wie dTMP gebildet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Folat liefert bei der Purinsynthese stets den vollständigen bereits geschlossenen Purinring.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "B12 ist der unmittelbare Donor der beiden Formylgruppen im Purinring.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Folatabhängige Reaktionen sind nicht auf Pyrimidine beschränkt. B: Verschiedene Vorstufen und Formyl-THF werden benötigt. C: Der Purinringaufbau enthält andere C1-Schritte. D: Formyl-THF liefert einzelne C1-Bausteine, nicht das gesamte Ringsystem. E: Diese C1-Einheiten stammen aus Formyl-THF. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Purinsynthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Purinsynthese"
+      ],
+      "questionGoal": "Purinsynthese",
+      "structuredExplanation": {
+        "coreIdea": "Purinsynthese",
+        "correctReasoning": "Folatabhängige Reaktionen sind nicht auf Pyrimidine beschränkt.",
+        "wrongAnswerExplanations": {
+          "B": "Verschiedene Vorstufen und Formyl-THF werden benötigt.",
+          "C": "Der Purinringaufbau enthält andere C1-Schritte.",
+          "D": "Formyl-THF liefert einzelne C1-Bausteine, nicht das gesamte Ringsystem.",
+          "E": "Diese C1-Einheiten stammen aus Formyl-THF."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Reaktion ist über Methylcobalamin an N5-Methyl-THF gekoppelt?",
+      "options": [
+        {
+          "text": "Methionin wird zu Homocystein methyliert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "dUMP wird durch Methylcobalamin direkt zu dTMP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "N5-Methyl-THF wird direkt zu SAM adenylisiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Homocystein wird zu Methionin methyliert.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Homocystein wird in dieser Reaktion statt methyliert ausschliesslich zu Cystein transsulfuriert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Methioninsynthase wirkt in der umgekehrten angegebenen Richtung. B: Diese C1-Übertragung nutzt Methylen-THF. C: SAM entsteht aus Methionin und ATP. D: Dabei wird der Methylrest über Vitamin B12 übertragen und THF regeneriert. E: Methioninsynthase vermittelt Remethylierung; Transsulfurierung ist ein anderer Weg. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Methioninsynthase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methioninsynthase"
+      ],
+      "questionGoal": "Methioninsynthase",
+      "structuredExplanation": {
+        "coreIdea": "Methioninsynthase",
+        "correctReasoning": "Dabei wird der Methylrest über Vitamin B12 übertragen und THF regeneriert.",
+        "wrongAnswerExplanations": {
+          "A": "Die Methioninsynthase wirkt in der umgekehrten angegebenen Richtung.",
+          "B": "Diese C1-Übertragung nutzt Methylen-THF.",
+          "C": "SAM entsteht aus Methionin und ATP.",
+          "E": "Methioninsynthase vermittelt Remethylierung; Transsulfurierung ist ein anderer Weg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q09",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Die B12-abhängige Methioninsynthase fällt aus. Welche unmittelbare Kopplungsstörung ist zu erwarten?",
+      "options": [
+        {
+          "text": "Die Rückgewinnung von THF aus N5-Methyl-THF ist beeinträchtigt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "THF wird dadurch unbegrenzt unabhängig von Methioninsynthase regeneriert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "N5-Methyl-THF wird direkt in alle anderen Folatformen zurückverwandelt, ohne die blockierte Reaktion zu benötigen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Homocystein-Remethylierung wird durch den Ausfall zwangsläufig beschleunigt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "SAM ersetzt dann automatisch jede fehlende Folat-C1-Funktion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Folat kann funktionell in der Methylform festgehalten werden. B: Gerade dieser gekoppelte Regenerationsweg ist gestört. C: Dies umgeht die physiologische Kopplung nicht einfach. D: Der erforderliche Transfer ist beeinträchtigt. E: Die Cofaktoren sind nicht beliebig austauschbar. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Folatfalle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Folatfalle"
+      ],
+      "questionGoal": "Folatfalle",
+      "structuredExplanation": {
+        "coreIdea": "Folatfalle",
+        "correctReasoning": "Folat kann funktionell in der Methylform festgehalten werden.",
+        "wrongAnswerExplanations": {
+          "B": "Gerade dieser gekoppelte Regenerationsweg ist gestört.",
+          "C": "Dies umgeht die physiologische Kopplung nicht einfach.",
+          "D": "Der erforderliche Transfer ist beeinträchtigt.",
+          "E": "Die Cofaktoren sind nicht beliebig austauschbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Ausgangsstoffe führen zur Bildung von S-Adenosylmethionin?",
+      "options": [
+        {
+          "text": "Homocystein und GTP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Methionin und ATP.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Methionin und N5-Methyl-THF ohne ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Serin und NADPH.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "S-Adenosylhomocystein und ausschliesslich Wasser als direkter Methylierungsweg.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die SAM-Synthese aktiviert Methionin mit ATP. B: Die Aktivierung macht SAM zu einem wichtigen Methylgruppendonor. C: Der Adenosylanteil wird durch ATP bereitgestellt. D: Dies ist nicht die SAM-Ausgangskombination. E: Hydrolyse liefert nicht die SAM-Aktivierung. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "SAM-Bildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SAM-Bildung"
+      ],
+      "questionGoal": "SAM-Bildung",
+      "structuredExplanation": {
+        "coreIdea": "SAM-Bildung",
+        "correctReasoning": "Die Aktivierung macht SAM zu einem wichtigen Methylgruppendonor.",
+        "wrongAnswerExplanations": {
+          "A": "Die SAM-Synthese aktiviert Methionin mit ATP.",
+          "C": "Der Adenosylanteil wird durch ATP bereitgestellt.",
+          "D": "Dies ist nicht die SAM-Ausgangskombination.",
+          "E": "Hydrolyse liefert nicht die SAM-Aktivierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Reaktion ist ein passendes Beispiel für SAM-abhängige Methylübertragung?",
+      "options": [
+        {
+          "text": "Acetylierung von Cholin durch Cholinacetyltransferase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Phosphorylierung eines Proteins durch eine Kinase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Carboxylierung eines Substrats mit Biotin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aminoacylierung einer tRNA durch ihre Synthetase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Methylierung bestimmter Basen in DNA.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dabei dient Acetyl-CoA als Acetyldonor. B: Dies ist Phosphat- statt Methyltransfer. C: Dies ist ein anderer Gruppentransfer. D: Dies benötigt ATP, ist aber kein SAM-Methyltransfer. E: SAM liefert dabei einen Methylrest an eine Methyltransferase-Reaktion. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Methylgruppendonor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methylgruppendonor"
+      ],
+      "questionGoal": "Methylgruppendonor",
+      "structuredExplanation": {
+        "coreIdea": "Methylgruppendonor",
+        "correctReasoning": "SAM liefert dabei einen Methylrest an eine Methyltransferase-Reaktion.",
+        "wrongAnswerExplanations": {
+          "A": "Dabei dient Acetyl-CoA als Acetyldonor.",
+          "B": "Dies ist Phosphat- statt Methyltransfer.",
+          "C": "Dies ist ein anderer Gruppentransfer.",
+          "D": "Dies benötigt ATP, ist aber kein SAM-Methyltransfer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q12",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Kombination beschreibt den physiologischen rezeptorvermittelten Hauptweg der Vitamin-B12-Aufnahme?",
+      "options": [
+        {
+          "text": "Bindung an Intrinsic Factor und Resorption im distalen Ileum.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bindung an Intrinsic Factor und Hauptresorption im Colon.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bindung an Transcobalamin als Ersatz für jeden intestinalen IF-Schritt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Resorption des IF-B12-Komplexes vorwiegend im Magen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Spaltung von B12 in freie Cobaltatome vor der Resorption.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Im Blut erfolgt weiterer Transport unter anderem an Transcobalamin. B: Der rezeptorvermittelte Weg liegt im distalen Ileum. C: Transcobalamin dient dem weiteren Transport. D: Dort beginnt die Vorbereitung, die spezifische Aufnahme liegt distal. E: Aufgenommen wird Cobalamin, nicht bloss das Metall. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "B12-Aufnahme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "B12-Aufnahme"
+      ],
+      "questionGoal": "B12-Aufnahme",
+      "structuredExplanation": {
+        "coreIdea": "B12-Aufnahme",
+        "correctReasoning": "Im Blut erfolgt weiterer Transport unter anderem an Transcobalamin.",
+        "wrongAnswerExplanations": {
+          "B": "Der rezeptorvermittelte Weg liegt im distalen Ileum.",
+          "C": "Transcobalamin dient dem weiteren Transport.",
+          "D": "Dort beginnt die Vorbereitung, die spezifische Aufnahme liegt distal.",
+          "E": "Aufgenommen wird Cobalamin, nicht bloss das Metall."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «Coenzymzuordnung» treffen zu?",
+      "options": [
+        {
+          "text": "Jedes Coenzym muss vom Menschen vollständig aus einem Vitamin gebildet werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "NAD ist die aktive Coenzymform des Vitamin B12.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Tetrahydrofolat ist die aktive Form von Vitamin C.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "FAD enthält eine von Riboflavin abgeleitete Struktur.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es gibt auch selbst synthetisierte Cofaktoren. B: NAD ist von Niacin abgeleitet, nicht von Cobalamin. C: Es gehört zum Folatstoffwechsel. D: Riboflavin ist Vitamin B2. Quelle: Originalunterlagen, PDF-S. 2–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Coenzymzuordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Coenzymzuordnung"
+      ],
+      "questionGoal": "Coenzymzuordnung",
+      "structuredExplanation": {
+        "coreIdea": "Coenzymzuordnung",
+        "correctReasoning": "Riboflavin ist Vitamin B2.",
+        "wrongAnswerExplanations": {
+          "A": "Es gibt auch selbst synthetisierte Cofaktoren.",
+          "B": "NAD ist von Niacin abgeleitet, nicht von Cobalamin.",
+          "C": "Es gehört zum Folatstoffwechsel.",
+          "D": "Riboflavin ist Vitamin B2."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «Folate» treffen zu?",
+      "options": [
+        {
+          "text": "Folate können C1-Gruppen unterschiedlicher Oxidationsstufen tragen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Reduzierte Folatformen beteiligen sich an C1-Übertragungen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Menschen synthetisieren Folat vollständig aus p-Aminobenzoat wie viele Bakterien.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Folatformen können sich in C1-Substituenten und Glutamatanzahl unterscheiden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dazu zählen beispielsweise Methyl-, Methylen- und Formylformen. B: Oxidierte Folsäure muss zuvor aktiviert werden. C: Menschen benötigen eine externe Folatzufuhr. D: Diese Unterschiede sind in der Quelle dargestellt. Quelle: Originalunterlagen, PDF-S. 3–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Folate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Folate"
+      ],
+      "questionGoal": "Folate",
+      "structuredExplanation": {
+        "coreIdea": "Folate",
+        "correctReasoning": "Dazu zählen beispielsweise Methyl-, Methylen- und Formylformen. Oxidierte Folsäure muss zuvor aktiviert werden. Diese Unterschiede sind in der Quelle dargestellt.",
+        "wrongAnswerExplanations": {
+          "A": "Dazu zählen beispielsweise Methyl-, Methylen- und Formylformen.",
+          "B": "Oxidierte Folsäure muss zuvor aktiviert werden.",
+          "C": "Menschen benötigen eine externe Folatzufuhr.",
+          "D": "Diese Unterschiede sind in der Quelle dargestellt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «Verknüpfte Wege» treffen zu?",
+      "options": [
+        {
+          "text": "Homocystein wird in der Methioninsynthasereaktion als Methylgruppendonor auf THF übertragen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Methylen-THF ist mit der dTMP-Synthese verbunden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Methioninsynthase benötigt grundsätzlich kein Vitamin B12 beim Menschen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Folatstoffwechsel trägt zur Purinsynthese bei.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Homocystein empfängt den Methylrest und wird zu Methionin. B: Es liefert die erforderliche C1-Einheit. C: Die menschliche Reaktion ist B12-abhängig. D: Formylgruppen werden für den Ringaufbau gebraucht. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Verknüpfte Wege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verknüpfte Wege"
+      ],
+      "questionGoal": "Verknüpfte Wege",
+      "structuredExplanation": {
+        "coreIdea": "Verknüpfte Wege",
+        "correctReasoning": "Es liefert die erforderliche C1-Einheit. Formylgruppen werden für den Ringaufbau gebraucht.",
+        "wrongAnswerExplanations": {
+          "A": "Homocystein empfängt den Methylrest und wird zu Methionin.",
+          "B": "Es liefert die erforderliche C1-Einheit.",
+          "C": "Die menschliche Reaktion ist B12-abhängig.",
+          "D": "Formylgruppen werden für den Ringaufbau gebraucht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «B12-Funktionen» treffen zu?",
+      "options": [
+        {
+          "text": "Methylcobalamin ist an der Methioninbildung beteiligt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Methylcobalamin und Adenosylcobalamin erfüllen grundsätzlich dieselbe Umlagerungsfunktion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Adenosylcobalamin kann Umlagerungsreaktionen unterstützen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Vitamin B12 ersetzt alle Folatformen in jeder Purinsynthesereaktion direkt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es überträgt vorübergehend die Methylgruppe. B: Methylcobalamin vermittelt Methyltransfer, Adenosylcobalamin bestimmte Umlagerungen. C: Die Quelle nennt intramolekulare Umlagerungen als zweite Funktionsgruppe. D: Beide Cofaktorsysteme haben unterschiedliche, gekoppelte Rollen. Quelle: Originalunterlagen, PDF-S. 7,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "B12-Funktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "B12-Funktionen"
+      ],
+      "questionGoal": "B12-Funktionen",
+      "structuredExplanation": {
+        "coreIdea": "B12-Funktionen",
+        "correctReasoning": "Es überträgt vorübergehend die Methylgruppe. Die Quelle nennt intramolekulare Umlagerungen als zweite Funktionsgruppe.",
+        "wrongAnswerExplanations": {
+          "A": "Es überträgt vorübergehend die Methylgruppe.",
+          "B": "Methylcobalamin vermittelt Methyltransfer, Adenosylcobalamin bestimmte Umlagerungen.",
+          "C": "Die Quelle nennt intramolekulare Umlagerungen als zweite Funktionsgruppe.",
+          "D": "Beide Cofaktorsysteme haben unterschiedliche, gekoppelte Rollen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «SAM-Zyklus» treffen zu?",
+      "options": [
+        {
+          "text": "SAM gibt bei Methyltransferasen einen Methylrest ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nach der Methylübertragung entsteht unmittelbar freies Methionin statt S-Adenosylhomocystein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Methioninversorgung und Remethylierung von Homocystein beeinflussen das SAM-System.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "DNA-Methylierung verändert zwingend die Reihenfolge aller DNA-Basen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dabei entsteht S-Adenosylhomocystein. B: Die Methyltransferase-Reaktion erzeugt S-Adenosylhomocystein; dessen weiterer Stoffwechsel ist davon zu trennen. C: Sie stellen die Vorstufe bereit. D: Sie modifiziert Basen chemisch, ohne generell ihre Reihenfolge zu ändern. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "SAM-Zyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SAM-Zyklus"
+      ],
+      "questionGoal": "SAM-Zyklus",
+      "structuredExplanation": {
+        "coreIdea": "SAM-Zyklus",
+        "correctReasoning": "Dabei entsteht S-Adenosylhomocystein. Sie stellen die Vorstufe bereit.",
+        "wrongAnswerExplanations": {
+          "A": "Dabei entsteht S-Adenosylhomocystein.",
+          "B": "Die Methyltransferase-Reaktion erzeugt S-Adenosylhomocystein; dessen weiterer Stoffwechsel ist davon zu trennen.",
+          "C": "Sie stellen die Vorstufe bereit.",
+          "D": "Sie modifiziert Basen chemisch, ohne generell ihre Reihenfolge zu ändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «Aufnahme und Transport» treffen zu?",
+      "options": [
+        {
+          "text": "Intrinsic Factor ist der wichtigste Bluttransportträger für B12 zu allen Geweben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Natürliche polyglutamierte Nahrungsfolate werden vor der Aufnahme dekonjugiert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das distale Ileum ist für den IF-abhängigen B12-Aufnahmeweg wichtig.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Darmflora garantiert bei jedem Menschen eine ausreichende nutzbare B12-Versorgung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dafür dient insbesondere Transcobalamin; IF unterstützt den intestinalen Weg. B: Die Quelle unterscheidet diesen Schritt von der anschliessenden Reduktion. C: Dort wird der Komplex rezeptorvermittelt aufgenommen. D: Bakterielle Synthese allein garantiert keine ausreichende Resorption. Quelle: Originalunterlagen, PDF-S. 5,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Aufnahme und Transport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aufnahme und Transport"
+      ],
+      "questionGoal": "Aufnahme und Transport",
+      "structuredExplanation": {
+        "coreIdea": "Aufnahme und Transport",
+        "correctReasoning": "Die Quelle unterscheidet diesen Schritt von der anschliessenden Reduktion. Dort wird der Komplex rezeptorvermittelt aufgenommen.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür dient insbesondere Transcobalamin; IF unterstützt den intestinalen Weg.",
+          "B": "Die Quelle unterscheidet diesen Schritt von der anschliessenden Reduktion.",
+          "C": "Dort wird der Komplex rezeptorvermittelt aufgenommen.",
+          "D": "Bakterielle Synthese allein garantiert keine ausreichende Resorption."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «Mangelmechanismen» treffen zu?",
+      "options": [
+        {
+          "text": "Eine megaloblastische Anämie beweist allein, welches der beiden Vitamine fehlt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vitamin-B12-Mangel ist ausschliesslich durch erbliche Defekte möglich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gestörte DNA-Bausteinversorgung kann die Blutbildung beeinträchtigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein B12-Mangel kann den Folatstoffwechsel funktionell mitbeeinträchtigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehrere Ursachen können ein ähnliches Blutbild erzeugen. B: Auch erworbene Resorptionsstörungen oder unzureichende Zufuhr sind möglich. C: Dies erklärt die Verbindung zu megaloblastären Veränderungen. D: Die Methioninsynthasereaktion verbindet beide Systeme. Quelle: Originalunterlagen, PDF-S. 3–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Mangelmechanismen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mangelmechanismen"
+      ],
+      "questionGoal": "Mangelmechanismen",
+      "structuredExplanation": {
+        "coreIdea": "Mangelmechanismen",
+        "correctReasoning": "Dies erklärt die Verbindung zu megaloblastären Veränderungen. Die Methioninsynthasereaktion verbindet beide Systeme.",
+        "wrongAnswerExplanations": {
+          "A": "Mehrere Ursachen können ein ähnliches Blutbild erzeugen.",
+          "B": "Auch erworbene Resorptionsstörungen oder unzureichende Zufuhr sind möglich.",
+          "C": "Dies erklärt die Verbindung zu megaloblastären Veränderungen.",
+          "D": "Die Methioninsynthasereaktion verbindet beide Systeme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb30_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB30",
+      "stem": "Welche Aussagen zum Thema «Reaktionstypen» treffen zu?",
+      "options": [
+        {
+          "text": "Alle Folat-C1-Derivate können in jeder Reaktion ohne Umwandlung beliebig ausgetauscht werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "SAM ist ein aktivierter Donor, nicht selbst die gesamte Methyltransferase.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "SAM überträgt in der DNA-Methylierung statt eines Methylrests grundsätzlich eine Phosphatgruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine C1-Übertragung unterscheidet sich von einer Phosphatübertragung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die jeweils erforderliche C1-Form und Oxidationsstufe sind spezifisch. B: Das Protein-Enzym katalysiert die Übertragung. C: SAM ist hier ein Methylgruppendonor. D: Gruppe und Cofaktoren sind verschieden. Quelle: Originalunterlagen, PDF-S. 2–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB30",
+        "Reaktionstypen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionstypen"
+      ],
+      "questionGoal": "Reaktionstypen",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionstypen",
+        "correctReasoning": "Das Protein-Enzym katalysiert die Übertragung. Gruppe und Cofaktoren sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Die jeweils erforderliche C1-Form und Oxidationsstufe sind spezifisch.",
+          "B": "Das Protein-Enzym katalysiert die Übertragung.",
+          "C": "SAM ist hier ein Methylgruppendonor.",
+          "D": "Gruppe und Cofaktoren sind verschieden."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block1_kvb09_20261102",
+  "lectureCode": "KVB09",
+  "title": "Enzyme, Cofaktoren und Vitamine",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB09 - Enzyme. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die historische Sechserklassifikation der Folien wird um EC 7 ergänzt; Allosterie wird nicht mit universeller Sigmoidalität gleichgesetzt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Katalyse, aktives Zentrum und Abhängigkeit der Enzymaktivität von pH und Temperatur erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Reaktionstypen und Regulation von Enzymen unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Coenzyme, Vitamine und Metallionen funktionell zuordnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Niacin und NAD+/NADH bei Redoxreaktionen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb09_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Ein Enzym beschleunigt eine reversible Reaktion. Welche Grösse verändert es unmittelbar?",
+      "options": [
+        {
+          "text": "Die Gleichgewichtskonstante.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die freie Energie der Produkte im Gleichgewicht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Aktivierungsenergie des Reaktionsweges.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das stöchiometrische Verhältnis der Produkte.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die freie Standardreaktionsenthalpie ΔG°.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Gleichgewicht bleibt unverändert. B: Das Enzym stabilisiert den Übergangszustand relativ zu den Ausgangszuständen. C: Das Enzym ermöglicht einen Weg mit niedrigerer Aktivierungsbarriere. D: Katalyse verändert nicht die Reaktionsstöchiometrie. E: ΔG° hängt von Edukten und Produkten ab, nicht vom Katalysator. Quelle: Originalunterlagen, PDF-S. 2–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Aktivierungsbarriere"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierungsbarriere"
+      ],
+      "questionGoal": "Aktivierungsbarriere",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierungsbarriere",
+        "correctReasoning": "Das Enzym ermöglicht einen Weg mit niedrigerer Aktivierungsbarriere.",
+        "wrongAnswerExplanations": {
+          "A": "Das Gleichgewicht bleibt unverändert.",
+          "B": "Das Enzym stabilisiert den Übergangszustand relativ zu den Ausgangszuständen.",
+          "D": "Katalyse verändert nicht die Reaktionsstöchiometrie.",
+          "E": "ΔG° hängt von Edukten und Produkten ab, nicht vom Katalysator."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Zwei für die Katalyse nötige Aminosäuren liegen in der Primärsequenz weit auseinander. Wie können sie gemeinsam ein aktives Zentrum bilden?",
+      "options": [
+        {
+          "text": "Die beiden Seitenketten müssen zwingend kovalent verbunden sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur unmittelbar aufeinanderfolgende Reste können katalytisch wirken.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie müssen auf benachbarte Positionen der mRNA verschoben werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die dreidimensionale Faltung bringt ihre Seitenketten räumlich zusammen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Peptidbindung zwischen ihnen muss zunächst gespalten werden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Räumliche Nachbarschaft erfordert keine neue kovalente Bindung. B: Das ist mit gefalteten aktiven Zentren unvereinbar. C: Die Sequenz wird bei der Faltung nicht umgeordnet. D: Die räumliche Struktur bestimmt das aktive Zentrum. E: Das Zentrum entsteht gewöhnlich durch Faltung des intakten Proteins. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Aktives Zentrum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktives Zentrum"
+      ],
+      "questionGoal": "Aktives Zentrum",
+      "structuredExplanation": {
+        "coreIdea": "Aktives Zentrum",
+        "correctReasoning": "Die räumliche Struktur bestimmt das aktive Zentrum.",
+        "wrongAnswerExplanations": {
+          "A": "Räumliche Nachbarschaft erfordert keine neue kovalente Bindung.",
+          "B": "Das ist mit gefalteten aktiven Zentren unvereinbar.",
+          "C": "Die Sequenz wird bei der Faltung nicht umgeordnet.",
+          "E": "Das Zentrum entsteht gewöhnlich durch Faltung des intakten Proteins."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Eine Enzymprobe verliert nach starkem Erhitzen ihre Aktivität auch nach Abkühlung. Was erklärt dies am besten?",
+      "options": [
+        {
+          "text": "Das Erhitzen hat die Gleichgewichtskonstante unabhängig von der Temperatur dauerhaft verändert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die thermische Bewegung der Substrate ist nach Abkühlung dauerhaft erhöht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die für das aktive Zentrum nötige Struktur wurde dauerhaft verändert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Enzym wurde durch den Umsatz vollständig verbraucht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Aktivierungsbarriere ist bei jeder Erwärmung vollständig verschwunden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Katalysator bestimmt die Gleichgewichtskonstante nicht. B: Die thermische Bewegung folgt der aktuellen Temperatur. C: Irreversible Denaturierung kann Aktivität dauerhaft vermindern. D: Enzyme werden durch ihre normale Katalyse nicht verbraucht. E: Erwärmung beseitigt die Aktivierungsbarriere nicht. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Temperaturoptimum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperaturoptimum"
+      ],
+      "questionGoal": "Temperaturoptimum",
+      "structuredExplanation": {
+        "coreIdea": "Temperaturoptimum",
+        "correctReasoning": "Irreversible Denaturierung kann Aktivität dauerhaft vermindern.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Katalysator bestimmt die Gleichgewichtskonstante nicht.",
+          "B": "Die thermische Bewegung folgt der aktuellen Temperatur.",
+          "D": "Enzyme werden durch ihre normale Katalyse nicht verbraucht.",
+          "E": "Erwärmung beseitigt die Aktivierungsbarriere nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Warum kann eine pH-Änderung die Aktivität eines strukturell noch intakten Enzyms vermindern?",
+      "options": [
+        {
+          "text": "Der pH verändert unmittelbar die Aminosäuresequenz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Seitenkette trägt bei jedem pH dieselbe Ladung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Enzymkonzentration verdoppelt sich bei jeder pH-Einheit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Substratkonzentration muss bei niedrigerem pH immer null werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Katalytische Gruppen können einen ungeeigneten Protonierungszustand annehmen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Protonierung verändert zunächst Ladungen, nicht die Primärsequenz. B: Titrierbare Gruppen ändern ihre Protonierung. C: Dafür gibt es keinen allgemeinen Zusammenhang. D: Ein pH-Effekt erfordert keinen vollständigen Substratverlust. E: Säure-Basen-Katalyse erfordert passende Ladungs- und Protonierungszustände. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "pH-Abhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "pH-Abhängigkeit"
+      ],
+      "questionGoal": "pH-Abhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "pH-Abhängigkeit",
+        "correctReasoning": "Säure-Basen-Katalyse erfordert passende Ladungs- und Protonierungszustände.",
+        "wrongAnswerExplanations": {
+          "A": "Protonierung verändert zunächst Ladungen, nicht die Primärsequenz.",
+          "B": "Titrierbare Gruppen ändern ihre Protonierung.",
+          "C": "Dafür gibt es keinen allgemeinen Zusammenhang.",
+          "D": "Ein pH-Effekt erfordert keinen vollständigen Substratverlust."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q05",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Ein Enzym überträgt eine Phosphorylgruppe von ATP auf Glucose. Welcher Reaktionstyp liegt vor?",
+      "options": [
+        {
+          "text": "Intramolekulare Umlagerung durch eine Isomerase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydrolytische Spaltung durch eine Hydrolase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nicht-hydrolytische Eliminierung durch eine Lyase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gruppenübertragung durch eine Transferase.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Elektronenübertragung durch eine Oxidoreduktase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Gruppe wird zwischen zwei Molekülen übertragen. B: Die Phosphorylgruppe wird auf Glucose übertragen, nicht lediglich mit Wasser abgespalten. C: Das beschreibt die Kinase-Reaktion nicht. D: Eine Kinase ist eine Transferase. E: Der betrachtete Schritt ist keine Redoxreaktion. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Enzymklassen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enzymklassen"
+      ],
+      "questionGoal": "Enzymklassen",
+      "structuredExplanation": {
+        "coreIdea": "Enzymklassen",
+        "correctReasoning": "Eine Kinase ist eine Transferase.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Gruppe wird zwischen zwei Molekülen übertragen.",
+          "B": "Die Phosphorylgruppe wird auf Glucose übertragen, nicht lediglich mit Wasser abgespalten.",
+          "C": "Das beschreibt die Kinase-Reaktion nicht.",
+          "E": "Der betrachtete Schritt ist keine Redoxreaktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Ein Metabolit bindet ausserhalb des aktiven Zentrums und verändert die Enzymkonformation. Wie nennt man diesen Regulationsmechanismus?",
+      "options": [
+        {
+          "text": "Allosterische Regulation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Induktion der Enzymsynthese.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Substratkettenphosphorylierung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Kovalente Phosphorylierung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Proteolytische Aktivierung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Bindung an einer anderen Stelle beeinflusst die katalytische Funktion. B: Induktion verändert die Enzymmenge über Genexpression. C: Dieser Begriff beschreibt direkte ATP-Bildung aus einem phosphorylierten Substrat. D: Eine Phosphatgruppe muss hier nicht kovalent angeheftet werden. E: Dabei würde eine Peptidbindung gespalten. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Allosterie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Allosterie"
+      ],
+      "questionGoal": "Allosterie",
+      "structuredExplanation": {
+        "coreIdea": "Allosterie",
+        "correctReasoning": "Die Bindung an einer anderen Stelle beeinflusst die katalytische Funktion.",
+        "wrongAnswerExplanations": {
+          "B": "Induktion verändert die Enzymmenge über Genexpression.",
+          "C": "Dieser Begriff beschreibt direkte ATP-Bildung aus einem phosphorylierten Substrat.",
+          "D": "Eine Phosphatgruppe muss hier nicht kovalent angeheftet werden.",
+          "E": "Dabei würde eine Peptidbindung gespalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Nach einem Signal steigt die Aktivität vorhandener Enzymmoleküle innerhalb von Sekunden, ohne dass ihre Menge zunimmt. Welcher Mechanismus passt am besten?",
+      "options": [
+        {
+          "text": "Einbau einer neuen Enzymmenge als zwingende Voraussetzung jeder Aktivierung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständiger Ersatz aller Enzyme durch Neusynthese.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verdopplung der Genkopien als notwendiger Schritt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Reversible Phosphorylierung des vorhandenen Enzyms.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Vermehrte Transkription als alleinige unmittelbare Ursache.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vorhandene Enzyme können ohne vollständige Neusynthese rasch reguliert werden. B: Das widerspricht der unveränderten Menge und der raschen Aktivierung vorhandener Moleküle. C: Eine Genverdopplung ist dafür nicht nötig. D: Eine kovalente Modifikation kann bestehende Enzyme rasch regulieren. E: Neue Transkription und Proteinsynthese erklären keine reine Aktivierung vorhandener Moleküle. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Regulationszeitskalen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regulationszeitskalen"
+      ],
+      "questionGoal": "Regulationszeitskalen",
+      "structuredExplanation": {
+        "coreIdea": "Regulationszeitskalen",
+        "correctReasoning": "Eine kovalente Modifikation kann bestehende Enzyme rasch regulieren.",
+        "wrongAnswerExplanations": {
+          "A": "Vorhandene Enzyme können ohne vollständige Neusynthese rasch reguliert werden.",
+          "B": "Das widerspricht der unveränderten Menge und der raschen Aktivierung vorhandener Moleküle.",
+          "C": "Eine Genverdopplung ist dafür nicht nötig.",
+          "E": "Neue Transkription und Proteinsynthese erklären keine reine Aktivierung vorhandener Moleküle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Was unterscheidet ein Cosubstrat typischerweise von einer prosthetischen Gruppe?",
+      "options": [
+        {
+          "text": "Eine prosthetische Gruppe muss zwischen jedem Umsatz ins Medium diffundieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cosubstrate sind grundsätzlich Proteine.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Cosubstrat bindet vorübergehend und wird in einer weiteren Reaktion regeneriert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine prosthetische Gruppe besteht definitionsgemäss aus einem Metallion.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Cosubstrat bleibt definitionsgemäss dauerhaft kovalent gebunden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie ist fest an das Enzym gebunden. B: Viele Cosubstrate sind kleine organische Moleküle. C: Es wirkt als umgesetzter, mobiler Cofaktor. D: Auch organische Cofaktoren können prosthetische Gruppen sein. E: Das ist kein Merkmal eines Cosubstrats. Quelle: Originalunterlagen, PDF-S. 13–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Cofaktorbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cofaktorbindung"
+      ],
+      "questionGoal": "Cofaktorbindung",
+      "structuredExplanation": {
+        "coreIdea": "Cofaktorbindung",
+        "correctReasoning": "Es wirkt als umgesetzter, mobiler Cofaktor.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist fest an das Enzym gebunden.",
+          "B": "Viele Cosubstrate sind kleine organische Moleküle.",
+          "D": "Auch organische Cofaktoren können prosthetische Gruppen sein.",
+          "E": "Das ist kein Merkmal eines Cosubstrats."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Warum kann ein Zinkmangel die Aktivität bestimmter Enzyme beeinträchtigen?",
+      "options": [
+        {
+          "text": "Zink ist Bestandteil jedes ATP-Moleküls.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zink ist die universelle Energiequelle aller Enzyme.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zink wirkt ausschliesslich als unspezifisches Salz ohne mögliche katalytische Beteiligung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zink kann als koordinierter Cofaktor an der Katalyse beteiligt sein.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Zinkmangel verhindert ausschliesslich die Fettresorption.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: ATP enthält selbst kein Zinkatom. B: Energieübertragung erfolgt nicht allgemein durch Verbrauch von Zink. C: Koordinierte Metallionen können unmittelbar an Enzymreaktionen mitwirken. D: Beispielsweise enthält die Carboanhydrase katalytisch wichtiges Zink. E: Seine Wirkungen gehen über die Resorption hinaus. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Metalloenzym"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Metalloenzym"
+      ],
+      "questionGoal": "Metalloenzym",
+      "structuredExplanation": {
+        "coreIdea": "Metalloenzym",
+        "correctReasoning": "Beispielsweise enthält die Carboanhydrase katalytisch wichtiges Zink.",
+        "wrongAnswerExplanations": {
+          "A": "ATP enthält selbst kein Zinkatom.",
+          "B": "Energieübertragung erfolgt nicht allgemein durch Verbrauch von Zink.",
+          "C": "Koordinierte Metallionen können unmittelbar an Enzymreaktionen mitwirken.",
+          "E": "Seine Wirkungen gehen über die Resorption hinaus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q10",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Welches Coenzympaar entsteht unter Verwendung von Niacin beziehungsweise Niacinamid?",
+      "options": [
+        {
+          "text": "Biotin/Carboxybiotin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "THF/Methylen-THF.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "FAD/FADH2.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "NAD+/NADH.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Coenzym A/Acetyl-CoA.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Biotin ist ein eigenständiger Vitamin-Cofaktor. B: THF ist ein Folatderivat. C: FAD leitet sich von Riboflavin ab. D: Der Nicotinamidanteil ist redoxaktiv. E: Coenzym A enthält einen Pantothenatanteil. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Niacin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Niacin"
+      ],
+      "questionGoal": "Niacin",
+      "structuredExplanation": {
+        "coreIdea": "Niacin",
+        "correctReasoning": "Der Nicotinamidanteil ist redoxaktiv.",
+        "wrongAnswerExplanations": {
+          "A": "Biotin ist ein eigenständiger Vitamin-Cofaktor.",
+          "B": "THF ist ein Folatderivat.",
+          "C": "FAD leitet sich von Riboflavin ab.",
+          "E": "Coenzym A enthält einen Pantothenatanteil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Lactat wird zu Pyruvat oxidiert. Welche Veränderung des Nicotinamid-Cofaktors gehört dazu?",
+      "options": [
+        {
+          "text": "NADH wird zu NAD+ oxidiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "NAD+ wird ohne Elektronenaufnahme zu NADP+ phosphoryliert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NAD+ bleibt oxidiert, während ausschliesslich freies FAD die Elektronen aufnimmt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "NAD+ wird zu NADH reduziert.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der Cofaktor bleibt vollständig oxidiert und unverändert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies gehört zur umgekehrten Reaktionsrichtung, der Pyruvatreduktion. B: Die Phosphorylierung ist nicht die gekoppelte LDH-Redoxreaktion. C: Die dargestellte LDH-Reaktion reduziert NAD+ zu NADH. D: NAD+ nimmt Reduktionsäquivalente vom Lactat auf. E: Die Substratoxidation ist mit seiner Reduktion gekoppelt. Quelle: Originalunterlagen, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Lactatdehydrogenase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lactatdehydrogenase"
+      ],
+      "questionGoal": "Lactatdehydrogenase",
+      "structuredExplanation": {
+        "coreIdea": "Lactatdehydrogenase",
+        "correctReasoning": "NAD+ nimmt Reduktionsäquivalente vom Lactat auf.",
+        "wrongAnswerExplanations": {
+          "A": "Dies gehört zur umgekehrten Reaktionsrichtung, der Pyruvatreduktion.",
+          "B": "Die Phosphorylierung ist nicht die gekoppelte LDH-Redoxreaktion.",
+          "C": "Die dargestellte LDH-Reaktion reduziert NAD+ zu NADH.",
+          "E": "Die Substratoxidation ist mit seiner Reduktion gekoppelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Weshalb kann eine unzureichende Niacinversorgung zahlreiche Stoffwechselreaktionen betreffen?",
+      "options": [
+        {
+          "text": "Niacin wird als einziger Baustein sämtlicher Zellmembranen gebraucht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Niacin ist das Substrat aller Verdauungsproteasen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NAD- und NADP-Cofaktoren werden in vielen Redoxreaktionen verwendet.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Niacinmangel verändert nur die Reaktionsgleichgewichte, aber keine Umsatzraten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Niacin aktiviert ausschliesslich die Lactatdehydrogenase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Membranen bestehen aus unterschiedlichen Lipiden und Proteinen. B: Proteasen spalten Proteine und benötigen nicht allgemein Niacin als Substrat. C: Ein gemeinsamer Cofaktor verbindet viele Reaktionswege. D: Cofaktormangel kann katalytische Umsätze beschränken. E: Seine Cofaktorfunktion ist viel breiter. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Niacinmangel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Niacinmangel"
+      ],
+      "questionGoal": "Niacinmangel",
+      "structuredExplanation": {
+        "coreIdea": "Niacinmangel",
+        "correctReasoning": "Ein gemeinsamer Cofaktor verbindet viele Reaktionswege.",
+        "wrongAnswerExplanations": {
+          "A": "Membranen bestehen aus unterschiedlichen Lipiden und Proteinen.",
+          "B": "Proteasen spalten Proteine und benötigen nicht allgemein Niacin als Substrat.",
+          "D": "Cofaktormangel kann katalytische Umsätze beschränken.",
+          "E": "Seine Cofaktorfunktion ist viel breiter."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Eine reversible Reaktion wird mit einem Enzym katalysiert. Welche Aussagen zur Wirkung sind richtig?",
+      "options": [
+        {
+          "text": "Nach jedem Umsatz ist das Enzym stöchiometrisch verbraucht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Enzym macht eine endergone Gesamtreaktion ohne Kopplung exergon.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Auch die Rückreaktion kann durch dasselbe Enzym beschleunigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein aktives Zentrum kann die Orientierung der Reaktionspartner begünstigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es geht regeneriert aus dem katalytischen Zyklus hervor. B: Es verändert die freie Reaktionsenergie nicht. C: Katalyse senkt die Barriere für beide Reaktionsrichtungen. D: Geeignete Orientierung unterstützt die Reaktion. Quelle: Originalunterlagen, PDF-S. 2–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Katalyseprinzipien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Katalyseprinzipien"
+      ],
+      "questionGoal": "Katalyseprinzipien",
+      "structuredExplanation": {
+        "coreIdea": "Katalyseprinzipien",
+        "correctReasoning": "Katalyse senkt die Barriere für beide Reaktionsrichtungen. Geeignete Orientierung unterstützt die Reaktion.",
+        "wrongAnswerExplanations": {
+          "A": "Es geht regeneriert aus dem katalytischen Zyklus hervor.",
+          "B": "Es verändert die freie Reaktionsenergie nicht.",
+          "C": "Katalyse senkt die Barriere für beide Reaktionsrichtungen.",
+          "D": "Geeignete Orientierung unterstützt die Reaktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Die Enzymaktivität wird bei verschiedenen Temperaturen und pH-Werten gemessen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Eine steigende Temperatur kann zunächst die Reaktionsgeschwindigkeit erhöhen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Temperaturoptimum ist bei allen menschlichen Enzymen identisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Aktivitätsverlust beweist in jedem Fall eine Spaltung des Proteinrückgrats.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "pH-Änderungen können auch die Substratprotonierung verändern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Thermische Aktivierung begünstigt Reaktionen unterhalb der Denaturierungsgrenze. B: Enzyme und Messbedingungen unterscheiden sich. C: Auch Konformations- oder Protonierungsänderungen vermindern die Aktivität. D: Nicht nur das Protein besitzt titrierbare Gruppen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Aktivitätsprofile"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivitätsprofile"
+      ],
+      "questionGoal": "Aktivitätsprofile",
+      "structuredExplanation": {
+        "coreIdea": "Aktivitätsprofile",
+        "correctReasoning": "Thermische Aktivierung begünstigt Reaktionen unterhalb der Denaturierungsgrenze. Nicht nur das Protein besitzt titrierbare Gruppen.",
+        "wrongAnswerExplanations": {
+          "A": "Thermische Aktivierung begünstigt Reaktionen unterhalb der Denaturierungsgrenze.",
+          "B": "Enzyme und Messbedingungen unterscheiden sich.",
+          "C": "Auch Konformations- oder Protonierungsänderungen vermindern die Aktivität.",
+          "D": "Nicht nur das Protein besitzt titrierbare Gruppen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Reaktionen werden den heutigen EC-Klassen zugeordnet. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Die heutige EC-Nomenklatur ist zwingend auf sechs Hauptklassen begrenzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydrolasen benötigen für jede Reaktion ATP als Gruppenüberträger.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dehydrogenasen katalysieren Redoxreaktionen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Isomerasen katalysieren Umlagerungen innerhalb eines Moleküls.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seit 2018 gibt es zusätzlich EC 7, die Translokasen. B: Hydrolyse ist nicht allgemein ATP-abhängig. C: Sie gehören zu den Oxidoreduktasen. D: Die Summenformel bleibt bei Isomerisierung erhalten. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Reaktionstypen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionstypen"
+      ],
+      "questionGoal": "Reaktionstypen",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionstypen",
+        "correctReasoning": "Sie gehören zu den Oxidoreduktasen. Die Summenformel bleibt bei Isomerisierung erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Seit 2018 gibt es zusätzlich EC 7, die Translokasen.",
+          "B": "Hydrolyse ist nicht allgemein ATP-abhängig.",
+          "C": "Sie gehören zu den Oxidoreduktasen.",
+          "D": "Die Summenformel bleibt bei Isomerisierung erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Enzymmenge, allosterische Bindung und Aktivitätskurve werden verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jede allosterische Regulation muss eine sigmoidale Substratkurve erzeugen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein heterotroper allosterischer Effektor unterscheidet sich vom Substrat.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine allosterische Bindungsstelle ist definitionsgemäss das aktive Zentrum.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Änderung der Enzymmenge kann längerfristig den maximal möglichen Umsatz verändern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Allosterie und kooperative Sigmoidalität sind nicht identisch. B: Er ist ein anderer Ligand. C: Sie liegt funktionell an einer anderen Stelle. D: Mehr aktive Enzymmoleküle erlauben unter passenden Bedingungen mehr Umsatz. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Regulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regulation"
+      ],
+      "questionGoal": "Regulation",
+      "structuredExplanation": {
+        "coreIdea": "Regulation",
+        "correctReasoning": "Er ist ein anderer Ligand. Mehr aktive Enzymmoleküle erlauben unter passenden Bedingungen mehr Umsatz.",
+        "wrongAnswerExplanations": {
+          "A": "Allosterie und kooperative Sigmoidalität sind nicht identisch.",
+          "B": "Er ist ein anderer Ligand.",
+          "C": "Sie liegt funktionell an einer anderen Stelle.",
+          "D": "Mehr aktive Enzymmoleküle erlauben unter passenden Bedingungen mehr Umsatz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Eine Vitaminversorgung wird nach Zufuhr, Resorption und Funktion beurteilt. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Eine Resorptionsstörung kann trotz ausreichender Aufnahme einen Mangel verursachen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Wasserlösliche Vitamine können unabhängig von der Dosis niemals schaden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mehrere Vitamine dienen als Vorstufen von Coenzymen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jedes Vitamin ist ausschliesslich als Enzym-Cofaktor wirksam.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Aufnahme aus dem Darm ist von der Nahrungszufuhr zu unterscheiden. B: Wasserlöslichkeit schliesst dosisabhängige unerwünschte Wirkungen nicht aus. C: B-Vitamine liefern beispielsweise Cofaktorbestandteile. D: Vitamine haben auch regulatorische oder antioxidative Funktionen. Quelle: Originalunterlagen, PDF-S. 13–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Vitamine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamine"
+      ],
+      "questionGoal": "Vitamine",
+      "structuredExplanation": {
+        "coreIdea": "Vitamine",
+        "correctReasoning": "Aufnahme aus dem Darm ist von der Nahrungszufuhr zu unterscheiden. B-Vitamine liefern beispielsweise Cofaktorbestandteile.",
+        "wrongAnswerExplanations": {
+          "A": "Aufnahme aus dem Darm ist von der Nahrungszufuhr zu unterscheiden.",
+          "B": "Wasserlöslichkeit schliesst dosisabhängige unerwünschte Wirkungen nicht aus.",
+          "C": "B-Vitamine liefern beispielsweise Cofaktorbestandteile.",
+          "D": "Vitamine haben auch regulatorische oder antioxidative Funktionen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Ein Enzym benötigt einen organischen oder metallischen Cofaktor. Welche Aussagen zur Bindung stimmen?",
+      "options": [
+        {
+          "text": "Alle prosthetischen Gruppen sind ausschliesslich kovalent gebunden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Metallionen können direkt durch Aminosäureseitenketten koordiniert werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Coenzym ersetzt notwendigerweise das gesamte aktive Zentrum des Proteins.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Apoenzym kann erst zusammen mit dem nötigen Cofaktor voll funktionsfähig sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch sehr feste nicht-kovalente Bindung kommt vor. B: Histidinreste sind ein mögliches Beispiel. C: Protein und Cofaktor wirken zusammen. D: Der Cofaktor ergänzt die katalytische Einheit. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Cofaktorarten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cofaktorarten"
+      ],
+      "questionGoal": "Cofaktorarten",
+      "structuredExplanation": {
+        "coreIdea": "Cofaktorarten",
+        "correctReasoning": "Histidinreste sind ein mögliches Beispiel. Der Cofaktor ergänzt die katalytische Einheit.",
+        "wrongAnswerExplanations": {
+          "A": "Auch sehr feste nicht-kovalente Bindung kommt vor.",
+          "B": "Histidinreste sind ein mögliches Beispiel.",
+          "C": "Protein und Cofaktor wirken zusammen.",
+          "D": "Der Cofaktor ergänzt die katalytische Einheit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Lactat und Pyruvat werden durch LDH ineinander überführt. Welche Aussagen zu Redoxpartnern stimmen?",
+      "options": [
+        {
+          "text": "NADH-Bildung bedeutet eine Oxidation des NAD+.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei Pyruvatreduktion zu Lactat wird NADH oxidiert.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Lactat und Pyruvat unterscheiden sich nur in ihrer Phosphorylierung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Reaktion kann zur Regeneration von NAD+ beitragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Elektronenaufnahme ist eine Reduktion. B: Dabei entsteht NAD+. C: Sie unterscheiden sich in der Oxidationsstufe von Alkohol- und Ketogruppe. D: NAD+ wird für die Glykolyse benötigt. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Redoxpartner"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Redoxpartner"
+      ],
+      "questionGoal": "Redoxpartner",
+      "structuredExplanation": {
+        "coreIdea": "Redoxpartner",
+        "correctReasoning": "Dabei entsteht NAD+. NAD+ wird für die Glykolyse benötigt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Elektronenaufnahme ist eine Reduktion.",
+          "B": "Dabei entsteht NAD+.",
+          "C": "Sie unterscheiden sich in der Oxidationsstufe von Alkohol- und Ketogruppe.",
+          "D": "NAD+ wird für die Glykolyse benötigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb09_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB09",
+      "stem": "Niacinformen und Vorstufen werden für die Cofaktorsynthese betrachtet. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "NADP+ unterscheidet sich von NAD+ ausschliesslich durch einen reduzierten Nicotinamidring.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nicotinsäure und Nicotinamid können zur Vitaminversorgung beitragen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Niacinmangel betrifft nur extrazelluläre Verdauungsenzyme.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Tryptophan kann einen Beitrag zur körpereigenen Niacinbildung leisten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Unterschied ist eine zusätzliche Phosphatgruppe, nicht die Redoxstufe. B: Beide Formen können zur Cofaktorbildung genutzt werden. C: NAD-Cofaktoren wirken in zahlreichen Zellen und Stoffwechselwegen. D: Ein Teil des Bedarfs kann über diesen Stoffwechselweg gedeckt werden. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB09",
+        "Niacinversorgung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Niacinversorgung"
+      ],
+      "questionGoal": "Niacinversorgung",
+      "structuredExplanation": {
+        "coreIdea": "Niacinversorgung",
+        "correctReasoning": "Beide Formen können zur Cofaktorbildung genutzt werden. Ein Teil des Bedarfs kann über diesen Stoffwechselweg gedeckt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Der Unterschied ist eine zusätzliche Phosphatgruppe, nicht die Redoxstufe.",
+          "B": "Beide Formen können zur Cofaktorbildung genutzt werden.",
+          "C": "NAD-Cofaktoren wirken in zahlreichen Zellen und Stoffwechselwegen.",
+          "D": "Ein Teil des Bedarfs kann über diesen Stoffwechselweg gedeckt werden."
+        }
+      }
+    }
+  ]
+}

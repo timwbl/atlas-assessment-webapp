@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block4_fpmol_20261102",
+  "lectureCode": "FPMOL",
+  "title": "Fachpraktikum Molekularbiologie – Theorie",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. SJ1_HS2025_Block 4_FP-Molekularbiologie_Stand 23.10.2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Praktikumstheorie; Rechenwerte jeweils vollständig im Stamm gegeben. Transformationseffizienz nicht mit exakt aufgenommenen Plasmidmolekülen gleichgesetzt. Keine organisatorischen Prüfungsfragen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Restriktionsverdau und Fragmentmuster zirkulärer und linearer DNA auswerten."
+    },
+    {
+      "id": "lo2",
+      "text": "Agarosegelelektrophorese, Marker und DNA-Topologie erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Transformation, Erholung und Antibiotikaselektion begründen."
+    },
+    {
+      "id": "lo4",
+      "text": "Transformationseffizienz und Verdünnungen mit klaren Bezugsgrössen berechnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_fpmol_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Ein reines ringförmiges Plasmid wird von einem Enzym an genau einer Stelle vollständig geschnitten. Welches Produkt entsteht?",
+      "options": [
+        {
+          "text": "Ein kleinerer geschlossener Ring ohne lineare DNA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kein Produkt, weil ringförmige DNA nicht geschnitten werden kann.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zwei halb so lange Fragmente.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein lineares Fragment in voller Plasmidlänge.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Zwei Fragmente mit jeweils voller Plasmidlänge.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein einfacher Doppelstrangschnitt öffnet den Ring. B: Restriktionsenzyme können auch zirkuläre DNA schneiden. C: Dafür sind zwei entsprechend liegende Schnittstellen nötig. D: Ein Schnitt öffnet den Ring. E: Dafür wäre eine Verdopplung der DNA nötig. Quelle: Originalunterlagen, PDF-S. 4–5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Zirkulärer Verdau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zirkulärer Verdau"
+      ],
+      "questionGoal": "Zirkulärer Verdau",
+      "structuredExplanation": {
+        "coreIdea": "Zirkulärer Verdau",
+        "correctReasoning": "Ein Schnitt öffnet den Ring.",
+        "wrongAnswerExplanations": {
+          "A": "Ein einfacher Doppelstrangschnitt öffnet den Ring.",
+          "B": "Restriktionsenzyme können auch zirkuläre DNA schneiden.",
+          "C": "Dafür sind zwei entsprechend liegende Schnittstellen nötig.",
+          "E": "Dafür wäre eine Verdopplung der DNA nötig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Ein 2958-bp-Plasmid wird vollständig verdaut. Es entstehen Fragmente von 1200 und 900 bp. Wie lang ist das dritte Fragment bei insgesamt drei Schnittstellen?",
+      "options": [
+        {
+          "text": "2958 bp.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1758 bp.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2058 bp.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "858 bp.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "300 bp.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das wäre die Gesamt-, nicht die fehlende Fragmentlänge. B: Dieser Wert zieht nur 1200 bp ab. C: Dieser Wert zieht nur 900 bp ab. D: Die Summe muss 2958 bp ergeben. E: Die Differenz der beiden bekannten Fragmente ist nicht der Rest. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Fragmentbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fragmentbilanz"
+      ],
+      "questionGoal": "Fragmentbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Fragmentbilanz",
+        "correctReasoning": "Die Summe muss 2958 bp ergeben.",
+        "wrongAnswerExplanations": {
+          "A": "Das wäre die Gesamt-, nicht die fehlende Fragmentlänge.",
+          "B": "Dieser Wert zieht nur 1200 bp ab.",
+          "C": "Dieser Wert zieht nur 900 bp ab.",
+          "E": "Die Differenz der beiden bekannten Fragmente ist nicht der Rest."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Ein lineares DNA-Molekül besitzt drei verschiedene Restriktionsstellen für ein Enzym. Wie viele Fragmente entstehen bei vollständigem Verdau?",
+      "options": [
+        {
+          "text": "Eines.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vier.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Drei.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sechs.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwei.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das entspräche keinem Schnitt im Inneren. B: Für ein lineares Molekül ergeben n Schnitte n+1 Fragmente. C: Dies wäre beim Ring mit drei Schnittstellen die Anzahl. D: Jeder Doppelstrangschnitt verdoppelt nicht die Fragmentzahl. E: Drei getrennte Schnitte erzeugen mehr Teilstücke. Quelle: Originalunterlagen, PDF-S. 4,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Lineare DNA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lineare DNA"
+      ],
+      "questionGoal": "Lineare DNA",
+      "structuredExplanation": {
+        "coreIdea": "Lineare DNA",
+        "correctReasoning": "Für ein lineares Molekül ergeben n Schnitte n+1 Fragmente.",
+        "wrongAnswerExplanations": {
+          "A": "Das entspräche keinem Schnitt im Inneren.",
+          "C": "Dies wäre beim Ring mit drei Schnittstellen die Anzahl.",
+          "D": "Jeder Doppelstrangschnitt verdoppelt nicht die Fragmentzahl.",
+          "E": "Drei getrennte Schnitte erzeugen mehr Teilstücke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Weshalb wandert DNA im üblichen Agarosegel zur Anode?",
+      "options": [
+        {
+          "text": "Die Desoxyribose trägt stets eine starke positive Nettoladung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur die Fragmentlänge legt ohne elektrische Ladung die Wanderrichtung fest.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Farbstoff verleiht der DNA erst eine dauerhaft positive Nettoladung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ihr Phosphatrückgrat trägt unter den Bedingungen negative Ladungen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "DNA wandert wegen ihrer Phosphatladung zur negativen Kathode.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die negative Phosphatladung dominiert. B: Länge beeinflusst die Geschwindigkeit, die Ladung die Feldrichtung. C: Die DNA ist durch ihre Phosphatgruppen bereits negativ geladen. D: Das elektrische Feld zieht sie zur positiven Elektrode. E: Negativ geladene DNA wandert zur positiven Anode. Quelle: Originalunterlagen, PDF-S. 4,7,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Wanderungsrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wanderungsrichtung"
+      ],
+      "questionGoal": "Wanderungsrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Wanderungsrichtung",
+        "correctReasoning": "Das elektrische Feld zieht sie zur positiven Elektrode.",
+        "wrongAnswerExplanations": {
+          "A": "Die negative Phosphatladung dominiert.",
+          "B": "Länge beeinflusst die Geschwindigkeit, die Ladung die Feldrichtung.",
+          "C": "Die DNA ist durch ihre Phosphatgruppen bereits negativ geladen.",
+          "E": "Negativ geladene DNA wandert zur positiven Anode."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Zwei lineare DNA-Fragmente von 500 und 2000 bp werden im selben geeigneten Agarosegel getrennt. Welches wandert typischerweise weiter?",
+      "options": [
+        {
+          "text": "Das 2000-bp-Fragment.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Fragment mit mehr Restriktionsstellen, unabhängig von seiner Länge.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur das Fragment mit höherem GC-Gehalt, unabhängig von seiner Länge.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das 500-bp-Fragment.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Beide immer exakt gleich weit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Grössere lineare DNA wird stärker zurückgehalten. B: Nach Verdau werden die entstandenen Längen getrennt. C: Bei dieser Standardauswertung ist die Fragmentlänge massgebend. D: Kleinere lineare Fragmente passieren das Gelnetz gewöhnlich leichter. E: Die Grössendifferenz ist Grundlage der Trennung. Quelle: Originalunterlagen, PDF-S. 4–5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Grössentrennung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grössentrennung"
+      ],
+      "questionGoal": "Grössentrennung",
+      "structuredExplanation": {
+        "coreIdea": "Grössentrennung",
+        "correctReasoning": "Kleinere lineare Fragmente passieren das Gelnetz gewöhnlich leichter.",
+        "wrongAnswerExplanations": {
+          "A": "Grössere lineare DNA wird stärker zurückgehalten.",
+          "B": "Nach Verdau werden die entstandenen Längen getrennt.",
+          "C": "Bei dieser Standardauswertung ist die Fragmentlänge massgebend.",
+          "E": "Die Grössendifferenz ist Grundlage der Trennung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q06",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Ein ungeschnittenes Plasmid zeigt mehrere Banden. Welche Erklärung muss vor der Annahme verschiedener Plasmidlängen bedacht werden?",
+      "options": [
+        {
+          "text": "Nur vollständig abgebaute DNA kann überhaupt Banden bilden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Bande beweist eine andere vollständige Genomsequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Supercoiled, offenkreisförmige und andere Topologien wandern unterschiedlich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Plasmid hat zwingend seine Grösse verdoppelt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der lineare Grössenmarker gilt ohne Einschränkung für jede Plasmidtopologie.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Intakte DNA liefert ebenfalls Banden. B: Die Topologie allein kann das Muster verändern. C: Gleiche Basenzahl kann verschiedene Laufweiten ergeben. D: Eine neue Laufweite ist kein solcher Beweis. E: Die Längenabschätzung kann dadurch irreführend sein. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Ungeschnittene DNA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ungeschnittene DNA"
+      ],
+      "questionGoal": "Ungeschnittene DNA",
+      "structuredExplanation": {
+        "coreIdea": "Ungeschnittene DNA",
+        "correctReasoning": "Gleiche Basenzahl kann verschiedene Laufweiten ergeben.",
+        "wrongAnswerExplanations": {
+          "A": "Intakte DNA liefert ebenfalls Banden.",
+          "B": "Die Topologie allein kann das Muster verändern.",
+          "D": "Eine neue Laufweite ist kein solcher Beweis.",
+          "E": "Die Längenabschätzung kann dadurch irreführend sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Zu 10 µl Probe werden 2 µl eines 6×-Loadingpuffers gegeben. Welche Endkonzentration resultiert?",
+      "options": [
+        {
+          "text": "0,5×.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "6×.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1×.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "2×.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1,2×.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die eingesetzte Menge ergibt bei 12 µl genau 1×. B: Die Stammlösung wird durch die Probe verdünnt. C: 6 × 2/12 ergibt 1. D: Der Volumenanteil beträgt ein Sechstel, nicht ein Drittel. E: Dies ignoriert das Puffervolumen im Gesamtvolumen. Quelle: Originalunterlagen, PDF-S. 4,7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Loadingpuffer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Loadingpuffer"
+      ],
+      "questionGoal": "Loadingpuffer",
+      "structuredExplanation": {
+        "coreIdea": "Loadingpuffer",
+        "correctReasoning": "6 × 2/12 ergibt 1.",
+        "wrongAnswerExplanations": {
+          "A": "Die eingesetzte Menge ergibt bei 12 µl genau 1×.",
+          "B": "Die Stammlösung wird durch die Probe verdünnt.",
+          "D": "Der Volumenanteil beträgt ein Sechstel, nicht ein Drittel.",
+          "E": "Dies ignoriert das Puffervolumen im Gesamtvolumen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Was bedeutet bei der Plasmidtransformation «kompetente Bakterien»?",
+      "options": [
+        {
+          "text": "Bakterien, die ausschliesslich durch Phagen vermehrt werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bakterien, die sicher schon das gewünschte Plasmid besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bakterien, die unter geeigneten Bedingungen fremde DNA aufnehmen können.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zellen, die definitionsgemäss bereits eine phagenvermittelte Resistenz erhalten haben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zellen, deren Resistenz nie exprimiert werden muss.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Transformation unterscheidet sich von phagenvermittelter Transduktion. B: Dies muss nach der Aufnahme geprüft beziehungsweise selektiert werden. C: Kompetenz betrifft die Aufnahmefähigkeit, nicht bereits den erfolgreichen Transfer. D: Kompetenz betrifft DNA-Aufnahme und beweist weder Transduktion noch Resistenz. E: Ein aufgenommenes Resistenzgen muss funktionell exprimiert sein. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Kompetenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompetenz"
+      ],
+      "questionGoal": "Kompetenz",
+      "structuredExplanation": {
+        "coreIdea": "Kompetenz",
+        "correctReasoning": "Kompetenz betrifft die Aufnahmefähigkeit, nicht bereits den erfolgreichen Transfer.",
+        "wrongAnswerExplanations": {
+          "A": "Transformation unterscheidet sich von phagenvermittelter Transduktion.",
+          "B": "Dies muss nach der Aufnahme geprüft beziehungsweise selektiert werden.",
+          "D": "Kompetenz betrifft DNA-Aufnahme und beweist weder Transduktion noch Resistenz.",
+          "E": "Ein aufgenommenes Resistenzgen muss funktionell exprimiert sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Warum folgt nach dem Aufnahmeverfahren zunächst Wachstum ohne Antibiotikum?",
+      "options": [
+        {
+          "text": "Damit alle nichttransformierten Zellen automatisch resistent werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Antibiotikum soll erst nach dem vollständigen Plasmidverlust wirken.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zellen können sich erholen und den Resistenzmarker exprimieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Erholung ersetzt die anschliessende Selektion vollständig.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Dabei wird das Plasmid zwingend aus allen Zellen entfernt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ohne Resistenzdeterminante entsteht keine solche garantierte Resistenz. B: Der Marker muss gerade erhalten bleiben. C: Sofortiger Selektionsdruck könnte erfolgreich transformierte Zellen noch beeinträchtigen. D: Ohne Selektion sind Transformanten nicht zuverlässig von anderen getrennt. E: Ziel ist das Überleben mit aufgenommenem Plasmid. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Erholungsphase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erholungsphase"
+      ],
+      "questionGoal": "Erholungsphase",
+      "structuredExplanation": {
+        "coreIdea": "Erholungsphase",
+        "correctReasoning": "Sofortiger Selektionsdruck könnte erfolgreich transformierte Zellen noch beeinträchtigen.",
+        "wrongAnswerExplanations": {
+          "A": "Ohne Resistenzdeterminante entsteht keine solche garantierte Resistenz.",
+          "B": "Der Marker muss gerade erhalten bleiben.",
+          "D": "Ohne Selektion sind Transformanten nicht zuverlässig von anderen getrennt.",
+          "E": "Ziel ist das Überleben mit aufgenommenem Plasmid."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Auf Ampicillin wachsen Kolonien nach Transformation mit einem Resistenzplasmid. Was ist zunächst nachgewiesen?",
+      "options": [
+        {
+          "text": "Das Plasmid besitzt zwingend genau eine Restriktionsstelle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Kolonie enthält garantiert das gewünschte Insert in korrekter Orientierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es wurden sicher gleich viele Plasmidmoleküle wie Kolonien aufgenommen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle ursprünglich eingesetzten Zellen nahmen ein Plasmid auf.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unter diesen Bedingungen haben sich selektionsfähige Zellen zu Kolonien entwickelt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Selektion sagt nichts über die Schnittstellenzahl. B: Resistenz bestätigt dies nicht. C: Mehrfachaufnahme und Zellteilung verhindern diesen direkten Schluss. D: Nichttransformierte Zellen können unter Selektion ausfallen. E: Die Identität und Struktur des Plasmids brauchen zusätzliche Kontrollen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Ampicillin-Selektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ampicillin-Selektion"
+      ],
+      "questionGoal": "Ampicillin-Selektion",
+      "structuredExplanation": {
+        "coreIdea": "Ampicillin-Selektion",
+        "correctReasoning": "Die Identität und Struktur des Plasmids brauchen zusätzliche Kontrollen.",
+        "wrongAnswerExplanations": {
+          "A": "Selektion sagt nichts über die Schnittstellenzahl.",
+          "B": "Resistenz bestätigt dies nicht.",
+          "C": "Mehrfachaufnahme und Zellteilung verhindern diesen direkten Schluss.",
+          "D": "Nichttransformierte Zellen können unter Selektion ausfallen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Nach Transformation mit 1 ng DNA wird ein Zehntel des Ansatzes ausplattiert. Es entstehen 80 Kolonien. Welche Effizienz ergibt sich unter idealisierten Annahmen in CFU/µg?",
+      "options": [
+        {
+          "text": "8 CFU/µg.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "800 CFU/µg.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "80 CFU/µg.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "8 × 10⁴ CFU/µg.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "8 × 10⁵ CFU/µg.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Verdünnung und DNA-Einheit wurden in falscher Richtung verrechnet. B: Dies ist nur die hochgerechnete Zellzahl ohne DNA-Normierung. C: Dies ist die gezählte Koloniezahl ohne beide Korrekturen. D: Dies vergisst die Korrektur für das ausplattierte Zehntel. E: 800 geschätzte Transformanten geteilt durch 0,001 µg ergeben 800000. Quelle: Originalunterlagen, PDF-S. 6,9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "CFU pro DNA-Menge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CFU pro DNA-Menge"
+      ],
+      "questionGoal": "CFU pro DNA-Menge",
+      "structuredExplanation": {
+        "coreIdea": "CFU pro DNA-Menge",
+        "correctReasoning": "800 geschätzte Transformanten geteilt durch 0,001 µg ergeben 800000.",
+        "wrongAnswerExplanations": {
+          "A": "Die Verdünnung und DNA-Einheit wurden in falscher Richtung verrechnet.",
+          "B": "Dies ist nur die hochgerechnete Zellzahl ohne DNA-Normierung.",
+          "C": "Dies ist die gezählte Koloniezahl ohne beide Korrekturen.",
+          "D": "Dies vergisst die Korrektur für das ausplattierte Zehntel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q12",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Ein Plasmid hat 2958 bp. Mit 660 g/mol pro bp und N_A = 6,02 × 10²³/mol: Wie viele Moleküle sind ungefähr in 1 ng enthalten?",
+      "options": [
+        {
+          "text": "3,1 × 10¹¹.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2958.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3,1 × 10⁵.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2,0 × 10⁶.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3,1 × 10⁸.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre um den Faktor 1000 zu gross. B: Die Basenpaarzahl ist nicht die Anzahl Moleküle einer Masseprobe. C: Dies wäre um den Faktor 1000 zu klein. D: Dies ist näher an der molaren Masse als an der Molekülzahl. E: Masse durch molare Masse mal Avogadrozahl ergibt ungefähr diesen Wert. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Molekülzahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Molekülzahl"
+      ],
+      "questionGoal": "Molekülzahl",
+      "structuredExplanation": {
+        "coreIdea": "Molekülzahl",
+        "correctReasoning": "Masse durch molare Masse mal Avogadrozahl ergibt ungefähr diesen Wert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre um den Faktor 1000 zu gross.",
+          "B": "Die Basenpaarzahl ist nicht die Anzahl Moleküle einer Masseprobe.",
+          "C": "Dies wäre um den Faktor 1000 zu klein.",
+          "D": "Dies ist näher an der molaren Masse als an der Molekülzahl."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Restriktionsmuster» treffen zu?",
+      "options": [
+        {
+          "text": "Ein partieller Verdau muss dasselbe Muster wie ein vollständiger Verdau ergeben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein vollständiger Restriktionsverdau verdoppelt die Summe der Fragmentlängen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei vollständigem Verdau eines Rings entsprechen n verschiedene Schnittstellen n Fragmenten, sofern n mindestens 1 ist.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die sichtbare Bandenzahl entspricht unter allen Bedingungen exakt der Fragmentzahl.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ungeschnittene und intermediäre Produkte können zusätzliche Banden erzeugen. B: Schneiden vervielfältigt keine DNA. C: Dies gilt für n grösser als null. D: Gleich lange Fragmente können gemeinsam laufen. Quelle: Originalunterlagen, PDF-S. 4–5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Restriktionsmuster"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Restriktionsmuster"
+      ],
+      "questionGoal": "Restriktionsmuster",
+      "structuredExplanation": {
+        "coreIdea": "Restriktionsmuster",
+        "correctReasoning": "Dies gilt für n grösser als null.",
+        "wrongAnswerExplanations": {
+          "A": "Ungeschnittene und intermediäre Produkte können zusätzliche Banden erzeugen.",
+          "B": "Schneiden vervielfältigt keine DNA.",
+          "C": "Dies gilt für n grösser als null.",
+          "D": "Gleich lange Fragmente können gemeinsam laufen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Gelauswertung» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Grössenmarker ermöglicht den Vergleich mit Fragmenten bekannter Länge.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei gleicher Fragmentlänge kann mehr DNA eine intensivere Bande erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Abwesenheit einer sichtbaren Bande beweist bei beliebiger Nachweisgrenze das vollständige Fehlen der DNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwei gleich lange lineare Fragmente können als eine Bande erscheinen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für lineare DNA erhält man daraus eine Grössenabschätzung. B: Die Signalintensität hängt von der DNA-Menge ab. C: Zu geringe Mengen können unentdeckt bleiben. D: Die Trennung löst ihre Herkunft nicht auf. Quelle: Originalunterlagen, PDF-S. 4–5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Gelauswertung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gelauswertung"
+      ],
+      "questionGoal": "Gelauswertung",
+      "structuredExplanation": {
+        "coreIdea": "Gelauswertung",
+        "correctReasoning": "Für lineare DNA erhält man daraus eine Grössenabschätzung. Die Signalintensität hängt von der DNA-Menge ab. Die Trennung löst ihre Herkunft nicht auf.",
+        "wrongAnswerExplanations": {
+          "A": "Für lineare DNA erhält man daraus eine Grössenabschätzung.",
+          "B": "Die Signalintensität hängt von der DNA-Menge ab.",
+          "C": "Zu geringe Mengen können unentdeckt bleiben.",
+          "D": "Die Trennung löst ihre Herkunft nicht auf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Pufferfunktionen» treffen zu?",
+      "options": [
+        {
+          "text": "Loadingfarbstoff dient allein als präziser DNA-Grössenmarker für jede Probe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Dichteerhöhende Bestandteile helfen beim Beladen der Geltaschen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mehr Loadingpuffer verbessert unabhängig von Konzentration und Bedingungen stets die Grössenauflösung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Laufpuffer stellt geeignete Ionen- und pH-Bedingungen bereit.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er verfolgt den Lauf, ersetzt aber keinen DNA-Marker. B: Die Probe sinkt dadurch besser in die Vertiefung. C: Abweichende Probenbedingungen können die Trennung stören. D: Er unterstützt den elektrischen Trennprozess. Quelle: Originalunterlagen, PDF-S. 4,7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Pufferfunktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pufferfunktionen"
+      ],
+      "questionGoal": "Pufferfunktionen",
+      "structuredExplanation": {
+        "coreIdea": "Pufferfunktionen",
+        "correctReasoning": "Die Probe sinkt dadurch besser in die Vertiefung. Er unterstützt den elektrischen Trennprozess.",
+        "wrongAnswerExplanations": {
+          "A": "Er verfolgt den Lauf, ersetzt aber keinen DNA-Marker.",
+          "B": "Die Probe sinkt dadurch besser in die Vertiefung.",
+          "C": "Abweichende Probenbedingungen können die Trennung stören.",
+          "D": "Er unterstützt den elektrischen Trennprozess."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Transformation und Kontrolle» treffen zu?",
+      "options": [
+        {
+          "text": "Jede auf Ampicillin gewachsene Kolonie ist bereits vollständig sequenzverifiziert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Plasmidaufnahme und dauerhafte erfolgreiche Transformation sind begrifflich immer identisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Kontrolle ohne Plasmid hilft, den Hintergrund auf Selektionsmedium zu beurteilen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Wachstum ohne Antibiotikum kann die allgemeine Zellviabilität prüfen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Koloniewachstum ersetzt keine molekulare Identifikation. B: DNA muss erhalten bleiben und funktionell nutzbar sein. C: Unerwartetes Wachstum kann auf ein Selektions- oder Kontaminationsproblem hinweisen. D: Dies ist von Resistenzselektion zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Transformation und Kontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transformation und Kontrolle"
+      ],
+      "questionGoal": "Transformation und Kontrolle",
+      "structuredExplanation": {
+        "coreIdea": "Transformation und Kontrolle",
+        "correctReasoning": "Unerwartetes Wachstum kann auf ein Selektions- oder Kontaminationsproblem hinweisen. Dies ist von Resistenzselektion zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "Koloniewachstum ersetzt keine molekulare Identifikation.",
+          "B": "DNA muss erhalten bleiben und funktionell nutzbar sein.",
+          "C": "Unerwartetes Wachstum kann auf ein Selektions- oder Kontaminationsproblem hinweisen.",
+          "D": "Dies ist von Resistenzselektion zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q17",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Effizienzbegriffe» treffen zu?",
+      "options": [
+        {
+          "text": "CFU pro µg DNA und Anteil transformierter Zellen sind verschiedene Grössen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein CFU/µg-Wert ist ohne weitere Angaben automatisch ein Prozentwert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der geschätzte Anteil transformierter Zellen benötigt eine passende Zahl lebensfähiger Ausgangszellen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aus jeder selektierten Kolonie lässt sich exakt die Anzahl aufgenommener Plasmidmoleküle ablesen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Nenner ist DNA-Masse beziehungsweise Zellzahl. B: Er ist eine massenbezogene Ausbeute, keine dimensionslose Fraktion. C: Die Bezugszellzahl muss definiert sein. D: Eine Zelle kann mehrere Moleküle aufgenommen haben. Quelle: Originalunterlagen, PDF-S. 6,9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Effizienzbegriffe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Effizienzbegriffe"
+      ],
+      "questionGoal": "Effizienzbegriffe",
+      "structuredExplanation": {
+        "coreIdea": "Effizienzbegriffe",
+        "correctReasoning": "Der Nenner ist DNA-Masse beziehungsweise Zellzahl. Die Bezugszellzahl muss definiert sein.",
+        "wrongAnswerExplanations": {
+          "A": "Der Nenner ist DNA-Masse beziehungsweise Zellzahl.",
+          "B": "Er ist eine massenbezogene Ausbeute, keine dimensionslose Fraktion.",
+          "C": "Die Bezugszellzahl muss definiert sein.",
+          "D": "Eine Zelle kann mehrere Moleküle aufgenommen haben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Eine 1:1000 verdünnte Zellprobe liefert nach Ausplattieren von 0,1 ml 50 Kolonien. Welche Aussagen treffen unter idealen Zählbedingungen zu?",
+      "options": [
+        {
+          "text": "Die verdünnte Probe enthält geschätzt 500 CFU/ml.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Wert bezeichnet zwingend die Gesamtzahl aller lebenden und toten Zellen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Ausgangsprobe enthält geschätzt 5 × 10⁵ CFU/ml.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Ausgangsprobe enthält nur 50 CFU/ml.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: 50 Kolonien geteilt durch 0,1 ml ergeben 500. B: CFU erfasst kultivierbare kolonieformende Einheiten. C: Der Verdünnungsfaktor 1000 wird zurückgerechnet. D: Dies ignoriert Volumen und Verdünnung. Quelle: Originalunterlagen, PDF-S. 6,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Zelltiter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zelltiter"
+      ],
+      "questionGoal": "Zelltiter",
+      "structuredExplanation": {
+        "coreIdea": "Zelltiter",
+        "correctReasoning": "50 Kolonien geteilt durch 0,1 ml ergeben 500. Der Verdünnungsfaktor 1000 wird zurückgerechnet.",
+        "wrongAnswerExplanations": {
+          "A": "50 Kolonien geteilt durch 0,1 ml ergeben 500.",
+          "B": "CFU erfasst kultivierbare kolonieformende Einheiten.",
+          "C": "Der Verdünnungsfaktor 1000 wird zurückgerechnet.",
+          "D": "Dies ignoriert Volumen und Verdünnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Interpretationsgrenzen» treffen zu?",
+      "options": [
+        {
+          "text": "Jede zusätzliche Bande beweist zwangsläufig eine Kontamination.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine einzelne Bande nach Verdau kann mehrere gleich lange Fragmente enthalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine passende Kontrollprobe erleichtert die Interpretation eines unerwarteten Musters.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Grössenmuster ersetzt stets eine vollständige Basensequenzanalyse.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Partieller Verdau oder Topologie können ebenfalls beitragen. B: Komigration verringert die sichtbare Bandenzahl. C: Sie kann Fehlerquellen eingrenzen. D: Verschiedene Sequenzen können dasselbe Längenmuster ergeben. Quelle: Originalunterlagen, PDF-S. 4–5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Interpretationsgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interpretationsgrenzen"
+      ],
+      "questionGoal": "Interpretationsgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Interpretationsgrenzen",
+        "correctReasoning": "Komigration verringert die sichtbare Bandenzahl. Sie kann Fehlerquellen eingrenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Partieller Verdau oder Topologie können ebenfalls beitragen.",
+          "B": "Komigration verringert die sichtbare Bandenzahl.",
+          "C": "Sie kann Fehlerquellen eingrenzen.",
+          "D": "Verschiedene Sequenzen können dasselbe Längenmuster ergeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_fpmol_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "FPMOL",
+      "stem": "Welche Aussagen zum Thema «Zählannahmen» treffen zu?",
+      "options": [
+        {
+          "text": "Bei Vergleich zweier Versuche müssen DNA-Menge, Plattieranteil und Bedingungen berücksichtigt werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Hochrechnung setzt eine repräsentative Verteilung im ausplattierten Aliquot voraus.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nach starker Zellvermehrung entspricht jede Kolonie zwingend einem ursprünglich unabhängigen Aufnahmeereignis.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine CFU kann grundsätzlich niemals aus einem Zellaggregat entstehen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sonst sind rohe Koloniezahlen nicht direkt vergleichbar. B: Ungleichmässige Verteilung kann die Schätzung verzerren. C: Nachkommen eines Transformanten können mehrere Kolonien ergeben. D: Auch Aggregate können eine Kolonie bilden. Quelle: Originalunterlagen, PDF-S. 6,9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "FPMOL",
+        "Zählannahmen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zählannahmen"
+      ],
+      "questionGoal": "Zählannahmen",
+      "structuredExplanation": {
+        "coreIdea": "Zählannahmen",
+        "correctReasoning": "Sonst sind rohe Koloniezahlen nicht direkt vergleichbar. Ungleichmässige Verteilung kann die Schätzung verzerren.",
+        "wrongAnswerExplanations": {
+          "A": "Sonst sind rohe Koloniezahlen nicht direkt vergleichbar.",
+          "B": "Ungleichmässige Verteilung kann die Schätzung verzerren.",
+          "C": "Nachkommen eines Transformanten können mehrere Kolonien ergeben.",
+          "D": "Auch Aggregate können eine Kolonie bilden."
+        }
+      }
+    }
+  ]
+}

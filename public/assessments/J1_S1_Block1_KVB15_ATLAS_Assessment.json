@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block1_kvb15_20261102",
+  "lectureCode": "KVB15",
+  "title": "Zelltod und Gewebehomöostase I",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB15 - Zelltod. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Absolute Aussagen der Folien über ausschliesslich unregulierte oder grossflächige Nekrose und garantiert entzündungsfreie Apoptose werden präzisiert.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Apoptotische und nekrotische Morphologie sowie Entzündungsfolgen unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Die Rolle gezielten Zelltods in Entwicklung, Gewebehomöostase und Immunantwort erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Ablauf und phagozytische Entsorgung apoptotischer Zellen begründen."
+    },
+    {
+      "id": "lo4",
+      "text": "Programmierten Zelltod von Pflanzen funktionell einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb15_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Eine geschädigte Zellpopulation schwillt an, verliert die Membranintegrität und setzt Zellinhalte frei. Welche Einordnung passt am besten?",
+      "options": [
+        {
+          "text": "Frühphase geordneter Apoptose mit rascher stiller Entsorgung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Physiologische Mitose mit Aufteilung intakter Chromosomen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nekrotische Zellschädigung mit möglicher Entzündungsreaktion.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Autophagisches Recycling bei vollständig erhaltener Zellfunktion.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Reversible Zellzyklusruhe ohne Zellschaden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier dominieren Schrumpfung und zunächst erhaltene Membranbegrenzung. B: Mitose setzt keine Zellinhalte durch Membranruptur frei. C: Membranverlust und Freisetzung intrazellulärer Stoffe sind typische Kennzeichen. D: Recycling allein erklärt diese nekrotische Morphologie nicht. E: Das erklärt den irreversiblen Membranverlust nicht. Quelle: Originalunterlagen, PDF-S. 4–6,18–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Morphologischer Vergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Morphologischer Vergleich"
+      ],
+      "questionGoal": "Morphologischer Vergleich",
+      "structuredExplanation": {
+        "coreIdea": "Morphologischer Vergleich",
+        "correctReasoning": "Membranverlust und Freisetzung intrazellulärer Stoffe sind typische Kennzeichen.",
+        "wrongAnswerExplanations": {
+          "A": "Hier dominieren Schrumpfung und zunächst erhaltene Membranbegrenzung.",
+          "B": "Mitose setzt keine Zellinhalte durch Membranruptur frei.",
+          "D": "Recycling allein erklärt diese nekrotische Morphologie nicht.",
+          "E": "Das erklärt den irreversiblen Membranverlust nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Warum können nekrotisch geschädigte Zellen eine Entzündungsreaktion fördern?",
+      "options": [
+        {
+          "text": "Nur lebende Mikroorganismen können Entzündung auslösen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Phagozytose jeglichen Zellmaterials wird vollständig verhindert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zellmembran verschliesst alle austretenden Moleküle dauerhaft.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede nekrotische Zelle produziert zwingend einen spezifischen Antikörper.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Intrazelluläre Bestandteile werden frei und wirken als Gefahrensignale.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch sterile Gewebeschäden können entzündlich wirken. B: Auch nekrotisches Material kann beseitigt werden. C: Gerade die verlorene Membranintegrität ermöglicht die Freisetzung. D: Antikörperproduktion ist eine Funktion differenzierter B-Zellen. E: DAMPs zeigen Gewebeschädigung an. Quelle: Originalunterlagen, PDF-S. 5,21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "DAMP-Freisetzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DAMP-Freisetzung"
+      ],
+      "questionGoal": "DAMP-Freisetzung",
+      "structuredExplanation": {
+        "coreIdea": "DAMP-Freisetzung",
+        "correctReasoning": "DAMPs zeigen Gewebeschädigung an.",
+        "wrongAnswerExplanations": {
+          "A": "Auch sterile Gewebeschäden können entzündlich wirken.",
+          "B": "Auch nekrotisches Material kann beseitigt werden.",
+          "C": "Gerade die verlorene Membranintegrität ermöglicht die Freisetzung.",
+          "D": "Antikörperproduktion ist eine Funktion differenzierter B-Zellen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Interdigitales Gewebe wird während der Entwicklung gezielt entfernt. Welcher Vorgang ermöglicht diese Formgebung?",
+      "options": [
+        {
+          "text": "Verdopplung aller interdigitalen Zellen ohne Zellverlust.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Umwandlung sämtlicher Zellen in Knochenmark.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich ungeordnetes Zerreissen durch mechanische Belastung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Räumlich und zeitlich regulierte Apoptose.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Reine Hypertrophie ohne Veränderung der Zellzahl.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies würde Gewebe hinzufügen statt entfernen. B: Das entspricht der beschriebenen Gewebeentfernung nicht. C: Die Formgebung beruht auf einem regulierten Entwicklungsprozess. D: Gezielter Zelltod gestaltet die spätere Gewebestruktur. E: Hypertrophie vergrössert Zellen und erklärt die Entfernung nicht. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Entwicklungsfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entwicklungsfunktion"
+      ],
+      "questionGoal": "Entwicklungsfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Entwicklungsfunktion",
+        "correctReasoning": "Gezielter Zelltod gestaltet die spätere Gewebestruktur.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde Gewebe hinzufügen statt entfernen.",
+          "B": "Das entspricht der beschriebenen Gewebeentfernung nicht.",
+          "C": "Die Formgebung beruht auf einem regulierten Entwicklungsprozess.",
+          "E": "Hypertrophie vergrössert Zellen und erklärt die Entfernung nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Warum kann während der Entwicklung ein Motoneuron sterben, dessen Axon keinen geeigneten Zielkontakt bildet?",
+      "options": [
+        {
+          "text": "Ein fehlender Kontakt bewirkt zwangsläufig eine eitrige Infektion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es erhält nicht genügend überlebensfördernde Signale und kann Apoptose auslösen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Motoneuron muss nach dem ersten Axonwachstum sterben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der fehlende Kontakt garantiert ein lebenslanges Überleben ohne weitere trophische Signale.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jeder nicht verschaltete Neuronentyp muss unabhängig vom Entwicklungsstadium sofort nekrotisch lysieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kontaktmangel ist kein Infektionsnachweis. B: Zielkontakte tragen zur trophischen Selektion bei. C: Erfolgreich verschaltete Motoneuronen können überleben. D: Fehlende Überlebenssignale können gerade die Apoptose begünstigen. E: Die Folie beschreibt regulierte apoptotische Selektion, nicht diese universelle Nekrosefolge. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Neuronale Selektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neuronale Selektion"
+      ],
+      "questionGoal": "Neuronale Selektion",
+      "structuredExplanation": {
+        "coreIdea": "Neuronale Selektion",
+        "correctReasoning": "Zielkontakte tragen zur trophischen Selektion bei.",
+        "wrongAnswerExplanations": {
+          "A": "Kontaktmangel ist kein Infektionsnachweis.",
+          "C": "Erfolgreich verschaltete Motoneuronen können überleben.",
+          "D": "Fehlende Überlebenssignale können gerade die Apoptose begünstigen.",
+          "E": "Die Folie beschreibt regulierte apoptotische Selektion, nicht diese universelle Nekrosefolge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Welche Aussage erklärt am besten, weshalb Zellteilung allein die Gewebehomöostase nicht beschreibt?",
+      "options": [
+        {
+          "text": "Gewebehomöostase bedeutet ein vollständiges Verbot jeglichen Zelltods.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Zellen eines Erwachsenen besitzen identische Lebensdauern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zellneubildung muss mit Verlust und Entfernung vorhandener Zellen abgestimmt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Mit jeder Zellteilung muss sich die Organmasse zwingend verdoppeln.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Gewebehomöostase findet ausschliesslich im Embryo statt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gezielter Zelltod ist ein wichtiger Teil davon. B: Die Lebensdauer unterscheidet sich stark zwischen Zelltypen. C: Zellzahl und Funktion beruhen auf einem Gleichgewicht von Aufbau und Abbau. D: Gleichzeitiger Zellverlust kann den Zuwachs ausgleichen. E: Auch adulte Gewebe erhalten sich fortlaufend. Quelle: Originalunterlagen, PDF-S. 10–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Gewebehomöostase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gewebehomöostase"
+      ],
+      "questionGoal": "Gewebehomöostase",
+      "structuredExplanation": {
+        "coreIdea": "Gewebehomöostase",
+        "correctReasoning": "Zellzahl und Funktion beruhen auf einem Gleichgewicht von Aufbau und Abbau.",
+        "wrongAnswerExplanations": {
+          "A": "Gezielter Zelltod ist ein wichtiger Teil davon.",
+          "B": "Die Lebensdauer unterscheidet sich stark zwischen Zelltypen.",
+          "D": "Gleichzeitiger Zellverlust kann den Zuwachs ausgleichen.",
+          "E": "Auch adulte Gewebe erhalten sich fortlaufend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Ein unreifer T-Lymphozyt reagiert stark gegen körpereigene Bestandteile. Welche Funktion hat seine apoptotische Elimination?",
+      "options": [
+        {
+          "text": "Verminderung potenziell autoreaktiver Zellen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Erhalt sämtlicher stark selbstreaktiver Klone zur Verstärkung jeder späteren Fremdantwort.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verstärkung der Selbsterkennung durch Vermehrung desselben Klons.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vollständige Verhinderung späterer Immunantworten gegen Fremdantigene.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sicherstellung, dass nur funktionslose Rezeptoren erhalten bleiben.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Negative Selektion trägt zur Selbsttoleranz bei. B: Negative Selektion entfernt gefährlich autoreaktive Zellen, ohne jede Fremdantwort abzuschaffen. C: Das würde das autoreaktive Potenzial erhöhen. D: Toleranz soll geeignete Immunfunktionen erhalten. E: Funktionslose und gefährlich autoreaktive Zellen werden gerade entfernt. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Immuntoleranz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Immuntoleranz"
+      ],
+      "questionGoal": "Immuntoleranz",
+      "structuredExplanation": {
+        "coreIdea": "Immuntoleranz",
+        "correctReasoning": "Negative Selektion trägt zur Selbsttoleranz bei.",
+        "wrongAnswerExplanations": {
+          "B": "Negative Selektion entfernt gefährlich autoreaktive Zellen, ohne jede Fremdantwort abzuschaffen.",
+          "C": "Das würde das autoreaktive Potenzial erhöhen.",
+          "D": "Toleranz soll geeignete Immunfunktionen erhalten.",
+          "E": "Funktionslose und gefährlich autoreaktive Zellen werden gerade entfernt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Nach Elimination eines Erregers sinkt die Zahl der zuvor expandierten Effektorlymphozyten stark ab. Welcher Vorgang trägt dazu bei?",
+      "options": [
+        {
+          "text": "Dauerhafte weitere Verdopplung aller Effektorzellen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständige Umverteilung aller Effektorzellen in das Knochenmark ohne Zellverlust.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich Verdünnung durch Wasseraufnahme ohne Zellverlust.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Apoptotische Kontraktion der nicht mehr benötigten Zellpopulation.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Obligate Nekrose des gesamten lymphatischen Organs.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das würde die Zellzahl erhöhen statt vermindern. B: Die beschriebene Kontraktion beinhaltet apoptotische Elimination. C: Die beschriebene Kontraktion betrifft die Zellzahl. D: Die Immunantwort wird nach dem Bedarf wieder begrenzt. E: Die regulierte Kontraktion erfordert keinen solchen Organschaden. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Immunantwort begrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Immunantwort begrenzen"
+      ],
+      "questionGoal": "Immunantwort begrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Immunantwort begrenzen",
+        "correctReasoning": "Die Immunantwort wird nach dem Bedarf wieder begrenzt.",
+        "wrongAnswerExplanations": {
+          "A": "Das würde die Zellzahl erhöhen statt vermindern.",
+          "B": "Die beschriebene Kontraktion beinhaltet apoptotische Elimination.",
+          "C": "Die beschriebene Kontraktion betrifft die Zellzahl.",
+          "E": "Die regulierte Kontraktion erfordert keinen solchen Organschaden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Welche Funktion hat die Apoptose einer virusinfizierten Zielzelle nach Kontakt mit einer zytotoxischen T-Zelle?",
+      "options": [
+        {
+          "text": "Ausschliesslich Versorgung der Zielzelle mit Wachstumsfaktoren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Dauerhafte Steigerung der Teilungsfähigkeit der Zielzelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nachweis, dass Zelltod niemals durch andere Zellen ausgelöst werden kann.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Elimination einer potenziell gefährlichen Wirtszelle.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Dauerhafter Erhalt jeder infizierten Zielzelle als einzige Möglichkeit der Infektionskontrolle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier wird ein Zelltodprogramm ausgelöst. B: Apoptose beendet ihre Lebensfähigkeit. C: Immunzellen können die Apoptose gezielt initiieren. D: Gezieltes Töten kann der Infektionskontrolle dienen. E: Zytotoxische Elimination ist ein zusätzlicher wichtiger Abwehrweg. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Zytotoxische Zielzelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zytotoxische Zielzelle"
+      ],
+      "questionGoal": "Zytotoxische Zielzelle",
+      "structuredExplanation": {
+        "coreIdea": "Zytotoxische Zielzelle",
+        "correctReasoning": "Gezieltes Töten kann der Infektionskontrolle dienen.",
+        "wrongAnswerExplanations": {
+          "A": "Hier wird ein Zelltodprogramm ausgelöst.",
+          "B": "Apoptose beendet ihre Lebensfähigkeit.",
+          "C": "Immunzellen können die Apoptose gezielt initiieren.",
+          "E": "Zytotoxische Elimination ist ein zusätzlicher wichtiger Abwehrweg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q09",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Welches Muster passt am besten zu einer geordneten Apoptose?",
+      "options": [
+        {
+          "text": "Zunehmende Zellzahl bei unverändertem Chromatin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Stabile Verdopplung des Zellvolumens und zwei lebensfähige Tochterzellen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich reversible Ribosomenablösung ohne Zellverlust.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Frühe massive Schwellung mit sofortiger Membranruptur.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Chromatinkondensation, Zellschrumpfung und membranbegrenzte Zellkörperchen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Apoptose vermindert die Zahl lebensfähiger Zellen. B: Das beschreibt Zellwachstum und Teilung. C: Das reicht für die Einordnung als Apoptose nicht aus. D: Das passt eher zu nekrotischer Morphologie. E: Diese Veränderungen kennzeichnen den beschriebenen Ablauf. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Apoptotische Morphologie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Apoptotische Morphologie"
+      ],
+      "questionGoal": "Apoptotische Morphologie",
+      "structuredExplanation": {
+        "coreIdea": "Apoptotische Morphologie",
+        "correctReasoning": "Diese Veränderungen kennzeichnen den beschriebenen Ablauf.",
+        "wrongAnswerExplanations": {
+          "A": "Die Apoptose vermindert die Zahl lebensfähiger Zellen.",
+          "B": "Das beschreibt Zellwachstum und Teilung.",
+          "C": "Das reicht für die Einordnung als Apoptose nicht aus.",
+          "D": "Das passt eher zu nekrotischer Morphologie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Warum ist die rasche Phagozytose apoptotischer Zellkörper besonders wichtig?",
+      "options": [
+        {
+          "text": "Sie macht Zellmembranen grundsätzlich unempfindlich gegen jede Schädigung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie stellt das komplette ursprüngliche Zellleben wieder her.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie erhöht die Entzündungsfreiheit allein durch unbegrenzte Speicherung aller Reste ausserhalb der Phagozyten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie ist nur nötig, wenn die Zelle zuvor von Bakterien infiziert wurde.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie entfernt Zellreste, bevor eine sekundäre Membranschädigung entzündliche Inhalte freisetzen kann.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Membranintegrität ist zeitlich begrenzt. B: Aufnahme beseitigt die Reste und reanimiert die Zelle nicht. C: Die rechtzeitige Aufnahme und Verarbeitung verhindert die problematische Anhäufung. D: Auch sterile apoptotische Reste werden entfernt. E: Geordnete Entsorgung trägt zur wenig entzündlichen Beseitigung bei. Quelle: Originalunterlagen, PDF-S. 21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Efferocytose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Efferocytose"
+      ],
+      "questionGoal": "Efferocytose",
+      "structuredExplanation": {
+        "coreIdea": "Efferocytose",
+        "correctReasoning": "Geordnete Entsorgung trägt zur wenig entzündlichen Beseitigung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Membranintegrität ist zeitlich begrenzt.",
+          "B": "Aufnahme beseitigt die Reste und reanimiert die Zelle nicht.",
+          "C": "Die rechtzeitige Aufnahme und Verarbeitung verhindert die problematische Anhäufung.",
+          "D": "Auch sterile apoptotische Reste werden entfernt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Welche Oberflächenveränderung hilft bei der Erkennung apoptotischer Zellen?",
+      "options": [
+        {
+          "text": "Die Membranlipide bleiben vollständig unverändert verteilt; allein die Gesamtmenge der DNA dient als äusseres Signal.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das gesamte Phosphatidylserin wird vor der Erkennung vollständig aus der Membran entfernt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Membranproteine werden vor der Erkennung gleichförmig in die Zelle eingezogen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Phosphatidylserin muss dauerhaft ausschliesslich auf der Innenseite verborgen bleiben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Phosphatidylserin wird an der äusseren Membranseite zugänglich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Oberflächenexposition von Phosphatidylserin ist ein beschriebenes Erkennungssignal. B: Seine Aussenpräsentation kann gerade die Erkennung fördern. C: Die Erkennung beruht unter anderem auf exponierten Signalen und nicht auf dieser pauschalen Veränderung. D: Gerade die Aussenpräsentation unterstützt die Erkennung. E: Es dient als ein Erkennungssignal für die Entsorgung. Quelle: Originalunterlagen, PDF-S. 22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Phosphatidylserin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphatidylserin"
+      ],
+      "questionGoal": "Phosphatidylserin",
+      "structuredExplanation": {
+        "coreIdea": "Phosphatidylserin",
+        "correctReasoning": "Es dient als ein Erkennungssignal für die Entsorgung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Oberflächenexposition von Phosphatidylserin ist ein beschriebenes Erkennungssignal.",
+          "B": "Seine Aussenpräsentation kann gerade die Erkennung fördern.",
+          "C": "Die Erkennung beruht unter anderem auf exponierten Signalen und nicht auf dieser pauschalen Veränderung.",
+          "D": "Gerade die Aussenpräsentation unterstützt die Erkennung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Weshalb lässt sich die Entsorgung tierischer apoptotischer Zellen nicht unverändert auf differenzierende Xylemzellen übertragen?",
+      "options": [
+        {
+          "text": "Xylemzellen bleiben nur durch ständige Zellteilung als Leitungsröhre offen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Zelltod entfernt stets auch sämtliche pflanzlichen Zellwände.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zellwand bleibt als funktionelle Struktur bestehen, und es gibt keine entsprechende Phagozytose apoptotischer Körperchen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Pflanzen besitzen grundsätzlich keine regulierten Zellabbauprozesse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Tierische Makrophagen wandern regelmässig in Pflanzenstämme ein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Funktionelle Tracheenelemente sind bei Reife tot. B: Gerade die Wände bleiben für die Leitfunktion erhalten. C: Tote Xylemelemente können weiterhin Wasser leiten. D: Programmiertes Absterben ist auch für Pflanzen wichtig. E: Pflanzliche Entsorgung beruht nicht auf solchen Immunzellen. Quelle: Originalunterlagen, PDF-S. 23–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Pflanzlicher Zelltod"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pflanzlicher Zelltod"
+      ],
+      "questionGoal": "Pflanzlicher Zelltod",
+      "structuredExplanation": {
+        "coreIdea": "Pflanzlicher Zelltod",
+        "correctReasoning": "Tote Xylemelemente können weiterhin Wasser leiten.",
+        "wrongAnswerExplanations": {
+          "A": "Funktionelle Tracheenelemente sind bei Reife tot.",
+          "B": "Gerade die Wände bleiben für die Leitfunktion erhalten.",
+          "D": "Programmiertes Absterben ist auch für Pflanzen wichtig.",
+          "E": "Pflanzliche Entsorgung beruht nicht auf solchen Immunzellen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Eine schwere ischämische Zellschädigung wird morphologisch als nekrotisch eingeordnet. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Die Freisetzung von Zellinhalten kann Nachbargewebe und Immunreaktionen beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nekrose muss definitionsgemäss immer ein ganzes Organ betreffen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede nekrotische Morphologie ist zwingend ein unregulierter Unfall.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ischämische schwere Schädigung kann nekrotischen Zelluntergang verursachen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: DAMPs und weitere Stoffe wirken auf die Umgebung. B: Nekrotischer Zelluntergang ist nicht an eine solche Mindestgrösse gebunden. C: Auch regulierte Zelltodwege können nekrotisch enden. D: Fehlende Versorgung kann die Zellintegrität zerstören. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Nekrose einordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nekrose einordnen"
+      ],
+      "questionGoal": "Nekrose einordnen",
+      "structuredExplanation": {
+        "coreIdea": "Nekrose einordnen",
+        "correctReasoning": "DAMPs und weitere Stoffe wirken auf die Umgebung. Fehlende Versorgung kann die Zellintegrität zerstören.",
+        "wrongAnswerExplanations": {
+          "A": "DAMPs und weitere Stoffe wirken auf die Umgebung.",
+          "B": "Nekrotischer Zelluntergang ist nicht an eine solche Mindestgrösse gebunden.",
+          "C": "Auch regulierte Zelltodwege können nekrotisch enden.",
+          "D": "Fehlende Versorgung kann die Zellintegrität zerstören."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Apoptotische Reste werden rechtzeitig phagozytiert. Welche Aussagen erklären beziehungsweise begrenzen die Entzündungsarmut?",
+      "options": [
+        {
+          "text": "Eine zunächst erhaltene Membranbegrenzung vermindert die unkontrollierte Freisetzung von Zellinhalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Apoptose kann unter keiner denkbaren Bedingung entzündliche Folgen haben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Rasche Aufnahme durch Phagozyten trägt zu einer wenig entzündlichen Beseitigung bei.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Ausbleiben einer Entzündung beweist, dass überhaupt keine Zellen gestorben sind.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das unterstützt geordnete Entsorgung. B: Art der Auslösung und gestörte Entsorgung können die Immunfolgen verändern. C: Die Zellreste werden rechtzeitig abgeräumt. D: Physiologischer Zelltod kann entzündungsarm ablaufen. Quelle: Originalunterlagen, PDF-S. 18,21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Entzündungsarmut"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entzündungsarmut"
+      ],
+      "questionGoal": "Entzündungsarmut",
+      "structuredExplanation": {
+        "coreIdea": "Entzündungsarmut",
+        "correctReasoning": "Das unterstützt geordnete Entsorgung. Die Zellreste werden rechtzeitig abgeräumt.",
+        "wrongAnswerExplanations": {
+          "A": "Das unterstützt geordnete Entsorgung.",
+          "B": "Art der Auslösung und gestörte Entsorgung können die Immunfolgen verändern.",
+          "C": "Die Zellreste werden rechtzeitig abgeräumt.",
+          "D": "Physiologischer Zelltod kann entzündungsarm ablaufen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Embryonales Gewebe wird durch gezielten Zellverlust umgebaut. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Apoptose kann vorübergehend benötigte Zellpopulationen entfernen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Apoptose ist nur nach der Geburt möglich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zu wenig gezielter Zellverlust kann die endgültige Gewebeform verändern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine normale Entwicklung lässt sich allein durch maximale Zellvermehrung erklären.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Entwicklung und Umbau brauchen gezielten Zellverlust. B: Sie ist bereits embryonal wesentlich. C: Das Beispiel der Fingertrennung illustriert dies. D: Differenzierung, Umbau und Zellverlust sind ebenfalls nötig. Quelle: Originalunterlagen, PDF-S. 7–9,13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Entwicklungsumbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entwicklungsumbau"
+      ],
+      "questionGoal": "Entwicklungsumbau",
+      "structuredExplanation": {
+        "coreIdea": "Entwicklungsumbau",
+        "correctReasoning": "Entwicklung und Umbau brauchen gezielten Zellverlust. Das Beispiel der Fingertrennung illustriert dies.",
+        "wrongAnswerExplanations": {
+          "A": "Entwicklung und Umbau brauchen gezielten Zellverlust.",
+          "B": "Sie ist bereits embryonal wesentlich.",
+          "C": "Das Beispiel der Fingertrennung illustriert dies.",
+          "D": "Differenzierung, Umbau und Zellverlust sind ebenfalls nötig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Der Zellumsatz verschiedener adulter Gewebe wird verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Verschiedene Gewebe weisen unterschiedliche Zellumsatzraten auf.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Zelle wird nach genau derselben Zahl von Tagen ersetzt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Veränderte Zellneubildung oder veränderter Zellverlust können die Zellzahl beeinflussen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sämtliche Zelllebensdauern werden ausschliesslich durch die Telomerlänge festgelegt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Darmepithel und langlebige Neuronen unterscheiden sich stark. B: Die Lebensdauer ist zelltyp- und zustandsabhängig. C: Beide Seiten der Bilanz sind relevant. D: Schäden, Differenzierung, Signale und weitere Faktoren spielen ebenfalls eine Rolle. Quelle: Originalunterlagen, PDF-S. 10–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Zellumsatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellumsatz"
+      ],
+      "questionGoal": "Zellumsatz",
+      "structuredExplanation": {
+        "coreIdea": "Zellumsatz",
+        "correctReasoning": "Darmepithel und langlebige Neuronen unterscheiden sich stark. Beide Seiten der Bilanz sind relevant.",
+        "wrongAnswerExplanations": {
+          "A": "Darmepithel und langlebige Neuronen unterscheiden sich stark.",
+          "B": "Die Lebensdauer ist zelltyp- und zustandsabhängig.",
+          "C": "Beide Seiten der Bilanz sind relevant.",
+          "D": "Schäden, Differenzierung, Signale und weitere Faktoren spielen ebenfalls eine Rolle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Immunzellen werden entwickelt, aktiviert und nach ihrer Aufgabe wieder reduziert. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jede aktivierte Effektorzelle muss lebenslang in unveränderter Zahl erhalten bleiben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Entwicklung eines funktionellen Immunsystems beinhaltet die Elimination vieler unreifer Zellen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Zytotoxische Immunzellen können ausschliesslich durch eigene Apoptose gegen Zielzellen wirken.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Überlebenssignale können das Fortbestehen ausgewählter Lymphozyten unterstützen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nach einer Antwort kommt es zur Kontraktion, während Gedächtnispopulationen verbleiben können. B: Selektion entfernt ungeeignete oder gefährliche Zellen. C: Sie können den Zelltod der Zielzelle auslösen. D: Fehlende Signale können apoptotische Programme begünstigen. Quelle: Originalunterlagen, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Immunsystem"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Immunsystem"
+      ],
+      "questionGoal": "Immunsystem",
+      "structuredExplanation": {
+        "coreIdea": "Immunsystem",
+        "correctReasoning": "Selektion entfernt ungeeignete oder gefährliche Zellen. Fehlende Signale können apoptotische Programme begünstigen.",
+        "wrongAnswerExplanations": {
+          "A": "Nach einer Antwort kommt es zur Kontraktion, während Gedächtnispopulationen verbleiben können.",
+          "B": "Selektion entfernt ungeeignete oder gefährliche Zellen.",
+          "C": "Sie können den Zelltod der Zielzelle auslösen.",
+          "D": "Fehlende Signale können apoptotische Programme begünstigen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Eine Zelle zeigt Blebbing und wird anschliessend aufgenommen. Welche Aussagen zum Ablauf stimmen?",
+      "options": [
+        {
+          "text": "Apoptotische Zellkörper sind zwingend frei von jeder Membran.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Makrophagen können mehrere apoptotische Zellen beziehungsweise Reste aufnehmen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Phagozytose ist erst nach vollständiger Freisetzung aller Zellinhalte möglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Membranblebbing kann zur apoptotischen Morphologie gehören.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie sind zunächst membranbegrenzt. B: Ihre Räumfunktion ist nicht auf einen einzigen Rest beschränkt. C: Sie kann gerade vor einer solchen Freisetzung erfolgen. D: Die Membran bildet Ausstülpungen. Quelle: Originalunterlagen, PDF-S. 18–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Ablauf und Aufnahme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ablauf und Aufnahme"
+      ],
+      "questionGoal": "Ablauf und Aufnahme",
+      "structuredExplanation": {
+        "coreIdea": "Ablauf und Aufnahme",
+        "correctReasoning": "Ihre Räumfunktion ist nicht auf einen einzigen Rest beschränkt. Die Membran bildet Ausstülpungen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie sind zunächst membranbegrenzt.",
+          "B": "Ihre Räumfunktion ist nicht auf einen einzigen Rest beschränkt.",
+          "C": "Sie kann gerade vor einer solchen Freisetzung erfolgen.",
+          "D": "Die Membran bildet Ausstülpungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Reife pflanzliche Xylemelemente werden mit tierischen apoptotischen Zellen verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Die Wasserleitung reifer Xylem-Leitelemente verlangt eine fortlaufend intakte metabolisch aktive Plasmamembran.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine tote Zelle kann unter keinen Umständen mehr eine strukturelle Funktion erfüllen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Programmiertes Absterben kann funktionelle pflanzliche Strukturen erzeugen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Abbau pflanzlicher Zellinhalte kann innerhalb der betroffenen Zelle erfolgen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Reife Leitelemente funktionieren nach programmiertem Abbau ihres Protoplasten; ihre Zellwände bleiben erhalten. B: Zellwände toter Pflanzenzellen bleiben funktionell wichtig. C: Reife Xylem-Leitelemente sind ein Beispiel. D: Eine tierische Makrophagenentsorgung ist nicht erforderlich. Quelle: Originalunterlagen, PDF-S. 23–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Pflanzliche Funktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pflanzliche Funktion"
+      ],
+      "questionGoal": "Pflanzliche Funktion",
+      "structuredExplanation": {
+        "coreIdea": "Pflanzliche Funktion",
+        "correctReasoning": "Reife Xylem-Leitelemente sind ein Beispiel. Eine tierische Makrophagenentsorgung ist nicht erforderlich.",
+        "wrongAnswerExplanations": {
+          "A": "Reife Leitelemente funktionieren nach programmiertem Abbau ihres Protoplasten; ihre Zellwände bleiben erhalten.",
+          "B": "Zellwände toter Pflanzenzellen bleiben funktionell wichtig.",
+          "C": "Reife Xylem-Leitelemente sind ein Beispiel.",
+          "D": "Eine tierische Makrophagenentsorgung ist nicht erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb15_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB15",
+      "stem": "Eine Erkrankung verändert das Gleichgewicht von Zellüberleben und Zellverlust. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Unzureichende Elimination gefährlicher Zellen kann ebenfalls schädlich sein.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Apoptose ist per Definition immer pathologisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein genetisch gesteuerter Prozess kann grundsätzlich nicht fehlreguliert werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein übermässiger Verlust funktioneller Zellen kann zur Krankheit beitragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zum Beispiel können veränderte Zellen erhalten bleiben. B: Sie hat zentrale physiologische Aufgaben. C: Auch regulierte Programme können dysfunktional sein. D: Zu viel Zelltod kann die Gewebefunktion beeinträchtigen. Quelle: Originalunterlagen, PDF-S. 4,7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB15",
+        "Krankheitsrelevanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Krankheitsrelevanz"
+      ],
+      "questionGoal": "Krankheitsrelevanz",
+      "structuredExplanation": {
+        "coreIdea": "Krankheitsrelevanz",
+        "correctReasoning": "Zum Beispiel können veränderte Zellen erhalten bleiben. Zu viel Zelltod kann die Gewebefunktion beeinträchtigen.",
+        "wrongAnswerExplanations": {
+          "A": "Zum Beispiel können veränderte Zellen erhalten bleiben.",
+          "B": "Sie hat zentrale physiologische Aufgaben.",
+          "C": "Auch regulierte Programme können dysfunktional sein.",
+          "D": "Zu viel Zelltod kann die Gewebefunktion beeinträchtigen."
+        }
+      }
+    }
+  ]
+}

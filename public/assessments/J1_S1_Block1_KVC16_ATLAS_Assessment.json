@@ -1,0 +1,1318 @@
+{
+  "id": "assessment_j1_s1_block1_kvc16_20261102",
+  "lectureCode": "KVC16",
+  "title": "Thermodynamik II",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC16 - Thermodynamik 2. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert.  Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Entropie und zweiten Hauptsatz auf System und Umgebung beziehen."
+    },
+    {
+      "id": "lo2",
+      "text": "Gibbs-Energie, Temperaturabhängigkeit und Gleichgewicht anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Reaktionskopplung und Fliessgleichgewicht von Gleichgewicht und Geschwindigkeit unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc16_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Welche Entropiebilanz kennzeichnet einen spontanen irreversiblen Prozess in einem insgesamt isoliert betrachteten System aus Teilsystem und Umgebung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Energieerhaltung wird dadurch aufgehoben.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Entropie jedes einzelnen Teilsystems muss zunehmen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Gesamtentropie bleibt bei jedem irreversiblen Prozess exakt gleich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Gesamtentropie nimmt zu.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die Entropie der Umgebung darf nie verändert werden.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Entropiezunahme ergänzt die Energieerhaltung und hebt sie nicht auf. B: Ein Teilsystem kann Entropie abgeben und geordneter werden, solange die Gesamtbilanz zunimmt. C: Exakte Entropiekonstanz kennzeichnet den reversiblen Grenzfall, nicht jeden irreversiblen Vorgang. D: Entscheidend ist ΔSgesamt>0; die Entropie eines Teilsystems darf bei entsprechender Umgebungskompensation sinken. E: Entropieübertragung und -änderung der Umgebung müssen mitbilanziert werden. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Zweiter Hauptsatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zweiter Hauptsatz"
+      ],
+      "questionGoal": "Zweiter Hauptsatz",
+      "structuredExplanation": {
+        "coreIdea": "Zweiter Hauptsatz",
+        "correctReasoning": "Entscheidend ist ΔSgesamt>0; die Entropie eines Teilsystems darf bei entsprechender Umgebungskompensation sinken.",
+        "wrongAnswerExplanations": {
+          "A": "Entropiezunahme ergänzt die Energieerhaltung und hebt sie nicht auf.",
+          "B": "Ein Teilsystem kann Entropie abgeben und geordneter werden, solange die Gesamtbilanz zunimmt.",
+          "C": "Exakte Entropiekonstanz kennzeichnet den reversiblen Grenzfall, nicht jeden irreversiblen Vorgang.",
+          "E": "Entropieübertragung und -änderung der Umgebung müssen mitbilanziert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Warum kann das Mischen zweier zuvor getrennter verschiedener idealer Gase spontan erfolgen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es verlangt zwingend eine exotherme chemische Reaktion zwischen den Gasen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es verringert bei gleichen Bedingungen immer die Gesamtentropie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Es vergrössert die Zahl zugänglicher Verteilungen und damit die Entropie.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Es benötigt definitionsgemäss eine negative absolute Temperatur.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es erzeugt neue Atome aus Wärme.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ideale Gasvermischung kann ohne chemische Reaktion entropisch begünstigt sein. B: Das Mischen vergrössert statt vermindert die Verteilungsmöglichkeiten. C: Auch ohne Reaktion oder Enthalpieänderung kann die vermehrte Verteilungswahrscheinlichkeit den Prozess treiben. D: Die spontane Mischung verlangt keine negative absolute Temperatur. E: Bei chemisch unverändertem Mischen werden keine neuen Atome erzeugt. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Mischungsentropie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mischungsentropie"
+      ],
+      "questionGoal": "Mischungsentropie",
+      "structuredExplanation": {
+        "coreIdea": "Mischungsentropie",
+        "correctReasoning": "Auch ohne Reaktion oder Enthalpieänderung kann die vermehrte Verteilungswahrscheinlichkeit den Prozess treiben.",
+        "wrongAnswerExplanations": {
+          "A": "Ideale Gasvermischung kann ohne chemische Reaktion entropisch begünstigt sein.",
+          "B": "Das Mischen vergrössert statt vermindert die Verteilungsmöglichkeiten.",
+          "D": "Die spontane Mischung verlangt keine negative absolute Temperatur.",
+          "E": "Bei chemisch unverändertem Mischen werden keine neuen Atome erzeugt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Welche Beziehung gilt bei konstanter Temperatur für eine Zustandsänderung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔG=ΔH/T−ΔS als Energie.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "ΔG=ΔS−TΔH.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ΔG=ΔH−TΔS.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "ΔG=TΔH−ΔS.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ΔG=ΔH+TΔS.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: ΔH/T−ΔS ist eine energie-pro-Temperatur-Grösse und nicht ΔG selbst. B: Hier sind Enthalpie und Entropie dimensionswidrig vertauscht. C: G=H−TS; bei konstantem T ergibt sich die angegebene Differenz mit konsistenten Energieeinheiten. D: TΔH−ΔS hat zudem nicht die passende Energieeinheit. E: Der entropische Term wird in G=H−TS subtrahiert. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Gibbs-Gleichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gibbs-Gleichung"
+      ],
+      "questionGoal": "Gibbs-Gleichung",
+      "structuredExplanation": {
+        "coreIdea": "Gibbs-Gleichung",
+        "correctReasoning": "G=H−TS; bei konstantem T ergibt sich die angegebene Differenz mit konsistenten Energieeinheiten.",
+        "wrongAnswerExplanations": {
+          "A": "ΔH/T−ΔS ist eine energie-pro-Temperatur-Grösse und nicht ΔG selbst.",
+          "B": "Hier sind Enthalpie und Entropie dimensionswidrig vertauscht.",
+          "D": "TΔH−ΔS hat zudem nicht die passende Energieeinheit.",
+          "E": "Der entropische Term wird in G=H−TS subtrahiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "ΔH=−40 kJ/mol und ΔS=−0.10 kJ mol⁻¹ K⁻¹. Welches ΔG folgt bei 300 K?",
+      "options": [
+        {
+          "id": "A",
+          "text": "+10 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "+70 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "−39.97 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "−10 kJ/mol.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "−70 kJ/mol.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das Vorzeichen ist falsch: −40+30 ergibt −10. B: +70 kehrt zusätzlich das Vorzeichen der exothermen Enthalpie um. C: Der Faktor 300 K darf nicht durch eine implizite Tausendfach-Verkleinerung verlorengehen. D: TΔS=−30 kJ/mol; ΔG=−40−(−30)=−10 kJ/mol. E: −70 entsteht durch falsches Addieren von TΔS statt Subtrahieren des negativen Terms. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Numerische Gibbs-Bilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Numerische Gibbs-Bilanz"
+      ],
+      "questionGoal": "Numerische Gibbs-Bilanz",
+      "structuredExplanation": {
+        "coreIdea": "Numerische Gibbs-Bilanz",
+        "correctReasoning": "TΔS=−30 kJ/mol; ΔG=−40−(−30)=−10 kJ/mol.",
+        "wrongAnswerExplanations": {
+          "A": "Das Vorzeichen ist falsch: −40+30 ergibt −10.",
+          "B": "+70 kehrt zusätzlich das Vorzeichen der exothermen Enthalpie um.",
+          "C": "Der Faktor 300 K darf nicht durch eine implizite Tausendfach-Verkleinerung verlorengehen.",
+          "E": "−70 entsteht durch falsches Addieren von TΔS statt Subtrahieren des negativen Terms."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Für ΔH<0 und ΔS<0 mit näherungsweise konstanten Werten: Bei welchen Temperaturen ist ein Prozess eher exergon?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei keiner Temperatur möglich.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur wenn die absolute Temperatur negativ wird.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Bei ausreichend tiefen Temperaturen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Bei allen Temperaturen zwangsläufig.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Bei beliebig hohen Temperaturen unabhängig von den Beträgen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Bei tiefem T dominiert die negative Enthalpie, sodass exergon möglich ist. B: Eine negative absolute Temperatur ist für die gewöhnliche Temperaturgrenze dieses Modells nicht nötig. C: ΔG=ΔH+T·Betrag(ΔS); mit zunehmendem T wird der positive entropische Beitrag grösser. D: Bei genügend hohem T kann ΔG positiv werden, also ist der Prozess nicht bei allen T exergon. E: Mit wachsendem T wird der positive Beitrag T·Betrag(ΔS) grösser und kann ΔH überwiegen. Quelle: Originalunterlagen, PDF-S. 6–7,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Temperaturgrenze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperaturgrenze"
+      ],
+      "questionGoal": "Temperaturgrenze",
+      "structuredExplanation": {
+        "coreIdea": "Temperaturgrenze",
+        "correctReasoning": "ΔG=ΔH+T·Betrag(ΔS); mit zunehmendem T wird der positive entropische Beitrag grösser.",
+        "wrongAnswerExplanations": {
+          "A": "Bei tiefem T dominiert die negative Enthalpie, sodass exergon möglich ist.",
+          "B": "Eine negative absolute Temperatur ist für die gewöhnliche Temperaturgrenze dieses Modells nicht nötig.",
+          "D": "Bei genügend hohem T kann ΔG positiv werden, also ist der Prozess nicht bei allen T exergon.",
+          "E": "Mit wachsendem T wird der positive Beitrag T·Betrag(ΔS) grösser und kann ΔH überwiegen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Welche Beziehung gilt im chemischen Gleichgewicht bei konstantem T und p?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die aktuelle Reaktions-Gibbs-Energie ΔrG ist null.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Hinreaktion hat aufgehört, während nur die Rückreaktion weiterläuft.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Standardreaktionsenergie ΔrG° muss immer null sein.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Jede Gleichgewichtskonstante muss genau eins sein.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Alle Edukte sind vollständig verschwunden.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Bei Q=K gilt ΔrG=ΔrG°+RTlnQ=0; ΔrG° ist nur bei K=1 null. B: Hin- und Rückreaktion laufen im dynamischen Gleichgewicht mit gleichen Raten. C: ΔrG° kann im Gleichgewicht ungleich null sein; nur ΔrG bei Q=K muss null sein. D: K kann ungleich eins sein; nur bei K=1 ist auch ΔrG°=0. E: Ein Gleichgewicht kann erhebliche Mengen von Edukten und Produkten enthalten. Quelle: Originalunterlagen, PDF-S. 10,12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gleichgewicht"
+      ],
+      "questionGoal": "Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Gleichgewicht",
+        "correctReasoning": "Bei Q=K gilt ΔrG=ΔrG°+RTlnQ=0; ΔrG° ist nur bei K=1 null.",
+        "wrongAnswerExplanations": {
+          "B": "Hin- und Rückreaktion laufen im dynamischen Gleichgewicht mit gleichen Raten.",
+          "C": "ΔrG° kann im Gleichgewicht ungleich null sein; nur ΔrG bei Q=K muss null sein.",
+          "D": "K kann ungleich eins sein; nur bei K=1 ist auch ΔrG°=0.",
+          "E": "Ein Gleichgewicht kann erhebliche Mengen von Edukten und Produkten enthalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Welche Gleichung verknüpft Standardreaktions-Gibbs-Energie und Gleichgewichtskonstante?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔrG°=−RT ln K.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "ΔrG°=−RT/K.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ΔrG°=K/(RT).",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ΔrG°=+RT ln K.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ΔrG°=−K ln T.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Gleichgewichtsbedingung ΔrG=0 bei Q=K liefert die negative logarithmische Beziehung. B: Die Gleichung verlangt einen Logarithmus von K und keine Division durch K. C: K/(RT) besitzt weder die richtige Form noch Energieeinheit. D: Das positive Vorzeichen würde die Beziehung zwischen günstigem Standardprozess und K>1 umkehren. E: Der Logarithmus bezieht sich auf K; lnT allein beschreibt die Zusammensetzungsbeziehung nicht. Quelle: Originalunterlagen, PDF-S. 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Standardenergie und K"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Standardenergie und K"
+      ],
+      "questionGoal": "Standardenergie und K",
+      "structuredExplanation": {
+        "coreIdea": "Standardenergie und K",
+        "correctReasoning": "Die Gleichgewichtsbedingung ΔrG=0 bei Q=K liefert die negative logarithmische Beziehung.",
+        "wrongAnswerExplanations": {
+          "B": "Die Gleichung verlangt einen Logarithmus von K und keine Division durch K.",
+          "C": "K/(RT) besitzt weder die richtige Form noch Energieeinheit.",
+          "D": "Das positive Vorzeichen würde die Beziehung zwischen günstigem Standardprozess und K>1 umkehren.",
+          "E": "Der Logarithmus bezieht sich auf K; lnT allein beschreibt die Zusammensetzungsbeziehung nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Welche Aussage folgt bei T>0 aus K>1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔrG° ist negativ.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die aktuelle ΔrG ist bei jeder beliebigen Zusammensetzung negativ.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Rückreaktion ist unmöglich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ΔrG° ist positiv.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Reaktion läuft zwingend extrem schnell.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: lnK>0 und daher −RTlnK<0; Geschwindigkeit und aktuelle Zusammensetzung müssen gesondert betrachtet werden. B: Die aktuelle ΔrG enthält RTlnQ und kann bei anderer Zusammensetzung positiv sein. C: Eine Rückreaktion bleibt möglich und ist im Gleichgewicht Teil der dynamischen Bilanz. D: K>1 ergibt lnK>0 und mit dem Minuszeichen ein negatives ΔrG°. E: K legt die Gleichgewichtslage fest, nicht die Aktivierungsbarriere oder Geschwindigkeit. Quelle: Originalunterlagen, PDF-S. 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "K grösser eins"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "K grösser eins"
+      ],
+      "questionGoal": "K grösser eins",
+      "structuredExplanation": {
+        "coreIdea": "K grösser eins",
+        "correctReasoning": "lnK>0 und daher −RTlnK<0; Geschwindigkeit und aktuelle Zusammensetzung müssen gesondert betrachtet werden.",
+        "wrongAnswerExplanations": {
+          "B": "Die aktuelle ΔrG enthält RTlnQ und kann bei anderer Zusammensetzung positiv sein.",
+          "C": "Eine Rückreaktion bleibt möglich und ist im Gleichgewicht Teil der dynamischen Bilanz.",
+          "D": "K>1 ergibt lnK>0 und mit dem Minuszeichen ein negatives ΔrG°.",
+          "E": "K legt die Gleichgewichtslage fest, nicht die Aktivierungsbarriere oder Geschwindigkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Ein Schritt hat ΔG=+15 kJ/mol und wird stöchiometrisch mit einem Schritt von −25 kJ/mol gekoppelt. Welche Gesamtbilanz folgt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "+10 kJ/mol unabhängig von Kopplung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "+40 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "0 kJ/mol, weil positive und negative Werte immer verschwinden.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "−40 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "−10 kJ/mol, sofern die Schritte tatsächlich mechanistisch gekoppelt sind.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Summe +15−25 ist negativ; ohne mechanistische Kopplung wäre sie zudem nicht automatisch nutzbar. B: +40 addiert die Beträge statt der vorzeichenbehafteten Gibbs-Änderungen. C: Ungleich grosse positive und negative Beiträge kompensieren sich nicht exakt zu null. D: −40 setzt beide Schritte fälschlich als exergon an. E: Die Gibbs-Änderungen addieren sich; räumliches Nebeneinander ohne Kopplung garantiert die Umsetzung nicht. Quelle: Originalunterlagen, PDF-S. 11,16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Reaktionskopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionskopplung"
+      ],
+      "questionGoal": "Reaktionskopplung",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionskopplung",
+        "correctReasoning": "Die Gibbs-Änderungen addieren sich; räumliches Nebeneinander ohne Kopplung garantiert die Umsetzung nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Die Summe +15−25 ist negativ; ohne mechanistische Kopplung wäre sie zudem nicht automatisch nutzbar.",
+          "B": "+40 addiert die Beträge statt der vorzeichenbehafteten Gibbs-Änderungen.",
+          "C": "Ungleich grosse positive und negative Beiträge kompensieren sich nicht exakt zu null.",
+          "D": "−40 setzt beide Schritte fälschlich als exergon an."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Eine Reaktion besitzt ΔG<0, verläuft aber ohne Katalysator kaum messbar. Welche Erklärung passt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Gleichgewicht kann bei jeder Reaktion nur durch die Geschwindigkeit definiert werden.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Katalysator müsste zuerst ΔG° positiv machen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein negatives ΔG garantiert definitionsgemäss eine hohe Geschwindigkeit.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Eine hohe Aktivierungsbarriere bremst den thermodynamisch begünstigten Vorgang.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die freie Enthalpie muss deshalb in Wahrheit bei jeder Messung positiv sein.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Gleichgewichtslage und Geschwindigkeit sind verschiedene Konzepte und werden nicht gleichgesetzt. B: Ein Katalysator senkt eine Barriere statt ΔG° als Voraussetzung positiv zu machen. C: Ein negatives ΔG beschreibt Triebkraft und garantiert keinen schnellen Weg über die Barriere. D: Thermodynamische Triebkraft und kinetische Barriere beschreiben unterschiedliche Aspekte. E: Eine hohe Barriere macht das gemessene ΔG nicht automatisch positiv. Quelle: Originalunterlagen, PDF-S. 3,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Kinetik versus Triebkraft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kinetik versus Triebkraft"
+      ],
+      "questionGoal": "Kinetik versus Triebkraft",
+      "structuredExplanation": {
+        "coreIdea": "Kinetik versus Triebkraft",
+        "correctReasoning": "Thermodynamische Triebkraft und kinetische Barriere beschreiben unterschiedliche Aspekte.",
+        "wrongAnswerExplanations": {
+          "A": "Gleichgewichtslage und Geschwindigkeit sind verschiedene Konzepte und werden nicht gleichgesetzt.",
+          "B": "Ein Katalysator senkt eine Barriere statt ΔG° als Voraussetzung positiv zu machen.",
+          "C": "Ein negatives ΔG beschreibt Triebkraft und garantiert keinen schnellen Weg über die Barriere.",
+          "E": "Eine hohe Barriere macht das gemessene ΔG nicht automatisch positiv."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Was unterscheidet einen stationären Stoffwechselzustand mit Zu- und Abfluss vom thermodynamischen Gleichgewicht?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Im stationären Zustand müssen alle Reaktionen ΔG=0 haben.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Thermodynamisches Gleichgewicht benötigt definitionsgemäss permanenten externen Energieeintrag.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Konstante Konzentrationen bedeuten immer, dass keine Stoffumsetzung mehr stattfindet.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Konzentrationen können konstant bleiben, obwohl fortlaufend ein Nettofluss besteht.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Ein Stofffluss ist nur bei ständig steigender Konzentration möglich.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein stationärer offener Zustand kann Reaktionen mit ΔG≠0 enthalten. B: Thermodynamisches Gleichgewicht benötigt keinen dauernden antreibenden Energiefluss; ein stationärer Stoffwechsel oft schon. C: Konstante Konzentrationen können aus gleichen Zu- und Abflussraten entstehen. D: Ein stationärer Zustand kann fern vom Gleichgewicht durch Stoff- und Energieaustausch aufrechterhalten werden. E: Ein Nettofluss ist auch bei gleichbleibender Stoffmenge durch ausgleichenden Austausch möglich. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Fliessgleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fliessgleichgewicht"
+      ],
+      "questionGoal": "Fliessgleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Fliessgleichgewicht",
+        "correctReasoning": "Ein stationärer Zustand kann fern vom Gleichgewicht durch Stoff- und Energieaustausch aufrechterhalten werden.",
+        "wrongAnswerExplanations": {
+          "A": "Ein stationärer offener Zustand kann Reaktionen mit ΔG≠0 enthalten.",
+          "B": "Thermodynamisches Gleichgewicht benötigt keinen dauernden antreibenden Energiefluss; ein stationärer Stoffwechsel oft schon.",
+          "C": "Konstante Konzentrationen können aus gleichen Zu- und Abflussraten entstehen.",
+          "E": "Ein Nettofluss ist auch bei gleichbleibender Stoffmenge durch ausgleichenden Austausch möglich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Warum widersprechen Proteinfaltung und Mizellbildung nicht automatisch dem zweiten Hauptsatz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jede lokale Ordnung verbietet einen spontanen Vorgang vollständig.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Lokale Ordnungszunahme erfordert, dass auch die Entropie des umgebenden Wassers im selben Mass sinkt.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Der zweite Hauptsatz gilt definitionsgemäss nicht für Wasser.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Entropie jedes beteiligten Moleküls muss einzeln steigen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Entropie des Wassers und der Umgebung muss mit der des gelösten Systems bilanziert werden.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Lokale Ordnung ist zulässig, wenn andere Beiträge die Gesamtbilanz begünstigen. B: Die Wasserentropie kann bei Abschirmung hydrophober Bereiche gerade steigen statt ebenfalls zu sinken. C: Der zweite Hauptsatz gilt auch für Wasser und biologische Systeme. D: Nur die Gesamtentropie muss passend zunehmen, nicht die jedes einzelnen Moleküls. E: Lokale Ordnungszunahme kann durch Entropiebeiträge anderer Systemteile und energetische Effekte überkompensiert werden. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Lokale Ordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lokale Ordnung"
+      ],
+      "questionGoal": "Lokale Ordnung",
+      "structuredExplanation": {
+        "coreIdea": "Lokale Ordnung",
+        "correctReasoning": "Lokale Ordnungszunahme kann durch Entropiebeiträge anderer Systemteile und energetische Effekte überkompensiert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Lokale Ordnung ist zulässig, wenn andere Beiträge die Gesamtbilanz begünstigen.",
+          "B": "Die Wasserentropie kann bei Abschirmung hydrophober Bereiche gerade steigen statt ebenfalls zu sinken.",
+          "C": "Der zweite Hauptsatz gilt auch für Wasser und biologische Systeme.",
+          "D": "Nur die Gesamtentropie muss passend zunehmen, nicht die jedes einzelnen Moleküls."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Katalysator, Maximale Nutzarbeit, Gibbs-Energie, Positive Entropie.",
+      "options": [
+        {
+          "text": "Ein Katalysator ändert das Reaktions-ΔG derselben Anfangs- und Endzustände nicht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei konstantem T und p ist −ΔG die maximal gewinnbare Nicht-pV-Arbeit eines reversiblen Prozesses.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Positives ΔS macht −TΔS bei höherem T stärker positiv.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Gibbs-Energie ist definitionsgemäss H+TS.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie verändert Aktivierungsbarrieren. B: Die gewinnbare Nicht-Volumenarbeit ist im reversiblen isotherm-isobaren Grenzfall durch −ΔG begrenzt, nicht durch die Aktivierungsenergie. C: Bei positivem ΔS wird der Term −TΔS mit zunehmender Temperatur negativer. Das Vorzeichen der Formel ist entscheidend. D: Die Gibbs-Energie ist durch G = H−TS definiert. Der Entropieterm wird subtrahiert. Quelle: Originalunterlagen, PDF-S. 6, 10, 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Katalysator"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Katalysator"
+      ],
+      "questionGoal": "Katalysator",
+      "structuredExplanation": {
+        "coreIdea": "Katalysator",
+        "correctReasoning": "Sie verändert Aktivierungsbarrieren. Die gewinnbare Nicht-Volumenarbeit ist im reversiblen isotherm-isobaren Grenzfall durch −ΔG begrenzt, nicht durch die Aktivierungsenergie.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verändert Aktivierungsbarrieren.",
+          "B": "Die gewinnbare Nicht-Volumenarbeit ist im reversiblen isotherm-isobaren Grenzfall durch −ΔG begrenzt, nicht durch die Aktivierungsenergie.",
+          "C": "Bei positivem ΔS wird der Term −TΔS mit zunehmender Temperatur negativer. Das Vorzeichen der Formel ist entscheidend.",
+          "D": "Die Gibbs-Energie ist durch G = H−TS definiert. Der Entropieterm wird subtrahiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Maximale Nutzarbeit, Fliessgleichgewicht, Exergon, Schmelzen.",
+      "options": [
+        {
+          "text": "Unter den passenden isotherm-isobaren reversiblen Bedingungen steht die Gibbs-Energieänderung mit maximaler Nicht-Volumenarbeit in Beziehung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Konstante Konzentration beweist in jedem offenen System das völlige Fehlen von Stofffluss.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei konstantem T und p kennzeichnet negatives Reaktions-ΔG eine thermodynamisch begünstigte Vorwärtsrichtung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Beim Schmelzen von Eis kann die höhere Entropie der Flüssigkeit bei genügend hoher Temperatur die positive Schmelzenthalpie überwiegen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Aktivierungsenergie ist keine Zustandsdifferenz der Gesamtreaktion. B: Ein stationärer offener Zustand kann konstante Konzentrationen trotz anhaltendem Stoffumsatz besitzen. Zufluss und Abfluss können sich ausgleichen. C: Thermodynamik und Kinetik sind verschieden. D: Entropie und Temperatur wirken mit. Quelle: Originalunterlagen, PDF-S. 6–7, 10, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Maximale Nutzarbeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Maximale Nutzarbeit"
+      ],
+      "questionGoal": "Maximale Nutzarbeit",
+      "structuredExplanation": {
+        "coreIdea": "Maximale Nutzarbeit",
+        "correctReasoning": "Aktivierungsenergie ist keine Zustandsdifferenz der Gesamtreaktion. Thermodynamik und Kinetik sind verschieden. Entropie und Temperatur wirken mit.",
+        "wrongAnswerExplanations": {
+          "A": "Aktivierungsenergie ist keine Zustandsdifferenz der Gesamtreaktion.",
+          "B": "Ein stationärer offener Zustand kann konstante Konzentrationen trotz anhaltendem Stoffumsatz besitzen. Zufluss und Abfluss können sich ausgleichen.",
+          "C": "Thermodynamik und Kinetik sind verschieden.",
+          "D": "Entropie und Temperatur wirken mit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Fliessgleichgewicht, Erhaltung stationärer Zustände, Endergon, Standard und Realität.",
+      "options": [
+        {
+          "text": "Ein physiologischer stationärer Zustand kann fortlaufende Energiezufuhr benötigen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "ΔG und ΔG° sind bei allen Zusammensetzungen zwangsläufig identisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Positives ΔG beweist, dass die Reaktion unter keinen denkbaren Bedingungen stattfinden kann.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Konstante Konzentration beweist in jedem offenen System das völlige Fehlen von Stofffluss.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Offenheit und Verbrauch unterscheiden ihn. B: ΔG hängt neben ΔG° auch vom tatsächlichen Reaktionsquotienten ab. Die Mischung beeinflusst die chemische Triebkraft. C: Positives ΔG bedeutet, dass die betrachtete Vorwärtsreaktion unter den genannten Bedingungen Energiezufuhr oder Kopplung benötigt. Bedingungen und Kopplung können die Bilanz verändern. D: Ein stationärer offener Zustand kann konstante Konzentrationen trotz anhaltendem Stoffumsatz besitzen. Zufluss und Abfluss können sich ausgleichen. Quelle: Originalunterlagen, PDF-S. 6, 10, 12–15, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Fliessgleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fliessgleichgewicht"
+      ],
+      "questionGoal": "Fliessgleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Fliessgleichgewicht",
+        "correctReasoning": "Offenheit und Verbrauch unterscheiden ihn.",
+        "wrongAnswerExplanations": {
+          "A": "Offenheit und Verbrauch unterscheiden ihn.",
+          "B": "ΔG hängt neben ΔG° auch vom tatsächlichen Reaktionsquotienten ab. Die Mischung beeinflusst die chemische Triebkraft.",
+          "C": "Positives ΔG bedeutet, dass die betrachtete Vorwärtsreaktion unter den genannten Bedingungen Energiezufuhr oder Kopplung benötigt. Bedingungen und Kopplung können die Bilanz verändern.",
+          "D": "Ein stationärer offener Zustand kann konstante Konzentrationen trotz anhaltendem Stoffumsatz besitzen. Zufluss und Abfluss können sich ausgleichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Erhaltung stationärer Zustände, Entropieeinheit, Gleichgewicht, Reaktionsquotient.",
+      "options": [
+        {
+          "text": "Die molare Entropie besitzt dieselbe Einheit wie eine reine Stoffmenge mol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Im Gleichgewicht stehen alle einzelnen Moleküle unbeweglich still.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein physiologischer stationärer Zustand kann fortlaufende Energiezufuhr benötigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Für eine ideale Reaktionsbeschreibung gilt ΔG = ΔG° + RT ln Q.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine molare Entropie wird beispielsweise in J/(mol·K) angegeben. Der Temperaturbezug ist Teil ihrer Dimension. B: Im chemischen Gleichgewicht ist die Reaktions-Gibbs-Energie null. Hin- und Rückreaktion gleichen sich makroskopisch aus. C: Offenheit und Verbrauch unterscheiden ihn. D: Q beschreibt die aktuelle Zusammensetzung. Quelle: Originalunterlagen, PDF-S. 4, 12–15, 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Erhaltung stationärer Zustände"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erhaltung stationärer Zustände"
+      ],
+      "questionGoal": "Erhaltung stationärer Zustände",
+      "structuredExplanation": {
+        "coreIdea": "Erhaltung stationärer Zustände",
+        "correctReasoning": "Offenheit und Verbrauch unterscheiden ihn. Q beschreibt die aktuelle Zusammensetzung.",
+        "wrongAnswerExplanations": {
+          "A": "Eine molare Entropie wird beispielsweise in J/(mol·K) angegeben. Der Temperaturbezug ist Teil ihrer Dimension.",
+          "B": "Im chemischen Gleichgewicht ist die Reaktions-Gibbs-Energie null. Hin- und Rückreaktion gleichen sich makroskopisch aus.",
+          "C": "Offenheit und Verbrauch unterscheiden ihn.",
+          "D": "Q beschreibt die aktuelle Zusammensetzung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Entropieeinheit, Exotherm versus exergon, Temperaturrechnung, Kopplung.",
+      "options": [
+        {
+          "text": "Exotherm und exergon sind keine identischen Begriffe.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine molare Entropie wird beispielsweise in J/(mol·K) angegeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede endergone Teilreaktion verbietet unabhängig von Kopplung den gesamten Prozess.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei ΔH=−40 kJ/mol, ΔS=−0.10 kJ mol⁻¹ K⁻¹ und 300 K beträgt ΔG −70 kJ/mol.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Entropiebeitrag ist zusätzlich zu beachten. B: Der Temperaturbezug ist Teil ihrer Dimension. C: Die Summe gekoppelter Reaktions-ΔG kann negativ sein, obwohl eine Teilreaktion endergon ist. Die gemeinsame Gesamtbilanz entscheidet. D: ΔG=−40−300×(−0.10)=−10 kJ/mol. Quelle: Originalunterlagen, PDF-S. 4, 6, 11, 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Entropieeinheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entropieeinheit"
+      ],
+      "questionGoal": "Entropieeinheit",
+      "structuredExplanation": {
+        "coreIdea": "Entropieeinheit",
+        "correctReasoning": "Der Entropiebeitrag ist zusätzlich zu beachten. Der Temperaturbezug ist Teil ihrer Dimension.",
+        "wrongAnswerExplanations": {
+          "A": "Der Entropiebeitrag ist zusätzlich zu beachten.",
+          "B": "Der Temperaturbezug ist Teil ihrer Dimension.",
+          "C": "Die Summe gekoppelter Reaktions-ΔG kann negativ sein, obwohl eine Teilreaktion endergon ist. Die gemeinsame Gesamtbilanz entscheidet.",
+          "D": "ΔG=−40−300×(−0.10)=−10 kJ/mol."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Exotherm versus exergon, Gleichgewichtskonstante, Positive Entropie, Zweiter Hauptsatz.",
+      "options": [
+        {
+          "text": "Exotherm und exergon sind keine identischen Begriffe.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei positivem ΔS wird der Term −TΔS mit zunehmender Temperatur negativer.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei einem spontanen irreversiblen Prozess nimmt die Gesamtentropie von System plus Umgebung zu.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine grosse Gleichgewichtskonstante erzwingt positives ΔG°.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Entropiebeitrag ist zusätzlich zu beachten. B: Das Vorzeichen der Formel ist entscheidend. C: Die Umgebung ist mit zu bilanzieren. D: Für eine passende Standardzustandsdefinition gilt ΔG° = −RT ln K. Bei K grösser eins ist ln K positiv. Quelle: Originalunterlagen, PDF-S. 3–6, 12–15, 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Exotherm versus exergon"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exotherm versus exergon"
+      ],
+      "questionGoal": "Exotherm versus exergon",
+      "structuredExplanation": {
+        "coreIdea": "Exotherm versus exergon",
+        "correctReasoning": "Der Entropiebeitrag ist zusätzlich zu beachten. Das Vorzeichen der Formel ist entscheidend. Die Umgebung ist mit zu bilanzieren.",
+        "wrongAnswerExplanations": {
+          "A": "Der Entropiebeitrag ist zusätzlich zu beachten.",
+          "B": "Das Vorzeichen der Formel ist entscheidend.",
+          "C": "Die Umgebung ist mit zu bilanzieren.",
+          "D": "Für eine passende Standardzustandsdefinition gilt ΔG° = −RT ln K. Bei K grösser eins ist ln K positiv."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Gleichgewichtskonstante, Reaktionsgeschwindigkeit, Schmelzen, Systementropie.",
+      "options": [
+        {
+          "text": "Eine thermodynamisch begünstigte Reaktion kann wegen hoher Barriere langsam sein.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine grosse Gleichgewichtskonstante erzwingt positives ΔG°.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Positives ΔH schliesst das spontane Schmelzen bei jeder Temperatur aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lebewesen verletzen den zweiten Hauptsatz schon durch jede geordnete Struktur.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Barriere und Gesamttriebkraft sind verschieden. B: Für eine passende Standardzustandsdefinition gilt ΔG° = −RT ln K. Bei K grösser eins ist ln K positiv. C: Beim Schmelzen von Eis kann die höhere Entropie der Flüssigkeit bei genügend hoher Temperatur die positive Schmelzenthalpie überwiegen. Entropie und Temperatur wirken mit. D: Ein Teilsystem kann geordneter werden, wenn die Gesamtentropiebilanz dies erlaubt. Offene Systeme tauschen Stoff und Energie aus. Quelle: Originalunterlagen, PDF-S. 3–5, 7, 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Gleichgewichtskonstante"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gleichgewichtskonstante"
+      ],
+      "questionGoal": "Gleichgewichtskonstante",
+      "structuredExplanation": {
+        "coreIdea": "Gleichgewichtskonstante",
+        "correctReasoning": "Barriere und Gesamttriebkraft sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Barriere und Gesamttriebkraft sind verschieden.",
+          "B": "Für eine passende Standardzustandsdefinition gilt ΔG° = −RT ln K. Bei K grösser eins ist ln K positiv.",
+          "C": "Beim Schmelzen von Eis kann die höhere Entropie der Flüssigkeit bei genügend hoher Temperatur die positive Schmelzenthalpie überwiegen. Entropie und Temperatur wirken mit.",
+          "D": "Ein Teilsystem kann geordneter werden, wenn die Gesamtentropiebilanz dies erlaubt. Offene Systeme tauschen Stoff und Energie aus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc16_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC16",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Reaktionsgeschwindigkeit, Zweiter Hauptsatz, Standard und Realität, Gibbs-Energie.",
+      "options": [
+        {
+          "text": "Die Gibbs-Energie ist durch G = H−TS definiert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine thermodynamisch begünstigte Reaktion kann wegen hoher Barriere langsam sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei jedem spontanen Prozess muss die Entropie des betrachteten Teilsystems allein zunehmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "ΔG und ΔG° sind bei allen Zusammensetzungen zwangsläufig identisch.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Entropieterm wird subtrahiert. B: Barriere und Gesamttriebkraft sind verschieden. C: Bei einem spontanen irreversiblen Prozess nimmt die Gesamtentropie von System plus Umgebung zu. Die Umgebung ist mit zu bilanzieren. D: ΔG hängt neben ΔG° auch vom tatsächlichen Reaktionsquotienten ab. Die Mischung beeinflusst die chemische Triebkraft. Quelle: Originalunterlagen, PDF-S. 3–6, 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC16",
+        "Reaktionsgeschwindigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionsgeschwindigkeit"
+      ],
+      "questionGoal": "Reaktionsgeschwindigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionsgeschwindigkeit",
+        "correctReasoning": "Der Entropieterm wird subtrahiert. Barriere und Gesamttriebkraft sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Der Entropieterm wird subtrahiert.",
+          "B": "Barriere und Gesamttriebkraft sind verschieden.",
+          "C": "Bei einem spontanen irreversiblen Prozess nimmt die Gesamtentropie von System plus Umgebung zu. Die Umgebung ist mit zu bilanzieren.",
+          "D": "ΔG hängt neben ΔG° auch vom tatsächlichen Reaktionsquotienten ab. Die Mischung beeinflusst die chemische Triebkraft."
+        }
+      }
+    }
+  ]
+}

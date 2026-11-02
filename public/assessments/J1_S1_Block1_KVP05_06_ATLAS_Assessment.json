@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block1_kvp05_06_20261102",
+  "lectureCode": "KVP05/06",
+  "title": "Energie, Wärme und Thermodynamik",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP5&6 - Energie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Vorzeichen für Arbeit explizit. Fehler auf Folie PDF-S.42 korrigiert: reversibel bedeutet nicht allgemein konstante Systementropie; dS = δQ_rev/T. Innere Energie und übertragene Wärme nicht gleichgesetzt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Energieformen, Erhaltung, Arbeit, Impuls und Leistung unterscheiden und berechnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Temperatur, kinetische Gastheorie und Wärme quantitativ verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Wärmetransport und Phasenübergänge erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Ersten und zweiten Hauptsatz mit klarer Systemgrenze und Vorzeichenkonvention anwenden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvp05_06_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Eine Masse von 10 kg wird langsam um 2 m angehoben. Wie gross ist die Zunahme der potentiellen Energie bei g ≈ 10 m/s²?",
+      "options": [
+        {
+          "text": "20 J.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "2 J.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "100 J.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "200 W.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "200 J.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Faktor g fehlt. B: Masse und Erdbeschleunigung wurden nicht berücksichtigt. C: Die Höhendifferenz wurde nicht korrekt berücksichtigt. D: Watt ist Leistung und keine Energie. E: ΔE = mgΔh = 10·10·2 J. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Hubarbeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hubarbeit"
+      ],
+      "questionGoal": "Hubarbeit",
+      "structuredExplanation": {
+        "coreIdea": "Hubarbeit",
+        "correctReasoning": "ΔE = mgΔh = 10·10·2 J.",
+        "wrongAnswerExplanations": {
+          "A": "Der Faktor g fehlt.",
+          "B": "Masse und Erdbeschleunigung wurden nicht berücksichtigt.",
+          "C": "Die Höhendifferenz wurde nicht korrekt berücksichtigt.",
+          "D": "Watt ist Leistung und keine Energie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Für dieselbe mechanische Arbeit benötigt eine Person 2 s statt 4 s. Wie verändert sich ihre mittlere mechanische Leistung?",
+      "options": [
+        {
+          "text": "Sie bleibt gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie wird null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sie vervierfacht sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie halbiert sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Arbeit und Leistung sind nicht identisch. B: Es wird weiterhin Arbeit pro Zeit verrichtet. C: P = W/Δt bei unveränderter Arbeit. D: Die Zeit steht linear im Nenner. E: Das wäre eine längere statt kürzere Dauer. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Leistung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leistung"
+      ],
+      "questionGoal": "Leistung",
+      "structuredExplanation": {
+        "coreIdea": "Leistung",
+        "correctReasoning": "P = W/Δt bei unveränderter Arbeit.",
+        "wrongAnswerExplanations": {
+          "A": "Arbeit und Leistung sind nicht identisch.",
+          "B": "Es wird weiterhin Arbeit pro Zeit verrichtet.",
+          "D": "Die Zeit steht linear im Nenner.",
+          "E": "Das wäre eine längere statt kürzere Dauer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Die Geschwindigkeit eines Körpers verdoppelt sich bei gleicher Masse. Was geschieht klassisch mit kinetischer Energie und Impuls?",
+      "options": [
+        {
+          "text": "Die Energie verdoppelt sich, der Impuls vervierfacht sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beide Grössen verdoppeln sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Energie und Impuls bleiben konstant.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beide Grössen vervierfachen sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die kinetische Energie vervierfacht sich, der Impuls verdoppelt sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Abhängigkeiten sind vertauscht. B: Die Energie hängt quadratisch von v ab. C: Beide hängen von v ab. D: Der Impuls hängt nur linear von v ab. E: Ekin ∝ v² und p ∝ v. Quelle: Originalunterlagen, PDF-S. 8,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Geschwindigkeit skalieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschwindigkeit skalieren"
+      ],
+      "questionGoal": "Geschwindigkeit skalieren",
+      "structuredExplanation": {
+        "coreIdea": "Geschwindigkeit skalieren",
+        "correctReasoning": "Ekin ∝ v² und p ∝ v.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abhängigkeiten sind vertauscht.",
+          "B": "Die Energie hängt quadratisch von v ab.",
+          "C": "Beide hängen von v ab.",
+          "D": "Der Impuls hängt nur linear von v ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Ein Wagen kommt durch Reibung zum Stillstand. Welche Energieaussage ist korrekt, wenn Wagen und Umgebung gemeinsam betrachtet werden?",
+      "options": [
+        {
+          "text": "Die gesamte Energie des gemeinsamen Systems verschwindet.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Reibung erzeugt ohne Energiezufuhr zusätzliche Gesamtenergie.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die mechanische Energie bleibt trotz Reibung vollständig unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beim Stillstand ist auch jede mikroskopische Teilchenbewegung beendet.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mechanische Energie wird unter anderem in innere Energie umgewandelt; die Gesamtenergie bleibt erhalten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das verletzt Energieerhaltung. B: Sie wandelt vorhandene Energie um. C: Sie nimmt zugunsten anderer Formen ab. D: Innere Energie ist von makroskopischer Bewegung zu unterscheiden. E: Reibung vernichtet keine Energie. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Reibung und Erhaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reibung und Erhaltung"
+      ],
+      "questionGoal": "Reibung und Erhaltung",
+      "structuredExplanation": {
+        "coreIdea": "Reibung und Erhaltung",
+        "correctReasoning": "Reibung vernichtet keine Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Das verletzt Energieerhaltung.",
+          "B": "Sie wandelt vorhandene Energie um.",
+          "C": "Sie nimmt zugunsten anderer Formen ab.",
+          "D": "Innere Energie ist von makroskopischer Bewegung zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Was unterscheidet einen ideal elastischen Stoss eines isolierten Zweikörpersystems von einem inelastischen Stoss?",
+      "options": [
+        {
+          "text": "Nach einem elastischen Stoss müssen beide Körper stillstehen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur beim elastischen Stoss ist die Gesamtenergie erhalten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Neben dem Gesamtimpuls bleibt auch die gesamte kinetische Energie erhalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Elastisch bedeutet, dass keine Kräfte zwischen den Körpern wirken.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur beim inelastischen Stoss bleibt ohne äussere Kraft der Impuls erhalten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das folgt nicht aus den Erhaltungssätzen. B: Gesamtenergie bleibt auch bei inelastischem Stoss erhalten. C: Beim inelastischen Stoss wird ein Teil in andere Formen überführt. D: Gerade Kräfte übertragen Impuls. E: Impulserhaltung gilt für beide isolierten Systeme. Quelle: Originalunterlagen, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Elastischer Stoss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elastischer Stoss"
+      ],
+      "questionGoal": "Elastischer Stoss",
+      "structuredExplanation": {
+        "coreIdea": "Elastischer Stoss",
+        "correctReasoning": "Beim inelastischen Stoss wird ein Teil in andere Formen überführt.",
+        "wrongAnswerExplanations": {
+          "A": "Das folgt nicht aus den Erhaltungssätzen.",
+          "B": "Gesamtenergie bleibt auch bei inelastischem Stoss erhalten.",
+          "D": "Gerade Kräfte übertragen Impuls.",
+          "E": "Impulserhaltung gilt für beide isolierten Systeme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Wie viel Wärme benötigt 0,5 kg Wasser für eine Erwärmung um 10 K, wenn c = 4,18 kJ/(kg·K) gilt und Verluste vernachlässigt werden?",
+      "options": [
+        {
+          "text": "41,8 kJ.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "209 kJ.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "20,9 kJ.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0,209 kJ.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2,09 kJ.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre für 1 kg Wasser. B: Dies liegt um Faktor 10 zu hoch. C: Q = mcΔT = 0,5·4,18·10 kJ. D: Die Zehnerpotenzen stimmen nicht. E: Die Temperaturänderung wurde um Faktor 10 zu klein eingesetzt. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Wärmemenge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wärmemenge"
+      ],
+      "questionGoal": "Wärmemenge",
+      "structuredExplanation": {
+        "coreIdea": "Wärmemenge",
+        "correctReasoning": "Q = mcΔT = 0,5·4,18·10 kJ.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre für 1 kg Wasser.",
+          "B": "Dies liegt um Faktor 10 zu hoch.",
+          "D": "Die Zehnerpotenzen stimmen nicht.",
+          "E": "Die Temperaturänderung wurde um Faktor 10 zu klein eingesetzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Ein ideales Gas bleibt bei konstanter Teilchenzahl in einem starren Behälter. Seine absolute Temperatur steigt von 300 K auf 600 K. Was geschieht mit dem Druck?",
+      "options": [
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er halbiert sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er steigt nur im Verhältnis der Celsiuszahlen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Temperaturabhängigkeit ist linear. B: Druck und absolute Temperatur sind hier proportional. C: Das Gasgesetz verwendet Kelvin. D: Im starren Behälter kann das Volumen nicht ausweichen. E: pV = NkBT bei konstantem V und N. Quelle: Originalunterlagen, PDF-S. 19–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Ideales Gas"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ideales Gas"
+      ],
+      "questionGoal": "Ideales Gas",
+      "structuredExplanation": {
+        "coreIdea": "Ideales Gas",
+        "correctReasoning": "pV = NkBT bei konstantem V und N.",
+        "wrongAnswerExplanations": {
+          "A": "Die Temperaturabhängigkeit ist linear.",
+          "B": "Druck und absolute Temperatur sind hier proportional.",
+          "C": "Das Gasgesetz verwendet Kelvin.",
+          "D": "Im starren Behälter kann das Volumen nicht ausweichen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Zwei einatomige ideale Gase verschiedener Atommassen haben dieselbe Temperatur. Welche mittlere Grösse ist gleich?",
+      "options": [
+        {
+          "text": "Die Masse der Atome.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Geschwindigkeit jedes Atoms zu jedem Zeitpunkt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zwingend die mittlere Geschwindigkeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwingend der Impuls jedes einzelnen Atoms.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die translatorische kinetische Energie pro Atom.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese ist für die beiden Gase gerade verschieden. B: Eine thermische Verteilung enthält unterschiedliche Geschwindigkeiten. C: Leichtere Teilchen bewegen sich bei gleicher Temperatur typischerweise schneller. D: Atome besitzen eine Verteilung von Geschwindigkeiten. E: Sie beträgt im klassischen Modell 3kBT/2. Quelle: Originalunterlagen, PDF-S. 19–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Temperatur und Bewegung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperatur und Bewegung"
+      ],
+      "questionGoal": "Temperatur und Bewegung",
+      "structuredExplanation": {
+        "coreIdea": "Temperatur und Bewegung",
+        "correctReasoning": "Sie beträgt im klassischen Modell 3kBT/2.",
+        "wrongAnswerExplanations": {
+          "A": "Diese ist für die beiden Gase gerade verschieden.",
+          "B": "Eine thermische Verteilung enthält unterschiedliche Geschwindigkeiten.",
+          "C": "Leichtere Teilchen bewegen sich bei gleicher Temperatur typischerweise schneller.",
+          "D": "Atome besitzen eine Verteilung von Geschwindigkeiten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Für einen homogenen Stab gilt P = κA·ΔT/L im stationären Modell. Was geschieht bei verdoppelter Länge L und sonst gleichen Bedingungen?",
+      "options": [
+        {
+          "text": "Sie wird unabhängig von ΔT.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die übertragene Wärmeleistung halbiert sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie bleibt unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie vervierfacht sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Temperaturdifferenz bleibt eine treibende Grösse. B: Der Temperaturgradient wird halb so gross. C: Die Länge beeinflusst den Gradienten. D: Eine quadratische Abhängigkeit liegt nicht vor. E: L steht im Nenner. Quelle: Originalunterlagen, PDF-S. 27–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Wärmeleitung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wärmeleitung"
+      ],
+      "questionGoal": "Wärmeleitung",
+      "structuredExplanation": {
+        "coreIdea": "Wärmeleitung",
+        "correctReasoning": "Der Temperaturgradient wird halb so gross.",
+        "wrongAnswerExplanations": {
+          "A": "Die Temperaturdifferenz bleibt eine treibende Grösse.",
+          "C": "Die Länge beeinflusst den Gradienten.",
+          "D": "Eine quadratische Abhängigkeit liegt nicht vor.",
+          "E": "L steht im Nenner."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q10",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Welcher Mechanismus beschreibt den Wärmetransport durch strömendes Blut zur Körperoberfläche besonders unmittelbar?",
+      "options": [
+        {
+          "text": "Kernfusion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich molekulare Wärmeleitung im ruhenden Medium.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein isothermer Phasenübergang des Bluts.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich Wärmestrahlung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Konvektion.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist kein physiologischer Wärmetransportmechanismus. B: Die beschriebene Bewegung des Bluts ist ein Volumenstrom. C: Es wird kein Phasenwechsel beschrieben. D: Strahlung benötigt keinen Stoffstrom. E: Wärme wird mit bewegter Materie transportiert. Quelle: Originalunterlagen, PDF-S. 30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Transportart"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportart"
+      ],
+      "questionGoal": "Transportart",
+      "structuredExplanation": {
+        "coreIdea": "Transportart",
+        "correctReasoning": "Wärme wird mit bewegter Materie transportiert.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist kein physiologischer Wärmetransportmechanismus.",
+          "B": "Die beschriebene Bewegung des Bluts ist ein Volumenstrom.",
+          "C": "Es wird kein Phasenwechsel beschrieben.",
+          "D": "Strahlung benötigt keinen Stoffstrom."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Warum kann Verdunstung eine Flüssigkeit abkühlen?",
+      "options": [
+        {
+          "text": "Der Übergang in die Gasphase benötigt Energie, die der Flüssigkeit und Umgebung entzogen wird.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nur eine vollständig siedende Flüssigkeit kann verdunsten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verdunstung ist grundsätzlich ohne Energieübertragung möglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die verbleibenden Moleküle müssen dadurch im Mittel schneller werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Beim Verdunsten wird Wärme aus dem Nichts erzeugt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Energiereichere Moleküle können bevorzugt entweichen. B: Verdunstung ist auch unterhalb des Siedepunkts möglich. C: Der Phasenübergang benötigt Verdampfungsenergie. D: Bei Kühlung sinkt ihre mittlere Energie. E: Energie wird übertragen und umgewandelt. Quelle: Originalunterlagen, PDF-S. 34–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Verdunstungskühlung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verdunstungskühlung"
+      ],
+      "questionGoal": "Verdunstungskühlung",
+      "structuredExplanation": {
+        "coreIdea": "Verdunstungskühlung",
+        "correctReasoning": "Energiereichere Moleküle können bevorzugt entweichen.",
+        "wrongAnswerExplanations": {
+          "B": "Verdunstung ist auch unterhalb des Siedepunkts möglich.",
+          "C": "Der Phasenübergang benötigt Verdampfungsenergie.",
+          "D": "Bei Kühlung sinkt ihre mittlere Energie.",
+          "E": "Energie wird übertragen und umgewandelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Es gelte ΔU = Q + W mit W als am Gas verrichteter Arbeit. Ein Gas nimmt 100 J Wärme auf und verrichtet 40 J Arbeit an der Umgebung. Wie gross ist ΔU?",
+      "options": [
+        {
+          "text": "−140 J.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−60 J.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "+140 J.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0 J.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+60 J.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beide Vorzeichen sind hier falsch. B: Die Energieaufnahme überwiegt die Abgabe. C: Die vom Gas abgegebene Arbeit wurde mit falschem Vorzeichen eingesetzt. D: Wärmeaufnahme und Arbeit sind nicht gleich gross. E: Q = +100 J und W = −40 J. Quelle: Originalunterlagen, PDF-S. 38–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Erster Hauptsatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erster Hauptsatz"
+      ],
+      "questionGoal": "Erster Hauptsatz",
+      "structuredExplanation": {
+        "coreIdea": "Erster Hauptsatz",
+        "correctReasoning": "Q = +100 J und W = −40 J.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Vorzeichen sind hier falsch.",
+          "B": "Die Energieaufnahme überwiegt die Abgabe.",
+          "C": "Die vom Gas abgegebene Arbeit wurde mit falschem Vorzeichen eingesetzt.",
+          "D": "Wärmeaufnahme und Arbeit sind nicht gleich gross."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Ein mechanisches System wird analysiert. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Eine Feder speichert im linearen Modell E = Dx²/2.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Rotationsenergie kann als Iω²/2 beschrieben werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Trägheitsmoment ist unabhängig von der Verteilung der Masse zur Drehachse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Leistung und Energie haben dieselbe SI-Einheit.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Energie wächst quadratisch mit der Auslenkung. B: Dies ist das klassische Modell um eine feste Achse. C: Es enthält Abstände zur Achse im Quadrat. D: Watt ist Joule pro Sekunde. Quelle: Originalunterlagen, PDF-S. 5–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Energieformen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energieformen"
+      ],
+      "questionGoal": "Energieformen",
+      "structuredExplanation": {
+        "coreIdea": "Energieformen",
+        "correctReasoning": "Die Energie wächst quadratisch mit der Auslenkung. Dies ist das klassische Modell um eine feste Achse.",
+        "wrongAnswerExplanations": {
+          "A": "Die Energie wächst quadratisch mit der Auslenkung.",
+          "B": "Dies ist das klassische Modell um eine feste Achse.",
+          "C": "Es enthält Abstände zur Achse im Quadrat.",
+          "D": "Watt ist Joule pro Sekunde."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Ein ideales Gas wird mikroskopisch beschrieben. Welche Aussagen passen?",
+      "options": [
+        {
+          "text": "Die mittlere translatorische Energie wächst mit der absoluten Temperatur.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Verdopplung der Temperatur in Kelvin verdoppelt zwingend die typische Geschwindigkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Stösse der Teilchen mit der Wand übertragen Impuls.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei einer Temperatur bewegen sich alle Moleküle genau gleich schnell.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist im klassischen Modell proportional zu T. B: Diese wächst bei gleicher Masse mit der Quadratwurzel von T. C: Daraus ergibt sich Druck. D: Es besteht eine Geschwindigkeitsverteilung. Quelle: Originalunterlagen, PDF-S. 19–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Kinetische Gastheorie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kinetische Gastheorie"
+      ],
+      "questionGoal": "Kinetische Gastheorie",
+      "structuredExplanation": {
+        "coreIdea": "Kinetische Gastheorie",
+        "correctReasoning": "Sie ist im klassischen Modell proportional zu T. Daraus ergibt sich Druck.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist im klassischen Modell proportional zu T.",
+          "B": "Diese wächst bei gleicher Masse mit der Quadratwurzel von T.",
+          "C": "Daraus ergibt sich Druck.",
+          "D": "Es besteht eine Geschwindigkeitsverteilung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Wärmeleitung, Konvektion und Strahlung werden verglichen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die Einheit der Wärmeleitfähigkeit κ ist Watt allein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wärmestrahlung kann Energie auch durch ein Vakuum transportieren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Konvektion bedeutet ausschliesslich Strahlungsaustausch ohne Materiebewegung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wärmeleitung wird durch ein Temperaturgefälle angetrieben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im verwendeten Stabmodell ist sie W/(m·K). B: Elektromagnetische Strahlung benötigt kein materielles Medium. C: Sie beinhaltet den Transport durch strömende Materie. D: Im einfachen Modell fliesst Wärme zur kälteren Seite. Quelle: Originalunterlagen, PDF-S. 27–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Wärmetransport unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wärmetransport unterscheiden"
+      ],
+      "questionGoal": "Wärmetransport unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Wärmetransport unterscheiden",
+        "correctReasoning": "Elektromagnetische Strahlung benötigt kein materielles Medium. Im einfachen Modell fliesst Wärme zur kälteren Seite.",
+        "wrongAnswerExplanations": {
+          "A": "Im verwendeten Stabmodell ist sie W/(m·K).",
+          "B": "Elektromagnetische Strahlung benötigt kein materielles Medium.",
+          "C": "Sie beinhaltet den Transport durch strömende Materie.",
+          "D": "Im einfachen Modell fliesst Wärme zur kälteren Seite."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Eine Lampe nimmt elektrische Leistung auf und strahlt Licht und Wärme ab. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Eine grössere Wellenlänge bedeutet bei gleicher Ausbreitungsgeschwindigkeit höhere Photonenergie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte elektrische Leistung muss zwingend ausschliesslich als sichtbares Licht austreten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Für ein Photon gilt E = hf.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Für einen ohmschen Widerstand kann die elektrische Leistung als I²R berechnet werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: E = hc/λ ist invers proportional zu λ. B: Auch Wärme und andere Strahlungsbereiche sind möglich. C: Seine Energie ist proportional zur Frequenz. D: Dies folgt aus P = UI und U = IR. Quelle: Originalunterlagen, PDF-S. 31,33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Strahlung und Elektrizität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strahlung und Elektrizität"
+      ],
+      "questionGoal": "Strahlung und Elektrizität",
+      "structuredExplanation": {
+        "coreIdea": "Strahlung und Elektrizität",
+        "correctReasoning": "Seine Energie ist proportional zur Frequenz. Dies folgt aus P = UI und U = IR.",
+        "wrongAnswerExplanations": {
+          "A": "E = hc/λ ist invers proportional zu λ.",
+          "B": "Auch Wärme und andere Strahlungsbereiche sind möglich.",
+          "C": "Seine Energie ist proportional zur Frequenz.",
+          "D": "Dies folgt aus P = UI und U = IR."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Eine reine Substanz schmilzt bei konstantem Druck am Schmelzpunkt. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Zugeführte Energie kann den Phasenübergang bewirken, ohne die Temperatur zu erhöhen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Q = mcΔT beschreibt ohne Zusatz jede benötigte Schmelzwärme bei ΔT = 0.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die benötigte Phasenenergie ist bei gleichem Stoff und Bedingungen proportional zur umgesetzten Masse.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verdampfungswärme und Schmelzwärme müssen für jeden Stoff identisch sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Latente Wärme verändert den Phasenanteil. B: Die Phasenwärme muss gesondert berücksichtigt werden. C: Q = mq ist die entsprechende Beziehung. D: Es sind verschiedene Phasenenergien. Quelle: Originalunterlagen, PDF-S. 34–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Phasenübergänge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phasenübergänge"
+      ],
+      "questionGoal": "Phasenübergänge",
+      "structuredExplanation": {
+        "coreIdea": "Phasenübergänge",
+        "correctReasoning": "Latente Wärme verändert den Phasenanteil. Q = mq ist die entsprechende Beziehung.",
+        "wrongAnswerExplanations": {
+          "A": "Latente Wärme verändert den Phasenanteil.",
+          "B": "Die Phasenwärme muss gesondert berücksichtigt werden.",
+          "C": "Q = mq ist die entsprechende Beziehung.",
+          "D": "Es sind verschiedene Phasenenergien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Für Gasarbeit wird W = −∫p_ext dV als am System verrichtete Arbeit verwendet. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die Fläche im p-V-Diagramm ist bei jeder Kurve eine Temperatur.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Expansion hat unabhängig von Wärmeübertragung immer ΔU = 0.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei Expansion gegen positiven Aussendruck ist W negativ.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei Kompression ist W im entsprechenden Prozess positiv.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Fläche hat die Dimension Energie. B: Der erste Hauptsatz berücksichtigt sowohl Arbeit als auch Wärme. C: Das System gibt Arbeit ab. D: Die Umgebung verrichtet Arbeit am Gas. Quelle: Originalunterlagen, PDF-S. 38–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Arbeitsvorzeichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Arbeitsvorzeichen"
+      ],
+      "questionGoal": "Arbeitsvorzeichen",
+      "structuredExplanation": {
+        "coreIdea": "Arbeitsvorzeichen",
+        "correctReasoning": "Das System gibt Arbeit ab. Die Umgebung verrichtet Arbeit am Gas.",
+        "wrongAnswerExplanations": {
+          "A": "Die Fläche hat die Dimension Energie.",
+          "B": "Der erste Hauptsatz berücksichtigt sowohl Arbeit als auch Wärme.",
+          "C": "Das System gibt Arbeit ab.",
+          "D": "Die Umgebung verrichtet Arbeit am Gas."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Ein reversibler Wärmeaustausch wird betrachtet. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Bei jedem reversiblen Prozess muss die Entropie des betrachteten Systems unverändert bleiben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei einem reversiblen adiabatischen Prozess bleibt die Systementropie konstant.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Entropie hat die Einheit Joule statt Joule pro Kelvin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Für reversible Wärmeübertragung gilt dS = δQ_rev/T.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das gilt beispielsweise bei reversibel zugeführter Wärme nicht. B: Es gibt weder Entropieproduktion noch Wärmeübertragung. C: Die SI-Einheit ist J/K. D: Wärmeaustausch kann die Entropie des Systems ändern. Quelle: Originalunterlagen, PDF-S. 42–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Entropie und Reversibilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entropie und Reversibilität"
+      ],
+      "questionGoal": "Entropie und Reversibilität",
+      "structuredExplanation": {
+        "coreIdea": "Entropie und Reversibilität",
+        "correctReasoning": "Es gibt weder Entropieproduktion noch Wärmeübertragung. Wärmeaustausch kann die Entropie des Systems ändern.",
+        "wrongAnswerExplanations": {
+          "A": "Das gilt beispielsweise bei reversibel zugeführter Wärme nicht.",
+          "B": "Es gibt weder Entropieproduktion noch Wärmeübertragung.",
+          "C": "Die SI-Einheit ist J/K.",
+          "D": "Wärmeaustausch kann die Entropie des Systems ändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp05_06_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP05/06",
+      "stem": "Ein lebender Organismus wird thermodynamisch eingeordnet. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Lokaler Aufbau geordneter Strukturen widerlegt grundsätzlich den zweiten Hauptsatz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Energieerhaltung garantiert, dass jede Energie vollständig beliebig oft in nutzbare Arbeit umwandelbar ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "In einem isolierten System kann die Gesamtentropie nicht spontan abnehmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Er kann Stoffe und Energie mit seiner Umgebung austauschen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Umgebung und Energieflüsse müssen mitbetrachtet werden. B: Der zweite Hauptsatz begrenzt die Umwandelbarkeit. C: Sie bleibt im reversiblen Grenzfall gleich oder nimmt zu. D: Er ist kein isoliertes System. Quelle: Originalunterlagen, PDF-S. 3,41–45.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP05/06",
+        "Systemgrenze und Hauptsätze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Systemgrenze und Hauptsätze"
+      ],
+      "questionGoal": "Systemgrenze und Hauptsätze",
+      "structuredExplanation": {
+        "coreIdea": "Systemgrenze und Hauptsätze",
+        "correctReasoning": "Sie bleibt im reversiblen Grenzfall gleich oder nimmt zu. Er ist kein isoliertes System.",
+        "wrongAnswerExplanations": {
+          "A": "Die Umgebung und Energieflüsse müssen mitbetrachtet werden.",
+          "B": "Der zweite Hauptsatz begrenzt die Umwandelbarkeit.",
+          "C": "Sie bleibt im reversiblen Grenzfall gleich oder nimmt zu.",
+          "D": "Er ist kein isoliertes System."
+        }
+      }
+    }
+  ]
+}

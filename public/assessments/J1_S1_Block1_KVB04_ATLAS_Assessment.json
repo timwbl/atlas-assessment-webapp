@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block1_kvb04_20261102",
+  "lectureCode": "KVB04",
+  "title": "Von der DNA zum Protein",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB4 - DNA&Protein. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Einzelne Folienvereinfachungen werden eingegrenzt: funktionelle RNA ist Genprodukt; Nucleosomen-/Linker-DNA-Längen sind nicht universell; Proteinvielfalt wird nicht mit einem festen Proteomfaktor geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Nukleotidbau, Basenpaarung und DNA-Struktur erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "DNA-Denaturierung, Chromatin und Chromosomensatz einordnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Genprodukte, Transkription und RNA-Prozessierung unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Genetischen Code, tRNA und Translation mechanistisch verknüpfen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb04_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Welche Ergänzung macht aus einem Nucleosid ein Nucleotid?",
+      "options": [
+        {
+          "text": "Eine Phosphatgruppe.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine zusätzliche Hydroxygruppe am C2′ des Zuckers.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine zweite Base.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine zweite Zuckergruppe ohne Phosphat.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Methylgruppe an der Base.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Nucleosid enthält bereits Base und Zucker. B: Dies unterscheidet Ribose von Desoxyribose, nicht Nucleosid von Nucleotid. C: Die Phosphatgruppe ist das unterscheidende Merkmal. D: Das Nucleotidmerkmal ist der Phosphatanteil. E: Basenmodifikation allein erzeugt kein Nucleotid aus einem Nucleosid. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Nucleosid und Nucleotid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nucleosid und Nucleotid"
+      ],
+      "questionGoal": "Nucleosid und Nucleotid",
+      "structuredExplanation": {
+        "coreIdea": "Nucleosid und Nucleotid",
+        "correctReasoning": "Ein Nucleosid enthält bereits Base und Zucker.",
+        "wrongAnswerExplanations": {
+          "B": "Dies unterscheidet Ribose von Desoxyribose, nicht Nucleosid von Nucleotid.",
+          "C": "Die Phosphatgruppe ist das unterscheidende Merkmal.",
+          "D": "Das Nucleotidmerkmal ist der Phosphatanteil.",
+          "E": "Basenmodifikation allein erzeugt kein Nucleotid aus einem Nucleosid."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Welche Kombination unterscheidet typische RNA-Bausteine von DNA-Bausteinen?",
+      "options": [
+        {
+          "text": "Phosphat statt einer stickstoffhaltigen Base.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Peptidbindungen statt Phosphodiesterbindungen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ribose und Uracil statt Desoxyribose und Thymin.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Desoxyribose und Uracil statt Ribose und Thymin.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ribose und Guanin statt Desoxyribose und Adenin.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beide enthalten Phosphat und Basen. B: RNA besitzt ebenfalls ein Zucker-Phosphat-Rückgrat. C: Dies sind die beiden zentralen chemischen Unterschiede. D: Die Zuckerzuordnung ist vertauscht. E: Guanin und Adenin kommen in beiden Nukleinsäurearten vor. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "DNA und RNA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA und RNA"
+      ],
+      "questionGoal": "DNA und RNA",
+      "structuredExplanation": {
+        "coreIdea": "DNA und RNA",
+        "correctReasoning": "Dies sind die beiden zentralen chemischen Unterschiede.",
+        "wrongAnswerExplanations": {
+          "A": "Beide enthalten Phosphat und Basen.",
+          "B": "RNA besitzt ebenfalls ein Zucker-Phosphat-Rückgrat.",
+          "D": "Die Zuckerzuordnung ist vertauscht.",
+          "E": "Guanin und Adenin kommen in beiden Nukleinsäurearten vor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Warum trägt komplementäre Paarung zur gleichmässigen Breite der DNA-Doppelhelix bei?",
+      "options": [
+        {
+          "text": "Je eine Purin- und eine Pyrimidinbase bilden ein Paar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Beide Stränge verlaufen parallel.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Phosphate liegen im Zentrum zwischen den Basen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Basen sind gleich grosse Pyrimidine.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es werden ausschliesslich zwei Purine gepaart.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kombination verbindet eine grössere mit einer kleineren Base. B: Die regulären Stränge sind antiparallel. C: Das Zucker-Phosphat-Rückgrat liegt aussen. D: Adenin und Guanin sind Purine. E: Das wäre räumlich breiter als die reguläre Paarung. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Basenpaarung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Basenpaarung"
+      ],
+      "questionGoal": "Basenpaarung",
+      "structuredExplanation": {
+        "coreIdea": "Basenpaarung",
+        "correctReasoning": "Die Kombination verbindet eine grössere mit einer kleineren Base.",
+        "wrongAnswerExplanations": {
+          "B": "Die regulären Stränge sind antiparallel.",
+          "C": "Das Zucker-Phosphat-Rückgrat liegt aussen.",
+          "D": "Adenin und Guanin sind Purine.",
+          "E": "Das wäre räumlich breiter als die reguläre Paarung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Welche DNA-Form ist im Vergleich zur typischen rechtsgängigen B-DNA linksgängig?",
+      "options": [
+        {
+          "text": "Jede RNA allein wegen Uracil.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "B-DNA mit unveränderter Struktur.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Z-DNA.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "A-DNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede DNA bei Anwesenheit von Histonen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Stoffklasse legt diese DNA-Konformation nicht fest. B: Dies ist gerade die rechtsgängige Referenz. C: Das Z-Muster unterscheidet sich in Helixrichtung und Rückgratverlauf. D: A-DNA ist ebenfalls rechtsgängig. E: Histonbindung definiert keine linksgängige DNA-Form. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "DNA-Konformation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Konformation"
+      ],
+      "questionGoal": "DNA-Konformation",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Konformation",
+        "correctReasoning": "Das Z-Muster unterscheidet sich in Helixrichtung und Rückgratverlauf.",
+        "wrongAnswerExplanations": {
+          "A": "Die Stoffklasse legt diese DNA-Konformation nicht fest.",
+          "B": "Dies ist gerade die rechtsgängige Referenz.",
+          "D": "A-DNA ist ebenfalls rechtsgängig.",
+          "E": "Histonbindung definiert keine linksgängige DNA-Form."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Beim Erwärmen einer DNA-Lösung steigt die Absorption bei 260 nm. Welche Deutung passt?",
+      "options": [
+        {
+          "text": "Ein Anstieg der Absorption beweist eine höhere DNA-Konzentration durch Neusynthese.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Doppelhelix wird denaturiert; veränderte Basenstapelung erhöht die Absorption.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Komplementäre Stränge können danach unter keinen Bedingungen hybridisieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Phosphodiesterbindungen wurden zwingend hydrolysiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Basen werden beim Schmelzen zwingend vollständig chemisch zerstört.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch bei unveränderter Stoffmenge kann Denaturierung die Absorption erhöhen. B: Der hyperchrome Effekt erlaubt die Beobachtung des Schmelzens. C: Bei geeigneten Bedingungen ist Renaturierung möglich. D: Strangtrennung benötigt keinen vollständigen Rückgratabbau. E: Die Hyperchromie lässt sich durch veränderte Stapelung bei erhaltenen Basen erklären. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Hyperchromie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hyperchromie"
+      ],
+      "questionGoal": "Hyperchromie",
+      "structuredExplanation": {
+        "coreIdea": "Hyperchromie",
+        "correctReasoning": "Der hyperchrome Effekt erlaubt die Beobachtung des Schmelzens.",
+        "wrongAnswerExplanations": {
+          "A": "Auch bei unveränderter Stoffmenge kann Denaturierung die Absorption erhöhen.",
+          "C": "Bei geeigneten Bedingungen ist Renaturierung möglich.",
+          "D": "Strangtrennung benötigt keinen vollständigen Rückgratabbau.",
+          "E": "Die Hyperchromie lässt sich durch veränderte Stapelung bei erhaltenen Basen erklären."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Warum können basische Histone gut mit DNA interagieren?",
+      "options": [
+        {
+          "text": "Die Wechselwirkung erfordert eine identische elektrische Ladung beider Rückgrate.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "DNA besitzt ein stark positiv geladenes Phosphatrückgrat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Verpackung beruht auf regelmässiger kovalenter Verknüpfung jedes Phosphats mit Histonen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Histone binden nur nach vollständiger Denaturierung der Doppelhelix.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Positive Proteinladungen begünstigen Kontakte zum negativen Phosphatrückgrat.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Entgegengesetzte Ladungen begünstigen die elektrostatische Bindung. B: Phosphatgruppen sind negativ geladen. C: Die Nucleosomenbindung erfordert kein solches durchgehendes kovalentes Netz. D: DNA ist im Nucleosom grundsätzlich doppelsträngig um den Histonkern gewunden. E: Elektrostatische Wechselwirkungen tragen zur Verpackung bei. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Histone"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Histone"
+      ],
+      "questionGoal": "Histone",
+      "structuredExplanation": {
+        "coreIdea": "Histone",
+        "correctReasoning": "Elektrostatische Wechselwirkungen tragen zur Verpackung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Entgegengesetzte Ladungen begünstigen die elektrostatische Bindung.",
+          "B": "Phosphatgruppen sind negativ geladen.",
+          "C": "Die Nucleosomenbindung erfordert kein solches durchgehendes kovalentes Netz.",
+          "D": "DNA ist im Nucleosom grundsätzlich doppelsträngig um den Histonkern gewunden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Wie viele Chromosomen besitzt eine typische diploide menschliche somatische Zelle?",
+      "options": [
+        {
+          "text": "23.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "48.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "44.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "46.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "92 unabhängig von Zellzyklus und Chromatidenbegriff.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Zahl des einfachen Chromosomensatzes. B: Dies entspricht nicht dem typischen menschlichen Satz. C: Dabei fehlt das Geschlechtschromosomenpaar. D: Es liegen 22 Autosomenpaare und ein Geschlechtschromosomenpaar vor. E: Chromatidenzahl und Chromosomenzahl dürfen nicht gleichgesetzt werden. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Chromosomensatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chromosomensatz"
+      ],
+      "questionGoal": "Chromosomensatz",
+      "structuredExplanation": {
+        "coreIdea": "Chromosomensatz",
+        "correctReasoning": "Es liegen 22 Autosomenpaare und ein Geschlechtschromosomenpaar vor.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Zahl des einfachen Chromosomensatzes.",
+          "B": "Dies entspricht nicht dem typischen menschlichen Satz.",
+          "C": "Dabei fehlt das Geschlechtschromosomenpaar.",
+          "E": "Chromatidenzahl und Chromosomenzahl dürfen nicht gleichgesetzt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Ein Gen wird zu einer funktionellen rRNA transkribiert. Was folgt daraus?",
+      "options": [
+        {
+          "text": "Das Gen wurde nicht exprimiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Genprodukt muss nicht immer ein Protein sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die rRNA muss zunächst in mRNA umgewandelt werden, um funktionell zu sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur eine anschliessende Translation derselben rRNA zählt als Genexpression.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die RNA ist zwangsläufig eine mRNA.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Transkription einer funktionellen RNA ist Genexpression. B: Funktionelle RNA ist ebenfalls ein Endprodukt der Genexpression. C: rRNA wirkt selbst als RNA im Ribosom. D: Transkription funktioneller RNA ist bereits Genexpression ohne Proteinprodukt. E: rRNA und mRNA sind unterschiedliche RNA-Klassen. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Genprodukte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Genprodukte"
+      ],
+      "questionGoal": "Genprodukte",
+      "structuredExplanation": {
+        "coreIdea": "Genprodukte",
+        "correctReasoning": "Funktionelle RNA ist ebenfalls ein Endprodukt der Genexpression.",
+        "wrongAnswerExplanations": {
+          "A": "Transkription einer funktionellen RNA ist Genexpression.",
+          "C": "rRNA wirkt selbst als RNA im Ribosom.",
+          "D": "Transkription funktioneller RNA ist bereits Genexpression ohne Proteinprodukt.",
+          "E": "rRNA und mRNA sind unterschiedliche RNA-Klassen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Eine mRNA hat die Sequenz 5′-AUGC-3′. Welcher kurze DNA-Matrizenabschnitt passt dazu?",
+      "options": [
+        {
+          "text": "3′-ATGC-5′.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3′-TACG-5′.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "5′-ATGC-3′ als Matrize.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3′-AUGC-5′.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "5′-TACG-3′.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Sequenz ist zur gegebenen RNA nicht komplementär. B: Die RNA wird komplementär und antiparallel zur Matrize gebildet. C: Dies entspricht hier dem Nichtmatrizenstrang. D: Dies enthält RNA-Basen und ist nicht komplementär. E: Die Orientierung wäre nicht antiparallel passend. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Matrizenstrang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Matrizenstrang"
+      ],
+      "questionGoal": "Matrizenstrang",
+      "structuredExplanation": {
+        "coreIdea": "Matrizenstrang",
+        "correctReasoning": "Die RNA wird komplementär und antiparallel zur Matrize gebildet.",
+        "wrongAnswerExplanations": {
+          "A": "Die Sequenz ist zur gegebenen RNA nicht komplementär.",
+          "C": "Dies entspricht hier dem Nichtmatrizenstrang.",
+          "D": "Dies enthält RNA-Basen und ist nicht komplementär.",
+          "E": "Die Orientierung wäre nicht antiparallel passend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Welche Änderung beschreibt das Spleissen einer typischen eukaryotischen prä-mRNA?",
+      "options": [
+        {
+          "text": "Exons werden grundsätzlich entfernt und Introns verbunden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die DNA-Introns werden während jeder RNA-Spleissreaktion aus dem Chromosom ausgeschnitten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle nichtcodierenden RNA-Abschnitte müssen bei jeder RNA-Art vollständig entfernt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das 3′-Ende wird in ein 5′-Cap umgewandelt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Introns werden entfernt und Exons miteinander verbunden.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zuordnung ist vertauscht. B: Das typische prä-mRNA-Spleissen verändert die RNA, nicht die zugrunde liegende DNA. C: Spleissmuster und funktionelle nichtcodierende RNAs lassen sich nicht so verallgemeinern. D: Capping und Splicing sind verschiedene Vorgänge. E: Dies erzeugt eine prozessierte RNA-Sequenz. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Splicing"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Splicing"
+      ],
+      "questionGoal": "Splicing",
+      "structuredExplanation": {
+        "coreIdea": "Splicing",
+        "correctReasoning": "Dies erzeugt eine prozessierte RNA-Sequenz.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zuordnung ist vertauscht.",
+          "B": "Das typische prä-mRNA-Spleissen verändert die RNA, nicht die zugrunde liegende DNA.",
+          "C": "Spleissmuster und funktionelle nichtcodierende RNAs lassen sich nicht so verallgemeinern.",
+          "D": "Capping und Splicing sind verschiedene Vorgänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Eine tRNA erkennt das richtige Codon, trägt aber eine falsche Aminosäure. Welcher vorgelagerte Schritt ist besonders relevant?",
+      "options": [
+        {
+          "text": "Die Zuordnung und Beladung durch eine Aminoacyl-tRNA-Synthetase.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Erkennung des Startcodons korrigiert jede vorherige Fehlbeladung automatisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Ribosom wählt bei jedem Codon unabhängig von der tRNA-Beladung die passende freie Aminosäure.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Anticodon wird unmittelbar vor der Translation von der tRNA entfernt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Spaltung der mRNA durch ein Stopcodon.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie koppelt die passende Aminosäure an die tRNA. B: Codonerkennung prüft nicht automatisch die chemische Identität der gebundenen Aminosäure. C: Die tRNA liefert die bereits gebundene Aminosäure. D: Die tRNA benötigt ihr Anticodon zur Codonerkennung. E: Stopcodons spalten mRNA nicht in dieser Weise. Quelle: Originalunterlagen, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "tRNA-Beladung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "tRNA-Beladung"
+      ],
+      "questionGoal": "tRNA-Beladung",
+      "structuredExplanation": {
+        "coreIdea": "tRNA-Beladung",
+        "correctReasoning": "Sie koppelt die passende Aminosäure an die tRNA.",
+        "wrongAnswerExplanations": {
+          "B": "Codonerkennung prüft nicht automatisch die chemische Identität der gebundenen Aminosäure.",
+          "C": "Die tRNA liefert die bereits gebundene Aminosäure.",
+          "D": "Die tRNA benötigt ihr Anticodon zur Codonerkennung.",
+          "E": "Stopcodons spalten mRNA nicht in dieser Weise."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Welche Kombination beschreibt die Richtung der Translation?",
+      "options": [
+        {
+          "text": "Die mRNA wird 5′→3′ gelesen; das Protein wächst C→N.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die mRNA wird 3′→5′ gelesen; das Protein wächst N→C.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Proteinsequenz wird ohne Bezug zur mRNA festgelegt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die mRNA wird 5′→3′ gelesen; das Protein wächst vom N- zum C-Terminus.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Leserichtung wechselt bei jedem Codon.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Richtung des Proteinwachstums ist vertauscht. B: Die Leserichtung ist vertauscht. C: Die Codonfolge bestimmt die Aminosäurefolge. D: Dies verknüpft Nukleinsäure- und Proteinsyntheserichtung. E: Die Translation besitzt eine definierte Richtung. Quelle: Originalunterlagen, PDF-S. 24–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Translationsrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Translationsrichtung"
+      ],
+      "questionGoal": "Translationsrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Translationsrichtung",
+        "correctReasoning": "Dies verknüpft Nukleinsäure- und Proteinsyntheserichtung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Richtung des Proteinwachstums ist vertauscht.",
+          "B": "Die Leserichtung ist vertauscht.",
+          "C": "Die Codonfolge bestimmt die Aminosäurefolge.",
+          "E": "Die Translation besitzt eine definierte Richtung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Das Strukturmodell einer DNA-Doppelhelix wird geprüft. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Die DNA-Stränge verlaufen antiparallel.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Phosphatrückgrat ist im wässrigen Milieu ungeladen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "G-C-Paare besitzen drei und A-T-Paare zwei Wasserstoffbrücken.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Wasserstoffbrücken sind der einzige Stabilitätsbeitrag.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre 5′- und 3′-Enden sind gegenläufig angeordnet. B: Phosphatgruppen tragen negative Ladungen. C: Dies sind die regulären Watson-Crick-Paare. D: Auch Basenstapelung ist wichtig. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Doppelhelix"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Doppelhelix"
+      ],
+      "questionGoal": "Doppelhelix",
+      "structuredExplanation": {
+        "coreIdea": "Doppelhelix",
+        "correctReasoning": "Ihre 5′- und 3′-Enden sind gegenläufig angeordnet. Dies sind die regulären Watson-Crick-Paare.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre 5′- und 3′-Enden sind gegenläufig angeordnet.",
+          "B": "Phosphatgruppen tragen negative Ladungen.",
+          "C": "Dies sind die regulären Watson-Crick-Paare.",
+          "D": "Auch Basenstapelung ist wichtig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Eine DNA-Probe wird erwärmt und anschliessend abgekühlt. Welche Aussagen zu Struktur und Erkennung stimmen?",
+      "options": [
+        {
+          "text": "DNA-Denaturierung setzt zwangsläufig vollständigen Basenverlust voraus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Schmelztemperatur ist unabhängig von Lösungsmilieu und Sequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Basenkanten in der grossen Furche können sequenzspezifische Proteinbindung ermöglichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Komplementäre Einzelstränge können unter geeigneten Bedingungen hybridisieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Basen bleiben beim üblichen Schmelzen erhalten. B: Beide beeinflussen die Stabilität. C: Die Sequenz ist dort chemisch zugänglich. D: Basenpaarung ermöglicht die Renaturierung. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "DNA-Erkennung und Schmelzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Erkennung und Schmelzen"
+      ],
+      "questionGoal": "DNA-Erkennung und Schmelzen",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Erkennung und Schmelzen",
+        "correctReasoning": "Die Sequenz ist dort chemisch zugänglich. Basenpaarung ermöglicht die Renaturierung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Basen bleiben beim üblichen Schmelzen erhalten.",
+          "B": "Beide beeinflussen die Stabilität.",
+          "C": "Die Sequenz ist dort chemisch zugänglich.",
+          "D": "Basenpaarung ermöglicht die Renaturierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "DNA-Verpackung wird vom Nucleosom bis zum Chromosom betrachtet. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "H1 ersetzt alle acht Kernhistone.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Metaphasenchromosom besteht nach vollständiger Entfernung der DNA nur noch aus Histonen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Chromatin enthält DNA und assoziierte Proteine.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Nucleosomenkern enthält einen Histonoktamer.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: H1 besitzt eine ergänzende Rolle an Linker-DNA. B: Auch das kondensierte Chromosom enthält DNA und Proteine. C: Chromosomen bestehen aus diesem Material. D: Je zwei H2A, H2B, H3 und H4 bilden den Kern. Quelle: Originalunterlagen, PDF-S. 11–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Chromatin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chromatin"
+      ],
+      "questionGoal": "Chromatin",
+      "structuredExplanation": {
+        "coreIdea": "Chromatin",
+        "correctReasoning": "Chromosomen bestehen aus diesem Material. Je zwei H2A, H2B, H3 und H4 bilden den Kern.",
+        "wrongAnswerExplanations": {
+          "A": "H1 besitzt eine ergänzende Rolle an Linker-DNA.",
+          "B": "Auch das kondensierte Chromosom enthält DNA und Proteine.",
+          "C": "Chromosomen bestehen aus diesem Material.",
+          "D": "Je zwei H2A, H2B, H3 und H4 bilden den Kern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Der Fluss genetischer Information wird zwischen DNA, RNA und Protein verfolgt. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Reverse Transkription kann Information von RNA auf DNA übertragen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle transkribierten Gene müssen einen Proteinbauplan liefern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Proteinsequenzen werden regulär als Matrize zurück in DNA übersetzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gene können auf unterschiedlichen DNA-Strängen liegen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Retroviren illustrieren diesen Weg. B: Auch funktionelle RNAs werden transkribiert. C: Ein solcher sequenzgerichteter Rückfluss ist nicht Teil des zentralen Dogmas. D: Für jedes Gen wird eine definierte Matrize verwendet. Quelle: Originalunterlagen, PDF-S. 3,14–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Informationsfluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Informationsfluss"
+      ],
+      "questionGoal": "Informationsfluss",
+      "structuredExplanation": {
+        "coreIdea": "Informationsfluss",
+        "correctReasoning": "Retroviren illustrieren diesen Weg. Für jedes Gen wird eine definierte Matrize verwendet.",
+        "wrongAnswerExplanations": {
+          "A": "Retroviren illustrieren diesen Weg.",
+          "B": "Auch funktionelle RNAs werden transkribiert.",
+          "C": "Ein solcher sequenzgerichteter Rückfluss ist nicht Teil des zentralen Dogmas.",
+          "D": "Für jedes Gen wird eine definierte Matrize verwendet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Aus einem Gen entstehen prozessierte RNAs und verschiedene Produkte. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jede Modifikation der Genexpression findet erst nach der Translation statt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "RNA-Editing ist identisch mit einer Änderung der vererbten DNA-Sequenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "5′-Cap und Poly(A)-Schwanz sind typische Merkmale vieler eukaryotischer mRNAs.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Alternatives Spleissen kann verschiedene Proteinvarianten aus einem Gen ermöglichen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Transkription und RNA-Prozessierung werden reguliert. B: Es verändert RNA nach beziehungsweise während ihrer Herstellung. C: Sie werden im Rahmen der Reifung angefügt. D: Unterschiedliche Exonkombinationen erweitern die Produkte. Quelle: Originalunterlagen, PDF-S. 18–20,26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "RNA-Prozessierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RNA-Prozessierung"
+      ],
+      "questionGoal": "RNA-Prozessierung",
+      "structuredExplanation": {
+        "coreIdea": "RNA-Prozessierung",
+        "correctReasoning": "Sie werden im Rahmen der Reifung angefügt. Unterschiedliche Exonkombinationen erweitern die Produkte.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Transkription und RNA-Prozessierung werden reguliert.",
+          "B": "Es verändert RNA nach beziehungsweise während ihrer Herstellung.",
+          "C": "Sie werden im Rahmen der Reifung angefügt.",
+          "D": "Unterschiedliche Exonkombinationen erweitern die Produkte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Die Zuordnung von Codons zu Aminosäuren wird analysiert. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Der Code ist in sämtlichen biologischen Systemen ohne Ausnahme identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehrere Codons können dieselbe Aminosäure bezeichnen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Drei Basen bilden ein Codon.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jedes der 64 Codons codiert eine Aminosäure.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es bestehen wenige bekannte Abweichungen, etwa in Mitochondrien. B: Dies wird als Degeneration des Codes bezeichnet. C: Vier Basenarten ermöglichen 64 Tripletts. D: Drei sind im Standardcode Stopcodons. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Genetischer Code"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Genetischer Code"
+      ],
+      "questionGoal": "Genetischer Code",
+      "structuredExplanation": {
+        "coreIdea": "Genetischer Code",
+        "correctReasoning": "Dies wird als Degeneration des Codes bezeichnet. Vier Basenarten ermöglichen 64 Tripletts.",
+        "wrongAnswerExplanations": {
+          "A": "Es bestehen wenige bekannte Abweichungen, etwa in Mitochondrien.",
+          "B": "Dies wird als Degeneration des Codes bezeichnet.",
+          "C": "Vier Basenarten ermöglichen 64 Tripletts.",
+          "D": "Drei sind im Standardcode Stopcodons."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "tRNA und Ribosom wirken bei der Translation zusammen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "80S ergibt sich durch lineare Addition beliebiger Untereinheitenmassen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ribosomen bestehen ausschliesslich aus Protein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Aminosäure ist am 3′-CCA-Ende der tRNA gebunden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Anticodon der tRNA paart mit einem mRNA-Codon.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Svedbergwerte sind Sedimentationsgrössen und nicht einfach additiv. B: Sie enthalten auch rRNA. C: Dort liegt die Aminoacylesterbindung. D: Dies ermöglicht die Zuordnung beim Ribosom. Quelle: Originalunterlagen, PDF-S. 22–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Translationsapparat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Translationsapparat"
+      ],
+      "questionGoal": "Translationsapparat",
+      "structuredExplanation": {
+        "coreIdea": "Translationsapparat",
+        "correctReasoning": "Dort liegt die Aminoacylesterbindung. Dies ermöglicht die Zuordnung beim Ribosom.",
+        "wrongAnswerExplanations": {
+          "A": "Svedbergwerte sind Sedimentationsgrössen und nicht einfach additiv.",
+          "B": "Sie enthalten auch rRNA.",
+          "C": "Dort liegt die Aminoacylesterbindung.",
+          "D": "Dies ermöglicht die Zuordnung beim Ribosom."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb04_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB04",
+      "stem": "Ein Gen liefert mehrere funktionelle Proteinformen. Welche Aussagen erklären beziehungsweise begrenzen diese Vielfalt?",
+      "options": [
+        {
+          "text": "Ein Gen muss genau eine unveränderliche Proteinform hervorbringen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Posttranslationale Phosphorylierung kann Proteineigenschaften verändern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Kolinearität bedeutet, dass die Reihenfolge der Aminosäuren unabhängig von der Codonfolge ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Limitierte Proteolyse kann ein Protein reifen oder aktivieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Prozessierung und Modifikation ermöglichen Varianten. B: Sie ist ein Beispiel chemischer Proteinmodifikation. C: Kolinearität beschreibt gerade die entsprechende lineare Reihenfolge. D: Dabei werden definierte Abschnitte entfernt. Quelle: Originalunterlagen, PDF-S. 25–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB04",
+        "Vom Gen zum Proteom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vom Gen zum Proteom"
+      ],
+      "questionGoal": "Vom Gen zum Proteom",
+      "structuredExplanation": {
+        "coreIdea": "Vom Gen zum Proteom",
+        "correctReasoning": "Sie ist ein Beispiel chemischer Proteinmodifikation. Dabei werden definierte Abschnitte entfernt.",
+        "wrongAnswerExplanations": {
+          "A": "Prozessierung und Modifikation ermöglichen Varianten.",
+          "B": "Sie ist ein Beispiel chemischer Proteinmodifikation.",
+          "C": "Kolinearität beschreibt gerade die entsprechende lineare Reihenfolge.",
+          "D": "Dabei werden definierte Abschnitte entfernt."
+        }
+      }
+    }
+  ]
+}

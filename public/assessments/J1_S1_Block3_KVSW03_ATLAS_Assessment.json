@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw03_20261102",
+  "lectureCode": "KVSW03",
+  "title": "Aktionspotential I – Erregbarkeit",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW03_AP_I. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. KV03-Lernziele inklusive Rheobase/Chronaxie anhand Originalgrafik S10 und Refraktärverhalten S11 geprüft. Alles-oder-Nichts auf Einzelaxon bei vergleichbaren Bedingungen begrenzt; nicht auf Summenpotentiale übertragen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Funktionen, typische Formen und intrazelluläre Registrierung von Aktionspotentialen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Regenerative Erregung, Schwelle und Alles-oder-Nichts-Verhalten von passiven Antworten unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Reizstärke-Dauer-Beziehung mit Rheobase, Chronaxie und Nutzzeit anwenden."
+    },
+    {
+      "id": "lo4",
+      "text": "Absolute und relative Refraktärzeit sowie die Rolle des Natriums erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw03_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche im Kurs gezeigte Aktionspotentialform passt typischerweise zu einer ventrikulären Herzmuskelzelle?",
+      "options": [
+        {
+          "text": "Eine Spannung, die nur während des Stromartefakts existiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein konstantes negatives Potential ohne zeitliche Änderung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine im Vergleich zum Nervenaxon deutlich längere Antwort mit Plateau.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein einzelner kurzer Nervenaxonspike ohne längere Plateauphase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine rein exponentielle unterschwellige RC-Antwort ohne regenerativen Anteil.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein biologisches AP besitzt einen eigenen zeitlichen Verlauf. B: Dies beschreibt eher einen Ruhezustand. C: Die Erregung dauert dort typischerweise Hunderte statt wenige Millisekunden. D: Dies entspricht eher der gezeigten Nervenfaser. E: Dies ist kein vollständig ausgelöstes Aktionspotential. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "AP-Formen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "AP-Formen"
+      ],
+      "questionGoal": "AP-Formen",
+      "structuredExplanation": {
+        "coreIdea": "AP-Formen",
+        "correctReasoning": "Die Erregung dauert dort typischerweise Hunderte statt wenige Millisekunden.",
+        "wrongAnswerExplanations": {
+          "A": "Ein biologisches AP besitzt einen eigenen zeitlichen Verlauf.",
+          "B": "Dies beschreibt eher einen Ruhezustand.",
+          "D": "Dies entspricht eher der gezeigten Nervenfaser.",
+          "E": "Dies ist kein vollständig ausgelöstes Aktionspotential."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Anordnung misst das Membranpotential eines Axons unmittelbar?",
+      "options": [
+        {
+          "text": "Zwei Elektroden im Bad zur blossen Widerstandsmessung der Lösung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur eine Stromelektrode ohne Spannungsmessung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Elektrode im Axon und eine Referenzelektrode im Bad.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zwei Elektroden ausschliesslich im weit entfernten Bad.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwei Elektroden nur im Axon, deren lokale Innenpotentiale ohne äussere Referenz verglichen werden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der transmembranäre Potentialunterschied fehlt. B: Ein vorgegebener Strom ist noch keine Spannungsregistrierung. C: Die Differenz erfasst die Spannung über der Zellmembran. D: Dies erfasst nicht direkt Innen gegen Aussen. E: Eine reine Differenz zweier Innenpotentiale ist nicht unmittelbar die transmembranäre Spannung gegen das Bad. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Intrazelluläre Messung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intrazelluläre Messung"
+      ],
+      "questionGoal": "Intrazelluläre Messung",
+      "structuredExplanation": {
+        "coreIdea": "Intrazelluläre Messung",
+        "correctReasoning": "Die Differenz erfasst die Spannung über der Zellmembran.",
+        "wrongAnswerExplanations": {
+          "A": "Der transmembranäre Potentialunterschied fehlt.",
+          "B": "Ein vorgegebener Strom ist noch keine Spannungsregistrierung.",
+          "D": "Dies erfasst nicht direkt Innen gegen Aussen.",
+          "E": "Eine reine Differenz zweier Innenpotentiale ist nicht unmittelbar die transmembranäre Spannung gegen das Bad."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Warum kann eine ausreichend grosse Depolarisation ein regeneratives Nervenaktionspotential auslösen?",
+      "options": [
+        {
+          "text": "Die Zellmembran verliert dauerhaft alle selektiven Eigenschaften.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Depolarisation schliesst sofort alle Na+-Kanäle, bevor Strom fliessen kann.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Öffnung spannungsabhängiger Na+-Kanäle verstärkt zunächst die Depolarisation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Na+/K+-Pumpe kehrt bei jedem Spike vollständig ihre Richtung um.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein passiver Kondensator kann ohne aktive Leitfähigkeitsänderung seine Spannung unbegrenzt verstärken.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kanalöffnung ist selektiv und zeitlich reguliert. B: Aktivierung erlaubt zunächst den aufwärtsgerichteten Strom. C: Dieser positive Rückkopplungsschritt rekrutiert weitere Kanäle. D: Dies ist nicht der Mechanismus des schnellen Aufstrichs. E: Regeneration benötigt aktive Kanalmechanismen. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Regenerative Schwelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regenerative Schwelle"
+      ],
+      "questionGoal": "Regenerative Schwelle",
+      "structuredExplanation": {
+        "coreIdea": "Regenerative Schwelle",
+        "correctReasoning": "Dieser positive Rückkopplungsschritt rekrutiert weitere Kanäle.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kanalöffnung ist selektiv und zeitlich reguliert.",
+          "B": "Aktivierung erlaubt zunächst den aufwärtsgerichteten Strom.",
+          "D": "Dies ist nicht der Mechanismus des schnellen Aufstrichs.",
+          "E": "Regeneration benötigt aktive Kanalmechanismen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Ein isoliertes Axon wird unter gleichen Bedingungen knapp über- und deutlich überschwellig gereizt. Welche Beobachtung entspricht dem Alles-oder-Nichts-Prinzip am ehesten?",
+      "options": [
+        {
+          "text": "Die ausgelösten einzelnen Aktionspotentiale haben ungefähr dieselbe Amplitude.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die AP-Amplitude verdoppelt sich zwingend mit der Reizstromstärke.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein beliebig stärkerer Reiz hebt jede Refraktärphase auf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jeder unterschwellige Reiz erzeugt ein halb so grosses vollständiges AP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nach Überschreiten der Schwelle verschwindet jede zeitliche Dynamik.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Oberhalb der Schwelle ist die Einzelantwort relativ formstabil. B: Dies gilt nicht für das regenerative Einzelaxon-AP. C: Die absolute Refraktärphase bleibt wirksam. D: Unterschwellige Antworten sind keine halben vollständigen APs. E: Das AP hat weiterhin Aufstrich und Rückkehr. Quelle: Originalunterlagen, PDF-S. 9,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Alles oder nichts"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alles oder nichts"
+      ],
+      "questionGoal": "Alles oder nichts",
+      "structuredExplanation": {
+        "coreIdea": "Alles oder nichts",
+        "correctReasoning": "Oberhalb der Schwelle ist die Einzelantwort relativ formstabil.",
+        "wrongAnswerExplanations": {
+          "B": "Dies gilt nicht für das regenerative Einzelaxon-AP.",
+          "C": "Die absolute Refraktärphase bleibt wirksam.",
+          "D": "Unterschwellige Antworten sind keine halben vollständigen APs.",
+          "E": "Das AP hat weiterhin Aufstrich und Rückkehr."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Ein kleiner Strompuls erzeugt eine mit der Stromstärke skalierende, exponentiell abklingende Antwort ohne Spike. Wie ist dies am besten einzuordnen?",
+      "options": [
+        {
+          "text": "Als absolut refraktärer Zustand allein aufgrund der Exponentialform.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Als Messartefakt, weil jede biologische Antwort zwingend einen Spike enthalten muss.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Als voll ausgelöstes AP mit exakt proportionaler Amplitude.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Als Plateauphase eines vollständig ausgelösten Herzmuskelaktionspotentials.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Als unterschwellige elektrotone Antwort.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine passive Antwort beweist keine vorherige Erregung. B: Auch unterschwellige elektrotone Antworten sind biologische Membranantworten. C: Das widerspricht dem beschriebenen fehlenden Spike und Schwellenverhalten. D: Beschrieben ist eine skalierende passive Axonantwort ohne regenerativen Spike. E: Passive RC-Eigenschaften erklären den Verlauf. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Passive Antwort"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Passive Antwort"
+      ],
+      "questionGoal": "Passive Antwort",
+      "structuredExplanation": {
+        "coreIdea": "Passive Antwort",
+        "correctReasoning": "Passive RC-Eigenschaften erklären den Verlauf.",
+        "wrongAnswerExplanations": {
+          "A": "Eine passive Antwort beweist keine vorherige Erregung.",
+          "B": "Auch unterschwellige elektrotone Antworten sind biologische Membranantworten.",
+          "C": "Das widerspricht dem beschriebenen fehlenden Spike und Schwellenverhalten.",
+          "D": "Beschrieben ist eine skalierende passive Axonantwort ohne regenerativen Spike."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q06",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Was bezeichnet die Rheobase in der Reizstärke-Dauer-Beziehung?",
+      "options": [
+        {
+          "text": "Die minimale Reizstromstärke bei sehr langer Reizdauer.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die minimale Reizdauer bei doppelter Rheobasestärke.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die absolute Refraktärzeit nach einem Spike.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Den Abstand zwischen zwei Messelektroden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Amplitude des AP-Overshoots.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie ist die asymptotische Schwellenstromstärke. B: Dies definiert die Chronaxie. C: Dies betrifft einen anderen zeitlichen Zusammenhang. D: Rheobase ist keine geometrische Grösse. E: Dies ist eine Spannungsgrösse der Antwort. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Rheobase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rheobase"
+      ],
+      "questionGoal": "Rheobase",
+      "structuredExplanation": {
+        "coreIdea": "Rheobase",
+        "correctReasoning": "Sie ist die asymptotische Schwellenstromstärke.",
+        "wrongAnswerExplanations": {
+          "B": "Dies definiert die Chronaxie.",
+          "C": "Dies betrifft einen anderen zeitlichen Zusammenhang.",
+          "D": "Rheobase ist keine geometrische Grösse.",
+          "E": "Dies ist eine Spannungsgrösse der Antwort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q07",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Wie ist Chronaxie definiert?",
+      "options": [
+        {
+          "text": "Die Schwellenstromstärke bei unendlich langer Reizdauer.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte absolute plus relative Refraktärzeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Verzögerung bis zur AP-Auslösung bei beliebiger Reizstärke.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Schwellenreizdauer bei einer Stromstärke von zweimal Rheobase.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Dauer jedes Nervenaktionspotentials unabhängig vom Reiz.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist die Rheobase. B: Refraktärzeit wird nach einer vorangehenden Erregung bestimmt. C: Das beschreibt eher eine Nutzzeit; Chronaxie ist an zweimal Rheobase gebunden. D: Die Definition verknüpft Dauer und normierte Reizstärke. E: Chronaxie charakterisiert die Reizbarkeit, nicht einfach die AP-Breite. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Chronaxie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chronaxie"
+      ],
+      "questionGoal": "Chronaxie",
+      "structuredExplanation": {
+        "coreIdea": "Chronaxie",
+        "correctReasoning": "Die Definition verknüpft Dauer und normierte Reizstärke.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist die Rheobase.",
+          "B": "Refraktärzeit wird nach einer vorangehenden Erregung bestimmt.",
+          "C": "Das beschreibt eher eine Nutzzeit; Chronaxie ist an zweimal Rheobase gebunden.",
+          "E": "Chronaxie charakterisiert die Reizbarkeit, nicht einfach die AP-Breite."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Ein sehr kurzer depolarisierender Rechteckpuls bleibt unterschwellig. Welche Veränderung kann bei sonst gleichen Bedingungen die Auslösung erleichtern?",
+      "options": [
+        {
+          "text": "Die Pulsdauer weiter verkürzen, ohne den Strom zu ändern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Den Puls durch einen ebenso grossen hyperpolarisierenden Puls ersetzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Pulsdauer bei geeigneter Stromstärke verlängern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur die Verstärkung der Anzeige erhöhen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Den Strom auf null reduzieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies verringert gewöhnlich die effektive Aufladung. B: Dies erreicht nicht dieselbe unmittelbare depolarisierende Schwelle. C: Die Membran hat dann mehr Zeit, ausreichend depolarisiert zu werden. D: Dies ändert die Darstellung, nicht die Reizung des Axons. E: Dann fehlt die depolarisierende Reizwirkung. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Stärke-Dauer-Kurve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stärke-Dauer-Kurve"
+      ],
+      "questionGoal": "Stärke-Dauer-Kurve",
+      "structuredExplanation": {
+        "coreIdea": "Stärke-Dauer-Kurve",
+        "correctReasoning": "Die Membran hat dann mehr Zeit, ausreichend depolarisiert zu werden.",
+        "wrongAnswerExplanations": {
+          "A": "Dies verringert gewöhnlich die effektive Aufladung.",
+          "B": "Dies erreicht nicht dieselbe unmittelbare depolarisierende Schwelle.",
+          "D": "Dies ändert die Darstellung, nicht die Reizung des Axons.",
+          "E": "Dann fehlt die depolarisierende Reizwirkung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q09",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Was bezeichnet im Reizexperiment die Nutzzeit?",
+      "options": [
+        {
+          "text": "Die Zeit vom Reizbeginn bis zur Auslösung der Erregung bei gegebener Reizstärke.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Reizdauer bei genau doppelter Rheobase als einzige mögliche Definition.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Phase, in der kein Reizstrom mehr fliesst und nur das Messgerät arbeitet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zeitkonstante der Badlösung ohne Membran.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Laufzeit des Signals zwischen zwei beliebigen Hirnregionen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Membran muss zunächst bis zur wirksamen Schwelle reagieren. B: Das ist die spezifische Chronaxiedefinition. C: Nutzzeit beginnt mit dem wirksamen Reiz. D: Dies beschreibt nicht die Erregungsauslösung. E: Dies ist keine lokale Nutzzeitdefinition. Quelle: Originalunterlagen, PDF-S. 10,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Nutzzeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nutzzeit"
+      ],
+      "questionGoal": "Nutzzeit",
+      "structuredExplanation": {
+        "coreIdea": "Nutzzeit",
+        "correctReasoning": "Die Membran muss zunächst bis zur wirksamen Schwelle reagieren.",
+        "wrongAnswerExplanations": {
+          "B": "Das ist die spezifische Chronaxiedefinition.",
+          "C": "Nutzzeit beginnt mit dem wirksamen Reiz.",
+          "D": "Dies beschreibt nicht die Erregungsauslösung.",
+          "E": "Dies ist keine lokale Nutzzeitdefinition."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Nach einem AP gelingt unmittelbar auch mit stärkerem Reiz kein zweites AP. Welche Phase passt?",
+      "options": [
+        {
+          "text": "Die absolute Refraktärzeit.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine lineare passive Antwort ohne jede Vorgeschichte.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die vollständig erholte Ruhephase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Zustand mit beliebig hoher möglicher AP-Frequenz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die relative Refraktärzeit als Phase stets normaler Schwelle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zu viele erforderliche Na+-Kanäle sind noch nicht wieder aktivierbar. B: Der Befund bezieht sich ausdrücklich auf ein vorheriges AP. C: Dort kann ein geeigneter Reiz wieder auslösen. D: Absolute Refraktärität begrenzt die maximale Frequenz. E: Relativ bedeutet verminderte, aber nicht völlig fehlende Erregbarkeit. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Absolute Refraktärzeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Absolute Refraktärzeit"
+      ],
+      "questionGoal": "Absolute Refraktärzeit",
+      "structuredExplanation": {
+        "coreIdea": "Absolute Refraktärzeit",
+        "correctReasoning": "Zu viele erforderliche Na+-Kanäle sind noch nicht wieder aktivierbar.",
+        "wrongAnswerExplanations": {
+          "B": "Der Befund bezieht sich ausdrücklich auf ein vorheriges AP.",
+          "C": "Dort kann ein geeigneter Reiz wieder auslösen.",
+          "D": "Absolute Refraktärität begrenzt die maximale Frequenz.",
+          "E": "Relativ bedeutet verminderte, aber nicht völlig fehlende Erregbarkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Was kennzeichnet die relative Refraktärzeit?",
+      "options": [
+        {
+          "text": "Kein denkbarer Reiz kann eine neue Erregung auslösen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Schwelle ist immer niedriger als vor dem ersten Spike.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jeder kleine Reiz löst ein beliebig grosses AP aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein stärkerer als gewöhnlicher Reiz kann wieder ein AP auslösen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Alle Kanäle sind dauerhaft funktionslos.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies beschreibt die absolute Phase. B: Häufig ist die Auslösung noch erschwert. C: Das folgt nicht aus relativer Refraktärität. D: Erregbarkeit und Kanalverfügbarkeit sind noch nicht vollständig normalisiert. E: Die Phase ist vorübergehend. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Relative Refraktärzeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Relative Refraktärzeit"
+      ],
+      "questionGoal": "Relative Refraktärzeit",
+      "structuredExplanation": {
+        "coreIdea": "Relative Refraktärzeit",
+        "correctReasoning": "Erregbarkeit und Kanalverfügbarkeit sind noch nicht vollständig normalisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies beschreibt die absolute Phase.",
+          "B": "Häufig ist die Auslösung noch erschwert.",
+          "C": "Das folgt nicht aus relativer Refraktärität.",
+          "E": "Die Phase ist vorübergehend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Der Austausch von äusserem Na+ gegen ein geeignetes Ersatzkation vermindert den AP-Overshoot reversibel. Was stützt dies?",
+      "options": [
+        {
+          "text": "Das Axon müsse dauerhaft zerstört worden sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das AP werde ausschliesslich durch Kaliumeinstrom erzeugt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Ableseverstärkung sei die alleinige biologische Ursache des AP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Na+ sei grundsätzlich für sämtliche Membranpotentiale irrelevant.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der schnelle Aufstrich hängt wesentlich von Na+-Einstrom ab.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Erholung nach Rücktausch spricht gegen diese Schlussfolgerung. B: Die Na+-abhängige Änderung wäre damit nicht erklärt. C: Ein reversibler Ionenaustausch verändert die Membranbedingungen. D: Die Beobachtung spricht dagegen. E: Die veränderte Na+-Verfügbarkeit beeinflusst die positive Spitze. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Natriumexperiment"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Natriumexperiment"
+      ],
+      "questionGoal": "Natriumexperiment",
+      "structuredExplanation": {
+        "coreIdea": "Natriumexperiment",
+        "correctReasoning": "Die veränderte Na+-Verfügbarkeit beeinflusst die positive Spitze.",
+        "wrongAnswerExplanations": {
+          "A": "Die Erholung nach Rücktausch spricht gegen diese Schlussfolgerung.",
+          "B": "Die Na+-abhängige Änderung wäre damit nicht erklärt.",
+          "C": "Ein reversibler Ionenaustausch verändert die Membranbedingungen.",
+          "D": "Die Beobachtung spricht dagegen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «AP-Funktionen» treffen zu?",
+      "options": [
+        {
+          "text": "Das Alles-oder-Nichts-Prinzip bedeutet, dass keine Information über Reizstärke übermittelt werden kann.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "APs können Informationsübertragung in Nerven unterstützen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede elektrisch erregbare Zelle muss wegen ihres APs eine Muskelzelle sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle erregbaren Zelltypen besitzen exakt dieselbe AP-Dauer und Form.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Frequenz und Rekrutierung können Reizstärke kodieren. B: Zeitliche Muster tragen dabei Information. C: Auch Nerven- und bestimmte endokrine Zellen sind erregbar. D: Nerven-, Skelett- und Herzmuskelantworten unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 2,5,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "AP-Funktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "AP-Funktionen"
+      ],
+      "questionGoal": "AP-Funktionen",
+      "structuredExplanation": {
+        "coreIdea": "AP-Funktionen",
+        "correctReasoning": "Zeitliche Muster tragen dabei Information.",
+        "wrongAnswerExplanations": {
+          "A": "Frequenz und Rekrutierung können Reizstärke kodieren.",
+          "B": "Zeitliche Muster tragen dabei Information.",
+          "C": "Auch Nerven- und bestimmte endokrine Zellen sind erregbar.",
+          "D": "Nerven-, Skelett- und Herzmuskelantworten unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Ionen und Rückkopplung» treffen zu?",
+      "options": [
+        {
+          "text": "Eine passive RC-Membran allein erklärt noch kein regeneratives Alles-oder-Nichts-AP.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine erhöhte Na+-Leitfähigkeit kann V_m in Richtung E_Na verschieben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Regeneration unterscheidet ein AP von einer rein passiven RC-Antwort.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Depolarisation bedeutet definitionsgemäss immer einen Einstrom von K+.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dafür sind aktive spannungsabhängige Leitfähigkeiten nötig. B: Dies trägt zum schnellen Aufstrich bei. C: Aktive Leitfähigkeitsänderungen verstärken den Verlauf. D: Es bezeichnet eine Spannungsänderung, nicht ein einziges Ion. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Ionen und Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionen und Rückkopplung"
+      ],
+      "questionGoal": "Ionen und Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Ionen und Rückkopplung",
+        "correctReasoning": "Dafür sind aktive spannungsabhängige Leitfähigkeiten nötig. Dies trägt zum schnellen Aufstrich bei. Aktive Leitfähigkeitsänderungen verstärken den Verlauf.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür sind aktive spannungsabhängige Leitfähigkeiten nötig.",
+          "B": "Dies trägt zum schnellen Aufstrich bei.",
+          "C": "Aktive Leitfähigkeitsänderungen verstärken den Verlauf.",
+          "D": "Es bezeichnet eine Spannungsänderung, nicht ein einziges Ion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Phasen» treffen zu?",
+      "options": [
+        {
+          "text": "Overshoot bezeichnet die spätere Hyperpolarisation unter das Ruhepotential.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Hyperpolarisation ist ein vollständiges Aktionspotential.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Repolarisation beschreibt die Rückkehr in Richtung Ruhepotential nach Depolarisation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Depolarisation macht ein negatives V_m weniger negativ.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Overshoot meint den positiven Spannungsanteil über null. B: Auch passive und andere Prozesse können hyperpolarisieren. C: Sie ist von der anfänglichen Aufwärtsphase zu unterscheiden. D: Es kann dabei auch über null hinausgehen. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Phasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phasen"
+      ],
+      "questionGoal": "Phasen",
+      "structuredExplanation": {
+        "coreIdea": "Phasen",
+        "correctReasoning": "Sie ist von der anfänglichen Aufwärtsphase zu unterscheiden. Es kann dabei auch über null hinausgehen.",
+        "wrongAnswerExplanations": {
+          "A": "Overshoot meint den positiven Spannungsanteil über null.",
+          "B": "Auch passive und andere Prozesse können hyperpolarisieren.",
+          "C": "Sie ist von der anfänglichen Aufwärtsphase zu unterscheiden.",
+          "D": "Es kann dabei auch über null hinausgehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Stärke und Dauer» treffen zu?",
+      "options": [
+        {
+          "text": "Für sehr kurze Pulse ist gewöhnlich eine höhere Schwellenstromstärke nötig.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Rheobase wird in Sekunden angegeben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Chronaxie wird in einer Zeiteinheit angegeben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Chronaxie entspricht der Dauer bei beliebiger Reizstärke.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Membran muss schneller ausreichend geladen werden. B: Sie ist eine Stromstärke. C: Sie ist eine definierte Schwellenreizdauer. D: Sie ist ausdrücklich an zweimal Rheobase gebunden. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Stärke und Dauer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stärke und Dauer"
+      ],
+      "questionGoal": "Stärke und Dauer",
+      "structuredExplanation": {
+        "coreIdea": "Stärke und Dauer",
+        "correctReasoning": "Die Membran muss schneller ausreichend geladen werden. Sie ist eine definierte Schwellenreizdauer.",
+        "wrongAnswerExplanations": {
+          "A": "Die Membran muss schneller ausreichend geladen werden.",
+          "B": "Sie ist eine Stromstärke.",
+          "C": "Sie ist eine definierte Schwellenreizdauer.",
+          "D": "Sie ist ausdrücklich an zweimal Rheobase gebunden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Refraktärverhalten» treffen zu?",
+      "options": [
+        {
+          "text": "Die zweite Antwort muss bei jedem Reizabstand dieselbe Auslöseschwelle haben.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein ausreichend kurzer Abstand zweier Reize kann die zweite Antwort verhindern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Refraktärität ist allein eine Verzögerung im Spannungsverstärker.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mit zunehmendem Abstand kann die Erregbarkeit wieder zunehmen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Erholung verändert die Erregbarkeit. B: Dies zeigt die absolute Refraktärphase. C: Sie ist eine Eigenschaft des erregbaren Gewebes. D: Die Kanalzustände erholen sich. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Refraktärverhalten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Refraktärverhalten"
+      ],
+      "questionGoal": "Refraktärverhalten",
+      "structuredExplanation": {
+        "coreIdea": "Refraktärverhalten",
+        "correctReasoning": "Dies zeigt die absolute Refraktärphase. Die Kanalzustände erholen sich.",
+        "wrongAnswerExplanations": {
+          "A": "Die Erholung verändert die Erregbarkeit.",
+          "B": "Dies zeigt die absolute Refraktärphase.",
+          "C": "Sie ist eine Eigenschaft des erregbaren Gewebes.",
+          "D": "Die Kanalzustände erholen sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Amplitude und Erregbarkeit» treffen zu?",
+      "options": [
+        {
+          "text": "Eine veränderte Schwelle kann auftreten, ohne dass jedes ausgelöste AP proportional kleiner werden muss.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein fehlender zweiter Spike beweist ohne Kontrolle zwingend den Tod des Axons.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Alles-oder-Nichts-Prinzip gilt für das Einzelaxon unter vergleichbaren Bedingungen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es garantiert identische APs trotz beliebiger Änderung der äusseren Ionenkonzentrationen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Schwelle und Amplitude sind verschiedene Eigenschaften. B: Refraktärität oder ein ungeeigneter Reiz sind weitere Möglichkeiten. C: Milieu und Kanalzustände können die Antwort dennoch beeinflussen. D: Ionengradienten beeinflussen die AP-Form. Quelle: Originalunterlagen, PDF-S. 8–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Amplitude und Erregbarkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Amplitude und Erregbarkeit"
+      ],
+      "questionGoal": "Amplitude und Erregbarkeit",
+      "structuredExplanation": {
+        "coreIdea": "Amplitude und Erregbarkeit",
+        "correctReasoning": "Schwelle und Amplitude sind verschiedene Eigenschaften. Milieu und Kanalzustände können die Antwort dennoch beeinflussen.",
+        "wrongAnswerExplanations": {
+          "A": "Schwelle und Amplitude sind verschiedene Eigenschaften.",
+          "B": "Refraktärität oder ein ungeeigneter Reiz sind weitere Möglichkeiten.",
+          "C": "Milieu und Kanalzustände können die Antwort dennoch beeinflussen.",
+          "D": "Ionengradienten beeinflussen die AP-Form."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Messinterpretation» treffen zu?",
+      "options": [
+        {
+          "text": "Ein kurzer Stromartefakt muss bereits das biologische AP sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine unterschwellige Antwort kann mit dem passiven Ersatzschaltbild angenähert werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Spannungssignal ist die Differenz zwischen Mess- und Referenzpotential.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Strompuls und die dadurch ausgelöste Spannung sind dieselbe Messgrösse.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Artefakt und verzögerte Erregungsantwort müssen unterschieden werden. B: Widerstand und Kapazität bestimmen ihren Verlauf. C: Die Referenzlage ist Teil der Messdefinition. D: Strom ist Reiz, Spannung kann die Antwort sein. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Messinterpretation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messinterpretation"
+      ],
+      "questionGoal": "Messinterpretation",
+      "structuredExplanation": {
+        "coreIdea": "Messinterpretation",
+        "correctReasoning": "Widerstand und Kapazität bestimmen ihren Verlauf. Die Referenzlage ist Teil der Messdefinition.",
+        "wrongAnswerExplanations": {
+          "A": "Artefakt und verzögerte Erregungsantwort müssen unterschieden werden.",
+          "B": "Widerstand und Kapazität bestimmen ihren Verlauf.",
+          "C": "Die Referenzlage ist Teil der Messdefinition.",
+          "D": "Strom ist Reiz, Spannung kann die Antwort sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw03_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW03",
+      "stem": "Welche Aussagen zum Thema «Reizprotokoll» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Zweireizprotokoll mit variiertem Abstand untersucht die Erholung nach Erregung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine grössere Messverstärkung verkürzt die biologische Refraktärzeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zum Vergleich von Schwellenreizstärken muss die Pulsdauer berücksichtigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Reiz unter Rheobase löst im dargestellten idealen Stärke-Dauer-Modell bei genügend langer Dauer sicher aus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es bildet Refraktärverhalten ab. B: Sie ändert nur die Signaldarstellung. C: Sie beeinflusst die Auslöseschwelle. D: Die Kurve nähert sich der Rheobase als unterer Grenze. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW03",
+        "Reizprotokoll"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reizprotokoll"
+      ],
+      "questionGoal": "Reizprotokoll",
+      "structuredExplanation": {
+        "coreIdea": "Reizprotokoll",
+        "correctReasoning": "Es bildet Refraktärverhalten ab. Sie beeinflusst die Auslöseschwelle.",
+        "wrongAnswerExplanations": {
+          "A": "Es bildet Refraktärverhalten ab.",
+          "B": "Sie ändert nur die Signaldarstellung.",
+          "C": "Sie beeinflusst die Auslöseschwelle.",
+          "D": "Die Kurve nähert sich der Rheobase als unterer Grenze."
+        }
+      }
+    }
+  ]
+}

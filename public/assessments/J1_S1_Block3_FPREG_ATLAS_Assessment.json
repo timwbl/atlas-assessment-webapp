@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block3_fpreg_20261102",
+  "lectureCode": "FPREG",
+  "title": "Regelkreis-Praktikum: Modelle, Kennlinien und Verzögerung",
+  "block": "Block 3",
+  "subject": "Physiologie / Modellierung",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. SJ1-B3_FP_Ph_Regelkreise. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Verwendetes Praktikumsskript Ausgabe2023/24, im HS2025-Notability-Bestand vorhanden. Nur Fachtheorie; keine Bedienungs-, Organisations- oder realen Dosieranweisungen. Unbeschränkte lineare Modelle ausdrücklich von biologischen Sättigungen getrennt; konstante Störung für stationäre Rechnung vorausgesetzt. Das verwendete Praktikumsskript trägt den Jahrgang 2023/2024 (November 2023); die Anwendung hier betrifft seine grundlegenden Regelkreismodelle.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Lineare Rückkopplungsmodelle rechnerisch analysieren."
+    },
+    {
+      "id": "lo2",
+      "text": "Verzögerung, Verstärkung und Überschwingen im Modell erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Regler, Stellglied, Fühler und Regelstrecke in Simulationen unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Stationäre Kennlinien und Gleichgewichte interpretieren."
+    },
+    {
+      "id": "lo5",
+      "text": "Schalthysterese und zeitlich angemessene Eingriffe beurteilen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_fpreg_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Ein lineares Modell lautet dR/dt = S + ρR. S = 2 Einheiten/s, ρ = −0,5/s. Welcher stationäre R-Wert folgt?",
+      "options": [
+        {
+          "text": "2 Einheiten",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "4 Einheiten",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "−4 Einheiten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1 Einheit",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0 Einheiten",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Störgrösse allein ist kein stationärer R-Wert. B: 0 = 2−0,5R ergibt R = 4. C: Das Vorzeichen wurde falsch aufgelöst. D: Das Produkt der Zahlenwerte ist nicht das Gleichgewicht. E: Bei R = 0 bliebe dR/dt = 2, also keine Stationarität. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Stationärer Wert"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stationärer Wert"
+      ],
+      "questionGoal": "Stationärer Wert",
+      "structuredExplanation": {
+        "coreIdea": "Stationärer Wert",
+        "correctReasoning": "0 = 2−0,5R ergibt R = 4.",
+        "wrongAnswerExplanations": {
+          "A": "Die Störgrösse allein ist kein stationärer R-Wert.",
+          "C": "Das Vorzeichen wurde falsch aufgelöst.",
+          "D": "Das Produkt der Zahlenwerte ist nicht das Gleichgewicht.",
+          "E": "Bei R = 0 bliebe dR/dt = 2, also keine Stationarität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "ΔR = (S+ρR)Δt. S = 0,5, ρ = −0,1, R = 2, Δt = 1 in passenden Einheiten. Wie gross ist ΔR?",
+      "options": [
+        {
+          "text": "−0,2",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,3",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,05",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,7",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2,3",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist nur der Rückkopplungsbeitrag. B: 0,5−0,1×2 = 0,3. C: Das Produkt Sρ ist nicht die Modellgleichung. D: Das negative Rückkopplungsvorzeichen wurde vertauscht. E: Dies ist der nächste R-Wert, nicht seine Änderung. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Diskreter Zeitschritt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diskreter Zeitschritt"
+      ],
+      "questionGoal": "Diskreter Zeitschritt",
+      "structuredExplanation": {
+        "coreIdea": "Diskreter Zeitschritt",
+        "correctReasoning": "0,5−0,1×2 = 0,3.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist nur der Rückkopplungsbeitrag.",
+          "C": "Das Produkt Sρ ist nicht die Modellgleichung.",
+          "D": "Das negative Rückkopplungsvorzeichen wurde vertauscht.",
+          "E": "Dies ist der nächste R-Wert, nicht seine Änderung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Zum Thema «Gleichgewicht und Dynamik des linearen Rückkopplungsmodells»: Beurteilen Sie die Aussagen für dR/dt = S+ρR mit konstantem S.",
+      "options": [
+        {
+          "text": "Bei S ≠ 0 muss das Gleichgewicht immer bei null liegen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Für ρ < 0 wirkt die Rückkopplung einer Abweichung vom Gleichgewicht entgegen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der stationäre Wert bei ρ ≠ 0 ist S/ρ ohne Minuszeichen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Negatives ρ erzwingt jederzeit fallendes R.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine anhaltende Störung verschiebt den stationären Wert im einfachen Modell. B: Eine grössere R-Abweichung erzeugt einen rücktreibenden Beitrag. C: Aus S+ρR=0 folgt R=−S/ρ. D: Unterhalb des Gleichgewichts kann R steigen. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Lineares Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lineares Modell"
+      ],
+      "questionGoal": "Lineares Modell",
+      "structuredExplanation": {
+        "coreIdea": "Lineares Modell",
+        "correctReasoning": "Eine grössere R-Abweichung erzeugt einen rücktreibenden Beitrag.",
+        "wrongAnswerExplanations": {
+          "A": "Eine anhaltende Störung verschiebt den stationären Wert im einfachen Modell.",
+          "B": "Eine grössere R-Abweichung erzeugt einen rücktreibenden Beitrag.",
+          "C": "Aus S+ρR=0 folgt R=−S/ρ.",
+          "D": "Unterhalb des Gleichgewichts kann R steigen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "ρ = 0 und S = 2 konstant. Was geschieht im idealen Integratormodell?",
+      "options": [
+        {
+          "text": "R wächst zwingend exponentiell.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "R springt einmal auf 2 und bleibt dort.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "R steigt linear mit der Zeit.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "R bleibt unabhängig von S konstant.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "R fällt exponentiell auf null.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dafür müsste die Änderung proportional zu R sein. B: Ein Integrator summiert den konstanten Eingang fortlaufend. C: dR/dt = 2 ist konstant. D: Die Störgrösse wirkt weiter. E: Es fehlt der negative Rückkopplungsterm. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Keine Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Keine Rückkopplung"
+      ],
+      "questionGoal": "Keine Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Keine Rückkopplung",
+        "correctReasoning": "dR/dt = 2 ist konstant.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür müsste die Änderung proportional zu R sein.",
+          "B": "Ein Integrator summiert den konstanten Eingang fortlaufend.",
+          "D": "Die Störgrösse wirkt weiter.",
+          "E": "Es fehlt der negative Rückkopplungsterm."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Für dR/dt = 0,2R pro Sekunde und R(0) > 0 gilt welcher Verlauf im unbeschränkten linearen Modell?",
+      "options": [
+        {
+          "text": "Eine notwendige stabile Sinusschwingung ohne Verzögerung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Exponentieller Zerfall.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Exponentielles Wachstum.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sofortige stationäre Rückkehr nach null.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Lineares Wachstum mit konstanter Steigung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Gleichung erster Ordnung erzeugt diesen Verlauf nicht. B: Dies erfordert ein negatives Vorzeichen. C: Die Zunahme ist proportional zum aktuellen Zustand. D: Der Nullzustand ist gegen positive Störungen instabil. E: Die Steigung wächst mit R. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Positives Feedback"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positives Feedback"
+      ],
+      "questionGoal": "Positives Feedback",
+      "structuredExplanation": {
+        "coreIdea": "Positives Feedback",
+        "correctReasoning": "Die Zunahme ist proportional zum aktuellen Zustand.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gleichung erster Ordnung erzeugt diesen Verlauf nicht.",
+          "B": "Dies erfordert ein negatives Vorzeichen.",
+          "D": "Der Nullzustand ist gegen positive Störungen instabil.",
+          "E": "Die Steigung wächst mit R."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q06",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Für das kontinuierliche Modell dR/dt = S + ρR mit konstantem S und ρ < 0 ohne Verzögerung: Beurteilen Sie die Aussagen zu Annäherung und numerischer Simulation.",
+      "options": [
+        {
+          "text": "Eine grössere konstante Störung S verschiebt bei gleichem ρ das Gleichgewicht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei konstantem S kann R unterhalb des Gleichgewichts trotz negativer Rückkopplung zunehmen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine diskrete Simulation dieses stabilen kontinuierlichen Modells bleibt bei jeder beliebig grossen numerischen Schrittweite stabil.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein grösserer Betrag von ρ beschleunigt die kontinuierliche Rückkehr zum Gleichgewicht.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Rstationär = −S/ρ. B: Negative Rückkopplung führt zum Gleichgewicht, nicht immer zu fallendem R. C: Diskretisierung kann zusätzlich numerisch destabilisieren. D: Die Zeitkonstante ist 1/Betrag ρ. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Verstärkung im linearen Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verstärkung im linearen Modell"
+      ],
+      "questionGoal": "Verstärkung im linearen Modell",
+      "structuredExplanation": {
+        "coreIdea": "Verstärkung im linearen Modell",
+        "correctReasoning": "Rstationär = −S/ρ. Negative Rückkopplung führt zum Gleichgewicht, nicht immer zu fallendem R. Die Zeitkonstante ist 1/Betrag ρ.",
+        "wrongAnswerExplanations": {
+          "A": "Rstationär = −S/ρ.",
+          "B": "Negative Rückkopplung führt zum Gleichgewicht, nicht immer zu fallendem R.",
+          "C": "Diskretisierung kann zusätzlich numerisch destabilisieren.",
+          "D": "Die Zeitkonstante ist 1/Betrag ρ."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Eine negative Rückmeldung verwendet einen alten hohen R-Wert, obwohl der aktuelle R-Wert bereits unter dem Ziel liegt. Welche Wirkung droht?",
+      "options": [
+        {
+          "text": "Die verspätete negative Korrektur hebt den aktuellen Unterschwinger sofort auf.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein alter hoher Messwert bedeutet zwingend eine aktuelle positive Abweichung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Korrektur treibt R vorübergehend weiter nach unten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Negative Rückkopplung verhindert unabhängig vom Zeitverzug jeden Überschwinger.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Verzögerung beseitigt den Sollwert aus dem Modell.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie kann ihn zunächst verstärken. B: Der Istwert hat sich bereits verändert. C: Sie reagiert verspätet auf die frühere Abweichung. D: Verzögerung kann ihn ermöglichen. E: Sie verschiebt die Signalwirkung zeitlich. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Verzögerte Korrektur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verzögerte Korrektur"
+      ],
+      "questionGoal": "Verzögerte Korrektur",
+      "structuredExplanation": {
+        "coreIdea": "Verzögerte Korrektur",
+        "correctReasoning": "Sie reagiert verspätet auf die frühere Abweichung.",
+        "wrongAnswerExplanations": {
+          "A": "Sie kann ihn zunächst verstärken.",
+          "B": "Der Istwert hat sich bereits verändert.",
+          "D": "Verzögerung kann ihn ermöglichen.",
+          "E": "Sie verschiebt die Signalwirkung zeitlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Bei einem verzögerten Modell schaukeln sich Korrekturen auf. Welche Änderung ist als erste Modellhypothese plausibel?",
+      "options": [
+        {
+          "text": "Den Betrag der negativen Verstärkung ohne Prüfung weiter erhöhen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Verzögerung verlängern und gleichzeitig stärker korrigieren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Den Sollwert bloss umbenennen, alle dynamischen Parameter gleich lassen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede neue Korrektur auslösen, bevor vorherige Wirkungen abgewartet wurden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Den Betrag der Rückkopplungsverstärkung verkleinern.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies kann die Überkorrektur verstärken. B: Beides kann die Stabilität verschlechtern. C: Die instabile Dynamik bleibt dadurch erhalten. D: Ausstehende Wirkungen können sich aufsummieren. E: Schwächere verspätete Eingriffe können die Instabilität vermindern. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Modell beruhigen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modell beruhigen"
+      ],
+      "questionGoal": "Modell beruhigen",
+      "structuredExplanation": {
+        "coreIdea": "Modell beruhigen",
+        "correctReasoning": "Schwächere verspätete Eingriffe können die Instabilität vermindern.",
+        "wrongAnswerExplanations": {
+          "A": "Dies kann die Überkorrektur verstärken.",
+          "B": "Beides kann die Stabilität verschlechtern.",
+          "C": "Die instabile Dynamik bleibt dadurch erhalten.",
+          "D": "Ausstehende Wirkungen können sich aufsummieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «gedämpfte Schwingungen und Stabilitätsanalyse».",
+      "options": [
+        {
+          "text": "Verstärkung und Verzögerung sollten gemeinsam betrachtet werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Gedämpfte Schwingungen nehmen im Betrag mit der Zeit ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede sichtbare Schwingung ist definitionsgemäss unbeschränkt instabil.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Vorzeichenname „negativ“ ersetzt jede Analyse von Zeitkonstanten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Kombination prägt die Dynamik. B: Das System nähert sich einem Zustand an. C: Sie kann gedämpft oder begrenzt sein. D: Er genügt in verzögerten Systemen nicht. Quelle: Originalunterlagen, PDF-S. 4–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Schwingungsverlauf"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schwingungsverlauf"
+      ],
+      "questionGoal": "Schwingungsverlauf",
+      "structuredExplanation": {
+        "coreIdea": "Schwingungsverlauf",
+        "correctReasoning": "Ihre Kombination prägt die Dynamik. Das System nähert sich einem Zustand an.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Kombination prägt die Dynamik.",
+          "B": "Das System nähert sich einem Zustand an.",
+          "C": "Sie kann gedämpft oder begrenzt sein.",
+          "D": "Er genügt in verzögerten Systemen nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "In der Simulation wird der Ausgang der Regelstrecke erfasst und dem Regler als Istwert zurückgemeldet. Welche Rolle erfüllt diese Messung?",
+      "options": [
+        {
+          "text": "Fühlerfunktion",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Störgrösse",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Stellglied ohne Rückmeldung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sollwertdefinition",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Integrator als zwingend identische Funktion",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie liefert die Rückmeldung. B: Diese wirkt von aussen auf das System. C: Es wird gerade eine Mess- und Rückführfunktion beschrieben. D: Der gemessene Zustand ist vom Zielwert zu unterscheiden. E: Integration und Messung sind verschiedene Blöcke. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Fühler zuordnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fühler zuordnen"
+      ],
+      "questionGoal": "Fühler zuordnen",
+      "structuredExplanation": {
+        "coreIdea": "Fühler zuordnen",
+        "correctReasoning": "Sie liefert die Rückmeldung.",
+        "wrongAnswerExplanations": {
+          "B": "Diese wirkt von aussen auf das System.",
+          "C": "Es wird gerade eine Mess- und Rückführfunktion beschrieben.",
+          "D": "Der gemessene Zustand ist vom Zielwert zu unterscheiden.",
+          "E": "Integration und Messung sind verschiedene Blöcke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Zum Thema «Vorzeichen der gesamten Rückkopplungsschleife»: Beurteilen Sie ein Modell mit linear multiplizierten Schleifenfaktoren.",
+      "options": [
+        {
+          "text": "Jeder einzelne Faktor muss negativ sein, damit das Produkt negativ wird.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Vorzeichen eines beschrifteten Sollwerts allein bestimmt die Schleifenrichtung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Wird die Wirkungsrichtung eines Stellglieds umgekehrt, kann eine Anpassung des Reglervorzeichens nötig werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein negatives Produkt entlang der Schleife kennzeichnet negative Rückkopplung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine ungerade Zahl negativer Faktoren genügt. B: Es kommt auf die Wirkungsfaktoren an. C: Sonst wechselt das gesamte Schleifenvorzeichen. D: Die gesamte Wirkungsrichtung ist rücktreibend. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Vorzeichenprodukt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vorzeichenprodukt"
+      ],
+      "questionGoal": "Vorzeichenprodukt",
+      "structuredExplanation": {
+        "coreIdea": "Vorzeichenprodukt",
+        "correctReasoning": "Sonst wechselt das gesamte Schleifenvorzeichen. Die gesamte Wirkungsrichtung ist rücktreibend.",
+        "wrongAnswerExplanations": {
+          "A": "Eine ungerade Zahl negativer Faktoren genügt.",
+          "B": "Es kommt auf die Wirkungsfaktoren an.",
+          "C": "Sonst wechselt das gesamte Schleifenvorzeichen.",
+          "D": "Die gesamte Wirkungsrichtung ist rücktreibend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Ein Regler liefert L = −2(R−5). Welcher R-Wert ergibt L = 0?",
+      "options": [
+        {
+          "text": "−2",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "5",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−5",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Steigung. B: Dies ist der Achsenabschnitt bei R = 0. C: Bei Ist = Soll verschwindet die Regelabweichung. D: Dann wäre L = 10. E: Dies ist nicht der Nulldurchgang. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Reglerkennlinie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reglerkennlinie"
+      ],
+      "questionGoal": "Reglerkennlinie",
+      "structuredExplanation": {
+        "coreIdea": "Reglerkennlinie",
+        "correctReasoning": "Bei Ist = Soll verschwindet die Regelabweichung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Steigung.",
+          "B": "Dies ist der Achsenabschnitt bei R = 0.",
+          "D": "Dann wäre L = 10.",
+          "E": "Dies ist nicht der Nulldurchgang."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «stationäre Regler- und Stellgliedkennlinien».",
+      "options": [
+        {
+          "text": "Die x-Achse muss dabei immer die Zeit sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Kennlinie eines Stellglieds muss dieselben Achsen in derselben Reihenfolge wie die Reglerkennlinie besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zur stationären Kennlinie wird für jeden festgehaltenen Eingang ein eingeschwungener Ausgang bestimmt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Reglerkennlinie kann Stellgrösse als Funktion des Istwerts zeigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das kennzeichnet eine dynamische Übergangsdarstellung. B: Die Ein-Ausgangsrichtung des Blocks kann umgekehrt sein. C: Zeitliche Übergänge werden zunächst abgewartet. D: Ein- und Ausgang des betrachteten Blocks bestimmen die Achsen. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Stationäre Kennlinien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stationäre Kennlinien"
+      ],
+      "questionGoal": "Stationäre Kennlinien",
+      "structuredExplanation": {
+        "coreIdea": "Stationäre Kennlinien",
+        "correctReasoning": "Zeitliche Übergänge werden zunächst abgewartet. Ein- und Ausgang des betrachteten Blocks bestimmen die Achsen.",
+        "wrongAnswerExplanations": {
+          "A": "Das kennzeichnet eine dynamische Übergangsdarstellung.",
+          "B": "Die Ein-Ausgangsrichtung des Blocks kann umgekehrt sein.",
+          "C": "Zeitliche Übergänge werden zunächst abgewartet.",
+          "D": "Ein- und Ausgang des betrachteten Blocks bestimmen die Achsen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Die lineare Reglerkennlinie lautet L = ρ(R−R0). Welche Grösse bestimmt ihre Steigung bei festem R0?",
+      "options": [
+        {
+          "text": "Ausschliesslich R0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Produkt ρR0 als unveränderliche Steigung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Kehrwert 1/ρ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der aktuelle R-Wert unabhängig von ρ.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "ρ",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: R0 verschiebt den Nulldurchgang, nicht die Steigung. B: Der R-abhängige Koeffizient ist ρ. C: Das wäre bei umgekehrter Achsenwahl relevant. D: Die lineare Steigung ist bei festem ρ konstant. E: Die Ableitung nach R ist ρ. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Steigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Steigung"
+      ],
+      "questionGoal": "Steigung",
+      "structuredExplanation": {
+        "coreIdea": "Steigung",
+        "correctReasoning": "Die Ableitung nach R ist ρ.",
+        "wrongAnswerExplanations": {
+          "A": "R0 verschiebt den Nulldurchgang, nicht die Steigung.",
+          "B": "Der R-abhängige Koeffizient ist ρ.",
+          "C": "Das wäre bei umgekehrter Achsenwahl relevant.",
+          "D": "Die lineare Steigung ist bei festem ρ konstant."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q15",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Regler- und Stellgliedkennlinie werden mit konsistenten Achsen in dasselbe Diagramm übertragen. Was bedeutet ein Schnittpunkt?",
+      "options": [
+        {
+          "text": "Ein zwingend stabiler Zustand unabhängig von Verzögerungen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine zwingend gleiche Steigung beider Kennlinien.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide Ein-Ausgangs-Beziehungen sind für dieses Wertepaar zugleich erfüllt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Punkt, an dem notwendigerweise beide Ausgangswerte null sind.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein ausschliessliches Mass der Reaktionsverzögerung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Schnittpunkt allein beweist keine dynamische Stabilität. B: Gleicher Wert erfordert nicht gleiche Steigung. C: Er ist ein möglicher stationärer Arbeitspunkt. D: Ein Gleichgewicht kann bei anderen Werten liegen. E: Statische Kennlinien zeigen keine vollständige Zeitdynamik. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Kennlinien-Schnittpunkt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kennlinien-Schnittpunkt"
+      ],
+      "questionGoal": "Kennlinien-Schnittpunkt",
+      "structuredExplanation": {
+        "coreIdea": "Kennlinien-Schnittpunkt",
+        "correctReasoning": "Er ist ein möglicher stationärer Arbeitspunkt.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Schnittpunkt allein beweist keine dynamische Stabilität.",
+          "B": "Gleicher Wert erfordert nicht gleiche Steigung.",
+          "D": "Ein Gleichgewicht kann bei anderen Werten liegen.",
+          "E": "Statische Kennlinien zeigen keine vollständige Zeitdynamik."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «biologische Sättigung und Hormonwirkung».",
+      "options": [
+        {
+          "text": "Die biologische Sekretionskennlinie bleibt bei beliebig hohen Eingängen unbegrenzt linear.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein hoher Glukosewert muss im normalen einfachen Modell die Insulinsekretion vermindern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine stärkere Insulinwirkung kann im vereinfachten Modell den Glukosewert senken.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verschiedene Blöcke können entgegengesetzte Kennliniensteigungen besitzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Biologische Prozesse können sättigen. B: Er fördert die Insulinsekretion. C: Das Stellglied wirkt glukosesenkend. D: Regler und Stellglied haben unterschiedliche Ein- und Ausgänge. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Biologische Kennlinien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biologische Kennlinien"
+      ],
+      "questionGoal": "Biologische Kennlinien",
+      "structuredExplanation": {
+        "coreIdea": "Biologische Kennlinien",
+        "correctReasoning": "Das Stellglied wirkt glukosesenkend. Regler und Stellglied haben unterschiedliche Ein- und Ausgänge.",
+        "wrongAnswerExplanations": {
+          "A": "Biologische Prozesse können sättigen.",
+          "B": "Er fördert die Insulinsekretion.",
+          "C": "Das Stellglied wirkt glukosesenkend.",
+          "D": "Regler und Stellglied haben unterschiedliche Ein- und Ausgänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Eine Heizung schaltet beim Abkühlen auf 20 °C ein und beim Erwärmen auf 21 °C aus. Nach dem Einschalten bei 20 °C steigt die Temperatur auf 20,8 °C. Welcher Zustand gilt ohne weitere Eingriffe?",
+      "options": [
+        {
+          "text": "Der Temperaturanstieg beweist einen gebrochenen Fühler.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Heizung bleibt eingeschaltet.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie schaltet bei 20,5 °C zwingend aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie ist bei 20,8 °C unabhängig von Vorgeschichte immer aus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie muss bei jedem Messschritt umschalten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er ist bei aktiver Heizung erwartbar. B: Die Ausschaltschwelle 21 °C ist noch nicht erreicht. C: Der mittlere Sollwert ist nicht die angegebene Ausschaltschwelle. D: Der Zustand hängt von der Vorgeschichte ab. E: Hysterese verhindert gerade solches Flattern. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Heizungshysterese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Heizungshysterese"
+      ],
+      "questionGoal": "Heizungshysterese",
+      "structuredExplanation": {
+        "coreIdea": "Heizungshysterese",
+        "correctReasoning": "Die Ausschaltschwelle 21 °C ist noch nicht erreicht.",
+        "wrongAnswerExplanations": {
+          "A": "Er ist bei aktiver Heizung erwartbar.",
+          "C": "Der mittlere Sollwert ist nicht die angegebene Ausschaltschwelle.",
+          "D": "Der Zustand hängt von der Vorgeschichte ab.",
+          "E": "Hysterese verhindert gerade solches Flattern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Schaltsinn von Heizung und Kühlschrank».",
+      "options": [
+        {
+          "text": "Eine Heizung erhöht bei Aktivierung die Innentemperatur.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Aussenumgebung hat grundsätzlich keinen Einfluss auf den Wärmehaushalt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Kühlschrank muss bei zu tiefer Innentemperatur stärker kühlen, um sie zu erhöhen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beim Umbau von Heizung zu Kühlung müssen Schaltsinn und Stellgliedwirkung zusammenpassen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies definiert ihre Wirkungsrichtung im Modell. B: Wärmeaustausch ist eine Stör- beziehungsweise Prozesskomponente. C: Dies würde die Abweichung verstärken. D: Die Gesamtregelung soll rücktreibend bleiben. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Heizung und Kühlschrank"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Heizung und Kühlschrank"
+      ],
+      "questionGoal": "Heizung und Kühlschrank",
+      "structuredExplanation": {
+        "coreIdea": "Heizung und Kühlschrank",
+        "correctReasoning": "Dies definiert ihre Wirkungsrichtung im Modell. Die Gesamtregelung soll rücktreibend bleiben.",
+        "wrongAnswerExplanations": {
+          "A": "Dies definiert ihre Wirkungsrichtung im Modell.",
+          "B": "Wärmeaustausch ist eine Stör- beziehungsweise Prozesskomponente.",
+          "C": "Dies würde die Abweichung verstärken.",
+          "D": "Die Gesamtregelung soll rücktreibend bleiben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "In einer reinen Simulation wird nach jeder kleinen Wartezeit erneut stark korrigiert, bevor die vorherige Wirkung eingesetzt hat. Warum kann dies schlechter als dosierte Eingriffe sein?",
+      "options": [
+        {
+          "text": "Eine verzögerte Wirkung ist grundsätzlich schwächer und kann sich nie addieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Verzögerung verschwindet automatisch durch häufigere Eingriffe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Stabilität hängt nur vom Vorzeichen, nie vom Betrag der Verstärkung ab.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Noch ausstehende Wirkungen summieren sich und können das Ziel überschiessen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Jeder Sollwertwechsel garantiert sofort das neue Gleichgewicht.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehrere ausstehende Wirkungen können sich überlagern. B: Schnelleres Eingreifen beseitigt den Prozessverzug nicht. C: Verstärkung und Verzögerung wirken zusammen. D: Die Eingriffe berücksichtigen die Systemverzögerung nicht. E: Die Regelstrecke benötigt Reaktionszeit. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Verzögerte Simulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verzögerte Simulation"
+      ],
+      "questionGoal": "Verzögerte Simulation",
+      "structuredExplanation": {
+        "coreIdea": "Verzögerte Simulation",
+        "correctReasoning": "Die Eingriffe berücksichtigen die Systemverzögerung nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Mehrere ausstehende Wirkungen können sich überlagern.",
+          "B": "Schnelleres Eingreifen beseitigt den Prozessverzug nicht.",
+          "C": "Verstärkung und Verzögerung wirken zusammen.",
+          "E": "Die Regelstrecke benötigt Reaktionszeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpreg_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPREG",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «statische Kennlinie, Übergangsfunktion und Modellannahmen».",
+      "options": [
+        {
+          "text": "Eingangs-Ausgangs-Kennlinie und zeitlicher Übergang beantworten verschiedene Fragen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein didaktisches Dosierungsmodell ersetzt konkrete klinische Therapieentscheidungen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Simulationsaussage gilt zunächst unter ihren Modellannahmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aus einer Kurve ohne Achsen und Parameter sind alle absoluten Zeitkonstanten eindeutig ablesbar.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Stationäres Verhalten und Dynamik ergänzen sich. B: Es dient dem Verständnis von Dynamik, nicht einer individuellen Verordnung. C: Sättigung und zusätzliche Schleifen können reale Systeme verändern. D: Skalierung und Modellinformationen fehlen. Quelle: Originalunterlagen, PDF-S. 3–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPREG",
+        "Modellgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modellgrenzen"
+      ],
+      "questionGoal": "Modellgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Modellgrenzen",
+        "correctReasoning": "Stationäres Verhalten und Dynamik ergänzen sich. Sättigung und zusätzliche Schleifen können reale Systeme verändern.",
+        "wrongAnswerExplanations": {
+          "A": "Stationäres Verhalten und Dynamik ergänzen sich.",
+          "B": "Es dient dem Verständnis von Dynamik, nicht einer individuellen Verordnung.",
+          "C": "Sättigung und zusätzliche Schleifen können reale Systeme verändern.",
+          "D": "Skalierung und Modellinformationen fehlen."
+        }
+      }
+    }
+  ]
+}

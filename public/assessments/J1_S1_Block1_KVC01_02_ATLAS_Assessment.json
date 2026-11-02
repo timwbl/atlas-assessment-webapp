@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block1_kvc01_02_20261102",
+  "lectureCode": "KVC01/02",
+  "title": "Atombau, Periodensystem und chemische Bindung",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC1&2 - Atombau und Quantenchemie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die gemeinsame Vorlesung KVC01/02 erhält ein Set. Die Moldefinition entspricht dem aktuellen SI; die Oktettregel wird mit ihren Grenzen verwendet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Atome, Isotope, Stoffmenge und Elektronenhülle unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Quantenzahlen, Orbitalbesetzung und Trends im Periodensystem anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Metallische, ionische und kovalente Bindung vergleichen."
+    },
+    {
+      "id": "lo4",
+      "text": "Hybridisierung, Molekülgeometrie, Polarität und Wasserstoffbrücken erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc01_02_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Zwei neutrale Atome haben gleich viele Protonen, aber unterschiedlich viele Neutronen. Was folgt?",
+      "options": [
+        {
+          "text": "Sie besitzen unterschiedliche Ordnungszahlen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie besitzen zwingend gleiche Massenzahlen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie gehören zu verschiedenen Elementen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie sind Isotope desselben Elements.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Sie sind zwingend verschieden geladene Ionen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Protonenzahlen sind gleich. B: Die Neutronenzahl verändert A. C: Dafür müsste Z verschieden sein. D: Die Protonenzahl definiert das Element. E: Ladung hängt von Elektronen ab. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Isotope"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Isotope"
+      ],
+      "questionGoal": "Isotope",
+      "structuredExplanation": {
+        "coreIdea": "Isotope",
+        "correctReasoning": "Die Protonenzahl definiert das Element.",
+        "wrongAnswerExplanations": {
+          "A": "Die Protonenzahlen sind gleich.",
+          "B": "Die Neutronenzahl verändert A.",
+          "C": "Dafür müsste Z verschieden sein.",
+          "E": "Ladung hängt von Elektronen ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Eine Probe enthält 0.5 mol Glucose. Wie viele Moleküle sind ungefähr enthalten?",
+      "options": [
+        {
+          "text": "6.02 × 10^23",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3.01 × 10^23",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "3.01 × 10^−23",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1.20 × 10^24",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.5 Moleküle",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das wäre ein Mol. B: N ist n mal Avogadro-Konstante. C: Der Exponent hat das falsche Vorzeichen. D: Das wäre ungefähr zwei Mol. E: Mol ist keine einzelne Teilchenzahl. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Stoffmenge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stoffmenge"
+      ],
+      "questionGoal": "Stoffmenge",
+      "structuredExplanation": {
+        "coreIdea": "Stoffmenge",
+        "correctReasoning": "N ist n mal Avogadro-Konstante.",
+        "wrongAnswerExplanations": {
+          "A": "Das wäre ein Mol.",
+          "C": "Der Exponent hat das falsche Vorzeichen.",
+          "D": "Das wäre ungefähr zwei Mol.",
+          "E": "Mol ist keine einzelne Teilchenzahl."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Welche Kombination aus Haupt- und Nebenquantenzahl ist unzulässig?",
+      "options": [
+        {
+          "text": "n = 4, l = 0",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "n = 1, l = 0",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "n = 2, l = 1",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "n = 3, l = 2",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "n = 2, l = 2",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das beschreibt ein 4s-Orbital. B: Das beschreibt ein 1s-Orbital. C: Das beschreibt ein 2p-Orbital. D: Das beschreibt ein 3d-Orbital. E: l reicht von 0 bis n−1. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Quantenzahlen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Quantenzahlen"
+      ],
+      "questionGoal": "Quantenzahlen",
+      "structuredExplanation": {
+        "coreIdea": "Quantenzahlen",
+        "correctReasoning": "l reicht von 0 bis n−1.",
+        "wrongAnswerExplanations": {
+          "A": "Das beschreibt ein 4s-Orbital.",
+          "B": "Das beschreibt ein 1s-Orbital.",
+          "C": "Das beschreibt ein 2p-Orbital.",
+          "D": "Das beschreibt ein 3d-Orbital."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Zwei Elektronen besetzen dasselbe Orbital. Welche Eigenschaft muss sich unterscheiden?",
+      "options": [
+        {
+          "text": "Die magnetische Quantenzahl.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Spinquantenzahl.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Protonenzahl des Elements.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Nebenquantenzahl.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Hauptquantenzahl.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterschiedliches m kennzeichnet eine andere Orbitalorientierung innerhalb derselben Unterschale. B: Die anderen drei Quantenzahlen stimmen überein. C: Die Protonenzahl gehört zum Atomkern; sie ist keine Quantenzahl, durch die sich zwei Elektronen desselben Orbitals unterscheiden. D: Unterschiedliches l kennzeichnet eine andere Unterschale wie s statt p und damit nicht dasselbe Orbital. E: Unterschiedliche Hauptquantenzahl n würde eine andere Schale beziehungsweise einen anderen Orbitalzustand bedeuten. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Pauli-Prinzip"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pauli-Prinzip"
+      ],
+      "questionGoal": "Pauli-Prinzip",
+      "structuredExplanation": {
+        "coreIdea": "Pauli-Prinzip",
+        "correctReasoning": "Die anderen drei Quantenzahlen stimmen überein.",
+        "wrongAnswerExplanations": {
+          "A": "Unterschiedliches m kennzeichnet eine andere Orbitalorientierung innerhalb derselben Unterschale.",
+          "C": "Die Protonenzahl gehört zum Atomkern; sie ist keine Quantenzahl, durch die sich zwei Elektronen desselben Orbitals unterscheiden.",
+          "D": "Unterschiedliches l kennzeichnet eine andere Unterschale wie s statt p und damit nicht dasselbe Orbital.",
+          "E": "Unterschiedliche Hauptquantenzahl n würde eine andere Schale beziehungsweise einen anderen Orbitalzustand bedeuten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Warum steigt die Elektronegativität innerhalb einer Hauptgruppenperiode häufig nach rechts?",
+      "options": [
+        {
+          "text": "Die Atome geben nach rechts ihre Bindungselektronen leichter ab und ziehen sie deshalb stärker an.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Atomradius wächst nach rechts und erleichtert dadurch die Anziehung der Bindungselektronen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die effektive Kernanziehung nimmt zu.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Abschirmung der Kernladung nimmt nach rechts stärker zu als die Kernladung selbst.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Bindungselektronen gelangen bei jedem Schritt nach rechts in eine neue höhere Hauptschale.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Elektronenabgabe und Bindungselektronenanziehung sind verschiedene Vorgänge; die typische steigende Ionisierungsenergie passt nicht zu leichterer Abgabe. B: Innerhalb einer Hauptgruppenperiode nimmt der Radius häufig ab; ein grösserer Abstand würde die Anziehung nicht in dieser Weise erklären. C: Bindungselektronen werden stärker angezogen. D: Die wachsende effektive Kernanziehung entsteht gerade, weil die zusätzliche Abschirmung den Zuwachs der Kernladung nicht vollständig kompensiert. E: Ein neues Hauptniveau wird beim Periodenwechsel besetzt, nicht bei jedem Element derselben Periode. Quelle: Originalunterlagen, PDF-S. 15–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Elektronegativität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektronegativität"
+      ],
+      "questionGoal": "Elektronegativität",
+      "structuredExplanation": {
+        "coreIdea": "Elektronegativität",
+        "correctReasoning": "Bindungselektronen werden stärker angezogen.",
+        "wrongAnswerExplanations": {
+          "A": "Elektronenabgabe und Bindungselektronenanziehung sind verschiedene Vorgänge; die typische steigende Ionisierungsenergie passt nicht zu leichterer Abgabe.",
+          "B": "Innerhalb einer Hauptgruppenperiode nimmt der Radius häufig ab; ein grösserer Abstand würde die Anziehung nicht in dieser Weise erklären.",
+          "D": "Die wachsende effektive Kernanziehung entsteht gerade, weil die zusätzliche Abschirmung den Zuwachs der Kernladung nicht vollständig kompensiert.",
+          "E": "Ein neues Hauptniveau wird beim Periodenwechsel besetzt, nicht bei jedem Element derselben Periode."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Was erklärt den Zusammenhalt eines idealisierten NaCl-Kristalls am besten?",
+      "options": [
+        {
+          "text": "Ein lokalisiertes Elektronenpaar zwischen jedem NaCl-Molekül.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Elektrostatische Anziehung entgegengesetzt geladener Ionen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine reine Anziehung unpolarer Moleküle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Metallgitter aus neutralen Chloratomen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Gemeinsame Wasserstoffbrücken zwischen Na und Cl.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: NaCl bildet ein ausgedehntes Gitter. B: Das Ionengitter ist insgesamt neutral. C: Ionische Ladungen sind entscheidend. D: Chlorid liegt als Anion vor. E: Das ist keine Wasserstoffbrückenbindung. Quelle: Originalunterlagen, PDF-S. 20, 22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Ionenbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionenbindung"
+      ],
+      "questionGoal": "Ionenbindung",
+      "structuredExplanation": {
+        "coreIdea": "Ionenbindung",
+        "correctReasoning": "Das Ionengitter ist insgesamt neutral.",
+        "wrongAnswerExplanations": {
+          "A": "NaCl bildet ein ausgedehntes Gitter.",
+          "C": "Ionische Ladungen sind entscheidend.",
+          "D": "Chlorid liegt als Anion vor.",
+          "E": "Das ist keine Wasserstoffbrückenbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Welches Modell erklärt die elektrische Leitfähigkeit eines Metalls?",
+      "options": [
+        {
+          "text": "Neutrale Atomkerne transportieren den Strom.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur gelöste Metallionen können überhaupt Strom leiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Wasserstoffbrücken tragen freie Protonen durchs Metall.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Elektronen sind in isolierten Paarbindungen fixiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Delokalisierte Elektronen können sich im Festkörper bewegen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kerne sind positiv und im Gitter gebunden. B: Auch der metallische Festkörper leitet. C: Das ist kein Metallbindungsmodell. D: Das erklärt die metallische Leitfähigkeit nicht. E: Mobile Ladungsträger ermöglichen Strom. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Metallbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Metallbindung"
+      ],
+      "questionGoal": "Metallbindung",
+      "structuredExplanation": {
+        "coreIdea": "Metallbindung",
+        "correctReasoning": "Mobile Ladungsträger ermöglichen Strom.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kerne sind positiv und im Gitter gebunden.",
+          "B": "Auch der metallische Festkörper leitet.",
+          "C": "Das ist kein Metallbindungsmodell.",
+          "D": "Das erklärt die metallische Leitfähigkeit nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Was begünstigt eine kovalente Bindung im Molekülorbitalmodell?",
+      "options": [
+        {
+          "text": "Ein beliebiger Abstand ohne Energieminimum.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliessliche Besetzung antibindender Orbitale.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Besetzung eines bindenden Molekülorbitals.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Gleichnamige Kernladungen ohne Elektronen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vollständige Entfernung aller Elektronen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine stabile Bindung besitzt einen günstigen Abstand. B: Diese vermindert die Bindungsordnung. C: Sie kann die Energie gegenüber getrennten Atomen senken. D: Die Kerne stossen sich ab. E: Dann fehlt die Elektronenbindung. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Bindende Orbitale"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindende Orbitale"
+      ],
+      "questionGoal": "Bindende Orbitale",
+      "structuredExplanation": {
+        "coreIdea": "Bindende Orbitale",
+        "correctReasoning": "Sie kann die Energie gegenüber getrennten Atomen senken.",
+        "wrongAnswerExplanations": {
+          "A": "Eine stabile Bindung besitzt einen günstigen Abstand.",
+          "B": "Diese vermindert die Bindungsordnung.",
+          "D": "Die Kerne stossen sich ab.",
+          "E": "Dann fehlt die Elektronenbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Ein Kohlenstoff bildet vier gleichwertige σ-Bindungen in tetraedrischer Anordnung. Welche Hybridisierung passt?",
+      "options": [
+        {
+          "text": "d2sp3 als Standard für Methan.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Rein vier s-Orbitale derselben Schale.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "sp3",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "sp2",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "sp",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das beschreibt nicht das Kohlenstoffmodell von Methan. B: Eine Schale besitzt nur ein s-Orbital. C: Vier Hybridorbitale ermöglichen die tetraedrische Geometrie. D: Diese ergibt drei koplanare Richtungen. E: Diese ergibt zwei lineare Richtungen. Quelle: Originalunterlagen, PDF-S. 25–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Hybridisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hybridisierung"
+      ],
+      "questionGoal": "Hybridisierung",
+      "structuredExplanation": {
+        "coreIdea": "Hybridisierung",
+        "correctReasoning": "Vier Hybridorbitale ermöglichen die tetraedrische Geometrie.",
+        "wrongAnswerExplanations": {
+          "A": "Das beschreibt nicht das Kohlenstoffmodell von Methan.",
+          "B": "Eine Schale besitzt nur ein s-Orbital.",
+          "D": "Diese ergibt drei koplanare Richtungen.",
+          "E": "Diese ergibt zwei lineare Richtungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Warum lässt sich eine C=C-Doppelbindung unter normalen Bedingungen nicht frei verdrehen?",
+      "options": [
+        {
+          "text": "Rotation würde die Protonenzahl verändern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beide C-Atome besitzen vier freie Elektronenpaare.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Verdrehung beeinträchtigt die seitliche π-Überlappung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede σ-Bindung ist grundsätzlich rotationsunfähig.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "C=C besteht aus zwei identischen σ-Bindungen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Atomkerne bleiben unverändert. B: Das ist keine Alkenstruktur. C: Die π-Bindung begrenzt Rotation. D: Einfachbindungen erlauben meist Rotation. E: Sie enthält eine σ- und eine π-Bindung. Quelle: Originalunterlagen, PDF-S. 27–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Doppelbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Doppelbindung"
+      ],
+      "questionGoal": "Doppelbindung",
+      "structuredExplanation": {
+        "coreIdea": "Doppelbindung",
+        "correctReasoning": "Die π-Bindung begrenzt Rotation.",
+        "wrongAnswerExplanations": {
+          "A": "Atomkerne bleiben unverändert.",
+          "B": "Das ist keine Alkenstruktur.",
+          "D": "Einfachbindungen erlauben meist Rotation.",
+          "E": "Sie enthält eine σ- und eine π-Bindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "CO2 besitzt polare C=O-Bindungen, aber kein permanentes Gesamtdipolmoment. Warum?",
+      "options": [
+        {
+          "text": "Die lineare symmetrische Geometrie lässt die Bindungsdipole sich aufheben.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Verbindung aus drei Atomen ist unpolar.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "C=O-Bindungen sind unpolar.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "CO2 ist ein Ion mit kompensierter Nettoladung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sauerstoff besitzt keine Elektronenpaare.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vektorielle Addition ist entscheidend. B: Wasser ist ein Gegenbeispiel. C: Sauerstoff und Kohlenstoff unterscheiden sich in EN. D: Das Molekül ist ungeladen. E: Freie Elektronenpaare sind vorhanden. Quelle: Originalunterlagen, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Dipol"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dipol"
+      ],
+      "questionGoal": "Dipol",
+      "structuredExplanation": {
+        "coreIdea": "Dipol",
+        "correctReasoning": "Vektorielle Addition ist entscheidend.",
+        "wrongAnswerExplanations": {
+          "B": "Wasser ist ein Gegenbeispiel.",
+          "C": "Sauerstoff und Kohlenstoff unterscheiden sich in EN.",
+          "D": "Das Molekül ist ungeladen.",
+          "E": "Freie Elektronenpaare sind vorhanden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Welche Paarung kann eine typische Wasserstoffbrücke bilden?",
+      "options": [
+        {
+          "text": "O–H als Donor und ein freies Elektronenpaar eines O-Atoms als Akzeptor.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Zwei protonierte Ammoniumgruppen ohne freien N-Elektronenpaarakzeptor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zwei gesättigte Alkylreste ohne polare Donor- oder Akzeptorgruppen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwei Carbonyl-O-Atome ohne H-Brückendonor.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Ether-O als Donor und ein unpolar gebundenes Alkyl-H als Akzeptor.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Polar gebundener Wasserstoff und Akzeptor sind nötig. B: Beide bieten Donor-H, aber das protonierte N besitzt kein freies Paar als passender gegenseitiger Akzeptor. C: Solche Reste wechselwirken vorwiegend durch Dispersion und besitzen nicht das benötigte klassische Donor-Akzeptor-Paar. D: Beide Carbonyl-O können akzeptieren, aber ohne passenden gebundenen Donor-H fehlt die klassische H-Brücke. E: Ether-O ist ein Akzeptor ohne eigenes O–H; ein Alkyl-H ist kein freies Elektronenpaar als Akzeptor. Quelle: Originalunterlagen, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Wasserstoffbrücke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasserstoffbrücke"
+      ],
+      "questionGoal": "Wasserstoffbrücke",
+      "structuredExplanation": {
+        "coreIdea": "Wasserstoffbrücke",
+        "correctReasoning": "Polar gebundener Wasserstoff und Akzeptor sind nötig.",
+        "wrongAnswerExplanations": {
+          "B": "Beide bieten Donor-H, aber das protonierte N besitzt kein freies Paar als passender gegenseitiger Akzeptor.",
+          "C": "Solche Reste wechselwirken vorwiegend durch Dispersion und besitzen nicht das benötigte klassische Donor-Akzeptor-Paar.",
+          "D": "Beide Carbonyl-O können akzeptieren, aber ohne passenden gebundenen Donor-H fehlt die klassische H-Brücke.",
+          "E": "Ether-O ist ein Akzeptor ohne eigenes O–H; ein Alkyl-H ist kein freies Elektronenpaar als Akzeptor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie Aussagen zu Atom und Ion.",
+      "options": [
+        {
+          "text": "Die Ordnungszahl zählt Protonen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein neutrales Atom hat gleich viele Elektronen wie Protonen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Isotope unterscheiden sich zwingend in der Protonenzahl.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Kation entsteht durch Aufnahme von Elektronen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Z definiert das Element. B: Die Ladungen gleichen sich aus. C: Sie unterscheiden sich in Neutronen. D: Elektronenabgabe erzeugt positive Ladung. Quelle: Originalunterlagen, PDF-S. 4–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Atombau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atombau"
+      ],
+      "questionGoal": "Atombau",
+      "structuredExplanation": {
+        "coreIdea": "Atombau",
+        "correctReasoning": "Z definiert das Element. Die Ladungen gleichen sich aus.",
+        "wrongAnswerExplanations": {
+          "A": "Z definiert das Element.",
+          "B": "Die Ladungen gleichen sich aus.",
+          "C": "Sie unterscheiden sich in Neutronen.",
+          "D": "Elektronenabgabe erzeugt positive Ladung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie die Elektronenhülle.",
+      "options": [
+        {
+          "text": "Ein Orbital beschreibt eine klassische Kreisbahn.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein p-Unterniveau besitzt nur ein Orbital.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Orbital kann höchstens zwei Elektronen enthalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Entartete Orbitale werden nach Hund zunächst einfach besetzt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es beschreibt einen quantenmechanischen Zustand. B: Es besitzt drei Orbitale. C: Ihre Spins müssen verschieden sein. D: Parallele Spins sind bevorzugt. Quelle: Originalunterlagen, PDF-S. 10–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Orbitalbesetzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Orbitalbesetzung"
+      ],
+      "questionGoal": "Orbitalbesetzung",
+      "structuredExplanation": {
+        "coreIdea": "Orbitalbesetzung",
+        "correctReasoning": "Ihre Spins müssen verschieden sein. Parallele Spins sind bevorzugt.",
+        "wrongAnswerExplanations": {
+          "A": "Es beschreibt einen quantenmechanischen Zustand.",
+          "B": "Es besitzt drei Orbitale.",
+          "C": "Ihre Spins müssen verschieden sein.",
+          "D": "Parallele Spins sind bevorzugt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie typische Hauptgruppentrends.",
+      "options": [
+        {
+          "text": "Innerhalb einer Gruppe wächst der Atomradius häufig nach unten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Oktettregel ist für jedes Element ausnahmslos gültig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die erste Ionisierungsenergie nimmt in jeder Gruppe nach unten stets zu.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Edelgase besitzen geschlossene Valenzschalen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Weitere Elektronenschalen kommen hinzu. B: Es gibt wichtige Ausnahmen. C: Sie nimmt häufig ab. D: Das erklärt geringe Reaktivität im Grundmodell. Quelle: Originalunterlagen, PDF-S. 15–19, 31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Periodentrends"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Periodentrends"
+      ],
+      "questionGoal": "Periodentrends",
+      "structuredExplanation": {
+        "coreIdea": "Periodentrends",
+        "correctReasoning": "Weitere Elektronenschalen kommen hinzu. Das erklärt geringe Reaktivität im Grundmodell.",
+        "wrongAnswerExplanations": {
+          "A": "Weitere Elektronenschalen kommen hinzu.",
+          "B": "Es gibt wichtige Ausnahmen.",
+          "C": "Sie nimmt häufig ab.",
+          "D": "Das erklärt geringe Reaktivität im Grundmodell."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie Bindung und Leitfähigkeit.",
+      "options": [
+        {
+          "text": "Kovalente Bindung beruht auf Elektronendichte zwischen Atomen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein fester Ionenkristall hat dieselbe Ionenbeweglichkeit wie seine Schmelze.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Metallische Leitfähigkeit setzt Auflösung in Wasser voraus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Salzschmelze enthält bewegliche Ionen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Geteilte Elektronen stabilisieren. B: Im Gitter sind Ionen gebunden. C: Metalle leiten als Festkörper. D: Diese transportieren Ladung. Quelle: Originalunterlagen, PDF-S. 20–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Bindungstypen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindungstypen"
+      ],
+      "questionGoal": "Bindungstypen",
+      "structuredExplanation": {
+        "coreIdea": "Bindungstypen",
+        "correctReasoning": "Geteilte Elektronen stabilisieren. Diese transportieren Ladung.",
+        "wrongAnswerExplanations": {
+          "A": "Geteilte Elektronen stabilisieren.",
+          "B": "Im Gitter sind Ionen gebunden.",
+          "C": "Metalle leiten als Festkörper.",
+          "D": "Diese transportieren Ladung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie idealisierte Hybridisierungen.",
+      "options": [
+        {
+          "text": "Methan ist am Kohlenstoff trigonal-planar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Dreifachbindung enthält drei σ-Bindungen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "sp-Kohlenstoff besitzt zwei lineare σ-Richtungen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "sp2-Kohlenstoff besitzt trigonal-planare σ-Geometrie.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es ist tetraedrisch. B: Sie enthält eine σ- und zwei π-Bindungen. C: Der Winkel beträgt ungefähr 180 Grad. D: Drei Richtungen liegen ungefähr bei 120 Grad. Quelle: Originalunterlagen, PDF-S. 25–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Geometrie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geometrie"
+      ],
+      "questionGoal": "Geometrie",
+      "structuredExplanation": {
+        "coreIdea": "Geometrie",
+        "correctReasoning": "Der Winkel beträgt ungefähr 180 Grad. Drei Richtungen liegen ungefähr bei 120 Grad.",
+        "wrongAnswerExplanations": {
+          "A": "Es ist tetraedrisch.",
+          "B": "Sie enthält eine σ- und zwei π-Bindungen.",
+          "C": "Der Winkel beträgt ungefähr 180 Grad.",
+          "D": "Drei Richtungen liegen ungefähr bei 120 Grad."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie molekulare Ladungsverteilungen.",
+      "options": [
+        {
+          "text": "Die Geometrie beeinflusst das Gesamtdipolmoment.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Partialladung verändert die Protonenzahl.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Molekül mit polaren Bindungen hat einen Gesamtdipol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine polare Bindung setzt keine Nettoladung voraus.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dipole werden vektoriell addiert. B: Sie beschreibt Elektronendichte. C: Symmetrie kann Dipole aufheben. D: Partialladungen genügen. Quelle: Originalunterlagen, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Polarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polarität"
+      ],
+      "questionGoal": "Polarität",
+      "structuredExplanation": {
+        "coreIdea": "Polarität",
+        "correctReasoning": "Dipole werden vektoriell addiert. Partialladungen genügen.",
+        "wrongAnswerExplanations": {
+          "A": "Dipole werden vektoriell addiert.",
+          "B": "Sie beschreibt Elektronendichte.",
+          "C": "Symmetrie kann Dipole aufheben.",
+          "D": "Partialladungen genügen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie H-Brücken in Biomolekülen.",
+      "options": [
+        {
+          "text": "Jede C–H-Bindung ist ein gleich starker klassischer Donor wie O–H.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie stabilisieren Proteinsekundärstrukturen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Basen können komplementäre H-Brückenmuster bilden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "H-Brücken ersetzen die kovalente Primärstruktur.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Polarität unterscheidet sich. B: Rückgratgruppen bilden H-Brücken. C: Donoren und Akzeptoren passen zusammen. D: Das Rückgrat bleibt kovalent. Quelle: Originalunterlagen, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Wasserstoffbrücken"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wasserstoffbrücken"
+      ],
+      "questionGoal": "Wasserstoffbrücken",
+      "structuredExplanation": {
+        "coreIdea": "Wasserstoffbrücken",
+        "correctReasoning": "Rückgratgruppen bilden H-Brücken. Donoren und Akzeptoren passen zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Polarität unterscheidet sich.",
+          "B": "Rückgratgruppen bilden H-Brücken.",
+          "C": "Donoren und Akzeptoren passen zusammen.",
+          "D": "Das Rückgrat bleibt kovalent."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc01_02_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC01/02",
+      "stem": "Beurteilen Sie Stoffmengenangaben.",
+      "options": [
+        {
+          "text": "Die molare Masse hat beispielsweise die Einheit g/mol.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Teilchenzahl eines Mols ist temperaturabhängig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gleiche Stoffmengen enthalten gleich viele angegebene Teilchen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Mol Wasser und ein Mol CO₂ besitzen dieselbe Masse.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie verbindet Masse und Stoffmenge. B: Die SI-Definition legt sie fest. C: Die Avogadro-Konstante ist gemeinsam. D: Beide enthalten dieselbe Molekülzahl, aber die molaren Massen sind etwa 18 beziehungsweise 44 g/mol. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC01/02",
+        "Mol und Masse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mol und Masse"
+      ],
+      "questionGoal": "Mol und Masse",
+      "structuredExplanation": {
+        "coreIdea": "Mol und Masse",
+        "correctReasoning": "Sie verbindet Masse und Stoffmenge. Die Avogadro-Konstante ist gemeinsam.",
+        "wrongAnswerExplanations": {
+          "A": "Sie verbindet Masse und Stoffmenge.",
+          "B": "Die SI-Definition legt sie fest.",
+          "C": "Die Avogadro-Konstante ist gemeinsam.",
+          "D": "Beide enthalten dieselbe Molekülzahl, aber die molaren Massen sind etwa 18 beziehungsweise 44 g/mol."
+        }
+      }
+    }
+  ]
+}

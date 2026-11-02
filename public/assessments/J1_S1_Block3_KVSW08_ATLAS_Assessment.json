@@ -1,0 +1,1320 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw08_20261102",
+  "lectureCode": "KVSW08",
+  "title": "Postsynaptische Rezeptoren und neuronale Integration",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW08_Synaptische Uebertragung 2. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Einfache quantale Rechnung nur im expliziten linearen Modell. Nichtkompetitiv nicht pauschal mit allosterisch gleichgesetzt. GABA-Effekt, AMPA-Calciumpermeabilität und Modulatoren nicht als ausnahmslose Gesetze formuliert. Originalfiguren PDF2–4,6–9,12–18 visuell geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Ionotrope und metabotrope Rezeptoren sowie Agonisten und Antagonisten unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Quantale Freisetzung und Übertragungsausfälle interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Glutamat-, GABA- und Acetylcholinrezeptoren mechanistisch vergleichen."
+    },
+    {
+      "id": "lo4",
+      "text": "Umkehrpotential, treibende Kraft und postsynaptische Ströme anwenden."
+    },
+    {
+      "id": "lo5",
+      "text": "Zeitliche/räumliche Summation, Shunting und AP-Entstehung erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw08_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Welche Eigenschaft kennzeichnet einen ionotropen Rezeptor?",
+      "options": [
+        {
+          "text": "Er verändert ausschliesslich die Transkription im Zellkern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er muss zunächst ein heterotrimeres G-Protein aktivieren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er transportiert Transmitter stets in Vesikel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ligandenbindung beeinflusst unmittelbar einen zum Rezeptorkomplex gehörenden Ionenkanal.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Er kann nur Peptidhormone binden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist keine Definition ionotroper Übertragung. B: Dies kennzeichnet den metabotropen Weg. C: Vesikeltransporter und postsynaptische Rezeptoren sind verschiedene Proteine. D: Der Rezeptor ist selbst Teil des Kanalapparats. E: Die Einteilung beruht auf dem Wirkmechanismus. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Ionotrop"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionotrop"
+      ],
+      "questionGoal": "Ionotrop",
+      "structuredExplanation": {
+        "coreIdea": "Ionotrop",
+        "correctReasoning": "Der Rezeptor ist selbst Teil des Kanalapparats.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist keine Definition ionotroper Übertragung.",
+          "B": "Dies kennzeichnet den metabotropen Weg.",
+          "C": "Vesikeltransporter und postsynaptische Rezeptoren sind verschiedene Proteine.",
+          "E": "Die Einteilung beruht auf dem Wirkmechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Im vereinfachten linearen Modell beträgt ein Mini-EPSP 0,4 mV, ein evoziertes EPSP 1,2 mV. Wie viele gleich grosse Quanta entspricht dies?",
+      "options": [
+        {
+          "text": "0,48",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "12",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0,8",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "4",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Produkt ist keine Quantenzahl. B: Die Dezimalstelle wurde übersehen. C: 1,2/0,4 = 3. D: Die Differenz der Amplituden ist keine Quantenzahl. E: Die Einheit 0,4 ist nicht die Zahl Quanta. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Quantale Amplituden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Quantale Amplituden"
+      ],
+      "questionGoal": "Quantale Amplituden",
+      "structuredExplanation": {
+        "coreIdea": "Quantale Amplituden",
+        "correctReasoning": "1,2/0,4 = 3.",
+        "wrongAnswerExplanations": {
+          "A": "Das Produkt ist keine Quantenzahl.",
+          "B": "Die Dezimalstelle wurde übersehen.",
+          "D": "Die Differenz der Amplituden ist keine Quantenzahl.",
+          "E": "Die Einheit 0,4 ist nicht die Zahl Quanta."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «quantenartige und stochastische Transmitterfreisetzung».",
+      "options": [
+        {
+          "text": "Jedes AP setzt immer exakt dieselbe ganze Zahl Vesikel frei.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Ausfall beweist ohne weitere Messung, dass kein AP am Endknöpfchen ankam.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Spontane Miniantworten unterstützen die Vorstellung paketierter Freisetzung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein korrekt ankommendes AP garantiert an jeder kleinen zentralen Synapse eine detektierbare Freisetzung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Freisetzung ist probabilistisch. B: Auch die nachgeschaltete Freisetzung kann ausfallen. C: Vesikel bilden elementare Freisetzungseinheiten. D: Stochastische Freisetzung kann ausfallen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Freisetzungswahrscheinlichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Freisetzungswahrscheinlichkeit"
+      ],
+      "questionGoal": "Freisetzungswahrscheinlichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Freisetzungswahrscheinlichkeit",
+        "correctReasoning": "Vesikel bilden elementare Freisetzungseinheiten.",
+        "wrongAnswerExplanations": {
+          "A": "Freisetzung ist probabilistisch.",
+          "B": "Auch die nachgeschaltete Freisetzung kann ausfallen.",
+          "C": "Vesikel bilden elementare Freisetzungseinheiten.",
+          "D": "Stochastische Freisetzung kann ausfallen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Welche Paarung ist korrekt?",
+      "options": [
+        {
+          "text": "Curare: typischer muskarinerger Agonist.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nikotinerger ACh-Rezeptor: ligandengesteuerter Ionenkanal.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nikotin: Enzym zum ACh-Abbau.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Atropin: selektiver Agonist nikotinerger Rezeptoren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Muskarinerger ACh-Rezeptor: stets derselbe nikotinerge Kanal.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Folie ordnet Curare als nikotinergen Antagonisten ein. B: Er gehört zu den ionotropen Rezeptoren. C: Nikotin ist ein Rezeptoragonist, kein Abbauenzym. D: Atropin ist ein muskarinerger Antagonist. E: Muskarinerge Rezeptoren sind GPCRs. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "ACh-Rezeptoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ACh-Rezeptoren"
+      ],
+      "questionGoal": "ACh-Rezeptoren",
+      "structuredExplanation": {
+        "coreIdea": "ACh-Rezeptoren",
+        "correctReasoning": "Er gehört zu den ionotropen Rezeptoren.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folie ordnet Curare als nikotinergen Antagonisten ein.",
+          "C": "Nikotin ist ein Rezeptoragonist, kein Abbauenzym.",
+          "D": "Atropin ist ein muskarinerger Antagonist.",
+          "E": "Muskarinerge Rezeptoren sind GPCRs."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Was kennzeichnet einen Agonisten?",
+      "options": [
+        {
+          "text": "Er bindet an einen Rezeptor und aktiviert ihn.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Er muss jeden Rezeptor irreversibel zerstören.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er wirkt ausschliesslich durch Transmitterabbau.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er bindet stets ohne jede Eigenwirkung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er ist zwingend ein körpereigenes Peptid.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Aktivierung unterscheidet ihn vom reinen Antagonisten. B: Rezeptorzerstörung ist keine Agonistdefinition. C: Dies ist ein anderer Eingriffsort. D: Dies wäre eher ein neutraler Antagonist. E: Auch andere Moleküle können agonistisch wirken. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Agonist"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Agonist"
+      ],
+      "questionGoal": "Agonist",
+      "structuredExplanation": {
+        "coreIdea": "Agonist",
+        "correctReasoning": "Die Aktivierung unterscheidet ihn vom reinen Antagonisten.",
+        "wrongAnswerExplanations": {
+          "B": "Rezeptorzerstörung ist keine Agonistdefinition.",
+          "C": "Dies ist ein anderer Eingriffsort.",
+          "D": "Dies wäre eher ein neutraler Antagonist.",
+          "E": "Auch andere Moleküle können agonistisch wirken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «kompetitiver Antagonismus und allosterische Modulation».",
+      "options": [
+        {
+          "text": "Ein positiver allosterischer Modulator kann die Wirkung des eigentlichen Agonisten verstärken.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder nichtkompetitive Antagonismus ist zwingend identisch mit reversibler Bindung an derselben Stelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein kompetitiver Antagonist kann mit dem Agonisten um dieselbe Bindungsstelle konkurrieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Benzodiazepine können als positive allosterische Modulatoren die GABA-Wirkung verstärken.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Modulation und direkte Agonistenwirkung sind zu unterscheiden. B: Nichtkompetitive Wirkungen können andere Mechanismen besitzen. C: Dies ist das hier verwendete Grundmodell. D: Sie wirken im üblichen Modell an einer anderen Bindungsstelle. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Rezeptormodulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rezeptormodulation"
+      ],
+      "questionGoal": "Rezeptormodulation",
+      "structuredExplanation": {
+        "coreIdea": "Rezeptormodulation",
+        "correctReasoning": "Modulation und direkte Agonistenwirkung sind zu unterscheiden. Dies ist das hier verwendete Grundmodell. Sie wirken im üblichen Modell an einer anderen Bindungsstelle.",
+        "wrongAnswerExplanations": {
+          "A": "Modulation und direkte Agonistenwirkung sind zu unterscheiden.",
+          "B": "Nichtkompetitive Wirkungen können andere Mechanismen besitzen.",
+          "C": "Dies ist das hier verwendete Grundmodell.",
+          "D": "Sie wirken im üblichen Modell an einer anderen Bindungsstelle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Welche Kombination begünstigt Öffnung eines NMDA-Rezeptors bei physiologischem Mg²⁺?",
+      "options": [
+        {
+          "text": "Glutamat und Koagonist gebunden, Membran ausreichend depolarisiert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nur Bindung von Atropin.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur Glutamat bei stark negativem Vm und festem Mg²⁺-Block.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur Depolarisation ohne gebundene Liganden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vollständige Entfernung aller extrazellulären Kationen als notwendige Aktivierung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Depolarisation vermindert den Mg²⁺-Block. B: Atropin ist kein NMDA-Agonist. C: Der Block behindert den Strom. D: Spannung allein ersetzt die Liganden nicht. E: Das ist keine physiologische Aktivierungsbedingung. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "NMDA-Koinzidenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NMDA-Koinzidenz"
+      ],
+      "questionGoal": "NMDA-Koinzidenz",
+      "structuredExplanation": {
+        "coreIdea": "NMDA-Koinzidenz",
+        "correctReasoning": "Die Depolarisation vermindert den Mg²⁺-Block.",
+        "wrongAnswerExplanations": {
+          "B": "Atropin ist kein NMDA-Agonist.",
+          "C": "Der Block behindert den Strom.",
+          "D": "Spannung allein ersetzt die Liganden nicht.",
+          "E": "Das ist keine physiologische Aktivierungsbedingung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Welcher Rezeptor ist im behandelten glutamatergen Vergleich besonders für depolarisationsabhängigen Ca²⁺-Einstrom bedeutsam?",
+      "options": [
+        {
+          "text": "AMPA-Rezeptor als im Kurs primär spannungsabhängig Mg-blockierter Kanal.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "GABA-A-Rezeptor als selektiver Glutamat-Calciumkanal.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NMDA-Rezeptor",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "GABA-B-Rezeptor als unmittelbar ligandengesteuerte Calcium-Pore.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nikotinerger Rezeptor als derselbe glutamaterge NMDA-Komplex.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die entsprechende Rolle wird dem NMDA-Rezeptor zugeordnet. B: GABA-A ist anionenselektiv. C: Er verbindet Ligandenbindung und Mg²⁺-Entblockung mit Calciumpermeabilität. D: Er ist ein metabotroper Rezeptor. E: Dies sind unterschiedliche Rezeptorklassen. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Calciumpermeabilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Calciumpermeabilität"
+      ],
+      "questionGoal": "Calciumpermeabilität",
+      "structuredExplanation": {
+        "coreIdea": "Calciumpermeabilität",
+        "correctReasoning": "Er verbindet Ligandenbindung und Mg²⁺-Entblockung mit Calciumpermeabilität.",
+        "wrongAnswerExplanations": {
+          "A": "Die entsprechende Rolle wird dem NMDA-Rezeptor zugeordnet.",
+          "B": "GABA-A ist anionenselektiv.",
+          "D": "Er ist ein metabotroper Rezeptor.",
+          "E": "Dies sind unterschiedliche Rezeptorklassen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «GABA- und Glutamatrezeptoren».",
+      "options": [
+        {
+          "text": "GABA-A ist ein ionotroper anionenselektiver Rezeptor.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "GABA-B ist derselbe direkt ligandengesteuerte Cl⁻-Kanal.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Aktivierung eines GABA-Rezeptors muss bei jeder Zelle hyperpolarisieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "AMPA-Rezeptoren vermitteln häufig schnelle erregende Kationenströme.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Wirkung hängt auch von Ionengradienten ab. B: GABA-B wirkt über G-Proteine. C: Umkehrpotential und Ausgangspotential sind mitentscheidend. D: Sie tragen zur schnellen glutamatergen Übertragung bei. Quelle: Originalunterlagen, PDF-S. 9,13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "GABA und Glutamat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GABA und Glutamat"
+      ],
+      "questionGoal": "GABA und Glutamat",
+      "structuredExplanation": {
+        "coreIdea": "GABA und Glutamat",
+        "correctReasoning": "Seine Wirkung hängt auch von Ionengradienten ab. Sie tragen zur schnellen glutamatergen Übertragung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Wirkung hängt auch von Ionengradienten ab.",
+          "B": "GABA-B wirkt über G-Proteine.",
+          "C": "Umkehrpotential und Ausgangspotential sind mitentscheidend.",
+          "D": "Sie tragen zur schnellen glutamatergen Übertragung bei."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Für einen synaptischen Kanal gilt I = g(Vm−Erev), positive Werte bedeuten Auswärtsstrom. Vm = −60 mV, Erev = 0 mV. Welche Richtung hat der Nettostrom?",
+      "options": [
+        {
+          "text": "Kein Strom bei geöffnetem Kanal",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Einwärtsstrom",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Auswärtsstrom",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein positiver Strom von 60 mV",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Richtung ist nur durch g, nicht durch Vm bestimmt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die treibende Kraft ist nicht null. B: Vm−Erev ist negativ. C: Dafür müsste Vm über Erev liegen. D: Spannung ist keine Stromstärke. E: g bestimmt die Grösse mit; das Vorzeichen kommt aus der treibenden Kraft. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Stromrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stromrichtung"
+      ],
+      "questionGoal": "Stromrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Stromrichtung",
+        "correctReasoning": "Vm−Erev ist negativ.",
+        "wrongAnswerExplanations": {
+          "A": "Die treibende Kraft ist nicht null.",
+          "C": "Dafür müsste Vm über Erev liegen.",
+          "D": "Spannung ist keine Stromstärke.",
+          "E": "g bestimmt die Grösse mit; das Vorzeichen kommt aus der treibenden Kraft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Umkehrpotential und Nettostrom».",
+      "options": [
+        {
+          "text": "Das Vorzeichen des Nettostroms kann bei Überschreiten von Erev wechseln.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Erev ist immer identisch mit dem Ruhepotential aller Neurone.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei Vm = Erev ist der Nettostrom eines geöffneten Kanals null.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es können dann unter keinen Umständen einzelne Ionen in beide Richtungen passieren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Daher der Begriff Umkehrpotential. B: Es hängt von der Kanalselektivität und Ionengradienten ab. C: Die Summe seiner Ionenströme gleicht sich aus. D: Netto null ist nicht identisch mit völlig fehlender mikroskopischer Bewegung. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Umkehrpotential"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Umkehrpotential"
+      ],
+      "questionGoal": "Umkehrpotential",
+      "structuredExplanation": {
+        "coreIdea": "Umkehrpotential",
+        "correctReasoning": "Daher der Begriff Umkehrpotential. Die Summe seiner Ionenströme gleicht sich aus.",
+        "wrongAnswerExplanations": {
+          "A": "Daher der Begriff Umkehrpotential.",
+          "B": "Es hängt von der Kanalselektivität und Ionengradienten ab.",
+          "C": "Die Summe seiner Ionenströme gleicht sich aus.",
+          "D": "Netto null ist nicht identisch mit völlig fehlender mikroskopischer Bewegung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "g = 2 nS, Vm = −60 mV, Erev = 0 mV. Wie gross ist I = g(Vm−Erev)?",
+      "options": [
+        {
+          "text": "−30 pA",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−120 pA",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "−120 nA",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0 pA",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+120 pA",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier wurde dividiert statt multipliziert. B: 2 nS×(−60 mV) = −120 pA. C: Die Präfixe ergeben pA, nicht nA. D: Vm ist nicht gleich Erev. E: Das Vorzeichen der treibenden Kraft wurde vertauscht. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Synaptischen Strom rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Synaptischen Strom rechnen"
+      ],
+      "questionGoal": "Synaptischen Strom rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Synaptischen Strom rechnen",
+        "correctReasoning": "2 nS×(−60 mV) = −120 pA.",
+        "wrongAnswerExplanations": {
+          "A": "Hier wurde dividiert statt multipliziert.",
+          "C": "Die Präfixe ergeben pA, nicht nA.",
+          "D": "Vm ist nicht gleich Erev.",
+          "E": "Das Vorzeichen der treibenden Kraft wurde vertauscht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «inhibitorische Leitfähigkeit und AP-Schwelle».",
+      "options": [
+        {
+          "text": "Die Lage von Erev relativ zur AP-Schwelle hilft bei der funktionellen Einordnung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Hemmung ist definitionsgemäss nur bei sichtbarer starker Hyperpolarisation möglich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Depolarisation erhöht unter allen Umständen die AP-Wahrscheinlichkeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine zusätzliche Leitfähigkeit kann eine erregende Spannungsantwort abschwächen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Spannungsrichtung allein genügt nicht immer. B: Shunting kann auch nahe am Ruhepotential wirken. C: Eine depolarisierende Leitfähigkeit kann zugleich stark shunten. D: Der Eingangswiderstand sinkt und Strom wird abgeleitet. Quelle: Originalunterlagen, PDF-S. 13–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Hemmung ohne grosse Hyperpolarisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hemmung ohne grosse Hyperpolarisation"
+      ],
+      "questionGoal": "Hemmung ohne grosse Hyperpolarisation",
+      "structuredExplanation": {
+        "coreIdea": "Hemmung ohne grosse Hyperpolarisation",
+        "correctReasoning": "Spannungsrichtung allein genügt nicht immer. Der Eingangswiderstand sinkt und Strom wird abgeleitet.",
+        "wrongAnswerExplanations": {
+          "A": "Spannungsrichtung allein genügt nicht immer.",
+          "B": "Shunting kann auch nahe am Ruhepotential wirken.",
+          "C": "Eine depolarisierende Leitfähigkeit kann zugleich stark shunten.",
+          "D": "Der Eingangswiderstand sinkt und Strom wird abgeleitet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Welche Situation ist ein Beispiel zeitlicher Summation?",
+      "options": [
+        {
+          "text": "Zwei getrennte Synapsen werden einmal gleichzeitig aktiviert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein EPSP klingt vollständig ab, bevor dasselbe spätere EPSP beginnt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mehrere Antworten derselben Synapse überlappen, weil sie rasch aufeinanderfolgen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine einzelne Kanalöffnung ohne vorausgehende zweite Antwort.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein AP wird während seiner Fortleitung an mehreren Orten registriert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist räumliche Summation. B: Dann überlappen die Antworten nicht. C: Der nächste Beitrag trifft vor vollständigem Abklingen ein. D: Dies ist keine zeitliche Summation mehrerer PSPs. E: Dies zeigt Propagation, nicht PSP-Summation. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Zeitliche Summation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitliche Summation"
+      ],
+      "questionGoal": "Zeitliche Summation",
+      "structuredExplanation": {
+        "coreIdea": "Zeitliche Summation",
+        "correctReasoning": "Der nächste Beitrag trifft vor vollständigem Abklingen ein.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist räumliche Summation.",
+          "B": "Dann überlappen die Antworten nicht.",
+          "D": "Dies ist keine zeitliche Summation mehrerer PSPs.",
+          "E": "Dies zeigt Propagation, nicht PSP-Summation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Welche Situation beschreibt räumliche Summation am besten?",
+      "options": [
+        {
+          "text": "Gleichzeitige synaptische Beiträge verschiedener Orte wirken gemeinsam auf die Zielzelle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Sensor misst nacheinander an mehreren Stellen ohne Zellaktivierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Vesikel wird im Soma nachgebildet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine einzelne Ionenpore öffnet einmal.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine einzige Synapse wird schnell wiederholt aktiviert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehrere Eingangspfade überlagern sich. B: Messortwechsel allein ist keine physiologische Summation. C: Dies ist Transmitternachschub. D: Dies ist ein Kanalereignis, keine Summation verschiedener Orte. E: Dies ist zeitliche Summation. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Räumliche Summation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Räumliche Summation"
+      ],
+      "questionGoal": "Räumliche Summation",
+      "structuredExplanation": {
+        "coreIdea": "Räumliche Summation",
+        "correctReasoning": "Mehrere Eingangspfade überlagern sich.",
+        "wrongAnswerExplanations": {
+          "B": "Messortwechsel allein ist keine physiologische Summation.",
+          "C": "Dies ist Transmitternachschub.",
+          "D": "Dies ist ein Kanalereignis, keine Summation verschiedener Orte.",
+          "E": "Dies ist zeitliche Summation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «dendritische Integration erregender und hemmender Eingänge».",
+      "options": [
+        {
+          "text": "Jedes EPSP löst zwingend allein ein AP aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Summe ist unter allen Bedingungen exakt linear und unabhängig vom Vm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dendritische PSPs können auf dem Weg zum Soma abgeschwächt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine inhibitorische Synapse kann die Wirkung gleichzeitig aktiver erregender Eingänge vermindern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele zentrale Neurone benötigen summierte Eingänge. B: Triebkräfte und Leitfähigkeiten können Nichtlinearitäten erzeugen. C: Passive Kabelverluste beeinflussen die Wirkung. D: Hemmung und Erregung werden gemeinsam integriert. Quelle: Originalunterlagen, PDF-S. 15–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Integration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Integration"
+      ],
+      "questionGoal": "Integration",
+      "structuredExplanation": {
+        "coreIdea": "Integration",
+        "correctReasoning": "Passive Kabelverluste beeinflussen die Wirkung. Hemmung und Erregung werden gemeinsam integriert.",
+        "wrongAnswerExplanations": {
+          "A": "Viele zentrale Neurone benötigen summierte Eingänge.",
+          "B": "Triebkräfte und Leitfähigkeiten können Nichtlinearitäten erzeugen.",
+          "C": "Passive Kabelverluste beeinflussen die Wirkung.",
+          "D": "Hemmung und Erregung werden gemeinsam integriert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Warum ist das axonale Initialsegment für die AP-Auslösung bedeutsam?",
+      "options": [
+        {
+          "text": "Der Bereich hat keine spannungsabhängigen Na-Kanäle, sondern nur passive Membran.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er ist elektrisch vollständig vom Soma getrennt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine hohe Dichte geeigneter spannungsabhängiger Na-Kanäle begünstigt regenerative Erregung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder Spike braucht dort zunächst neue Kanalsynthese.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Membrankapazität ist im Initialsegment exakt null.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gerade geeignete aktive Kanäle begünstigen den Start. B: Synaptische Spannungen müssen ihn beeinflussen können. C: Dort kann die integrierte Depolarisation die Auslöseschwelle erreichen. D: Vorhandene Kanäle werden rasch aktiviert. E: Auch dieser Membranbereich muss umgeladen werden. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Initialsegment"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Initialsegment"
+      ],
+      "questionGoal": "Initialsegment",
+      "structuredExplanation": {
+        "coreIdea": "Initialsegment",
+        "correctReasoning": "Dort kann die integrierte Depolarisation die Auslöseschwelle erreichen.",
+        "wrongAnswerExplanations": {
+          "A": "Gerade geeignete aktive Kanäle begünstigen den Start.",
+          "B": "Synaptische Spannungen müssen ihn beeinflussen können.",
+          "D": "Vorhandene Kanäle werden rasch aktiviert.",
+          "E": "Auch dieser Membranbereich muss umgeladen werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Sicherheitsfaktor an Endplatte und zentraler Synapse».",
+      "options": [
+        {
+          "text": "Eine kleine zentrale Synapse kann bei einem AP keine oder nur wenige Quanta freisetzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede kleine zentrale Synapse besitzt zwingend denselben hohen Freisetzungssicherheitsfaktor wie eine gesunde motorische Endplatte.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Endplattenpotential und ein Muskel-AP sind dasselbe Ereignis ohne Übergang.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine gesunde neuromuskuläre Endplatte kann einen hohen Sicherheitsfaktor besitzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das erklärt Variabilität und Ausfälle. B: Freisetzungsumfang und Sicherheitsfaktor unterscheiden sich. C: Das EPP depolarisiert zunächst, danach kann ein regeneratives Muskel-AP entstehen. D: Ein Nerven-AP setzt dort typischerweise viele Quanta frei. Quelle: Originalunterlagen, PDF-S. 6,17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Endplatte und zentrale Synapse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endplatte und zentrale Synapse"
+      ],
+      "questionGoal": "Endplatte und zentrale Synapse",
+      "structuredExplanation": {
+        "coreIdea": "Endplatte und zentrale Synapse",
+        "correctReasoning": "Das erklärt Variabilität und Ausfälle. Ein Nerven-AP setzt dort typischerweise viele Quanta frei.",
+        "wrongAnswerExplanations": {
+          "A": "Das erklärt Variabilität und Ausfälle.",
+          "B": "Freisetzungsumfang und Sicherheitsfaktor unterscheiden sich.",
+          "C": "Das EPP depolarisiert zunächst, danach kann ein regeneratives Muskel-AP entstehen.",
+          "D": "Ein Nerven-AP setzt dort typischerweise viele Quanta frei."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Ein passives Modellneurone hat Rinput = 100 MΩ. Eine zusätzliche hemmende Leitfähigkeit nahe dem Ruhepotential halbiert Rinput. Derselbe kleine erregende Strom fliesst. Wie ändert sich näherungsweise ΔV?",
+      "options": [
+        {
+          "text": "Es bleibt zwingend gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es halbiert sich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es verdoppelt sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es vervierfacht sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es muss in jedem Fall das Vorzeichen umkehren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Gesamtleitfähigkeit wurde verändert. B: Bei gleichem I gilt ΔV = I×Rinput. C: Ein kleinerer Widerstand vermindert die Antwort auf denselben Strom. D: Dies folgt nicht aus der linearen Widerstandsbeziehung. E: Eine Widerstandsänderung allein erzwingt keinen solchen Wechsel. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Shunt rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Shunt rechnen"
+      ],
+      "questionGoal": "Shunt rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Shunt rechnen",
+        "correctReasoning": "Bei gleichem I gilt ΔV = I×Rinput.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gesamtleitfähigkeit wurde verändert.",
+          "C": "Ein kleinerer Widerstand vermindert die Antwort auf denselben Strom.",
+          "D": "Dies folgt nicht aus der linearen Widerstandsbeziehung.",
+          "E": "Eine Widerstandsänderung allein erzwingt keinen solchen Wechsel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw08_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Rezeptorbindung, Modulation und Ionengradienten».",
+      "options": [
+        {
+          "text": "Ein Rezeptoragonist und ein positiver allosterischer Modulator sind mechanistisch unterscheidbar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder AMPA-Rezeptor hat unabhängig von Untereinheiten exakt dieselbe Calciumpermeabilität.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Rezeptor und Ionengradienten bestimmen gemeinsam die elektrische Wirkung eines Transmitters.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein positiver allosterischer Modulator bindet definitionsgemäss statt des Agonisten an dessen orthosterische Bindungsstelle.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Direkte Aktivierung und Verstärkung vorhandener Agonistenwirkung sind verschieden. B: Die Untereinheitenzusammensetzung ist relevant. C: Der Transmittername allein reicht nicht. D: Allosterische Modulation erfolgt an einer anderen funktionell gekoppelten Stelle. Quelle: Originalunterlagen, PDF-S. 7–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW08",
+        "Vereinfachungen präzisieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vereinfachungen präzisieren"
+      ],
+      "questionGoal": "Vereinfachungen präzisieren",
+      "structuredExplanation": {
+        "coreIdea": "Vereinfachungen präzisieren",
+        "correctReasoning": "Direkte Aktivierung und Verstärkung vorhandener Agonistenwirkung sind verschieden. Der Transmittername allein reicht nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Direkte Aktivierung und Verstärkung vorhandener Agonistenwirkung sind verschieden.",
+          "B": "Die Untereinheitenzusammensetzung ist relevant.",
+          "C": "Der Transmittername allein reicht nicht.",
+          "D": "Allosterische Modulation erfolgt an einer anderen funktionell gekoppelten Stelle."
+        }
+      }
+    }
+  ]
+}

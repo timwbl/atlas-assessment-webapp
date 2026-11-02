@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block1_fpp_20261102",
+  "lectureCode": "FPP",
+  "title": "FPP01–03: Licht und Materie, elektrische Leiter und Optik",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr; Lehrunterlagenbestand HS2025. FPP-Originalskript v1.0 ohne eindeutig datierte Ausgabe im Dokument. FPP - Fachpraktikum Physik. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. FPP-Originalskript „Fachpraktika Physik 1. Studienjahr“, Version v1.0; im Dokument kein eindeutig ausgewiesenes Ausgabejahr, daher nicht als neu erstellte Auflage HS2025 ausgegeben. Der Helferpräfix HS2025 bezeichnet den zugehörigen Lehrunterlagenbestand. Gemäss offiziellen Block-1-Lernzielen ausschliesslich FPP01–03 bzw. Kapitel A–C (PDF5–35) bearbeitet; spätere Kapitel D Signalerfassung, E Torsion, F ionisierende Strahlung nicht Teil dieses Sets. Die beobachteten Balmerlinien gehören zum atomaren Wasserstoff, nicht ausschliesslich zum molekularen H2-Spektrum.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Gitterkonstante mit Heliumlinien kalibrieren und Wasserstofflinien, Photonenenergien und Termschema zuordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Ohmsches Gesetz und Kirchhoff-Regeln auf Schaltungen anwenden sowie Messgeräte und Kennlinien interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Ionenbeweglichkeit, Gleichrichtung und Glättung im Praktikumsaufbau erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Linsenabbildung, Brennweitenmessung und Aufbau des Mikroskops einschliesslich Feldlinse anwenden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpp_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Eine bekannte He-Linie mit λ=500 nm erscheint in erster Ordnung unter einem Winkel mit sinφ=0.25. Welche Gitterkonstante folgt?",
+      "options": [
+        {
+          "text": "20 µm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0.50 µm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0.125 µm.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "4.0 µm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2.0 µm.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 20 µm sind um Faktor zehn zu gross; 500 nm/0,25 ergeben 2000 nm und nicht 20'000 nm. B: 0,50 µm setzt g gleich λ und ignoriert den angegebenen Sinuswert 0,25. C: 0,125 µm entsteht durch Multiplikation von λ mit sinφ; zur Gitterkonstante gilt g=λ/sinφ. D: 4,0 µm ergäben bei λ=500 nm erst sinφ=0,125 und passen nicht zum gemessenen Winkel. E: g sinφ=kλ; g=500/0.25 nm=2000 nm. Quelle: Originalunterlagen, PDF-S. 6,9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Gittereichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gittereichung"
+      ],
+      "questionGoal": "Gittereichung",
+      "structuredExplanation": {
+        "coreIdea": "Gittereichung",
+        "correctReasoning": "g sinφ=kλ; g=500/0.25 nm=2000 nm.",
+        "wrongAnswerExplanations": {
+          "A": "20 µm sind um Faktor zehn zu gross; 500 nm/0,25 ergeben 2000 nm und nicht 20'000 nm.",
+          "B": "0,50 µm setzt g gleich λ und ignoriert den angegebenen Sinuswert 0,25.",
+          "C": "0,125 µm entsteht durch Multiplikation von λ mit sinφ; zur Gitterkonstante gilt g=λ/sinφ.",
+          "D": "4,0 µm ergäben bei λ=500 nm erst sinφ=0,125 und passen nicht zum gemessenen Winkel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Ein kalibriertes Gitter hat g=2.0 µm. Eine Linie erster Ordnung hat sinφ=0.30. Welche Wellenlänge folgt?",
+      "options": [
+        {
+          "text": "300 nm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "150 nm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "6.67 µm.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "600 nm.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "1200 nm.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 300 nm entsprächen sinφ=0,15 bei demselben Gitter; angegeben ist 0,30. B: 150 nm würden das Produkt 2000 nm×0,30 um Faktor vier unterschätzen. C: 6,67 µm entstehen aus g/sinφ statt aus dem erforderlichen Produkt g sinφ. D: λ=g sinφ/k=2.0×0.30 µm=0.60 µm. E: 1200 nm wären bei dieser Geometrie die doppelte gesuchte Wellenlänge; für die erste Ordnung gilt λ=g sinφ. Quelle: Originalunterlagen, PDF-S. 6,10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Unbekannte Linie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unbekannte Linie"
+      ],
+      "questionGoal": "Unbekannte Linie",
+      "structuredExplanation": {
+        "coreIdea": "Unbekannte Linie",
+        "correctReasoning": "λ=g sinφ/k=2.0×0.30 µm=0.60 µm.",
+        "wrongAnswerExplanations": {
+          "A": "300 nm entsprächen sinφ=0,15 bei demselben Gitter; angegeben ist 0,30.",
+          "B": "150 nm würden das Produkt 2000 nm×0,30 um Faktor vier unterschätzen.",
+          "C": "6,67 µm entstehen aus g/sinφ statt aus dem erforderlichen Produkt g sinφ.",
+          "E": "1200 nm wären bei dieser Geometrie die doppelte gesuchte Wellenlänge; für die erste Ordnung gilt λ=g sinφ."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Eine gemessene Linie hat λ=620 nm. Welche Energie muss der zugehörige Niveauabstand ungefähr besitzen? hc≈1240 eV·nm.",
+      "options": [
+        {
+          "text": "0.50 eV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "6.2 eV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "12.4 eV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 eV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2.0 eV.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,50 verwendet ungefähr den Kehrwert λ/(hc); eine Energie erhält man aus hc/λ. B: 6,2 eV folgt nicht aus 1240/620; die Wellenlängenzahl ist kein unmittelbar zu übernehmender Energiewert. C: 12,4 eV würde zu ungefähr 100 nm gehören, nicht zu 620 nm. D: 20 eV sind um Faktor zehn zu hoch; die Division mit den gegebenen Einheiten ergibt 2 eV. E: EPhoton=hc/λ=1240/620=2.0 eV; die Energiedifferenz ist positiv für das emittierte Photon. Quelle: Originalunterlagen, PDF-S. 7–8,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Photonenenergie im Termmodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photonenenergie im Termmodell"
+      ],
+      "questionGoal": "Photonenenergie im Termmodell",
+      "structuredExplanation": {
+        "coreIdea": "Photonenenergie im Termmodell",
+        "correctReasoning": "EPhoton=hc/λ=1240/620=2.0 eV; die Energiedifferenz ist positiv für das emittierte Photon.",
+        "wrongAnswerExplanations": {
+          "A": "0,50 verwendet ungefähr den Kehrwert λ/(hc); eine Energie erhält man aus hc/λ.",
+          "B": "6,2 eV folgt nicht aus 1240/620; die Wellenlängenzahl ist kein unmittelbar zu übernehmender Energiewert.",
+          "C": "12,4 eV würde zu ungefähr 100 nm gehören, nicht zu 620 nm.",
+          "D": "20 eV sind um Faktor zehn zu hoch; die Division mit den gegebenen Einheiten ergibt 2 eV."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Ein Wasserstoffatom emittiert beim Übergang n=3→n=2. Zu welcher Serie gehört die Linie?",
+      "options": [
+        {
+          "text": "Eine beliebige Serie, weil nur n=3 zählt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Lyman-Serie.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur zu einem molekularen Rotationsband ohne atomare Linie.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zur Serie mit Endniveau n=3.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Balmer-Serie.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Serie wird durch das gemeinsame Endniveau festgelegt, nicht allein durch das obere Niveau n=3. B: Lymanlinien enden im Grundzustand n=1; der betrachtete Übergang endet bei n=2. C: Der explizit angegebene Übergang eines Wasserstoffatoms ist eine atomare Linie und nicht bloss ein molekulares Rotationsband. D: Die Serie wird durch das untere Endniveau bestimmt. Hier ist n=3 der Ausgangszustand; der Übergang endet bei n=2. E: Serien werden nach dem Endniveau geordnet; Balmer endet bei m=2, Lyman bei m=1. Quelle: Originalunterlagen, PDF-S. 7–8,12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Balmerzuordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Balmerzuordnung"
+      ],
+      "questionGoal": "Balmerzuordnung",
+      "structuredExplanation": {
+        "coreIdea": "Balmerzuordnung",
+        "correctReasoning": "Serien werden nach dem Endniveau geordnet; Balmer endet bei m=2, Lyman bei m=1.",
+        "wrongAnswerExplanations": {
+          "A": "Die Serie wird durch das gemeinsame Endniveau festgelegt, nicht allein durch das obere Niveau n=3.",
+          "B": "Lymanlinien enden im Grundzustand n=1; der betrachtete Übergang endet bei n=2.",
+          "C": "Der explizit angegebene Übergang eines Wasserstoffatoms ist eine atomare Linie und nicht bloss ein molekulares Rotationsband.",
+          "D": "Die Serie wird durch das untere Endniveau bestimmt. Hier ist n=3 der Ausgangszustand; der Übergang endet bei n=2."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "An einem ohmschen Widerstand R=2.0 kΩ liegen 6.0 V an. Welcher Strom fliesst?",
+      "options": [
+        {
+          "text": "3.0 A.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3.0 mA.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0.333 mA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "12 mA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "12 A.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 3 A ignorieren das Präfix kilo; 2,0 kΩ sind 2000 Ω. B: I=U/R=6/2000 A=0.003 A. C: 0,333 mA verwendet das umgekehrte Zahlenverhältnis; Spannung wird durch Widerstand und nicht umgekehrt geteilt. D: 12 mA entstehen aus dem Produkt der Zahlen 6 und 2 statt aus I=U/R; es sind 6 V/2000 Ω. E: 12 A kombinieren eine falsche Multiplikation mit einer fehlerhaften Behandlung der Kiloohm-Einheit. Quelle: Originalunterlagen, PDF-S. 15,18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Ohmsche Rechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ohmsche Rechnung"
+      ],
+      "questionGoal": "Ohmsche Rechnung",
+      "structuredExplanation": {
+        "coreIdea": "Ohmsche Rechnung",
+        "correctReasoning": "I=U/R=6/2000 A=0.003 A.",
+        "wrongAnswerExplanations": {
+          "A": "3 A ignorieren das Präfix kilo; 2,0 kΩ sind 2000 Ω.",
+          "C": "0,333 mA verwendet das umgekehrte Zahlenverhältnis; Spannung wird durch Widerstand und nicht umgekehrt geteilt.",
+          "D": "12 mA entstehen aus dem Produkt der Zahlen 6 und 2 statt aus I=U/R; es sind 6 V/2000 Ω.",
+          "E": "12 A kombinieren eine falsche Multiplikation mit einer fehlerhaften Behandlung der Kiloohm-Einheit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Zwei Widerstände mit je 100 Ω werden parallel geschaltet. Welcher Gesamtwiderstand folgt?",
+      "options": [
+        {
+          "text": "25 Ω.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "50 Ω.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "10 000 Ω.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "200 Ω.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "100 Ω.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 25 Ω entsprächen vier gleichen 100-Ω-Parallelzweigen, nicht zwei. B: Die Leitwerte addieren sich: 1/R=1/100+1/100, also R=50 Ω. C: 10'000 ist das Produkt der beiden Zahlenwerte; ein solches Produkt allein besitzt nicht die Einheit des gesuchten Gesamtwiderstands. D: 200 Ω ergibt sich bei Serienschaltung; parallel addieren sich stattdessen die Leitwerte. E: 100 Ω wäre der Wert eines einzelnen Zweiges; ein zweiter gleicher Parallelzweig erhöht den Gesamtleitwert. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Parallelschaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Parallelschaltung"
+      ],
+      "questionGoal": "Parallelschaltung",
+      "structuredExplanation": {
+        "coreIdea": "Parallelschaltung",
+        "correctReasoning": "Die Leitwerte addieren sich: 1/R=1/100+1/100, also R=50 Ω.",
+        "wrongAnswerExplanations": {
+          "A": "25 Ω entsprächen vier gleichen 100-Ω-Parallelzweigen, nicht zwei.",
+          "C": "10'000 ist das Produkt der beiden Zahlenwerte; ein solches Produkt allein besitzt nicht die Einheit des gesuchten Gesamtwiderstands.",
+          "D": "200 Ω ergibt sich bei Serienschaltung; parallel addieren sich stattdessen die Leitwerte.",
+          "E": "100 Ω wäre der Wert eines einzelnen Zweiges; ein zweiter gleicher Parallelzweig erhöht den Gesamtleitwert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "In einen Knoten fliessen 5.0 mA. Ein Zweig führt 2.0 mA ab; ein zweiter ist der einzige weitere Ausgang. Wie gross ist dessen Strom?",
+      "options": [
+        {
+          "text": "7.0 mA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10 mA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3.0 mA.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "2.5 mA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0 mA.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 7,0 mA addiert den bereits abfliessenden Strom zum Zufluss, statt die Knotenbilanz zu bilden. B: 10 mA wäre mehr als der gesamte Zufluss und könnte ohne weiteren Eingang die stationäre Ladungsbilanz nicht erfüllen. C: Ladungserhaltung ergibt Izu=Iab1+Iab2, daher 5−2=3 mA. D: 2,5 mA setzt gleiche Zweigströme voraus, obwohl für einen Zweig ausdrücklich 2,0 mA angegeben sind. E: Bei 0 mA Ausgang des zweiten Zweigs blieben 3,0 mA unbilanziert; im stationären Knoten darf sich nicht fortlaufend Ladung ansammeln. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Knotenbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Knotenbilanz"
+      ],
+      "questionGoal": "Knotenbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Knotenbilanz",
+        "correctReasoning": "Ladungserhaltung ergibt Izu=Iab1+Iab2, daher 5−2=3 mA.",
+        "wrongAnswerExplanations": {
+          "A": "7,0 mA addiert den bereits abfliessenden Strom zum Zufluss, statt die Knotenbilanz zu bilden.",
+          "B": "10 mA wäre mehr als der gesamte Zufluss und könnte ohne weiteren Eingang die stationäre Ladungsbilanz nicht erfüllen.",
+          "D": "2,5 mA setzt gleiche Zweigströme voraus, obwohl für einen Zweig ausdrücklich 2,0 mA angegeben sind.",
+          "E": "Bei 0 mA Ausgang des zweiten Zweigs blieben 3,0 mA unbilanziert; im stationären Knoten darf sich nicht fortlaufend Ladung ansammeln."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Welche Kombination misst Strom und Spannung an einem Widerstand korrekt, bei idealisierten Messgeräten?",
+      "options": [
+        {
+          "text": "Beide in Serie als Unterbrechung des einzigen Strompfads.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ampèremeter in Serie, Voltmeter parallel.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Voltmeter ohne Verbindung zur Schaltung, Ampèremeter nur an einem Pol.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beide parallel mit verschwindendem Innenwiderstand.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ampèremeter parallel, Voltmeter in Serie.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein ideales Voltmeter hat sehr hohen Innenwiderstand und darf nicht als Unterbrechung in den einzigen Strompfad gesetzt werden. B: Strom muss durch den Strommesser fliessen; Spannung wird zwischen zwei Knoten mit hohem Voltmeter-Innenwiderstand gemessen. C: Ein unverbundenes Voltmeter erfasst die gesuchte Knotenspannung nicht, und ein Ampèremeter ohne geschlossenen Strompfad misst nicht den Zweigstrom. D: Ein ideales Voltmeter hat hohen und nicht verschwindenden Innenwiderstand; beide Geräte parallel mit null Widerstand würden den Widerstand kurzschliessen. E: Das ideale Ampèremeter würde parallel nahezu kurzschliessen; das ideale Voltmeter würde in Serie den Strompfad unterbrechen. Quelle: Originalunterlagen, PDF-S. 24,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Messgeräteanschluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messgeräteanschluss"
+      ],
+      "questionGoal": "Messgeräteanschluss",
+      "structuredExplanation": {
+        "coreIdea": "Messgeräteanschluss",
+        "correctReasoning": "Strom muss durch den Strommesser fliessen; Spannung wird zwischen zwei Knoten mit hohem Voltmeter-Innenwiderstand gemessen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein ideales Voltmeter hat sehr hohen Innenwiderstand und darf nicht als Unterbrechung in den einzigen Strompfad gesetzt werden.",
+          "C": "Ein unverbundenes Voltmeter erfasst die gesuchte Knotenspannung nicht, und ein Ampèremeter ohne geschlossenen Strompfad misst nicht den Zweigstrom.",
+          "D": "Ein ideales Voltmeter hat hohen und nicht verschwindenden Innenwiderstand; beide Geräte parallel mit null Widerstand würden den Widerstand kurzschliessen.",
+          "E": "Das ideale Ampèremeter würde parallel nahezu kurzschliessen; das ideale Voltmeter würde in Serie den Strompfad unterbrechen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Eine Farbfront wandert 1.0 mm in 100 s. U=10 V liegt über l=0.10 m. Welche absolute Beweglichkeit µ=v/E folgt?",
+      "options": [
+        {
+          "text": "1.0×10⁻⁹ m² V⁻¹ s⁻¹.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1.0×10⁻⁵ m² V⁻¹ s⁻¹.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1.0×10⁻⁷ m² V⁻¹ s⁻¹.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "1.0×10⁻³ m² V⁻¹ s⁻¹.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1.0×10² m² V⁻¹ s⁻¹.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 10⁻⁹ liegt um Faktor hundert zu tief; aus v=10⁻⁵ m/s und E=10² V/m folgt 10⁻⁷. B: 10⁻⁵ m/s ist zunächst die Driftgeschwindigkeit; für die Beweglichkeit muss zusätzlich durch E=100 V/m geteilt werden. C: v=10⁻³/100=10⁻⁵ m/s; E=10/0.10=100 V/m; µ=10⁻⁷ m²/(V s). D: 10⁻³ ist hier die Strecke in Metern, nicht die durch Zeit und Feldstärke dividierte Beweglichkeit. E: 10² ist der Zahlenwert der Feldstärke in V/m, nicht der Quotient v/E mit der gefragten Beweglichkeitseinheit. Quelle: Originalunterlagen, PDF-S. 17–18,21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Ionenbeweglichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionenbeweglichkeit"
+      ],
+      "questionGoal": "Ionenbeweglichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Ionenbeweglichkeit",
+        "correctReasoning": "v=10⁻³/100=10⁻⁵ m/s; E=10/0.10=100 V/m; µ=10⁻⁷ m²/(V s).",
+        "wrongAnswerExplanations": {
+          "A": "10⁻⁹ liegt um Faktor hundert zu tief; aus v=10⁻⁵ m/s und E=10² V/m folgt 10⁻⁷.",
+          "B": "10⁻⁵ m/s ist zunächst die Driftgeschwindigkeit; für die Beweglichkeit muss zusätzlich durch E=100 V/m geteilt werden.",
+          "D": "10⁻³ ist hier die Strecke in Metern, nicht die durch Zeit und Feldstärke dividierte Beweglichkeit.",
+          "E": "10² ist der Zahlenwert der Feldstärke in V/m, nicht der Quotient v/E mit der gefragten Beweglichkeitseinheit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Eine optische Bank liefert g=30 cm und ein scharfes reelles Bild bei b=60 cm. Welche Brennweite folgt im Dünnlinsenmodell?",
+      "options": [
+        {
+          "text": "10 cm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "30 cm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "60 cm.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "90 cm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "20 cm.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 10 cm würde 1/f=0,1 cm⁻¹ verlangen; 1/30+1/60 ist jedoch nur 0,05 cm⁻¹. B: 30 cm setzt f gleich der Gegenstandsweite; dann läge das Bild im Unendlichen statt bei b=60 cm. C: 60 cm setzt f gleich der Bildweite und vernachlässigt den endlichen Beitrag 1/g zur Linsenformel. D: 90 cm ist g+b; die Brennweite folgt aus dem Kehrwert der Summe der Kehrwerte, also gb/(g+b). E: 1/f=1/30+1/60=1/20 cm⁻¹; f=gb/(g+b). Quelle: Originalunterlagen, PDF-S. 31,34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Brennweitenbestimmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Brennweitenbestimmung"
+      ],
+      "questionGoal": "Brennweitenbestimmung",
+      "structuredExplanation": {
+        "coreIdea": "Brennweitenbestimmung",
+        "correctReasoning": "1/f=1/30+1/60=1/20 cm⁻¹; f=gb/(g+b).",
+        "wrongAnswerExplanations": {
+          "A": "10 cm würde 1/f=0,1 cm⁻¹ verlangen; 1/30+1/60 ist jedoch nur 0,05 cm⁻¹.",
+          "B": "30 cm setzt f gleich der Gegenstandsweite; dann läge das Bild im Unendlichen statt bei b=60 cm.",
+          "C": "60 cm setzt f gleich der Bildweite und vernachlässigt den endlichen Beitrag 1/g zur Linsenformel.",
+          "D": "90 cm ist g+b; die Brennweite folgt aus dem Kehrwert der Summe der Kehrwerte, also gb/(g+b)."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Ein Gegenstand steht in g=0.5f vor einer Sammellinse. Welche Bildbeschreibung folgt im paraxialen Modell?",
+      "options": [
+        {
+          "text": "Virtuell, aufrecht und im Betragsmassstab 2.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Virtuell, umgekehrt und gleich gross.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Reell, umgekehrt und halb so gross.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein reelles Bild im Unendlichen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Reell, umgekehrt und doppelt so gross.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 1/b=1/f−2/f=−1/f; b=−f und der aufrechte Massstab ist −b/g=2. B: Die virtuelle Lage passt, aber m=−b/g=2 ist positiv und weder umgekehrt noch eins. C: Bei g<f entsteht kein reelles verkleinertes Bild; die Linsenformel ergibt b=−f und einen aufrechten Betragsmassstab 2. D: Ein Bild im Unendlichen setzt g=f voraus; der Gegenstand liegt hier bei der halben Brennweite. E: Der Betrag 2 stimmt, doch das Bild ist bei negativer Bildweite virtuell und aufrecht statt reell umgekehrt. Quelle: Originalunterlagen, PDF-S. 31–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Virtuelle Abbildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Virtuelle Abbildung"
+      ],
+      "questionGoal": "Virtuelle Abbildung",
+      "structuredExplanation": {
+        "coreIdea": "Virtuelle Abbildung",
+        "correctReasoning": "1/b=1/f−2/f=−1/f; b=−f und der aufrechte Massstab ist −b/g=2.",
+        "wrongAnswerExplanations": {
+          "B": "Die virtuelle Lage passt, aber m=−b/g=2 ist positiv und weder umgekehrt noch eins.",
+          "C": "Bei g<f entsteht kein reelles verkleinertes Bild; die Linsenformel ergibt b=−f und einen aufrechten Betragsmassstab 2.",
+          "D": "Ein Bild im Unendlichen setzt g=f voraus; der Gegenstand liegt hier bei der halben Brennweite.",
+          "E": "Der Betrag 2 stimmt, doch das Bild ist bei negativer Bildweite virtuell und aufrecht statt reell umgekehrt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Nach Einsetzen einer dünnen Feldlinse am Zwischenbild wird mehr vom Objekt sichtbar, ohne dass sich der Bildmassstab ändert. Welche Erklärung passt?",
+      "options": [
+        {
+          "text": "Die Feldlinse lenkt zusätzliche Randstrahlen ins Okular und erweitert das Gesichtsfeld.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie ersetzt die Wellenlänge des Lichts durch eine Elektronenwellenlänge.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie ändert zwangsläufig die Objektgrösse selbst.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie muss die Objektivbrennweite vervierfacht haben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie verschiebt jedes Zwischenbild unabhängig von ihrer Lage um genau eine Brennweite.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Am Zwischenbildort verändert die geeignete Feldlinse vor allem die Strahlenführung zum Okular, nicht den dortigen Abbildungsmassstab. B: Eine Feldlinse bleibt Lichtoptik; sie ersetzt Photonen nicht durch Elektronen oder deren Materiewellen. C: Die geometrische Objektgrösse bleibt unverändert; mehr sichtbarer Ausschnitt entsteht durch veränderte Strahlenführung. D: Eine Änderung des Gesichtsfelds durch Strahlenumlenkung erfordert keine Vervierfachung der Objektivbrennweite. E: Die Bildlage hängt von der konkreten Anordnung ab; eine universelle Verschiebung um genau eine Brennweite ist nicht gegeben. Quelle: Originalunterlagen, PDF-S. 32,34–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Feldlinsenversuch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Feldlinsenversuch"
+      ],
+      "questionGoal": "Feldlinsenversuch",
+      "structuredExplanation": {
+        "coreIdea": "Feldlinsenversuch",
+        "correctReasoning": "Am Zwischenbildort verändert die geeignete Feldlinse vor allem die Strahlenführung zum Okular, nicht den dortigen Abbildungsmassstab.",
+        "wrongAnswerExplanations": {
+          "B": "Eine Feldlinse bleibt Lichtoptik; sie ersetzt Photonen nicht durch Elektronen oder deren Materiewellen.",
+          "C": "Die geometrische Objektgrösse bleibt unverändert; mehr sichtbarer Ausschnitt entsteht durch veränderte Strahlenführung.",
+          "D": "Eine Änderung des Gesichtsfelds durch Strahlenumlenkung erfordert keine Vervierfachung der Objektivbrennweite.",
+          "E": "Die Bildlage hängt von der konkreten Anordnung ab; eine universelle Verschiebung um genau eine Brennweite ist nicht gegeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zur Gittermessung.",
+      "options": [
+        {
+          "text": "Bekannte He-Linien erlauben eine Eichung, bevor unbekannte Wellenlängen bestimmt werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Energie einer Linie wird aus ihrer Intensität allein eindeutig berechnet.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Für den Beugungswinkel gilt bei jeder Geometrie exakt sinφ=a/d.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Mitteln symmetrischer linker und rechter Linienabstände kann die geometrische Auswertung verbessern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die bekannte λ und der gemessene Winkel liefern g. B: EPhoton=hc/λ; Intensität enthält auch die Photonenzahl. C: Bei einem rechtwinkligen Aufbau ist tanφ=a/d und sinφ=a/√(a²+d²). D: Es nutzt beide Seiten derselben Ordnung. Quelle: Originalunterlagen, PDF-S. 6,9–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Spektralversuch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spektralversuch"
+      ],
+      "questionGoal": "Spektralversuch",
+      "structuredExplanation": {
+        "coreIdea": "Spektralversuch",
+        "correctReasoning": "Die bekannte λ und der gemessene Winkel liefern g. Es nutzt beide Seiten derselben Ordnung.",
+        "wrongAnswerExplanations": {
+          "A": "Die bekannte λ und der gemessene Winkel liefern g.",
+          "B": "EPhoton=hc/λ; Intensität enthält auch die Photonenzahl.",
+          "C": "Bei einem rechtwinkligen Aufbau ist tanφ=a/d und sinφ=a/√(a²+d²).",
+          "D": "Es nutzt beide Seiten derselben Ordnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zum Bohr-Grundmodell des H-Atoms.",
+      "options": [
+        {
+          "text": "Ein Übergang nach tieferem Niveau kann ein Photon mit der Energiedifferenz emittieren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die H₂-gefüllte Röhre kann neben atomaren Linien auch molekulare Banden zeigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Gebundene Energien liegen bei gewähltem Nullpunkt des freien Elektrons negativ.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Lymanlinien enden bei n=2 und liegen deshalb im gleichen sichtbaren Bereich wie Balmerlinien.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Energie wird als positiver Photonbetrag abgegeben. B: Das Praktikumsskript weist auf beide Anteile hin. C: Für H gilt näherungsweise En=−13.6 eV/n². D: Lyman endet bei n=1 und liegt im UV. Quelle: Originalunterlagen, PDF-S. 7–8,12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Termschema Wasserstoff"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Termschema Wasserstoff"
+      ],
+      "questionGoal": "Termschema Wasserstoff",
+      "structuredExplanation": {
+        "coreIdea": "Termschema Wasserstoff",
+        "correctReasoning": "Die Energie wird als positiver Photonbetrag abgegeben. Das Praktikumsskript weist auf beide Anteile hin. Für H gilt näherungsweise En=−13.6 eV/n².",
+        "wrongAnswerExplanations": {
+          "A": "Die Energie wird als positiver Photonbetrag abgegeben.",
+          "B": "Das Praktikumsskript weist auf beide Anteile hin.",
+          "C": "Für H gilt näherungsweise En=−13.6 eV/n².",
+          "D": "Lyman endet bei n=1 und liegt im UV."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zu I(U)-Diagrammen.",
+      "options": [
+        {
+          "text": "Die Steigung einer I-gegen-U-Geraden entspricht dem Widerstand R.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Diode ist unter allen Spannungen und Richtungen ein konstanter ohmscher Widerstand.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein metallischer Glühfaden muss bei starker Eigenerwärmung denselben R wie im kalten Zustand behalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine gekrümmte Kennlinie kann durch Eigenerwärmung und temperaturabhängigen Widerstand entstehen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie entspricht dem Leitwert 1/R. B: Die Richtungs- und Spannungsabhängigkeit prägt ihre Kennlinie. C: Bei Metallen steigt R häufig mit Temperatur. D: Das Skript vergleicht solche Metall- und Halbleitereffekte. Quelle: Originalunterlagen, PDF-S. 15–17,24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Kennlinien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kennlinien"
+      ],
+      "questionGoal": "Kennlinien",
+      "structuredExplanation": {
+        "coreIdea": "Kennlinien",
+        "correctReasoning": "Das Skript vergleicht solche Metall- und Halbleitereffekte.",
+        "wrongAnswerExplanations": {
+          "A": "Sie entspricht dem Leitwert 1/R.",
+          "B": "Die Richtungs- und Spannungsabhängigkeit prägt ihre Kennlinie.",
+          "C": "Bei Metallen steigt R häufig mit Temperatur.",
+          "D": "Das Skript vergleicht solche Metall- und Halbleitereffekte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zu idealen Schaltungen.",
+      "options": [
+        {
+          "text": "Bei einem rein ohmschen Widerstand sind sinusförmige Spannung und Strom in Phase.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Parallele Widerstände haben stets denselben Strom auch bei verschiedenen Widerstandswerten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Maschenregel erlaubt bei einem Umlauf beliebige nichtbilanzierte Spannungsgewinne.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "In Reihe geschaltete Widerstände werden vom selben Strom durchflossen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: U(t)=RI(t) bei konstantem R. B: Sie haben dieselbe Spannung, aber I=U/R kann verschieden sein. C: Die vorzeichenrichtige Summe ist im quasistatischen Modell null. D: Ohne Abzweigung kann keine unterschiedliche stationäre Stromstärke entstehen. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Kirchhoff und Wechselstrom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kirchhoff und Wechselstrom"
+      ],
+      "questionGoal": "Kirchhoff und Wechselstrom",
+      "structuredExplanation": {
+        "coreIdea": "Kirchhoff und Wechselstrom",
+        "correctReasoning": "U(t)=RI(t) bei konstantem R. Ohne Abzweigung kann keine unterschiedliche stationäre Stromstärke entstehen.",
+        "wrongAnswerExplanations": {
+          "A": "U(t)=RI(t) bei konstantem R.",
+          "B": "Sie haben dieselbe Spannung, aber I=U/R kann verschieden sein.",
+          "C": "Die vorzeichenrichtige Summe ist im quasistatischen Modell null.",
+          "D": "Ohne Abzweigung kann keine unterschiedliche stationäre Stromstärke entstehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zum Farbfrontversuch.",
+      "options": [
+        {
+          "text": "Negative Permanganationen wandern im angelegten Feld zur positiven Elektrode.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Unterschiedliche Flüssigkeitsniveaus können zusätzliche Strömung und damit einen Messfehler erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Diffusion verkleinert im Farbfrontversuch die Breite des Konzentrationsübergangs mit zunehmender Zeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die absolute Beweglichkeit hat die Einheit m/s.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre elektrische Kraft weist entgegen der Feldrichtung. B: Die Frontbewegung soll elektrische Drift widerspiegeln. C: Diffusion verbreitert die Grenze und erschwert die exakte Ortsbestimmung. D: Sie ist Geschwindigkeit geteilt durch Feldstärke, also m²/(V s). Quelle: Originalunterlagen, PDF-S. 17–18,21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Ionenwanderung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionenwanderung"
+      ],
+      "questionGoal": "Ionenwanderung",
+      "structuredExplanation": {
+        "coreIdea": "Ionenwanderung",
+        "correctReasoning": "Ihre elektrische Kraft weist entgegen der Feldrichtung. Die Frontbewegung soll elektrische Drift widerspiegeln.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre elektrische Kraft weist entgegen der Feldrichtung.",
+          "B": "Die Frontbewegung soll elektrische Drift widerspiegeln.",
+          "C": "Diffusion verbreitert die Grenze und erschwert die exakte Ortsbestimmung.",
+          "D": "Sie ist Geschwindigkeit geteilt durch Feldstärke, also m²/(V s)."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zu idealisierten Gleichrichterschaltungen.",
+      "options": [
+        {
+          "text": "Ein parallel zum Lastwiderstand geschalteter Kondensator kann die Spannung zwischen Ladephasen stützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Graetzbrücke ohne Glättung erzeugt exakt konstante Gleichspannung ohne Restwelligkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleicher Last und Frequenz kann eine grössere geeignete Kapazität die Restwelligkeit verkleinern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Einweggleichrichter nutzt nur eine Polarität der Eingangshalbwellen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Entladung versorgt vorübergehend die Last. B: Sie erzeugt eine gleichgerichtete pulsierende Spannung. C: Die Spannungsabnahme pro entnommener Ladung ist ΔU=ΔQ/C. D: Die Gegenpolarität wird gesperrt. Quelle: Originalunterlagen, PDF-S. 26–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Gleichrichtung und Glättung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gleichrichtung und Glättung"
+      ],
+      "questionGoal": "Gleichrichtung und Glättung",
+      "structuredExplanation": {
+        "coreIdea": "Gleichrichtung und Glättung",
+        "correctReasoning": "Seine Entladung versorgt vorübergehend die Last. Die Spannungsabnahme pro entnommener Ladung ist ΔU=ΔQ/C. Die Gegenpolarität wird gesperrt.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Entladung versorgt vorübergehend die Last.",
+          "B": "Sie erzeugt eine gleichgerichtete pulsierende Spannung.",
+          "C": "Die Spannungsabnahme pro entnommener Ladung ist ΔU=ΔQ/C.",
+          "D": "Die Gegenpolarität wird gesperrt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zu dünnen Linsen.",
+      "options": [
+        {
+          "text": "Ein virtuelles Bild kann ohne weitere Optik direkt auf einem Schirm aufgefangen werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Brechkraft einer Linse ist D=1/f mit f in Metern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Streulinse besitzt im üblichen Vorzeichensystem positive Brennweite.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Linsenformel 1/f=1/g+1/b ist unabhängig von Winkel und Linsendicke unbegrenzt exakt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Am virtuellen Bildpunkt kreuzen sich nur Rückverlängerungen. B: Ihre Einheit ist die Dioptrie m⁻¹. C: Sie wird mit f<0 beschrieben. D: Sie beruht auf Dünnlinsen-/paraxialer Näherung. Quelle: Originalunterlagen, PDF-S. 30–34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Linsenabbildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Linsenabbildung"
+      ],
+      "questionGoal": "Linsenabbildung",
+      "structuredExplanation": {
+        "coreIdea": "Linsenabbildung",
+        "correctReasoning": "Ihre Einheit ist die Dioptrie m⁻¹.",
+        "wrongAnswerExplanations": {
+          "A": "Am virtuellen Bildpunkt kreuzen sich nur Rückverlängerungen.",
+          "B": "Ihre Einheit ist die Dioptrie m⁻¹.",
+          "C": "Sie wird mit f<0 beschrieben.",
+          "D": "Sie beruht auf Dünnlinsen-/paraxialer Näherung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpp_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPP",
+      "stem": "Beurteilen Sie die Aussagen zum Praktikumsmikroskop.",
+      "options": [
+        {
+          "text": "Beim entspannten Sehen liegt das Zwischenbild näherungsweise in der Brennebene des Okulars.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein grösseres Gesichtsfeld durch die Feldlinse beweist automatisch höhere beugungsbegrenzte Auflösung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Okular erzeugt das reelle Zwischenbild direkt aus dem Gegenstand vor dem Objektiv.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Objektiv erzeugt ein reelles umgekehrtes Zwischenbild.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die austretenden Strahlen eines Bildpunktes werden parallel. B: Gesichtsfeld und Auflösung sind verschiedene Eigenschaften. C: Das Objektiv erzeugt das Zwischenbild; das Okular betrachtet es als Lupe. D: Dieses ist zunächst auf der Mattscheibe sichtbar. Quelle: Originalunterlagen, PDF-S. 32–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPP",
+        "Mikroskopaufbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mikroskopaufbau"
+      ],
+      "questionGoal": "Mikroskopaufbau",
+      "structuredExplanation": {
+        "coreIdea": "Mikroskopaufbau",
+        "correctReasoning": "Die austretenden Strahlen eines Bildpunktes werden parallel. Dieses ist zunächst auf der Mattscheibe sichtbar.",
+        "wrongAnswerExplanations": {
+          "A": "Die austretenden Strahlen eines Bildpunktes werden parallel.",
+          "B": "Gesichtsfeld und Auflösung sind verschiedene Eigenschaften.",
+          "C": "Das Objektiv erzeugt das Zwischenbild; das Okular betrachtet es als Lupe.",
+          "D": "Dieses ist zunächst auf der Mattscheibe sichtbar."
+        }
+      }
+    }
+  ]
+}

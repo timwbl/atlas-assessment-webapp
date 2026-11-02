@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block4_kvb19_20261102",
+  "lectureCode": "KVB19",
+  "title": "Zellzyklus, Mitose und homologe Rekombination",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB19_ZellzyklusMitose_2025_WK. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. n und c werden getrennt: Ploidie versus DNA-Menge. Die Reihenfolge der mitotischen Kernteilung wird gegenüber Cytokinese funktionell unterschieden. Rekombination muss nicht zwingend ein Crossing-over erzeugen. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "DNA-Gehalt, Ploidie und Chromosomenorganisation im Zellzyklus unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Cycline, Cdks, Inhibitoren und Kontrollpunkte mechanistisch verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Mitosephasen und Trennung von Schwesterchromatiden erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Mitose und Meiose vergleichen sowie homologe Rekombination und Genkonversion erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb19_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Eine diploide Zelle hat die S-Phase beendet, aber noch keine Chromatiden getrennt. Welche Angabe passt?",
+      "options": [
+        {
+          "text": "4n, 4c.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1n, 2c.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2n, 4c.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "1n, 1c.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2n, 1c.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: DNA-Verdoppelung allein verdoppelt die Ploidie nicht. B: Dies passt zu einem Produkt der ersten meiotischen Teilung. C: Die Ploidie bleibt diploid, die DNA-Menge ist verdoppelt. D: Dies entspricht einem haploiden Endprodukt nach Meiose II. E: Eine normale diploide G1-Zelle besitzt bereits 2c. Quelle: Originalunterlagen, PDF-S. 3,13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "DNA-Gehalt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Gehalt"
+      ],
+      "questionGoal": "DNA-Gehalt",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Gehalt",
+        "correctReasoning": "Die Ploidie bleibt diploid, die DNA-Menge ist verdoppelt.",
+        "wrongAnswerExplanations": {
+          "A": "DNA-Verdoppelung allein verdoppelt die Ploidie nicht.",
+          "B": "Dies passt zu einem Produkt der ersten meiotischen Teilung.",
+          "D": "Dies entspricht einem haploiden Endprodukt nach Meiose II.",
+          "E": "Eine normale diploide G1-Zelle besitzt bereits 2c."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Schwesterchromatiden bleiben bis zur Trennung eng verbunden. Welcher Proteinkomplex trägt dazu bei?",
+      "options": [
+        {
+          "text": "Condensin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Spindelkontrollpunkt-Komplex.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Cdk-Cyclin-Komplex allein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Cohesin.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Kernlamina.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser Komplex fördert vor allem die Chromosomenkondensation. B: Er kontrolliert die Anheftung, ist aber keine Chromatidenklammer. C: Er reguliert den Zyklus statt strukturell zu klammern. D: Es hält die nach Replikation entstandenen Schwestern zusammen. E: Sie stabilisiert die Kernhülle, nicht die Schwesterbindung. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Cohesin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cohesin"
+      ],
+      "questionGoal": "Cohesin",
+      "structuredExplanation": {
+        "coreIdea": "Cohesin",
+        "correctReasoning": "Es hält die nach Replikation entstandenen Schwestern zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser Komplex fördert vor allem die Chromosomenkondensation.",
+          "B": "Er kontrolliert die Anheftung, ist aber keine Chromatidenklammer.",
+          "C": "Er reguliert den Zyklus statt strukturell zu klammern.",
+          "E": "Sie stabilisiert die Kernhülle, nicht die Schwesterbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Welche Beobachtung widerspricht der Vorstellung völlig ungeordneter Interphasechromosomen?",
+      "options": [
+        {
+          "text": "Alle Chromosomen sind in der Interphase maximal mitotisch kondensiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes Chromosom ist homogen über das gesamte Kernvolumen verteilt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Chromosomen existieren nur zwischen Prophase und Telophase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle homologen Chromosomen bilden dauerhaft meiotische Bivalente.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Chromosomen nehmen räumliche Territorien im Zellkern ein.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Interphasechromatin besitzt eine andere Organisation. B: Territorien widersprechen dieser homogenen Verteilung. C: Die DNA bleibt auch in der Interphase organisiert. D: Dies ist keine allgemeine Interphaseneigenschaft. E: Dekondensation bedeutet keine vollständige räumliche Unordnung. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Interphase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interphase"
+      ],
+      "questionGoal": "Interphase",
+      "structuredExplanation": {
+        "coreIdea": "Interphase",
+        "correctReasoning": "Dekondensation bedeutet keine vollständige räumliche Unordnung.",
+        "wrongAnswerExplanations": {
+          "A": "Interphasechromatin besitzt eine andere Organisation.",
+          "B": "Territorien widersprechen dieser homogenen Verteilung.",
+          "C": "Die DNA bleibt auch in der Interphase organisiert.",
+          "D": "Dies ist keine allgemeine Interphaseneigenschaft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Die Cdk-Menge bleibt ungefähr gleich, ihre Aktivität schwankt jedoch. Welche Erklärung passt?",
+      "options": [
+        {
+          "text": "Periodische Cyclinbindung und zusätzliche regulatorische Modifikationen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Cdk-Konzentration allein schwankt zwingend im gleichen Ausmass.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Bindung eines Cyclins hemmt die Cdk dauerhaft.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die ATP-Konzentration ersetzt jede Cyclinregulation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Cdk sind unabhängig von Phosphorylierungen immer maximal aktiv.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Aktivität hängt nicht allein von der Cdk-Menge ab. B: Im Stamm bleibt sie ungefähr konstant. C: Cyclinbindung kann die Aktivierung ermöglichen. D: Regulatorische Proteinkontakte bleiben erforderlich. E: Zusätzliche Modifikationen können die Aktivität regulieren. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Cdk-Regulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cdk-Regulation"
+      ],
+      "questionGoal": "Cdk-Regulation",
+      "structuredExplanation": {
+        "coreIdea": "Cdk-Regulation",
+        "correctReasoning": "Aktivität hängt nicht allein von der Cdk-Menge ab.",
+        "wrongAnswerExplanations": {
+          "B": "Im Stamm bleibt sie ungefähr konstant.",
+          "C": "Cyclinbindung kann die Aktivierung ermöglichen.",
+          "D": "Regulatorische Proteinkontakte bleiben erforderlich.",
+          "E": "Zusätzliche Modifikationen können die Aktivität regulieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Ein Cyclin wird ubiquitiniert und proteasomal abgebaut. Welche unmittelbare Folge passt?",
+      "options": [
+        {
+          "text": "Die Cyclin-abhängige Kinase bleibt ohne ihren Partner zwangsläufig voll aktiv.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Aktivität des zugehörigen Cdk-Komplexes sinkt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das zugehörige Cyclingen wird dabei obligatorisch deletiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Origins werden unmittelbar erneut lizenziert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Ubiquitinierung verdoppelt die Cyclinmenge.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Partnerverlust senkt ihre Aktivität. B: Ein notwendiger regulatorischer Partner geht verloren. C: Proteinabbau ändert nicht automatisch das Gen. D: Cyclinabbau allein ist kein universeller Re-Lizenzierungsbeweis. E: Sie markiert hier den Abbau. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Cyclinabbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cyclinabbau"
+      ],
+      "questionGoal": "Cyclinabbau",
+      "structuredExplanation": {
+        "coreIdea": "Cyclinabbau",
+        "correctReasoning": "Ein notwendiger regulatorischer Partner geht verloren.",
+        "wrongAnswerExplanations": {
+          "A": "Der Partnerverlust senkt ihre Aktivität.",
+          "C": "Proteinabbau ändert nicht automatisch das Gen.",
+          "D": "Cyclinabbau allein ist kein universeller Re-Lizenzierungsbeweis.",
+          "E": "Sie markiert hier den Abbau."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "DNA-Schaden stabilisiert p53; anschliessend steigt p21. Wie kann dies den Eintritt in die S-Phase bremsen?",
+      "options": [
+        {
+          "text": "p21 aktiviert den Cyclin-Cdk-Komplex zusätzlich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "p53 ersetzt direkt die Replikationshelicase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "p21 repariert jeden DNA-Bruch allein enzymatisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Kontrollpunkt erzwingt sofortige Chromatidentrennung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "p21 hemmt Cyclin-Cdk-Komplexe.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es wirkt hier als Cdk-Inhibitor. B: Es reguliert unter anderem Genexpression. C: Seine hier relevante Funktion ist Zyklushemmung. D: Er bremst den S-Phasen-Eintritt. E: Damit wird der Zellzyklusübergang unterbrochen. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "DNA-Schadenskontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Schadenskontrolle"
+      ],
+      "questionGoal": "DNA-Schadenskontrolle",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Schadenskontrolle",
+        "correctReasoning": "Damit wird der Zellzyklusübergang unterbrochen.",
+        "wrongAnswerExplanations": {
+          "A": "Es wirkt hier als Cdk-Inhibitor.",
+          "B": "Es reguliert unter anderem Genexpression.",
+          "C": "Seine hier relevante Funktion ist Zyklushemmung.",
+          "D": "Er bremst den S-Phasen-Eintritt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Warum wird nach Aktivierung eines Replikationsursprungs ein erneutes Lizenzieren im selben Zyklus verhindert?",
+      "options": [
+        {
+          "text": "Damit jedes Origin unmittelbar mehrfach in derselben S-Phase feuert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Damit die Schwesterchromatiden vor der Replikation getrennt werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Damit der Zellzyklus ohne DNA-Verdopplung zur Mitose übergeht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Damit nur mütterliche Chromosomen repliziert werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Damit jeder Genomabschnitt normalerweise nur einmal repliziert wird.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Genau diese Überreplikation wird verhindert. B: Lizenzkontrolle betrifft Replikationsstarts. C: Einmalige vollständige Verdopplung bleibt erforderlich. D: Beide homologen Sätze müssen kopiert werden. E: Wiederholtes Starten könnte den DNA-Gehalt verfälschen. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Replikationslizenzierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Replikationslizenzierung"
+      ],
+      "questionGoal": "Replikationslizenzierung",
+      "structuredExplanation": {
+        "coreIdea": "Replikationslizenzierung",
+        "correctReasoning": "Wiederholtes Starten könnte den DNA-Gehalt verfälschen.",
+        "wrongAnswerExplanations": {
+          "A": "Genau diese Überreplikation wird verhindert.",
+          "B": "Lizenzkontrolle betrifft Replikationsstarts.",
+          "C": "Einmalige vollständige Verdopplung bleibt erforderlich.",
+          "D": "Beide homologen Sätze müssen kopiert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Chromosomen liegen in der Äquatorialebene und sind über ihre Kinetochoren an Spindelfasern gebunden. Welche Phase passt?",
+      "options": [
+        {
+          "text": "Telophase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "S-Phase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "G1-Phase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Anaphase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Metaphase.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Neue Kerne bilden sich um getrennte Chromosomensätze. B: Dort wird DNA repliziert. C: Sie liegt ausserhalb der Mitose. D: Die Schwesterchromatiden werden bereits getrennt. E: Die geordnete äquatoriale Ausrichtung ist kennzeichnend. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Mitosephase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mitosephase"
+      ],
+      "questionGoal": "Mitosephase",
+      "structuredExplanation": {
+        "coreIdea": "Mitosephase",
+        "correctReasoning": "Die geordnete äquatoriale Ausrichtung ist kennzeichnend.",
+        "wrongAnswerExplanations": {
+          "A": "Neue Kerne bilden sich um getrennte Chromosomensätze.",
+          "B": "Dort wird DNA repliziert.",
+          "C": "Sie liegt ausserhalb der Mitose.",
+          "D": "Die Schwesterchromatiden werden bereits getrennt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Eine Phosphorylierung destabilisiert Laminenkontakte; die Kernhülle löst sich auf. Welche Zuordnung passt?",
+      "options": [
+        {
+          "text": "Ein Vorgang bei der Kernhüllen-Neubildung in der Telophase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein unmittelbarer Schritt der DNA-Ligation in der S-Phase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein obligatorischer Schritt der meiotischen DNA-Verdopplung zwischen I und II.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein direkter Mechanismus der Schwesterchromatiden-Verknüpfung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Vorgang beim Übergang in die offene Mitose.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dort wird die Lamina wieder aufgebaut. B: Lamindynamik betrifft die Kernarchitektur. C: Dazwischen erfolgt keine reguläre S-Phase. D: Diese Bindung beruht vor allem auf Cohesin. E: Der Kernhüllenabbau ermöglicht Spindelkontakt zu Chromosomen. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Kernhülle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kernhülle"
+      ],
+      "questionGoal": "Kernhülle",
+      "structuredExplanation": {
+        "coreIdea": "Kernhülle",
+        "correctReasoning": "Der Kernhüllenabbau ermöglicht Spindelkontakt zu Chromosomen.",
+        "wrongAnswerExplanations": {
+          "A": "Dort wird die Lamina wieder aufgebaut.",
+          "B": "Lamindynamik betrifft die Kernarchitektur.",
+          "C": "Dazwischen erfolgt keine reguläre S-Phase.",
+          "D": "Diese Bindung beruht vor allem auf Cohesin."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Welche Trennung kennzeichnet die erste meiotische Teilung gegenüber der mitotischen Anaphase?",
+      "options": [
+        {
+          "text": "Trennung aller Schwesterchromatiden wie in der Mitose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Erneute DNA-Verdopplung ohne Chromosomentrennung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Trennung homologer Chromosomen bei zunächst verbundenen Schwesterchromatiden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Beibehaltung beider homologer Sätze in jeder Tochterzelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Direkte Erzeugung von vier diploiden Tochterkernen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Meiose I trennt zunächst Homologe. B: Dies ist keine erste meiotische Teilung. C: Damit wird die Ploidie reduziert. D: Die erste Teilung reduziert die Ploidie. E: Meiose erzeugt nach zwei Teilungen haploide Produkte. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Meiose I"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Meiose I"
+      ],
+      "questionGoal": "Meiose I",
+      "structuredExplanation": {
+        "coreIdea": "Meiose I",
+        "correctReasoning": "Damit wird die Ploidie reduziert.",
+        "wrongAnswerExplanations": {
+          "A": "Meiose I trennt zunächst Homologe.",
+          "B": "Dies ist keine erste meiotische Teilung.",
+          "D": "Die erste Teilung reduziert die Ploidie.",
+          "E": "Meiose erzeugt nach zwei Teilungen haploide Produkte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Ein Doppelstrangbruch wird anhand eines intakten Schwesterchromatids repariert. Welche Eigenschaft ermöglicht die genaue Wiederherstellung?",
+      "options": [
+        {
+          "text": "Ligase kann jede fehlende Sequenz ohne Vorlage rekonstruieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Rekombination muss ausschliesslich zufällige Basen einfügen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Schwesterchromatid wird vollständig ohne Sequenzvergleich eingebaut.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Proofreading einer Polymerase ersetzt jede Doppelstrangbruchvorlage.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die homologe Sequenz dient als Vorlage.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie synthetisiert die fehlende Information nicht. B: Homologie ermöglicht vorlagengestützte Wiederherstellung. C: Homologe Abschnitte vermitteln die Reparatur. D: Proofreading und homologe Reparatur sind verschieden. E: Die fehlende Information kann daraus rekonstruiert werden. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Homologe Reparatur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Homologe Reparatur"
+      ],
+      "questionGoal": "Homologe Reparatur",
+      "structuredExplanation": {
+        "coreIdea": "Homologe Reparatur",
+        "correctReasoning": "Die fehlende Information kann daraus rekonstruiert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Sie synthetisiert die fehlende Information nicht.",
+          "B": "Homologie ermöglicht vorlagengestützte Wiederherstellung.",
+          "C": "Homologe Abschnitte vermitteln die Reparatur.",
+          "D": "Proofreading und homologe Reparatur sind verschieden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Nach Bildung einer Heteroduplexregion wird eine Allelfehlpaarung repariert. Dabei wird Information eines Allels auf das andere übertragen. Was ist beschrieben?",
+      "options": [
+        {
+          "text": "Reziprokes Crossing-over als einzig mögliche Definition.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Semikonservative Replikation ohne Allelumwandlung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Unveränderte Segregation homologer Chromosomen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Genkonversion.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Nicht-homologe Endverknüpfung ohne Heteroduplexvorlage.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Genkonversion ist eine nichtreziproke Informationsübertragung. B: Die beschriebene Fehlpaarungsreparatur verändert Allelinformation. C: Hier wird zuvor Sequenzinformation übertragen. D: Sie kann einen nichtreziproken Informationstransfer bewirken. E: Der Stamm beschreibt homologe Paarung und Korrektur. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Genkonversion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Genkonversion"
+      ],
+      "questionGoal": "Genkonversion",
+      "structuredExplanation": {
+        "coreIdea": "Genkonversion",
+        "correctReasoning": "Sie kann einen nichtreziproken Informationstransfer bewirken.",
+        "wrongAnswerExplanations": {
+          "A": "Genkonversion ist eine nichtreziproke Informationsübertragung.",
+          "B": "Die beschriebene Fehlpaarungsreparatur verändert Allelinformation.",
+          "C": "Hier wird zuvor Sequenzinformation übertragen.",
+          "E": "Der Stamm beschreibt homologe Paarung und Korrektur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "DNA-Gehalt, Ploidie und Teilungszustand werden getrennt protokolliert. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Jede DNA-Verdoppelung verdoppelt automatisch die Zahl homologer Chromosomensätze.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Austritt in G0 kann bei geeigneten Zellen reversibel sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die S-Phase verdoppelt regulär die Ploidie von 2n auf 4n.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle menschlichen Zelltypen teilen sich gleich schnell.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Schwesterchromatiden erhöhen zunächst den c-Wert. B: G0 bedeutet nicht zwangsläufig Zelltod. C: Sie verdoppelt die DNA-Menge, nicht die Zahl homologer Sätze. D: Differenzierungszustand und Gewebe beeinflussen die Teilungsaktivität. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Zellzyklusphasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zellzyklusphasen"
+      ],
+      "questionGoal": "Zellzyklusphasen",
+      "structuredExplanation": {
+        "coreIdea": "Zellzyklusphasen",
+        "correctReasoning": "G0 bedeutet nicht zwangsläufig Zelltod.",
+        "wrongAnswerExplanations": {
+          "A": "Schwesterchromatiden erhöhen zunächst den c-Wert.",
+          "B": "G0 bedeutet nicht zwangsläufig Zelltod.",
+          "C": "Sie verdoppelt die DNA-Menge, nicht die Zahl homologer Sätze.",
+          "D": "Differenzierungszustand und Gewebe beeinflussen die Teilungsaktivität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Ein Cyclin-Cdk-Komplex wird gebunden, phosphoryliert und durch einen Inhibitor reguliert. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Der Proteasomenabbau eines Cyclins fügt dessen Cdk eine Phosphatgruppe an.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cyclinbindung ist nicht in jedem Fall allein ausreichend für volle Aktivität.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Phosphorylierung kann je nach Position aktivieren oder hemmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "p21 kann Cyclin-Cdk-Komplexe hemmen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Proteolyse und Phosphorylierung sind verschiedene Prozesse. B: Phosphorylierung und Inhibitoren wirken zusätzlich. C: Die Modifikation besitzt keine universelle Wirkungsrichtung. D: Damit kann ein DNA-Schadensarrest unterstützt werden. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Regulationslogik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regulationslogik"
+      ],
+      "questionGoal": "Regulationslogik",
+      "structuredExplanation": {
+        "coreIdea": "Regulationslogik",
+        "correctReasoning": "Phosphorylierung und Inhibitoren wirken zusätzlich. Die Modifikation besitzt keine universelle Wirkungsrichtung. Damit kann ein DNA-Schadensarrest unterstützt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Proteolyse und Phosphorylierung sind verschiedene Prozesse.",
+          "B": "Phosphorylierung und Inhibitoren wirken zusätzlich.",
+          "C": "Die Modifikation besitzt keine universelle Wirkungsrichtung.",
+          "D": "Damit kann ein DNA-Schadensarrest unterstützt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Ein Zellzykluskontrollpunkt reagiert auf DNA-Schäden. Welche Aussagen zu Arrest und Fehlverteilung sind richtig?",
+      "options": [
+        {
+          "text": "Ein Verlust von p53 garantiert eine fehlerfreie Chromosomenverteilung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein DNA-Schadensarrest kann Reparatur vor weiterer Replikation ermöglichen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Schwere nicht reparierbare Schäden können Apoptose auslösen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aneuploidie bezeichnet ausschliesslich die Vervielfachung kompletter homologer Chromosomensätze.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Wichtige Schutzfunktionen können vielmehr entfallen. B: Dies vermindert die Weitergabe von Schäden. C: p53 kann solche Programme unterstützen. D: Aneuploidie betrifft die Abweichung einzelner Chromosomenzahlen; ganze Sätze betreffen Polyploidie. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Kontrollpunkte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kontrollpunkte"
+      ],
+      "questionGoal": "Kontrollpunkte",
+      "structuredExplanation": {
+        "coreIdea": "Kontrollpunkte",
+        "correctReasoning": "Dies vermindert die Weitergabe von Schäden. p53 kann solche Programme unterstützen.",
+        "wrongAnswerExplanations": {
+          "A": "Wichtige Schutzfunktionen können vielmehr entfallen.",
+          "B": "Dies vermindert die Weitergabe von Schäden.",
+          "C": "p53 kann solche Programme unterstützen.",
+          "D": "Aneuploidie betrifft die Abweichung einzelner Chromosomenzahlen; ganze Sätze betreffen Polyploidie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Mitose und Cytokinese werden anhand ihrer zeitlichen Merkmale zugeordnet. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die Prophase ist der reguläre Ort der gesamten Genomreplikation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "In der Anaphase bewegen sich getrennte Schwesterchromatiden zu den Polen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "In der Telophase müssen die Chromosomen dauerhaft maximal kondensiert bleiben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Cytokinese trennt das Cytoplasma der Tochterzellen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese erfolgt zuvor in der S-Phase. B: Dies verteilt die replizierte Information. C: Sie können wieder dekondensieren. D: Sie ergänzt die Kernteilung. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Mitosezuordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mitosezuordnung"
+      ],
+      "questionGoal": "Mitosezuordnung",
+      "structuredExplanation": {
+        "coreIdea": "Mitosezuordnung",
+        "correctReasoning": "Dies verteilt die replizierte Information. Sie ergänzt die Kernteilung.",
+        "wrongAnswerExplanations": {
+          "A": "Diese erfolgt zuvor in der S-Phase.",
+          "B": "Dies verteilt die replizierte Information.",
+          "C": "Sie können wieder dekondensieren.",
+          "D": "Sie ergänzt die Kernteilung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Spindel und Kernhülle werden während einer offenen Mitose umgebaut. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Spindelfasern bestehen aus Mikrotubuli.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Kernhüllenabbau entsteht durch vollständigen Abbau aller Histone.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Kinetochor ist mit dem für die Chromatidenkohäsion zuständigen Cohesinring identisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Wiederbildung der Kernhülle geht mit erneuter Zusammenlagerung ihrer Komponenten einher.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese vermitteln Chromosomenbewegungen. B: Histone bleiben Bestandteil des Chromatins; Lamindynamik ist entscheidend. C: Er ist ein eigener Anheftungskomplex am Centromer. D: Dephosphorylierung kann dies begünstigen. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Strukturumbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strukturumbau"
+      ],
+      "questionGoal": "Strukturumbau",
+      "structuredExplanation": {
+        "coreIdea": "Strukturumbau",
+        "correctReasoning": "Diese vermitteln Chromosomenbewegungen. Dephosphorylierung kann dies begünstigen.",
+        "wrongAnswerExplanations": {
+          "A": "Diese vermitteln Chromosomenbewegungen.",
+          "B": "Histone bleiben Bestandteil des Chromatins; Lamindynamik ist entscheidend.",
+          "C": "Er ist ein eigener Anheftungskomplex am Centromer.",
+          "D": "Dephosphorylierung kann dies begünstigen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Mitotische und meiotische Teilungen werden nach DNA-Replikation und Chromosomentrennung verglichen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Einer Meiose gehen DNA-Replikation und anschliessend zwei Teilungen voraus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Meiose II trennt primär homologe Paare wie Meiose I.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Crossing-over kann genetische Kombinationen verändern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die normale Mitose halbiert die Ploidie jeder Tochterzelle.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zwischen beiden Teilungen erfolgt normalerweise keine erneute S-Phase. B: In Meiose II werden Schwesterchromatiden getrennt. C: Homologe Chromosomen tauschen Regionen aus. D: Sie erhält die Chromosomensatzzahl. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Mitose und Meiose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mitose und Meiose"
+      ],
+      "questionGoal": "Mitose und Meiose",
+      "structuredExplanation": {
+        "coreIdea": "Mitose und Meiose",
+        "correctReasoning": "Zwischen beiden Teilungen erfolgt normalerweise keine erneute S-Phase. Homologe Chromosomen tauschen Regionen aus.",
+        "wrongAnswerExplanations": {
+          "A": "Zwischen beiden Teilungen erfolgt normalerweise keine erneute S-Phase.",
+          "B": "In Meiose II werden Schwesterchromatiden getrennt.",
+          "C": "Homologe Chromosomen tauschen Regionen aus.",
+          "D": "Sie erhält die Chromosomensatzzahl."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Ein Doppelstrangbruch soll durch homologe Rekombination repariert werden. Welche Aussagen zu Vorlage und Strangaustausch sind richtig?",
+      "options": [
+        {
+          "text": "Jede homologe Reparatur muss mit einem Crossing-over enden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Homologe Rekombination benötigt grundsätzlich völlig verschiedene Sequenzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3′-Einzelstrangüberhänge können in homologe Doppelstrang-DNA eindringen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Rad51 beziehungsweise RecA unterstützt den homologen Strangaustausch.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Wege ohne reziproken Austausch existieren. B: Ähnlichkeit beziehungsweise Homologie ist zentral. C: Komplementäre Paarung ermöglicht die Reparatursynthese. D: Diese Proteine vermitteln die Sequenzinteraktion. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Rekombinationsmechanismus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rekombinationsmechanismus"
+      ],
+      "questionGoal": "Rekombinationsmechanismus",
+      "structuredExplanation": {
+        "coreIdea": "Rekombinationsmechanismus",
+        "correctReasoning": "Komplementäre Paarung ermöglicht die Reparatursynthese. Diese Proteine vermitteln die Sequenzinteraktion.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Wege ohne reziproken Austausch existieren.",
+          "B": "Ähnlichkeit beziehungsweise Homologie ist zentral.",
+          "C": "Komplementäre Paarung ermöglicht die Reparatursynthese.",
+          "D": "Diese Proteine vermitteln die Sequenzinteraktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb19_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB19",
+      "stem": "Homologe Chromatiden bilden eine Heteroduplexregion. Welche Aussagen zu Crossing-over und Genkonversion sind richtig?",
+      "options": [
+        {
+          "text": "Crossing-over kann grössere Regionen homologer Chromatiden reziprok austauschen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Genkonversion setzt voraus, dass beide Allele vorher identisch waren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Mismatch-Reparatur in Heteroduplexen kann Genkonversion erzeugen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Genkonversion erfordert immer einen reziproken Austausch gleich grosser Chromosomenarme.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies verändert die Kopplung elterlicher Allele. B: Sequenzunterschiede machen eine Konversion erkennbar. C: Die Korrektur kann lokale Allelinformation angleichen. D: Sie kann eine nichtreziproke Informationsübertragung sein. Quelle: Originalunterlagen, PDF-S. 14,17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB19",
+        "Rekombinationsfolgen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rekombinationsfolgen"
+      ],
+      "questionGoal": "Rekombinationsfolgen",
+      "structuredExplanation": {
+        "coreIdea": "Rekombinationsfolgen",
+        "correctReasoning": "Dies verändert die Kopplung elterlicher Allele. Die Korrektur kann lokale Allelinformation angleichen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies verändert die Kopplung elterlicher Allele.",
+          "B": "Sequenzunterschiede machen eine Konversion erkennbar.",
+          "C": "Die Korrektur kann lokale Allelinformation angleichen.",
+          "D": "Sie kann eine nichtreziproke Informationsübertragung sein."
+        }
+      }
+    }
+  ]
+}

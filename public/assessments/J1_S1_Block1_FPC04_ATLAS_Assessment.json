@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block1_fpc04_20261102",
+  "lectureCode": "FPC04",
+  "title": "Säure-Base-Reaktionen und Titration",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. FPC - Fachpraktikum Chemie; EVC04 - FP Säure-Base-Reaktionen. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Seitenangaben beziehen sich auf PDF-Seiten des 35-seitigen Fachpraktikum-Chemie-Skripts, nicht auf dessen gedruckte Seitenzahlen. Ergänzend EVC als zweite Originalquelle. Nur Theorie und Auswertung, keine Organisations- oder Testatfragen.Die fehlerhafte Nernst-Zahl 51.9 mV im Skript wird nicht übernommen. Theorie: 2.303RT/F = 59.16 mV pro pH bei 25 °C. Keine numerische Elektrodenfrage hängt vom Druckfehler ab.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Titration, pH-Messung und Kalibrierung erklären und Messfehler erkennen."
+    },
+    {
+      "id": "lo2",
+      "text": "Säurekonzentrationen mit korrekter Stöchiometrie aus Titrationsdaten berechnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Äquivalenzpunkt, Neutralpunkt, Halbäquivalenz und Pufferbereiche an Titrationskurven unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Indikatorgleichgewichte und die Wahl eines geeigneten Umschlagsbereichs erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpc04_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "20.0 ml einer HCl-Probe benötigen bis zum Äquivalenzpunkt 16.0 ml NaOH mit 0.100 mol/l. Wie gross ist c(HCl)?",
+      "options": [
+        {
+          "text": "0.00160 mol/l.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0.800 mol/l.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0.0800 mol/l.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0.0500 mol/l.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.125 mol/l.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0.00160 mol ist die Stoffmenge, nicht die Konzentration. B: Die korrekte Division ergibt 0.0800 mol/l. C: n=0.100×0.0160=0.00160 mol; geteilt durch 0.0200 l. D: Aus den gegebenen Volumina ergibt sich nicht dieses Stoffmengenverhältnis. E: Das Verhältnis der Volumina wurde vertauscht. Quelle: Originalunterlagen, PDF-S. 22,25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "HCl-Konzentration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "HCl-Konzentration"
+      ],
+      "questionGoal": "HCl-Konzentration",
+      "structuredExplanation": {
+        "coreIdea": "HCl-Konzentration",
+        "correctReasoning": "n=0.100×0.0160=0.00160 mol; geteilt durch 0.0200 l.",
+        "wrongAnswerExplanations": {
+          "A": "0.00160 mol ist die Stoffmenge, nicht die Konzentration.",
+          "B": "Die korrekte Division ergibt 0.0800 mol/l.",
+          "D": "Aus den gegebenen Volumina ergibt sich nicht dieses Stoffmengenverhältnis.",
+          "E": "Das Verhältnis der Volumina wurde vertauscht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Eine Phosphorsäureprobe enthält 1.00 mmol H₃PO₄. Wie viel OH⁻ wurde am zweiten Äquivalenzpunkt insgesamt zugegeben?",
+      "options": [
+        {
+          "text": "0.50 mmol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3.00 mmol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2.00 mmol.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "1.00 mmol.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "4.00 mmol.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es werden zwei OH⁻ pro Säuremolekül benötigt, nicht ein halbes. B: Dies wäre die stöchiometrische Menge bis zum dritten Äquivalenzpunkt. C: Bis HPO₄²⁻ werden pro H₃PO₄ zwei Protonen neutralisiert. D: Diese Stoffmenge entspricht dem ersten Äquivalenzpunkt. E: Phosphorsäure besitzt in dieser Neutralisation drei abspaltbare Protonen, nicht vier. Quelle: Originalunterlagen, PDF-S. 22,25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Phosphorsäure-Stöchiometrie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphorsäure-Stöchiometrie"
+      ],
+      "questionGoal": "Phosphorsäure-Stöchiometrie",
+      "structuredExplanation": {
+        "coreIdea": "Phosphorsäure-Stöchiometrie",
+        "correctReasoning": "Bis HPO₄²⁻ werden pro H₃PO₄ zwei Protonen neutralisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Es werden zwei OH⁻ pro Säuremolekül benötigt, nicht ein halbes.",
+          "B": "Dies wäre die stöchiometrische Menge bis zum dritten Äquivalenzpunkt.",
+          "D": "Diese Stoffmenge entspricht dem ersten Äquivalenzpunkt.",
+          "E": "Phosphorsäure besitzt in dieser Neutralisation drei abspaltbare Protonen, nicht vier."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Welche Aussage beschreibt den Äquivalenzpunkt der idealisierten Titration von HCl mit NaOH bei 25 °C am besten?",
+      "options": [
+        {
+          "text": "Es liegt gleich viel freie HCl wie freie NaOH vor.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Hälfte der ursprünglichen Säure ist neutralisiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Säure- und Basenäquivalente sind gleich; der pH liegt ungefähr bei 7.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das gesamte Wasser wurde zu H₂ und O₂ gespalten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der pH ist immer der pKa-Wert der HCl.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beide reagieren weitgehend; stöchiometrische Äquivalenz bedeutet nicht hohe freie Konzentrationen beider. B: Dies wäre Halbäquivalenz, nicht vollständige stöchiometrische Umsetzung. C: Starke Säure und starke Base bilden unter diesen Modellbedingungen eine nahezu neutrale Salzlösung. D: Es handelt sich um Protonenübertragung, nicht Elektrolyse. E: Der pH am Äquivalenzpunkt folgt nicht aus einem Halbäquivalenz-Pufferargument für HCl. Quelle: Originalunterlagen, PDF-S. 22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Starke Säure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Starke Säure"
+      ],
+      "questionGoal": "Starke Säure",
+      "structuredExplanation": {
+        "coreIdea": "Starke Säure",
+        "correctReasoning": "Starke Säure und starke Base bilden unter diesen Modellbedingungen eine nahezu neutrale Salzlösung.",
+        "wrongAnswerExplanations": {
+          "A": "Beide reagieren weitgehend; stöchiometrische Äquivalenz bedeutet nicht hohe freie Konzentrationen beider.",
+          "B": "Dies wäre Halbäquivalenz, nicht vollständige stöchiometrische Umsetzung.",
+          "D": "Es handelt sich um Protonenübertragung, nicht Elektrolyse.",
+          "E": "Der pH am Äquivalenzpunkt folgt nicht aus einem Halbäquivalenz-Pufferargument für HCl."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Warum liegt der Äquivalenzpunkt von Essigsäure mit NaOH oberhalb pH 7 bei 25 °C?",
+      "options": [
+        {
+          "text": "Natriumionen sind in Wasser starke Brønsted-Basen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das gebildete Acetat reagiert basisch mit Wasser.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Am Äquivalenzpunkt muss bereits ein grosser stöchiometrischer NaOH-Überschuss vorhanden sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine schwache Säure benötigt pro Molekül zwei OH⁻ statt eines.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Essigsäure zerfällt dabei quantitativ zu gasförmigem Methan.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Basizität stammt hier vom Acetat. B: Die konjugierte Base der schwachen Säure kann OH⁻ bilden. C: Der Äquivalenzpunkt ist gerade ohne solchen Überschuss definiert. D: Essigsäure ist unter diesen Bedingungen einprotonig. E: Das ist nicht die Neutralisationsreaktion. Quelle: Originalunterlagen, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Schwache Säure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schwache Säure"
+      ],
+      "questionGoal": "Schwache Säure",
+      "structuredExplanation": {
+        "coreIdea": "Schwache Säure",
+        "correctReasoning": "Die konjugierte Base der schwachen Säure kann OH⁻ bilden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Basizität stammt hier vom Acetat.",
+          "C": "Der Äquivalenzpunkt ist gerade ohne solchen Überschuss definiert.",
+          "D": "Essigsäure ist unter diesen Bedingungen einprotonig.",
+          "E": "Das ist nicht die Neutralisationsreaktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Bei der Titration von Essigsäure wurde die Hälfte der bis zum Äquivalenzpunkt benötigten NaOH-Menge zugegeben. Welcher pH ist näherungsweise zu erwarten, wenn pKa=4.8?",
+      "options": [
+        {
+          "text": "14.0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "4.8.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "2.4.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "9.6.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "7.0.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es liegt kein grosser Überschuss an starker Base vor. B: Dann liegen ungefähr gleiche Mengen Essigsäure und Acetat vor; Henderson–Hasselbalch ergibt pH=pKa. C: Der pH ist nicht die Hälfte des pKa-Werts. D: Der pH ist nicht das Doppelte des pKa-Werts. E: Halbäquivalenz bedeutet nicht Neutralpunkt. Quelle: Originalunterlagen, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Halbäquivalenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbäquivalenz"
+      ],
+      "questionGoal": "Halbäquivalenz",
+      "structuredExplanation": {
+        "coreIdea": "Halbäquivalenz",
+        "correctReasoning": "Dann liegen ungefähr gleiche Mengen Essigsäure und Acetat vor; Henderson–Hasselbalch ergibt pH=pKa.",
+        "wrongAnswerExplanations": {
+          "A": "Es liegt kein grosser Überschuss an starker Base vor.",
+          "C": "Der pH ist nicht die Hälfte des pKa-Werts.",
+          "D": "Der pH ist nicht das Doppelte des pKa-Werts.",
+          "E": "Halbäquivalenz bedeutet nicht Neutralpunkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Welcher Kurvenabschnitt einer Essigsäuretitration besitzt typischerweise die ausgeprägteste Pufferwirkung?",
+      "options": [
+        {
+          "text": "Der Bereich um die Halbäquivalenz.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Genau jeder Punkt mit pH 7 unabhängig von den Stoffen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur der steilste Abschnitt am Äquivalenzpunkt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Bereich weit nach dem Äquivalenzpunkt mit grossem NaOH-Überschuss.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur der trockene Indikator vor Kontakt mit der Probe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dort sind Säure und konjugierte Base in vergleichbaren Mengen vorhanden. B: Pufferwirkung hängt vom Gleichgewicht und den Konzentrationen ab. C: Ein steiler pH-Sprung bedeutet geringe Pufferung gegenüber weiterer Zugabe. D: Dort dominiert die starke Base statt eines Essigsäure/Acetat-Puffers. E: Die Frage betrifft das Puffersystem in Lösung. Quelle: Originalunterlagen, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Pufferkurve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pufferkurve"
+      ],
+      "questionGoal": "Pufferkurve",
+      "structuredExplanation": {
+        "coreIdea": "Pufferkurve",
+        "correctReasoning": "Dort sind Säure und konjugierte Base in vergleichbaren Mengen vorhanden.",
+        "wrongAnswerExplanations": {
+          "B": "Pufferwirkung hängt vom Gleichgewicht und den Konzentrationen ab.",
+          "C": "Ein steiler pH-Sprung bedeutet geringe Pufferung gegenüber weiterer Zugabe.",
+          "D": "Dort dominiert die starke Base statt eines Essigsäure/Acetat-Puffers.",
+          "E": "Die Frage betrifft das Puffersystem in Lösung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Eine Titration besitzt ihren steilen pH-Sprung um pH 9. Welches verfügbare Umschlagsintervall passt am besten?",
+      "options": [
+        {
+          "text": "Jeder Indikator ist gleich geeignet, weil sein pKa irrelevant ist.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Methylorange: pH 3.1–4.4.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Indikator mit Umschlag bei pH 12.5–13.5.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Indikator mit Umschlag bei pH 1–2.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Phenolphthalein: pH 8.2–9.8.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein geeigneter Umschlag muss in den steilen Bereich fallen. B: Dieser Farbumschlag würde deutlich zu früh stattfinden. C: Dafür wäre bereits ein erheblicher Basenüberschuss nötig. D: Dieses Intervall liegt weit vom Äquivalenzbereich entfernt. E: Das Umschlagsgebiet liegt im gegebenen steilen Bereich. Quelle: Originalunterlagen, PDF-S. 20–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Indikatorwahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Indikatorwahl"
+      ],
+      "questionGoal": "Indikatorwahl",
+      "structuredExplanation": {
+        "coreIdea": "Indikatorwahl",
+        "correctReasoning": "Das Umschlagsgebiet liegt im gegebenen steilen Bereich.",
+        "wrongAnswerExplanations": {
+          "A": "Ein geeigneter Umschlag muss in den steilen Bereich fallen.",
+          "B": "Dieser Farbumschlag würde deutlich zu früh stattfinden.",
+          "C": "Dafür wäre bereits ein erheblicher Basenüberschuss nötig.",
+          "D": "Dieses Intervall liegt weit vom Äquivalenzbereich entfernt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Ein einprotoniger Indikator hat pKa=5.0. Wie ist bei pH 6.0 das Verhältnis [Ind⁻]/[HInd] näherungsweise?",
+      "options": [
+        {
+          "text": "100:1.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1:1.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "6:5.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10:1.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "1:10.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zwei pH-Einheiten über pKa wären dafür erforderlich. B: Gleiche Mengen liegen näherungsweise bei pH=pKa vor. C: pH und pKa dürfen nicht als lineares Mengenverhältnis dividiert werden. D: pH−pKa=log([Ind⁻]/[HInd])=1. E: Dieses Verhältnis entspräche pH 4.0. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Indikatorverhältnis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Indikatorverhältnis"
+      ],
+      "questionGoal": "Indikatorverhältnis",
+      "structuredExplanation": {
+        "coreIdea": "Indikatorverhältnis",
+        "correctReasoning": "pH−pKa=log([Ind⁻]/[HInd])=1.",
+        "wrongAnswerExplanations": {
+          "A": "Zwei pH-Einheiten über pKa wären dafür erforderlich.",
+          "B": "Gleiche Mengen liegen näherungsweise bei pH=pKa vor.",
+          "C": "pH und pKa dürfen nicht als lineares Mengenverhältnis dividiert werden.",
+          "E": "Dieses Verhältnis entspräche pH 4.0."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Was misst das pH-Meter unmittelbar, um nach Kalibrierung einen pH-Wert anzuzeigen?",
+      "options": [
+        {
+          "text": "Die Farbe eines zugesetzten Indikators.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Zahl neutraler Wassermoleküle im gesamten Becherglas.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine elektrische Potentialdifferenz.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Masse aller Protonen auf einer integrierten Waage.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Leitfähigkeit der Lösung als unmittelbares pH-Messsignal.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die pH-Elektrode arbeitet potentiometrisch, nicht über eine Farbmessung. B: Diese Zahl wird nicht direkt gezählt. C: Die Spannung hängt von der H⁺-Aktivität und weiteren Elektrodenpotentialen ab. D: Das Messprinzip ist elektrochemisch. E: Eine pH-Glaselektrode misst eine Potentialdifferenz; Leitfähigkeit hängt von vielen Ionen ab und bestimmt den pH nicht unmittelbar. Quelle: Originalunterlagen, PDF-S. 19–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "pH-Elektrode"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "pH-Elektrode"
+      ],
+      "questionGoal": "pH-Elektrode",
+      "structuredExplanation": {
+        "coreIdea": "pH-Elektrode",
+        "correctReasoning": "Die Spannung hängt von der H⁺-Aktivität und weiteren Elektrodenpotentialen ab.",
+        "wrongAnswerExplanations": {
+          "A": "Die pH-Elektrode arbeitet potentiometrisch, nicht über eine Farbmessung.",
+          "B": "Diese Zahl wird nicht direkt gezählt.",
+          "D": "Das Messprinzip ist elektrochemisch.",
+          "E": "Eine pH-Glaselektrode misst eine Potentialdifferenz; Leitfähigkeit hängt von vielen Ionen ab und bestimmt den pH nicht unmittelbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Weshalb werden zwei geeignete Pufferlösungen zur Kalibrierung einer pH-Elektrode verwendet?",
+      "options": [
+        {
+          "text": "Weil die pH-Skala dadurch eine Massenskala wird.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Damit die Glasmembran vollständig austrocknet.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Damit Offset und Steigung der realen Messkennlinie angepasst werden können.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Weil die H⁺-Aktivität dann in jeder Probe unabhängig von Temperatur wird.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Damit die Probe anschliessend grundsätzlich pH 7 erhält.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der pH bleibt eine logarithmische Aktivitätsgrösse. B: Die Glasmembran muss hydratisiert bleiben. C: Elektroden unterscheiden sich und altern; ein Punkt allein bestimmt nicht beides. D: Die Elektrodenantwort und Gleichgewichte bleiben temperaturabhängig. E: Kalibrierpuffer werden nicht zur Neutralisation der Probe verwendet. Quelle: Originalunterlagen, PDF-S. 19–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Zweipunktkalibrierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zweipunktkalibrierung"
+      ],
+      "questionGoal": "Zweipunktkalibrierung",
+      "structuredExplanation": {
+        "coreIdea": "Zweipunktkalibrierung",
+        "correctReasoning": "Elektroden unterscheiden sich und altern; ein Punkt allein bestimmt nicht beides.",
+        "wrongAnswerExplanations": {
+          "A": "Der pH bleibt eine logarithmische Aktivitätsgrösse.",
+          "B": "Die Glasmembran muss hydratisiert bleiben.",
+          "D": "Die Elektrodenantwort und Gleichgewichte bleiben temperaturabhängig.",
+          "E": "Kalibrierpuffer werden nicht zur Neutralisation der Probe verwendet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Eine mit Wasser gespülte Bürette wird ohne Vorspülen mit Masslösung direkt mit NaOH gefüllt. Welcher Fehler ist möglich?",
+      "options": [
+        {
+          "text": "Restwasser verdünnt die Masslösung und erhöht das benötigte Volumen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Verdünnung ändert nur die Farbe, nie die Stoffmenge pro ml.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Restwasser erhöht zwingend die NaOH-Konzentration.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Äquivalenzpunkt verliert jede stöchiometrische Bedeutung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Säureprobe erhält vor Beginn automatisch den richtigen pH.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei Annahme der ursprünglichen Konzentration kann die Säuremenge dann überschätzt werden. B: Die Konzentration bestimmt gerade die OH⁻-Menge pro ml. C: Wasser verdünnt die Lösung. D: Die Reaktionsstöchiometrie bleibt, nur die angenommene Konzentration ist falsch. E: Die Bürettenverdünnung kalibriert die Probe nicht. Quelle: Originalunterlagen, PDF-S. 22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Bürettenfehler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bürettenfehler"
+      ],
+      "questionGoal": "Bürettenfehler",
+      "structuredExplanation": {
+        "coreIdea": "Bürettenfehler",
+        "correctReasoning": "Bei Annahme der ursprünglichen Konzentration kann die Säuremenge dann überschätzt werden.",
+        "wrongAnswerExplanations": {
+          "B": "Die Konzentration bestimmt gerade die OH⁻-Menge pro ml.",
+          "C": "Wasser verdünnt die Lösung.",
+          "D": "Die Reaktionsstöchiometrie bleibt, nur die angenommene Konzentration ist falsch.",
+          "E": "Die Bürettenverdünnung kalibriert die Probe nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "5.00 ml einer einprotonigen Säureprobe werden mit 25.0 ml Wasser verdünnt und vollständig titriert. Welche Grösse bleibt durch die reine Verdünnung unverändert?",
+      "options": [
+        {
+          "text": "Das Gesamtvolumen der Probe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Stoffmengenkonzentration sämtlicher Ionen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Konzentration der Säure.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Anfangs-pH in jedem Fall exakt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Stoffmenge der Säure.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es steigt von 5 auf ungefähr 30 ml. B: Das grössere Volumen verändert Konzentrationen und gegebenenfalls Gleichgewichte. C: Sie sinkt mit dem vergrösserten Volumen. D: Der pH kann sich durch Verdünnung verändern. E: Zugabe von Wasser verändert Volumen und Konzentration, nicht die enthaltene Säuremenge. Quelle: Originalunterlagen, PDF-S. 22,25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Verdünnte Probe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verdünnte Probe"
+      ],
+      "questionGoal": "Verdünnte Probe",
+      "structuredExplanation": {
+        "coreIdea": "Verdünnte Probe",
+        "correctReasoning": "Zugabe von Wasser verändert Volumen und Konzentration, nicht die enthaltene Säuremenge.",
+        "wrongAnswerExplanations": {
+          "A": "Es steigt von 5 auf ungefähr 30 ml.",
+          "B": "Das grössere Volumen verändert Konzentrationen und gegebenenfalls Gleichgewichte.",
+          "C": "Sie sinkt mit dem vergrösserten Volumen.",
+          "D": "Der pH kann sich durch Verdünnung verändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zu Titrationspunkten.",
+      "options": [
+        {
+          "text": "Bei Essigsäure-Halbäquivalenz gilt näherungsweise pH=pKa.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder Äquivalenzpunkt liegt unabhängig von Säure und Base bei pH 7.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Neutralpunkt kennzeichnet definitionsgemäss die Hälfte der titrierten Säure.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Äquivalenz bedeutet Umsetzung entsprechend der Reaktionsstöchiometrie.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Säure und Acetat liegen in ähnlichen Mengen vor. B: Schwache Säuren/Basen können basische oder saure Äquivalenzlösungen ergeben. C: Neutralität betrifft gleiche H₃O⁺- und OH⁻-Aktivität, nicht den Titrationsfortschritt. D: Die benötigten Äquivalente richten sich nach der Anzahl umgesetzter Protonen. Quelle: Originalunterlagen, PDF-S. 22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Äquivalenz und Neutralität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Äquivalenz und Neutralität"
+      ],
+      "questionGoal": "Äquivalenz und Neutralität",
+      "structuredExplanation": {
+        "coreIdea": "Äquivalenz und Neutralität",
+        "correctReasoning": "Säure und Acetat liegen in ähnlichen Mengen vor. Die benötigten Äquivalente richten sich nach der Anzahl umgesetzter Protonen.",
+        "wrongAnswerExplanations": {
+          "A": "Säure und Acetat liegen in ähnlichen Mengen vor.",
+          "B": "Schwache Säuren/Basen können basische oder saure Äquivalenzlösungen ergeben.",
+          "C": "Neutralität betrifft gleiche H₃O⁺- und OH⁻-Aktivität, nicht den Titrationsfortschritt.",
+          "D": "Die benötigten Äquivalente richten sich nach der Anzahl umgesetzter Protonen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zur Phosphorsäuretitration.",
+      "options": [
+        {
+          "text": "Die Existenz dreier Protonen garantiert drei gleich deutlich sichtbare Sprünge in jeder Messung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verschiedene pKa-Werte können getrennte Pufferbereiche erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Am ersten Halbäquivalenzpunkt liegen H₃PO₄ und H₂PO₄⁻ näherungsweise gleich vor.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bis zum zweiten Äquivalenzpunkt werden zwei OH⁻ pro H₃PO₄ benötigt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Sichtbarkeit hängt von pKa-Abständen, Konzentration und Messbedingungen ab. B: Jeder ausreichend getrennte Dissoziationsschritt besitzt ein eigenes Säure-Base-Paar. C: Daraus folgt pH ungefähr pKa1. D: HPO₄²⁻ ist das entsprechende stöchiometrische Produkt. Quelle: Originalunterlagen, PDF-S. 22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Mehrprotonige Säure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mehrprotonige Säure"
+      ],
+      "questionGoal": "Mehrprotonige Säure",
+      "structuredExplanation": {
+        "coreIdea": "Mehrprotonige Säure",
+        "correctReasoning": "Jeder ausreichend getrennte Dissoziationsschritt besitzt ein eigenes Säure-Base-Paar. Daraus folgt pH ungefähr pKa1. HPO₄²⁻ ist das entsprechende stöchiometrische Produkt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Sichtbarkeit hängt von pKa-Abständen, Konzentration und Messbedingungen ab.",
+          "B": "Jeder ausreichend getrennte Dissoziationsschritt besitzt ein eigenes Säure-Base-Paar.",
+          "C": "Daraus folgt pH ungefähr pKa1.",
+          "D": "HPO₄²⁻ ist das entsprechende stöchiometrische Produkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zu Säure-Base-Indikatoren.",
+      "options": [
+        {
+          "text": "Das Verhältnis seiner Formen hängt vom pH und pKa ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine erhöhte Menge eines schwach sauren Indikators kann die zu titrierende Säuremenge grundsätzlich nicht verändern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Indikatorumschlag ist identisch mit einem chemisch definierten Äquivalenzpunkt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Indikator besitzt in protonierter und deprotonierter Form zwingend dieselbe Farbe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es folgt näherungsweise Henderson–Hasselbalch. B: Der Indikator selbst nimmt an einem Säure-Base-Gleichgewicht teil und kann bei zu grosser Menge die Titrationsbilanz stören. C: Der sichtbare Endpunkt nähert den Äquivalenzpunkt nur an. D: Der Farbunterschied macht ihn als pH-Indikator brauchbar. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Indikatorgleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Indikatorgleichgewicht"
+      ],
+      "questionGoal": "Indikatorgleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Indikatorgleichgewicht",
+        "correctReasoning": "Es folgt näherungsweise Henderson–Hasselbalch.",
+        "wrongAnswerExplanations": {
+          "A": "Es folgt näherungsweise Henderson–Hasselbalch.",
+          "B": "Der Indikator selbst nimmt an einem Säure-Base-Gleichgewicht teil und kann bei zu grosser Menge die Titrationsbilanz stören.",
+          "C": "Der sichtbare Endpunkt nähert den Äquivalenzpunkt nur an.",
+          "D": "Der Farbunterschied macht ihn als pH-Indikator brauchbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zum potentiometrischen pH-Wert.",
+      "options": [
+        {
+          "text": "Eine Zweipunktkalibrierung korrigiert im Messmodell Offset und Steigung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Glasmembran muss zwischen allen Messungen vollständig austrocknen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Glaselektrode spricht auf die Aktivität von H⁺ an.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine perfekt kalibrierte Elektrode benötigt definitionsgemäss keine Temperaturberücksichtigung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie gleicht reale Kennlinienabweichungen gegenüber der idealen Elektrode ab. B: Austrocknen beeinträchtigt die hydratisierte Messschicht. C: Die Konzentration ist dafür nur unter geeigneten Bedingungen eine Näherung. D: Die Nernst-Steigung und Gleichgewichte sind temperaturabhängig. Quelle: Originalunterlagen, PDF-S. 19–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Elektrodenmessung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektrodenmessung"
+      ],
+      "questionGoal": "Elektrodenmessung",
+      "structuredExplanation": {
+        "coreIdea": "Elektrodenmessung",
+        "correctReasoning": "Sie gleicht reale Kennlinienabweichungen gegenüber der idealen Elektrode ab. Die Konzentration ist dafür nur unter geeigneten Bedingungen eine Näherung.",
+        "wrongAnswerExplanations": {
+          "A": "Sie gleicht reale Kennlinienabweichungen gegenüber der idealen Elektrode ab.",
+          "B": "Austrocknen beeinträchtigt die hydratisierte Messschicht.",
+          "C": "Die Konzentration ist dafür nur unter geeigneten Bedingungen eine Näherung.",
+          "D": "Die Nernst-Steigung und Gleichgewichte sind temperaturabhängig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zur Konzentrationsbestimmung.",
+      "options": [
+        {
+          "text": "Für eine einprotonige Säure gilt am Äquivalenzpunkt n(Säure)=n(OH⁻).",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aus c und V der Masslösung wird ihre zugegebene Stoffmenge berechnet.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Für die ursprüngliche Säurekonzentration wird die Säurestoffmenge durch das Volumen nach beliebiger Wasserzugabe dividiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beim Verdünnen der Probe mit reinem Wasser erhöht sich die zur Neutralisation nötige Stoffmenge NaOH proportional zum Volumen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies folgt aus der 1:1-Stöchiometrie. B: Es gilt n=cV mit konsistenten Volumeneinheiten. C: Gesucht ist die Konzentration im ursprünglichen entnommenen Probenvolumen; die Verdünnung ändert dessen Säuremenge nicht. D: Die Säurestoffmenge bleibt unverändert. Quelle: Originalunterlagen, PDF-S. 22,25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Stoffmengenrechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stoffmengenrechnung"
+      ],
+      "questionGoal": "Stoffmengenrechnung",
+      "structuredExplanation": {
+        "coreIdea": "Stoffmengenrechnung",
+        "correctReasoning": "Dies folgt aus der 1:1-Stöchiometrie. Es gilt n=cV mit konsistenten Volumeneinheiten.",
+        "wrongAnswerExplanations": {
+          "A": "Dies folgt aus der 1:1-Stöchiometrie.",
+          "B": "Es gilt n=cV mit konsistenten Volumeneinheiten.",
+          "C": "Gesucht ist die Konzentration im ursprünglichen entnommenen Probenvolumen; die Verdünnung ändert dessen Säuremenge nicht.",
+          "D": "Die Säurestoffmenge bleibt unverändert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zur Aufnahme einer Titrationskurve.",
+      "options": [
+        {
+          "text": "Kleinere Zugabeschritte nahe dem pH-Sprung erhöhen die räumliche Auflösung des Äquivalenzbereichs.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nach Durchmischung wird ein stabiler pH abgelesen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Indikator muss mit seinem Umschlagsgebiet zum steilen Kurvenabschnitt passen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine einzelne Farbbeobachtung am Anfang ersetzt die vollständige Titrationskurve.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Grosse Schritte könnten den Sprung überspringen. B: Lokale Konzentrationsgradienten und instabile Werte verfälschen die Kurve. C: Sonst entsteht ein systematischer Endpunktfehler. D: Sie liefert weder Verlauf noch sichere Äquivalenzmenge. Quelle: Originalunterlagen, PDF-S. 22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Messstrategie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messstrategie"
+      ],
+      "questionGoal": "Messstrategie",
+      "structuredExplanation": {
+        "coreIdea": "Messstrategie",
+        "correctReasoning": "Grosse Schritte könnten den Sprung überspringen. Lokale Konzentrationsgradienten und instabile Werte verfälschen die Kurve. Sonst entsteht ein systematischer Endpunktfehler.",
+        "wrongAnswerExplanations": {
+          "A": "Grosse Schritte könnten den Sprung überspringen.",
+          "B": "Lokale Konzentrationsgradienten und instabile Werte verfälschen die Kurve.",
+          "C": "Sonst entsteht ein systematischer Endpunktfehler.",
+          "D": "Sie liefert weder Verlauf noch sichere Äquivalenzmenge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zu pH-Meter und Indikator.",
+      "options": [
+        {
+          "text": "Eine Elektrode kann auch in einer gefärbten Probe potentiometrisch messen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Kalibrierung mit zwei identischen pH-7-Puffern bestimmt sicher die Steigung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Indikator mit pKa 4 zeigt genau bei jedem Äquivalenzpunkt unabhängig von der Kurve um.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Indikator misst direkt die elektrische Spannung der Glasmembran.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Messung beruht auf Spannung, nicht auf der sichtbaren Probenfarbe. B: Für die Steigung sind unterschiedliche bekannte pH-Werte erforderlich. C: Sein Gleichgewicht hängt vom pH ab. D: Er zeigt sein eigenes protonierungsabhängiges Farbspektrum. Quelle: Originalunterlagen, PDF-S. 19–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Messung und Anzeige"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messung und Anzeige"
+      ],
+      "questionGoal": "Messung und Anzeige",
+      "structuredExplanation": {
+        "coreIdea": "Messung und Anzeige",
+        "correctReasoning": "Die Messung beruht auf Spannung, nicht auf der sichtbaren Probenfarbe.",
+        "wrongAnswerExplanations": {
+          "A": "Die Messung beruht auf Spannung, nicht auf der sichtbaren Probenfarbe.",
+          "B": "Für die Steigung sind unterschiedliche bekannte pH-Werte erforderlich.",
+          "C": "Sein Gleichgewicht hängt vom pH ab.",
+          "D": "Er zeigt sein eigenes protonierungsabhängiges Farbspektrum."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc04_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC04",
+      "stem": "Beurteilen Sie die Aussagen zu einer schwachen einprotonigen Säure mit starker Base.",
+      "options": [
+        {
+          "text": "Am Halbäquivalenzpunkt ist die gesamte ursprüngliche Säure neutralisiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein breites Puffergebiet bedeutet einen besonders steilen pH-Anstieg pro zugegebenem ml.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Weit nach Äquivalenz bestimmt der Überschuss starker Base den pH zunehmend.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Vor Äquivalenz kann ein Säure/konjugierte-Base-Puffer entstehen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Erst am Äquivalenzpunkt ist die stöchiometrische Umsetzung vollständig. B: Pufferung flacht den Anstieg ab. C: Die überschüssigen OH⁻ dominieren die Lösung. D: Die Neutralisation erzeugt die Basenform bei verbleibender Säure. Quelle: Originalunterlagen, PDF-S. 20–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC04",
+        "Interpretation der Kurve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interpretation der Kurve"
+      ],
+      "questionGoal": "Interpretation der Kurve",
+      "structuredExplanation": {
+        "coreIdea": "Interpretation der Kurve",
+        "correctReasoning": "Die überschüssigen OH⁻ dominieren die Lösung. Die Neutralisation erzeugt die Basenform bei verbleibender Säure.",
+        "wrongAnswerExplanations": {
+          "A": "Erst am Äquivalenzpunkt ist die stöchiometrische Umsetzung vollständig.",
+          "B": "Pufferung flacht den Anstieg ab.",
+          "C": "Die überschüssigen OH⁻ dominieren die Lösung.",
+          "D": "Die Neutralisation erzeugt die Basenform bei verbleibender Säure."
+        }
+      }
+    }
+  ]
+}

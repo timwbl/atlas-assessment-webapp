@@ -1,6 +1,7 @@
 const assert = require("node:assert/strict");
 const path = require("node:path");
 const {
+  assessmentMatchesLibraryBlock,
   compareAssessmentsByNumber,
   normalizeAssessmentSubject,
   parseAssessmentSortKey
@@ -49,6 +50,10 @@ assert.equal(
   "Biochemie"
 );
 assert.equal(
+  normalizeAssessmentSubject(undefined, { lectureCode: "KVBS03", title: "Normalverteilung", block: "Block 2" }),
+  "Public Health / Epidemiologie"
+);
+assert.equal(
   normalizeAssessmentSubject(undefined, { lectureCode: "KVC20", title: "Komplexverbindungen", block: "Block 8" }),
   "Chemie"
 );
@@ -78,4 +83,19 @@ assert.equal(
   "Sonstiges"
 );
 
-console.log("Assessment catalog tests passed.");
+// Distinguish year-one blocks from equally numbered year-two blocks.
+for (let n = 1; n <= 4; n += 1) {
+  const first = { title: `Block ${n}` };
+  const second = { title: `Block ${n}`, canonicalBlockId: `j2-block${n}` };
+  assert.equal(assessmentMatchesLibraryBlock({ block: `Block ${n}` }, first), true);
+  assert.equal(assessmentMatchesLibraryBlock({ block: `J2 Block ${n}` }, first), false);
+  assert.equal(assessmentMatchesLibraryBlock({ block: `Block ${n}` }, second), false);
+  assert.equal(assessmentMatchesLibraryBlock({ block: `J2 Block ${n}` }, second), true);
+}
+assert.equal(assessmentMatchesLibraryBlock({ block: "J2 Block 1" }, { title: "Block 2" }), false);
+assert.equal(assessmentMatchesLibraryBlock({ block: "Block 3" }, { title: "Block 2" }), false);
+assert.equal(assessmentMatchesLibraryBlock({ block: "Prüfungssimulationen MC1" }, { title: "Prüfungssimulationen", matchTerms: ["prüfungssimulationen"] }), true);
+assert.equal(assessmentMatchesLibraryBlock({ block: "Alte Fragen MC2" }, { title: "Altfragen", matchTerms: ["alte fragen"] }), true);
+assert.equal(assessmentMatchesLibraryBlock({ block: "Altfragen", title: "Altfragen Block 1" }, { title: "Block 1" }), false);
+assert.equal(assessmentMatchesLibraryBlock({ block: "Altfragen", title: "Altfragen Block 1" }, { title: "Altfragen" }), true);
+console.log("Assessment catalog tests passed, including study-year and altfragen isolation.");

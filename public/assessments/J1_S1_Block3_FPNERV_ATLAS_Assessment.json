@@ -1,0 +1,1313 @@
+{
+  "id": "assessment_j1_s1_block3_fpnerv_20261102",
+  "lectureCode": "FPNERV",
+  "title": "Fachpraktikum Nervenleitung – Theorie",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. SJ1_HS2025_Block 3_Fachpraktikum Nervenleitung_Stand 23.10.2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Theorie nach Praktikum und offiziellen Block3-Lernzielen. Steigung explizit nach Achsenwahl: t gegen d =1/v, d gegen t =v. Achsenabschnitt nicht als reine Endplattenzeit interpretiert. Extrazelluläre source/sink-Bezeichnungsinkonsistenz der Quelle nicht übernommen; keine Organisations- oder Durchführungsfreigabe.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Faktoren der Nervenleitgeschwindigkeit und saltatorische Leitung erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Reizung, extrazelluläre Ableitung und Summenmuskelpotential unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Differenzverstärker, Signalverstärkung und Referenzierung erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Leitungsgeschwindigkeit aus Distanzen, Latenzen und Regressionsgeraden berechnen und kritisch interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_fpnerv_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Wie begünstigt Myelinisierung eine schnelle Erregungsleitung?",
+      "options": [
+        {
+          "text": "Sie macht die Leitung unabhängig von Ionenströmen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie vermindert kapazitive Belastung und Stromverlust zwischen erregbaren Knoten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Sie vergrössert die internodale Kapazität und senkt dort den Membranwiderstand.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie erzwingt gleichmässige AP-Neubildung an jedem Punkt des Internodiums.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie beseitigt alle Ranvier-Knoten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Elektrische Ströme bleiben wesentlich. B: Lokale Ströme können den nächsten Ranvier-Knoten wirksam depolarisieren. C: Dies würde Umladung und Leckverlust verstärken. D: Die saltatorische Regeneration konzentriert sich auf Knoten. E: Diese sind Orte regenerativer Erregung. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Myelin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Myelin"
+      ],
+      "questionGoal": "Myelin",
+      "structuredExplanation": {
+        "coreIdea": "Myelin",
+        "correctReasoning": "Lokale Ströme können den nächsten Ranvier-Knoten wirksam depolarisieren.",
+        "wrongAnswerExplanations": {
+          "A": "Elektrische Ströme bleiben wesentlich.",
+          "C": "Dies würde Umladung und Leckverlust verstärken.",
+          "D": "Die saltatorische Regeneration konzentriert sich auf Knoten.",
+          "E": "Diese sind Orte regenerativer Erregung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Warum können dickere Axone bei vergleichbaren sonstigen Eigenschaften schneller leiten?",
+      "options": [
+        {
+          "text": "Ihr Längswiderstand steigt zwingend mit dem Querschnitt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein grösserer Querschnitt beseitigt sämtliche Membranleckströme vollständig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ihr intrazellulärer Längswiderstand ist geringer.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sie benötigen grundsätzlich keine Regeneration des AP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie besitzen definitionsgemäss keine Membrankapazität.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein grösserer Leiterquerschnitt senkt ihn. B: Der geringere intrazelluläre Längswiderstand ist von der weiterhin vorhandenen Membranleitfähigkeit zu unterscheiden. C: Der Strom erreicht nachfolgende Membranbereiche effektiver. D: Die aktive Erregungsneubildung bleibt erforderlich. E: Auch dicke Axone haben eine Kapazität. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Axondurchmesser"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Axondurchmesser"
+      ],
+      "questionGoal": "Axondurchmesser",
+      "structuredExplanation": {
+        "coreIdea": "Axondurchmesser",
+        "correctReasoning": "Der Strom erreicht nachfolgende Membranbereiche effektiver.",
+        "wrongAnswerExplanations": {
+          "A": "Ein grösserer Leiterquerschnitt senkt ihn.",
+          "B": "Der geringere intrazelluläre Längswiderstand ist von der weiterhin vorhandenen Membranleitfähigkeit zu unterscheiden.",
+          "D": "Die aktive Erregungsneubildung bleibt erforderlich.",
+          "E": "Auch dicke Axone haben eine Kapazität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welches Signal wird im beschriebenen indirekten Ulnarisversuch an der Hand abgeleitet?",
+      "options": [
+        {
+          "text": "Die direkte Transmitterkonzentration im synaptischen Spalt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein einzelnes Herzmuskelpotential.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das intrazelluläre AP einer einzelnen Ulnarisfaser.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur das Gleichgewichtspotential von Kalium.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Summenaktionspotential der innervierten Hypothenarmuskulatur.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Versuch misst elektrische Potentialdifferenzen. B: Der Versuch betrifft einen Handmuskel. C: Die Hautableitung liegt über dem Muskel und ist extrazellulär. D: Das Summensignal umfasst die Aktivität mehrerer Muskelfasern. E: Die motorische Nervenreizung führt zur Muskelantwort. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Gemessenes Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gemessenes Signal"
+      ],
+      "questionGoal": "Gemessenes Signal",
+      "structuredExplanation": {
+        "coreIdea": "Gemessenes Signal",
+        "correctReasoning": "Die motorische Nervenreizung führt zur Muskelantwort.",
+        "wrongAnswerExplanations": {
+          "A": "Der Versuch misst elektrische Potentialdifferenzen.",
+          "B": "Der Versuch betrifft einen Handmuskel.",
+          "C": "Die Hautableitung liegt über dem Muskel und ist extrazellulär.",
+          "D": "Das Summensignal umfasst die Aktivität mehrerer Muskelfasern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Was kennzeichnet eine bipolare extrazelluläre Ableitung im beschriebenen Modell?",
+      "options": [
+        {
+          "text": "Beide Elektroden müssen definitionsgemäss innerhalb derselben Muskelfaser liegen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Signal muss exakt dem intrazellulären AP entsprechen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide Messelektroden werden nacheinander von der Erregungswelle beeinflusst.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Distanz zwischen den Elektroden hat keinerlei Einfluss auf die zeitliche Differenz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur eine Elektrode misst, die andere ist grundsätzlich gar nicht angeschlossen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die beschriebene Ableitung ist extrazellulär. B: Die extrazelluläre Feldmessung besitzt einen anderen Verlauf. C: Ihr Differenzsignal kombiniert zeitversetzte lokale Potentiale. D: Die Ausbreitungszeit hängt von der Distanz ab. E: Beide sind Teil der Differenzmessung. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Bipolare Ableitung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bipolare Ableitung"
+      ],
+      "questionGoal": "Bipolare Ableitung",
+      "structuredExplanation": {
+        "coreIdea": "Bipolare Ableitung",
+        "correctReasoning": "Ihr Differenzsignal kombiniert zeitversetzte lokale Potentiale.",
+        "wrongAnswerExplanations": {
+          "A": "Die beschriebene Ableitung ist extrazellulär.",
+          "B": "Die extrazelluläre Feldmessung besitzt einen anderen Verlauf.",
+          "D": "Die Ausbreitungszeit hängt von der Distanz ab.",
+          "E": "Beide sind Teil der Differenzmessung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Was ist das Ziel einer supramaximalen Reizstärke bei der Summenmuskelantwort?",
+      "options": [
+        {
+          "text": "Die Nervenleitgeschwindigkeit mit jeder Stromerhöhung unbegrenzt zu steigern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes einzelne Axon zu einem proportional grösseren AP zu zwingen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die neuromuskuläre Übertragung zu umgehen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die relevante motorische Faserpopulation zuverlässig vollständig zu rekrutieren.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Leitungsgeschwindigkeit aller rekrutierten Fasern wird dadurch auf exakt denselben Wert synchronisiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Reiz dient der Rekrutierung, nicht unbegrenzter Beschleunigung. B: Die Einzelaxonamplitude folgt nicht so der Reizstärke. C: Die Muskelantwort entsteht weiterhin über diese Übertragung. D: Etwas zusätzlicher Reizspielraum reduziert wechselnde Teilrekrutierung. E: Supramaximale Reizung sichert Rekrutierung, vereinheitlicht aber nicht alle Leitungsgeschwindigkeiten. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Supramaximale Reizung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Supramaximale Reizung"
+      ],
+      "questionGoal": "Supramaximale Reizung",
+      "structuredExplanation": {
+        "coreIdea": "Supramaximale Reizung",
+        "correctReasoning": "Etwas zusätzlicher Reizspielraum reduziert wechselnde Teilrekrutierung.",
+        "wrongAnswerExplanations": {
+          "A": "Der Reiz dient der Rekrutierung, nicht unbegrenzter Beschleunigung.",
+          "B": "Die Einzelaxonamplitude folgt nicht so der Reizstärke.",
+          "C": "Die Muskelantwort entsteht weiterhin über diese Übertragung.",
+          "E": "Supramaximale Reizung sichert Rekrutierung, vereinheitlicht aber nicht alle Leitungsgeschwindigkeiten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Grösse verstärkt ein idealer Differenzverstärker?",
+      "options": [
+        {
+          "text": "Die Summe beider Eingangsspannungen unabhängig von ihrer Differenz.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Gleichtaktstörung, während die Spannungsdifferenz vollständig unterdrückt wird.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Spannung zwischen seinen beiden Messeingängen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die physikalische Nervenleitgeschwindigkeit selbst.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Spannung nur eines Eingangs gegen Gerätemasse, unabhängig vom zweiten Eingang.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies beschreibt keine ideale Differenzverstärkung. B: Ein Differenzverstärker soll umgekehrt die Differenz hervorheben. C: Gleichartige gemeinsame Störungen sollen möglichst unterdrückt werden. D: Ein Verstärker ändert primär die elektrische Darstellung. E: Das wäre keine differenzielle Auswertung beider Messeingänge. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Differenzverstärker"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzverstärker"
+      ],
+      "questionGoal": "Differenzverstärker",
+      "structuredExplanation": {
+        "coreIdea": "Differenzverstärker",
+        "correctReasoning": "Gleichartige gemeinsame Störungen sollen möglichst unterdrückt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Dies beschreibt keine ideale Differenzverstärkung.",
+          "B": "Ein Differenzverstärker soll umgekehrt die Differenz hervorheben.",
+          "D": "Ein Verstärker ändert primär die elektrische Darstellung.",
+          "E": "Das wäre keine differenzielle Auswertung beider Messeingänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Warum werden bei gleicher Ableitstelle Latenzen nach Reizung an zwei Nervenorten verglichen?",
+      "options": [
+        {
+          "text": "Konstante Beiträge der Endplatte und Muskelableitung fallen in der Differenz heraus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Dadurch wird die Distanzmessung vollständig überflüssig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Latenzdifferenz misst dadurch ausschliesslich die neuromuskuläre Übertragungszeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur so kann jede unbekannte Verzögerung ohne Annahme beliebig variieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Summenmuskelpotential wird dadurch ohne weitere Annahmen zum intrazellulären AP einer einzelnen Nervenfaser.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die zusätzliche Latenz wird unter passenden Annahmen dem dazwischenliegenden Nervensegment zugeordnet. B: Geschwindigkeit benötigt auch die Streckendifferenz. C: Konstante Übertragungs- und Muskelbeiträge fallen heraus; die Differenz soll die zusätzliche Nervenlaufzeit darstellen. D: Konstanz bestimmter Beiträge ist gerade eine Voraussetzung. E: Die Methode nutzt weiterhin eine extrazelluläre Summenmuskelantwort. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Differenzmethode"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzmethode"
+      ],
+      "questionGoal": "Differenzmethode",
+      "structuredExplanation": {
+        "coreIdea": "Differenzmethode",
+        "correctReasoning": "Die zusätzliche Latenz wird unter passenden Annahmen dem dazwischenliegenden Nervensegment zugeordnet.",
+        "wrongAnswerExplanations": {
+          "B": "Geschwindigkeit benötigt auch die Streckendifferenz.",
+          "C": "Konstante Übertragungs- und Muskelbeiträge fallen heraus; die Differenz soll die zusätzliche Nervenlaufzeit darstellen.",
+          "D": "Konstanz bestimmter Beiträge ist gerade eine Voraussetzung.",
+          "E": "Die Methode nutzt weiterhin eine extrazelluläre Summenmuskelantwort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Zwei Reizorte liegen entlang des Nerven 0,20 m auseinander. Die Muskelantwort beginnt nach proximaler Reizung 4,0 ms später. Welche Geschwindigkeit ergibt sich?",
+      "options": [
+        {
+          "text": "20 m/s.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "50 m/s.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "800 m/s.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "5 m/s.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,05 m/s.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das korrekte Verhältnis beträgt 50. B: 0,20 m geteilt durch 0,004 s ergibt 50. C: Dies folgt nicht aus dem Verhältnis Strecke zu Zeit. D: Dies ist um den Faktor zehn zu klein. E: Die Millisekunden wurden nicht in Sekunden umgerechnet. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Geschwindigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschwindigkeit"
+      ],
+      "questionGoal": "Geschwindigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Geschwindigkeit",
+        "correctReasoning": "0,20 m geteilt durch 0,004 s ergibt 50.",
+        "wrongAnswerExplanations": {
+          "A": "Das korrekte Verhältnis beträgt 50.",
+          "C": "Dies folgt nicht aus dem Verhältnis Strecke zu Zeit.",
+          "D": "Dies ist um den Faktor zehn zu klein.",
+          "E": "Die Millisekunden wurden nicht in Sekunden umgerechnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Es wird Latenz t auf der y-Achse gegen Nervenstrecke d auf der x-Achse aufgetragen. Was ist bei t = t₀ + d/v die Steigung?",
+      "options": [
+        {
+          "text": "1/v.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "d × v.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "t₀.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die AP-Amplitude.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "v.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Einheit Zeit pro Strecke ist der Kehrwert einer Geschwindigkeit. B: Dies hat die falsche Dimension für eine Steigung von t gegen d. C: Der konstante Zusatz ist der Achsenabschnitt. D: Diese kommt in der beschriebenen Beziehung nicht vor. E: Das wäre die Steigung bei Strecke gegen Zeit. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Regressionssteigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regressionssteigung"
+      ],
+      "questionGoal": "Regressionssteigung",
+      "structuredExplanation": {
+        "coreIdea": "Regressionssteigung",
+        "correctReasoning": "Die Einheit Zeit pro Strecke ist der Kehrwert einer Geschwindigkeit.",
+        "wrongAnswerExplanations": {
+          "B": "Dies hat die falsche Dimension für eine Steigung von t gegen d.",
+          "C": "Der konstante Zusatz ist der Achsenabschnitt.",
+          "D": "Diese kommt in der beschriebenen Beziehung nicht vor.",
+          "E": "Das wäre die Steigung bei Strecke gegen Zeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q10",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Eine Latenz-Distanz-Geradenanpassung liefert einen positiven t-Achsenabschnitt. Welche Interpretation ist angemessen?",
+      "options": [
+        {
+          "text": "Er fasst konstante Verzögerungsanteile zusammen und ist nicht automatisch reine Endplattenzeit.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Er muss grundsätzlich exakt null sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er entspricht der gesamten Reizstromamplitude.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er misst ohne weitere Annahmen ausschliesslich die synaptische Übertragungszeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er beweist eine negative Nervenleitgeschwindigkeit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nutzzeit und Muskelanteile können ebenfalls beitragen. B: Zusätzliche konstante Latenzen sind zu erwarten. C: Der Achsenabschnitt besitzt eine Zeiteinheit. D: Die Gesamtverzögerung enthält mehrere Anteile. E: Steigung und Achsenabschnitt sind getrennte Grössen. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Achsenabschnitt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Achsenabschnitt"
+      ],
+      "questionGoal": "Achsenabschnitt",
+      "structuredExplanation": {
+        "coreIdea": "Achsenabschnitt",
+        "correctReasoning": "Nutzzeit und Muskelanteile können ebenfalls beitragen.",
+        "wrongAnswerExplanations": {
+          "B": "Zusätzliche konstante Latenzen sind zu erwarten.",
+          "C": "Der Achsenabschnitt besitzt eine Zeiteinheit.",
+          "D": "Die Gesamtverzögerung enthält mehrere Anteile.",
+          "E": "Steigung und Achsenabschnitt sind getrennte Grössen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Die Streckendifferenz wird zu gross gemessen, die Latenzdifferenz ist korrekt. Wie wird v = Δd/Δt beeinflusst?",
+      "options": [
+        {
+          "text": "Die Geschwindigkeit wird überschätzt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie bleibt unabhängig von der Strecke gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie muss negativ werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie wird unterschätzt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur die Muskelamplitude ändert sich rechnerisch.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein zu grosser Zähler erhöht den Quotienten. B: Die Strecke geht direkt in die Berechnung ein. C: Ein positiver Streckenfehler kehrt das Vorzeichen nicht um. D: Das wäre bei zu kleiner Strecke der Fall. E: Der Fehler betrifft die Geschwindigkeitsberechnung. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Messfehler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messfehler"
+      ],
+      "questionGoal": "Messfehler",
+      "structuredExplanation": {
+        "coreIdea": "Messfehler",
+        "correctReasoning": "Ein zu grosser Zähler erhöht den Quotienten.",
+        "wrongAnswerExplanations": {
+          "B": "Die Strecke geht direkt in die Berechnung ein.",
+          "C": "Ein positiver Streckenfehler kehrt das Vorzeichen nicht um.",
+          "D": "Das wäre bei zu kleiner Strecke der Fall.",
+          "E": "Der Fehler betrifft die Geschwindigkeitsberechnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Warum wird für die Leitungsbestimmung der Beginn der Muskelantwort einheitlich definiert?",
+      "options": [
+        {
+          "text": "Die Amplitude ist eine Zeiteinheit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der höchste Gipfel tritt definitionsgemäss immer beim Reizbeginn auf.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein einheitlich gewählter Signalgipfel muss unabhängig von Formänderungen stets dieselbe Latenz wie der Beginn liefern.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Unterschiedliche Referenzpunkte im Signal können die gemessene Latenzdifferenz verzerren.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Wahl des Zeitpunkts ist bei jeder Kurvenform völlig bedeutungslos.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Amplitude und Latenz sind verschiedene Messgrössen. B: Biologische und leitungsbedingte Verzögerungen liegen dazwischen. C: Gipfel und Beginn können unterschiedliche Verzögerungen zeigen. D: Beginn und Gipfel sind nicht dieselbe Zeitmarke. E: Sie kann den Quotienten aus Strecke und Zeit ändern. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Latenzbeginn"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Latenzbeginn"
+      ],
+      "questionGoal": "Latenzbeginn",
+      "structuredExplanation": {
+        "coreIdea": "Latenzbeginn",
+        "correctReasoning": "Beginn und Gipfel sind nicht dieselbe Zeitmarke.",
+        "wrongAnswerExplanations": {
+          "A": "Amplitude und Latenz sind verschiedene Messgrössen.",
+          "B": "Biologische und leitungsbedingte Verzögerungen liegen dazwischen.",
+          "C": "Gipfel und Beginn können unterschiedliche Verzögerungen zeigen.",
+          "E": "Sie kann den Quotienten aus Strecke und Zeit ändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Leitungsfaktoren» treffen zu?",
+      "options": [
+        {
+          "text": "Ein geringerer intrazellulärer Längswiderstand begünstigt die Ausbreitung lokaler Ströme.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Saltatorische Leitung bedeutet, dass zwischen Knoten überhaupt kein elektrischer Strom fliesst.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Myelin beschleunigt die Leitung primär durch eine erhöhte internodale Kapazität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine grössere kapazitive Last muss bei gleichem Strom immer schneller geladen sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehr Strom erreicht weiter entfernte Membran. B: Lokale passive Ströme verbinden die erregbaren Knoten. C: Myelin vermindert die kapazitive Belastung. D: Q = CΔV erfordert dann mehr Ladung. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Leitungsfaktoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leitungsfaktoren"
+      ],
+      "questionGoal": "Leitungsfaktoren",
+      "structuredExplanation": {
+        "coreIdea": "Leitungsfaktoren",
+        "correctReasoning": "Mehr Strom erreicht weiter entfernte Membran.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr Strom erreicht weiter entfernte Membran.",
+          "B": "Lokale passive Ströme verbinden die erregbaren Knoten.",
+          "C": "Myelin vermindert die kapazitive Belastung.",
+          "D": "Q = CΔV erfordert dann mehr Ladung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Ableitungen» treffen zu?",
+      "options": [
+        {
+          "text": "Ein bipolares Summensignal ist zwangsläufig ein Einzelkanalstrom.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Elektrodenabstand kann den bipolaren Signalverlauf beeinflussen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein extrazelluläres Signal entsteht aus räumlich-zeitlichen Feldunterschieden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Vertauschen der Messeingänge kehrt das Vorzeichen des idealen Differenzsignals um.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es umfasst makroskopische Feldbeiträge. B: Er ändert die zeitliche und räumliche Differenz. C: Es ist keine direkte Kopie des intrazellulären V_m. D: U1−U2 wird zu U2−U1. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Ableitungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ableitungen"
+      ],
+      "questionGoal": "Ableitungen",
+      "structuredExplanation": {
+        "coreIdea": "Ableitungen",
+        "correctReasoning": "Er ändert die zeitliche und räumliche Differenz. Es ist keine direkte Kopie des intrazellulären V_m. U1−U2 wird zu U2−U1.",
+        "wrongAnswerExplanations": {
+          "A": "Es umfasst makroskopische Feldbeiträge.",
+          "B": "Er ändert die zeitliche und räumliche Differenz.",
+          "C": "Es ist keine direkte Kopie des intrazellulären V_m.",
+          "D": "U1−U2 wird zu U2−U1."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Rekrutierung» treffen zu?",
+      "options": [
+        {
+          "text": "Supramaximale Reizung umgeht die motorische Endplatte und erregt ausschliesslich den Muskel direkt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine grössere Summenantwort beweist, dass jedes einzelne Axon ein proportional grösseres AP bildet.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Summenantwort kann mit der Reizstärke zunehmen, wenn zusätzliche Fasern rekrutiert werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Reiz- und Ableitelektroden erfüllen verschiedene Funktionen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Nervenreizung löst die Antwort über neuromuskuläre Übertragung aus. B: Die Zahl aktivierter Einheiten kann zunehmen. C: Dies widerspricht nicht dem Einzelaxon-Alles-oder-Nichts-Prinzip. D: Die einen stimulieren, die anderen registrieren. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Rekrutierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rekrutierung"
+      ],
+      "questionGoal": "Rekrutierung",
+      "structuredExplanation": {
+        "coreIdea": "Rekrutierung",
+        "correctReasoning": "Dies widerspricht nicht dem Einzelaxon-Alles-oder-Nichts-Prinzip. Die einen stimulieren, die anderen registrieren.",
+        "wrongAnswerExplanations": {
+          "A": "Die Nervenreizung löst die Antwort über neuromuskuläre Übertragung aus.",
+          "B": "Die Zahl aktivierter Einheiten kann zunehmen.",
+          "C": "Dies widerspricht nicht dem Einzelaxon-Alles-oder-Nichts-Prinzip.",
+          "D": "Die einen stimulieren, die anderen registrieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Signalqualität» treffen zu?",
+      "options": [
+        {
+          "text": "Eine geeignete Referenzierung beziehungsweise Erdung kann Störeinflüsse vermindern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Höhere Anzeigeverstärkung erhöht automatisch die tatsächliche Nervenleitgeschwindigkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein idealer Differenzverstärker soll gemeinsame Störsignale bevorzugt stärker als das Nutzsignal verstärken.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Biologische Hautsignale können eine Verstärkung für zuverlässige Darstellung benötigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie trägt zur stabilen Messung bei. B: Sie verändert nicht unmittelbar die biologische Leitung. C: Gleichtaktstörungen sollen möglichst unterdrückt werden. D: Ihre Amplitude kann klein gegenüber dem Anzeige- und Erfassungsbereich sein. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Signalqualität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Signalqualität"
+      ],
+      "questionGoal": "Signalqualität",
+      "structuredExplanation": {
+        "coreIdea": "Signalqualität",
+        "correctReasoning": "Sie trägt zur stabilen Messung bei. Ihre Amplitude kann klein gegenüber dem Anzeige- und Erfassungsbereich sein.",
+        "wrongAnswerExplanations": {
+          "A": "Sie trägt zur stabilen Messung bei.",
+          "B": "Sie verändert nicht unmittelbar die biologische Leitung.",
+          "C": "Gleichtaktstörungen sollen möglichst unterdrückt werden.",
+          "D": "Ihre Amplitude kann klein gegenüber dem Anzeige- und Erfassungsbereich sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q17",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Differenzannahmen» treffen zu?",
+      "options": [
+        {
+          "text": "Alle Verzögerungsanteile dürfen zwischen Reizorten beliebig stark schwanken, ohne die Schätzung zu beeinflussen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine ähnliche Nutzzeit an beiden Reizorten ist eine Modellvoraussetzung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Ableitstelle soll beim Vergleich unverändert bleiben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die gemessene Gesamtlatenz entspricht definitionsgemäss nur der Nervenlaufzeit.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Veränderliche Zusatzlatenzen verfälschen die Differenz. B: Ihre Differenz soll gegenüber der Leitungszeit nicht relevant sein. C: So bleiben Muskel- und Endplattenanteile besser vergleichbar. D: Sie enthält mehrere Beiträge. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Differenzannahmen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzannahmen"
+      ],
+      "questionGoal": "Differenzannahmen",
+      "structuredExplanation": {
+        "coreIdea": "Differenzannahmen",
+        "correctReasoning": "Ihre Differenz soll gegenüber der Leitungszeit nicht relevant sein. So bleiben Muskel- und Endplattenanteile besser vergleichbar.",
+        "wrongAnswerExplanations": {
+          "A": "Veränderliche Zusatzlatenzen verfälschen die Differenz.",
+          "B": "Ihre Differenz soll gegenüber der Leitungszeit nicht relevant sein.",
+          "C": "So bleiben Muskel- und Endplattenanteile besser vergleichbar.",
+          "D": "Sie enthält mehrere Beiträge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Für t = 2 ms + d/(50 m/s) treffen welche Aussagen zu?",
+      "options": [
+        {
+          "text": "Der t-Achsenabschnitt beträgt 50 m/s.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine zusätzliche Strecke von 0,10 m vergrössert t um 2 ms.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei Auftragung von d gegen t ist die Steigung 50 m/s.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei Auftragung von t gegen d beträgt die Steigung ebenfalls 50 m/s.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Abschnitt ist 2 ms. B: 0,10/50 s sind 0,002 s. C: Diese Achsenwahl liefert direkt v. D: Dann ist sie 0,02 s/m. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Gerade auswerten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gerade auswerten"
+      ],
+      "questionGoal": "Gerade auswerten",
+      "structuredExplanation": {
+        "coreIdea": "Gerade auswerten",
+        "correctReasoning": "0,10/50 s sind 0,002 s. Diese Achsenwahl liefert direkt v.",
+        "wrongAnswerExplanations": {
+          "A": "Der Abschnitt ist 2 ms.",
+          "B": "0,10/50 s sind 0,002 s.",
+          "C": "Diese Achsenwahl liefert direkt v.",
+          "D": "Dann ist sie 0,02 s/m."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Messgrenzen» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Reizartefakt ist von der späteren Muskelantwort zu unterscheiden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Zwei identische Latenzen trotz klar verschiedener Distanzen garantieren eine korrekte endliche Geschwindigkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Differenzmethode eliminiert automatisch jeden Distanzmessfehler.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mehrere Reizorte erlauben eine Plausibilitätsprüfung der Latenz-Strecken-Beziehung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sonst wird eine falsche Latenz bestimmt. B: Das macht die Differenzschätzung problematisch und verlangt Prüfung. C: Streckenfehler bleiben im Ergebnis. D: Abweichungen von der erwarteten Geraden können auffallen. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Messgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messgrenzen"
+      ],
+      "questionGoal": "Messgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Messgrenzen",
+        "correctReasoning": "Sonst wird eine falsche Latenz bestimmt. Abweichungen von der erwarteten Geraden können auffallen.",
+        "wrongAnswerExplanations": {
+          "A": "Sonst wird eine falsche Latenz bestimmt.",
+          "B": "Das macht die Differenzschätzung problematisch und verlangt Prüfung.",
+          "C": "Streckenfehler bleiben im Ergebnis.",
+          "D": "Abweichungen von der erwarteten Geraden können auffallen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_fpnerv_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "FPNERV",
+      "stem": "Welche Aussagen zum Thema «Physiologische Interpretation» treffen zu?",
+      "options": [
+        {
+          "text": "Eine Änderung der Signalpolarität bei vertauschten Ableitelektroden beweist eine Umkehr der Nervenfortleitung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein längerer Weg kann bei sonst gleichen Verzögerungen eine längere Gesamtlatenz erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine einzige rohe Latenz bestimmt ohne Strecken- und Zusatzzeitinformation eindeutig v.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Methode schätzt die Leitung der zur frühen Muskelantwort beitragenden motorischen Fasern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Messvorzeichen kann ohne Richtungsänderung wechseln. B: Die zusätzliche Nervenlaufzeit trägt dazu bei. C: Es fehlen nötige Bezugsgrössen. D: Sie misst nicht automatisch jede Faserklasse des gemischten Nerven gleich. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "FPNERV",
+        "Physiologische Interpretation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Physiologische Interpretation"
+      ],
+      "questionGoal": "Physiologische Interpretation",
+      "structuredExplanation": {
+        "coreIdea": "Physiologische Interpretation",
+        "correctReasoning": "Die zusätzliche Nervenlaufzeit trägt dazu bei. Sie misst nicht automatisch jede Faserklasse des gemischten Nerven gleich.",
+        "wrongAnswerExplanations": {
+          "A": "Das Messvorzeichen kann ohne Richtungsänderung wechseln.",
+          "B": "Die zusätzliche Nervenlaufzeit trägt dazu bei.",
+          "C": "Es fehlen nötige Bezugsgrössen.",
+          "D": "Sie misst nicht automatisch jede Faserklasse des gemischten Nerven gleich."
+        }
+      }
+    }
+  ]
+}

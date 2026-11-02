@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block4_kvb28_20261102",
+  "lectureCode": "KVB28",
+  "title": "Antibiotikaresistenz",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB28_AB-Resistenz-Spital. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Mechanismen gegen Primärforschung/IDSA geprüft. Tabellenaussagen «ESBL alle ausser Carbapeneme», «Carbapenemase alle» nicht als absolute Regeln übernommen; keine empirische Therapieempfehlung, keine veralteten Prävalenzen oder 10:1-Mikrobiomzahl. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Antibiotikaklassen und ihre bakteriellen Zielstrukturen unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "β-Lactame, Penicillinasefestigkeit und veränderte PBP mechanistisch verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "MRSA, ESBL und Carbapenemasen erklären und voneinander abgrenzen."
+    },
+    {
+      "id": "lo4",
+      "text": "Selektion, horizontalen Gentransfer, Reservoirs und Resistenztestung beurteilen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb28_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Funktion wird durch die klassische Bindung eines β-Lactams an penicillinbindende Proteine beeinträchtigt?",
+      "options": [
+        {
+          "text": "Die bakterielle DNA-Gyrase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die ribosomale Peptidyltransferase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Quervernetzung des Peptidoglycans.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die bakterielle Folsäurebiosynthese.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Synthese aller Phospholipide als alleiniges primäres Ziel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist ein Ziel bestimmter anderer Antibiotika. B: Dies betrifft Proteinsynthese, nicht das PBP-Ziel. C: PBP katalysieren wichtige Schritte der Zellwandsynthese, insbesondere Transpeptidierung. D: Diese wird durch andere Wirkstoffklassen gehemmt. E: PBP wirken im Peptidoglycansystem. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "β-Lactam-Ziel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "β-Lactam-Ziel"
+      ],
+      "questionGoal": "β-Lactam-Ziel",
+      "structuredExplanation": {
+        "coreIdea": "β-Lactam-Ziel",
+        "correctReasoning": "PBP katalysieren wichtige Schritte der Zellwandsynthese, insbesondere Transpeptidierung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist ein Ziel bestimmter anderer Antibiotika.",
+          "B": "Dies betrifft Proteinsynthese, nicht das PBP-Ziel.",
+          "D": "Diese wird durch andere Wirkstoffklassen gehemmt.",
+          "E": "PBP wirken im Peptidoglycansystem."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Ein Antibiotikum bindet an bakterielle Ribosomen. Welcher Prozess wird dadurch unmittelbar gehemmt?",
+      "options": [
+        {
+          "text": "Die DNA-Topologie durch Gyrasehemmung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Mureinquervernetzung durch PBP-Hemmung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Proteinsynthese.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Folatsynthese durch p-Aminobenzoat-Konkurrenz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die RNA-Transkription durch direkte Polymerasehemmung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre ein anderer unmittelbarer Angriffspunkt. B: Ribosomen katalysieren diese nicht. C: Ribosomen übersetzen mRNA in Polypeptide. D: Dies ist keine ribosomale Funktion. E: Transkription und Translation sind zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Ribosomenhemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ribosomenhemmung"
+      ],
+      "questionGoal": "Ribosomenhemmung",
+      "structuredExplanation": {
+        "coreIdea": "Ribosomenhemmung",
+        "correctReasoning": "Ribosomen übersetzen mRNA in Polypeptide.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre ein anderer unmittelbarer Angriffspunkt.",
+          "B": "Ribosomen katalysieren diese nicht.",
+          "D": "Dies ist keine ribosomale Funktion.",
+          "E": "Transkription und Translation sind zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Warum konnte Methicillin im historischen Kursbeispiel gegen penicillinasebildende Staphylokokken nützlich sein?",
+      "options": [
+        {
+          "text": "Seine Seitenstruktur schützt den β-Lactam-Ring vor dieser Penicillinase.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es hemmt ausschliesslich bakterielle Ribosomen statt PBP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es beseitigt jede mecA-vermittelte Zielveränderung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es besitzt keinen β-Lactam-Ring mehr.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es inaktiviert grundsätzlich jede Carbapenemase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Enzymstabilität und Bindung an PBP sind verschiedene Eigenschaften. B: Methicillin bleibt ein Zellwandwirkstoff. C: Penicillinasefestigkeit löst PBP2a-Resistenz nicht automatisch. D: Gerade dieser Ring gehört zur Wirkstoffklasse. E: Dies ist keine Methicillineigenschaft. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Penicillinasefestigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Penicillinasefestigkeit"
+      ],
+      "questionGoal": "Penicillinasefestigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Penicillinasefestigkeit",
+        "correctReasoning": "Enzymstabilität und Bindung an PBP sind verschiedene Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "B": "Methicillin bleibt ein Zellwandwirkstoff.",
+          "C": "Penicillinasefestigkeit löst PBP2a-Resistenz nicht automatisch.",
+          "D": "Gerade dieser Ring gehört zur Wirkstoffklasse.",
+          "E": "Dies ist keine Methicillineigenschaft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welcher Mechanismus erklärt die klassische mecA-vermittelte Methicillinresistenz von Staphylococcus aureus?",
+      "options": [
+        {
+          "text": "Ausschliesslich Hydrolyse durch eine gewöhnliche Penicillinase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verlust sämtlicher ribosomaler Bindestellen für Makrolide.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vollständiger physiologischer Verzicht auf Peptidoglycan.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bildung von PBP2a mit geringer Affinität zu vielen β-Lactamen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Allein eine AmpC-β-Lactamase wie in Enterobakterien.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: mecA vermittelt ein verändertes Zielprotein. B: Dies ist ein anderer möglicher Resistenzansatz. C: MRSA bleibt ein zellwandbildendes Bakterium. D: Die Zellwandquervernetzung kann trotz Hemmung anderer PBP fortgesetzt werden. E: Dies ist nicht der klassische mecA/PBP2a-Mechanismus. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "MRSA"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "MRSA"
+      ],
+      "questionGoal": "MRSA",
+      "structuredExplanation": {
+        "coreIdea": "MRSA",
+        "correctReasoning": "Die Zellwandquervernetzung kann trotz Hemmung anderer PBP fortgesetzt werden.",
+        "wrongAnswerExplanations": {
+          "A": "mecA vermittelt ein verändertes Zielprotein.",
+          "B": "Dies ist ein anderer möglicher Resistenzansatz.",
+          "C": "MRSA bleibt ein zellwandbildendes Bakterium.",
+          "E": "Dies ist nicht der klassische mecA/PBP2a-Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Was kennzeichnet Extended-spectrum-β-Lactamasen am besten?",
+      "options": [
+        {
+          "text": "Veränderte PBP mit geringer Wirkstoffaffinität.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich ein Effluxsystem für Aminoglycoside.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Carbapenemase als zwingend identische Enzymgruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine unselektive Verminderung der Wachstumsrate ohne enzymatische Wirkung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Enzyme, die viele Penicilline und erweiterte Cephalosporine hydrolysieren können.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist Zielveränderung statt β-Lactamhydrolyse. B: Das ist kein ESBL-Enzym. C: Carbapenemasen besitzen ein anderes relevantes Substratprofil. D: ESBL sind spezifisch β-Lactam-spaltende Enzyme. E: Es handelt sich um enzymatische Inaktivierung, nicht um ein neues PBP. Quelle: Originalunterlagen, PDF-S. 17,25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "ESBL"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ESBL"
+      ],
+      "questionGoal": "ESBL",
+      "structuredExplanation": {
+        "coreIdea": "ESBL",
+        "correctReasoning": "Es handelt sich um enzymatische Inaktivierung, nicht um ein neues PBP.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist Zielveränderung statt β-Lactamhydrolyse.",
+          "B": "Das ist kein ESBL-Enzym.",
+          "C": "Carbapenemasen besitzen ein anderes relevantes Substratprofil.",
+          "D": "ESBL sind spezifisch β-Lactam-spaltende Enzyme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q06",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Ein Isolat produziert eine ESBL. Welche zusätzliche Aussage ist ohne weitere Testung nicht gerechtfertigt?",
+      "options": [
+        {
+          "text": "Es könne trotz Kolonisation ohne Symptome vorkommen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es sei allein deshalb gegen sämtliche Carbapeneme resistent.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es könne β-Lactame enzymatisch inaktivieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es könne zusätzliche Resistenzgene tragen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Seine genaue Empfindlichkeit müsse im Labor bestimmt werden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kolonisation bedeutet nicht zwingend Krankheit. B: ESBL allein hydrolysieren Carbapeneme gewöhnlich nicht; weitere Mechanismen sind möglich. C: Dies gehört zum ESBL-Mechanismus. D: Mehrere Mechanismen können in einem Isolat koexistieren. E: Der Phänotyp muss differenziert untersucht werden. Quelle: Originalunterlagen, PDF-S. 17,25–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Carbapenemresistenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Carbapenemresistenz"
+      ],
+      "questionGoal": "Carbapenemresistenz",
+      "structuredExplanation": {
+        "coreIdea": "Carbapenemresistenz",
+        "correctReasoning": "ESBL allein hydrolysieren Carbapeneme gewöhnlich nicht; weitere Mechanismen sind möglich.",
+        "wrongAnswerExplanations": {
+          "A": "Kolonisation bedeutet nicht zwingend Krankheit.",
+          "C": "Dies gehört zum ESBL-Mechanismus.",
+          "D": "Mehrere Mechanismen können in einem Isolat koexistieren.",
+          "E": "Der Phänotyp muss differenziert untersucht werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Eine gemischte Bakterienpopulation enthält bereits wenige resistente Zellen. Unter einem wirksamen Antibiotikum steigt deren Anteil. Was erklärt dies am besten?",
+      "options": [
+        {
+          "text": "Jede empfindliche Zelle erhält zielgerichtet dieselbe notwendige Mutation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Antibiotikagabe beseitigt ausschliesslich resistente Varianten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Resistente Varianten haben unter dem Selektionsdruck einen relativen Überlebensvorteil.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der steigende Anteil beweist zwangsläufig neue Resistenzgene in jeder einzelnen Zelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Resistenz entsteht nur durch Umwandlung aller empfindlichen Zellen in Dauerstadien.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Selektion ist nicht absichtsvolle Mutationsplanung. B: Dann würde ihr Anteil nicht entsprechend steigen. C: Die empfindlichen Konkurrenten werden stärker gehemmt. D: Bereits vorhandene Varianten können expandieren. E: Genetische Resistenz und Überdauerungszustände sind verschieden. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Selektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektion"
+      ],
+      "questionGoal": "Selektion",
+      "structuredExplanation": {
+        "coreIdea": "Selektion",
+        "correctReasoning": "Die empfindlichen Konkurrenten werden stärker gehemmt.",
+        "wrongAnswerExplanations": {
+          "A": "Selektion ist nicht absichtsvolle Mutationsplanung.",
+          "B": "Dann würde ihr Anteil nicht entsprechend steigen.",
+          "D": "Bereits vorhandene Varianten können expandieren.",
+          "E": "Genetische Resistenz und Überdauerungszustände sind verschieden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Ein Resistenzplasmid wird bei direktem Kontakt von einem Bakterium auf ein anderes übertragen. Welcher Begriff passt?",
+      "options": [
+        {
+          "text": "Translation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Konjugation.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Transformation durch freie DNA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vertikale Vererbung bei Zellteilung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Transduktion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie erzeugt Protein aus mRNA. B: Der direkte bakterielle Kontakt ermöglicht diesen horizontalen DNA-Transfer. C: Diese erfordert keinen solchen direkten Donorkontakt. D: Hier wechselt DNA zwischen verschiedenen Zellen. E: Diese bezeichnet phagenvermittelten Transfer. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Horizontaler Transfer"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Horizontaler Transfer"
+      ],
+      "questionGoal": "Horizontaler Transfer",
+      "structuredExplanation": {
+        "coreIdea": "Horizontaler Transfer",
+        "correctReasoning": "Der direkte bakterielle Kontakt ermöglicht diesen horizontalen DNA-Transfer.",
+        "wrongAnswerExplanations": {
+          "A": "Sie erzeugt Protein aus mRNA.",
+          "C": "Diese erfordert keinen solchen direkten Donorkontakt.",
+          "D": "Hier wechselt DNA zwischen verschiedenen Zellen.",
+          "E": "Diese bezeichnet phagenvermittelten Transfer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Bei einer gesunden Person werden resistente Darmbakterien nachgewiesen. Welche Schlussfolgerung ist angemessen?",
+      "options": [
+        {
+          "text": "Der Nachweis allein beweist eine invasive Infektion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Stamm ist damit sicher gegen alle Antibiotikaklassen resistent.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Person besitzt deshalb zwingend eine Antibiotikaallergie.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine asymptomatische Kolonisation ist möglich; Resistenznachweis allein beweist keine Infektion.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Resistente Stämme können nie ohne Symptome persistieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Asymptomatische Kolonisation ist möglich. B: Die genaue Empfindlichkeit bleibt spezifisch. C: Allergie und Resistenz sind verschiedene Eigenschaften. D: Besiedelung, Erkrankung und Resistenz sind getrennte Eigenschaften. E: Auch sie können kolonisieren. Quelle: Originalunterlagen, PDF-S. 12,18,24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Kolonisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kolonisation"
+      ],
+      "questionGoal": "Kolonisation",
+      "structuredExplanation": {
+        "coreIdea": "Kolonisation",
+        "correctReasoning": "Besiedelung, Erkrankung und Resistenz sind getrennte Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "A": "Asymptomatische Kolonisation ist möglich.",
+          "B": "Die genaue Empfindlichkeit bleibt spezifisch.",
+          "C": "Allergie und Resistenz sind verschiedene Eigenschaften.",
+          "E": "Auch sie können kolonisieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Erklärung passt zum Zusammenhang von Antibiotikaeinsatz bei Mensch und Tier mit Resistenzverbreitung?",
+      "options": [
+        {
+          "text": "Resistenzselektion findet ausschliesslich während stationärer Behandlung statt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gentransfer ist auf Bakterien desselben individuellen Wirts beschränkt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Tierische Resistenz kann keine menschliche Exposition beeinflussen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Selektion und Austausch von Bakterien beziehungsweise Genen verbinden mehrere Reservoirs.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Weniger Antibiotikaverbrauch entfernt augenblicklich alle vorhandenen Resistenzgene.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ambulante, tierische und Umweltreservoirs tragen bei. B: Mobile Gene und Bakterien können Reservoirs verbinden. C: Kontaktketten können entsprechende Verbindungen schaffen. D: Menschen, Tiere und Umwelt stehen miteinander in Kontakt. E: Persistenz und Weitergabe können fortbestehen. Quelle: Originalunterlagen, PDF-S. 22–24,30–33,40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "One Health"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "One Health"
+      ],
+      "questionGoal": "One Health",
+      "structuredExplanation": {
+        "coreIdea": "One Health",
+        "correctReasoning": "Menschen, Tiere und Umwelt stehen miteinander in Kontakt.",
+        "wrongAnswerExplanations": {
+          "A": "Ambulante, tierische und Umweltreservoirs tragen bei.",
+          "B": "Mobile Gene und Bakterien können Reservoirs verbinden.",
+          "C": "Kontaktketten können entsprechende Verbindungen schaffen.",
+          "E": "Persistenz und Weitergabe können fortbestehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Bei einem standardisierten Hemmhof-Test muss das Labor einen Durchmesser interpretieren. Was ist dafür erforderlich?",
+      "options": [
+        {
+          "text": "Derselbe Durchmessergrenzwert für jeden Erreger und jeden Wirkstoff.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Passende standardisierte Bedingungen und substanz-/erregerspezifische Grenzwerte.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur die absolute Grösse des Hemmhofs ohne Testbedingungen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der blosse Vergleich mit dem grössten Hemmhof einer anderen Wirkstoffklasse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur ein Resistenzgennachweis ohne jede Rücksicht auf den Phänotyp.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Grenzwerte sind kontext- und substanzabhängig. B: Ein Rohdurchmesser ist nicht kontextfrei mit jeder anderen Kombination vergleichbar. C: Inokulum und standardisierte Bedingungen beeinflussen die Auswertung. D: Diffusionseigenschaften und Grenzwerte können verschieden sein. E: Genotyp und Empfindlichkeit müssen passend interpretiert werden. Quelle: Originalunterlagen, PDF-S. 35–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Empfindlichkeitstestung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Empfindlichkeitstestung"
+      ],
+      "questionGoal": "Empfindlichkeitstestung",
+      "structuredExplanation": {
+        "coreIdea": "Empfindlichkeitstestung",
+        "correctReasoning": "Ein Rohdurchmesser ist nicht kontextfrei mit jeder anderen Kombination vergleichbar.",
+        "wrongAnswerExplanations": {
+          "A": "Grenzwerte sind kontext- und substanzabhängig.",
+          "C": "Inokulum und standardisierte Bedingungen beeinflussen die Auswertung.",
+          "D": "Diffusionseigenschaften und Grenzwerte können verschieden sein.",
+          "E": "Genotyp und Empfindlichkeit müssen passend interpretiert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Warum kann ein Antibiotikum neben dem Zielerreger auch das Mikrobiom verändern?",
+      "options": [
+        {
+          "text": "Es eliminiert ausschliesslich den Zielerreger und lässt jeden Kommensalen sicher unverändert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es erzeugt bei allen Arten identische Resistenz unabhängig von ihrer Ausstattung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Auch empfindliche Mitglieder der normalen mikrobiellen Gemeinschaft werden gehemmt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es ändert nur menschliche Gene, nicht die mikrobiellen Konkurrenzverhältnisse.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein resistenter Stamm kann grundsätzlich nicht von verminderten Konkurrenten profitieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch Kommensalen können empfindlich sein. B: Reaktionen und Mechanismen unterscheiden sich. C: Das verändert Konkurrenzverhältnisse und ökologische Nischen. D: Die Hemmung mikrobieller Populationen verändert die Gemeinschaft. E: Freie Nischen können sein Wachstum begünstigen. Quelle: Originalunterlagen, PDF-S. 37–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Mikrobiomwirkung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mikrobiomwirkung"
+      ],
+      "questionGoal": "Mikrobiomwirkung",
+      "structuredExplanation": {
+        "coreIdea": "Mikrobiomwirkung",
+        "correctReasoning": "Das verändert Konkurrenzverhältnisse und ökologische Nischen.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Kommensalen können empfindlich sein.",
+          "B": "Reaktionen und Mechanismen unterscheiden sich.",
+          "D": "Die Hemmung mikrobieller Populationen verändert die Gemeinschaft.",
+          "E": "Freie Nischen können sein Wachstum begünstigen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Wirkorte» treffen zu?",
+      "options": [
+        {
+          "text": "Folatantagonisten: primäre Hemmung der bakteriellen DNA-Gyrase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ribosomenhemmer: ausschliesslich Synthese von Peptidoglycanzuckern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "β-Lactame: bakterielle Zellwandsynthese.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede höhere Cephalosporingeneration garantiert Wirksamkeit gegen jede β-Lactamase.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie greifen in den Folatstoffwechsel ein. B: Ihr primäres Ziel liegt in der Translation. C: Sie hemmen PBP-Funktionen. D: Generation und Seitenstruktur ergeben keine universelle Enzymstabilität. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Wirkorte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wirkorte"
+      ],
+      "questionGoal": "Wirkorte",
+      "structuredExplanation": {
+        "coreIdea": "Wirkorte",
+        "correctReasoning": "Sie hemmen PBP-Funktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie greifen in den Folatstoffwechsel ein.",
+          "B": "Ihr primäres Ziel liegt in der Translation.",
+          "C": "Sie hemmen PBP-Funktionen.",
+          "D": "Generation und Seitenstruktur ergeben keine universelle Enzymstabilität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q14",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Resistenzmechanismen» treffen zu?",
+      "options": [
+        {
+          "text": "Jede Resistenz gegenüber einem β-Lactam beruht zwingend auf demselben Enzym.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "PBP2a und ESBL vermitteln unterschiedliche Resistenzmechanismen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "β-Lactamasen verändern den Wirkstoff durch Hydrolyse.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Penicillinasefestigkeit eines Wirkstoffs garantiert keine Wirksamkeit gegen MRSA.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Enzyme, Zielveränderungen und Zugangsbarrieren sind verschiedene Mechanismen. B: PBP2a verändert das Ziel; ESBL hydrolysieren den Wirkstoff. C: Dies kann seine Bindungswirkung zerstören. D: Das Ziel kann zusätzlich geringe Affinität besitzen. Quelle: Originalunterlagen, PDF-S. 10–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Resistenzmechanismen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Resistenzmechanismen"
+      ],
+      "questionGoal": "Resistenzmechanismen",
+      "structuredExplanation": {
+        "coreIdea": "Resistenzmechanismen",
+        "correctReasoning": "PBP2a verändert das Ziel; ESBL hydrolysieren den Wirkstoff. Dies kann seine Bindungswirkung zerstören. Das Ziel kann zusätzlich geringe Affinität besitzen.",
+        "wrongAnswerExplanations": {
+          "A": "Enzyme, Zielveränderungen und Zugangsbarrieren sind verschiedene Mechanismen.",
+          "B": "PBP2a verändert das Ziel; ESBL hydrolysieren den Wirkstoff.",
+          "C": "Dies kann seine Bindungswirkung zerstören.",
+          "D": "Das Ziel kann zusätzlich geringe Affinität besitzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q15",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «ESBL und Carbapenemasen» treffen zu?",
+      "options": [
+        {
+          "text": "Ein ESBL-bildendes Bakterium kann zusätzlich andere Resistenzmechanismen besitzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Carbapenemase hydrolysiert ausnahmslos jedes β-Lactam gleich stark.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Bezeichnung ESBL beweist Resistenz gegen alle Nicht-β-Lactame.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Carbapenemase kann Carbapeneme hydrolysieren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein einzelnes Gen erklärt nicht den gesamten Empfindlichkeitsphänotyp. B: Substratprofile verschiedener Enzymfamilien unterscheiden sich. C: ESBL spalten diese nicht; zusätzliche Mechanismen können aber vorliegen. D: Dies unterscheidet sie von klassischen ESBL. Quelle: Originalunterlagen, PDF-S. 17,25–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "ESBL und Carbapenemasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ESBL und Carbapenemasen"
+      ],
+      "questionGoal": "ESBL und Carbapenemasen",
+      "structuredExplanation": {
+        "coreIdea": "ESBL und Carbapenemasen",
+        "correctReasoning": "Ein einzelnes Gen erklärt nicht den gesamten Empfindlichkeitsphänotyp. Dies unterscheidet sie von klassischen ESBL.",
+        "wrongAnswerExplanations": {
+          "A": "Ein einzelnes Gen erklärt nicht den gesamten Empfindlichkeitsphänotyp.",
+          "B": "Substratprofile verschiedener Enzymfamilien unterscheiden sich.",
+          "C": "ESBL spalten diese nicht; zusätzliche Mechanismen können aber vorliegen.",
+          "D": "Dies unterscheidet sie von klassischen ESBL."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Epidemiologie» treffen zu?",
+      "options": [
+        {
+          "text": "Historische Prävalenzzahlen sind ohne Ort und Zeitpunkt allgemein gültig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Reisen können zur Aufnahme resistenter Darmbakterien beitragen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "MRSA bedeutet automatisch schwerere Krankheit bei jeder besiedelten Person.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Staphylococcus aureus kann Menschen asymptomatisch besiedeln.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Erhebungsmethode, Region und Jahr beeinflussen sie. B: Expositionen in anderen Reservoirs können Kolonisation ermöglichen. C: Resistenz ist kein unmittelbares Mass der individuellen Krankheitsausprägung. D: Die Quelle nennt insbesondere Haut und Nasenbereich. Quelle: Originalunterlagen, PDF-S. 12–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Epidemiologie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Epidemiologie"
+      ],
+      "questionGoal": "Epidemiologie",
+      "structuredExplanation": {
+        "coreIdea": "Epidemiologie",
+        "correctReasoning": "Expositionen in anderen Reservoirs können Kolonisation ermöglichen. Die Quelle nennt insbesondere Haut und Nasenbereich.",
+        "wrongAnswerExplanations": {
+          "A": "Erhebungsmethode, Region und Jahr beeinflussen sie.",
+          "B": "Expositionen in anderen Reservoirs können Kolonisation ermöglichen.",
+          "C": "Resistenz ist kein unmittelbares Mass der individuellen Krankheitsausprägung.",
+          "D": "Die Quelle nennt insbesondere Haut und Nasenbereich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Evolution» treffen zu?",
+      "options": [
+        {
+          "text": "Antibiotika erschaffen zielgerichtet genau die Mutation, welche das Bakterium gerade benötigt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Resistente Bakterien können ihre Gene bei Teilung vertikal weitergeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Horizontale Übertragung ist nur zwischen Eltern- und Tochterzelle möglich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Resistenzdeterminanten existierten bereits vor der medizinischen Antibiotikaanwendung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Selektion wirkt auf Varianten; sie ist nicht zielgerichtete Mutationsplanung. B: Daneben existiert horizontaler Transfer. C: Sie betrifft gerade Transfer ausserhalb dieser Abstammung. D: Die Quelle nennt alte Umweltproben. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Evolution"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Evolution"
+      ],
+      "questionGoal": "Evolution",
+      "structuredExplanation": {
+        "coreIdea": "Evolution",
+        "correctReasoning": "Daneben existiert horizontaler Transfer. Die Quelle nennt alte Umweltproben.",
+        "wrongAnswerExplanations": {
+          "A": "Selektion wirkt auf Varianten; sie ist nicht zielgerichtete Mutationsplanung.",
+          "B": "Daneben existiert horizontaler Transfer.",
+          "C": "Sie betrifft gerade Transfer ausserhalb dieser Abstammung.",
+          "D": "Die Quelle nennt alte Umweltproben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Gentransferwege» treffen zu?",
+      "options": [
+        {
+          "text": "Transduktion bezeichnet ausschliesslich die Aufnahme freier DNA ohne Phagenbeteiligung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Konjugation kann die Weitergabe eines Resistenzplasmids ermöglichen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Transformation kann Aufnahme freier DNA bedeuten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein mobiles Resistenzgen kann nur in einer einzigen Bakteriengeneration vorkommen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Phagen vermitteln Transduktion; freie DNA gehört zur Transformation. B: Der direkte Zellkontakt ist dabei zentral. C: Die Empfängerzelle muss dafür kompetent sein. D: Es kann vererbt und weiterverbreitet werden. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Gentransferwege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gentransferwege"
+      ],
+      "questionGoal": "Gentransferwege",
+      "structuredExplanation": {
+        "coreIdea": "Gentransferwege",
+        "correctReasoning": "Der direkte Zellkontakt ist dabei zentral. Die Empfängerzelle muss dafür kompetent sein.",
+        "wrongAnswerExplanations": {
+          "A": "Phagen vermitteln Transduktion; freie DNA gehört zur Transformation.",
+          "B": "Der direkte Zellkontakt ist dabei zentral.",
+          "C": "Die Empfängerzelle muss dafür kompetent sein.",
+          "D": "Es kann vererbt und weiterverbreitet werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Reservoir und Selektion» treffen zu?",
+      "options": [
+        {
+          "text": "Weniger Antibiotikaverbrauch beseitigt garantiert sofort jedes Resistenzgen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Prävention der Übertragung und umsichtiger Antibiotikaeinsatz wirken an unterschiedlichen Stellen an.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein tierisches Reservoir ist für die menschliche Epidemiologie grundsätzlich bedeutungslos.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wiederholte Antibiotikaexposition kann resistente Populationen begünstigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Persistenz und Übertragung können trotz geringerem Druck fortbestehen. B: Sie begrenzen Ausbreitung beziehungsweise Selektionsdruck. C: Kontaktketten können Reservoirs verbinden. D: Empfindliche Konkurrenten werden stärker unterdrückt. Quelle: Originalunterlagen, PDF-S. 18,22–24,30–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Reservoir und Selektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reservoir und Selektion"
+      ],
+      "questionGoal": "Reservoir und Selektion",
+      "structuredExplanation": {
+        "coreIdea": "Reservoir und Selektion",
+        "correctReasoning": "Sie begrenzen Ausbreitung beziehungsweise Selektionsdruck. Empfindliche Konkurrenten werden stärker unterdrückt.",
+        "wrongAnswerExplanations": {
+          "A": "Persistenz und Übertragung können trotz geringerem Druck fortbestehen.",
+          "B": "Sie begrenzen Ausbreitung beziehungsweise Selektionsdruck.",
+          "C": "Kontaktketten können Reservoirs verbinden.",
+          "D": "Empfindliche Konkurrenten werden stärker unterdrückt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb28_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB28",
+      "stem": "Welche Aussagen zum Thema «Begriffe trennen» treffen zu?",
+      "options": [
+        {
+          "text": "Kolonisation und invasive Infektion müssen unterschieden werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Resistenz ist eine Eigenschaft der untersuchten Bakterien-Wirkstoff-Kombination.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Empfindlichkeit gegen einen Wirkstoff beweist dieselbe Empfindlichkeit gegen jede Antibiotikaklasse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine ESBL ist ein verändertes PBP mit verminderter β-Lactamaffinität.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Keimnachweis allein legt die Erkrankung nicht vollständig fest. B: Sie ist nicht mit einer Allergie des Menschen gleichzusetzen. C: Zielstrukturen und Resistenzmechanismen unterscheiden sich. D: ESBL hydrolysieren Wirkstoffe; PBP-Veränderung ist ein anderer Mechanismus. Quelle: Originalunterlagen, PDF-S. 10–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB28",
+        "Begriffe trennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Begriffe trennen"
+      ],
+      "questionGoal": "Begriffe trennen",
+      "structuredExplanation": {
+        "coreIdea": "Begriffe trennen",
+        "correctReasoning": "Ein Keimnachweis allein legt die Erkrankung nicht vollständig fest. Sie ist nicht mit einer Allergie des Menschen gleichzusetzen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Keimnachweis allein legt die Erkrankung nicht vollständig fest.",
+          "B": "Sie ist nicht mit einer Allergie des Menschen gleichzusetzen.",
+          "C": "Zielstrukturen und Resistenzmechanismen unterscheiden sich.",
+          "D": "ESBL hydrolysieren Wirkstoffe; PBP-Veränderung ist ein anderer Mechanismus."
+        }
+      }
+    }
+  ]
+}

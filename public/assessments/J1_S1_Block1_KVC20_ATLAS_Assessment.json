@@ -1,0 +1,1318 @@
+{
+  "id": "assessment_j1_s1_block1_kvc20_20261102",
+  "lectureCode": "KVC20",
+  "title": "Photochemie und Spektroskopie",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC20 - Photochemie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Der primäre Retinal-Sehschritt und die unmittelbare Vitamin-D-Vorstufe sind präzisiert. Lambert-Beer wird auf den geeigneten linearen Bereich begrenzt. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "NMR, IR, MS, Röntgenbeugung und Röntgenfluoreszenz unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "UV/Vis-Absorption und Lambert-Beer quantitative anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Fluoreszenz, Phosphoreszenz und ausgewählte Photoreaktionen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc20_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Ein Photon hat die doppelte Wellenlänge eines zweiten Photons im gleichen Medium mit gleicher Ausbreitungsgeschwindigkeit. Wie gross ist seine Energie relativ zum zweiten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gleich gross.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Viertel so gross.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Viermal so gross.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Halb so gross.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Doppelt so gross.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Gleiches c garantiert nicht gleiche Energie, weil die Frequenz beziehungsweise λ unterschiedlich ist. B: Ein Viertel ergäbe eine fälschliche 1/λ²-Abhängigkeit statt der einfachen inversen Abhängigkeit. C: Vierfach würde einer quadratischen Zunahme mit λ entsprechen, die E=hc/λ nicht besitzt. D: E=hc/λ; Verdopplung von λ halbiert die Energie. E: Das ist die direkte statt inverse Proportionalität: grösseres λ senkt E. Quelle: Originalunterlagen, PDF-S. 3, 11, 21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Photonenrelation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photonenrelation"
+      ],
+      "questionGoal": "Photonenrelation",
+      "structuredExplanation": {
+        "coreIdea": "Photonenrelation",
+        "correctReasoning": "E=hc/λ; Verdopplung von λ halbiert die Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Gleiches c garantiert nicht gleiche Energie, weil die Frequenz beziehungsweise λ unterschiedlich ist.",
+          "B": "Ein Viertel ergäbe eine fälschliche 1/λ²-Abhängigkeit statt der einfachen inversen Abhängigkeit.",
+          "C": "Vierfach würde einer quadratischen Zunahme mit λ entsprechen, die E=hc/λ nicht besitzt.",
+          "E": "Das ist die direkte statt inverse Proportionalität: grösseres λ senkt E."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Information liefert IR-Spektroskopie primär?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Masse-zu-Ladung-Verhältnisse ionischer Fragmente.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Absorptionsbanden molekularer Schwingungen.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Kernspinresonanzen im Magnetfeld.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die räumliche Atomkoordinate aus einem Kristallbeugungsbild ohne Schwingungsinformation.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein direktes Zählen aller Elementkerne unabhängig von Bindungen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: m/z-Fragmente werden massenspektrometrisch und nicht über IR-Schwingungsbanden gemessen. B: IR regt geeignete Schwingungsübergänge an und kann funktionelle Gruppen charakterisieren; MS, NMR und XRD beruhen auf anderen Prinzipien. C: Kernspinresonanzen sind das Prinzip der NMR. D: Kristallkoordinaten aus Beugung gehören zur XRD statt zur IR-Absorption. E: Elementkernzählung ohne Bindungsbezug ist nicht die Information eines Molekülschwingungsspektrums. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "IR-Information"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "IR-Information"
+      ],
+      "questionGoal": "IR-Information",
+      "structuredExplanation": {
+        "coreIdea": "IR-Information",
+        "correctReasoning": "IR regt geeignete Schwingungsübergänge an und kann funktionelle Gruppen charakterisieren; MS, NMR und XRD beruhen auf anderen Prinzipien.",
+        "wrongAnswerExplanations": {
+          "A": "m/z-Fragmente werden massenspektrometrisch und nicht über IR-Schwingungsbanden gemessen.",
+          "C": "Kernspinresonanzen sind das Prinzip der NMR.",
+          "D": "Kristallkoordinaten aus Beugung gehören zur XRD statt zur IR-Absorption.",
+          "E": "Elementkernzählung ohne Bindungsbezug ist nicht die Information eines Molekülschwingungsspektrums."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Übergänge nutzt NMR bei geeigneten Kernen im Magnetfeld?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ionentrennung nach m/z.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Röntgenemission nach einer inneren Schalenlücke.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich Schwingungen der C=O-Bindung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Übergänge zwischen Kernspin-Energieniveaus.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Zwingend radioaktive Kernspaltung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: m/z-Trennung ist Massenspektrometrie und kein magnetischer Kernspinübergang. B: Röntgenemission innerer Schalenlücken ist XRF beziehungsweise charakteristische Strahlung. C: C=O-Schwingungen werden mit IR statt Kernspinresonanz untersucht. D: Magnetische Resonanz untersucht Kernspinzustände; sie setzt keinen radioaktiven Zerfall voraus. E: NMR regt Spinübergänge an und benötigt keine radioaktive Kernspaltung. Quelle: Originalunterlagen, PDF-S. 4–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "NMR-Prinzip"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NMR-Prinzip"
+      ],
+      "questionGoal": "NMR-Prinzip",
+      "structuredExplanation": {
+        "coreIdea": "NMR-Prinzip",
+        "correctReasoning": "Magnetische Resonanz untersucht Kernspinzustände; sie setzt keinen radioaktiven Zerfall voraus.",
+        "wrongAnswerExplanations": {
+          "A": "m/z-Trennung ist Massenspektrometrie und kein magnetischer Kernspinübergang.",
+          "B": "Röntgenemission innerer Schalenlücken ist XRF beziehungsweise charakteristische Strahlung.",
+          "C": "C=O-Schwingungen werden mit IR statt Kernspinresonanz untersucht.",
+          "E": "NMR regt Spinübergänge an und benötigt keine radioaktive Kernspaltung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Grösse ist für die Trennung/Erfassung im Massenspektrometer zentral?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Masse-zu-Ladung-Verhältnis der Ionen.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nur die sichtbare Farbe neutraler Moleküle.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Wellenlänge jeder Carbonylschwingung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Zahl der H-Brücken im flüssigen Wasser ohne Ionisierung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die pH-Differenz zum Neutralpunkt.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Probe wird ionisiert; die detektierten Ionen werden nach m/z charakterisiert. B: Eine sichtbare Farbe neutraler Moleküle ist kein m/z-Trennkriterium. C: Carbonylschwingungswellenlängen sind IR-Information, nicht die MS-Messgrösse. D: Die H-Brückenzahl flüssigen Wassers wird nicht direkt als MS-Trennvariable ohne Ionen gemessen. E: Eine pH-Differenz betrifft Protonengleichgewichte, nicht Ionentrennung nach Masse und Ladung. Quelle: Originalunterlagen, PDF-S. 13–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Massenspektrum"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Massenspektrum"
+      ],
+      "questionGoal": "Massenspektrum",
+      "structuredExplanation": {
+        "coreIdea": "Massenspektrum",
+        "correctReasoning": "Die Probe wird ionisiert; die detektierten Ionen werden nach m/z charakterisiert.",
+        "wrongAnswerExplanations": {
+          "B": "Eine sichtbare Farbe neutraler Moleküle ist kein m/z-Trennkriterium.",
+          "C": "Carbonylschwingungswellenlängen sind IR-Information, nicht die MS-Messgrösse.",
+          "D": "Die H-Brückenzahl flüssigen Wassers wird nicht direkt als MS-Trennvariable ohne Ionen gemessen.",
+          "E": "Eine pH-Differenz betrifft Protonengleichgewichte, nicht Ionentrennung nach Masse und Ladung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Fragestellung passt besonders zur Röntgenbeugung an geeigneten Kristallen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ausschliesslich die Kernspin-Längsrelaxation messen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Protonenkonzentration durch einen Indikatorumschlag bestimmen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Abkühlung eines Bechers kalorimetrisch messen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die räumliche Anordnung von Atomen aus einem Beugungsmuster bestimmen.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die enzymatische Vmax durch Substratverdopplung bestimmen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Kernspinrelaxation ist eine NMR-Grösse und nicht XRD. B: Indikatorumschlag misst Säure-Base-Verhalten und ist kein Beugungsbild. C: Kalorimetrische Wärmebestimmung liefert keine Kristallkoordinaten aus Interferenz. D: Geordnete Strukturen erzeugen charakteristische Interferenz-/Beugungsmuster mit Strukturinformation. E: Vmax-Bestimmung gehört zur Enzymkinetik und nicht zur Kristallstrukturanalyse. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Röntgenbeugung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Röntgenbeugung"
+      ],
+      "questionGoal": "Röntgenbeugung",
+      "structuredExplanation": {
+        "coreIdea": "Röntgenbeugung",
+        "correctReasoning": "Geordnete Strukturen erzeugen charakteristische Interferenz-/Beugungsmuster mit Strukturinformation.",
+        "wrongAnswerExplanations": {
+          "A": "Kernspinrelaxation ist eine NMR-Grösse und nicht XRD.",
+          "B": "Indikatorumschlag misst Säure-Base-Verhalten und ist kein Beugungsbild.",
+          "C": "Kalorimetrische Wärmebestimmung liefert keine Kristallkoordinaten aus Interferenz.",
+          "E": "Vmax-Bestimmung gehört zur Enzymkinetik und nicht zur Kristallstrukturanalyse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Information kann charakteristische Röntgenfluoreszenz unmittelbar unterstützen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die α/β-Konfiguration jedes Zuckers ohne weitere Daten.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die exakte Peptidsequenz allein aus einer einzelnen Elementlinie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Das Säure-Base-Äquivalenzvolumen ohne Titration.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Geschwindigkeit einer Esterhydrolyse ohne Zeitmessung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Elementzusammensetzung einer Probe.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Elementemission allein löst nicht die Zuckeranomerie auf. B: Eine einzelne Elementlinie liefert keine komplette Peptidsequenz. C: Das Äquivalenzvolumen wird bei einer Titration bestimmt, nicht aus Röntgenfluoreszenz allein. D: Eine Reaktionsgeschwindigkeit benötigt Zeitinformation und folgt nicht aus einer beliebigen Elementlinie. E: Innere elektronische Übergänge erzeugen elementspezifische Linien; molekulare Sequenz oder Konfiguration folgt daraus nicht allein. Quelle: Originalunterlagen, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Röntgenfluoreszenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Röntgenfluoreszenz"
+      ],
+      "questionGoal": "Röntgenfluoreszenz",
+      "structuredExplanation": {
+        "coreIdea": "Röntgenfluoreszenz",
+        "correctReasoning": "Innere elektronische Übergänge erzeugen elementspezifische Linien; molekulare Sequenz oder Konfiguration folgt daraus nicht allein.",
+        "wrongAnswerExplanations": {
+          "A": "Elementemission allein löst nicht die Zuckeranomerie auf.",
+          "B": "Eine einzelne Elementlinie liefert keine komplette Peptidsequenz.",
+          "C": "Das Äquivalenzvolumen wird bei einer Titration bestimmt, nicht aus Röntgenfluoreszenz allein.",
+          "D": "Eine Reaktionsgeschwindigkeit benötigt Zeitinformation und folgt nicht aus einer beliebigen Elementlinie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "ε=1000 l mol⁻¹ cm⁻¹, c=2.0×10⁻⁴ mol/l und l=1.0 cm. Welche Absorbanz folgt im linearen Bereich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.0.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "0.020.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "0.20.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "200.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "5.0.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 2.0 ist um Faktor zehn zu hoch; 1000×0.00020 ergibt 0.20. B: 0.020 enthält einen zusätzlichen Faktor zehn im Nenner gegenüber εcl. C: A=εcl=1000×0.00020×1=0.20; A ist dimensionslos. D: 200 lässt den Faktor 10⁻³ bei der Konzentrationsmultiplikation fehlen. E: 5.0 ist der Kehrwert des korrekten Produkts und nicht die Absorbanz. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Lambert-Beer-Rechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lambert-Beer-Rechnung"
+      ],
+      "questionGoal": "Lambert-Beer-Rechnung",
+      "structuredExplanation": {
+        "coreIdea": "Lambert-Beer-Rechnung",
+        "correctReasoning": "A=εcl=1000×0.00020×1=0.20; A ist dimensionslos.",
+        "wrongAnswerExplanations": {
+          "A": "2.0 ist um Faktor zehn zu hoch; 1000×0.00020 ergibt 0.20.",
+          "B": "0.020 enthält einen zusätzlichen Faktor zehn im Nenner gegenüber εcl.",
+          "D": "200 lässt den Faktor 10⁻³ bei der Konzentrationsmultiplikation fehlen.",
+          "E": "5.0 ist der Kehrwert des korrekten Produkts und nicht die Absorbanz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Eine Probe mit A=0.80 wird auf die halbe Konzentration verdünnt und in derselben Küvette gemessen. Welcher Wert folgt bei gültigem Lambert-Beer-Modell?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.80.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "0.20.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "0.40.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "2.00.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "1.60.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 0.80 wäre unverändert trotz Halbierung von c. B: 0.20 entspräche einem Viertel statt der halben Konzentration. C: Bei konstantem ε und l ist A proportional zu c. D: 2.00 ergibt sich nicht aus der linearen Halbierung von 0.80. E: 1.60 wäre die falsche inverse Wirkung einer Verdünnung. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Verdünnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verdünnung"
+      ],
+      "questionGoal": "Verdünnung",
+      "structuredExplanation": {
+        "coreIdea": "Verdünnung",
+        "correctReasoning": "Bei konstantem ε und l ist A proportional zu c.",
+        "wrongAnswerExplanations": {
+          "A": "0.80 wäre unverändert trotz Halbierung von c.",
+          "B": "0.20 entspräche einem Viertel statt der halben Konzentration.",
+          "D": "2.00 ergibt sich nicht aus der linearen Halbierung von 0.80.",
+          "E": "1.60 wäre die falsche inverse Wirkung einer Verdünnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Bei gleicher Probe wird die Weglänge von 1 auf 2 cm erhöht. Was folgt im linearen Modell?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Transmission verdoppelt sich zwingend.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Absorbanz bleibt zwingend gleich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Absorbanz halbiert sich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Absorbanz verdoppelt sich.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die Konzentration halbiert sich allein durch die längere Küvette.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Längere Wegstrecke verringert typischerweise T; sie verdoppelt T nicht zwingend. B: Gleiches A trotz doppelter l würde die angegebene lineare Proportionalität ignorieren. C: Die Absorbanz ist proportional zur Weglänge und wird nicht halbiert. D: A=εcl; die Probe bleibt gleich, die optische Weglänge geht linear ein. E: Die Konzentration ist eine Probeneigenschaft und ändert sich nicht allein durch die Küvettenlänge. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Küvettenlänge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Küvettenlänge"
+      ],
+      "questionGoal": "Küvettenlänge",
+      "structuredExplanation": {
+        "coreIdea": "Küvettenlänge",
+        "correctReasoning": "A=εcl; die Probe bleibt gleich, die optische Weglänge geht linear ein.",
+        "wrongAnswerExplanations": {
+          "A": "Längere Wegstrecke verringert typischerweise T; sie verdoppelt T nicht zwingend.",
+          "B": "Gleiches A trotz doppelter l würde die angegebene lineare Proportionalität ignorieren.",
+          "C": "Die Absorbanz ist proportional zur Weglänge und wird nicht halbiert.",
+          "E": "Die Konzentration ist eine Probeneigenschaft und ändert sich nicht allein durch die Küvettenlänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Absorbanz entspricht T=10 %?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "0.10.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "10.0.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "0.0.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "−1.0.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Mit T als Anteil 0.10 gilt A=−log10(0.10)=1. B: 0.10 ist die Transmission als Anteil und nicht deren negativer Logarithmus. C: 10 % muss als 0.10 eingesetzt werden; der Prozentwert zehn ist nicht A. D: A=0 würde T=1 beziehungsweise vollständige Transmission bedeuten. E: Das Minuszeichen vor log10 macht aus log10(0.10)=−1 eine positive Absorbanz. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Transmission"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transmission"
+      ],
+      "questionGoal": "Transmission",
+      "structuredExplanation": {
+        "coreIdea": "Transmission",
+        "correctReasoning": "Mit T als Anteil 0.10 gilt A=−log10(0.10)=1.",
+        "wrongAnswerExplanations": {
+          "B": "0.10 ist die Transmission als Anteil und nicht deren negativer Logarithmus.",
+          "C": "10 % muss als 0.10 eingesetzt werden; der Prozentwert zehn ist nicht A.",
+          "D": "A=0 würde T=1 beziehungsweise vollständige Transmission bedeuten.",
+          "E": "Das Minuszeichen vor log10 macht aus log10(0.10)=−1 eine positive Absorbanz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche Zuordnung ist im üblichen Jablonski-Grundmodell korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fluoreszenz: immer Triplettemission; Phosphoreszenz: immer schnellster Singulettübergang.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Beide sind ausschliesslich thermische Glühstrahlung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Fluoreszenz: typischer kurzer Singulettübergang; Phosphoreszenz: häufig verzögerter Triplettübergang.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Beide haben im üblichen Grundmodell dieselbe Auswahlregel und dieselbe typische Lebensdauer.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die beiden Begriffe bezeichnen ausschliesslich unterschiedliche Küvettenlängen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Singulett- und Triplettzuordnung sind gegenüber dem üblichen Grundmodell vertauscht. B: Lumineszenz nach elektronischer Anregung ist keine reine thermische Glühstrahlung. C: Spin-Auswahlregeln und Lebensdauern unterscheiden die typischen Emissionswege; die Begriffe sind keine Temperatur- oder Geometrieskalen. D: Die beiden Prozesse haben unterschiedliche typische Spin-Auswahlregeln und Lebensdauern. E: Küvettenlänge beeinflusst gemessene Intensität, definiert aber nicht Fluoreszenz versus Phosphoreszenz. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Fluoreszenz und Phosphoreszenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fluoreszenz und Phosphoreszenz"
+      ],
+      "questionGoal": "Fluoreszenz und Phosphoreszenz",
+      "structuredExplanation": {
+        "coreIdea": "Fluoreszenz und Phosphoreszenz",
+        "correctReasoning": "Spin-Auswahlregeln und Lebensdauern unterscheiden die typischen Emissionswege; die Begriffe sind keine Temperatur- oder Geometrieskalen.",
+        "wrongAnswerExplanations": {
+          "A": "Singulett- und Triplettzuordnung sind gegenüber dem üblichen Grundmodell vertauscht.",
+          "B": "Lumineszenz nach elektronischer Anregung ist keine reine thermische Glühstrahlung.",
+          "D": "Die beiden Prozesse haben unterschiedliche typische Spin-Auswahlregeln und Lebensdauern.",
+          "E": "Küvettenlänge beeinflusst gemessene Intensität, definiert aber nicht Fluoreszenz versus Phosphoreszenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Welche primäre lichtinduzierte Isomerisierung aktiviert normales Rhodopsin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retinol → Retinsäure ohne Isomerisierung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "7-Dehydrocholesterin → Prävitamin D3 im Rhodopsin.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "all-trans-Retinal → 11-cis-Retinal als primärer Lichtschritt.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "11-cis-Retinal → all-trans-Retinal.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "β-Carotin → Cholesterin.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Retinoloxidation zu Retinsäure ist eine andere Umwandlung als die Retinalisomerisierung. B: 7-Dehydrocholesterin→Prävitamin D3 ist Hautphotochemie und kein Rhodopsin-Sehschritt. C: all-trans→11-cis gehört zur Regeneration, nicht zum primären aktivierenden Lichtschritt. D: Die cis→trans-Änderung des gebundenen Retinals löst eine Protein-Konformationsänderung aus; Regeneration und Vitamin-D-Photochemie sind andere Prozesse. E: β-Carotin und Cholesterin gehören zu verschiedenen Biosynthese-/Funktionszusammenhängen; dieser Schritt aktiviert Rhodopsin nicht. Quelle: Originalunterlagen, PDF-S. 27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Retinal-Photoreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Retinal-Photoreaktion"
+      ],
+      "questionGoal": "Retinal-Photoreaktion",
+      "structuredExplanation": {
+        "coreIdea": "Retinal-Photoreaktion",
+        "correctReasoning": "Die cis→trans-Änderung des gebundenen Retinals löst eine Protein-Konformationsänderung aus; Regeneration und Vitamin-D-Photochemie sind andere Prozesse.",
+        "wrongAnswerExplanations": {
+          "A": "Retinoloxidation zu Retinsäure ist eine andere Umwandlung als die Retinalisomerisierung.",
+          "B": "7-Dehydrocholesterin→Prävitamin D3 ist Hautphotochemie und kein Rhodopsin-Sehschritt.",
+          "C": "all-trans→11-cis gehört zur Regeneration, nicht zum primären aktivierenden Lichtschritt.",
+          "E": "β-Carotin und Cholesterin gehören zu verschiedenen Biosynthese-/Funktionszusammenhängen; dieser Schritt aktiviert Rhodopsin nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Phosphoreszenz, Stokes-Verschiebung, NMR, Verdünnungsrechnung.",
+      "options": [
+        {
+          "text": "Phosphoreszenz kann durch einen spinverbotenen Übergang aus einem Triplettzustand verzögert auftreten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "NMR setzt definitionsgemäss den radioaktiven Zerfall jedes gemessenen Kerns voraus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fluoreszenzemission liegt häufig nach Relaxation bei längerer Wellenlänge als die Anregung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Halbierung von c verdoppelt im linearen Lambert-Beer-Modell A.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Auswahlregel erklärt die längere Lebensdauer. B: NMR untersucht geeignete Kernspinübergänge in einem Magnetfeld. Es werden magnetische Resonanzübergänge genutzt. C: Relaxation verringert typischerweise die Photonenergie. D: Halbiert man bei gleichem ε und l die Konzentration, halbiert sich im linearen Modell A. A ist proportional zu c. Quelle: Originalunterlagen, PDF-S. 4–10, 21, 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Phosphoreszenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphoreszenz"
+      ],
+      "questionGoal": "Phosphoreszenz",
+      "structuredExplanation": {
+        "coreIdea": "Phosphoreszenz",
+        "correctReasoning": "Die Auswahlregel erklärt die längere Lebensdauer. Relaxation verringert typischerweise die Photonenergie.",
+        "wrongAnswerExplanations": {
+          "A": "Die Auswahlregel erklärt die längere Lebensdauer.",
+          "B": "NMR untersucht geeignete Kernspinübergänge in einem Magnetfeld. Es werden magnetische Resonanzübergänge genutzt.",
+          "C": "Relaxation verringert typischerweise die Photonenergie.",
+          "D": "Halbiert man bei gleichem ε und l die Konzentration, halbiert sich im linearen Modell A. A ist proportional zu c."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Stokes-Verschiebung, Sehphotoreaktion, Massenspektrometrie, Schichtdicke.",
+      "options": [
+        {
+          "text": "Ein Massenspektrometer trennt oder erfasst Ionen nach ihrem Masse-zu-Ladung-Verhältnis.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Verdopplung der Küvettenlänge verdoppelt im geeigneten Modell die Absorbanz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der aktivierende Lichtschritt des Rhodopsins verläuft von all-trans- zu 11-cis-Retinal.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fluoreszenzemission liegt häufig nach Relaxation bei längerer Wellenlänge als die Anregung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ionisierung und m/z sind zentral. B: Mehr Weglänge erhöht die Absorption. C: Die Aktivierung verläuft 11-cis→all-trans; die cis-Regeneration ist ein anderer Teil des Sehzyklus. D: Relaxation verringert typischerweise die Photonenergie. Quelle: Originalunterlagen, PDF-S. 13–16, 21, 23–24, 27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Stokes-Verschiebung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stokes-Verschiebung"
+      ],
+      "questionGoal": "Stokes-Verschiebung",
+      "structuredExplanation": {
+        "coreIdea": "Stokes-Verschiebung",
+        "correctReasoning": "Ionisierung und m/z sind zentral. Mehr Weglänge erhöht die Absorption. Relaxation verringert typischerweise die Photonenergie.",
+        "wrongAnswerExplanations": {
+          "A": "Ionisierung und m/z sind zentral.",
+          "B": "Mehr Weglänge erhöht die Absorption.",
+          "C": "Die Aktivierung verläuft 11-cis→all-trans; die cis-Regeneration ist ein anderer Teil des Sehzyklus.",
+          "D": "Relaxation verringert typischerweise die Photonenergie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Sehphotoreaktion, Vitamin-D-Photostart, Röntgenbeugung, Transmission.",
+      "options": [
+        {
+          "text": "Der aktivierende Lichtschritt des Rhodopsins verläuft von all-trans- zu 11-cis-Retinal.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "UVB kann die Umwandlung von 7-Dehydrocholesterin zu Prävitamin D3 auslösen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Transmission von 10 Prozent ergibt nach dieser Definition A = −1.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Röntgenbeugung liefert primär ein m/z-Spektrum ionisierter Fragmente.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Aktivierung verläuft 11-cis→all-trans; die cis-Regeneration ist ein anderer Teil des Sehzyklus. B: Ein geeignetes organisches Chromophor ist nötig. C: A = −log10(T) ergibt für T = 0.1 eine Absorbanz von 1. Der negative Logarithmus kehrt das Vorzeichen um. D: XRD wertet ein Beugungs-/Interferenzmuster geordneter Strukturen aus; m/z gehört zur Massenspektrometrie. Quelle: Originalunterlagen, PDF-S. 17–18, 23, 27, 30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Sehphotoreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sehphotoreaktion"
+      ],
+      "questionGoal": "Sehphotoreaktion",
+      "structuredExplanation": {
+        "coreIdea": "Sehphotoreaktion",
+        "correctReasoning": "Ein geeignetes organisches Chromophor ist nötig.",
+        "wrongAnswerExplanations": {
+          "A": "Die Aktivierung verläuft 11-cis→all-trans; die cis-Regeneration ist ein anderer Teil des Sehzyklus.",
+          "B": "Ein geeignetes organisches Chromophor ist nötig.",
+          "C": "A = −log10(T) ergibt für T = 0.1 eine Absorbanz von 1. Der negative Logarithmus kehrt das Vorzeichen um.",
+          "D": "XRD wertet ein Beugungs-/Interferenzmuster geordneter Strukturen aus; m/z gehört zur Massenspektrometrie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Vitamin-D-Photostart, DNA-Photochemie, Röntgenfluoreszenz, Leerwert.",
+      "options": [
+        {
+          "text": "Die beschriebene UV-Schädigung der DNA ist eine reversible Protonierung von Thymin ohne Bindungsbildung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "UVB kann die Umwandlung von 7-Dehydrocholesterin zu Prävitamin D3 auslösen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Röntgenfluoreszenz bestimmt primär Kernspinübergänge im Magnetfeld.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine passende Leerwertmessung erfasst Beiträge von Lösungsmittel und Küvette.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein charakteristischer Effekt ist die photochemische kovalente Verknüpfung benachbarter Pyrimidine. B: Ein geeignetes organisches Chromophor ist nötig. C: XRF detektiert charakteristische elektronische Röntgenlinien zur Elementanalyse; Kernspinresonanz gehört zu NMR. D: Er soll den Hintergrund getrennt erfassen. Quelle: Originalunterlagen, PDF-S. 19–20, 23, 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Vitamin-D-Photostart"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vitamin-D-Photostart"
+      ],
+      "questionGoal": "Vitamin-D-Photostart",
+      "structuredExplanation": {
+        "coreIdea": "Vitamin-D-Photostart",
+        "correctReasoning": "Ein geeignetes organisches Chromophor ist nötig. Er soll den Hintergrund getrennt erfassen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein charakteristischer Effekt ist die photochemische kovalente Verknüpfung benachbarter Pyrimidine.",
+          "B": "Ein geeignetes organisches Chromophor ist nötig.",
+          "C": "XRF detektiert charakteristische elektronische Röntgenlinien zur Elementanalyse; Kernspinresonanz gehört zu NMR.",
+          "D": "Er soll den Hintergrund getrennt erfassen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu DNA-Photochemie, Azobenzol, Lambert-Beer, Fluoreszenz.",
+      "options": [
+        {
+          "text": "Die Absorbanz ist im Lambert-Beer-Modell proportional zum Kehrwert der Konzentration.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "UV-Licht kann zwischen benachbarten Pyrimidinen photochemische Verknüpfungen erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Licht kann bei Azobenzol eine Änderung zwischen cis- und trans-Geometrie begünstigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die typische Fluoreszenz stammt aus einem Triplettzustand mit spinverbotenem Übergang zum Singulettgrundzustand.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im geeigneten linearen Bereich gilt A = ε·c·l. Konzentration und Weglänge wirken multiplikativ. B: Pyrimidindimere sind ein charakteristisches Beispiel. C: Die räumliche Struktur ändert sich. D: Dies beschreibt typische Phosphoreszenz; Fluoreszenz ist meist kurzlebige Singulettemission. Quelle: Originalunterlagen, PDF-S. 23–24, 26, 29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "DNA-Photochemie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Photochemie"
+      ],
+      "questionGoal": "DNA-Photochemie",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Photochemie",
+        "correctReasoning": "Pyrimidindimere sind ein charakteristisches Beispiel. Die räumliche Struktur ändert sich.",
+        "wrongAnswerExplanations": {
+          "A": "Im geeigneten linearen Bereich gilt A = ε·c·l. Konzentration und Weglänge wirken multiplikativ.",
+          "B": "Pyrimidindimere sind ein charakteristisches Beispiel.",
+          "C": "Die räumliche Struktur ändert sich.",
+          "D": "Dies beschreibt typische Phosphoreszenz; Fluoreszenz ist meist kurzlebige Singulettemission."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Azobenzol, Methodengrenzen, Verdünnungsrechnung, Photonenenergie.",
+      "options": [
+        {
+          "text": "Halbiert man bei gleichem ε und l die Konzentration, halbiert sich im linearen Modell A.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Für ein Photon gilt E = hν = hc/λ.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Licht kann bei Azobenzol eine Änderung zwischen cis- und trans-Geometrie begünstigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Für streuende Aggregate gilt ungeprüft dasselbe ε wie für klare Monomerlösungen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: A ist proportional zu c. B: Frequenz und Wellenlänge sind invers verknüpft. C: Die räumliche Struktur ändert sich. D: Streuung und geänderte Spezies können das einfache Lambert-Beer-Modell verletzen; das gleiche ε darf nicht ungeprüft übernommen werden. Quelle: Originalunterlagen, PDF-S. 3, 11, 23, 26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Azobenzol"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Azobenzol"
+      ],
+      "questionGoal": "Azobenzol",
+      "structuredExplanation": {
+        "coreIdea": "Azobenzol",
+        "correctReasoning": "A ist proportional zu c. Frequenz und Wellenlänge sind invers verknüpft. Die räumliche Struktur ändert sich.",
+        "wrongAnswerExplanations": {
+          "A": "A ist proportional zu c.",
+          "B": "Frequenz und Wellenlänge sind invers verknüpft.",
+          "C": "Die räumliche Struktur ändert sich.",
+          "D": "Streuung und geänderte Spezies können das einfache Lambert-Beer-Modell verletzen; das gleiche ε darf nicht ungeprüft übernommen werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Methodengrenzen, Spektrum und Struktur, Schichtdicke, IR-Spektroskopie.",
+      "options": [
+        {
+          "text": "Eine durch Aggregation stark streuende Probe kann ohne weitere Prüfung mit demselben ε wie die klare monomere Lösung ausgewertet werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Verschiedene spektroskopische Methoden liefern komplementäre Informationen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die x-Achse eines IR-Spektrums gibt das m/z ionisierter Fragmente an.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine längere Küvette muss bei unveränderter Probe weniger absorbieren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Streuung und geänderte Spezies können die einfache Beziehung A=εcl verletzen; das Messmodell muss geprüft werden. B: Kernspins, Schwingungen und Ionen unterscheiden sich. C: IR wird typischerweise über Wellenzahl/Wellenlänge dargestellt; m/z ist die Massenspektrometrie-Grösse. D: Verdopplung der Küvettenlänge verdoppelt im geeigneten Modell die Absorbanz. Mehr Weglänge erhöht die Absorption. Quelle: Originalunterlagen, PDF-S. 3–20, 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Methodengrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methodengrenzen"
+      ],
+      "questionGoal": "Methodengrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Methodengrenzen",
+        "correctReasoning": "Kernspins, Schwingungen und Ionen unterscheiden sich.",
+        "wrongAnswerExplanations": {
+          "A": "Streuung und geänderte Spezies können die einfache Beziehung A=εcl verletzen; das Messmodell muss geprüft werden.",
+          "B": "Kernspins, Schwingungen und Ionen unterscheiden sich.",
+          "C": "IR wird typischerweise über Wellenzahl/Wellenlänge dargestellt; m/z ist die Massenspektrometrie-Grösse.",
+          "D": "Verdopplung der Küvettenlänge verdoppelt im geeigneten Modell die Absorbanz. Mehr Weglänge erhöht die Absorption."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc20_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC20",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Spektrum und Struktur, Photonenenergie, Transmission, NMR.",
+      "options": [
+        {
+          "text": "Bei konstanter Lichtgeschwindigkeit nimmt die Photonenenergie mit grösserer Wellenlänge zu.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Transmission von 10 Prozent ergibt nach dieser Definition A = −1.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NMR untersucht geeignete Kernspinübergänge in einem Magnetfeld.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verschiedene spektroskopische Methoden liefern komplementäre Informationen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für ein Photon gilt E = hν = hc/λ. Frequenz und Wellenlänge sind invers verknüpft. B: A = −log10(T) ergibt für T = 0.1 eine Absorbanz von 1. Der negative Logarithmus kehrt das Vorzeichen um. C: Es werden magnetische Resonanzübergänge genutzt. D: Kernspins, Schwingungen und Ionen unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 3–20, 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC20",
+        "Spektrum und Struktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spektrum und Struktur"
+      ],
+      "questionGoal": "Spektrum und Struktur",
+      "structuredExplanation": {
+        "coreIdea": "Spektrum und Struktur",
+        "correctReasoning": "Es werden magnetische Resonanzübergänge genutzt. Kernspins, Schwingungen und Ionen unterscheiden sich.",
+        "wrongAnswerExplanations": {
+          "A": "Für ein Photon gilt E = hν = hc/λ. Frequenz und Wellenlänge sind invers verknüpft.",
+          "B": "A = −log10(T) ergibt für T = 0.1 eine Absorbanz von 1. Der negative Logarithmus kehrt das Vorzeichen um.",
+          "C": "Es werden magnetische Resonanzübergänge genutzt.",
+          "D": "Kernspins, Schwingungen und Ionen unterscheiden sich."
+        }
+      }
+    }
+  ]
+}

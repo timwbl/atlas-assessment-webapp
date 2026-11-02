@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block1_kvc19_20261102",
+  "lectureCode": "KVC19",
+  "title": "Reaktionsmechanismen und Cofaktoren",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC19 - Reaktionsmechanismen. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Kovalente Acyl-Enzyme werden auf passende Enzymklassen begrenzt. Die pauschale Folienbehauptung einer generell höheren biologischen Aktivität starrer Moleküle wird nicht übernommen. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Elektronenpaarpfeile, homolytische und heterolytische Spaltung unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Nucleophilie, Elektrophilie und Acylsubstitution erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Esterhydrolyse und Cofaktorfunktionen in biochemischen Reaktionen verknüpfen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc19_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Wo muss der gebogene Zweielektronenpfeil beim Angriff eines Nucleophils auf ein Carbonyl-C beginnen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Immer am positiv geladenen Gegenion ohne Elektronenpaarbeitrag.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Am elektrophilen C, unabhängig von dessen Elektronenquelle.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "An einem freien Elektronenpaar oder einer elektronenliefernden Bindung des Nucleophils.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Am Produktnamen oberhalb der Reaktionsgleichung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Am positiv polarisierten Carbonyl-C und zurück zum freien Elektronenpaar des Nucleophils.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Gegenion liefert nicht pauschal das zur Bindung bewegte freie Paar. B: Diese Richtung ist vertauscht: Das Elektronenpaar kommt vom Nucleophil zum Carbonyl-C. C: Mechanismuspfeile verfolgen Elektronen vom Donor zum Akzeptor; sie zeigen keine Kernbewegung. D: Ein Reaktionsname ist keine Elektronenquelle des Mechanismuspfeils. E: Auch diese Variante startet am Akzeptor und zeigt entgegen der Elektronenbewegung. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Elektronenpaarpfeil"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektronenpaarpfeil"
+      ],
+      "questionGoal": "Elektronenpaarpfeil",
+      "structuredExplanation": {
+        "coreIdea": "Elektronenpaarpfeil",
+        "correctReasoning": "Mechanismuspfeile verfolgen Elektronen vom Donor zum Akzeptor; sie zeigen keine Kernbewegung.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Gegenion liefert nicht pauschal das zur Bindung bewegte freie Paar.",
+          "B": "Diese Richtung ist vertauscht: Das Elektronenpaar kommt vom Nucleophil zum Carbonyl-C.",
+          "D": "Ein Reaktionsname ist keine Elektronenquelle des Mechanismuspfeils.",
+          "E": "Auch diese Variante startet am Akzeptor und zeigt entgegen der Elektronenbewegung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Was geschieht bei Homolyse einer einfachen kovalenten Bindung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jeder Partner erhält eines der beiden Bindungselektronen.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Bindung bleibt unverändert und nur die Zeichnung wechselt.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Beide Partner verlieren alle Valenzelektronen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein Proton wird ohne Elektronenänderung übertragen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein Partner erhält beide Bindungselektronen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die symmetrische Elektronenaufteilung kann zwei Radikale erzeugen; die heterolytische Aufteilung gibt beide Elektronen einem Partner. B: Die Elektronenaufteilung verändert sich real; es ist keine blosse alternative Zeichnung. C: Homolyse verteilt nur die zwei Bindungselektronen und entfernt nicht alle Valenzelektronen. D: Ein Protonentransfer ist eine Säure-Base-Reaktion und keine homolytische Bindungsspaltung. E: Beide Elektronen bei einem Partner kennzeichnen Heterolyse, nicht Homolyse. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Homolytische Spaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Homolytische Spaltung"
+      ],
+      "questionGoal": "Homolytische Spaltung",
+      "structuredExplanation": {
+        "coreIdea": "Homolytische Spaltung",
+        "correctReasoning": "Die symmetrische Elektronenaufteilung kann zwei Radikale erzeugen; die heterolytische Aufteilung gibt beide Elektronen einem Partner.",
+        "wrongAnswerExplanations": {
+          "B": "Die Elektronenaufteilung verändert sich real; es ist keine blosse alternative Zeichnung.",
+          "C": "Homolyse verteilt nur die zwei Bindungselektronen und entfernt nicht alle Valenzelektronen.",
+          "D": "Ein Protonentransfer ist eine Säure-Base-Reaktion und keine homolytische Bindungsspaltung.",
+          "E": "Beide Elektronen bei einem Partner kennzeichnen Heterolyse, nicht Homolyse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welche Elektronenaufteilung beschreibt Heterolyse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es wird zwingend ein zusätzliches Elektronenpaar aus der Umgebung aufgenommen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur die Kernspins wechseln ihre Orientierung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Jeder Partner erhält genau ein Elektron.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Beide Elektronen werden zu freien Protonen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Beide Bindungselektronen verbleiben bei einem Partner.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Spaltung verteilt ein vorhandenes Bindungspaar und benötigt nicht zwingend ein zusätzliches Paar. B: Kernspinänderung ist nicht der Mechanismus der Bindungselektronenaufteilung. C: Ein Elektron pro Partner kennzeichnet Homolyse statt Heterolyse. D: Elektronen werden nicht in Protonen umgewandelt. E: Heterolyse ist eine unsymmetrische Bindungselektronenaufteilung, die geladene Produkte erzeugen kann. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Heterolytische Spaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Heterolytische Spaltung"
+      ],
+      "questionGoal": "Heterolytische Spaltung",
+      "structuredExplanation": {
+        "coreIdea": "Heterolytische Spaltung",
+        "correctReasoning": "Heterolyse ist eine unsymmetrische Bindungselektronenaufteilung, die geladene Produkte erzeugen kann.",
+        "wrongAnswerExplanations": {
+          "A": "Die Spaltung verteilt ein vorhandenes Bindungspaar und benötigt nicht zwingend ein zusätzliches Paar.",
+          "B": "Kernspinänderung ist nicht der Mechanismus der Bindungselektronenaufteilung.",
+          "C": "Ein Elektron pro Partner kennzeichnet Homolyse statt Heterolyse.",
+          "D": "Elektronen werden nicht in Protonen umgewandelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welche Bewegung wird mit einem Fischhakenpfeil dargestellt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Der Transport eines Protons samt Kern und allen Bindungen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Bewegung eines vollständigen Elektronenpaars.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine blosse Gleichgewichtslage ohne Teilchenbewegung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Bewegung eines ganzen Moleküls durch die Membran.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Bewegung eines einzelnen Elektrons.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Pfeilform verfolgt Elektronen und transportiert nicht den ganzen Kern. B: Ein voller gebogener Pfeil steht für ein Elektronenpaar; der Fischhaken für eines. C: Ein Gleichgewichtspfeil hat eine andere Funktion als der Fischhaken des Ein-Elektronenmechanismus. D: Membrantransport eines Moleküls ist nicht die Bedeutung dieses Radikalpfeils. E: Der einfache Pfeilhaken unterscheidet Ein-Elektronenmechanismen vom üblichen Zweielektronenpfeil. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Radikalpfeil"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Radikalpfeil"
+      ],
+      "questionGoal": "Radikalpfeil",
+      "structuredExplanation": {
+        "coreIdea": "Radikalpfeil",
+        "correctReasoning": "Der einfache Pfeilhaken unterscheidet Ein-Elektronenmechanismen vom üblichen Zweielektronenpfeil.",
+        "wrongAnswerExplanations": {
+          "A": "Die Pfeilform verfolgt Elektronen und transportiert nicht den ganzen Kern.",
+          "B": "Ein voller gebogener Pfeil steht für ein Elektronenpaar; der Fischhaken für eines.",
+          "C": "Ein Gleichgewichtspfeil hat eine andere Funktion als der Fischhaken des Ein-Elektronenmechanismus.",
+          "D": "Membrantransport eines Moleküls ist nicht die Bedeutung dieses Radikalpfeils."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welcher Partner ist im Mechanismus des Carbonylangriffs ein Nucleophil?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Jeder Stoff ausschliesslich wegen seiner hohen molaren Masse.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Elektronenpaardonor wie OH⁻.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ein freies Proton als reiner Elektronenpaarakzeptor.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das elektronenarme Carbonyl-C als Akzeptor.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Carbonylgruppe allein aufgrund ihrer C-Partialladung positiv.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Nucleophilie folgt aus Elektronenverfügbarkeit und Reaktivität, nicht allein aus hoher Masse. B: Nucleophile liefern ein Elektronenpaar für eine neue Bindung; Elektrophile nehmen es an. C: H⁺ ist in diesem Kontext ein Elektronenpaarakzeptor, nicht der Nucleophildonor. D: Das Carbonyl-C ist hier der Elektronenpaarakzeptor und somit Elektrophil. E: Die positive Partialladung kennzeichnet den Akzeptorbereich des Carbonyls, nicht den Donor. Quelle: Originalunterlagen, PDF-S. 3–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Nucleophil"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nucleophil"
+      ],
+      "questionGoal": "Nucleophil",
+      "structuredExplanation": {
+        "coreIdea": "Nucleophil",
+        "correctReasoning": "Nucleophile liefern ein Elektronenpaar für eine neue Bindung; Elektrophile nehmen es an.",
+        "wrongAnswerExplanations": {
+          "A": "Nucleophilie folgt aus Elektronenverfügbarkeit und Reaktivität, nicht allein aus hoher Masse.",
+          "C": "H⁺ ist in diesem Kontext ein Elektronenpaarakzeptor, nicht der Nucleophildonor.",
+          "D": "Das Carbonyl-C ist hier der Elektronenpaarakzeptor und somit Elektrophil.",
+          "E": "Die positive Partialladung kennzeichnet den Akzeptorbereich des Carbonyls, nicht den Donor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Weshalb ist das Carbonyl-C eines Esters elektrophil angreifbar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ester besitzen definitionsgemäss keine polare Bindung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die π-Bindung verhindert jede Änderung der Geometrie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die C=O-Polarisation erzeugt am C eine positive Partialladung.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Das Carbonyl-C besitzt zwingend eine volle negative Ionenladung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sauerstoff schiebt jede Bindungselektronendichte vollständig zum C.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die C=O-Bindung eines Esters ist polar, daher ist die Unpolaritätsannahme falsch. B: Die π-Elektronen können zum O verschoben werden und ermöglichen die tetraedrische Addition. C: Das elektronegative O zieht Elektronendichte an; ein geeigneter Nucleophilangriff kann die π-Elektronen zum O verschieben. D: Ein gewöhnliches Ester-Carbonyl-C trägt keine volle negative Ionenladung. E: Elektronendichte ist zum elektronegativeren O verschoben, nicht vollständig zum C. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Carbonylangriff"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Carbonylangriff"
+      ],
+      "questionGoal": "Carbonylangriff",
+      "structuredExplanation": {
+        "coreIdea": "Carbonylangriff",
+        "correctReasoning": "Das elektronegative O zieht Elektronendichte an; ein geeigneter Nucleophilangriff kann die π-Elektronen zum O verschieben.",
+        "wrongAnswerExplanations": {
+          "A": "Die C=O-Bindung eines Esters ist polar, daher ist die Unpolaritätsannahme falsch.",
+          "B": "Die π-Elektronen können zum O verschoben werden und ermöglichen die tetraedrische Addition.",
+          "D": "Ein gewöhnliches Ester-Carbonyl-C trägt keine volle negative Ionenladung.",
+          "E": "Elektronendichte ist zum elektronegativeren O verschoben, nicht vollständig zum C."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Was entsteht beim nucleophilen Angriff am Acyl-C eines Esters zunächst typischerweise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein vollständig aromatischer Sechsring.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zwingend ein freies Methylradikal ohne O-Atome.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine tetraedrische Zwischenstufe mit aufgehobener C=O-π-Bindung.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ein planarer Acyl-C mit fünf unveränderten σ-Bindungen und zusätzlicher C=O.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein unverändertes Edukt ohne neue Bindung und ohne Elektronenverschiebung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Eine einfache Acyladdition erzeugt keinen aromatischen Sechsring. B: Ein freies Methylradikal ohne O ist nicht die polare tetraedrische Additionsstufe. C: Die neue Nucleophilbindung geht mit Verschiebung des Carbonyl-π-Paars zum O und Änderung der Geometrie einher. D: Fünf σ-Bindungen plus unverändertes C=O würden die gewöhnliche Valenz des C überschreiten. E: Beim beschriebenen Angriff bildet sich eine neue Bindung und das π-Paar wird verschoben. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Tetraedrische Zwischenstufe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tetraedrische Zwischenstufe"
+      ],
+      "questionGoal": "Tetraedrische Zwischenstufe",
+      "structuredExplanation": {
+        "coreIdea": "Tetraedrische Zwischenstufe",
+        "correctReasoning": "Die neue Nucleophilbindung geht mit Verschiebung des Carbonyl-π-Paars zum O und Änderung der Geometrie einher.",
+        "wrongAnswerExplanations": {
+          "A": "Eine einfache Acyladdition erzeugt keinen aromatischen Sechsring.",
+          "B": "Ein freies Methylradikal ohne O ist nicht die polare tetraedrische Additionsstufe.",
+          "D": "Fünf σ-Bindungen plus unverändertes C=O würden die gewöhnliche Valenz des C überschreiten.",
+          "E": "Beim beschriebenen Angriff bildet sich eine neue Bindung und das π-Paar wird verschoben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welcher Schritt kann nach Bildung der tetraedrischen Acylzwischenstufe die Substitution abschliessen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Austritt einer Abgangsgruppe unter Wiederbildung der Carbonylgruppe.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Abspaltung der gesamten Carbonylgruppe als CO₂ bei jeder Esterhydrolyse.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine reine Ringinversion ohne Änderung einer Bindung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Permanente Beibehaltung von fünf C-Bindungen ohne Ladungsänderung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Erhalt der tetraedrischen Geometrie bei Bildung eines normalen planaren Esters ohne erneute π-Bindung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Addition und nachfolgende Eliminierung führen zur Ersetzung eines Substituenten am Acyl-C. B: Decarboxylierung ist nicht der allgemeine Abschluss einer Esterhydrolyse. C: Eine Ringinversion ersetzt weder Abgangsgruppenaustritt noch Carbonylrückbildung. D: Normales Acyl-C trägt nach dem Schritt keine fünf unveränderten σ-Bindungen. E: Ein planares Carbonylprodukt benötigt die Wiederbildung der C=O-π-Bindung statt Erhalt der tetraedrischen Stufe. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Acylsubstitution"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Acylsubstitution"
+      ],
+      "questionGoal": "Acylsubstitution",
+      "structuredExplanation": {
+        "coreIdea": "Acylsubstitution",
+        "correctReasoning": "Addition und nachfolgende Eliminierung führen zur Ersetzung eines Substituenten am Acyl-C.",
+        "wrongAnswerExplanations": {
+          "B": "Decarboxylierung ist nicht der allgemeine Abschluss einer Esterhydrolyse.",
+          "C": "Eine Ringinversion ersetzt weder Abgangsgruppenaustritt noch Carbonylrückbildung.",
+          "D": "Normales Acyl-C trägt nach dem Schritt keine fünf unveränderten σ-Bindungen.",
+          "E": "Ein planares Carbonylprodukt benötigt die Wiederbildung der C=O-π-Bindung statt Erhalt der tetraedrischen Stufe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Warum begünstigt die Bildung eines Carboxylats die basische Esterhydrolyse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Esterbindung wird dabei durch eine Peptidbindung ersetzt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Das Carboxylat besitzt keine O-Atome mehr.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "OH⁻ wird bei jeder Verseifung als unverändertes Produkt vollständig zurückgewonnen, ohne Verbrauch.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Carboxylat ist unter starker Base stets vollständig protoniert.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Das gebildete Säureprodukt wird deprotoniert und so unter diesen Bedingungen als Carboxylat gebunden.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Esterhydrolyse bildet keine neue Peptidbindung, sondern Carbonsäure/Carboxylat und Alkoholanteil. B: Das Carboxylat behält beide O-Atome der Carboxylgruppe. C: Die basische Gesamtverseifung verbraucht Basenäquivalente bei Bildung des Carboxylats; OH⁻ ist nicht netto unverändert regeneriert. D: Stark basische Bedingungen begünstigen die deprotonierte und nicht vollständig protonierte Carboxylform. E: Die Säure-Base-Folge stabilisiert das Produkt auf der Carboxylatseite; die Gesamtbilanz ist keine beliebige reversible Veresterung. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Verseifungsbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verseifungsbilanz"
+      ],
+      "questionGoal": "Verseifungsbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Verseifungsbilanz",
+        "correctReasoning": "Die Säure-Base-Folge stabilisiert das Produkt auf der Carboxylatseite; die Gesamtbilanz ist keine beliebige reversible Veresterung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Esterhydrolyse bildet keine neue Peptidbindung, sondern Carbonsäure/Carboxylat und Alkoholanteil.",
+          "B": "Das Carboxylat behält beide O-Atome der Carboxylgruppe.",
+          "C": "Die basische Gesamtverseifung verbraucht Basenäquivalente bei Bildung des Carboxylats; OH⁻ ist nicht netto unverändert regeneriert.",
+          "D": "Stark basische Bedingungen begünstigen die deprotonierte und nicht vollständig protonierte Carboxylform."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welche Aussage beschreibt eine passende Serinesterase bei der Esterhydrolyse?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Serin-OH-Gruppe dient nur als Gegenion und liefert keinen nucleophilen Bindungsbeitrag.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Acylierung bleibt als irreversibler Endzustand des Serinenzyms bestehen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie kann ein kovalentes Acyl-Enzym als Zwischenstufe bilden.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Jede metallabhängige Hydrolase muss ebenfalls ein kovalentes Serin-Acyl-Enzym bilden.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Bei der Deacylierung greift Wasser das α-C des Serinrests statt des gebundenen Acyl-C an.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das aktive Serin kann mit seinem O eine kovalente Bindung zum Acyl-C eingehen. B: Im katalytischen Umsatz wird die Zwischenstufe deacyliert und das Enzym regeneriert. C: Das aktive Serin kann zunächst acyliert und danach durch Wasser deacyliert werden; andere Hydrolasen haben andere Mechanismen. D: Die Mechanismen sind klassenspezifisch; metallabhängige Hydrolyse benötigt nicht allgemein diese Serinzwischenstufe. E: Der hydrolytische Angriff betrifft die Acylgruppe; die Serinseitenkette wird dadurch wieder freigesetzt. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Acyl-Enzym"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Acyl-Enzym"
+      ],
+      "questionGoal": "Acyl-Enzym",
+      "structuredExplanation": {
+        "coreIdea": "Acyl-Enzym",
+        "correctReasoning": "Das aktive Serin kann zunächst acyliert und danach durch Wasser deacyliert werden; andere Hydrolasen haben andere Mechanismen.",
+        "wrongAnswerExplanations": {
+          "A": "Das aktive Serin kann mit seinem O eine kovalente Bindung zum Acyl-C eingehen.",
+          "B": "Im katalytischen Umsatz wird die Zwischenstufe deacyliert und das Enzym regeneriert.",
+          "D": "Die Mechanismen sind klassenspezifisch; metallabhängige Hydrolyse benötigt nicht allgemein diese Serinzwischenstufe.",
+          "E": "Der hydrolytische Angriff betrifft die Acylgruppe; die Serinseitenkette wird dadurch wieder freigesetzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welche Gruppe wird in vielen NADH-abhängigen Redoxreaktionen formal übertragen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein intakter Ribosering als obligatorisches Produkt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Hydridäquivalent.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Eine Phosphatgruppe als einzig mögliche Funktion.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Eine Acetylgruppe über einen Thioester.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine ganze Aminosäurekette.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Der Riboseanteil wird nicht obligatorisch als gesamter Ring auf das Substrat übertragen. B: NADH überträgt Reduktionsäquivalente über die Nicotinamidgruppe; Acylgruppenübertragung ist typisch für andere Cofaktoren wie CoA. C: NADH ist kein ausschliesslicher Phosphatgruppenüberträger. D: Acetylgruppenübertragung über Thioester ist eine typische CoA-Funktion statt NADH-Hydridtransfer. E: NADH überträgt keine komplette Aminosäurekette bei dieser Redoxfunktion. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "NADH-Funktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NADH-Funktion"
+      ],
+      "questionGoal": "NADH-Funktion",
+      "structuredExplanation": {
+        "coreIdea": "NADH-Funktion",
+        "correctReasoning": "NADH überträgt Reduktionsäquivalente über die Nicotinamidgruppe; Acylgruppenübertragung ist typisch für andere Cofaktoren wie CoA.",
+        "wrongAnswerExplanations": {
+          "A": "Der Riboseanteil wird nicht obligatorisch als gesamter Ring auf das Substrat übertragen.",
+          "C": "NADH ist kein ausschliesslicher Phosphatgruppenüberträger.",
+          "D": "Acetylgruppenübertragung über Thioester ist eine typische CoA-Funktion statt NADH-Hydridtransfer.",
+          "E": "NADH überträgt keine komplette Aminosäurekette bei dieser Redoxfunktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Welche kovalente Verknüpfung ist für die PLP-Schiffbase in Aminosäureumsetzungen charakteristisch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine C≡C-Verknüpfung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine P–O–P-Anhydridbindung als Verbindung zum Amino-N.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine S–S-Verknüpfung zwischen zwei Cysteinen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Eine C=N-Verknüpfung.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Eine C–O–C-Acetalbindung ohne N-Beteiligung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: C≡C ist eine Alkinbindung und keine Iminfunktion. B: Die Amino-N-Verknüpfung der Schiffbase wird nicht über P–O–P hergestellt. C: S–S beschreibt eine Disulfidbrücke und beteiligt nicht das PLP-Carbonyl in dieser Weise. D: Die Carbonylfunktion von PLP kann mit einer Aminogruppe eine Imin-/Schiffbase bilden und Zwischenstufen elektronisch stabilisieren. E: Ein Acetal ohne N ist keine C=N-Schiffbase. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "PLP und Schiffbase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PLP und Schiffbase"
+      ],
+      "questionGoal": "PLP und Schiffbase",
+      "structuredExplanation": {
+        "coreIdea": "PLP und Schiffbase",
+        "correctReasoning": "Die Carbonylfunktion von PLP kann mit einer Aminogruppe eine Imin-/Schiffbase bilden und Zwischenstufen elektronisch stabilisieren.",
+        "wrongAnswerExplanations": {
+          "A": "C≡C ist eine Alkinbindung und keine Iminfunktion.",
+          "B": "Die Amino-N-Verknüpfung der Schiffbase wird nicht über P–O–P hergestellt.",
+          "C": "S–S beschreibt eine Disulfidbrücke und beteiligt nicht das PLP-Carbonyl in dieser Weise.",
+          "E": "Ein Acetal ohne N ist keine C=N-Schiffbase."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Ubiquinon, Pyridoxalphosphat, Heterolyse, Acylsubstitution.",
+      "options": [
+        {
+          "text": "Ein tetraedrisches Acylzwischenprodukt kann niemals eine Carbonylgruppe zurückbilden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Heterolyse liefert definitionsgemäss je genau ein Elektron an jeden Partner.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ubiquinon kann Elektronen und Protonen in Redoxumwandlungen aufnehmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "PLP kann über eine Schiffbase Aminosäureumsetzungen unterstützen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nach tetraedrischer Addition kann eine Abgangsgruppe unter Wiederbildung der Carbonylgruppe austreten. Addition und Eliminierung ergeben Substitution. B: Bei Heterolyse verbleiben beide Bindungselektronen bei einem Partner. Die Spaltung kann Ionen erzeugen. C: Chinon und Chinol sind unterschiedliche Redoxformen. D: Es stabilisiert geeignete Zwischenstufen elektronisch. Quelle: Originalunterlagen, PDF-S. 3, 6–7, 14, 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Ubiquinon"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ubiquinon"
+      ],
+      "questionGoal": "Ubiquinon",
+      "structuredExplanation": {
+        "coreIdea": "Ubiquinon",
+        "correctReasoning": "Chinon und Chinol sind unterschiedliche Redoxformen. Es stabilisiert geeignete Zwischenstufen elektronisch.",
+        "wrongAnswerExplanations": {
+          "A": "Nach tetraedrischer Addition kann eine Abgangsgruppe unter Wiederbildung der Carbonylgruppe austreten. Addition und Eliminierung ergeben Substitution.",
+          "B": "Bei Heterolyse verbleiben beide Bindungselektronen bei einem Partner. Die Spaltung kann Ionen erzeugen.",
+          "C": "Chinon und Chinol sind unterschiedliche Redoxformen.",
+          "D": "Es stabilisiert geeignete Zwischenstufen elektronisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Pyridoxalphosphat, Schiffbase, Radikalpfeil, Basische Hydrolyse.",
+      "options": [
+        {
+          "text": "Ein Fischhakenpfeil kann die Bewegung eines einzelnen Elektrons darstellen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei basischer Esterhydrolyse kann die Bildung eines Carboxylats die Gesamtumsetzung begünstigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Schiffbase besitzt eine C=O- statt einer C=N-Gruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "PLP kann über eine Schiffbase Aminosäureumsetzungen unterstützen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Symbol unterscheidet Ein- und Zweielektronenbewegung. B: Die Säure-Base-Bilanz ist Teil des Mechanismus. C: Die charakteristische Verknüpfung ist die Iminfunktion C=N. D: Es stabilisiert geeignete Zwischenstufen elektronisch. Quelle: Originalunterlagen, PDF-S. 3, 6, 14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Pyridoxalphosphat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pyridoxalphosphat"
+      ],
+      "questionGoal": "Pyridoxalphosphat",
+      "structuredExplanation": {
+        "coreIdea": "Pyridoxalphosphat",
+        "correctReasoning": "Das Symbol unterscheidet Ein- und Zweielektronenbewegung. Die Säure-Base-Bilanz ist Teil des Mechanismus. Es stabilisiert geeignete Zwischenstufen elektronisch.",
+        "wrongAnswerExplanations": {
+          "A": "Das Symbol unterscheidet Ein- und Zweielektronenbewegung.",
+          "B": "Die Säure-Base-Bilanz ist Teil des Mechanismus.",
+          "C": "Die charakteristische Verknüpfung ist die Iminfunktion C=N.",
+          "D": "Es stabilisiert geeignete Zwischenstufen elektronisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Schiffbase, Keto-Enol-Tautomerie, Nucleophil, Serinesterase.",
+      "options": [
+        {
+          "text": "Beim Nucleophilangriff liefert das elektrophile Carbonyl-C das Elektronenpaar zur neuen Bindung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Keto- und Enolform unterscheiden sich durch Protonen- und Doppelbindungsverschiebung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Schiffbase besitzt eine C=O- statt einer C=N-Gruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine metallabhängige Hydrolase muss wie eine Serinesterase ein kovalentes Serin-Acyl-Enzym bilden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Nucleophil liefert das bindende Elektronenpaar; das Elektrophil nimmt es an. B: Es handelt sich um tautomere Konstitutionen. C: Die charakteristische Verknüpfung ist die Iminfunktion C=N. D: Verschiedene Hydrolaseklassen können andere Mechanismen verwenden; Serin-Acylierung ist nicht allgemein erforderlich. Quelle: Originalunterlagen, PDF-S. 4, 8–9, 12, 14, 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Schiffbase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schiffbase"
+      ],
+      "questionGoal": "Schiffbase",
+      "structuredExplanation": {
+        "coreIdea": "Schiffbase",
+        "correctReasoning": "Es handelt sich um tautomere Konstitutionen.",
+        "wrongAnswerExplanations": {
+          "A": "Das Nucleophil liefert das bindende Elektronenpaar; das Elektrophil nimmt es an.",
+          "B": "Es handelt sich um tautomere Konstitutionen.",
+          "C": "Die charakteristische Verknüpfung ist die Iminfunktion C=N.",
+          "D": "Verschiedene Hydrolaseklassen können andere Mechanismen verwenden; Serin-Acylierung ist nicht allgemein erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Keto-Enol-Tautomerie, Säurekatalyse, Elektrophil, ATP-Kopplung.",
+      "options": [
+        {
+          "text": "Eine günstige gekoppelte Phosphatübertragung kann eine sonst ungünstige Teilreaktion ermöglichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Keto- und Enolform unterscheiden sich durch Protonen- und Doppelbindungsverschiebung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der Säurekatalysator wird als zusätzlicher stöchiometrischer Bestandteil jedes Esterhydrolyseprodukts dauerhaft verbraucht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Carbonylkohlenstoff eines Esters ist wegen seines vollständigen Elektronenüberschusses niemals angreifbar.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die gesamte Reaktionsbilanz ist entscheidend. B: Es handelt sich um tautomere Konstitutionen. C: Im katalytischen Zyklus wird die Protonenquelle regeneriert; der Katalysator ist nicht netto in dieser Weise verbraucht. D: Der Carbonylkohlenstoff eines Esters kann als elektrophiles Zentrum reagieren. Die polarisierte C=O-Gruppe begünstigt Angriff. Quelle: Originalunterlagen, PDF-S. 4, 6–7, 10–12, 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Keto-Enol-Tautomerie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Keto-Enol-Tautomerie"
+      ],
+      "questionGoal": "Keto-Enol-Tautomerie",
+      "structuredExplanation": {
+        "coreIdea": "Keto-Enol-Tautomerie",
+        "correctReasoning": "Die gesamte Reaktionsbilanz ist entscheidend. Es handelt sich um tautomere Konstitutionen.",
+        "wrongAnswerExplanations": {
+          "A": "Die gesamte Reaktionsbilanz ist entscheidend.",
+          "B": "Es handelt sich um tautomere Konstitutionen.",
+          "C": "Im katalytischen Zyklus wird die Protonenquelle regeneriert; der Katalysator ist nicht netto in dieser Weise verbraucht.",
+          "D": "Der Carbonylkohlenstoff eines Esters kann als elektrophiles Zentrum reagieren. Die polarisierte C=O-Gruppe begünstigt Angriff."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Säurekatalyse, Katalyse, Esterhydrolyse, NADH.",
+      "options": [
+        {
+          "text": "Protonierung einer geeigneten Carbonylgruppe kann deren elektrophile Reaktivität erhöhen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei Esterhydrolyse greift Wasser beziehungsweise OH⁻ bevorzugt das unpolare Alkyl-C anstatt des Acyl-C an, wie im behandelten Standardmechanismus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Enzym verändert den Reaktionsweg, nicht die Massenerhaltung der Gesamtreaktion.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "NADH überträgt Acetylgruppen über einen Thioester wie Acetyl-CoA.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Katalysator wird im Zyklus regeneriert. B: Der behandelte Standardmechanismus ist nucleophile Acylsubstitution am Carbonyl-C mit tetraedrischer Zwischenstufe. C: Atome bleiben in Produkten und Edukten bilanziert. D: NADH überträgt Reduktionsäquivalente; die genannte Acylträgerfunktion gehört zu CoA. Quelle: Originalunterlagen, PDF-S. 6–9, 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Säurekatalyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Säurekatalyse"
+      ],
+      "questionGoal": "Säurekatalyse",
+      "structuredExplanation": {
+        "coreIdea": "Säurekatalyse",
+        "correctReasoning": "Der Katalysator wird im Zyklus regeneriert. Atome bleiben in Produkten und Edukten bilanziert.",
+        "wrongAnswerExplanations": {
+          "A": "Der Katalysator wird im Zyklus regeneriert.",
+          "B": "Der behandelte Standardmechanismus ist nucleophile Acylsubstitution am Carbonyl-C mit tetraedrischer Zwischenstufe.",
+          "C": "Atome bleiben in Produkten und Edukten bilanziert.",
+          "D": "NADH überträgt Reduktionsäquivalente; die genannte Acylträgerfunktion gehört zu CoA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Katalyse, Additionsreaktion, Acylsubstitution, Elektronenpaarpfeil.",
+      "options": [
+        {
+          "text": "Bei Addition an eine C=C-Bindung bleibt deren π-Bindung unverändert, während neue σ-Bindungen dazukommen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein gewöhnlicher gebogener Mechanismuspfeil startet an einer Elektronenquelle und zeigt zum Elektronenakzeptor.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Enzym verändert den Reaktionsweg, nicht die Massenerhaltung der Gesamtreaktion.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nach tetraedrischer Addition kann eine Abgangsgruppe unter Wiederbildung der Carbonylgruppe austreten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Addition nutzt die π-Bindung zur Bildung neuer σ-Bindungen; ihre Bindungsordnung wird vermindert. B: Er verfolgt die Elektronenverschiebung. C: Atome bleiben in Produkten und Edukten bilanziert. D: Addition und Eliminierung ergeben Substitution. Quelle: Originalunterlagen, PDF-S. 3–4, 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Katalyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Katalyse"
+      ],
+      "questionGoal": "Katalyse",
+      "structuredExplanation": {
+        "coreIdea": "Katalyse",
+        "correctReasoning": "Er verfolgt die Elektronenverschiebung. Atome bleiben in Produkten und Edukten bilanziert. Addition und Eliminierung ergeben Substitution.",
+        "wrongAnswerExplanations": {
+          "A": "Die Addition nutzt die π-Bindung zur Bildung neuer σ-Bindungen; ihre Bindungsordnung wird vermindert.",
+          "B": "Er verfolgt die Elektronenverschiebung.",
+          "C": "Atome bleiben in Produkten und Edukten bilanziert.",
+          "D": "Addition und Eliminierung ergeben Substitution."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Additionsreaktion, Mechanismus und Nettoreaktion, Basische Hydrolyse, Homolyse.",
+      "options": [
+        {
+          "text": "Gleiche Nettoreaktionen können über verschiedene katalysierte Mechanismen ablaufen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Carboxylatbildung führt unter stark basischen Bedingungen zwingend zurück zum neutralen Ester.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei homolytischer Bindungsspaltung verbleibt das gesamte Bindungselektronenpaar bei einem Partner.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei Addition an eine C=C-Bindung bleibt deren π-Bindung unverändert, während neue σ-Bindungen dazukommen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Mechanismus liefert zusätzliche Information. B: Bei basischer Esterhydrolyse kann die Bildung eines Carboxylats die Gesamtumsetzung begünstigen. Die Säure-Base-Bilanz ist Teil des Mechanismus. C: Bei Homolyse erhält jeder Partner ein Elektron; die Aussage beschreibt Heterolyse. D: Die Addition nutzt die π-Bindung zur Bildung neuer σ-Bindungen; ihre Bindungsordnung wird vermindert. Quelle: Originalunterlagen, PDF-S. 3–4, 6–9, 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Additionsreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Additionsreaktion"
+      ],
+      "questionGoal": "Additionsreaktion",
+      "structuredExplanation": {
+        "coreIdea": "Additionsreaktion",
+        "correctReasoning": "Ein Mechanismus liefert zusätzliche Information.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Mechanismus liefert zusätzliche Information.",
+          "B": "Bei basischer Esterhydrolyse kann die Bildung eines Carboxylats die Gesamtumsetzung begünstigen. Die Säure-Base-Bilanz ist Teil des Mechanismus.",
+          "C": "Bei Homolyse erhält jeder Partner ein Elektron; die Aussage beschreibt Heterolyse.",
+          "D": "Die Addition nutzt die π-Bindung zur Bildung neuer σ-Bindungen; ihre Bindungsordnung wird vermindert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc19_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC19",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Mechanismus und Nettoreaktion, Elektronenpaarpfeil, Serinesterase, Heterolyse.",
+      "options": [
+        {
+          "text": "Bei Heterolyse verbleiben beide Bindungselektronen bei einem Partner.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Gleiche Nettoreaktionen können über verschiedene katalysierte Mechanismen ablaufen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine metallabhängige Hydrolase muss wie eine Serinesterase ein kovalentes Serin-Acyl-Enzym bilden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Elektronenpaarpfeil beginnt grundsätzlich am elektronenarmen Elektrophil und zeigt zur Elektronenquelle.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Spaltung kann Ionen erzeugen. B: Ein Mechanismus liefert zusätzliche Information. C: Verschiedene Hydrolaseklassen können andere Mechanismen verwenden; Serin-Acylierung ist nicht allgemein erforderlich. D: Ein gewöhnlicher gebogener Mechanismuspfeil startet an einer Elektronenquelle und zeigt zum Elektronenakzeptor. Er verfolgt die Elektronenverschiebung. Quelle: Originalunterlagen, PDF-S. 3–4, 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC19",
+        "Mechanismus und Nettoreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mechanismus und Nettoreaktion"
+      ],
+      "questionGoal": "Mechanismus und Nettoreaktion",
+      "structuredExplanation": {
+        "coreIdea": "Mechanismus und Nettoreaktion",
+        "correctReasoning": "Die Spaltung kann Ionen erzeugen. Ein Mechanismus liefert zusätzliche Information.",
+        "wrongAnswerExplanations": {
+          "A": "Die Spaltung kann Ionen erzeugen.",
+          "B": "Ein Mechanismus liefert zusätzliche Information.",
+          "C": "Verschiedene Hydrolaseklassen können andere Mechanismen verwenden; Serin-Acylierung ist nicht allgemein erforderlich.",
+          "D": "Ein gewöhnlicher gebogener Mechanismuspfeil startet an einer Elektronenquelle und zeigt zum Elektronenakzeptor. Er verfolgt die Elektronenverschiebung."
+        }
+      }
+    }
+  ]
+}

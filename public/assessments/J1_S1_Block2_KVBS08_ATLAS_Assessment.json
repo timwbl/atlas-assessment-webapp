@@ -1,0 +1,1316 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs08_20261102",
+  "lectureCode": "KVBS08",
+  "title": "Epidemiologische Studiendesigns",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS08_WasFuerEineStudie_2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Studiendesigns nach Auswahlmechanismus und tatsächlichem Ablauf statt allein nach dem Wort „retrospektiv“ unterschieden. Ökologische und beobachtende Zusammenhänge nicht als individuelle Kausalbeweise formuliert. Historische klinische Beispiele werden nicht zu aktuellen Therapieempfehlungen umgedeutet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Forschungsfragen passenden deskriptiven, analytischen und experimentellen Designs zuordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Ökologische Studien und Fallserien einschliesslich ihrer Grenzen beurteilen."
+    },
+    {
+      "id": "lo3",
+      "text": "Querschnitt, Prävalenz und Repräsentativität erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Kohorten- und Fall-Kontroll-Studien anhand der Auswahl und Zeitrichtung unterscheiden."
+    },
+    {
+      "id": "lo5",
+      "text": "Randomisierte Studien und Grenzen kausaler Schlussfolgerungen einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs08_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Eine Studie fragt, wie häufig eine Erkrankung in der Bevölkerung vorkommt. Welcher Forschungsschwerpunkt passt unmittelbar?",
+      "options": [
+        {
+          "text": "Therapieevaluation als zwingende Einordnung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Deskriptive Epidemiologie",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Prognoseforschung als einzige Möglichkeit",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Kosten-Effektivitäts-Analyse",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ätiologische Forschung als zwingende Einordnung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es wird keine Behandlung verglichen. B: Die Frage beschreibt eine Krankheitshäufigkeit. C: Es geht nicht um den weiteren Verlauf bereits Erkrankter. D: Kosten und Nutzenalternativen sind nicht Teil der Frage. E: Eine Ursache oder Exposition wird nicht untersucht. Quelle: Originalunterlagen, PDF-S. 2–3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Forschungsfrage"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Forschungsfrage"
+      ],
+      "questionGoal": "Forschungsfrage",
+      "structuredExplanation": {
+        "coreIdea": "Forschungsfrage",
+        "correctReasoning": "Die Frage beschreibt eine Krankheitshäufigkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird keine Behandlung verglichen.",
+          "C": "Es geht nicht um den weiteren Verlauf bereits Erkrankter.",
+          "D": "Kosten und Nutzenalternativen sind nicht Teil der Frage.",
+          "E": "Eine Ursache oder Exposition wird nicht untersucht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Für 30 Länder werden durchschnittlicher Alkoholkonsum und Krebsraten verglichen. Was ist die Beobachtungseinheit dieser Analyse?",
+      "options": [
+        {
+          "text": "Jede einzelne erkrankte Person",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine randomisierte Behandlungsgruppe",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Land als Gruppe",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur Personen, die sowohl trinken als auch erkranken",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede einzelne alkoholische Portion",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Individuelle Datenpaare wurden nicht erhoben. B: Es fand keine zufällige Interventionszuteilung statt. C: Beide Messgrössen sind auf Gruppenebene zusammengefasst. D: Diese individuelle Schnittmenge ist aus den Länderwerten unbekannt. E: Das ist keine Untersuchungseinheit der beschriebenen Analyse. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Ökologisches Design"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ökologisches Design"
+      ],
+      "questionGoal": "Ökologisches Design",
+      "structuredExplanation": {
+        "coreIdea": "Ökologisches Design",
+        "correctReasoning": "Beide Messgrössen sind auf Gruppenebene zusammengefasst.",
+        "wrongAnswerExplanations": {
+          "A": "Individuelle Datenpaare wurden nicht erhoben.",
+          "B": "Es fand keine zufällige Interventionszuteilung statt.",
+          "D": "Diese individuelle Schnittmenge ist aus den Länderwerten unbekannt.",
+          "E": "Das ist keine Untersuchungseinheit der beschriebenen Analyse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Gruppenassoziation und ökologischer Fehlschluss».",
+      "options": [
+        {
+          "text": "Ein starker Länderzusammenhang beweist, dass die exponierten Personen die erkrankten sind.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Länderzusammenhang beweist ohne Individualdaten, dass dieselben Einzelpersonen exponiert und erkrankt sind.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Gruppenanalyse ist allein wegen ihrer Gruppierung kausal beweiskräftig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Zusammenhang zwischen Länderwerten beweist keinen entsprechenden Zusammenhang auf Personenebene.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Genau diese Übertragung ist der ökologische Fehlschluss. B: Gruppenassoziation identifiziert diese individuelle Verknüpfung nicht. C: Design, Störfaktoren und zeitliche Struktur bleiben relevant. D: Aggregierte Daten liefern nicht die individuelle Zuordnung von Exposition und Erkrankung. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Ökologischer Fehlschluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ökologischer Fehlschluss"
+      ],
+      "questionGoal": "Ökologischer Fehlschluss",
+      "structuredExplanation": {
+        "coreIdea": "Ökologischer Fehlschluss",
+        "correctReasoning": "Aggregierte Daten liefern nicht die individuelle Zuordnung von Exposition und Erkrankung.",
+        "wrongAnswerExplanations": {
+          "A": "Genau diese Übertragung ist der ökologische Fehlschluss.",
+          "B": "Gruppenassoziation identifiziert diese individuelle Verknüpfung nicht.",
+          "C": "Design, Störfaktoren und zeitliche Struktur bleiben relevant.",
+          "D": "Aggregierte Daten liefern nicht die individuelle Zuordnung von Exposition und Erkrankung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Fünf ungewöhnliche Krankheitsverläufe nach einer Exposition werden ohne Vergleichsgruppe beschrieben. Welche Grenze ist zentral?",
+      "options": [
+        {
+          "text": "Das Fehlen einer Kontrolle beweist, dass kein Effekt besteht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es können grundsätzlich keine klinischen Beobachtungen dokumentiert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Populationsnenner ist automatisch fünf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Exposition muss randomisiert gewesen sein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Vergleich zur erwarteten Häufigkeit ohne diese Exposition fehlt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es begrenzt die Schlussfolgerung, beweist aber keinen Nulleffekt. B: Genau dies leistet eine Fallserie. C: Fünf beschriebene Fälle sind nicht die ganze gefährdete Population. D: Eine beschreibende Serie setzt keine Randomisierung voraus. E: Die Fallserie kann Hinweise geben, aber allein keinen kausalen Mehranteil bestimmen. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Fallserie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fallserie"
+      ],
+      "questionGoal": "Fallserie",
+      "structuredExplanation": {
+        "coreIdea": "Fallserie",
+        "correctReasoning": "Die Fallserie kann Hinweise geben, aber allein keinen kausalen Mehranteil bestimmen.",
+        "wrongAnswerExplanations": {
+          "A": "Es begrenzt die Schlussfolgerung, beweist aber keinen Nulleffekt.",
+          "B": "Genau dies leistet eine Fallserie.",
+          "C": "Fünf beschriebene Fälle sind nicht die ganze gefährdete Population.",
+          "D": "Eine beschreibende Serie setzt keine Randomisierung voraus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "An einem Stichtag werden Exposition und vorhandene Erkrankung bei einer Bevölkerungsstichprobe erhoben. Welches Design passt?",
+      "options": [
+        {
+          "text": "Querschnittsstudie",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Randomisierte kontrollierte Studie",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Prospektive Kohorte mit beobachtetem Neuerkrankungsverlauf",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fall-Kontroll-Studie mit Auswahl nach Erkrankungsstatus",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unkontrollierte Fallserie ausschliesslich Erkrankter",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Erfassung bildet einen zeitlichen Querschnitt ab. B: Eine Intervention wurde nicht zugeteilt. C: Ein Follow-up wurde nicht beschrieben. D: Die Auswahl erfolgte nicht gezielt als Fälle und Kontrollen. E: Auch nicht erkrankte Personen gehören zur Stichprobe. Quelle: Originalunterlagen, PDF-S. 14–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Querschnitt erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Querschnitt erkennen"
+      ],
+      "questionGoal": "Querschnitt erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Querschnitt erkennen",
+        "correctReasoning": "Die Erfassung bildet einen zeitlichen Querschnitt ab.",
+        "wrongAnswerExplanations": {
+          "B": "Eine Intervention wurde nicht zugeteilt.",
+          "C": "Ein Follow-up wurde nicht beschrieben.",
+          "D": "Die Auswahl erfolgte nicht gezielt als Fälle und Kontrollen.",
+          "E": "Auch nicht erkrankte Personen gehören zur Stichprobe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Punkt- und Lebenszeitprävalenz».",
+      "options": [
+        {
+          "text": "Punktprävalenz beschreibt vorhandene Fälle zu einem bestimmten Zeitpunkt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Punktprävalenz kann durch Neuerkrankungen und Erkrankungsdauer beeinflusst werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Lebenszeitprävalenz kann den Anteil mit jemals erfülltem Merkmal bezeichnen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Querschnittsassoziation klärt immer, welche Variable zuerst auftrat.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Zeitbezug ist ein Stichtag. B: Bestehende Fälle hängen von Zustrom und Verweildauer im Krankheitszustand ab. C: Sie bezieht auch frühere Ereignisse ein. D: Die zeitliche Reihenfolge kann unklar bleiben. Quelle: Originalunterlagen, PDF-S. 15–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Prävalenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Prävalenz"
+      ],
+      "questionGoal": "Prävalenz",
+      "structuredExplanation": {
+        "coreIdea": "Prävalenz",
+        "correctReasoning": "Der Zeitbezug ist ein Stichtag. Bestehende Fälle hängen von Zustrom und Verweildauer im Krankheitszustand ab. Sie bezieht auch frühere Ereignisse ein.",
+        "wrongAnswerExplanations": {
+          "A": "Der Zeitbezug ist ein Stichtag.",
+          "B": "Bestehende Fälle hängen von Zustrom und Verweildauer im Krankheitszustand ab.",
+          "C": "Sie bezieht auch frühere Ereignisse ein.",
+          "D": "Die zeitliche Reihenfolge kann unklar bleiben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Bei 500 untersuchten Personen haben 40 am Stichtag die Erkrankung. Welche Punktprävalenz wird beobachtet?",
+      "options": [
+        {
+          "text": "12,5 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nicht berechenbar ohne Neuerkrankungen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "40 Personenjahre",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,8 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "8 %",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Kehrwert 500/40 ist keine Prävalenz. B: Vorhandene Fälle und Population genügen für diese Stichprobenprävalenz. C: Eine Prävalenz ist kein Personenzeitmass. D: Die Prozentumrechnung wäre um den Faktor zehn zu klein. E: 40/500 = 0,08. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Punktprävalenz berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Punktprävalenz berechnen"
+      ],
+      "questionGoal": "Punktprävalenz berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Punktprävalenz berechnen",
+        "correctReasoning": "40/500 = 0,08.",
+        "wrongAnswerExplanations": {
+          "A": "Der Kehrwert 500/40 ist keine Prävalenz.",
+          "B": "Vorhandene Fälle und Population genügen für diese Stichprobenprävalenz.",
+          "C": "Eine Prävalenz ist kein Personenzeitmass.",
+          "D": "Die Prozentumrechnung wäre um den Faktor zehn zu klein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "500 Personen werden zufällig eingeladen, aber nur 200 nehmen teil. Welche Aussage ist am besten begründet?",
+      "options": [
+        {
+          "text": "Die anfängliche Zufallsauswahl garantiert keine unverzerrte Prävalenz unter den Teilnehmenden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nichtteilnahme erzeugt immer exakt eine Verdoppelung der Prävalenz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Eingeladenen dürfen automatisch als Nichterkrankte gezählt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "200 Antworten machen jede Auswertung mathematisch unmöglich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Prävalenz muss exakt stimmen, weil die Einladung zufällig war.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Teilnahme kann mit der Erkrankung oder relevanten Merkmalen zusammenhängen. B: Richtung und Ausmass hängen vom Auswahlmechanismus ab. C: Ihr Erkrankungsstatus ist unbekannt. D: Eine Auswertung ist möglich, ihre Gültigkeit muss beurteilt werden. E: Der spätere Selektionsschritt bleibt relevant. Quelle: Originalunterlagen, PDF-S. 14,19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Nichtteilnahme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nichtteilnahme"
+      ],
+      "questionGoal": "Nichtteilnahme",
+      "structuredExplanation": {
+        "coreIdea": "Nichtteilnahme",
+        "correctReasoning": "Teilnahme kann mit der Erkrankung oder relevanten Merkmalen zusammenhängen.",
+        "wrongAnswerExplanations": {
+          "B": "Richtung und Ausmass hängen vom Auswahlmechanismus ab.",
+          "C": "Ihr Erkrankungsstatus ist unbekannt.",
+          "D": "Eine Auswertung ist möglich, ihre Gültigkeit muss beurteilt werden.",
+          "E": "Der spätere Selektionsschritt bleibt relevant."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «registrierte und unerkannte Krankheitsfälle».",
+      "options": [
+        {
+          "text": "Bekannte unbehandelte und unbekannte Fälle können Teil des klinischen Eisbergs sein.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine hohe Dunkelziffer kann die Interpretation registrierter Häufigkeiten nicht beeinflussen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Bevölkerungsuntersuchung kann bisher unerkannte Erkrankungen erfassen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Routinedaten des Versorgungssystems enthalten zwangsläufig alle Erkrankten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die sichtbare behandelte Gruppe ist nur ein Teil. B: Unvollständige Erfassung kann die beobachtete Häufigkeit verändern. C: Sie ist nicht auf bereits behandelte Fälle begrenzt. D: Nicht diagnostizierte oder unbehandelte Personen können fehlen. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Klinischer Eisberg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Klinischer Eisberg"
+      ],
+      "questionGoal": "Klinischer Eisberg",
+      "structuredExplanation": {
+        "coreIdea": "Klinischer Eisberg",
+        "correctReasoning": "Die sichtbare behandelte Gruppe ist nur ein Teil. Sie ist nicht auf bereits behandelte Fälle begrenzt.",
+        "wrongAnswerExplanations": {
+          "A": "Die sichtbare behandelte Gruppe ist nur ein Teil.",
+          "B": "Unvollständige Erfassung kann die beobachtete Häufigkeit verändern.",
+          "C": "Sie ist nicht auf bereits behandelte Fälle begrenzt.",
+          "D": "Nicht diagnostizierte oder unbehandelte Personen können fehlen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Eine Gruppe zunächst nicht an der Zielkrankheit Erkrankter wird nach Exposition eingeteilt und zehn Jahre auf neue Erkrankungen verfolgt. Welches Design ist beschrieben?",
+      "options": [
+        {
+          "text": "Ökologische Länderanalyse",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Fall-Kontroll-Studie",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Reine Querschnittsstudie",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Randomisierter Versuch allein wegen des Follow-ups",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Kohortenstudie",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Individuelle Personen werden verfolgt. B: Dort erfolgt die Auswahl nach dem Endpunktstatus. C: Hier wird ein Verlauf beobachtet. D: Follow-up bedeutet keine zufällige Expositionszuteilung. E: Die Exposition geht der Erfassung neuer Endpunkte voraus. Quelle: Originalunterlagen, PDF-S. 21–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Kohorte erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kohorte erkennen"
+      ],
+      "questionGoal": "Kohorte erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Kohorte erkennen",
+        "correctReasoning": "Die Exposition geht der Erfassung neuer Endpunkte voraus.",
+        "wrongAnswerExplanations": {
+          "A": "Individuelle Personen werden verfolgt.",
+          "B": "Dort erfolgt die Auswahl nach dem Endpunktstatus.",
+          "C": "Hier wird ein Verlauf beobachtet.",
+          "D": "Follow-up bedeutet keine zufällige Expositionszuteilung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Endpunkte und Inzidenzschätzung in Kohorten».",
+      "options": [
+        {
+          "text": "Der beobachtende Charakter beseitigt Confounding vollständig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Kohorte kann mehrere Endpunkte derselben Exposition untersuchen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede Kohorte muss ausschliesslich gesunde Neugeborene enthalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Kohorte kann Inzidenzen direkt aus gefährdeten Personen im Verlauf schätzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Expositionsgruppen können sich in weiteren Faktoren unterscheiden. B: Beim Follow-up können verschiedene Erkrankungen erfasst werden. C: Es gibt auch Berufs-, Bevölkerungs- und Krankheitskohorten. D: Der zeitbezogene Populationsnenner ist grundsätzlich beobachtbar. Quelle: Originalunterlagen, PDF-S. 22,26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Stärken der Kohorte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stärken der Kohorte"
+      ],
+      "questionGoal": "Stärken der Kohorte",
+      "structuredExplanation": {
+        "coreIdea": "Stärken der Kohorte",
+        "correctReasoning": "Beim Follow-up können verschiedene Erkrankungen erfasst werden. Der zeitbezogene Populationsnenner ist grundsätzlich beobachtbar.",
+        "wrongAnswerExplanations": {
+          "A": "Expositionsgruppen können sich in weiteren Faktoren unterscheiden.",
+          "B": "Beim Follow-up können verschiedene Erkrankungen erfasst werden.",
+          "C": "Es gibt auch Berufs-, Bevölkerungs- und Krankheitskohorten.",
+          "D": "Der zeitbezogene Populationsnenner ist grundsätzlich beobachtbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Warum kann eine Kohorte für eine sehr seltene Erkrankung unökonomisch sein?",
+      "options": [
+        {
+          "text": "Seltene Endpunkte können nur randomisiert auftreten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Follow-up erlaubt grundsätzlich keine Inzidenzschätzung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kohorten enthalten immer gleich viele Fälle und Kontrollen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es werden oft sehr viele Personen oder lange Nachbeobachtungen benötigt, um genügend Fälle zu erhalten.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "In Kohorten sind Erkrankungen per Definition verboten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ihre Seltenheit hat damit nichts zu tun. B: Genau diese ist eine Stärke des Designs. C: Diese fallbasierte Auswahl ist nicht ihre Definition. D: Die meisten beobachteten Personen entwickeln den seltenen Endpunkt nicht. E: Erkrankungen sind mögliche Endpunkte. Quelle: Originalunterlagen, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Seltene Endpunkte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Seltene Endpunkte"
+      ],
+      "questionGoal": "Seltene Endpunkte",
+      "structuredExplanation": {
+        "coreIdea": "Seltene Endpunkte",
+        "correctReasoning": "Die meisten beobachteten Personen entwickeln den seltenen Endpunkt nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Seltenheit hat damit nichts zu tun.",
+          "B": "Genau diese ist eine Stärke des Designs.",
+          "C": "Diese fallbasierte Auswahl ist nicht ihre Definition.",
+          "E": "Erkrankungen sind mögliche Endpunkte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Expositionsänderung und Verlust im Follow-up».",
+      "options": [
+        {
+          "text": "Jeder einzelne Ausfall führt zwingend zu einem gleich grossen Bias.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein langer Beobachtungszeitraum schliesst Messfehler automatisch aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Veränderung der Exposition im Verlauf kann ihre Erfassung erschweren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verlust von Teilnehmenden kann die Resultate verzerren, wenn er mit Exposition und Erkrankungsrisiko zusammenhängt.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Entscheidend ist der Mechanismus, nicht nur die Anzahl. B: Messfehler können unabhängig von der Dauer auftreten. C: Ein Baselinewert bildet dann nicht die gesamte Zeit ab. D: Die verbleibende Gruppe kann systematisch verändert sein. Quelle: Originalunterlagen, PDF-S. 26,39–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Verlaufsprobleme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verlaufsprobleme"
+      ],
+      "questionGoal": "Verlaufsprobleme",
+      "structuredExplanation": {
+        "coreIdea": "Verlaufsprobleme",
+        "correctReasoning": "Ein Baselinewert bildet dann nicht die gesamte Zeit ab. Die verbleibende Gruppe kann systematisch verändert sein.",
+        "wrongAnswerExplanations": {
+          "A": "Entscheidend ist der Mechanismus, nicht nur die Anzahl.",
+          "B": "Messfehler können unabhängig von der Dauer auftreten.",
+          "C": "Ein Baselinewert bildet dann nicht die gesamte Zeit ab.",
+          "D": "Die verbleibende Gruppe kann systematisch verändert sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Forschende rekrutieren Personen mit einem seltenen Tumor und geeignete Kontrollen aus derselben Ausgangspopulation. Frühere Expositionen werden verglichen. Welches Design passt?",
+      "options": [
+        {
+          "text": "Prospektive Kohorte allein wegen vergangener Expositionen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ökologische Studie",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fallserie ohne Vergleich",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fall-Kontroll-Studie",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Randomisierte Studie",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Kohorte wird nicht anhand einer festgelegten Fallzahl zusammengestellt. B: Es werden individuelle Expositionen verglichen. C: Eine Kontrollgruppe ist ausdrücklich vorhanden. D: Die Auswahl beginnt mit dem Erkrankungsstatus. E: Die frühere Exposition wurde nicht zufällig zugewiesen. Quelle: Originalunterlagen, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Fall-Kontroll-Design erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fall-Kontroll-Design erkennen"
+      ],
+      "questionGoal": "Fall-Kontroll-Design erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Fall-Kontroll-Design erkennen",
+        "correctReasoning": "Die Auswahl beginnt mit dem Erkrankungsstatus.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Kohorte wird nicht anhand einer festgelegten Fallzahl zusammengestellt.",
+          "B": "Es werden individuelle Expositionen verglichen.",
+          "C": "Eine Kontrollgruppe ist ausdrücklich vorhanden.",
+          "E": "Die frühere Exposition wurde nicht zufällig zugewiesen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Was ist bei der Auswahl von Kontrollen besonders wichtig?",
+      "options": [
+        {
+          "text": "Sie sollen die Expositionsverteilung der Population repräsentieren, aus der die Fälle entstanden sind.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie sollen grundsätzlich aus einer beliebigen anderen Region stammen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie müssen möglichst keine der interessierenden Expositionen besitzen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ihre Auswahl darf vom gewünschten Resultat abhängen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie müssen zwingend Ehepartner der Fälle sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Damit ist der Vergleich an die richtige Ausgangspopulation gebunden. B: Eine andere Ausgangspopulation kann andere Expositionsverteilungen haben. C: Dies würde den Vergleich gezielt verzerren. D: Ergebnisgesteuerte Auswahl erzeugt Bias. E: Gemeinsame Expositionen und Auswahlmechanismen können problematisch sein. Quelle: Originalunterlagen, PDF-S. 30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Kontrollauswahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kontrollauswahl"
+      ],
+      "questionGoal": "Kontrollauswahl",
+      "structuredExplanation": {
+        "coreIdea": "Kontrollauswahl",
+        "correctReasoning": "Damit ist der Vergleich an die richtige Ausgangspopulation gebunden.",
+        "wrongAnswerExplanations": {
+          "B": "Eine andere Ausgangspopulation kann andere Expositionsverteilungen haben.",
+          "C": "Dies würde den Vergleich gezielt verzerren.",
+          "D": "Ergebnisgesteuerte Auswahl erzeugt Bias.",
+          "E": "Gemeinsame Expositionen und Auswahlmechanismen können problematisch sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Zum Thema «Interpretationsgrenzen der Fall-Kontroll-Studie»: Beurteilen Sie die Aussagen zur gewöhnlichen Fall-Kontroll-Studie ohne zusätzliche Populationsnenner.",
+      "options": [
+        {
+          "text": "Frühere Expositionen können fehlerhaft erinnert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Anteil Fälle in der ausgewählten Stichprobe ist direkt das Populationsrisiko.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie kann für seltene Erkrankungen effizient sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur eine einzige Exposition darf erfasst werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Recall Bias ist eine mögliche Grenze. B: Das Fall-Kontroll-Verhältnis ist durch die Rekrutierung beeinflusst. C: Fälle werden gezielt rekrutiert. D: Mehrere frühere Expositionen können verglichen werden. Quelle: Originalunterlagen, PDF-S. 29–39.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Fall-Kontroll-Grenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fall-Kontroll-Grenzen"
+      ],
+      "questionGoal": "Fall-Kontroll-Grenzen",
+      "structuredExplanation": {
+        "coreIdea": "Fall-Kontroll-Grenzen",
+        "correctReasoning": "Recall Bias ist eine mögliche Grenze. Fälle werden gezielt rekrutiert.",
+        "wrongAnswerExplanations": {
+          "A": "Recall Bias ist eine mögliche Grenze.",
+          "B": "Das Fall-Kontroll-Verhältnis ist durch die Rekrutierung beeinflusst.",
+          "C": "Fälle werden gezielt rekrutiert.",
+          "D": "Mehrere frühere Expositionen können verglichen werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Welche Kennzahl ist aus einer gewöhnlichen Fall-Kontroll-Vierfeldertafel ohne bekannte Auswahlanteile typischerweise direkt schätzbar?",
+      "options": [
+        {
+          "text": "Number needed to treat ohne Zusatzinformationen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Personenjahre der gesamten Ausgangspopulation",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lebenszeitrisiko jeder Expositionsgruppe",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Odds Ratio",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Absolute Erkrankungsinzidenz",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dafür werden absolute Risikodifferenzen benötigt. B: Diese sind nicht aus der Vierfeldertafel ersichtlich. C: Die Stichprobenrisiken sind nicht direkt populationsbezogen. D: Das Verhältnis der Expositionsodds bei Fällen und Kontrollen ist der übliche Vergleich. E: Dafür fehlt der populationsbezogene Zeit- und Risikonenner. Quelle: Originalunterlagen, PDF-S. 31–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Odds im Design"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Odds im Design"
+      ],
+      "questionGoal": "Odds im Design",
+      "structuredExplanation": {
+        "coreIdea": "Odds im Design",
+        "correctReasoning": "Das Verhältnis der Expositionsodds bei Fällen und Kontrollen ist der übliche Vergleich.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür werden absolute Risikodifferenzen benötigt.",
+          "B": "Diese sind nicht aus der Vierfeldertafel ersichtlich.",
+          "C": "Die Stichprobenrisiken sind nicht direkt populationsbezogen.",
+          "E": "Dafür fehlt der populationsbezogene Zeit- und Risikonenner."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «zufällige Interventionszuteilung».",
+      "options": [
+        {
+          "text": "Randomisierung kann bekannte und unbekannte Ausgangsfaktoren im Erwartungswert ausgleichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei einer randomisierten Studie wird die Intervention per Zufallsverfahren zugeteilt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nach Randomisierung sind Verluste und fehlerhafte Endpunktmessungen irrelevant.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Randomisierung bedeutet, dass die gesamte Bevölkerung zufällig zur Teilnahme gezwungen wird.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zufällige Unterschiede bleiben insbesondere bei kleinen Gruppen möglich. B: Dies unterscheidet sie vom rein beobachtenden Expositionsvergleich. C: Diese können die interne Gültigkeit weiterhin beeinträchtigen. D: Zufällige Zuteilung und zufällige Auswahl sind unterschiedliche Schritte. Quelle: Originalunterlagen, PDF-S. 40–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Randomisierte Studien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Randomisierte Studien"
+      ],
+      "questionGoal": "Randomisierte Studien",
+      "structuredExplanation": {
+        "coreIdea": "Randomisierte Studien",
+        "correctReasoning": "Zufällige Unterschiede bleiben insbesondere bei kleinen Gruppen möglich. Dies unterscheidet sie vom rein beobachtenden Expositionsvergleich.",
+        "wrongAnswerExplanations": {
+          "A": "Zufällige Unterschiede bleiben insbesondere bei kleinen Gruppen möglich.",
+          "B": "Dies unterscheidet sie vom rein beobachtenden Expositionsvergleich.",
+          "C": "Diese können die interne Gültigkeit weiterhin beeinträchtigen.",
+          "D": "Zufällige Zuteilung und zufällige Auswahl sind unterschiedliche Schritte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Eine vertretbare neue Therapie soll mit Standardbehandlung auf kausale Wirksamkeit verglichen werden. Welche Anlage kontrolliert die ursprüngliche Zuteilung am direktesten?",
+      "options": [
+        {
+          "text": "Ein Vergleich zweier Kliniken ohne Berücksichtigung ihrer Patientenstruktur",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine geeignete randomisierte kontrollierte Studie",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Länderanalyse der Therapieverkäufe und Gesamtsterblichkeit",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine einmalige Befragung nur der Überlebenden",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Fallserie ausschliesslich zufriedener Behandelter",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterschiedliche Ausgangsrisiken können den Vergleich verzerren. B: Die Behandlung wird unabhängig von anfänglichen Prognosefaktoren per Zufall zugewiesen. C: Gruppenassoziationen ersetzen keinen individuellen randomisierten Vergleich. D: Zeitliche und selektive Einschränkungen bleiben. E: Vergleich und unverzerrte Auswahl fehlen. Quelle: Originalunterlagen, PDF-S. 2,40–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Designwahl Therapie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Designwahl Therapie"
+      ],
+      "questionGoal": "Designwahl Therapie",
+      "structuredExplanation": {
+        "coreIdea": "Designwahl Therapie",
+        "correctReasoning": "Die Behandlung wird unabhängig von anfänglichen Prognosefaktoren per Zufall zugewiesen.",
+        "wrongAnswerExplanations": {
+          "A": "Unterschiedliche Ausgangsrisiken können den Vergleich verzerren.",
+          "C": "Gruppenassoziationen ersetzen keinen individuellen randomisierten Vergleich.",
+          "D": "Zeitliche und selektive Einschränkungen bleiben.",
+          "E": "Vergleich und unverzerrte Auswahl fehlen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs08_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS08",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Studiendesign, zeitliche Reihenfolge und Kausalität».",
+      "options": [
+        {
+          "text": "Jede retrospektive Datenanalyse ist automatisch eine Fall-Kontroll-Studie.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Rekrutierungslogik hilft, Kohorte und Fall-Kontroll-Studie zu unterscheiden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein zeitlicher Verlauf allein beweist noch keine Kausalität.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein statistisch signifikanter Zusammenhang macht das Studiendesign bedeutungslos.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Kohorten können anhand bereits vorhandener Verlaufsdaten rekonstruiert werden. B: Auswahl nach Ausgangspopulation/Exposition ist etwas anderes als Auswahl nach Erkrankungsstatus. C: Confounding und Bias können auch Längsschnittstudien betreffen. D: Die Gültigkeit der kausalen Interpretation hängt weiterhin vom Design ab. Quelle: Originalunterlagen, PDF-S. 21–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS08",
+        "Design und Kausalität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Design und Kausalität"
+      ],
+      "questionGoal": "Design und Kausalität",
+      "structuredExplanation": {
+        "coreIdea": "Design und Kausalität",
+        "correctReasoning": "Auswahl nach Ausgangspopulation/Exposition ist etwas anderes als Auswahl nach Erkrankungsstatus. Confounding und Bias können auch Längsschnittstudien betreffen.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Kohorten können anhand bereits vorhandener Verlaufsdaten rekonstruiert werden.",
+          "B": "Auswahl nach Ausgangspopulation/Exposition ist etwas anderes als Auswahl nach Erkrankungsstatus.",
+          "C": "Confounding und Bias können auch Längsschnittstudien betreffen.",
+          "D": "Die Gültigkeit der kausalen Interpretation hängt weiterhin vom Design ab."
+        }
+      }
+    }
+  ]
+}

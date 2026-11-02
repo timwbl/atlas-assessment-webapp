@@ -1,0 +1,1314 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs01_20261102",
+  "lectureCode": "KVBS01",
+  "title": "Demografie und Gesundheitsindikatoren",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS01 - Einführung in die Biostatistik. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Aktuellere 49-seitige Fassung gewählt; 48-seitige Alternativfassung nicht als zweites Set angelegt. Zahlenaufgaben sind ausdrücklich hypothetisch. Historische Grafiken werden mit ihrem Datenstand interpretiert. Neonatalperiode: Geburt bis vor 28 vollendete Tage; keine Gleichsetzung mit Kalendermonat.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Bevölkerungsentwicklung aus Geburten, Todesfällen und Wanderungsbewegungen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Altersstruktur und demografische Szenarien sachgerecht interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Gesamt-, altersbezogene und Säuglingsmortalität mit korrektem Bezugsnenner berechnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Periodenlebenserwartung und Überlebenskurven erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Gesundheitsindikatoren, zeitliche Trends und Gruppenergebnisse kritisch einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs01_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Eine Region verzeichnet in einem Jahr 1200 Einwanderungen und 800 Auswanderungen. Welcher Wanderungssaldo ergibt sich?",
+      "options": [
+        {
+          "text": "Plus 150 Prozent",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Plus 2000 Personen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Minus 400 Personen",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Null Personen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Plus 400 Personen",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Verhältnis ersetzt die Differenz der Personenzahlen nicht. B: Die Summe zählt alle Wanderungsbewegungen, nicht deren Saldo. C: Hier wurden Ein- und Auswanderung vertauscht. D: Ein ausgeglichener Saldo würde gleich viele Ein- und Auswanderungen voraussetzen. E: Der Wanderungssaldo ist Einwanderung minus Auswanderung. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Wanderungssaldo"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wanderungssaldo"
+      ],
+      "questionGoal": "Wanderungssaldo",
+      "structuredExplanation": {
+        "coreIdea": "Wanderungssaldo",
+        "correctReasoning": "Der Wanderungssaldo ist Einwanderung minus Auswanderung.",
+        "wrongAnswerExplanations": {
+          "A": "Das Verhältnis ersetzt die Differenz der Personenzahlen nicht.",
+          "B": "Die Summe zählt alle Wanderungsbewegungen, nicht deren Saldo.",
+          "C": "Hier wurden Ein- und Auswanderung vertauscht.",
+          "D": "Ein ausgeglichener Saldo würde gleich viele Ein- und Auswanderungen voraussetzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "In derselben Region gibt es 900 Geburten, 1100 Todesfälle und einen Wanderungssaldo von plus 400. Welche Bevölkerungsveränderung folgt ohne weitere Bestandskorrekturen?",
+      "options": [
+        {
+          "text": "Abnahme um 200 Personen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zunahme um 400 Personen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zunahme um 200 Personen",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Abnahme um 600 Personen",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zunahme um 600 Personen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies berücksichtigt nur den negativen Geburtensaldo. B: Dies lässt den negativen Geburtensaldo weg. C: Der Geburtensaldo beträgt minus 200; zusammen mit plus 400 ergibt sich plus 200. D: Der positive Wanderungssaldo wurde mit falschem Vorzeichen verrechnet. E: Der negative Geburtensaldo wurde fälschlich addiert. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Bevölkerungsbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bevölkerungsbilanz"
+      ],
+      "questionGoal": "Bevölkerungsbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Bevölkerungsbilanz",
+        "correctReasoning": "Der Geburtensaldo beträgt minus 200; zusammen mit plus 400 ergibt sich plus 200.",
+        "wrongAnswerExplanations": {
+          "A": "Dies berücksichtigt nur den negativen Geburtensaldo.",
+          "B": "Dies lässt den negativen Geburtensaldo weg.",
+          "D": "Der positive Wanderungssaldo wurde mit falschem Vorzeichen verrechnet.",
+          "E": "Der negative Geburtensaldo wurde fälschlich addiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zum Thema «Bevölkerungsbestand, Geburten- und Wanderungssaldo»: Beurteilen Sie die Definition von Bevölkerungsbestand und Bevölkerungsveränderung.",
+      "options": [
+        {
+          "text": "Eine Bevölkerung kann trotz negativem Geburtensaldo wachsen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die ständige Wohnbevölkerung umfasst ausschliesslich Schweizer Staatsangehörige.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Einwanderung wird bei der Berechnung des Geburtensaldos mitgezählt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Geburtenüberschuss liegt vor, sobald mehr Menschen einwandern als auswandern.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein ausreichend positiver Wanderungssaldo kann den Rückgang ausgleichen. B: Auch ausländische Personen mit den festgelegten Aufenthaltsvoraussetzungen gehören dazu. C: Wanderung und natürliche Bevölkerungsbewegung sind getrennte Bilanzkomponenten. D: Geburtensaldo und Wanderungssaldo sind verschiedene Komponenten. Quelle: Originalunterlagen, PDF-S. 17,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Population und Salden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Population und Salden"
+      ],
+      "questionGoal": "Population und Salden",
+      "structuredExplanation": {
+        "coreIdea": "Population und Salden",
+        "correctReasoning": "Ein ausreichend positiver Wanderungssaldo kann den Rückgang ausgleichen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein ausreichend positiver Wanderungssaldo kann den Rückgang ausgleichen.",
+          "B": "Auch ausländische Personen mit den festgelegten Aufenthaltsvoraussetzungen gehören dazu.",
+          "C": "Wanderung und natürliche Bevölkerungsbewegung sind getrennte Bilanzkomponenten.",
+          "D": "Geburtensaldo und Wanderungssaldo sind verschiedene Komponenten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zwei Länder haben gleich viele Einwohner. Im Land A ist der Anteil älterer Menschen deutlich höher. Welche zusätzliche Information ist besonders wichtig, bevor ihre rohen Sterberaten als Versorgungsqualität verglichen werden?",
+      "options": [
+        {
+          "text": "Die Staatsfläche in Quadratkilometern",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Allein die Zahl der Krankenhäuser",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die altersbezogenen Sterberaten beider Länder",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Allein der Geburtenüberschuss",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Allein die Zahl der Einwanderungen",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Fläche allein trennt Altersstruktur und individuelles Sterberisiko nicht. B: Die absolute Hauszahl korrigiert den Einfluss der Altersverteilung nicht. C: Eine andere Altersstruktur kann die rohe Sterberate verändern, ohne schlechtere Versorgung zu beweisen. D: Dieser ersetzt keine altersbezogene Betrachtung der Sterblichkeit. E: Eine Wanderungszahl liefert noch keine altersspezifischen Sterberaten. Quelle: Originalunterlagen, PDF-S. 23–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Altersstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Altersstruktur"
+      ],
+      "questionGoal": "Altersstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Altersstruktur",
+        "correctReasoning": "Eine andere Altersstruktur kann die rohe Sterberate verändern, ohne schlechtere Versorgung zu beweisen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Fläche allein trennt Altersstruktur und individuelles Sterberisiko nicht.",
+          "B": "Die absolute Hauszahl korrigiert den Einfluss der Altersverteilung nicht.",
+          "D": "Dieser ersetzt keine altersbezogene Betrachtung der Sterblichkeit.",
+          "E": "Eine Wanderungszahl liefert noch keine altersspezifischen Sterberaten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "In einer hypothetischen Bevölkerung von 200000 Menschen werden innerhalb eines Jahres 1600 Todesfälle erfasst. Wie hoch ist die rohe Jahresmortalität pro 100000 Einwohner?",
+      "options": [
+        {
+          "text": "80 pro 100000",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "800 pro 100000",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "1600 pro 100000",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "8000 pro 100000",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "125 pro 100000",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser Wert ist um den Faktor zehn zu klein. B: 1600 geteilt durch 200000, multipliziert mit 100000, ergibt 800. C: Die Todeszahl wurde ohne Anpassung an den Bevölkerungsnenner übernommen. D: Dieser Wert ist um den Faktor zehn zu gross. E: Dies beruht auf dem umgekehrten Verhältnis von Bevölkerung und Todesfällen. Quelle: Originalunterlagen, PDF-S. 32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Rohe Mortalitätsrate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rohe Mortalitätsrate"
+      ],
+      "questionGoal": "Rohe Mortalitätsrate",
+      "structuredExplanation": {
+        "coreIdea": "Rohe Mortalitätsrate",
+        "correctReasoning": "1600 geteilt durch 200000, multipliziert mit 100000, ergibt 800.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser Wert ist um den Faktor zehn zu klein.",
+          "C": "Die Todeszahl wurde ohne Anpassung an den Bevölkerungsnenner übernommen.",
+          "D": "Dieser Wert ist um den Faktor zehn zu gross.",
+          "E": "Dies beruht auf dem umgekehrten Verhältnis von Bevölkerung und Todesfällen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zum Thema «alters- und geschlechtsspezifische Mortalitätsraten»: Beurteilen Sie die Berechnung von Mortalitätskennzahlen.",
+      "options": [
+        {
+          "text": "Für eine alters- und geschlechtsspezifische Rate müssen Zähler und Nenner dieselbe Teilgruppe betreffen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Vergleich absoluter Todeszahlen allein kann durch verschiedene Bevölkerungsgrössen verzerrt sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Identische rohe Raten können trotz verschiedener altersspezifischer Risiken entstehen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Rate für über 80-jährige Frauen wird korrekt durch die gesamte Bevölkerung aller Altersgruppen geteilt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nur so wird die Sterblichkeit genau dieser Teilgruppe beschrieben. B: Eine grössere Bevölkerung kann auch bei gleicher Sterberate mehr Todesfälle haben. C: Altersstruktur und Teilgruppenraten beeinflussen den Gesamtwert gemeinsam. D: Der passende Nenner ist die entsprechende weibliche Altersgruppe. Quelle: Originalunterlagen, PDF-S. 32,34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Bezugsnenner"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bezugsnenner"
+      ],
+      "questionGoal": "Bezugsnenner",
+      "structuredExplanation": {
+        "coreIdea": "Bezugsnenner",
+        "correctReasoning": "Nur so wird die Sterblichkeit genau dieser Teilgruppe beschrieben. Eine grössere Bevölkerung kann auch bei gleicher Sterberate mehr Todesfälle haben. Altersstruktur und Teilgruppenraten beeinflussen den Gesamtwert gemeinsam.",
+        "wrongAnswerExplanations": {
+          "A": "Nur so wird die Sterblichkeit genau dieser Teilgruppe beschrieben.",
+          "B": "Eine grössere Bevölkerung kann auch bei gleicher Sterberate mehr Todesfälle haben.",
+          "C": "Altersstruktur und Teilgruppenraten beeinflussen den Gesamtwert gemeinsam.",
+          "D": "Der passende Nenner ist die entsprechende weibliche Altersgruppe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Bei 10000 Lebendgeburten werden in einem vereinfachten Jahresvergleich 30 Todesfälle vor dem ersten Geburtstag gezählt. Welcher Indikatorwert ergibt sich nach der üblichen Ereignisquotienten-Näherung?",
+      "options": [
+        {
+          "text": "3 pro 1000 Einwohner aller Altersgruppen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "300 pro 1000 Lebendgeburten",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "30 pro 1000 Lebendgeburten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,3 pro 1000 Lebendgeburten",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3 pro 1000 Lebendgeburten",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Bezugsnenner für Säuglingssterblichkeit sind Lebendgeburten, nicht alle Einwohner. B: Dieser Wert wäre hundertmal grösser als der berechnete Quotient. C: Die Skalierung wurde um den Faktor zehn überschätzt. D: Die Skalierung wurde um den Faktor zehn unterschätzt. E: 30 geteilt durch 10000 und multipliziert mit 1000 ergibt 3. Quelle: Originalunterlagen, PDF-S. 35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Säuglingssterblichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Säuglingssterblichkeit"
+      ],
+      "questionGoal": "Säuglingssterblichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Säuglingssterblichkeit",
+        "correctReasoning": "30 geteilt durch 10000 und multipliziert mit 1000 ergibt 3.",
+        "wrongAnswerExplanations": {
+          "A": "Der Bezugsnenner für Säuglingssterblichkeit sind Lebendgeburten, nicht alle Einwohner.",
+          "B": "Dieser Wert wäre hundertmal grösser als der berechnete Quotient.",
+          "C": "Die Skalierung wurde um den Faktor zehn überschätzt.",
+          "D": "Die Skalierung wurde um den Faktor zehn unterschätzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Welche zeitliche Abgrenzung gehört zur neonatalen Sterblichkeit?",
+      "options": [
+        {
+          "text": "Alle Todesfälle vor dem fünften Geburtstag",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Todesfälle zwischen dem zweiten und zwölften Lebensjahr",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich Totgeburten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Todesfälle nach dem ersten Geburtstag",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Todesfälle unter Lebendgeborenen innerhalb der ersten 28 vollendeten Lebenstage",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies betrifft die Unter-fünf-Sterblichkeit. B: Dieses Altersfenster gehört nicht zur Neonatalperiode. C: Totgeburten sind keine neonatalen Todesfälle unter Lebendgeborenen. D: Diese liegen ausserhalb der Säuglings- und Neonatalperiode. E: Die neonatale Periode reicht von der Geburt bis vor den 28-Tage-Zeitpunkt. Quelle: Originalunterlagen, PDF-S. 35–36.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Neonatale Sterblichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Neonatale Sterblichkeit"
+      ],
+      "questionGoal": "Neonatale Sterblichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Neonatale Sterblichkeit",
+        "correctReasoning": "Die neonatale Periode reicht von der Geburt bis vor den 28-Tage-Zeitpunkt.",
+        "wrongAnswerExplanations": {
+          "A": "Dies betrifft die Unter-fünf-Sterblichkeit.",
+          "B": "Dieses Altersfenster gehört nicht zur Neonatalperiode.",
+          "C": "Totgeburten sind keine neonatalen Todesfälle unter Lebendgeborenen.",
+          "D": "Diese liegen ausserhalb der Säuglings- und Neonatalperiode."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zum Thema «neonatale und Säuglingssterblichkeit»: Beurteilen Sie die Einordnung von Sterblichkeit im frühen Lebensalter.",
+      "options": [
+        {
+          "text": "Eine geringere Säuglingssterblichkeit ist ein wichtiger Gesundheitsindikator, erklärt aber nicht allein jede Qualitätseigenschaft eines Gesundheitssystems.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei einem internationalen Vergleich können Werte aus beliebigen Jahren ohne Kennzeichnung als aktueller Gleichzeitvergleich verwendet werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Säuglingssterblichkeit betrifft das Sterben vor dem ersten Geburtstag.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Neonatale und gesamte Säuglingssterblichkeit sind definitionsgemäss derselbe Indikator.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Lebensbedingungen und weitere Faktoren beeinflussen den Wert. B: Unterschiedliche Datenjahre müssen berücksichtigt und kenntlich gemacht werden. C: Das betrachtete Altersfenster ist enger als das der Unter-fünf-Sterblichkeit. D: Die Säuglingsperiode enthält zusätzlich die postneonatale Zeit. Quelle: Originalunterlagen, PDF-S. 35–39.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Kindersterblichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kindersterblichkeit"
+      ],
+      "questionGoal": "Kindersterblichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Kindersterblichkeit",
+        "correctReasoning": "Auch Lebensbedingungen und weitere Faktoren beeinflussen den Wert. Das betrachtete Altersfenster ist enger als das der Unter-fünf-Sterblichkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Lebensbedingungen und weitere Faktoren beeinflussen den Wert.",
+          "B": "Unterschiedliche Datenjahre müssen berücksichtigt und kenntlich gemacht werden.",
+          "C": "Das betrachtete Altersfenster ist enger als das der Unter-fünf-Sterblichkeit.",
+          "D": "Die Säuglingsperiode enthält zusätzlich die postneonatale Zeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Die Lebenserwartung bei Geburt beträgt in einer Sterbetafel 82 Jahre. Welche Interpretation ist korrekt?",
+      "options": [
+        {
+          "text": "Alle im betreffenden Jahr Verstorbenen waren im Mittel zwingend 82 Jahre alt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das mittlere Alter aller im Land lebenden Menschen beträgt 82 Jahre.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine hypothetische Neugeborenenkohorte hätte bei dauerhaft geltenden altersspezifischen Sterberaten der betrachteten Periode im Mittel 82 Lebensjahre.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine vollständige reale Geburtskohorte muss bereits 82 Jahre beobachtet worden sein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jedes heute geborene Kind wird genau 82 Jahre alt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das mittlere beobachtete Sterbealter und die Sterbetafellebenserwartung sind nicht identisch. B: Das Durchschnittsalter der Wohnbevölkerung ist eine andere Kennzahl. C: Die Periodensterbetafel überträgt die aktuellen Altersraten auf eine hypothetische Kohorte. D: Die Periodenberechnung benötigt keine abgeschlossene Beobachtung einer realen Kohorte. E: Ein Mittelwert ist keine individuelle Lebensdauerzusage. Quelle: Originalunterlagen, PDF-S. 40,45.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Periodenlebenserwartung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Periodenlebenserwartung"
+      ],
+      "questionGoal": "Periodenlebenserwartung",
+      "structuredExplanation": {
+        "coreIdea": "Periodenlebenserwartung",
+        "correctReasoning": "Die Periodensterbetafel überträgt die aktuellen Altersraten auf eine hypothetische Kohorte.",
+        "wrongAnswerExplanations": {
+          "A": "Das mittlere beobachtete Sterbealter und die Sterbetafellebenserwartung sind nicht identisch.",
+          "B": "Das Durchschnittsalter der Wohnbevölkerung ist eine andere Kennzahl.",
+          "D": "Die Periodenberechnung benötigt keine abgeschlossene Beobachtung einer realen Kohorte.",
+          "E": "Ein Mittelwert ist keine individuelle Lebensdauerzusage."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "In einem Pandemiejahr sinkt die Periodenlebenserwartung. Was lässt sich daraus unmittelbar ableiten?",
+      "options": [
+        {
+          "text": "Nur die Geburtenzahl muss gesunken sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Überlebenden verlieren genau dieselbe Zahl tatsächlicher Lebensjahre.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Altersstruktur aller lebenden Menschen muss sofort unverändert bleiben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Sterberaten dieses Jahres ergeben eine geringere hypothetische Lebensdauer als die Vergleichsraten.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die gesamte künftige Sterblichkeit aller Neugeborenen ist bereits bekannt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Rückgang der Lebenserwartung wird über Sterberaten berechnet. B: Der Periodenwert weist keinen identischen individuellen Lebenszeitverlust nach. C: Diese Aussage folgt nicht aus der Änderung einer Sterbetafelkennzahl. D: Die Kennzahl beschreibt die Sterblichkeitsverhältnisse der jeweiligen Periode. E: Künftige Sterberaten können sich ändern. Quelle: Originalunterlagen, PDF-S. 40–45.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Vorübergehender Mortalitätsschock"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vorübergehender Mortalitätsschock"
+      ],
+      "questionGoal": "Vorübergehender Mortalitätsschock",
+      "structuredExplanation": {
+        "coreIdea": "Vorübergehender Mortalitätsschock",
+        "correctReasoning": "Die Kennzahl beschreibt die Sterblichkeitsverhältnisse der jeweiligen Periode.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Rückgang der Lebenserwartung wird über Sterberaten berechnet.",
+          "B": "Der Periodenwert weist keinen identischen individuellen Lebenszeitverlust nach.",
+          "C": "Diese Aussage folgt nicht aus der Änderung einer Sterbetafelkennzahl.",
+          "E": "Künftige Sterberaten können sich ändern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q12",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zum Thema «Überlebenskurven und Lebenserwartung»: Beurteilen Sie die Beziehung zwischen Überlebenskurve und Lebenserwartung.",
+      "options": [
+        {
+          "text": "Eine höhere Lebenserwartung bei Geburt beweist unveränderte Sterberaten in allen Altersklassen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Fläche unter einer geeigneten Überlebenskurve ab Geburt entspricht der mittleren Lebensdauer.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur das Alter, bei dem die Kurve die 50-Prozent-Linie schneidet, bestimmt deren gesamte Fläche.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weniger frühe Todesfälle können die Lebenserwartung bei Geburt deutlich erhöhen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Gesamtwert kann sich durch Veränderungen einzelner oder mehrerer Altersgruppen ändern. B: Die aufsummierte Überlebenswahrscheinlichkeit liefert die erwartete Lebenszeit. C: Dieses Alter ist der Median, nicht automatisch der Mittelwert. D: Lange potenzielle Lebenszeiten gehen dann nicht bereits im Kindesalter verloren. Quelle: Originalunterlagen, PDF-S. 40–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Überleben und Lebenserwartung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Überleben und Lebenserwartung"
+      ],
+      "questionGoal": "Überleben und Lebenserwartung",
+      "structuredExplanation": {
+        "coreIdea": "Überleben und Lebenserwartung",
+        "correctReasoning": "Die aufsummierte Überlebenswahrscheinlichkeit liefert die erwartete Lebenszeit. Lange potenzielle Lebenszeiten gehen dann nicht bereits im Kindesalter verloren.",
+        "wrongAnswerExplanations": {
+          "A": "Der Gesamtwert kann sich durch Veränderungen einzelner oder mehrerer Altersgruppen ändern.",
+          "B": "Die aufsummierte Überlebenswahrscheinlichkeit liefert die erwartete Lebenszeit.",
+          "C": "Dieses Alter ist der Median, nicht automatisch der Mittelwert.",
+          "D": "Lange potenzielle Lebenszeiten gehen dann nicht bereits im Kindesalter verloren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Eine Grafik der Säuglingssterblichkeit verwendet eine logarithmische y-Achse. Was bedeuten gleich grosse vertikale Abstände auf dieser Achse?",
+      "options": [
+        {
+          "text": "Es gibt keine Unterschiede zwischen den dargestellten Werten",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gleiche Verhältnisse der Sterblichkeitswerte",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Immer eine identische Zahl zusätzlicher Lebendgeburten",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zeitabstände zwischen den Beobachtungen sind automatisch gleich",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Immer dieselbe absolute Differenz in Todesfällen pro 1000",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Logarithmierung entfernt Unterschiede nicht. B: Auf einer Logarithmenskala entsprechen gleiche Abstände gleichen multiplikativen Faktoren. C: Die y-Achse beschreibt Sterblichkeit, nicht den Geburtenbestand. D: Die Skalierung der y-Achse bestimmt keine Abstände auf der Zeitachse. E: Dies wäre die Eigenschaft einer linearen Skala. Quelle: Originalunterlagen, PDF-S. 38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Logarithmische Achse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Logarithmische Achse"
+      ],
+      "questionGoal": "Logarithmische Achse",
+      "structuredExplanation": {
+        "coreIdea": "Logarithmische Achse",
+        "correctReasoning": "Auf einer Logarithmenskala entsprechen gleiche Abstände gleichen multiplikativen Faktoren.",
+        "wrongAnswerExplanations": {
+          "A": "Die Logarithmierung entfernt Unterschiede nicht.",
+          "C": "Die y-Achse beschreibt Sterblichkeit, nicht den Geburtenbestand.",
+          "D": "Die Skalierung der y-Achse bestimmt keine Abstände auf der Zeitachse.",
+          "E": "Dies wäre die Eigenschaft einer linearen Skala."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zum Thema «Annahmen demografischer Projektionen»: Beurteilen Sie Aussagen zu demografischen Bevölkerungsszenarien.",
+      "options": [
+        {
+          "text": "Eine heutige Altersverteilung liefert Information über die zu erwartende Alterung bereits lebender Jahrgänge.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein publiziertes Szenario ist eine sichere Vorhersage unabhängig von seinen Annahmen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die identische Ausgangsbevölkerung erzwingt bei verschiedenen Wanderungsannahmen dieselbe Endbevölkerung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Annahmen zu Migration, Geburten und Sterblichkeit beeinflussen die Projektion.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Jahrgänge rücken im Zeitverlauf in höhere Altersklassen auf. B: Ein Szenario ist an seine Voraussetzungen gebunden. C: Verschiedene Salden können zu verschiedenen Beständen führen. D: Diese Grössen bestimmen die künftige Bevölkerungsbilanz und Altersstruktur. Quelle: Originalunterlagen, PDF-S. 23–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Szenarien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Szenarien"
+      ],
+      "questionGoal": "Szenarien",
+      "structuredExplanation": {
+        "coreIdea": "Szenarien",
+        "correctReasoning": "Die Jahrgänge rücken im Zeitverlauf in höhere Altersklassen auf. Diese Grössen bestimmen die künftige Bevölkerungsbilanz und Altersstruktur.",
+        "wrongAnswerExplanations": {
+          "A": "Die Jahrgänge rücken im Zeitverlauf in höhere Altersklassen auf.",
+          "B": "Ein Szenario ist an seine Voraussetzungen gebunden.",
+          "C": "Verschiedene Salden können zu verschiedenen Beständen führen.",
+          "D": "Diese Grössen bestimmen die künftige Bevölkerungsbilanz und Altersstruktur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Eine Gesundheitsbehörde möchte die längerfristige Entwicklung der Bevölkerungsgesundheit beurteilen. Welches Vorgehen passt am besten?",
+      "options": [
+        {
+          "text": "Mehrere definierte Kennzahlen wie Mortalität, Lebenserwartung und selbst wahrgenommene Gesundheit über die Zeit betrachten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Definition des Indikators jedes Jahr ändern und Werte direkt vergleichen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zahl der berichteten Krankheiten ohne Bevölkerungsbezug als vollständige Mortalitätsrate benennen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich den Gesundheitszustand einer einzelnen gesunden Person verfolgen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur die Einwohnerzahl als vollständigen Gesundheitszustand verwenden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Verschiedene Indikatoren bilden unterschiedliche Aspekte ab. B: Geänderte Definitionen können Vergleichbarkeit verhindern. C: Krankheitsfälle, Bevölkerungsnenner und Todesfälle sind verschiedene Grössen. D: Eine einzelne Person repräsentiert nicht die Bevölkerung. E: Die Bevölkerungsgrösse beschreibt den Gesundheitszustand nicht vollständig. Quelle: Originalunterlagen, PDF-S. 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Gesundheitsindikatoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gesundheitsindikatoren"
+      ],
+      "questionGoal": "Gesundheitsindikatoren",
+      "structuredExplanation": {
+        "coreIdea": "Gesundheitsindikatoren",
+        "correctReasoning": "Verschiedene Indikatoren bilden unterschiedliche Aspekte ab.",
+        "wrongAnswerExplanations": {
+          "B": "Geänderte Definitionen können Vergleichbarkeit verhindern.",
+          "C": "Krankheitsfälle, Bevölkerungsnenner und Todesfälle sind verschiedene Grössen.",
+          "D": "Eine einzelne Person repräsentiert nicht die Bevölkerung.",
+          "E": "Die Bevölkerungsgrösse beschreibt den Gesundheitszustand nicht vollständig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zum Thema «Bevölkerungsstatistik und individuelle Prognose»: Beurteilen Sie die Übertragung von Bevölkerungsstatistik auf Einzelpersonen.",
+      "options": [
+        {
+          "text": "Die durchschnittliche Überlebenszeit legt den Sterbetag jeder behandelten Person fest.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine statistische Beobachtung eines Gruppenunterschieds beweist für sich die Ursache dieses Unterschieds.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Medizinische Statistik kann Fragen zu Diagnostik, Therapie und Prävention untersuchen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Gruppenmittel beschreibt eine durchschnittliche Erwartung, von der Einzelpersonen abweichen können.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Mittelwert ist keine deterministische Individualprognose. B: Auch andere Erklärungen wie unterschiedliche Gruppenzusammensetzung sind möglich. C: Diese Themen werden anhand von Daten geeigneter Gruppen bearbeitet. D: Die Verteilung enthält individuelle Unterschiede. Quelle: Originalunterlagen, PDF-S. 12–13,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Gruppendenken"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gruppendenken"
+      ],
+      "questionGoal": "Gruppendenken",
+      "structuredExplanation": {
+        "coreIdea": "Gruppendenken",
+        "correctReasoning": "Diese Themen werden anhand von Daten geeigneter Gruppen bearbeitet. Die Verteilung enthält individuelle Unterschiede.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Mittelwert ist keine deterministische Individualprognose.",
+          "B": "Auch andere Erklärungen wie unterschiedliche Gruppenzusammensetzung sind möglich.",
+          "C": "Diese Themen werden anhand von Daten geeigneter Gruppen bearbeitet.",
+          "D": "Die Verteilung enthält individuelle Unterschiede."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Unter 5000 Männern einer definierten Altersgruppe sterben in einem Jahr 100. Welche Jahresmortalität hat diese Gruppe pro 1000 Männer derselben Altersgruppe?",
+      "options": [
+        {
+          "text": "20 pro 1000",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "100 pro 1000",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "50 pro 1000",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2 pro 1000",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "500 pro 1000",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 100 geteilt durch 5000 ergibt 0,02; pro 1000 sind das 20. B: Die Todeszahl wurde ohne korrekten Bevölkerungsbezug übernommen. C: Das Ergebnis folgt nicht aus 100 geteilt durch 5000. D: Dieser Wert ist um den Faktor zehn zu klein. E: Dies würde die Hälfte der Gruppe betreffen und passt nicht zu 100 von 5000. Quelle: Originalunterlagen, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Altersspezifische Rate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Altersspezifische Rate"
+      ],
+      "questionGoal": "Altersspezifische Rate",
+      "structuredExplanation": {
+        "coreIdea": "Altersspezifische Rate",
+        "correctReasoning": "100 geteilt durch 5000 ergibt 0,02; pro 1000 sind das 20.",
+        "wrongAnswerExplanations": {
+          "B": "Die Todeszahl wurde ohne korrekten Bevölkerungsbezug übernommen.",
+          "C": "Das Ergebnis folgt nicht aus 100 geteilt durch 5000.",
+          "D": "Dieser Wert ist um den Faktor zehn zu klein.",
+          "E": "Dies würde die Hälfte der Gruppe betreffen und passt nicht zu 100 von 5000."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "In einer Bevölkerung steigt der Anteil älterer Personen. Die Sterberaten jeder einzelnen Altersklasse bleiben gleich. Beurteilen Sie die möglichen Folgen.",
+      "options": [
+        {
+          "text": "Die rohe Gesamtsterberate kann steigen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein solcher Anstieg beweist allein eine Verschlechterung der medizinischen Behandlung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die veränderte Zusammensetzung muss bei der Interpretation des Gesamtwerts berücksichtigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede altersspezifische Sterberate muss deshalb ebenfalls steigen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Altersklassen mit höherer Sterblichkeit erhalten ein grösseres Gewicht. B: Die Altersverschiebung liefert bereits eine andere mögliche Erklärung. C: Ein Kompositionseffekt ist von einer Änderung innerhalb der Altersklassen zu unterscheiden. D: Dies widerspricht der ausdrücklich konstanten Rate in jeder Altersklasse. Quelle: Originalunterlagen, PDF-S. 23,32–34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Alterung und rohe Rate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alterung und rohe Rate"
+      ],
+      "questionGoal": "Alterung und rohe Rate",
+      "structuredExplanation": {
+        "coreIdea": "Alterung und rohe Rate",
+        "correctReasoning": "Altersklassen mit höherer Sterblichkeit erhalten ein grösseres Gewicht. Ein Kompositionseffekt ist von einer Änderung innerhalb der Altersklassen zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "Altersklassen mit höherer Sterblichkeit erhalten ein grösseres Gewicht.",
+          "B": "Die Altersverschiebung liefert bereits eine andere mögliche Erklärung.",
+          "C": "Ein Kompositionseffekt ist von einer Änderung innerhalb der Altersklassen zu unterscheiden.",
+          "D": "Dies widerspricht der ausdrücklich konstanten Rate in jeder Altersklasse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Zwei hypothetische Bevölkerungen haben ab dem fünften Geburtstag identische Sterberaten. In Bevölkerung B sterben deutlich weniger Kinder vor diesem Alter. Welche Folge ist für die Lebenserwartung bei Geburt zu erwarten?",
+      "options": [
+        {
+          "text": "Sie ist in B niedriger, weil mehr Menschen alt werden können.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie entspricht in beiden Bevölkerungen exakt dem fünften Geburtstag.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie muss gleich sein, weil nur die Sterblichkeit Erwachsener zählt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie lässt sich definitionsgemäss nur aus der Einwanderung berechnen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie ist in B höher.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Erreichen höherer Altersstufen verringert die erwartete Lebenszeit nicht. B: Ein überlebtes Mindestalter bestimmt keine gesamte mittlere Lebensdauer. C: Auch frühe Todesfälle gehen in die Lebenserwartung bei Geburt ein. D: Die Sterbetafel basiert auf altersbezogenen Sterblichkeitsverhältnissen. E: Mehr Kinder erreichen die späteren Lebensjahre, sodass die Fläche unter der Überlebenskurve zunimmt. Quelle: Originalunterlagen, PDF-S. 42–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Frühe Todesfälle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Frühe Todesfälle"
+      ],
+      "questionGoal": "Frühe Todesfälle",
+      "structuredExplanation": {
+        "coreIdea": "Frühe Todesfälle",
+        "correctReasoning": "Mehr Kinder erreichen die späteren Lebensjahre, sodass die Fläche unter der Überlebenskurve zunimmt.",
+        "wrongAnswerExplanations": {
+          "A": "Das Erreichen höherer Altersstufen verringert die erwartete Lebenszeit nicht.",
+          "B": "Ein überlebtes Mindestalter bestimmt keine gesamte mittlere Lebensdauer.",
+          "C": "Auch frühe Todesfälle gehen in die Lebenserwartung bei Geburt ein.",
+          "D": "Die Sterbetafel basiert auf altersbezogenen Sterblichkeitsverhältnissen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs01_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS01",
+      "stem": "Beurteilen Sie die Vergleichbarkeit und Interpretation von Mortalitäts- und Lebenserwartungszeitreihen.",
+      "options": [
+        {
+          "text": "Ein Trend kann ohne Beachtung der Achsenskalierung vollständig interpretiert werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Pandemieausschlag in einer Zeitreihe kann trotz längerfristig steigender Lebenserwartung auftreten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle Veränderungen einer Zeitreihe lassen sich allein durch einen einzigen Indikator kausal erklären.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Aussage über aktuelle Mortalitätsunterschiede benötigt zeitlich passende und vergleichbar definierte Raten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Lineare und logarithmische Achsen stellen Abstände unterschiedlich dar. B: Kurzfristige und langfristige Entwicklungen sind zu unterscheiden. C: Mehrere Einflüsse und die Datenentstehung müssen berücksichtigt werden. D: Zeitbezug und Definition beeinflussen die Vergleichbarkeit. Quelle: Originalunterlagen, PDF-S. 18–28,38–49.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS01",
+        "Zeitbezug"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitbezug"
+      ],
+      "questionGoal": "Zeitbezug",
+      "structuredExplanation": {
+        "coreIdea": "Zeitbezug",
+        "correctReasoning": "Kurzfristige und langfristige Entwicklungen sind zu unterscheiden. Zeitbezug und Definition beeinflussen die Vergleichbarkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Lineare und logarithmische Achsen stellen Abstände unterschiedlich dar.",
+          "B": "Kurzfristige und langfristige Entwicklungen sind zu unterscheiden.",
+          "C": "Mehrere Einflüsse und die Datenentstehung müssen berücksichtigt werden.",
+          "D": "Zeitbezug und Definition beeinflussen die Vergleichbarkeit."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1309 @@
+{
+  "id": "assessment_j1_s1_block1_kvb16_20261102",
+  "lectureCode": "KVB16",
+  "title": "Zelltod und Gewebehomöostase II",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB16 - Zelltod 2. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Zuordnung nach Originaldatei KVB16; Folienkopf KVB15 ist ein Nummerierungsrest. Keine feste universelle Caspasenzahl, keine Gleichsetzung jeder NET-Freisetzung mit Zelltod.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Innere und äussere Auslöser sowie p53 und Telomerfunktionen einordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "BCL-2-Familie, Mitochondrien und Caspasekaskade erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Intrinsische und extrinsische Apoptose unterscheiden und verknüpfen."
+    },
+    {
+      "id": "lo4",
+      "text": "Andere regulierte Zelltodformen sowie Seneszenz und Autophagie unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb16_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Nach DNA-Schädigung wird p53 aktiviert. Welche Antwort ist grundsätzlich möglich, ohne dass jede betroffene Zelle sofort sterben muss?",
+      "options": [
+        {
+          "text": "p53 muss den Schaden selbst als vollständiges Reparaturenzym direkt beseitigen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Automatische Verdopplung aller geschädigten Chromosomen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dauerhafte Unterdrückung sämtlicher DNA-Schadensantworten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Obligate sofortige Membranruptur in jeder Zelle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zellzyklusarrest mit Gelegenheit zur Reparatur.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: p53 reguliert die Schadensantwort, ist aber kein universelles direktes Reparaturenzym. B: Das wäre keine Schutzreaktion auf den Schaden. C: p53 ist ein zentraler Bestandteil solcher Antworten. D: Die Antwort ist kontextabhängig und nicht immer Zelltod. E: p53 kann je nach Kontext Reparatur, Seneszenz oder Apoptose fördern. Quelle: Originalunterlagen, PDF-S. 4–7,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "p53-Reaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "p53-Reaktion"
+      ],
+      "questionGoal": "p53-Reaktion",
+      "structuredExplanation": {
+        "coreIdea": "p53-Reaktion",
+        "correctReasoning": "p53 kann je nach Kontext Reparatur, Seneszenz oder Apoptose fördern.",
+        "wrongAnswerExplanations": {
+          "A": "p53 reguliert die Schadensantwort, ist aber kein universelles direktes Reparaturenzym.",
+          "B": "Das wäre keine Schutzreaktion auf den Schaden.",
+          "C": "p53 ist ein zentraler Bestandteil solcher Antworten.",
+          "D": "Die Antwort ist kontextabhängig und nicht immer Zelltod."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welche Funktion besitzt Telomerase bei geeigneten Zellen?",
+      "options": [
+        {
+          "text": "Sie aktiviert unmittelbar die Exekutionscaspasen durch proteolytische Spaltung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie verhindert unabhängig von allen anderen Schäden jeden Zelltod.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie entfernt ausnahmslos alle Mutationen im gesamten Genom.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie spaltet Telomere vor jeder Mitose vollständig ab.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie trägt zum Erhalt der repetitiven Chromosomenenden bei.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Telomerase verlängert Telomere; sie ist keine Caspase-aktivierende Protease. B: Telomerase schützt nicht vor sämtlichen Zelltodauslösern. C: Sie ist kein universelles DNA-Reparatursystem. D: Ihr Beitrag betrifft deren Verlängerung beziehungsweise Erhalt. E: Ihre Aktivität kann replikationsbedingte Telomerverkürzung ausgleichen. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Telomerase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Telomerase"
+      ],
+      "questionGoal": "Telomerase",
+      "structuredExplanation": {
+        "coreIdea": "Telomerase",
+        "correctReasoning": "Ihre Aktivität kann replikationsbedingte Telomerverkürzung ausgleichen.",
+        "wrongAnswerExplanations": {
+          "A": "Telomerase verlängert Telomere; sie ist keine Caspase-aktivierende Protease.",
+          "B": "Telomerase schützt nicht vor sämtlichen Zelltodauslösern.",
+          "C": "Sie ist kein universelles DNA-Reparatursystem.",
+          "D": "Ihr Beitrag betrifft deren Verlängerung beziehungsweise Erhalt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welche Aussage beschreibt Caspasen am besten?",
+      "options": [
+        {
+          "text": "Transporter für Cytochrom c durch die innere Mitochondrienmembran.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kinasen, die Apoptosesubstrate durch Phosphorylierung an Aspartat spalten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Proteasen mit katalytischem Cystein, die bestimmte Substrate nach Aspartatresten spalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Lipasen, die Phosphatidylserin synthetisieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nukleasen, die DNA ausschliesslich an Adenin schneiden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie sind Proteasen der Signalkaskade und Exekution. B: Caspasen hydrolysieren Peptidbindungen; sie sind keine solchen Kinasen. C: Name und Reaktionsspezifität verbinden Cystein und Aspartat. D: Das ist keine Caspasefunktion. E: Caspasen spalten Proteine, nicht unmittelbar DNA. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Caspasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Caspasen"
+      ],
+      "questionGoal": "Caspasen",
+      "structuredExplanation": {
+        "coreIdea": "Caspasen",
+        "correctReasoning": "Name und Reaktionsspezifität verbinden Cystein und Aspartat.",
+        "wrongAnswerExplanations": {
+          "A": "Sie sind Proteasen der Signalkaskade und Exekution.",
+          "B": "Caspasen hydrolysieren Peptidbindungen; sie sind keine solchen Kinasen.",
+          "D": "Das ist keine Caspasefunktion.",
+          "E": "Caspasen spalten Proteine, nicht unmittelbar DNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Wie kann Caspaseaktivität eine apoptotische DNA-Fragmentierung ermöglichen?",
+      "options": [
+        {
+          "text": "Caspase 3 muss zunächst jedes Telomer verlängern, bevor CAD DNA abbauen kann.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "CAD hemmt aktivierte Caspasen und verhindert dadurch jede DNA-Spaltung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ICAD aktiviert CAD durch feste Bindung, die während des DNA-Abbaus ungespalten erhalten bleiben muss.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Caspase 3 spaltet DNA direkt, ohne dass eine Nuklease beteiligt ist.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Spaltung des CAD-Inhibitors ICAD setzt die Nukleasefunktion frei.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Telomerverlängerung ist keine notwendige Voraussetzung der CAD-Aktivierung. B: CAD ist die ausführende Nuklease nach Aufhebung ihrer Hemmung. C: ICAD hemmt CAD; seine Spaltung setzt die Nukleasefunktion frei. D: Caspase 3 wirkt als Protease und aktiviert CAD indirekt. E: Die Protease aktiviert indirekt den DNA-Abbau. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "CAD-Aktivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CAD-Aktivierung"
+      ],
+      "questionGoal": "CAD-Aktivierung",
+      "structuredExplanation": {
+        "coreIdea": "CAD-Aktivierung",
+        "correctReasoning": "Die Protease aktiviert indirekt den DNA-Abbau.",
+        "wrongAnswerExplanations": {
+          "A": "Telomerverlängerung ist keine notwendige Voraussetzung der CAD-Aktivierung.",
+          "B": "CAD ist die ausführende Nuklease nach Aufhebung ihrer Hemmung.",
+          "C": "ICAD hemmt CAD; seine Spaltung setzt die Nukleasefunktion frei.",
+          "D": "Caspase 3 wirkt als Protease und aktiviert CAD indirekt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welcher Vorgang steht im Zentrum der mitochondrialen Apoptoseintegration?",
+      "options": [
+        {
+          "text": "Freisetzung von Cytochrom c aus dem Golgi-Lumen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die ausschliessliche Erhöhung der Permeabilität der Plasmamembran definiert den mitochondrialen Integrationsschritt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Permeabilisierung der äusseren Mitochondrienmembran durch proapoptotische Effektoren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die vollständige Neusynthese aller Exekutionscaspasen muss vor jedem mitochondrialen Signal abgeschlossen werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Verschluss sämtlicher Kernporen durch Telomerase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Cytochrom c stammt hier aus Mitochondrien. B: MOMP bezieht sich auf die äussere Mitochondrienmembran. C: Dadurch können intermembranäre Proteine ins Cytosol gelangen. D: Viele Komponenten liegen bereits als inaktive Vorstufen vor. E: Das beschreibt den mitochondrialen Weg nicht. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "MOMP"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "MOMP"
+      ],
+      "questionGoal": "MOMP",
+      "structuredExplanation": {
+        "coreIdea": "MOMP",
+        "correctReasoning": "Dadurch können intermembranäre Proteine ins Cytosol gelangen.",
+        "wrongAnswerExplanations": {
+          "A": "Cytochrom c stammt hier aus Mitochondrien.",
+          "B": "MOMP bezieht sich auf die äussere Mitochondrienmembran.",
+          "D": "Viele Komponenten liegen bereits als inaktive Vorstufen vor.",
+          "E": "Das beschreibt den mitochondrialen Weg nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Eine veränderte Zelle produziert sehr viel antiapoptotisches BCL-2. Welche Folge passt zum dargestellten Modell?",
+      "options": [
+        {
+          "text": "Cytochrom c wird unabhängig von jedem Signal ständig maximal freigesetzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Zelle kann keinerlei Stoffwechsel mehr betreiben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die BCL-2-Zunahme aktiviert BAX unabhängig von jedem weiteren Signal maximal.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede Wachstumsfaktorbindung führt dadurch sofort zur Nekrose.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Schwelle zur mitochondrialen Apoptose kann steigen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das widerspricht der antiapoptotischen Wirkung. B: Die Veränderung betrifft vor allem die Zelltodregulation. C: Anti-apoptotisches BCL-2 wirkt im dargestellten Modell den proapoptotischen Effektoren entgegen. D: BCL-2 wirkt im Modell antiapoptotisch. E: BCL-2 wirkt proapoptotischen BCL-2-Familienmitgliedern entgegen. Quelle: Originalunterlagen, PDF-S. 12–13,19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "BCL-2-Überexpression"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "BCL-2-Überexpression"
+      ],
+      "questionGoal": "BCL-2-Überexpression",
+      "structuredExplanation": {
+        "coreIdea": "BCL-2-Überexpression",
+        "correctReasoning": "BCL-2 wirkt proapoptotischen BCL-2-Familienmitgliedern entgegen.",
+        "wrongAnswerExplanations": {
+          "A": "Das widerspricht der antiapoptotischen Wirkung.",
+          "B": "Die Veränderung betrifft vor allem die Zelltodregulation.",
+          "C": "Anti-apoptotisches BCL-2 wirkt im dargestellten Modell den proapoptotischen Effektoren entgegen.",
+          "D": "BCL-2 wirkt im Modell antiapoptotisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welche Reaktionsfolge passt zum Apoptosom?",
+      "options": [
+        {
+          "text": "Procaspase 9 aktiviert sich ausschliesslich nach Sekretion in den Extrazellulärraum.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cytochrom c bindet an Apaf-1 und ermöglicht die Aktivierung von Initiatorcaspase 9.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Apaf-1 transportiert NADH durch Kernporen und aktiviert Caspase 1.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Anti-apoptotisches BCL-2 bildet nach Bindung von Cytochrom c selbst das Caspase-9-Aktivierungsrad.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Cytochrom c bindet an Fas und aktiviert direkt Telomerase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Initiatorcaspase wird im intrazellulären Apoptosomweg aktiviert. B: Der Komplex verbindet mitochondriale Freisetzung und Caspasekaskade. C: Dies beschreibt den Apoptosomweg nicht. D: Das Apoptosom beruht auf Apaf-1; BCL-2 reguliert vor allem die mitochondriale Schwelle. E: Fas ist ein Todesrezeptor, nicht der Apaf-1-Komplex. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Apoptosom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Apoptosom"
+      ],
+      "questionGoal": "Apoptosom",
+      "structuredExplanation": {
+        "coreIdea": "Apoptosom",
+        "correctReasoning": "Der Komplex verbindet mitochondriale Freisetzung und Caspasekaskade.",
+        "wrongAnswerExplanations": {
+          "A": "Die Initiatorcaspase wird im intrazellulären Apoptosomweg aktiviert.",
+          "C": "Dies beschreibt den Apoptosomweg nicht.",
+          "D": "Das Apoptosom beruht auf Apaf-1; BCL-2 reguliert vor allem die mitochondriale Schwelle.",
+          "E": "Fas ist ein Todesrezeptor, nicht der Apaf-1-Komplex."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Fas-Ligand einer Immunzelle bindet an Fas auf einer Zielzelle. Welche frühe Signalkomponente passt am besten?",
+      "options": [
+        {
+          "text": "Direkte Verlängerung sämtlicher Telomere durch Fas.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Obligate erste Bindung von Apaf-1 an einen extrazellulären Antikörper.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fas löst ausschliesslich eine reversible Ruhephase ohne mögliche Caspaseaktivierung aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aktivierung der ATP-Synthase durch Bindung an Cytochrom c.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Aktivierung von Initiatorcaspase 8 über den Todesrezeptor-Signalweg.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Fas ist ein Rezeptor, keine Telomerase. B: Apaf-1 wirkt intrazellulär im mitochondrialen Weg. C: Der Todesrezeptor kann die Caspasekaskade aktivieren. D: Das ist kein Fas-Signalmechanismus. E: Dies kennzeichnet die extrinsische Apoptose. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Extrinsischer Weg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Extrinsischer Weg"
+      ],
+      "questionGoal": "Extrinsischer Weg",
+      "structuredExplanation": {
+        "coreIdea": "Extrinsischer Weg",
+        "correctReasoning": "Dies kennzeichnet die extrinsische Apoptose.",
+        "wrongAnswerExplanations": {
+          "A": "Fas ist ein Rezeptor, keine Telomerase.",
+          "B": "Apaf-1 wirkt intrazellulär im mitochondrialen Weg.",
+          "C": "Der Todesrezeptor kann die Caspasekaskade aktivieren.",
+          "D": "Das ist kein Fas-Signalmechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welche Aussage über intrinsische und extrinsische Apoptose ist richtig?",
+      "options": [
+        {
+          "text": "Der intrinsische Weg beginnt definitionsgemäss mit Fas-Ligand ausserhalb der Zelle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Todesrezeptorsignale können auch den mitochondrialen Weg einbeziehen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der extrinsische Weg benötigt grundsätzlich keine zellulären Proteine.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Cytochrom c wirkt im extrinsischen Signalweg ausschliesslich als Hormon im Blut.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die beiden Wege haben niemals gemeinsame Effektoren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Intrinsische Auslöser sind interne Stress- und Schadenssignale. B: Die Wege sind funktionell verknüpft und nicht vollständig isoliert. C: Er nutzt Rezeptor- und Caspasekomponenten. D: Seine proapoptotische Funktion liegt intrazellulär. E: Sie können auf gemeinsame Exekutionscaspasen zulaufen. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Wege verknüpfen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wege verknüpfen"
+      ],
+      "questionGoal": "Wege verknüpfen",
+      "structuredExplanation": {
+        "coreIdea": "Wege verknüpfen",
+        "correctReasoning": "Die Wege sind funktionell verknüpft und nicht vollständig isoliert.",
+        "wrongAnswerExplanations": {
+          "A": "Intrinsische Auslöser sind interne Stress- und Schadenssignale.",
+          "C": "Er nutzt Rezeptor- und Caspasekomponenten.",
+          "D": "Seine proapoptotische Funktion liegt intrazellulär.",
+          "E": "Sie können auf gemeinsame Exekutionscaspasen zulaufen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welcher Mechanismus kennzeichnet Ferroptose?",
+      "options": [
+        {
+          "text": "Ausschliesslich CAD-vermittelte DNA-Leiterbildung nach Caspase 3.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydrolyse geschädigter Organellen bei zwingend weiterlebender Zelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eisenabhängige Anhäufung von Lipidperoxiden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Verlängerung von Telomeren durch Telomerase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vorübergehender Zellzyklusarrest ohne Zelluntergang.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist ein Merkmal des apoptotischen Programms. B: Das beschreibt eher eine Recyclingfunktion. C: Dies unterscheidet sie mechanistisch von klassischer Apoptose. D: Das ist eine Funktion des Chromosomenerhalts. E: Das beschreibt keinen Zelltod. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Ferroptose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ferroptose"
+      ],
+      "questionGoal": "Ferroptose",
+      "structuredExplanation": {
+        "coreIdea": "Ferroptose",
+        "correctReasoning": "Dies unterscheidet sie mechanistisch von klassischer Apoptose.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist ein Merkmal des apoptotischen Programms.",
+          "B": "Das beschreibt eher eine Recyclingfunktion.",
+          "D": "Das ist eine Funktion des Chromosomenerhalts.",
+          "E": "Das beschreibt keinen Zelltod."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Eine geschädigte Zelle bleibt stoffwechselaktiv, teilt sich aber dauerhaft nicht weiter und gibt Signalmoleküle an die Umgebung ab. Welche Einordnung passt?",
+      "options": [
+        {
+          "text": "Abgeschlossene Apoptose mit bereits verdautem Zellkörper.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich kurzfristige Pause während jeder normalen Mitose.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zelluläre Seneszenz mit sekretorischem Phänotyp.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Obligate akute Membranruptur.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Normale ungebremste Proliferation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine beseitigte Zelle kann nicht in dieser Weise stoffwechselaktiv bleiben. B: Seneszenz geht über einen normalen vorübergehenden Zyklusabschnitt hinaus. C: Wachstumsarrest und mögliche SASP-Signale gehören dazu. D: Diese ist nicht das definierende Merkmal der Seneszenz. E: Die Teilung wurde gerade eingestellt. Quelle: Originalunterlagen, PDF-S. 23–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Seneszenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Seneszenz"
+      ],
+      "questionGoal": "Seneszenz",
+      "structuredExplanation": {
+        "coreIdea": "Seneszenz",
+        "correctReasoning": "Wachstumsarrest und mögliche SASP-Signale gehören dazu.",
+        "wrongAnswerExplanations": {
+          "A": "Eine beseitigte Zelle kann nicht in dieser Weise stoffwechselaktiv bleiben.",
+          "B": "Seneszenz geht über einen normalen vorübergehenden Zyklusabschnitt hinaus.",
+          "D": "Diese ist nicht das definierende Merkmal der Seneszenz.",
+          "E": "Die Teilung wurde gerade eingestellt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Welche Funktion erklärt, weshalb Autophagie das Überleben gestresster Zellen unterstützen kann?",
+      "options": [
+        {
+          "text": "Abbau beschädigter Bestandteile und Rückgewinnung nutzbarer Bausteine.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Verhinderung jedes Proteinabbaus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich sofortige vollständige Zerstörung jeder autophagischen Zelle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Direkte Verdopplung des Genoms ohne Substrate.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Abbau beschädigter Organellen erfolgt ausschliesslich durch direkte Aufnahme in den engen Proteasomkanal.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Qualitätskontrolle und Recycling können Ressourcen bereitstellen. B: Autophagie ermöglicht gerade einen Teil des zellulären Abbaus. C: Autophagie ist nicht gleichbedeutend mit Zelltod. D: Dies ist keine Recyclingfunktion. E: Autophagie ermöglicht die Zuführung umfangreicherer Fracht zum lysosomalen Abbau. Quelle: Originalunterlagen, PDF-S. 27–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Autophagie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autophagie"
+      ],
+      "questionGoal": "Autophagie",
+      "structuredExplanation": {
+        "coreIdea": "Autophagie",
+        "correctReasoning": "Qualitätskontrolle und Recycling können Ressourcen bereitstellen.",
+        "wrongAnswerExplanations": {
+          "B": "Autophagie ermöglicht gerade einen Teil des zellulären Abbaus.",
+          "C": "Autophagie ist nicht gleichbedeutend mit Zelltod.",
+          "D": "Dies ist keine Recyclingfunktion.",
+          "E": "Autophagie ermöglicht die Zuführung umfangreicherer Fracht zum lysosomalen Abbau."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Eine Zelle verarbeitet DNA-Schäden und veränderte Überlebenssignale. Welche Aussagen zu möglichen Reaktionen stimmen?",
+      "options": [
+        {
+          "text": "Erhöhte Telomeraseaktivität beseitigt jede mögliche Ursache von DNA-Schäden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Entzug von Wachstums- oder Überlebenssignalen kann Apoptose begünstigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ausgeprägte DNA-Schäden können Apoptose auslösen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede Aktivierung von p53 erzwingt unabhängig vom Kontext sofort Zelltod.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie betrifft vor allem Telomererhalt und ist kein universelles Reparatursystem. B: Zu wenig Signal ist ebenfalls ein möglicher Auslöser. C: Interne Schäden können proapoptotische Signale aktivieren. D: Arrest und Reparatur sind weitere Möglichkeiten. Quelle: Originalunterlagen, PDF-S. 3–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Auslöser und Schutz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Auslöser und Schutz"
+      ],
+      "questionGoal": "Auslöser und Schutz",
+      "structuredExplanation": {
+        "coreIdea": "Auslöser und Schutz",
+        "correctReasoning": "Zu wenig Signal ist ebenfalls ein möglicher Auslöser. Interne Schäden können proapoptotische Signale aktivieren.",
+        "wrongAnswerExplanations": {
+          "A": "Sie betrifft vor allem Telomererhalt und ist kein universelles Reparatursystem.",
+          "B": "Zu wenig Signal ist ebenfalls ein möglicher Auslöser.",
+          "C": "Interne Schäden können proapoptotische Signale aktivieren.",
+          "D": "Arrest und Reparatur sind weitere Möglichkeiten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Inaktive Caspasevorstufen werden zu einer Kaskade aktiviert. Welche Aussagen zu Wirkung und Substraten stimmen?",
+      "options": [
+        {
+          "text": "Inaktive Vorstufen erlauben eine rasche Aktivierung vorhandener Komponenten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Spaltung von Strukturproteinen kann zur apoptotischen Morphologie beitragen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle Caspasen haben ausschliesslich apoptotische Funktionen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die DNA-Spaltung durch CAD beweist eine direkte Nukleaseaktivität der Caspasen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Maschinerie muss nicht vollständig neu synthetisiert werden. B: Cytoskelett und Kernlamina gehören zu möglichen Substraten. C: Einige Caspasen wirken auch in Entzündungsprozessen. D: Caspasen aktivieren CAD indirekt über ICAD-Spaltung. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Caspasekaskade"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Caspasekaskade"
+      ],
+      "questionGoal": "Caspasekaskade",
+      "structuredExplanation": {
+        "coreIdea": "Caspasekaskade",
+        "correctReasoning": "Die Maschinerie muss nicht vollständig neu synthetisiert werden. Cytoskelett und Kernlamina gehören zu möglichen Substraten.",
+        "wrongAnswerExplanations": {
+          "A": "Die Maschinerie muss nicht vollständig neu synthetisiert werden.",
+          "B": "Cytoskelett und Kernlamina gehören zu möglichen Substraten.",
+          "C": "Einige Caspasen wirken auch in Entzündungsprozessen.",
+          "D": "Caspasen aktivieren CAD indirekt über ICAD-Spaltung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Die Balance pro- und antiapoptotischer BCL-2-Familienmitglieder wird verändert. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jedes Protein mit BCL-2-Verwandtschaft hemmt grundsätzlich Zelltod.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Familie umfasst pro- und antiapoptotische Mitglieder.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "BH3-only-Proteine sind definitionsgemäss die ATP-Synthasen der Atmungskette.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "BAX-artige Effektoren fördern die Permeabilisierung der äusseren Mitochondrienmembran.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: BAX und andere Mitglieder wirken proapoptotisch. B: Ihre Balance beeinflusst die Apoptoseschwelle. C: Sie gehören zur regulatorischen BCL-2-Familie. D: Dies ermöglicht die Freisetzung proapoptotischer Proteine. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "BCL-2-Familie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "BCL-2-Familie"
+      ],
+      "questionGoal": "BCL-2-Familie",
+      "structuredExplanation": {
+        "coreIdea": "BCL-2-Familie",
+        "correctReasoning": "Ihre Balance beeinflusst die Apoptoseschwelle. Dies ermöglicht die Freisetzung proapoptotischer Proteine.",
+        "wrongAnswerExplanations": {
+          "A": "BAX und andere Mitglieder wirken proapoptotisch.",
+          "B": "Ihre Balance beeinflusst die Apoptoseschwelle.",
+          "C": "Sie gehören zur regulatorischen BCL-2-Familie.",
+          "D": "Dies ermöglicht die Freisetzung proapoptotischer Proteine."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Cytochrom c gelangt aus dem Mitochondrium ins Cytosol. Welche Aussagen zu Lokalisation und Funktion stimmen?",
+      "options": [
+        {
+          "text": "Cytochrom c hat im Mitochondrium eine Funktion im Elektronentransport.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Apoptose betrifft ausschliesslich Vorgänge ausserhalb der Zelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nach Freisetzung ins Cytosol kann Cytochrom c die Apoptosombildung fördern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Apaf-1 muss zur Aktivierung zwingend in den extrazellulären Raum ausgeschieden werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Funktion hängt auch von der Lokalisation ab. B: Cytosol, Kern und Mitochondrien wirken zusammen. C: Es bindet an Apaf-1. D: Die Apoptosombildung ist ein intrazellulärer Vorgang. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Kompartimente"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompartimente"
+      ],
+      "questionGoal": "Kompartimente",
+      "structuredExplanation": {
+        "coreIdea": "Kompartimente",
+        "correctReasoning": "Seine Funktion hängt auch von der Lokalisation ab. Es bindet an Apaf-1.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Funktion hängt auch von der Lokalisation ab.",
+          "B": "Cytosol, Kern und Mitochondrien wirken zusammen.",
+          "C": "Es bindet an Apaf-1.",
+          "D": "Die Apoptosombildung ist ein intrazellulärer Vorgang."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Eine zytotoxische T-Zelle löst den Tod einer Zielzelle aus. Welche Aussagen zu den Mechanismen stimmen?",
+      "options": [
+        {
+          "text": "Extrinsische Auslösung bedeutet, dass die Zielzelle keine eigene Exekutionsmaschinerie nutzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zytotoxische T-Zellen besitzen zusätzlich Perforin-/Granzymmechanismen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "FasL/Fas kann zur Elimination einer Zielzelle beitragen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Kontakt mit einer T-Zelle führt zwangsläufig bei jeder gesunden Zelle zum Tod.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der äussere Impuls aktiviert zelleigene Komponenten. B: Die Folien zeigen mehrere Tötungsmechanismen. C: Die Rezeptorbindung initiiert einen extrinsischen Weg. D: Zielerkennung und Aktivierungszustand sind entscheidend. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Immunologische Auslösung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Immunologische Auslösung"
+      ],
+      "questionGoal": "Immunologische Auslösung",
+      "structuredExplanation": {
+        "coreIdea": "Immunologische Auslösung",
+        "correctReasoning": "Die Folien zeigen mehrere Tötungsmechanismen. Die Rezeptorbindung initiiert einen extrinsischen Weg.",
+        "wrongAnswerExplanations": {
+          "A": "Der äussere Impuls aktiviert zelleigene Komponenten.",
+          "B": "Die Folien zeigen mehrere Tötungsmechanismen.",
+          "C": "Die Rezeptorbindung initiiert einen extrinsischen Weg.",
+          "D": "Zielerkennung und Aktivierungszustand sind entscheidend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Verschiedene regulierte Zelltodformen werden unterschieden. Welche mechanistischen Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Pyroptose ist typischerweise mit entzündlichen Mechanismen verknüpft.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nekroptose bezeichnet ausschliesslich eine zufällige thermische Zerstörung ohne Regulation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Freisetzung neutrophiler extrazellulärer Netze beweist zwingend den Tod der freisetzenden Zelle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lipidperoxidation ist für Ferroptose zentral.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Inflammasom-abhängige Prozesse können sie auslösen. B: Sie ist eine regulierte Form nekrotischen Zelltods. C: NET-Freisetzung und Zelltod sind nicht in jeder Situation identisch. D: Eisenabhängiger oxidativer Lipidschaden ist charakteristisch. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Weitere Zelltodformen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Weitere Zelltodformen"
+      ],
+      "questionGoal": "Weitere Zelltodformen",
+      "structuredExplanation": {
+        "coreIdea": "Weitere Zelltodformen",
+        "correctReasoning": "Inflammasom-abhängige Prozesse können sie auslösen. Eisenabhängiger oxidativer Lipidschaden ist charakteristisch.",
+        "wrongAnswerExplanations": {
+          "A": "Inflammasom-abhängige Prozesse können sie auslösen.",
+          "B": "Sie ist eine regulierte Form nekrotischen Zelltods.",
+          "C": "NET-Freisetzung und Zelltod sind nicht in jeder Situation identisch.",
+          "D": "Eisenabhängiger oxidativer Lipidschaden ist charakteristisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Eine seneszente Zellpopulation beeinflusst ihre Umgebung. Welche Aussagen zu Zustand und Folgen stimmen?",
+      "options": [
+        {
+          "text": "Wachstumsarrest und erhöhte Proliferationsrate bedeuten dasselbe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Seneszenz ist mit bereits vollendeter lysosomaler Verdauung der gesamten Zelle gleichzusetzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Seneszenz kann sowohl physiologisch als auch bei Erkrankungen relevant sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Seneszente Zellen können benachbarte Zellen durch sekretierte Faktoren beeinflussen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Wachstumsarrest begrenzt die Vermehrung. B: Seneszente Zellen können weiterleben und stoffwechselaktiv sein. C: Entwicklung, Reparatur und Pathologie sind mögliche Kontexte. D: SASP ist eine mögliche Form dieses Einflusses. Quelle: Originalunterlagen, PDF-S. 23–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Seneszente Umgebung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Seneszente Umgebung"
+      ],
+      "questionGoal": "Seneszente Umgebung",
+      "structuredExplanation": {
+        "coreIdea": "Seneszente Umgebung",
+        "correctReasoning": "Entwicklung, Reparatur und Pathologie sind mögliche Kontexte. SASP ist eine mögliche Form dieses Einflusses.",
+        "wrongAnswerExplanations": {
+          "A": "Wachstumsarrest begrenzt die Vermehrung.",
+          "B": "Seneszente Zellen können weiterleben und stoffwechselaktiv sein.",
+          "C": "Entwicklung, Reparatur und Pathologie sind mögliche Kontexte.",
+          "D": "SASP ist eine mögliche Form dieses Einflusses."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb16_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB16",
+      "stem": "Apoptose und Autophagie verändern Überleben und Qualitätskontrolle einer Zelle. Welche Aussagen zu Krankheitsfolgen stimmen?",
+      "options": [
+        {
+          "text": "Ein nützlicher Homöostasemechanismus kann bei Fehlregulation niemals schädlich werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Autophagiedefekte können die Anhäufung beschädigter Zellbestandteile begünstigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Begriffe Apoptose, Seneszenz und Autophagie bezeichnen denselben Endzustand.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine erhöhte antiapoptotische Aktivität kann veränderten Zellen einen Überlebensvorteil geben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nutzen und Schaden hängen vom Kontext ab. B: Eine gestörte Qualitätskontrolle kann pathologische Folgen haben. C: Sie betreffen unterschiedliche, miteinander verknüpfte Prozesse. D: Dies ist für Tumorbiologie relevant. Quelle: Originalunterlagen, PDF-S. 19,27–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB16",
+        "Homöostase und Krankheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Homöostase und Krankheit"
+      ],
+      "questionGoal": "Homöostase und Krankheit",
+      "structuredExplanation": {
+        "coreIdea": "Homöostase und Krankheit",
+        "correctReasoning": "Eine gestörte Qualitätskontrolle kann pathologische Folgen haben. Dies ist für Tumorbiologie relevant.",
+        "wrongAnswerExplanations": {
+          "A": "Nutzen und Schaden hängen vom Kontext ab.",
+          "B": "Eine gestörte Qualitätskontrolle kann pathologische Folgen haben.",
+          "C": "Sie betreffen unterschiedliche, miteinander verknüpfte Prozesse.",
+          "D": "Dies ist für Tumorbiologie relevant."
+        }
+      }
+    }
+  ]
+}

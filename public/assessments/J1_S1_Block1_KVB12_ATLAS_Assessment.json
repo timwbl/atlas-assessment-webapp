@@ -1,0 +1,1311 @@
+{
+  "id": "assessment_j1_s1_block1_kvb12_20261102",
+  "lectureCode": "KVB12",
+  "title": "Glykolyse, Pyruvatdehydrogenase und Citratzyklus",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB12 - Glykolyse und Citratzyklus. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Zuordnung nach tatsächlichem Foliensatz KVB12 trotz abweichender Nummerierung im offiziellen Katalog. Fehlerhafte ATP-Summen der Folientabelle werden nicht übernommen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Glykolyse und Pyruvatverwertung unter verschiedenen Redoxbedingungen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Reaktion und Cofaktoren des Pyruvatdehydrogenase-Komplexes kennen."
+    },
+    {
+      "id": "lo3",
+      "text": "Bilanz und amphibolische Funktion des Citratzyklus erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Regulation der zentralen Abbauwege aus dem Energiezustand ableiten."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb12_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Warum ermöglicht die Reduktion von Pyruvat zu Lactat eine fortgesetzte Glykolyse bei eingeschränkter mitochondrialer NADH-Oxidation?",
+      "options": [
+        {
+          "text": "Sie ersetzt NAD+ durch Sauerstoff im Glykolyseenzym.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie überführt Lactat direkt in Acetyl-CoA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie beseitigt den Bedarf an ADP für ATP-Bildung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie regeneriert NAD+ aus NADH.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Sie erzeugt unmittelbar vier zusätzliche ATP pro Pyruvat.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Glykolyse nutzt NAD+, nicht O2, als unmittelbaren Akzeptor in diesem Schritt. B: Lactat wird durch LDH zu Pyruvat oxidiert, nicht direkt zu Acetyl-CoA. C: Die Substratkettenphosphorylierung benötigt weiterhin ADP. D: NAD+ wird für die Oxidation von Glycerinaldehyd-3-phosphat benötigt. E: Die LDH-Reaktion selbst bildet kein ATP. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "NAD-Regeneration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NAD-Regeneration"
+      ],
+      "questionGoal": "NAD-Regeneration",
+      "structuredExplanation": {
+        "coreIdea": "NAD-Regeneration",
+        "correctReasoning": "NAD+ wird für die Oxidation von Glycerinaldehyd-3-phosphat benötigt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Glykolyse nutzt NAD+, nicht O2, als unmittelbaren Akzeptor in diesem Schritt.",
+          "B": "Lactat wird durch LDH zu Pyruvat oxidiert, nicht direkt zu Acetyl-CoA.",
+          "C": "Die Substratkettenphosphorylierung benötigt weiterhin ADP.",
+          "E": "Die LDH-Reaktion selbst bildet kein ATP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Warum bildet ein reifer Erythrozyt auch bei vorhandenem Sauerstoff Lactat aus Glucose?",
+      "options": [
+        {
+          "text": "Seine Lactatdehydrogenase benötigt Sauerstoff als Substrat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Seine Glykolyse endet bereits bei Acetyl-CoA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ihm fehlen Mitochondrien für die oxidative Weiterverwertung von Pyruvat.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Er besitzt nur mitochondriale, aber keine zytosolischen Enzyme.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sauerstoffbindung allein versorgt den Erythrozyten bereits mit mitochondrial erzeugtem ATP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: LDH setzt keinen molekularen Sauerstoff um. B: Glykolyse endet bei Pyruvat, LDH bildet Lactat. C: Die ATP-Versorgung erfolgt deshalb über die Glykolyse. D: Reife Erythrozyten haben keine Mitochondrien. E: Der Sauerstofftransport schafft keine fehlenden Mitochondrien. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Erythrozytenstoffwechsel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erythrozytenstoffwechsel"
+      ],
+      "questionGoal": "Erythrozytenstoffwechsel",
+      "structuredExplanation": {
+        "coreIdea": "Erythrozytenstoffwechsel",
+        "correctReasoning": "Die ATP-Versorgung erfolgt deshalb über die Glykolyse.",
+        "wrongAnswerExplanations": {
+          "A": "LDH setzt keinen molekularen Sauerstoff um.",
+          "B": "Glykolyse endet bei Pyruvat, LDH bildet Lactat.",
+          "D": "Reife Erythrozyten haben keine Mitochondrien.",
+          "E": "Der Sauerstofftransport schafft keine fehlenden Mitochondrien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Welche Reaktionsfolge kennzeichnet die alkoholische Gärung der Hefe?",
+      "options": [
+        {
+          "text": "Ethanol wird unter ATP-Verbrauch als terminaler Elektronenakzeptor gebildet.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pyruvat wird zuerst zu Lactat und anschliessend direkt zu Ethanol phosphoryliert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pyruvat wird ohne Kohlenstoffverlust unmittelbar zu Ethanol hydriert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Pyruvat wird im Citratzyklus vollständig zu Ethanol reduziert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Pyruvat wird zu Acetaldehyd decarboxyliert und dann zu Ethanol reduziert.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Reduktion von Acetaldehyd regeneriert NAD+ ohne direkte ATP-Ausgabe. B: Dies ist nicht die dargestellte alkoholische Gärung. C: Der C3-Körper verliert bei der Decarboxylierung ein C-Atom. D: Der Citratzyklus produziert kein Ethanol als Endprodukt. E: Dabei wird NAD+ regeneriert und CO2 freigesetzt. Quelle: Originalunterlagen, PDF-S. 6,8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Pyruvatwege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pyruvatwege"
+      ],
+      "questionGoal": "Pyruvatwege",
+      "structuredExplanation": {
+        "coreIdea": "Pyruvatwege",
+        "correctReasoning": "Dabei wird NAD+ regeneriert und CO2 freigesetzt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Reduktion von Acetaldehyd regeneriert NAD+ ohne direkte ATP-Ausgabe.",
+          "B": "Dies ist nicht die dargestellte alkoholische Gärung.",
+          "C": "Der C3-Körper verliert bei der Decarboxylierung ein C-Atom.",
+          "D": "Der Citratzyklus produziert kein Ethanol als Endprodukt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q04",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Welche Produkte entstehen bei der oxidativen Decarboxylierung eines Pyruvats durch den PDH-Komplex?",
+      "options": [
+        {
+          "text": "Lactat, CO2 und NAD+.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Citrat, FADH2 und GTP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Oxaloacetat, ADP und Pi.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Acetyl-CoA, CO2 und NADH.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ethanol, ATP und NADPH.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: LDH bildet Lactat ohne Decarboxylierung. B: Citrat entsteht erst aus Acetyl-CoA und Oxaloacetat. C: Das gehört zur ATP-abhängigen Pyruvatcarboxylierung. D: Pyruvat verliert ein C-Atom und wird als aktivierter C2-Rest weitergegeben. E: Das beschreibt weder PDH-Produkte noch die relevante Redoxkopplung. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "PDH-Reaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PDH-Reaktion"
+      ],
+      "questionGoal": "PDH-Reaktion",
+      "structuredExplanation": {
+        "coreIdea": "PDH-Reaktion",
+        "correctReasoning": "Pyruvat verliert ein C-Atom und wird als aktivierter C2-Rest weitergegeben.",
+        "wrongAnswerExplanations": {
+          "A": "LDH bildet Lactat ohne Decarboxylierung.",
+          "B": "Citrat entsteht erst aus Acetyl-CoA und Oxaloacetat.",
+          "C": "Das gehört zur ATP-abhängigen Pyruvatcarboxylierung.",
+          "E": "Das beschreibt weder PDH-Produkte noch die relevante Redoxkopplung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Welche Gruppe enthält ausschliesslich Cofaktoren des Pyruvatdehydrogenase-Komplexes?",
+      "options": [
+        {
+          "text": "Lipoamid, Vitamin D, Häm, UDP und Calcium.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Häm, Chlorophyll, NADP+, Biotin und Coenzym Q.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "TPP, Biotin, THF, GTP und FMN.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "TPP, Lipoamid, FAD, NAD+ und Coenzym A.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Biotin, THF, NADP+, Vitamin C und ATP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehrere Bestandteile sind keine PDH-Cofaktoren. B: Diese Kombination gehört nicht zur PDH. C: Nur TPP aus dieser Kombination ist ein klassischer PDH-Cofaktor. D: Diese fünf Cofaktoren tragen die aufeinanderfolgenden Teilreaktionen. E: Dies ist nicht die Cofaktorausstattung der PDH. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "PDH-Cofaktoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PDH-Cofaktoren"
+      ],
+      "questionGoal": "PDH-Cofaktoren",
+      "structuredExplanation": {
+        "coreIdea": "PDH-Cofaktoren",
+        "correctReasoning": "Diese fünf Cofaktoren tragen die aufeinanderfolgenden Teilreaktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Mehrere Bestandteile sind keine PDH-Cofaktoren.",
+          "B": "Diese Kombination gehört nicht zur PDH.",
+          "C": "Nur TPP aus dieser Kombination ist ein klassischer PDH-Cofaktor.",
+          "E": "Dies ist nicht die Cofaktorausstattung der PDH."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Wie viele NADH entstehen pro vollständig durchlaufener Citratzyklusrunde je eingetretenem Acetyl-CoA, ohne PDH-Reaktion?",
+      "options": [
+        {
+          "text": "4.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "6.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "1.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vier würde das zusätzliche PDH-NADH einbeziehen. B: Sechs gilt für zwei Runden pro Glucose. C: Zwei ist die Zahl der freigesetzten CO2, nicht der NADH. D: Isocitrat-, α-Ketoglutarat- und Malatdehydrogenase liefern NADH. E: Das unterschätzt die drei NAD+-abhängigen Oxidationsschritte. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Zyklusbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zyklusbilanz"
+      ],
+      "questionGoal": "Zyklusbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Zyklusbilanz",
+        "correctReasoning": "Isocitrat-, α-Ketoglutarat- und Malatdehydrogenase liefern NADH.",
+        "wrongAnswerExplanations": {
+          "A": "Vier würde das zusätzliche PDH-NADH einbeziehen.",
+          "B": "Sechs gilt für zwei Runden pro Glucose.",
+          "C": "Zwei ist die Zahl der freigesetzten CO2, nicht der NADH.",
+          "E": "Das unterschätzt die drei NAD+-abhängigen Oxidationsschritte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Welche beiden Stoffe reagieren durch Citrat-Synthase zu Citrat?",
+      "options": [
+        {
+          "text": "Acetyl-CoA und α-Ketoglutarat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pyruvat und Succinat.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Malat und Succinyl-CoA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Acetyl-CoA und Oxaloacetat.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Lactat und Fumarat.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Akzeptor ist Oxaloacetat, nicht der C5-Körper. B: Dies sind nicht die Substrate der Citrat-Synthase. C: Beide gehören zu anderen Positionen des Zyklus. D: Ein C2-Rest kondensiert mit einem C4-Akzeptor. E: Diese Paarung bildet kein Citrat im Eintrittsschritt. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Citratbildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Citratbildung"
+      ],
+      "questionGoal": "Citratbildung",
+      "structuredExplanation": {
+        "coreIdea": "Citratbildung",
+        "correctReasoning": "Ein C2-Rest kondensiert mit einem C4-Akzeptor.",
+        "wrongAnswerExplanations": {
+          "A": "Der Akzeptor ist Oxaloacetat, nicht der C5-Körper.",
+          "B": "Dies sind nicht die Substrate der Citrat-Synthase.",
+          "C": "Beide gehören zu anderen Positionen des Zyklus.",
+          "E": "Diese Paarung bildet kein Citrat im Eintrittsschritt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Bei welchem Citratzyklusschritt entsteht unmittelbar GTP beziehungsweise in entsprechenden Isoenzymen ATP?",
+      "options": [
+        {
+          "text": "Fumarat wird zu Malat hydratisiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Malat wird zu Oxaloacetat oxidiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Citrat wird zu Isocitrat isomerisiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Succinat wird zu Fumarat oxidiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Succinyl-CoA wird zu Succinat umgesetzt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dabei wird Wasser angelagert, kein GTP gebildet. B: Dieser Schritt liefert NADH. C: Dieser Schritt bildet kein Nukleosidtriphosphat. D: Dieser Schritt überträgt Elektronen auf FAD und die Atmungskette. E: Die Thioesterenergie ermöglicht Substratkettenphosphorylierung. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Substratkettenphosphorylierung im Zyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Substratkettenphosphorylierung im Zyklus"
+      ],
+      "questionGoal": "Substratkettenphosphorylierung im Zyklus",
+      "structuredExplanation": {
+        "coreIdea": "Substratkettenphosphorylierung im Zyklus",
+        "correctReasoning": "Die Thioesterenergie ermöglicht Substratkettenphosphorylierung.",
+        "wrongAnswerExplanations": {
+          "A": "Dabei wird Wasser angelagert, kein GTP gebildet.",
+          "B": "Dieser Schritt liefert NADH.",
+          "C": "Dieser Schritt bildet kein Nukleosidtriphosphat.",
+          "D": "Dieser Schritt überträgt Elektronen auf FAD und die Atmungskette."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Welche Besonderheit verbindet den Citratzyklus unmittelbar mit der Atmungskette?",
+      "options": [
+        {
+          "text": "Die Succinatdehydrogenase ist zugleich Komplex II der Atmungskette.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Citrat-Synthase pumpt Protonen als Komplex IV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Malatdehydrogenase synthetisiert unmittelbar ATP aus einem Protonengradienten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Aconitase reduziert Sauerstoff direkt zu Wasser.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Fumarase ist zugleich die mitochondriale ATP-Synthase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie leitet Elektronen aus der Succinatoxidation in die Kette ein. B: Komplex IV ist die Cytochrom-c-Oxidase. C: Sie reduziert NAD+ bei der Malatoxidation. D: Sie katalysiert eine Isomerisierung. E: Fumarase hydratisiert Fumarat und ist keine ATP-Synthase. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Succinatdehydrogenase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Succinatdehydrogenase"
+      ],
+      "questionGoal": "Succinatdehydrogenase",
+      "structuredExplanation": {
+        "coreIdea": "Succinatdehydrogenase",
+        "correctReasoning": "Sie leitet Elektronen aus der Succinatoxidation in die Kette ein.",
+        "wrongAnswerExplanations": {
+          "B": "Komplex IV ist die Cytochrom-c-Oxidase.",
+          "C": "Sie reduziert NAD+ bei der Malatoxidation.",
+          "D": "Sie katalysiert eine Isomerisierung.",
+          "E": "Fumarase hydratisiert Fumarat und ist keine ATP-Synthase."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Warum muss die Entnahme von Citratzyklus-Zwischenprodukten für Biosynthesen langfristig durch anaplerotische Reaktionen ausgeglichen werden?",
+      "options": [
+        {
+          "text": "Weil Acetyl-CoA allein im Eintrittsschritt Oxaloacetat ersetzt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Weil jedes entzogene Zwischenprodukt automatisch zwei ATP erzeugt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sonst sinkt der Bestand an Zwischenprodukten, die für weiteren Acetyl-CoA-Umsatz benötigt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Weil der Zyklus sämtliche Zwischenprodukte irreversibel als Endprodukte ausscheidet.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Weil Biosynthesen definitionsgemäss ohne Kohlenstoff ablaufen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Acetyl-CoA benötigt Oxaloacetat als Kondensationspartner. B: Eine Entnahme hat keine solche feste ATP-Bilanz. C: Der Zyklus braucht seinen regenerierten Akzeptorbestand. D: Im geschlossenen Zyklus wird Oxaloacetat regeneriert. E: Biosynthesen benötigen unter anderem Kohlenstoffgerüste. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Amphibolischer Zyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Amphibolischer Zyklus"
+      ],
+      "questionGoal": "Amphibolischer Zyklus",
+      "structuredExplanation": {
+        "coreIdea": "Amphibolischer Zyklus",
+        "correctReasoning": "Der Zyklus braucht seinen regenerierten Akzeptorbestand.",
+        "wrongAnswerExplanations": {
+          "A": "Acetyl-CoA benötigt Oxaloacetat als Kondensationspartner.",
+          "B": "Eine Entnahme hat keine solche feste ATP-Bilanz.",
+          "D": "Im geschlossenen Zyklus wird Oxaloacetat regeneriert.",
+          "E": "Biosynthesen benötigen unter anderem Kohlenstoffgerüste."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Ein hohes ATP/ADP-Verhältnis signalisiert gute Energieversorgung. Welche Reaktion ist für zentrale katabole Wege typischerweise zu erwarten?",
+      "options": [
+        {
+          "text": "Drosselung des Abbauflusses durch regulatorische Enzyme.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Vollständiger Verlust aller Cofaktoren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Unveränderte Flussrate unabhängig von Enzymregulation.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwingende maximale Aktivierung aller Glykolyseenzyme.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Umkehr jeder irreversiblen Reaktion allein durch ATP-Bindung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hohe Energieversorgung kann den Bedarf an weiterem ATP-generierendem Abbau vermindern. B: Das Energieverhältnis entfernt keine Cofaktoren. C: Regulatorische Rückkopplung beeinflusst den Fluss. D: Die Regulation passt den Fluss dem Bedarf an. E: Allosterie macht eine Reaktion nicht beliebig reversibel. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Energiezustand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiezustand"
+      ],
+      "questionGoal": "Energiezustand",
+      "structuredExplanation": {
+        "coreIdea": "Energiezustand",
+        "correctReasoning": "Hohe Energieversorgung kann den Bedarf an weiterem ATP-generierendem Abbau vermindern.",
+        "wrongAnswerExplanations": {
+          "B": "Das Energieverhältnis entfernt keine Cofaktoren.",
+          "C": "Regulatorische Rückkopplung beeinflusst den Fluss.",
+          "D": "Die Regulation passt den Fluss dem Bedarf an.",
+          "E": "Allosterie macht eine Reaktion nicht beliebig reversibel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Eine PDH-Kinase phosphoryliert den Komplex verstärkt. Was ist die unmittelbare Folge im dargestellten Regulationsmodell?",
+      "options": [
+        {
+          "text": "Die PDH-Aktivität steigt durch direkte Aufnahme eines zusätzlichen Pyruvats.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Reaktion wird zur Lactatbildung umgeleitet, weil PDH selbst LDH wird.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Komplex bildet unmittelbar zusätzliches GTP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die PDH-Aktivität sinkt.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die PDH wird zur Pyruvatcarboxylase.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Phosphorylierung bewirkt hier Hemmung. B: Lactatbildung ist eine andere Enzymreaktion. C: GTP entsteht nicht bei der PDH-Reaktion. D: Die phosphorylierte Form ist inaktiviert. E: Eine Modifikation wechselt nicht die Enzymidentität. Quelle: Originalunterlagen, PDF-S. 21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "PDH-Phosphorylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PDH-Phosphorylierung"
+      ],
+      "questionGoal": "PDH-Phosphorylierung",
+      "structuredExplanation": {
+        "coreIdea": "PDH-Phosphorylierung",
+        "correctReasoning": "Die phosphorylierte Form ist inaktiviert.",
+        "wrongAnswerExplanations": {
+          "A": "Phosphorylierung bewirkt hier Hemmung.",
+          "B": "Lactatbildung ist eine andere Enzymreaktion.",
+          "C": "GTP entsteht nicht bei der PDH-Reaktion.",
+          "E": "Eine Modifikation wechselt nicht die Enzymidentität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Eine Zelle nutzt Glykolyse und Lactatbildung. Welche Aussagen zu Kohlenstoff und Cofaktoren stimmen?",
+      "options": [
+        {
+          "text": "Die Lactatbildung kann das NAD+/NADH-Verhältnis beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die LDH-Reaktion ist selbst eine ATP-bildende Substratkettenphosphorylierung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Lactatbildung setzt den gesamten Glucosekohlenstoff als CO2 frei.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Glykolyse kann ohne unmittelbaren Verbrauch von O2 ablaufen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie oxidiert NADH zu NAD+. B: Dabei wird kein ADP phosphoryliert. C: Lactat enthält den Kohlenstoff weiterhin. D: O2 ist kein Substrat ihrer zehn Schritte. Quelle: Originalunterlagen, PDF-S. 6–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Glykolyse und Gärung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glykolyse und Gärung"
+      ],
+      "questionGoal": "Glykolyse und Gärung",
+      "structuredExplanation": {
+        "coreIdea": "Glykolyse und Gärung",
+        "correctReasoning": "Sie oxidiert NADH zu NAD+. O2 ist kein Substrat ihrer zehn Schritte.",
+        "wrongAnswerExplanations": {
+          "A": "Sie oxidiert NADH zu NAD+.",
+          "B": "Dabei wird kein ADP phosphoryliert.",
+          "C": "Lactat enthält den Kohlenstoff weiterhin.",
+          "D": "O2 ist kein Substrat ihrer zehn Schritte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Pyruvat wird durch den PDH-Komplex in den oxidativen Stoffwechsel eingeschleust. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Er verbindet die Glykolyse über Pyruvat mit dem Citratzyklus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Reaktion beinhaltet eine Oxidation und eine CO2-Abspaltung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "FADH2 ist das netto ausgeschleuste reduzierte Endprodukt des Gesamtkomplexes.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Komplex macht aus einem C3-Pyruvat einen C4-Acetylrest.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sein Acetyl-CoA kann in den Zyklus eintreten. B: Daher heisst sie oxidative Decarboxylierung. C: FAD ist intern beteiligt; netto entsteht NADH. D: Der Acetylrest besitzt zwei C-Atome. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "PDH-Verknüpfung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PDH-Verknüpfung"
+      ],
+      "questionGoal": "PDH-Verknüpfung",
+      "structuredExplanation": {
+        "coreIdea": "PDH-Verknüpfung",
+        "correctReasoning": "Sein Acetyl-CoA kann in den Zyklus eintreten. Daher heisst sie oxidative Decarboxylierung.",
+        "wrongAnswerExplanations": {
+          "A": "Sein Acetyl-CoA kann in den Zyklus eintreten.",
+          "B": "Daher heisst sie oxidative Decarboxylierung.",
+          "C": "FAD ist intern beteiligt; netto entsteht NADH.",
+          "D": "Der Acetylrest besitzt zwei C-Atome."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Die Produkte einer Citratzyklusrunde pro Acetyl-CoA werden bilanziert. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Oxaloacetat wird bei jeder Runde netto vollständig verbraucht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es entstehen vier GTP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es entstehen zwei CO2.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Es entsteht ein reduziertes FAD-Äquivalent an der Succinatdehydrogenase.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es wird am Ende regeneriert. B: Die direkte Substratkettenphosphorylierung liefert ein GTP- oder ATP-Äquivalent. C: Zwei oxidative Decarboxylierungen liefern CO2. D: Die Elektronen werden weiter in die Atmungskette geleitet. Quelle: Originalunterlagen, PDF-S. 15–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Zyklusprodukte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zyklusprodukte"
+      ],
+      "questionGoal": "Zyklusprodukte",
+      "structuredExplanation": {
+        "coreIdea": "Zyklusprodukte",
+        "correctReasoning": "Zwei oxidative Decarboxylierungen liefern CO2. Die Elektronen werden weiter in die Atmungskette geleitet.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird am Ende regeneriert.",
+          "B": "Die direkte Substratkettenphosphorylierung liefert ein GTP- oder ATP-Äquivalent.",
+          "C": "Zwei oxidative Decarboxylierungen liefern CO2.",
+          "D": "Die Elektronen werden weiter in die Atmungskette geleitet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Einzelne Citratzyklusschritte werden ihren Reaktionstypen zugeordnet. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Malatdehydrogenase regeneriert Oxaloacetat.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aconitase vermittelt die Umwandlung von Citrat zu Isocitrat.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "α-Ketoglutarat-Dehydrogenase bildet aus dem C5-Körper einen C6-Körper.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Fumarase bildet aus Fumarat NADH.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dabei wird NAD+ zu NADH reduziert. B: Dies ist eine Isomerisierung über Wasserabspaltung und -anlagerung. C: Sie setzt CO2 frei und bildet den C4-Körper Succinyl-CoA. D: Fumarase hydratisiert Fumarat zu Malat. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Reaktionsfolgen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionsfolgen"
+      ],
+      "questionGoal": "Reaktionsfolgen",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionsfolgen",
+        "correctReasoning": "Dabei wird NAD+ zu NADH reduziert. Dies ist eine Isomerisierung über Wasserabspaltung und -anlagerung.",
+        "wrongAnswerExplanations": {
+          "A": "Dabei wird NAD+ zu NADH reduziert.",
+          "B": "Dies ist eine Isomerisierung über Wasserabspaltung und -anlagerung.",
+          "C": "Sie setzt CO2 frei und bildet den C4-Körper Succinyl-CoA.",
+          "D": "Fumarase hydratisiert Fumarat zu Malat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Citratzyklusintermediate werden sowohl abgebaut als auch für Synthesen entnommen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Alle Kohlenstoffgerüste des Körpers müssen ohne Ausnahme erst zu Acetyl-CoA werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Seine Bezeichnung als amphibolisch verweist auf katabole und anabole Funktionen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Er hat ausschliesslich eine Funktion beim Glucoseabbau.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er stellt Vorstufen für Biosynthesen bereit.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zwischenprodukte können auch an anderen Stellen eingespeist werden. B: Abbau und Bereitstellung von Bausteinen ergänzen sich. C: Auch Fett- und Aminosäurestoffwechsel sind mit ihm verknüpft. D: Zwischenprodukte können für aufbauende Wege genutzt werden. Quelle: Originalunterlagen, PDF-S. 11,19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Stoffwechseldrehscheibe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stoffwechseldrehscheibe"
+      ],
+      "questionGoal": "Stoffwechseldrehscheibe",
+      "structuredExplanation": {
+        "coreIdea": "Stoffwechseldrehscheibe",
+        "correctReasoning": "Abbau und Bereitstellung von Bausteinen ergänzen sich. Zwischenprodukte können für aufbauende Wege genutzt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Zwischenprodukte können auch an anderen Stellen eingespeist werden.",
+          "B": "Abbau und Bereitstellung von Bausteinen ergänzen sich.",
+          "C": "Auch Fett- und Aminosäurestoffwechsel sind mit ihm verknüpft.",
+          "D": "Zwischenprodukte können für aufbauende Wege genutzt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Ein hoher Energie- und Produktstatus verändert den PDH-Fluss. Welche Aussagen zur Regulation stimmen?",
+      "options": [
+        {
+          "text": "Hohe ADP-Verfügbarkeit ist grundsätzlich ein Signal für Energieüberschuss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Dephosphorylierung kann PDH aktivieren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "NADH und Acetyl-CoA können hohe Produktverfügbarkeit der PDH anzeigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die PDH-Kinase und die PDH-Phosphatase katalysieren denselben Modifikationsschritt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: ADP weist eher auf ATP-Verbrauch hin. B: Die aktive Form ist im dargestellten Modell dephosphoryliert. C: Sie bremsen den Fluss unter anderem über Produkt- und Kinase-Regulation. D: Die eine phosphoryliert, die andere entfernt Phosphat. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rückkopplung"
+      ],
+      "questionGoal": "Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Rückkopplung",
+        "correctReasoning": "Die aktive Form ist im dargestellten Modell dephosphoryliert. Sie bremsen den Fluss unter anderem über Produkt- und Kinase-Regulation.",
+        "wrongAnswerExplanations": {
+          "A": "ADP weist eher auf ATP-Verbrauch hin.",
+          "B": "Die aktive Form ist im dargestellten Modell dephosphoryliert.",
+          "C": "Sie bremsen den Fluss unter anderem über Produkt- und Kinase-Regulation.",
+          "D": "Die eine phosphoryliert, die andere entfernt Phosphat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Oxidative Glucoseverwertung und Lactatgärung werden bilanziert. Welche Aussagen zum Vergleich stimmen?",
+      "options": [
+        {
+          "text": "Jede Zelle erzeugt unter allen Bedingungen exakt dieselbe ATP-Zahl pro Glucose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Für einen Vergleich müssen Netto- und Brutto-ATP-Bildung getrennt werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die ATP-Ausbeute ergibt sich allein aus der Zahl der CO2-Moleküle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die vollständige oxidative Glucoseverwertung liefert deutlich mehr ATP als die reine Lactatgärung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Shuttles, Kopplung und Stoffwechselbedingungen beeinflussen die Bilanz. B: Investitionen müssen bei Nettobeträgen berücksichtigt werden. C: Auch die Art der Energieübertragung und Kopplung ist entscheidend. D: Die zusätzliche Oxidation liefert Reduktionsäquivalente für oxidative Phosphorylierung. Quelle: Originalunterlagen, PDF-S. 9–10,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "ATP-Bilanzen interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ATP-Bilanzen interpretieren"
+      ],
+      "questionGoal": "ATP-Bilanzen interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "ATP-Bilanzen interpretieren",
+        "correctReasoning": "Investitionen müssen bei Nettobeträgen berücksichtigt werden. Die zusätzliche Oxidation liefert Reduktionsäquivalente für oxidative Phosphorylierung.",
+        "wrongAnswerExplanations": {
+          "A": "Shuttles, Kopplung und Stoffwechselbedingungen beeinflussen die Bilanz.",
+          "B": "Investitionen müssen bei Nettobeträgen berücksichtigt werden.",
+          "C": "Auch die Art der Energieübertragung und Kopplung ist entscheidend.",
+          "D": "Die zusätzliche Oxidation liefert Reduktionsäquivalente für oxidative Phosphorylierung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb12_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB12",
+      "stem": "Ein veränderter Energie- und Redoxbedarf beeinflusst den Glykolysefluss. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Ein veränderter Energiebedarf kann über Enzymregulation den Stoffwechselfluss verändern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine fehlende NAD+-Regeneration kann die Glykolyse begrenzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei Energiebedarf ist die Enzymkonzentration die einzige veränderbare Einflussgrösse.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lactatbildung beweist zwingend, dass eine Zelle keinerlei Sauerstoff ausgesetzt war.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Regulation verbindet Versorgung und Verbrauch. B: Der GAPDH-Schritt benötigt NAD+. C: Auch Substrate, Produkte, Cofaktoren und Enzymaktivität sind relevant. D: Lactat kann auch bei vorhandenem Sauerstoff entstehen. Quelle: Originalunterlagen, PDF-S. 6–10,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB12",
+        "Fluss und Redoxzustand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fluss und Redoxzustand"
+      ],
+      "questionGoal": "Fluss und Redoxzustand",
+      "structuredExplanation": {
+        "coreIdea": "Fluss und Redoxzustand",
+        "correctReasoning": "Regulation verbindet Versorgung und Verbrauch. Der GAPDH-Schritt benötigt NAD+.",
+        "wrongAnswerExplanations": {
+          "A": "Regulation verbindet Versorgung und Verbrauch.",
+          "B": "Der GAPDH-Schritt benötigt NAD+.",
+          "C": "Auch Substrate, Produkte, Cofaktoren und Enzymaktivität sind relevant.",
+          "D": "Lactat kann auch bei vorhandenem Sauerstoff entstehen."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block1_fpc02_20261102",
+  "lectureCode": "FPC02",
+  "title": "Kompartimentierung mit Tensiden",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. FPC - Fachpraktikum Chemie; EVC2 FP Kompartimentierung mit Tensiden (FPC2). 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Seitenangaben in den Erklärungen beziehen sich auf die PDF-Paginierung des Fachpraktikum-Skripts (35 Seiten), nicht auf dessen gedruckte Seitenzahlen. Ergänzend Einführungsvorlesung EVC. Nur Theorie, Versuchsinterpretation und Auswertung; keine persönlichen Testate oder Organisationsfragen. ",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Amphiphile Struktur, intermolekulare Wechselwirkungen und Oberflächenwirkung von Tensiden erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Mizellbildung und kritische Mizellbildungskonzentration anhand des Sudan-III-Versuchs interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Emulsion, Mikroemulsion, Schaum und Organogel strukturell und anhand der Beobachtungen unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Die Erkenntnisse auf Liposomen, biologische Membranen und Wirkstofftransport übertragen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpc02_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Weshalb kann SDS sowohl mit Wasser wechselwirken als auch hydrophobe Stoffe in Aggregaten aufnehmen?",
+      "options": [
+        {
+          "text": "Es spaltet Wasser in eine polare und eine unpolare Phase.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es besitzt einen polaren ionischen Kopf und eine unpolare Kohlenwasserstoffkette.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Es wandelt alle hydrophoben Moleküle chemisch in Ionen um.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es trägt ausschliesslich ungeladene OH-Gruppen wie Glucose.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es besitzt zwei gleich stark hydrophile Enden ohne hydrophoben Bereich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wasser wird nicht in zwei solche chemischen Komponenten gespalten. B: Der amphiphile Aufbau ermöglicht unterschiedliche Kontakte beider Molekülbereiche. C: Solubilisierung ist eine Einlagerung, keine allgemeine Ionisierung des gelösten Stoffs. D: SDS besitzt einen anionischen Sulfatesterkopf und eine lange Alkylkette. E: Die lange Dodecylkette ist hydrophob und für den Mizellkern wesentlich. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Amphiphilie von SDS"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Amphiphilie von SDS"
+      ],
+      "questionGoal": "Amphiphilie von SDS",
+      "structuredExplanation": {
+        "coreIdea": "Amphiphilie von SDS",
+        "correctReasoning": "Der amphiphile Aufbau ermöglicht unterschiedliche Kontakte beider Molekülbereiche.",
+        "wrongAnswerExplanations": {
+          "A": "Wasser wird nicht in zwei solche chemischen Komponenten gespalten.",
+          "C": "Solubilisierung ist eine Einlagerung, keine allgemeine Ionisierung des gelösten Stoffs.",
+          "D": "SDS besitzt einen anionischen Sulfatesterkopf und eine lange Alkylkette.",
+          "E": "Die lange Dodecylkette ist hydrophob und für den Mizellkern wesentlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Welche Wechselwirkung beschreibt den Kontakt eines anionischen SDS-Kopfes mit umgebenden Wassermolekülen am besten?",
+      "options": [
+        {
+          "text": "Dispersionskontakte zwischen unpolaren Alkylketten als bestimmende Kopf-Wasser-Wechselwirkung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine H-Brücke zwischen zwei unpolaren Alkylketten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur Wechselwirkungen zwischen permanent unpolaren Teilchen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Ionenbindung zwischen zwei SDS-Anionen ohne Wasserausrichtung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ion-Dipol-Wechselwirkungen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der ionische Kopf und die Wasserdipole bilden überwiegend Ion-Dipol-Kontakte; Alkylkettenkontakte betreffen einen anderen Bereich. B: Alkylketten bieten keine solchen Donor-/Akzeptorgruppen; gefragt ist die Hydratation des anionischen Kopfes. C: Der ionische Kopf und Wasser sind gerade nicht unpolar. D: Gleich geladene Köpfe ziehen sich nicht ionisch an; Wasser hydratisiert den Kopf durch seinen Dipol. E: Die Ladung des Kopfes wechselwirkt mit den permanenten Dipolen des Wassers. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Ion-Dipol-Kontakt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ion-Dipol-Kontakt"
+      ],
+      "questionGoal": "Ion-Dipol-Kontakt",
+      "structuredExplanation": {
+        "coreIdea": "Ion-Dipol-Kontakt",
+        "correctReasoning": "Die Ladung des Kopfes wechselwirkt mit den permanenten Dipolen des Wassers.",
+        "wrongAnswerExplanations": {
+          "A": "Der ionische Kopf und die Wasserdipole bilden überwiegend Ion-Dipol-Kontakte; Alkylkettenkontakte betreffen einen anderen Bereich.",
+          "B": "Alkylketten bieten keine solchen Donor-/Akzeptorgruppen; gefragt ist die Hydratation des anionischen Kopfes.",
+          "C": "Der ionische Kopf und Wasser sind gerade nicht unpolar.",
+          "D": "Gleich geladene Köpfe ziehen sich nicht ionisch an; Wasser hydratisiert den Kopf durch seinen Dipol."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Nach Zugabe einer kleinen Tensidmenge unterhalb der cmc benetzt Wasser eine Oberfläche besser. Welche Erklärung passt?",
+      "options": [
+        {
+          "text": "Tenside reichern sich an Grenzflächen an und verringern die Oberflächenspannung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Erst oberhalb der cmc kann irgendein Tensid an der Oberfläche vorkommen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Benetzung verbessert sich, weil die hydrophoben Ketten die Oberflächenspannung erhöhen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Tenside erhöhen die Oberflächenspannung und dadurch die Benetzung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die verbesserte Benetzung erfordert, dass zuerst jedes Tensid vollständig in Mizellen gebunden wird.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Grenzflächenwirkung beginnt bereits vor der ausgeprägten Mizellbildung. B: Schon monomere Tenside reichern sich an Grenzflächen an. C: Die Tensidanreicherung senkt die Oberflächenspannung; eine Erhöhung ist nicht die passende Erklärung. D: Die beobachtete bessere Benetzung wird durch Absenkung der Oberflächenspannung erklärt. E: Schon die Anreicherung monomerer Tenside an Grenzflächen senkt die Oberflächenspannung unterhalb der cmc. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Benetzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Benetzung"
+      ],
+      "questionGoal": "Benetzung",
+      "structuredExplanation": {
+        "coreIdea": "Benetzung",
+        "correctReasoning": "Grenzflächenwirkung beginnt bereits vor der ausgeprägten Mizellbildung.",
+        "wrongAnswerExplanations": {
+          "B": "Schon monomere Tenside reichern sich an Grenzflächen an.",
+          "C": "Die Tensidanreicherung senkt die Oberflächenspannung; eine Erhöhung ist nicht die passende Erklärung.",
+          "D": "Die beobachtete bessere Benetzung wird durch Absenkung der Oberflächenspannung erklärt.",
+          "E": "Schon die Anreicherung monomerer Tenside an Grenzflächen senkt die Oberflächenspannung unterhalb der cmc."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Wie sind SDS-Moleküle in einer normalen wässrigen Mizelle überwiegend angeordnet?",
+      "options": [
+        {
+          "text": "Eine ebene Lipiddoppelschicht mit zwei äusseren Kopfschichten und ohne gekrümmten Kern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Köpfe innen, alle Ketten einzeln in Wasser ausgestreckt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein reiner Wasserkern mit einer membranartigen Lipiddoppelschicht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hydrophobe Ketten aussen, ionische Köpfe trocken im Kern.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Hydrophile Köpfe aussen, hydrophobe Ketten innen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die einfache normale Mizelle ist ein gekrümmtes Aggregat mit hydrophobem Kern, nicht eine ebene Bilayer. B: Die hydrophoben Ketten würden dabei dem Wasser ausgesetzt bleiben. C: Dies beschreibt eher ein Vesikel als eine einfache SDS-Mizelle. D: Dies entspricht nicht der günstigen Anordnung einer normalen Mizelle in Wasser. E: So wird der Kontakt der Alkylketten mit Wasser vermindert. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Wässrige Mizelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wässrige Mizelle"
+      ],
+      "questionGoal": "Wässrige Mizelle",
+      "structuredExplanation": {
+        "coreIdea": "Wässrige Mizelle",
+        "correctReasoning": "So wird der Kontakt der Alkylketten mit Wasser vermindert.",
+        "wrongAnswerExplanations": {
+          "A": "Die einfache normale Mizelle ist ein gekrümmtes Aggregat mit hydrophobem Kern, nicht eine ebene Bilayer.",
+          "B": "Die hydrophoben Ketten würden dabei dem Wasser ausgesetzt bleiben.",
+          "C": "Dies beschreibt eher ein Vesikel als eine einfache SDS-Mizelle.",
+          "D": "Dies entspricht nicht der günstigen Anordnung einer normalen Mizelle in Wasser."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "In einem vereinfachten Sudan-III-Versuch bleibt das Filtrat bei 1 und 5 mmol/l SDS farblos, bei 10 und 50 mmol/l ist es deutlich gefärbt. Was lässt sich daraus abschätzen?",
+      "options": [
+        {
+          "text": "Jeder gefärbte Ansatz beweist eine kovalente Reaktion von SDS und Sudan III.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die cmc beträgt exakt 10.000 mmol/l.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die cmc liegt sicher oberhalb von 50 mmol/l.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Beginn wirksamer Mizellsolubilisierung liegt unter diesen Bedingungen zwischen 5 und 10 mmol/l.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die cmc liegt sicher unter 1 mmol/l.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Farbe kann durch physikalische Einlagerung des Farbstoffs in Mizellen erklärt werden. B: Die grobe Konzentrationsreihe und der Farbnachweis erlauben keine solche Präzision. C: Bereits bei 10 mmol/l tritt deutliche Solubilisierung auf. D: Die getesteten Stufen grenzen den Übergang ein; sie liefern keinen exakten cmc-Wert. E: Die vorgegebenen Beobachtungen sprechen nicht dafür. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Abschätzung der cmc"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abschätzung der cmc"
+      ],
+      "questionGoal": "Abschätzung der cmc",
+      "structuredExplanation": {
+        "coreIdea": "Abschätzung der cmc",
+        "correctReasoning": "Die getesteten Stufen grenzen den Übergang ein; sie liefern keinen exakten cmc-Wert.",
+        "wrongAnswerExplanations": {
+          "A": "Die Farbe kann durch physikalische Einlagerung des Farbstoffs in Mizellen erklärt werden.",
+          "B": "Die grobe Konzentrationsreihe und der Farbnachweis erlauben keine solche Präzision.",
+          "C": "Bereits bei 10 mmol/l tritt deutliche Solubilisierung auf.",
+          "E": "Die vorgegebenen Beobachtungen sprechen nicht dafür."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Warum kann nach Filtration einer ausreichend konzentrierten SDS/Sudan-III-Mischung ein gefärbtes Filtrat vorliegen?",
+      "options": [
+        {
+          "text": "Der Papierfilter wandelt Sudan III in ein gut wasserlösliches Salz um.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sudan III erhält durch Licht automatisch eine permanente Sulfatgruppe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "SDS wird durch den Filter vollständig zerstört, sodass reiner Farbstoff gelöst bleibt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Filtration lässt grundsätzlich alle Feststoffpartikel unverändert passieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Farbstoff ist in sehr kleinen Mizellen solubilisiert, die den Papierfilter passieren.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Erklärung ist Mizellsolubilisierung, keine allgemeine chemische Filterreaktion. B: Die Sulfatgruppe gehört zu SDS; der Farbstoff wird im Versuch eingelagert. C: Die Mizellen können mitsamt Farbstoff passieren. D: Der Filter hält ausreichend grosse Partikel gerade zurück. E: Nicht solubilisierte grössere Farbstoffpartikel werden eher als Filterkuchen zurückgehalten. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Gefärbtes Filtrat"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gefärbtes Filtrat"
+      ],
+      "questionGoal": "Gefärbtes Filtrat",
+      "structuredExplanation": {
+        "coreIdea": "Gefärbtes Filtrat",
+        "correctReasoning": "Nicht solubilisierte grössere Farbstoffpartikel werden eher als Filterkuchen zurückgehalten.",
+        "wrongAnswerExplanations": {
+          "A": "Die Erklärung ist Mizellsolubilisierung, keine allgemeine chemische Filterreaktion.",
+          "B": "Die Sulfatgruppe gehört zu SDS; der Farbstoff wird im Versuch eingelagert.",
+          "C": "Die Mizellen können mitsamt Farbstoff passieren.",
+          "D": "Der Filter hält ausreichend grosse Partikel gerade zurück."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Wie verteilt sich zusätzlich zugegebenes Tensid typischerweise knapp oberhalb der cmc, solange keine andere Phasenumwandlung eintritt?",
+      "options": [
+        {
+          "text": "Oberhalb der cmc sinkt die freie Monomerkonzentration sofort nahezu auf null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes zusätzliche Molekül muss an die Luft-Wasser-Oberfläche gebunden werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle vorhandenen Mizellen werden zwingend zu einem einzigen Makrotropfen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Monomerkonzentration steigt proportional weiter, Mizellen verschwinden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vor allem die Menge mizellar gebundenen Tensids nimmt zu.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Im Gleichgewichtsmodell bleibt eine relevante freie Konzentration ungefähr im Bereich der cmc bestehen. B: Die Grenzfläche hat eine begrenzte Kapazität; zusätzliche Mizellbildung wird relevant. C: Mizellen bleiben viele dynamische Aggregate. D: Oberhalb der cmc werden zusätzliche Aggregate begünstigt. E: Die Monomerkonzentration steigt im vereinfachten Modell nur noch wenig. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Oberhalb der cmc"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Oberhalb der cmc"
+      ],
+      "questionGoal": "Oberhalb der cmc",
+      "structuredExplanation": {
+        "coreIdea": "Oberhalb der cmc",
+        "correctReasoning": "Die Monomerkonzentration steigt im vereinfachten Modell nur noch wenig.",
+        "wrongAnswerExplanations": {
+          "A": "Im Gleichgewichtsmodell bleibt eine relevante freie Konzentration ungefähr im Bereich der cmc bestehen.",
+          "B": "Die Grenzfläche hat eine begrenzte Kapazität; zusätzliche Mizellbildung wird relevant.",
+          "C": "Mizellen bleiben viele dynamische Aggregate.",
+          "D": "Oberhalb der cmc werden zusätzliche Aggregate begünstigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Eine trübe Öl-Wasser-Mischung trennt sich beim Stehen. Nach Änderung der Tensidzusammensetzung entsteht eine klare, stabile Mischung. Welche Interpretation passt am besten?",
+      "options": [
+        {
+          "text": "Jede transparente Tensidlösung ist unabhängig von Zusammensetzung eine Mikroemulsion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die klare Mischung muss frei von organischem Lösungsmittel sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die grobe Emulsion ist thermodynamisch stabiler, weil sie sichtbare Tropfen enthält.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aus einer groben Emulsion kann eine geeignete Mikroemulsion entstanden sein.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Trübung beweist, dass Öl und Wasser kovalent polymerisiert sind.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Transparenz allein beweist keine bestimmte Aggregatstruktur. B: Eine Mikroemulsion kann erhebliche Mengen organischer Phase enthalten. C: Grobe Emulsionen sind typischerweise thermodynamisch instabil, können aber kinetisch stabilisiert werden. D: Die kleineren Strukturen streuen sichtbares Licht deutlich weniger; Zusammensetzung und Phasenverhalten müssen passen. E: Die Trübung kann aus Lichtstreuung an dispergierten Tropfen entstehen. Quelle: Originalunterlagen, PDF-S. 9,11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Emulsionsbeobachtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Emulsionsbeobachtung"
+      ],
+      "questionGoal": "Emulsionsbeobachtung",
+      "structuredExplanation": {
+        "coreIdea": "Emulsionsbeobachtung",
+        "correctReasoning": "Die kleineren Strukturen streuen sichtbares Licht deutlich weniger; Zusammensetzung und Phasenverhalten müssen passen.",
+        "wrongAnswerExplanations": {
+          "A": "Transparenz allein beweist keine bestimmte Aggregatstruktur.",
+          "B": "Eine Mikroemulsion kann erhebliche Mengen organischer Phase enthalten.",
+          "C": "Grobe Emulsionen sind typischerweise thermodynamisch instabil, können aber kinetisch stabilisiert werden.",
+          "E": "Die Trübung kann aus Lichtstreuung an dispergierten Tropfen entstehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Was bezeichnet eine Öl-in-Wasser-Emulsion?",
+      "options": [
+        {
+          "text": "Ein reiner Feststoff enthält eingeschlossene Ölmoleküle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei Flüssigkeiten liegen ohne Grenzflächen molekular homogen vor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Wassertröpfchen sind in einer kontinuierlichen Ölphase verteilt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Gas ist vollständig molekular in Öl gelöst.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Öltröpfchen sind in einer kontinuierlichen wässrigen Phase verteilt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine Emulsion ist eine Flüssigkeit-in-Flüssigkeit-Dispersion. B: Eine Emulsion enthält getrennte disperse und kontinuierliche Flüssigkeitsbereiche. C: Dies ist eine Wasser-in-Öl-Emulsion. D: Dies beschreibt keine Öl-in-Wasser-Emulsion. E: Die zweite genannte Phase ist die kontinuierliche Phase. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Öl-in-Wasser-System"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Öl-in-Wasser-System"
+      ],
+      "questionGoal": "Öl-in-Wasser-System",
+      "structuredExplanation": {
+        "coreIdea": "Öl-in-Wasser-System",
+        "correctReasoning": "Die zweite genannte Phase ist die kontinuierliche Phase.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Emulsion ist eine Flüssigkeit-in-Flüssigkeit-Dispersion.",
+          "B": "Eine Emulsion enthält getrennte disperse und kontinuierliche Flüssigkeitsbereiche.",
+          "C": "Dies ist eine Wasser-in-Öl-Emulsion.",
+          "D": "Dies beschreibt keine Öl-in-Wasser-Emulsion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Weshalb kann ein Organogel trotz hohen Lösungsmittelanteils formstabil erscheinen?",
+      "options": [
+        {
+          "text": "Die Flüssigkeit muss zu reinem Wasser reagieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das gesamte Lösungsmittel wurde in einen kristallinen Feststoff umgewandelt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Netzwerk bzw. lamellare Kompartimentierung schränkt das makroskopische Fliessen ein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Formstabilität beweist, dass der organische Flüssigkeitsanteil nur noch sehr klein ist.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Gel besitzt definitionsgemäss keine Grenzflächen oder inneren Strukturen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Organogel enthält überwiegend organisches Lösungsmittel. B: Gelbildung verlangt keine vollständige Kristallisation des Lösungsmittels. C: Das Lösungsmittel ist weiterhin vorhanden, wird aber in der Struktur gehalten. D: Ein Organogel kann trotz hohen organischen Flüssigkeitsanteils durch ein Netzwerk formstabil erscheinen. E: Gerade die innere Struktur erklärt das eingeschränkte Fliessen. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Organogel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Organogel"
+      ],
+      "questionGoal": "Organogel",
+      "structuredExplanation": {
+        "coreIdea": "Organogel",
+        "correctReasoning": "Das Lösungsmittel ist weiterhin vorhanden, wird aber in der Struktur gehalten.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Organogel enthält überwiegend organisches Lösungsmittel.",
+          "B": "Gelbildung verlangt keine vollständige Kristallisation des Lösungsmittels.",
+          "D": "Ein Organogel kann trotz hohen organischen Flüssigkeitsanteils durch ein Netzwerk formstabil erscheinen.",
+          "E": "Gerade die innere Struktur erklärt das eingeschränkte Fliessen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Welcher Strukturunterschied ist für ein typisches Liposom gegenüber einer einfachen normalen Mizelle entscheidend?",
+      "options": [
+        {
+          "text": "Das Liposom enthält zwingend ein starres Metallgehäuse.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Liposom besitzt ausschliesslich unpolare Köpfe ohne Kontakt zu Wasser.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Liposom umschliesst einen wässrigen Innenraum mit einer Doppelschicht.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Mizelle besitzt immer dieselbe Doppelschicht und denselben Wasserinnenraum.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Liposom ist eine einzelne kovalent geschlossene Riesenmolekülkette.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es entsteht aus amphiphilen Molekülen, nicht aus einem Metallgehäuse. B: Die hydrophilen Kopfgruppen weisen zu den wässrigen Räumen. C: Die Mizelle besitzt dagegen typischerweise einen hydrophoben Kern ohne diesen wässrigen Innenraum. D: Dies verwischt den entscheidenden strukturellen Unterschied. E: Die Doppelschicht ist überwiegend durch nichtkovalente Wechselwirkungen organisiert. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Liposom und Mizelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Liposom und Mizelle"
+      ],
+      "questionGoal": "Liposom und Mizelle",
+      "structuredExplanation": {
+        "coreIdea": "Liposom und Mizelle",
+        "correctReasoning": "Die Mizelle besitzt dagegen typischerweise einen hydrophoben Kern ohne diesen wässrigen Innenraum.",
+        "wrongAnswerExplanations": {
+          "A": "Es entsteht aus amphiphilen Molekülen, nicht aus einem Metallgehäuse.",
+          "B": "Die hydrophilen Kopfgruppen weisen zu den wässrigen Räumen.",
+          "D": "Dies verwischt den entscheidenden strukturellen Unterschied.",
+          "E": "Die Doppelschicht ist überwiegend durch nichtkovalente Wechselwirkungen organisiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Ein hydrophiler und ein lipophiler Wirkstoff sollen in einem Liposom transportiert werden. Welche Lokalisation ist am ehesten zu erwarten?",
+      "options": [
+        {
+          "text": "Beide Stoffe können nur ausserhalb des Liposoms vorkommen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hydrophiler Stoff im Wasserraum, lipophiler Stoff im hydrophoben Membranbereich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Beide Stoffe müssen ausschliesslich kovalent an Kopfgruppen gebunden sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Polarität spielt für die Verteilung in diesen Kompartimenten keine Rolle.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Hydrophiler Stoff im Alkylkettenkern, lipophiler Stoff ausschliesslich im Wasserraum.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Wässriger Innenraum und Membran bieten unterschiedliche Aufnahmebereiche. B: Die Verteilung wird durch Polarität und weitere Stoffeigenschaften beeinflusst. C: Verkapselung bzw. Einlagerung ist auch ohne kovalente Bindung möglich. D: Polarität ist ein zentraler Faktor der Verteilung. E: Die angegebenen bevorzugten Bereiche sind vertauscht. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Wirkstofflokalisation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wirkstofflokalisation"
+      ],
+      "questionGoal": "Wirkstofflokalisation",
+      "structuredExplanation": {
+        "coreIdea": "Wirkstofflokalisation",
+        "correctReasoning": "Die Verteilung wird durch Polarität und weitere Stoffeigenschaften beeinflusst.",
+        "wrongAnswerExplanations": {
+          "A": "Wässriger Innenraum und Membran bieten unterschiedliche Aufnahmebereiche.",
+          "C": "Verkapselung bzw. Einlagerung ist auch ohne kovalente Bindung möglich.",
+          "D": "Polarität ist ein zentraler Faktor der Verteilung.",
+          "E": "Die angegebenen bevorzugten Bereiche sind vertauscht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zu den Wechselwirkungen von Tensiden.",
+      "options": [
+        {
+          "text": "Zwischen Kohlenwasserstoffketten wirken London-Dispersionskräfte.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Wasser kann ionische Kopfgruppen durch Ion-Dipol-Kontakte hydratisieren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei der Mizellbildung werden die Alkylketten durch kovalente C–C-Bindungen miteinander polymerisiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein permanenter Dipol setzt eine positive Gesamtladung des Moleküls voraus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch unpolare Molekülbereiche besitzen fluktuierende Dipole. B: Der Wasserdipol richtet sich bevorzugt zur Ladung aus. C: Normale Mizellbildung ist eine nichtkovalente Selbstorganisation. D: Ein elektrisch neutrales Molekül kann eine unsymmetrische Ladungsverteilung besitzen. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Wechselwirkungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wechselwirkungen"
+      ],
+      "questionGoal": "Wechselwirkungen",
+      "structuredExplanation": {
+        "coreIdea": "Wechselwirkungen",
+        "correctReasoning": "Auch unpolare Molekülbereiche besitzen fluktuierende Dipole. Der Wasserdipol richtet sich bevorzugt zur Ladung aus.",
+        "wrongAnswerExplanations": {
+          "A": "Auch unpolare Molekülbereiche besitzen fluktuierende Dipole.",
+          "B": "Der Wasserdipol richtet sich bevorzugt zur Ladung aus.",
+          "C": "Normale Mizellbildung ist eine nichtkovalente Selbstorganisation.",
+          "D": "Ein elektrisch neutrales Molekül kann eine unsymmetrische Ladungsverteilung besitzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zu Mizellen in Wasser.",
+      "options": [
+        {
+          "text": "Die cmc ist für alle Tenside dieselbe universelle Naturkonstante.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die cmc hängt von Tensid und Lösungsbedingungen ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Monomere und Aggregate stehen in einem dynamischen Gleichgewicht.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der hydrophobe Kern kann die Aufnahme von Sudan III begünstigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist substanz- und bedingungsabhängig. B: Etwa Salzgehalt und Temperatur beeinflussen das Aggregationsverhalten. C: Tensidmoleküle können zwischen Mizellen und Lösung austauschen. D: Er bietet ein unpolares Milieu gegenüber dem umgebenden Wasser. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Mizellgleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mizellgleichgewicht"
+      ],
+      "questionGoal": "Mizellgleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Mizellgleichgewicht",
+        "correctReasoning": "Etwa Salzgehalt und Temperatur beeinflussen das Aggregationsverhalten. Tensidmoleküle können zwischen Mizellen und Lösung austauschen. Er bietet ein unpolares Milieu gegenüber dem umgebenden Wasser.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist substanz- und bedingungsabhängig.",
+          "B": "Etwa Salzgehalt und Temperatur beeinflussen das Aggregationsverhalten.",
+          "C": "Tensidmoleküle können zwischen Mizellen und Lösung austauschen.",
+          "D": "Er bietet ein unpolares Milieu gegenüber dem umgebenden Wasser."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zum Sudan-III-Versuch.",
+      "options": [
+        {
+          "text": "Unterschiedlich grosse Farbstoffzugaben können den Vergleich der Ansätze erschweren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aus fünf Konzentrationsstufen lässt sich die cmc auf beliebig viele Dezimalstellen bestimmen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Ansatz ohne SDS ist überflüssig, weil er keine Vergleichsinformation liefert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein gefärbter Filterkuchen beweist eine hohe Konzentration solubilisierter Mizellen im Filtrat.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Ausgangsmenge beeinflusst Farbstärke und ungelösten Rückstand. B: Die diskrete und qualitative Messung begrenzt die Genauigkeit. C: Er kontrolliert die geringe Wasserlöslichkeit ohne Tensid. D: Der Filterkuchen enthält zurückgehaltenes Material, nicht das durchgetretene Filtrat. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Versuchskontrollen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Versuchskontrollen"
+      ],
+      "questionGoal": "Versuchskontrollen",
+      "structuredExplanation": {
+        "coreIdea": "Versuchskontrollen",
+        "correctReasoning": "Die Ausgangsmenge beeinflusst Farbstärke und ungelösten Rückstand.",
+        "wrongAnswerExplanations": {
+          "A": "Die Ausgangsmenge beeinflusst Farbstärke und ungelösten Rückstand.",
+          "B": "Die diskrete und qualitative Messung begrenzt die Genauigkeit.",
+          "C": "Er kontrolliert die geringe Wasserlöslichkeit ohne Tensid.",
+          "D": "Der Filterkuchen enthält zurückgehaltenes Material, nicht das durchgetretene Filtrat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zu emulgierten Systemen.",
+      "options": [
+        {
+          "text": "Jede Zugabe irgendeines Tensids erzeugt unabhängig von Mengenverhältnissen eine Mikroemulsion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine passende Mikroemulsion kann thermodynamisch stabil sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine klare Mikroemulsion beweist das Fehlen jeder inneren Grenzfläche.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine grobe Emulsion kann durch Lichtstreuung trüb erscheinen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Geeignete Zusammensetzung und Phasenbedingungen sind erforderlich. B: Dies unterscheidet sie grundsätzlich von einer gewöhnlichen groben Emulsion. C: Auch eine klare Mikroemulsion besitzt strukturierte Wasser- und Ölbereiche. D: Die Tropfengrösse liegt häufig in einem für sichtbares Licht relevanten Bereich. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Emulsion und Mikroemulsion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Emulsion und Mikroemulsion"
+      ],
+      "questionGoal": "Emulsion und Mikroemulsion",
+      "structuredExplanation": {
+        "coreIdea": "Emulsion und Mikroemulsion",
+        "correctReasoning": "Dies unterscheidet sie grundsätzlich von einer gewöhnlichen groben Emulsion. Die Tropfengrösse liegt häufig in einem für sichtbares Licht relevanten Bereich.",
+        "wrongAnswerExplanations": {
+          "A": "Geeignete Zusammensetzung und Phasenbedingungen sind erforderlich.",
+          "B": "Dies unterscheidet sie grundsätzlich von einer gewöhnlichen groben Emulsion.",
+          "C": "Auch eine klare Mikroemulsion besitzt strukturierte Wasser- und Ölbereiche.",
+          "D": "Die Tropfengrösse liegt häufig in einem für sichtbares Licht relevanten Bereich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zur Orientierung amphiphiler Moleküle.",
+      "options": [
+        {
+          "text": "Eine normale wässrige Mizelle und ein Liposom besitzen denselben Wasserinnenraum.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Alkylketten einer Membran bilden untereinander die gleichen klassischen H-Brücken wie Wasser.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Schaumlamelle kann einen dünnen Wasserfilm zwischen Tensidschichten enthalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "In einer biologischen Lipiddoppelschicht weisen die Kopfgruppen zu den Wasserphasen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Mizellkern ist hydrophob, das typische Liposom umschliesst Wasser. B: Unsubstituierte Alkylketten besitzen keine entsprechenden H-Brückendonor-/akzeptorgruppen; Dispersion und hydrophober Effekt sind wichtig. C: Die polaren Köpfe orientieren sich dabei zum Wasserfilm. D: Der hydrophobe Bereich liegt überwiegend im Innern der Membran. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Lamelle und Membran"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lamelle und Membran"
+      ],
+      "questionGoal": "Lamelle und Membran",
+      "structuredExplanation": {
+        "coreIdea": "Lamelle und Membran",
+        "correctReasoning": "Die polaren Köpfe orientieren sich dabei zum Wasserfilm. Der hydrophobe Bereich liegt überwiegend im Innern der Membran.",
+        "wrongAnswerExplanations": {
+          "A": "Der Mizellkern ist hydrophob, das typische Liposom umschliesst Wasser.",
+          "B": "Unsubstituierte Alkylketten besitzen keine entsprechenden H-Brückendonor-/akzeptorgruppen; Dispersion und hydrophober Effekt sind wichtig.",
+          "C": "Die polaren Köpfe orientieren sich dabei zum Wasserfilm.",
+          "D": "Der hydrophobe Bereich liegt überwiegend im Innern der Membran."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zu den Praktikumstensiden.",
+      "options": [
+        {
+          "text": "SDS und AOT sind anionische Tenside.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Gestalt eines Amphiphils beeinflusst die bevorzugte Aggregatstruktur.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Wirkung eines Tensids ist nicht auf Reinigungsmittel beschränkt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "AOT besitzt nur eine einzige unverzweigte Kohlenwasserstoffkette wie SDS.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide tragen eine negativ geladene hydrophile Gruppe mit Gegenion. B: Kopfgruppen- und Kettengeometrie beeinflussen die Packung. C: Tenside werden auch für Emulgierung, Kompartimentierung und Wirkstoffsysteme verwendet. D: AOT besitzt zwei hydrophobe Kettenreste und unterscheidet sich damit strukturell von SDS. Quelle: Originalunterlagen, PDF-S. 8–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "SDS und AOT"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SDS und AOT"
+      ],
+      "questionGoal": "SDS und AOT",
+      "structuredExplanation": {
+        "coreIdea": "SDS und AOT",
+        "correctReasoning": "Beide tragen eine negativ geladene hydrophile Gruppe mit Gegenion. Kopfgruppen- und Kettengeometrie beeinflussen die Packung. Tenside werden auch für Emulgierung, Kompartimentierung und Wirkstoffsysteme verwendet.",
+        "wrongAnswerExplanations": {
+          "A": "Beide tragen eine negativ geladene hydrophile Gruppe mit Gegenion.",
+          "B": "Kopfgruppen- und Kettengeometrie beeinflussen die Packung.",
+          "C": "Tenside werden auch für Emulgierung, Kompartimentierung und Wirkstoffsysteme verwendet.",
+          "D": "AOT besitzt zwei hydrophobe Kettenreste und unterscheidet sich damit strukturell von SDS."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zur Aufnahme von Molekülen.",
+      "options": [
+        {
+          "text": "Ein Liposom kann innen und aussen unterschiedliche wässrige Zusammensetzungen trennen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein stark hydrophiler Wirkstoff reichert sich bevorzugt im unpolaren Kettenkern des Liposoms an.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Solubilisierung bedeutet zwingend eine Änderung der kovalenten Struktur des Farbstoffs.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Lipiddoppelschicht lässt geladene und kleine unpolare Teilchen bei gleicher Grösse gleich leicht passiv passieren.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Doppelschicht bildet eine Barriere zwischen den Wasserkompartimenten. B: Ein hydrophiler Stoff ist eher im wässrigen Innenraum zu erwarten; Verteilung hängt von den Stoffeigenschaften ab. C: Einlagerung in Aggregate kann ohne kovalente Reaktion erfolgen. D: Ladung und Polarität beeinflussen die passive Permeabilität stark; die Membran wirkt selektiv. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Kompartimentierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompartimentierung"
+      ],
+      "questionGoal": "Kompartimentierung",
+      "structuredExplanation": {
+        "coreIdea": "Kompartimentierung",
+        "correctReasoning": "Seine Doppelschicht bildet eine Barriere zwischen den Wasserkompartimenten.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Doppelschicht bildet eine Barriere zwischen den Wasserkompartimenten.",
+          "B": "Ein hydrophiler Stoff ist eher im wässrigen Innenraum zu erwarten; Verteilung hängt von den Stoffeigenschaften ab.",
+          "C": "Einlagerung in Aggregate kann ohne kovalente Reaktion erfolgen.",
+          "D": "Ladung und Polarität beeinflussen die passive Permeabilität stark; die Membran wirkt selektiv."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc02_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC02",
+      "stem": "Beurteilen Sie die Aussagen zur Interpretation von Tensidversuchen.",
+      "options": [
+        {
+          "text": "Eine klare Probe und ein trüber Ansatz können denselben Farbstoff in unterschiedlichen Aggregatzuständen enthalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Änderung der Temperatur kann einen zuvor bestimmten cmc-Wert unpassend machen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine besonders intensive Farbe im Rohansatz allein beweist besonders starke Solubilisierung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aus besserer Benetzung folgt, dass bereits grosse Mengen Mizellen vorhanden sein müssen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Molekulare Einlagerung und dispergierte Partikel erzeugen unterschiedliche optische Beobachtungen. B: Die cmc ist nur für definierte Lösungsbedingungen sinnvoll vergleichbar. C: Auch suspendierte, noch ungelöste Partikel können den Rohansatz färben oder trüben. D: Grenzflächenanreicherung kann schon unterhalb der cmc wirken. Quelle: Originalunterlagen, PDF-S. 8–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC02",
+        "Interpretationsgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interpretationsgrenzen"
+      ],
+      "questionGoal": "Interpretationsgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Interpretationsgrenzen",
+        "correctReasoning": "Molekulare Einlagerung und dispergierte Partikel erzeugen unterschiedliche optische Beobachtungen. Die cmc ist nur für definierte Lösungsbedingungen sinnvoll vergleichbar.",
+        "wrongAnswerExplanations": {
+          "A": "Molekulare Einlagerung und dispergierte Partikel erzeugen unterschiedliche optische Beobachtungen.",
+          "B": "Die cmc ist nur für definierte Lösungsbedingungen sinnvoll vergleichbar.",
+          "C": "Auch suspendierte, noch ungelöste Partikel können den Rohansatz färben oder trüben.",
+          "D": "Grenzflächenanreicherung kann schon unterhalb der cmc wirken."
+        }
+      }
+    }
+  ]
+}

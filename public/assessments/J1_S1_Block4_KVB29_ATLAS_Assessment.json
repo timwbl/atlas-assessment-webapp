@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block4_kvb29_20261102",
+  "lectureCode": "KVB29",
+  "title": "Nucleotidstoffwechsel",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB29_Nucleotide2025WK. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Grafische Wege visuell nachgeprüft. Quelle sagt «Transphosphatidylierungen» statt Phosphoryltransfer und nennt «Orotat-Dehydrogenase» statt Dihydroorotat-Dehydrogenase; Fehler nicht übernommen. Salvage/De novo nicht als exklusiv ruhend/proliferierend dargestellt. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Bausteine und vielfältige Funktionen der Nucleotide erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Salvage und De-novo-Synthese sowie Purin-/Pyrimidinaufbau unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Bildung von Desoxyribonucleotiden und dTMP mit Cofaktoren verknüpfen."
+    },
+    {
+      "id": "lo4",
+      "text": "Rückkopplung und pharmakologische Hemmung der Synthese erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Purin- und Pyrimidinabbau unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb29_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Kombination bildet ein Nucleotid?",
+      "options": [
+        {
+          "text": "Base und Pentose ohne Phosphat.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Base, Pentose und mindestens eine Phosphatgruppe.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Base und Phosphat ohne Pentose.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Pentose und Phosphat ohne Base.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zwei Basen ohne Zucker-Phosphat-Rest.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist ein Nucleosid. B: Ein Nucleosid enthält dagegen Base und Zucker ohne Phosphat. C: Ein Nucleotid benötigt zusätzlich Zucker. D: Der charakteristische Basenanteil fehlt. E: Ein Nucleotid enthält ein solches Rückgratsegment. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Nucleotidaufbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nucleotidaufbau"
+      ],
+      "questionGoal": "Nucleotidaufbau",
+      "structuredExplanation": {
+        "coreIdea": "Nucleotidaufbau",
+        "correctReasoning": "Ein Nucleosid enthält dagegen Base und Zucker ohne Phosphat.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist ein Nucleosid.",
+          "C": "Ein Nucleotid benötigt zusätzlich Zucker.",
+          "D": "Der charakteristische Basenanteil fehlt.",
+          "E": "Ein Nucleotid enthält ein solches Rückgratsegment."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welches Molekül dient als aktivierter Zuckerträger?",
+      "options": [
+        {
+          "text": "UDP-Glucose.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "cAMP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "NAD+.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Freie Glucose ohne Nucleotidbindung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Nucleotidbindung erleichtert die Übertragung des Zuckerbausteins. B: Dies ist vor allem ein Signalmolekül. C: Es ist ein Energie-/Phosphatüberträger, kein entsprechender aktivierter Zucker. D: Es ist ein Redoxcoenzym. E: Ihr fehlt die beschriebene Aktivierung als UDP-Zucker. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Aktivierte Bausteine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktivierte Bausteine"
+      ],
+      "questionGoal": "Aktivierte Bausteine",
+      "structuredExplanation": {
+        "coreIdea": "Aktivierte Bausteine",
+        "correctReasoning": "Die Nucleotidbindung erleichtert die Übertragung des Zuckerbausteins.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist vor allem ein Signalmolekül.",
+          "C": "Es ist ein Energie-/Phosphatüberträger, kein entsprechender aktivierter Zucker.",
+          "D": "Es ist ein Redoxcoenzym.",
+          "E": "Ihr fehlt die beschriebene Aktivierung als UDP-Zucker."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Was ist der zentrale Vorteil eines Salvage-Weges?",
+      "options": [
+        {
+          "text": "Vollständiger Neuaufbau jedes Rings aus kleinen Vorstufen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwingend höherer Energiebedarf als bei jedem De-novo-Weg.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Polymerisation freier Basen zu DNA ohne Zucker und Phosphat.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bereits vorhandene Basen oder Nucleoside werden mit geringerem Syntheseaufwand wiederverwertet.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Vollständiger Verzicht auf regulierte Nucleotidpools.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist De-novo-Synthese. B: Wiederverwertung spart typischerweise Schritte. C: Dafür werden vollständige aktivierte Nucleotide benötigt. D: Der vollständige Ringaufbau muss nicht erneut erfolgen. E: Auch Salvage trägt zu diesen Pools bei. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Salvage"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Salvage"
+      ],
+      "questionGoal": "Salvage",
+      "structuredExplanation": {
+        "coreIdea": "Salvage",
+        "correctReasoning": "Der vollständige Ringaufbau muss nicht erneut erfolgen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist De-novo-Synthese.",
+          "B": "Wiederverwertung spart typischerweise Schritte.",
+          "C": "Dafür werden vollständige aktivierte Nucleotide benötigt.",
+          "E": "Auch Salvage trägt zu diesen Pools bei."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Rolle hat PRPP in der Nucleotidbiosynthese?",
+      "options": [
+        {
+          "text": "Es liefert unmittelbar die Methylgruppe für dUMP.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es ist das gemeinsame fertige Purinprodukt vor AMP und GMP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es ist der Haupt-C1-Donor der Purinringbildung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es ist das charakteristische Endprodukt des Purinabbaus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es stellt eine aktivierte Ribosephosphat-Einheit bereit.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese stammt aus Methylen-THF. B: Das ist IMP. C: Formyl-THF erfüllt diese Funktion. D: Das ist Harnsäure beziehungsweise Urat. E: Sie wird bei Purin- und Pyrimidinwegen genutzt. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "PRPP"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PRPP"
+      ],
+      "questionGoal": "PRPP",
+      "structuredExplanation": {
+        "coreIdea": "PRPP",
+        "correctReasoning": "Sie wird bei Purin- und Pyrimidinwegen genutzt.",
+        "wrongAnswerExplanations": {
+          "A": "Diese stammt aus Methylen-THF.",
+          "B": "Das ist IMP.",
+          "C": "Formyl-THF erfüllt diese Funktion.",
+          "D": "Das ist Harnsäure beziehungsweise Urat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welcher Unterschied zwischen Purin- und Pyrimidinsynthese trifft zu?",
+      "options": [
+        {
+          "text": "Beide Ringsysteme werden zuerst frei gebildet und dann an Ribose angehängt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Beide Ringsysteme entstehen vollständig direkt am Ribosegerüst.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Purinring wird auf der Ribose aufgebaut; der Pyrimidinring wird zunächst separat gebildet.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur Purinsynthese benötigt überhaupt eine Riboseeinheit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Beide Synthesewege laufen vollständig über IMP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Purine werden am Ribosegerüst aufgebaut. B: Pyrimidine werden zunächst separat aufgebaut. C: Erst später wird der Pyrimidinring mit PRPP verknüpft. D: Auch Pyrimidinnucleotide enthalten Ribose beziehungsweise Desoxyribose. E: IMP ist der Purinverzweigungspunkt. Quelle: Originalunterlagen, PDF-S. 9–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Ringaufbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ringaufbau"
+      ],
+      "questionGoal": "Ringaufbau",
+      "structuredExplanation": {
+        "coreIdea": "Ringaufbau",
+        "correctReasoning": "Erst später wird der Pyrimidinring mit PRPP verknüpft.",
+        "wrongAnswerExplanations": {
+          "A": "Purine werden am Ribosegerüst aufgebaut.",
+          "B": "Pyrimidine werden zunächst separat aufgebaut.",
+          "D": "Auch Pyrimidinnucleotide enthalten Ribose beziehungsweise Desoxyribose.",
+          "E": "IMP ist der Purinverzweigungspunkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q06",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welches gemeinsame Zwischenprodukt führt bei der Purin-De-novo-Synthese zu AMP und GMP?",
+      "options": [
+        {
+          "text": "IMP.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Harnsäure.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CTP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "dTMP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "UMP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Von Inosinmonophosphat zweigen beide Wege ab. B: Sie ist ein Abbauprodukt und kein gemeinsamer Syntheseknoten. C: Cytidintriphosphat ist ein Pyrimidin-Endprodukt. D: Thymidinmonophosphat ist ein Desoxypyrimidinnucleotid. E: Uridinmonophosphat gehört zum Pyrimidinweg. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Verzweigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verzweigung"
+      ],
+      "questionGoal": "Verzweigung",
+      "structuredExplanation": {
+        "coreIdea": "Verzweigung",
+        "correctReasoning": "Von Inosinmonophosphat zweigen beide Wege ab.",
+        "wrongAnswerExplanations": {
+          "B": "Sie ist ein Abbauprodukt und kein gemeinsamer Syntheseknoten.",
+          "C": "Cytidintriphosphat ist ein Pyrimidin-Endprodukt.",
+          "D": "Thymidinmonophosphat ist ein Desoxypyrimidinnucleotid.",
+          "E": "Uridinmonophosphat gehört zum Pyrimidinweg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Ausgangsstoffe liefern den Pyrimidinring im dargestellten Weg?",
+      "options": [
+        {
+          "text": "Carbamoylphosphat und Aspartat.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Glycin und zwei Formyl-THF-Einheiten als unmittelbare alleinige Ringvorstufen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "IMP und Glutamin als vollständiger Pyrimidinstart.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Harnsäure und Ribose-5-phosphat.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Adenin und Guanin.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Ring entsteht vor seiner Anknüpfung an Ribosephosphat. B: Diese Kombination erinnert an Beiträge zur Purinsynthese. C: IMP gehört zum Purinweg. D: Dies ist kein Pyrimidin-De-novo-Ringaufbau. E: Dies sind fertige Purinbasen. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Pyrimidinvorstufen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pyrimidinvorstufen"
+      ],
+      "questionGoal": "Pyrimidinvorstufen",
+      "structuredExplanation": {
+        "coreIdea": "Pyrimidinvorstufen",
+        "correctReasoning": "Der Ring entsteht vor seiner Anknüpfung an Ribosephosphat.",
+        "wrongAnswerExplanations": {
+          "B": "Diese Kombination erinnert an Beiträge zur Purinsynthese.",
+          "C": "IMP gehört zum Purinweg.",
+          "D": "Dies ist kein Pyrimidin-De-novo-Ringaufbau.",
+          "E": "Dies sind fertige Purinbasen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welches Nucleotid wird im dargestellten Weg durch Aminierung zu CTP umgewandelt?",
+      "options": [
+        {
+          "text": "UTP.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "GTP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "IMP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "dTMP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "ATP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Glutamin liefert dabei den Stickstoff der neuen Aminogruppe. B: Dies ist ein Purinnucleotid. C: Dies ist der Purinverzweigungspunkt. D: Es besitzt zusätzlich einen anderen Zucker und Methylrest. E: Adenin wird nicht durch diese einfache Aminierung zu Cytosin. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "CTP-Synthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CTP-Synthese"
+      ],
+      "questionGoal": "CTP-Synthese",
+      "structuredExplanation": {
+        "coreIdea": "CTP-Synthese",
+        "correctReasoning": "Glutamin liefert dabei den Stickstoff der neuen Aminogruppe.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist ein Purinnucleotid.",
+          "C": "Dies ist der Purinverzweigungspunkt.",
+          "D": "Es besitzt zusätzlich einen anderen Zucker und Methylrest.",
+          "E": "Adenin wird nicht durch diese einfache Aminierung zu Cytosin."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Umwandlung katalysiert die Ribonucleotidreductase im dargestellten Säugerweg?",
+      "options": [
+        {
+          "text": "Nucleosidmonophosphate werden ausschliesslich phosphoryliert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "dUMP wird durch C1-Übertragung in dTMP umgewandelt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Freie Basen werden unter PRPP-Verbrauch wiederverwertet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nucleosiddiphosphate werden ohne Zuckerreduktion zu Triphosphaten phosphoryliert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nucleosiddiphosphate werden zu Desoxynucleosiddiphosphaten reduziert.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die charakteristische Reaktion ist Zuckerreduktion an NDPs. B: Dies katalysiert Thymidylatsynthase. C: Dies beschreibt einen Salvage-Schritt. D: Dies ist ein Kinaseschritt. E: Die 2′-OH-Gruppe wird unter Reduktionsäquivalentverbrauch ersetzt. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Ribonucleotidreductase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ribonucleotidreductase"
+      ],
+      "questionGoal": "Ribonucleotidreductase",
+      "structuredExplanation": {
+        "coreIdea": "Ribonucleotidreductase",
+        "correctReasoning": "Die 2′-OH-Gruppe wird unter Reduktionsäquivalentverbrauch ersetzt.",
+        "wrongAnswerExplanations": {
+          "A": "Die charakteristische Reaktion ist Zuckerreduktion an NDPs.",
+          "B": "Dies katalysiert Thymidylatsynthase.",
+          "C": "Dies beschreibt einen Salvage-Schritt.",
+          "D": "Dies ist ein Kinaseschritt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Kombination wird zur Bildung von dTMP benötigt?",
+      "options": [
+        {
+          "text": "dUMP und N10-Formyl-THF.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "UMP und N5,N10-Methylen-THF.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "dCMP und SAM als unmittelbare Substrate.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "dUMP und Methylcobalamin als unmittelbarer Donor.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "dUMP und N5,N10-Methylen-THF.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Formyl-THF ist nicht der entsprechende Thymidylat-C1-Donor. B: UMP besitzt noch Ribose statt Desoxyribose. C: Dies ist nicht die direkte Thymidylatsynthasereaktion. D: Methylcobalamin gehört zur Methioninsynthasereaktion. E: Thymidylatsynthase überträgt die C1-Einheit auf dUMP. Quelle: Originalunterlagen, PDF-S. 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "dTMP"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "dTMP"
+      ],
+      "questionGoal": "dTMP",
+      "structuredExplanation": {
+        "coreIdea": "dTMP",
+        "correctReasoning": "Thymidylatsynthase überträgt die C1-Einheit auf dUMP.",
+        "wrongAnswerExplanations": {
+          "A": "Formyl-THF ist nicht der entsprechende Thymidylat-C1-Donor.",
+          "B": "UMP besitzt noch Ribose statt Desoxyribose.",
+          "C": "Dies ist nicht die direkte Thymidylatsynthasereaktion.",
+          "D": "Methylcobalamin gehört zur Methioninsynthasereaktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Warum hemmt ein hoher AMP-Spiegel den AMP-spezifischen Synthesezweig?",
+      "options": [
+        {
+          "text": "Endprodukthemmung begrenzt eine weitere Überproduktion.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Endproduktaktivierung soll den eigenen AMP-Überschuss weiter verstärken.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "AMP muss dafür zuerst vollständig zu Harnsäure abgebaut sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Hemmung beweist einen Mangel an AMP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Reaktion verhindert ausschliesslich Salvage und lässt den AMP-Neuaufbau unverändert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die vorhandene Menge wirkt als negatives Rückkopplungssignal. B: Dies wäre positive statt negativer Rückkopplung. C: Der vorhandene Endproduktpool kann regulierend wirken. D: Im Stamm liegt gerade ein hoher Spiegel vor. E: Der Stamm betrifft den AMP-spezifischen Synthesezweig. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rückkopplung"
+      ],
+      "questionGoal": "Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Rückkopplung",
+        "correctReasoning": "Die vorhandene Menge wirkt als negatives Rückkopplungssignal.",
+        "wrongAnswerExplanations": {
+          "B": "Dies wäre positive statt negativer Rückkopplung.",
+          "C": "Der vorhandene Endproduktpool kann regulierend wirken.",
+          "D": "Im Stamm liegt gerade ein hoher Spiegel vor.",
+          "E": "Der Stamm betrifft den AMP-spezifischen Synthesezweig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welches schlecht lösliche Endprodukt des menschlichen Purinabbaus kann bei erhöhter Konzentration Kristallablagerungen begünstigen?",
+      "options": [
+        {
+          "text": "β-Alanin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Harnstoff als vollständiges Purinringskelett.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Harnsäure beziehungsweise Urat.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ribose-5-phosphat als einziges Endprodukt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Intaktes ATP als ausgeschiedenes Endprodukt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies gehört zum Pyrimidinabbau. B: Harnstoff ist nicht das charakteristische Purin-Endprodukt. C: Erhöhte Pools können zur Gichtpathophysiologie beitragen. D: Der Purinring wird zu Harnsäure abgebaut. E: ATP wird vorher über mehrere Stufen abgebaut. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Purinabbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Purinabbau"
+      ],
+      "questionGoal": "Purinabbau",
+      "structuredExplanation": {
+        "coreIdea": "Purinabbau",
+        "correctReasoning": "Erhöhte Pools können zur Gichtpathophysiologie beitragen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies gehört zum Pyrimidinabbau.",
+          "B": "Harnstoff ist nicht das charakteristische Purin-Endprodukt.",
+          "D": "Der Purinring wird zu Harnsäure abgebaut.",
+          "E": "ATP wird vorher über mehrere Stufen abgebaut."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Nucleotidfunktionen» treffen zu?",
+      "options": [
+        {
+          "text": "cAMP und cGMP können intrazelluläre Signale vermitteln.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nucleotide werden ausschliesslich für DNA benötigt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "cAMP dient der RNA-Polymerase regulär als direktes Ersatzsubstrat für ATP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "UDP-Glucose ist primär ein zyklischer Botenstoff wie cAMP.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Cyclisierung erzeugt Signalmoleküle. B: Sie dienen auch RNA, Energieübertragung und weiteren Funktionen. C: RNA-Synthese benötigt Nucleosidtriphosphate, nicht zyklisches AMP. D: Sie dient als aktivierter Zuckerträger. Quelle: Originalunterlagen, PDF-S. 2–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Nucleotidfunktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nucleotidfunktionen"
+      ],
+      "questionGoal": "Nucleotidfunktionen",
+      "structuredExplanation": {
+        "coreIdea": "Nucleotidfunktionen",
+        "correctReasoning": "Cyclisierung erzeugt Signalmoleküle.",
+        "wrongAnswerExplanations": {
+          "A": "Cyclisierung erzeugt Signalmoleküle.",
+          "B": "Sie dienen auch RNA, Energieübertragung und weiteren Funktionen.",
+          "C": "RNA-Synthese benötigt Nucleosidtriphosphate, nicht zyklisches AMP.",
+          "D": "Sie dient als aktivierter Zuckerträger."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Salvage und De novo» treffen zu?",
+      "options": [
+        {
+          "text": "Purinbasen können mit PRPP zu Nucleotiden wiederverwertet werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die De-novo-Synthese benötigt kleine Vorstufen und Energie.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Salvage ist grundsätzlich auf sich teilende Zellen beschränkt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Auch proliferierende Zellen können Salvage zur Nucleotidversorgung nutzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Phosphoribosyltransferasen katalysieren entsprechende Salvage-Reaktionen. B: Die Ringsysteme werden schrittweise aufgebaut. C: Wiederverwertung ist auch in ruhenden Zellen wichtig. D: De novo und Wiederverwertung können parallel beitragen. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Salvage und De novo"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Salvage und De novo"
+      ],
+      "questionGoal": "Salvage und De novo",
+      "structuredExplanation": {
+        "coreIdea": "Salvage und De novo",
+        "correctReasoning": "Phosphoribosyltransferasen katalysieren entsprechende Salvage-Reaktionen. Die Ringsysteme werden schrittweise aufgebaut. De novo und Wiederverwertung können parallel beitragen.",
+        "wrongAnswerExplanations": {
+          "A": "Phosphoribosyltransferasen katalysieren entsprechende Salvage-Reaktionen.",
+          "B": "Die Ringsysteme werden schrittweise aufgebaut.",
+          "C": "Wiederverwertung ist auch in ruhenden Zellen wichtig.",
+          "D": "De novo und Wiederverwertung können parallel beitragen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Purinsynthese» treffen zu?",
+      "options": [
+        {
+          "text": "Glycin, Glutamin und Aspartat tragen zum Aufbau des Purinrings bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Formyl-THF liefert C1-Bausteine.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "AMP und GMP entstehen im De-novo-Weg ohne gemeinsames Zwischenprodukt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Purinring wird erst nach vollständiger Synthese an Ribose angehängt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehrere Vorstufen liefern unterschiedliche Ringatome. B: Damit ist die Purinsynthese an den Folatstoffwechsel gekoppelt. C: Beide gehen von IMP aus. D: Er wird schrittweise am Ribosegerüst aufgebaut. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Purinsynthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Purinsynthese"
+      ],
+      "questionGoal": "Purinsynthese",
+      "structuredExplanation": {
+        "coreIdea": "Purinsynthese",
+        "correctReasoning": "Mehrere Vorstufen liefern unterschiedliche Ringatome. Damit ist die Purinsynthese an den Folatstoffwechsel gekoppelt.",
+        "wrongAnswerExplanations": {
+          "A": "Mehrere Vorstufen liefern unterschiedliche Ringatome.",
+          "B": "Damit ist die Purinsynthese an den Folatstoffwechsel gekoppelt.",
+          "C": "Beide gehen von IMP aus.",
+          "D": "Er wird schrittweise am Ribosegerüst aufgebaut."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Pyrimidinsynthese» treffen zu?",
+      "options": [
+        {
+          "text": "Für jede Phosphorylierung eines Nucleotids muss die Base vollständig neu aufgebaut werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der CAD-Komplex vereint mehrere frühe katalytische Funktionen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Pyrimidin-De-novo-Synthese beginnt mit Harnsäure.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Aus UMP können durch Phosphorylierung UDP und UTP entstehen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Phosphatstufe kann unabhängig vom Ringaufbau verändert werden. B: Die Quelle beschreibt drei aktive Zentren in einer Polypeptidkette. C: Sie beginnt mit kleinen Vorstufen, darunter Carbamoylphosphat und Aspartat. D: Anschliessend kann UTP in CTP überführt werden. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Pyrimidinsynthese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pyrimidinsynthese"
+      ],
+      "questionGoal": "Pyrimidinsynthese",
+      "structuredExplanation": {
+        "coreIdea": "Pyrimidinsynthese",
+        "correctReasoning": "Die Quelle beschreibt drei aktive Zentren in einer Polypeptidkette. Anschliessend kann UTP in CTP überführt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Phosphatstufe kann unabhängig vom Ringaufbau verändert werden.",
+          "B": "Die Quelle beschreibt drei aktive Zentren in einer Polypeptidkette.",
+          "C": "Sie beginnt mit kleinen Vorstufen, darunter Carbamoylphosphat und Aspartat.",
+          "D": "Anschliessend kann UTP in CTP überführt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «DNA-Bausteine» treffen zu?",
+      "options": [
+        {
+          "text": "Die dTMP-Synthese benötigt als Substrat ein bereits fertiges DNA-Molekül.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ribonucleotidreductase erzeugt die Thymin-Methylgruppe direkt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NADPH liefert letztlich Reduktionsäquivalente für die Desoxyribonucleotidbildung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Folatmangel kann die dTMP-Bildung beeinträchtigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Substrat ist dUMP. B: Sie verändert den Zucker, nicht die Uracil-Methylierung. C: Die Übertragung erfolgt über weitere Redoxpartner. D: Der erforderliche C1-Donor hängt vom Folatstoffwechsel ab. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "DNA-Bausteine"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DNA-Bausteine"
+      ],
+      "questionGoal": "DNA-Bausteine",
+      "structuredExplanation": {
+        "coreIdea": "DNA-Bausteine",
+        "correctReasoning": "Die Übertragung erfolgt über weitere Redoxpartner. Der erforderliche C1-Donor hängt vom Folatstoffwechsel ab.",
+        "wrongAnswerExplanations": {
+          "A": "Das Substrat ist dUMP.",
+          "B": "Sie verändert den Zucker, nicht die Uracil-Methylierung.",
+          "C": "Die Übertragung erfolgt über weitere Redoxpartner.",
+          "D": "Der erforderliche C1-Donor hängt vom Folatstoffwechsel ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Poolregulation» treffen zu?",
+      "options": [
+        {
+          "text": "Eine solche Hemmung betrifft grundsätzlich nur Tumorzellen und nie normale proliferierende Zellen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hemmstoffe der Nucleotidbiosynthese können proliferierende Zellen besonders treffen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Endprodukte können frühe Syntheseschritte hemmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Alle Nucleotidpools sollen unabhängig voneinander unbegrenzt ansteigen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch normale Gewebe können betroffen sein. B: Diese haben hohen Bedarf für Nukleinsäuresynthese. C: Dies begrenzt unnötigen Energieverbrauch. D: Ausgeglichene Pools sind für zuverlässige Synthese wichtig. Quelle: Originalunterlagen, PDF-S. 17–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Poolregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Poolregulation"
+      ],
+      "questionGoal": "Poolregulation",
+      "structuredExplanation": {
+        "coreIdea": "Poolregulation",
+        "correctReasoning": "Diese haben hohen Bedarf für Nukleinsäuresynthese. Dies begrenzt unnötigen Energieverbrauch.",
+        "wrongAnswerExplanations": {
+          "A": "Auch normale Gewebe können betroffen sein.",
+          "B": "Diese haben hohen Bedarf für Nukleinsäuresynthese.",
+          "C": "Dies begrenzt unnötigen Energieverbrauch.",
+          "D": "Ausgeglichene Pools sind für zuverlässige Synthese wichtig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Abbauvergleich» treffen zu?",
+      "options": [
+        {
+          "text": "Beim Pyrimidinabbau können kleine lösliche Stoffwechselmetabolite entstehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Löslichkeit eines Abbauprodukts spielt für Ablagerungen keine Rolle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Pyrimidinringe werden beim Menschen ausschliesslich zu Harnsäure abgebaut.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Purinabbau führt beim Menschen zu Harnsäure.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dazu gehören beispielsweise β-Alanin oder β-Aminoisobutyrat. B: Geringe Löslichkeit begünstigt Kristallbildung bei Übersättigung. C: Ihre Ringe werden zu anderen Metaboliten abgebaut. D: Die Quelle nennt sie als charakteristisches Endprodukt. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Abbauvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abbauvergleich"
+      ],
+      "questionGoal": "Abbauvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Abbauvergleich",
+        "correctReasoning": "Dazu gehören beispielsweise β-Alanin oder β-Aminoisobutyrat. Die Quelle nennt sie als charakteristisches Endprodukt.",
+        "wrongAnswerExplanations": {
+          "A": "Dazu gehören beispielsweise β-Alanin oder β-Aminoisobutyrat.",
+          "B": "Geringe Löslichkeit begünstigt Kristallbildung bei Übersättigung.",
+          "C": "Ihre Ringe werden zu anderen Metaboliten abgebaut.",
+          "D": "Die Quelle nennt sie als charakteristisches Endprodukt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb29_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB29",
+      "stem": "Welche Aussagen zum Thema «Versorgung der Replikation» treffen zu?",
+      "options": [
+        {
+          "text": "Ribosebereitstellung allein genügt nicht zur Synthese aller dNTPs.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "RNA-Synthese verwendet ausschliesslich Desoxyribonucleosidtriphosphate.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Blockade der dTMP-Synthese kann die DNA-Synthese trotz vorhandener anderer Basen limitieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein hoher ATP-Spiegel ersetzt automatisch jedes fehlende dNTP.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Basenaufbau, Reduktion und Phosphorylierungen sind ebenfalls nötig. B: Sie verwendet Ribonucleosidtriphosphate. C: Der fehlende Baustein lässt sich nicht beliebig ersetzen. D: DNA-Polymerasen benötigen die verschiedenen passenden dNTPs. Quelle: Originalunterlagen, PDF-S. 6–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB29",
+        "Versorgung der Replikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Versorgung der Replikation"
+      ],
+      "questionGoal": "Versorgung der Replikation",
+      "structuredExplanation": {
+        "coreIdea": "Versorgung der Replikation",
+        "correctReasoning": "Basenaufbau, Reduktion und Phosphorylierungen sind ebenfalls nötig. Der fehlende Baustein lässt sich nicht beliebig ersetzen.",
+        "wrongAnswerExplanations": {
+          "A": "Basenaufbau, Reduktion und Phosphorylierungen sind ebenfalls nötig.",
+          "B": "Sie verwendet Ribonucleosidtriphosphate.",
+          "C": "Der fehlende Baustein lässt sich nicht beliebig ersetzen.",
+          "D": "DNA-Polymerasen benötigen die verschiedenen passenden dNTPs."
+        }
+      }
+    }
+  ]
+}

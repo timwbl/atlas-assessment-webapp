@@ -1,4 +1,5 @@
 import type { Assessment, AssessmentSubject, AssessmentSummary } from "./types";
+import { normalizedBlockId } from "./studyProgram";
 
 export const ASSESSMENT_SUBJECTS: readonly AssessmentSubject[] = [
   "Embryologie",
@@ -55,6 +56,7 @@ export function normalizeAssessmentSubject(
   if (explicit) return explicit;
 
   const code = normalizeText(assessment.lectureCode || "");
+  if (/^kvbs/.test(code)) return "Public Health / Epidemiologie";
   if (/^kvb/.test(code)) return "Biochemie";
   if (/^kvc/.test(code)) return "Chemie";
   if (/^kvp/.test(code)) return "Physik";
@@ -113,6 +115,24 @@ export function normalizeAssessmentSubject(
 
 export function getAssessmentSubject(assessment: AssessmentCatalogItem): AssessmentSubject {
   return assessment.subject || normalizeAssessmentSubject(undefined, assessment);
+}
+
+export function assessmentMatchesLibraryBlock(
+  assessment: { block: string; title?: string; lectureCode?: string },
+  block: { title: string; canonicalBlockId?: string; matchTerms?: readonly string[] }
+): boolean {
+  const selectedId = block.canonicalBlockId || normalizedBlockId(block.title);
+  if (selectedId) {
+    const actualId = normalizedBlockId(assessment.block);
+    return actualId === selectedId;
+  }
+
+  const actual = normalizeText(assessment.block);
+  return actual === normalizeText(block.title)
+    || (block.matchTerms || []).some((term) => {
+      const normalized = normalizeText(term);
+      return !!normalized && actual.includes(normalized);
+    });
 }
 
 export function parseAssessmentSortKey(

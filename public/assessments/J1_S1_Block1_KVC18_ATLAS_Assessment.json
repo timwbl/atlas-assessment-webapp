@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block1_kvc18_20261102",
+  "lectureCode": "KVC18",
+  "title": "Konformationsanalyse",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC18 - Konformationsanalyse. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Anti/gauche-Bevorzugung wird am n-Butan erläutert, nicht als universelles Gesetz. Konformation, Konfiguration und Moleküldynamik sind getrennt. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Konformation und Konfiguration sowie Newman-Projektionen unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Rotationsbarrieren und anti/gauche-Beziehungen erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Cyclohexansessel, axiale/äquatoriale Gruppen und Decalinformen vergleichen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc18_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Welche Änderung ist ein reiner Konformationswechsel bei unveränderter Konstitution und stabilen Stereozentren?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Umwandlung eines Alkohols in ein Keton.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Änderung einer E- in eine Z-Doppelbindungskonfiguration.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Spaltung einer Ring-C–C-Bindung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Rotation um eine geeignete C–C-Einfachbindung.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Austausch zweier Liganden an einem tetraedrischen Stereozentrum.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Alkoholoxidation verändert die funktionelle Gruppe und ist eine chemische Reaktion. B: E/Z beschreibt Konfiguration an der Doppelbindung, die nicht durch freie Einfachbindungsrotation gewechselt wird. C: Eine Ringbindung zu spalten verändert die Konstitution. D: Konformationen entstehen durch räumliche Beweglichkeit ohne Änderung der Bindungsverknüpfung oder stabilen Konfiguration. E: Ein einzelner Ligandenaustausch kann die Konfiguration invertieren und ist keine blosse Bindungsrotation. Quelle: Originalunterlagen, PDF-S. 3–4,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Konformation versus Konfiguration"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konformation versus Konfiguration"
+      ],
+      "questionGoal": "Konformation versus Konfiguration",
+      "structuredExplanation": {
+        "coreIdea": "Konformation versus Konfiguration",
+        "correctReasoning": "Konformationen entstehen durch räumliche Beweglichkeit ohne Änderung der Bindungsverknüpfung oder stabilen Konfiguration.",
+        "wrongAnswerExplanations": {
+          "A": "Die Alkoholoxidation verändert die funktionelle Gruppe und ist eine chemische Reaktion.",
+          "B": "E/Z beschreibt Konfiguration an der Doppelbindung, die nicht durch freie Einfachbindungsrotation gewechselt wird.",
+          "C": "Eine Ringbindung zu spalten verändert die Konstitution.",
+          "E": "Ein einzelner Ligandenaustausch kann die Konfiguration invertieren und ist keine blosse Bindungsrotation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Welche Blickrichtung definiert eine Newmanprojektion einer C–C-Bindung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Senkrecht auf jede beliebige Ringebene ohne Bindungsbezug.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Entlang einer Doppelbindung, wobei alle Substituenten gelöscht werden.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ausschliesslich von oben auf ein planardargestelltes Stereozentrum.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Entlang der Bindungsachse vom vorderen zum hinteren C.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Entlang einer Achse, die immer durch alle Atome des Moleküls läuft.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Der Blick ist entlang und nicht senkrecht zur betrachteten Bindungsachse. B: Die Substituenten werden gerade zur Winkelanalyse eingezeichnet und nicht gelöscht. C: Eine Draufsicht auf die Ebene ist nicht die Festlegung von vorderem und hinterem Bindungsatom. D: Newman unterscheidet die am vorderen und hinteren Atom sitzenden Substituenten beim Blick entlang einer bestimmten Bindung. E: Newman projiziert eine gewählte Bindung, nicht eine Achse durch sämtliche Atome eines beliebigen Moleküls. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Newman-Blick"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Newman-Blick"
+      ],
+      "questionGoal": "Newman-Blick",
+      "structuredExplanation": {
+        "coreIdea": "Newman-Blick",
+        "correctReasoning": "Newman unterscheidet die am vorderen und hinteren Atom sitzenden Substituenten beim Blick entlang einer bestimmten Bindung.",
+        "wrongAnswerExplanations": {
+          "A": "Der Blick ist entlang und nicht senkrecht zur betrachteten Bindungsachse.",
+          "B": "Die Substituenten werden gerade zur Winkelanalyse eingezeichnet und nicht gelöscht.",
+          "C": "Eine Draufsicht auf die Ebene ist nicht die Festlegung von vorderem und hinterem Bindungsatom.",
+          "E": "Newman projiziert eine gewählte Bindung, nicht eine Achse durch sämtliche Atome eines beliebigen Moleküls."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Welche Ethan-Konformation ist im einfachen Rotationsmodell energetisch günstiger?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine Stellung mit neu entstandener C=C-Bindung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Gestaffelt.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Jede Winkelstellung besitzt exakt dieselbe Energie.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Nur eine Stellung mit gespaltenem C–C-Gerüst.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Vollständig ekliptisch.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Eine neue Doppelbindung wäre eine Änderung des Bindungszustands statt einer Ethan-Konformation. B: Die gestaffelte Anordnung vermindert ungünstige Torsionsüberdeckung; Rotation besitzt eine endliche Barriere. C: Die Rotationspotentialkurve besitzt Maxima und Minima; die Winkel sind nicht energiegleich. D: Die C–C-Bindung bleibt bei Ethan-Konformationen intakt. E: Ekliptische Anordnung erhöht im Ethan-Grundmodell die Torsionsspannung. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Ethanrotation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ethanrotation"
+      ],
+      "questionGoal": "Ethanrotation",
+      "structuredExplanation": {
+        "coreIdea": "Ethanrotation",
+        "correctReasoning": "Die gestaffelte Anordnung vermindert ungünstige Torsionsüberdeckung; Rotation besitzt eine endliche Barriere.",
+        "wrongAnswerExplanations": {
+          "A": "Eine neue Doppelbindung wäre eine Änderung des Bindungszustands statt einer Ethan-Konformation.",
+          "C": "Die Rotationspotentialkurve besitzt Maxima und Minima; die Winkel sind nicht energiegleich.",
+          "D": "Die C–C-Bindung bleibt bei Ethan-Konformationen intakt.",
+          "E": "Ekliptische Anordnung erhöht im Ethan-Grundmodell die Torsionsspannung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Welche Anordnung der beiden endständigen Methylgruppen ist für n-Butan typischerweise am günstigsten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vollständige CH₃/CH₃-Überdeckung bei ungefähr 0°.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Eine Stellung, in der beide CH₃-Gruppen am selben C gebunden sind.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein Diederwinkel von 120° mit maximaler Überdeckung als universelles Minimum.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "gauche mit ungefähr 60° in jedem Fall gleich günstig.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "anti mit ungefähr 180° Diederwinkel.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die vollständige Methylüberdeckung ist wegen sterischer Nähe besonders ungünstig. B: Beide Methylgruppen am selben C hätten eine andere Konstitution als n-Butan. C: 120° ist für die betrachteten Methylgruppen kein universelles anti-Minimum. D: gauche ist im n-Butan-Modell ein höheres Minimum als anti. E: anti vermindert die sterische Nähe der Methylgruppen und ist im n-Butan-Modell das tiefere Minimum. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Butan-anti"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Butan-anti"
+      ],
+      "questionGoal": "Butan-anti",
+      "structuredExplanation": {
+        "coreIdea": "Butan-anti",
+        "correctReasoning": "anti vermindert die sterische Nähe der Methylgruppen und ist im n-Butan-Modell das tiefere Minimum.",
+        "wrongAnswerExplanations": {
+          "A": "Die vollständige Methylüberdeckung ist wegen sterischer Nähe besonders ungünstig.",
+          "B": "Beide Methylgruppen am selben C hätten eine andere Konstitution als n-Butan.",
+          "C": "120° ist für die betrachteten Methylgruppen kein universelles anti-Minimum.",
+          "D": "gauche ist im n-Butan-Modell ein höheres Minimum als anti."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Welcher Diederwinkel bezeichnet bei den betrachteten Substituenten typischerweise gauche?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ungefähr 180°.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ungefähr 60°.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ungefähr 360° als eigene Konformation.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ungefähr 0°.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ungefähr 120°.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 180° bezeichnet anti. B: gauche ist eine gestaffelte Anordnung mit etwa 60°; anti liegt bei 180°, 0° ist überdeckt. C: 360° ist wieder die 0°-Überdeckung, keine eigene gauche-Form. D: 0° entspricht einer überdeckten und nicht gauche-Anordnung. E: 120° ist keine gestaffelte gauche-Methylbeziehung des einfachen Butanmodells. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "gauche-Winkel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "gauche-Winkel"
+      ],
+      "questionGoal": "gauche-Winkel",
+      "structuredExplanation": {
+        "coreIdea": "gauche-Winkel",
+        "correctReasoning": "gauche ist eine gestaffelte Anordnung mit etwa 60°; anti liegt bei 180°, 0° ist überdeckt.",
+        "wrongAnswerExplanations": {
+          "A": "180° bezeichnet anti.",
+          "C": "360° ist wieder die 0°-Überdeckung, keine eigene gauche-Form.",
+          "D": "0° entspricht einer überdeckten und nicht gauche-Anordnung.",
+          "E": "120° ist keine gestaffelte gauche-Methylbeziehung des einfachen Butanmodells."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Was bedeutet freie Drehbarkeit einer Einfachbindung im chemischen Grundmodell angemessen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle Winkel müssen exakt energiegleich sein.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es darf keinerlei sterische Wechselwirkung auftreten.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mehrere Konformationen sind zugänglich, können aber unterschiedliche Energie besitzen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie bewirkt bei jedem Umlauf eine dauerhafte Inversion aller R/S-Zentren.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Bindung wird bei jedem Winkelwechsel vollständig hydrolysiert.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Verschiedene Torsionswinkel können trotz Drehbarkeit verschiedene Energie besitzen. B: Sterische Kontakte können gerade die bevorzugten Rotationsstellungen bestimmen. C: Einfachbindungsrotation ist möglich, aber Torsions- und sterische Beiträge erzeugen Barrieren und bevorzugte Winkel. D: Einfachbindungsrotation invertiert die stabilen R/S-Zentren nicht automatisch. E: Konformationsrotation hydrolysiert die C–C-Bindung nicht. Quelle: Originalunterlagen, PDF-S. 3–5,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Rotationsbarriere"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rotationsbarriere"
+      ],
+      "questionGoal": "Rotationsbarriere",
+      "structuredExplanation": {
+        "coreIdea": "Rotationsbarriere",
+        "correctReasoning": "Einfachbindungsrotation ist möglich, aber Torsions- und sterische Beiträge erzeugen Barrieren und bevorzugte Winkel.",
+        "wrongAnswerExplanations": {
+          "A": "Verschiedene Torsionswinkel können trotz Drehbarkeit verschiedene Energie besitzen.",
+          "B": "Sterische Kontakte können gerade die bevorzugten Rotationsstellungen bestimmen.",
+          "D": "Einfachbindungsrotation invertiert die stabilen R/S-Zentren nicht automatisch.",
+          "E": "Konformationsrotation hydrolysiert die C–C-Bindung nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Warum ist der Cyclohexansessel günstiger als eine hypothetische vollständig planare Cyclohexanstruktur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er ersetzt alle Einfachbindungen durch Doppelbindungen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er zwingt alle C zu 120°-Winkeln und vollständiger Eklipse.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Er macht aus Cyclohexan einen aromatischen Benzolring.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er entfernt zwei C-Atome aus dem Ring.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er vermindert Winkel- und Torsionsspannung.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Doppelbindungen würden eine andere Verbindung statt einer Sesselkonformation ergeben. B: 120°-Planarität und Eklipse wären für gesättigtes Cyclohexan ungünstig. C: Cyclohexan bleibt gesättigt und wird durch Faltung nicht zu Benzol aromatisiert. D: Der Sessel enthält dieselben sechs Ring-C; kein C wird entfernt. E: Die räumliche Faltung erlaubt günstige tetraedrische Winkel und weitgehend gestaffelte Nachbarschaften. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Cyclohexansessel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cyclohexansessel"
+      ],
+      "questionGoal": "Cyclohexansessel",
+      "structuredExplanation": {
+        "coreIdea": "Cyclohexansessel",
+        "correctReasoning": "Die räumliche Faltung erlaubt günstige tetraedrische Winkel und weitgehend gestaffelte Nachbarschaften.",
+        "wrongAnswerExplanations": {
+          "A": "Doppelbindungen würden eine andere Verbindung statt einer Sesselkonformation ergeben.",
+          "B": "120°-Planarität und Eklipse wären für gesättigtes Cyclohexan ungünstig.",
+          "C": "Cyclohexan bleibt gesättigt und wird durch Faltung nicht zu Benzol aromatisiert.",
+          "D": "Der Sessel enthält dieselben sechs Ring-C; kein C wird entfernt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Warum ist die Bootform von Cyclohexan im Grundvergleich höherenergetisch als der Sessel?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weil jede Bootform zwingend ionisiert ist.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Weil sie eine andere Summenformel besitzt.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Weil im Boot alle C–C-Bindungen fehlen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Weil Konformationen gleicher Summenformel immer verschiedene Isotope brauchen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zusätzliche Torsions- und räumliche Kontakte, unter anderem im Flaggenmastbereich.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Eine Bootform ist nicht durch eine zwingende Ionenladung definiert. B: Boot und Sessel haben dieselbe Summenformel. C: Die Ring-C–C-Bindungen bleiben in beiden Konformationen erhalten. D: Konformationsenergie entsteht bei gleichen Isotopen allein aus der räumlichen Anordnung. E: Die Energieunterschiede ergeben sich aus der räumlichen Anordnung bei gleicher Konstitution. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Sessel und Boot"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sessel und Boot"
+      ],
+      "questionGoal": "Sessel und Boot",
+      "structuredExplanation": {
+        "coreIdea": "Sessel und Boot",
+        "correctReasoning": "Die Energieunterschiede ergeben sich aus der räumlichen Anordnung bei gleicher Konstitution.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Bootform ist nicht durch eine zwingende Ionenladung definiert.",
+          "B": "Boot und Sessel haben dieselbe Summenformel.",
+          "C": "Die Ring-C–C-Bindungen bleiben in beiden Konformationen erhalten.",
+          "D": "Konformationsenergie entsteht bei gleichen Isotopen allein aus der räumlichen Anordnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Was bleibt bei einer reinen Sesselumklappung eines substituierten Cyclohexans erhalten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zwingend die axiale Lage aller grossen Gruppen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Identität eines gegebenen Sessels als unverändert gleiche Geometrie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nur die Summenformel, während beliebige Bindungen neu verknüpft werden.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Oben/Unten-Zuordnung jedes Substituenten.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Die axiale beziehungsweise äquatoriale Lage jedes Substituenten.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Grosse Gruppen wechseln ebenfalls zwischen axial und äquatorial; sie bleiben nicht zwangsläufig axial. B: Die räumliche Sesselform ändert sich gerade; nur Konstitution/Konfiguration bleiben. C: Die Bindungsnachbarschaften werden bei einer reinen Sesselumklappung nicht neu verknüpft. D: Axial und äquatorial wechseln, aber Konfiguration und cis/trans-Beziehungen bleiben erhalten. E: Axial und äquatorial werden beim Flip vertauscht und bleiben nicht erhalten. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Sesselumklappung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sesselumklappung"
+      ],
+      "questionGoal": "Sesselumklappung",
+      "structuredExplanation": {
+        "coreIdea": "Sesselumklappung",
+        "correctReasoning": "Axial und äquatorial wechseln, aber Konfiguration und cis/trans-Beziehungen bleiben erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Grosse Gruppen wechseln ebenfalls zwischen axial und äquatorial; sie bleiben nicht zwangsläufig axial.",
+          "B": "Die räumliche Sesselform ändert sich gerade; nur Konstitution/Konfiguration bleiben.",
+          "C": "Die Bindungsnachbarschaften werden bei einer reinen Sesselumklappung nicht neu verknüpft.",
+          "E": "Axial und äquatorial werden beim Flip vertauscht und bleiben nicht erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Weshalb bevorzugt Methylcyclohexan häufig die äquatoriale Methylposition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie entfernt die Methylgruppe chemisch.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie macht den Ring vollständig planar.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie vermindert 1,3-diaxiale sterische Kontakte.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Sie invertiert das Molekül in ein anderes Konstitutionsisomer.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie erzeugt eine neue C=C-Doppelbindung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Methylgruppe bleibt chemisch gebunden und wird nur anders orientiert. B: Ein Cyclohexansessel bleibt räumlich gefaltet statt planar. C: Die axiale Methylgruppe kommt anderen axialen Gruppen räumlich nahe; äquatorial vermindert diese ungünstigen Kontakte. D: Axial und äquatorial sind Konformationen gleicher Verknüpfung und keine Konstitutionsisomere. E: Die äquatoriale Lage erzeugt keine neue Doppelbindung. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Methylcyclohexan"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methylcyclohexan"
+      ],
+      "questionGoal": "Methylcyclohexan",
+      "structuredExplanation": {
+        "coreIdea": "Methylcyclohexan",
+        "correctReasoning": "Die axiale Methylgruppe kommt anderen axialen Gruppen räumlich nahe; äquatorial vermindert diese ungünstigen Kontakte.",
+        "wrongAnswerExplanations": {
+          "A": "Die Methylgruppe bleibt chemisch gebunden und wird nur anders orientiert.",
+          "B": "Ein Cyclohexansessel bleibt räumlich gefaltet statt planar.",
+          "D": "Axial und äquatorial sind Konformationen gleicher Verknüpfung und keine Konstitutionsisomere.",
+          "E": "Die äquatoriale Lage erzeugt keine neue Doppelbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Welche Positionen besitzen zwei cis-1,2-Substituenten in einer Cyclohexan-Sesselkonformation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine C1-Gruppe oben und die C2-Gruppe unten.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Beide zwingend in der Ringebene ohne axiale/äquatoriale Zuordnung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine Gruppe axial und eine äquatorial.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Beide immer äquatorial.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Beide immer axial.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Eine Gruppe oben und die andere unten wäre trans statt cis. B: Der Sessel besitzt klar unterscheidbare axiale und äquatoriale Positionen. C: cis bedeutet dieselbe Ringseite; bei benachbarten C führt dies im Sessel zu axial/äquatorial. D: Die diequatoriale 1,2-Anordnung ist trans und nicht cis. E: Auch diaxiale 1,2-Positionen liegen auf verschiedenen Ringseiten und sind trans. Quelle: Originalunterlagen, PDF-S. 7–9,16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "cis-1,2-Substitution"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "cis-1,2-Substitution"
+      ],
+      "questionGoal": "cis-1,2-Substitution",
+      "structuredExplanation": {
+        "coreIdea": "cis-1,2-Substitution",
+        "correctReasoning": "cis bedeutet dieselbe Ringseite; bei benachbarten C führt dies im Sessel zu axial/äquatorial.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Gruppe oben und die andere unten wäre trans statt cis.",
+          "B": "Der Sessel besitzt klar unterscheidbare axiale und äquatoriale Positionen.",
+          "D": "Die diequatoriale 1,2-Anordnung ist trans und nicht cis.",
+          "E": "Auch diaxiale 1,2-Positionen liegen auf verschiedenen Ringseiten und sind trans."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Was unterscheidet cis- und trans-Decalin?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Zahl der C-Atome.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Zahl der Ringe.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nur die Drehrichtung einer freien, isolierten Alkyl-Einfachbindung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Konfiguration der Ringverknüpfung.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Das Vorhandensein einer Carbonylgruppe nur im trans-Isomer.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Beide Decalinformen besitzen dieselbe C-Zahl. B: Beide besitzen zwei fusionierte Ringe. C: Die fusionierte Ringverknüpfung ist konfigurationsbestimmend und keine frei rotierende isolierte Alkylbindung. D: Die fusionierten Ringe besitzen unterschiedliche stereochemische Ringverknüpfung und damit verschiedene räumliche Beweglichkeit. E: cis/trans-Decalin unterscheidet sich nicht durch eine zusätzliche Carbonylgruppe. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Decalin-Isomerie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Decalin-Isomerie"
+      ],
+      "questionGoal": "Decalin-Isomerie",
+      "structuredExplanation": {
+        "coreIdea": "Decalin-Isomerie",
+        "correctReasoning": "Die fusionierten Ringe besitzen unterschiedliche stereochemische Ringverknüpfung und damit verschiedene räumliche Beweglichkeit.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Decalinformen besitzen dieselbe C-Zahl.",
+          "B": "Beide besitzen zwei fusionierte Ringe.",
+          "C": "Die fusionierte Ringverknüpfung ist konfigurationsbestimmend und keine frei rotierende isolierte Alkylbindung.",
+          "E": "cis/trans-Decalin unterscheidet sich nicht durch eine zusätzliche Carbonylgruppe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Axial und äquatorial, cis/trans-Erhaltung, Newman-Projektion, Rotationsbarriere.",
+      "options": [
+        {
+          "text": "Freie konformative Beweglichkeit bedeutet, dass keinerlei Energieunterschied zwischen allen Winkeln besteht.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die cis/trans-Beziehung von Ringsubstituenten bleibt bei einer reinen Sesselumklappung erhalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Axiale und äquatoriale Gruppen sind räumliche Positionen am Sessel und keine unterschiedlichen Atomsorten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Newman-Projektion wird senkrecht zur betrachteten C–C-Achse angesehen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine C–C-Einfachbindung kann trotz Rotationsmöglichkeit eine endliche Torsionsbarriere besitzen. Torsion und sterische Effekte erzeugen Unterschiede. B: Oben/unten bleibt für jeden Substituenten erhalten. C: Die Bezeichnungen betreffen Orientierung. D: Sie blickt entlang der Bindungsachse und unterscheidet vorderes und hinteres Atom. Quelle: Originalunterlagen, PDF-S. 3–4, 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Axial und äquatorial"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Axial und äquatorial"
+      ],
+      "questionGoal": "Axial und äquatorial",
+      "structuredExplanation": {
+        "coreIdea": "Axial und äquatorial",
+        "correctReasoning": "Oben/unten bleibt für jeden Substituenten erhalten. Die Bezeichnungen betreffen Orientierung.",
+        "wrongAnswerExplanations": {
+          "A": "Eine C–C-Einfachbindung kann trotz Rotationsmöglichkeit eine endliche Torsionsbarriere besitzen. Torsion und sterische Effekte erzeugen Unterschiede.",
+          "B": "Oben/unten bleibt für jeden Substituenten erhalten.",
+          "C": "Die Bezeichnungen betreffen Orientierung.",
+          "D": "Sie blickt entlang der Bindungsachse und unterscheidet vorderes und hinteres Atom."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu cis/trans-Erhaltung, cis-1,2, Ethan-Konformere, Cyclohexansessel.",
+      "options": [
+        {
+          "text": "cis-1,2 erfordert in jedem Sessel zwingend zwei äquatoriale Substituenten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die cis/trans-Beziehung von Ringsubstituenten bleibt bei einer reinen Sesselumklappung erhalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei Ethan ist die gestaffelte Konformation energetisch günstiger als die ekliptische.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Cyclohexansessel vermeidet weitgehend ungünstige ekliptische Bindungen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein cis-1,2-disubstituierter Cyclohexansessel besitzt bei üblichen einfachen Substituenten eine axiale und eine äquatoriale Gruppe. Gleiche Ringseite ist nicht gleichbedeutend mit gleicher Positionsart. B: Oben/unten bleibt für jeden Substituenten erhalten. C: Gestaffelte Bindungen vermindern ungünstige Überdeckung. D: Die räumliche Anordnung vermindert Spannung. Quelle: Originalunterlagen, PDF-S. 3–4, 6–8, 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "cis/trans-Erhaltung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "cis/trans-Erhaltung"
+      ],
+      "questionGoal": "cis/trans-Erhaltung",
+      "structuredExplanation": {
+        "coreIdea": "cis/trans-Erhaltung",
+        "correctReasoning": "Oben/unten bleibt für jeden Substituenten erhalten. Gestaffelte Bindungen vermindern ungünstige Überdeckung. Die räumliche Anordnung vermindert Spannung.",
+        "wrongAnswerExplanations": {
+          "A": "Ein cis-1,2-disubstituierter Cyclohexansessel besitzt bei üblichen einfachen Substituenten eine axiale und eine äquatoriale Gruppe. Gleiche Ringseite ist nicht gleichbedeutend mit gleicher Positionsart.",
+          "B": "Oben/unten bleibt für jeden Substituenten erhalten.",
+          "C": "Gestaffelte Bindungen vermindern ungünstige Überdeckung.",
+          "D": "Die räumliche Anordnung vermindert Spannung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu cis-1,2, trans-1,2, n-Butan, Bootform.",
+      "options": [
+        {
+          "text": "Die beiden Methylgruppen in n-Butan sind in anti zwangsläufig stärker aneinander gedrängt als in gauche.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "cis-1,2 erfordert in jedem Sessel zwingend zwei äquatoriale Substituenten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "trans-1,2-Substituenten können in einer Sesselkonformation beide äquatorial stehen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Boot- und Sesselform sind aufgrund gleicher Summenformel zwingend exakt energiegleich.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für n-Butan ist die anti-Anordnung der beiden Methylgruppen meist günstiger als gauche. Der Abstand vermindert sterische Wechselwirkung. B: Ein cis-1,2-disubstituierter Cyclohexansessel besitzt bei üblichen einfachen Substituenten eine axiale und eine äquatoriale Gruppe. Gleiche Ringseite ist nicht gleichbedeutend mit gleicher Positionsart. C: Die alternative Konformation ist diaxial. D: Die Bootform von Cyclohexan ist wegen zusätzlicher ungünstiger Wechselwirkungen meist höherenergetisch als der Sessel. Konformation beeinflusst die Energie. Quelle: Originalunterlagen, PDF-S. 3–6, 8, 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "cis-1,2"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "cis-1,2"
+      ],
+      "questionGoal": "cis-1,2",
+      "structuredExplanation": {
+        "coreIdea": "cis-1,2",
+        "correctReasoning": "Die alternative Konformation ist diaxial.",
+        "wrongAnswerExplanations": {
+          "A": "Für n-Butan ist die anti-Anordnung der beiden Methylgruppen meist günstiger als gauche. Der Abstand vermindert sterische Wechselwirkung.",
+          "B": "Ein cis-1,2-disubstituierter Cyclohexansessel besitzt bei üblichen einfachen Substituenten eine axiale und eine äquatoriale Gruppe. Gleiche Ringseite ist nicht gleichbedeutend mit gleicher Positionsart.",
+          "C": "Die alternative Konformation ist diaxial.",
+          "D": "Die Bootform von Cyclohexan ist wegen zusätzlicher ungünstiger Wechselwirkungen meist höherenergetisch als der Sessel. Konformation beeinflusst die Energie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu trans-1,2, Decalin, gauche-Winkel, Ringinversion.",
+      "options": [
+        {
+          "text": "cis- und trans-Decalin sind definitionsgemäss dieselbe Konfiguration, die durch beliebige Rotation einer Ring-C–C-Bindung frei wechselt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "gauche bedeutet einen Diederwinkel von genau 180 Grad.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "trans-1,2-Substituenten können in einer Sesselkonformation beide äquatorial stehen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Sesselumklappung vertauscht axiale und äquatoriale Positionen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: cis- und trans-Decalin unterscheiden sich in der Konfiguration an der Ringverknüpfung. Die Ringverknüpfung schränkt Bewegungen ein. B: gauche bezeichnet bei der üblichen Newman-Betrachtung einen Diederwinkel von ungefähr 60 Grad. 180 Grad bezeichnet anti. C: Die alternative Konformation ist diaxial. D: Bindungsnachbarschaften bleiben erhalten. Quelle: Originalunterlagen, PDF-S. 3, 7–8, 10, 16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "trans-1,2"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "trans-1,2"
+      ],
+      "questionGoal": "trans-1,2",
+      "structuredExplanation": {
+        "coreIdea": "trans-1,2",
+        "correctReasoning": "Die alternative Konformation ist diaxial. Bindungsnachbarschaften bleiben erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "cis- und trans-Decalin unterscheiden sich in der Konfiguration an der Ringverknüpfung. Die Ringverknüpfung schränkt Bewegungen ein.",
+          "B": "gauche bezeichnet bei der üblichen Newman-Betrachtung einen Diederwinkel von ungefähr 60 Grad. 180 Grad bezeichnet anti.",
+          "C": "Die alternative Konformation ist diaxial.",
+          "D": "Bindungsnachbarschaften bleiben erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Decalin, Molekülchiralität, anti-Winkel, Methylcyclohexan.",
+      "options": [
+        {
+          "text": "Eine momentan chirale Konformation beweist bei rascher Spiegelbildumwandlung nicht immer eine isolierbar chirale Substanz.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine axiale Methylgruppe in Methylcyclohexan hat günstigere 1,3-Kontakte als die äquatoriale.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "anti bedeutet, dass beide betrachteten Substituenten vollständig deckungsgleich bei null Grad liegen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "cis- und trans-Decalin unterscheiden sich in der Konfiguration an der Ringverknüpfung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Umwandlungsgeschwindigkeit zählt. B: Die axiale Lage erzeugt ungünstige 1,3-diaxiale Kontakte; häufig ist äquatorial bevorzugt. C: Die anti-Anordnung besitzt einen Diederwinkel von ungefähr 180 Grad. Null Grad entspricht einer überdeckten Anordnung. D: Die Ringverknüpfung schränkt Bewegungen ein. Quelle: Originalunterlagen, PDF-S. 3, 8, 10, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Decalin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Decalin"
+      ],
+      "questionGoal": "Decalin",
+      "structuredExplanation": {
+        "coreIdea": "Decalin",
+        "correctReasoning": "Die Umwandlungsgeschwindigkeit zählt. Die Ringverknüpfung schränkt Bewegungen ein.",
+        "wrongAnswerExplanations": {
+          "A": "Die Umwandlungsgeschwindigkeit zählt.",
+          "B": "Die axiale Lage erzeugt ungünstige 1,3-diaxiale Kontakte; häufig ist äquatorial bevorzugt.",
+          "C": "Die anti-Anordnung besitzt einen Diederwinkel von ungefähr 180 Grad. Null Grad entspricht einer überdeckten Anordnung.",
+          "D": "Die Ringverknüpfung schränkt Bewegungen ein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Molekülchiralität, Sterische Hinderung, Rotationsbarriere, Konformation.",
+      "options": [
+        {
+          "text": "Konformere können häufig durch Rotation um geeignete Einfachbindungen ineinander übergehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine C–C-Einfachbindung kann trotz Rotationsmöglichkeit eine endliche Torsionsbarriere besitzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine momentan chirale Konformation beweist bei rascher Spiegelbildumwandlung nicht immer eine isolierbar chirale Substanz.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Grosse Gruppen werden bei gleicher übriger Struktur sterisch günstiger, wenn ihr Abstand stark verkleinert wird.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Konstitution bleibt gleich. B: Torsion und sterische Effekte erzeugen Unterschiede. C: Die Umwandlungsgeschwindigkeit zählt. D: Sehr nahe Gruppen können ungünstige sterische Kontakte erzeugen; ihre räumliche Nähe ist entscheidend. Quelle: Originalunterlagen, PDF-S. 3–4, 8, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Molekülchiralität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Molekülchiralität"
+      ],
+      "questionGoal": "Molekülchiralität",
+      "structuredExplanation": {
+        "coreIdea": "Molekülchiralität",
+        "correctReasoning": "Die Konstitution bleibt gleich. Torsion und sterische Effekte erzeugen Unterschiede. Die Umwandlungsgeschwindigkeit zählt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Konstitution bleibt gleich.",
+          "B": "Torsion und sterische Effekte erzeugen Unterschiede.",
+          "C": "Die Umwandlungsgeschwindigkeit zählt.",
+          "D": "Sehr nahe Gruppen können ungünstige sterische Kontakte erzeugen; ihre räumliche Nähe ist entscheidend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Sterische Hinderung, Grenzen von Regeln, Cyclohexansessel, Konfiguration.",
+      "options": [
+        {
+          "text": "Die anti-Bevorzugung von n-Butan darf nicht als ausnahmslose Regel für alle heteroatomhaltigen Moleküle verwendet werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Drehung um eine benachbarte Einfachbindung kehrt automatisch R in S um.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Grosse Gruppen werden bei gleicher übriger Struktur sterisch günstiger, wenn ihr Abstand stark verkleinert wird.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der stabile Cyclohexansessel ist ein vollständig planarer Sechsring mit 120-Grad-Winkeln.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Spezifische elektronische Effekte können andere Konformere begünstigen. B: R/S-Konfigurationsänderung eines stabilen tetraedrischen C-Zentrums ist keine blosse freie Einfachbindungsrotation. Konfiguration und Konformation sind verschieden. C: Sehr nahe Gruppen können ungünstige sterische Kontakte erzeugen; ihre räumliche Nähe ist entscheidend. D: Der Cyclohexansessel vermeidet weitgehend ungünstige ekliptische Bindungen. Die räumliche Anordnung vermindert Spannung. Quelle: Originalunterlagen, PDF-S. 3–6, 8, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Sterische Hinderung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sterische Hinderung"
+      ],
+      "questionGoal": "Sterische Hinderung",
+      "structuredExplanation": {
+        "coreIdea": "Sterische Hinderung",
+        "correctReasoning": "Spezifische elektronische Effekte können andere Konformere begünstigen.",
+        "wrongAnswerExplanations": {
+          "A": "Spezifische elektronische Effekte können andere Konformere begünstigen.",
+          "B": "R/S-Konfigurationsänderung eines stabilen tetraedrischen C-Zentrums ist keine blosse freie Einfachbindungsrotation. Konfiguration und Konformation sind verschieden.",
+          "C": "Sehr nahe Gruppen können ungünstige sterische Kontakte erzeugen; ihre räumliche Nähe ist entscheidend.",
+          "D": "Der Cyclohexansessel vermeidet weitgehend ungünstige ekliptische Bindungen. Die räumliche Anordnung vermindert Spannung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc18_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC18",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Grenzen von Regeln, Konformation, Bootform, Newman-Projektion.",
+      "options": [
+        {
+          "text": "Eine Newman-Projektion betrachtet eine Bindung entlang ihrer Achse.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Boot- und Sesselform sind aufgrund gleicher Summenformel zwingend exakt energiegleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die anti- und gauche-Form von n-Butan sind Konstitutionsisomere.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die anti-Bevorzugung von n-Butan darf nicht als ausnahmslose Regel für alle heteroatomhaltigen Moleküle verwendet werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Vorderes und hinteres Atom werden unterschieden. B: Die Bootform von Cyclohexan ist wegen zusätzlicher ungünstiger Wechselwirkungen meist höherenergetisch als der Sessel. Konformation beeinflusst die Energie. C: Sie haben dieselbe Verknüpfung und unterscheiden sich im Diederwinkel, also in der Konformation. D: Spezifische elektronische Effekte können andere Konformere begünstigen. Quelle: Originalunterlagen, PDF-S. 3–6, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC18",
+        "Grenzen von Regeln"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzen von Regeln"
+      ],
+      "questionGoal": "Grenzen von Regeln",
+      "structuredExplanation": {
+        "coreIdea": "Grenzen von Regeln",
+        "correctReasoning": "Vorderes und hinteres Atom werden unterschieden. Spezifische elektronische Effekte können andere Konformere begünstigen.",
+        "wrongAnswerExplanations": {
+          "A": "Vorderes und hinteres Atom werden unterschieden.",
+          "B": "Die Bootform von Cyclohexan ist wegen zusätzlicher ungünstiger Wechselwirkungen meist höherenergetisch als der Sessel. Konformation beeinflusst die Energie.",
+          "C": "Sie haben dieselbe Verknüpfung und unterscheiden sich im Diederwinkel, also in der Konformation.",
+          "D": "Spezifische elektronische Effekte können andere Konformere begünstigen."
+        }
+      }
+    }
+  ]
+}

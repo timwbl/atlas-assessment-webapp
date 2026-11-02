@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw02_20261102",
+  "lectureCode": "KVSW02",
+  "title": "Das Membranpotential",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW02_Membranpotential. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Offizielle Block3-Lernziele KV02 abgeglichen. Alle Nernst-Aufgaben mit expliziter Ladung/Temperaturformel, R/C-Nomenklatur explizit gesamt oder spezifisch. Gleichgewicht für ein Ion nicht mit globalem thermodynamischem Zellgleichgewicht verwechselt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Gleichgewichtspotential, Nernst-Gleichung und elektrische Triebkraft anwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Entstehung und Änderung des Ruhepotentials mit Permeabilitäten erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Ladungstrennung, Kapazität und Spannungsmessung verstehen."
+    },
+    {
+      "id": "lo4",
+      "text": "Eingangswiderstand, spezifische Membraneigenschaften und RC-Antworten auswerten."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw02_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Eine Membran ist nur für K+ permeabel. Innen ist die K+-Konzentration höher. Was begrenzt nach anfänglichem Ausstrom den weiteren Netto-K+-Ausstrom?",
+      "options": [
+        {
+          "text": "Es müssen zuerst sämtliche K+-Ionen nach aussen wandern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Membran baut K+ chemisch ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Spannung verstärkt den Ausstrom unbegrenzt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Konzentrationen müssen zwingend vollständig gleich werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die entstehende negative Innenladung zieht K+ elektrisch zurück.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sehr kleine Ladungsverschiebungen genügen zur Spannungserzeugung. B: Das Ion wird nicht durch Spannungsbildung abgebaut. C: Die negative Innenseite wirkt ihm entgegen. D: Bei selektiver Permeabilität kann ein elektrochemisches Gleichgewicht bestehen bleiben. E: Im Gleichgewicht kompensieren sich elektrische und chemische Triebkraft. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Kalium-Konzentrationszelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kalium-Konzentrationszelle"
+      ],
+      "questionGoal": "Kalium-Konzentrationszelle",
+      "structuredExplanation": {
+        "coreIdea": "Kalium-Konzentrationszelle",
+        "correctReasoning": "Im Gleichgewicht kompensieren sich elektrische und chemische Triebkraft.",
+        "wrongAnswerExplanations": {
+          "A": "Sehr kleine Ladungsverschiebungen genügen zur Spannungserzeugung.",
+          "B": "Das Ion wird nicht durch Spannungsbildung abgebaut.",
+          "C": "Die negative Innenseite wirkt ihm entgegen.",
+          "D": "Bei selektiver Permeabilität kann ein elektrochemisches Gleichgewicht bestehen bleiben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Für ein einwertiges Kation gilt bei 37 °C E = 61 mV × log10(c_a/c_i). Welches E ergibt sich für c_a/c_i = 0,1?",
+      "options": [
+        {
+          "text": "−6,1 mV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "+61 mV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "−610 mV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−61 mV.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "0 mV.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Logarithmus beträgt −1, nicht −0,1. B: Dies wäre das umgekehrte Konzentrationsverhältnis. C: Der Logarithmus beträgt nicht −10. D: log10(0,1) = −1. E: Dafür müssten die Konzentrationen gleich sein. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Nernst für Kationen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nernst für Kationen"
+      ],
+      "questionGoal": "Nernst für Kationen",
+      "structuredExplanation": {
+        "coreIdea": "Nernst für Kationen",
+        "correctReasoning": "log10(0,1) = −1.",
+        "wrongAnswerExplanations": {
+          "A": "Der Logarithmus beträgt −1, nicht −0,1.",
+          "B": "Dies wäre das umgekehrte Konzentrationsverhältnis.",
+          "C": "Der Logarithmus beträgt nicht −10.",
+          "E": "Dafür müssten die Konzentrationen gleich sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Mit E = (61 mV/z) × log10(c_a/c_i): Welches E ergibt sich für Cl− bei c_a/c_i = 10?",
+      "options": [
+        {
+          "text": "+122 mV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−30,5 mV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "+61 mV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0 mV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−61 mV.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Weder Ladung noch Logarithmus ergeben diesen Wert. B: Dies würde zur Ladungszahl −2 passen. C: Dies ignoriert z = −1. D: Das Verhältnis ist nicht eins. E: Die negative Ladungszahl kehrt das Vorzeichen um. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Nernst für Anionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nernst für Anionen"
+      ],
+      "questionGoal": "Nernst für Anionen",
+      "structuredExplanation": {
+        "coreIdea": "Nernst für Anionen",
+        "correctReasoning": "Die negative Ladungszahl kehrt das Vorzeichen um.",
+        "wrongAnswerExplanations": {
+          "A": "Weder Ladung noch Logarithmus ergeben diesen Wert.",
+          "B": "Dies würde zur Ladungszahl −2 passen.",
+          "C": "Dies ignoriert z = −1.",
+          "D": "Das Verhältnis ist nicht eins."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Ein Kation hat z = +2 und c_a/c_i = 100. Mit E = (61 mV/z) × log10(c_a/c_i): Welches E ergibt sich?",
+      "options": [
+        {
+          "text": "+61 mV.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "+122 mV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0 mV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−61 mV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+30,5 mV.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 61/2 mal 2 ergibt 61. B: Dies berücksichtigt die doppelte Ladung nicht. C: Die Konzentrationen sind nicht gleich. D: Das äussere Konzentrationsübergewicht ergibt bei Kationen ein positives E. E: Dies berücksichtigt den Logarithmus von 100 nicht. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Zweiwertiges Ion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zweiwertiges Ion"
+      ],
+      "questionGoal": "Zweiwertiges Ion",
+      "structuredExplanation": {
+        "coreIdea": "Zweiwertiges Ion",
+        "correctReasoning": "61/2 mal 2 ergibt 61.",
+        "wrongAnswerExplanations": {
+          "B": "Dies berücksichtigt die doppelte Ladung nicht.",
+          "C": "Die Konzentrationen sind nicht gleich.",
+          "D": "Das äussere Konzentrationsübergewicht ergibt bei Kationen ein positives E.",
+          "E": "Dies berücksichtigt den Logarithmus von 100 nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Eine Zelle liegt bei −60 mV. Ein stark selektiver K+-Leitweg mit E_K = −90 mV wird verstärkt. Wohin bewegt sich V_m bei sonst gleichen Bedingungen?",
+      "options": [
+        {
+          "text": "Es bleibt unabhängig von der Leitfähigkeit unverändert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "In Richtung +90 mV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zwingend sofort exakt auf 0 mV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Immer weiter von E_K weg.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "In Richtung −90 mV.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die relative Permeabilität beeinflusst das Membranpotential. B: Dies liegt nicht am angegebenen K+-Gleichgewichtspotential. C: Ein Kanalöffnen erzwingt kein Nullpotential. D: Passive K+-Ströme wirken in Richtung des Umkehrpotentials. E: Die höhere K+-Leitfähigkeit gewichtet E_K stärker. Quelle: Originalunterlagen, PDF-S. 6,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Leitfähigkeit und Spannung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leitfähigkeit und Spannung"
+      ],
+      "questionGoal": "Leitfähigkeit und Spannung",
+      "structuredExplanation": {
+        "coreIdea": "Leitfähigkeit und Spannung",
+        "correctReasoning": "Die höhere K+-Leitfähigkeit gewichtet E_K stärker.",
+        "wrongAnswerExplanations": {
+          "A": "Die relative Permeabilität beeinflusst das Membranpotential.",
+          "B": "Dies liegt nicht am angegebenen K+-Gleichgewichtspotential.",
+          "C": "Ein Kanalöffnen erzwingt kein Nullpotential.",
+          "D": "Passive K+-Ströme wirken in Richtung des Umkehrpotentials."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Was berücksichtigt die Goldman-Hodgkin-Katz-Gleichung gegenüber der Nernst-Gleichung für ein einzelnes Ion zusätzlich?",
+      "options": [
+        {
+          "text": "Eine für alle Zelltypen identische Spannung unabhängig vom Milieu.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur die Ionenladungen, ohne Konzentrationen oder Permeabilitäten einzubeziehen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine gleiche Gewichtung aller Ionen unabhängig von ihrer Permeabilität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich die Membranfläche ohne Ionenkonzentrationen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mehrere permeierende Ionen mit ihren relativen Permeabilitäten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Ergebnis hängt vom jeweiligen System ab. B: Die GHK-Beschreibung verbindet Konzentrationen mehrerer Ionen mit ihren Permeabilitäten. C: Die relativen Permeabilitäten sind gerade entscheidend. D: Konzentrationen und Permeabilitäten sind zentral. E: Sie beschreibt damit den Beitrag verschiedener Konzentrationsverteilungen. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "GHK"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GHK"
+      ],
+      "questionGoal": "GHK",
+      "structuredExplanation": {
+        "coreIdea": "GHK",
+        "correctReasoning": "Sie beschreibt damit den Beitrag verschiedener Konzentrationsverteilungen.",
+        "wrongAnswerExplanations": {
+          "A": "Das Ergebnis hängt vom jeweiligen System ab.",
+          "B": "Die GHK-Beschreibung verbindet Konzentrationen mehrerer Ionen mit ihren Permeabilitäten.",
+          "C": "Die relativen Permeabilitäten sind gerade entscheidend.",
+          "D": "Konzentrationen und Permeabilitäten sind zentral."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Bei unverändertem Innenkalium steigt Aussenkalium. Was folgt für E_K?",
+      "options": [
+        {
+          "text": "Es wird weniger negativ beziehungsweise positiver.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es ändert zwingend sofort die intrazelluläre K+-Konzentration auf denselben Wert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es wird stets stärker negativ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es ist dadurch immer identisch mit E_Na.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es bleibt unabhängig vom Konzentrationsverhältnis konstant.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Verhältnis c_a/c_i nimmt zu. B: Ein Gleichgewichtspotential erzwingt keine vollständige Konzentrationsangleichung. C: Das wäre die Richtung bei sinkendem Aussenkalium. D: Die Na+-Verteilung ist eine separate Grösse. E: Nernst hängt logarithmisch davon ab. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Aussenkalium"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aussenkalium"
+      ],
+      "questionGoal": "Aussenkalium",
+      "structuredExplanation": {
+        "coreIdea": "Aussenkalium",
+        "correctReasoning": "Das Verhältnis c_a/c_i nimmt zu.",
+        "wrongAnswerExplanations": {
+          "B": "Ein Gleichgewichtspotential erzwingt keine vollständige Konzentrationsangleichung.",
+          "C": "Das wäre die Richtung bei sinkendem Aussenkalium.",
+          "D": "Die Na+-Verteilung ist eine separate Grösse.",
+          "E": "Nernst hängt logarithmisch davon ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Eine Membran hat C = 1 µF und wird um 0,1 V geladen. Welche Ladungsverschiebung ergibt sich aus Q = CΔV?",
+      "options": [
+        {
+          "text": "10⁻¹ C.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10⁷ C.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "10⁻⁷ A.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10⁻⁷ C.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "10⁻⁵ C.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kapazität ist nicht ein Farad. B: Die kleinen Grössen werden nicht als Kehrwert multipliziert. C: Die Einheit von Ladung ist Coulomb, nicht Ampere. D: 10⁻⁶ F mal 10⁻¹ V ergibt 10⁻⁷ C. E: Dies verwendet den falschen Faktor für 0,1 V. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Ladung einer Membran"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ladung einer Membran"
+      ],
+      "questionGoal": "Ladung einer Membran",
+      "structuredExplanation": {
+        "coreIdea": "Ladung einer Membran",
+        "correctReasoning": "10⁻⁶ F mal 10⁻¹ V ergibt 10⁻⁷ C.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kapazität ist nicht ein Farad.",
+          "B": "Die kleinen Grössen werden nicht als Kehrwert multipliziert.",
+          "C": "Die Einheit von Ladung ist Coulomb, nicht Ampere.",
+          "E": "Dies verwendet den falschen Faktor für 0,1 V."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Warum verändert die Bildung eines üblichen Membranpotentials die gesamten Ionenkonzentrationen kaum?",
+      "options": [
+        {
+          "text": "Ein Membranpotential benötigt grundsätzlich keine getrennten Ladungen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle intrazellulären Ionen werden dafür gleichzeitig nach aussen verschoben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Membran hat unendlich grosse Kapazität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur ein sehr kleiner Anteil der Ionen muss als Oberflächenladung getrennt werden.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Das Potential entsteht ausschliesslich durch Temperatur ohne Ladung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Kapazitive Spannung beruht gerade auf Ladungstrennung. B: Das wäre eine enorme Konzentrationsänderung. C: Biologische Membranen besitzen eine endliche spezifische Kapazität. D: Die Volumenlösungen bleiben nahezu elektroneutral. E: Temperatur beeinflusst Nernst, ersetzt aber keine Ladungsverteilung. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Ladungstrennung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ladungstrennung"
+      ],
+      "questionGoal": "Ladungstrennung",
+      "structuredExplanation": {
+        "coreIdea": "Ladungstrennung",
+        "correctReasoning": "Die Volumenlösungen bleiben nahezu elektroneutral.",
+        "wrongAnswerExplanations": {
+          "A": "Kapazitive Spannung beruht gerade auf Ladungstrennung.",
+          "B": "Das wäre eine enorme Konzentrationsänderung.",
+          "C": "Biologische Membranen besitzen eine endliche spezifische Kapazität.",
+          "E": "Temperatur beeinflusst Nernst, ersetzt aber keine Ladungsverteilung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Ein kleiner Stromschritt von 100 pA erzeugt stationär eine Spannungsänderung von 10 mV. Wie gross ist R_in im linearen Bereich?",
+      "options": [
+        {
+          "text": "1 MΩ.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "100 MΩ.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "100 Ω.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1 GΩ.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "10 MΩ.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist um den Faktor 100 zu klein. B: 0,01 V geteilt durch 10⁻¹⁰ A ergibt 10⁸ Ω. C: Die Vorsilben wurden nicht korrekt berücksichtigt. D: Dies ist um den Faktor 10 zu gross. E: Dies ist um den Faktor 10 zu klein. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Eingangswiderstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eingangswiderstand"
+      ],
+      "questionGoal": "Eingangswiderstand",
+      "structuredExplanation": {
+        "coreIdea": "Eingangswiderstand",
+        "correctReasoning": "0,01 V geteilt durch 10⁻¹⁰ A ergibt 10⁸ Ω.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist um den Faktor 100 zu klein.",
+          "C": "Die Vorsilben wurden nicht korrekt berücksichtigt.",
+          "D": "Dies ist um den Faktor 10 zu gross.",
+          "E": "Dies ist um den Faktor 10 zu klein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Eine passive Membran hat R = 100 MΩ und C = 100 pF. Welche Zeitkonstante ergibt τ = RC?",
+      "options": [
+        {
+          "text": "1 ms.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10 ms.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "10 s.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 ms.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "100 µs.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Produkt beträgt nicht 10⁻³ s. B: 10⁸ Ω mal 10⁻¹⁰ F ergibt 10⁻² s. C: Die pF-Einheit wurde falsch umgerechnet. D: Das Produkt beträgt nicht 10⁻¹ s. E: Dies ist um den Faktor 100 zu klein. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Zeitkonstante"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zeitkonstante"
+      ],
+      "questionGoal": "Zeitkonstante",
+      "structuredExplanation": {
+        "coreIdea": "Zeitkonstante",
+        "correctReasoning": "10⁸ Ω mal 10⁻¹⁰ F ergibt 10⁻² s.",
+        "wrongAnswerExplanations": {
+          "A": "Das Produkt beträgt nicht 10⁻³ s.",
+          "C": "Die pF-Einheit wurde falsch umgerechnet.",
+          "D": "Das Produkt beträgt nicht 10⁻¹ s.",
+          "E": "Dies ist um den Faktor 100 zu klein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Zwei kugelförmige Zellen haben dieselben spezifischen Membraneigenschaften. Zelle B hat die doppelte Membranfläche. Wie unterscheiden sich R_in und Gesamtkapazität?",
+      "options": [
+        {
+          "text": "R_in halbiert sich und die Gesamtkapazität verdoppelt sich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Beide bleiben allein wegen gleicher Materialeigenschaften unverändert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide halbieren sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "R_in verdoppelt sich und die Kapazität halbiert sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Beide verdoppeln sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehr Fläche schaltet mehr Leitwege parallel und bietet mehr Ladungsspeicherfläche. B: Spezifische und gesamte Grössen sind verschieden. C: Die Gesamtkapazität nimmt mit Fläche zu. D: Beide Flächenabhängigkeiten sind vertauscht. E: Der Eingangswiderstand nimmt mit Fläche ab. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Flächenskalierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Flächenskalierung"
+      ],
+      "questionGoal": "Flächenskalierung",
+      "structuredExplanation": {
+        "coreIdea": "Flächenskalierung",
+        "correctReasoning": "Mehr Fläche schaltet mehr Leitwege parallel und bietet mehr Ladungsspeicherfläche.",
+        "wrongAnswerExplanations": {
+          "B": "Spezifische und gesamte Grössen sind verschieden.",
+          "C": "Die Gesamtkapazität nimmt mit Fläche zu.",
+          "D": "Beide Flächenabhängigkeiten sind vertauscht.",
+          "E": "Der Eingangswiderstand nimmt mit Fläche ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «Gleichgewicht» treffen zu?",
+      "options": [
+        {
+          "text": "Am Gleichgewichtspotential sind stets Innen- und Aussenkonzentration identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Am Gleichgewichtspotential eines Ions ist dessen elektrochemische Netto-Triebkraft null.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Ladungszahl hat bei gleichem Konzentrationsverhältnis keinen Einfluss auf Nernst.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nernst ist unabhängig von der absoluten Temperatur.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Konzentrationsgradient kann elektrisch kompensiert werden. B: Chemischer und elektrischer Beitrag kompensieren sich. C: E enthält den Faktor 1/z. D: Die Temperatur geht als Faktor ein. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gleichgewicht"
+      ],
+      "questionGoal": "Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Gleichgewicht",
+        "correctReasoning": "Chemischer und elektrischer Beitrag kompensieren sich.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Konzentrationsgradient kann elektrisch kompensiert werden.",
+          "B": "Chemischer und elektrischer Beitrag kompensieren sich.",
+          "C": "E enthält den Faktor 1/z.",
+          "D": "Die Temperatur geht als Faktor ein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «Ruhepotential» treffen zu?",
+      "options": [
+        {
+          "text": "Es ist bei allen Zelltypen zwingend exakt −90 mV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Passive Leckleitfähigkeiten tragen wesentlich zum Ruhepotential bei.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Ruhepotential liegt häufig nahe E_K, weil die K+-Permeabilität relativ hoch ist.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Pumpen erhalten längerfristig die erforderlichen Ionengradienten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Permeabilitäten und Konzentrationen unterscheiden sich. B: Pumpen erhalten die Gradienten, passive Ionenwege beeinflussen die Spannung. C: Andere Ionen können trotzdem beitragen. D: Ihre Arbeit verhindert vollständige Gradientendissipation. Quelle: Originalunterlagen, PDF-S. 6,9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Ruhepotential"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ruhepotential"
+      ],
+      "questionGoal": "Ruhepotential",
+      "structuredExplanation": {
+        "coreIdea": "Ruhepotential",
+        "correctReasoning": "Pumpen erhalten die Gradienten, passive Ionenwege beeinflussen die Spannung. Andere Ionen können trotzdem beitragen. Ihre Arbeit verhindert vollständige Gradientendissipation.",
+        "wrongAnswerExplanations": {
+          "A": "Permeabilitäten und Konzentrationen unterscheiden sich.",
+          "B": "Pumpen erhalten die Gradienten, passive Ionenwege beeinflussen die Spannung.",
+          "C": "Andere Ionen können trotzdem beitragen.",
+          "D": "Ihre Arbeit verhindert vollständige Gradientendissipation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «GHK-Logik» treffen zu?",
+      "options": [
+        {
+          "text": "Eine Konzentrationsangabe ohne jede Permeabilitätsinformation bestimmt bei mehreren Ionen eindeutig V_m.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein grösserer Permeabilitätsanteil eines Ions verstärkt seinen Beitrag.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Cl− muss in der GHK-Konzentrationsformel genau wie ein positives Kation eingesetzt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei nur einem permeablen Ion geht die entsprechende GHK-Beschreibung in Nernst über.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die relativen Permeabilitäten sind ebenfalls nötig. B: Dies verschiebt V_m in Richtung seines Gleichgewichtspotentials. C: Die Anionenladung führt zur vertauschten Konzentrationsanordnung. D: Die Mehrionenformel reduziert sich auf den Einionenfall. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "GHK-Logik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GHK-Logik"
+      ],
+      "questionGoal": "GHK-Logik",
+      "structuredExplanation": {
+        "coreIdea": "GHK-Logik",
+        "correctReasoning": "Dies verschiebt V_m in Richtung seines Gleichgewichtspotentials. Die Mehrionenformel reduziert sich auf den Einionenfall.",
+        "wrongAnswerExplanations": {
+          "A": "Die relativen Permeabilitäten sind ebenfalls nötig.",
+          "B": "Dies verschiebt V_m in Richtung seines Gleichgewichtspotentials.",
+          "C": "Die Anionenladung führt zur vertauschten Konzentrationsanordnung.",
+          "D": "Die Mehrionenformel reduziert sich auf den Einionenfall."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «Messung und Kapazität» treffen zu?",
+      "options": [
+        {
+          "text": "Membranlipide trennen leitfähige Lösungen und bilden einen kapazitiven Anteil.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Kapazität und Widerstand sind dieselbe physikalische Grösse mit derselben Einheit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine einzelne Spannungselektrode ausserhalb jeder Zelle misst automatisch das intrazelluläre Ruhepotential.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zur intrazellulären Spannungsmessung wird gegen eine extrazelluläre Referenz gemessen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Getrennte Ladungen speichern elektrische Energie. B: Sie haben verschiedene Definitionen und Einheiten. C: Dafür muss die transmembranäre Differenz erfasst werden. D: Das Signal ist eine Potentialdifferenz. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Messung und Kapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Messung und Kapazität"
+      ],
+      "questionGoal": "Messung und Kapazität",
+      "structuredExplanation": {
+        "coreIdea": "Messung und Kapazität",
+        "correctReasoning": "Getrennte Ladungen speichern elektrische Energie. Das Signal ist eine Potentialdifferenz.",
+        "wrongAnswerExplanations": {
+          "A": "Getrennte Ladungen speichern elektrische Energie.",
+          "B": "Sie haben verschiedene Definitionen und Einheiten.",
+          "C": "Dafür muss die transmembranäre Differenz erfasst werden.",
+          "D": "Das Signal ist eine Potentialdifferenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «Strompulsantwort» treffen zu?",
+      "options": [
+        {
+          "text": "Eine passive RC-Membran nähert sich nach einem Stromschritt exponentiell einem Endwert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Nach einer Zeitkonstante sind ungefähr 63 % der stationären Änderung erreicht.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Membranspannung muss bei endlicher Kapazität sprunghaft vollständig auf den Endwert wechseln.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nach einer Zeitkonstante ist die Endänderung mathematisch vollständig erreicht.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Kapazitive Aufladung verzögert die Spannungsänderung. B: Dies folgt aus 1−e⁻¹. C: Die Kapazität verhindert diesen idealen Sofortsprung. D: Die exponentielle Annäherung geht weiter. Quelle: Originalunterlagen, PDF-S. 11–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Strompulsantwort"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strompulsantwort"
+      ],
+      "questionGoal": "Strompulsantwort",
+      "structuredExplanation": {
+        "coreIdea": "Strompulsantwort",
+        "correctReasoning": "Kapazitive Aufladung verzögert die Spannungsänderung. Dies folgt aus 1−e⁻¹.",
+        "wrongAnswerExplanations": {
+          "A": "Kapazitive Aufladung verzögert die Spannungsänderung.",
+          "B": "Dies folgt aus 1−e⁻¹.",
+          "C": "Die Kapazität verhindert diesen idealen Sofortsprung.",
+          "D": "Die exponentielle Annäherung geht weiter."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «Gesamt und spezifisch» treffen zu?",
+      "options": [
+        {
+          "text": "Der Eingangswiderstand hängt bei gleichen spezifischen Eigenschaften von der Membranfläche ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die spezifische Membrankapazität muss sich allein bei grösserer Zellfläche verdoppeln.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein hoher Eingangswiderstand bedeutet bei gleichem Strom grundsätzlich eine kleinere stationäre Spannungsänderung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei rein passiver Flächenskalierung kann RC konstant bleiben.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehr parallele Fläche senkt ihn. B: Die Gesamtkapazität steigt, die spezifische Grösse kann gleich bleiben. C: ΔV = IR sagt eine grössere Änderung voraus. D: R sinkt proportional zu 1/A und C steigt proportional zu A. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Gesamt und spezifisch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gesamt und spezifisch"
+      ],
+      "questionGoal": "Gesamt und spezifisch",
+      "structuredExplanation": {
+        "coreIdea": "Gesamt und spezifisch",
+        "correctReasoning": "Mehr parallele Fläche senkt ihn. R sinkt proportional zu 1/A und C steigt proportional zu A.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr parallele Fläche senkt ihn.",
+          "B": "Die Gesamtkapazität steigt, die spezifische Grösse kann gleich bleiben.",
+          "C": "ΔV = IR sagt eine grössere Änderung voraus.",
+          "D": "R sinkt proportional zu 1/A und C steigt proportional zu A."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Eine Membran liegt bei −70 mV. Ein selektiver Leitweg mit E_X = −40 mV wird geöffnet. Welche Aussagen treffen unter passiven Bedingungen zu?",
+      "options": [
+        {
+          "text": "Bei V_m = E_X muss durch den Leitweg ein maximaler Nettostrom fliessen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "V_m wird in Richtung −40 mV gezogen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Änderung ist eine Depolarisation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "V_m muss dadurch stärker negativ als −70 mV werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dort verschwindet seine treibende Spannungsdifferenz. B: Die neue Leitfähigkeit gewichtet dieses Umkehrpotential stärker. C: Das Potential wird weniger negativ. D: Die angegebene Zielspannung liegt positiver. Quelle: Originalunterlagen, PDF-S. 5–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Potentialänderungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Potentialänderungen"
+      ],
+      "questionGoal": "Potentialänderungen",
+      "structuredExplanation": {
+        "coreIdea": "Potentialänderungen",
+        "correctReasoning": "Die neue Leitfähigkeit gewichtet dieses Umkehrpotential stärker. Das Potential wird weniger negativ.",
+        "wrongAnswerExplanations": {
+          "A": "Dort verschwindet seine treibende Spannungsdifferenz.",
+          "B": "Die neue Leitfähigkeit gewichtet dieses Umkehrpotential stärker.",
+          "C": "Das Potential wird weniger negativ.",
+          "D": "Die angegebene Zielspannung liegt positiver."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw02_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW02",
+      "stem": "Welche Aussagen zum Thema «Ladung und Strom» treffen zu?",
+      "options": [
+        {
+          "text": "Ein kapazitiver Strom hängt von der Geschwindigkeit der Spannungsänderung ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein resistiver Membranstrom kann nach dem Aufladen weiterbestehen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die stationäre Spannungsänderung nach einem kleinen Stromschritt bestimmt allein die Membrankapazität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei konstanter Spannung fliesst durch einen idealen Kondensator dauerhaft derselbe kapazitive Strom wie während des Sprungs.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es gilt I_C = C dV/dt. B: Leitwege können bei anliegender Triebkraft weiter Strom führen. C: Sie liefert zunächst den Eingangswiderstand; der Zeitverlauf liefert zusätzliche Information. D: Nach dem Aufladen verschwindet der kapazitive Anteil. Quelle: Originalunterlagen, PDF-S. 7,12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW02",
+        "Ladung und Strom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ladung und Strom"
+      ],
+      "questionGoal": "Ladung und Strom",
+      "structuredExplanation": {
+        "coreIdea": "Ladung und Strom",
+        "correctReasoning": "Es gilt I_C = C dV/dt. Leitwege können bei anliegender Triebkraft weiter Strom führen.",
+        "wrongAnswerExplanations": {
+          "A": "Es gilt I_C = C dV/dt.",
+          "B": "Leitwege können bei anliegender Triebkraft weiter Strom führen.",
+          "C": "Sie liefert zunächst den Eingangswiderstand; der Zeitverlauf liefert zusätzliche Information.",
+          "D": "Nach dem Aufladen verschwindet der kapazitive Anteil."
+        }
+      }
+    }
+  ]
+}

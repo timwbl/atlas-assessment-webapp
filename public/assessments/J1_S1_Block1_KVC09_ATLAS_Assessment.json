@@ -1,0 +1,1318 @@
+{
+  "id": "assessment_j1_s1_block1_kvc09_20261102",
+  "lectureCode": "KVC09",
+  "title": "Lipide",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC9 - Lipide. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert.  Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte. Die im offiziellen Lernziel verlangte biochemische Fettsäureherkunft wird ergänzend mit IUBMB EC 2.3.1.85 abgesichert (https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/85.html); die Folien behandeln diesen Punkt nur knapp.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Fettsäuren, Triacylglyceride und Membranlipide strukturell unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Kettenlänge, cis-Doppelbindungen und Amphiphilie funktionell verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Mizellen, Vesikel und Arachidonsäure-abhängige Signalbildung erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc09_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Bausteinbilanz passt zu einem Triacylglycerid?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Sphingosinrest und ein Monosaccharid ohne Fettsäure.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Drei Glycerinreste und eine Fettsäure.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein Glycerinrest und drei veresterte Fettsäurereste.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Ein Glycerinrest, zwei Fettsäuren und zwingend ein Phosphatkopf.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Drei Aminosäuren mit zwei Peptidbindungen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein TAG enthält Glycerin mit drei Acylresten, nicht nur Sphingosin und Zucker. B: Zahl und Rolle von Glycerin und Fettsäureresten sind vertauscht. C: Die drei OH-Gruppen des Glycerins bilden Ester mit drei Fettsäuren; ein Phosphatkopf gehört nicht zur TAG-Definition. D: Zwei Acylketten plus Phosphatkopf beschreiben eher einen Glycerophospholipid-Aufbau. E: Aminosäuren mit Peptidbindungen bilden ein Peptid und kein Triacylglycerid. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Triacylglycerid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Triacylglycerid"
+      ],
+      "questionGoal": "Triacylglycerid",
+      "structuredExplanation": {
+        "coreIdea": "Triacylglycerid",
+        "correctReasoning": "Die drei OH-Gruppen des Glycerins bilden Ester mit drei Fettsäuren; ein Phosphatkopf gehört nicht zur TAG-Definition.",
+        "wrongAnswerExplanations": {
+          "A": "Ein TAG enthält Glycerin mit drei Acylresten, nicht nur Sphingosin und Zucker.",
+          "B": "Zahl und Rolle von Glycerin und Fettsäureresten sind vertauscht.",
+          "D": "Zwei Acylketten plus Phosphatkopf beschreiben eher einen Glycerophospholipid-Aufbau.",
+          "E": "Aminosäuren mit Peptidbindungen bilden ein Peptid und kein Triacylglycerid."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Bindungstypen werden bei der Lipase-vermittelten Spaltung eines Triacylglycerids angegriffen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Phosphorsäureanhydridbindungen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Disulfidbindungen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Glycosidische Acetalbindungen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Carbonsäureesterbindungen.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Peptidbindungen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Acyl-Glycerin-Verknüpfungen enthalten keine Phosphorsäureanhydridgruppen. B: Eine S–S-Verknüpfung ist kein Bindungstyp zwischen Fettsäure und Glycerin. C: Glycosidische Acetale verbinden Zucker; TAG-Fettsäuren sind estergebunden. D: Fettsäuren sind im TAG über ihre Acylgruppen an Glycerin-O gebunden. E: TAG enthält keine Peptidrückgrat-Amide zwischen seinen Bausteinen. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Hydrolyse von TAG"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrolyse von TAG"
+      ],
+      "questionGoal": "Hydrolyse von TAG",
+      "structuredExplanation": {
+        "coreIdea": "Hydrolyse von TAG",
+        "correctReasoning": "Fettsäuren sind im TAG über ihre Acylgruppen an Glycerin-O gebunden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Acyl-Glycerin-Verknüpfungen enthalten keine Phosphorsäureanhydridgruppen.",
+          "B": "Eine S–S-Verknüpfung ist kein Bindungstyp zwischen Fettsäure und Glycerin.",
+          "C": "Glycosidische Acetale verbinden Zucker; TAG-Fettsäuren sind estergebunden.",
+          "E": "TAG enthält keine Peptidrückgrat-Amide zwischen seinen Bausteinen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Änderung ist beim Einbau einer cis-Doppelbindung in eine sonst vergleichbare lange Fettsäurekette am ehesten zu erwarten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Zahl der C-Atome verdoppelt sich.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Aus der Fettsäure wird zwingend ein Steroid.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Der Schmelzpunkt steigt unabhängig von allen übrigen Strukturmerkmalen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Kette wird vollkommen linear und packt stets dichter.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein Knick erschwert dichte Packung und senkt häufig den Schmelzpunkt.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Eine Doppelbindung ändert den Sättigungsgrad, nicht die Zahl der C-Atome. B: Ein lokaler Doppelbindungseinbau erzeugt kein tetracyclisches Steroidgerüst. C: Ein höherer Schmelzpunkt ist nicht zwangsläufig; schlechtere Packung senkt ihn häufig. D: cis-Geometrie erzeugt typischerweise einen Knick statt einer geraderen Packung. E: Die cis-Geometrie verändert die räumliche Form; bei vergleichbaren Ketten schwächt ungünstigere Packung den Zusammenhalt. Quelle: Originalunterlagen, PDF-S. 4,7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "cis-Doppelbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "cis-Doppelbindung"
+      ],
+      "questionGoal": "cis-Doppelbindung",
+      "structuredExplanation": {
+        "coreIdea": "cis-Doppelbindung",
+        "correctReasoning": "Die cis-Geometrie verändert die räumliche Form; bei vergleichbaren Ketten schwächt ungünstigere Packung den Zusammenhalt.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Doppelbindung ändert den Sättigungsgrad, nicht die Zahl der C-Atome.",
+          "B": "Ein lokaler Doppelbindungseinbau erzeugt kein tetracyclisches Steroidgerüst.",
+          "C": "Ein höherer Schmelzpunkt ist nicht zwangsläufig; schlechtere Packung senkt ihn häufig.",
+          "D": "cis-Geometrie erzeugt typischerweise einen Knick statt einer geraderen Packung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Zwei gesättigte unverzweigte Fettsäuren unterscheiden sich nur in ihrer Kettenlänge. Welche Tendenz ist typisch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die längere Kette hat stärkere Dispersionskontakte und häufig einen höheren Schmelzpunkt.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Kettenlänge hat grundsätzlich keinen Einfluss auf Wechselwirkungen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die längere Kette muss stärker wasserlöslich sein, weil sie mehr C besitzt.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die längere Kette besitzt weniger Kontaktfläche und zwingend einen niedrigeren Schmelzpunkt.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die längere Kette enthält deshalb automatisch mehr cis-Doppelbindungen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Mehr unpolare Kontaktfläche verstärkt typischerweise den Kettenzusammenhalt und vermindert eher die Wasserlöslichkeit. B: Die Kontaktfläche beeinflusst die Dispersionskräfte und damit die Eigenschaften. C: Mehr apolarer C-Anteil verbessert die Wasserlöslichkeit nicht automatisch und vermindert sie häufig. D: Die längere Kette bietet mehr statt weniger Kontaktfläche. E: Längenzunahme einer gesättigten Kette setzt keine Doppelbindung voraus. Quelle: Originalunterlagen, PDF-S. 4,7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Kettenlänge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kettenlänge"
+      ],
+      "questionGoal": "Kettenlänge",
+      "structuredExplanation": {
+        "coreIdea": "Kettenlänge",
+        "correctReasoning": "Mehr unpolare Kontaktfläche verstärkt typischerweise den Kettenzusammenhalt und vermindert eher die Wasserlöslichkeit.",
+        "wrongAnswerExplanations": {
+          "B": "Die Kontaktfläche beeinflusst die Dispersionskräfte und damit die Eigenschaften.",
+          "C": "Mehr apolarer C-Anteil verbessert die Wasserlöslichkeit nicht automatisch und vermindert sie häufig.",
+          "D": "Die längere Kette bietet mehr statt weniger Kontaktfläche.",
+          "E": "Längenzunahme einer gesättigten Kette setzt keine Doppelbindung voraus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Was macht ein typisches Phospholipid amphiphil?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es kombiniert einen polaren Kopf mit apolaren Kettenbereichen.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Es wechselt seine Summenformel bei jedem Kontakt mit Wasser.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Es enthält zwingend drei kovalent gebundene Proteine.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es besteht ausschliesslich aus gleich polaren Gruppen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Es besitzt nur einen ungeladenen Kohlenwasserstoffring ohne Kopf.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Amphiphilie bezeichnet polare und apolare Bereiche innerhalb desselben Moleküls. B: Amphiphilie beschreibt Strukturmerkmale und keinen zwingenden Summenformelwechsel. C: Drei Proteinmoleküle sind keine Definitionsbedingung eines amphiphilen Lipids. D: Ein ausschliesslich polarer Aufbau besitzt keinen apolaren Gegenbereich und ist damit nicht amphiphil. E: Ein reiner hydrophober Ring ohne polaren Kopf erfüllt die Amphiphilie nicht. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Amphiphilie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Amphiphilie"
+      ],
+      "questionGoal": "Amphiphilie",
+      "structuredExplanation": {
+        "coreIdea": "Amphiphilie",
+        "correctReasoning": "Amphiphilie bezeichnet polare und apolare Bereiche innerhalb desselben Moleküls.",
+        "wrongAnswerExplanations": {
+          "B": "Amphiphilie beschreibt Strukturmerkmale und keinen zwingenden Summenformelwechsel.",
+          "C": "Drei Proteinmoleküle sind keine Definitionsbedingung eines amphiphilen Lipids.",
+          "D": "Ein ausschliesslich polarer Aufbau besitzt keinen apolaren Gegenbereich und ist damit nicht amphiphil.",
+          "E": "Ein reiner hydrophober Ring ohne polaren Kopf erfüllt die Amphiphilie nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Warum können viele zweikettige Membranlipide in Wasser stabile Doppelschichten bilden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Die Anordnung schirmt hydrophobe Ketten ab und lässt polare Köpfe mit Wasser wechselwirken.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Alle Lipide müssen zuvor kovalent zu einem einzigen Polymer verknüpft werden.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Alle Ketten weisen beidseits vollständig ins Wasser.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Innere der Doppelschicht besteht ausschliesslich aus freien geladenen Köpfen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Bilayerbildung verlangt die Umwandlung aller Ketten in hydrophile Alkohole.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Selbstorganisation minimiert ungünstige Wasserkontakte unter Berücksichtigung von Molekülform und Packung. B: Die Bilayer ist ein nichtkovalent selbstorganisiertes Aggregat und benötigt keine Polymerisation aller Moleküle. C: Die Ketten werden in der Doppelschicht vor Wasser abgeschirmt statt exponiert. D: Die geladenen/polaren Köpfe liegen an den Wassergrenzflächen und nicht nur im Kern. E: Die Ketten bleiben hydrophob; ihre chemische Umwandlung wäre keine normale Bilayerbildung. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Bilayerbildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bilayerbildung"
+      ],
+      "questionGoal": "Bilayerbildung",
+      "structuredExplanation": {
+        "coreIdea": "Bilayerbildung",
+        "correctReasoning": "Selbstorganisation minimiert ungünstige Wasserkontakte unter Berücksichtigung von Molekülform und Packung.",
+        "wrongAnswerExplanations": {
+          "B": "Die Bilayer ist ein nichtkovalent selbstorganisiertes Aggregat und benötigt keine Polymerisation aller Moleküle.",
+          "C": "Die Ketten werden in der Doppelschicht vor Wasser abgeschirmt statt exponiert.",
+          "D": "Die geladenen/polaren Köpfe liegen an den Wassergrenzflächen und nicht nur im Kern.",
+          "E": "Die Ketten bleiben hydrophob; ihre chemische Umwandlung wäre keine normale Bilayerbildung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Beschreibung passt zu einer einfachen normalen Detergensmizelle in Wasser?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine durchgehende Wasserphase ohne irgendeine innere Aggregatstruktur.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein fester kovalenter Kristall ohne Austausch von Monomeren.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Wässriger Innenraum, umgeben von einer geschlossenen Lipiddoppelschicht.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Hydrophober Kern mit nach aussen orientierten hydrophilen Köpfen.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Ausschliesslich unpolare Köpfe in direktem Wasserkontakt.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die innere Aggregatstruktur ist gerade der hydrophobe Mizellkern. B: Tensidmizellen sind dynamisch und nicht ein fest verknüpfter Kristall. C: Wasserinnenraum mit Bilayer bezeichnet ein Vesikel statt einer einfachen Mizelle. D: Eine Mizelle schirmt Ketten im Kern ab; ein Wasserinnenraum mit Bilayer ist charakteristisch für ein Vesikel. E: Hydrophile Kopfgruppen sind für die normale wässrige Mizelle wesentlich. Quelle: Originalunterlagen, PDF-S. 7–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Mizellenstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mizellenstruktur"
+      ],
+      "questionGoal": "Mizellenstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Mizellenstruktur",
+        "correctReasoning": "Eine Mizelle schirmt Ketten im Kern ab; ein Wasserinnenraum mit Bilayer ist charakteristisch für ein Vesikel.",
+        "wrongAnswerExplanations": {
+          "A": "Die innere Aggregatstruktur ist gerade der hydrophobe Mizellkern.",
+          "B": "Tensidmizellen sind dynamisch und nicht ein fest verknüpfter Kristall.",
+          "C": "Wasserinnenraum mit Bilayer bezeichnet ein Vesikel statt einer einfachen Mizelle.",
+          "E": "Hydrophile Kopfgruppen sind für die normale wässrige Mizelle wesentlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Eigenschaft unterscheidet ein typisches Lipidvesikel von einer einfachen Mizelle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Es besitzt grundsätzlich nur eine einzige Monomerkette.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Es umschliesst einen wässrigen Innenraum mit einer Doppelschicht.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Es besitzt dieselbe einzelne Kopfgruppenschicht um einen hydrophoben Kern wie eine normale Mizelle.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Es enthält definitionsgemäss keinen polaren Molekülanteil.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sein Inneres muss aus reinem Kohlenwasserstoff bestehen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Vesikel entsteht aus vielen amphiphilen Molekülen statt einer einzelnen Kette. B: Die geschlossene Bilayer trennt einen Wasserinnenraum von der äusseren Wasserphase. C: Eine einfache Monoschicht um einen apolaren Kern beschreibt die normale Mizelle, keine Bilayer mit Wasserinnenraum. D: Das typische Lipidvesikel besitzt polare Köpfe an beiden Wassergrenzflächen. E: Der Vesikelinnenraum ist wässrig, kein reiner Kohlenwasserstoffkern. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Vesikel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vesikel"
+      ],
+      "questionGoal": "Vesikel",
+      "structuredExplanation": {
+        "coreIdea": "Vesikel",
+        "correctReasoning": "Die geschlossene Bilayer trennt einen Wasserinnenraum von der äusseren Wasserphase.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Vesikel entsteht aus vielen amphiphilen Molekülen statt einer einzelnen Kette.",
+          "C": "Eine einfache Monoschicht um einen apolaren Kern beschreibt die normale Mizelle, keine Bilayer mit Wasserinnenraum.",
+          "D": "Das typische Lipidvesikel besitzt polare Köpfe an beiden Wassergrenzflächen.",
+          "E": "Der Vesikelinnenraum ist wässrig, kein reiner Kohlenwasserstoffkern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Aussage unterscheidet Sphingomyelin von einem Glycerophospholipid?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sphingomyelin besitzt ein Sphingosin-Grundgerüst statt Glycerin.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Beide unterscheiden sich ausschliesslich durch ihre Isotopenverteilung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sphingomyelin besitzt keine hydrophoben Anteile.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sphingomyelin besitzt definitionsgemäss drei Fettsäuren an Glycerin.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Glycerophospholipide enthalten zwingend gar keine Fettsäuren.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Verschiedene Rückgrate ermöglichen unterschiedliche Membranlipidklassen; beide können amphiphil sein. B: Die Rückgrate unterscheiden sich chemisch und nicht bloss isotopisch. C: Sphingomyelin besitzt langkettige hydrophobe Anteile. D: Drei Fettsäuren an Glycerin wären TAG und kein Sphingomyelin. E: Glycerophospholipide können gerade zwei Fettsäurereste enthalten. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Membranlipid-Grundgerüste"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranlipid-Grundgerüste"
+      ],
+      "questionGoal": "Membranlipid-Grundgerüste",
+      "structuredExplanation": {
+        "coreIdea": "Membranlipid-Grundgerüste",
+        "correctReasoning": "Verschiedene Rückgrate ermöglichen unterschiedliche Membranlipidklassen; beide können amphiphil sein.",
+        "wrongAnswerExplanations": {
+          "B": "Die Rückgrate unterscheiden sich chemisch und nicht bloss isotopisch.",
+          "C": "Sphingomyelin besitzt langkettige hydrophobe Anteile.",
+          "D": "Drei Fettsäuren an Glycerin wären TAG und kein Sphingomyelin.",
+          "E": "Glycerophospholipide können gerade zwei Fettsäurereste enthalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Woran erkennt man ein Glycolipid strukturell?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An drei Fettsäuren ohne jede weitere Kopfgruppe.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "An einem zwingend viergliedrigen Steroidkern.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "An einer ausschliesslich peptidischen Seitenkette ohne Zucker.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "An frei daneben gelöster Glucose ohne Verknüpfung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "An einem kovalent gebundenen Zuckeranteil des Lipids.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Ein TAG ohne Zuckeranteil ist kein Glycolipid. B: Ein Steroidkern allein legt keine kovalente Zuckerbindung fest. C: Ein Peptidanteil ohne Zucker begründet den Bestandteil glyco nicht. D: Ein zufälliges Gemisch mit freier Glucose besitzt keine definierte Zucker-Lipid-Bindung. E: Glyco bezeichnet den strukturell verknüpften Zuckeranteil und nicht bloss ein Gemisch. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Glycolipid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glycolipid"
+      ],
+      "questionGoal": "Glycolipid",
+      "structuredExplanation": {
+        "coreIdea": "Glycolipid",
+        "correctReasoning": "Glyco bezeichnet den strukturell verknüpften Zuckeranteil und nicht bloss ein Gemisch.",
+        "wrongAnswerExplanations": {
+          "A": "Ein TAG ohne Zuckeranteil ist kein Glycolipid.",
+          "B": "Ein Steroidkern allein legt keine kovalente Zuckerbindung fest.",
+          "C": "Ein Peptidanteil ohne Zucker begründet den Bestandteil glyco nicht.",
+          "D": "Ein zufälliges Gemisch mit freier Glucose besitzt keine definierte Zucker-Lipid-Bindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Beziehung passt zwischen Arachidonsäure und Prostaglandinen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prostaglandine bestehen ausschliesslich aus Glycerin und Phosphat.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Arachidonsäure dient als mehrfach ungesättigte Vorstufe für Prostaglandine.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Arachidonsäure ist ein gesättigtes Steroidhormon, das Prostaglandine abbaut.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Arachidonsäure wird durch COX-Hemmung vollständig aus allen Membranen entfernt.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Beide Bezeichnungen meinen denselben unveränderten Stoff.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Prostaglandine sind Eicosanoide und keine reinen Glycerin-Phosphat-Verbindungen. B: Der enzymatische Eicosanoidweg setzt Arachidonsäure zu verschiedenen Signalsubstanzen um. C: Arachidonsäure ist mehrfach ungesättigt und kein gesättigtes Steroidhormon. D: COX-Hemmung vermindert einen Umsatzweg; sie entfernt nicht sämtliche Arachidonsäure aus Membranen. E: Vorstufe und durch Enzyme gebildete Prostaglandinprodukte sind verschiedene Stoffe. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Arachidonsäure"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Arachidonsäure"
+      ],
+      "questionGoal": "Arachidonsäure",
+      "structuredExplanation": {
+        "coreIdea": "Arachidonsäure",
+        "correctReasoning": "Der enzymatische Eicosanoidweg setzt Arachidonsäure zu verschiedenen Signalsubstanzen um.",
+        "wrongAnswerExplanations": {
+          "A": "Prostaglandine sind Eicosanoide und keine reinen Glycerin-Phosphat-Verbindungen.",
+          "C": "Arachidonsäure ist mehrfach ungesättigt und kein gesättigtes Steroidhormon.",
+          "D": "COX-Hemmung vermindert einen Umsatzweg; sie entfernt nicht sämtliche Arachidonsäure aus Membranen.",
+          "E": "Vorstufe und durch Enzyme gebildete Prostaglandinprodukte sind verschiedene Stoffe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Welche Wirkung ist nach Hemmung der Cyclooxygenasen durch Ibuprofen zu erwarten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Alle vorhandenen Membranlipide werden unmittelbar hydrolysiert.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Prostaglandinbildung aus Arachidonsäure kann vermindert werden.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ibuprofen wirkt durch dieselbe irreversible Serin-Acetylierung wie ASS.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Prostaglandinbildung muss dadurch erhöht werden.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ibuprofen verestert zwingend drei Fettsäuren an Glycerin.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: COX-Hemmung ist kein unmittelbarer globaler Abbau aller Membranlipide. B: COX ist ein Ziel des Wirkstoffs; Ibuprofen wird nicht mit der spezifischen irreversiblen Acetylierung durch ASS gleichgesetzt. C: Die spezifische irreversible Serinacetylierung gehört zu ASS und wird nicht als identischer Ibuprofenmechanismus verwendet. D: Eine Hemmung der COX vermindert deren Beitrag zur Prostaglandinbildung statt ihn zu erhöhen. E: Ibuprofen ist kein Enzym für die TAG-Veresterung. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "COX-Hemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "COX-Hemmung"
+      ],
+      "questionGoal": "COX-Hemmung",
+      "structuredExplanation": {
+        "coreIdea": "COX-Hemmung",
+        "correctReasoning": "COX ist ein Ziel des Wirkstoffs; Ibuprofen wird nicht mit der spezifischen irreversiblen Acetylierung durch ASS gleichgesetzt.",
+        "wrongAnswerExplanations": {
+          "A": "COX-Hemmung ist kein unmittelbarer globaler Abbau aller Membranlipide.",
+          "C": "Die spezifische irreversible Serinacetylierung gehört zu ASS und wird nicht als identischer Ibuprofenmechanismus verwendet.",
+          "D": "Eine Hemmung der COX vermindert deren Beitrag zur Prostaglandinbildung statt ihn zu erhöhen.",
+          "E": "Ibuprofen ist kein Enzym für die TAG-Veresterung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Phospholipid, Sphingolipid, Esterhydrolyse, Bilayer.",
+      "options": [
+        {
+          "text": "Bei einer wässrigen Lipiddoppelschicht liegen die apolaren Ketten an beiden äusseren Wassergrenzflächen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Verknüpfungen zwischen Fettsäuren und Glycerin im Triacylglycerid sind Amidbindungen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Phosphatgruppe kann zum polaren Kopf eines Membranlipids gehören.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sphingomyelin besitzt ein anderes Grundgerüst als ein Glycerophospholipid.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Ketten liegen überwiegend im hydrophoben Innern; die polaren Köpfe zeigen zum Wasser. B: Es sind Carbonsäureesterbindungen; ihre Hydrolyse ist keine Peptidspaltung. C: Kopfgruppe und Grundgerüst unterscheiden sich. D: Sphingosin kann das Grundgerüst bilden. Quelle: Originalunterlagen, PDF-S. 5, 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Phospholipid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phospholipid"
+      ],
+      "questionGoal": "Phospholipid",
+      "structuredExplanation": {
+        "coreIdea": "Phospholipid",
+        "correctReasoning": "Kopfgruppe und Grundgerüst unterscheiden sich. Sphingosin kann das Grundgerüst bilden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Ketten liegen überwiegend im hydrophoben Innern; die polaren Köpfe zeigen zum Wasser.",
+          "B": "Es sind Carbonsäureesterbindungen; ihre Hydrolyse ist keine Peptidspaltung.",
+          "C": "Kopfgruppe und Grundgerüst unterscheiden sich.",
+          "D": "Sphingosin kann das Grundgerüst bilden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Sphingolipid, Glycolipid, cis-Doppelbindung, Mizelle.",
+      "options": [
+        {
+          "text": "Glycolipid bedeutet, dass freie Glucose nur zufällig neben einem Lipid liegt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine typische Detergensmizelle schirmt apolare Ketten gegen Wasser ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine cis-Doppelbindung kann einen Knick in einer Fettsäurekette erzeugen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sphingomyelin besitzt ein anderes Grundgerüst als ein Glycerophospholipid.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Glycolipid enthält einen kovalent gebundenen Zuckeranteil. Die Zucker-Lipid-Verknüpfung ist strukturell definiert. B: Hydrophobe Anteile liegen eher innen. C: Die Geometrie beeinflusst Packung. D: Sphingosin kann das Grundgerüst bilden. Quelle: Originalunterlagen, PDF-S. 4, 7–9, 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Sphingolipid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sphingolipid"
+      ],
+      "questionGoal": "Sphingolipid",
+      "structuredExplanation": {
+        "coreIdea": "Sphingolipid",
+        "correctReasoning": "Hydrophobe Anteile liegen eher innen. Die Geometrie beeinflusst Packung. Sphingosin kann das Grundgerüst bilden.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Glycolipid enthält einen kovalent gebundenen Zuckeranteil. Die Zucker-Lipid-Verknüpfung ist strukturell definiert.",
+          "B": "Hydrophobe Anteile liegen eher innen.",
+          "C": "Die Geometrie beeinflusst Packung.",
+          "D": "Sphingosin kann das Grundgerüst bilden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Glycolipid, Speicherfunktion, Schmelzpunkt, Vesikel.",
+      "options": [
+        {
+          "text": "Triacylglyceride dienen als energiereiche, weitgehend hydrophobe Speicherstoffe.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Lipidvesikel und eine einfache Mizelle besitzen zwangsläufig dieselbe innere Struktur.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Glycolipid bedeutet, dass freie Glucose nur zufällig neben einem Lipid liegt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mehr cis-Doppelbindungen erhöhen bei sonst vergleichbaren Fettsäuren zwingend die Packungsdichte.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein solcher Kopf fehlt ihnen. B: Ein Lipidvesikel besitzt eine geschlossene Doppelschicht und einen wässrigen Innenraum. Die Doppelschicht umschliesst einen getrennten Raum. C: Ein Glycolipid enthält einen kovalent gebundenen Zuckeranteil. Die Zucker-Lipid-Verknüpfung ist strukturell definiert. D: Bei vergleichbarer Kettenlänge senken cis-Doppelbindungen häufig den Schmelzpunkt. Schlechtere Packung schwächt den Zusammenhalt. Quelle: Originalunterlagen, PDF-S. 4–5, 7–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Glycolipid"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glycolipid"
+      ],
+      "questionGoal": "Glycolipid",
+      "structuredExplanation": {
+        "coreIdea": "Glycolipid",
+        "correctReasoning": "Ein solcher Kopf fehlt ihnen.",
+        "wrongAnswerExplanations": {
+          "A": "Ein solcher Kopf fehlt ihnen.",
+          "B": "Ein Lipidvesikel besitzt eine geschlossene Doppelschicht und einen wässrigen Innenraum. Die Doppelschicht umschliesst einen getrennten Raum.",
+          "C": "Ein Glycolipid enthält einen kovalent gebundenen Zuckeranteil. Die Zucker-Lipid-Verknüpfung ist strukturell definiert.",
+          "D": "Bei vergleichbarer Kettenlänge senken cis-Doppelbindungen häufig den Schmelzpunkt. Schlechtere Packung schwächt den Zusammenhalt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Speicherfunktion, Fettsäuresalz, Kettenlänge, Arachidonsäure.",
+      "options": [
+        {
+          "text": "Eine längere gesättigte Kette verringert stets die Kontaktfläche zu Nachbarketten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Triacylglyceride dienen als energiereiche, weitgehend hydrophobe Speicherstoffe.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Deprotonierung macht aus der Carboxylgruppe eine positiv geladene Ammoniumgruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Arachidonsäure ist eine mehrfach ungesättigte Fettsäure und Vorstufe verschiedener Eicosanoide.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Längere gesättigte Ketten besitzen häufig stärkere Dispersionswechselwirkungen als kürzere. Mehr Kontakt kann die Schmelztemperatur erhöhen. B: Ein solcher Kopf fehlt ihnen. C: Deprotonierung der Carboxylgruppe erzeugt ein Fettsäureanion. Die funktionelle Gruppe bleibt eine Carboxylatgruppe. D: Aus ihr können unter anderem Prostaglandine entstehen. Quelle: Originalunterlagen, PDF-S. 4–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Speicherfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Speicherfunktion"
+      ],
+      "questionGoal": "Speicherfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Speicherfunktion",
+        "correctReasoning": "Ein solcher Kopf fehlt ihnen. Aus ihr können unter anderem Prostaglandine entstehen.",
+        "wrongAnswerExplanations": {
+          "A": "Längere gesättigte Ketten besitzen häufig stärkere Dispersionswechselwirkungen als kürzere. Mehr Kontakt kann die Schmelztemperatur erhöhen.",
+          "B": "Ein solcher Kopf fehlt ihnen.",
+          "C": "Deprotonierung der Carboxylgruppe erzeugt ein Fettsäureanion. Die funktionelle Gruppe bleibt eine Carboxylatgruppe.",
+          "D": "Aus ihr können unter anderem Prostaglandine entstehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Fettsäuresalz, Membranfluidität, Amphiphilie, Ibuprofen.",
+      "options": [
+        {
+          "text": "Amphiphilie bezeichnet zwei verschieden polare Moleküle, die nur als Gemisch vorliegen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Lipidzusammensetzung kann die Fluidität einer Doppelschicht verändern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Deprotonierung der Carboxylgruppe erzeugt ein Fettsäureanion.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ibuprofen wirkt durch Acetylierung des aktiven Serins genauso irreversibel wie ASS.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Amphiphil vereint polare und apolare Bereiche innerhalb desselben Moleküls. B: Kettenpackung und Temperatur wirken zusammen. C: Die funktionelle Gruppe bleibt eine Carboxylatgruppe. D: Ibuprofen kann Cyclooxygenasen hemmen und dadurch die Prostaglandinbildung vermindern. Die Mechanismen der beiden Arzneistoffe unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 4, 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Fettsäuresalz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fettsäuresalz"
+      ],
+      "questionGoal": "Fettsäuresalz",
+      "structuredExplanation": {
+        "coreIdea": "Fettsäuresalz",
+        "correctReasoning": "Kettenpackung und Temperatur wirken zusammen. Die funktionelle Gruppe bleibt eine Carboxylatgruppe.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Amphiphil vereint polare und apolare Bereiche innerhalb desselben Moleküls.",
+          "B": "Kettenpackung und Temperatur wirken zusammen.",
+          "C": "Die funktionelle Gruppe bleibt eine Carboxylatgruppe.",
+          "D": "Ibuprofen kann Cyclooxygenasen hemmen und dadurch die Prostaglandinbildung vermindern. Die Mechanismen der beiden Arzneistoffe unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Membranfluidität, Strukturabhängigkeit, Bilayer, Fettsäure.",
+      "options": [
+        {
+          "text": "Die Bezeichnung Lipid erzwingt identische physikochemische Eigenschaften aller Mitglieder.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine typische Fettsäure besitzt eine Carboxylgruppe und eine Kohlenwasserstoffkette.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Viele zweikettige Membranlipide bilden in Wasser bevorzugt Doppelschichten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Lipidzusammensetzung kann die Fluidität einer Doppelschicht verändern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: cis/trans-Geometrie und Kettenlänge können trotz gleicher Grundstoffklasse verschiedene Eigenschaften bewirken. Lipidklassen sind strukturell vielfältig. B: Polarer Kopf und apolare Kette unterscheiden sich. C: Die Molekülform begünstigt Bilayer. D: Kettenpackung und Temperatur wirken zusammen. Quelle: Originalunterlagen, PDF-S. 3–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Membranfluidität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranfluidität"
+      ],
+      "questionGoal": "Membranfluidität",
+      "structuredExplanation": {
+        "coreIdea": "Membranfluidität",
+        "correctReasoning": "Polarer Kopf und apolare Kette unterscheiden sich. Die Molekülform begünstigt Bilayer. Kettenpackung und Temperatur wirken zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "cis/trans-Geometrie und Kettenlänge können trotz gleicher Grundstoffklasse verschiedene Eigenschaften bewirken. Lipidklassen sind strukturell vielfältig.",
+          "B": "Polarer Kopf und apolare Kette unterscheiden sich.",
+          "C": "Die Molekülform begünstigt Bilayer.",
+          "D": "Kettenpackung und Temperatur wirken zusammen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Strukturabhängigkeit, Entzündungssignale, Mizelle, Triacylglycerid.",
+      "options": [
+        {
+          "text": "Die Bezeichnung Lipid erzwingt identische physikochemische Eigenschaften aller Mitglieder.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Triacylglycerid enthält drei Glycerinmoleküle und nur eine Fettsäure.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "In einer typischen wässrigen Mizelle zeigen sämtliche apolaren Ketten frei nach aussen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Hemmung eines Arachidonsäurewegs ist von der vollständigen Beseitigung aller Arachidonsäure verschieden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: cis/trans-Geometrie und Kettenlänge können trotz gleicher Grundstoffklasse verschiedene Eigenschaften bewirken. Lipidklassen sind strukturell vielfältig. B: Ein Triacylglycerid enthält Glycerin mit drei veresterten Fettsäureresten. Die drei OH-Gruppen des Glycerins sind verestert. C: Eine typische Detergensmizelle schirmt apolare Ketten gegen Wasser ab. Hydrophobe Anteile liegen eher innen. D: Ein enzymatischer Umsetzungsweg wird vermindert. Quelle: Originalunterlagen, PDF-S. 4–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Strukturabhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strukturabhängigkeit"
+      ],
+      "questionGoal": "Strukturabhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Strukturabhängigkeit",
+        "correctReasoning": "Ein enzymatischer Umsetzungsweg wird vermindert.",
+        "wrongAnswerExplanations": {
+          "A": "cis/trans-Geometrie und Kettenlänge können trotz gleicher Grundstoffklasse verschiedene Eigenschaften bewirken. Lipidklassen sind strukturell vielfältig.",
+          "B": "Ein Triacylglycerid enthält Glycerin mit drei veresterten Fettsäureresten. Die drei OH-Gruppen des Glycerins sind verestert.",
+          "C": "Eine typische Detergensmizelle schirmt apolare Ketten gegen Wasser ab. Hydrophobe Anteile liegen eher innen.",
+          "D": "Ein enzymatischer Umsetzungsweg wird vermindert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc09_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC09",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Entzündungssignale, Fettsäure, Vesikel, Esterhydrolyse. Unterscheiden Sie die Grundprinzipien von Fettsäure- und Isoprenoidbiosynthese.",
+      "options": [
+        {
+          "text": "Ein Lipidvesikel und eine einfache Mizelle besitzen zwangsläufig dieselbe innere Struktur.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Hemmung eines Arachidonsäurewegs ist von der vollständigen Beseitigung aller Arachidonsäure verschieden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Hydrolyse eines Triacylglycerids kann Fettsäuren und glycerinhaltige Produkte liefern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die gewöhnliche Fettsäuresynthase verlängert ihre Kette durch wiederholten Einbau ganzer C5-Isopreneinheiten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Lipidvesikel besitzt eine geschlossene Doppelschicht und einen wässrigen Innenraum. Die Doppelschicht umschliesst einen getrennten Raum. B: Ein enzymatischer Umsetzungsweg wird vermindert. C: Die Acyl-O-Verknüpfungen sind Ester. D: Die Fettsäuresynthase nutzt Acetyl-/Malonyl-Bausteine und verlängert netto in C2-Schritten; C5-Isopreneinheiten kennzeichnen Isoprenoidwege. Quelle: Originalunterlagen PDF-S. 3–6, 10; ergänzende Enzymtheorie IUBMB EC 2.3.1.85 (https://iubmb.qmul.ac.uk/enzyme/EC2/3/1/85.html).",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC09",
+        "Entzündungssignale"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Entzündungssignale"
+      ],
+      "questionGoal": "Entzündungssignale",
+      "structuredExplanation": {
+        "coreIdea": "Entzündungssignale",
+        "correctReasoning": "Ein enzymatischer Umsetzungsweg wird vermindert. Die Acyl-O-Verknüpfungen sind Ester.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Lipidvesikel besitzt eine geschlossene Doppelschicht und einen wässrigen Innenraum. Die Doppelschicht umschliesst einen getrennten Raum.",
+          "B": "Ein enzymatischer Umsetzungsweg wird vermindert.",
+          "C": "Die Acyl-O-Verknüpfungen sind Ester.",
+          "D": "Die Fettsäuresynthase nutzt Acetyl-/Malonyl-Bausteine und verlängert netto in C2-Schritten; C5-Isopreneinheiten kennzeichnen Isoprenoidwege."
+        }
+      }
+    }
+  ]
+}

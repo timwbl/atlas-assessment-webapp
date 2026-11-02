@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block1_kvp03_04_20261102",
+  "lectureCode": "KVP03/04",
+  "title": "Bioelektrizität – Diffusion, Nernst und RC-Modell",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP3&4 - Bioelektrizität. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Explizite Nernst-Vorzeichenkonvention. Reale Membranpotentiale nicht mit dem Einzelionen-Nernstwert gleichgesetzt. Nicht prüfungsrelevanter mathematischer Anhang und dessen Vorzeichenfehler nicht übernommen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Diffusion und elektrochemisches Gleichgewicht an selektiven Membranen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Ladung, Feld, Spannung, Strom und Widerstand verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Kapazität und Kondensatorgeometrie anwenden."
+    },
+    {
+      "id": "lo4",
+      "text": "Lade- und Entladeverhalten von RC-Gliedern und Membranersatzmodellen verstehen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvp03_04_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Bei gleicher Temperatur trennt man zwei Bereiche mit unterschiedlicher Konzentration eines ungeladenen Stoffes nicht mehr voneinander. Was erklärt den anfänglichen Nettotransport?",
+      "options": [
+        {
+          "text": "Jedes Teilchen bewegt sich ausschliesslich gezielt zum Bereich niedriger Konzentration.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Nettofluss ist unabhängig vom Konzentrationsgradienten stets gleich gross.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die thermische Teilchenbewegung setzt erst durch einen ATP-Motor ein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Im Gleichgewicht bewegen sich alle Teilchen nicht mehr.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zufällige Teilchenbewegung erzeugt statistisch mehr Übergänge aus dem konzentrierteren Bereich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Nettotransport entsteht aus zufälliger Bewegung beider Richtungen. B: Ficks Gesetz verknüpft Fluss und Gradient. C: Diffusion benötigt keine solche aktive Antriebsquelle. D: Es bleibt mikroskopische Bewegung ohne Nettofluss. E: Einzelne Teilchen bewegen sich in beide Richtungen. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Diffusion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diffusion"
+      ],
+      "questionGoal": "Diffusion",
+      "structuredExplanation": {
+        "coreIdea": "Diffusion",
+        "correctReasoning": "Einzelne Teilchen bewegen sich in beide Richtungen.",
+        "wrongAnswerExplanations": {
+          "A": "Der Nettotransport entsteht aus zufälliger Bewegung beider Richtungen.",
+          "B": "Ficks Gesetz verknüpft Fluss und Gradient.",
+          "C": "Diffusion benötigt keine solche aktive Antriebsquelle.",
+          "D": "Es bleibt mikroskopische Bewegung ohne Nettofluss."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Für den Stoffstrom gilt J = −D·A·dc/dx. Was geschieht mit seinem Betrag, wenn sich nur die Querschnittsfläche verdoppelt?",
+      "options": [
+        {
+          "text": "Er bleibt unverändert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er halbiert sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er wird null.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Gesamtstromstärke hängt von der Fläche ab. B: Die Fläche steht nicht im Nenner. C: J ist bei gleichem Gradient und D proportional zu A. D: Eine quadratische Flächenabhängigkeit liegt nicht vor. E: Eine grössere Fläche beseitigt den Gradienten nicht. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Ficks Gesetz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ficks Gesetz"
+      ],
+      "questionGoal": "Ficks Gesetz",
+      "structuredExplanation": {
+        "coreIdea": "Ficks Gesetz",
+        "correctReasoning": "J ist bei gleichem Gradient und D proportional zu A.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gesamtstromstärke hängt von der Fläche ab.",
+          "B": "Die Fläche steht nicht im Nenner.",
+          "D": "Eine quadratische Flächenabhängigkeit liegt nicht vor.",
+          "E": "Eine grössere Fläche beseitigt den Gradienten nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Eine Membran ist nur für eine Ionensorte permeabel. Weshalb kann im Gleichgewicht eine Konzentrationsdifferenz bestehen bleiben?",
+      "options": [
+        {
+          "text": "Jede selektive Membran muss für alle Ionen gleich durchlässig werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Konzentrationsunterschied bedeutet unabhängig vom elektrischen Feld zwingend Nettofluss.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Ionen verlieren nach dem Durchtritt ihre Ladung vollständig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die thermische Bewegung aller Ionen hört vollständig auf.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der elektrische Beitrag kann den chemischen Antrieb genau ausgleichen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Selektivität kann bestehen bleiben. B: Für Ionen sind chemischer und elektrischer Beitrag gemeinsam relevant. C: Die Ladung bleibt bei der Betrachtung erhalten. D: Mikroskopische Bewegung besteht weiter. E: Dann ist die elektrochemische Triebkraft dieser Ionensorte null. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Nernst-Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nernst-Gleichgewicht"
+      ],
+      "questionGoal": "Nernst-Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Nernst-Gleichgewicht",
+        "correctReasoning": "Dann ist die elektrochemische Triebkraft dieser Ionensorte null.",
+        "wrongAnswerExplanations": {
+          "A": "Selektivität kann bestehen bleiben.",
+          "B": "Für Ionen sind chemischer und elektrischer Beitrag gemeinsam relevant.",
+          "C": "Die Ladung bleibt bei der Betrachtung erhalten.",
+          "D": "Mikroskopische Bewegung besteht weiter."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Es sei E = V_innen − V_aussen = (RT/zF)·ln(c_aussen/c_innen). Für K+ gilt bei 37 °C c_innen/c_aussen = 10. Welcher Wert passt am besten?",
+      "options": [
+        {
+          "text": "Etwa −61 mV.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0 mV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Etwa +61 mV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Etwa +0,61 mV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa −6,1 V.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: z ist +1 und log10(c_aussen/c_innen) ist −1. B: Die Konzentrationen sind nicht gleich. C: Dies vertauscht das Verhältnis beziehungsweise die festgelegte Spannungsrichtung. D: Vorzeichen und Grössenordnung stimmen nicht. E: Der Millivoltfaktor wurde falsch umgerechnet. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Nernst mit Vorzeichenkonvention"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nernst mit Vorzeichenkonvention"
+      ],
+      "questionGoal": "Nernst mit Vorzeichenkonvention",
+      "structuredExplanation": {
+        "coreIdea": "Nernst mit Vorzeichenkonvention",
+        "correctReasoning": "z ist +1 und log10(c_aussen/c_innen) ist −1.",
+        "wrongAnswerExplanations": {
+          "B": "Die Konzentrationen sind nicht gleich.",
+          "C": "Dies vertauscht das Verhältnis beziehungsweise die festgelegte Spannungsrichtung.",
+          "D": "Vorzeichen und Grössenordnung stimmen nicht.",
+          "E": "Der Millivoltfaktor wurde falsch umgerechnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Der Abstand zweier gleichbleibender Punktladungen im selben Medium wird verdoppelt. Wie verändert sich der Betrag ihrer Coulombkraft?",
+      "options": [
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er sinkt auf die Hälfte.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er sinkt auf ein Viertel.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Abstand ist ein wesentlicher Einflussfaktor. B: Dies kehrt die inverse Quadratabhängigkeit um. C: Ein grösserer Abstand vermindert die Kraft. D: Das wäre eine 1/r-Abhängigkeit. E: Die Kraft ist proportional zu 1/r². Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Coulomb-Gesetz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Coulomb-Gesetz"
+      ],
+      "questionGoal": "Coulomb-Gesetz",
+      "structuredExplanation": {
+        "coreIdea": "Coulomb-Gesetz",
+        "correctReasoning": "Die Kraft ist proportional zu 1/r².",
+        "wrongAnswerExplanations": {
+          "A": "Der Abstand ist ein wesentlicher Einflussfaktor.",
+          "B": "Dies kehrt die inverse Quadratabhängigkeit um.",
+          "C": "Ein grösserer Abstand vermindert die Kraft.",
+          "D": "Das wäre eine 1/r-Abhängigkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q06",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Welche Definition beschreibt die elektrische Spannung?",
+      "options": [
+        {
+          "text": "Spannung pro Stromstärke als Materialantwort.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Transportierte Ladung pro Zeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kraft pro Testladung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Energieänderung beziehungsweise Arbeit pro transportierter Ladung zwischen zwei Punkten, bei festgelegter Richtung.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Gespeicherte Ladung pro Spannung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist der Widerstand. B: Das ist die Stromstärke. C: Das ist die elektrische Feldstärke. D: Die Einheit ist Joule pro Coulomb, also Volt. E: Das ist die Kapazität. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Spannung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spannung"
+      ],
+      "questionGoal": "Spannung",
+      "structuredExplanation": {
+        "coreIdea": "Spannung",
+        "correctReasoning": "Die Einheit ist Joule pro Coulomb, also Volt.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist der Widerstand.",
+          "B": "Das ist die Stromstärke.",
+          "C": "Das ist die elektrische Feldstärke.",
+          "E": "Das ist die Kapazität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Über einem ohmschen Widerstand von 5 kΩ liegen 10 V. Welche Stromstärke fliesst?",
+      "options": [
+        {
+          "text": "0,002 mA.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,5 mA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2 mA.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "2 A.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "50 mA.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ampere wurden nochmals fälschlich durch 1000 geteilt. B: Hier wurde das Verhältnis falsch gebildet. C: I = U/R = 10/5000 A. D: Der Faktor kilo wurde ignoriert. E: Die Multiplikation von Zahlen ersetzt U/R nicht. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Ohmsches Gesetz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ohmsches Gesetz"
+      ],
+      "questionGoal": "Ohmsches Gesetz",
+      "structuredExplanation": {
+        "coreIdea": "Ohmsches Gesetz",
+        "correctReasoning": "I = U/R = 10/5000 A.",
+        "wrongAnswerExplanations": {
+          "A": "Ampere wurden nochmals fälschlich durch 1000 geteilt.",
+          "B": "Hier wurde das Verhältnis falsch gebildet.",
+          "D": "Der Faktor kilo wurde ignoriert.",
+          "E": "Die Multiplikation von Zahlen ersetzt U/R nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein homogener Leiter wird bei unveränderter Querschnittsfläche und spezifischem Widerstand doppelt so lang. Was passiert mit R?",
+      "options": [
+        {
+          "text": "R bleibt gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "R halbiert sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "R wird null.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "R vervierfacht sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "R verdoppelt sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Geometrie beeinflusst den Widerstand. B: Die Länge steht im Zähler. C: Ein längerer Leiter wird nicht widerstandsfrei. D: Die Abhängigkeit von der Länge ist linear. E: R ist proportional zur Leiterlänge. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Leitergeometrie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Leitergeometrie"
+      ],
+      "questionGoal": "Leitergeometrie",
+      "structuredExplanation": {
+        "coreIdea": "Leitergeometrie",
+        "correctReasoning": "R ist proportional zur Leiterlänge.",
+        "wrongAnswerExplanations": {
+          "A": "Die Geometrie beeinflusst den Widerstand.",
+          "B": "Die Länge steht im Zähler.",
+          "C": "Ein längerer Leiter wird nicht widerstandsfrei.",
+          "D": "Die Abhängigkeit von der Länge ist linear."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein Kondensator speichert bei 2 V eine Ladung von 6 nC. Welche Kapazität besitzt er?",
+      "options": [
+        {
+          "text": "3 nF.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "12 nF.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,33 nF.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "8 nF.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "3 µF.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: C = Q/U. B: Q und U müssen dividiert, nicht multipliziert werden. C: Dies entspricht dem umgekehrten Zahlenverhältnis. D: Addition von Ladung und Spannung ist dimensionswidrig. E: Der Präfix nano darf nicht durch mikro ersetzt werden. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Kapazität berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kapazität berechnen"
+      ],
+      "questionGoal": "Kapazität berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Kapazität berechnen",
+        "correctReasoning": "C = Q/U.",
+        "wrongAnswerExplanations": {
+          "B": "Q und U müssen dividiert, nicht multipliziert werden.",
+          "C": "Dies entspricht dem umgekehrten Zahlenverhältnis.",
+          "D": "Addition von Ladung und Spannung ist dimensionswidrig.",
+          "E": "Der Präfix nano darf nicht durch mikro ersetzt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein idealer Plattenkondensator bleibt an derselben konstanten Spannung angeschlossen. Der Plattenabstand wird verdoppelt. Was gilt bei gleicher Fläche und gleichem Dielektrikum?",
+      "options": [
+        {
+          "text": "Kapazität und gespeicherte Ladung halbieren sich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Kapazität und Ladung verdoppeln sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Kapazität bleibt gleich, nur die Spannung halbiert sich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Kapazität halbiert sich, die Ladung muss konstant bleiben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ladung und Spannung verdoppeln sich bei unverändertem C.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: C ∝ 1/d und Q = CU bei konstantem U. B: Die Abstandsabhängigkeit ist invers. C: Die Spannung ist vorgegeben; die Geometrie ändert C. D: Die Spannungsquelle kann Ladung abführen. E: Dies widerspricht den festgelegten Bedingungen. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Plattenabstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Plattenabstand"
+      ],
+      "questionGoal": "Plattenabstand",
+      "structuredExplanation": {
+        "coreIdea": "Plattenabstand",
+        "correctReasoning": "C ∝ 1/d und Q = CU bei konstantem U.",
+        "wrongAnswerExplanations": {
+          "B": "Die Abstandsabhängigkeit ist invers.",
+          "C": "Die Spannung ist vorgegeben; die Geometrie ändert C.",
+          "D": "Die Spannungsquelle kann Ladung abführen.",
+          "E": "Dies widerspricht den festgelegten Bedingungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "R = 2 MΩ und C = 5 nF. Welche Zeitkonstante τ = RC ergibt sich?",
+      "options": [
+        {
+          "text": "2,5 ms.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10 ms.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "100 ms.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "10 s.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,1 ms.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier wurde dividiert statt multipliziert. B: 2 × 10^6 mal 5 × 10^−9 s ergibt 0,010 s. C: Dies liegt um den Faktor 10 zu hoch. D: Dies verfehlt die Präfixumrechnung um Faktor 1000. E: Der Zehnerpotenzfaktor stimmt nicht. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "RC-Zeitkonstante"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RC-Zeitkonstante"
+      ],
+      "questionGoal": "RC-Zeitkonstante",
+      "structuredExplanation": {
+        "coreIdea": "RC-Zeitkonstante",
+        "correctReasoning": "2 × 10^6 mal 5 × 10^−9 s ergibt 0,010 s.",
+        "wrongAnswerExplanations": {
+          "A": "Hier wurde dividiert statt multipliziert.",
+          "C": "Dies liegt um den Faktor 10 zu hoch.",
+          "D": "Dies verfehlt die Präfixumrechnung um Faktor 1000.",
+          "E": "Der Zehnerpotenzfaktor stimmt nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein Kondensator entlädt sich über einen Widerstand. Welcher Anteil seiner Anfangsspannung bleibt nach einer Zeitkonstante τ?",
+      "options": [
+        {
+          "text": "100 %.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 63 %.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Genau 0 %.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Etwa 37 %.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Genau 50 %.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Spannung ist bereits abgefallen. B: Dies ist der bereits abgefallene Anteil beziehungsweise der Ladefortschritt. C: Exponentieller Abfall erreicht nach einer Zeitkonstante nicht null. D: exp(−1) ist ungefähr 0,368. E: Die Zeitkonstante ist nicht die Halbwertszeit. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Exponentielles Entladen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exponentielles Entladen"
+      ],
+      "questionGoal": "Exponentielles Entladen",
+      "structuredExplanation": {
+        "coreIdea": "Exponentielles Entladen",
+        "correctReasoning": "exp(−1) ist ungefähr 0,368.",
+        "wrongAnswerExplanations": {
+          "A": "Die Spannung ist bereits abgefallen.",
+          "B": "Dies ist der bereits abgefallene Anteil beziehungsweise der Ladefortschritt.",
+          "C": "Exponentieller Abfall erreicht nach einer Zeitkonstante nicht null.",
+          "E": "Die Zeitkonstante ist nicht die Halbwertszeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Eine selektive Membran trennt zwei Ionenlösungen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Für Ionen trägt sowohl das Konzentrationsverhältnis als auch die Spannung zur Triebkraft bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Nernst-Wert einer einzelnen Ionensorte beschreibt zwingend jedes reale Membranpotential vollständig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleichen Konzentrationen beträgt das Nernst-Potential in diesem Modell null.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Nernst-Spannung einer Ionensorte ist unabhängig von deren Ladungszahl.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide bilden den elektrochemischen Beitrag. B: Bei mehreren permeablen Ionen sind weitere Beiträge relevant. C: Der Logarithmus von eins ist null. D: z steht im Nenner. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Chemischer und elektrischer Antrieb"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chemischer und elektrischer Antrieb"
+      ],
+      "questionGoal": "Chemischer und elektrischer Antrieb",
+      "structuredExplanation": {
+        "coreIdea": "Chemischer und elektrischer Antrieb",
+        "correctReasoning": "Beide bilden den elektrochemischen Beitrag. Der Logarithmus von eins ist null.",
+        "wrongAnswerExplanations": {
+          "A": "Beide bilden den elektrochemischen Beitrag.",
+          "B": "Bei mehreren permeablen Ionen sind weitere Beiträge relevant.",
+          "C": "Der Logarithmus von eins ist null.",
+          "D": "z steht im Nenner."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein Protokoll unterscheidet Feld, Strom und Spannung. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die konventionelle Stromrichtung entspricht immer der Bewegungsrichtung von Elektronen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein elektrischer Strom kann durch die Bewegung von Ionen getragen werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Einheit der Stromstärke ist Joule pro Coulomb.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Negative Ladungen bewegen sich bei reinem elektrischem Antrieb entgegengesetzt zur Feldrichtung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für negative Ladungen sind die Richtungen entgegengesetzt. B: Metallische Elektronenleitung ist nicht die einzige Möglichkeit. C: Das ist Volt; Stromstärke hat die Einheit Coulomb pro Sekunde. D: Die Kraft ist qE. Quelle: Originalunterlagen, PDF-S. 6–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Elektrische Grössen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektrische Grössen"
+      ],
+      "questionGoal": "Elektrische Grössen",
+      "structuredExplanation": {
+        "coreIdea": "Elektrische Grössen",
+        "correctReasoning": "Metallische Elektronenleitung ist nicht die einzige Möglichkeit. Die Kraft ist qE.",
+        "wrongAnswerExplanations": {
+          "A": "Für negative Ladungen sind die Richtungen entgegengesetzt.",
+          "B": "Metallische Elektronenleitung ist nicht die einzige Möglichkeit.",
+          "C": "Das ist Volt; Stromstärke hat die Einheit Coulomb pro Sekunde.",
+          "D": "Die Kraft ist qE."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Zwei Leiter werden bei gleichen Bedingungen verglichen. Welche Aussagen passen zum ohmschen Modell?",
+      "options": [
+        {
+          "text": "Ein grösserer Querschnitt vermindert bei gleicher Länge den Widerstand.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Mehr bewegliche Ladungsträger können die Leitfähigkeit erhöhen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine lineare I-U-Kennlinie bedeutet einen beliebig spannungsabhängigen Widerstand.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jeder reale Leiter muss bei jeder Temperatur und Spannung exakt ohmsch bleiben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehr parallele Leitwege stehen zur Verfügung. B: Dichte und Beweglichkeit tragen bei. C: Eine Gerade durch den Ursprung entspricht konstantem R. D: Erwärmung und Materialeigenschaften können Abweichungen erzeugen. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Widerstand interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Widerstand interpretieren"
+      ],
+      "questionGoal": "Widerstand interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "Widerstand interpretieren",
+        "correctReasoning": "Mehr parallele Leitwege stehen zur Verfügung. Dichte und Beweglichkeit tragen bei.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr parallele Leitwege stehen zur Verfügung.",
+          "B": "Dichte und Beweglichkeit tragen bei.",
+          "C": "Eine Gerade durch den Ursprung entspricht konstantem R.",
+          "D": "Erwärmung und Materialeigenschaften können Abweichungen erzeugen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein geladener idealer Plattenkondensator wird von der Quelle getrennt und sein Abstand vergrössert. Welche Aussagen gelten bei konstantem Q und unveränderter Fläche?",
+      "options": [
+        {
+          "text": "Die Kapazität nimmt ab.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Kapazität ist unabhängig vom Material zwischen den Platten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Ladung muss proportional zum Abstand zunehmen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Spannung nimmt zu.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: C ist umgekehrt proportional zum Abstand. B: Die Permittivität beeinflusst C. C: Das getrennte ideale System hält Q konstant. D: U = Q/C bei konstantem Q. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Kondensatorbedingungen trennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kondensatorbedingungen trennen"
+      ],
+      "questionGoal": "Kondensatorbedingungen trennen",
+      "structuredExplanation": {
+        "coreIdea": "Kondensatorbedingungen trennen",
+        "correctReasoning": "C ist umgekehrt proportional zum Abstand. U = Q/C bei konstantem Q.",
+        "wrongAnswerExplanations": {
+          "A": "C ist umgekehrt proportional zum Abstand.",
+          "B": "Die Permittivität beeinflusst C.",
+          "C": "Das getrennte ideale System hält Q konstant.",
+          "D": "U = Q/C bei konstantem Q."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Ein ungeladener Kondensator wird über R an eine konstante Quelle angeschlossen. Welche Aussagen gelten im idealen Serienmodell?",
+      "options": [
+        {
+          "text": "Nach vollständigem Laden fliesst dauerhaft derselbe Strom wie zu Beginn.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der anfängliche Strom beträgt U/R.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein grösseres R verkürzt bei gleichem C die Zeitkonstante.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Ladestrom nimmt exponentiell ab.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im idealen Gleichstrom-Endzustand ist der Strom null. B: Der Kondensator hat zunächst keine Gegenspannung. C: τ = RC wächst mit R. D: Die Kondensatorspannung steigt dabei. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Laden eines RC-Glieds"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Laden eines RC-Glieds"
+      ],
+      "questionGoal": "Laden eines RC-Glieds",
+      "structuredExplanation": {
+        "coreIdea": "Laden eines RC-Glieds",
+        "correctReasoning": "Der Kondensator hat zunächst keine Gegenspannung. Die Kondensatorspannung steigt dabei.",
+        "wrongAnswerExplanations": {
+          "A": "Im idealen Gleichstrom-Endzustand ist der Strom null.",
+          "B": "Der Kondensator hat zunächst keine Gegenspannung.",
+          "C": "τ = RC wächst mit R.",
+          "D": "Die Kondensatorspannung steigt dabei."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Der Betrag eines Entladestroms erfüllt I(t) = I0·exp(−t/τ). Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "ln(I/I0) gegen t ergibt eine Gerade.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Steigung dieser Geraden ist +τ.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine stärkere negative Steigung entspricht einer kürzeren Zeitkonstante.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Zeitkonstante hat die Einheit Ampere.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die logarithmierte Beziehung lautet −t/τ. B: Sie ist −1/τ. C: Der Betrag von 1/τ ist dann grösser. D: Sie hat die Einheit Zeit. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Logarithmische Auswertung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Logarithmische Auswertung"
+      ],
+      "questionGoal": "Logarithmische Auswertung",
+      "structuredExplanation": {
+        "coreIdea": "Logarithmische Auswertung",
+        "correctReasoning": "Die logarithmierte Beziehung lautet −t/τ. Der Betrag von 1/τ ist dann grösser.",
+        "wrongAnswerExplanations": {
+          "A": "Die logarithmierte Beziehung lautet −t/τ.",
+          "B": "Sie ist −1/τ.",
+          "C": "Der Betrag von 1/τ ist dann grösser.",
+          "D": "Sie hat die Einheit Zeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Eine Zellmembran wird als elektrische Ersatzschaltung beschrieben. Welche Aussagen sind angemessen?",
+      "options": [
+        {
+          "text": "Ionenkanäle tragen zu resistiven Leitwegen bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die isolierende Lipidschicht und Ladungen auf beiden Seiten ermöglichen eine kapazitive Beschreibung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Das Modell verlangt, dass die gesamte Membran ein idealer metallischer Draht ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein elektrisches Ersatzmodell bildet sämtliche molekularen Details vollständig ab.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie erlauben Ladungstransport. B: Die Membran kann Ladungstrennung speichern. C: Kapazitive und selektive Leitwege werden gerade getrennt modelliert. D: Es ist eine zweckgebundene Vereinfachung. Quelle: Originalunterlagen, PDF-S. 2,14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Membranmodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranmodell"
+      ],
+      "questionGoal": "Membranmodell",
+      "structuredExplanation": {
+        "coreIdea": "Membranmodell",
+        "correctReasoning": "Sie erlauben Ladungstransport. Die Membran kann Ladungstrennung speichern.",
+        "wrongAnswerExplanations": {
+          "A": "Sie erlauben Ladungstransport.",
+          "B": "Die Membran kann Ladungstrennung speichern.",
+          "C": "Kapazitive und selektive Leitwege werden gerade getrennt modelliert.",
+          "D": "Es ist eine zweckgebundene Vereinfachung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp03_04_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP03/04",
+      "stem": "Bei annähernd konstant eingespeistem Strom lädt sich eine Membrankapazität parallel zu einem Widerstand auf. Welche Aussagen gelten für den beschriebenen passiven Verlauf?",
+      "options": [
+        {
+          "text": "Im stationären Zustand eines idealen Kondensators fliesst kein kapazitiver Gleichstrom.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Stromaufteilung ist von der Zeit grundsätzlich unabhängig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der kapazitive Strom ist anfangs gross und nimmt im Verlauf ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der resistive Strom muss während des ganzen Verlaufs exakt null bleiben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der eingespeiste Strom fliesst dann über den resistiven Weg. B: Während des Ladens ändert sie sich. C: Die Spannung nähert sich ihrem Endwert. D: Mit wachsender Spannung nimmt er zu. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP03/04",
+        "Paralleles Membran-RC-Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Paralleles Membran-RC-Modell"
+      ],
+      "questionGoal": "Paralleles Membran-RC-Modell",
+      "structuredExplanation": {
+        "coreIdea": "Paralleles Membran-RC-Modell",
+        "correctReasoning": "Der eingespeiste Strom fliesst dann über den resistiven Weg. Die Spannung nähert sich ihrem Endwert.",
+        "wrongAnswerExplanations": {
+          "A": "Der eingespeiste Strom fliesst dann über den resistiven Weg.",
+          "B": "Während des Ladens ändert sie sich.",
+          "C": "Die Spannung nähert sich ihrem Endwert.",
+          "D": "Mit wachsender Spannung nimmt er zu."
+        }
+      }
+    }
+  ]
+}

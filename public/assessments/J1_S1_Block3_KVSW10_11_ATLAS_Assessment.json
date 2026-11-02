@@ -1,0 +1,1319 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw10_11_20261102",
+  "lectureCode": "KVSW10/11",
+  "title": "Sinnesphysiologie und sensorische Kodierung",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW10&11_Sensoren. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Originalfiguren PDF7,17,19,22,24,26,29–31,34–35,38,41–42 geprüft. Veraltete TRPA1-Beschriftung der Haarzellfolie nicht übernommen: TMC1-Porenfunktion durch Pan et al.2018, PMID30138589 belegt. Sauertransduktion nicht auf reine K-Kanalblockade reduziert; OTOP1-Primärarbeiten PMID29371428/PMC7299528. Keine unzutreffende Gleichsetzung aller Hautsensoren mit freien Endigungen. Endolymph- und Photorezeptormechanismen korrekt getrennt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Adäquaten Reiz, Modalität, Transduktion, Transformation und Wahrnehmung unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Abgestufte Sensorpotentiale, AP-Kodierung und Adaptation erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Rezeptive Felder, laterale Hemmung und zentrale Karten interpretieren."
+    },
+    {
+      "id": "lo4",
+      "text": "Transduktion von Sehen, Hören, Riechen und Schmecken vergleichen."
+    },
+    {
+      "id": "lo5",
+      "text": "Sensorische Wege und aktive zentrale Interpretation einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw10_11_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Druck öffnet in einer sensorischen Endigung mechanosensitive Kanäle; ein lokales Membranpotential entsteht. Welcher Schritt ist dies?",
+      "options": [
+        {
+          "text": "Bewusste Wahrnehmung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Transformation",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Axonale AP-Propagation",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Transduktion",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Synaptische Langzeitpotenzierung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese erfordert zentrale Verarbeitung. B: Diese bezeichnet hier die Umkodierung in AP-Folgen. C: Hier ist zunächst das lokale Sensorpotential beschrieben. D: Der Reiz wird in ein elektrisches Sensorsignal übersetzt. E: Eine bleibende Wirksamkeitsänderung wurde nicht beschrieben. Quelle: Originalunterlagen, PDF-S. 9,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Transduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transduktion"
+      ],
+      "questionGoal": "Transduktion",
+      "structuredExplanation": {
+        "coreIdea": "Transduktion",
+        "correctReasoning": "Der Reiz wird in ein elektrisches Sensorsignal übersetzt.",
+        "wrongAnswerExplanations": {
+          "A": "Diese erfordert zentrale Verarbeitung.",
+          "B": "Diese bezeichnet hier die Umkodierung in AP-Folgen.",
+          "C": "Hier ist zunächst das lokale Sensorpotential beschrieben.",
+          "E": "Eine bleibende Wirksamkeitsänderung wurde nicht beschrieben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Mechanischer Druck auf das Auge kann einen Lichteindruck auslösen. Welche Einordnung passt?",
+      "options": [
+        {
+          "text": "Beweis, dass die Sinnesmodalität nur von der äusseren Energieform abhängt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein reiner Hörreiz.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Inadäquater Reiz des visuellen Systems.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Beweis, dass im Sehnerv mechanischer Druck als Druckwelle bis zum Cortex läuft.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Adäquater visueller Reiz allein wegen des Lichteindrucks.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das aktivierte System prägt den Eindruck. B: Das Beispiel betrifft das visuelle System. C: Das System reagiert normalerweise besonders empfindlich auf Licht. D: Die Weiterleitung erfolgt neuronal. E: Adäquat bezeichnet die optimale Reizform, nicht jede auslösende Energieform. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Adäquater Reiz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Adäquater Reiz"
+      ],
+      "questionGoal": "Adäquater Reiz",
+      "structuredExplanation": {
+        "coreIdea": "Adäquater Reiz",
+        "correctReasoning": "Das System reagiert normalerweise besonders empfindlich auf Licht.",
+        "wrongAnswerExplanations": {
+          "A": "Das aktivierte System prägt den Eindruck.",
+          "B": "Das Beispiel betrifft das visuelle System.",
+          "D": "Die Weiterleitung erfolgt neuronal.",
+          "E": "Adäquat bezeichnet die optimale Reizform, nicht jede auslösende Energieform."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Sinnesqualität und subjektive Wahrnehmung».",
+      "options": [
+        {
+          "text": "Alle afferenten APs erzeugen unabhängig von ihrer Bahn denselben Sinneseindruck.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wahrnehmung beinhaltet Interpretation sensorischer Signale.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ähnlich geformte afferente APs beweisen unabhängig von ihrer Bahn dieselbe Sinnesmodalität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die subjektive Wahrnehmung ist eine vollständige ungefilterte Kopie aller physikalischen Reize.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die aktive Bahn und Verarbeitung sind relevant. B: Top-down- und Bottom-up-Prozesse wirken zusammen. C: Bahn und Verarbeitung bestimmen die Modalitätszuordnung wesentlich mit. D: Sensoren erfassen nur begrenzte Ausschnitte. Quelle: Originalunterlagen, PDF-S. 6–8,14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Wahrnehmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wahrnehmung"
+      ],
+      "questionGoal": "Wahrnehmung",
+      "structuredExplanation": {
+        "coreIdea": "Wahrnehmung",
+        "correctReasoning": "Top-down- und Bottom-up-Prozesse wirken zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Die aktive Bahn und Verarbeitung sind relevant.",
+          "B": "Top-down- und Bottom-up-Prozesse wirken zusammen.",
+          "C": "Bahn und Verarbeitung bestimmen die Modalitätszuordnung wesentlich mit.",
+          "D": "Sensoren erfassen nur begrenzte Ausschnitte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Welche Eigenschaft unterscheidet ein typisches lokales Sensorpotential vom fortgeleiteten AP?",
+      "options": [
+        {
+          "text": "Es kann grundsätzlich keine Membranpotentialänderung sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es wird ausschliesslich im Cortex erzeugt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es muss ohne Abnahme jede Axonstrecke überwinden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Seine Amplitude ist abgestuft und es breitet sich passiv mit Abnahme aus.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Seine Amplitude ist zwingend bei allen Reizstärken identisch.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es ist gerade eine solche Änderung. B: Es entsteht am Sensor. C: Dafür ist aktive AP-Regeneration erforderlich. D: Es kann Reizstärke lokal abbilden. E: Das gilt eher für einzelne APs unter vergleichbaren Bedingungen. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Sensorpotential"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sensorpotential"
+      ],
+      "questionGoal": "Sensorpotential",
+      "structuredExplanation": {
+        "coreIdea": "Sensorpotential",
+        "correctReasoning": "Es kann Reizstärke lokal abbilden.",
+        "wrongAnswerExplanations": {
+          "A": "Es ist gerade eine solche Änderung.",
+          "B": "Es entsteht am Sensor.",
+          "C": "Dafür ist aktive AP-Regeneration erforderlich.",
+          "E": "Das gilt eher für einzelne APs unter vergleichbaren Bedingungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Ein stärkerer Reiz erzeugt ein grösseres Generatorpotential und mehr APs pro Sekunde. Welche Kodierung ist beschrieben?",
+      "options": [
+        {
+          "text": "Ausschliesslich Kodierung durch Axonverlängerung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Frequenzkodierung der afferenten AP-Folge.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Keine Informationsänderung bei höherer Frequenz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwingende proportionale Vergrösserung jedes einzelnen APs.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Änderung der Sinnesmodalität bei jedem weiteren AP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die schnelle Antwort erfordert keinen Strukturumbau. B: Die Zahl der APs pro Zeit verändert sich. C: Das Muster trägt Reizinformation. D: Reizstärke wird hier über Frequenz, nicht AP-Höhe kodiert. E: Die aktive Bahn bleibt dieselbe. Quelle: Originalunterlagen, PDF-S. 15,18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Intensitätskodierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intensitätskodierung"
+      ],
+      "questionGoal": "Intensitätskodierung",
+      "structuredExplanation": {
+        "coreIdea": "Intensitätskodierung",
+        "correctReasoning": "Die Zahl der APs pro Zeit verändert sich.",
+        "wrongAnswerExplanations": {
+          "A": "Die schnelle Antwort erfordert keinen Strukturumbau.",
+          "C": "Das Muster trägt Reizinformation.",
+          "D": "Reizstärke wird hier über Frequenz, nicht AP-Höhe kodiert.",
+          "E": "Die aktive Bahn bleibt dieselbe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Adaptation bei anhaltendem Reiz».",
+      "options": [
+        {
+          "text": "Die Antwort kann bei anhaltendem konstantem Reiz abnehmen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle Sensoren müssen bei konstantem Reiz exakt dieselbe Zeitkurve haben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Adaptation kann die Antwort auf einen anhaltenden Reiz abschwächen, ohne die Endigung zu zerstören.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zusatzstrukturen des Sensors können die Dynamik mitbestimmen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies ist sensorische Adaptation. B: Es gibt verschiedene Adaptationseigenschaften. C: Es handelt sich um veränderte Antwortdynamik. D: Die Pacini-Kapsel ist ein Beispiel. Quelle: Originalunterlagen, PDF-S. 18,22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Adaptation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Adaptation"
+      ],
+      "questionGoal": "Adaptation",
+      "structuredExplanation": {
+        "coreIdea": "Adaptation",
+        "correctReasoning": "Dies ist sensorische Adaptation. Es handelt sich um veränderte Antwortdynamik. Die Pacini-Kapsel ist ein Beispiel.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist sensorische Adaptation.",
+          "B": "Es gibt verschiedene Adaptationseigenschaften.",
+          "C": "Es handelt sich um veränderte Antwortdynamik.",
+          "D": "Die Pacini-Kapsel ist ein Beispiel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Im gezeigten Versuch wird die Kapsel eines Pacini-Körperchens entfernt. Welche Antwortänderung auf anhaltenden Druck wird gezeigt?",
+      "options": [
+        {
+          "text": "Die Antwort bleibt unabhängig von der Kapsel zwingend identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes einzelne AP wird doppelt so hoch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Endigung antwortet anhaltender als mit Kapsel.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Endigung verliert dadurch vollständig ihre mechanische Empfindlichkeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Kapselentfernung macht aus dem Druckreiz einen chemischen Liganden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kapsel trägt zur schnellen Adaptation bei. B: Die Kapsel beeinflusst die Reizdynamik statt zwingend die Spikehöhe. C: Die Kapsel trägt zur schnellen mechanischen Adaptation bei. D: Der gezeigte Versuch zeigt eine verbleibende anhaltendere Antwort. E: Die Reizart bleibt mechanisch. Quelle: Originalunterlagen, PDF-S. 22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Pacini-Kapsel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Pacini-Kapsel"
+      ],
+      "questionGoal": "Pacini-Kapsel",
+      "structuredExplanation": {
+        "coreIdea": "Pacini-Kapsel",
+        "correctReasoning": "Die Kapsel trägt zur schnellen mechanischen Adaptation bei.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kapsel trägt zur schnellen Adaptation bei.",
+          "B": "Die Kapsel beeinflusst die Reizdynamik statt zwingend die Spikehöhe.",
+          "D": "Der gezeigte Versuch zeigt eine verbleibende anhaltendere Antwort.",
+          "E": "Die Reizart bleibt mechanisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Was ist das periphere rezeptive Feld einer einzelnen mechanosensitiven Afferenz?",
+      "options": [
+        {
+          "text": "Ausschliesslich die Fläche einer Messelektrode.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Fläche der gesamten Grosshirnrinde.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Hautareal, dessen Reizung ihre Aktivität beeinflussen kann.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur der Zellkern der Afferenz.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die elektrische Amplitude eines APs.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Elektrode definiert nicht das sensorische Eingangsareal. B: Diese ist nicht das periphere Feld einer einzelnen Afferenz. C: Es beschreibt den zugehörigen Eingangsraum. D: Dieser ist kein Hautareal. E: Dies ist keine räumliche Grösse. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Rezeptives Feld"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rezeptives Feld"
+      ],
+      "questionGoal": "Rezeptives Feld",
+      "structuredExplanation": {
+        "coreIdea": "Rezeptives Feld",
+        "correctReasoning": "Es beschreibt den zugehörigen Eingangsraum.",
+        "wrongAnswerExplanations": {
+          "A": "Die Elektrode definiert nicht das sensorische Eingangsareal.",
+          "B": "Diese ist nicht das periphere Feld einer einzelnen Afferenz.",
+          "D": "Dieser ist kein Hautareal.",
+          "E": "Dies ist keine räumliche Grösse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «rezeptive Felder, laterale Hemmung und Somatotopie».",
+      "options": [
+        {
+          "text": "Laterale Hemmung kann räumliche Kontraste betonen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die kortikale Repräsentationsgrösse muss nicht proportional zur Körperoberfläche sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Somatotopie bedeutet zufällige Vermischung aller Körperregionen ohne räumliche Ordnung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Grössere rezeptive Felder garantieren bei sonst gleichen Bedingungen feinere Ortsauflösung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein erregtes Zentrum und hemmendes Umfeld schärfen Unterschiede. B: Der Homunculus zeigt ungleiche Gewichtung. C: Sie bezeichnet gerade eine geordnete Repräsentation. D: Kleinere Felder können feinere Lokalisation unterstützen. Quelle: Originalunterlagen, PDF-S. 24–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Räumliche Verarbeitung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Räumliche Verarbeitung"
+      ],
+      "questionGoal": "Räumliche Verarbeitung",
+      "structuredExplanation": {
+        "coreIdea": "Räumliche Verarbeitung",
+        "correctReasoning": "Ein erregtes Zentrum und hemmendes Umfeld schärfen Unterschiede. Der Homunculus zeigt ungleiche Gewichtung.",
+        "wrongAnswerExplanations": {
+          "A": "Ein erregtes Zentrum und hemmendes Umfeld schärfen Unterschiede.",
+          "B": "Der Homunculus zeigt ungleiche Gewichtung.",
+          "C": "Sie bezeichnet gerade eine geordnete Repräsentation.",
+          "D": "Kleinere Felder können feinere Lokalisation unterstützen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Welche vereinfachte Folge passt zur dargestellten Hinterstrangbahn?",
+      "options": [
+        {
+          "text": "Retina → Hinterstrang → primärer Hörkortex.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cochlea → Corpus geniculatum mediale → Haut.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Primärafferenz → Corpus geniculatum laterale → Retina.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Primärafferenz → Hinterstrangkerne → Thalamus → primärer somatosensorischer Cortex.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Geschmacksknospe → Riechkolben → Hinterstrangkerne.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies passt zu keiner dargestellten Bahn. B: Dies ist keine Hinterstrangfolge. C: Dies vermischt somatische und visuelle Stationen. D: Diese Stationen sind in der Folie verbunden. E: Dies vermischt verschiedene Sinnesbahnen. Quelle: Originalunterlagen, PDF-S. 26–27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Somatosensorischer Weg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Somatosensorischer Weg"
+      ],
+      "questionGoal": "Somatosensorischer Weg",
+      "structuredExplanation": {
+        "coreIdea": "Somatosensorischer Weg",
+        "correctReasoning": "Diese Stationen sind in der Folie verbunden.",
+        "wrongAnswerExplanations": {
+          "A": "Dies passt zu keiner dargestellten Bahn.",
+          "B": "Dies ist keine Hinterstrangfolge.",
+          "C": "Dies vermischt somatische und visuelle Stationen.",
+          "E": "Dies vermischt verschiedene Sinnesbahnen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «olfaktorische, visuelle und andere sensorische Bahnen».",
+      "options": [
+        {
+          "text": "Riechrezeptorneurone projizieren zunächst zum Riechkolben.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Corpus geniculatum mediale gehört im gezeigten Schema zur Geruchsbahn.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Geschmacksinformation läuft zuerst durch den Riechkolben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Corpus geniculatum laterale ist eine Station des visuellen Weges.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dies unterscheidet ihre frühe Verschaltung von der Geschmacksbahn. B: Es ist eine auditorische Station. C: Die dargestellte Geschmacksbahn führt über Hirnstamm und Thalamus. D: Die Folie verbindet es mit der Sehstrahlung. Quelle: Originalunterlagen, PDF-S. 29–31,34–35,37–42.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Sinneswege unterscheiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sinneswege unterscheiden"
+      ],
+      "questionGoal": "Sinneswege unterscheiden",
+      "structuredExplanation": {
+        "coreIdea": "Sinneswege unterscheiden",
+        "correctReasoning": "Dies unterscheidet ihre frühe Verschaltung von der Geschmacksbahn. Die Folie verbindet es mit der Sehstrahlung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies unterscheidet ihre frühe Verschaltung von der Geschmacksbahn.",
+          "B": "Es ist eine auditorische Station.",
+          "C": "Die dargestellte Geschmacksbahn führt über Hirnstamm und Thalamus.",
+          "D": "Die Folie verbindet es mit der Sehstrahlung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Was folgt in einem Stäbchen auf Lichtaktivierung von Rhodopsin?",
+      "options": [
+        {
+          "text": "Die Zelle depolarisiert durch direkte Öffnung aller Na-Kanäle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Transducin/PDE werden aktiviert, cGMP sinkt und cGMP-gesteuerte Kanäle schliessen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Rhodopsin spaltet unmittelbar Acetylcholin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Retinal wird im primären Lichtschritt von all-trans zu 11-cis isomerisiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "cGMP steigt zwingend und öffnet zusätzliche Dunkelstromkanäle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das gezeigte Rezeptorpotential ist eine Hyperpolarisation. B: Dies vermindert den Dunkelstrom und hyperpolarisiert. C: Rhodopsin ist kein ACh-Abbauenzym. D: Der primäre Schritt verläuft von 11-cis zu all-trans. E: Die lichtaktivierte PDE baut cGMP ab. Quelle: Originalunterlagen, PDF-S. 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Phototransduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phototransduktion"
+      ],
+      "questionGoal": "Phototransduktion",
+      "structuredExplanation": {
+        "coreIdea": "Phototransduktion",
+        "correctReasoning": "Dies vermindert den Dunkelstrom und hyperpolarisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Das gezeigte Rezeptorpotential ist eine Hyperpolarisation.",
+          "C": "Rhodopsin ist kein ACh-Abbauenzym.",
+          "D": "Der primäre Schritt verläuft von 11-cis zu all-trans.",
+          "E": "Die lichtaktivierte PDE baut cGMP ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Stäbchen, Rhodopsin und Lichtadaptation».",
+      "options": [
+        {
+          "text": "Licht löst im dargestellten Stäbchen unmittelbar ein grosses eigenes Axon-AP aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "cGMP-abhängige Kanäle und spannungsabhängige Na-Kanäle sind derselbe Aktivierungsmechanismus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Calcium beeinflusst die Lichtadaptation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Rhodopsin enthält Opsin und Retinal.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Photorezeptoren antworten abgestuft; AP-Weiterleitung erfolgt nachgeschaltet. B: Ligandenbindung und Spannung sind verschiedene Gatingprinzipien. C: Es koppelt Kanalzustand und nachgeschaltete Regulation. D: Protein und Chromophor bilden das Sehpurpur. Quelle: Originalunterlagen, PDF-S. 29–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Photorezeptor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photorezeptor"
+      ],
+      "questionGoal": "Photorezeptor",
+      "structuredExplanation": {
+        "coreIdea": "Photorezeptor",
+        "correctReasoning": "Es koppelt Kanalzustand und nachgeschaltete Regulation. Protein und Chromophor bilden das Sehpurpur.",
+        "wrongAnswerExplanations": {
+          "A": "Photorezeptoren antworten abgestuft; AP-Weiterleitung erfolgt nachgeschaltet.",
+          "B": "Ligandenbindung und Spannung sind verschiedene Gatingprinzipien.",
+          "C": "Es koppelt Kanalzustand und nachgeschaltete Regulation.",
+          "D": "Protein und Chromophor bilden das Sehpurpur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Welches Ion trägt in der gezeigten Haarzelle den depolarisierenden apikalen Einstrom aus der Endolymphe wesentlich?",
+      "options": [
+        {
+          "text": "K⁺",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Na+ als alleiniger notwendiger apikaler Ladungsträger.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Cl− als alleiniger Einstrom positiver Ladung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ca2+ als einziger apikaler Ladungsträger ohne K+-Beitrag.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "H+ als ausschliesslicher Mechanismus analog saurem Geschmack.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die kaliumreiche positive Endolymphe ermöglicht den Einstrom in die negativere Zelle. B: Die kaliumreiche Endolymphe begünstigt K+-Einstrom. C: Cl− trägt negative Ladung. D: K+ trägt wesentlich bei. E: Haarzelltransduktion nutzt mechanosensitive Kanäle. Quelle: Originalunterlagen, PDF-S. 34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Haarzelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Haarzelle"
+      ],
+      "questionGoal": "Haarzelle",
+      "structuredExplanation": {
+        "coreIdea": "Haarzelle",
+        "correctReasoning": "Die kaliumreiche positive Endolymphe ermöglicht den Einstrom in die negativere Zelle.",
+        "wrongAnswerExplanations": {
+          "B": "Die kaliumreiche Endolymphe begünstigt K+-Einstrom.",
+          "C": "Cl− trägt negative Ladung.",
+          "D": "K+ trägt wesentlich bei.",
+          "E": "Haarzelltransduktion nutzt mechanosensitive Kanäle."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Welche Folge verbindet Haarzellpotential und afferente APs sinnvoll?",
+      "options": [
+        {
+          "text": "Die Haarzelle muss selbst das gesamte fortgeleitete Hörnerven-AP erzeugen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Afferenz benötigt für APs keine synaptische Kopplung an die Haarzelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Haarzelldepolarisation → transmittervermitteltes Signal → APs im zugehörigen afferenten Neuron.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "K+ wird als vollständige unveränderte Druckwelle im Hörnerv weitergeleitet.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Haarzellmembran bleibt während jeder Signalabgabe definitionsgemäss unverändert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Afferenz erzeugt ihre APs nach synaptischer Übertragung. B: Diese Kopplung verbindet die Potentialänderung mit der Nervenantwort. C: Sensorzelle und weiterleitendes Neuron sind unterscheidbar. D: Ionenstrom wird in elektrische und synaptische Signale umgesetzt. E: Die Depolarisation steuert die Signalübertragung. Quelle: Originalunterlagen, PDF-S. 34–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Hörsignal weitergeben"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hörsignal weitergeben"
+      ],
+      "questionGoal": "Hörsignal weitergeben",
+      "structuredExplanation": {
+        "coreIdea": "Hörsignal weitergeben",
+        "correctReasoning": "Sensorzelle und weiterleitendes Neuron sind unterscheidbar.",
+        "wrongAnswerExplanations": {
+          "A": "Die Afferenz erzeugt ihre APs nach synaptischer Übertragung.",
+          "B": "Diese Kopplung verbindet die Potentialänderung mit der Nervenantwort.",
+          "D": "Ionenstrom wird in elektrische und synaptische Signale umgesetzt.",
+          "E": "Die Depolarisation steuert die Signalübertragung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «G-Protein-gekoppelte Geruchstransduktion».",
+      "options": [
+        {
+          "text": "Der Geruchsstoff muss selbst durch das Axon bis zum Cortex transportiert werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "cAMP kann zyklisch-nukleotidgesteuerte Kationenkanäle beeinflussen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Duftstoffrezeptoren können über G-Proteine die Adenylylcyclase aktivieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Rezeptorpotentialschritt ist mit dem präsynaptischen Vesikelabbau identisch.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er löst ein neuronales Signal am Rezeptor aus. B: So wird die chemische Bindung in Depolarisation übersetzt. C: Die Folie zeigt eine cAMP-Kaskade. D: Dies sind verschiedene Vorgänge. Quelle: Originalunterlagen, PDF-S. 37–38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Geruchstransduktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geruchstransduktion"
+      ],
+      "questionGoal": "Geruchstransduktion",
+      "structuredExplanation": {
+        "coreIdea": "Geruchstransduktion",
+        "correctReasoning": "So wird die chemische Bindung in Depolarisation übersetzt. Die Folie zeigt eine cAMP-Kaskade.",
+        "wrongAnswerExplanations": {
+          "A": "Er löst ein neuronales Signal am Rezeptor aus.",
+          "B": "So wird die chemische Bindung in Depolarisation übersetzt.",
+          "C": "Die Folie zeigt eine cAMP-Kaskade.",
+          "D": "Dies sind verschiedene Vorgänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Welche Gruppe verwendet im behandelten Schema G-Protein-gekoppelte Geschmackssignalwege?",
+      "options": [
+        {
+          "text": "Ausschliesslich salzig und sauer als derselbe GPCR-Weg.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur sauer und umami.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Geschmacksqualitäten ausschliesslich über Rhodopsin.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bitter, süss und umami.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich salzig, bitter und sauer.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Diese Qualitäten besitzen andere Transduktionsmechanismen. B: Bitter und süss gehören ebenfalls zu den GPCR-Qualitäten. C: Rhodopsin gehört zur Phototransduktion. D: Diese Qualitäten werden über metabotrope Rezeptoren vermittelt. E: Süss und umami werden dadurch falsch ausgeschlossen. Quelle: Originalunterlagen, PDF-S. 40–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Geschmacksqualitäten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschmacksqualitäten"
+      ],
+      "questionGoal": "Geschmacksqualitäten",
+      "structuredExplanation": {
+        "coreIdea": "Geschmacksqualitäten",
+        "correctReasoning": "Diese Qualitäten werden über metabotrope Rezeptoren vermittelt.",
+        "wrongAnswerExplanations": {
+          "A": "Diese Qualitäten besitzen andere Transduktionsmechanismen.",
+          "B": "Bitter und süss gehören ebenfalls zu den GPCR-Qualitäten.",
+          "C": "Rhodopsin gehört zur Phototransduktion.",
+          "E": "Süss und umami werden dadurch falsch ausgeschlossen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «primäre Sensorneurone und andere Sensorzellen».",
+      "options": [
+        {
+          "text": "Ein Rezeptorpotential kann depolarisierend oder hyperpolarisierend sein.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Transduktion bedeutet immer ausschliesslich Öffnung eines Na-selektiven Kanals.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede Sensorzelle muss selbst ein fortgeleitetes AP erzeugen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine primäre sensorische Nervenzelle kann Transduktion und AP-Erzeugung in derselben Zelle verbinden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mechanorezeptor und Photorezeptor zeigen unterschiedliche Vorzeichen. B: Auch Kanalschliessung und andere Ionen sind beteiligt. C: Etwa Haarzellen übertragen auf nachgeschaltete Afferenzen. D: Mechanosensitive Afferenzen und Riechneurone liefern Beispiele. Quelle: Originalunterlagen, PDF-S. 15,18–19,29–41.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Sensorzellen vergleichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sensorzellen vergleichen"
+      ],
+      "questionGoal": "Sensorzellen vergleichen",
+      "structuredExplanation": {
+        "coreIdea": "Sensorzellen vergleichen",
+        "correctReasoning": "Mechanorezeptor und Photorezeptor zeigen unterschiedliche Vorzeichen. Mechanosensitive Afferenzen und Riechneurone liefern Beispiele.",
+        "wrongAnswerExplanations": {
+          "A": "Mechanorezeptor und Photorezeptor zeigen unterschiedliche Vorzeichen.",
+          "B": "Auch Kanalschliessung und andere Ionen sind beteiligt.",
+          "C": "Etwa Haarzellen übertragen auf nachgeschaltete Afferenzen.",
+          "D": "Mechanosensitive Afferenzen und Riechneurone liefern Beispiele."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Was bezeichnet der tonotope Aufbau auditorischer Regionen?",
+      "options": [
+        {
+          "text": "Eine Ordnung nach Lichtwellenlängen im Hörnerv.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die ausschliessliche Kodierung der Lautstärke durch Neuronengrösse.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Ordnung nach Körperoberfläche.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine räumliche Ordnung nach bevorzugt verarbeiteten Tonfrequenzen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine zufällige Verteilung ohne Frequenzbezug.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das ist keine auditive Tonfrequenzkarte. B: Dies ist nicht die Bedeutung des Begriffs. C: Dies wäre somatotop. D: Frequenzpräferenzen sind kartiert. E: Tonotopie bezeichnet eine systematische Ordnung. Quelle: Originalunterlagen, PDF-S. 35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Tonotopie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tonotopie"
+      ],
+      "questionGoal": "Tonotopie",
+      "structuredExplanation": {
+        "coreIdea": "Tonotopie",
+        "correctReasoning": "Frequenzpräferenzen sind kartiert.",
+        "wrongAnswerExplanations": {
+          "A": "Das ist keine auditive Tonfrequenzkarte.",
+          "B": "Dies ist nicht die Bedeutung des Begriffs.",
+          "C": "Dies wäre somatotop.",
+          "E": "Tonotopie bezeichnet eine systematische Ordnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw10_11_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW10/11",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «sensorische Filterung und Bahn-/Musterkodierung».",
+      "options": [
+        {
+          "text": "Sensorische Filterung beginnt bereits im Sinnesorgan.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Mechanosensitive Kanäle werden prinzipiell nur durch frei diffundierendes Glutamat geöffnet.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gleiche AP-Grundform schliesst unterschiedliche Information durch Bahn und Muster nicht aus.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein optischer Täuschungseffekt beweist, dass überhaupt keine objektiven Reize messbar sind.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Rezeptoreigenschaften und Zusatzstrukturen begrenzen die Aufnahme. B: Mechanische Kräfte können über Membran und Kopplungen wirken. C: Kodierung ist mehr als die Form eines Einzelspikes. D: Er zeigt Grenzen der Wahrnehmungsinterpretation, nicht das Fehlen physikalischer Messbarkeit. Quelle: Originalunterlagen, PDF-S. 6–15,20–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW10/11",
+        "Grenzen einfacher Modelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzen einfacher Modelle"
+      ],
+      "questionGoal": "Grenzen einfacher Modelle",
+      "structuredExplanation": {
+        "coreIdea": "Grenzen einfacher Modelle",
+        "correctReasoning": "Rezeptoreigenschaften und Zusatzstrukturen begrenzen die Aufnahme. Kodierung ist mehr als die Form eines Einzelspikes.",
+        "wrongAnswerExplanations": {
+          "A": "Rezeptoreigenschaften und Zusatzstrukturen begrenzen die Aufnahme.",
+          "B": "Mechanische Kräfte können über Membran und Kopplungen wirken.",
+          "C": "Kodierung ist mehr als die Form eines Einzelspikes.",
+          "D": "Er zeigt Grenzen der Wahrnehmungsinterpretation, nicht das Fehlen physikalischer Messbarkeit."
+        }
+      }
+    }
+  ]
+}

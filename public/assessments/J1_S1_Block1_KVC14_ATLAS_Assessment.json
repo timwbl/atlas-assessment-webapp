@@ -1,0 +1,1322 @@
+{
+  "id": "assessment_j1_s1_block1_kvc14_20261102",
+  "lectureCode": "KVC14",
+  "title": "chemische und enzymatische Kinetik",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC14 - Kinetik. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Michaelis-Menten-Grenzen und Km/Kd sind getrennt. Die Methanolfrage erklärt ein Prinzip und enthält keine Behandlungsempfehlung oder Dosierung. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Geschwindigkeitsgesetze und Reaktionsordnungen interpretieren."
+    },
+    {
+      "id": "lo2",
+      "text": "Aktivierungsenergie und Katalyse von Gleichgewicht und Reaktionsenergie abgrenzen."
+    },
+    {
+      "id": "lo3",
+      "text": "Michaelis-Menten- und Lineweaver-Burk-Parameter anwenden."
+    },
+    {
+      "id": "lo4",
+      "text": "Sättigung und kompetitive Substratkonkurrenz beim Alkoholabbau erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc14_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Bei Verdopplung von [A] bleibt die Anfangsgeschwindigkeit unter sonst gleichen Bedingungen gleich. Welche Ordnung bezüglich A passt zum untersuchten Bereich?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nullte Ordnung.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Zweite Ordnung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine negative zweite Ordnung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Erste Ordnung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Dritte Ordnung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Für v=k[A]^n folgt aus unverändertem v bei doppeltem [A] n=0; dies ist eine empirische Aussage für den untersuchten Bereich. B: Zweite Ordnung ergäbe bei doppeltem [A] die vierfache Rate. C: Negative zweite Ordnung ergäbe eine Viertelung statt unveränderter Rate. D: Erste Ordnung ergäbe bei doppeltem [A] die doppelte Rate. E: Dritte Ordnung ergäbe die achtfache Rate. Quelle: Originalunterlagen, PDF-S. 4–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Reaktionsordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionsordnung"
+      ],
+      "questionGoal": "Reaktionsordnung",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionsordnung",
+        "correctReasoning": "Für v=k[A]^n folgt aus unverändertem v bei doppeltem [A] n=0; dies ist eine empirische Aussage für den untersuchten Bereich.",
+        "wrongAnswerExplanations": {
+          "B": "Zweite Ordnung ergäbe bei doppeltem [A] die vierfache Rate.",
+          "C": "Negative zweite Ordnung ergäbe eine Viertelung statt unveränderter Rate.",
+          "D": "Erste Ordnung ergäbe bei doppeltem [A] die doppelte Rate.",
+          "E": "Dritte Ordnung ergäbe die achtfache Rate."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Eine Reaktion folgt v=k[A]. Welcher Effekt ergibt sich bei Verdopplung von [A]?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie verachtfacht sich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie halbiert sich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie vervierfacht sich.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Geschwindigkeit verdoppelt sich.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Unveränderte Rate entspräche nullter Ordnung bezüglich A. B: Ein Faktor acht entspräche hier einer kubischen Konzentrationsabhängigkeit. C: Eine Halbierung würde eine inverse statt der vorgegebenen linearen Abhängigkeit bedeuten. D: Eine Vervierfachung wäre für v proportional zu [A]² zu erwarten. E: Die lineare Abhängigkeit führt zum Faktor zwei; k und übrige Bedingungen bleiben konstant. Quelle: Originalunterlagen, PDF-S. 6,8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Erste Ordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erste Ordnung"
+      ],
+      "questionGoal": "Erste Ordnung",
+      "structuredExplanation": {
+        "coreIdea": "Erste Ordnung",
+        "correctReasoning": "Die lineare Abhängigkeit führt zum Faktor zwei; k und übrige Bedingungen bleiben konstant.",
+        "wrongAnswerExplanations": {
+          "A": "Unveränderte Rate entspräche nullter Ordnung bezüglich A.",
+          "B": "Ein Faktor acht entspräche hier einer kubischen Konzentrationsabhängigkeit.",
+          "C": "Eine Halbierung würde eine inverse statt der vorgegebenen linearen Abhängigkeit bedeuten.",
+          "D": "Eine Vervierfachung wäre für v proportional zu [A]² zu erwarten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Für v=k[A]² wird [A] verdoppelt. Wie ändert sich v?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie steigt auf das Achtfache.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Sie halbiert sich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie verdoppelt sich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Sie bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Sie vervierfacht sich.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Faktor acht wäre die dritte Potenz statt des Quadrats von zwei. B: Eine Halbierung ist mit v=k[A]² bei höherem [A] nicht vereinbar. C: Verdopplung statt Vervierfachung entspricht nur einer linearen Abhängigkeit. D: Unveränderte Geschwindigkeit wäre nullte und nicht zweite Ordnung. E: Der Konzentrationsfaktor geht quadratisch ein: 2²=4. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Zweite Ordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zweite Ordnung"
+      ],
+      "questionGoal": "Zweite Ordnung",
+      "structuredExplanation": {
+        "coreIdea": "Zweite Ordnung",
+        "correctReasoning": "Der Konzentrationsfaktor geht quadratisch ein: 2²=4.",
+        "wrongAnswerExplanations": {
+          "A": "Faktor acht wäre die dritte Potenz statt des Quadrats von zwei.",
+          "B": "Eine Halbierung ist mit v=k[A]² bei höherem [A] nicht vereinbar.",
+          "C": "Verdopplung statt Vervierfachung entspricht nur einer linearen Abhängigkeit.",
+          "D": "Unveränderte Geschwindigkeit wäre nullte und nicht zweite Ordnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Eine Reaktion erster Ordnung hat k=0.10 min⁻¹. Wie gross ist ihre Halbwertszeit ungefähr?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10.0 min.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "6.93 min.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "0.144 min.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "0.0693 min.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "69.3 min.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 10 min ist die Zeitkonstante 1/k, nicht die Halbwertszeit ln2/k. B: Für erste Ordnung gilt t½=ln2/k=0.693/0.10 min. C: 0.144 min ist ungefähr der Kehrwert des korrekten Zeitbetrags und ergibt sich nicht aus ln2/k. D: 0.0693 min entsteht durch Multiplikation mit k; für t½ muss durch k dividiert werden. E: 69.3 min würde zu k=0.01 min⁻¹ statt 0.10 min⁻¹ passen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Halbwertszeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbwertszeit"
+      ],
+      "questionGoal": "Halbwertszeit",
+      "structuredExplanation": {
+        "coreIdea": "Halbwertszeit",
+        "correctReasoning": "Für erste Ordnung gilt t½=ln2/k=0.693/0.10 min.",
+        "wrongAnswerExplanations": {
+          "A": "10 min ist die Zeitkonstante 1/k, nicht die Halbwertszeit ln2/k.",
+          "C": "0.144 min ist ungefähr der Kehrwert des korrekten Zeitbetrags und ergibt sich nicht aus ln2/k.",
+          "D": "0.0693 min entsteht durch Multiplikation mit k; für t½ muss durch k dividiert werden.",
+          "E": "69.3 min würde zu k=0.01 min⁻¹ statt 0.10 min⁻¹ passen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Welche Änderung bewirkt ein Katalysator im selben thermodynamischen System unmittelbar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Er ändert zwingend das Vorzeichen von ΔG°.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Er eröffnet einen Weg mit geringerer Aktivierungsbarriere.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Er erhöht die Gleichgewichtskonstante unabhängig von Temperatur.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Er senkt ausschliesslich die Energie der Produkte und nie die Barriere.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Er macht eine endergone Nettoreaktion ohne Kopplung zwingend exergon.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein Katalysator ändert die thermodynamische Zustandsdifferenz ΔG° nicht. B: Katalyse ändert den kinetischen Weg; Anfangs-/Endzustände und thermodynamisches Gleichgewicht bleiben bei gleichen Bedingungen unverändert. C: Die Gleichgewichtslage bleibt bei gleichen Bedingungen unverändert. D: Die Wirkung ist ein anderer Reaktionsweg mit niedrigerer Barriere, nicht eine ausschliessliche Produktabsenkung. E: Ohne Kopplung ist eine endergone Reaktion trotz niedrigerer Barriere nicht automatisch exergon. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Katalyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Katalyse"
+      ],
+      "questionGoal": "Katalyse",
+      "structuredExplanation": {
+        "coreIdea": "Katalyse",
+        "correctReasoning": "Katalyse ändert den kinetischen Weg; Anfangs-/Endzustände und thermodynamisches Gleichgewicht bleiben bei gleichen Bedingungen unverändert.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Katalysator ändert die thermodynamische Zustandsdifferenz ΔG° nicht.",
+          "C": "Die Gleichgewichtslage bleibt bei gleichen Bedingungen unverändert.",
+          "D": "Die Wirkung ist ein anderer Reaktionsweg mit niedrigerer Barriere, nicht eine ausschliessliche Produktabsenkung.",
+          "E": "Ohne Kopplung ist eine endergone Reaktion trotz niedrigerer Barriere nicht automatisch exergon."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Ein Michaelis-Menten-Enzym arbeitet bei [S]=Km. Welche Anfangsgeschwindigkeit folgt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Km/2.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vmax/2.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vmax.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vmax/4.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "2Vmax.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Km ist eine Konzentration und kann nicht als Geschwindigkeit mit Vmax/2 gleichgesetzt werden. B: Einsetzen in v=Vmax[S]/(Km+[S]) ergibt die Hälfte der maximalen Rate. C: Vmax wird erst bei sehr grossem Substrat näherungsweise erreicht. D: Vmax/4 ergäbe sich nicht bei [S]=Km; Zähler und Nenner geben den Faktor ein halb. E: 2Vmax verletzt die Sättigungsgrenze des einfachen Modells. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Halbmaximale Enzymrate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbmaximale Enzymrate"
+      ],
+      "questionGoal": "Halbmaximale Enzymrate",
+      "structuredExplanation": {
+        "coreIdea": "Halbmaximale Enzymrate",
+        "correctReasoning": "Einsetzen in v=Vmax[S]/(Km+[S]) ergibt die Hälfte der maximalen Rate.",
+        "wrongAnswerExplanations": {
+          "A": "Km ist eine Konzentration und kann nicht als Geschwindigkeit mit Vmax/2 gleichgesetzt werden.",
+          "C": "Vmax wird erst bei sehr grossem Substrat näherungsweise erreicht.",
+          "D": "Vmax/4 ergäbe sich nicht bei [S]=Km; Zähler und Nenner geben den Faktor ein halb.",
+          "E": "2Vmax verletzt die Sättigungsgrenze des einfachen Modells."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Vmax=100 µmol/min und [S]=3Km. Welche Rate sagt das Michaelis-Menten-Modell voraus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "75 µmol/min.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "300 µmol/min.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "100 µmol/min.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "25 µmol/min.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "50 µmol/min.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: v=100×3/(1+3)=75 µmol/min; die Rate nähert sich Vmax asymptotisch. B: 300 µmol/min ignoriert den Nenner und überschreitet Vmax. C: 100 µmol/min ist die Grenzrate, die bei endlichem 3Km noch nicht erreicht ist. D: 25 µmol/min würde zum Faktor ein Viertel statt 3/4 gehören. E: 50 µmol/min gehört zu [S]=Km und nicht 3Km. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Sättigungsrechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sättigungsrechnung"
+      ],
+      "questionGoal": "Sättigungsrechnung",
+      "structuredExplanation": {
+        "coreIdea": "Sättigungsrechnung",
+        "correctReasoning": "v=100×3/(1+3)=75 µmol/min; die Rate nähert sich Vmax asymptotisch.",
+        "wrongAnswerExplanations": {
+          "B": "300 µmol/min ignoriert den Nenner und überschreitet Vmax.",
+          "C": "100 µmol/min ist die Grenzrate, die bei endlichem 3Km noch nicht erreicht ist.",
+          "D": "25 µmol/min würde zum Faktor ein Viertel statt 3/4 gehören.",
+          "E": "50 µmol/min gehört zu [S]=Km und nicht 3Km."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Die Gesamtmenge eines einfachen Michaelis-Menten-Enzyms wird verdoppelt; Eigenschaften und Substratbedingungen bleiben gleich. Was gilt für Vmax und Km?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vmax verdoppelt sich, Km bleibt gleich.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Km verdoppelt sich, Vmax bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Vmax halbiert sich, Km bleibt gleich.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Beide verdoppeln sich.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Beide halbieren sich.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Vmax=kcat[E]gesamt skaliert mit Enzymmenge; Km ist unter dem Modell keine Mengenangabe des Enzyms. B: Diese Kombination vertauscht den Mengenbezug von Vmax und Km. C: Mehr aktives Enzym erhöht und halbiert Vmax nicht. D: Km ist im einfachen Modell von der Gesamt-Enzymmenge unabhängig. E: Die katalytische Kapazität steigt; beide Parameter werden nicht halbiert. Quelle: Originalunterlagen, PDF-S. 13–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Enzymmenge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enzymmenge"
+      ],
+      "questionGoal": "Enzymmenge",
+      "structuredExplanation": {
+        "coreIdea": "Enzymmenge",
+        "correctReasoning": "Vmax=kcat[E]gesamt skaliert mit Enzymmenge; Km ist unter dem Modell keine Mengenangabe des Enzyms.",
+        "wrongAnswerExplanations": {
+          "B": "Diese Kombination vertauscht den Mengenbezug von Vmax und Km.",
+          "C": "Mehr aktives Enzym erhöht und halbiert Vmax nicht.",
+          "D": "Km ist im einfachen Modell von der Gesamt-Enzymmenge unabhängig.",
+          "E": "Die katalytische Kapazität steigt; beide Parameter werden nicht halbiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Welcher y-Achsenabschnitt ergibt sich bei Auftragung von 1/v gegen 1/[S]?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Km.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Km/Vmax.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "1/Vmax.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "−1/Km.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Vmax.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Km ist eine Konzentration und kein y-Achsenabschnitt in reziproken Rateneinheiten. B: Km/Vmax ist die Steigung der Geraden. C: Aus 1/v=(Km/Vmax)(1/[S])+1/Vmax folgt der y-Achsenabschnitt; −1/Km ist der x-Achsenabschnitt. D: −1/Km ist der x-Achsenabschnitt. E: Auf der 1/v-Achse erscheint der Kehrwert von Vmax, nicht Vmax. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Lineweaver-Burk"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lineweaver-Burk"
+      ],
+      "questionGoal": "Lineweaver-Burk",
+      "structuredExplanation": {
+        "coreIdea": "Lineweaver-Burk",
+        "correctReasoning": "Aus 1/v=(Km/Vmax)(1/[S])+1/Vmax folgt der y-Achsenabschnitt; −1/Km ist der x-Achsenabschnitt.",
+        "wrongAnswerExplanations": {
+          "A": "Km ist eine Konzentration und kein y-Achsenabschnitt in reziproken Rateneinheiten.",
+          "B": "Km/Vmax ist die Steigung der Geraden.",
+          "D": "−1/Km ist der x-Achsenabschnitt.",
+          "E": "Auf der 1/v-Achse erscheint der Kehrwert von Vmax, nicht Vmax."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Welche Aussage zu Km ist für das einfache Michaelis-Menten-Schema korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Km ist unabhängig vom Enzymmechanismus stets eine Geschwindigkeitskonstante erster Ordnung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Km hat dieselbe Einheit wie Vmax.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Km=(k−1+kcat)/k1 und entspricht nur unter zusätzlichen Bedingungen einer Dissoziationskonstante.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Km bezeichnet die gesamte eingesetzte Enzymstoffmenge.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Km ist immer exakt die Dissoziationskonstante k−1/k1.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die zusammengesetzte Konstante ist keine reine Frequenzgrösse. B: Km hat Konzentrations-, Vmax dagegen Geschwindigkeits-/Raten-Einheiten. C: Km enthält Bindung und katalytischen Abfluss; nur bei kcat klein gegenüber k−1 nähert es sich Kd an. D: Km ist ein Modellparameter und nicht die eingesetzte Enzymstoffmenge. E: Die Näherung Km≈Kd benötigt kcat klein gegenüber k−1 und gilt nicht allgemein. Quelle: Originalunterlagen, PDF-S. 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Km und Affinität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Km und Affinität"
+      ],
+      "questionGoal": "Km und Affinität",
+      "structuredExplanation": {
+        "coreIdea": "Km und Affinität",
+        "correctReasoning": "Km enthält Bindung und katalytischen Abfluss; nur bei kcat klein gegenüber k−1 nähert es sich Kd an.",
+        "wrongAnswerExplanations": {
+          "A": "Die zusammengesetzte Konstante ist keine reine Frequenzgrösse.",
+          "B": "Km hat Konzentrations-, Vmax dagegen Geschwindigkeits-/Raten-Einheiten.",
+          "D": "Km ist ein Modellparameter und nicht die eingesetzte Enzymstoffmenge.",
+          "E": "Die Näherung Km≈Kd benötigt kcat klein gegenüber k−1 und gilt nicht allgemein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Welche Parameteränderung passt zur einfachen kompetitiven Hemmung bei konstanter Enzymmenge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Scheinbares Km steigt, Vmax bleibt erreichbar.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Vmax steigt beliebig über den ungehemmten Wert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Km sinkt, Vmax steigt.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Km und Vmax sinken beide im selben Verhältnis.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Km bleibt gleich, Vmax halbiert sich zwingend.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Substratüberschuss kann die Konkurrenz im einfachen Modell überwinden; die Sättigungsrate bleibt unverändert. B: Der Hemmer erzeugt keine höhere maximale katalytische Kapazität als die des ungehemmten Enzyms. C: Kompetitive Konkurrenz senkt die scheinbare Affinität, erhöht also Km statt es zu senken. D: Ein gleichzeitiger Abfall beider Parameter gehört nicht zur einfachen kompetitiven Hemmung. E: Das beschreibt nicht den klassischen kompetitiven Parameterverlauf; Vmax bleibt erreichbar. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Kompetitive Hemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompetitive Hemmung"
+      ],
+      "questionGoal": "Kompetitive Hemmung",
+      "structuredExplanation": {
+        "coreIdea": "Kompetitive Hemmung",
+        "correctReasoning": "Substratüberschuss kann die Konkurrenz im einfachen Modell überwinden; die Sättigungsrate bleibt unverändert.",
+        "wrongAnswerExplanations": {
+          "B": "Der Hemmer erzeugt keine höhere maximale katalytische Kapazität als die des ungehemmten Enzyms.",
+          "C": "Kompetitive Konkurrenz senkt die scheinbare Affinität, erhöht also Km statt es zu senken.",
+          "D": "Ein gleichzeitiger Abfall beider Parameter gehört nicht zur einfachen kompetitiven Hemmung.",
+          "E": "Das beschreibt nicht den klassischen kompetitiven Parameterverlauf; Vmax bleibt erreichbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Warum kann Konkurrenz durch Ethanol den enzymatischen Abbau von Methanol verlangsamen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beide Substrate müssen dazu bereits vollständig zu CO₂ umgesetzt sein.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ethanol erhöht zwangsläufig die Enzymmenge auf das Hundertfache.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ethanol entfernt die C-Atome des Methanols ohne Enzymreaktion.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Beide können um Alkoholdehydrogenase konkurrieren.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Methanol wird durch Ethanol direkt zu Glucose verestert.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Konkurrenz betrifft gerade die Substrate vor ihrer weiteren Oxidation, nicht nur vollständige Endprodukte. B: Substratkonkurrenz benötigt keine hundertfache Enzymneubildung. C: Konkurrenz am Enzym entfernt keine Methanol-C-Atome ohne Umsetzung. D: Substratkonkurrenz beeinflusst den enzymatischen Umsatz; die Frage betrifft das Mechanismusprinzip, keine Behandlungsanleitung. E: Eine direkte Veresterung zu Glucose ist weder Struktur- noch Reaktionsbilanz dieses Mechanismus. Quelle: Originalunterlagen, PDF-S. 16–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Substratkonkurrenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Substratkonkurrenz"
+      ],
+      "questionGoal": "Substratkonkurrenz",
+      "structuredExplanation": {
+        "coreIdea": "Substratkonkurrenz",
+        "correctReasoning": "Substratkonkurrenz beeinflusst den enzymatischen Umsatz; die Frage betrifft das Mechanismusprinzip, keine Behandlungsanleitung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Konkurrenz betrifft gerade die Substrate vor ihrer weiteren Oxidation, nicht nur vollständige Endprodukte.",
+          "B": "Substratkonkurrenz benötigt keine hundertfache Enzymneubildung.",
+          "C": "Konkurrenz am Enzym entfernt keine Methanol-C-Atome ohne Umsetzung.",
+          "E": "Eine direkte Veresterung zu Glucose ist weder Struktur- noch Reaktionsbilanz dieses Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Plotsteigung, Sättigung, Zweite Ordnung, Michaelis-Menten.",
+      "options": [
+        {
+          "text": "Bei sehr hohem [S] nähert sich ein Michaelis-Menten-Enzym Vmax.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei einem Michaelis-Menten-Enzym gilt bei [S]=Km bereits v=Vmax.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Steigung eines einfachen Lineweaver-Burk-Plots beträgt Km/Vmax.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Für v = k[A]^2 verdoppelt sich v nur, wenn [A] verdoppelt wird.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Zahl aktiver Zentren begrenzt den Umsatz. B: Einsetzen in v=Vmax[S]/(Km+[S]) ergibt Vmax/2. C: Die reziproke Gleichung liefert das Verhältnis. D: Für v = k[A]^2 vervierfacht Verdopplung von [A] die Geschwindigkeit. Das Konzentrationsverhältnis wird quadriert. Quelle: Originalunterlagen, PDF-S. 7, 12–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Plotsteigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Plotsteigung"
+      ],
+      "questionGoal": "Plotsteigung",
+      "structuredExplanation": {
+        "coreIdea": "Plotsteigung",
+        "correctReasoning": "Die Zahl aktiver Zentren begrenzt den Umsatz. Die reziproke Gleichung liefert das Verhältnis.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zahl aktiver Zentren begrenzt den Umsatz.",
+          "B": "Einsetzen in v=Vmax[S]/(Km+[S]) ergibt Vmax/2.",
+          "C": "Die reziproke Gleichung liefert das Verhältnis.",
+          "D": "Für v = k[A]^2 vervierfacht Verdopplung von [A] die Geschwindigkeit. Das Konzentrationsverhältnis wird quadriert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Sättigung, Kompetitive Hemmung, Nullte Ordnung, Enzymmenge.",
+      "options": [
+        {
+          "text": "Bei sehr hohem [S] nähert sich ein Michaelis-Menten-Enzym Vmax.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei gleichen Bedingungen ist Vmax proportional zur Menge aktiven Enzyms.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei einer idealen Reaktion nullter Ordnung ist die Geschwindigkeit im betrachteten Bereich konzentrationsunabhängig.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine reine kompetitive Hemmung senkt im idealen Modell zwingend Vmax bei unverändertem Km.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Zahl aktiver Zentren begrenzt den Umsatz. B: Km ist im einfachen Modell mengenunabhängig. C: Konstante Rate ist nicht Rate null. D: Reversible Substratkonkurrenz kann apparentes Km erhöhen, während Vmax erhalten bleibt. Hohe Substratmenge kann die Konkurrenz überwinden. Quelle: Originalunterlagen, PDF-S. 5, 13–14, 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Sättigung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sättigung"
+      ],
+      "questionGoal": "Sättigung",
+      "structuredExplanation": {
+        "coreIdea": "Sättigung",
+        "correctReasoning": "Die Zahl aktiver Zentren begrenzt den Umsatz. Km ist im einfachen Modell mengenunabhängig. Konstante Rate ist nicht Rate null.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zahl aktiver Zentren begrenzt den Umsatz.",
+          "B": "Km ist im einfachen Modell mengenunabhängig.",
+          "C": "Konstante Rate ist nicht Rate null.",
+          "D": "Reversible Substratkonkurrenz kann apparentes Km erhöhen, während Vmax erhalten bleibt. Hohe Substratmenge kann die Konkurrenz überwinden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Kompetitive Hemmung, Alkoholabbau, Geschwindigkeitskonstante, Umsatzzahl.",
+      "options": [
+        {
+          "text": "k besitzt für jede Reaktionsordnung zwingend dieselbe Einheit s−1.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sättigung der beteiligten Enzyme kann in einem Konzentrationsbereich näherungsweise konstante Eliminationsraten erklären.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine reine kompetitive Hemmung senkt im idealen Modell zwingend Vmax bei unverändertem Km.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "kcat hat definitionsgemäss die Einheit einer Substratkonzentration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Einheit von k hängt vom jeweiligen Geschwindigkeitsgesetz ab. Die Dimension muss zur Rate passen. B: Die beobachtete Ordnung hängt vom Bereich ab. C: Reversible Substratkonkurrenz kann apparentes Km erhöhen, während Vmax erhalten bleibt. Hohe Substratmenge kann die Konkurrenz überwinden. D: kcat beschreibt den maximalen Umsatz pro aktivem Zentrum pro Zeit im betrachteten Modell. Es ist eine Frequenzgrösse. Quelle: Originalunterlagen, PDF-S. 8, 13, 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Kompetitive Hemmung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kompetitive Hemmung"
+      ],
+      "questionGoal": "Kompetitive Hemmung",
+      "structuredExplanation": {
+        "coreIdea": "Kompetitive Hemmung",
+        "correctReasoning": "Die beobachtete Ordnung hängt vom Bereich ab.",
+        "wrongAnswerExplanations": {
+          "A": "Die Einheit von k hängt vom jeweiligen Geschwindigkeitsgesetz ab. Die Dimension muss zur Rate passen.",
+          "B": "Die beobachtete Ordnung hängt vom Bereich ab.",
+          "C": "Reversible Substratkonkurrenz kann apparentes Km erhöhen, während Vmax erhalten bleibt. Hohe Substratmenge kann die Konkurrenz überwinden.",
+          "D": "kcat beschreibt den maximalen Umsatz pro aktivem Zentrum pro Zeit im betrachteten Modell. Es ist eine Frequenzgrösse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Alkoholabbau, Methanolkonkurrenz, Aktivierungsenergie, Km und Affinität.",
+      "options": [
+        {
+          "text": "Sättigung der beteiligten Enzyme kann in einem Konzentrationsbereich näherungsweise konstante Eliminationsraten erklären.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Km ist nicht bei jedem Mechanismus mit der Substratdissoziationskonstante identisch.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Katalysator verändert zwingend die Gleichgewichtskonstante derselben Reaktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ethanol verlangsamt die Methanolumsetzung durch stöchiometrische Säure-Base-Neutralisation des Methanols.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die beobachtete Ordnung hängt vom Bereich ab. B: Km kann mehrere Geschwindigkeitskonstanten enthalten. C: Ein Katalysator ermöglicht einen Reaktionsweg mit kleinerer Aktivierungsbarriere. Er beeinflusst den zeitlichen Ablauf. D: Der behandelte Mechanismus ist Konkurrenz um Alkoholdehydrogenase, keine Säure-Base-Neutralisation. Quelle: Originalunterlagen, PDF-S. 10–14, 16–17, 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Alkoholabbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Alkoholabbau"
+      ],
+      "questionGoal": "Alkoholabbau",
+      "structuredExplanation": {
+        "coreIdea": "Alkoholabbau",
+        "correctReasoning": "Die beobachtete Ordnung hängt vom Bereich ab. Km kann mehrere Geschwindigkeitskonstanten enthalten.",
+        "wrongAnswerExplanations": {
+          "A": "Die beobachtete Ordnung hängt vom Bereich ab.",
+          "B": "Km kann mehrere Geschwindigkeitskonstanten enthalten.",
+          "C": "Ein Katalysator ermöglicht einen Reaktionsweg mit kleinerer Aktivierungsbarriere. Er beeinflusst den zeitlichen Ablauf.",
+          "D": "Der behandelte Mechanismus ist Konkurrenz um Alkoholdehydrogenase, keine Säure-Base-Neutralisation."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Methanolkonkurrenz, Numerische Rate, Gleichgewicht, Lineweaver-Burk.",
+      "options": [
+        {
+          "text": "Im Lineweaver-Burk-Plot von 1/v gegen 1/[S] beträgt der y-Achsenabschnitt −1/Km.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ethanol kann mit Methanol um Alkoholdehydrogenase konkurrieren und dessen toxische Umsetzung verzögern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Enzym macht jede endergone Reaktion ohne Kopplung exergon.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei Vmax = 100 und [S] = 3Km beträgt v im einfachen Modell 75 in denselben Rateneinheiten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der y-Achsenabschnitt ist 1/Vmax; −1/Km ist der x-Achsenabschnitt. B: Es ist eine Konkurrenz am Enzymsystem. C: Ein Katalysator beschleunigt die Einstellung des Gleichgewichts, ohne dessen Lage thermodynamisch zu verschieben. Kinetik ersetzt keine Energiequelle. D: 3/(1+3) ergibt drei Viertel. Quelle: Originalunterlagen, PDF-S. 11, 13–15, 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Methanolkonkurrenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methanolkonkurrenz"
+      ],
+      "questionGoal": "Methanolkonkurrenz",
+      "structuredExplanation": {
+        "coreIdea": "Methanolkonkurrenz",
+        "correctReasoning": "Es ist eine Konkurrenz am Enzymsystem. 3/(1+3) ergibt drei Viertel.",
+        "wrongAnswerExplanations": {
+          "A": "Der y-Achsenabschnitt ist 1/Vmax; −1/Km ist der x-Achsenabschnitt.",
+          "B": "Es ist eine Konkurrenz am Enzymsystem.",
+          "C": "Ein Katalysator beschleunigt die Einstellung des Gleichgewichts, ohne dessen Lage thermodynamisch zu verschieben. Kinetik ersetzt keine Energiequelle.",
+          "D": "3/(1+3) ergibt drei Viertel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Numerische Rate, Halbwertszeit, Michaelis-Menten, Geschwindigkeit.",
+      "options": [
+        {
+          "text": "Für v = Vmax[S]/(Km+[S]) gilt bei [S] = Km die halbe Grenzgeschwindigkeit.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Bei A→B ist die Abnahmerate von A mit negativem Vorzeichen als positive Reaktionsgeschwindigkeit definierbar.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei Vmax = 100 und [S] = 3Km beträgt v im einfachen Modell 75 in denselben Rateneinheiten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Halbwertszeit einer idealen Reaktion erster Ordnung verdoppelt sich zwingend mit jeder Startkonzentration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Einsetzen ergibt den Faktor ein halb. B: v = −dc(A)/dt bei passender Stöchiometrie. C: 3/(1+3) ergibt drei Viertel. D: Bei idealer erster Ordnung ist die Halbwertszeit bei gleichem k konzentrationsunabhängig. t1/2 = ln2/k. Quelle: Originalunterlagen, PDF-S. 4, 6, 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Numerische Rate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Numerische Rate"
+      ],
+      "questionGoal": "Numerische Rate",
+      "structuredExplanation": {
+        "coreIdea": "Numerische Rate",
+        "correctReasoning": "Einsetzen ergibt den Faktor ein halb. v = −dc(A)/dt bei passender Stöchiometrie. 3/(1+3) ergibt drei Viertel.",
+        "wrongAnswerExplanations": {
+          "A": "Einsetzen ergibt den Faktor ein halb.",
+          "B": "v = −dc(A)/dt bei passender Stöchiometrie.",
+          "C": "3/(1+3) ergibt drei Viertel.",
+          "D": "Bei idealer erster Ordnung ist die Halbwertszeit bei gleichem k konzentrationsunabhängig. t1/2 = ln2/k."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Halbwertszeit, Grenzen des Modells, Enzymmenge, Erste Ordnung.",
+      "options": [
+        {
+          "text": "Verdoppeln der Enzymmenge muss Km im selben Mass verdoppeln.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kooperative sigmoide Kinetik darf nicht pauschal als einfache Michaelis-Menten-Hyperbel behandelt werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei v = k[A] bleibt v bei jeder Verdopplung von [A] unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Halbwertszeit einer idealen Reaktion erster Ordnung verdoppelt sich zwingend mit jeder Startkonzentration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Bei gleichen Bedingungen ist Vmax proportional zur Menge aktiven Enzyms. Km ist im einfachen Modell mengenunabhängig. B: Der zugrunde liegende Mechanismus muss passen. C: Für v = k[A] verdoppelt Verdopplung von [A] die Anfangsgeschwindigkeit. Der Zusammenhang ist linear. D: Bei idealer erster Ordnung ist die Halbwertszeit bei gleichem k konzentrationsunabhängig. t1/2 = ln2/k. Quelle: Originalunterlagen, PDF-S. 6, 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Halbwertszeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbwertszeit"
+      ],
+      "questionGoal": "Halbwertszeit",
+      "structuredExplanation": {
+        "coreIdea": "Halbwertszeit",
+        "correctReasoning": "Der zugrunde liegende Mechanismus muss passen.",
+        "wrongAnswerExplanations": {
+          "A": "Bei gleichen Bedingungen ist Vmax proportional zur Menge aktiven Enzyms. Km ist im einfachen Modell mengenunabhängig.",
+          "B": "Der zugrunde liegende Mechanismus muss passen.",
+          "C": "Für v = k[A] verdoppelt Verdopplung von [A] die Anfangsgeschwindigkeit. Der Zusammenhang ist linear.",
+          "D": "Bei idealer erster Ordnung ist die Halbwertszeit bei gleichem k konzentrationsunabhängig. t1/2 = ln2/k."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc14_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC14",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Grenzen des Modells, Geschwindigkeit, Umsatzzahl, Zweite Ordnung.",
+      "options": [
+        {
+          "text": "kcat hat definitionsgemäss die Einheit einer Substratkonzentration.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Für v = k[A]^2 vervierfacht Verdopplung von [A] die Geschwindigkeit.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Kooperative sigmoide Kinetik darf nicht pauschal als einfache Michaelis-Menten-Hyperbel behandelt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine positive Umsatzrate erfordert zwingend eine Zunahme der Eduktkonzentration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: kcat beschreibt den maximalen Umsatz pro aktivem Zentrum pro Zeit im betrachteten Modell. Es ist eine Frequenzgrösse. B: Das Konzentrationsverhältnis wird quadriert. C: Der zugrunde liegende Mechanismus muss passen. D: Bei A→B ist die Abnahmerate von A mit negativem Vorzeichen als positive Reaktionsgeschwindigkeit definierbar. v = −dc(A)/dt bei passender Stöchiometrie. Quelle: Originalunterlagen, PDF-S. 4, 7, 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC14",
+        "Grenzen des Modells"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grenzen des Modells"
+      ],
+      "questionGoal": "Grenzen des Modells",
+      "structuredExplanation": {
+        "coreIdea": "Grenzen des Modells",
+        "correctReasoning": "Das Konzentrationsverhältnis wird quadriert. Der zugrunde liegende Mechanismus muss passen.",
+        "wrongAnswerExplanations": {
+          "A": "kcat beschreibt den maximalen Umsatz pro aktivem Zentrum pro Zeit im betrachteten Modell. Es ist eine Frequenzgrösse.",
+          "B": "Das Konzentrationsverhältnis wird quadriert.",
+          "C": "Der zugrunde liegende Mechanismus muss passen.",
+          "D": "Bei A→B ist die Abnahmerate von A mit negativem Vorzeichen als positive Reaktionsgeschwindigkeit definierbar. v = −dc(A)/dt bei passender Stöchiometrie."
+        }
+      }
+    }
+  ]
+}

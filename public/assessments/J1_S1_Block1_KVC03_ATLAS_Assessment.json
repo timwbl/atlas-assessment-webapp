@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block1_kvc03_20261102",
+  "lectureCode": "KVC03",
+  "title": "organische Chemie und Kohlenstoffkreislauf",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC3 -  Einführung organische Chemie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert.  Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Elemente und Bindungseigenschaften organischer Stoffe einordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Photosynthese und Verbrennung stöchiometrisch und energetisch unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Naturstoffe, Metaboliten und Synthesewege an Beispielen zuordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc03_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Eigenschaft des Kohlenstoffs erklärt besonders seine Fähigkeit, vielfältige Molekülgerüste zu bilden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vierbindigkeit legt bei jeder Summenformel bereits genau ein C-Gerüst fest.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Ring und die entsprechende offene Kette besitzen grundsätzlich dieselbe Konnektivität.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Verzweigte und unverzweigte Ketten unterscheiden sich nur in ihrer momentanen Konformation.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Kohlenstoff kann stabile Gerüste mit Einfachbindungen, aber nicht mit Mehrfachbindungen bilden.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Stabile C–C-Bindungen ermöglichen Ketten, Verzweigungen und Ringe.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Konstitutionsisomerie erlaubt trotz gleicher Summenformel verschiedene Verknüpfungen und C-Gerüste. B: Ein Ringschluss verbindet zusätzliche Atomnachbarn und verändert die Konnektivität. C: Verzweigung kann die Atomverknüpfung ändern; das ist mehr als eine Drehung derselben Konstitution. D: Auch C=C und C≡C sind mögliche stabile Strukturmerkmale und erweitern die organische Vielfalt. E: Vier Bindungsvalenzen und stabile Bindungen zu sich selbst sowie Heteroatomen ermöglichen grosse Strukturvielfalt. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Kohlenstoffgerüste"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kohlenstoffgerüste"
+      ],
+      "questionGoal": "Kohlenstoffgerüste",
+      "structuredExplanation": {
+        "coreIdea": "Kohlenstoffgerüste",
+        "correctReasoning": "Vier Bindungsvalenzen und stabile Bindungen zu sich selbst sowie Heteroatomen ermöglichen grosse Strukturvielfalt.",
+        "wrongAnswerExplanations": {
+          "A": "Konstitutionsisomerie erlaubt trotz gleicher Summenformel verschiedene Verknüpfungen und C-Gerüste.",
+          "B": "Ein Ringschluss verbindet zusätzliche Atomnachbarn und verändert die Konnektivität.",
+          "C": "Verzweigung kann die Atomverknüpfung ändern; das ist mehr als eine Drehung derselben Konstitution.",
+          "D": "Auch C=C und C≡C sind mögliche stabile Strukturmerkmale und erweitern die organische Vielfalt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Elementkombination enthält neben C und H ausschliesslich wichtige häufige Heteroatome organischer Biomoleküle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ne, Ar, Kr und Xe.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Fe, Cu, Zn und Mn.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Na, K, Ca und Mg.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Li, Rb, Cs und Fr.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "O, N, P und S.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Edelgase sind nicht die häufigen kovalenten Heteroatome der genannten Biomoleküle. B: Diese Übergangsmetalle haben biologische Rollen, ersetzen aber nicht O, N, P und S als häufige Gerüstatome. C: Na, K, Ca und Mg sind Metalle; gesucht sind typische kovalente Heteroatome. D: Die genannten Alkalimetalle sind nicht die zentralen kovalenten Heteroatome. E: O, N, P und S gehören zu zentralen kovalenten Bausteinen; die übrigen Gruppen sind Edelgase oder Metalle, die andere biologische Rollen haben können. Quelle: Originalunterlagen, PDF-S. 5–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Biogene Heteroatome"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biogene Heteroatome"
+      ],
+      "questionGoal": "Biogene Heteroatome",
+      "structuredExplanation": {
+        "coreIdea": "Biogene Heteroatome",
+        "correctReasoning": "O, N, P und S gehören zu zentralen kovalenten Bausteinen; die übrigen Gruppen sind Edelgase oder Metalle, die andere biologische Rollen haben können.",
+        "wrongAnswerExplanations": {
+          "A": "Edelgase sind nicht die häufigen kovalenten Heteroatome der genannten Biomoleküle.",
+          "B": "Diese Übergangsmetalle haben biologische Rollen, ersetzen aber nicht O, N, P und S als häufige Gerüstatome.",
+          "C": "Na, K, Ca und Mg sind Metalle; gesucht sind typische kovalente Heteroatome.",
+          "D": "Die genannten Alkalimetalle sind nicht die zentralen kovalenten Heteroatome."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche C-Verbindung wird in der üblichen konventionellen Einteilung der anorganischen Chemie zugeordnet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Glucose.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kohlenstoffdioxid.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Ethanol.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Methan.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Essigsäure.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Glucose ist ein organisches Kohlenhydrat. B: CO₂ zählt zu den konventionellen Ausnahmen; das Vorhandensein von C allein definiert die Grenze nicht vollständig. C: Ethanol zählt als C-haltiger Alkohol zu den organischen Verbindungen. D: Methan ist der einfachste organische Kohlenwasserstoff. E: Essigsäure ist eine organische Carbonsäure. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Organisch/anorganisch"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Organisch/anorganisch"
+      ],
+      "questionGoal": "Organisch/anorganisch",
+      "structuredExplanation": {
+        "coreIdea": "Organisch/anorganisch",
+        "correctReasoning": "CO₂ zählt zu den konventionellen Ausnahmen; das Vorhandensein von C allein definiert die Grenze nicht vollständig.",
+        "wrongAnswerExplanations": {
+          "A": "Glucose ist ein organisches Kohlenhydrat.",
+          "C": "Ethanol zählt als C-haltiger Alkohol zu den organischen Verbindungen.",
+          "D": "Methan ist der einfachste organische Kohlenwasserstoff.",
+          "E": "Essigsäure ist eine organische Carbonsäure."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Wie viele CO₂-Moleküle werden in der vereinfachten Nettogleichung benötigt, um ein Glucosemolekül C₆H₁₂O₆ aufzubauen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "3.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "1.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "2.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "12.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein CO₂ enthält ein C; für die sechs C-Atome der Glucose werden sechs CO₂ benötigt. B: Drei CO₂ liefern nur die Hälfte des benötigten Kohlenstoffs. C: Ein CO₂ liefert nur ein C; fünf weitere C der Glucose blieben unbilanziert. D: Zwei CO₂ liefern nur zwei der sechs benötigten C-Atome. E: Zwölf CO₂ würden zwölf statt sechs C-Atome bereitstellen. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Photosynthesebilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photosynthesebilanz"
+      ],
+      "questionGoal": "Photosynthesebilanz",
+      "structuredExplanation": {
+        "coreIdea": "Photosynthesebilanz",
+        "correctReasoning": "Ein CO₂ enthält ein C; für die sechs C-Atome der Glucose werden sechs CO₂ benötigt.",
+        "wrongAnswerExplanations": {
+          "B": "Drei CO₂ liefern nur die Hälfte des benötigten Kohlenstoffs.",
+          "C": "Ein CO₂ liefert nur ein C; fünf weitere C der Glucose blieben unbilanziert.",
+          "D": "Zwei CO₂ liefern nur zwei der sechs benötigten C-Atome.",
+          "E": "Zwölf CO₂ würden zwölf statt sechs C-Atome bereitstellen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Sauerstoffmenge benötigt die vollständige Oxidation von 1 mol Glucose nach C₆H₁₂O₆ + a O₂ → 6 CO₂ + 6 H₂O?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 mol O₂.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "12 mol O₂.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "18 mol O₂.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "9 mol O₂.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "3 mol O₂.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Produkte enthalten 18 O-Atome; sechs stammen aus Glucose, zwölf weitere aus sechs O₂. B: Zwölf O₂ berücksichtigen den im Edukt und in O₂ enthaltenen Sauerstoff nicht korrekt. C: Die 18 O-Atome der Produkte entsprechen nicht 18 O₂; ein O₂ enthält zwei O und Glucose bereits sechs. D: Neun O₂ würden zusammen mit Glucose mehr O liefern als die genannten Produkte enthalten. E: Mit drei O₂ fehlen sechs O-Atome zur vollständigen Produktbilanz. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Glucoseoxidation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glucoseoxidation"
+      ],
+      "questionGoal": "Glucoseoxidation",
+      "structuredExplanation": {
+        "coreIdea": "Glucoseoxidation",
+        "correctReasoning": "Die Produkte enthalten 18 O-Atome; sechs stammen aus Glucose, zwölf weitere aus sechs O₂.",
+        "wrongAnswerExplanations": {
+          "B": "Zwölf O₂ berücksichtigen den im Edukt und in O₂ enthaltenen Sauerstoff nicht korrekt.",
+          "C": "Die 18 O-Atome der Produkte entsprechen nicht 18 O₂; ein O₂ enthält zwei O und Glucose bereits sechs.",
+          "D": "Neun O₂ würden zusammen mit Glucose mehr O liefern als die genannten Produkte enthalten.",
+          "E": "Mit drei O₂ fehlen sechs O-Atome zur vollständigen Produktbilanz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Koeffizienten gleichen CH₄ + a O₂ → b CO₂ + c H₂O aus?",
+      "options": [
+        {
+          "id": "A",
+          "text": "a=2, b=1, c=2.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "a=1, b=1, c=1.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "a=2, b=2, c=1.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "a=1, b=2, c=2.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "a=4, b=1, c=4.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Ein C und vier H verlangen ein CO₂ und zwei H₂O; dafür sind insgesamt vier O-Atome nötig. B: Ein H₂O bilanziert nur zwei statt vier H-Atome. C: Zwei CO₂ sind schon in der C-Bilanz unmöglich, ein H₂O reicht zudem für H nicht aus. D: Zwei CO₂ überschreiten das eine vorhandene C-Atom. E: Vier H₂O verlangen acht H-Atome statt der vorhandenen vier. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Methanverbrennung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methanverbrennung"
+      ],
+      "questionGoal": "Methanverbrennung",
+      "structuredExplanation": {
+        "coreIdea": "Methanverbrennung",
+        "correctReasoning": "Ein C und vier H verlangen ein CO₂ und zwei H₂O; dafür sind insgesamt vier O-Atome nötig.",
+        "wrongAnswerExplanations": {
+          "B": "Ein H₂O bilanziert nur zwei statt vier H-Atome.",
+          "C": "Zwei CO₂ sind schon in der C-Bilanz unmöglich, ein H₂O reicht zudem für H nicht aus.",
+          "D": "Zwei CO₂ überschreiten das eine vorhandene C-Atom.",
+          "E": "Vier H₂O verlangen acht H-Atome statt der vorhandenen vier."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Aussage zur vereinfachten Kopplung von Photosynthese und Zellatmung trifft zu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zellatmung baut CO₂ mit derselben Nettorichtung wie Photosynthese zu Glucose auf.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Beide Vorgänge benötigen im Nettomodell ausschliesslich Energie und geben nie welche ab.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Photosynthese und Glucoseverbrennung setzen im Nettomodell beide ohne Energiezufuhr dieselbe chemische Energie frei.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Licht wird bei jeder Glucoseoxidation zwingend vollständig als sichtbare Strahlung abgegeben.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Photosynthese nutzt Lichtenergie zum Aufbau organischer Stoffe; Oxidation kann gespeicherte Energie wieder verfügbar machen.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Zellatmung oxidiert organischen Kohlenstoff zu CO₂ und läuft netto entgegengesetzt zum Glucoseaufbau. B: Die Oxidation kann Energie abgeben; nicht beide Nettovorgänge benötigen ausschliesslich Zufuhr. C: Der Aufbau durch Photosynthese benötigt Lichtenergie; er ist nicht dieselbe Energiefreisetzung wie Verbrennung. D: Chemische Energie kann auch als Wärme und Arbeit verfügbar werden, ohne vollständig sichtbares Licht zu erzeugen. E: Chemische Prozesse ordnen Atome um; Energie wird aufgenommen, gespeichert und in verschiedenen Formen abgegeben. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Energie des Kohlenstoffkreislaufs"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energie des Kohlenstoffkreislaufs"
+      ],
+      "questionGoal": "Energie des Kohlenstoffkreislaufs",
+      "structuredExplanation": {
+        "coreIdea": "Energie des Kohlenstoffkreislaufs",
+        "correctReasoning": "Chemische Prozesse ordnen Atome um; Energie wird aufgenommen, gespeichert und in verschiedenen Formen abgegeben.",
+        "wrongAnswerExplanations": {
+          "A": "Zellatmung oxidiert organischen Kohlenstoff zu CO₂ und läuft netto entgegengesetzt zum Glucoseaufbau.",
+          "B": "Die Oxidation kann Energie abgeben; nicht beide Nettovorgänge benötigen ausschliesslich Zufuhr.",
+          "C": "Der Aufbau durch Photosynthese benötigt Lichtenergie; er ist nicht dieselbe Energiefreisetzung wie Verbrennung.",
+          "D": "Chemische Energie kann auch als Wärme und Arbeit verfügbar werden, ohne vollständig sichtbares Licht zu erzeugen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Wie viele Mol C-Atome sind in 2.0 mol CO₂ enthalten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.50 mol.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "6.0 mol.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "2.0 mol.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "4.0 mol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "1.0 mol.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Stoffmenge C wird nicht durch zwei dividiert, weil jedes CO₂ genau ein C trägt. B: Drei Atome pro CO₂ sind die Gesamtatomzahl; nur eines davon ist C. C: Die stöchiometrische Zahl des Kohlenstoffs in CO₂ ist eins; Sauerstoffatome ändern diese Zahl nicht. D: Hier wurde die Zahl der zwei O-Atome irrtümlich auf C übertragen. E: Die Probe enthält zwei CO₂ pro Stoffmengenverhältnis, also doppelt so viel C wie behauptet. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Stoffmenge Kohlenstoff"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stoffmenge Kohlenstoff"
+      ],
+      "questionGoal": "Stoffmenge Kohlenstoff",
+      "structuredExplanation": {
+        "coreIdea": "Stoffmenge Kohlenstoff",
+        "correctReasoning": "Die stöchiometrische Zahl des Kohlenstoffs in CO₂ ist eins; Sauerstoffatome ändern diese Zahl nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Die Stoffmenge C wird nicht durch zwei dividiert, weil jedes CO₂ genau ein C trägt.",
+          "B": "Drei Atome pro CO₂ sind die Gesamtatomzahl; nur eines davon ist C.",
+          "D": "Hier wurde die Zahl der zwei O-Atome irrtümlich auf C übertragen.",
+          "E": "Die Probe enthält zwei CO₂ pro Stoffmengenverhältnis, also doppelt so viel C wie behauptet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Was unterscheidet eine mehrstufige organische Synthese am besten von der vollständigen Verbrennung ihres Ausgangsstoffs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sie baut durch ausgewählte Reaktionsschritte eine gewünschte Molekülstruktur auf.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nur die Summenformel, nicht die Atomverknüpfung, kann verändert werden.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Alle Schritte dürfen nur Konformationen drehen, nie kovalente Verknüpfungen verändern.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ihr Ziel ist definitionsgemäss vollständige Oxidation zu CO₂ und Wasser.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Alle Zwischenprodukte müssen dieselben funktionellen Gruppen besitzen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Synthese beschreibt einen gezielten chemischen Aufbau, Verbrennung eine weitgehende Oxidation; beides sind keine Kernreaktionen. B: Synthese gestaltet auch Konnektivität; selbst bei gleicher Formel können andere Konstitutionen entstehen. C: Synthese kann gezielt kovalente Bindungen bilden, spalten und funktionelle Gruppen umwandeln. D: Eine gezielte Synthese erhält oder baut eine gewünschte Molekülstruktur; vollständige Verbrennung ist ein anderer Vorgang. E: Funktionelle Gruppen können von einem Syntheseschritt zum nächsten gezielt umgewandelt werden. Quelle: Originalunterlagen, PDF-S. 11–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Syntheseweg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Syntheseweg"
+      ],
+      "questionGoal": "Syntheseweg",
+      "structuredExplanation": {
+        "coreIdea": "Syntheseweg",
+        "correctReasoning": "Synthese beschreibt einen gezielten chemischen Aufbau, Verbrennung eine weitgehende Oxidation; beides sind keine Kernreaktionen.",
+        "wrongAnswerExplanations": {
+          "B": "Synthese gestaltet auch Konnektivität; selbst bei gleicher Formel können andere Konstitutionen entstehen.",
+          "C": "Synthese kann gezielt kovalente Bindungen bilden, spalten und funktionelle Gruppen umwandeln.",
+          "D": "Eine gezielte Synthese erhält oder baut eine gewünschte Molekülstruktur; vollständige Verbrennung ist ein anderer Vorgang.",
+          "E": "Funktionelle Gruppen können von einem Syntheseschritt zum nächsten gezielt umgewandelt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Beschreibung kennzeichnet einen Metaboliten am treffendsten?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Protein, das eine Reaktion beschleunigt, als alleinige Definition.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Nur ein zugeführter Nährstoff vor der ersten chemischen Umsetzung.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Ein Endprodukt, das im Stoffwechsel nicht weiter umgesetzt werden kann, als alleinige Definition.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein Stoff, der nach seiner natürlichen Herkunft statt seiner Stoffwechselrolle eingeordnet wird.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein Stoff, der im Stoffwechsel entsteht oder umgesetzt wird.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Das beschreibt ein Enzym; Metabolit ist der allgemeinere Begriff für im Stoffwechsel gebildete oder umgesetzte Stoffe. B: Metaboliten können erst durch eine Umsetzung entstehen und müssen nicht als Nährstoff zugeführt worden sein. C: Auch Zwischenprodukte und weiter umgesetzte Stoffe sind Metaboliten. D: Die Rolle im Stoffwechsel ist entscheidend; natürliche Herkunft allein definiert keinen Metaboliten. E: Der Begriff bezeichnet die Rolle im Stoffwechsel und legt weder Herstellungsart noch Aggregatzustand fest. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Metabolit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Metabolit"
+      ],
+      "questionGoal": "Metabolit",
+      "structuredExplanation": {
+        "coreIdea": "Metabolit",
+        "correctReasoning": "Der Begriff bezeichnet die Rolle im Stoffwechsel und legt weder Herstellungsart noch Aggregatzustand fest.",
+        "wrongAnswerExplanations": {
+          "A": "Das beschreibt ein Enzym; Metabolit ist der allgemeinere Begriff für im Stoffwechsel gebildete oder umgesetzte Stoffe.",
+          "B": "Metaboliten können erst durch eine Umsetzung entstehen und müssen nicht als Nährstoff zugeführt worden sein.",
+          "C": "Auch Zwischenprodukte und weiter umgesetzte Stoffe sind Metaboliten.",
+          "D": "Die Rolle im Stoffwechsel ist entscheidend; natürliche Herkunft allein definiert keinen Metaboliten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Welche Zuordnung einer biologischen Stoffklasse zu ihrem charakteristischen Aufbau passt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Triacylglyceride bestehen aus drei Aminosäureresten an einem Glycerinrest.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Kohlenhydrate bestehen definitionsgemäss aus veresterten Fettsäuren.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Proteine bestehen aus über Phosphodiesterbindungen verknüpften Nukleotidresten.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Proteine bestehen aus über Peptidbindungen verknüpften Aminosäureresten.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Nukleinsäuren enthalten Peptidbindungen zwischen Aminosäuren als charakteristisches Rückgrat.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die drei Glycerin-OH-Gruppen sind mit Fettsäuren verestert, nicht mit Aminosäuren zur TAG-Definition. B: Veresterte Fettsäuren sind ein Lipidmerkmal und nicht der Zuckergrundaufbau von Kohlenhydraten. C: Proteine bestehen aus Aminosäureresten; Nukleotid-Phosphodiesterketten kennzeichnen Nukleinsäuren. D: Die Stoffklassen werden durch unterschiedliche Bausteine und Verknüpfungen charakterisiert; Proteine besitzen ein Peptidrückgrat. E: Nukleinsäuren bestehen aus Nukleotiden mit Phosphodiesterverknüpfung, nicht aus einem Peptidrückgrat. Quelle: Originalunterlagen, PDF-S. 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Struktur und Stoffklasse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Struktur und Stoffklasse"
+      ],
+      "questionGoal": "Struktur und Stoffklasse",
+      "structuredExplanation": {
+        "coreIdea": "Struktur und Stoffklasse",
+        "correctReasoning": "Die Stoffklassen werden durch unterschiedliche Bausteine und Verknüpfungen charakterisiert; Proteine besitzen ein Peptidrückgrat.",
+        "wrongAnswerExplanations": {
+          "A": "Die drei Glycerin-OH-Gruppen sind mit Fettsäuren verestert, nicht mit Aminosäuren zur TAG-Definition.",
+          "B": "Veresterte Fettsäuren sind ein Lipidmerkmal und nicht der Zuckergrundaufbau von Kohlenhydraten.",
+          "C": "Proteine bestehen aus Aminosäureresten; Nukleotid-Phosphodiesterketten kennzeichnen Nukleinsäuren.",
+          "E": "Nukleinsäuren bestehen aus Nukleotiden mit Phosphodiesterverknüpfung, nicht aus einem Peptidrückgrat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Zwei organische Stoffe haben dieselbe Summenformel, aber unterschiedliche Atomverknüpfung. Welche Folgerung ist zulässig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Einer der Stoffe kann dann keine kovalenten Bindungen besitzen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ihre molaren Massen müssen wegen der anderen Verknüpfung verschieden sein.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Sie müssen dieselbe Verbindung sein.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ihre Eigenschaften können sich unterscheiden.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Eine gleiche Summenformel erzwingt dieselbe biologische Wirkung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Beide Stoffe können vollständig kovalente Strukturen besitzen. B: Gleiche Summenformel bedeutet gleiche molare Masse trotz anderer Verknüpfung. C: Unterschiedliche Verknüpfung bei gleicher Formel ist gerade Konstitutionsisomerie. D: Konstitutionsisomere haben dieselbe Zusammensetzung und molare Masse, können aber unterschiedliche physikalische und biologische Eigenschaften besitzen. E: Biologische Wirkung hängt auch von Konnektivität und räumlicher Anordnung ab. Quelle: Originalunterlagen, PDF-S. 13–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Struktur und Eigenschaft"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Struktur und Eigenschaft"
+      ],
+      "questionGoal": "Struktur und Eigenschaft",
+      "structuredExplanation": {
+        "coreIdea": "Struktur und Eigenschaft",
+        "correctReasoning": "Konstitutionsisomere haben dieselbe Zusammensetzung und molare Masse, können aber unterschiedliche physikalische und biologische Eigenschaften besitzen.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Stoffe können vollständig kovalente Strukturen besitzen.",
+          "B": "Gleiche Summenformel bedeutet gleiche molare Masse trotz anderer Verknüpfung.",
+          "C": "Unterschiedliche Verknüpfung bei gleicher Formel ist gerade Konstitutionsisomerie.",
+          "E": "Biologische Wirkung hängt auch von Konnektivität und räumlicher Anordnung ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Struktur und Funktion, Oxidationsbilanz, Biogene Elemente, Massenerhaltung.",
+      "options": [
+        {
+          "text": "Proteine enthalten neben C und H keine weiteren Elemente.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Vollständige Oxidation vieler CHO-Verbindungen liefert CO2 und Wasser.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei vollständiger Glucoseoxidation bleibt der gesamte Kohlenstoff als elementarer Feststoff zurück.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Gleiche Summenformel kann bei verschiedener Struktur zu unterschiedlichen Eigenschaften führen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das Peptidrückgrat enthält N und O; einige Seitenketten enthalten zusätzlich S. B: Die Oxidationsprodukte unterscheiden sich vom Brennstoff. C: Die C-Atome werden hauptsächlich in CO₂ überführt; die ausgeglichene Reaktion erhält die Atomsorten. D: Die Verknüpfung und räumliche Anordnung sind wichtig. Quelle: Originalunterlagen, PDF-S. 5–10, 13, 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Struktur und Funktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Struktur und Funktion"
+      ],
+      "questionGoal": "Struktur und Funktion",
+      "structuredExplanation": {
+        "coreIdea": "Struktur und Funktion",
+        "correctReasoning": "Die Oxidationsprodukte unterscheiden sich vom Brennstoff. Die Verknüpfung und räumliche Anordnung sind wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "Das Peptidrückgrat enthält N und O; einige Seitenketten enthalten zusätzlich S.",
+          "B": "Die Oxidationsprodukte unterscheiden sich vom Brennstoff.",
+          "C": "Die C-Atome werden hauptsächlich in CO₂ überführt; die ausgeglichene Reaktion erhält die Atomsorten.",
+          "D": "Die Verknüpfung und räumliche Anordnung sind wichtig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Oxidationsbilanz, Polymere, Organisch und anorganisch, Äquivalente.",
+      "options": [
+        {
+          "text": "Die Bildung eines Polymers verändert nur die räumliche Mischung unverknüpfter Monomere.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei Mol CO2 enthalten zusammen zwei Mol Kohlenstoffatome.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Vollständige Oxidation vieler CHO-Verbindungen liefert CO2 und Wasser.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "CO2 wird trotz seines Kohlenstoffatoms gewöhnlich der anorganischen Chemie zugeordnet.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Polymerbildung verknüpft Monomereinheiten zu einem Makromolekül; sie ist mehr als ein Gemisch. B: Jedes CO2-Molekül enthält ein C-Atom. C: Die Oxidationsprodukte unterscheiden sich vom Brennstoff. D: Die historische Einteilung besitzt konventionelle Grenzen. Quelle: Originalunterlagen, PDF-S. 6–7, 9–10, 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Oxidationsbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Oxidationsbilanz"
+      ],
+      "questionGoal": "Oxidationsbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Oxidationsbilanz",
+        "correctReasoning": "Jedes CO2-Molekül enthält ein C-Atom. Die Oxidationsprodukte unterscheiden sich vom Brennstoff. Die historische Einteilung besitzt konventionelle Grenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Polymerbildung verknüpft Monomereinheiten zu einem Makromolekül; sie ist mehr als ein Gemisch.",
+          "B": "Jedes CO2-Molekül enthält ein C-Atom.",
+          "C": "Die Oxidationsprodukte unterscheiden sich vom Brennstoff.",
+          "D": "Die historische Einteilung besitzt konventionelle Grenzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Polymere, Kohlenstoffkreislauf, Photosynthese, Metabolit.",
+      "options": [
+        {
+          "text": "Die Bildung eines Polymers verändert nur die räumliche Mischung unverknüpfter Monomere.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Nettobildung einer Glucose verbraucht nur ein CO2.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Als Metabolit wird ein Stoff nach seiner industriellen Herstellungsweise eingeordnet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Photosynthese und Atmung verbinden organische Kohlenstoffpools mit CO2.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Polymerbildung verknüpft Monomereinheiten zu einem Makromolekül; sie ist mehr als ein Gemisch. B: Vereinfacht bilden sechs CO2 und sechs H2O unter Lichtzufuhr Glucose und sechs O2. Die sechs Kohlenstoffatome müssen bilanziert werden. C: Metabolit bezeichnet seine Bildung oder Umsetzung im Stoffwechsel, nicht die Herstellungsweise. D: Die Stoffflüsse ordnen vorhandene Atome um. Quelle: Originalunterlagen, PDF-S. 9–10, 14–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Polymere"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Polymere"
+      ],
+      "questionGoal": "Polymere",
+      "structuredExplanation": {
+        "coreIdea": "Polymere",
+        "correctReasoning": "Die Stoffflüsse ordnen vorhandene Atome um.",
+        "wrongAnswerExplanations": {
+          "A": "Polymerbildung verknüpft Monomereinheiten zu einem Makromolekül; sie ist mehr als ein Gemisch.",
+          "B": "Vereinfacht bilden sechs CO2 und sechs H2O unter Lichtzufuhr Glucose und sechs O2. Die sechs Kohlenstoffatome müssen bilanziert werden.",
+          "C": "Metabolit bezeichnet seine Bildung oder Umsetzung im Stoffwechsel, nicht die Herstellungsweise.",
+          "D": "Die Stoffflüsse ordnen vorhandene Atome um."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Kohlenstoffkreislauf, Verbrennungsgleichung, Glucoseverbrennung, Naturstoff.",
+      "options": [
+        {
+          "text": "Die Herkunft als Naturstoff beweist für sich allein weder Sicherheit noch Wirksamkeit.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Photosynthese und Atmung verbinden organische Kohlenstoffpools mit CO2.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die vollständige Oxidation einer Glucose liefert nur ein CO2.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "CH4 benötigt für vollständige Verbrennung nur ein halbes O2 pro Molekül.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Chemische Struktur und Exposition bleiben entscheidend. B: Die Stoffflüsse ordnen vorhandene Atome um. C: Die vollständige Oxidation einer Glucose benötigt sechs O2 und liefert sechs CO2. Jedes der sechs C-Atome kann zu CO2 oxidiert werden. D: CH4 + 2 O2 ergibt bei vollständiger Verbrennung CO2 + 2 H2O. Vier H-Atome und vier O-Atome sind zu bilanzieren. Quelle: Originalunterlagen, PDF-S. 9–10, 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Kohlenstoffkreislauf"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kohlenstoffkreislauf"
+      ],
+      "questionGoal": "Kohlenstoffkreislauf",
+      "structuredExplanation": {
+        "coreIdea": "Kohlenstoffkreislauf",
+        "correctReasoning": "Chemische Struktur und Exposition bleiben entscheidend. Die Stoffflüsse ordnen vorhandene Atome um.",
+        "wrongAnswerExplanations": {
+          "A": "Chemische Struktur und Exposition bleiben entscheidend.",
+          "B": "Die Stoffflüsse ordnen vorhandene Atome um.",
+          "C": "Die vollständige Oxidation einer Glucose benötigt sechs O2 und liefert sechs CO2. Jedes der sechs C-Atome kann zu CO2 oxidiert werden.",
+          "D": "CH4 + 2 O2 ergibt bei vollständiger Verbrennung CO2 + 2 H2O. Vier H-Atome und vier O-Atome sind zu bilanzieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Verbrennungsgleichung, Biologische Moleküle, Energiefluss, Mehrstufige Synthese.",
+      "options": [
+        {
+          "text": "Proteine und Kohlenhydrate gehören zu unterschiedlichen Stoffklassen organischer Biomoleküle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine mehrstufige Synthese und die vollständige Oxidation zu CO₂ verfolgen denselben Strukturaufbau.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "CH4 + 2 O2 ergibt bei vollständiger Verbrennung CO2 + 2 H2O.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Photosynthese benötigt im Nettomodell keinerlei Energiezufuhr.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Peptidbindungen enthalten Stickstoff und Sauerstoff. B: Synthese baut eine Zielstruktur auf; vollständige Oxidation zerlegt organische C-Gerüste zu CO₂. C: Vier H-Atome und vier O-Atome sind zu bilanzieren. D: Photosynthese speichert einen Teil eingestrahlter Energie chemisch. Der Aufbau energiereicher Stoffe ist lichtgekoppelt. Quelle: Originalunterlagen, PDF-S. 9–12, 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Verbrennungsgleichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verbrennungsgleichung"
+      ],
+      "questionGoal": "Verbrennungsgleichung",
+      "structuredExplanation": {
+        "coreIdea": "Verbrennungsgleichung",
+        "correctReasoning": "Peptidbindungen enthalten Stickstoff und Sauerstoff. Vier H-Atome und vier O-Atome sind zu bilanzieren.",
+        "wrongAnswerExplanations": {
+          "A": "Peptidbindungen enthalten Stickstoff und Sauerstoff.",
+          "B": "Synthese baut eine Zielstruktur auf; vollständige Oxidation zerlegt organische C-Gerüste zu CO₂.",
+          "C": "Vier H-Atome und vier O-Atome sind zu bilanzieren.",
+          "D": "Photosynthese speichert einen Teil eingestrahlter Energie chemisch. Der Aufbau energiereicher Stoffe ist lichtgekoppelt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Biologische Moleküle, Kovalente Struktur, Massenerhaltung, Kohlenstoffbindungen.",
+      "options": [
+        {
+          "text": "Jede chemische Reaktion verändert die Protonenzahl sämtlicher beteiligter Elemente.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei einer ausgeglichenen Reaktion bleibt die Anzahl jeder Atomsorte erhalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Kohlenstoff kann stabile kovalente Ketten und Ringe bilden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Proteine und Kohlenhydrate gehören zu unterschiedlichen Stoffklassen organischer Biomoleküle.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Chemische Reaktionen verändern Bindungen zwischen Atomen. Kernumwandlungen sind keine gewöhnlichen chemischen Reaktionen. B: Chemische Reaktionen ordnen Atome neu an. C: Die Vielfalt beruht unter anderem auf C–C-Bindungen. D: Peptidbindungen enthalten Stickstoff und Sauerstoff. Quelle: Originalunterlagen, PDF-S. 7–8, 10, 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Biologische Moleküle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biologische Moleküle"
+      ],
+      "questionGoal": "Biologische Moleküle",
+      "structuredExplanation": {
+        "coreIdea": "Biologische Moleküle",
+        "correctReasoning": "Chemische Reaktionen ordnen Atome neu an. Die Vielfalt beruht unter anderem auf C–C-Bindungen. Peptidbindungen enthalten Stickstoff und Sauerstoff.",
+        "wrongAnswerExplanations": {
+          "A": "Chemische Reaktionen verändern Bindungen zwischen Atomen. Kernumwandlungen sind keine gewöhnlichen chemischen Reaktionen.",
+          "B": "Chemische Reaktionen ordnen Atome neu an.",
+          "C": "Die Vielfalt beruht unter anderem auf C–C-Bindungen.",
+          "D": "Peptidbindungen enthalten Stickstoff und Sauerstoff."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Kovalente Struktur, Anwendungen, Äquivalente, Valenz.",
+      "options": [
+        {
+          "text": "Organische Verbindungen können als Arzneistoffe, Farbstoffe oder Polymere verwendet werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Zwei Mol CO2 enthalten vier Mol Kohlenstoffatome.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Neutraler Kohlenstoff trägt in Methan fünf C–H-Bindungen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede chemische Reaktion verändert die Protonenzahl sämtlicher beteiligter Elemente.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch synthetische organische Stoffe gehören dazu. B: Zwei Mol CO2 enthalten zusammen zwei Mol Kohlenstoffatome. Jedes CO2-Molekül enthält ein C-Atom. C: Neutraler Kohlenstoff besitzt in vielen organischen Molekülen vier Bindungsvalenzen. Die vier σ-Bindungen erfüllen das Oktett. D: Chemische Reaktionen verändern Bindungen zwischen Atomen. Kernumwandlungen sind keine gewöhnlichen chemischen Reaktionen. Quelle: Originalunterlagen, PDF-S. 7–10, 15–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Kovalente Struktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kovalente Struktur"
+      ],
+      "questionGoal": "Kovalente Struktur",
+      "structuredExplanation": {
+        "coreIdea": "Kovalente Struktur",
+        "correctReasoning": "Auch synthetische organische Stoffe gehören dazu.",
+        "wrongAnswerExplanations": {
+          "A": "Auch synthetische organische Stoffe gehören dazu.",
+          "B": "Zwei Mol CO2 enthalten zusammen zwei Mol Kohlenstoffatome. Jedes CO2-Molekül enthält ein C-Atom.",
+          "C": "Neutraler Kohlenstoff besitzt in vielen organischen Molekülen vier Bindungsvalenzen. Die vier σ-Bindungen erfüllen das Oktett.",
+          "D": "Chemische Reaktionen verändern Bindungen zwischen Atomen. Kernumwandlungen sind keine gewöhnlichen chemischen Reaktionen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc03_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC03",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Anwendungen, Kohlenstoffbindungen, Metabolit, Biogene Elemente.",
+      "options": [
+        {
+          "text": "Als Metabolit wird ein Stoff nach seiner industriellen Herstellungsweise eingeordnet.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Organische Verbindungen können als Arzneistoffe, Farbstoffe oder Polymere verwendet werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "C, H, O, N, P und S gehören zu wichtigen Elementen biologischer Moleküle.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Vielfalt organischer Gerüste beruht nur auf C–H-Bindungen; C–C-Bindungen tragen nicht dazu bei.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Metabolit bezeichnet seine Bildung oder Umsetzung im Stoffwechsel, nicht die Herstellungsweise. B: Auch synthetische organische Stoffe gehören dazu. C: Auch Heteroatome bestimmen ihre Eigenschaften. D: Stabile C–C-Bindungen ermöglichen gerade Ketten, Verzweigungen und Ringe. Quelle: Originalunterlagen, PDF-S. 5–8, 14–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC03",
+        "Anwendungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anwendungen"
+      ],
+      "questionGoal": "Anwendungen",
+      "structuredExplanation": {
+        "coreIdea": "Anwendungen",
+        "correctReasoning": "Auch synthetische organische Stoffe gehören dazu. Auch Heteroatome bestimmen ihre Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "A": "Metabolit bezeichnet seine Bildung oder Umsetzung im Stoffwechsel, nicht die Herstellungsweise.",
+          "B": "Auch synthetische organische Stoffe gehören dazu.",
+          "C": "Auch Heteroatome bestimmen ihre Eigenschaften.",
+          "D": "Stabile C–C-Bindungen ermöglichen gerade Ketten, Verzweigungen und Ringe."
+        }
+      }
+    }
+  ]
+}

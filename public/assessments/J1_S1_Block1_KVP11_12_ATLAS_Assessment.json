@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block1_kvp11_12_20261102",
+  "lectureCode": "KVP11/12",
+  "title": "Elektromagnetische Wellen II: Wärmestrahlung und Absorption",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP11&12_ElektromagnetischeWellen_TeilB_Oct25. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Teil B der gemeinsamen Lernziele, Originalfolien 2025. UV-Zahlen werden nicht als allgemeingültige atmosphärische Transmissionsprozente übernommen. CO2-IR-Aktivität wird über die dynamische Dipoländerung präzisiert. Thermographie wird nicht als spezifischer Tumornachweis dargestellt. Beer-Gesetz auf passende Geometrie und Streuungsbedingungen begrenzt. Vorlesungsbasis HS2021 nach eigener Quellenangabe der bereitgestellten Folien; diese Herkunft bleibt trotz Zuordnung zum Lehrunterlagenbestand HS2025 sichtbar.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Schwarzkörperspektrum, Stefan-Boltzmann-Gesetz und Wiensches Verschiebungsgesetz anwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Solare und terrestrische Strahlung, Treibhauseffekt und atmosphärische UV-Abschirmung erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Reflexion, Absorption, Transmission und exponentielle Schwächung quantitativ unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Molekulare Anregungsmechanismen und medizinisch relevante spektrale Absorptionsunterschiede erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvp11_12_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Welche Eigenschaft definiert den idealen schwarzen Körper?",
+      "options": [
+        {
+          "text": "Er absorbiert sämtliche einfallende Strahlung und besitzt ein temperaturabhängiges Emissionsspektrum.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Er reflektiert jede Wellenlänge vollständig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er sendet nur eine einzige diskrete atomare Linie aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er emittiert bei jeder Temperatur ausschliesslich schwarzes sichtbares Licht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er besitzt unabhängig von Temperatur keine thermische Strahlung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der schwarze Körper ist ein idealer vollständiger Absorber; seine thermische Emission ist ein kontinuierliches Referenzspektrum. B: Vollständige Reflexion beschreibt das Gegenteil eines idealen schwarzen Absorbers. C: Ein Schwarzkörperspektrum ist kontinuierlich und nicht auf eine einzelne atomare Spektrallinie beschränkt. D: Schwarz bezeichnet das ideale Absorptionsvermögen und keine spezielle schwarze Lichtfarbe; das Emissionsspektrum hängt von T ab. E: Bei T>0 emittiert ein schwarzer Körper thermische Strahlung; Absorptionseigenschaft und Emission gehören zusammen. Quelle: Originalunterlagen, PDF-S. 7–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Schwarzer Körper"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schwarzer Körper"
+      ],
+      "questionGoal": "Schwarzer Körper",
+      "structuredExplanation": {
+        "coreIdea": "Schwarzer Körper",
+        "correctReasoning": "Der schwarze Körper ist ein idealer vollständiger Absorber; seine thermische Emission ist ein kontinuierliches Referenzspektrum.",
+        "wrongAnswerExplanations": {
+          "B": "Vollständige Reflexion beschreibt das Gegenteil eines idealen schwarzen Absorbers.",
+          "C": "Ein Schwarzkörperspektrum ist kontinuierlich und nicht auf eine einzelne atomare Spektrallinie beschränkt.",
+          "D": "Schwarz bezeichnet das ideale Absorptionsvermögen und keine spezielle schwarze Lichtfarbe; das Emissionsspektrum hängt von T ab.",
+          "E": "Bei T>0 emittiert ein schwarzer Körper thermische Strahlung; Absorptionseigenschaft und Emission gehören zusammen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Ein idealer schwarzer Körper wird bei gleicher Fläche von 1000 auf 2000 K erhitzt. Um welchen Faktor steigt seine gesamte emittierte Leistung?",
+      "options": [
+        {
+          "text": "2.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "16.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "4.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "8.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "32.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Faktor 2 würde eine lineare Temperaturabhängigkeit annehmen, obwohl P proportional zu T⁴ ist. B: P=σAT⁴; Verdopplung der absoluten Temperatur ergibt 2⁴=16. C: Faktor 4 entspricht einer quadratischen statt der vierten Potenz der Temperaturverdopplung. D: Faktor 8 entspräche einer dritten Potenz; Stefan-Boltzmann verlangt die vierte Potenz. E: Faktor 32 wäre 2⁵ und setzt eine fünfte statt vierte Temperaturpotenz voraus. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Temperaturpotenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperaturpotenz"
+      ],
+      "questionGoal": "Temperaturpotenz",
+      "structuredExplanation": {
+        "coreIdea": "Temperaturpotenz",
+        "correctReasoning": "P=σAT⁴; Verdopplung der absoluten Temperatur ergibt 2⁴=16.",
+        "wrongAnswerExplanations": {
+          "A": "Faktor 2 würde eine lineare Temperaturabhängigkeit annehmen, obwohl P proportional zu T⁴ ist.",
+          "C": "Faktor 4 entspricht einer quadratischen statt der vierten Potenz der Temperaturverdopplung.",
+          "D": "Faktor 8 entspräche einer dritten Potenz; Stefan-Boltzmann verlangt die vierte Potenz.",
+          "E": "Faktor 32 wäre 2⁵ und setzt eine fünfte statt vierte Temperaturpotenz voraus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Wie verändert sich die Wellenlänge des Maximums im pro Wellenlängenintervall dargestellten Schwarzkörperspektrum bei Verdopplung von T?",
+      "options": [
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie vervierfacht sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie bleibt unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie sinkt auf ein Sechzehntel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie halbiert sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Eine doppelte Wellenlänge widerspricht λmax T=konstant; eine heissere Quelle verschiebt das Maximum zu kürzeren Wellen. B: Eine Vervierfachung folgt weder aus der inversen noch aus einer korrekten Temperaturproportionalität. C: Bei einer Temperaturverdopplung bleibt das Produkt λmax T nur erhalten, wenn die Maximumswellenlänge sich ändert. D: Der Faktor 16 betrifft die Gesamtleistung nach Stefan-Boltzmann, nicht die invers mit T skalierende Maximumswellenlänge. E: λmaxT=b; die Lage des Maximums ist ausdrücklich auf die Wellenlängendarstellung bezogen. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Wiensche Verschiebung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wiensche Verschiebung"
+      ],
+      "questionGoal": "Wiensche Verschiebung",
+      "structuredExplanation": {
+        "coreIdea": "Wiensche Verschiebung",
+        "correctReasoning": "λmaxT=b; die Lage des Maximums ist ausdrücklich auf die Wellenlängendarstellung bezogen.",
+        "wrongAnswerExplanations": {
+          "A": "Eine doppelte Wellenlänge widerspricht λmax T=konstant; eine heissere Quelle verschiebt das Maximum zu kürzeren Wellen.",
+          "B": "Eine Vervierfachung folgt weder aus der inversen noch aus einer korrekten Temperaturproportionalität.",
+          "C": "Bei einer Temperaturverdopplung bleibt das Produkt λmax T nur erhalten, wenn die Maximumswellenlänge sich ändert.",
+          "D": "Der Faktor 16 betrifft die Gesamtleistung nach Stefan-Boltzmann, nicht die invers mit T skalierende Maximumswellenlänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Welches Maximum folgt für einen schwarzen Körper bei 300 K aus b≈2.90×10⁻³ m·K?",
+      "options": [
+        {
+          "text": "97 nm.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0.97 mm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0.97 µm.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "9.7 mm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "9.7 µm.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 97 nm entspräche bei gleichem b etwa 30'000 K und nicht 300 K. B: 0,97 mm sind 970 µm und damit um etwa Faktor hundert zu lang. C: 0,97 µm ist um Faktor zehn zu kurz; b/300 K liegt bei knapp 10 und nicht bei knapp 1 µm. D: 9,7 mm verfehlt die Umrechnung von 9,7×10⁻⁶ m zu Mikrometern um Faktor tausend. E: λmax=b/T=9.67×10⁻⁶ m, also im Infrarot. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Wien-Rechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wien-Rechnung"
+      ],
+      "questionGoal": "Wien-Rechnung",
+      "structuredExplanation": {
+        "coreIdea": "Wien-Rechnung",
+        "correctReasoning": "λmax=b/T=9.67×10⁻⁶ m, also im Infrarot.",
+        "wrongAnswerExplanations": {
+          "A": "97 nm entspräche bei gleichem b etwa 30'000 K und nicht 300 K.",
+          "B": "0,97 mm sind 970 µm und damit um etwa Faktor hundert zu lang.",
+          "C": "0,97 µm ist um Faktor zehn zu kurz; b/300 K liegt bei knapp 10 und nicht bei knapp 1 µm.",
+          "D": "9,7 mm verfehlt die Umrechnung von 9,7×10⁻⁶ m zu Mikrometern um Faktor tausend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Ein Körper bei Raumtemperatur glüht für das Auge nicht sichtbar. Welche Folgerung ist richtig?",
+      "options": [
+        {
+          "text": "Das Fehlen sichtbaren Glühens beweist absolute Temperatur null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er strahlt grundsätzlich keine elektromagnetische Energie ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er emittiert nur dann Photonen, wenn eine externe Lampe eingeschaltet ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er emittiert dennoch thermische Strahlung, überwiegend im Infrarot.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Seine gesamte Emission liegt im Röntgenbereich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Auge erfasst nur einen begrenzten Wellenlängenbereich; fehlendes sichtbares Licht ist kein Nachweis von T=0 K. B: Fehlendes sichtbares Glühen schliesst Emission ausserhalb des sichtbaren Bereichs nicht aus; bei Raumtemperatur dominiert Infrarot. C: Thermische Eigenemission hängt von Temperatur und Material ab und benötigt keine eingeschaltete Beleuchtung. D: Der sichtbare Anteil ist bei solchen Temperaturen sehr klein; thermische Emission bleibt vorhanden. E: Röntgenphotonen sind viel energiereicher; das thermische Spektrum eines Raumtemperaturkörpers liegt überwiegend im Infrarot. Quelle: Originalunterlagen, PDF-S. 9–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Raumtemperaturstrahlung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Raumtemperaturstrahlung"
+      ],
+      "questionGoal": "Raumtemperaturstrahlung",
+      "structuredExplanation": {
+        "coreIdea": "Raumtemperaturstrahlung",
+        "correctReasoning": "Der sichtbare Anteil ist bei solchen Temperaturen sehr klein; thermische Emission bleibt vorhanden.",
+        "wrongAnswerExplanations": {
+          "A": "Das Auge erfasst nur einen begrenzten Wellenlängenbereich; fehlendes sichtbares Licht ist kein Nachweis von T=0 K.",
+          "B": "Fehlendes sichtbares Glühen schliesst Emission ausserhalb des sichtbaren Bereichs nicht aus; bei Raumtemperatur dominiert Infrarot.",
+          "C": "Thermische Eigenemission hängt von Temperatur und Material ab und benötigt keine eingeschaltete Beleuchtung.",
+          "E": "Röntgenphotonen sind viel energiereicher; das thermische Spektrum eines Raumtemperaturkörpers liegt überwiegend im Infrarot."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Welche Kombination erklärt den unterschiedlichen Schwerpunkt von Sonnen- und Erdstrahlung?",
+      "options": [
+        {
+          "text": "Die kühlere Erde emittiert grundsätzlich energiereichere Photonen als die Sonne.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die maximale Wellenlänge hängt nur von der Entfernung zum Beobachter ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Erde kann keine Strahlung abgeben, nur reflektieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beide müssen bei jeder Wellenlänge identische Spektren besitzen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die heissere Sonne emittiert kurzwelliger; die kühlere Erde überwiegend langwellig infrarot.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die geringere Temperatur der Erde verschiebt ihre thermische Emission zu längeren Wellen und kleineren typischen Photonenergien. B: Im Wien-Modell bestimmt die Quellentemperatur das Maximum; der Abstand ändert primär die empfangene Stärke, nicht diese Quelleneigenschaft. C: Die Erde emittiert aufgrund ihrer Temperatur selbst langwellige Strahlung und reflektiert zusätzlich einen Anteil des Sonnenlichts. D: Unterschiedliche Temperaturen erzeugen unterschiedliche thermische Spektren, auch wenn für beide dieselben Strahlungsgesetze gelten. E: Das Wiensche Gesetz verknüpft die absolute Temperatur mit dem spektralen Maximum. Quelle: Originalunterlagen, PDF-S. 13,16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Sonne und Erde"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sonne und Erde"
+      ],
+      "questionGoal": "Sonne und Erde",
+      "structuredExplanation": {
+        "coreIdea": "Sonne und Erde",
+        "correctReasoning": "Das Wiensche Gesetz verknüpft die absolute Temperatur mit dem spektralen Maximum.",
+        "wrongAnswerExplanations": {
+          "A": "Die geringere Temperatur der Erde verschiebt ihre thermische Emission zu längeren Wellen und kleineren typischen Photonenergien.",
+          "B": "Im Wien-Modell bestimmt die Quellentemperatur das Maximum; der Abstand ändert primär die empfangene Stärke, nicht diese Quelleneigenschaft.",
+          "C": "Die Erde emittiert aufgrund ihrer Temperatur selbst langwellige Strahlung und reflektiert zusätzlich einen Anteil des Sonnenlichts.",
+          "D": "Unterschiedliche Temperaturen erzeugen unterschiedliche thermische Spektren, auch wenn für beide dieselben Strahlungsgesetze gelten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Welche Beschreibung trifft einen zentralen Strahlungsmechanismus des Treibhauseffekts?",
+      "options": [
+        {
+          "text": "N₂ und O₂ dominieren wegen ihrer Menge automatisch alle IR-Absorptionsbanden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "CO₂ muss dafür einen permanenten elektrischen Dipol im unverzerrten Grundzustand besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Treibhausgase absorbieren und emittieren Teile der langwelligen terrestrischen Strahlung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Treibhausgase verhindern ausschliesslich jede sichtbare Sonnenstrahlung, ohne IR-Wechselwirkung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Atmosphäre speichert Energie ohne jede weitere Abstrahlung auf unbegrenzte Zeit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Häufigkeit allein bestimmt keine IR-Banden: Die überwiegend homonuklearen Hauptgase besitzen nicht dieselben dipolaktiven Schwingungen wie etwa CO₂ oder H₂O. B: IR-aktive Schwingungen können ein zeitlich veränderliches Dipolmoment erzeugen; ein permanenter Gleichgewichtsdipol ist dafür nicht nötig. C: IR-aktive Schwingungen und Strahlungsaustausch beeinflussen die Energiebilanz; ein permanenter Moleküldipol ist dafür nicht zwingend. D: Der zentrale Mechanismus betrifft die Wechselwirkung mit terrestrischem Infrarot; eine ausschliessliche Blockade aller sichtbaren Sonnenstrahlung beschreibt ihn nicht. E: Treibhausgase absorbieren und emittieren Strahlung; im stationären Zustand wird Energie weiterhin an den Weltraum abgegeben. Quelle: Originalunterlagen, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Treibhauseffekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Treibhauseffekt"
+      ],
+      "questionGoal": "Treibhauseffekt",
+      "structuredExplanation": {
+        "coreIdea": "Treibhauseffekt",
+        "correctReasoning": "IR-aktive Schwingungen und Strahlungsaustausch beeinflussen die Energiebilanz; ein permanenter Moleküldipol ist dafür nicht zwingend.",
+        "wrongAnswerExplanations": {
+          "A": "Häufigkeit allein bestimmt keine IR-Banden: Die überwiegend homonuklearen Hauptgase besitzen nicht dieselben dipolaktiven Schwingungen wie etwa CO₂ oder H₂O.",
+          "B": "IR-aktive Schwingungen können ein zeitlich veränderliches Dipolmoment erzeugen; ein permanenter Gleichgewichtsdipol ist dafür nicht nötig.",
+          "D": "Der zentrale Mechanismus betrifft die Wechselwirkung mit terrestrischem Infrarot; eine ausschliessliche Blockade aller sichtbaren Sonnenstrahlung beschreibt ihn nicht.",
+          "E": "Treibhausgase absorbieren und emittieren Strahlung; im stationären Zustand wird Energie weiterhin an den Weltraum abgegeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Welche qualitative Aussage zur solaren UV-Strahlung an der Erdoberfläche passt?",
+      "options": [
+        {
+          "text": "UVC wird weitgehend abgeschirmt; ein grösserer Anteil des UVA als des UVB gelangt durch die Atmosphäre.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "UVA wird vollständig blockiert, während UVC stets vollständig durchtritt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle UV-Bereiche gelangen unter allen Bedingungen ungeschwächt zum Boden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "UVB und UVC sind energieärmer als Infrarotphotonen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine Ozonschicht kann ausschliesslich Radiowellen absorbieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Abschirmung ist stark wellenlängenabhängig; starre Prozentwerte sind keine universelle Transmissionsgarantie. B: Diese Reihenfolge ist vertauscht: UVA passiert zu grösserem Anteil, während UVC besonders stark abgeschirmt wird. C: Die Atmosphäre schwächt UV je nach Bereich unterschiedlich stark; insbesondere UVC erreicht die Oberfläche weitgehend nicht. D: UV besitzt kürzere Wellenlängen und damit höhere Photonenergien als Infrarot. E: Ozon absorbiert gerade in relevanten UV-Bereichen; seine Wirkung ist nicht auf Radiowellen beschränkt. Quelle: Originalunterlagen, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Atmosphärischer UV-Filter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atmosphärischer UV-Filter"
+      ],
+      "questionGoal": "Atmosphärischer UV-Filter",
+      "structuredExplanation": {
+        "coreIdea": "Atmosphärischer UV-Filter",
+        "correctReasoning": "Die Abschirmung ist stark wellenlängenabhängig; starre Prozentwerte sind keine universelle Transmissionsgarantie.",
+        "wrongAnswerExplanations": {
+          "B": "Diese Reihenfolge ist vertauscht: UVA passiert zu grösserem Anteil, während UVC besonders stark abgeschirmt wird.",
+          "C": "Die Atmosphäre schwächt UV je nach Bereich unterschiedlich stark; insbesondere UVC erreicht die Oberfläche weitgehend nicht.",
+          "D": "UV besitzt kürzere Wellenlängen und damit höhere Photonenergien als Infrarot.",
+          "E": "Ozon absorbiert gerade in relevanten UV-Bereichen; seine Wirkung ist nicht auf Radiowellen beschränkt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Ein Körper reflektiert 20 % und transmittiert 30 % der einfallenden Leistung; andere Abflüsse werden in dieser Bilanz diesen Kanälen zugeordnet. Welcher Anteil wird absorbiert?",
+      "options": [
+        {
+          "text": "60 %.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10 %.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "30 %.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 %.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "50 %.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 20 % Reflexion plus 30 % Transmission plus 60 % Absorption ergäben 110 % und verletzten die angegebene Leistungsbilanz. B: 10 % ist nur die Differenz der angegebenen Reflexions- und Transmissionsanteile; gesucht ist der Rest von insgesamt 100 %. C: 30 % bezeichnet den transmittierten Anteil; Absorption ist ein anderer Bilanzkanal. D: 20 % ist bereits als reflektierter und nicht als absorbierter Anteil angegeben. E: ρ+τ+α=1 ergibt α=1−0.20−0.30=0.50. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Energiebilanz an Oberfläche"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energiebilanz an Oberfläche"
+      ],
+      "questionGoal": "Energiebilanz an Oberfläche",
+      "structuredExplanation": {
+        "coreIdea": "Energiebilanz an Oberfläche",
+        "correctReasoning": "ρ+τ+α=1 ergibt α=1−0.20−0.30=0.50.",
+        "wrongAnswerExplanations": {
+          "A": "20 % Reflexion plus 30 % Transmission plus 60 % Absorption ergäben 110 % und verletzten die angegebene Leistungsbilanz.",
+          "B": "10 % ist nur die Differenz der angegebenen Reflexions- und Transmissionsanteile; gesucht ist der Rest von insgesamt 100 %.",
+          "C": "30 % bezeichnet den transmittierten Anteil; Absorption ist ein anderer Bilanzkanal.",
+          "D": "20 % ist bereits als reflektierter und nicht als absorbierter Anteil angegeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "µ=0.80 cm⁻¹ und x=1.25 cm. Welcher Anteil eines schmalen monochromatischen Primärstrahls bleibt bei gültigem Beer-Modell?",
+      "options": [
+        {
+          "text": "Etwa 63 %.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 37 %.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Etwa 1 %.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Etwa 80 %.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 12.5 %.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 63 % ist hier ungefähr der aus dem Primärstrahl entfernte Anteil 1−e⁻¹; gefragt ist der verbleibende Anteil. B: µx=1 und I/I0=e⁻¹≈0.368; 63 % ist der entfernte Anteil. C: 1 % würde µx≈4,61 erfordern; gegeben ist nur µx=1. D: 80 % übernimmt den Zahlenwert von µ, ignoriert aber Dicke und exponentielle Abschwächung. E: 12,5 % ist keine Folge von exp(−0,80×1,25); der Exponent ist genau −1. Quelle: Originalunterlagen, PDF-S. 21–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Exponentialgesetz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exponentialgesetz"
+      ],
+      "questionGoal": "Exponentialgesetz",
+      "structuredExplanation": {
+        "coreIdea": "Exponentialgesetz",
+        "correctReasoning": "µx=1 und I/I0=e⁻¹≈0.368; 63 % ist der entfernte Anteil.",
+        "wrongAnswerExplanations": {
+          "A": "63 % ist hier ungefähr der aus dem Primärstrahl entfernte Anteil 1−e⁻¹; gefragt ist der verbleibende Anteil.",
+          "C": "1 % würde µx≈4,61 erfordern; gegeben ist nur µx=1.",
+          "D": "80 % übernimmt den Zahlenwert von µ, ignoriert aber Dicke und exponentielle Abschwächung.",
+          "E": "12,5 % ist keine Folge von exp(−0,80×1,25); der Exponent ist genau −1."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Für eine bestimmte Wellenlänge beträgt µ=1000 cm⁻¹. Welche charakteristische e-Faltungstiefe folgt?",
+      "options": [
+        {
+          "text": "10 µm.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "1 µm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1 mm.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 µm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1 cm.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 1/µ=0.001 cm=10 µm; ein Zentimeter entspricht 10 000 Mikrometern. B: 1 µm ist um Faktor zehn kleiner als 1/1000 cm; 0,001 cm entsprechen 10 µm. C: 1 mm sind 0,1 cm und damit hundert e-Faltungstiefen, nicht eine. D: 100 µm sind 0,01 cm und damit zehn e-Faltungstiefen bei diesem Koeffizienten. E: 1 cm ist tausendmal die gesuchte Tiefe 1/µ=0,001 cm. Quelle: Originalunterlagen, PDF-S. 23–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Eindringtiefe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eindringtiefe"
+      ],
+      "questionGoal": "Eindringtiefe",
+      "structuredExplanation": {
+        "coreIdea": "Eindringtiefe",
+        "correctReasoning": "1/µ=0.001 cm=10 µm; ein Zentimeter entspricht 10 000 Mikrometern.",
+        "wrongAnswerExplanations": {
+          "B": "1 µm ist um Faktor zehn kleiner als 1/1000 cm; 0,001 cm entsprechen 10 µm.",
+          "C": "1 mm sind 0,1 cm und damit hundert e-Faltungstiefen, nicht eine.",
+          "D": "100 µm sind 0,01 cm und damit zehn e-Faltungstiefen bei diesem Koeffizienten.",
+          "E": "1 cm ist tausendmal die gesuchte Tiefe 1/µ=0,001 cm."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "CO₂ besitzt in seiner linearen Gleichgewichtsstruktur kein permanentes Dipolmoment. Warum kann es trotzdem Infrarot absorbieren?",
+      "options": [
+        {
+          "text": "Ein permanenter Grundzustandsdipol ist die einzige mögliche Voraussetzung, daher ist jede CO₂-IR-Absorption unmöglich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Schwingung jedes Moleküls ist unabhängig von Symmetrie gleich stark IR-aktiv.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Seine asymmetrische Schwingung ändert nur die Masse der Atome, nicht das Dipolmoment.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Sauerstoff muss dafür vollständig aus dem Molekül entfernt werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Geeignete Schwingungen verändern sein Dipolmoment während der Bewegung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein zeitlich veränderliches Dipolmoment während geeigneter Moden genügt; das Fehlen eines permanenten Dipols verbietet CO₂-Absorption nicht. B: IR-Aktivität hängt davon ab, ob eine Schwingung das Dipolmoment ändert; Symmetrie kann einzelne Moden ausschliessen. C: Die asymmetrische Schwingung verändert die Ladungsgeometrie und damit das Dipolmoment; die Atommassen ändern sich dabei nicht. D: Entfernung der Sauerstoffatome wäre eine chemische Zerlegung, keine notwendige Voraussetzung für die Schwingungsabsorption des CO₂-Moleküls. E: Ein sich während der Schwingung änderndes Dipolmoment ermöglicht elektrische Dipolübergänge, etwa bei Biege- und asymmetrischen Moden. Quelle: Originalunterlagen, PDF-S. 28–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "IR-Aktivität von CO₂"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "IR-Aktivität von CO₂"
+      ],
+      "questionGoal": "IR-Aktivität von CO₂",
+      "structuredExplanation": {
+        "coreIdea": "IR-Aktivität von CO₂",
+        "correctReasoning": "Ein sich während der Schwingung änderndes Dipolmoment ermöglicht elektrische Dipolübergänge, etwa bei Biege- und asymmetrischen Moden.",
+        "wrongAnswerExplanations": {
+          "A": "Ein zeitlich veränderliches Dipolmoment während geeigneter Moden genügt; das Fehlen eines permanenten Dipols verbietet CO₂-Absorption nicht.",
+          "B": "IR-Aktivität hängt davon ab, ob eine Schwingung das Dipolmoment ändert; Symmetrie kann einzelne Moden ausschliessen.",
+          "C": "Die asymmetrische Schwingung verändert die Ladungsgeometrie und damit das Dipolmoment; die Atommassen ändern sich dabei nicht.",
+          "D": "Entfernung der Sauerstoffatome wäre eine chemische Zerlegung, keine notwendige Voraussetzung für die Schwingungsabsorption des CO₂-Moleküls."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zum Schwarzkörperspektrum.",
+      "options": [
+        {
+          "text": "Temperaturen in Stefan-Boltzmann- und Wien-Gesetz müssen absolut in Kelvin eingesetzt werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Wiensche Gesetz besagt, dass die Gesamtleistung proportional zu 1/T ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Fläche unter dem korrekt dargestellten spektralen Leistungsverlauf entspricht der gesamten emittierten Leistung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Spektrum eines idealen schwarzen Körpers besteht nur aus drei scharfen Linien.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Celsius ist für diese Potenz-/Produktgesetze ungeeignet. B: Es beschreibt λmax∝1/T; die Gesamtleistung folgt T⁴. C: Die Integration über Wellenlänge summiert die spektralen Beiträge. D: Es ist kontinuierlich. Quelle: Originalunterlagen, PDF-S. 7–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Thermische Emission"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Thermische Emission"
+      ],
+      "questionGoal": "Thermische Emission",
+      "structuredExplanation": {
+        "coreIdea": "Thermische Emission",
+        "correctReasoning": "Celsius ist für diese Potenz-/Produktgesetze ungeeignet. Die Integration über Wellenlänge summiert die spektralen Beiträge.",
+        "wrongAnswerExplanations": {
+          "A": "Celsius ist für diese Potenz-/Produktgesetze ungeeignet.",
+          "B": "Es beschreibt λmax∝1/T; die Gesamtleistung folgt T⁴.",
+          "C": "Die Integration über Wellenlänge summiert die spektralen Beiträge.",
+          "D": "Es ist kontinuierlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen bei Erhöhung der absoluten Temperatur.",
+      "options": [
+        {
+          "text": "Das Maximum in der Wellenlängendarstellung verschiebt sich zu kürzerem λ.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die gesamte emittierte Leistung pro gleicher Fläche steigt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die direkt ausgesandte Leistung ist vom Netto-Wärmeaustausch mit einer ebenfalls strahlenden Umgebung zu unterscheiden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine Verschiebung des Maximums bedeutet, dass alle anderen Wellenlängen vollständig fehlen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: λmaxT ist konstant. B: Für den schwarzen Körper gilt σT⁴. C: Die Umgebung kann Energie zurückstrahlen. D: Das kontinuierliche Spektrum bleibt breit. Quelle: Originalunterlagen, PDF-S. 9–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Maxima und Leistung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Maxima und Leistung"
+      ],
+      "questionGoal": "Maxima und Leistung",
+      "structuredExplanation": {
+        "coreIdea": "Maxima und Leistung",
+        "correctReasoning": "λmaxT ist konstant. Für den schwarzen Körper gilt σT⁴. Die Umgebung kann Energie zurückstrahlen.",
+        "wrongAnswerExplanations": {
+          "A": "λmaxT ist konstant.",
+          "B": "Für den schwarzen Körper gilt σT⁴.",
+          "C": "Die Umgebung kann Energie zurückstrahlen.",
+          "D": "Das kontinuierliche Spektrum bleibt breit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zur atmosphärischen Strahlung.",
+      "options": [
+        {
+          "text": "Die UV-Transmission ist unabhängig von Wellenlänge, Sonnenstand und Atmosphäre ein fester universeller Prozentwert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine sichtbare Transparenz eines Gases schliesst IR-Absorption aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Wasserdampf und CO₂ besitzen wichtige IR-Absorptionsbereiche.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Treibhauseffekt verlangt, dass die Atmosphäre jede Wellenlänge vollständig reflektiert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie hängt von Band und Bedingungen ab. B: Verschiedene Wellenlängen koppeln an unterschiedliche Übergänge. C: Diese tragen zur langwelligen atmosphärischen Wechselwirkung bei. D: Absorption und Emission in bestimmten Banden sind zentral. Quelle: Originalunterlagen, PDF-S. 14–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Atmosphäre"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atmosphäre"
+      ],
+      "questionGoal": "Atmosphäre",
+      "structuredExplanation": {
+        "coreIdea": "Atmosphäre",
+        "correctReasoning": "Diese tragen zur langwelligen atmosphärischen Wechselwirkung bei.",
+        "wrongAnswerExplanations": {
+          "A": "Sie hängt von Band und Bedingungen ab.",
+          "B": "Verschiedene Wellenlängen koppeln an unterschiedliche Übergänge.",
+          "C": "Diese tragen zur langwelligen atmosphärischen Wechselwirkung bei.",
+          "D": "Absorption und Emission in bestimmten Banden sind zentral."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zum Beer-Gesetz.",
+      "options": [
+        {
+          "text": "Aus kleinerem µ folgt bei gleichem x grössere Transmission.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "1/µ und ln2/µ bezeichnen dieselbe Strecke.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "µ muss in einer inversen Längeneinheit zur verwendeten Strecke passen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Starke Mehrfachstreuung kann in jeder Geometrie ohne Einschränkung ignoriert werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der negative Exponent hat dann einen kleineren Betrag. B: Die erste ist e-Faltungs-, die zweite Halbwertsdicke. C: Der Exponent µx ist dimensionslos. D: Sie kann das einfache Primärstrahl-/Depositionsmodell unpassend machen. Quelle: Originalunterlagen, PDF-S. 20–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Schwächungsmodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schwächungsmodell"
+      ],
+      "questionGoal": "Schwächungsmodell",
+      "structuredExplanation": {
+        "coreIdea": "Schwächungsmodell",
+        "correctReasoning": "Der negative Exponent hat dann einen kleineren Betrag. Der Exponent µx ist dimensionslos.",
+        "wrongAnswerExplanations": {
+          "A": "Der negative Exponent hat dann einen kleineren Betrag.",
+          "B": "Die erste ist e-Faltungs-, die zweite Halbwertsdicke.",
+          "C": "Der Exponent µx ist dimensionslos.",
+          "D": "Sie kann das einfache Primärstrahl-/Depositionsmodell unpassend machen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zu Wasser und Molekülen.",
+      "options": [
+        {
+          "text": "Die gleiche Materie muss alle Wellenlängen gleich stark absorbieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wasser besitzt im sichtbaren Bereich deutlich schwächere Absorption als in vielen IR-Banden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Rotationsanregung liegt typischerweise energetisch über elektronischer UV-Anregung desselben Moleküls.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Resonanz zwischen Photonenergie und erlaubten Übergängen kann Absorption begünstigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: µ hängt wesentlich von λ ab. B: Der Verlauf ist stark spektral strukturiert. C: Rotations-, Schwingungs- und elektronische Übergänge liegen typischerweise auf aufsteigenden Energieskalen. D: Quantenmechanische Energiedifferenzen prägen Spektren. Quelle: Originalunterlagen, PDF-S. 24–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Wellenlängenabhängigkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wellenlängenabhängigkeit"
+      ],
+      "questionGoal": "Wellenlängenabhängigkeit",
+      "structuredExplanation": {
+        "coreIdea": "Wellenlängenabhängigkeit",
+        "correctReasoning": "Der Verlauf ist stark spektral strukturiert. Quantenmechanische Energiedifferenzen prägen Spektren.",
+        "wrongAnswerExplanations": {
+          "A": "µ hängt wesentlich von λ ab.",
+          "B": "Der Verlauf ist stark spektral strukturiert.",
+          "C": "Rotations-, Schwingungs- und elektronische Übergänge liegen typischerweise auf aufsteigenden Energieskalen.",
+          "D": "Quantenmechanische Energiedifferenzen prägen Spektren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zu molekularer Absorption.",
+      "options": [
+        {
+          "text": "Absorbierte Strahlungsenergie kann über Relaxation in Wärme übergehen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Elektronische Übergänge liegen typischerweise energetisch über vielen Rotationsübergängen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Molekül ohne permanenten Dipol ist in allen Schwingungen IR-inaktiv.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Wassermolekül besitzt ein permanentes Dipolmoment.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nicht jede Anregung wird als gleichartiges Photon wieder emittiert. B: UV/Vis und Mikrowellen betreffen verschiedene typische Skalen. C: Auch eine Schwingung mit sich änderndem Dipolmoment kann IR-aktiv sein. D: Seine gewinkelte polare Struktur führt zu einem Gesamtdipol. Quelle: Originalunterlagen, PDF-S. 26–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Dipol und Übergang"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dipol und Übergang"
+      ],
+      "questionGoal": "Dipol und Übergang",
+      "structuredExplanation": {
+        "coreIdea": "Dipol und Übergang",
+        "correctReasoning": "Nicht jede Anregung wird als gleichartiges Photon wieder emittiert. UV/Vis und Mikrowellen betreffen verschiedene typische Skalen. Seine gewinkelte polare Struktur führt zu einem Gesamtdipol.",
+        "wrongAnswerExplanations": {
+          "A": "Nicht jede Anregung wird als gleichartiges Photon wieder emittiert.",
+          "B": "UV/Vis und Mikrowellen betreffen verschiedene typische Skalen.",
+          "C": "Auch eine Schwingung mit sich änderndem Dipolmoment kann IR-aktiv sein.",
+          "D": "Seine gewinkelte polare Struktur führt zu einem Gesamtdipol."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zur optischen Untersuchung von Gewebe.",
+      "options": [
+        {
+          "text": "Geringe Wasserabsorption allein garantiert unabhängig von Streuung beliebig tiefe scharfe Gewebebilder.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Wahl der Messwellenlänge muss Absorber und Gewebedurchlässigkeit berücksichtigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine einzelne beliebige Absorbanz ohne Kalibration beweist exakt die Sauerstoffsättigung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Oxygeniertes und desoxygeniertes Hämoglobin haben bei jeder Wellenlänge identische Absorption.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Weitere Absorber und Streuung begrenzen die Untersuchung. B: Spektrale Kontraste und Eindringtiefe wirken zusammen. C: Messmodell und mehrere Stör-/Kalibrationsfaktoren sind zu berücksichtigen. D: Ihre Spektren unterscheiden sich und erlauben geeignete spektroskopische Vergleiche. Quelle: Originalunterlagen, PDF-S. 32–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Biologische Absorber"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Biologische Absorber"
+      ],
+      "questionGoal": "Biologische Absorber",
+      "structuredExplanation": {
+        "coreIdea": "Biologische Absorber",
+        "correctReasoning": "Spektrale Kontraste und Eindringtiefe wirken zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Weitere Absorber und Streuung begrenzen die Untersuchung.",
+          "B": "Spektrale Kontraste und Eindringtiefe wirken zusammen.",
+          "C": "Messmodell und mehrere Stör-/Kalibrationsfaktoren sind zu berücksichtigen.",
+          "D": "Ihre Spektren unterscheiden sich und erlauben geeignete spektroskopische Vergleiche."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp11_12_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP11/12",
+      "stem": "Beurteilen Sie die Aussagen zu Strahlungsgrössen.",
+      "options": [
+        {
+          "text": "Verdopplung der Fläche eines schwarzen Körpers verdoppelt bei gleichem T die ausgesandte Leistung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Temperaturverdopplung in °C darf direkt als Faktor zwei in T⁴ eingesetzt werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Transmission von e⁻¹ bedeutet vollständige Absorption.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwei identische Absorberschichten multiplizieren ihre Transmissionsfaktoren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: P=σAT⁴. B: Zuerst muss auf Kelvin umgerechnet werden. C: Etwa 37 % des Primärstrahls verbleiben. D: Die Exponenten addieren sich bei gleichem µ und passendem Modell. Quelle: Originalunterlagen, PDF-S. 10,20–23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP11/12",
+        "Recheninterpretation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Recheninterpretation"
+      ],
+      "questionGoal": "Recheninterpretation",
+      "structuredExplanation": {
+        "coreIdea": "Recheninterpretation",
+        "correctReasoning": "P=σAT⁴. Die Exponenten addieren sich bei gleichem µ und passendem Modell.",
+        "wrongAnswerExplanations": {
+          "A": "P=σAT⁴.",
+          "B": "Zuerst muss auf Kelvin umgerechnet werden.",
+          "C": "Etwa 37 % des Primärstrahls verbleiben.",
+          "D": "Die Exponenten addieren sich bei gleichem µ und passendem Modell."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block1_kvp01_02_20261102",
+  "lectureCode": "KVP01/02",
+  "title": "Grössenverhältnisse, Materiewellen und Atombau",
+  "block": "Block 1",
+  "subject": "Physik",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVP1&2 - Groessenverhaeltnisse. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Bohr-Berechnungen ausdrücklich auf Ein-Elektron-Systeme begrenzt; konventionelle Fernfeld-Auflösung statt pauschaler Grenze jeder modernen Lichtmikroskopie. Aktuelle SI-Definition nach BIPM.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grössenordnungen, Messgrössen und SI-Einheiten korrekt verwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Interferenz, Auflösungsgrenzen und Materiewellen erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Atombau, Bohr-Modell und seine Grenzen verstehen."
+    },
+    {
+      "id": "lo4",
+      "text": "Atomradien und Energieübergänge im Ein-Elektron-Modell berechnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvp01_02_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein Objekt ist 10 µm gross. Welchem Wert in Metern entspricht dies?",
+      "options": [
+        {
+          "text": "1 × 10^−8 m.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "1 × 10^−6 m.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1 × 10^−4 m.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1 × 10^−5 m.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "1 × 10^−2 m.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wären 10 nm. B: Dies ist nur 1 µm. C: Dies wären 100 µm. D: Ein Mikrometer ist 10^−6 m. E: Dies wären 10 mm. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Grössenordnungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grössenordnungen"
+      ],
+      "questionGoal": "Grössenordnungen",
+      "structuredExplanation": {
+        "coreIdea": "Grössenordnungen",
+        "correctReasoning": "Ein Mikrometer ist 10^−6 m.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wären 10 nm.",
+          "B": "Dies ist nur 1 µm.",
+          "C": "Dies wären 100 µm.",
+          "E": "Dies wären 10 mm."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Welche Darstellung des Joules in SI-Basiseinheiten ist korrekt?",
+      "options": [
+        {
+          "text": "kg·m²·s^−2.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "kg·m·s^−1.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "kg·m²·s^−3.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "kg·m·s^−2.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "kg·m^−1·s^−2.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Arbeit ist Kraft mal Weg; Newton entspricht kg·m·s^−2. B: Das ist die Impulseinheit. C: Das ist die Leistungseinheit Watt. D: Das ist die Krafteinheit. E: Das ist die Druckeinheit Pascal. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Abgeleitete Einheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Abgeleitete Einheit"
+      ],
+      "questionGoal": "Abgeleitete Einheit",
+      "structuredExplanation": {
+        "coreIdea": "Abgeleitete Einheit",
+        "correctReasoning": "Arbeit ist Kraft mal Weg; Newton entspricht kg·m·s^−2.",
+        "wrongAnswerExplanations": {
+          "B": "Das ist die Impulseinheit.",
+          "C": "Das ist die Leistungseinheit Watt.",
+          "D": "Das ist die Krafteinheit.",
+          "E": "Das ist die Druckeinheit Pascal."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Weshalb wird das Kilogramm heute über festgelegte Naturkonstanten statt über die Masse eines einzelnen Metallkörpers definiert?",
+      "options": [
+        {
+          "text": "Weil Plancks Konstante jährlich an neue Kilogrammprototypen angepasst werden muss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine solche Definition hängt nicht von langfristigen Veränderungen eines einzelnen Artefakts ab.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Weil ein Kilogramm nun keine Beziehung mehr zu Meter und Sekunde haben darf.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weil Masse seit 2019 dimensionslos ist.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Weil jede Messung seitdem ohne Unsicherheit erfolgt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ihr Zahlenwert ist im SI festgelegt. B: Die Realisierung kann auf die festgelegten Konstanten zurückgeführt werden. C: Die Definition über h verwendet diese Einheiten mit. D: Masse bleibt eine physikalische Basisgrösse. E: Die Definition beseitigt keine Realisierungs- oder Messunsicherheit. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "SI-Definition"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SI-Definition"
+      ],
+      "questionGoal": "SI-Definition",
+      "structuredExplanation": {
+        "coreIdea": "SI-Definition",
+        "correctReasoning": "Die Realisierung kann auf die festgelegten Konstanten zurückgeführt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Ihr Zahlenwert ist im SI festgelegt.",
+          "C": "Die Definition über h verwendet diese Einheiten mit.",
+          "D": "Masse bleibt eine physikalische Basisgrösse.",
+          "E": "Die Definition beseitigt keine Realisierungs- oder Messunsicherheit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Zwei kohärente Wellen gleicher Amplitude und Frequenz treffen mit Phasendifferenz 0 zusammen. Wie gross ist die resultierende Amplitude?",
+      "options": [
+        {
+          "text": "Doppelt so gross wie die einzelne Amplitude.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Viermal so gross.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Unverändert gleich der einzelnen Amplitude.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Hälfte der einzelnen Amplitude.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Null.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Auslenkungen addieren sich gleichphasig. B: Vierfach ist hier die Intensität relativ zu einer Einzelwelle, nicht die Amplitude. C: Beide Beiträge müssen addiert werden. D: Gleichphasige Beiträge verstärken einander. E: Das wäre bei entgegengesetzter Phase möglich. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Konstruktive Interferenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konstruktive Interferenz"
+      ],
+      "questionGoal": "Konstruktive Interferenz",
+      "structuredExplanation": {
+        "coreIdea": "Konstruktive Interferenz",
+        "correctReasoning": "Die Auslenkungen addieren sich gleichphasig.",
+        "wrongAnswerExplanations": {
+          "B": "Vierfach ist hier die Intensität relativ zu einer Einzelwelle, nicht die Amplitude.",
+          "C": "Beide Beiträge müssen addiert werden.",
+          "D": "Gleichphasige Beiträge verstärken einander.",
+          "E": "Das wäre bei entgegengesetzter Phase möglich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Welche Phasendifferenz führt bei zwei gleich starken kohärenten Wellen zur vollständigen lokalen Auslöschung?",
+      "options": [
+        {
+          "text": "0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "4π.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "π beziehungsweise eine halbe Periode.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "2π.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "π/2.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dabei addieren sie sich konstruktiv. B: Das ist ebenfalls eine ganzzahlige Periodendifferenz. C: Die Auslenkungen sind entgegengesetzt. D: Das entspricht derselben Phase wie 0. E: Dabei ist die Überlagerung nicht vollständig gegenphasig. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Destruktive Interferenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Destruktive Interferenz"
+      ],
+      "questionGoal": "Destruktive Interferenz",
+      "structuredExplanation": {
+        "coreIdea": "Destruktive Interferenz",
+        "correctReasoning": "Die Auslenkungen sind entgegengesetzt.",
+        "wrongAnswerExplanations": {
+          "A": "Dabei addieren sie sich konstruktiv.",
+          "B": "Das ist ebenfalls eine ganzzahlige Periodendifferenz.",
+          "D": "Das entspricht derselben Phase wie 0.",
+          "E": "Dabei ist die Überlagerung nicht vollständig gegenphasig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Warum kann man mit einem gewöhnlichen Fernfeld-Lichtmikroskop und sichtbarem Licht nicht beliebig kleine Details getrennt abbilden?",
+      "options": [
+        {
+          "text": "Weil das menschliche Auge keine elektromagnetischen Wellen wahrnimmt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Weil eine beliebig stärkere Vergrösserung jede Beugung beseitigt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Weil sichtbares Licht grundsätzlich keinerlei Interferenz zeigt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beugung erzeugt aus jedem Objektpunkt ein räumlich ausgedehntes Intensitätsmuster.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Weil nur die Gegenstandsgrösse, nie die Wellenlänge relevant ist.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sichtbares Licht ist elektromagnetische Strahlung. B: Vergrösserung allein steigert das Auflösungsvermögen nicht unbegrenzt. C: Beugung und Interferenz sind zentrale Welleneigenschaften. D: Nahe Strukturen können deshalb nicht getrennt werden. E: Die Wellenlänge beeinflusst die erreichbare Auflösung. Quelle: Originalunterlagen, PDF-S. 9–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Auflösungsgrenze"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Auflösungsgrenze"
+      ],
+      "questionGoal": "Auflösungsgrenze",
+      "structuredExplanation": {
+        "coreIdea": "Auflösungsgrenze",
+        "correctReasoning": "Nahe Strukturen können deshalb nicht getrennt werden.",
+        "wrongAnswerExplanations": {
+          "A": "Sichtbares Licht ist elektromagnetische Strahlung.",
+          "B": "Vergrösserung allein steigert das Auflösungsvermögen nicht unbegrenzt.",
+          "C": "Beugung und Interferenz sind zentrale Welleneigenschaften.",
+          "E": "Die Wellenlänge beeinflusst die erreichbare Auflösung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Der Impuls eines Teilchens verdoppelt sich. Wie verändert sich seine de-Broglie-Wellenlänge λ = h/p?",
+      "options": [
+        {
+          "text": "Sie vervierfacht sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie bleibt gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie wird viermal kleiner.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie verdoppelt sich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie halbiert sich.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies folgt nicht aus h/p. B: Der Impuls steht im Nenner. C: Dafür müsste sich der Impuls vervierfachen. D: Das wäre direkte statt inverse Proportionalität. E: Wellenlänge und Impuls sind umgekehrt proportional. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "De-Broglie-Beziehung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "De-Broglie-Beziehung"
+      ],
+      "questionGoal": "De-Broglie-Beziehung",
+      "structuredExplanation": {
+        "coreIdea": "De-Broglie-Beziehung",
+        "correctReasoning": "Wellenlänge und Impuls sind umgekehrt proportional.",
+        "wrongAnswerExplanations": {
+          "A": "Dies folgt nicht aus h/p.",
+          "B": "Der Impuls steht im Nenner.",
+          "C": "Dafür müsste sich der Impuls vervierfachen.",
+          "D": "Das wäre direkte statt inverse Proportionalität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Warum können schnelle Elektronen grundsätzlich kleinere Strukturen zugänglich machen als sichtbares Licht?",
+      "options": [
+        {
+          "text": "Elektronen benötigen für Strukturmessungen grundsätzlich keine Wechselwirkung mit der Probe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ihre Materiewellenlänge kann deutlich kürzer sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Wellenlänge jedes Elektrons ist unabhängig vom Impuls immer 500 nm.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Elektronenmikroskop hat unabhängig von Optik und Probe unbegrenzte Auflösung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Elektronen besitzen definitionsgemäss keine Welleneigenschaften.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Abbildung beruht auf Wechselwirkung und Messung. B: Kurze Wellenlängen erlauben grundsätzlich eine feinere räumliche Auflösung. C: Sie hängt vom Impuls ab. D: Praktische Grenzen bestehen trotz kurzer Wellenlänge. E: Das Interferenzverhalten zeigt das Gegenteil. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Elektronenmikroskopie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Elektronenmikroskopie"
+      ],
+      "questionGoal": "Elektronenmikroskopie",
+      "structuredExplanation": {
+        "coreIdea": "Elektronenmikroskopie",
+        "correctReasoning": "Kurze Wellenlängen erlauben grundsätzlich eine feinere räumliche Auflösung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abbildung beruht auf Wechselwirkung und Messung.",
+          "C": "Sie hängt vom Impuls ab.",
+          "D": "Praktische Grenzen bestehen trotz kurzer Wellenlänge.",
+          "E": "Das Interferenzverhalten zeigt das Gegenteil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q09",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Welcher Bestandteil des Atoms ist für chemische Bindungen besonders unmittelbar relevant?",
+      "options": [
+        {
+          "text": "Die räumliche Grösse eines makroskopischen Kristalls als einzige Atomgrösse.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich die Geschwindigkeit des gesamten Atoms durch den Raum.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur die Kernbindung zwischen Protonen und Neutronen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Konfiguration der Hüllenelektronen, insbesondere der Valenzelektronen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich die Zahl der Neutronen, unabhängig von der Elektronenhülle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Atombau ist davon zu unterscheiden. B: Die innere Elektronenstruktur bleibt zentral. C: Kernbindung erklärt nicht unmittelbar die gewöhnliche Elektronenbindung zwischen Atomen. D: Ihre Struktur bestimmt die Bindungsmöglichkeiten wesentlich mit. E: Isotope besitzen gewöhnlich ähnliche chemische Eigenschaften. Quelle: Originalunterlagen, PDF-S. 7,13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Chemische Eigenschaften"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chemische Eigenschaften"
+      ],
+      "questionGoal": "Chemische Eigenschaften",
+      "structuredExplanation": {
+        "coreIdea": "Chemische Eigenschaften",
+        "correctReasoning": "Ihre Struktur bestimmt die Bindungsmöglichkeiten wesentlich mit.",
+        "wrongAnswerExplanations": {
+          "A": "Der Atombau ist davon zu unterscheiden.",
+          "B": "Die innere Elektronenstruktur bleibt zentral.",
+          "C": "Kernbindung erklärt nicht unmittelbar die gewöhnliche Elektronenbindung zwischen Atomen.",
+          "E": "Isotope besitzen gewöhnlich ähnliche chemische Eigenschaften."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Welche Bedingung wird im Bohr-Modell durch die Vorstellung einer stehenden Elektronenwelle auf einer Kreisbahn dargestellt?",
+      "options": [
+        {
+          "text": "Auf jede Bahn passt stets eine beliebige nicht-ganzzahlige Wellenzahl.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Bahnen müssen unabhängig von n denselben Radius besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Modell enthält bereits sämtliche räumlichen Orbitale der modernen Quantenmechanik.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Elektronenenergie ist auf allen Bahnen identisch.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Bahnumfang ist ein ganzzahliges Vielfaches der Wellenlänge.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dann wäre die Welle nach einem Umlauf nicht passend geschlossen. B: Die erlaubten Radien unterscheiden sich. C: Es ist ein vereinfachtes historisches Modell. D: Verschiedene Zustände haben verschiedene Energien. E: Die Welle passt phasengleich um den Umfang. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Bohr-Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bohr-Modell"
+      ],
+      "questionGoal": "Bohr-Modell",
+      "structuredExplanation": {
+        "coreIdea": "Bohr-Modell",
+        "correctReasoning": "Die Welle passt phasengleich um den Umfang.",
+        "wrongAnswerExplanations": {
+          "A": "Dann wäre die Welle nach einem Umlauf nicht passend geschlossen.",
+          "B": "Die erlaubten Radien unterscheiden sich.",
+          "C": "Es ist ein vereinfachtes historisches Modell.",
+          "D": "Verschiedene Zustände haben verschiedene Energien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Für ein wasserstoffähnliches Ein-Elektron-Ion gilt r_n = a0·n²/Z. Wie gross ist der Radius des Grundzustands von He+ relativ zu dem von H?",
+      "options": [
+        {
+          "text": "Halb so gross.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Gleich gross.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Doppelt so gross.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Viermal so gross.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Viertel so gross.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei n = 1 verdoppelt sich Z von 1 auf 2. B: Die unterschiedliche Kernladung verändert den Radius. C: Die Kernladung steht im Nenner. D: Das n² ist hier für beide Grundzustände gleich 1. E: Das wäre eine Verwechslung mit der Z²-Abhängigkeit der Energie. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Bohr-Radius"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bohr-Radius"
+      ],
+      "questionGoal": "Bohr-Radius",
+      "structuredExplanation": {
+        "coreIdea": "Bohr-Radius",
+        "correctReasoning": "Bei n = 1 verdoppelt sich Z von 1 auf 2.",
+        "wrongAnswerExplanations": {
+          "B": "Die unterschiedliche Kernladung verändert den Radius.",
+          "C": "Die Kernladung steht im Nenner.",
+          "D": "Das n² ist hier für beide Grundzustände gleich 1.",
+          "E": "Das wäre eine Verwechslung mit der Z²-Abhängigkeit der Energie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein Wasserstoffelektron fällt von E2 = −3,4 eV auf E1 = −13,6 eV. Welche Energie trägt das emittierte Photon?",
+      "options": [
+        {
+          "text": "3,4 eV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "10,2 eV.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "13,6 eV.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "17,0 eV.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−10,2 eV.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist der Betrag der Anfangsenergie, nicht die Übergangsdifferenz. B: Die positive abgegebene Energie ist die Differenz zwischen Anfangs- und Endenergie. C: Dies ist die Ionisierungsenergie aus dem Grundzustand. D: Die Beträge werden nicht addiert. E: Die Photonenergie ist positiv; negativ ist die Energieänderung des Atoms. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Photonenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photonenergie"
+      ],
+      "questionGoal": "Photonenergie",
+      "structuredExplanation": {
+        "coreIdea": "Photonenergie",
+        "correctReasoning": "Die positive abgegebene Energie ist die Differenz zwischen Anfangs- und Endenergie.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist der Betrag der Anfangsenergie, nicht die Übergangsdifferenz.",
+          "C": "Dies ist die Ionisierungsenergie aus dem Grundzustand.",
+          "D": "Die Beträge werden nicht addiert.",
+          "E": "Die Photonenergie ist positiv; negativ ist die Energieänderung des Atoms."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein Messprotokoll enthält Längen, Strom und Energie. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Kelvin gehört zu den SI-Basiseinheiten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Messgrösse ist bereits durch den Zahlenwert ohne Einheit immer eindeutig festgelegt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "1 nm entspricht 10^−9 m.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das Ampere ist eine Energieeinheit.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es ist die thermodynamische Temperatureinheit. B: Einheit und gegebenenfalls weitere Bedingungen sind nötig. C: Nano bezeichnet ein Milliardstel. D: Ampere ist die Einheit der Stromstärke. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Einheiten prüfen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Einheiten prüfen"
+      ],
+      "questionGoal": "Einheiten prüfen",
+      "structuredExplanation": {
+        "coreIdea": "Einheiten prüfen",
+        "correctReasoning": "Es ist die thermodynamische Temperatureinheit. Nano bezeichnet ein Milliardstel.",
+        "wrongAnswerExplanations": {
+          "A": "Es ist die thermodynamische Temperatureinheit.",
+          "B": "Einheit und gegebenenfalls weitere Bedingungen sind nötig.",
+          "C": "Nano bezeichnet ein Milliardstel.",
+          "D": "Ampere ist die Einheit der Stromstärke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein Doppelspaltversuch wird mit Elektronen durchgeführt. Welche Aussagen sind angemessen?",
+      "options": [
+        {
+          "text": "Nur Photonen, niemals Elektronen, können Interferenz zeigen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Einzelne registrierte Treffer schliessen Welleneigenschaften aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Teilchen- und Welleneigenschaften sind bei Quantenobjekten vereinbar.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Interferenzmuster ist ein Hinweis auf Welleneigenschaften.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Elektroneninterferenz ist gerade das betrachtete Beispiel. B: Einzelereignisse können gemeinsam ein Interferenzmuster ergeben. C: Es handelt sich nicht um ausschliessende klassische Kategorien. D: Reine klassische Punktbahnen ohne Wellenbeschreibung erklären es nicht. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Wellen und Messung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wellen und Messung"
+      ],
+      "questionGoal": "Wellen und Messung",
+      "structuredExplanation": {
+        "coreIdea": "Wellen und Messung",
+        "correctReasoning": "Es handelt sich nicht um ausschliessende klassische Kategorien. Reine klassische Punktbahnen ohne Wellenbeschreibung erklären es nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Elektroneninterferenz ist gerade das betrachtete Beispiel.",
+          "B": "Einzelereignisse können gemeinsam ein Interferenzmuster ergeben.",
+          "C": "Es handelt sich nicht um ausschliessende klassische Kategorien.",
+          "D": "Reine klassische Punktbahnen ohne Wellenbeschreibung erklären es nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein Messverfahren soll kleinere Details trennen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Makroskopische Alltagsgegenstände haben wegen ihrer Masse überhaupt keine de-Broglie-Wellenlänge.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine kürzere verwendete Wellenlänge kann die Beugungsgrenze verbessern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine grössere Bilddarstellung allein garantiert neue getrennte Details.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei Materiewellen entspricht höherer Impuls kürzerer Wellenlänge.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihre Wellenlänge ist typischerweise nur extrem klein. B: Die räumliche Skala hängt mit der Wellenlänge zusammen. C: Leere Vergrösserung schafft keine zusätzliche Auflösung. D: Dies folgt aus λ = h/p. Quelle: Originalunterlagen, PDF-S. 9,11–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Wellenlänge und Auflösung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Wellenlänge und Auflösung"
+      ],
+      "questionGoal": "Wellenlänge und Auflösung",
+      "structuredExplanation": {
+        "coreIdea": "Wellenlänge und Auflösung",
+        "correctReasoning": "Die räumliche Skala hängt mit der Wellenlänge zusammen. Dies folgt aus λ = h/p.",
+        "wrongAnswerExplanations": {
+          "A": "Ihre Wellenlänge ist typischerweise nur extrem klein.",
+          "B": "Die räumliche Skala hängt mit der Wellenlänge zusammen.",
+          "C": "Leere Vergrösserung schafft keine zusätzliche Auflösung.",
+          "D": "Dies folgt aus λ = h/p."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Eine Skizze zeigt Kern und Elektronenhülle. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Ein neutrales Atom besitzt keinerlei geladene Bestandteile.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Protonen und Neutronen bilden den Atomkern.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Atomkern ist typischerweise grösser als die gesamte Elektronenhülle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Elektronen tragen negative elektrische Ladung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die positiven und negativen Ladungen gleichen sich insgesamt aus. B: Die Elektronen sind Teil der Hülle. C: Der Kern ist im Vergleich zur Atomgrösse sehr klein. D: Ihre Ladung beträgt −e. Quelle: Originalunterlagen, PDF-S. 7,13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Atombau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atombau"
+      ],
+      "questionGoal": "Atombau",
+      "structuredExplanation": {
+        "coreIdea": "Atombau",
+        "correctReasoning": "Die Elektronen sind Teil der Hülle. Ihre Ladung beträgt −e.",
+        "wrongAnswerExplanations": {
+          "A": "Die positiven und negativen Ladungen gleichen sich insgesamt aus.",
+          "B": "Die Elektronen sind Teil der Hülle.",
+          "C": "Der Kern ist im Vergleich zur Atomgrösse sehr klein.",
+          "D": "Ihre Ladung beträgt −e."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Das Bohr-Modell wird zum Verständnis von Spektren benutzt. Welche Aussagen sind angemessen?",
+      "options": [
+        {
+          "text": "Ein Modell kann nützlich sein, obwohl seine Gültigkeit begrenzt ist.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es erklärt diskrete Energieniveaus in einem vereinfachten Ein-Elektron-Modell.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Seine Kreisbahnen sind die vollständige moderne Beschreibung aller Mehrelektronenatome.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein nützliches Modell darf grundsätzlich nicht durch ein genaueres ergänzt werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Grenzen müssen bei der Anwendung beachtet werden. B: Dies ist eine seiner zentralen Leistungen. C: Die Quantenmechanik geht wesentlich darüber hinaus. D: Modelle werden weiterentwickelt und eingeordnet. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Modellgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modellgrenzen"
+      ],
+      "questionGoal": "Modellgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "Modellgrenzen",
+        "correctReasoning": "Grenzen müssen bei der Anwendung beachtet werden. Dies ist eine seiner zentralen Leistungen.",
+        "wrongAnswerExplanations": {
+          "A": "Grenzen müssen bei der Anwendung beachtet werden.",
+          "B": "Dies ist eine seiner zentralen Leistungen.",
+          "C": "Die Quantenmechanik geht wesentlich darüber hinaus.",
+          "D": "Modelle werden weiterentwickelt und eingeordnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Für ein Ein-Elektron-System gelten r_n ∝ n²/Z und E_n = −13,6 eV·Z²/n². Welche Aussagen folgen daraus?",
+      "options": [
+        {
+          "text": "Bei gleichem Z ist der Radius für n = 2 viermal der Radius für n = 1.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Energieabstand zwischen allen benachbarten n-Werten ist gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleichem n macht höheres Z die Bindungsenergie weniger negativ.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei Z = 1 liegt E2 bei −3,4 eV.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das folgt aus n². B: Die 1/n²-Abhängigkeit erzeugt ungleiche Abstände. C: Der Betrag wächst mit Z², der Zustand wird stärker gebunden. D: −13,6 geteilt durch vier ergibt −3,4. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Radius und Energie skalieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Radius und Energie skalieren"
+      ],
+      "questionGoal": "Radius und Energie skalieren",
+      "structuredExplanation": {
+        "coreIdea": "Radius und Energie skalieren",
+        "correctReasoning": "Das folgt aus n². −13,6 geteilt durch vier ergibt −3,4.",
+        "wrongAnswerExplanations": {
+          "A": "Das folgt aus n².",
+          "B": "Die 1/n²-Abhängigkeit erzeugt ungleiche Abstände.",
+          "C": "Der Betrag wächst mit Z², der Zustand wird stärker gebunden.",
+          "D": "−13,6 geteilt durch vier ergibt −3,4."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein angeregtes Atom emittiert Licht. Welche Aussagen passen zum Modell?",
+      "options": [
+        {
+          "text": "Die Photonenergie entspricht einer Energiedifferenz des Atoms.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Diskrete Zustände ermöglichen charakteristische Spektrallinien.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Element muss unter allen Bedingungen exakt dasselbe Linienspektrum wie Wasserstoff haben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Übergang in einen höheren gebundenen Zustand emittiert zwingend die benötigte Energie.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Energie wird beim Zustandswechsel erhalten. B: Nur bestimmte Energiedifferenzen sind möglich. C: Die Zustandsstruktur ist elementspezifisch. D: Eine Anregung benötigt Energieaufnahme. Quelle: Originalunterlagen, PDF-S. 15–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Spektrallinien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spektrallinien"
+      ],
+      "questionGoal": "Spektrallinien",
+      "structuredExplanation": {
+        "coreIdea": "Spektrallinien",
+        "correctReasoning": "Energie wird beim Zustandswechsel erhalten. Nur bestimmte Energiedifferenzen sind möglich.",
+        "wrongAnswerExplanations": {
+          "A": "Energie wird beim Zustandswechsel erhalten.",
+          "B": "Nur bestimmte Energiedifferenzen sind möglich.",
+          "C": "Die Zustandsstruktur ist elementspezifisch.",
+          "D": "Eine Anregung benötigt Energieaufnahme."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvp01_02_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVP01/02",
+      "stem": "Ein biologisches Modell verwendet bewusst vereinfachte Materiebeschreibungen. Welche Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Abstraktion kann Komplexität reduzieren und bestimmte Fragen zugänglich machen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Zahlenwert ohne Grössenordnung oder Einheit reicht zur Prüfung jeder biologischen Plausibilität.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine physikalische Grundlage macht jede höhere Beschreibungsebene überflüssig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Grenzen einer Messmethode sind für die Interpretation ihres Ergebnisses relevant.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Vorlesung betont den Nutzen geeigneter Modelle. B: Dimension und Skala sind wesentlich. C: Für komplexe Systeme bleiben passende Abstraktionen erforderlich. D: Auflösung und Modellannahmen begrenzen Schlussfolgerungen. Quelle: Originalunterlagen, PDF-S. 2,7,14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVP01/02",
+        "Physikalische Grundlagen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Physikalische Grundlagen"
+      ],
+      "questionGoal": "Physikalische Grundlagen",
+      "structuredExplanation": {
+        "coreIdea": "Physikalische Grundlagen",
+        "correctReasoning": "Die Vorlesung betont den Nutzen geeigneter Modelle. Auflösung und Modellannahmen begrenzen Schlussfolgerungen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Vorlesung betont den Nutzen geeigneter Modelle.",
+          "B": "Dimension und Skala sind wesentlich.",
+          "C": "Für komplexe Systeme bleiben passende Abstraktionen erforderlich.",
+          "D": "Auflösung und Modellannahmen begrenzen Schlussfolgerungen."
+        }
+      }
+    }
+  ]
+}

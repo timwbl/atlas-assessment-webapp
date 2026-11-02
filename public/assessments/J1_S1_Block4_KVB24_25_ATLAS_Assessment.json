@@ -1,0 +1,1312 @@
+{
+  "id": "assessment_j1_s1_block4_kvb24_25_20261102",
+  "lectureCode": "KVB24/25",
+  "title": "Rekombinante DNA",
+  "block": "Block 4",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB24&25_Rekombinante DNA _2025_Albrecht. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Klassische Verfahren nach Quelle. cDNA-Bank als gewebespezifische mRNA-Auswahl formuliert, nicht gesamtes Transkriptom inklusive nicht-polyadenylierter RNA. Blau-weiss nur Insert-Kandidaten, kein Identitätsbeweis. Didaktischer Korrekturrun: fachnahe Distraktoren redaktionell überarbeitet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Restriktionsverdau, Ligation, Vektoren und Klonselektion erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Genomische und cDNA-Banken sowie Hybridisierung unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "PCR, RT-PCR und Sanger-Sequenzierung mechanistisch erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Diagnostik, Forensik, Expressionsanalyse und RNAi sinnvoll zuordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b4_kvb24_25_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Was kennzeichnet ein klassisches Typ-II-Restriktionsenzym bei der DNA-Klonierung?",
+      "options": [
+        {
+          "text": "Es entfernt Nucleotide nur vom freien DNA-Ende.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es verknüpft komplementäre DNA-Enden kovalent.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es verlängert einen Primer anhand der Matrize.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es schneidet DNA an einer spezifischen Erkennungssequenz oder in deren Nähe.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Es öffnet ausschliesslich Basenpaare ohne Rückgratschnitt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre eine Exonucleasefunktion. B: Dies übernimmt die Ligase. C: Dies ist eine Polymerasefunktion. D: Die Sequenzspezifität erlaubt reproduzierbare Restriktionsfragmente. E: Dies beschreibt eine Helicase. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Restriktionsenzyme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Restriktionsenzyme"
+      ],
+      "questionGoal": "Restriktionsenzyme",
+      "structuredExplanation": {
+        "coreIdea": "Restriktionsenzyme",
+        "correctReasoning": "Die Sequenzspezifität erlaubt reproduzierbare Restriktionsfragmente.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre eine Exonucleasefunktion.",
+          "B": "Dies übernimmt die Ligase.",
+          "C": "Dies ist eine Polymerasefunktion.",
+          "E": "Dies beschreibt eine Helicase."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Komplementäre klebrige DNA-Enden paaren sich. Was fehlt für ein kovalent geschlossenes Rückgrat?",
+      "options": [
+        {
+          "text": "DNA-Ligase muss Phosphodiesterbindungen zwischen den Enden herstellen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Helicase muss die gepaarten Enden trennen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Primase muss die vorhandenen DNA-Enden durch RNA ersetzen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Polymerase muss die bereits passenden Basen austauschen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Restriktionsenzym muss die geschlossene Stelle erneut schneiden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Basenpaarung allein verschliesst das Zucker-Phosphat-Rückgrat nicht. B: Sie löst Paarung statt das Rückgrat zu schliessen. C: Ein neuer Primer ist für die Endligation nicht nötig. D: Das fehlende Rückgratschliessen übernimmt Ligase. E: Erneutes Schneiden macht die Verbindung wieder auf. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Ligation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ligation"
+      ],
+      "questionGoal": "Ligation",
+      "structuredExplanation": {
+        "coreIdea": "Ligation",
+        "correctReasoning": "Basenpaarung allein verschliesst das Zucker-Phosphat-Rückgrat nicht.",
+        "wrongAnswerExplanations": {
+          "B": "Sie löst Paarung statt das Rückgrat zu schliessen.",
+          "C": "Ein neuer Primer ist für die Endligation nicht nötig.",
+          "D": "Das fehlende Rückgratschliessen übernimmt Ligase.",
+          "E": "Erneutes Schneiden macht die Verbindung wieder auf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Ein Plasmid gelangt in Bakterien und vermittelt Resistenz, geht aber bei weiterer Teilung verloren. Welche fehlende Vektorkomponente erklärt dies am direktesten?",
+      "options": [
+        {
+          "text": "Ein eukaryotischer Promotor für das gewünschte Transgen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein zusätzlicher lacZ-Farbmarker.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein im Wirt funktioneller Replikationsursprung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Polyadenylierungssignal für eukaryotische mRNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein zweiter Selektionsfarbstoff ohne Replikationsfunktion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er ersetzt keinen im Bakterium funktionellen Origin. B: Screening allein gewährleistet keine Replikation. C: Ohne Replikation wird das Plasmid nicht zuverlässig vervielfältigt. D: Dies repliziert keine bakterielle Plasmid-DNA. E: Er behebt die fehlende Vervielfältigung nicht. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Vektorfunktionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vektorfunktionen"
+      ],
+      "questionGoal": "Vektorfunktionen",
+      "structuredExplanation": {
+        "coreIdea": "Vektorfunktionen",
+        "correctReasoning": "Ohne Replikation wird das Plasmid nicht zuverlässig vervielfältigt.",
+        "wrongAnswerExplanations": {
+          "A": "Er ersetzt keinen im Bakterium funktionellen Origin.",
+          "B": "Screening allein gewährleistet keine Replikation.",
+          "D": "Dies repliziert keine bakterielle Plasmid-DNA.",
+          "E": "Er behebt die fehlende Vervielfältigung nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Im beschriebenen lacZ-Screening wachsen auf Ampicillin und X-Gal weisse Kolonien. Was ist die beste erste Interpretation?",
+      "options": [
+        {
+          "text": "Sie enthalten sicher das richtige Insert in korrekter Orientierung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie besitzen sicher keinen resistenztragenden Vektor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ihr lacZ ist intakt und spaltet X-Gal besonders stark.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie beweisen allein bereits ein vollständig sequenzrichtiges Expressionsprodukt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie sind Kandidaten mit einem Insert, das lacZ unterbricht.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Farbe zeigt diese Details nicht. B: Unter wirksamer Selektion spricht Wachstum dagegen. C: Das würde blaue Färbung erwarten lassen. D: Das Screening ersetzt weder Sequenz- noch Funktionsprüfung. E: Resistenz selektiert Plasmidträger; Weiss weist auf unterbrochene Farbreaktion hin. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Blau-Weiss-Screening"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blau-Weiss-Screening"
+      ],
+      "questionGoal": "Blau-Weiss-Screening",
+      "structuredExplanation": {
+        "coreIdea": "Blau-Weiss-Screening",
+        "correctReasoning": "Resistenz selektiert Plasmidträger; Weiss weist auf unterbrochene Farbreaktion hin.",
+        "wrongAnswerExplanations": {
+          "A": "Farbe zeigt diese Details nicht.",
+          "B": "Unter wirksamer Selektion spricht Wachstum dagegen.",
+          "C": "Das würde blaue Färbung erwarten lassen.",
+          "D": "Das Screening ersetzt weder Sequenz- noch Funktionsprüfung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Eine humane Proteinsequenz soll ohne Introns in Bakterien exprimiert werden. Welches Ausgangsmaterial eignet sich besonders?",
+      "options": [
+        {
+          "text": "Das Poly-A-Ende allein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Gemisch nur aus ribosomalen RNAs.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ausschliesslich die Promotor-DNA ohne kodierende Region.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "cDNA aus der reifen mRNA eines exprimierenden Gewebes.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ein zufälliges genomisches Fragment mit allen Introns.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es enthält nicht die kodierende Sequenz. B: Diese kodieren nicht das gesuchte Protein. C: Ein Promotor enthält nicht die vollständige Proteinsequenz. D: Reife mRNA liefert nach reverser Transkription eine intronfreie kodierende Vorlage. E: Bakterien spleissen humane prä-mRNA-Introns gewöhnlich nicht korrekt. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Genbanken"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Genbanken"
+      ],
+      "questionGoal": "Genbanken",
+      "structuredExplanation": {
+        "coreIdea": "Genbanken",
+        "correctReasoning": "Reife mRNA liefert nach reverser Transkription eine intronfreie kodierende Vorlage.",
+        "wrongAnswerExplanations": {
+          "A": "Es enthält nicht die kodierende Sequenz.",
+          "B": "Diese kodieren nicht das gesuchte Protein.",
+          "C": "Ein Promotor enthält nicht die vollständige Proteinsequenz.",
+          "E": "Bakterien spleissen humane prä-mRNA-Introns gewöhnlich nicht korrekt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Kombination erzeugt aus polyadenylierter mRNA zunächst einen komplementären DNA-Strang?",
+      "options": [
+        {
+          "text": "Oligo-dT, DNA-Ligase und dNTPs.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Oligo-dT, RNA-Polymerase und NTPs.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Reverse Transkriptase ohne jeden Primer.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Restriktionsenzym und DNA-Ligase ohne Polymerase.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Oligo-dT-Primer, reverse Transkriptase und dNTPs.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ligase synthetisiert keinen komplementären DNA-Strang. B: Dies stellt keine reverse Transkription bereit. C: Auch diese DNA-Synthese benötigt einen Startprimer. D: Schneiden und Verbinden kopieren die RNA nicht. E: Der Primer paart mit Poly-A; die Polymerase synthetisiert DNA. Quelle: Originalunterlagen, PDF-S. 13–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Reverse Transkription"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reverse Transkription"
+      ],
+      "questionGoal": "Reverse Transkription",
+      "structuredExplanation": {
+        "coreIdea": "Reverse Transkription",
+        "correctReasoning": "Der Primer paart mit Poly-A; die Polymerase synthetisiert DNA.",
+        "wrongAnswerExplanations": {
+          "A": "Ligase synthetisiert keinen komplementären DNA-Strang.",
+          "B": "Dies stellt keine reverse Transkription bereit.",
+          "C": "Auch diese DNA-Synthese benötigt einen Startprimer.",
+          "D": "Schneiden und Verbinden kopieren die RNA nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Abfolge beschreibt einen PCR-Zyklus korrekt?",
+      "options": [
+        {
+          "text": "Primeranlagerung, Denaturierung, Elongation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Denaturierung, Elongation ohne Primer, Ligation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Denaturierung, Primeranlagerung, Elongation.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Denaturierung, Reverse Transkription, Translation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ligation, Primerabbau, Elongation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die erneute Strangtrennung würde die Primerbindung zunächst lösen. B: Die PCR-Polymerase benötigt gebundene Primer. C: Strangtrennung ermöglicht Primerbindung und anschliessende DNA-Synthese. D: Diese Abfolge ist kein DNA-PCR-Zyklus. E: Ligation gehört nicht zum Standardzyklus; Primer werden benötigt. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "PCR-Zyklus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PCR-Zyklus"
+      ],
+      "questionGoal": "PCR-Zyklus",
+      "structuredExplanation": {
+        "coreIdea": "PCR-Zyklus",
+        "correctReasoning": "Strangtrennung ermöglicht Primerbindung und anschliessende DNA-Synthese.",
+        "wrongAnswerExplanations": {
+          "A": "Die erneute Strangtrennung würde die Primerbindung zunächst lösen.",
+          "B": "Die PCR-Polymerase benötigt gebundene Primer.",
+          "D": "Diese Abfolge ist kein DNA-PCR-Zyklus.",
+          "E": "Ligation gehört nicht zum Standardzyklus; Primer werden benötigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Eine ideale PCR startet mit 100 doppelsträngigen Zielmolekülen. Welche Zahl ergibt sich bei vollständiger Verdopplung nach 5 Zyklen?",
+      "options": [
+        {
+          "text": "2500.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "500.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "3200.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "105.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1000.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zyklenzahl wird nicht quadriert. B: Dies nimmt lineare statt exponentielle Zunahme an. C: 100 × 2⁵ ergibt 3200; reale Ausbeuten können geringer sein. D: Pro Zyklus kommt nicht bloss ein Molekül hinzu. E: Fünf Verdopplungen entsprechen dem Faktor 32, nicht 10. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Exponentielle Amplifikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exponentielle Amplifikation"
+      ],
+      "questionGoal": "Exponentielle Amplifikation",
+      "structuredExplanation": {
+        "coreIdea": "Exponentielle Amplifikation",
+        "correctReasoning": "100 × 2⁵ ergibt 3200; reale Ausbeuten können geringer sein.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zyklenzahl wird nicht quadriert.",
+          "B": "Dies nimmt lineare statt exponentielle Zunahme an.",
+          "D": "Pro Zyklus kommt nicht bloss ein Molekül hinzu.",
+          "E": "Fünf Verdopplungen entsprechen dem Faktor 32, nicht 10."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Ein RNA-Virus soll mit einer PCR nachgewiesen werden. Welcher zusätzliche Schritt ist vor der DNA-Amplifikation erforderlich?",
+      "options": [
+        {
+          "text": "Nur Denaturierung der RNA vor DNA-PCR ohne Umschreibung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Umschreibung der RNA in cDNA.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Direkte Ligation der RNA an einen beliebigen DNA-Primer ohne Polymerase.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Translation der viralen RNA vor der Amplifikation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Austausch der DNA-Primer gegen beladene tRNAs.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies erzeugt keine DNA-Matrize. B: Die PCR-DNA-Polymerase benötigt eine DNA-Vorlage. C: Die RNA-Sequenz wird dadurch nicht in DNA kopiert. D: Protein ist keine PCR-Vorlage. E: tRNAs sind kein Ersatz für PCR-Primer und cDNA. Quelle: Originalunterlagen, PDF-S. 13–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "RT-PCR"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RT-PCR"
+      ],
+      "questionGoal": "RT-PCR",
+      "structuredExplanation": {
+        "coreIdea": "RT-PCR",
+        "correctReasoning": "Die PCR-DNA-Polymerase benötigt eine DNA-Vorlage.",
+        "wrongAnswerExplanations": {
+          "A": "Dies erzeugt keine DNA-Matrize.",
+          "C": "Die RNA-Sequenz wird dadurch nicht in DNA kopiert.",
+          "D": "Protein ist keine PCR-Vorlage.",
+          "E": "tRNAs sind kein Ersatz für PCR-Primer und cDNA."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Warum beendet ein eingebautes ddNTP die DNA-Verlängerung?",
+      "options": [
+        {
+          "text": "Ihm fehlt die freie 3′-OH-Gruppe für die nächste Verknüpfung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ihm fehlt ausschliesslich die 2′-OH-Gruppe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es besitzt keine Base für die Paarung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es entfernt den gesamten Primer vom Matrizenstrang.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es blockiert durch einen zusätzlichen Phosphatrest jede Basenpaarung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein weiterer Nucleotideinbau am Kettenende wird dadurch verhindert. B: Auch normale DNA-Bausteine besitzen keine 2′-OH-Gruppe. C: ddNTPs enthalten definierte Basen. D: Es wird am wachsenden Ende eingebaut. E: Der entscheidende Defekt ist das fehlende 3′-OH. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Sanger-Verfahren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sanger-Verfahren"
+      ],
+      "questionGoal": "Sanger-Verfahren",
+      "structuredExplanation": {
+        "coreIdea": "Sanger-Verfahren",
+        "correctReasoning": "Ein weiterer Nucleotideinbau am Kettenende wird dadurch verhindert.",
+        "wrongAnswerExplanations": {
+          "B": "Auch normale DNA-Bausteine besitzen keine 2′-OH-Gruppe.",
+          "C": "ddNTPs enthalten definierte Basen.",
+          "D": "Es wird am wachsenden Ende eingebaut.",
+          "E": "Der entscheidende Defekt ist das fehlende 3′-OH."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Warum eignen sich mehrere variable Tandemrepeat-Loci für einen genetischen Fingerabdruck?",
+      "options": [
+        {
+          "text": "Alle Personen besitzen an jedem Repeat-Locus dieselbe Allellänge.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein einzelner Marker identifiziert jeden Menschen ausnahmslos eindeutig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ihre Allellängen unterscheiden sich zwischen Menschen und werden vererbt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Repeat-Längen ändern sich nach jeder Zellteilung vollständig zufällig.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Kinder übernehmen an autosomalen Markern ausschliesslich die mütterlichen Allele.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gerade die Längenvariabilität ist nützlich. B: Mehrere Marker erhöhen die Unterscheidungskraft. C: Das kombinierte Muster ist dadurch stark individualisierend. D: Die Marker müssen ausreichend stabil und vererbbar sein. E: Gewöhnlich tragen beide Eltern ein Allel bei. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Forensische Marker"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Forensische Marker"
+      ],
+      "questionGoal": "Forensische Marker",
+      "structuredExplanation": {
+        "coreIdea": "Forensische Marker",
+        "correctReasoning": "Das kombinierte Muster ist dadurch stark individualisierend.",
+        "wrongAnswerExplanations": {
+          "A": "Gerade die Längenvariabilität ist nützlich.",
+          "B": "Mehrere Marker erhöhen die Unterscheidungskraft.",
+          "D": "Die Marker müssen ausreichend stabil und vererbbar sein.",
+          "E": "Gewöhnlich tragen beide Eltern ein Allel bei."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Was misst ein klassischer Expressions-Microarray mit markierter cDNA am unmittelbarsten?",
+      "options": [
+        {
+          "text": "Die vollständige katalytische Aktivität jedes Enzyms.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Reihenfolge aller Basen jedes Chromosoms.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Relative Häufigkeiten komplementärer Transkripte in den untersuchten Proben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die exakte Zahl aktiver Ribosomen pro mRNA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die räumliche Faltung aller Proteine.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: mRNA-Mengen erlauben keine direkte Aktivitätsmessung. B: Ein Expressionsarray ist keine vollständige Genomsequenzierung. C: Die aus mRNA erzeugte cDNA hybridisiert an passende Sonden. D: Transkripthäufigkeit ist keine Ribosomenbelegung. E: Hybridisierung misst keine Proteinstruktur. Quelle: Originalunterlagen, PDF-S. 27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Expressions-Microarray"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Expressions-Microarray"
+      ],
+      "questionGoal": "Expressions-Microarray",
+      "structuredExplanation": {
+        "coreIdea": "Expressions-Microarray",
+        "correctReasoning": "Die aus mRNA erzeugte cDNA hybridisiert an passende Sonden.",
+        "wrongAnswerExplanations": {
+          "A": "mRNA-Mengen erlauben keine direkte Aktivitätsmessung.",
+          "B": "Ein Expressionsarray ist keine vollständige Genomsequenzierung.",
+          "D": "Transkripthäufigkeit ist keine Ribosomenbelegung.",
+          "E": "Hybridisierung misst keine Proteinstruktur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zu Restriktion und Vektoren treffen zu?",
+      "options": [
+        {
+          "text": "Basenpaarung kohäsiver Enden verschliesst bereits alle Phosphodiesterbindungen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Antibiotikaresistenz allein beweist das Vorliegen des gewünschten Inserts.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jedes Restriktionsenzym erzeugt klebrige Enden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Selektionsmarker unterscheidet unter geeigneten Bedingungen transformierte von nichttransformierten Zellen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dafür wird eine Ligationsreaktion benötigt. B: Auch ein leerer Vektor kann den Marker tragen. C: Es gibt auch Enzyme, die glatte Enden erzeugen. D: Ein Resistenzgen ermöglicht beispielsweise Wachstum auf passendem Antibiotikum. Quelle: Originalunterlagen, PDF-S. 4–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Klonierwerkzeuge"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Klonierwerkzeuge"
+      ],
+      "questionGoal": "Klonierwerkzeuge",
+      "structuredExplanation": {
+        "coreIdea": "Klonierwerkzeuge",
+        "correctReasoning": "Ein Resistenzgen ermöglicht beispielsweise Wachstum auf passendem Antibiotikum.",
+        "wrongAnswerExplanations": {
+          "A": "Dafür wird eine Ligationsreaktion benötigt.",
+          "B": "Auch ein leerer Vektor kann den Marker tragen.",
+          "C": "Es gibt auch Enzyme, die glatte Enden erzeugen.",
+          "D": "Ein Resistenzgen ermöglicht beispielsweise Wachstum auf passendem Antibiotikum."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zu genomischen und cDNA-Banken treffen zu?",
+      "options": [
+        {
+          "text": "Eine genomische Bank ist grundsätzlich nicht auf gerade exprimierte Gene beschränkt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine cDNA-Bank bildet automatisch jede regulatorische Genomregion ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine genomische Bank kann Introns und intergenische Regionen enthalten.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Zusammensetzung einer cDNA-Bank hängt vom Gewebe und dessen Expressionszustand ab.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie wird aus genomischer DNA hergestellt. B: Nichttranskribierte Promotorbereiche sind gewöhnlich nicht enthalten. C: Sie stammt aus genomischer DNA. D: Nur vorhandene Transkripte liefern cDNA-Vorlagen. Quelle: Originalunterlagen, PDF-S. 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Bankvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bankvergleich"
+      ],
+      "questionGoal": "Bankvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Bankvergleich",
+        "correctReasoning": "Sie wird aus genomischer DNA hergestellt. Sie stammt aus genomischer DNA. Nur vorhandene Transkripte liefern cDNA-Vorlagen.",
+        "wrongAnswerExplanations": {
+          "A": "Sie wird aus genomischer DNA hergestellt.",
+          "B": "Nichttranskribierte Promotorbereiche sind gewöhnlich nicht enthalten.",
+          "C": "Sie stammt aus genomischer DNA.",
+          "D": "Nur vorhandene Transkripte liefern cDNA-Vorlagen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zur Hybridisierung treffen zu?",
+      "options": [
+        {
+          "text": "Northern-Blotting kann bestimmte RNA nachweisen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "In-situ-Hybridisierung erfordert, dass jede Zelle vorher als Bakterienkolonie wächst.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Southern-Blotting dient definitionsgemäss dem Protein-Nachweis.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine geeignete Sonde bindet sequenzkomplementäre Nukleinsäure.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine komplementäre Sonde erkennt das RNA-Ziel. B: Sie kann Nukleinsäure direkt in Zellen oder Geweben lokalisieren. C: Klassisch weist es DNA nach; Proteine werden per Western-Blot untersucht. D: Basenpaarung bildet die Grundlage des Nachweises. Quelle: Originalunterlagen, PDF-S. 15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Hybridisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hybridisierung"
+      ],
+      "questionGoal": "Hybridisierung",
+      "structuredExplanation": {
+        "coreIdea": "Hybridisierung",
+        "correctReasoning": "Eine komplementäre Sonde erkennt das RNA-Ziel. Basenpaarung bildet die Grundlage des Nachweises.",
+        "wrongAnswerExplanations": {
+          "A": "Eine komplementäre Sonde erkennt das RNA-Ziel.",
+          "B": "Sie kann Nukleinsäure direkt in Zellen oder Geweben lokalisieren.",
+          "C": "Klassisch weist es DNA nach; Proteine werden per Western-Blot untersucht.",
+          "D": "Basenpaarung bildet die Grundlage des Nachweises."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zur PCR treffen zu?",
+      "options": [
+        {
+          "text": "Die Orientierung und Lage zweier Primer legen die amplifizierte Zielregion fest.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Negativkontrolle ohne Vorlage hilft, Kontamination der Reagenzien zu erkennen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein positives Signal beweist ohne Kontrollen immer eine echte Infektion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine DNA-Polymerase ersetzt die Primer grundsätzlich durch de-novo-Initiation.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide müssen zur Zielsequenz passend ausgerichtet sein. B: Eine Amplifikation darin ist ein Warnsignal. C: Kontamination und andere Fehler müssen berücksichtigt werden. D: PCR-DNA-Polymerasen verlängern vorhandene Primer. Quelle: Originalunterlagen, PDF-S. 17–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "PCR-Spezifität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PCR-Spezifität"
+      ],
+      "questionGoal": "PCR-Spezifität",
+      "structuredExplanation": {
+        "coreIdea": "PCR-Spezifität",
+        "correctReasoning": "Beide müssen zur Zielsequenz passend ausgerichtet sein. Eine Amplifikation darin ist ein Warnsignal.",
+        "wrongAnswerExplanations": {
+          "A": "Beide müssen zur Zielsequenz passend ausgerichtet sein.",
+          "B": "Eine Amplifikation darin ist ein Warnsignal.",
+          "C": "Kontamination und andere Fehler müssen berücksichtigt werden.",
+          "D": "PCR-DNA-Polymerasen verlängern vorhandene Primer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zur Sanger-Sequenzierung treffen zu?",
+      "options": [
+        {
+          "text": "Nach Grössentrennung liefern die Endbasen die Sequenz des neu synthetisierten Strangs.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "ddNTPs verlängern den Strang besonders schnell über das Kettenende hinaus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Reaktion enthält normale dNTPs und einen kleineren Anteil von Kettenabbrechern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Sequenz des neu synthetisierten Strangs ist stets identisch zur Matrize in gleicher Leserichtung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Vom kürzesten zum längsten Produkt liest man dessen 5′→3′-Folge. B: Ihr Einbau beendet die Verlängerung. C: Dadurch entstehen verschieden lange Produkte. D: Sie ist komplementär und antiparallel zur Matrize. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Sequenzierprodukte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sequenzierprodukte"
+      ],
+      "questionGoal": "Sequenzierprodukte",
+      "structuredExplanation": {
+        "coreIdea": "Sequenzierprodukte",
+        "correctReasoning": "Vom kürzesten zum längsten Produkt liest man dessen 5′→3′-Folge. Dadurch entstehen verschieden lange Produkte.",
+        "wrongAnswerExplanations": {
+          "A": "Vom kürzesten zum längsten Produkt liest man dessen 5′→3′-Folge.",
+          "B": "Ihr Einbau beendet die Verlängerung.",
+          "C": "Dadurch entstehen verschieden lange Produkte.",
+          "D": "Sie ist komplementär und antiparallel zur Matrize."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zu PCR und Fragmentanalyse treffen zu?",
+      "options": [
+        {
+          "text": "Ein Kind erhält an einem autosomalen Marker beide Allele ausschliesslich vom Vater.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehrere unabhängige Marker erhöhen die Aussagekraft eines Abstammungsvergleichs.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede Punktmutation muss die PCR-Produktlänge verändern.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Mutation kann eine Restriktionsstelle erzeugen oder beseitigen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im üblichen diploiden Fall stammt je eines von jedem Elternteil. B: Zufällige Übereinstimmungen werden dadurch weniger wahrscheinlich. C: Viele Basenaustausche ändern die Länge nicht. D: Dadurch ändert sich nach Verdau das Fragmentmuster. Quelle: Originalunterlagen, PDF-S. 19–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Diagnostische Interpretation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diagnostische Interpretation"
+      ],
+      "questionGoal": "Diagnostische Interpretation",
+      "structuredExplanation": {
+        "coreIdea": "Diagnostische Interpretation",
+        "correctReasoning": "Zufällige Übereinstimmungen werden dadurch weniger wahrscheinlich. Dadurch ändert sich nach Verdau das Fragmentmuster.",
+        "wrongAnswerExplanations": {
+          "A": "Im üblichen diploiden Fall stammt je eines von jedem Elternteil.",
+          "B": "Zufällige Übereinstimmungen werden dadurch weniger wahrscheinlich.",
+          "C": "Viele Basenaustausche ändern die Länge nicht.",
+          "D": "Dadurch ändert sich nach Verdau das Fragmentmuster."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Aussagen zur RNA-Interferenz treffen zu?",
+      "options": [
+        {
+          "text": "Ein Knock-down ist definitionsgemäss eine vollständige Deletion des genomischen Gens.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine passende kleine RNA kann RISC zur Ziel-mRNA führen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Verminderte Zielproteinbildung kann Hinweise auf die Genfunktion liefern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Eine siRNA erkennt ihr Ziel gewöhnlich durch Bindung an die Aminosäuresequenz des Proteins.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er bezeichnet eine verminderte Expression, keine notwendige DNA-Deletion. B: Sequenzkomplementarität vermittelt die Zielerkennung. C: Der resultierende Phänotyp muss dennoch kritisch interpretiert werden. D: Die Zielsteuerung erfolgt über Nukleinsäurekomplementarität. Quelle: Originalunterlagen, PDF-S. 25–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "RNAi als Werkzeug"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "RNAi als Werkzeug"
+      ],
+      "questionGoal": "RNAi als Werkzeug",
+      "structuredExplanation": {
+        "coreIdea": "RNAi als Werkzeug",
+        "correctReasoning": "Sequenzkomplementarität vermittelt die Zielerkennung. Der resultierende Phänotyp muss dennoch kritisch interpretiert werden.",
+        "wrongAnswerExplanations": {
+          "A": "Er bezeichnet eine verminderte Expression, keine notwendige DNA-Deletion.",
+          "B": "Sequenzkomplementarität vermittelt die Zielerkennung.",
+          "C": "Der resultierende Phänotyp muss dennoch kritisch interpretiert werden.",
+          "D": "Die Zielsteuerung erfolgt über Nukleinsäurekomplementarität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b4_kvb24_25_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block4",
+      "lectureId": "KVB24/25",
+      "stem": "Welche Zuordnungen von Methode und Zweck treffen zu?",
+      "options": [
+        {
+          "text": "RT und cDNA: Untersuchung RNA-basierter Genexpression mit DNA-Verfahren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sanger-Sequenzierung: direkte Basenfolge allein aus zufälligen Restriktionsfragmenten ohne spezifische Kettenabbrüche.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Plasmidklonierung: Vermehrung eines DNA-Fragments in Wirtszellen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Blau-Weiss-Screening: sichere Bestimmung sämtlicher Basen des Inserts.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Umschreibung stellt DNA als Arbeitsmaterial bereit. B: Die Sanger-Methode liest gezielt erzeugte Kettenabbruchprodukte und ist von reiner Restriktionsmusteranalyse zu unterscheiden. C: Das Insert wird mit dem geeigneten Vektor vervielfältigt. D: Es ist ein Vorab-Screening, keine Sequenzierung. Quelle: Originalunterlagen, PDF-S. 8–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 4",
+        "KVB24/25",
+        "Methodenwahl"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Methodenwahl"
+      ],
+      "questionGoal": "Methodenwahl",
+      "structuredExplanation": {
+        "coreIdea": "Methodenwahl",
+        "correctReasoning": "Die Umschreibung stellt DNA als Arbeitsmaterial bereit. Das Insert wird mit dem geeigneten Vektor vervielfältigt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Umschreibung stellt DNA als Arbeitsmaterial bereit.",
+          "B": "Die Sanger-Methode liest gezielt erzeugte Kettenabbruchprodukte und ist von reiner Restriktionsmusteranalyse zu unterscheiden.",
+          "C": "Das Insert wird mit dem geeigneten Vektor vervielfältigt.",
+          "D": "Es ist ein Vorab-Screening, keine Sequenzierung."
+        }
+      }
+    }
+  ]
+}

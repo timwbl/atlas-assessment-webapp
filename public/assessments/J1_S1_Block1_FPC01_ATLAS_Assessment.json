@@ -1,0 +1,1324 @@
+{
+  "id": "assessment_j1_s1_block1_fpc01_20261102",
+  "lectureCode": "FPC01",
+  "title": "Stereochemie am Modell",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. FPC - Fachpraktikum Chemie; EVC1 FP Modellbau (FPC1). 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Seitenangaben in den Erklärungen beziehen sich auf die PDF-Paginierung des Fachpraktikum-Skripts (35 Seiten), nicht auf dessen gedruckte Seitenzahlen. Ergänzend Einführungsvorlesung EVC. Nur Theorie, Versuchsinterpretation und Auswertung; keine persönlichen Testate oder Organisationsfragen. Haworth-oben/unten-Aussagen sind ausdrücklich auf die übliche D-Glucose-Projektion begrenzt. Die praktischen Galactose-Aufgaben aus dem FPC-Skript sind zusätzlich zum Glucose-Fokus der EVC berücksichtigt; kein universelles 64:36-Verhältnis unabhängig von Temperatur behauptet.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Glycerinaldehyd, Galactose und Glucose im Modell und in Strukturprojektionen analysieren und funktionelle Gruppen erkennen."
+    },
+    {
+      "id": "lo2",
+      "text": "Stereozentren identifizieren und anhand der CIP-Regeln absolute Konfigurationen zuordnen."
+    },
+    {
+      "id": "lo3",
+      "text": "Fischerprojektionen interpretieren und D/L von R/S und optischer Drehrichtung unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Die Bildung von Glucopyranose, α/β-Anomerie und Ringkonformationen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpc01_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Offenkettiger Glycerinaldehyd hat die Struktur CHO–CH(OH)–CH₂OH. Welche Zuordnung der stereogenen Kohlenstoffatome ist richtig?",
+      "options": [
+        {
+          "text": "Nur C2 ist ein Stereozentrum.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "C1 und C2 sind Stereozentren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle drei C-Atome sind Stereozentren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur C3 ist ein Stereozentrum.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur C1 ist ein Stereozentrum.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: C2 trägt H, OH, CHO und CH₂OH; dies sind vier verschiedene Substituenten. B: C2 ist stereogen, das Carbonyl-C1 dagegen nicht. C: Vier verschiedene Substituenten liegen nur an C2 vor. D: C3 trägt zwei identische H-Atome und ist nicht stereogen. E: Das trigonal-planare Aldehyd-C1 ist kein tetraedrisches Stereozentrum. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Stereozentren des Glycerinaldehyds"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stereozentren des Glycerinaldehyds"
+      ],
+      "questionGoal": "Stereozentren des Glycerinaldehyds",
+      "structuredExplanation": {
+        "coreIdea": "Stereozentren des Glycerinaldehyds",
+        "correctReasoning": "C2 trägt H, OH, CHO und CH₂OH; dies sind vier verschiedene Substituenten.",
+        "wrongAnswerExplanations": {
+          "B": "C2 ist stereogen, das Carbonyl-C1 dagegen nicht.",
+          "C": "Vier verschiedene Substituenten liegen nur an C2 vor.",
+          "D": "C3 trägt zwei identische H-Atome und ist nicht stereogen.",
+          "E": "Das trigonal-planare Aldehyd-C1 ist kein tetraedrisches Stereozentrum."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Eine Fischerprojektion zeigt CHO oben, CH₂OH unten, OH rechts und H links am einzigen Stereozentrum des Glycerinaldehyds. Wie ist sie zu interpretieren?",
+      "options": [
+        {
+          "text": "L-Glycerinaldehyd; vertikale Bindungen zeigen nach vorne.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein achirales Molekül, weil die Darstellung zweidimensional ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "L-Glycerinaldehyd; horizontale Bindungen zeigen nach vorne.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "D-Glycerinaldehyd; horizontale Bindungen zeigen nach vorne.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "D-Glycerinaldehyd; horizontale Bindungen zeigen nach hinten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: OH rechts entspricht D, und vertikale Bindungen zeigen nach hinten. B: Eine Projektion bewahrt die Stereoinformation des räumlichen Moleküls. C: Die Bindungsrichtung stimmt, OH rechts definiert jedoch D. D: Die OH-Gruppe rechts definiert hier D; horizontale Bindungen zeigen zum Betrachter. E: Die D-Zuordnung stimmt, die horizontale Bindungsrichtung ist umgekehrt. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Fischerprojektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fischerprojektion"
+      ],
+      "questionGoal": "Fischerprojektion",
+      "structuredExplanation": {
+        "coreIdea": "Fischerprojektion",
+        "correctReasoning": "Die OH-Gruppe rechts definiert hier D; horizontale Bindungen zeigen zum Betrachter.",
+        "wrongAnswerExplanations": {
+          "A": "OH rechts entspricht D, und vertikale Bindungen zeigen nach hinten.",
+          "B": "Eine Projektion bewahrt die Stereoinformation des räumlichen Moleküls.",
+          "C": "Die Bindungsrichtung stimmt, OH rechts definiert jedoch D.",
+          "E": "Die D-Zuordnung stimmt, die horizontale Bindungsrichtung ist umgekehrt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Welche CIP-Reihenfolge gilt am C2 von CHO–CH(OH)–CH₂OH für OH, H, CHO und CH₂OH?",
+      "options": [
+        {
+          "text": "CHO > OH > CH₂OH > H.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "CH₂OH > CHO > OH > H.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "OH > CHO > H > CH₂OH.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "OH > CHO > CH₂OH > H.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "OH > CH₂OH > CHO > H.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zuerst zählt das direkt gebundene Atom; O der OH-Gruppe hat Vorrang vor C. B: Die Länge eines Rests ersetzt nicht den Vergleich nach Ordnungszahlen. C: H hat die niedrigste Ordnungszahl und die niedrigste Priorität. D: O besitzt vor C und H die höchste Ordnungszahl; beim Vergleich der C-Reste zählt CHO als O,O,H gegenüber O,H,H. E: Die Doppelbindung des CHO-Rests wird durch duplizierte O-Atome berücksichtigt. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "CIP-Prioritäten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CIP-Prioritäten"
+      ],
+      "questionGoal": "CIP-Prioritäten",
+      "structuredExplanation": {
+        "coreIdea": "CIP-Prioritäten",
+        "correctReasoning": "O besitzt vor C und H die höchste Ordnungszahl; beim Vergleich der C-Reste zählt CHO als O,O,H gegenüber O,H,H.",
+        "wrongAnswerExplanations": {
+          "A": "Zuerst zählt das direkt gebundene Atom; O der OH-Gruppe hat Vorrang vor C.",
+          "B": "Die Länge eines Rests ersetzt nicht den Vergleich nach Ordnungszahlen.",
+          "C": "H hat die niedrigste Ordnungszahl und die niedrigste Priorität.",
+          "E": "Die Doppelbindung des CHO-Rests wird durch duplizierte O-Atome berücksichtigt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Die niedrigste CIP-Priorität 4 zeigt an einem Modell vom Betrachter weg. Die Folge 1→2→3 verläuft im Uhrzeigersinn. Welche Konfiguration folgt?",
+      "options": [
+        {
+          "text": "S.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "D.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "L.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "R.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine positive optische Drehung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: S ergibt sich bei Priorität 4 hinten aus dem Gegenuhrzeigersinn. B: D/L wird über eine Referenzkonfiguration und eine geeignete Projektion bestimmt. C: Aus dem CIP-Drehsinn folgt R/S, kein allgemeiner L-Deskriptor. D: Bei nach hinten gerichteter Priorität 4 ergibt der Uhrzeigersinn R. E: Die gemessene Drehrichtung ist nicht aus R/S allgemein ableitbar. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "R/S-Zuordnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "R/S-Zuordnung"
+      ],
+      "questionGoal": "R/S-Zuordnung",
+      "structuredExplanation": {
+        "coreIdea": "R/S-Zuordnung",
+        "correctReasoning": "Bei nach hinten gerichteter Priorität 4 ergibt der Uhrzeigersinn R.",
+        "wrongAnswerExplanations": {
+          "A": "S ergibt sich bei Priorität 4 hinten aus dem Gegenuhrzeigersinn.",
+          "B": "D/L wird über eine Referenzkonfiguration und eine geeignete Projektion bestimmt.",
+          "C": "Aus dem CIP-Drehsinn folgt R/S, kein allgemeiner L-Deskriptor.",
+          "E": "Die gemessene Drehrichtung ist nicht aus R/S allgemein ableitbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q05",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "In einer Fischerprojektion eines Moleküls mit einem Stereozentrum werden genau zwei Substituenten einmal vertauscht. Was ist die Folge?",
+      "options": [
+        {
+          "text": "Aus dem Aldehyd entsteht durch den Austausch ein Keton.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es entsteht lediglich ein Rotamer derselben Konfiguration.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Konfiguration bleibt wie bei einer Drehung der Projektion um 180° erhalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Konfiguration des Stereozentrums wird invertiert.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Konfiguration geht nur bei einem chiralen Lösungsmittel verloren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Änderung der Stereokonfiguration verändert die funktionelle Gruppe nicht. B: Eine Konformationsänderung invertiert ein festgehaltenes tetraedrisches Stereozentrum nicht. C: Eine 180°-Drehung entspricht einer geraden Zahl von Vertauschungen, ein einzelner Austausch nicht. D: Ein einzelner Austausch zweier Substituenten kehrt die räumliche Händigkeit um. E: Die geometrische Inversion betrifft bereits das Molekülmodell. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Vertauschen in Fischerprojektionen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vertauschen in Fischerprojektionen"
+      ],
+      "questionGoal": "Vertauschen in Fischerprojektionen",
+      "structuredExplanation": {
+        "coreIdea": "Vertauschen in Fischerprojektionen",
+        "correctReasoning": "Ein einzelner Austausch zweier Substituenten kehrt die räumliche Händigkeit um.",
+        "wrongAnswerExplanations": {
+          "A": "Die Änderung der Stereokonfiguration verändert die funktionelle Gruppe nicht.",
+          "B": "Eine Konformationsänderung invertiert ein festgehaltenes tetraedrisches Stereozentrum nicht.",
+          "C": "Eine 180°-Drehung entspricht einer geraden Zahl von Vertauschungen, ein einzelner Austausch nicht.",
+          "E": "Die geometrische Inversion betrifft bereits das Molekülmodell."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Bei offenkettiger Glucose in konventioneller Fischerprojektion steht CHO an C1 oben. Welche OH-Gruppe entscheidet über D oder L?",
+      "options": [
+        {
+          "text": "Die OH-Gruppe an C6.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die OH-Gruppe an C3.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die OH-Gruppe an C4.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die OH-Gruppe an C2.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die OH-Gruppe an C5.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: C6 ist CH₂OH und kein Stereozentrum. B: Die Lage an C3 allein bestimmt D/L bei Glucose nicht. C: C5 liegt weiter vom Carbonyl-C1 entfernt. D: C2 ist nicht das massgebende endständige Stereozentrum für die D/L-Zuordnung. E: C5 ist das vom höchst oxidierten C1 am weitesten entfernte Stereozentrum. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "D-Glucose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "D-Glucose"
+      ],
+      "questionGoal": "D-Glucose",
+      "structuredExplanation": {
+        "coreIdea": "D-Glucose",
+        "correctReasoning": "C5 ist das vom höchst oxidierten C1 am weitesten entfernte Stereozentrum.",
+        "wrongAnswerExplanations": {
+          "A": "C6 ist CH₂OH und kein Stereozentrum.",
+          "B": "Die Lage an C3 allein bestimmt D/L bei Glucose nicht.",
+          "C": "C5 liegt weiter vom Carbonyl-C1 entfernt.",
+          "D": "C2 ist nicht das massgebende endständige Stereozentrum für die D/L-Zuordnung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Wie viele tetraedrische Stereozentren besitzt die offenkettige D-Glucose?",
+      "options": [
+        {
+          "text": "Sechs: C1 bis C6.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Fünf: C2 bis C6.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Fünf: C1 bis C5.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vier: C2, C3, C4 und C5.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Drei: C2, C3 und C4.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sowohl die Carbonylgruppe als auch CH₂OH müssen gesondert betrachtet werden. B: Das terminale CH₂OH-C6 ist nicht stereogen. C: Das Aldehyd-C1 ist in der offenen Form noch nicht tetraedrisch. D: C1 ist trigonal-planar, C6 trägt zwei H; C2 bis C5 haben verschiedene Substituenten. E: Auch C5 trägt vier verschiedene Substituenten. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Lineare Aldohexose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lineare Aldohexose"
+      ],
+      "questionGoal": "Lineare Aldohexose",
+      "structuredExplanation": {
+        "coreIdea": "Lineare Aldohexose",
+        "correctReasoning": "C1 ist trigonal-planar, C6 trägt zwei H; C2 bis C5 haben verschiedene Substituenten.",
+        "wrongAnswerExplanations": {
+          "A": "Sowohl die Carbonylgruppe als auch CH₂OH müssen gesondert betrachtet werden.",
+          "B": "Das terminale CH₂OH-C6 ist nicht stereogen.",
+          "C": "Das Aldehyd-C1 ist in der offenen Form noch nicht tetraedrisch.",
+          "E": "Auch C5 trägt vier verschiedene Substituenten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Welche intramolekulare Reaktion bildet aus offenkettiger D-Glucose die übliche Glucopyranose?",
+      "options": [
+        {
+          "text": "Zwei Glucosemoleküle kondensieren zum Pyranosering.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "C1 und C6 bilden eine neue direkte C–C-Bindung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die OH-Gruppe an C6 verestert die Aldehydgruppe an C1.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die OH-Gruppe an C2 bildet eine Amidbindung mit C1.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die OH-Gruppe an C5 addiert an die Aldehydgruppe an C1.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Ringabschluss erfolgt innerhalb eines Glucosemoleküls. B: Der Ring wird über eine C–O-Bindung geschlossen. C: Glucopyranose ist ein Halbacetal, kein Ester; der Ring-O stammt von der C5-OH-Gruppe. D: Glucose enthält dafür keine Aminogruppe; es entsteht keine Amidbindung. E: Es entsteht ein sechsgliedriges cyclisches Halbacetal aus fünf C-Atomen und einem O-Atom. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Halbacetalbildung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Halbacetalbildung"
+      ],
+      "questionGoal": "Halbacetalbildung",
+      "structuredExplanation": {
+        "coreIdea": "Halbacetalbildung",
+        "correctReasoning": "Es entsteht ein sechsgliedriges cyclisches Halbacetal aus fünf C-Atomen und einem O-Atom.",
+        "wrongAnswerExplanations": {
+          "A": "Der Ringabschluss erfolgt innerhalb eines Glucosemoleküls.",
+          "B": "Der Ring wird über eine C–O-Bindung geschlossen.",
+          "C": "Glucopyranose ist ein Halbacetal, kein Ester; der Ring-O stammt von der C5-OH-Gruppe.",
+          "D": "Glucose enthält dafür keine Aminogruppe; es entsteht keine Amidbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Worin unterscheiden sich α- und β-D-Glucopyranose bei festgehaltener übriger Konfiguration?",
+      "options": [
+        {
+          "text": "In einem Austausch von Aldehyd- und Ketongruppe.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "In der Konfiguration am neu gebildeten C1.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur in einer Drehung um die exocyclische C5–C6-Bindung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "In der Anzahl der C-Atome des Moleküls.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "In der Konfiguration aller bisherigen Stereozentren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Beide Ringformen sind von derselben Aldose abgeleitete Halbacetale. B: C1 ist das anomere Zentrum; die beiden Formen sind Anomere. C: Anomerie ist ein Konfigurationsunterschied am C1. D: Beide Anomere besitzen dieselbe Summenformel und Konnektivität. E: Die Konfigurationen an C2 bis C5 bleiben erhalten. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Anomerie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anomerie"
+      ],
+      "questionGoal": "Anomerie",
+      "structuredExplanation": {
+        "coreIdea": "Anomerie",
+        "correctReasoning": "C1 ist das anomere Zentrum; die beiden Formen sind Anomere.",
+        "wrongAnswerExplanations": {
+          "A": "Beide Ringformen sind von derselben Aldose abgeleitete Halbacetale.",
+          "C": "Anomerie ist ein Konfigurationsunterschied am C1.",
+          "D": "Beide Anomere besitzen dieselbe Summenformel und Konnektivität.",
+          "E": "Die Konfigurationen an C2 bis C5 bleiben erhalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "In der üblichen Haworthprojektion von D-Glucopyranose zeigt CH₂OH an C5 nach oben. Woran erkennt man das β-Anomer?",
+      "options": [
+        {
+          "text": "Die anomere OH-Gruppe zeigt nach unten.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Ringform muss eine Wannenkonformation besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die anomere OH-Gruppe zeigt ebenfalls nach oben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die OH-Gruppe an C2 zeigt nach oben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Ringsauerstoff wird durch eine CH₂-Gruppe ersetzt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Bei der vorgegebenen D-Projektion kennzeichnet dies α. B: α/β bezeichnet Konfiguration und legt keine Wannenform fest. C: Bei β liegt die anomere OH-Gruppe auf derselben Ringseite wie der Referenz-CH₂OH-Rest. D: Die α/β-Zuordnung wird am anomeren C1 getroffen, nicht an C2. E: Das würde die Konnektivität verändern und kein Glucoseanomer ergeben. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "α/β in Haworth"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "α/β in Haworth"
+      ],
+      "questionGoal": "α/β in Haworth",
+      "structuredExplanation": {
+        "coreIdea": "α/β in Haworth",
+        "correctReasoning": "Bei β liegt die anomere OH-Gruppe auf derselben Ringseite wie der Referenz-CH₂OH-Rest.",
+        "wrongAnswerExplanations": {
+          "A": "Bei der vorgegebenen D-Projektion kennzeichnet dies α.",
+          "B": "α/β bezeichnet Konfiguration und legt keine Wannenform fest.",
+          "D": "Die α/β-Zuordnung wird am anomeren C1 getroffen, nicht an C2.",
+          "E": "Das würde die Konnektivität verändern und kein Glucoseanomer ergeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Was geschieht bei der Sessel-Sessel-Inversion von Glucopyranose ohne Ringöffnung?",
+      "options": [
+        {
+          "text": "D-Glucose wird zu L-Glucose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Axiale und äquatoriale Positionen wechseln, die Konfiguration bleibt erhalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Alle Substituenten wechseln von oben nach unten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der sechsgliedrige Ring wird zu einer offenkettigen Aldose.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das α-Anomer wird zwangsläufig zum β-Anomer.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die bestehenden Stereozentren werden durch den Ringflip nicht invertiert. B: Ein Ringflip ändert die Konformation; oben/unten und α/β bleiben erhalten. C: Oben/unten bleibt erhalten; nur axial/äquatorial wechselt. D: Bei der beschriebenen Inversion bleiben die Ringbindungen bestehen. E: Die Anomerisierung erfordert eine Änderung der Konfiguration an C1, keine blosse Ringinversion. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Ringinversion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ringinversion"
+      ],
+      "questionGoal": "Ringinversion",
+      "structuredExplanation": {
+        "coreIdea": "Ringinversion",
+        "correctReasoning": "Ein Ringflip ändert die Konformation; oben/unten und α/β bleiben erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Die bestehenden Stereozentren werden durch den Ringflip nicht invertiert.",
+          "C": "Oben/unten bleibt erhalten; nur axial/äquatorial wechselt.",
+          "D": "Bei der beschriebenen Inversion bleiben die Ringbindungen bestehen.",
+          "E": "Die Anomerisierung erfordert eine Änderung der Konfiguration an C1, keine blosse Ringinversion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Weshalb kann sich in Wasser das Verhältnis von α- und β-D-Glucose verändern?",
+      "options": [
+        {
+          "text": "Die Halbacetal-Ringöffnung ermöglicht über die offene Form einen erneuten Ringschluss.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die β-Form wird durch permanente Reduktion des Aldehyds gebildet.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Ring verliert bei jedem Umlauf ein C-Atom.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die C5–C6-Einfachbindung rotiert und invertiert dadurch C1.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "D-Glucose wird ständig vollständig zu L-Glucose racemisiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der erneute Ringschluss kann beide Konfigurationen an C1 erzeugen. B: Der reversible Ringschluss ist keine Nettoreduktion zu einem Zuckeralkohol. C: Die Summenformel bleibt bei der Anomerisierung unverändert. D: Eine entfernte Einfachbindungsrotation verändert die Konfiguration an C1 nicht. E: Mutarotation betrifft die Anomere bei erhaltener D-Konfiguration. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Mutarotation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mutarotation"
+      ],
+      "questionGoal": "Mutarotation",
+      "structuredExplanation": {
+        "coreIdea": "Mutarotation",
+        "correctReasoning": "Der erneute Ringschluss kann beide Konfigurationen an C1 erzeugen.",
+        "wrongAnswerExplanations": {
+          "B": "Der reversible Ringschluss ist keine Nettoreduktion zu einem Zuckeralkohol.",
+          "C": "Die Summenformel bleibt bei der Anomerisierung unverändert.",
+          "D": "Eine entfernte Einfachbindungsrotation verändert die Konfiguration an C1 nicht.",
+          "E": "Mutarotation betrifft die Anomere bei erhaltener D-Konfiguration."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zur stereochemischen Modellanalyse.",
+      "options": [
+        {
+          "text": "Jedes sp³-hybridisierte C-Atom ist ein Stereozentrum.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Farbe einer Modellkugel legt die absolute Konfiguration fest.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein tetraedrisches C mit vier verschiedenen Substituenten kann ein Stereozentrum sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Doppelbindungs-C des Aldehyds ist trigonal-planar.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zwei gleiche Substituenten, etwa an CH₂OH, schliessen diese Form der Stereogenität aus. B: Die Farbe codiert das Element, die räumliche Anordnung bestimmt R/S. C: Die vier verschiedenen Reste erzeugen zwei nicht deckungsgleiche räumliche Anordnungen. D: An diesem C liegen drei Bindungsrichtungen in einer Ebene. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Stereochemisches Modell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stereochemisches Modell"
+      ],
+      "questionGoal": "Stereochemisches Modell",
+      "structuredExplanation": {
+        "coreIdea": "Stereochemisches Modell",
+        "correctReasoning": "Die vier verschiedenen Reste erzeugen zwei nicht deckungsgleiche räumliche Anordnungen. An diesem C liegen drei Bindungsrichtungen in einer Ebene.",
+        "wrongAnswerExplanations": {
+          "A": "Zwei gleiche Substituenten, etwa an CH₂OH, schliessen diese Form der Stereogenität aus.",
+          "B": "Die Farbe codiert das Element, die räumliche Anordnung bestimmt R/S.",
+          "C": "Die vier verschiedenen Reste erzeugen zwei nicht deckungsgleiche räumliche Anordnungen.",
+          "D": "An diesem C liegen drei Bindungsrichtungen in einer Ebene."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zu CIP und Fischerprojektionen.",
+      "options": [
+        {
+          "text": "Eine Drehung der ganzen Fischerprojektion in der Papierebene um 180° bewahrt die Konfiguration.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Vertikale Fischerbindungen weisen vom Betrachter weg.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei gleicher erster Atomart wird entlang der Reste bis zum ersten Unterschied verglichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei Priorität 4 nach vorne darf der abgelesene Drehsinn unverändert übernommen werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine 180°-Drehung entspricht einer geraden Permutation. B: Dies ist Teil der Projektionskonvention. C: CIP vergleicht geordnete Atomumgebungen, nicht bloss die Gesamtgrösse des Rests. D: Dann muss der vorläufige R/S-Befund invertiert werden. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "CIP und Projektion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "CIP und Projektion"
+      ],
+      "questionGoal": "CIP und Projektion",
+      "structuredExplanation": {
+        "coreIdea": "CIP und Projektion",
+        "correctReasoning": "Eine 180°-Drehung entspricht einer geraden Permutation. Dies ist Teil der Projektionskonvention. CIP vergleicht geordnete Atomumgebungen, nicht bloss die Gesamtgrösse des Rests.",
+        "wrongAnswerExplanations": {
+          "A": "Eine 180°-Drehung entspricht einer geraden Permutation.",
+          "B": "Dies ist Teil der Projektionskonvention.",
+          "C": "CIP vergleicht geordnete Atomumgebungen, nicht bloss die Gesamtgrösse des Rests.",
+          "D": "Dann muss der vorläufige R/S-Befund invertiert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zur D/L-Nomenklatur.",
+      "options": [
+        {
+          "text": "D- und L-Glucose sind bei gleicher Konnektivität Enantiomere.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Aus D folgt, dass jedes Stereozentrum R-konfiguriert ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Rotation um eine Einfachbindung wandelt D- in L-Glucose um.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "D bedeutet bei jedem Molekül rechtsdrehend.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sämtliche Stereozentren sind spiegelbildlich konfiguriert. B: D/L kennzeichnet nicht pauschal alle einzelnen Zentren. C: Konformationsänderungen invertieren die Konfiguration nicht. D: D/L bezeichnet eine Referenzkonfiguration; (+)/(−) eine gemessene optische Drehung. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "D/L und Drehrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "D/L und Drehrichtung"
+      ],
+      "questionGoal": "D/L und Drehrichtung",
+      "structuredExplanation": {
+        "coreIdea": "D/L und Drehrichtung",
+        "correctReasoning": "Sämtliche Stereozentren sind spiegelbildlich konfiguriert.",
+        "wrongAnswerExplanations": {
+          "A": "Sämtliche Stereozentren sind spiegelbildlich konfiguriert.",
+          "B": "D/L kennzeichnet nicht pauschal alle einzelnen Zentren.",
+          "C": "Konformationsänderungen invertieren die Konfiguration nicht.",
+          "D": "D/L bezeichnet eine Referenzkonfiguration; (+)/(−) eine gemessene optische Drehung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zum Glucopyranose-Ringabschluss.",
+      "options": [
+        {
+          "text": "Der Pyranosering enthält sechs C-Atome.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Ringsauerstoff stammt von der angreifenden OH-Gruppe.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die offene Aldehydgruppe ist nach Ringbildung als Halbacetal gebunden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das anomere C1 trägt im Halbacetal zwei OR-Gruppen und keine OH-Gruppe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der sechsgliedrige Ring enthält fünf C und ein O. B: Der Sauerstoff der C5-OH-Gruppe wird Teil des Pyranoserings. C: Das Aldehyd-C1 ist nun tetraedrisch und besitzt eine OH- und eine O-Ringbindung. D: Ein Halbacetal trägt am betreffenden C eine OH- und eine OR-Gruppe. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Cyclisches Halbacetal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cyclisches Halbacetal"
+      ],
+      "questionGoal": "Cyclisches Halbacetal",
+      "structuredExplanation": {
+        "coreIdea": "Cyclisches Halbacetal",
+        "correctReasoning": "Der Sauerstoff der C5-OH-Gruppe wird Teil des Pyranoserings. Das Aldehyd-C1 ist nun tetraedrisch und besitzt eine OH- und eine O-Ringbindung.",
+        "wrongAnswerExplanations": {
+          "A": "Der sechsgliedrige Ring enthält fünf C und ein O.",
+          "B": "Der Sauerstoff der C5-OH-Gruppe wird Teil des Pyranoserings.",
+          "C": "Das Aldehyd-C1 ist nun tetraedrisch und besitzt eine OH- und eine O-Ringbindung.",
+          "D": "Ein Halbacetal trägt am betreffenden C eine OH- und eine OR-Gruppe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zu Glucose-Ringformen.",
+      "options": [
+        {
+          "text": "Ein Wechsel zwischen Sesselkonformationen erhält die Bindungsverknüpfung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "α- und β-D-Glucopyranose sind Diastereomere.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein axialer Substituent ist in jedem Fall nach oben gerichtet.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Haworthzeichnung beweist, dass der reale Sechsring vollkommen planar ist.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er verändert die räumliche Konformation ohne chemischen Bindungsumbau. B: Sie unterscheiden sich an genau einem, dem anomeren, Stereozentrum. C: Axiale Positionen wechseln am Ring zwischen oben und unten. D: Haworth ist eine schematische Projektion; der reale Ring ist gefaltet. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Anomer und Konformation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anomer und Konformation"
+      ],
+      "questionGoal": "Anomer und Konformation",
+      "structuredExplanation": {
+        "coreIdea": "Anomer und Konformation",
+        "correctReasoning": "Er verändert die räumliche Konformation ohne chemischen Bindungsumbau. Sie unterscheiden sich an genau einem, dem anomeren, Stereozentrum.",
+        "wrongAnswerExplanations": {
+          "A": "Er verändert die räumliche Konformation ohne chemischen Bindungsumbau.",
+          "B": "Sie unterscheiden sich an genau einem, dem anomeren, Stereozentrum.",
+          "C": "Axiale Positionen wechseln am Ring zwischen oben und unten.",
+          "D": "Haworth ist eine schematische Projektion; der reale Ring ist gefaltet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zu offenkettigen Aldohexosen.",
+      "options": [
+        {
+          "text": "Glucose und Galactose haben dieselbe Summenformel.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "D-Glucose und D-Galactose sind Enantiomere.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die offene Glucose besitzt eine Aldehydgruppe und mehrere Alkoholgruppen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die D/L-Zuordnung beider Aldohexosen richtet sich nach C5.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Beide sind Aldohexosen der Formel C₆H₁₂O₆. B: Sie sind C4-Epimere und damit Diastereomere. C: Diese Gruppen erlauben unter anderem die intramolekulare Halbacetalbildung. D: C5 ist jeweils das höchstnummerierte Stereozentrum. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Glucose und Galactose"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glucose und Galactose"
+      ],
+      "questionGoal": "Glucose und Galactose",
+      "structuredExplanation": {
+        "coreIdea": "Glucose und Galactose",
+        "correctReasoning": "Beide sind Aldohexosen der Formel C₆H₁₂O₆. Diese Gruppen erlauben unter anderem die intramolekulare Halbacetalbildung. C5 ist jeweils das höchstnummerierte Stereozentrum.",
+        "wrongAnswerExplanations": {
+          "A": "Beide sind Aldohexosen der Formel C₆H₁₂O₆.",
+          "B": "Sie sind C4-Epimere und damit Diastereomere.",
+          "C": "Diese Gruppen erlauben unter anderem die intramolekulare Halbacetalbildung.",
+          "D": "C5 ist jeweils das höchstnummerierte Stereozentrum."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die Aussagen zu funktionellen Gruppen.",
+      "options": [
+        {
+          "text": "Die Ringform der Glucose entsteht durch Bildung eines Carbonsäureesters.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei der Glucose-Ringbildung wird eine Peptidbindung erzeugt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Ether und ein Aldehyd enthalten dieselbe funktionelle Gruppe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Acetal unterscheidet sich vom Halbacetal durch eine zweite OR-Gruppe am betreffenden C.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es entsteht ein cyclisches Halbacetal aus Aldehyd und Alkohol. B: Eine Peptidbindung wäre eine Amidbindung und kommt hier nicht zustande. C: Ein Ether besitzt C–O–C, ein Aldehyd eine endständige Carbonylgruppe. D: Dabei fehlt dort die freie Halbacetal-OH-Gruppe. Quelle: Originalunterlagen, PDF-S. 7,33–34.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Funktionelle Gruppen am Zucker"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Funktionelle Gruppen am Zucker"
+      ],
+      "questionGoal": "Funktionelle Gruppen am Zucker",
+      "structuredExplanation": {
+        "coreIdea": "Funktionelle Gruppen am Zucker",
+        "correctReasoning": "Dabei fehlt dort die freie Halbacetal-OH-Gruppe.",
+        "wrongAnswerExplanations": {
+          "A": "Es entsteht ein cyclisches Halbacetal aus Aldehyd und Alkohol.",
+          "B": "Eine Peptidbindung wäre eine Amidbindung und kommt hier nicht zustande.",
+          "C": "Ein Ether besitzt C–O–C, ein Aldehyd eine endständige Carbonylgruppe.",
+          "D": "Dabei fehlt dort die freie Halbacetal-OH-Gruppe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc01_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC01",
+      "stem": "Beurteilen Sie die folgenden Kontrollen eines Glucosemodells. Die R/S-Angabe bezieht sich ausdrücklich auf die offene Glucoseform.",
+      "options": [
+        {
+          "text": "Offene D-Glucose mit OH rechts–links–rechts–rechts an C2–C5 besitzt die Konfiguration 2R,3S,4R,5R.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die offene und die cyclische Glucoseform besitzen dieselbe Gesamtzahl an C-Atomen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei der Bezeichnung eines D-Zuckers müssen alle OH-Gruppen in der Fischerprojektion rechts stehen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zum Wechsel von α nach β genügt ein Ringflip ohne Änderung an C1.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die CIP-Bewertung erfolgt an jedem Zentrum einzeln; die offene Form hat vier Stereozentren. Die D-Zuordnung allein ersetzt diese Einzelbewertung nicht. B: Der intramolekulare Ringabschluss entfernt kein C-Atom. C: Nur die Referenz-OH-Gruppe am höchstnummerierten Stereozentrum entscheidet über D/L. D: α/β erfordert einen Konfigurationswechsel am anomeren Zentrum. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC01",
+        "Modellkontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modellkontrolle"
+      ],
+      "questionGoal": "Modellkontrolle",
+      "structuredExplanation": {
+        "coreIdea": "Modellkontrolle",
+        "correctReasoning": "Die CIP-Bewertung erfolgt an jedem Zentrum einzeln; die offene Form hat vier Stereozentren. Die D-Zuordnung allein ersetzt diese Einzelbewertung nicht. Der intramolekulare Ringabschluss entfernt kein C-Atom.",
+        "wrongAnswerExplanations": {
+          "A": "Die CIP-Bewertung erfolgt an jedem Zentrum einzeln; die offene Form hat vier Stereozentren. Die D-Zuordnung allein ersetzt diese Einzelbewertung nicht.",
+          "B": "Der intramolekulare Ringabschluss entfernt kein C-Atom.",
+          "C": "Nur die Referenz-OH-Gruppe am höchstnummerierten Stereozentrum entscheidet über D/L.",
+          "D": "α/β erfordert einen Konfigurationswechsel am anomeren Zentrum."
+        }
+      }
+    }
+  ]
+}

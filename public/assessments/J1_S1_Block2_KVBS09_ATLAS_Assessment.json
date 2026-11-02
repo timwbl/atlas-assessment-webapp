@@ -1,0 +1,1319 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs09_20261102",
+  "lectureCode": "KVBS09",
+  "title": "Bias, Confounding und kausale Interpretation",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS09 - Wie kommt es zu falschen Studienergebnissen?. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Klinikvergleich als methodisches Folienbeispiel, keine Therapieempfehlung. Randomisierung im Erwartungswert, nicht garantierte perfekte Balance. Matching und Restriktion kontrollieren nicht pauschal alle Störfaktoren. S.4 enthält einen Titel-/Biasartenfehler, der nicht übernommen wird.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Selektions-, Informations- und Zufallsfehler unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Confounding anhand konkreter Vergleichsgruppen erkennen."
+    },
+    {
+      "id": "lo3",
+      "text": "Stratifizierte und adjustierte Vergleiche interpretieren."
+    },
+    {
+      "id": "lo4",
+      "text": "Randomisierung, Matching und Restriktion als Designmassnahmen beurteilen."
+    },
+    {
+      "id": "lo5",
+      "text": "Interne Gültigkeit und Grenzen kausaler Schlüsse erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs09_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "An einer Gesundheitsumfrage nehmen vor allem Personen mit Beschwerden teil. Welches Problem betrifft unmittelbar die geschätzte Beschwerdeprävalenz?",
+      "options": [
+        {
+          "text": "Recall Bias als alleinige Erklärung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Reiner Rechenfehler",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Zufällige Streuung ohne systematische Komponente",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beobachterbias als alleinige Erklärung",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Selektionsbias",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das beschriebene Problem betrifft die Auswahl, nicht die Erinnerung. B: Die Verzerrung kann trotz korrekter Rechnung bestehen. C: Beschwerdeabhängige Teilnahme kann systematisch verzerren. D: Eine unterschiedliche Bewertung wurde nicht beschrieben. E: Die Teilnahme hängt mit dem untersuchten Merkmal zusammen. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Selektionsbias"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektionsbias"
+      ],
+      "questionGoal": "Selektionsbias",
+      "structuredExplanation": {
+        "coreIdea": "Selektionsbias",
+        "correctReasoning": "Die Teilnahme hängt mit dem untersuchten Merkmal zusammen.",
+        "wrongAnswerExplanations": {
+          "A": "Das beschriebene Problem betrifft die Auswahl, nicht die Erinnerung.",
+          "B": "Die Verzerrung kann trotz korrekter Rechnung bestehen.",
+          "C": "Beschwerdeabhängige Teilnahme kann systematisch verzerren.",
+          "D": "Eine unterschiedliche Bewertung wurde nicht beschrieben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Fälle erinnern frühere Medikamenteneinnahmen genauer als Kontrollen. Welcher Mechanismus liegt am nächsten?",
+      "options": [
+        {
+          "text": "Randomisierung",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Restriktion",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Differenzielle Expositionserfassung durch Erinnerungsbias",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ökologischer Fehlschluss",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Zufällige Ausgangsgruppenbalance",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es wird keine Exposition zufällig zugeteilt. B: Die Aufnahmekriterien wurden nicht eingeschränkt. C: Die Messqualität hängt vom Erkrankungsstatus ab. D: Hier werden individuelle Angaben, keine Gruppenmittel übertragen. E: Der Mechanismus betrifft die rückblickende Information. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Recall Bias"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Recall Bias"
+      ],
+      "questionGoal": "Recall Bias",
+      "structuredExplanation": {
+        "coreIdea": "Recall Bias",
+        "correctReasoning": "Die Messqualität hängt vom Erkrankungsstatus ab.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird keine Exposition zufällig zugeteilt.",
+          "B": "Die Aufnahmekriterien wurden nicht eingeschränkt.",
+          "D": "Hier werden individuelle Angaben, keine Gruppenmittel übertragen.",
+          "E": "Der Mechanismus betrifft die rückblickende Information."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «systematische Messfehler und Zufallsvariation».",
+      "options": [
+        {
+          "text": "Jede beobachtete Abweichung ist zwingend Confounding.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zufällige Stichprobenvariation kann auch ohne Bias auftreten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine grössere Stichprobe beseitigt eine konstante Fehlkalibrierung automatisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine konstante Fehlkalibrierung wird durch beliebig grosse Stichproben automatisch beseitigt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Auswahl, Messung und Zufall können Abweichungen verursachen. B: Ein unverzerrtes Verfahren liefert nicht in jeder Stichprobe denselben Wert. C: Mehr Daten korrigieren den systematischen Fehler nicht. D: Mehr Beobachtungen beseitigen keinen konstanten systematischen Messfehler. Quelle: Originalunterlagen, PDF-S. 2–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Systematische und zufällige Fehler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Systematische und zufällige Fehler"
+      ],
+      "questionGoal": "Systematische und zufällige Fehler",
+      "structuredExplanation": {
+        "coreIdea": "Systematische und zufällige Fehler",
+        "correctReasoning": "Ein unverzerrtes Verfahren liefert nicht in jeder Stichprobe denselben Wert.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Auswahl, Messung und Zufall können Abweichungen verursachen.",
+          "B": "Ein unverzerrtes Verfahren liefert nicht in jeder Stichprobe denselben Wert.",
+          "C": "Mehr Daten korrigieren den systematischen Fehler nicht.",
+          "D": "Mehr Beobachtungen beseitigen keinen konstanten systematischen Messfehler."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Eine Untersucherin kennt den Expositionsstatus und bewertet einen subjektiven Endpunkt bei Exponierten strenger. Welche Massnahme setzt am direktesten am Mechanismus an?",
+      "options": [
+        {
+          "text": "Nur die Stichprobe vergrössern",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Expositionsgruppen nach dem Ergebnis umbenennen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Verblindete standardisierte Endpunktbewertung",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur kleinere p-Werte berichten",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Mehr bekannte Erkrankte rekrutieren",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies verhindert keine systematisch unterschiedliche Bewertung. B: Die ursprüngliche Bewertung bleibt verzerrt. C: Sie vermindert die statusabhängige Beurteilung. D: Die Messverzerrung wird dadurch nicht korrigiert. E: Dies beseitigt den Beurteilungsmechanismus nicht. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Beobachterbias"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Beobachterbias"
+      ],
+      "questionGoal": "Beobachterbias",
+      "structuredExplanation": {
+        "coreIdea": "Beobachterbias",
+        "correctReasoning": "Sie vermindert die statusabhängige Beurteilung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies verhindert keine systematisch unterschiedliche Bewertung.",
+          "B": "Die ursprüngliche Bewertung bleibt verzerrt.",
+          "D": "Die Messverzerrung wird dadurch nicht korrigiert.",
+          "E": "Dies beseitigt den Beurteilungsmechanismus nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "In einem hypothetischen Datensatz rauchen Kaffeetrinkende häufiger. Rauchen erhöht unabhängig das Erkrankungsrisiko. Welcher Schluss ist für eine rohe Kaffee-Erkrankungs-Assoziation angemessen?",
+      "options": [
+        {
+          "text": "Sie beweist einen kausalen Kaffeeschaden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie könnte durch Rauchen konfundiert sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Rauchen muss ein Messfehler sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mehr Personen würden die Konfundierung zwingend aufheben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Assoziation muss exakt null sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der gemeinsame Faktor ist noch nicht berücksichtigt. B: Ein mit Exposition und Erkrankung zusammenhängender Ausgangsfaktor kann den Rohvergleich verzerren. C: Es ist hier ein realer möglicher Störfaktor. D: Systematische Gruppenunterschiede können bestehen bleiben. E: Die Richtung und Stärke folgen nicht allein aus der Beschreibung. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Confounding erkennen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Confounding erkennen"
+      ],
+      "questionGoal": "Confounding erkennen",
+      "structuredExplanation": {
+        "coreIdea": "Confounding erkennen",
+        "correctReasoning": "Ein mit Exposition und Erkrankung zusammenhängender Ausgangsfaktor kann den Rohvergleich verzerren.",
+        "wrongAnswerExplanations": {
+          "A": "Der gemeinsame Faktor ist noch nicht berücksichtigt.",
+          "C": "Es ist hier ein realer möglicher Störfaktor.",
+          "D": "Systematische Gruppenunterschiede können bestehen bleiben.",
+          "E": "Die Richtung und Stärke folgen nicht allein aus der Beschreibung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q06",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Zum Thema «Confounding und vermittelnde Variablen»: Beurteilen Sie die Aussagen zum einfachen Confounding-Modell.",
+      "options": [
+        {
+          "text": "Die blosse Messung eines möglichen Confounders entfernt seinen Einfluss noch nicht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Vergleichsgruppen können unterschiedliche Ausgangsrisiken besitzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede nach Exposition auftretende vermittelnde Variable ist automatisch ein Ausgangsconfounder.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Auch eine statistisch signifikante Assoziation kann konfundiert sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Design oder Analyse müssen ihn passend berücksichtigen. B: Ein prognostischer Unterschied kann den Expositionsvergleich vermischen. C: Ein Mediator ist von einem gemeinsamen vorausgehenden Störfaktor zu unterscheiden. D: Der p-Wert kontrolliert nicht automatisch die Vergleichbarkeit der Gruppen. Quelle: Originalunterlagen, PDF-S. 9–10,24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Confounder und Mechanismus"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Confounder und Mechanismus"
+      ],
+      "questionGoal": "Confounder und Mechanismus",
+      "structuredExplanation": {
+        "coreIdea": "Confounder und Mechanismus",
+        "correctReasoning": "Design oder Analyse müssen ihn passend berücksichtigen. Ein prognostischer Unterschied kann den Expositionsvergleich vermischen. Der p-Wert kontrolliert nicht automatisch die Vergleichbarkeit der Gruppen.",
+        "wrongAnswerExplanations": {
+          "A": "Design oder Analyse müssen ihn passend berücksichtigen.",
+          "B": "Ein prognostischer Unterschied kann den Expositionsvergleich vermischen.",
+          "C": "Ein Mediator ist von einem gemeinsamen vorausgehenden Störfaktor zu unterscheiden.",
+          "D": "Der p-Wert kontrolliert nicht automatisch die Vergleichbarkeit der Gruppen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Klinik A: 40 Todesfälle unter 800 Personen. Klinik B: 81 unter 800. Wie gross ist das rohe RR für B gegenüber A?",
+      "options": [
+        {
+          "text": "5",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,05125",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,494",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1,0125",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2,025",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Prozentzahl des Risikos in A. B: Dies ist die absolute Risikodifferenz. C: Dies ist das umgekehrte Verhältnis. D: Das Risiko von B wurde falsch skaliert. E: 0,10125/0,05 = 2,025. Quelle: Originalunterlagen, PDF-S. 11–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Roher Klinikvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Roher Klinikvergleich"
+      ],
+      "questionGoal": "Roher Klinikvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Roher Klinikvergleich",
+        "correctReasoning": "0,10125/0,05 = 2,025.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Prozentzahl des Risikos in A.",
+          "B": "Dies ist die absolute Risikodifferenz.",
+          "C": "Dies ist das umgekehrte Verhältnis.",
+          "D": "Das Risiko von B wurde falsch skaliert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q08",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "In jeder nach Alter, Geschlecht und Schweregrad gebildeten Gruppe sind die Risiken beider Kliniken gleich, im Gesamtvergleich aber verschieden. Was erklärt dies im Folienbeispiel?",
+      "options": [
+        {
+          "text": "Die Gleichheit beweist universelle Gleichwertigkeit aller Therapien.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Division von Todesfällen durch Personen ist generell unzulässig.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Unterschiedliche Anteile der Risikogruppen in den Kliniken",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das rohe RR muss durch einen Rundungsfehler entstanden sein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Innerhalb gleicher Risikogruppen muss Klinik B doppelt so gefährlich sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Schluss ist auf die analysierten Daten und Annahmen begrenzt. B: Sie liefert ein korrektes Gruppenrisiko, aber keine ausreichende Adjustierung. C: Gleiche stratumsspezifische Risiken können unterschiedlich gewichtete Gesamtrisiken ergeben. D: Ein echter Kompositionseffekt genügt. E: Dies widerspricht den angegebenen gleichen Risiken. Quelle: Originalunterlagen, PDF-S. 14–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Stratifizierter Klinikvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stratifizierter Klinikvergleich"
+      ],
+      "questionGoal": "Stratifizierter Klinikvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Stratifizierter Klinikvergleich",
+        "correctReasoning": "Gleiche stratumsspezifische Risiken können unterschiedlich gewichtete Gesamtrisiken ergeben.",
+        "wrongAnswerExplanations": {
+          "A": "Der Schluss ist auf die analysierten Daten und Annahmen begrenzt.",
+          "B": "Sie liefert ein korrektes Gruppenrisiko, aber keine ausreichende Adjustierung.",
+          "D": "Ein echter Kompositionseffekt genügt.",
+          "E": "Dies widerspricht den angegebenen gleichen Risiken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q09",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Stratifizierung und Adjustierung».",
+      "options": [
+        {
+          "text": "Eine Regression garantiert ohne weitere Annahmen vollständige Kausalidentifikation.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein adjustiertes Ergebnis kann deutlich vom rohen Ergebnis abweichen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein verändertes adjustiertes RR beweist, dass die Rohdaten falsch addiert wurden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Stratifizierung vergleicht Personen innerhalb gleicher Kategorien gewählter Störfaktoren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Modell, gemessene Faktoren und Messqualität bleiben relevant. B: Die Gruppenkomposition wird anders berücksichtigt. C: Korrekte Rohdaten können einen konfundierten Vergleich ergeben. D: Sie vermindert deren Vermischung im Rohvergleich. Quelle: Originalunterlagen, PDF-S. 16–17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Adjustierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Adjustierung"
+      ],
+      "questionGoal": "Adjustierung",
+      "structuredExplanation": {
+        "coreIdea": "Adjustierung",
+        "correctReasoning": "Die Gruppenkomposition wird anders berücksichtigt. Sie vermindert deren Vermischung im Rohvergleich.",
+        "wrongAnswerExplanations": {
+          "A": "Modell, gemessene Faktoren und Messqualität bleiben relevant.",
+          "B": "Die Gruppenkomposition wird anders berücksichtigt.",
+          "C": "Korrekte Rohdaten können einen konfundierten Vergleich ergeben.",
+          "D": "Sie vermindert deren Vermischung im Rohvergleich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Der Schweregrad ist ein Confounder, wird aber ungenau erfasst. Was ist eine plausible Folge der Adjustierung mit diesem fehlerhaften Wert?",
+      "options": [
+        {
+          "text": "Die Adjustierung rekonstruiert den wahren Schweregrad aus jedem fehlerhaften Messwert vollständig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jeder verbleibende Gruppenunterschied ist deshalb garantiert kausal.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es kann Restkonfundierung verbleiben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die grössere Stichprobe beseitigt den Messfehler automatisch.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Adjustierung garantiert identische wahre Risikomischungen in jeder beobachteten Kategorie.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Messfehler können Restkonfundierung hinterlassen. B: Fehlerhafte Kontrolle kann einen Störeinfluss bestehen lassen. C: Der gemessene Wert bildet den wahren Störfaktor nicht vollständig ab. D: Systematische Erfassungsfehler verschwinden nicht dadurch. E: Gleiche beobachtete Kategorien können verschiedene wahre Schwere enthalten. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Residualkonfundierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Residualkonfundierung"
+      ],
+      "questionGoal": "Residualkonfundierung",
+      "structuredExplanation": {
+        "coreIdea": "Residualkonfundierung",
+        "correctReasoning": "Der gemessene Wert bildet den wahren Störfaktor nicht vollständig ab.",
+        "wrongAnswerExplanations": {
+          "A": "Messfehler können Restkonfundierung hinterlassen.",
+          "B": "Fehlerhafte Kontrolle kann einen Störeinfluss bestehen lassen.",
+          "D": "Systematische Erfassungsfehler verschwinden nicht dadurch.",
+          "E": "Gleiche beobachtete Kategorien können verschiedene wahre Schwere enthalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Zum Thema «unterschiedliche Schweregraderfassung zwischen Kliniken»: Beurteilen Sie die Aussagen bei klinikabhängig unterschiedlicher Schweregraderfassung.",
+      "options": [
+        {
+          "text": "Gleiche beobachtete Kategorien können verschiedene wahre Schweregradmischungen enthalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Fehlerhafte Adjustierung muss den Effekt immer exakt auf null verschieben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine identische Variablenbezeichnung garantiert identische Messqualität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Einheitliche valide Erfassung unterstützt einen faireren adjustierten Vergleich.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Fehlklassifikation kann zwischen Kliniken verschieden sein. B: Die Richtung der Verzerrung ist nicht allgemein festgelegt. C: Das Erhebungsverfahren kann dennoch abweichen. D: Die Störfaktoren werden vergleichbarer abgebildet. Quelle: Originalunterlagen, PDF-S. 18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Differenzielle Fehlklassifikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzielle Fehlklassifikation"
+      ],
+      "questionGoal": "Differenzielle Fehlklassifikation",
+      "structuredExplanation": {
+        "coreIdea": "Differenzielle Fehlklassifikation",
+        "correctReasoning": "Fehlklassifikation kann zwischen Kliniken verschieden sein. Die Störfaktoren werden vergleichbarer abgebildet.",
+        "wrongAnswerExplanations": {
+          "A": "Fehlklassifikation kann zwischen Kliniken verschieden sein.",
+          "B": "Die Richtung der Verzerrung ist nicht allgemein festgelegt.",
+          "C": "Das Erhebungsverfahren kann dennoch abweichen.",
+          "D": "Die Störfaktoren werden vergleichbarer abgebildet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Welche Eigenschaft kennzeichnet Randomisierung am besten?",
+      "options": [
+        {
+          "text": "Sie macht die Zuteilung unabhängig von Ausgangsfaktoren und gleicht diese im Erwartungswert aus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Sie erfasst definitionsgemäss alle Personen einer Bevölkerung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sie korrigiert jede spätere fehlerhafte Endpunktmessung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sie ist dasselbe wie das nachträgliche Sortieren nach Resultaten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie garantiert in jeder kleinen Studie exakt gleiche Ausgangswerte.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dadurch wird systematische Zuteilung nach Prognose vermieden. B: Zuteilung und Rekrutierung sind verschiedene Schritte. C: Spätere Biasmechanismen sind gesondert zu kontrollieren. D: Zuteilung erfolgt vor Kenntnis der Ergebnisse nach einem Zufallsverfahren. E: Zufällige Ungleichgewichte bleiben möglich. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Randomisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Randomisierung"
+      ],
+      "questionGoal": "Randomisierung",
+      "structuredExplanation": {
+        "coreIdea": "Randomisierung",
+        "correctReasoning": "Dadurch wird systematische Zuteilung nach Prognose vermieden.",
+        "wrongAnswerExplanations": {
+          "B": "Zuteilung und Rekrutierung sind verschiedene Schritte.",
+          "C": "Spätere Biasmechanismen sind gesondert zu kontrollieren.",
+          "D": "Zuteilung erfolgt vor Kenntnis der Ergebnisse nach einem Zufallsverfahren.",
+          "E": "Zufällige Ungleichgewichte bleiben möglich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Matching und Studienanalyse».",
+      "options": [
+        {
+          "text": "Ein passendes Analyseverfahren muss die Studienanlage beachten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es gleicht automatisch alle unbekannten Faktoren aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Matching ist gleichbedeutend mit zufälliger Therapiezuweisung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Matching kann gewählte gemessene Ausgangsfaktoren vergleichbarer verteilen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Abhängigkeiten und Auswahlstruktur sind relevant. B: Nicht berücksichtigte Merkmale werden nicht garantiert ausgeglichen. C: Es ist eine andere Designmassnahme. D: Die Auswahl kann etwa nach Alterskategorien erfolgen. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Matching"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Matching"
+      ],
+      "questionGoal": "Matching",
+      "structuredExplanation": {
+        "coreIdea": "Matching",
+        "correctReasoning": "Die Abhängigkeiten und Auswahlstruktur sind relevant. Die Auswahl kann etwa nach Alterskategorien erfolgen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abhängigkeiten und Auswahlstruktur sind relevant.",
+          "B": "Nicht berücksichtigte Merkmale werden nicht garantiert ausgeglichen.",
+          "C": "Es ist eine andere Designmassnahme.",
+          "D": "Die Auswahl kann etwa nach Alterskategorien erfolgen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Eine Studie schliesst ausschliesslich Nichtrauchende ein, um Rauchen als Störfaktor auszuschalten. Welche Grenze entsteht?",
+      "options": [
+        {
+          "text": "Die Aussage gilt zunächst für die eingeschlossene Nichtraucherpopulation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Exposition wurde zwingend fehlerfrei gemessen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zahl geeigneter Teilnehmender muss steigen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Studie ist allein deshalb randomisiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es können keine anderen Störfaktoren mehr existieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die eingeschränkte Population begrenzt die direkte Übertragbarkeit. B: Das folgt nicht aus den Aufnahmekriterien. C: Eine Einschränkung kann die Rekrutierung erschweren. D: Restriktion ist keine zufällige Zuteilung. E: Restriktion eines Faktors kontrolliert nicht alle anderen. Quelle: Originalunterlagen, PDF-S. 24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Restriktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Restriktion"
+      ],
+      "questionGoal": "Restriktion",
+      "structuredExplanation": {
+        "coreIdea": "Restriktion",
+        "correctReasoning": "Die eingeschränkte Population begrenzt die direkte Übertragbarkeit.",
+        "wrongAnswerExplanations": {
+          "B": "Das folgt nicht aus den Aufnahmekriterien.",
+          "C": "Eine Einschränkung kann die Rekrutierung erschweren.",
+          "D": "Restriktion ist keine zufällige Zuteilung.",
+          "E": "Restriktion eines Faktors kontrolliert nicht alle anderen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Was steht bei der internen Validität im Vordergrund?",
+      "options": [
+        {
+          "text": "Ob das Ergebnis unabhängig von Population und Kontext weltweit übertragbar ist.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ob das Ergebnis für die intendierte Studienpopulation methodisch gültig ist.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ob ein kleiner p-Wert automatisch jede Verzerrung ausschliesst.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ob Präzision allein die fehlerfreie Ursachenzuordnung garantiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ob eine repräsentative Stichprobe automatisch jede fehlerhafte Messung korrigiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies betrifft eher externe Gültigkeit. B: Bias und Confounding können diese Gültigkeit beeinträchtigen. C: Signifikanz ersetzt keine interne Validität. D: Ein präziser Schätzer kann verzerrt sein. E: Auswahl und Messgültigkeit sind getrennte Aspekte. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Interne Validität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Interne Validität"
+      ],
+      "questionGoal": "Interne Validität",
+      "structuredExplanation": {
+        "coreIdea": "Interne Validität",
+        "correctReasoning": "Bias und Confounding können diese Gültigkeit beeinträchtigen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies betrifft eher externe Gültigkeit.",
+          "C": "Signifikanz ersetzt keine interne Validität.",
+          "D": "Ein präziser Schätzer kann verzerrt sein.",
+          "E": "Auswahl und Messgültigkeit sind getrennte Aspekte."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Zum Thema «selektiver Verlust von Kohortenteilnehmenden»: Beurteilen Sie eine Kohorte mit 40 % Ausfällen.",
+      "options": [
+        {
+          "text": "Zusammenhänge des Ausfalls mit Exposition und Erkrankungsrisiko können Selektion verursachen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jeder Ausfall ist automatisch ein Recall Bias.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein enges Intervall beweist, dass Ausfälle unproblematisch waren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Ausfallquote allein bestimmt weder Richtung noch Ausmass des Bias.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die verbleibende Stichprobe kann systematisch anders zusammengesetzt sein. B: Ausfall betrifft zunächst die Auswahl der weiter Beobachteten. C: Präzision schliesst Selektionsbias nicht aus. D: Entscheidend ist, wer warum ausfällt. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Verlust im Follow-up"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verlust im Follow-up"
+      ],
+      "questionGoal": "Verlust im Follow-up",
+      "structuredExplanation": {
+        "coreIdea": "Verlust im Follow-up",
+        "correctReasoning": "Die verbleibende Stichprobe kann systematisch anders zusammengesetzt sein. Entscheidend ist, wer warum ausfällt.",
+        "wrongAnswerExplanations": {
+          "A": "Die verbleibende Stichprobe kann systematisch anders zusammengesetzt sein.",
+          "B": "Ausfall betrifft zunächst die Auswahl der weiter Beobachteten.",
+          "C": "Präzision schliesst Selektionsbias nicht aus.",
+          "D": "Entscheidend ist, wer warum ausfällt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Was ist die grundlegende Schwierigkeit eines individuellen kausalen Vergleichs „dieselbe Person mit und ohne Exposition“?",
+      "options": [
+        {
+          "text": "Beide Ergebnisse werden durch einen kleinen p-Wert direkt sichtbar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kausalität ist deshalb definitionsgemäss nicht untersuchbar.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Für dieselbe Situation ist nur einer der beiden möglichen Expositionszustände beobachtbar.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Das alternative Ergebnis entspricht immer dem Mittelwert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein Mensch kann niemals einer Exposition ausgesetzt sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Test beobachtet das kontrafaktische Ergebnis nicht. B: Geeignete Designs und Annahmen erlauben kausale Schätzungen. C: Der alternative Verlauf bleibt kontrafaktisch. D: Dafür gibt es keine allgemeine Regel. E: Expositionen sind selbstverständlich beobachtbar. Quelle: Originalunterlagen, PDF-S. 29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Kontrafaktischer Vergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kontrafaktischer Vergleich"
+      ],
+      "questionGoal": "Kontrafaktischer Vergleich",
+      "structuredExplanation": {
+        "coreIdea": "Kontrafaktischer Vergleich",
+        "correctReasoning": "Der alternative Verlauf bleibt kontrafaktisch.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Test beobachtet das kontrafaktische Ergebnis nicht.",
+          "B": "Geeignete Designs und Annahmen erlauben kausale Schätzungen.",
+          "D": "Dafür gibt es keine allgemeine Regel.",
+          "E": "Expositionen sind selbstverständlich beobachtbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «randomisierter Vergleich und individuelle Kausaleffekte».",
+      "options": [
+        {
+          "text": "Das beobachtete RR muss dann in jeder Stichprobe exakt dem kausalen RR entsprechen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Randomisierung identifiziert automatisch für jede einzelne Person ihren individuellen Nutzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Randomisierung kann Vergleichsgruppen im Erwartungswert austauschbar machen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Spätere Abweichungen vom Studiendesign können die Interpretation erschweren.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Zufällige Unterschiede bleiben möglich. B: Der unbeobachtete individuelle Gegenverlauf bleibt unbekannt. C: Die Zuteilung hängt nicht systematisch von den potenziellen Ergebnissen ab. D: Ausfälle, ungleiche Messung und andere Verzerrungen bleiben relevant. Quelle: Originalunterlagen, PDF-S. 29–31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Randomisierter Kausalvergleich"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Randomisierter Kausalvergleich"
+      ],
+      "questionGoal": "Randomisierter Kausalvergleich",
+      "structuredExplanation": {
+        "coreIdea": "Randomisierter Kausalvergleich",
+        "correctReasoning": "Die Zuteilung hängt nicht systematisch von den potenziellen Ergebnissen ab. Ausfälle, ungleiche Messung und andere Verzerrungen bleiben relevant.",
+        "wrongAnswerExplanations": {
+          "A": "Zufällige Unterschiede bleiben möglich.",
+          "B": "Der unbeobachtete individuelle Gegenverlauf bleibt unbekannt.",
+          "C": "Die Zuteilung hängt nicht systematisch von den potenziellen Ergebnissen ab.",
+          "D": "Ausfälle, ungleiche Messung und andere Verzerrungen bleiben relevant."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Eine Stichprobe wird korrekt ausgewählt, aber Teilnehmende berichten ihr Gewicht systematisch zu niedrig. Welches Problem betrifft unmittelbar die daraus berechnete Adipositasprävalenz?",
+      "options": [
+        {
+          "text": "Perfekte interne Validität aufgrund der Stichprobenauswahl",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein reines Vorzeichenproblem bei der RR-Berechnung",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Informationsbias",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Selektionsbias allein durch die korrekte Zufallsauswahl",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Confounding zwingend durch Alter",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gute Auswahl schützt nicht vor Messfehlern. B: Es geht hier um eine Prävalenzmessung. C: Die relevante Messgrösse ist systematisch fehlerhaft erfasst. D: Das beschriebene Problem liegt in der Messung. E: Ein solcher dritter Faktor wurde nicht beschrieben. Quelle: Originalunterlagen, PDF-S. 6–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Selbstangaben"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selbstangaben"
+      ],
+      "questionGoal": "Selbstangaben",
+      "structuredExplanation": {
+        "coreIdea": "Selbstangaben",
+        "correctReasoning": "Die relevante Messgrösse ist systematisch fehlerhaft erfasst.",
+        "wrongAnswerExplanations": {
+          "A": "Gute Auswahl schützt nicht vor Messfehlern.",
+          "B": "Es geht hier um eine Prävalenzmessung.",
+          "D": "Das beschriebene Problem liegt in der Messung.",
+          "E": "Ein solcher dritter Faktor wurde nicht beschrieben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs09_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Präzision, Biasprävention und Kausalinterpretation».",
+      "options": [
+        {
+          "text": "Eine statistisch signifikante rohe Assoziation ist stets ein kausaler Effekt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Biasprävention beginnt bereits bei Auswahl und Erhebung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Präzision und Gültigkeit müssen getrennt beurteilt werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Computerprogramm beseitigt unbekannte Confounder allein durch Rechenleistung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Bias und Confounding können signifikante Assoziationen erzeugen. B: Nicht jeder Fehler lässt sich nachträglich entfernen. C: Eine Schätzung kann eng und dennoch systematisch verzerrt sein. D: Ohne geeignete Daten und Annahmen fehlt die nötige Information. Quelle: Originalunterlagen, PDF-S. 3,16–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS09",
+        "Gültige Schlussfolgerungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gültige Schlussfolgerungen"
+      ],
+      "questionGoal": "Gültige Schlussfolgerungen",
+      "structuredExplanation": {
+        "coreIdea": "Gültige Schlussfolgerungen",
+        "correctReasoning": "Nicht jeder Fehler lässt sich nachträglich entfernen. Eine Schätzung kann eng und dennoch systematisch verzerrt sein.",
+        "wrongAnswerExplanations": {
+          "A": "Bias und Confounding können signifikante Assoziationen erzeugen.",
+          "B": "Nicht jeder Fehler lässt sich nachträglich entfernen.",
+          "C": "Eine Schätzung kann eng und dennoch systematisch verzerrt sein.",
+          "D": "Ohne geeignete Daten und Annahmen fehlt die nötige Information."
+        }
+      }
+    }
+  ]
+}

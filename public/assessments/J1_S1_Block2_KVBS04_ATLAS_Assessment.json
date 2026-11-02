@@ -1,0 +1,1319 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs04_20261102",
+  "lectureCode": "KVBS04",
+  "title": "Mittelwertvergleiche, p-Wert und klinische Bedeutung",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS04_Vergleiche_von_Gruppen_pvalue_P_2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Normalapproximation nur unter passenden Annahmen. SE-Differenzformel ausschliesslich für unabhängige Gruppen. Präzisierung: p ist keine Wahrscheinlichkeit der Hypothese und Nichtsignifikanz kein Äquivalenzbeleg. Zahlenbeispiele teilweise synthetisch.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Differenz unabhängiger Mittelwerte und ihren Standardfehler berechnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Konfidenzintervalle für Mittelwertdifferenzen interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Nullhypothese, Teststatistik und zweiseitigen p-Wert erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Zusammenhang zwischen Test und Konfidenzintervall anwenden."
+    },
+    {
+      "id": "lo5",
+      "text": "Statistische Signifikanz von Effektgrösse und klinischer Bedeutung trennen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs04_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Unabhängige Gruppen haben Mittelwerte von 5,0 und 4,7 mmol/l. Gesucht ist Gruppe 1 minus Gruppe 2. Wie gross ist die Differenz?",
+      "options": [
+        {
+          "text": "0,3 mmol/l",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "9,7 mmol/l",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4,85 mmol/l",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,06 mmol/l",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−0,3 mmol/l",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 5,0−4,7 = 0,3. B: Dies ist die Summe. C: Dies ist der ungewichtete Mittelwert beider Mittelwerte. D: Dies wäre näherungsweise eine relative statt der verlangten absoluten Differenz. E: Dies entspricht der umgekehrten Subtraktionsrichtung. Quelle: Originalunterlagen, PDF-S. 14–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Mittelwertdifferenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mittelwertdifferenz"
+      ],
+      "questionGoal": "Mittelwertdifferenz",
+      "structuredExplanation": {
+        "coreIdea": "Mittelwertdifferenz",
+        "correctReasoning": "5,0−4,7 = 0,3.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist die Summe.",
+          "C": "Dies ist der ungewichtete Mittelwert beider Mittelwerte.",
+          "D": "Dies wäre näherungsweise eine relative statt der verlangten absoluten Differenz.",
+          "E": "Dies entspricht der umgekehrten Subtraktionsrichtung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Die SE zweier unabhängiger Mittelwerte sind 0,10 und 0,075. Welcher SE gehört zu ihrer Differenz?",
+      "options": [
+        {
+          "text": "0,125",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0,175",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,015625",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,0875",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,025",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: √(0,10²+0,075²) = 0,125. B: SE werden nicht direkt addiert; addiert werden hier ihre Varianzen. C: Dies ist die Varianz der Differenz, noch ohne Quadratwurzel. D: Dies ist der einfache Durchschnitt der SE. E: Die Differenz der SE ist nicht der SE der Differenz. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "SE unabhängiger Differenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SE unabhängiger Differenzen"
+      ],
+      "questionGoal": "SE unabhängiger Differenzen",
+      "structuredExplanation": {
+        "coreIdea": "SE unabhängiger Differenzen",
+        "correctReasoning": "√(0,10²+0,075²) = 0,125.",
+        "wrongAnswerExplanations": {
+          "B": "SE werden nicht direkt addiert; addiert werden hier ihre Varianzen.",
+          "C": "Dies ist die Varianz der Differenz, noch ohne Quadratwurzel.",
+          "D": "Dies ist der einfache Durchschnitt der SE.",
+          "E": "Die Differenz der SE ist nicht der SE der Differenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q03",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «unabhängige und gepaarte Mittelwertvergleiche».",
+      "options": [
+        {
+          "text": "Vorher-Nachher-Werte derselben Person sollten automatisch wie unabhängige Gruppen behandelt werden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei unabhängigen Mittelwerten addieren sich ihre Varianzen für die Differenz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der SE einer Mittelwertdifferenz wird in der quadrierten Einheit der Messwerte angegeben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein doppelter SE bedeutet eine halbierte Varianz.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Paarung erzeugt eine Abhängigkeit, die berücksichtigt werden muss. B: Die Kovarianz ist dann null. C: SE hat die ursprüngliche Einheit; die Varianz hat die quadrierte. D: Die Varianz steigt dabei auf das Vierfache. Quelle: Originalunterlagen, PDF-S. 13,19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Unabhängigkeit und Paarung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unabhängigkeit und Paarung"
+      ],
+      "questionGoal": "Unabhängigkeit und Paarung",
+      "structuredExplanation": {
+        "coreIdea": "Unabhängigkeit und Paarung",
+        "correctReasoning": "Die Kovarianz ist dann null.",
+        "wrongAnswerExplanations": {
+          "A": "Die Paarung erzeugt eine Abhängigkeit, die berücksichtigt werden muss.",
+          "B": "Die Kovarianz ist dann null.",
+          "C": "SE hat die ursprüngliche Einheit; die Varianz hat die quadrierte.",
+          "D": "Die Varianz steigt dabei auf das Vierfache."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Die geschätzte Differenz ist 0,30, ihr SE 0,125. Welche Grenzen liefert die Normalapproximation mit 1,96?",
+      "options": [
+        {
+          "text": "−0,245 bis +0,245",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,055 bis 0,545",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,30 bis 0,545",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−0,30 bis +0,30",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,175 bis 0,425",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Intervall wurde um null statt um die Schätzung zentriert. B: 0,30 ± 1,96×0,125 = 0,30 ± 0,245. C: Die untere Hälfte fehlt. D: Die Differenz allein bestimmt nicht die Intervallbreite. E: Dies entspricht lediglich ±1 SE. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Intervall einer Differenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Intervall einer Differenz"
+      ],
+      "questionGoal": "Intervall einer Differenz",
+      "structuredExplanation": {
+        "coreIdea": "Intervall einer Differenz",
+        "correctReasoning": "0,30 ± 1,96×0,125 = 0,30 ± 0,245.",
+        "wrongAnswerExplanations": {
+          "A": "Das Intervall wurde um null statt um die Schätzung zentriert.",
+          "C": "Die untere Hälfte fehlt.",
+          "D": "Die Differenz allein bestimmt nicht die Intervallbreite.",
+          "E": "Dies entspricht lediglich ±1 SE."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "In einem zweiseitigen Test auf einen Unterschied zweier Populationsmittelwerte lautet die übliche Nullhypothese:",
+      "options": [
+        {
+          "text": "Die Alternativhypothese hat Wahrscheinlichkeit 95 %.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die beiden beobachteten Stichprobenmittelwerte müssen exakt gleich sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Populationsmittelwertdifferenz ist null.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "In beiden Gruppen ist die Streuung null.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Behandlung ist klinisch nutzlos.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein klassischer Test weist Hypothesen keine solche Wahrscheinlichkeit zu. B: Auch unter H0 schwanken Stichprobenmittelwerte zufällig. C: Getestet wird ein Parameter, nicht die zufällig beobachtete Stichprobendifferenz. D: Der Test auf gleiche Mittelwerte verlangt keine streuungsfreien Daten. E: Klinische Relevanz ist keine exakte Nullhypothese über die Mittelwertdifferenz. Quelle: Originalunterlagen, PDF-S. 23.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Nullhypothese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nullhypothese"
+      ],
+      "questionGoal": "Nullhypothese",
+      "structuredExplanation": {
+        "coreIdea": "Nullhypothese",
+        "correctReasoning": "Getestet wird ein Parameter, nicht die zufällig beobachtete Stichprobendifferenz.",
+        "wrongAnswerExplanations": {
+          "A": "Ein klassischer Test weist Hypothesen keine solche Wahrscheinlichkeit zu.",
+          "B": "Auch unter H0 schwanken Stichprobenmittelwerte zufällig.",
+          "D": "Der Test auf gleiche Mittelwerte verlangt keine streuungsfreien Daten.",
+          "E": "Klinische Relevanz ist keine exakte Nullhypothese über die Mittelwertdifferenz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q06",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Zum Thema «Berechnung und Bedeutung des p-Werts»: Beurteilen Sie die Aussagen über den p-Wert.",
+      "options": [
+        {
+          "text": "Er wird unter der Nullhypothese und den Testannahmen berechnet.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Beim zweiseitigen Normaltest zählen extreme Abweichungen in beide Richtungen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Derselbe Effektschätzer kann bei unterschiedlicher Präzision zu verschiedenen p-Werten führen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "p = 0,02 bedeutet, H0 sei mit 2 % Wahrscheinlichkeit wahr.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er ist eine bedingte Wahrscheinlichkeit für eine mindestens so extreme Teststatistik. B: Beide Verteilungsenden tragen bei. C: Die Teststatistik berücksichtigt Effekt und Unsicherheit. D: Das vertauscht die bedingte Wahrscheinlichkeit und interpretiert p als Hypothesenwahrscheinlichkeit. Quelle: Originalunterlagen, PDF-S. 24–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "p-Wert verstehen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "p-Wert verstehen"
+      ],
+      "questionGoal": "p-Wert verstehen",
+      "structuredExplanation": {
+        "coreIdea": "p-Wert verstehen",
+        "correctReasoning": "Er ist eine bedingte Wahrscheinlichkeit für eine mindestens so extreme Teststatistik. Beide Verteilungsenden tragen bei. Die Teststatistik berücksichtigt Effekt und Unsicherheit.",
+        "wrongAnswerExplanations": {
+          "A": "Er ist eine bedingte Wahrscheinlichkeit für eine mindestens so extreme Teststatistik.",
+          "B": "Beide Verteilungsenden tragen bei.",
+          "C": "Die Teststatistik berücksichtigt Effekt und Unsicherheit.",
+          "D": "Das vertauscht die bedingte Wahrscheinlichkeit und interpretiert p als Hypothesenwahrscheinlichkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Eine Differenz wird mit 0,30 und ihr SE mit 0,125 geschätzt. Unter H0 gilt δ = 0. Welcher z-Wert ergibt sich?",
+      "options": [
+        {
+          "text": "3,92",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,417",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2,4",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0,175",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,0375",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die volle Breite eines 95%-Intervalls in SE-Einheiten. B: Dies ist der umgekehrte Quotient. C: z = (0,30−0)/0,125. D: Die Differenz von Schätzung und SE ist keine Teststatistik. E: Das Produkt statt des Quotienten wurde verwendet. Quelle: Originalunterlagen, PDF-S. 28–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Teststatistik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Teststatistik"
+      ],
+      "questionGoal": "Teststatistik",
+      "structuredExplanation": {
+        "coreIdea": "Teststatistik",
+        "correctReasoning": "z = (0,30−0)/0,125.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die volle Breite eines 95%-Intervalls in SE-Einheiten.",
+          "B": "Dies ist der umgekehrte Quotient.",
+          "D": "Die Differenz von Schätzung und SE ist keine Teststatistik.",
+          "E": "Das Produkt statt des Quotienten wurde verwendet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Unter H0 beträgt die Normalfläche oberhalb von z = +2,4 genau 0,0082. Welcher zweiseitige p-Wert gehört zu einem Betrag von z von 2,4?",
+      "options": [
+        {
+          "text": "0,9836",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,0164",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,9918",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,0082",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,0328",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die zentrale Fläche zwischen −2,4 und +2,4. B: Die symmetrische Gegenfläche wird addiert. C: Dies ist die Fläche unterhalb von +2,4. D: Dies ist nur eine Seite. E: Die einzelne Randfläche wurde unnötig vervierfacht. Quelle: Originalunterlagen, PDF-S. 31–32.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Zweiseitige Wahrscheinlichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zweiseitige Wahrscheinlichkeit"
+      ],
+      "questionGoal": "Zweiseitige Wahrscheinlichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Zweiseitige Wahrscheinlichkeit",
+        "correctReasoning": "Die symmetrische Gegenfläche wird addiert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die zentrale Fläche zwischen −2,4 und +2,4.",
+          "C": "Dies ist die Fläche unterhalb von +2,4.",
+          "D": "Dies ist nur eine Seite.",
+          "E": "Die einzelne Randfläche wurde unnötig vervierfacht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q09",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Ein 95%-Konfidenzintervall und ein zweiseitiger Test verwenden dasselbe Verfahren und dieselben Annahmen. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Enthält das Intervall null, ist die Nullhypothese bewiesen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Intervall, das null enthält, beweist Gleichwertigkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Intervall von −2 bis +3 ist mit Effekten in beide Richtungen vereinbar.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Schliesst das Intervall null aus, ist p < 0,05.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nichtverwerfen ist kein Beweis für einen exakt fehlenden Effekt. B: Äquivalenz erfordert vorher festgelegte Grenzen und ein geeignetes Verfahren. C: Beide Vorzeichen und null liegen im Intervall. D: Test und Intervall sind unter diesen Bedingungen dual. Quelle: Originalunterlagen, PDF-S. 35–38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Test und Intervall"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Test und Intervall"
+      ],
+      "questionGoal": "Test und Intervall",
+      "structuredExplanation": {
+        "coreIdea": "Test und Intervall",
+        "correctReasoning": "Beide Vorzeichen und null liegen im Intervall. Test und Intervall sind unter diesen Bedingungen dual.",
+        "wrongAnswerExplanations": {
+          "A": "Nichtverwerfen ist kein Beweis für einen exakt fehlenden Effekt.",
+          "B": "Äquivalenz erfordert vorher festgelegte Grenzen und ein geeignetes Verfahren.",
+          "C": "Beide Vorzeichen und null liegen im Intervall.",
+          "D": "Test und Intervall sind unter diesen Bedingungen dual."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Ein 95%-Intervall für eine Differenz lautet 1,2 bis 3,8. Welche Aussage ist beim zugehörigen zweiseitigen Test auf δ = 0 richtig?",
+      "options": [
+        {
+          "text": "Die Nullhypothese wird bei α = 0,05 verworfen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein negativer Punktschätzer ist zwingend.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Unterschied ist damit zwingend klinisch wichtig.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "p muss exakt 0,05 sein.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Standardabweichung aller Einzelwerte ist kleiner als 1,2.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Null liegt ausserhalb des Intervalls. B: Das Intervall liegt vollständig im positiven Bereich. C: Klinische Bedeutung benötigt eine fachliche Bewertung der Effektgrösse. D: Die Grenzen liegen klar auf einer Seite von null. E: Das Intervall eines Mittelwertunterschieds bestimmt die Einzelwertstreuung nicht. Quelle: Originalunterlagen, PDF-S. 35–38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Null ausgeschlossen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Null ausgeschlossen"
+      ],
+      "questionGoal": "Null ausgeschlossen",
+      "structuredExplanation": {
+        "coreIdea": "Null ausgeschlossen",
+        "correctReasoning": "Null liegt ausserhalb des Intervalls.",
+        "wrongAnswerExplanations": {
+          "B": "Das Intervall liegt vollständig im positiven Bereich.",
+          "C": "Klinische Bedeutung benötigt eine fachliche Bewertung der Effektgrösse.",
+          "D": "Die Grenzen liegen klar auf einer Seite von null.",
+          "E": "Das Intervall eines Mittelwertunterschieds bestimmt die Einzelwertstreuung nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «statistische Signifikanz und klinische Relevanz».",
+      "options": [
+        {
+          "text": "Ein kleinerer p-Wert muss zwischen zwei Studien den grösseren Effekt anzeigen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein sehr kleiner Effekt kann bei hoher Präzision statistisch signifikant sein.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Effekt und Intervall sind für die Interpretation zusätzlich zum p-Wert hilfreich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein nichtsignifikanter Befund beweist immer einen vernachlässigbaren Effekt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Unterschiedliche SE können diese Reihenfolge verändern. B: Ein kleiner SE kann auch für einen kleinen Effekt eine grosse Teststatistik ergeben. C: Sie zeigen Grösse und Unsicherheit. D: Ein breites Intervall kann auch wichtige Effekte enthalten. Quelle: Originalunterlagen, PDF-S. 39–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Signifikanz und Relevanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Signifikanz und Relevanz"
+      ],
+      "questionGoal": "Signifikanz und Relevanz",
+      "structuredExplanation": {
+        "coreIdea": "Signifikanz und Relevanz",
+        "correctReasoning": "Ein kleiner SE kann auch für einen kleinen Effekt eine grosse Teststatistik ergeben. Sie zeigen Grösse und Unsicherheit.",
+        "wrongAnswerExplanations": {
+          "A": "Unterschiedliche SE können diese Reihenfolge verändern.",
+          "B": "Ein kleiner SE kann auch für einen kleinen Effekt eine grosse Teststatistik ergeben.",
+          "C": "Sie zeigen Grösse und Unsicherheit.",
+          "D": "Ein breites Intervall kann auch wichtige Effekte enthalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q12",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Eine grosse Studie schätzt einen Unterschied von 0,10 mit SE = 0,02. Der Unterschied ist statistisch signifikant. Was ist für die klinische Beurteilung am wichtigsten?",
+      "options": [
+        {
+          "text": "Ob ein Unterschied dieser Grössenordnung einen relevanten Nutzen oder Schaden bedeutet.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Dass p grundsätzlich ein Mass des individuellen Nutzens ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dass die grosse Stichprobe jeden Bias ausschliesst.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dass der SE die Zahl behandelter Personen direkt angibt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Dass die Effektgrösse wegen Signifikanz auf mindestens 1 steigen muss.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Statistische Nachweisbarkeit legt die fachliche Bedeutung nicht fest. B: p beschreibt eine Testwahrscheinlichkeit, nicht einen individuellen Nutzen. C: Systematische Fehler können trotz grossem n bestehen. D: SE ist eine Unsicherheitskennzahl in Effekteinheiten. E: Die beobachtete Grösse bleibt 0,10. Quelle: Originalunterlagen, PDF-S. 40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Kleine Effekte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kleine Effekte"
+      ],
+      "questionGoal": "Kleine Effekte",
+      "structuredExplanation": {
+        "coreIdea": "Kleine Effekte",
+        "correctReasoning": "Statistische Nachweisbarkeit legt die fachliche Bedeutung nicht fest.",
+        "wrongAnswerExplanations": {
+          "B": "p beschreibt eine Testwahrscheinlichkeit, nicht einen individuellen Nutzen.",
+          "C": "Systematische Fehler können trotz grossem n bestehen.",
+          "D": "SE ist eine Unsicherheitskennzahl in Effekteinheiten.",
+          "E": "Die beobachtete Grösse bleibt 0,10."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q13",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Beide unabhängigen Gruppen einer Studie werden bei unveränderten SD viermal so gross. Was geschieht mit dem SE ihrer Mittelwertdifferenz?",
+      "options": [
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er bleibt gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die geschätzte Differenz muss sich ebenfalls halbieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er halbiert sich.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Er viertelt sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Zusätzliche unabhängige Beobachtungen erhöhen die Präzision. B: Die Stichprobengrössen stehen im Nenner der Varianzbeiträge. C: Eine Präzisionsänderung erzwingt keine bestimmte Änderung der Schätzung. D: Beide Varianzbeiträge SD²/n vierteln sich; die Wurzel halbiert sich. E: Dies betrifft die Varianz, nicht ihren Quadratwurzelwert. Quelle: Originalunterlagen, PDF-S. 11,40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Grössere Stichprobe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grössere Stichprobe"
+      ],
+      "questionGoal": "Grössere Stichprobe",
+      "structuredExplanation": {
+        "coreIdea": "Grössere Stichprobe",
+        "correctReasoning": "Beide Varianzbeiträge SD²/n vierteln sich; die Wurzel halbiert sich.",
+        "wrongAnswerExplanations": {
+          "A": "Zusätzliche unabhängige Beobachtungen erhöhen die Präzision.",
+          "B": "Die Stichprobengrössen stehen im Nenner der Varianzbeiträge.",
+          "C": "Eine Präzisionsänderung erzwingt keine bestimmte Änderung der Schätzung.",
+          "E": "Dies betrifft die Varianz, nicht ihren Quadratwurzelwert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q14",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Zum Thema «Einflüsse auf die Breite eines Konfidenzintervalls»: Beurteilen Sie die Aussagen bei sonst gleichen Bedingungen.",
+      "options": [
+        {
+          "text": "Ein schmales Intervall korrigiert automatisch eine systematische Fehlmessung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine grössere Einzelwertstreuung verbreitert das Konfidenzintervall.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine kleinere Stichprobe kann ein klinisch relevantes Resultat unpräzise schätzen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein 99%-Intervall ist schmaler als ein 95%-Intervall.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Präzision beseitigt keinen Bias. B: Sie erhöht den Standardfehler. C: Ein breites Intervall spiegelt höhere Stichprobenunsicherheit. D: Höhere Überdeckung benötigt einen grösseren kritischen Faktor. Quelle: Originalunterlagen, PDF-S. 11,39–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Breite und Unsicherheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Breite und Unsicherheit"
+      ],
+      "questionGoal": "Breite und Unsicherheit",
+      "structuredExplanation": {
+        "coreIdea": "Breite und Unsicherheit",
+        "correctReasoning": "Sie erhöht den Standardfehler. Ein breites Intervall spiegelt höhere Stichprobenunsicherheit.",
+        "wrongAnswerExplanations": {
+          "A": "Präzision beseitigt keinen Bias.",
+          "B": "Sie erhöht den Standardfehler.",
+          "C": "Ein breites Intervall spiegelt höhere Stichprobenunsicherheit.",
+          "D": "Höhere Überdeckung benötigt einen grösseren kritischen Faktor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Die Differenz A−B hat das 95%-Intervall 2 bis 6. Welches Intervall gehört bei gleichem Verfahren zu B−A?",
+      "options": [
+        {
+          "text": "2 bis 6",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0 bis 4",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "−6 bis +6",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−2 bis −6 als aufsteigend geordnetes Intervall",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "−6 bis −2",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Richtung der Differenz wurde umgekehrt. B: Der Vorzeichenwechsel verschiebt das Zentrum nicht auf +2. C: Die Breite wird nicht verdoppelt. D: Diese Grenzen sind absteigend angeordnet. E: Vorzeichenwechsel vertauscht nach Multiplikation mit −1 die Grenzreihenfolge. Quelle: Originalunterlagen, PDF-S. 20,35–38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Subtraktionsrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Subtraktionsrichtung"
+      ],
+      "questionGoal": "Subtraktionsrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Subtraktionsrichtung",
+        "correctReasoning": "Vorzeichenwechsel vertauscht nach Multiplikation mit −1 die Grenzreihenfolge.",
+        "wrongAnswerExplanations": {
+          "A": "Die Richtung der Differenz wurde umgekehrt.",
+          "B": "Der Vorzeichenwechsel verschiebt das Zentrum nicht auf +2.",
+          "C": "Die Breite wird nicht verdoppelt.",
+          "D": "Diese Grenzen sind absteigend angeordnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Testannahmen und kausale Interpretation».",
+      "options": [
+        {
+          "text": "Die Testinterpretation setzt ein zum Design passendes Verfahren voraus.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Er beweist allein, dass die Behandlung die Ursache des Unterschieds ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein sehr kleiner p-Wert kann Anlass geben, H0 oder Modellannahmen kritisch zu prüfen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "p = 0,20 bedeutet, dass der Effekt mit 80 % Wahrscheinlichkeit vorhanden ist.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Abhängigkeiten oder ungeeignete Annahmen können den berechneten p-Wert entwerten. B: Konfundierung und Studiendesign sind dafür ebenfalls wichtig. C: Er zeigt eine unter dem getesteten Modell extreme Beobachtung. D: 1−p ist keine Wahrscheinlichkeit für die Alternativhypothese. Quelle: Originalunterlagen, PDF-S. 24,39–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Bedingte Evidenz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bedingte Evidenz"
+      ],
+      "questionGoal": "Bedingte Evidenz",
+      "structuredExplanation": {
+        "coreIdea": "Bedingte Evidenz",
+        "correctReasoning": "Abhängigkeiten oder ungeeignete Annahmen können den berechneten p-Wert entwerten. Er zeigt eine unter dem getesteten Modell extreme Beobachtung.",
+        "wrongAnswerExplanations": {
+          "A": "Abhängigkeiten oder ungeeignete Annahmen können den berechneten p-Wert entwerten.",
+          "B": "Konfundierung und Studiendesign sind dafür ebenfalls wichtig.",
+          "C": "Er zeigt eine unter dem getesteten Modell extreme Beobachtung.",
+          "D": "1−p ist keine Wahrscheinlichkeit für die Alternativhypothese."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q17",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Unabhängige Mittelwerte haben jeweils SE = 0,4. Wie gross ist SE ihrer Differenz ungefähr?",
+      "options": [
+        {
+          "text": "0,566",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0,32",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,8",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,2",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: √(0,4²+0,4²) = √0,32 ≈ 0,566. B: Dies ist die Varianz der Differenz. C: Die SE wurden direkt addiert. D: Gleiche SE bedeuten keine identischen Zufallsfehler. E: Die SE werden nicht wegen zweier Gruppen halbiert. Quelle: Originalunterlagen, PDF-S. 43–44.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Differenzvarianz berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Differenzvarianz berechnen"
+      ],
+      "questionGoal": "Differenzvarianz berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Differenzvarianz berechnen",
+        "correctReasoning": "√(0,4²+0,4²) = √0,32 ≈ 0,566.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist die Varianz der Differenz.",
+          "C": "Die SE wurden direkt addiert.",
+          "D": "Gleiche SE bedeuten keine identischen Zufallsfehler.",
+          "E": "Die SE werden nicht wegen zweier Gruppen halbiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q18",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Studie A schätzt einen Effekt von 1 mit SE = 0,1. Studie B schätzt 3 mit SE = 2. Welche Aussage trifft zu?",
+      "options": [
+        {
+          "text": "A beweist einen klinisch dreimal grösseren Effekt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "B beweist einen exakt fehlenden Effekt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beide Studien müssen denselben p-Wert haben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "A kann stärker statistisch gegen H0 = 0 sprechen, obwohl B den grösseren Punktschätzer hat.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "B muss den kleineren p-Wert haben, weil 3 grösser als 1 ist.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Punktschätzer von A ist kleiner, und klinische Bedeutung ist gesondert zu beurteilen. B: Die hohe Unsicherheit liefert keinen solchen Beweis. C: Die standardisierten Abweichungen unterscheiden sich. D: Die Teststatistiken betragen 10 beziehungsweise 1,5. E: Die Unsicherheit muss berücksichtigt werden. Quelle: Originalunterlagen, PDF-S. 40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Zwei Studien vergleichen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zwei Studien vergleichen"
+      ],
+      "questionGoal": "Zwei Studien vergleichen",
+      "structuredExplanation": {
+        "coreIdea": "Zwei Studien vergleichen",
+        "correctReasoning": "Die Teststatistiken betragen 10 beziehungsweise 1,5.",
+        "wrongAnswerExplanations": {
+          "A": "Der Punktschätzer von A ist kleiner, und klinische Bedeutung ist gesondert zu beurteilen.",
+          "B": "Die hohe Unsicherheit liefert keinen solchen Beweis.",
+          "C": "Die standardisierten Abweichungen unterscheiden sich.",
+          "E": "Die Unsicherheit muss berücksichtigt werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q19",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Ein 95%-Intervall einer Differenz reicht von −0,1 bis +10. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Null ist mit dem Intervall vereinbar.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Intervall beweist, dass alle relevanten positiven Effekte ausgeschlossen sind.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Schätzung kann für eine Entscheidung zu unpräzise sein.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Aus Nichtsignifikanz folgt automatisch die Austauschbarkeit beider Behandlungen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie liegt zwischen den Grenzen. B: Es enthält auch grosse positive Werte. C: Die Spannweite plausibler Parameterwerte ist gross. D: Dafür wären geeignete Äquivalenz- oder Nichtunterlegenheitskriterien nötig. Quelle: Originalunterlagen, PDF-S. 35–40.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Nichtsignifikanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Nichtsignifikanz"
+      ],
+      "questionGoal": "Nichtsignifikanz",
+      "structuredExplanation": {
+        "coreIdea": "Nichtsignifikanz",
+        "correctReasoning": "Sie liegt zwischen den Grenzen. Die Spannweite plausibler Parameterwerte ist gross.",
+        "wrongAnswerExplanations": {
+          "A": "Sie liegt zwischen den Grenzen.",
+          "B": "Es enthält auch grosse positive Werte.",
+          "C": "Die Spannweite plausibler Parameterwerte ist gross.",
+          "D": "Dafür wären geeignete Äquivalenz- oder Nichtunterlegenheitskriterien nötig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs04_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS04",
+      "stem": "Die getrennten 95%-Intervalle zweier unabhängiger Gruppenmittelwerte überlappen leicht. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Die Differenz kann sicher nicht signifikant sein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Studiendesign bestimmt, ob eine Paarung vorliegt.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Gruppenmittelwerte sind dadurch exakt gleich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Differenz muss mit ihrem eigenen SE oder einem passenden Test beurteilt werden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch bei überlappenden Einzelintervallen kann ein passender Differenztest signifikant ausfallen. B: Abhängigkeit folgt nicht aus der Intervallüberlappung. C: Intervallüberlappung beweist keine Parametergleichheit. D: Die Überlappung zweier Einzelintervalle ist kein gleichwertiger Test auf gleiche Mittelwerte. Quelle: Originalunterlagen, PDF-S. 35–38.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS04",
+        "Überlappende Gruppenintervalle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Überlappende Gruppenintervalle"
+      ],
+      "questionGoal": "Überlappende Gruppenintervalle",
+      "structuredExplanation": {
+        "coreIdea": "Überlappende Gruppenintervalle",
+        "correctReasoning": "Abhängigkeit folgt nicht aus der Intervallüberlappung. Die Überlappung zweier Einzelintervalle ist kein gleichwertiger Test auf gleiche Mittelwerte.",
+        "wrongAnswerExplanations": {
+          "A": "Auch bei überlappenden Einzelintervallen kann ein passender Differenztest signifikant ausfallen.",
+          "B": "Abhängigkeit folgt nicht aus der Intervallüberlappung.",
+          "C": "Intervallüberlappung beweist keine Parametergleichheit.",
+          "D": "Die Überlappung zweier Einzelintervalle ist kein gleichwertiger Test auf gleiche Mittelwerte."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block1_kvb03_20261102",
+  "lectureCode": "KVB03",
+  "title": "Membranstruktur – Lipide, Proteine und Permeabilität",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB3 - Membranstruktur. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die temperaturabhängige Cholesterinwirkung wird gegenüber der pauschalen Folienformulierung präzisiert. Membranproteine werden nicht sämtlich als transmembran klassifiziert.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Grundstruktur, hydrophoben Effekt und Lipidaggregate erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Membrandynamik, Zusammensetzung und Asymmetrie funktionell verknüpfen."
+    },
+    {
+      "id": "lo3",
+      "text": "Verankerung, Struktur und Funktion von Membranproteinen vergleichen."
+    },
+    {
+      "id": "lo4",
+      "text": "Selektive Permeabilität, Lipidtransport und Detergenzwirkung erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb03_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Warum lagern sich unpolare Gruppen in Wasser bevorzugt zusammen?",
+      "options": [
+        {
+          "text": "Unpolare Gruppen besitzen grundsätzlich entgegengesetzte elektrische Ladungen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Aggregation benötigt zwingend einen ATP-verbrauchenden Motor.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die gemeinsam exponierte unpolare Oberfläche und die dadurch erzwungene Wasserordnung nehmen ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Bilayerbildung wird primär durch die hohe Wasserlöslichkeit der Kohlenwasserstoffketten angetrieben.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Zusammenhalt verlangt ein durchgehendes kovalentes Lipid-Lipid-Netz.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie sind gerade nicht stark polar oder geladen. B: Lipidaggregate können spontan entstehen. C: Dies trägt zum thermodynamischen Antrieb der Aggregation bei. D: Die Ketten sind hydrophob; Verringerung ihrer Wasserexposition begünstigt die Aggregation. E: Die Doppelschicht wird überwiegend nichtkovalent stabilisiert. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Hydrophober Effekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrophober Effekt"
+      ],
+      "questionGoal": "Hydrophober Effekt",
+      "structuredExplanation": {
+        "coreIdea": "Hydrophober Effekt",
+        "correctReasoning": "Dies trägt zum thermodynamischen Antrieb der Aggregation bei.",
+        "wrongAnswerExplanations": {
+          "A": "Sie sind gerade nicht stark polar oder geladen.",
+          "B": "Lipidaggregate können spontan entstehen.",
+          "D": "Die Ketten sind hydrophob; Verringerung ihrer Wasserexposition begünstigt die Aggregation.",
+          "E": "Die Doppelschicht wird überwiegend nichtkovalent stabilisiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Welches Aggregat wird von vielen amphiphilen Lipiden mit zwei hydrophoben Ketten in Wasser besonders begünstigt?",
+      "options": [
+        {
+          "text": "Eine kugelige Mizelle mit hydrophoben Ketten im Zentrum als bevorzugte Form jedes zweikettigen Phospholipids.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Lipiddoppelschicht, die sich zu einem Vesikel schliessen kann.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein massiver neutraler Öltropfen ohne Orientierung der polaren Köpfe.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein einzelner planarer Monolayer mit beiden Seiten im Wasser.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein offenes Gitter mit frei ins Wasser ragenden Ketten.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Viele zweikettige Membranlipide begünstigen wegen ihrer Geometrie Bilayer. B: Die Molekülgeometrie ermöglicht einen hydrophoben Kern zwischen zwei Kopfgruppenlagen. C: Amphiphile Moleküle ordnen ihre hydrophilen Köpfe an die Wassergrenzen. D: Dadurch blieben die Ketten auf einer Seite wasserexponiert. E: Dies würde viel hydrophobe Oberfläche exponieren. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Lipidaggregate"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipidaggregate"
+      ],
+      "questionGoal": "Lipidaggregate",
+      "structuredExplanation": {
+        "coreIdea": "Lipidaggregate",
+        "correctReasoning": "Die Molekülgeometrie ermöglicht einen hydrophoben Kern zwischen zwei Kopfgruppenlagen.",
+        "wrongAnswerExplanations": {
+          "A": "Viele zweikettige Membranlipide begünstigen wegen ihrer Geometrie Bilayer.",
+          "C": "Amphiphile Moleküle ordnen ihre hydrophilen Köpfe an die Wassergrenzen.",
+          "D": "Dadurch blieben die Ketten auf einer Seite wasserexponiert.",
+          "E": "Dies würde viel hydrophobe Oberfläche exponieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Ein geschlossener Bilayer umschliesst einen wässrigen Innenraum. Welche Bezeichnung passt?",
+      "options": [
+        {
+          "text": "Liposom.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine klassische kugelige Detergensmizelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein neutraler Lipidtropfen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein planarer Lipidfilm an einer Wasser-Luft-Grenze.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Monolayer.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es handelt sich um ein membranbegrenztes Lipidvesikel. B: Diese besitzt typischerweise einen hydrophoben Kern, keinen wässrigen Bilayer-Innenraum. C: Sein Kern ist hydrophob und nicht wässrig. D: Ein solcher Monolayer umschliesst keinen wässrigen Vesikelraum. E: Dieser besteht aus einer einzigen Molekülschicht an einer Grenzfläche. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Liposom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Liposom"
+      ],
+      "questionGoal": "Liposom",
+      "structuredExplanation": {
+        "coreIdea": "Liposom",
+        "correctReasoning": "Es handelt sich um ein membranbegrenztes Lipidvesikel.",
+        "wrongAnswerExplanations": {
+          "B": "Diese besitzt typischerweise einen hydrophoben Kern, keinen wässrigen Bilayer-Innenraum.",
+          "C": "Sein Kern ist hydrophob und nicht wässrig.",
+          "D": "Ein solcher Monolayer umschliesst keinen wässrigen Vesikelraum.",
+          "E": "Dieser besteht aus einer einzigen Molekülschicht an einer Grenzfläche."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Zwei Bilayer werden bei gleicher Temperatur verglichen. Welcher Austausch erhöht typischerweise die Fluidität der Fettsäureketten?",
+      "options": [
+        {
+          "text": "Alle Lipide kovalent miteinander vernetzen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Doppelbindungen entfernen und die Ketten verlängern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Längere gesättigte durch kürzere cis-ungesättigte Ketten ersetzen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Kurze cis-ungesättigte durch lange gesättigte Ketten ersetzen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Temperatur deutlich unter den Phasenübergang senken.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vernetzung schränkt Beweglichkeit ein. B: Beides fördert eher die Ordnung. C: Kürzere Ketten und cis-Knicke vermindern die dichte Packung. D: Dies begünstigt eine dichtere Packung. E: Abkühlung vermindert die Beweglichkeit. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Fluidität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fluidität"
+      ],
+      "questionGoal": "Fluidität",
+      "structuredExplanation": {
+        "coreIdea": "Fluidität",
+        "correctReasoning": "Kürzere Ketten und cis-Knicke vermindern die dichte Packung.",
+        "wrongAnswerExplanations": {
+          "A": "Vernetzung schränkt Beweglichkeit ein.",
+          "B": "Beides fördert eher die Ordnung.",
+          "D": "Dies begünstigt eine dichtere Packung.",
+          "E": "Abkühlung vermindert die Beweglichkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Welche Aussage vermeidet eine zu einfache, temperaturunabhängige Deutung der Cholesterinwirkung?",
+      "options": [
+        {
+          "text": "Cholesterin vermindert bei jeder Temperatur gleich stark die Beweglichkeit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cholesterin hat keinerlei Wechselwirkung mit Membranlipiden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Cholesterin beeinflusst Kettenordnung und Packung; seine Wirkung hängt vom Membran- und Temperaturzustand ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Cholesterin erhöht unter allen Bedingungen exakt gleich die Fluidität.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Cholesterin wirkt in der Membran grundsätzlich genauso solubilisierend wie ein überschüssiges Detergens.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Wirkung hängt von Temperatur und Membranzustand ab. B: Es beeinflusst deren Packung. C: Es kann Beweglichkeit begrenzen und zugleich starre Kristallisation bei tieferen Temperaturen verhindern. D: Die Wirkung ist kontextabhängig. E: Seine reguläre Bilayerfunktion ist von Detergenssolubilisierung zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 10,18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Cholesterin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cholesterin"
+      ],
+      "questionGoal": "Cholesterin",
+      "structuredExplanation": {
+        "coreIdea": "Cholesterin",
+        "correctReasoning": "Es kann Beweglichkeit begrenzen und zugleich starre Kristallisation bei tieferen Temperaturen verhindern.",
+        "wrongAnswerExplanations": {
+          "A": "Die Wirkung hängt von Temperatur und Membranzustand ab.",
+          "B": "Es beeinflusst deren Packung.",
+          "D": "Die Wirkung ist kontextabhängig.",
+          "E": "Seine reguläre Bilayerfunktion ist von Detergenssolubilisierung zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Nach Ausfall einer gerichteten Lipidtranslokase verändert sich die Verteilung zwischen den Membranblättern. Welche Aufgabe erklärt dies?",
+      "options": [
+        {
+          "text": "Asymmetrie betrifft ausschliesslich freie Proteine im Cytosol.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die beiden Blätter sind immer unabhängig von Enzymen identisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede laterale Lipidbewegung innerhalb eines Blattes stellt gleichzeitig die Verteilung zwischen beiden Blättern her.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lipide können nur nach vollständiger Hydrolyse die Seite wechseln.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Spezifische Enzyme können Lipide zwischen den Blättern bewegen und Asymmetrie erhalten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie betrifft auch die Membranlipide. B: Biologische Membranen sind häufig asymmetrisch. C: Laterale Diffusion und Transversaltransport sind verschiedene Bewegungen. D: Translokasen können intakte Lipide umlagern. E: Spontanes Flip-Flop vieler Phospholipide ist langsam. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Lipidasymmetrie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipidasymmetrie"
+      ],
+      "questionGoal": "Lipidasymmetrie",
+      "structuredExplanation": {
+        "coreIdea": "Lipidasymmetrie",
+        "correctReasoning": "Spontanes Flip-Flop vieler Phospholipide ist langsam.",
+        "wrongAnswerExplanations": {
+          "A": "Sie betrifft auch die Membranlipide.",
+          "B": "Biologische Membranen sind häufig asymmetrisch.",
+          "C": "Laterale Diffusion und Transversaltransport sind verschiedene Bewegungen.",
+          "D": "Translokasen können intakte Lipide umlagern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Welche Sequenzeigenschaft passt zu einer α-Helix, die den hydrophoben Membrankern durchspannt?",
+      "options": [
+        {
+          "text": "Ein Abschnitt von ungefähr zwanzig überwiegend hydrophoben Aminosäuren.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein obligatorisch vollständig ungefalteter geladener Abschnitt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein langer Abschnitt ausschliesslich negativ geladener Seitenketten ohne hydrophobe Oberfläche.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Zwei hydrophobe Aminosäuren reichen als gestreckte Helix für die ganze Membrandicke aus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jeder membranspannende Abschnitt muss vollständig aus Prolin bestehen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies passt zur Dicke und Polarität des Membrankerns. B: Dies entspricht nicht der typischen Membranhelix. C: Eine klassische Transmembranhelix benötigt einen zur Lipidphase passenden hydrophoben Abschnitt. D: Die Membrandicke erfordert typischerweise einen wesentlich längeren helikalen Abschnitt. E: Eine solche Sequenz ist weder erforderlich noch für die klassische durchgehende Helix günstig. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Transmembranhelix"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transmembranhelix"
+      ],
+      "questionGoal": "Transmembranhelix",
+      "structuredExplanation": {
+        "coreIdea": "Transmembranhelix",
+        "correctReasoning": "Dies passt zur Dicke und Polarität des Membrankerns.",
+        "wrongAnswerExplanations": {
+          "B": "Dies entspricht nicht der typischen Membranhelix.",
+          "C": "Eine klassische Transmembranhelix benötigt einen zur Lipidphase passenden hydrophoben Abschnitt.",
+          "D": "Die Membrandicke erfordert typischerweise einen wesentlich längeren helikalen Abschnitt.",
+          "E": "Eine solche Sequenz ist weder erforderlich noch für die klassische durchgehende Helix günstig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Eine wassergefüllte Pore besteht aus einem β-Fass. Welche Seitenkettenverteilung ist zweckmässig?",
+      "options": [
+        {
+          "text": "Nur geladene Seitenketten zur hydrophoben Lipidmitte.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein β-Fass kann grundsätzlich keine Membran durchspannen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die hydrophoben Seitenketten müssen ausschliesslich in das Porenwasser zeigen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Alle Seitenketten zeigen auf dieselbe Seite, unabhängig von der β-Strang-Geometrie.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Hydrophobe Seitenketten zur Lipidphase und geeignete polare Seitenketten zum Porenwasser.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre energetisch ungünstig. B: Porine zeigen gerade diese Möglichkeit. C: Die lipidzugewandte Seite benötigt hydrophobe Kontakte; die Porenseite muss mit Wasser vereinbar sein. D: Im β-Strang alternieren die Seitenkettenrichtungen. E: Die Orientierung verbindet Membrankontakt und wässrige Passage. Quelle: Originalunterlagen, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "β-Barrel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "β-Barrel"
+      ],
+      "questionGoal": "β-Barrel",
+      "structuredExplanation": {
+        "coreIdea": "β-Barrel",
+        "correctReasoning": "Die Orientierung verbindet Membrankontakt und wässrige Passage.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre energetisch ungünstig.",
+          "B": "Porine zeigen gerade diese Möglichkeit.",
+          "C": "Die lipidzugewandte Seite benötigt hydrophobe Kontakte; die Porenseite muss mit Wasser vereinbar sein.",
+          "D": "Im β-Strang alternieren die Seitenkettenrichtungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Ein Protein wird durch nichtkovalente Bindung an ein integrales Membranprotein an der Membran gehalten. Welche Einordnung passt?",
+      "options": [
+        {
+          "text": "Periphere Membranassoziation.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine membranspannende Helix als bereits aus der Bindungsart zwingend ableitbare Eigenschaft.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine kovalente Fettsäureverankerung als hier beschriebener Mechanismus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein integrales Protein, das definitionsgemäss nur mit Salz ohne Kontaktverlust gelöst werden kann.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Kovalenter GPI-Anker als einzige Möglichkeit.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Protein muss den Bilayer dafür nicht selbst durchspannen. B: Nichtkovalente Bindung an ein anderes Protein erfordert keinen eigenen Transmembranabschnitt. C: Die Aufgabe beschreibt eine nichtkovalente Protein-Protein-Assoziation. D: Ein peripher gebundenes Protein ist von integral in die Membran eingelagerten Proteinen zu unterscheiden. E: Die beschriebene Bindung ist nichtkovalent. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Peripheres Protein"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Peripheres Protein"
+      ],
+      "questionGoal": "Peripheres Protein",
+      "structuredExplanation": {
+        "coreIdea": "Peripheres Protein",
+        "correctReasoning": "Das Protein muss den Bilayer dafür nicht selbst durchspannen.",
+        "wrongAnswerExplanations": {
+          "B": "Nichtkovalente Bindung an ein anderes Protein erfordert keinen eigenen Transmembranabschnitt.",
+          "C": "Die Aufgabe beschreibt eine nichtkovalente Protein-Protein-Assoziation.",
+          "D": "Ein peripher gebundenes Protein ist von integral in die Membran eingelagerten Proteinen zu unterscheiden.",
+          "E": "Die beschriebene Bindung ist nichtkovalent."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Welcher Stoff passiert eine proteinfreie Lipiddoppelschicht typischerweise leichter als ein Na+-Ion?",
+      "options": [
+        {
+          "text": "Ein grosses geladenes Protein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sauerstoff.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein langes DNA-Molekül.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Polysaccharid mit vielen Hydroxygruppen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein hydratisiertes Ca2+-Ion.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Grösse und Ladung erschweren seine Passage. B: Kleine unpolare Moleküle können in die Lipidphase eintreten. C: Es ist gross und stark negativ geladen. D: Grösse und Polarität erschweren die Passage. E: Die Ladung erschwert den Eintritt in den hydrophoben Kern. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Selektive Barriere"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Selektive Barriere"
+      ],
+      "questionGoal": "Selektive Barriere",
+      "structuredExplanation": {
+        "coreIdea": "Selektive Barriere",
+        "correctReasoning": "Kleine unpolare Moleküle können in die Lipidphase eintreten.",
+        "wrongAnswerExplanations": {
+          "A": "Grösse und Ladung erschweren seine Passage.",
+          "C": "Es ist gross und stark negativ geladen.",
+          "D": "Grösse und Polarität erschweren die Passage.",
+          "E": "Die Ladung erschwert den Eintritt in den hydrophoben Kern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Warum kann ein geeignetes Detergens eine Membran solubilisieren?",
+      "options": [
+        {
+          "text": "Es verhindert jeden Kontakt hydrophober Gruppen mit eigenen hydrophoben Anteilen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es kann nur wirken, wenn alle Proteine zuerst enzymatisch vollständig verdaut wurden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es verstärkt ausschliesslich die ursprüngliche durchgehende Doppelschicht ohne Aggregatwechsel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es bildet mit Lipiden und Membranproteinen gemischte Mizellen.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Es muss zunächst alle Lipidesterbindungen enzymatisch hydrolysieren.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Gerade amphiphile Wechselwirkungen ermöglichen die Solubilisierung. B: Membranproteine können gemeinsam mit Lipiden solubilisiert werden. C: Bei Solubilisierung entstehen gemischte Mizellen statt eines unveränderten Bilayers. D: Dadurch wird die zusammenhängende Bilayerstruktur aufgelöst. E: Solubilisierung beruht auf amphiphilen Wechselwirkungen, nicht zwingend auf kovalenter Spaltung. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Detergenzien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Detergenzien"
+      ],
+      "questionGoal": "Detergenzien",
+      "structuredExplanation": {
+        "coreIdea": "Detergenzien",
+        "correctReasoning": "Dadurch wird die zusammenhängende Bilayerstruktur aufgelöst.",
+        "wrongAnswerExplanations": {
+          "A": "Gerade amphiphile Wechselwirkungen ermöglichen die Solubilisierung.",
+          "B": "Membranproteine können gemeinsam mit Lipiden solubilisiert werden.",
+          "C": "Bei Solubilisierung entstehen gemischte Mizellen statt eines unveränderten Bilayers.",
+          "E": "Solubilisierung beruht auf amphiphilen Wechselwirkungen, nicht zwingend auf kovalenter Spaltung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Warum benötigen Zellen Transportwege für Lipide zwischen Organellen?",
+      "options": [
+        {
+          "text": "Jedes Lipid diffundiert im wässrigen Cytosol als frei gut lösliches Einzelmolekül gleich schnell zum Ziel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Viele Lipide entstehen am ER und müssen andere Zielmembranen erreichen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Zwischenorganellärer Lipidtransport muss immer zuerst beide Membranen vollständig auflösen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lipide werden ausschliesslich in Lysosomen neu synthetisiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede Membran besitzt zwangsläufig eine vollständige identische Lipidsynthese.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hydrophobe Lipide benötigen geeignete Übertragungswege. B: Vesikel, Transferproteine und Kontaktstellen können dazu beitragen. C: Vesikel und nichtvesikuläre Transferwege erhalten Membranen weitgehend. D: Das ER ist ein wichtiger Syntheseort vieler Lipide. E: Die Synthese ist räumlich verteilt und spezialisiert. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Lipidverteilung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipidverteilung"
+      ],
+      "questionGoal": "Lipidverteilung",
+      "structuredExplanation": {
+        "coreIdea": "Lipidverteilung",
+        "correctReasoning": "Vesikel, Transferproteine und Kontaktstellen können dazu beitragen.",
+        "wrongAnswerExplanations": {
+          "A": "Hydrophobe Lipide benötigen geeignete Übertragungswege.",
+          "C": "Vesikel und nichtvesikuläre Transferwege erhalten Membranen weitgehend.",
+          "D": "Das ER ist ein wichtiger Syntheseort vieler Lipide.",
+          "E": "Die Synthese ist räumlich verteilt und spezialisiert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Eine Membranskizze wird auf molekulare Plausibilität geprüft. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Eine typische Lipiddoppelschicht hat nur die Dicke einer einzelnen kovalenten Bindung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Bilayer wird ausschliesslich durch kovalente Lipid-Lipid-Bindungen zusammengehalten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Glycerophospholipide und Sphingolipide sind wichtige Membranlipidklassen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der hydrophobe Kern enthält die unpolaren Anteile der Lipide.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein Bilayer ist mehrere Nanometer dick. B: Nichtkovalente Wechselwirkungen sind wesentlich. C: Die Vorlesung nennt zusätzlich Sterole. D: Die polaren Kopfgruppen grenzen an wässrige Räume. Quelle: Originalunterlagen, PDF-S. 5,7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Grundstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Grundstruktur"
+      ],
+      "questionGoal": "Grundstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Grundstruktur",
+        "correctReasoning": "Die Vorlesung nennt zusätzlich Sterole. Die polaren Kopfgruppen grenzen an wässrige Räume.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Bilayer ist mehrere Nanometer dick.",
+          "B": "Nichtkovalente Wechselwirkungen sind wesentlich.",
+          "C": "Die Vorlesung nennt zusätzlich Sterole.",
+          "D": "Die polaren Kopfgruppen grenzen an wässrige Räume."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Lipide bewegen sich innerhalb und zwischen Membranblättern. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Jede Scramblase muss ATP hydrolysieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Spontanes Flip-Flop vieler Phospholipide ist schneller als laterale Diffusion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Laterale Diffusion findet innerhalb eines Membranblatts statt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Scramblasen können die Verteilung zwischen den Blättern angleichen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Scrambling ist nicht grundsätzlich ATP-abhängig. B: Die polare Kopfgruppe muss dabei den hydrophoben Kern überwinden. C: Dabei wechselt das Lipid seine Position in der Ebene. D: Sie vermindern damit bestehende Asymmetrie. Quelle: Originalunterlagen, PDF-S. 10,12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Membranbewegung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranbewegung"
+      ],
+      "questionGoal": "Membranbewegung",
+      "structuredExplanation": {
+        "coreIdea": "Membranbewegung",
+        "correctReasoning": "Dabei wechselt das Lipid seine Position in der Ebene. Sie vermindern damit bestehende Asymmetrie.",
+        "wrongAnswerExplanations": {
+          "A": "Scrambling ist nicht grundsätzlich ATP-abhängig.",
+          "B": "Die polare Kopfgruppe muss dabei den hydrophoben Kern überwinden.",
+          "C": "Dabei wechselt das Lipid seine Position in der Ebene.",
+          "D": "Sie vermindern damit bestehende Asymmetrie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Membranen unterschiedlicher Organellen werden analysiert. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Eine Membran kann viele verschiedene Lipidspezies enthalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der Proteinanteil ist in jeder Membran exakt gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Alle Membranen derselben Zelle haben dieselbe Protein- und Lipidzusammensetzung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Sekretorisch aktive Zellen können einen hohen Anteil an rauem ER besitzen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Kettenlänge und Sättigungsgrad tragen zur Vielfalt bei. B: Er variiert erheblich zwischen Membranen. C: Organellmembranen sind funktionell spezialisiert. D: Die Membranausstattung folgt ihrer Funktion. Quelle: Originalunterlagen, PDF-S. 2–3,11,14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Funktionsabhängige Zusammensetzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Funktionsabhängige Zusammensetzung"
+      ],
+      "questionGoal": "Funktionsabhängige Zusammensetzung",
+      "structuredExplanation": {
+        "coreIdea": "Funktionsabhängige Zusammensetzung",
+        "correctReasoning": "Auch Kettenlänge und Sättigungsgrad tragen zur Vielfalt bei. Die Membranausstattung folgt ihrer Funktion.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Kettenlänge und Sättigungsgrad tragen zur Vielfalt bei.",
+          "B": "Er variiert erheblich zwischen Membranen.",
+          "C": "Organellmembranen sind funktionell spezialisiert.",
+          "D": "Die Membranausstattung folgt ihrer Funktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Ein Protein kann auf verschiedene Weise an der Membran sitzen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Ein GPI-Anker verknüpft das Protein über einen eigenen membranspannenden Proteinabschnitt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Protein kann über einen kovalent gebundenen Lipidrest verankert werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mehrere α-Helizes können dieselbe Membran mehrfach durchspannen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jedes Membranprotein durchspannt beide Membranblätter.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Verankerung erfolgt über einen Glykolipidrest. B: Der Lipidrest liegt in der Membran. C: Dies kennzeichnet multipassige Proteine. D: Monotopische und periphere Proteine tun dies nicht. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Membranverankerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranverankerung"
+      ],
+      "questionGoal": "Membranverankerung",
+      "structuredExplanation": {
+        "coreIdea": "Membranverankerung",
+        "correctReasoning": "Der Lipidrest liegt in der Membran. Dies kennzeichnet multipassige Proteine.",
+        "wrongAnswerExplanations": {
+          "A": "Die Verankerung erfolgt über einen Glykolipidrest.",
+          "B": "Der Lipidrest liegt in der Membran.",
+          "C": "Dies kennzeichnet multipassige Proteine.",
+          "D": "Monotopische und periphere Proteine tun dies nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Die Lipidzusammensetzung einer Membran wird verändert. Welche funktionellen Aussagen sind richtig?",
+      "options": [
+        {
+          "text": "Die Lipidumgebung kann die Faltung und Funktion eines Membranproteins beeinflussen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Lipide haben ausschliesslich eine passive, chemisch bedeutungslose Platzhalterrolle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine unveränderte Proteinsequenz garantiert unter jeder Lipidzusammensetzung dieselbe Aktivität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die laterale Lipidverteilung kann inhomogen sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Protein und Bilayer sind funktionell gekoppelt. B: Sie beeinflussen Membran- und Proteineigenschaften. C: Die Umgebung kann Funktion und Struktur beeinflussen. D: Membrandomänen sind ein Beispiel. Quelle: Originalunterlagen, PDF-S. 18–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Lipid-Protein-Wechselwirkung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lipid-Protein-Wechselwirkung"
+      ],
+      "questionGoal": "Lipid-Protein-Wechselwirkung",
+      "structuredExplanation": {
+        "coreIdea": "Lipid-Protein-Wechselwirkung",
+        "correctReasoning": "Protein und Bilayer sind funktionell gekoppelt. Membrandomänen sind ein Beispiel.",
+        "wrongAnswerExplanations": {
+          "A": "Protein und Bilayer sind funktionell gekoppelt.",
+          "B": "Sie beeinflussen Membran- und Proteineigenschaften.",
+          "C": "Die Umgebung kann Funktion und Struktur beeinflussen.",
+          "D": "Membrandomänen sind ein Beispiel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Die Passage durch eine Lipiddoppelschicht wird mit und ohne Transportproteine verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Ein Na+-Ion diffundiert durch die reine Lipidphase so leicht wie Sauerstoff.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Anwesenheit einer Membran verhindert grundsätzlich jede Kommunikation.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Spezifische Transportproteine erweitern die transportierbaren Stoffe.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ladung, Grösse und Polarität beeinflussen die Passage durch den Bilayer.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seine Ladung erschwert diese Passage. B: Selektiver Transport und Signalübertragung ermöglichen Kommunikation. C: Sie schaffen geeignete Passagewege. D: Diese Eigenschaften bestimmen die Löslichkeit im Membrankern. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Permeabilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Permeabilität"
+      ],
+      "questionGoal": "Permeabilität",
+      "structuredExplanation": {
+        "coreIdea": "Permeabilität",
+        "correctReasoning": "Sie schaffen geeignete Passagewege. Diese Eigenschaften bestimmen die Löslichkeit im Membrankern.",
+        "wrongAnswerExplanations": {
+          "A": "Seine Ladung erschwert diese Passage.",
+          "B": "Selektiver Transport und Signalübertragung ermöglichen Kommunikation.",
+          "C": "Sie schaffen geeignete Passagewege.",
+          "D": "Diese Eigenschaften bestimmen die Löslichkeit im Membrankern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Amphiphile Moleküle bilden unterschiedliche Aggregate. Welche Aussagen zur Packung stimmen?",
+      "options": [
+        {
+          "text": "Jede Zunahme der Kettenlänge erhöht zwingend die Fluidität.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cis-Doppelbindungen erschweren häufig die dichte Kettenpackung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Liposom besitzt definitionsgemäss keinen wässrigen Innenraum.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Monolayer kann an der Wasser-Luft-Grenze entstehen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Längere Ketten fördern eher stärkere Wechselwirkungen und Ordnung. B: Die Knicke erhöhen unter vergleichbaren Bedingungen die Beweglichkeit. C: Es umschliesst einen solchen Raum. D: Köpfe liegen zum Wasser, unpolare Anteile zur Luft. Quelle: Originalunterlagen, PDF-S. 8,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Aggregate und Packung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aggregate und Packung"
+      ],
+      "questionGoal": "Aggregate und Packung",
+      "structuredExplanation": {
+        "coreIdea": "Aggregate und Packung",
+        "correctReasoning": "Die Knicke erhöhen unter vergleichbaren Bedingungen die Beweglichkeit. Köpfe liegen zum Wasser, unpolare Anteile zur Luft.",
+        "wrongAnswerExplanations": {
+          "A": "Längere Ketten fördern eher stärkere Wechselwirkungen und Ordnung.",
+          "B": "Die Knicke erhöhen unter vergleichbaren Bedingungen die Beweglichkeit.",
+          "C": "Es umschliesst einen solchen Raum.",
+          "D": "Köpfe liegen zum Wasser, unpolare Anteile zur Luft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb03_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB03",
+      "stem": "Membranbestandteile werden übertragen oder mit Detergens gelöst. Welche Aussagen unterscheiden die Vorgänge korrekt?",
+      "options": [
+        {
+          "text": "Detergenzsolubilisierung ist dasselbe wie regulierte Vesikelfusion.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Auch nichtvesikulärer Lipidtransfer ist möglich.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Vesikel können Membranbestandteile zwischen Organellen transportieren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein solubilisiertes Protein muss ohne weitere Untersuchung funktionsfähig sein.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie löst die Bilayerstruktur durch Mizellbildung auf. B: Transferproteine und Kontaktstellen sind Beispiele. C: Sie tragen Lipide und Membranproteine. D: Detergenz und Verlust der Lipidumgebung können seine Funktion verändern. Quelle: Originalunterlagen, PDF-S. 4,13,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB03",
+        "Membrandynamik und Transport"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membrandynamik und Transport"
+      ],
+      "questionGoal": "Membrandynamik und Transport",
+      "structuredExplanation": {
+        "coreIdea": "Membrandynamik und Transport",
+        "correctReasoning": "Transferproteine und Kontaktstellen sind Beispiele. Sie tragen Lipide und Membranproteine.",
+        "wrongAnswerExplanations": {
+          "A": "Sie löst die Bilayerstruktur durch Mizellbildung auf.",
+          "B": "Transferproteine und Kontaktstellen sind Beispiele.",
+          "C": "Sie tragen Lipide und Membranproteine.",
+          "D": "Detergenz und Verlust der Lipidumgebung können seine Funktion verändern."
+        }
+      }
+    }
+  ]
+}

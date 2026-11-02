@@ -1,0 +1,1316 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw12_20261102",
+  "lectureCode": "KVSW12",
+  "title": "Homöostase, Rückkopplung und physiologische Regelkreise",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW12-Regelkreise2025_Handouts. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. ADH-Synthese im Hypothalamus und Freisetzung über Neurohypophyse präzisiert; Osmolalität pro kg von Osmolarität getrennt. Lineare Stabilitätsaussagen nicht auf beliebige nichtlineare Systeme verallgemeinert. Temperaturzerfall auf Abweichung vom Gleichgewicht bezogen. Keine klinischen Kühlungs-/Medikamentenanweisungen aus didaktisch vereinfachten Folien übernommen.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Regelgrösse, Ist-/Sollwert, Fühler, Regler, Stellglied und Störung zuordnen."
+    },
+    {
+      "id": "lo2",
+      "text": "Positive und negative Rückkopplung sowie Verzögerungen erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Statische/dynamische Kennlinien, Gain und Hysterese interpretieren."
+    },
+    {
+      "id": "lo4",
+      "text": "Wasserhaushalt, Blutdruck und Temperaturregelung mechanistisch erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Glukose-, Dehnungs- und Gleichgewichtskreise als vernetzte Regelungen einordnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw12_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Eine Pumpe hält den Wasserstand eines Behälters trotz Leck konstant. Was ist die Regelgrösse?",
+      "options": [
+        {
+          "text": "Der Wasserstand.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Pumpe als ausführendes Stellglied.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Schwimmer als Fühler.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Leck als Störung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das elektrische Pumpensignal als Stellgrösse.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Er ist die zu stabilisierende Grösse. B: Die Regelgrösse ist der kontrollierte Wasserstand. C: Er misst die Regelgrösse. D: Es beeinflusst den Wasserstand. E: Dieses steuert die Wirkung auf den Wasserstand. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Regelgrösse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regelgrösse"
+      ],
+      "questionGoal": "Regelgrösse",
+      "structuredExplanation": {
+        "coreIdea": "Regelgrösse",
+        "correctReasoning": "Er ist die zu stabilisierende Grösse.",
+        "wrongAnswerExplanations": {
+          "B": "Die Regelgrösse ist der kontrollierte Wasserstand.",
+          "C": "Er misst die Regelgrösse.",
+          "D": "Es beeinflusst den Wasserstand.",
+          "E": "Dieses steuert die Wirkung auf den Wasserstand."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Nach der Folienkonvention gilt e = Ist−Soll. Ist = 8, Soll = 10. Welche Abweichung ergibt sich?",
+      "options": [
+        {
+          "text": "0,8",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "−2",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "80",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "18",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+2",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist ein Verhältnis. B: 8−10 = −2. C: Dies ist das Produkt. D: Dies ist die Summe. E: Dies verwendet die umgekehrte Konvention. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Regelabweichung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regelabweichung"
+      ],
+      "questionGoal": "Regelabweichung",
+      "structuredExplanation": {
+        "coreIdea": "Regelabweichung",
+        "correctReasoning": "8−10 = −2.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist ein Verhältnis.",
+          "C": "Dies ist das Produkt.",
+          "D": "Dies ist die Summe.",
+          "E": "Dies verwendet die umgekehrte Konvention."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Sollwert, Istwert, Fühler und Stellglied».",
+      "options": [
+        {
+          "text": "Der Sollwert ist definitionsgemäss jede zufällige Störung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Homöostase verlangt völlige zeitliche Unveränderlichkeit jedes Messwerts.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Stellglied setzt ein Korrektursignal in eine Wirkung auf die Regelstrecke um.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Fühler ist definitionsgemäss das ausführende Stellglied der Regelung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er bezeichnet den angestrebten Referenzwert. B: Regelung erlaubt Schwankungen und dynamische Korrektur. C: Es verändert den geregelten Prozess. D: Er misst; das Stellglied setzt das Korrektursignal um. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Rollen im Kreis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rollen im Kreis"
+      ],
+      "questionGoal": "Rollen im Kreis",
+      "structuredExplanation": {
+        "coreIdea": "Rollen im Kreis",
+        "correctReasoning": "Es verändert den geregelten Prozess.",
+        "wrongAnswerExplanations": {
+          "A": "Er bezeichnet den angestrebten Referenzwert.",
+          "B": "Regelung erlaubt Schwankungen und dynamische Korrektur.",
+          "C": "Es verändert den geregelten Prozess.",
+          "D": "Er misst; das Stellglied setzt das Korrektursignal um."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Welche Beziehung beschreibt negative Rückkopplung am besten?",
+      "options": [
+        {
+          "text": "Der Fühler darf keinen Istwert zurückmelden.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Teilstrecke muss zwingend eine negative Steigung haben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Regelgrösse muss dabei immer numerisch fallen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Abweichung löst eine Wirkung aus, die dieser Abweichung entgegenwirkt.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Der Sollwert muss negativ sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Rückmeldung ist gerade erforderlich. B: Entscheidend ist das gesamte Vorzeichenprodukt. C: Auch ein zu kleiner Istwert kann korrigierend ansteigen. D: Das Vorzeichen der gesamten Schleife ist rücktreibend. E: Das Zahlenvorzeichen des Sollwerts definiert keine Rückkopplungsart. Quelle: Originalunterlagen, PDF-S. 17–19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Negative Rückkopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Negative Rückkopplung"
+      ],
+      "questionGoal": "Negative Rückkopplung",
+      "structuredExplanation": {
+        "coreIdea": "Negative Rückkopplung",
+        "correctReasoning": "Das Vorzeichen der gesamten Schleife ist rücktreibend.",
+        "wrongAnswerExplanations": {
+          "A": "Rückmeldung ist gerade erforderlich.",
+          "B": "Entscheidend ist das gesamte Vorzeichenprodukt.",
+          "C": "Auch ein zu kleiner Istwert kann korrigierend ansteigen.",
+          "E": "Das Zahlenvorzeichen des Sollwerts definiert keine Rückkopplungsart."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Welche Kette zeigt die positive Rückkopplung des AP-Aufstrichs?",
+      "options": [
+        {
+          "text": "Depolarisation → mehr aktive Na-Kanäle → weiterer depolarisierender Na-Einstrom.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Temperaturanstieg → Wärmeabgabe → Temperatursenkung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Glukoseanstieg → Insulinwirkung → Glukosesenkung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wasserverlust → Wasserretention → weniger Wasserverlust.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Depolarisation → K-Auswärtsstrom → Repolarisation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die anfängliche Änderung verstärkt sich. B: Dies wirkt negativ rückgekoppelt. C: Dies ist negative Rückkopplung. D: Dies wirkt der Störung entgegen. E: Dies ist ein rücktreibender Anteil. Quelle: Originalunterlagen, PDF-S. 19.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Positiver AP-Kreis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Positiver AP-Kreis"
+      ],
+      "questionGoal": "Positiver AP-Kreis",
+      "structuredExplanation": {
+        "coreIdea": "Positiver AP-Kreis",
+        "correctReasoning": "Die anfängliche Änderung verstärkt sich.",
+        "wrongAnswerExplanations": {
+          "B": "Dies wirkt negativ rückgekoppelt.",
+          "C": "Dies ist negative Rückkopplung.",
+          "D": "Dies wirkt der Störung entgegen.",
+          "E": "Dies ist ein rücktreibender Anteil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q06",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Rückkopplungsverstärkung und Zeitverzögerung».",
+      "options": [
+        {
+          "text": "Eine verspätete Korrektur kann fortwirken, obwohl der Sollwert bereits überschritten wurde.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Negative Rückkopplung garantiert bei beliebiger Verstärkung und Verzögerung stets einen ruhigen Verlauf.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Geringere Korrekturstärke kann ein verzögertes System beruhigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein einmaliges Überschwingen kann auch bei später gedämpfter Rückkehr auftreten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dadurch kann Überschwingen entstehen. B: Zu grosse Verzögerung und Verstärkung können destabilisieren. C: Der Eingriff muss zur Dynamik passen. D: Überschwingen allein beweist keine unbeschränkte Instabilität. Quelle: Originalunterlagen, PDF-S. 20–21.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Verzögerung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verzögerung"
+      ],
+      "questionGoal": "Verzögerung",
+      "structuredExplanation": {
+        "coreIdea": "Verzögerung",
+        "correctReasoning": "Dadurch kann Überschwingen entstehen. Der Eingriff muss zur Dynamik passen. Überschwingen allein beweist keine unbeschränkte Instabilität.",
+        "wrongAnswerExplanations": {
+          "A": "Dadurch kann Überschwingen entstehen.",
+          "B": "Zu grosse Verzögerung und Verstärkung können destabilisieren.",
+          "C": "Der Eingriff muss zur Dynamik passen.",
+          "D": "Überschwingen allein beweist keine unbeschränkte Instabilität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Welche Darstellung ist eine dynamische Kennlinie?",
+      "options": [
+        {
+          "text": "Ein anatomischer Querschnitt des Fühlers.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Pumpenleistung gegen stationären Wasserstand.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Stationäre Feuerrate gegen konstant gehaltene Temperatur.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Sollwert ohne Zeit- oder Eingangsbezug.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Temperatur als Funktion der Zeit nach einer definierten Störung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies zeigt Struktur, keinen zeitlichen Verlauf. B: Dies ist ebenfalls eine statische Zuordnung. C: Dies ist eine statische Ein-Ausgangs-Kennlinie. D: Ein einzelner Wert ist keine Übergangsfunktion. E: Sie beschreibt den zeitlichen Übergang. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Dynamische Kennlinie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dynamische Kennlinie"
+      ],
+      "questionGoal": "Dynamische Kennlinie",
+      "structuredExplanation": {
+        "coreIdea": "Dynamische Kennlinie",
+        "correctReasoning": "Sie beschreibt den zeitlichen Übergang.",
+        "wrongAnswerExplanations": {
+          "A": "Dies zeigt Struktur, keinen zeitlichen Verlauf.",
+          "B": "Dies ist ebenfalls eine statische Zuordnung.",
+          "C": "Dies ist eine statische Ein-Ausgangs-Kennlinie.",
+          "D": "Ein einzelner Wert ist keine Übergangsfunktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Bei 20 °C kann eine Heizung je nach vorausgegangenem Verlauf ein- oder ausgeschaltet sein. Welches Phänomen ist beschrieben?",
+      "options": [
+        {
+          "text": "Zwingend positive ungebremste Rückkopplung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hysterese",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein reiner Einheitenfehler.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein vollständiger Ausfall des Fühlers.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine eindeutig einwertige Kennlinie ohne Gedächtnis.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Schalthysterese kann Teil einer stabilen Regelung sein. B: Der Zustand hängt vom Verlauf ab; Ein- und Ausschaltschwellen können verschieden sein. C: Die Temperaturangabe ist nicht das Problem. D: Hysterese kann eine beabsichtigte Funktion sein. E: Der Verlauf ist ausdrücklich relevant. Quelle: Originalunterlagen, PDF-S. 11–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Hysterese"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hysterese"
+      ],
+      "questionGoal": "Hysterese",
+      "structuredExplanation": {
+        "coreIdea": "Hysterese",
+        "correctReasoning": "Der Zustand hängt vom Verlauf ab; Ein- und Ausschaltschwellen können verschieden sein.",
+        "wrongAnswerExplanations": {
+          "A": "Schalthysterese kann Teil einer stabilen Regelung sein.",
+          "C": "Die Temperaturangabe ist nicht das Problem.",
+          "D": "Hysterese kann eine beabsichtigte Funktion sein.",
+          "E": "Der Verlauf ist ausdrücklich relevant."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Sättigung und Steigung statischer Kennlinien».",
+      "options": [
+        {
+          "text": "Biologische Kennlinien können sättigen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Steigung einer statischen Kennlinie beschreibt lokal die Verstärkung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Statisch bedeutet, dass die Kennlinie ausschliesslich Zeit auf der x-Achse trägt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Jede Kennlinie eines biologischen Fühlers ist über alle Werte exakt linear.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der nutzbare Arbeitsbereich ist begrenzt. B: Sie verknüpft kleine Eingangs- mit Ausgangsänderungen. C: Eine statische Kennlinie ordnet stationären Eingang und Ausgang zu. D: Dies ist keine allgemeine Eigenschaft. Quelle: Originalunterlagen, PDF-S. 11–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Kennlinien und Gain"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kennlinien und Gain"
+      ],
+      "questionGoal": "Kennlinien und Gain",
+      "structuredExplanation": {
+        "coreIdea": "Kennlinien und Gain",
+        "correctReasoning": "Der nutzbare Arbeitsbereich ist begrenzt. Sie verknüpft kleine Eingangs- mit Ausgangsänderungen.",
+        "wrongAnswerExplanations": {
+          "A": "Der nutzbare Arbeitsbereich ist begrenzt.",
+          "B": "Sie verknüpft kleine Eingangs- mit Ausgangsänderungen.",
+          "C": "Eine statische Kennlinie ordnet stationären Eingang und Ausgang zu.",
+          "D": "Dies ist keine allgemeine Eigenschaft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Hypotone Schweissverluste erhöhen die Plasmaosmolalität. Welche Antwort wirkt dem Wasserdefizit entgegen?",
+      "options": [
+        {
+          "text": "Weniger ADH und mehr renale Wasserausscheidung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehr ADH-Wirkung und dadurch mehr renale Wasserrückresorption.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mehr ADH bei gleichzeitig grundsätzlich sinkender Sammelrohr-Wasserpermeabilität.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich stärkere Natriumausscheidung ohne jede Wasserregulation.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Vollständiges Ausbleiben jeder Osmorezeptorantwort bei erhöhter Osmolalität.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies würde das Defizit verstärken. B: Dies hilft Wasser zu erhalten. C: ADH fördert im Modell AQP2-Einbau und Wasseraufnahme. D: Die passende unmittelbare Kompensation ist Wasserretention. E: Das widerspricht dem beschriebenen Regelkreis. Quelle: Originalunterlagen, PDF-S. 5–8,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Osmoregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Osmoregulation"
+      ],
+      "questionGoal": "Osmoregulation",
+      "structuredExplanation": {
+        "coreIdea": "Osmoregulation",
+        "correctReasoning": "Dies hilft Wasser zu erhalten.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde das Defizit verstärken.",
+          "C": "ADH fördert im Modell AQP2-Einbau und Wasseraufnahme.",
+          "D": "Die passende unmittelbare Kompensation ist Wasserretention.",
+          "E": "Das widerspricht dem beschriebenen Regelkreis."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «ADH, AQP2 und Osmolalität».",
+      "options": [
+        {
+          "text": "ADH wird erst in der Niere als Genprodukt hergestellt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "AQP2-Einbau im Sammelrohr unterstützt ADH-abhängige Wasseraufnahme.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Liter und ein Kilogramm sind für jede Flüssigkeit definitionsgemäss identisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Osmolalität bezieht sich auf osmotisch wirksame Teilchen pro kg Lösungsmittel.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es wird in hypothalamischen Neuronen synthetisiert und über die Neurohypophyse freigesetzt. B: Die Wasserpermeabilität steigt. C: Volumen und Masse sind unterschiedliche Grössen. D: Sie ist von Osmolarität pro Volumen zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 5–8,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "ADH und Osmolalität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "ADH und Osmolalität"
+      ],
+      "questionGoal": "ADH und Osmolalität",
+      "structuredExplanation": {
+        "coreIdea": "ADH und Osmolalität",
+        "correctReasoning": "Die Wasserpermeabilität steigt. Sie ist von Osmolarität pro Volumen zu unterscheiden.",
+        "wrongAnswerExplanations": {
+          "A": "Es wird in hypothalamischen Neuronen synthetisiert und über die Neurohypophyse freigesetzt.",
+          "B": "Die Wasserpermeabilität steigt.",
+          "C": "Volumen und Masse sind unterschiedliche Grössen.",
+          "D": "Sie ist von Osmolarität pro Volumen zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Der hypothalamische Temperatursollwert steigt von 37 auf 39 °C. Die Kerntemperatur ist zunächst 38 °C. Welche Reaktion passt zur Regelabweichung?",
+      "options": [
+        {
+          "text": "Der Regler muss ausschliesslich maximale Kühlung auslösen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jeder Temperaturanstieg ist definitionsgemäss ein Fühlerbruch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Soll- und Istwert sind identisch.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es ist grundsätzlich keine Rückmeldung mehr möglich.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Wärmesparen oder Wärmeproduktion können trotz bereits erhöhter Temperatur einsetzen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies würde zum alten, nicht zum erhöhten Sollwert passen. B: Fieber kann eine geregelte Sollwertänderung sein. C: 38 und 39 °C unterscheiden sich. D: Fieber bedeutet nicht automatisch Reglerausfall. E: Der Istwert liegt noch unter dem neuen Sollwert. Quelle: Originalunterlagen, PDF-S. 22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Fieber-Sollwert"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fieber-Sollwert"
+      ],
+      "questionGoal": "Fieber-Sollwert",
+      "structuredExplanation": {
+        "coreIdea": "Fieber-Sollwert",
+        "correctReasoning": "Der Istwert liegt noch unter dem neuen Sollwert.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde zum alten, nicht zum erhöhten Sollwert passen.",
+          "B": "Fieber kann eine geregelte Sollwertänderung sein.",
+          "C": "38 und 39 °C unterscheiden sich.",
+          "D": "Fieber bedeutet nicht automatisch Reglerausfall."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Wärmeproduktion, Haut-/Kerninformation und Fieber».",
+      "options": [
+        {
+          "text": "Schwitzen ist primär ein Mechanismus zur Steigerung der Verdunstungswärme im Körper.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zittern kann die Wärmeproduktion erhöhen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Haut- und Kerntemperatur liefern unterschiedliche sensorische Informationen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein Fiebersollwert und unkontrollierte Hyperthermie sind begrifflich dasselbe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Verdunstung entzieht dem Körper Wärme. B: Es ist ein thermoregulatorischer Effektor. C: Die Regelung nutzt mehrere Fühler. D: Sollwertänderung und Überwärmung ohne solche Änderung sind zu unterscheiden. Quelle: Originalunterlagen, PDF-S. 22–25.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Thermoregulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Thermoregulation"
+      ],
+      "questionGoal": "Thermoregulation",
+      "structuredExplanation": {
+        "coreIdea": "Thermoregulation",
+        "correctReasoning": "Es ist ein thermoregulatorischer Effektor. Die Regelung nutzt mehrere Fühler.",
+        "wrongAnswerExplanations": {
+          "A": "Verdunstung entzieht dem Körper Wärme.",
+          "B": "Es ist ein thermoregulatorischer Effektor.",
+          "C": "Die Regelung nutzt mehrere Fühler.",
+          "D": "Sollwertänderung und Überwärmung ohne solche Änderung sind zu unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Eine Druckerhöhung dehnt arterielle Barorezeptoren. Welche Rolle haben sie im Regelkreis?",
+      "options": [
+        {
+          "text": "Fühler der druckabhängigen Gefässdehnung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Endprodukt einer Insulinsynthese.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Externer Sollwertgeber ohne Messfunktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Stellglied, das selbst die gesamte Herzarbeit erzeugt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Störgrösse identisch mit jeder Blutung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ihre Aktivität meldet den Zustand zurück. B: Dies gehört zu einem anderen System. C: Sie messen die mechanische Situation. D: Sie liefern vor allem sensorische Information. E: Eine Blutung ist eine mögliche Störung, kein Rezeptor. Quelle: Originalunterlagen, PDF-S. 14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Blutdruck-Fühler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blutdruck-Fühler"
+      ],
+      "questionGoal": "Blutdruck-Fühler",
+      "structuredExplanation": {
+        "coreIdea": "Blutdruck-Fühler",
+        "correctReasoning": "Ihre Aktivität meldet den Zustand zurück.",
+        "wrongAnswerExplanations": {
+          "B": "Dies gehört zu einem anderen System.",
+          "C": "Sie messen die mechanische Situation.",
+          "D": "Sie liefern vor allem sensorische Information.",
+          "E": "Eine Blutung ist eine mögliche Störung, kein Rezeptor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Nach Glukosezufuhr steigt die Insulinsekretion und fördert glukosesenkende Prozesse. Welche Rückkopplungsrichtung hat dieser Kreis?",
+      "options": [
+        {
+          "text": "Positiv, weil der Glukosewert positiv angegeben wird.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Negativ",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Positiv, weil mehr Insulin ausgeschüttet wird.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Keine Rückkopplung, weil ein Hormon beteiligt ist.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Unbestimmbar allein wegen mehrerer Zelltypen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Zahlenvorzeichen der Konzentration ist irrelevant. B: Die Antwort wirkt dem ursprünglichen Glukoseanstieg entgegen. C: Das Vorzeichen eines Teils allein bestimmt nicht den gesamten Kreis. D: Hormone können Regelkreise vermitteln. E: Die Wirkungsrichtungen sind ausdrücklich angegeben. Quelle: Originalunterlagen, PDF-S. 31.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Glukoseregelung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glukoseregelung"
+      ],
+      "questionGoal": "Glukoseregelung",
+      "structuredExplanation": {
+        "coreIdea": "Glukoseregelung",
+        "correctReasoning": "Die Antwort wirkt dem ursprünglichen Glukoseanstieg entgegen.",
+        "wrongAnswerExplanations": {
+          "A": "Das Zahlenvorzeichen der Konzentration ist irrelevant.",
+          "C": "Das Vorzeichen eines Teils allein bestimmt nicht den gesamten Kreis.",
+          "D": "Hormone können Regelkreise vermitteln.",
+          "E": "Die Wirkungsrichtungen sind ausdrücklich angegeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «hormonelle und neuromuskuläre Effektoren».",
+      "options": [
+        {
+          "text": "Jede Insulinwirkung erhöht die Blutglukose als Rückkopplungsziel.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Glukagon kann zur Erhöhung der Blutglukose beitragen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Muskelspindeln sind ausschliesslich Kraftgeneratoren ohne Fühlerfunktion.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Im Dehnungsreflex können Motoneurone und Muskel die Korrektur ausführen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die behandelten Wirkungen senken sie. B: Es wirkt unter anderem auf hepatische Glukosebereitstellung. C: Sie erfassen Muskeldehnung. D: Die gemeldete Dehnung beeinflusst die motorische Antwort. Quelle: Originalunterlagen, PDF-S. 31–33.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Effektoren und Sensoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Effektoren und Sensoren"
+      ],
+      "questionGoal": "Effektoren und Sensoren",
+      "structuredExplanation": {
+        "coreIdea": "Effektoren und Sensoren",
+        "correctReasoning": "Es wirkt unter anderem auf hepatische Glukosebereitstellung. Die gemeldete Dehnung beeinflusst die motorische Antwort.",
+        "wrongAnswerExplanations": {
+          "A": "Die behandelten Wirkungen senken sie.",
+          "B": "Es wirkt unter anderem auf hepatische Glukosebereitstellung.",
+          "C": "Sie erfassen Muskeldehnung.",
+          "D": "Die gemeldete Dehnung beeinflusst die motorische Antwort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Warum können Seh-, Vestibular- und propriozeptive Information gemeinsam zur Gleichgewichtsregelung beitragen?",
+      "options": [
+        {
+          "text": "Alle drei melden definitionsgemäss exakt dieselbe physikalische Grösse am selben Ort.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie liefern verschiedene Hinweise auf Körperlage und Bewegung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mehr Fühler verhindern grundsätzlich jede Regelung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Gleichgewicht wird ohne motorische Stellglieder allein durch den Namen des Sollwerts stabilisiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur Sehen kann je eine Rückmeldung liefern.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Informationsquellen sind verschieden. B: Die zentrale Integration nutzt mehrere Rückmeldungen. C: Mehrere Rückmeldungen können kombiniert werden. D: Korrektur benötigt wirksame Ausgänge. E: Auch Vestibularsystem und Propriozeption liefern sensorische Signale. Quelle: Originalunterlagen, PDF-S. 34–35.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Gleichgewicht"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gleichgewicht"
+      ],
+      "questionGoal": "Gleichgewicht",
+      "structuredExplanation": {
+        "coreIdea": "Gleichgewicht",
+        "correctReasoning": "Die zentrale Integration nutzt mehrere Rückmeldungen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Informationsquellen sind verschieden.",
+          "C": "Mehrere Rückmeldungen können kombiniert werden.",
+          "D": "Korrektur benötigt wirksame Ausgänge.",
+          "E": "Auch Vestibularsystem und Propriozeption liefern sensorische Signale."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «verschachtelte Regelkreise und Stabilität».",
+      "options": [
+        {
+          "text": "Ein Fühler kann durch Adaptation in einem günstigen Arbeitsbereich gehalten werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Für den Stabilitätsverlauf sind Verstärkung und Zeitverzögerung wichtig.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die lineare Gleichung dR/dt = aR mit a > 0 beschreibt einen stabilen Nullzustand gegen kleine Störungen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Mehrere Rückkopplungsschleifen sind immer unabhängig voneinander.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Regelungselemente können selbst reguliert sein. B: Das Vorzeichen allein reicht in komplexen Systemen nicht. C: Abweichungen wachsen in diesem Modell exponentiell. D: Sie können gekoppelt oder verschachtelt sein. Quelle: Originalunterlagen, PDF-S. 21,27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Verschachtelte Regelung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verschachtelte Regelung"
+      ],
+      "questionGoal": "Verschachtelte Regelung",
+      "structuredExplanation": {
+        "coreIdea": "Verschachtelte Regelung",
+        "correctReasoning": "Regelungselemente können selbst reguliert sein. Das Vorzeichen allein reicht in komplexen Systemen nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Regelungselemente können selbst reguliert sein.",
+          "B": "Das Vorzeichen allein reicht in komplexen Systemen nicht.",
+          "C": "Abweichungen wachsen in diesem Modell exponentiell.",
+          "D": "Sie können gekoppelt oder verschachtelt sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Die Abweichung x von einer Umgebungstemperatur erfüllt dx/dt = −0,2x pro Minute. Wie gross ist die Zeitkonstante?",
+      "options": [
+        {
+          "text": "5 min",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0,2 min",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "−5 min als physikalische Relaxationszeit",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 min",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2 min",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: τ = 1/0,2 pro Minute = 5 Minuten. B: Dies ist der Zahlenwert des Rückkopplungsfaktors, nicht sein Kehrwert. C: Die positive Zeitkonstante beschreibt den Zerfall. D: Das wäre der Kehrwert von 0,05 pro Minute. E: Der Kehrwert wurde falsch berechnet. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Exponentielle Annäherung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Exponentielle Annäherung"
+      ],
+      "questionGoal": "Exponentielle Annäherung",
+      "structuredExplanation": {
+        "coreIdea": "Exponentielle Annäherung",
+        "correctReasoning": "τ = 1/0,2 pro Minute = 5 Minuten.",
+        "wrongAnswerExplanations": {
+          "B": "Dies ist der Zahlenwert des Rückkopplungsfaktors, nicht sein Kehrwert.",
+          "C": "Die positive Zeitkonstante beschreibt den Zerfall.",
+          "D": "Das wäre der Kehrwert von 0,05 pro Minute.",
+          "E": "Der Kehrwert wurde falsch berechnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw12_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW12",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Temperaturmodell, Stellgliedrichtung und vorauseilende Rückmeldung».",
+      "options": [
+        {
+          "text": "Beim Abkühlen gegen 15 °C bezieht sich die Zerfallsgleichung auf T−15 °C.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein Stellglied mit entgegengesetzter Wirkungsrichtung kann ohne Anpassung des Reglervorzeichens beliebig ausgetauscht werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sättigung und begrenzende Gegenprozesse können an einer positiven Rückkopplung grundsätzlich nie etwas ändern.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Präresorptive Durststillung kann eine vorauseilende Rückmeldung vor vollständiger Wasseraufnahme sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Abweichung, nicht die absolute Celsiuszahl, geht gegen null. B: Das gesamte Schleifenvorzeichen muss erhalten bleiben. C: Ein einfaches unbeschränktes lineares Modell ist nicht jede biologische Dynamik. D: Sie begrenzt übermässiges Weitertrinken während der Verzögerung. Quelle: Originalunterlagen, PDF-S. 4,17–21,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW12",
+        "Modelle präzise lesen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modelle präzise lesen"
+      ],
+      "questionGoal": "Modelle präzise lesen",
+      "structuredExplanation": {
+        "coreIdea": "Modelle präzise lesen",
+        "correctReasoning": "Die Abweichung, nicht die absolute Celsiuszahl, geht gegen null. Sie begrenzt übermässiges Weitertrinken während der Verzögerung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Abweichung, nicht die absolute Celsiuszahl, geht gegen null.",
+          "B": "Das gesamte Schleifenvorzeichen muss erhalten bleiben.",
+          "C": "Ein einfaches unbeschränktes lineares Modell ist nicht jede biologische Dynamik.",
+          "D": "Sie begrenzt übermässiges Weitertrinken während der Verzögerung."
+        }
+      }
+    }
+  ]
+}

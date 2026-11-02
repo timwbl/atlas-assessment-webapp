@@ -1,0 +1,1315 @@
+{
+  "id": "assessment_j1_s1_block1_kvc13_20261102",
+  "lectureCode": "KVC13",
+  "title": "Thermodynamik I",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC13 - Thermodynamik. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die Gesamtbilanz von Bindungsspaltung und Bindungsbildung wird erläutert; Bindungsbruch wird nicht als energieerzeugender Einzelvorgang dargestellt. Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Offene, geschlossene und isolierte Systeme sowie Wärme und Arbeit unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Innere Energie, Enthalpie und den Satz von Hess anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Biologische Energiespeicherung von kurzfristigem Energietransfer abgrenzen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc13_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Welche Systembeschreibung passt zum menschlichen Organismus bei Ernährung, Atmung und Wärmeabgabe?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein System ohne definierbare Umgebung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Adiabatisches System mit Stoff-, aber definitionsgemäss ohne Wärmeabgabe.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Isoliertes System ohne jeden Austausch.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Geschlossenes System mit Energie-, aber ohne Stoffaustausch.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Offenes System mit Stoff- und Energieaustausch.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Die Systemgrenze kann sinnvoll um den Körper gelegt werden; die Umgebung ist beschreibbar. B: Der lebende Organismus gibt auch Wärme ab; adiabatisch ist hier keine passende Gesamtbeschreibung. C: Der Organismus gibt Wärme und Stoffe ab und ist nicht isoliert. D: Atmung und Ernährung sind Stoffaustausch und widersprechen geschlossen. E: Nahrung, Atemgase und Ausscheidung sind Stoffflüsse; Wärme und Arbeit übertragen zusätzlich Energie. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Offenes System"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Offenes System"
+      ],
+      "questionGoal": "Offenes System",
+      "structuredExplanation": {
+        "coreIdea": "Offenes System",
+        "correctReasoning": "Nahrung, Atemgase und Ausscheidung sind Stoffflüsse; Wärme und Arbeit übertragen zusätzlich Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Die Systemgrenze kann sinnvoll um den Körper gelegt werden; die Umgebung ist beschreibbar.",
+          "B": "Der lebende Organismus gibt auch Wärme ab; adiabatisch ist hier keine passende Gesamtbeschreibung.",
+          "C": "Der Organismus gibt Wärme und Stoffe ab und ist nicht isoliert.",
+          "D": "Atmung und Ernährung sind Stoffaustausch und widersprechen geschlossen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Was darf ein geschlossenes, aber nicht isoliertes System über seine Grenze austauschen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weder Energie noch Materie.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Energie, aber keine Materie.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Nur Protonen, aber keine anderen Atome.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Materie, aber keine Energie.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Immer beliebige Materie und Energie.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Dies beschreibt ein isoliertes und nicht bloss geschlossenes System. B: Geschlossen beschreibt den Ausschluss von Stoffaustausch; Wärme und Arbeit können weiterhin auftreten. C: Geschlossen schliesst auch den Austausch von Protonen als Materie aus. D: Geschlossen verbietet gerade den Materieaustausch, nicht den Energieaustausch. E: Beliebiger Stoffaustausch wäre die Beschreibung eines offenen Systems. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Geschlossenes System"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschlossenes System"
+      ],
+      "questionGoal": "Geschlossenes System",
+      "structuredExplanation": {
+        "coreIdea": "Geschlossenes System",
+        "correctReasoning": "Geschlossen beschreibt den Ausschluss von Stoffaustausch; Wärme und Arbeit können weiterhin auftreten.",
+        "wrongAnswerExplanations": {
+          "A": "Dies beschreibt ein isoliertes und nicht bloss geschlossenes System.",
+          "C": "Geschlossen schliesst auch den Austausch von Protonen als Materie aus.",
+          "D": "Geschlossen verbietet gerade den Materieaustausch, nicht den Energieaustausch.",
+          "E": "Beliebiger Stoffaustausch wäre die Beschreibung eines offenen Systems."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Ein System nimmt 80 J Wärme auf und verrichtet 30 J Arbeit an der Umgebung. Mit ΔU=q+w und w als Arbeit am System gilt welche Bilanz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ΔU=−50 J.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "ΔU=−110 J.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "ΔU=+110 J.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ΔU=+50 J.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "ΔU=+30 J.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Das System gewinnt netto 50 J und verliert nicht 50 J. B: Beide Energieflüsse wurden hier mit negativem Vorzeichen behandelt, obwohl Wärme aufgenommen wird. C: 110 J addiert die vom System verrichtete Arbeit mit falschem Vorzeichen als Aufnahme. D: q=+80 J, w=−30 J, daher ΔU=50 J; Arbeitsrichtung und Vorzeichen müssen zusammenpassen. E: 30 J ist nur die abgegebene Arbeit; die aufgenommene Wärme fehlt in dieser Bilanz. Quelle: Originalunterlagen, PDF-S. 4,7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Erster Hauptsatz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erster Hauptsatz"
+      ],
+      "questionGoal": "Erster Hauptsatz",
+      "structuredExplanation": {
+        "coreIdea": "Erster Hauptsatz",
+        "correctReasoning": "q=+80 J, w=−30 J, daher ΔU=50 J; Arbeitsrichtung und Vorzeichen müssen zusammenpassen.",
+        "wrongAnswerExplanations": {
+          "A": "Das System gewinnt netto 50 J und verliert nicht 50 J.",
+          "B": "Beide Energieflüsse wurden hier mit negativem Vorzeichen behandelt, obwohl Wärme aufgenommen wird.",
+          "C": "110 J addiert die vom System verrichtete Arbeit mit falschem Vorzeichen als Aufnahme.",
+          "E": "30 J ist nur die abgegebene Arbeit; die aufgenommene Wärme fehlt in dieser Bilanz."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Warum ist die Änderung der inneren Energie bei gleichen Anfangs- und Endzuständen unabhängig vom gewählten Prozessweg?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei allen Wegen wird ausschliesslich Wärme und niemals Arbeit übertragen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Wärme und Arbeit sind beide unveränderliche Stoffeigenschaften.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "U ist eine Zustandsfunktion, auch wenn Wärme und Arbeit einzeln wegabhängig sind.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Jeder Prozess muss dieselbe Dauer haben.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die innere Energie ist definitionsgemäss immer null.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Bei verschiedenen Wegen können unterschiedliche Arbeits- und Wärmeanteile auftreten. B: Wärme und Arbeit sind wegabhängige Übertragungsarten, nicht feste Zustandseigenschaften. C: Nur die Summe q+w legt ΔU fest; die Aufteilung kann zwischen verschiedenen Wegen variieren. D: Die Dauer eines Prozesses definiert keine Zustandsfunktion. E: U muss nicht null sein; relevant ist die Differenz der Zustände. Quelle: Originalunterlagen, PDF-S. 5–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Zustandsfunktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zustandsfunktion"
+      ],
+      "questionGoal": "Zustandsfunktion",
+      "structuredExplanation": {
+        "coreIdea": "Zustandsfunktion",
+        "correctReasoning": "Nur die Summe q+w legt ΔU fest; die Aufteilung kann zwischen verschiedenen Wegen variieren.",
+        "wrongAnswerExplanations": {
+          "A": "Bei verschiedenen Wegen können unterschiedliche Arbeits- und Wärmeanteile auftreten.",
+          "B": "Wärme und Arbeit sind wegabhängige Übertragungsarten, nicht feste Zustandseigenschaften.",
+          "D": "Die Dauer eines Prozesses definiert keine Zustandsfunktion.",
+          "E": "U muss nicht null sein; relevant ist die Differenz der Zustände."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Welche Gleichung definiert die Enthalpie?",
+      "options": [
+        {
+          "id": "A",
+          "text": "H=U−pV.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "H=pV/U.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "H=U+pV.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "H=TS−G.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "H=q/T.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Der pV-Term wird bei H zu U addiert, nicht subtrahiert. B: pV/U ist ein Verhältnis und hat nicht die benötigte Energieeinheit von H. C: Enthalpie ergänzt die innere Energie um den pV-Term. D: Aus G=H−TS folgt H=G+TS, nicht TS−G. E: q/T besitzt die Dimension einer Entropie und definiert nicht H. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Enthalpiedefinition"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Enthalpiedefinition"
+      ],
+      "questionGoal": "Enthalpiedefinition",
+      "structuredExplanation": {
+        "coreIdea": "Enthalpiedefinition",
+        "correctReasoning": "Enthalpie ergänzt die innere Energie um den pV-Term.",
+        "wrongAnswerExplanations": {
+          "A": "Der pV-Term wird bei H zu U addiert, nicht subtrahiert.",
+          "B": "pV/U ist ein Verhältnis und hat nicht die benötigte Energieeinheit von H.",
+          "D": "Aus G=H−TS folgt H=G+TS, nicht TS−G.",
+          "E": "q/T besitzt die Dimension einer Entropie und definiert nicht H."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Unter welchen Bedingungen kann die bei konstantem Druck aufgenommene Wärme mit ΔH gleichgesetzt werden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bei ausschliesslicher pV-Arbeit und geeigneter geschlossener Systembilanz.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Unabhängig davon, ob Druck und Stoffmenge beliebig wechseln.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Nur wenn Temperatur und Enthalpie exakt null sind.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Bei beliebiger zusätzlicher elektrischer Arbeit ohne Korrektur.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur wenn keine chemische Reaktion stattfinden darf.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Gleichsetzung qₚ=ΔH setzt voraus, dass keine weitere Arbeitsform die Energiebilanz verändert. B: Ohne konstanten Druck und passende Systemgrenze fehlt die angegebene Gleichsetzungsbedingung. C: Die Gleichsetzung benötigt keinen Nullwert von Temperatur oder Enthalpie. D: Zusätzliche elektrische Arbeit muss in der Wärme-/Energiebilanz eigens berücksichtigt werden. E: Auch Reaktionen können bei konstantem Druck mit qₚ=ΔH bilanziert werden. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Konstanter Druck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konstanter Druck"
+      ],
+      "questionGoal": "Konstanter Druck",
+      "structuredExplanation": {
+        "coreIdea": "Konstanter Druck",
+        "correctReasoning": "Die Gleichsetzung qₚ=ΔH setzt voraus, dass keine weitere Arbeitsform die Energiebilanz verändert.",
+        "wrongAnswerExplanations": {
+          "B": "Ohne konstanten Druck und passende Systemgrenze fehlt die angegebene Gleichsetzungsbedingung.",
+          "C": "Die Gleichsetzung benötigt keinen Nullwert von Temperatur oder Enthalpie.",
+          "D": "Zusätzliche elektrische Arbeit muss in der Wärme-/Energiebilanz eigens berücksichtigt werden.",
+          "E": "Auch Reaktionen können bei konstantem Druck mit qₚ=ΔH bilanziert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Welche Aussage zur Spaltung und Bildung chemischer Bindungen ist richtig?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Vorzeichen einer Reaktion wird nur durch die Zahl gebrochener Bindungen festgelegt.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Produkte können für die Reaktionsenthalpie ignoriert werden.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Bindungsspaltung benötigt Energie; Bindungsbildung kann Energie freisetzen.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Jeder isolierte Bindungsbruch setzt definitionsgemäss Energie frei.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Bindungsbildung ist grundsätzlich endotherm.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Auch die neu gebildeten Bindungen bestimmen die Reaktionsenthalpie. B: Ohne Produktbindungen lässt sich die Nettobilanz nicht bestimmen. C: Die Nettobilanz berücksichtigt Energie zum Brechen und die bei Bildung neuer Wechselwirkungen freiwerdende Energie. D: Ein isolierter Bindungsbruch benötigt Energie; Freisetzung ergibt sich erst aus der Gesamtbilanz. E: Bindungsbildung kann Energie freisetzen und ist nicht grundsätzlich endotherm. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Bindungsenthalpie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindungsenthalpie"
+      ],
+      "questionGoal": "Bindungsenthalpie",
+      "structuredExplanation": {
+        "coreIdea": "Bindungsenthalpie",
+        "correctReasoning": "Die Nettobilanz berücksichtigt Energie zum Brechen und die bei Bildung neuer Wechselwirkungen freiwerdende Energie.",
+        "wrongAnswerExplanations": {
+          "A": "Auch die neu gebildeten Bindungen bestimmen die Reaktionsenthalpie.",
+          "B": "Ohne Produktbindungen lässt sich die Nettobilanz nicht bestimmen.",
+          "D": "Ein isolierter Bindungsbruch benötigt Energie; Freisetzung ergibt sich erst aus der Gesamtbilanz.",
+          "E": "Bindungsbildung kann Energie freisetzen und ist nicht grundsätzlich endotherm."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Für A→B gilt ΔH=+30 kJ/mol, für B→C ΔH=−50 kJ/mol. Welche Enthalpie ergibt sich für A→C bei gleicher stöchiometrischer Bezugsmenge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "−20 kJ/mol.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "+20 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "+80 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "−1.67 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "−80 kJ/mol.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Zustandsfunktionsänderungen addieren sich: +30−50=−20 kJ/mol. B: Das Vorzeichen der Summe ist negativ, weil −50 den Beitrag +30 überwiegt. C: 80 kJ/mol addiert Beträge statt der vorzeichenbehafteten Beiträge. D: Eine Division der beiden Enthalpien liefert keine addierte Gesamtenthalpie. E: −80 kJ/mol behandelt auch den endothermen Schritt fälschlich als negativ. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Hesssche Addition"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hesssche Addition"
+      ],
+      "questionGoal": "Hesssche Addition",
+      "structuredExplanation": {
+        "coreIdea": "Hesssche Addition",
+        "correctReasoning": "Zustandsfunktionsänderungen addieren sich: +30−50=−20 kJ/mol.",
+        "wrongAnswerExplanations": {
+          "B": "Das Vorzeichen der Summe ist negativ, weil −50 den Beitrag +30 überwiegt.",
+          "C": "80 kJ/mol addiert Beträge statt der vorzeichenbehafteten Beiträge.",
+          "D": "Eine Division der beiden Enthalpien liefert keine addierte Gesamtenthalpie.",
+          "E": "−80 kJ/mol behandelt auch den endothermen Schritt fälschlich als negativ."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Für A→B gilt ΔH=−100 kJ/mol. Was gilt für B→A mit derselben Bezugsmenge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "−50 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "+50 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "+100 kJ/mol.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "−100 kJ/mol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "0 kJ/mol.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Neben falschem Vorzeichen wurde hier der Betrag ohne stöchiometrischen Anlass halbiert. B: Halbierung wäre eine Änderung des stöchiometrischen Faktors, nicht die reine Umkehr. C: Umkehr derselben Zustandsänderung kehrt das Vorzeichen um, nicht den Betrag. D: Beim Umkehren muss sich das Vorzeichen ändern. E: Gleiche Beträge mit entgegengesetztem Vorzeichen ergeben sich nur beim Hin-und-zurück-Zyklus als Summe null. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Reaktionsumkehr"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionsumkehr"
+      ],
+      "questionGoal": "Reaktionsumkehr",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionsumkehr",
+        "correctReasoning": "Umkehr derselben Zustandsänderung kehrt das Vorzeichen um, nicht den Betrag.",
+        "wrongAnswerExplanations": {
+          "A": "Neben falschem Vorzeichen wurde hier der Betrag ohne stöchiometrischen Anlass halbiert.",
+          "B": "Halbierung wäre eine Änderung des stöchiometrischen Faktors, nicht die reine Umkehr.",
+          "D": "Beim Umkehren muss sich das Vorzeichen ändern.",
+          "E": "Gleiche Beträge mit entgegengesetztem Vorzeichen ergeben sich nur beim Hin-und-zurück-Zyklus als Summe null."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Die vollständige Oxidation eines Brennstoffs ist exotherm. Welche Beziehung zwischen Edukt- und Produktenthalpie passt dazu?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Das Vorzeichen kann allein aus der Reaktionsgeschwindigkeit abgelesen werden.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Produkte besitzen bei den betrachteten Zuständen niedrigere Enthalpie.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Die Produkte müssen höhere Enthalpie besitzen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die Eduktenthalpie ist definitionsgemäss null.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Enthalpien sind gleich, weil Atome erhalten bleiben.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Reaktionsgeschwindigkeit betrifft Kinetik und bestimmt nicht das Vorzeichen von ΔH. B: ΔH=HProdukte−HEdukte<0; Massenerhaltung bedeutet nicht gleiche Enthalpie. C: Höhere Produktenthalpie entspräche ΔH>0 und damit endotherm. D: Die Eduktenthalpie ist nicht allgemein null; Bezugswerte ändern nicht die reale Differenz. E: Atomerhaltung erzwingt keine Gleichheit der Bindungs- und Zustandsenergien. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Verbrennungsenergie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verbrennungsenergie"
+      ],
+      "questionGoal": "Verbrennungsenergie",
+      "structuredExplanation": {
+        "coreIdea": "Verbrennungsenergie",
+        "correctReasoning": "ΔH=HProdukte−HEdukte<0; Massenerhaltung bedeutet nicht gleiche Enthalpie.",
+        "wrongAnswerExplanations": {
+          "A": "Reaktionsgeschwindigkeit betrifft Kinetik und bestimmt nicht das Vorzeichen von ΔH.",
+          "C": "Höhere Produktenthalpie entspräche ΔH>0 und damit endotherm.",
+          "D": "Die Eduktenthalpie ist nicht allgemein null; Bezugswerte ändern nicht die reale Differenz.",
+          "E": "Atomerhaltung erzwingt keine Gleichheit der Bindungs- und Zustandsenergien."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Welche Zuordnung trifft die behandelte Unterscheidung zwischen Energiespeicher und kurzfristigem Energieüberträger?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Triacylglyceride liefern definitionsgemäss keine Oxidationsenergie.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Triacylglyceride als Speicher, ATP als kurzfristiger Überträger.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Beide sind ausschliesslich genetische Informationsträger.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "ATP und Fett sind dieselbe Molekülklasse mit identischem Grundgerüst.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "ATP als langfristiger Hauptspeicher, Triacylglyceride nur als Enzymcofaktor.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die Oxidation von Fettsäuren kann erhebliche Energie verfügbar machen. B: Fette speichern grosse Energiemengen; ATP koppelt kurzfristig energieliefernde und energieverbrauchende Prozesse. C: Fette und ATP erfüllen energetische Rollen und sind nicht beide ausschliesslich genetische Träger. D: ATP ist ein Nukleotid, TAG ein Glycerintriester; ihre Gerüste sind verschieden. E: ATP ist kein mengenmässiger Haupt-Langzeitspeicher, während TAG als grosser Speicher dient. Quelle: Originalunterlagen, PDF-S. 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Speicher und Überträger"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Speicher und Überträger"
+      ],
+      "questionGoal": "Speicher und Überträger",
+      "structuredExplanation": {
+        "coreIdea": "Speicher und Überträger",
+        "correctReasoning": "Fette speichern grosse Energiemengen; ATP koppelt kurzfristig energieliefernde und energieverbrauchende Prozesse.",
+        "wrongAnswerExplanations": {
+          "A": "Die Oxidation von Fettsäuren kann erhebliche Energie verfügbar machen.",
+          "C": "Fette und ATP erfüllen energetische Rollen und sind nicht beide ausschliesslich genetische Träger.",
+          "D": "ATP ist ein Nukleotid, TAG ein Glycerintriester; ihre Gerüste sind verschieden.",
+          "E": "ATP ist kein mengenmässiger Haupt-Langzeitspeicher, während TAG als grosser Speicher dient."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Welcher Energiebetrag entspricht 1.00 kcal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.239 kJ.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "4.184 J.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "4.184 kJ.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "4184 kJ.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "1000 kJ.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: 0.239 ist ungefähr der inverse Umrechnungsfaktor kcal pro kJ, nicht kJ pro kcal. B: 4.184 J entspricht einer cal, nicht einer kcal. C: Eine thermochemische Kilokalorie entspricht 4184 J; bei Umrechnung zwischen J und kJ ist der Faktor 1000 zu beachten. D: 4184 J entsprechen 4.184 kJ; hier fehlt die Division durch 1000. E: Eine kcal ist ungefähr 4.2 kJ und nicht 1000 kJ. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Energieeinheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Energieeinheit"
+      ],
+      "questionGoal": "Energieeinheit",
+      "structuredExplanation": {
+        "coreIdea": "Energieeinheit",
+        "correctReasoning": "Eine thermochemische Kilokalorie entspricht 4184 J; bei Umrechnung zwischen J und kJ ist der Faktor 1000 zu beachten.",
+        "wrongAnswerExplanations": {
+          "A": "0.239 ist ungefähr der inverse Umrechnungsfaktor kcal pro kJ, nicht kJ pro kcal.",
+          "B": "4.184 J entspricht einer cal, nicht einer kcal.",
+          "D": "4184 J entsprechen 4.184 kJ; hier fehlt die Division durch 1000.",
+          "E": "Eine kcal ist ungefähr 4.2 kJ und nicht 1000 kJ."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Stöchiometriefaktor, Bindungsbilanz, Isoliertes System, Konstanter Druck.",
+      "options": [
+        {
+          "text": "Ein isoliertes System kann beliebig Wärme mit der Umgebung austauschen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bindungsspaltung benötigt Energie; Bindungsbildung kann Energie freisetzen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bei konstantem Druck und ausschliesslicher pV-Arbeit gilt q=ΔU unabhängig von einer Volumenänderung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verdopplung aller Koeffizienten einer thermochemischen Gleichung verdoppelt auch das zugehörige ΔH.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein ideal isoliertes System tauscht weder Materie noch Energie mit der Umgebung aus. Die Systemgrenze verhindert beide Austauscharten. B: Die Gesamtbilanz bestimmt die Reaktionsenthalpie. C: Bei diesen Bedingungen gilt qₚ=ΔH; ΔU kann sich wegen pΔV unterscheiden. D: Enthalpie ist eine extensive Grösse. Quelle: Originalunterlagen, PDF-S. 3, 9, 11–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Stöchiometriefaktor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stöchiometriefaktor"
+      ],
+      "questionGoal": "Stöchiometriefaktor",
+      "structuredExplanation": {
+        "coreIdea": "Stöchiometriefaktor",
+        "correctReasoning": "Die Gesamtbilanz bestimmt die Reaktionsenthalpie. Enthalpie ist eine extensive Grösse.",
+        "wrongAnswerExplanations": {
+          "A": "Ein ideal isoliertes System tauscht weder Materie noch Energie mit der Umgebung aus. Die Systemgrenze verhindert beide Austauscharten.",
+          "B": "Die Gesamtbilanz bestimmt die Reaktionsenthalpie.",
+          "C": "Bei diesen Bedingungen gilt qₚ=ΔH; ΔU kann sich wegen pΔV unterscheiden.",
+          "D": "Enthalpie ist eine extensive Grösse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Bindungsbilanz, Schrittweiser Abbau, Erster Hauptsatz, Exotherme Reaktion.",
+      "options": [
+        {
+          "text": "Energie wird bei chemischen Reaktionen umgewandelt, aber nicht erzeugt oder vernichtet.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Für eine exotherme Reaktion ist die Reaktionsenthalpie unter der üblichen Systemkonvention negativ.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Bindungsspaltung benötigt Energie; Bindungsbildung kann Energie freisetzen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Viele enzymatische Zwischenschritte erzeugen zusätzlich unbegrenzte Reaktionsenthalpie.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Gesamtenergiebilanz bleibt erhalten. B: Das System gibt Wärme ab. C: Die Gesamtbilanz bestimmt die Reaktionsenthalpie. D: Ein vielstufiger Abbau besitzt bei gleichen Anfangs- und Endzuständen dieselbe Gesamtenthalpie wie ein direkter Weg. Der Weg verändert die Zustandsdifferenz nicht. Quelle: Originalunterlagen, PDF-S. 8–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Bindungsbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bindungsbilanz"
+      ],
+      "questionGoal": "Bindungsbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Bindungsbilanz",
+        "correctReasoning": "Die Gesamtenergiebilanz bleibt erhalten. Das System gibt Wärme ab. Die Gesamtbilanz bestimmt die Reaktionsenthalpie.",
+        "wrongAnswerExplanations": {
+          "A": "Die Gesamtenergiebilanz bleibt erhalten.",
+          "B": "Das System gibt Wärme ab.",
+          "C": "Die Gesamtbilanz bestimmt die Reaktionsenthalpie.",
+          "D": "Ein vielstufiger Abbau besitzt bei gleichen Anfangs- und Endzuständen dieselbe Gesamtenthalpie wie ein direkter Weg. Der Weg verändert die Zustandsdifferenz nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Schrittweiser Abbau, Fettabbau, Wärme und Arbeit, Endotherme Reaktion.",
+      "options": [
+        {
+          "text": "Endotherm bedeutet zwingend, dass jede Reaktion augenblicklich spontan läuft.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Viele enzymatische Zwischenschritte erzeugen zusätzlich unbegrenzte Reaktionsenthalpie.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei vollständiger Oxidation gelangt der Kohlenstoff des Fetts vor allem in CO2.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Wärme ist eine chemische Substanz, die im System verbraucht wird.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine endotherme Reaktion nimmt unter passenden Randbedingungen Wärme aus der Umgebung auf. Enthalpie und Spontaneität sind verschieden. B: Ein vielstufiger Abbau besitzt bei gleichen Anfangs- und Endzuständen dieselbe Gesamtenthalpie wie ein direkter Weg. Der Weg verändert die Zustandsdifferenz nicht. C: Masse wird in Reaktionsprodukte überführt. D: Wärme und Arbeit sind Energieübertragungsarten und keine im System gespeicherten Stoffe. Die Begriffe beschreiben Übertragung über Systemgrenzen. Quelle: Originalunterlagen, PDF-S. 4, 9–10, 12–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Schrittweiser Abbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schrittweiser Abbau"
+      ],
+      "questionGoal": "Schrittweiser Abbau",
+      "structuredExplanation": {
+        "coreIdea": "Schrittweiser Abbau",
+        "correctReasoning": "Masse wird in Reaktionsprodukte überführt.",
+        "wrongAnswerExplanations": {
+          "A": "Eine endotherme Reaktion nimmt unter passenden Randbedingungen Wärme aus der Umgebung auf. Enthalpie und Spontaneität sind verschieden.",
+          "B": "Ein vielstufiger Abbau besitzt bei gleichen Anfangs- und Endzuständen dieselbe Gesamtenthalpie wie ein direkter Weg. Der Weg verändert die Zustandsdifferenz nicht.",
+          "C": "Masse wird in Reaktionsprodukte überführt.",
+          "D": "Wärme und Arbeit sind Energieübertragungsarten und keine im System gespeicherten Stoffe. Die Begriffe beschreiben Übertragung über Systemgrenzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Fettabbau, Speicher und Überträger, Zustandsfunktion, Satz von Hess.",
+      "options": [
+        {
+          "text": "Die Änderung einer Zustandsfunktion hängt zwangsläufig vom Reaktionsweg ab.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Summe von Teilreaktionsenthalpien ergibt die Enthalpie der Gesamtreaktion.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "ATP ist der mengenmässige Haupt-Langzeitenergiespeicher des Organismus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Bei vollständiger Oxidation gelangt der Kohlenstoff des Fetts vor allem in CO2.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Änderung einer Zustandsfunktion hängt nur von Anfangs- und Endzustand ab. Wegunabhängigkeit ist ihr Kennzeichen. B: Die Enthalpie ist eine Zustandsfunktion. C: Triacylglyceride sind langfristige Energiespeicher, ATP dient wesentlich dem kurzfristigen Energietransfer. Speicherung und Kopplung erfüllen unterschiedliche Rollen. D: Masse wird in Reaktionsprodukte überführt. Quelle: Originalunterlagen, PDF-S. 6, 12–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Fettabbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fettabbau"
+      ],
+      "questionGoal": "Fettabbau",
+      "structuredExplanation": {
+        "coreIdea": "Fettabbau",
+        "correctReasoning": "Die Enthalpie ist eine Zustandsfunktion. Masse wird in Reaktionsprodukte überführt.",
+        "wrongAnswerExplanations": {
+          "A": "Die Änderung einer Zustandsfunktion hängt nur von Anfangs- und Endzustand ab. Wegunabhängigkeit ist ihr Kennzeichen.",
+          "B": "Die Enthalpie ist eine Zustandsfunktion.",
+          "C": "Triacylglyceride sind langfristige Energiespeicher, ATP dient wesentlich dem kurzfristigen Energietransfer. Speicherung und Kopplung erfüllen unterschiedliche Rollen.",
+          "D": "Masse wird in Reaktionsprodukte überführt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Speicher und Überträger, Kalorie, Enthalpie, Reaktionsumkehr.",
+      "options": [
+        {
+          "text": "Triacylglyceride sind langfristige Energiespeicher, ATP dient wesentlich dem kurzfristigen Energietransfer.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Enthalpie ist definitionsgemäss identisch mit U−pV.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Beim Umkehren einer Reaktion muss der Zahlenwert von ΔH unverändert dasselbe Vorzeichen behalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Kilokalorie entspricht 4.184 Kilojoule.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Speicherung und Kopplung erfüllen unterschiedliche Rollen. B: Die Enthalpie ist durch H = U + pV definiert. Der Druck-Volumen-Term wird addiert. C: Wird eine Reaktionsgleichung umgekehrt, wechselt das Vorzeichen ihrer Reaktionsenthalpie. Anfangs- und Endzustand werden vertauscht. D: Der Faktor tausend ist mitzubeachten. Quelle: Originalunterlagen, PDF-S. 9, 12–14, 16–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Speicher und Überträger"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Speicher und Überträger"
+      ],
+      "questionGoal": "Speicher und Überträger",
+      "structuredExplanation": {
+        "coreIdea": "Speicher und Überträger",
+        "correctReasoning": "Speicherung und Kopplung erfüllen unterschiedliche Rollen. Der Faktor tausend ist mitzubeachten.",
+        "wrongAnswerExplanations": {
+          "A": "Speicherung und Kopplung erfüllen unterschiedliche Rollen.",
+          "B": "Die Enthalpie ist durch H = U + pV definiert. Der Druck-Volumen-Term wird addiert.",
+          "C": "Wird eine Reaktionsgleichung umgekehrt, wechselt das Vorzeichen ihrer Reaktionsenthalpie. Anfangs- und Endzustand werden vertauscht.",
+          "D": "Der Faktor tausend ist mitzubeachten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Kalorie, Reaktionsbilanz, Konstanter Druck, Offenes System.",
+      "options": [
+        {
+          "text": "Bei konstantem Druck und ausschliesslicher Volumenarbeit entspricht die ausgetauschte Wärme der Enthalpieänderung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine Kilokalorie entspricht 4.184 Kilojoule.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein offenes System kann Stoff und Energie mit der Umgebung austauschen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zwei addierbare Teilreaktionen mit ΔH=−10 und +4 kJ ergeben insgesamt −14 kJ.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Randbedingungen erlauben die Gleichsetzung. B: Der Faktor tausend ist mitzubeachten. C: Lebende Organismen sind typische offene Systeme. D: Die vorzeichenbehaftete Summe ist −10+4=−6 kJ. Quelle: Originalunterlagen, PDF-S. 3, 9, 12–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Kalorie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kalorie"
+      ],
+      "questionGoal": "Kalorie",
+      "structuredExplanation": {
+        "coreIdea": "Kalorie",
+        "correctReasoning": "Die Randbedingungen erlauben die Gleichsetzung. Der Faktor tausend ist mitzubeachten. Lebende Organismen sind typische offene Systeme.",
+        "wrongAnswerExplanations": {
+          "A": "Die Randbedingungen erlauben die Gleichsetzung.",
+          "B": "Der Faktor tausend ist mitzubeachten.",
+          "C": "Lebende Organismen sind typische offene Systeme.",
+          "D": "Die vorzeichenbehaftete Summe ist −10+4=−6 kJ."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Reaktionsbilanz, Temperatur und Wärme, Exotherme Reaktion, Geschlossenes System.",
+      "options": [
+        {
+          "text": "Bei Wärmeabgabe eines Systems an die Umgebung gilt unter der üblichen Systemkonvention ΔH>0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei addierbare Teilreaktionen mit ΔH=−10 und +4 kJ ergeben insgesamt −14 kJ.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gleiche Wärmezufuhr kann bei verschiedener Wärmekapazität unterschiedliche Temperaturänderungen bewirken.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein geschlossenes System ist zwangsläufig auch gegen jeden Energieaustausch isoliert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Für eine exotherme Reaktion ist die entsprechende Enthalpieänderung negativ. B: Die vorzeichenbehaftete Summe ist −10+4=−6 kJ. C: q hängt von Masse und Wärmekapazität ab. D: Ein geschlossenes System kann Energie, aber keine Materie mit der Umgebung austauschen. Geschlossen und isoliert sind verschiedene Begriffe. Quelle: Originalunterlagen, PDF-S. 3–4, 6, 9–10, 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Reaktionsbilanz"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Reaktionsbilanz"
+      ],
+      "questionGoal": "Reaktionsbilanz",
+      "structuredExplanation": {
+        "coreIdea": "Reaktionsbilanz",
+        "correctReasoning": "q hängt von Masse und Wärmekapazität ab.",
+        "wrongAnswerExplanations": {
+          "A": "Für eine exotherme Reaktion ist die entsprechende Enthalpieänderung negativ.",
+          "B": "Die vorzeichenbehaftete Summe ist −10+4=−6 kJ.",
+          "C": "q hängt von Masse und Wärmekapazität ab.",
+          "D": "Ein geschlossenes System kann Energie, aber keine Materie mit der Umgebung austauschen. Geschlossen und isoliert sind verschiedene Begriffe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc13_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC13",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Temperatur und Wärme, Offenes System, Endotherme Reaktion, Isoliertes System.",
+      "options": [
+        {
+          "text": "Ein offenes System darf definitionsgemäss keine Stoffe austauschen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Gleiche Wärmezufuhr kann bei verschiedener Wärmekapazität unterschiedliche Temperaturänderungen bewirken.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein ideal isoliertes System tauscht weder Materie noch Energie mit der Umgebung aus.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Endotherm bedeutet zwingend, dass jede Reaktion augenblicklich spontan läuft.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein offenes System kann Stoff und Energie mit der Umgebung austauschen. Lebende Organismen sind typische offene Systeme. B: q hängt von Masse und Wärmekapazität ab. C: Die Systemgrenze verhindert beide Austauscharten. D: Eine endotherme Reaktion nimmt unter passenden Randbedingungen Wärme aus der Umgebung auf. Enthalpie und Spontaneität sind verschieden. Quelle: Originalunterlagen, PDF-S. 3–4, 6, 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC13",
+        "Temperatur und Wärme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Temperatur und Wärme"
+      ],
+      "questionGoal": "Temperatur und Wärme",
+      "structuredExplanation": {
+        "coreIdea": "Temperatur und Wärme",
+        "correctReasoning": "q hängt von Masse und Wärmekapazität ab. Die Systemgrenze verhindert beide Austauscharten.",
+        "wrongAnswerExplanations": {
+          "A": "Ein offenes System kann Stoff und Energie mit der Umgebung austauschen. Lebende Organismen sind typische offene Systeme.",
+          "B": "q hängt von Masse und Wärmekapazität ab.",
+          "C": "Die Systemgrenze verhindert beide Austauscharten.",
+          "D": "Eine endotherme Reaktion nimmt unter passenden Randbedingungen Wärme aus der Umgebung auf. Enthalpie und Spontaneität sind verschieden."
+        }
+      }
+    }
+  ]
+}

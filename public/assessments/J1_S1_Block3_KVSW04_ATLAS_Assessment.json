@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw04_20261102",
+  "lectureCode": "KVSW04",
+  "title": "Aktionspotential II – Ionenkanäle und Messverfahren",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW04_AP_II. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. KV04-Lernziele an Text und Original-I-V-/Patch-Grafiken abgeglichen. Subtypenabhängigkeit von TTX/TEA und K-Kinetik beachtet. Keine universal identische Inaktivierung aller K-Kanäle behauptet; metabotrope Rezeptoren von ionotropen Poren getrennt.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Current Clamp, Voltage Clamp sowie Gesamtzell- und Einzelkanalableitungen unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Kapazitive Transienten und ionische Membranströme interpretieren."
+    },
+    {
+      "id": "lo3",
+      "text": "Na+-Kanalaktivierung, Inaktivierung und Erholung mechanistisch erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "K+-Kanalaktivierung, Selektivität und Strom-Spannungs-Beziehungen erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw04_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Eine definierte Stromstärke wird in eine Zelle injiziert und V_m wird aufgezeichnet. Welches Verfahren ist dies?",
+      "options": [
+        {
+          "text": "Eine Sequenzierung von Kanalgenen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine reine Messung des Lösungswiderstands ohne Zelle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Current Clamp.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Voltage Clamp.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine reine extrazelluläre Konzentrationsmessung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Messung ist elektrophysiologisch. B: Die Zellmembran ist Bestandteil des Versuchs. C: Der Strom wird vorgegeben, die Spannung ist die untersuchte Antwort. D: Dort wird V_m vorgegeben und der erforderliche Strom gemessen. E: Der Versuch untersucht Strom und Spannung. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Current Clamp"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Current Clamp"
+      ],
+      "questionGoal": "Current Clamp",
+      "structuredExplanation": {
+        "coreIdea": "Current Clamp",
+        "correctReasoning": "Der Strom wird vorgegeben, die Spannung ist die untersuchte Antwort.",
+        "wrongAnswerExplanations": {
+          "A": "Die Messung ist elektrophysiologisch.",
+          "B": "Die Zellmembran ist Bestandteil des Versuchs.",
+          "D": "Dort wird V_m vorgegeben und der erforderliche Strom gemessen.",
+          "E": "Der Versuch untersucht Strom und Spannung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Frage lässt sich mit Voltage Clamp besonders direkt untersuchen?",
+      "options": [
+        {
+          "text": "Welche Spannung sich bei einem vorgegebenen rechteckigen Strom frei einstellt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Wie sich die AP-Frequenz während eines frei beantworteten konstanten Stromreizes verändert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Welche Spannung sich bei völlig unbekanntem Strom frei entwickelt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Welche Membranströme bei einer vorgegebenen Spannung auftreten.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ob ein Schwellenreiz bei frei antwortender Spannung ein AP auslöst.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Fragestellung einer Stromklemme. B: Die frei verlaufende Spannungsantwort auf Strom ist eine Current-Clamp-Frage. C: Dies entspricht eher einer Stromklemmenfrage. D: Die Rückkopplung hält V_m an der Sollspannung. E: Die Spannungsklemme unterbindet gerade den freien AP-Spannungsverlauf. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Voltage Clamp"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Voltage Clamp"
+      ],
+      "questionGoal": "Voltage Clamp",
+      "structuredExplanation": {
+        "coreIdea": "Voltage Clamp",
+        "correctReasoning": "Die Rückkopplung hält V_m an der Sollspannung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Fragestellung einer Stromklemme.",
+          "B": "Die frei verlaufende Spannungsantwort auf Strom ist eine Current-Clamp-Frage.",
+          "C": "Dies entspricht eher einer Stromklemmenfrage.",
+          "E": "Die Spannungsklemme unterbindet gerade den freien AP-Spannungsverlauf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Unmittelbar nach einem schnellen Spannungssprung erscheint ein sehr kurzer Stromtransient. Was erklärt ihn?",
+      "options": [
+        {
+          "text": "Ein dauerhaft stationärer Strom durch den idealen Membrankondensator.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich die verspätete Öffnung aller Kaliumkanäle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein zeitlich konstanter passiver Ionenleckstrom als alleinige Erklärung des kurzen Peaks.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Umladen der Membrankapazität.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich die Erholung schneller Na+-Kanäle bei unverändert depolarisierter Klemmspannung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nach dem Spannungssprung klingt der kapazitive Anteil ab. B: Diese erzeugt einen zeitlich anderen ionischen Anteil. C: Ein stationärer Leckstrom erklärt keinen rasch abklingenden kapazitiven Peak. D: Die schnelle Änderung von V_m erzeugt I_C = C dV/dt. E: Der frühe sehr kurze Transient entspricht dem kapazitiven Umladen, nicht allein dieser Erholung. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Kapazitiver Transient"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kapazitiver Transient"
+      ],
+      "questionGoal": "Kapazitiver Transient",
+      "structuredExplanation": {
+        "coreIdea": "Kapazitiver Transient",
+        "correctReasoning": "Die schnelle Änderung von V_m erzeugt I_C = C dV/dt.",
+        "wrongAnswerExplanations": {
+          "A": "Nach dem Spannungssprung klingt der kapazitive Anteil ab.",
+          "B": "Diese erzeugt einen zeitlich anderen ionischen Anteil.",
+          "C": "Ein stationärer Leckstrom erklärt keinen rasch abklingenden kapazitiven Peak.",
+          "E": "Der frühe sehr kurze Transient entspricht dem kapazitiven Umladen, nicht allein dieser Erholung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Im gezeigten depolarisierenden Spannungsschritt folgt auf einen kurzen Transienten erst Einwärts-, später Auswärtsstrom. Welche Zuordnung passt zum vereinfachten Nervenmodell?",
+      "options": [
+        {
+          "text": "Beide Phasen sind zwingend nur kapazitive Dauerströme.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Einwärts- und Auswärtsstrom können sich grundsätzlich nicht überlagern.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Früher K+-Einwärtsstrom, später Na+-Auswärtsstrom bei denselben angegebenen Gradienten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der gesamte Strom beweist, dass nur ein einziger Kanaltyp existiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Früher Na+-Einwärtsstrom, verzögerter K+-Auswärtsstrom.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Nach der Aufladung tragen ionische Ströme bei. B: Der Gesamtstrom ist die Summe gleichzeitig möglicher Beiträge. C: Dies entspricht nicht dem dargestellten Modell. D: Mehrere Komponenten können sich überlagern. E: Unterschiedliche Aktivierungs- und Inaktivierungskinetik erzeugt den Verlauf. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Getrennte Ströme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Getrennte Ströme"
+      ],
+      "questionGoal": "Getrennte Ströme",
+      "structuredExplanation": {
+        "coreIdea": "Getrennte Ströme",
+        "correctReasoning": "Unterschiedliche Aktivierungs- und Inaktivierungskinetik erzeugt den Verlauf.",
+        "wrongAnswerExplanations": {
+          "A": "Nach der Aufladung tragen ionische Ströme bei.",
+          "B": "Der Gesamtstrom ist die Summe gleichzeitig möglicher Beiträge.",
+          "C": "Dies entspricht nicht dem dargestellten Modell.",
+          "D": "Mehrere Komponenten können sich überlagern."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Ein Na+-Strom nimmt trotz anhaltender Depolarisation nach raschem Beginn wieder ab. Welcher Vorgang erklärt dies?",
+      "options": [
+        {
+          "text": "Na+-Kanäle gehen in einen inaktivierten Zustand über.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Membranspannung muss im Voltage Clamp zwingend auf Ruhe zurückgekehrt sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Stromabfall beweist stets die vollständige Erschöpfung sämtlichen Na+ in der Badlösung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Na+/K+-ATPase kompensiert den Einwärtsstrom sofort auf Millisekunden exakt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Na+-Kanäle sind prinzipiell immer offen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sie können vorübergehend trotz depolarisierter Membran nicht erneut normal öffnen. B: Sie bleibt im beschriebenen Versuch depolarisiert. C: Die schnelle Inaktivierung erklärt den Abfall ohne vollständigen Konzentrationsverlust. D: Im beschriebenen Klemmprotokoll erklärt die Inaktivierung den raschen Stromabfall; die Pumpe ist kein solcher unmittelbarer Ersatz. E: Ihre Aktivität ist zeit- und spannungsabhängig. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Na-Inaktivierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Na-Inaktivierung"
+      ],
+      "questionGoal": "Na-Inaktivierung",
+      "structuredExplanation": {
+        "coreIdea": "Na-Inaktivierung",
+        "correctReasoning": "Sie können vorübergehend trotz depolarisierter Membran nicht erneut normal öffnen.",
+        "wrongAnswerExplanations": {
+          "B": "Sie bleibt im beschriebenen Versuch depolarisiert.",
+          "C": "Die schnelle Inaktivierung erklärt den Abfall ohne vollständigen Konzentrationsverlust.",
+          "D": "Im beschriebenen Klemmprotokoll erklärt die Inaktivierung den raschen Stromabfall; die Pumpe ist kein solcher unmittelbarer Ersatz.",
+          "E": "Ihre Aktivität ist zeit- und spannungsabhängig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Bedingung begünstigt die Erholung klassischer schneller Na+-Kanäle von der Inaktivierung?",
+      "options": [
+        {
+          "text": "Allein eine Vergrösserung der Na+-Triebkraft bei unverändert depolarisierter Spannung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine unverändert hohe positive Spannung garantiert sofort vollständige Erholung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dauerhaft stärkere Depolarisation ohne Erholungsintervall.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Allein die Erhöhung der äusseren Na+-Konzentration ohne Änderung des Depolarisationsprotokolls.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Repolarisation auf ausreichend negative Spannungen und Zeit.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Mehr Triebkraft ist von der spannungs- und zeitabhängigen Erholung des Kanalzustands zu unterscheiden. B: Die Erholung ist spannungs- und zeitabhängig. C: Dies hält häufig einen hohen inaktivierten Anteil aufrecht. D: Für die klassische Erholung sind ausreichend negative Spannung und Zeit wesentlich. E: Dadurch wird der wieder aktivierbare Ruhezustand erreicht. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Erholung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Erholung"
+      ],
+      "questionGoal": "Erholung",
+      "structuredExplanation": {
+        "coreIdea": "Erholung",
+        "correctReasoning": "Dadurch wird der wieder aktivierbare Ruhezustand erreicht.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr Triebkraft ist von der spannungs- und zeitabhängigen Erholung des Kanalzustands zu unterscheiden.",
+          "B": "Die Erholung ist spannungs- und zeitabhängig.",
+          "C": "Dies hält häufig einen hohen inaktivierten Anteil aufrecht.",
+          "D": "Für die klassische Erholung sind ausreichend negative Spannung und Zeit wesentlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q07",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Ein selektiver Na+-Strom wechselt bei +60 mV sein Vorzeichen. Was bedeutet dieser Wert im Versuch?",
+      "options": [
+        {
+          "text": "Dort sind zwingend überhaupt keine Na+-Kanäle in der Membran.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jenseits davon können keine positiven Ladungen mehr transportiert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Wert bezeichnet die absolute Refraktärzeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dort sind Innen- und Aussenkonzentration notwendigerweise identisch.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Dort ist die Na+-Triebkraft null; bei offenen Kanälen fliesst kein Netto-Na+-Strom.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Nullstrom kann auch bei vorhandenen offenen Kanälen auftreten. B: Der Strom kann sein Vorzeichen wechseln. C: Es ist eine Spannung, keine Zeit. D: Ein elektrisches Potential kann den Konzentrationsgradienten kompensieren. E: Das Umkehrpotential entspricht näherungsweise E_Na. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Na-Umkehrpotential"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Na-Umkehrpotential"
+      ],
+      "questionGoal": "Na-Umkehrpotential",
+      "structuredExplanation": {
+        "coreIdea": "Na-Umkehrpotential",
+        "correctReasoning": "Das Umkehrpotential entspricht näherungsweise E_Na.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Nullstrom kann auch bei vorhandenen offenen Kanälen auftreten.",
+          "B": "Der Strom kann sein Vorzeichen wechseln.",
+          "C": "Es ist eine Spannung, keine Zeit.",
+          "D": "Ein elektrisches Potential kann den Konzentrationsgradienten kompensieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Für I_Na = g_Na(V_m−E_Na) gelten g_Na = 10 nS, V_m = −20 mV und E_Na = +60 mV. Welcher Strom folgt in der üblichen Auswärtsstrom-positiv-Konvention?",
+      "options": [
+        {
+          "text": "−800 pA.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "0 pA.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "+400 pA.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "−80 pA.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "+800 pA.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 10 nS mal −80 mV ergibt −800 pA, also Einwärtsstrom. B: V_m ist nicht gleich E_Na. C: Weder Spannungsdifferenz noch Vorzeichen stimmen. D: Dies berücksichtigt die Leitfähigkeit um den Faktor zehn falsch. E: Dies kehrt die Triebkraftrichtung um. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Ionenstrom rechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ionenstrom rechnen"
+      ],
+      "questionGoal": "Ionenstrom rechnen",
+      "structuredExplanation": {
+        "coreIdea": "Ionenstrom rechnen",
+        "correctReasoning": "10 nS mal −80 mV ergibt −800 pA, also Einwärtsstrom.",
+        "wrongAnswerExplanations": {
+          "B": "V_m ist nicht gleich E_Na.",
+          "C": "Weder Spannungsdifferenz noch Vorzeichen stimmen.",
+          "D": "Dies berücksichtigt die Leitfähigkeit um den Faktor zehn falsch.",
+          "E": "Dies kehrt die Triebkraftrichtung um."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Ein kleiner Membranfleck zeigt bei gleicher Klemmspannung sprunghafte Stromstufen im pA-Bereich. Welche Interpretation passt?",
+      "options": [
+        {
+          "text": "Einzelne Kanäle wechseln zwischen leitenden und nichtleitenden Zuständen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Leitfähigkeit eines offenen Einzelkanals muss bei gleicher Spannung zwingend kontinuierlich statt diskret variieren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Anzahl gleichzeitig offener Kanäle kann aus solchen Amplitudenstufen grundsätzlich niemals abgeschätzt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Klemmspannung muss bei jeder Stufe völlig unkontrolliert wechseln.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Jede Stufe ist zwingend ein vollständiges Zellaktionspotential.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Stufen entsprechen diskreten Kanalöffnungen. B: Die beobachteten diskreten Öffnungen erklären gerade die Stromstufen. C: Bei bekannter Einzelkanalamplitude können Stufen Hinweise auf gleichzeitig offene Kanäle geben. D: Diskrete Ströme sind auch bei konstanter Spannung möglich. E: Ein Patchstrom ist keine Gesamtzell-Spannungsantwort. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Einzelkanalmessung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Einzelkanalmessung"
+      ],
+      "questionGoal": "Einzelkanalmessung",
+      "structuredExplanation": {
+        "coreIdea": "Einzelkanalmessung",
+        "correctReasoning": "Die Stufen entsprechen diskreten Kanalöffnungen.",
+        "wrongAnswerExplanations": {
+          "B": "Die beobachteten diskreten Öffnungen erklären gerade die Stromstufen.",
+          "C": "Bei bekannter Einzelkanalamplitude können Stufen Hinweise auf gleichzeitig offene Kanäle geben.",
+          "D": "Diskrete Ströme sind auch bei konstanter Spannung möglich.",
+          "E": "Ein Patchstrom ist keine Gesamtzell-Spannungsantwort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Warum trägt die verzögerte Aktivierung eines K+-Stroms zur Repolarisation des klassischen Nerven-AP bei?",
+      "options": [
+        {
+          "text": "K+-Kanäle transportieren bei jeder Öffnung netto Na+ nach innen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie muss erst die gesamte intrazelluläre K+-Menge entfernen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei V_m oberhalb E_K fliesst K+ nach aussen und V_m wird Richtung E_K gezogen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sie erhöht V_m grundsätzlich weiter Richtung E_Na.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie ersetzt jede Na+-Inaktivierung durch unmittelbare Proteinzerstörung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Selektive K+-Kanäle leiten überwiegend K+. B: Kleine Ladungsverschiebungen genügen für die Spannungsänderung. C: Die Leitfähigkeitszunahme wirkt dem positiven Spannungsverlauf entgegen. D: Ein selektiver K+-Strom zieht zum K+-Umkehrpotential. E: Repolarisation und Na+-Kanalzustände sind verschiedene Beiträge. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Verzögerter K-Strom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Verzögerter K-Strom"
+      ],
+      "questionGoal": "Verzögerter K-Strom",
+      "structuredExplanation": {
+        "coreIdea": "Verzögerter K-Strom",
+        "correctReasoning": "Die Leitfähigkeitszunahme wirkt dem positiven Spannungsverlauf entgegen.",
+        "wrongAnswerExplanations": {
+          "A": "Selektive K+-Kanäle leiten überwiegend K+.",
+          "B": "Kleine Ladungsverschiebungen genügen für die Spannungsänderung.",
+          "D": "Ein selektiver K+-Strom zieht zum K+-Umkehrpotential.",
+          "E": "Repolarisation und Na+-Kanalzustände sind verschiedene Beiträge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Kombination entspricht den im Kurs verwendeten pharmakologischen Zuordnungen?",
+      "options": [
+        {
+          "text": "Tetrodotoxin: empfindliche Na+-Kanäle; TEA: bestimmte K+-Kanäle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Beide Stoffe blockieren unter allen Bedingungen jeden Kanal identisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Tetrodotoxin: L-Typ-Ca2+-Kanäle; TEA: nikotinische Acetylcholinrezeptoren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Beide Stoffe werden als obligatorische aktivierende Liganden der untersuchten Kanäle verwendet.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Tetrodotoxin: bestimmte K+-Kanäle; TEA: empfindliche Na+-Kanäle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Wirkung hängt vom Kanaltyp und den Bedingungen ab. B: Selektivität und Subtypen unterscheiden sich. C: Dies sind nicht die im Kurs eingesetzten TTX-/TEA-Zuordnungen. D: Sie werden hier als Blocker zur Trennung von Stromkomponenten eingesetzt. E: Die im Kurs verwendete klassische Zuordnung ist umgekehrt. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Kanalblocker"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kanalblocker"
+      ],
+      "questionGoal": "Kanalblocker",
+      "structuredExplanation": {
+        "coreIdea": "Kanalblocker",
+        "correctReasoning": "Die Wirkung hängt vom Kanaltyp und den Bedingungen ab.",
+        "wrongAnswerExplanations": {
+          "B": "Selektivität und Subtypen unterscheiden sich.",
+          "C": "Dies sind nicht die im Kurs eingesetzten TTX-/TEA-Zuordnungen.",
+          "D": "Sie werden hier als Blocker zur Trennung von Stromkomponenten eingesetzt.",
+          "E": "Die im Kurs verwendete klassische Zuordnung ist umgekehrt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Warum kann ein K+-Kanal K+ viel besser als Na+ leiten, obwohl Na+ als nacktes Ion kleiner ist?",
+      "options": [
+        {
+          "text": "Die Filterinteraktionen und Hydratationsenergie bestimmen die Passage mit.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich die Ionenmasse bestimmt die Selektivität; die Hydratation spielt keine Rolle.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jedes kleinere Ion muss jeden Kanal immer besser passieren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein K+-Kanal ist für sämtliche Kationen zwingend völlig gleich permeabel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Na+ wird im Filter ohne energetische Kosten vollständig dehydratisiert, sodass allein der nackte Radius zählt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein blosses Sieb nach nacktem Ionenradius erklärt die Selektivität nicht. B: Passende Filterkoordination und Kosten der Dehydratisierung sind relevant. C: Das berücksichtigt Hydratation und Bindung nicht. D: Gerade seine Selektivität ist kennzeichnend. E: Dehydratisierung ist energetisch relevant und muss durch Filterinteraktionen kompensiert werden. Quelle: Originalunterlagen, PDF-S. 12–13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "K-Selektivität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "K-Selektivität"
+      ],
+      "questionGoal": "K-Selektivität",
+      "structuredExplanation": {
+        "coreIdea": "K-Selektivität",
+        "correctReasoning": "Ein blosses Sieb nach nacktem Ionenradius erklärt die Selektivität nicht.",
+        "wrongAnswerExplanations": {
+          "B": "Passende Filterkoordination und Kosten der Dehydratisierung sind relevant.",
+          "C": "Das berücksichtigt Hydratation und Bindung nicht.",
+          "D": "Gerade seine Selektivität ist kennzeichnend.",
+          "E": "Dehydratisierung ist energetisch relevant und muss durch Filterinteraktionen kompensiert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «Klemmverfahren» treffen zu?",
+      "options": [
+        {
+          "text": "Im Voltage Clamp bleibt der Membranstrom definitionsgemäss null.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Im Current Clamp wird die Spannungsantwort auf einen definierten Strom untersucht.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Spannungsregistrierung und eine Stromregistrierung haben dieselbe physikalische Einheit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Im Current Clamp wird die Membranspannung unabhängig von jedem Strom festgehalten.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es kann gerade ein erheblicher Haltestrom nötig sein. B: Der Strom ist die vorgegebene Grösse. C: Volt und Ampere sind verschiedene Einheiten. D: Current Clamp gibt den Strom vor und lässt die Spannung antworten. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Klemmverfahren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Klemmverfahren"
+      ],
+      "questionGoal": "Klemmverfahren",
+      "structuredExplanation": {
+        "coreIdea": "Klemmverfahren",
+        "correctReasoning": "Der Strom ist die vorgegebene Grösse.",
+        "wrongAnswerExplanations": {
+          "A": "Es kann gerade ein erheblicher Haltestrom nötig sein.",
+          "B": "Der Strom ist die vorgegebene Grösse.",
+          "C": "Volt und Ampere sind verschiedene Einheiten.",
+          "D": "Current Clamp gibt den Strom vor und lässt die Spannung antworten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «Stromkomponenten» treffen zu?",
+      "options": [
+        {
+          "text": "Der gemessene Gesamtstrom kann mehrere Ionenströme enthalten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Entgegengesetzte Einzelströme können sich zu einem Gesamtstrom von null addieren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jeder spätere Dauerstrom muss ebenfalls rein kapazitiv sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Spannungssprung kann einen kapazitiven Transienten erzeugen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese addieren sich mit ihren Vorzeichen. B: Ein Nullsummenstrom schliesst einzelne Ionenflüsse nicht aus. C: Bei konstanter Spannung bleiben ionische Leitströme möglich. D: Die Membrankapazität wird umgeladen. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Stromkomponenten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Stromkomponenten"
+      ],
+      "questionGoal": "Stromkomponenten",
+      "structuredExplanation": {
+        "coreIdea": "Stromkomponenten",
+        "correctReasoning": "Diese addieren sich mit ihren Vorzeichen. Ein Nullsummenstrom schliesst einzelne Ionenflüsse nicht aus. Die Membrankapazität wird umgeladen.",
+        "wrongAnswerExplanations": {
+          "A": "Diese addieren sich mit ihren Vorzeichen.",
+          "B": "Ein Nullsummenstrom schliesst einzelne Ionenflüsse nicht aus.",
+          "C": "Bei konstanter Spannung bleiben ionische Leitströme möglich.",
+          "D": "Die Membrankapazität wird umgeladen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «Na-Zustände» treffen zu?",
+      "options": [
+        {
+          "text": "Inaktivierung bedeutet zwingend irreversiblen Abbau des Kanalproteins.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein depolarisiertes Axon muss unbegrenzt denselben Na+-Strom führen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aktivierung und Erholung von Inaktivierung hängen von der Spannung ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Geschlossen-aktivierbar und inaktiviert sind funktionell verschiedene Zustände.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie ist ein reversibler Gatingzustand. B: Inaktivierung lässt den Strom trotz Depolarisation abnehmen. C: Dies erklärt die Erregbarkeitsdynamik. D: Nur aus dem verfügbaren Zustand ist normale Aktivierung möglich. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Na-Zustände"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Na-Zustände"
+      ],
+      "questionGoal": "Na-Zustände",
+      "structuredExplanation": {
+        "coreIdea": "Na-Zustände",
+        "correctReasoning": "Dies erklärt die Erregbarkeitsdynamik. Nur aus dem verfügbaren Zustand ist normale Aktivierung möglich.",
+        "wrongAnswerExplanations": {
+          "A": "Sie ist ein reversibler Gatingzustand.",
+          "B": "Inaktivierung lässt den Strom trotz Depolarisation abnehmen.",
+          "C": "Dies erklärt die Erregbarkeitsdynamik.",
+          "D": "Nur aus dem verfügbaren Zustand ist normale Aktivierung möglich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «I-V-Beziehung» treffen zu?",
+      "options": [
+        {
+          "text": "Eine Verdopplung offener Kanäle garantiert bei beliebiger Spannung immer gleich viel Einwärtsstrom.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Aus dem Stromvorzeichen allein ergibt sich ohne Ladungskonvention stets die Teilchenrichtung für jedes Ion gleich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein verändertes Konzentrationsverhältnis kann das Umkehrpotential verschieben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Stromstärke hängt sowohl von Leitfähigkeit als auch von der treibenden Spannungsdifferenz ab.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Am Umkehrpotential ist der Nettostrom auch bei hoher Leitfähigkeit null. B: Anionen- und Kationenfluss müssen unterschieden werden. C: Dieses hängt von den Ionengradienten ab. D: I = g(V_m−E) trennt beide Beiträge. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "I-V-Beziehung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "I-V-Beziehung"
+      ],
+      "questionGoal": "I-V-Beziehung",
+      "structuredExplanation": {
+        "coreIdea": "I-V-Beziehung",
+        "correctReasoning": "Dieses hängt von den Ionengradienten ab. I = g(V_m−E) trennt beide Beiträge.",
+        "wrongAnswerExplanations": {
+          "A": "Am Umkehrpotential ist der Nettostrom auch bei hoher Leitfähigkeit null.",
+          "B": "Anionen- und Kationenfluss müssen unterschieden werden.",
+          "C": "Dieses hängt von den Ionengradienten ab.",
+          "D": "I = g(V_m−E) trennt beide Beiträge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «Patch und Gesamtzelle» treffen zu?",
+      "options": [
+        {
+          "text": "Ein Whole-cell-Strom und ein Einzelkanalstrom sind stets zahlenmässig identisch.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Mittelwert vieler Einzelkanalspuren kann einen glatten zeitlichen Stromverlauf ergeben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Einzelkanalableitung kann diskrete Öffnungen auflösen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein makroskopischer Stromverlauf muss aus einem einzigen permanent offenen Kanal stammen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Zahl beteiligter Kanäle unterscheidet sich. B: Öffnungswahrscheinlichkeiten gehen in den Mittelstrom ein. C: Sie untersucht eine kleine Membranfläche. D: Viele stochastische Kanäle können zusammen den Mittelverlauf erzeugen. Quelle: Originalunterlagen, PDF-S. 10,13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Patch und Gesamtzelle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Patch und Gesamtzelle"
+      ],
+      "questionGoal": "Patch und Gesamtzelle",
+      "structuredExplanation": {
+        "coreIdea": "Patch und Gesamtzelle",
+        "correctReasoning": "Öffnungswahrscheinlichkeiten gehen in den Mittelstrom ein. Sie untersucht eine kleine Membranfläche.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zahl beteiligter Kanäle unterscheidet sich.",
+          "B": "Öffnungswahrscheinlichkeiten gehen in den Mittelstrom ein.",
+          "C": "Sie untersucht eine kleine Membranfläche.",
+          "D": "Viele stochastische Kanäle können zusammen den Mittelverlauf erzeugen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «Kanalsystematik» treffen zu?",
+      "options": [
+        {
+          "text": "Es gibt spannungs-, ligand- und mechanisch gesteuerte Kanäle.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Alle K+-Kanäle haben zwingend dieselbe Aktivierungs- und Inaktivierungskinetik.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein metabotroper Rezeptor ist definitionsgemäss selbst stets die ionenleitende Pore.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Selektivität und Öffnungssteuerung sind verschiedene Eigenschaften eines Kanals.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Unterschiedliche Reize können Gating auslösen. B: Die Kanaltypen unterscheiden sich. C: Er kann Kanäle indirekt über Signalwege beeinflussen. D: Filter und Gating erfüllen unterschiedliche Funktionen. Quelle: Originalunterlagen, PDF-S. 11–12,15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Kanalsystematik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kanalsystematik"
+      ],
+      "questionGoal": "Kanalsystematik",
+      "structuredExplanation": {
+        "coreIdea": "Kanalsystematik",
+        "correctReasoning": "Unterschiedliche Reize können Gating auslösen. Filter und Gating erfüllen unterschiedliche Funktionen.",
+        "wrongAnswerExplanations": {
+          "A": "Unterschiedliche Reize können Gating auslösen.",
+          "B": "Die Kanaltypen unterscheiden sich.",
+          "C": "Er kann Kanäle indirekt über Signalwege beeinflussen.",
+          "D": "Filter und Gating erfüllen unterschiedliche Funktionen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «AP erklären» treffen zu?",
+      "options": [
+        {
+          "text": "Frühe Na+-Leitfähigkeitszunahme trägt zum schnellen Aufstrich bei.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Na+-Inaktivierung und stärkere K+-Leitfähigkeit begünstigen die Rückkehr vom positiven Potential.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Na+/K+-ATPase erzeugt durch einen einzelnen Zyklus den kompletten millisekundenschnellen Aufstrich.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nach jedem AP müssen sämtliche Ionenkonzentrationen vollständig neu aufgebaut werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Membranwert wird Richtung E_Na verschoben. B: Beide verringern den aufwärtsgerichteten Einfluss. C: Schnelle passive Ionenströme durch Kanäle sind entscheidend. D: Pro Spike wird nur ein kleiner Anteil der Ionen verschoben. Quelle: Originalunterlagen, PDF-S. 6,8,11,14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "AP erklären"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "AP erklären"
+      ],
+      "questionGoal": "AP erklären",
+      "structuredExplanation": {
+        "coreIdea": "AP erklären",
+        "correctReasoning": "Der Membranwert wird Richtung E_Na verschoben. Beide verringern den aufwärtsgerichteten Einfluss.",
+        "wrongAnswerExplanations": {
+          "A": "Der Membranwert wird Richtung E_Na verschoben.",
+          "B": "Beide verringern den aufwärtsgerichteten Einfluss.",
+          "C": "Schnelle passive Ionenströme durch Kanäle sind entscheidend.",
+          "D": "Pro Spike wird nur ein kleiner Anteil der Ionen verschoben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw04_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW04",
+      "stem": "Welche Aussagen zum Thema «Versuchslogik» treffen zu?",
+      "options": [
+        {
+          "text": "Ein kurzer kapazitiver Transient allein identifiziert sicher ein bestimmtes Na+-Kanalgen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Nullstrom am Umkehrpotential ist von fehlender Kanalexpression zu unterscheiden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Kanalblocker beweist ohne Kontrolle automatisch absolute Selektivität für jeden Subtyp.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Blockade anderer Kanaltypen kann die Untersuchung eines ausgewählten Stroms erleichtern.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Transient ist eine passive elektrische Eigenschaft. B: Treibkraft und Leitfähigkeit sind verschiedene Ursachen des Stromwerts. C: Dosis und Subtypabhängigkeit müssen berücksichtigt werden. D: Sie reduziert überlagernde Komponenten. Quelle: Originalunterlagen, PDF-S. 3–14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW04",
+        "Versuchslogik"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "analysis",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Versuchslogik"
+      ],
+      "questionGoal": "Versuchslogik",
+      "structuredExplanation": {
+        "coreIdea": "Versuchslogik",
+        "correctReasoning": "Treibkraft und Leitfähigkeit sind verschiedene Ursachen des Stromwerts. Sie reduziert überlagernde Komponenten.",
+        "wrongAnswerExplanations": {
+          "A": "Der Transient ist eine passive elektrische Eigenschaft.",
+          "B": "Treibkraft und Leitfähigkeit sind verschiedene Ursachen des Stromwerts.",
+          "C": "Dosis und Subtypabhängigkeit müssen berücksichtigt werden.",
+          "D": "Sie reduziert überlagernde Komponenten."
+        }
+      }
+    }
+  ]
+}

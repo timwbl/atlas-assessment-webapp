@@ -1,0 +1,1319 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw09_20261102",
+  "lectureCode": "KVSW09",
+  "title": "Synaptische Plastizität und Lernen",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW09_Synaptische Plastizitaet_04. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. STDP und NMDA/CaMKII-LTP als dargestellte Modelle, nicht als ausnahmslose Mechanismen jeder Synapse. Timingdefinition in Aufgaben sprachlich explizit. Vergleich mit Originalstudien: Bi/Poo 1998 (PMC6793365), Hayashi et al.2000 (PMID10731148), Abstract-/indexierte Aussagen. Originalfiguren PDF3,5,7–8,10–12,14–15 visuell geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Funktionelle und strukturelle Formen neuronaler Plastizität unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Klassische Konditionierung und Hebbsche Regel auf ein Netzwerk anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Spike-Timing-Plastizität und dendritische Rückmeldung erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Calcium, NMDA-Rezeptoren und AMPA-Rezeptoren im dargestellten LTP-Modell verknüpfen."
+    },
+    {
+      "id": "lo5",
+      "text": "Plastizitätsexperimente und quantitative Übertragungsänderungen interpretieren."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw09_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Ein Neuron antwortet nach Training auf denselben synaptischen Eingang mit einem grösseren EPSP. Welche Veränderung ist unmittelbar beobachtet?",
+      "options": [
+        {
+          "text": "Eine zwingend höhere AP-Amplitude in der Präsynapse.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein sicherer Nachweis ausschliesslich präsynaptischer Veränderung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein sicherer Nachweis ausschliesslich postsynaptischer Veränderung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Zunahme synaptischer Übertragungsstärke.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Eine Veränderung nur der AP-Leitungsgeschwindigkeit als unmittelbar gemessene Grösse.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Stamm beschreibt die postsynaptische Antwort auf denselben Eingang. B: Ein grösseres EPSP lokalisiert den Mechanismus nicht allein. C: Auch Freisetzungsänderungen können beitragen. D: Der gleiche Eingang erzeugt eine stärkere postsynaptische Antwort. E: Gemessen wird die EPSP-Amplitude. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Plastizitätsform"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Plastizitätsform"
+      ],
+      "questionGoal": "Plastizitätsform",
+      "structuredExplanation": {
+        "coreIdea": "Plastizitätsform",
+        "correctReasoning": "Der gleiche Eingang erzeugt eine stärkere postsynaptische Antwort.",
+        "wrongAnswerExplanations": {
+          "A": "Der Stamm beschreibt die postsynaptische Antwort auf denselben Eingang.",
+          "B": "Ein grösseres EPSP lokalisiert den Mechanismus nicht allein.",
+          "C": "Auch Freisetzungsänderungen können beitragen.",
+          "E": "Gemessen wird die EPSP-Amplitude."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Ein zunächst neutraler Ton wird wiederholt mit Futter gepaart. Später löst der Ton allein Speichelfluss aus. Was ist nach dem Lernen der konditionierte Stimulus?",
+      "options": [
+        {
+          "text": "Der Speichelfluss.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Futter.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das vollständige Ausbleiben eines Tons.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der Ton.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die synaptische Vesikelmembran.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Reaktion, nicht der auslösende Stimulus. B: Es ist der unkonditionierte Stimulus. C: Dies ist nicht die beschriebene Konditionierung. D: Er hat durch Paarung die Fähigkeit zur Reaktionsauslösung erworben. E: Dies ist kein äusserer Stimulus des Beispiels. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Konditionierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Konditionierung"
+      ],
+      "questionGoal": "Konditionierung",
+      "structuredExplanation": {
+        "coreIdea": "Konditionierung",
+        "correctReasoning": "Er hat durch Paarung die Fähigkeit zur Reaktionsauslösung erworben.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Reaktion, nicht der auslösende Stimulus.",
+          "B": "Es ist der unkonditionierte Stimulus.",
+          "C": "Dies ist nicht die beschriebene Konditionierung.",
+          "E": "Dies ist kein äusserer Stimulus des Beispiels."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Zum Thema «Hebbsche Plastizität und zeitlich korrelierte Aktivität»: Beurteilen Sie die Aussagen im dargestellten Hebb-Modell.",
+      "options": [
+        {
+          "text": "Im behandelten Hebb/STDP-Modell ist nur die Spikezahl wichtig, die zeitliche Zuordnung ist irrelevant.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Hebb-Plastizität bedeutet ausschliesslich eine Vergrösserung der AP-Amplitude in jedem Axon.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jede inaktive Synapse muss dabei im selben Ausmass verstärkt werden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Wiederholtes Mitwirken einer Präsynapse an postsynaptischer Aktivierung kann ihre Wirksamkeit erhöhen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die zeitliche Korrelation ist Teil des Mechanismus. B: Sie betrifft unter anderem synaptische Wirksamkeit. C: Die Regel verbindet lokale Mitwirkung mit Änderung. D: Die Aktivitätskorrelation wirkt auf die Verbindung zurück. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Hebbsche Regel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hebbsche Regel"
+      ],
+      "questionGoal": "Hebbsche Regel",
+      "structuredExplanation": {
+        "coreIdea": "Hebbsche Regel",
+        "correctReasoning": "Die Aktivitätskorrelation wirkt auf die Verbindung zurück.",
+        "wrongAnswerExplanations": {
+          "A": "Die zeitliche Korrelation ist Teil des Mechanismus.",
+          "B": "Sie betrifft unter anderem synaptische Wirksamkeit.",
+          "C": "Die Regel verbindet lokale Mitwirkung mit Änderung.",
+          "D": "Die Aktivitätskorrelation wirkt auf die Verbindung zurück."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Im gezeigten klassischen STDP-Beispiel wird die Präsynapse wiederholt kurz vor dem postsynaptischen Spike aktiviert. Welche Änderung passt zu dieser Paarung?",
+      "options": [
+        {
+          "text": "Timingabhängige Depression als zwingende Folge der angegebenen Vor-nach-Paarung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Timingabhängige Potenzierung, tLTP.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Keine Änderung unabhängig von der Zahl wirksamer Paarungen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Potenzierung aller inaktiven Nachbarsynapsen im identischen Ausmass.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine grössere präsynaptische AP-Amplitude als Definition von tLTP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Im dargestellten Beispiel ergibt diese Reihenfolge Potenzierung. B: Diese Reihenfolge kann die präsynaptische Mitwirkung an der postsynaptischen Aktivierung markieren. C: Das Modell zeigt aktivitätsabhängige Änderung. D: Hebbsche Effekte können synapsenspezifisch sein. E: tLTP bezeichnet Übertragungsstärke, nicht zwingend Spikehöhe. Quelle: Originalunterlagen, PDF-S. 7,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "STDP vor-nach"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "STDP vor-nach"
+      ],
+      "questionGoal": "STDP vor-nach",
+      "structuredExplanation": {
+        "coreIdea": "STDP vor-nach",
+        "correctReasoning": "Diese Reihenfolge kann die präsynaptische Mitwirkung an der postsynaptischen Aktivierung markieren.",
+        "wrongAnswerExplanations": {
+          "A": "Im dargestellten Beispiel ergibt diese Reihenfolge Potenzierung.",
+          "C": "Das Modell zeigt aktivitätsabhängige Änderung.",
+          "D": "Hebbsche Effekte können synapsenspezifisch sein.",
+          "E": "tLTP bezeichnet Übertragungsstärke, nicht zwingend Spikehöhe."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Im gezeigten Paarungsmodell erfolgt der postsynaptische Spike kurz vor dem präsynaptischen Eingang. Welche Änderung wird dargestellt?",
+      "options": [
+        {
+          "text": "Stärkere tLTP als bei prä-vor-post als allgemeine Regel des gezeigten Modells.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Potenzierung unabhängig von der zeitlichen Reihenfolge.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Vollständige Aufhebung jeder synaptischen Antwort als Definition der Depression.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Timingabhängige Depression, tLTD.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Unveränderte Synapsenstärke trotz des dargestellten wirksamen Paarungsprotokolls.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die gezeigte umgekehrte Paarung führt zu tLTD. B: Das Vorzeichen hängt im Beispiel vom Timing ab. C: Depression bedeutet eine Abschwächung, nicht zwingend Nullantwort. D: Die umgekehrte Reihenfolge schwächt in diesem Beispiel die Verbindung. E: Das Beispiel zeigt eine anhaltende Verminderung. Quelle: Originalunterlagen, PDF-S. 7,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "STDP nach-vor"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "STDP nach-vor"
+      ],
+      "questionGoal": "STDP nach-vor",
+      "structuredExplanation": {
+        "coreIdea": "STDP nach-vor",
+        "correctReasoning": "Die umgekehrte Reihenfolge schwächt in diesem Beispiel die Verbindung.",
+        "wrongAnswerExplanations": {
+          "A": "Die gezeigte umgekehrte Paarung führt zu tLTD.",
+          "B": "Das Vorzeichen hängt im Beispiel vom Timing ab.",
+          "C": "Depression bedeutet eine Abschwächung, nicht zwingend Nullantwort.",
+          "E": "Das Beispiel zeigt eine anhaltende Verminderung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «rücklaufende APs und dendritisches Calcium».",
+      "options": [
+        {
+          "text": "Dendriten können spannungsabhängige Calciumkanäle besitzen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Rücklaufende APs können dendritische Ca²⁺-Signale erzeugen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein somatisch ausgelöstes AP kann in Dendriten zurücklaufen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Rücklaufende APs sind identisch mit retrograder Endocannabinoid-Diffusion.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Diese tragen zu den Calciumantworten rücklaufender APs bei. B: Depolarisation aktiviert entsprechende Kanäle. C: Dadurch wird postsynaptische Aktivität an synaptische Orte rückgemeldet. D: Dies sind verschiedene elektrische und chemische Rückmeldungen. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Dendritische Rückmeldung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dendritische Rückmeldung"
+      ],
+      "questionGoal": "Dendritische Rückmeldung",
+      "structuredExplanation": {
+        "coreIdea": "Dendritische Rückmeldung",
+        "correctReasoning": "Diese tragen zu den Calciumantworten rücklaufender APs bei. Depolarisation aktiviert entsprechende Kanäle. Dadurch wird postsynaptische Aktivität an synaptische Orte rückgemeldet.",
+        "wrongAnswerExplanations": {
+          "A": "Diese tragen zu den Calciumantworten rücklaufender APs bei.",
+          "B": "Depolarisation aktiviert entsprechende Kanäle.",
+          "C": "Dadurch wird postsynaptische Aktivität an synaptische Orte rückgemeldet.",
+          "D": "Dies sind verschiedene elektrische und chemische Rückmeldungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Welche Rolle hat postsynaptisches Ca²⁺ im dargestellten Plastizitätsmodell?",
+      "options": [
+        {
+          "text": "Es koppelt Aktivitätsmuster an intrazelluläre Veränderungen der Synapse.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es dient ausschliesslich als Ladungsträger ohne Messengerfunktion.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Seine Konzentration allein bestimmt jede Plastizitätsform unabhängig von Ort und Zeit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es ersetzt AMPA-Rezeptoren selbst als Proteinbestandteil.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es muss im LTP-Modell ausschliesslich präsynaptisch erhöht sein.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Es wirkt als Second Messenger. B: Ca2+ kann nachgeschaltete Enzyme regulieren. C: Signalprofil und Kontext sind wichtig. D: Ca2+ reguliert Prozesse, ist aber kein Rezeptorprotein. E: Das behandelte Modell betont postsynaptisches Calcium. Quelle: Originalunterlagen, PDF-S. 10–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Calcium als Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Calcium als Signal"
+      ],
+      "questionGoal": "Calcium als Signal",
+      "structuredExplanation": {
+        "coreIdea": "Calcium als Signal",
+        "correctReasoning": "Es wirkt als Second Messenger.",
+        "wrongAnswerExplanations": {
+          "B": "Ca2+ kann nachgeschaltete Enzyme regulieren.",
+          "C": "Signalprofil und Kontext sind wichtig.",
+          "D": "Ca2+ reguliert Prozesse, ist aber kein Rezeptorprotein.",
+          "E": "Das behandelte Modell betont postsynaptisches Calcium."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "APV blockiert im gezeigten Experiment NMDA-Rezeptoren. Welche Beobachtung unterstützt deren Beteiligung an der LTP-Induktion?",
+      "options": [
+        {
+          "text": "Das Paarungsprotokoll erzeugt unter APV keine normale Potenzierung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Potenzierung tritt unter APV und ohne APV unverändert auf.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Nur die Ausgangsantwort wird verglichen, ohne das Induktionsprotokoll zu prüfen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein kleineres EPSP ohne jede Kontrolle belegt ausschliesslich NMDA-Abhängigkeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Befund beweist automatisch Löschung aller bestehenden Erinnerungen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Eingriff unterbricht einen für dieses Protokoll wichtigen Schritt. B: Dies würde keine nötige Beteiligung in diesem Protokoll stützen. C: Die Induktion muss gezielt untersucht werden. D: Unspezifische Effekte müssen ausgeschlossen werden. E: Das Experiment untersucht eine konkrete LTP-Induktion. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "NMDA-Blockade"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NMDA-Blockade"
+      ],
+      "questionGoal": "NMDA-Blockade",
+      "structuredExplanation": {
+        "coreIdea": "NMDA-Blockade",
+        "correctReasoning": "Der Eingriff unterbricht einen für dieses Protokoll wichtigen Schritt.",
+        "wrongAnswerExplanations": {
+          "B": "Dies würde keine nötige Beteiligung in diesem Protokoll stützen.",
+          "C": "Die Induktion muss gezielt untersucht werden.",
+          "D": "Unspezifische Effekte müssen ausgeschlossen werden.",
+          "E": "Das Experiment untersucht eine konkrete LTP-Induktion."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q09",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Zum Thema «postsynaptische AMPA-Rezeptoren bei LTP»: Beurteilen Sie die Aussagen im gezeigten glutamatergen Modell.",
+      "options": [
+        {
+          "text": "CaMKII kann nach dem Calcium-Signal an Verstärkung der Übertragung mitwirken.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Potenzierung bedeutet definitionsgemäss eine Abnahme der EPSP-Amplitude.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Einbau zusätzlicher AMPA-Rezeptoren kann eine stärkere Antwort ermöglichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede LTP in jedem Nervensystem benötigt exakt denselben NMDA-Mechanismus.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Kinase verbindet das Signal mit nachgeschalteten Änderungen. B: Eine Abnahme entspricht Depression. C: Mehr wirksame Rezeptoren erhöhen die postsynaptische Kapazität. D: Es existieren verschiedene Plastizitätsformen. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Postsynaptische LTP"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Postsynaptische LTP"
+      ],
+      "questionGoal": "Postsynaptische LTP",
+      "structuredExplanation": {
+        "coreIdea": "Postsynaptische LTP",
+        "correctReasoning": "Die Kinase verbindet das Signal mit nachgeschalteten Änderungen. Mehr wirksame Rezeptoren erhöhen die postsynaptische Kapazität.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kinase verbindet das Signal mit nachgeschalteten Änderungen.",
+          "B": "Eine Abnahme entspricht Depression.",
+          "C": "Mehr wirksame Rezeptoren erhöhen die postsynaptische Kapazität.",
+          "D": "Es existieren verschiedene Plastizitätsformen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Welche Kombination nennt die Folie als postsynaptische LTP-Mechanismen?",
+      "options": [
+        {
+          "text": "Ausschliesslich Entfernung vorhandener AMPA-Rezeptoren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich Verringerung der AMPA-Leitfähigkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Phosphorylierung bestehender und Einbau zusätzlicher AMPA-Rezeptoren.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur eine Vermehrung präsynaptischer Vesikel als postsynaptischer Mechanismus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich verminderte Transmitterfreisetzung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies würde eher die Übertragung abschwächen. B: Dies ist nicht der dargestellte Verstärkungsweg. C: Beide können die Wirksamkeit der Synapse erhöhen. D: Das wäre eine präsynaptische Änderung. E: Dies erklärt keine postsynaptische Verstärkung. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Zwei Verstärkungswege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zwei Verstärkungswege"
+      ],
+      "questionGoal": "Zwei Verstärkungswege",
+      "structuredExplanation": {
+        "coreIdea": "Zwei Verstärkungswege",
+        "correctReasoning": "Beide können die Wirksamkeit der Synapse erhöhen.",
+        "wrongAnswerExplanations": {
+          "A": "Dies würde eher die Übertragung abschwächen.",
+          "B": "Dies ist nicht der dargestellte Verstärkungsweg.",
+          "D": "Das wäre eine präsynaptische Änderung.",
+          "E": "Dies erklärt keine postsynaptische Verstärkung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Zum Thema «räumliches und zeitliches Calciumprofil bei LTP und LTD»: Beurteilen Sie die Calcium-LTP/LTD-Beziehung der Folie.",
+      "options": [
+        {
+          "text": "Ein lokales Signal in einer dendritischen Dorne kann synapsenspezifische Änderungen ermöglichen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede minimale Calcium-Zunahme bedeutet unter allen Umständen LTP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein Calcium-Signal muss alle Synapsen des Gehirns gleichzeitig erreichen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Im gezeigten Modell sind grössere Calcium-Signale mit LTP verbunden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die räumliche Begrenzung trägt zur Spezifität bei. B: Grösse, Zeitprofil und zellulärer Kontext sind relevant. C: Dies folgt weder aus Diffusion noch aus den Messungen. D: Die Induktionsmuster erzeugen verschiedene Signale. Quelle: Originalunterlagen, PDF-S. 10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Calciumprofil"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Calciumprofil"
+      ],
+      "questionGoal": "Calciumprofil",
+      "structuredExplanation": {
+        "coreIdea": "Calciumprofil",
+        "correctReasoning": "Die räumliche Begrenzung trägt zur Spezifität bei. Die Induktionsmuster erzeugen verschiedene Signale.",
+        "wrongAnswerExplanations": {
+          "A": "Die räumliche Begrenzung trägt zur Spezifität bei.",
+          "B": "Grösse, Zeitprofil und zellulärer Kontext sind relevant.",
+          "C": "Dies folgt weder aus Diffusion noch aus den Messungen.",
+          "D": "Die Induktionsmuster erzeugen verschiedene Signale."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Vor einem Protokoll beträgt die mittlere EPSP-Amplitude 2 mV, danach 3 mV. Welcher normalisierte Wert mit Ausgangswert 1 ergibt sich?",
+      "options": [
+        {
+          "text": "1,5",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "3",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,667",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "5",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,5 als gesamter Endwert",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 3/2 = 1,5, entsprechend 50 % Zunahme. B: Die Originalamplitude wurde nicht durch den Ausgangswert geteilt. C: Dies ist der umgekehrte Quotient. D: Dies ist die Summe der Amplituden. E: 0,5 ist die relative Zunahme, nicht der normalisierte Endwert. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Übertragung normalisieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Übertragung normalisieren"
+      ],
+      "questionGoal": "Übertragung normalisieren",
+      "structuredExplanation": {
+        "coreIdea": "Übertragung normalisieren",
+        "correctReasoning": "3/2 = 1,5, entsprechend 50 % Zunahme.",
+        "wrongAnswerExplanations": {
+          "B": "Die Originalamplitude wurde nicht durch den Ausgangswert geteilt.",
+          "C": "Dies ist der umgekehrte Quotient.",
+          "D": "Dies ist die Summe der Amplituden.",
+          "E": "0,5 ist die relative Zunahme, nicht der normalisierte Endwert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Entstehung und Stabilisierung dendritischer Spines».",
+      "options": [
+        {
+          "text": "Während Lernen neu entstandene Spines können bevorzugt stabilisiert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Plastizität kann ausschliesslich ohne jede Strukturänderung auftreten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Neue dendritische Spines können nach Aktivitätsänderungen entstehen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder neue Spine muss für immer erhalten bleiben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Langzeitbeobachtung vergleicht ihre Persistenz. B: Sowohl funktionelle als auch strukturelle Änderungen sind beschrieben. C: Die Folien zeigen zeitliche Bildserien. D: Formation und Verlust sind dynamisch. Quelle: Originalunterlagen, PDF-S. 2,14–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Strukturelle Plastizität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Strukturelle Plastizität"
+      ],
+      "questionGoal": "Strukturelle Plastizität",
+      "structuredExplanation": {
+        "coreIdea": "Strukturelle Plastizität",
+        "correctReasoning": "Die Langzeitbeobachtung vergleicht ihre Persistenz. Die Folien zeigen zeitliche Bildserien.",
+        "wrongAnswerExplanations": {
+          "A": "Die Langzeitbeobachtung vergleicht ihre Persistenz.",
+          "B": "Sowohl funktionelle als auch strukturelle Änderungen sind beschrieben.",
+          "C": "Die Folien zeigen zeitliche Bildserien.",
+          "D": "Formation und Verlust sind dynamisch."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q14",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Postsynaptisch eingebrachter Fusionshemmer verhindert in einem Versuchsmodell LTP, während der Ausgangseingang weiter messbar bleibt. Welche Erklärung passt zum AMPA-Einbaumodell?",
+      "options": [
+        {
+          "text": "Membranfusion und Rezeptoreinbau sind grundsätzlich unvereinbar.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Befund beweist, dass vor dem Versuch keinerlei AMPA-Rezeptoren vorhanden waren.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zufuhr zusätzlicher Rezeptoren an die postsynaptische Membran wird behindert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jeder gemessene EPSP muss jetzt präsynaptisch grösser werden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Beobachtung zeigt ausschliesslich eine neue DNA-Mutation.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Vesikulärer Transport ermöglicht gerade den Einbau. B: Die Ausgangsübertragung kann über vorhandene Rezeptoren erfolgen. C: Membranfusion ist für Rezeptor-Trafficking relevant. D: Die postsynaptische Blockade erzwingt das nicht. E: Dafür gibt es hier keinen Beleg. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Fusionsblockade interpretieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fusionsblockade interpretieren"
+      ],
+      "questionGoal": "Fusionsblockade interpretieren",
+      "structuredExplanation": {
+        "coreIdea": "Fusionsblockade interpretieren",
+        "correctReasoning": "Membranfusion ist für Rezeptor-Trafficking relevant.",
+        "wrongAnswerExplanations": {
+          "A": "Vesikulärer Transport ermöglicht gerade den Einbau.",
+          "B": "Die Ausgangsübertragung kann über vorhandene Rezeptoren erfolgen.",
+          "D": "Die postsynaptische Blockade erzwingt das nicht.",
+          "E": "Dafür gibt es hier keinen Beleg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Im Konditionierungsmodell erreicht der schwache CS-Eingang allein die Reaktionsschwelle anfangs nicht. Wiederholte Paarung mit starkem US verstärkt ihn. Was erklärt die spätere CS-Antwort?",
+      "options": [
+        {
+          "text": "Der Ton muss nach Lernen denselben physikalischen Reiz wie Futter liefern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede CS-Afferenz muss dazu ein proportional höheres Einzel-AP erzeugen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der US muss bei jeder späteren CS-Prüfung weiterhin vorhanden sein.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der CS-Weg bleibt unverändert; die Antwort belegt deshalb keine Übertragungsänderung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der verstärkte CS-Weg kann nun die Reaktionszelle ausreichend aktivieren.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Verschaltung ändert die Wirksamkeit des Tons. B: Eine stärkere Synapse genügt ohne grössere AP-Amplitude. C: Konditionierung erklärt gerade die spätere CS-Antwort allein. D: Das beschriebene Modell verstärkt den CS-Weg. E: Die Verbindung wurde funktionell wirksamer. Quelle: Originalunterlagen, PDF-S. 3–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Assoziatives Netzwerk"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Assoziatives Netzwerk"
+      ],
+      "questionGoal": "Assoziatives Netzwerk",
+      "structuredExplanation": {
+        "coreIdea": "Assoziatives Netzwerk",
+        "correctReasoning": "Die Verbindung wurde funktionell wirksamer.",
+        "wrongAnswerExplanations": {
+          "A": "Die Verschaltung ändert die Wirksamkeit des Tons.",
+          "B": "Eine stärkere Synapse genügt ohne grössere AP-Amplitude.",
+          "C": "Konditionierung erklärt gerade die spätere CS-Antwort allein.",
+          "D": "Das beschriebene Modell verstärkt den CS-Weg."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Lernverhalten und kontrollierte Plastizitätsexperimente».",
+      "options": [
+        {
+          "text": "Ein Lernversuch mit Rezeptorblockade benötigt geeignete Leistungs- und Kontrollbedingungen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein unveränderter Gesamt-Spinebestand beweist fehlenden Umbau einzelner Spines.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Nachweis einer LTP beweist allein einen bestimmten bewussten Gedächtnisinhalt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Synaptische Änderungen können zur Gedächtnisbildung beitragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Andere Funktionsstörungen können die Aufgabe beeinflussen. B: Gleichzeitige Formation und Elimination können sich zahlenmässig ausgleichen. C: Zellphysiologie und spezifischer Inhalt sind verschiedene Erklärungsebenen. D: Sie sind ein zentraler zellulärer Mechanismus. Quelle: Originalunterlagen, PDF-S. 2,13–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Lernen und Experiment"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lernen und Experiment"
+      ],
+      "questionGoal": "Lernen und Experiment",
+      "structuredExplanation": {
+        "coreIdea": "Lernen und Experiment",
+        "correctReasoning": "Andere Funktionsstörungen können die Aufgabe beeinflussen. Sie sind ein zentraler zellulärer Mechanismus.",
+        "wrongAnswerExplanations": {
+          "A": "Andere Funktionsstörungen können die Aufgabe beeinflussen.",
+          "B": "Gleichzeitige Formation und Elimination können sich zahlenmässig ausgleichen.",
+          "C": "Zellphysiologie und spezifischer Inhalt sind verschiedene Erklärungsebenen.",
+          "D": "Sie sind ein zentraler zellulärer Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Eine EPSP-Amplitude sinkt bei gleichem Testreiz von 1,0 auf 0,7 mV und bleibt vermindert. Welche Angabe passt?",
+      "options": [
+        {
+          "text": "70 % Potenzierung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine Änderung um exakt 0,7 Prozentpunkte.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Normalisierter Wert 1,43 als neuer Ausgangswert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "30 % grössere AP-Amplitude.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Normalisierter Wert 0,7, also 30 % Depression.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 0,7 ist der verbleibende Anteil, keine Zunahme. B: Die absolute Änderung ist 0,3 mV und die relative 30 %. C: Dies wäre der umgekehrte Quotient. D: Gemessen wird ein kleineres EPSP. E: Die relative Änderung ist (0,7−1,0)/1,0. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "LTD quantifizieren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "LTD quantifizieren"
+      ],
+      "questionGoal": "LTD quantifizieren",
+      "structuredExplanation": {
+        "coreIdea": "LTD quantifizieren",
+        "correctReasoning": "Die relative Änderung ist (0,7−1,0)/1,0.",
+        "wrongAnswerExplanations": {
+          "A": "0,7 ist der verbleibende Anteil, keine Zunahme.",
+          "B": "Die absolute Änderung ist 0,3 mV und die relative 30 %.",
+          "C": "Dies wäre der umgekehrte Quotient.",
+          "D": "Gemessen wird ein kleineres EPSP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «synapsentypabhängige STDP und NMDA-Koinzidenz».",
+      "options": [
+        {
+          "text": "Nur die Anzahl Spikes, nie ihre zeitliche Reihenfolge, kann Plastizität beeinflussen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Calciumkonzentration allein legt ohne Zeit- und Ortsbezug jede Plastizitätsform vollständig fest.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "NMDA-Aktivierung kann synaptischen Eingang und postsynaptische Depolarisation verknüpfen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "STDP-Kurven können vom Zell- und Synapsentyp abhängen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: STDP untersucht gerade die Reihenfolge. B: Der Kontext bleibt relevant. C: Ligandenbindung und Mg²⁺-Entblockung liefern Koinzidenzinformation. D: Das gezeigte Beispiel ist kein universelles Gesetz jeder Verbindung. Quelle: Originalunterlagen, PDF-S. 7–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Spezifität statt Pauschalregel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spezifität statt Pauschalregel"
+      ],
+      "questionGoal": "Spezifität statt Pauschalregel",
+      "structuredExplanation": {
+        "coreIdea": "Spezifität statt Pauschalregel",
+        "correctReasoning": "Ligandenbindung und Mg²⁺-Entblockung liefern Koinzidenzinformation. Das gezeigte Beispiel ist kein universelles Gesetz jeder Verbindung.",
+        "wrongAnswerExplanations": {
+          "A": "STDP untersucht gerade die Reihenfolge.",
+          "B": "Der Kontext bleibt relevant.",
+          "C": "Ligandenbindung und Mg²⁺-Entblockung liefern Koinzidenzinformation.",
+          "D": "Das gezeigte Beispiel ist kein universelles Gesetz jeder Verbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Welche Änderung gehört neben synaptischer Verstärkung ebenfalls zur in der Vorlesung genannten neuronalen Plastizität?",
+      "options": [
+        {
+          "text": "Ausschliesslich eine höhere AP-Amplitude in jeder Faser.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Veränderte intrinsische Erregbarkeit einer Zelle.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur die Änderung der Muskelkraft ohne jede neuronale Anpassung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Nur eine kurzfristige zufällige Messschwankung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ausschliesslich die räumliche Verschiebung einer Messelektrode.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Intrinsische Erregbarkeit umfasst etwa Schwellen- und Kanaländerungen. B: Auch zelluläre Antwortschwellen können sich anpassen. C: Gefragt ist eine neuronale Plastizitätsform. D: Plastizität meint eine biologische Anpassung. E: Dies ist ein Messartefakt, keine neuronale Anpassung. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Weitere Plastizität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Weitere Plastizität"
+      ],
+      "questionGoal": "Weitere Plastizität",
+      "structuredExplanation": {
+        "coreIdea": "Weitere Plastizität",
+        "correctReasoning": "Auch zelluläre Antwortschwellen können sich anpassen.",
+        "wrongAnswerExplanations": {
+          "A": "Intrinsische Erregbarkeit umfasst etwa Schwellen- und Kanaländerungen.",
+          "C": "Gefragt ist eine neuronale Plastizitätsform.",
+          "D": "Plastizität meint eine biologische Anpassung.",
+          "E": "Dies ist ein Messartefakt, keine neuronale Anpassung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw09_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW09",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Induktion und Ausdruck synaptischer Potenzierung».",
+      "options": [
+        {
+          "text": "Ein grösseres EPSP beweist ohne weitere Kontrolle allein eine postsynaptische Ursache.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Induktionsreiz und späterer Testreiz müssen begrifflich dasselbe sein.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Konstante Testbedingungen helfen, eine veränderte Übertragungsstärke zu beurteilen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Calcium-Einstrom kann ein induzierendes Signal sein, Rezeptoränderung ein Ausdruck der Potenzierung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Auch Freisetzungsänderungen können die Antwort beeinflussen. B: Ein starkes Paarungsprotokoll und ein standardisierter Test erfüllen verschiedene Zwecke. C: So ist der Eingang vor und nach Induktion vergleichbar. D: Auslösung und bleibende Wirksamkeitsänderung sind unterscheidbar. Quelle: Originalunterlagen, PDF-S. 11–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW09",
+        "Induktion und Ausdruck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Induktion und Ausdruck"
+      ],
+      "questionGoal": "Induktion und Ausdruck",
+      "structuredExplanation": {
+        "coreIdea": "Induktion und Ausdruck",
+        "correctReasoning": "So ist der Eingang vor und nach Induktion vergleichbar. Auslösung und bleibende Wirksamkeitsänderung sind unterscheidbar.",
+        "wrongAnswerExplanations": {
+          "A": "Auch Freisetzungsänderungen können die Antwort beeinflussen.",
+          "B": "Ein starkes Paarungsprotokoll und ein standardisierter Test erfüllen verschiedene Zwecke.",
+          "C": "So ist der Eingang vor und nach Induktion vergleichbar.",
+          "D": "Auslösung und bleibende Wirksamkeitsänderung sind unterscheidbar."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1314 @@
+{
+  "id": "assessment_j1_s1_block1_fpc05_20261102",
+  "lectureCode": "FPC05",
+  "title": "Photochemie und chromatographische Auswertung",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. FPC - Fachpraktikum Chemie; EVC05 - Photochemie. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Seitenangaben beziehen sich auf PDF-Seiten des 35-seitigen Fachpraktikum-Chemie-Skripts, nicht auf dessen gedruckte Seitenzahlen. Ergänzend EVC als zweite Originalquelle. Nur Theorie und Auswertung, keine Organisations- oder Testatfragen.Kieselgel-DC wird korrekt als Adsorption beschrieben. Rubren wird chemisch angeregt; die vereinfachte Aussage eines zwingend zuvor frei emittierten UV-Photons wird nicht vorausgesetzt. Referenz IUPAC A00155/T06346 und Stevani et al. 2000, DOI 10.1002/1099-0690(200012)2000:24<4037::AID-EJOC4037>3.0.CO;2-A.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Flammenfärbung und charakteristische atomare Emissionslinien erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Prinzip, Durchführung und Aussagegrenzen der Kieselgel-Dünnschichtchromatographie anwenden."
+    },
+    {
+      "id": "lo3",
+      "text": "Photoisomerisierung von Azobenzol, Ringöffnung von Spiropyran und Solvatochromie unterscheiden."
+    },
+    {
+      "id": "lo4",
+      "text": "Chemolumineszenz, Rolle von Rubren und Fluoreszenz natürlicher Stoffe erklären."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_fpc05_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Warum können Salze verschiedener Metalle unterschiedliche Flammenfarben erzeugen?",
+      "options": [
+        {
+          "text": "Die Farbe entsteht ausschliesslich durch den Geruch des Salzes.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Alle Atome senden definitionsgemäss genau dieselbe einzelne Wellenlänge aus.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Flamme färbt sich nur nach der makroskopischen Farbe des Feststoffs.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Flammenfarbe wird durch dieselbe kontinuierliche Schwarzkörperemission bestimmt wie das Glühen eines Drahts.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Angeregte gasförmige Atome emittieren Licht charakteristischer Energiedifferenzen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Geruch ist kein optischer Emissionsmechanismus. B: Ihre Niveaus und Linien sind unterschiedlich. C: Die Emission hängt von elektronischen Energieniveaus ab. D: Beim behandelten Elementnachweis sind charakteristische atomare Linien zentral; sie sind kein reines kontinuierliches Glühspektrum. E: Beim Rückgang elektronischer Anregung entstehen elementspezifische Spektrallinien. Quelle: Originalunterlagen, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Flammenemission"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Flammenemission"
+      ],
+      "questionGoal": "Flammenemission",
+      "structuredExplanation": {
+        "coreIdea": "Flammenemission",
+        "correctReasoning": "Beim Rückgang elektronischer Anregung entstehen elementspezifische Spektrallinien.",
+        "wrongAnswerExplanations": {
+          "A": "Geruch ist kein optischer Emissionsmechanismus.",
+          "B": "Ihre Niveaus und Linien sind unterschiedlich.",
+          "C": "Die Emission hängt von elektronischen Energieniveaus ab.",
+          "D": "Beim behandelten Elementnachweis sind charakteristische atomare Linien zentral; sie sind kein reines kontinuierliches Glühspektrum."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Im Handspektroskop erscheinen intensive gelbe Linien um 589 nm. Welches im Skript behandelte Element passt am besten?",
+      "options": [
+        {
+          "text": "Calcium.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Strontium.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Kupfer.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lithium.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Natrium.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Seine genannten Linien und Flammenfarbe unterscheiden sich von der Na-D-Doppellinie. B: Die charakteristischen roten Strontiumlinien passen nicht zu der Na-D-Lage. C: Kupfer zeigt im behandelten Versuch vor allem grüne Emissionen. D: Die im Skript genannte markante Li-Linie liegt im roten Bereich um 671 nm. E: Die bekannte Na-D-Doppellinie liegt bei ungefähr 589 nm. Quelle: Originalunterlagen, PDF-S. 26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Natriumnachweis"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Natriumnachweis"
+      ],
+      "questionGoal": "Natriumnachweis",
+      "structuredExplanation": {
+        "coreIdea": "Natriumnachweis",
+        "correctReasoning": "Die bekannte Na-D-Doppellinie liegt bei ungefähr 589 nm.",
+        "wrongAnswerExplanations": {
+          "A": "Seine genannten Linien und Flammenfarbe unterscheiden sich von der Na-D-Doppellinie.",
+          "B": "Die charakteristischen roten Strontiumlinien passen nicht zu der Na-D-Lage.",
+          "C": "Kupfer zeigt im behandelten Versuch vor allem grüne Emissionen.",
+          "D": "Die im Skript genannte markante Li-Linie liegt im roten Bereich um 671 nm."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Weshalb wird das Magnesiastäbchen vor dem Nachweis ausgeglüht?",
+      "options": [
+        {
+          "text": "Um die spätere Probe durch kovalente Bindung unsichtbar zu machen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Um die später gemessenen Linien aller Elemente auf dieselbe Wellenlänge zu verschieben.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Um störende Emissionslinien durch Verstärkung der Fremdstoffkonzentration sichtbar zu machen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Um jedes spätere Emissionsphoton dauerhaft im Stäbchen zu speichern.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Um störende Rückstände mit eigener Flammenfärbung zu vermindern.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ziel ist ein sauberer Hintergrund, kein Verbergen der Probe. B: Die Linienlagen sind elementspezifisch; Ausglühen vermindert Verunreinigungen statt Spektren gleichzusetzen. C: Die Vorbereitung soll Fremdbeiträge vermindern, nicht verstärken. D: Photonen werden nicht so für die Messung gespeichert. E: Kontamination, insbesondere durch intensive Fremdlinien, erschwert die Zuordnung. Quelle: Originalunterlagen, PDF-S. 26,28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Blindkontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Blindkontrolle"
+      ],
+      "questionGoal": "Blindkontrolle",
+      "structuredExplanation": {
+        "coreIdea": "Blindkontrolle",
+        "correctReasoning": "Kontamination, insbesondere durch intensive Fremdlinien, erschwert die Zuordnung.",
+        "wrongAnswerExplanations": {
+          "A": "Ziel ist ein sauberer Hintergrund, kein Verbergen der Probe.",
+          "B": "Die Linienlagen sind elementspezifisch; Ausglühen vermindert Verunreinigungen statt Spektren gleichzusetzen.",
+          "C": "Die Vorbereitung soll Fremdbeiträge vermindern, nicht verstärken.",
+          "D": "Photonen werden nicht so für die Messung gespeichert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Wodurch trennt eine gewöhnliche Kieselgel-DC zwei Stoffe mit dem gleichen Laufmittel?",
+      "options": [
+        {
+          "text": "Ausschliesslich durch unterschiedliche Masse der aufgetragenen Kapillaren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die stationäre Phase verdampft und zieht jeden Stoff gleich weit mit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Unterschiedliche Wechselwirkungen mit polarer stationärer Phase und mobiler Phase erzeugen verschiedene Wanderung.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jedes Molekül wird nach einem zwingend identischen Weg zeitgleich angehalten.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Alle Stoffe werden kovalent in Silicium umgewandelt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Kapillare ist nicht der Trennmechanismus. B: Kieselgel bleibt stationär; das Laufmittel bewegt sich. C: Adsorptionsaffinität und Löslichkeit bestimmen die relative Retention. D: Unterschiedliche Retention ermöglicht gerade die Trennung. E: Die Trennung soll die Komponenten überwiegend chemisch intakt lassen. Quelle: Originalunterlagen, PDF-S. 27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Adsorptionschromatographie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Adsorptionschromatographie"
+      ],
+      "questionGoal": "Adsorptionschromatographie",
+      "structuredExplanation": {
+        "coreIdea": "Adsorptionschromatographie",
+        "correctReasoning": "Adsorptionsaffinität und Löslichkeit bestimmen die relative Retention.",
+        "wrongAnswerExplanations": {
+          "A": "Die Kapillare ist nicht der Trennmechanismus.",
+          "B": "Kieselgel bleibt stationär; das Laufmittel bewegt sich.",
+          "D": "Unterschiedliche Retention ermöglicht gerade die Trennung.",
+          "E": "Die Trennung soll die Komponenten überwiegend chemisch intakt lassen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Ein Fleck liegt 3.0 cm oberhalb der Startlinie; die Laufmittelfront liegt 6.0 cm darüber. Welcher Rf-Wert folgt?",
+      "options": [
+        {
+          "text": "2.0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "6.0 cm.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "9.0.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "3.0 cm.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0.50.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Verhältnis wurde umgekehrt. B: Dies ist die Strecke der Front, nicht der Rf-Wert. C: Die Strecken werden dividiert, nicht addiert. D: Rf ist ein dimensionsloses Verhältnis und nicht die Fleckstrecke. E: Rf ist Fleckstrecke geteilt durch Laufmittelfrontstrecke, jeweils ab Startlinie. Quelle: Originalunterlagen, PDF-S. 27,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Rf-Berechnung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rf-Berechnung"
+      ],
+      "questionGoal": "Rf-Berechnung",
+      "structuredExplanation": {
+        "coreIdea": "Rf-Berechnung",
+        "correctReasoning": "Rf ist Fleckstrecke geteilt durch Laufmittelfrontstrecke, jeweils ab Startlinie.",
+        "wrongAnswerExplanations": {
+          "A": "Das Verhältnis wurde umgekehrt.",
+          "B": "Dies ist die Strecke der Front, nicht der Rf-Wert.",
+          "C": "Die Strecken werden dividiert, nicht addiert.",
+          "D": "Rf ist ein dimensionsloses Verhältnis und nicht die Fleckstrecke."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Warum muss die aufgetragene Startlinie beim Entwickeln über dem Flüssigkeitsspiegel liegen?",
+      "options": [
+        {
+          "text": "Sonst können die Proben direkt in das Laufmittelreservoir ausgewaschen werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Weil die stationäre Phase keinerlei Lösungsmittel berühren darf.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Sonst ist der Rf-Wert definitionsgemäss immer genau 1.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weil Licht nur oberhalb des Flüssigkeitsspiegels existiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sonst bewegt sich die Probe ausschliesslich mit der stationären Phase statt mit dem Laufmittel.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Trennung soll mit der aufsteigenden mobilen Phase entlang der Platte erfolgen. B: Ihr unterer Bereich muss das Laufmittel für den kapillaren Aufstieg aufnehmen. C: Auswaschen kann die Auswertung ganz verhindern und erzwingt keinen bestimmten Rf. D: Der Flüssigkeitsstand wird wegen Probenführung kontrolliert. E: Kieselgel bleibt stationär; eine eingetauchte Startzone kann in das Laufmittelreservoir auswaschen. Quelle: Originalunterlagen, PDF-S. 27,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Laufmittelstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Laufmittelstand"
+      ],
+      "questionGoal": "Laufmittelstand",
+      "structuredExplanation": {
+        "coreIdea": "Laufmittelstand",
+        "correctReasoning": "Die Trennung soll mit der aufsteigenden mobilen Phase entlang der Platte erfolgen.",
+        "wrongAnswerExplanations": {
+          "B": "Ihr unterer Bereich muss das Laufmittel für den kapillaren Aufstieg aufnehmen.",
+          "C": "Auswaschen kann die Auswertung ganz verhindern und erzwingt keinen bestimmten Rf.",
+          "D": "Der Flüssigkeitsstand wird wegen Probenführung kontrolliert.",
+          "E": "Kieselgel bleibt stationär; eine eingetauchte Startzone kann in das Laufmittelreservoir auswaschen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Eine DC enthält eine vor UV geschützte Azobenzolprobe und eine bestrahlte Probe. Nach Bestrahlung zeigt nur die zweite einen zusätzlichen Fleck. Welche Schlussfolgerung ist am besten begründet?",
+      "options": [
+        {
+          "text": "UV-Licht hat zwingend die Gesamtzahl der C-Atome verdoppelt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bestrahlung hat eine zusätzliche chromatographisch unterscheidbare Komponente erzeugt, vereinbar mit cis/trans-Isomerisierung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Zwei Flecken beweisen, dass die Ausgangsprobe vollständig umgesetzt ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Der neue Fleck muss immer bei Rf=1 liegen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der zusätzliche Fleck beweist bereits ohne Referenz die exakte absolute Konfiguration jedes Atoms.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Isomerisierung kann ohne Änderung der Summenformel erfolgen. B: Die geschützte Probe kontrolliert die Änderung durch die Bestrahlung; eine eindeutige Identität erfordert geeignete Referenzen. C: Ein verbleibender Ausgangsfleck kann gerade auf unvollständige Umsetzung hinweisen. D: Die Retention hängt von Stoff und Bedingungen ab. E: Ein DC-Fleck liefert keine vollständige stereochemische Strukturaufklärung. Quelle: Originalunterlagen, PDF-S. 26–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Azobenzol-Kontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Azobenzol-Kontrolle"
+      ],
+      "questionGoal": "Azobenzol-Kontrolle",
+      "structuredExplanation": {
+        "coreIdea": "Azobenzol-Kontrolle",
+        "correctReasoning": "Die geschützte Probe kontrolliert die Änderung durch die Bestrahlung; eine eindeutige Identität erfordert geeignete Referenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Isomerisierung kann ohne Änderung der Summenformel erfolgen.",
+          "C": "Ein verbleibender Ausgangsfleck kann gerade auf unvollständige Umsetzung hinweisen.",
+          "D": "Die Retention hängt von Stoff und Bedingungen ab.",
+          "E": "Ein DC-Fleck liefert keine vollständige stereochemische Strukturaufklärung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Was ist nach Ende der UV-Bestrahlung von Azobenzol unter den beschriebenen Bedingungen zu erwarten?",
+      "options": [
+        {
+          "text": "Das Ausschalten der Lampe erhöht definitionsgemäss die UV-Photonenrate.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die N=N-Bindung wird automatisch zu einer Peptidbindung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Jedes cis-Molekül bleibt unabhängig von Temperatur auf unbegrenzte Zeit fixiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Summenformel beider Isomere muss sich unterscheiden.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die thermische Rückkehr zur bevorzugten trans-Form kann einsetzen.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die photochemische Anregung durch diese Lampe endet. B: Eine solche Funktionalitätsänderung gehört nicht zur beschriebenen Isomerisierung. C: Thermische Rückisomerisierung ist möglich. D: cis und trans sind Konfigurationsisomere gleicher Summenformel. E: Das photostationäre Verhältnis muss dem thermischen Gleichgewicht nicht entsprechen. Quelle: Originalunterlagen, PDF-S. 26,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Dunkelrückreaktion"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Dunkelrückreaktion"
+      ],
+      "questionGoal": "Dunkelrückreaktion",
+      "structuredExplanation": {
+        "coreIdea": "Dunkelrückreaktion",
+        "correctReasoning": "Das photostationäre Verhältnis muss dem thermischen Gleichgewicht nicht entsprechen.",
+        "wrongAnswerExplanations": {
+          "A": "Die photochemische Anregung durch diese Lampe endet.",
+          "B": "Eine solche Funktionalitätsänderung gehört nicht zur beschriebenen Isomerisierung.",
+          "C": "Thermische Rückisomerisierung ist möglich.",
+          "D": "cis und trans sind Konfigurationsisomere gleicher Summenformel."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Wodurch lässt sich die UV-induzierte Färbung einer Spiropyranlösung am besten erklären?",
+      "options": [
+        {
+          "text": "Ringöffnung verändert das konjugierte System und damit die Absorption im sichtbaren Bereich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Blaufärbung wird durch Verdampfen des Lösungsmittels bei unveränderter Struktur des Spiropyrans erklärt.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die UV-Lampe fügt der Probe zwingend einen Metallfarbstoff hinzu.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Das Molekül verliert bei der Färbung sämtliche Elektronen.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur die Temperatur des Glases verändert seine Farbe, nicht die Lösung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die offene Merocyaninform hat andere elektronische Übergänge als die geschlossene Form. B: Die kurze UV-Bestrahlung löst eine Ringöffnung mit verändertem konjugierten System aus; eine blosse Konzentrationserhöhung erklärt den Mechanismus nicht. C: Die Farbänderung ist eine photochemische Strukturänderung des vorhandenen Moleküls. D: Elektronische Anregung und Bindungsumlagerung bedeuten keinen vollständigen Elektronenverlust. E: Der Versuch demonstriert Photochromie der gelösten Verbindung. Quelle: Originalunterlagen, PDF-S. 28–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Spiropyran"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spiropyran"
+      ],
+      "questionGoal": "Spiropyran",
+      "structuredExplanation": {
+        "coreIdea": "Spiropyran",
+        "correctReasoning": "Die offene Merocyaninform hat andere elektronische Übergänge als die geschlossene Form.",
+        "wrongAnswerExplanations": {
+          "B": "Die kurze UV-Bestrahlung löst eine Ringöffnung mit verändertem konjugierten System aus; eine blosse Konzentrationserhöhung erklärt den Mechanismus nicht.",
+          "C": "Die Farbänderung ist eine photochemische Strukturänderung des vorhandenen Moleküls.",
+          "D": "Elektronische Anregung und Bindungsumlagerung bedeuten keinen vollständigen Elektronenverlust.",
+          "E": "Der Versuch demonstriert Photochromie der gelösten Verbindung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Ein Farbstoff besitzt in zwei Lösungsmitteln unterschiedlicher Polarität verschiedene Absorptionsmaxima. Welche Erklärung passt ohne zwingenden kovalenten Umbau?",
+      "options": [
+        {
+          "text": "Jede Farbänderung erfordert eine irreversible Zersetzung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Lösungsmittel setzt die Frequenz jedes Photons unabhängig von Absorption gleich null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine Polaritätsänderung kann elektronische Übergänge grundsätzlich nicht beeinflussen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Umgebung stabilisiert elektronische Zustände unterschiedlich und verändert ihre Energiedifferenz.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Farbänderung erfordert, dass das Lösungsmittel in jedem Fall kovalent an den Farbstoff addiert.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Auch reversible Umgebungseffekte können die Farbe ändern. B: Dies ist kein physikalischer Mechanismus. C: Gerade ihre Beeinflussung erklärt Solvatochromie. D: Dies ist der solvatochrome Effekt. E: Solvatochromie kann durch unterschiedliche Stabilisierung elektronischer Zustände ohne kovalente Addition entstehen. Quelle: Einführung EVC5, PDF-S. 3; FPC-Skript ergänzend PDF-S. 28–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Solvatochromie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Solvatochromie"
+      ],
+      "questionGoal": "Solvatochromie",
+      "structuredExplanation": {
+        "coreIdea": "Solvatochromie",
+        "correctReasoning": "Dies ist der solvatochrome Effekt.",
+        "wrongAnswerExplanations": {
+          "A": "Auch reversible Umgebungseffekte können die Farbe ändern.",
+          "B": "Dies ist kein physikalischer Mechanismus.",
+          "C": "Gerade ihre Beeinflussung erklärt Solvatochromie.",
+          "E": "Solvatochromie kann durch unterschiedliche Stabilisierung elektronischer Zustände ohne kovalente Addition entstehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Welche Rolle spielt Rubren im beschriebenen peroxyoxalatbasierten Leuchtversuch am ehesten?",
+      "options": [
+        {
+          "text": "Es wird durch einen chemisch ausgelösten Anregungsprozess angeregt und emittiert sichtbares Licht.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Es ersetzt die chemische Energiequelle durch permanente externe UV-Bestrahlung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Seine Farbe entsteht durch Absorption ohne anschliessende Emission und ohne angeregten Zustand.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es ist nur ein undurchlässiger Filter, der jedes sichtbare Photon absorbiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es liefert die sichtbare Emission als heisser schwarzer Strahler nach starker Erhitzung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die chemische Reaktion liefert die Energie, der Fluorophor bestimmt wesentlich die beobachtete Emission. B: Das Leuchten benötigt keine dauernde Bestrahlung von aussen. C: Rubren dient als emittierender Fluorophor; sichtbares Leuchten benötigt den strahlenden Rückgang eines angeregten Zustands. D: Seine Fluoreszenz macht die chemische Energie optisch sichtbar. E: Die Emission des Fluorophors folgt einer chemisch ausgelösten elektronischen Anregung; starkes Erhitzen ist nicht das Leuchtprinzip. Quelle: Originalunterlagen, PDF-S. 28,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Rubren und chemische Energie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Rubren und chemische Energie"
+      ],
+      "questionGoal": "Rubren und chemische Energie",
+      "structuredExplanation": {
+        "coreIdea": "Rubren und chemische Energie",
+        "correctReasoning": "Die chemische Reaktion liefert die Energie, der Fluorophor bestimmt wesentlich die beobachtete Emission.",
+        "wrongAnswerExplanations": {
+          "B": "Das Leuchten benötigt keine dauernde Bestrahlung von aussen.",
+          "C": "Rubren dient als emittierender Fluorophor; sichtbares Leuchten benötigt den strahlenden Rückgang eines angeregten Zustands.",
+          "D": "Seine Fluoreszenz macht die chemische Energie optisch sichtbar.",
+          "E": "Die Emission des Fluorophors folgt einer chemisch ausgelösten elektronischen Anregung; starkes Erhitzen ist nicht das Leuchtprinzip."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Ein Naturstoffextrakt leuchtet unter einer UV-Lampe, nach Ausschalten erlischt das Leuchten rasch. Welche Interpretation passt am besten?",
+      "options": [
+        {
+          "text": "Das Präparat enthält damit sicher Natriumdampf.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Fluoreszenz nach optischer Anregung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Chemolumineszenz ist zwingend bewiesen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Probe hat alle Photonen dauerhaft gespeichert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein fortgesetzter langer Triplet-Nachleuchteffekt ist zwingend bewiesen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein leuchtender Extrakt beweist keine atomare Na-Emission. B: Die externe Anregung endet; kurzlebige angeregte Zustände werden nicht weiter nachgebildet. C: Dafür müsste die Anregung aus einer chemischen Reaktion stammen. D: Das zeitliche Verhalten spricht für laufende Anregung und Emission. E: Rasches Erlöschen spricht nicht für langes Phosphoreszenznachleuchten. Quelle: Originalunterlagen, PDF-S. 28,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Fluoreszenzkontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fluoreszenzkontrolle"
+      ],
+      "questionGoal": "Fluoreszenzkontrolle",
+      "structuredExplanation": {
+        "coreIdea": "Fluoreszenzkontrolle",
+        "correctReasoning": "Die externe Anregung endet; kurzlebige angeregte Zustände werden nicht weiter nachgebildet.",
+        "wrongAnswerExplanations": {
+          "A": "Ein leuchtender Extrakt beweist keine atomare Na-Emission.",
+          "C": "Dafür müsste die Anregung aus einer chemischen Reaktion stammen.",
+          "D": "Das zeitliche Verhalten spricht für laufende Anregung und Emission.",
+          "E": "Rasches Erlöschen spricht nicht für langes Phosphoreszenznachleuchten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zur Flammenfärbung.",
+      "options": [
+        {
+          "text": "Ein Spektroskop zerlegt das Licht nach Wellenlängen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Emissionswellenlänge entspricht einer Energiedifferenz elektronischer Zustände.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine gelbe Flamme beweist unabhängig von Verunreinigungen die Reinheit eines Natriumsalzes.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein Element besitzt nur bei Bestrahlung mit radioaktiven Teilchen ein Emissionsspektrum.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: So werden einzelne Linien besser unterscheidbar. B: Für das Photon gilt ΔE=hν. C: Kontamination und überlagerte Linien begrenzen die Aussage. D: Auch thermische Anregung kann Emission auslösen. Quelle: Originalunterlagen, PDF-S. 26,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Atomemission"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Atomemission"
+      ],
+      "questionGoal": "Atomemission",
+      "structuredExplanation": {
+        "coreIdea": "Atomemission",
+        "correctReasoning": "So werden einzelne Linien besser unterscheidbar. Für das Photon gilt ΔE=hν.",
+        "wrongAnswerExplanations": {
+          "A": "So werden einzelne Linien besser unterscheidbar.",
+          "B": "Für das Photon gilt ΔE=hν.",
+          "C": "Kontamination und überlagerte Linien begrenzen die Aussage.",
+          "D": "Auch thermische Anregung kann Emission auslösen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zur Dünnschichtchromatographie.",
+      "options": [
+        {
+          "text": "Die Front muss rechtzeitig markiert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine gesättigte Entwicklungskammer verbessert die Reproduzierbarkeit.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Startmarkierung mit löslicher Tinte ist grundsätzlich ein besserer Standard als Bleistift.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Rf-Werte sind nur bei vergleichbaren Bedingungen sinnvoll vergleichbar.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Nach Verdampfen des Laufmittels ist ihre Lage sonst nicht mehr sicher erkennbar. B: Die Laufmittelatmosphäre wird kontrollierter. C: Tintenbestandteile können mitwandern und zusätzliche Flecken erzeugen. D: Stationäre Phase, Laufmittel und weitere Faktoren beeinflussen sie. Quelle: Originalunterlagen, PDF-S. 27,29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "DC-Bedingungen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DC-Bedingungen"
+      ],
+      "questionGoal": "DC-Bedingungen",
+      "structuredExplanation": {
+        "coreIdea": "DC-Bedingungen",
+        "correctReasoning": "Nach Verdampfen des Laufmittels ist ihre Lage sonst nicht mehr sicher erkennbar. Die Laufmittelatmosphäre wird kontrollierter. Stationäre Phase, Laufmittel und weitere Faktoren beeinflussen sie.",
+        "wrongAnswerExplanations": {
+          "A": "Nach Verdampfen des Laufmittels ist ihre Lage sonst nicht mehr sicher erkennbar.",
+          "B": "Die Laufmittelatmosphäre wird kontrollierter.",
+          "C": "Tintenbestandteile können mitwandern und zusätzliche Flecken erzeugen.",
+          "D": "Stationäre Phase, Laufmittel und weitere Faktoren beeinflussen sie."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zur Interpretation einer DC.",
+      "options": [
+        {
+          "text": "UV-absorbierende Stoffe können auf F254-Platten als dunkle Flecken erscheinen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Gleicher Rf-Wert beweist allein die vollständige strukturelle Identität zweier Stoffe.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein unsichtbarer Fleck beweist das Fehlen jeder Substanz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Fleckengrösse liefert ohne Kalibrierung eine beliebig genaue absolute Konzentration.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie schwächen die Fluoreszenz des Plattenindikators örtlich ab. B: Verschiedene Stoffe können unter denselben Bedingungen co-migrieren. C: Nicht jeder Stoff ist mit jeder Detektionsmethode sichtbar. D: Sie ermöglicht höchstens eine grobe Abschätzung und hängt von mehreren Faktoren ab. Quelle: Originalunterlagen, PDF-S. 27.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "DC-Nachweisgrenzen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "DC-Nachweisgrenzen"
+      ],
+      "questionGoal": "DC-Nachweisgrenzen",
+      "structuredExplanation": {
+        "coreIdea": "DC-Nachweisgrenzen",
+        "correctReasoning": "Sie schwächen die Fluoreszenz des Plattenindikators örtlich ab.",
+        "wrongAnswerExplanations": {
+          "A": "Sie schwächen die Fluoreszenz des Plattenindikators örtlich ab.",
+          "B": "Verschiedene Stoffe können unter denselben Bedingungen co-migrieren.",
+          "C": "Nicht jeder Stoff ist mit jeder Detektionsmethode sichtbar.",
+          "D": "Sie ermöglicht höchstens eine grobe Abschätzung und hängt von mehreren Faktoren ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zum Isomerisierungsnachweis.",
+      "options": [
+        {
+          "text": "Eine DC-Trennung verlangt bei beiden Isomeren exakt identische Wechselwirkungen mit der Platte.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein zusätzlicher cis-Fleck nach Bestrahlung beweist die vollständige Abwesenheit von trans-Azobenzol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "cis- und trans-Azobenzol besitzen dieselbe Summenformel.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein geschützter Vergleichsfleck hilft, lichtbedingte Änderungen zuzuordnen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Unterschiedliche Retention ermöglicht die Trennung. B: Ein photostationäres Gemisch kann beide Formen enthalten; ein zusätzlicher Fleck beweist keinen vollständigen Umsatz. C: Die räumliche Anordnung unterscheidet sich. D: Er kontrolliert die unveränderte Ausgangsprobe unter vergleichbaren Bedingungen. Quelle: Originalunterlagen, PDF-S. 26–29.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Azobenzol und Retention"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Azobenzol und Retention"
+      ],
+      "questionGoal": "Azobenzol und Retention",
+      "structuredExplanation": {
+        "coreIdea": "Azobenzol und Retention",
+        "correctReasoning": "Die räumliche Anordnung unterscheidet sich. Er kontrolliert die unveränderte Ausgangsprobe unter vergleichbaren Bedingungen.",
+        "wrongAnswerExplanations": {
+          "A": "Unterschiedliche Retention ermöglicht die Trennung.",
+          "B": "Ein photostationäres Gemisch kann beide Formen enthalten; ein zusätzlicher Fleck beweist keinen vollständigen Umsatz.",
+          "C": "Die räumliche Anordnung unterscheidet sich.",
+          "D": "Er kontrolliert die unveränderte Ausgangsprobe unter vergleichbaren Bedingungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zu Spiropyran und Lösungsmitteln.",
+      "options": [
+        {
+          "text": "Ein Strukturwechsel kann die Ausdehnung elektronischer Konjugation verändern.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Jede Ringöffnung eines Spiropyrans ist zwangsläufig identisch mit einer cis/trans-Änderung an einer einzelnen C=C-Bindung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Solvatochromie bezeichnet die Farbänderung durch thermische Anregung gasförmiger Metallatome.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Farbänderung kann auch ohne Änderung der Summenformel auftreten.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Dadurch verändern sich elektronische Übergänge. B: Die Prozesse sind strukturell zu unterscheiden. C: Sie ist die Änderung optischer Eigenschaften eines gelösten Stoffes mit dem Lösungsmittel; Flammenemission ist ein anderer Vorgang. D: Isomerisierung und Ringöffnung können dieselbe Summenformel bewahren. Quelle: FPC-Skript PDF-S. 28–29; Einführung EVC5 ergänzend PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Photochromie und Medium"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Photochromie und Medium"
+      ],
+      "questionGoal": "Photochromie und Medium",
+      "structuredExplanation": {
+        "coreIdea": "Photochromie und Medium",
+        "correctReasoning": "Dadurch verändern sich elektronische Übergänge. Isomerisierung und Ringöffnung können dieselbe Summenformel bewahren.",
+        "wrongAnswerExplanations": {
+          "A": "Dadurch verändern sich elektronische Übergänge.",
+          "B": "Die Prozesse sind strukturell zu unterscheiden.",
+          "C": "Sie ist die Änderung optischer Eigenschaften eines gelösten Stoffes mit dem Lösungsmittel; Flammenemission ist ein anderer Vorgang.",
+          "D": "Isomerisierung und Ringöffnung können dieselbe Summenformel bewahren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zu Lumineszenz.",
+      "options": [
+        {
+          "text": "Fluoreszenz eines Extrakts entsteht durch thermische Glühstrahlung und benötigt keine elektronische Lichtanregung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein starres konjugiertes System kann Fluoreszenz begünstigen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein Farbstoff kann die Farbe eines chemolumineszenten Systems wesentlich bestimmen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Chemolumineszenz bezieht ihre Anregungsenergie aus einer chemischen Reaktion.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Im behandelten Versuch regt UV-Licht den gelösten Stoff elektronisch an; er emittiert danach Fluoreszenz. B: Es beeinflusst elektronische Zustände und konkurrierende Relaxationswege. C: Sein Emissionsspektrum prägt die beobachtete Farbe. D: Die Emission kann von einem dadurch angeregten Molekül ausgehen. Quelle: Originalunterlagen, PDF-S. 28,30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Anregungsquellen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anregungsquellen"
+      ],
+      "questionGoal": "Anregungsquellen",
+      "structuredExplanation": {
+        "coreIdea": "Anregungsquellen",
+        "correctReasoning": "Es beeinflusst elektronische Zustände und konkurrierende Relaxationswege. Sein Emissionsspektrum prägt die beobachtete Farbe. Die Emission kann von einem dadurch angeregten Molekül ausgehen.",
+        "wrongAnswerExplanations": {
+          "A": "Im behandelten Versuch regt UV-Licht den gelösten Stoff elektronisch an; er emittiert danach Fluoreszenz.",
+          "B": "Es beeinflusst elektronische Zustände und konkurrierende Relaxationswege.",
+          "C": "Sein Emissionsspektrum prägt die beobachtete Farbe.",
+          "D": "Die Emission kann von einem dadurch angeregten Molekül ausgehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die Aussagen zu den im Skript behandelten Naturstoffen.",
+      "options": [
+        {
+          "text": "Sichtbare Fluoreszenz ist definitionsgemäss nur bei künstlich hergestellten Stoffen möglich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Extraktionsmittel kann einen Farbstoff aus einer komplexen natürlichen Matrix lösen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein farblos wirkendes Filtrat kann unter UV niemals leuchten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Filtration entfernt definitionsgemäss auch alle gelösten Farbstoffmoleküle.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele Naturstoffe, etwa Porphyrine und Chinin, fluoreszieren. B: Die Extraktion trennt nach Löslichkeit und Wechselwirkungen. C: Schwache sichtbare Absorption schliesst UV-Anregung und sichtbare Fluoreszenz nicht aus. D: Gelöste Moleküle können den Papierfilter passieren. Quelle: Originalunterlagen, PDF-S. 30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Naturstoffextrakte"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Naturstoffextrakte"
+      ],
+      "questionGoal": "Naturstoffextrakte",
+      "structuredExplanation": {
+        "coreIdea": "Naturstoffextrakte",
+        "correctReasoning": "Die Extraktion trennt nach Löslichkeit und Wechselwirkungen.",
+        "wrongAnswerExplanations": {
+          "A": "Viele Naturstoffe, etwa Porphyrine und Chinin, fluoreszieren.",
+          "B": "Die Extraktion trennt nach Löslichkeit und Wechselwirkungen.",
+          "C": "Schwache sichtbare Absorption schliesst UV-Anregung und sichtbare Fluoreszenz nicht aus.",
+          "D": "Gelöste Moleküle können den Papierfilter passieren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_fpc05_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2",
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "FPC05",
+      "stem": "Beurteilen Sie die folgenden Versuchsschlüsse.",
+      "options": [
+        {
+          "text": "Ein heller Fleck bei 366 nm beweist eine thermische Flammenemission.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein neuer DC-Fleck nach Belichtung ist ein Befund; seine genaue Strukturzuordnung benötigt weitere Evidenz.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede Farbänderung muss von einer Änderung der Atomkerne stammen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die chemische Energiequelle des Leuchtversuchs ist von der optischen Anregung des Naturstoffversuchs zu unterscheiden.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er kann molekulare Fluoreszenz nach UV-Anregung zeigen. B: Chromatographie allein ist keine vollständige Strukturaufklärung. C: Elektronische und molekülstrukturelle Änderungen reichen aus. D: Beide können Licht emittieren, werden aber verschieden angeregt. Quelle: Originalunterlagen, PDF-S. 26–30.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "FPC05",
+        "Befund und Schluss"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Befund und Schluss"
+      ],
+      "questionGoal": "Befund und Schluss",
+      "structuredExplanation": {
+        "coreIdea": "Befund und Schluss",
+        "correctReasoning": "Chromatographie allein ist keine vollständige Strukturaufklärung. Beide können Licht emittieren, werden aber verschieden angeregt.",
+        "wrongAnswerExplanations": {
+          "A": "Er kann molekulare Fluoreszenz nach UV-Anregung zeigen.",
+          "B": "Chromatographie allein ist keine vollständige Strukturaufklärung.",
+          "C": "Elektronische und molekülstrukturelle Änderungen reichen aus.",
+          "D": "Beide können Licht emittieren, werden aber verschieden angeregt."
+        }
+      }
+    }
+  ]
+}

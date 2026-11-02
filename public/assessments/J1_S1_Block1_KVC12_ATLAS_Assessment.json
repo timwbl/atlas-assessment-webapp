@@ -1,0 +1,1316 @@
+{
+  "id": "assessment_j1_s1_block1_kvc12_20261102",
+  "lectureCode": "KVC12",
+  "title": "Peptide und Proteine",
+  "block": "Block 1",
+  "subject": "Chemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVC12 - Peptide & Proteine. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert.  Die Aufgaben prüfen chemische Aussagen und typische Verwechslungen; numerische Beispiele nennen ihre Modellannahmen. Typ-A-Aufgaben wurden themenspezifisch neu formuliert; Alternativen beziehen sich jeweils auf denselben Sachverhalt statt auf zufällige Nachbarkonzepte.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Peptidbindung, Sequenzrichtung und ihre physikochemischen Eigenschaften erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Primär- bis Quartärstruktur und stabilisierende Wechselwirkungen unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Posttranslationale Modifikationen und ausgewählte Proteinfunktionen verknüpfen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvc12_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche direkte Verknüpfung verbindet zwei Aminosäurereste im Peptidrückgrat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "S–S als einzige Rückgratverknüpfung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "C(=O)–N als Amidbindung.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "C=C als Alkenbindung.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "C–O–C ohne Carbonyl als Etherbindung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "P–O–P als Anhydridbindung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Disulfide können zusätzliche Cysteinverknüpfungen bilden, ersetzen aber nicht die Rückgrat-Amide. B: Die Carboxylfunktion eines Rests ist über eine Amidbindung mit der Aminofunktion des nächsten verknüpft. C: Eine Alkenbindung ist keine Verknüpfung von Carboxyl- und Aminofunktion. D: Ein Ether ohne Carbonyl ist keine Carbonsäureamidbindung. E: P–O–P verbindet Phosphatreste, nicht Aminosäuren im Peptidrückgrat. Quelle: Originalunterlagen, PDF-S. 4–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Peptidbindung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Peptidbindung"
+      ],
+      "questionGoal": "Peptidbindung",
+      "structuredExplanation": {
+        "coreIdea": "Peptidbindung",
+        "correctReasoning": "Die Carboxylfunktion eines Rests ist über eine Amidbindung mit der Aminofunktion des nächsten verknüpft.",
+        "wrongAnswerExplanations": {
+          "A": "Disulfide können zusätzliche Cysteinverknüpfungen bilden, ersetzen aber nicht die Rückgrat-Amide.",
+          "C": "Eine Alkenbindung ist keine Verknüpfung von Carboxyl- und Aminofunktion.",
+          "D": "Ein Ether ohne Carbonyl ist keine Carbonsäureamidbindung.",
+          "E": "P–O–P verbindet Phosphatreste, nicht Aminosäuren im Peptidrückgrat."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Wie wird die Sequenz eines Peptids konventionell angegeben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "In alphabetischer Reihenfolge der Aminosäuren.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Vom N-Terminus zum C-Terminus.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Vom sauersten zum basischsten Rest.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Vom C-Terminus zum N-Terminus.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Zwingend von der grössten zur kleinsten Seitenkette.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Alphabetische Sortierung würde die Information der tatsächlichen Sequenz zerstören. B: Die Sequenzkonvention folgt der Richtung des Peptidrückgrats, nicht der Sortierung von Eigenschaften. C: Säure-/Baseneigenschaften bestimmen nicht die Notationsrichtung. D: Dies ist die umgekehrte und nicht die übliche Sequenznotation. E: Die Seitenkettengrösse sortiert die kovalente Sequenz nicht um. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Sequenzrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sequenzrichtung"
+      ],
+      "questionGoal": "Sequenzrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Sequenzrichtung",
+        "correctReasoning": "Die Sequenzkonvention folgt der Richtung des Peptidrückgrats, nicht der Sortierung von Eigenschaften.",
+        "wrongAnswerExplanations": {
+          "A": "Alphabetische Sortierung würde die Information der tatsächlichen Sequenz zerstören.",
+          "C": "Säure-/Baseneigenschaften bestimmen nicht die Notationsrichtung.",
+          "D": "Dies ist die umgekehrte und nicht die übliche Sequenznotation.",
+          "E": "Die Seitenkettengrösse sortiert die kovalente Sequenz nicht um."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Warum ist die Rotation um die Peptid-C–N-Bindung eingeschränkt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mesomerie macht die Peptid-C–N-Bindung genauso frei drehbar wie eine gewöhnliche aliphatische Einfachbindung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Die Planarität entsteht nur durch eine starre N–Cα-Bindung, während die Peptid-C–N-Bindung frei rotiert.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Peptidgruppe wird erst durch Zusammenlagerung mehrerer Untereinheiten planar.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Die π-Delokalisierung entsteht nur durch Wasserstoffbrücken des Lösungsmittels und fehlt einem isolierten Amid.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Mesomerie verleiht ihr partiellen Doppelbindungscharakter.",
+          "correct": true
+        }
+      ],
+      "explanation": "A: Partieller Doppelbindungscharakter schränkt die Rotation gerade ein. B: Die Einschränkung betrifft die Amid-C–N-Bindung; N–Cα gehört zu den konformativ beweglichen Rückgratbindungen. C: Die lokale Amidmesomerie besteht schon in einem einzelnen Peptid und benötigt keine Quartärstruktur. D: Die Delokalisierung ist eine Eigenschaft der Carbonyl-N-Elektronenstruktur; H-Brücken können zusätzlich wechselwirken. E: Delokalisierung zwischen Carbonyl und N stabilisiert eine annähernd planare Peptidgruppe; andere Rückgratbindungen bleiben konformativ beweglich. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Peptidplanarität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Peptidplanarität"
+      ],
+      "questionGoal": "Peptidplanarität",
+      "structuredExplanation": {
+        "coreIdea": "Peptidplanarität",
+        "correctReasoning": "Delokalisierung zwischen Carbonyl und N stabilisiert eine annähernd planare Peptidgruppe; andere Rückgratbindungen bleiben konformativ beweglich.",
+        "wrongAnswerExplanations": {
+          "A": "Partieller Doppelbindungscharakter schränkt die Rotation gerade ein.",
+          "B": "Die Einschränkung betrifft die Amid-C–N-Bindung; N–Cα gehört zu den konformativ beweglichen Rückgratbindungen.",
+          "C": "Die lokale Amidmesomerie besteht schon in einem einzelnen Peptid und benötigt keine Quartärstruktur.",
+          "D": "Die Delokalisierung ist eine Eigenschaft der Carbonyl-N-Elektronenstruktur; H-Brücken können zusätzlich wechselwirken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche Aussage beschreibt die Geometrie vieler Peptidbindungen korrekt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "cis und trans bezeichnen hier unterschiedliche Aminosäuresequenzen.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Alle Peptidbindungen sind ohne Ausnahme cis.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Alle Peptidbindungen sind ohne Ausnahme trans.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "trans ist häufig bevorzugt, cis kommt in besonderen Fällen ebenfalls vor.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "text": "Ein Ringflip wandelt jede Peptidbindung ohne Barriere zwischen beiden um.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: cis/trans ändert die Geometrie der Peptidgruppe, nicht die Aminosäurefolge. B: trans ist für viele Peptidbindungen sterisch bevorzugt; reine cis-Ausschliesslichkeit ist falsch. C: Seltene cis-Peptidbindungen sind möglich, weshalb auch die trans-Ausschliesslichkeit zu weit geht. D: Sterische Wechselwirkungen begünstigen meist trans; die eingeschränkte Rotation schliesst seltene cis-Formen nicht aus. E: Der partielle Doppelbindungscharakter erzeugt eine Rotationsbarriere; ein beliebiger Ringflip ersetzt sie nicht. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "cis/trans bei Peptiden"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "cis/trans bei Peptiden"
+      ],
+      "questionGoal": "cis/trans bei Peptiden",
+      "structuredExplanation": {
+        "coreIdea": "cis/trans bei Peptiden",
+        "correctReasoning": "Sterische Wechselwirkungen begünstigen meist trans; die eingeschränkte Rotation schliesst seltene cis-Formen nicht aus.",
+        "wrongAnswerExplanations": {
+          "A": "cis/trans ändert die Geometrie der Peptidgruppe, nicht die Aminosäurefolge.",
+          "B": "trans ist für viele Peptidbindungen sterisch bevorzugt; reine cis-Ausschliesslichkeit ist falsch.",
+          "C": "Seltene cis-Peptidbindungen sind möglich, weshalb auch die trans-Ausschliesslichkeit zu weit geht.",
+          "E": "Der partielle Doppelbindungscharakter erzeugt eine Rotationsbarriere; ein beliebiger Ringflip ersetzt sie nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche Änderung betrifft unmittelbar die Primärstruktur eines Proteins?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Entfaltung einer Helix ohne Bindungsspaltung.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Austausch eines Aminosäurerests in der Sequenz.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verlagerung eines unveränderten Proteins zwischen Kompartimenten.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Reversible Drehung einer Seitenkette ohne Sequenzänderung.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Anlagerung zweier unveränderter Untereinheiten.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Entfaltung verändert höhere Struktur, solange die Sequenz nicht gespalten wird. B: Die Primärstruktur ist die kovalente Aminosäuresequenz; Raumstruktur und Zusammenlagerung sind andere Ebenen. C: Eine Kompartimentverlagerung ändert weder die Aminosäurefolge noch direkt die Primärstruktur. D: Eine Seitenkettenrotation ist Konformationsänderung ohne Sequenzänderung. E: Zusammenlagerung separater Ketten betrifft die Quartärstruktur. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Primärstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Primärstruktur"
+      ],
+      "questionGoal": "Primärstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Primärstruktur",
+        "correctReasoning": "Die Primärstruktur ist die kovalente Aminosäuresequenz; Raumstruktur und Zusammenlagerung sind andere Ebenen.",
+        "wrongAnswerExplanations": {
+          "A": "Entfaltung verändert höhere Struktur, solange die Sequenz nicht gespalten wird.",
+          "C": "Eine Kompartimentverlagerung ändert weder die Aminosäurefolge noch direkt die Primärstruktur.",
+          "D": "Eine Seitenkettenrotation ist Konformationsänderung ohne Sequenzänderung.",
+          "E": "Zusammenlagerung separater Ketten betrifft die Quartärstruktur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche Wechselwirkungen stabilisieren die typische α-Helix unmittelbar im Rückgrat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "H-Brücken zwischen Carbonyl-O und Amid-H verschiedener Reste.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Ausschliesslich Kontakte zu DNA-Basen.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Kovalente C–C-Bindungen zwischen allen Seitenketten.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Disulfidbrücken zwischen allen benachbarten Resten.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ionenbindungen ausschliesslich zwischen terminalen Gruppen.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Die charakteristischen Rückgrat-Wasserstoffbrücken erzeugen die lokale Sekundärstruktur; Seitenkettenkontakte können zusätzlich wirken. B: Die Helix ist eine Proteinsekundärstruktur und setzt keine DNA-Basen voraus. C: Die Seitenketten werden nicht flächendeckend kovalent zu Nachbarn verknüpft. D: Eine α-Helix benötigt nicht zwischen jedem Rest eine Disulfidbrücke. E: Terminale ionische Kontakte sind nicht das wiederkehrende Helix-Rückgratmuster. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "α-Helix"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "α-Helix"
+      ],
+      "questionGoal": "α-Helix",
+      "structuredExplanation": {
+        "coreIdea": "α-Helix",
+        "correctReasoning": "Die charakteristischen Rückgrat-Wasserstoffbrücken erzeugen die lokale Sekundärstruktur; Seitenkettenkontakte können zusätzlich wirken.",
+        "wrongAnswerExplanations": {
+          "B": "Die Helix ist eine Proteinsekundärstruktur und setzt keine DNA-Basen voraus.",
+          "C": "Die Seitenketten werden nicht flächendeckend kovalent zu Nachbarn verknüpft.",
+          "D": "Eine α-Helix benötigt nicht zwischen jedem Rest eine Disulfidbrücke.",
+          "E": "Terminale ionische Kontakte sind nicht das wiederkehrende Helix-Rückgratmuster."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche Beschreibung passt zu einem β-Faltblatt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mehrere ausgedehnte Strangabschnitte sind durch Rückgrat-H-Brücken verbunden.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nur Disulfidbrücken ohne Rückgratkontakte bilden das Blatt.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Eine einzelne Helix ohne Nachbarstrang ist definitionsgemäss ein β-Blatt.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ein β-Blatt besteht definitionsgemäss aus vier Proteinuntereinheiten.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Die Stränge müssen stets kovalent über ihre Seitenketten verschmolzen sein.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Parallele oder antiparallele Strangabschnitte können über Wasserstoffbrücken ein Blatt bilden. B: Disulfide können stabilisieren, definieren aber nicht die β-Rückgratstruktur. C: Ein einzelner isolierter Helixabschnitt ist kein über Nachbarstränge verbundenes β-Blatt. D: Ein β-Blatt kann innerhalb einer Kette vorkommen und legt keine Untereinheitenzahl vier fest. E: Stränge können über nichtkovalente H-Brücken interagieren, ohne Seitenketten kovalent zu verschmelzen. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "β-Faltblatt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "β-Faltblatt"
+      ],
+      "questionGoal": "β-Faltblatt",
+      "structuredExplanation": {
+        "coreIdea": "β-Faltblatt",
+        "correctReasoning": "Parallele oder antiparallele Strangabschnitte können über Wasserstoffbrücken ein Blatt bilden.",
+        "wrongAnswerExplanations": {
+          "B": "Disulfide können stabilisieren, definieren aber nicht die β-Rückgratstruktur.",
+          "C": "Ein einzelner isolierter Helixabschnitt ist kein über Nachbarstränge verbundenes β-Blatt.",
+          "D": "Ein β-Blatt kann innerhalb einer Kette vorkommen und legt keine Untereinheitenzahl vier fest.",
+          "E": "Stränge können über nichtkovalente H-Brücken interagieren, ohne Seitenketten kovalent zu verschmelzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Was bezeichnet die Tertiärstruktur einer Polypeptidkette?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ihre gesamte dreidimensionale Faltung.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Die Anzahl der Ribosomen während ihrer Synthese.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Die Basensequenz der zugehörigen DNA.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Ausschliesslich die Anordnung mehrerer separater Untereinheiten.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Nur die Reihenfolge ihrer Aminosäuren.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Tertiärstruktur beschreibt die Raumstruktur einer Kette; Untereinheitenanordnung ist Quartärstruktur. B: Ribosomenzahl ist eine Synthesebedingung, keine Strukturstufe. C: DNA-Basenfolge ist eine Nukleinsäureinformation und nicht die Proteinfaltung selbst. D: Die Anordnung mehrerer separater Ketten ist die Quartärstruktur. E: Die Reihenfolge der Reste beschreibt die Primärstruktur. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Tertiärstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tertiärstruktur"
+      ],
+      "questionGoal": "Tertiärstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Tertiärstruktur",
+        "correctReasoning": "Tertiärstruktur beschreibt die Raumstruktur einer Kette; Untereinheitenanordnung ist Quartärstruktur.",
+        "wrongAnswerExplanations": {
+          "B": "Ribosomenzahl ist eine Synthesebedingung, keine Strukturstufe.",
+          "C": "DNA-Basenfolge ist eine Nukleinsäureinformation und nicht die Proteinfaltung selbst.",
+          "D": "Die Anordnung mehrerer separater Ketten ist die Quartärstruktur.",
+          "E": "Die Reihenfolge der Reste beschreibt die Primärstruktur."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welcher Befund zeigt eine Quartärstruktur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ein Protein enthält eine Disulfidbrücke innerhalb derselben Kette.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Ein Rest trägt vier verschiedene Substituenten.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Mehrere gefaltete Polypeptiduntereinheiten bilden einen funktionellen Komplex.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "text": "Eine einzelne Kette hat genau vier Aminosäurereste.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Eine einzelne Kette enthält eine α-Helix.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Eine intramolekulare Disulfidbrücke kann innerhalb einer einzigen Kette liegen. B: Vier Substituenten eines Stereozentrums beschreiben Chiralität, keine Untereinheitenanordnung. C: Quartärstruktur betrifft das Zusammenwirken mehrerer Untereinheiten und folgt nicht aus einer beliebigen Zahl vier im Molekül. D: Die Zahl vier in einem kurzen Peptid definiert keine Quartärstruktur. E: Eine α-Helix gehört zur Sekundärstruktur einer Kette. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Quartärstruktur"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Quartärstruktur"
+      ],
+      "questionGoal": "Quartärstruktur",
+      "structuredExplanation": {
+        "coreIdea": "Quartärstruktur",
+        "correctReasoning": "Quartärstruktur betrifft das Zusammenwirken mehrerer Untereinheiten und folgt nicht aus einer beliebigen Zahl vier im Molekül.",
+        "wrongAnswerExplanations": {
+          "A": "Eine intramolekulare Disulfidbrücke kann innerhalb einer einzigen Kette liegen.",
+          "B": "Vier Substituenten eines Stereozentrums beschreiben Chiralität, keine Untereinheitenanordnung.",
+          "D": "Die Zahl vier in einem kurzen Peptid definiert keine Quartärstruktur.",
+          "E": "Eine α-Helix gehört zur Sekundärstruktur einer Kette."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Warum liegen viele apolare Seitenketten löslicher Proteine überwiegend im Innern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ihre Abschirmung vermindert ungünstige Wasserkontakte.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "text": "Nur im Innern können sie ihre kovalente Sequenz verlieren.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "text": "Apolare Seitenketten müssen im Wasser stets stärker hydratisiert werden als geladene Gruppen.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Das Proteininnere ist definitionsgemäss ein leerer Raum ohne Nachbaratome.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Jede apolare Seitenkette besitzt eine volle positive Ladung.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Der hydrophobe Effekt begünstigt die Zusammenlagerung apolarer Flächen; innere Packung trägt zur Stabilität bei. B: Der hydrophobe Effekt benötigt keine Spaltung der kovalenten Aminosäurefolge. C: Apolare Gruppen werden durch Wasser weniger günstig solvatisiert als geladene Oberflächen. D: Der Kern enthält dicht gepackte Atome und ist kein leerer Hohlraum als Definition. E: Apolare Seitenketten haben keine volle Ionenladung als Grund ihrer Abschirmung. Quelle: Originalunterlagen, PDF-S. 7,11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Hydrophober Kern"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrophober Kern"
+      ],
+      "questionGoal": "Hydrophober Kern",
+      "structuredExplanation": {
+        "coreIdea": "Hydrophober Kern",
+        "correctReasoning": "Der hydrophobe Effekt begünstigt die Zusammenlagerung apolarer Flächen; innere Packung trägt zur Stabilität bei.",
+        "wrongAnswerExplanations": {
+          "B": "Der hydrophobe Effekt benötigt keine Spaltung der kovalenten Aminosäurefolge.",
+          "C": "Apolare Gruppen werden durch Wasser weniger günstig solvatisiert als geladene Oberflächen.",
+          "D": "Der Kern enthält dicht gepackte Atome und ist kein leerer Hohlraum als Definition.",
+          "E": "Apolare Seitenketten haben keine volle Ionenladung als Grund ihrer Abschirmung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche Reste können durch Oxidation ihrer Seitenketten eine Disulfidbrücke bilden?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zwei Serinreste.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Zwei Cysteinreste.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Zwei Methioninreste mit unveränderten Thioethern.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zwei Aspartatreste.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Ein Lysin- und ein Argininrest.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Serin besitzt OH und keinen Schwefel. B: Die Thiolgruppen von Cystein werden zu einer kovalenten S–S-Verknüpfung oxidiert. C: Methionins Thioether besitzt kein Cystein-Thiolpaar für die übliche Disulfidbildung. D: Aspartat trägt Carboxylat statt Thiol-Schwefel. E: Lysin und Arginin enthalten die genannten basischen N-Gruppen, aber kein Thiol. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Disulfidbrücke"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Disulfidbrücke"
+      ],
+      "questionGoal": "Disulfidbrücke",
+      "structuredExplanation": {
+        "coreIdea": "Disulfidbrücke",
+        "correctReasoning": "Die Thiolgruppen von Cystein werden zu einer kovalenten S–S-Verknüpfung oxidiert.",
+        "wrongAnswerExplanations": {
+          "A": "Serin besitzt OH und keinen Schwefel.",
+          "C": "Methionins Thioether besitzt kein Cystein-Thiolpaar für die übliche Disulfidbildung.",
+          "D": "Aspartat trägt Carboxylat statt Thiol-Schwefel.",
+          "E": "Lysin und Arginin enthalten die genannten basischen N-Gruppen, aber kein Thiol."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Welche unmittelbare Folge kann die Übertragung einer Phosphatgruppe auf eine Proteinseitenkette haben?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eine ausschliessliche Isotopenänderung ohne chemische Modifikation.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "text": "Änderung von Ladung, Wechselwirkungen und Funktion.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "text": "Verlust sämtlicher kovalenter Bindungen im Rest.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "text": "Zwingende Hydrolyse aller Peptidbindungen.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "text": "Automatische Umwandlung jedes Proteins in DNA.",
+          "correct": false
+        }
+      ],
+      "explanation": "A: Eine Phosphatgruppe wird chemisch übertragen; dies ist mehr als eine reine Isotopenänderung. B: Phosphorylierung ist eine kovalente Modifikation, die elektrostatische und strukturelle Eigenschaften beeinflussen kann. C: Eine Seitenkettenmodifikation lässt die übrigen kovalenten Bindungen weitgehend erhalten. D: Eine Phosphatübertragung hydrolysiert nicht das ganze Peptidrückgrat. E: Phosphorylierung ist keine Umwandlung einer Polypeptidkette in ein DNA-Polymer. Quelle: Originalunterlagen, PDF-S. 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Phosphorylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Phosphorylierung"
+      ],
+      "questionGoal": "Phosphorylierung",
+      "structuredExplanation": {
+        "coreIdea": "Phosphorylierung",
+        "correctReasoning": "Phosphorylierung ist eine kovalente Modifikation, die elektrostatische und strukturelle Eigenschaften beeinflussen kann.",
+        "wrongAnswerExplanations": {
+          "A": "Eine Phosphatgruppe wird chemisch übertragen; dies ist mehr als eine reine Isotopenänderung.",
+          "C": "Eine Seitenkettenmodifikation lässt die übrigen kovalenten Bindungen weitgehend erhalten.",
+          "D": "Eine Phosphatübertragung hydrolysiert nicht das ganze Peptidrückgrat.",
+          "E": "Phosphorylierung ist keine Umwandlung einer Polypeptidkette in ein DNA-Polymer."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Glycosylierung, Denaturierung, Planarität, Tertiärstruktur.",
+      "options": [
+        {
+          "text": "Glycosylierung verknüpft Zuckerreste kovalent mit einem Protein.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Peptid-C–N-Bindung ist in jeder Lage beliebig frei drehbar.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Denaturierung kann höhere Proteinstruktur stören, während Peptidbindungen weitgehend erhalten bleiben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Tertiärstruktur eines Proteins bezeichnet nur seine Aminosäuresequenz.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Verknüpfung ist strukturell definiert. B: Mesomerie verleiht der Peptid-C–N-Bindung partiellen Doppelbindungscharakter. Die Resonanz schränkt ihre Rotation ein. C: Faltung und kovalente Sequenz sind verschieden. D: Die Sequenz ist Primärstruktur; Tertiärstruktur ist die gesamte dreidimensionale Faltung einer Kette. Quelle: Originalunterlagen, PDF-S. 5, 7, 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Glycosylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glycosylierung"
+      ],
+      "questionGoal": "Glycosylierung",
+      "structuredExplanation": {
+        "coreIdea": "Glycosylierung",
+        "correctReasoning": "Die Verknüpfung ist strukturell definiert. Faltung und kovalente Sequenz sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Die Verknüpfung ist strukturell definiert.",
+          "B": "Mesomerie verleiht der Peptid-C–N-Bindung partiellen Doppelbindungscharakter. Die Resonanz schränkt ihre Rotation ein.",
+          "C": "Faltung und kovalente Sequenz sind verschieden.",
+          "D": "Die Sequenz ist Primärstruktur; Tertiärstruktur ist die gesamte dreidimensionale Faltung einer Kette."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Denaturierung, Hämoglobin, trans-Anordnung, Quartärstruktur.",
+      "options": [
+        {
+          "text": "Eine Quartärstruktur beschreibt die Anordnung mehrerer Proteinuntereinheiten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Viele Peptidbindungen liegen bevorzugt in trans-Anordnung vor.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Denaturierung kann höhere Proteinstruktur stören, während Peptidbindungen weitgehend erhalten bleiben.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Hämoglobin ist das Enzym für die spezifische Stärkespaltung im Speichel.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Monomere benötigen keine Quartärstruktur. B: Sterische Wechselwirkungen begünstigen häufig trans. C: Faltung und kovalente Sequenz sind verschieden. D: Hämoglobin verbindet Untereinheitenstruktur mit Sauerstofftransport. Seine Funktion ist Gasbindung und Transport. Quelle: Originalunterlagen, PDF-S. 3, 5, 7, 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Denaturierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Denaturierung"
+      ],
+      "questionGoal": "Denaturierung",
+      "structuredExplanation": {
+        "coreIdea": "Denaturierung",
+        "correctReasoning": "Monomere benötigen keine Quartärstruktur. Sterische Wechselwirkungen begünstigen häufig trans. Faltung und kovalente Sequenz sind verschieden.",
+        "wrongAnswerExplanations": {
+          "A": "Monomere benötigen keine Quartärstruktur.",
+          "B": "Sterische Wechselwirkungen begünstigen häufig trans.",
+          "C": "Faltung und kovalente Sequenz sind verschieden.",
+          "D": "Hämoglobin verbindet Untereinheitenstruktur mit Sauerstofftransport. Seine Funktion ist Gasbindung und Transport."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Hämoglobin, Cyclooxygenase, Primärstruktur, Hydrophober Kern.",
+      "options": [
+        {
+          "text": "Cyclooxygenasen beteiligen sich an der Prostaglandinbildung aus Arachidonsäure.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Primärstruktur ist definitionsgemäss die räumliche Anordnung von vier Untereinheiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hämoglobin ist das Enzym für die spezifische Stärkespaltung im Speichel.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Lösliche Proteine müssen jede apolare Seitenkette vollständig dem Wasser aussetzen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Es handelt sich um ein Enzym des Eicosanoidwegs. B: Die Primärstruktur beschreibt die Aminosäuresequenz. Die Untereinheitenanordnung gehört zur Quartärstruktur. C: Hämoglobin verbindet Untereinheitenstruktur mit Sauerstofftransport. Seine Funktion ist Gasbindung und Transport. D: Viele lösliche Proteine verbergen apolare Seitenketten überwiegend im Inneren. Der hydrophobe Effekt begünstigt die Abschirmung. Quelle: Originalunterlagen, PDF-S. 3–4, 7, 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Hämoglobin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hämoglobin"
+      ],
+      "questionGoal": "Hämoglobin",
+      "structuredExplanation": {
+        "coreIdea": "Hämoglobin",
+        "correctReasoning": "Es handelt sich um ein Enzym des Eicosanoidwegs.",
+        "wrongAnswerExplanations": {
+          "A": "Es handelt sich um ein Enzym des Eicosanoidwegs.",
+          "B": "Die Primärstruktur beschreibt die Aminosäuresequenz. Die Untereinheitenanordnung gehört zur Quartärstruktur.",
+          "C": "Hämoglobin verbindet Untereinheitenstruktur mit Sauerstofftransport. Seine Funktion ist Gasbindung und Transport.",
+          "D": "Viele lösliche Proteine verbergen apolare Seitenketten überwiegend im Inneren. Der hydrophobe Effekt begünstigt die Abschirmung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Cyclooxygenase, Tubulin, α-Helix, Disulfidbrücke.",
+      "options": [
+        {
+          "text": "Die charakteristischen H-Brücken einer α-Helix verbinden überwiegend benachbarte Seitenketten statt Rückgratgruppen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Cyclooxygenasen beteiligen sich an der Prostaglandinbildung aus Arachidonsäure.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Tubulinuntereinheiten bilden die Actinfilamente des Zytoskeletts.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine Disulfidbrücke ist eine kovalente Verknüpfung zweier Cystein-Schwefelatome.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die charakteristischen Helix-H-Brücken verbinden Carbonyl-O und Amid-H des Rückgrats. B: Es handelt sich um ein Enzym des Eicosanoidwegs. C: Tubulin bildet Mikrotubuli; Actinfilamente bestehen aus Actin. D: Sie entsteht durch Oxidation von Thiolen. Quelle: Originalunterlagen, PDF-S. 8, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Cyclooxygenase"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Cyclooxygenase"
+      ],
+      "questionGoal": "Cyclooxygenase",
+      "structuredExplanation": {
+        "coreIdea": "Cyclooxygenase",
+        "correctReasoning": "Es handelt sich um ein Enzym des Eicosanoidwegs. Sie entsteht durch Oxidation von Thiolen.",
+        "wrongAnswerExplanations": {
+          "A": "Die charakteristischen Helix-H-Brücken verbinden Carbonyl-O und Amid-H des Rückgrats.",
+          "B": "Es handelt sich um ein Enzym des Eicosanoidwegs.",
+          "C": "Tubulin bildet Mikrotubuli; Actinfilamente bestehen aus Actin.",
+          "D": "Sie entsteht durch Oxidation von Thiolen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Tubulin, Hydrolyse, β-Faltblatt, Phosphorylierung.",
+      "options": [
+        {
+          "text": "Ein β-Faltblatt wird durch Rückgrat-H-Brücken innerhalb nur eines einzelnen α-helikalen Umlaufs definiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Spaltung einer Peptidbindung durch Hydrolyse verbraucht ein Wassermolekül pro geschnittener Bindung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Tubulinuntereinheiten bilden Mikrotubuli.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Phosphorylierung ist die hydrolytische Spaltung einer Peptidbindung am phosphorylierten Rest.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein β-Blatt enthält über H-Brücken verbundene ausgedehnte Strangabschnitte, nicht eine einzelne Helixwindung. B: Hydrolyse spaltet die Amidverknüpfung. C: Es ist ein Zytoskelettprotein. D: Phosphorylierung überträgt eine Phosphatgruppe; die Peptidsequenz wird dadurch nicht gespalten. Quelle: Originalunterlagen, PDF-S. 5, 9, 12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Tubulin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Tubulin"
+      ],
+      "questionGoal": "Tubulin",
+      "structuredExplanation": {
+        "coreIdea": "Tubulin",
+        "correctReasoning": "Hydrolyse spaltet die Amidverknüpfung. Es ist ein Zytoskelettprotein.",
+        "wrongAnswerExplanations": {
+          "A": "Ein β-Blatt enthält über H-Brücken verbundene ausgedehnte Strangabschnitte, nicht eine einzelne Helixwindung.",
+          "B": "Hydrolyse spaltet die Amidverknüpfung.",
+          "C": "Es ist ein Zytoskelettprotein.",
+          "D": "Phosphorylierung überträgt eine Phosphatgruppe; die Peptidsequenz wird dadurch nicht gespalten."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Hydrolyse, Seitenketten, Tertiärstruktur, Peptidbindung.",
+      "options": [
+        {
+          "text": "Die Peptidbindung ist eine Amidbindung zwischen Aminosäureresten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Tertiärstruktur bezeichnet die gesamte dreidimensionale Faltung einer Polypeptidkette.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Nur eine einzige Art von Wechselwirkung stabilisiert sämtliche Proteine.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Spaltung einer Peptidbindung durch Hydrolyse verbraucht ein Wassermolekül pro geschnittener Bindung.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Carboxyl- und Aminofunktion sind verknüpft. B: Es handelt sich um Proteinraumstruktur. C: Ionische Kontakte und H-Brücken können neben hydrophoben Effekten zur Proteinstabilität beitragen. Mehrere Wechselwirkungen wirken zusammen. D: Hydrolyse spaltet die Amidverknüpfung. Quelle: Originalunterlagen, PDF-S. 5, 7, 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Hydrolyse"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Hydrolyse"
+      ],
+      "questionGoal": "Hydrolyse",
+      "structuredExplanation": {
+        "coreIdea": "Hydrolyse",
+        "correctReasoning": "Carboxyl- und Aminofunktion sind verknüpft. Es handelt sich um Proteinraumstruktur. Hydrolyse spaltet die Amidverknüpfung.",
+        "wrongAnswerExplanations": {
+          "A": "Carboxyl- und Aminofunktion sind verknüpft.",
+          "B": "Es handelt sich um Proteinraumstruktur.",
+          "C": "Ionische Kontakte und H-Brücken können neben hydrophoben Effekten zur Proteinstabilität beitragen. Mehrere Wechselwirkungen wirken zusammen.",
+          "D": "Hydrolyse spaltet die Amidverknüpfung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Seitenketten, Faltung und Aktivität, Quartärstruktur, Sequenzrichtung.",
+      "options": [
+        {
+          "text": "Nur eine einzige Art von Wechselwirkung stabilisiert sämtliche Proteine.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jedes einzelne monomere Protein besitzt definitionsgemäss vier Untereinheiten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine unveränderte Aminosäuresequenz garantiert nach Denaturierung nicht automatisch sofort volle Aktivität.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Peptidsequenzen werden zwingend vom C- zum N-Terminus notiert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ionische Kontakte und H-Brücken können neben hydrophoben Effekten zur Proteinstabilität beitragen. Mehrere Wechselwirkungen wirken zusammen. B: Eine Quartärstruktur beschreibt die Anordnung mehrerer Proteinuntereinheiten. Monomere benötigen keine Quartärstruktur. C: Die funktionelle Geometrie ist wichtig. D: Peptidsequenzen werden gewöhnlich vom N- zum C-Terminus angegeben. Die übliche Konvention beginnt am Aminoende. Quelle: Originalunterlagen, PDF-S. 4–7, 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Seitenketten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Seitenketten"
+      ],
+      "questionGoal": "Seitenketten",
+      "structuredExplanation": {
+        "coreIdea": "Seitenketten",
+        "correctReasoning": "Die funktionelle Geometrie ist wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "Ionische Kontakte und H-Brücken können neben hydrophoben Effekten zur Proteinstabilität beitragen. Mehrere Wechselwirkungen wirken zusammen.",
+          "B": "Eine Quartärstruktur beschreibt die Anordnung mehrerer Proteinuntereinheiten. Monomere benötigen keine Quartärstruktur.",
+          "C": "Die funktionelle Geometrie ist wichtig.",
+          "D": "Peptidsequenzen werden gewöhnlich vom N- zum C-Terminus angegeben. Die übliche Konvention beginnt am Aminoende."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvc12_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVC12",
+      "stem": "Beurteilen Sie die folgenden Aussagen zu Faltung und Aktivität, Peptidbindung, Hydrophober Kern, Planarität.",
+      "options": [
+        {
+          "text": "Lösliche Proteine müssen jede apolare Seitenkette vollständig dem Wasser aussetzen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mesomerie verleiht der Peptid-C–N-Bindung partiellen Doppelbindungscharakter.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Eine Peptidbindung ist definitionsgemäss ein Phosphorsäureester.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine unveränderte Aminosäuresequenz garantiert nach Denaturierung nicht automatisch sofort volle Aktivität.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Viele lösliche Proteine verbergen apolare Seitenketten überwiegend im Inneren. Der hydrophobe Effekt begünstigt die Abschirmung. B: Die Resonanz schränkt ihre Rotation ein. C: Die Peptidbindung ist eine Amidbindung zwischen Aminosäureresten. Carboxyl- und Aminofunktion sind verknüpft. D: Die funktionelle Geometrie ist wichtig. Quelle: Originalunterlagen, PDF-S. 5, 7, 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVC12",
+        "Faltung und Aktivität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Faltung und Aktivität"
+      ],
+      "questionGoal": "Faltung und Aktivität",
+      "structuredExplanation": {
+        "coreIdea": "Faltung und Aktivität",
+        "correctReasoning": "Die Resonanz schränkt ihre Rotation ein. Die funktionelle Geometrie ist wichtig.",
+        "wrongAnswerExplanations": {
+          "A": "Viele lösliche Proteine verbergen apolare Seitenketten überwiegend im Inneren. Der hydrophobe Effekt begünstigt die Abschirmung.",
+          "B": "Die Resonanz schränkt ihre Rotation ein.",
+          "C": "Die Peptidbindung ist eine Amidbindung zwischen Aminosäureresten. Carboxyl- und Aminofunktion sind verknüpft.",
+          "D": "Die funktionelle Geometrie ist wichtig."
+        }
+      }
+    }
+  ]
+}

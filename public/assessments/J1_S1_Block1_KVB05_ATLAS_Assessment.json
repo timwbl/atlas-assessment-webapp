@@ -1,0 +1,1310 @@
+{
+  "id": "assessment_j1_s1_block1_kvb05_20261102",
+  "lectureCode": "KVB05",
+  "title": "Proteinfaltung, Sortierung und Abbau",
+  "block": "Block 1",
+  "subject": "Biochemie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVB05 - Proteinsortierung. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Die Folienvereinfachungen zu Kernporen-Proteinzahl, Translokation aller Organellproteine und Harmlosigkeit entwichener Hydrolasen werden nicht pauschal übernommen. N-Glykosylierung beginnt im ER; spätere Modifikationen erfolgen unter anderem im Golgi.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Faltungshilfen und kovalente Proteinmodifikationen erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Kernimport und Organelltranslokation anhand von Signalsequenzen unterscheiden."
+    },
+    {
+      "id": "lo3",
+      "text": "Sekretorischen Weg, Vesikelhüllen und Membrantopologie erklären."
+    },
+    {
+      "id": "lo4",
+      "text": "Lysosomalen und proteasomalen Abbau mechanistisch vergleichen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b1_kvb05_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Welche Wirkung erklärt die Hilfe von Hsp70 bei der Faltung einer neu synthetisierten Kette?",
+      "options": [
+        {
+          "text": "Vorübergehende Bindung verhindert unerwünschte Kontakte hydrophober Abschnitte.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Hsp70 katalysiert primär die Umlagerung von Disulfidbindungen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Hsp70 bestimmt die Faltung durch eine Änderung der Aminosäuresequenz.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Hsp70 vernetzt exponierte hydrophobe Abschnitte kovalent miteinander.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Hsp70 fixiert das Substrat ohne zyklische Bindung und Freigabe.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies vermindert Aggregation und erleichtert korrekte Faltung. B: Disulfidumlagerungen werden insbesondere durch Proteindisulfidisomerasen unterstützt; Hsp70 bindet exponierte Abschnitte. C: Hsp70 verändert nicht die durch Translation festgelegte Primärsequenz. D: Das würde Aggregation fördern; die vorübergehende Abschirmung vermindert unerwünschte Kontakte. E: Der ATP-abhängige Bindungszyklus ermöglicht Abschirmung und erneute Faltungsversuche. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Chaperone"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chaperone"
+      ],
+      "questionGoal": "Chaperone",
+      "structuredExplanation": {
+        "coreIdea": "Chaperone",
+        "correctReasoning": "Dies vermindert Aggregation und erleichtert korrekte Faltung.",
+        "wrongAnswerExplanations": {
+          "B": "Disulfidumlagerungen werden insbesondere durch Proteindisulfidisomerasen unterstützt; Hsp70 bindet exponierte Abschnitte.",
+          "C": "Hsp70 verändert nicht die durch Translation festgelegte Primärsequenz.",
+          "D": "Das würde Aggregation fördern; die vorübergehende Abschirmung vermindert unerwünschte Kontakte.",
+          "E": "Der ATP-abhängige Bindungszyklus ermöglicht Abschirmung und erneute Faltungsversuche."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Ein Protein erhält im ER-Lumen einen GPI-Anker. Welche Wirkung ist damit vereinbar?",
+      "options": [
+        {
+          "text": "Das Protein verliert automatisch jede Bindung zur Membran.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das Protein wird grundsätzlich in die mitochondriale Matrix importiert.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das Protein wird über einen Glykolipidrest an der Membran befestigt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Anker richtet das luminale Protein zwingend auf die cytosolische Membranseite aus.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das Protein erhält dadurch zwingend mehrere eigene Transmembranhelizes.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Anker vermittelt gerade Membranbindung. B: Der ER-sekretorische Weg ist davon verschieden. C: Der Lipidanteil verankert das Protein. D: Die Verknüpfung im ER-Lumen bleibt auf der nichtcytosolischen Seite. E: Ein Lipidanker benötigt solche Helizes nicht. Quelle: Originalunterlagen, PDF-S. 5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "GPI-Anker"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "GPI-Anker"
+      ],
+      "questionGoal": "GPI-Anker",
+      "structuredExplanation": {
+        "coreIdea": "GPI-Anker",
+        "correctReasoning": "Der Lipidanteil verankert das Protein.",
+        "wrongAnswerExplanations": {
+          "A": "Der Anker vermittelt gerade Membranbindung.",
+          "B": "Der ER-sekretorische Weg ist davon verschieden.",
+          "D": "Die Verknüpfung im ER-Lumen bleibt auf der nichtcytosolischen Seite.",
+          "E": "Ein Lipidanker benötigt solche Helizes nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q03",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Ein Reporter bleibt im Cytosol, erreicht nach Anhängen einer NLS aber den Kern. Welche Folgerung ist am besten begründet?",
+      "options": [
+        {
+          "text": "Eine NLS wirkt nur, wenn die Kernhülle zuvor während der Mitose zerfallen ist.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die NLS ist eine hydrophobe Transmembranhelix für den Import durch die innere Kernmembran.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Kernimport verlangt zwingend die Spaltung der Fracht in einzelne Aminosäuren.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die ergänzte Sequenz wird von einem Kernimportsystem erkannt.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Kernhülle muss bei jedem Import vollständig zerfallen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der rezeptorvermittelte Import kann bei intakter Kernhülle erfolgen. B: Klassischer Kernimport erfolgt durch Kernporen und nicht wie ER-Translokation. C: Intakte Proteine werden rezeptorvermittelt transportiert. D: Zielsignale können die Lokalisation eines Proteins verändern. E: Kernporen ermöglichen selektiven Transport. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Zielinformation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zielinformation"
+      ],
+      "questionGoal": "Zielinformation",
+      "structuredExplanation": {
+        "coreIdea": "Zielinformation",
+        "correctReasoning": "Zielsignale können die Lokalisation eines Proteins verändern.",
+        "wrongAnswerExplanations": {
+          "A": "Der rezeptorvermittelte Import kann bei intakter Kernhülle erfolgen.",
+          "B": "Klassischer Kernimport erfolgt durch Kernporen und nicht wie ER-Translokation.",
+          "C": "Intakte Proteine werden rezeptorvermittelt transportiert.",
+          "E": "Kernporen ermöglichen selektiven Transport."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Was bewirkt ein GEF an einem kleinen G-Protein?",
+      "options": [
+        {
+          "text": "Es hält GDP dauerhaft fest und verhindert dessen Freisetzung.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Es entfernt durch Hydrolyse die endständige Phosphatgruppe des GTP.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Es phosphoryliert gebundenes GDP direkt mit ATP zu GTP.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Es hydrolysiert GTP wie ein GAP.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es fördert den Austausch von GDP gegen GTP.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: GEFs fördern gerade den Nukleotidaustausch. B: Die Hydrolyse wird durch GAPs gefördert. C: Der GEF-Mechanismus ist Austausch, nicht diese direkte Phosphorylierung. D: GAPs fördern die abschaltende Hydrolyse. E: GTP-Beladung entspricht bei diesem Schalter der aktiven Form. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "G-Protein-Schalter"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "G-Protein-Schalter"
+      ],
+      "questionGoal": "G-Protein-Schalter",
+      "structuredExplanation": {
+        "coreIdea": "G-Protein-Schalter",
+        "correctReasoning": "GTP-Beladung entspricht bei diesem Schalter der aktiven Form.",
+        "wrongAnswerExplanations": {
+          "A": "GEFs fördern gerade den Nukleotidaustausch.",
+          "B": "Die Hydrolyse wird durch GAPs gefördert.",
+          "C": "Der GEF-Mechanismus ist Austausch, nicht diese direkte Phosphorylierung.",
+          "D": "GAPs fördern die abschaltende Hydrolyse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Warum kann die räumliche Verteilung von Ran-GTP zum gerichteten Kerntransport beitragen?",
+      "options": [
+        {
+          "text": "Ran-Beladung beeinflusst die Bindung zwischen Transportrezeptor und Fracht auf den beiden Seiten.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Ran-GTP-Konzentration muss auf beiden Seiten identisch sein, um die Richtung zu bestimmen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ran macht die Bindung zwischen Rezeptor und Fracht vollständig unabhängig von Nukleotiden.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ran-GTP dient als kovalent an jede Fracht angehängtes Kernlokalisationssignal.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "GDP und GTP sind dabei chemisch und funktionell identisch.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Unterschiedliche Nukleotidzustände unterstützen den Transportzyklus. B: Die asymmetrische Verteilung trägt zur Richtung bei. C: Gerade die Nukleotidbeladung reguliert die Bindungszustände. D: Ran wirkt als Schalter mit Transportrezeptoren, nicht als universell kovalente NLS. E: Die Beladungszustände haben unterschiedliche Wirkungen. Quelle: Originalunterlagen, PDF-S. 9–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Ran und Import"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ran und Import"
+      ],
+      "questionGoal": "Ran und Import",
+      "structuredExplanation": {
+        "coreIdea": "Ran und Import",
+        "correctReasoning": "Unterschiedliche Nukleotidzustände unterstützen den Transportzyklus.",
+        "wrongAnswerExplanations": {
+          "B": "Die asymmetrische Verteilung trägt zur Richtung bei.",
+          "C": "Gerade die Nukleotidbeladung reguliert die Bindungszustände.",
+          "D": "Ran wirkt als Schalter mit Transportrezeptoren, nicht als universell kovalente NLS.",
+          "E": "Die Beladungszustände haben unterschiedliche Wirkungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q06",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Ein kerncodiertes Matrixprotein verliert seine mitochondriale Zielsequenz. Welche Folge ist plausibel?",
+      "options": [
+        {
+          "text": "Sein Import kann vermindert sein, obwohl seine Synthese im Cytosol weiterläuft.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein fehlendes Zielsignal verbessert immer den Matriximport.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die Zielsequenz bestimmt unmittelbar den Ort der DNA-Replikation des entsprechenden Gens.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine beliebige NLS ersetzt die mitochondriale Zielinformation mit gleicher Importwirkung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Es muss automatisch in das ER-Lumen gelangen.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Synthese und korrekte Adressierung sind verschiedene Voraussetzungen. B: Ohne Erkennung kann der Import gerade ausfallen. C: Sie betrifft die Proteinadressierung, nicht die Verlagerung des Gens. D: Kernimport und mitochondrialer Import erkennen verschiedene Signale. E: Dafür wäre ein geeignetes ER-Signal nötig. Quelle: Originalunterlagen, PDF-S. 11–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Mitochondrialer Import"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Mitochondrialer Import"
+      ],
+      "questionGoal": "Mitochondrialer Import",
+      "structuredExplanation": {
+        "coreIdea": "Mitochondrialer Import",
+        "correctReasoning": "Synthese und korrekte Adressierung sind verschiedene Voraussetzungen.",
+        "wrongAnswerExplanations": {
+          "B": "Ohne Erkennung kann der Import gerade ausfallen.",
+          "C": "Sie betrifft die Proteinadressierung, nicht die Verlagerung des Gens.",
+          "D": "Kernimport und mitochondrialer Import erkennen verschiedene Signale.",
+          "E": "Dafür wäre ein geeignetes ER-Signal nötig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Welche Abfolge passt zum cotranslationalen Import eines sekretorischen Proteins?",
+      "options": [
+        {
+          "text": "SRP erkennt das entstehende ER-Signal, vermittelt Andocken und die Kette wird durch einen Translokator weiter synthetisiert.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Protein muss zunächst vollständig im Cytosol falten, bevor SRP das verdeckte Signal erkennen kann.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "SRP entfernt die Signalsequenz noch vor deren Erkennung durch den ER-Rezeptor.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein freies Ribosom muss dauerhaft seine mRNA abgeben, bevor die Kette ins ER gelangen kann.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Das ER-Signal wird ausschliesslich von Exportinen im Kern erkannt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Transport ist mit der laufenden Translation gekoppelt. B: SRP erkennt die entstehende Signalsequenz cotranslational. C: Erkennung und Andocken gehen der gegebenenfalls späteren Signalspaltung voraus. D: Ribosom, mRNA und naszierende Kette werden mit dem Translokationssystem gekoppelt. E: SRP ist der hier relevante Erkennungsfaktor. Quelle: Originalunterlagen, PDF-S. 13.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "SRP"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "SRP"
+      ],
+      "questionGoal": "SRP",
+      "structuredExplanation": {
+        "coreIdea": "SRP",
+        "correctReasoning": "Der Transport ist mit der laufenden Translation gekoppelt.",
+        "wrongAnswerExplanations": {
+          "B": "SRP erkennt die entstehende Signalsequenz cotranslational.",
+          "C": "Erkennung und Andocken gehen der gegebenenfalls späteren Signalspaltung voraus.",
+          "D": "Ribosom, mRNA und naszierende Kette werden mit dem Translokationssystem gekoppelt.",
+          "E": "SRP ist der hier relevante Erkennungsfaktor."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Welche Aminosäure trägt die typische N-verknüpfte Glykosylierung?",
+      "options": [
+        {
+          "text": "Lysin über seine ε-Aminogruppe als typische N-Glykosylierungsstelle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Asparagin.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Serin als typische N-Verknüpfungsstelle.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Glutamin, weil jede Amidseitenkette gleichermassen das klassische N-Glykosylierungssignal bildet.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Threonin als typische N-Verknüpfungsstelle.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die klassische N-Glykosylierung betrifft Asparagin, nicht jede stickstoffhaltige Seitenkette. B: Seine Seitenkettenamidgruppe ermöglicht die N-Verknüpfung. C: Serin ist ein wichtiger Träger der O-Glykosylierung. D: Die typische Akzeptoraminosäure ist Asparagin in geeignetem Sequenzkontext. E: Auch Threonin ist für O-Verknüpfungen relevant. Quelle: Originalunterlagen, PDF-S. 14.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Glykosylierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Glykosylierung"
+      ],
+      "questionGoal": "Glykosylierung",
+      "structuredExplanation": {
+        "coreIdea": "Glykosylierung",
+        "correctReasoning": "Seine Seitenkettenamidgruppe ermöglicht die N-Verknüpfung.",
+        "wrongAnswerExplanations": {
+          "A": "Die klassische N-Glykosylierung betrifft Asparagin, nicht jede stickstoffhaltige Seitenkette.",
+          "C": "Serin ist ein wichtiger Träger der O-Glykosylierung.",
+          "D": "Die typische Akzeptoraminosäure ist Asparagin in geeignetem Sequenzkontext.",
+          "E": "Auch Threonin ist für O-Verknüpfungen relevant."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q09",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Nach Hemmung der COPII-Hüllenbildung stauen sich passende Frachtproteine im ER. Welcher Weg ist unmittelbar betroffen?",
+      "options": [
+        {
+          "text": "Der Import durch die Kernpore.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Polyubiquitinierung im Proteasom.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der anterograde Transport vom ER zum Golgi.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der direkte Import in die mitochondriale Matrix.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der Rücktransport vom Golgi zum ER als Hauptaufgabe von COPII.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dieser ist nicht vesikulär. B: Dies ist ein anderer zellulärer Prozess. C: COPII vermittelt diesen Ausgangsschritt. D: Dieser erfolgt über Translokatoren. E: Dieser ist vor allem COPI zugeordnet. Quelle: Originalunterlagen, PDF-S. 15–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "COPII"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "COPII"
+      ],
+      "questionGoal": "COPII",
+      "structuredExplanation": {
+        "coreIdea": "COPII",
+        "correctReasoning": "COPII vermittelt diesen Ausgangsschritt.",
+        "wrongAnswerExplanations": {
+          "A": "Dieser ist nicht vesikulär.",
+          "B": "Dies ist ein anderer zellulärer Prozess.",
+          "D": "Dieser erfolgt über Translokatoren.",
+          "E": "Dieser ist vor allem COPI zugeordnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Eine Protonenpumpe der Lysosomenmembran fällt aus. Welche Folge ist besonders plausibel?",
+      "options": [
+        {
+          "text": "Sämtliche Proteine der Zelle werden sofort schneller abgebaut.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Neutralisierung aktiviert alle sauren Hydrolasen gleich stark.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Das luminale Milieu wird weniger sauer und die Aktivität vieler saurer Hydrolasen sinkt.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der Protonengradient bleibt unabhängig von jeder Protonenpumpe dauerhaft unverändert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein höherer luminaler pH beschleunigt definitionsgemäss jeden lysosomalen Abbauschritt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Viele lysosomale Abbauleistungen werden eher vermindert. B: Ihr Aktivitätsoptimum liegt im sauren Bereich. C: Die Enzyme benötigen geeignete pH-Bedingungen. D: Seine Aufrechterhaltung erfordert aktiven Transport und begrenzte Leckströme. E: Die Wirkung hängt von Enzym und Milieu ab; viele saure Hydrolasen verlieren Aktivität. Quelle: Originalunterlagen, PDF-S. 17.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Saure Hydrolasen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Saure Hydrolasen"
+      ],
+      "questionGoal": "Saure Hydrolasen",
+      "structuredExplanation": {
+        "coreIdea": "Saure Hydrolasen",
+        "correctReasoning": "Die Enzyme benötigen geeignete pH-Bedingungen.",
+        "wrongAnswerExplanations": {
+          "A": "Viele lysosomale Abbauleistungen werden eher vermindert.",
+          "B": "Ihr Aktivitätsoptimum liegt im sauren Bereich.",
+          "D": "Seine Aufrechterhaltung erfordert aktiven Transport und begrenzte Leckströme.",
+          "E": "Die Wirkung hängt von Enzym und Milieu ab; viele saure Hydrolasen verlieren Aktivität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q11",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Welcher Vorgang erlaubt den lysosomalen Abbau eines beschädigten Organells?",
+      "options": [
+        {
+          "text": "Direkte Verpackung des vollständigen Organells in COPII-Vesikel zum Golgi.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Erkennung des ganzen Organells als einzelnes Substrat einer Aminoacyl-tRNA-Synthetase.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direktes Einfädeln des ganzen Organells in einen Proteasomkanal.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Einschluss in ein Autophagosom und anschliessende Fusion mit dem Lysosom.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Freisetzung aller lysosomalen Hydrolasen ins Cytosol als regulärer erster Schritt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Organellabbau nutzt nicht diesen gewöhnlichen sekretorischen Transportweg. B: Diese belädt tRNAs und organisiert keinen Organellabbau. C: Proteasomen bauen einzelne entfaltete Proteine ab. D: So gelangt zelleigenes Material zum lysosomalen Abbau. E: Autophagie bringt die Fracht in ein membranbegrenztes Abbausystem. Quelle: Originalunterlagen, PDF-S. 18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Autophagie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autophagie"
+      ],
+      "questionGoal": "Autophagie",
+      "structuredExplanation": {
+        "coreIdea": "Autophagie",
+        "correctReasoning": "So gelangt zelleigenes Material zum lysosomalen Abbau.",
+        "wrongAnswerExplanations": {
+          "A": "Organellabbau nutzt nicht diesen gewöhnlichen sekretorischen Transportweg.",
+          "B": "Diese belädt tRNAs und organisiert keinen Organellabbau.",
+          "C": "Proteasomen bauen einzelne entfaltete Proteine ab.",
+          "E": "Autophagie bringt die Fracht in ein membranbegrenztes Abbausystem."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Ein kurzlebiges regulatorisches Protein trägt eine geeignete Polyubiquitinkette. Welcher Abbauweg passt?",
+      "options": [
+        {
+          "text": "Verpackung jedes polyubiquitinierten Einzelproteins in ein vollständiges Autophagosom als einziger Weg.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Erkennung, Entfaltung und proteasomaler Abbau zu Peptiden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ubiquitin bleibt nach jedem Umsatz zwingend als Bestandteil des abgebauten Peptids erhalten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ausschliesslich extrazellulärer Abbau nach vorheriger Sekretion der Fracht.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Der unveränderte gefaltete Proteinkomplex passiert ohne Vorbereitung den engen Proteasomkanal.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Geeignete Polyubiquitinketten können gezielt zum Proteasom führen. B: Die Markierung kann die gezielte Degradation ermöglichen. C: Ubiquitin kann vor dem Abbau abgespalten und wiederverwendet werden. D: Der Proteasomweg ist ein intrazellulärer Abbauweg. E: Regulatorische Komponenten entfalten und führen geeignete Proteine zu. Quelle: Originalunterlagen, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Ubiquitin und Proteasom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ubiquitin und Proteasom"
+      ],
+      "questionGoal": "Ubiquitin und Proteasom",
+      "structuredExplanation": {
+        "coreIdea": "Ubiquitin und Proteasom",
+        "correctReasoning": "Die Markierung kann die gezielte Degradation ermöglichen.",
+        "wrongAnswerExplanations": {
+          "A": "Geeignete Polyubiquitinketten können gezielt zum Proteasom führen.",
+          "C": "Ubiquitin kann vor dem Abbau abgespalten und wiederverwendet werden.",
+          "D": "Der Proteasomweg ist ein intrazellulärer Abbauweg.",
+          "E": "Regulatorische Komponenten entfalten und führen geeignete Proteine zu."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Eine neu synthetisierte Proteinkette wird gefaltet und modifiziert. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Chaperone ersetzen die Sequenzinformation durch eine beliebige neue Proteinstruktur.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Chaperonine können eine geschützte Faltungsumgebung bereitstellen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede kovalente Modifikation bedeutet den Abbau des Proteins.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Faltung kann bereits während der Translation beginnen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie erleichtern Faltung, legen aber keine neue Primärstruktur fest. B: Dies vermindert unerwünschte intermolekulare Kontakte. C: Lipidanker und Zucker können funktionelle Modifikationen sein. D: Dies wird als cotranslationale Faltung bezeichnet. Quelle: Originalunterlagen, PDF-S. 3–5.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Faltung und Modifikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Faltung und Modifikation"
+      ],
+      "questionGoal": "Faltung und Modifikation",
+      "structuredExplanation": {
+        "coreIdea": "Faltung und Modifikation",
+        "correctReasoning": "Dies vermindert unerwünschte intermolekulare Kontakte. Dies wird als cotranslationale Faltung bezeichnet.",
+        "wrongAnswerExplanations": {
+          "A": "Sie erleichtern Faltung, legen aber keine neue Primärstruktur fest.",
+          "B": "Dies vermindert unerwünschte intermolekulare Kontakte.",
+          "C": "Lipidanker und Zucker können funktionelle Modifikationen sein.",
+          "D": "Dies wird als cotranslationale Faltung bezeichnet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q14",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Kernimport, Organellimport und Vesikeltransport werden verglichen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Mitochondrien gehören zum üblichen ER-Golgi-Vesikelverkehr.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Kernporentransport und Vesikeltransport sind verschiedene Mechanismen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Viele kerncodierte mitochondriale Proteine werden nach cytosolischer Synthese importiert.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede Signalsequenz muss nach der Ankunft abgespalten werden.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ihr Proteinimport erfolgt hauptsächlich anders. B: Sie nutzen unterschiedliche Strukturen. C: Ihr Ziel wird durch geeignete Sequenzen bestimmt. D: Nicht alle Zielsignale werden entfernt. Quelle: Originalunterlagen, PDF-S. 6–12.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Transportmechanismen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Transportmechanismen"
+      ],
+      "questionGoal": "Transportmechanismen",
+      "structuredExplanation": {
+        "coreIdea": "Transportmechanismen",
+        "correctReasoning": "Sie nutzen unterschiedliche Strukturen. Ihr Ziel wird durch geeignete Sequenzen bestimmt.",
+        "wrongAnswerExplanations": {
+          "A": "Ihr Proteinimport erfolgt hauptsächlich anders.",
+          "B": "Sie nutzen unterschiedliche Strukturen.",
+          "C": "Ihr Ziel wird durch geeignete Sequenzen bestimmt.",
+          "D": "Nicht alle Zielsignale werden entfernt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q15",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "G-Proteine und Transportrezeptoren schalten zwischen Bindungszuständen. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Exportine transportieren ihre Fracht über den gewöhnlichen COPII-Vesikelweg aus dem Kern.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Importine erkennen geeignete Kernlokalisationssignale.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Ein GAP fördert die GTP-Hydrolyse eines passenden G-Proteins.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "GTP-Hydrolyse und GDP-GTP-Austausch sind derselbe chemische Schritt.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Kernexport erfolgt durch Kernporen, nicht durch ER-Golgi-Vesikel. B: Damit binden sie ihre Fracht. C: Dies begünstigt den inaktiven GDP-Zustand. D: Hydrolyse und Austausch sind unterschiedliche Vorgänge. Quelle: Originalunterlagen, PDF-S. 8–10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Schalter und Rezeptoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Schalter und Rezeptoren"
+      ],
+      "questionGoal": "Schalter und Rezeptoren",
+      "structuredExplanation": {
+        "coreIdea": "Schalter und Rezeptoren",
+        "correctReasoning": "Damit binden sie ihre Fracht. Dies begünstigt den inaktiven GDP-Zustand.",
+        "wrongAnswerExplanations": {
+          "A": "Kernexport erfolgt durch Kernporen, nicht durch ER-Golgi-Vesikel.",
+          "B": "Damit binden sie ihre Fracht.",
+          "C": "Dies begünstigt den inaktiven GDP-Zustand.",
+          "D": "Hydrolyse und Austausch sind unterschiedliche Vorgänge."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q16",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Eine sekretorische Fracht wird vom ER zum Zielkompartiment verfolgt. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "COPI ist unter anderem am Rücktransport zum ER beteiligt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein lösliches sekretorisches Protein gelangt normalerweise über das ER zum Golgi.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Clathrin ist die typische Hülle des anterograden ER-Golgi-Transports.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Vesikelhülle muss nach Ankunft dauerhaft zwischen den fusionierenden Membranen bleiben.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: So können ER-Komponenten zurückgeführt werden. B: Dies gehört zum sekretorischen Weg. C: Dieser wird klassisch COPII zugeordnet. D: Entmantelung geht der Fusion voraus. Quelle: Originalunterlagen, PDF-S. 13–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Sekretorischer Weg"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sekretorischer Weg"
+      ],
+      "questionGoal": "Sekretorischer Weg",
+      "structuredExplanation": {
+        "coreIdea": "Sekretorischer Weg",
+        "correctReasoning": "So können ER-Komponenten zurückgeführt werden. Dies gehört zum sekretorischen Weg.",
+        "wrongAnswerExplanations": {
+          "A": "So können ER-Komponenten zurückgeführt werden.",
+          "B": "Dies gehört zum sekretorischen Weg.",
+          "C": "Dieser wird klassisch COPII zugeordnet.",
+          "D": "Entmantelung geht der Fusion voraus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q17",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Eine luminale Proteindomäne wird durch den Vesikelverkehr transportiert. Welche Aussagen zu Sortierung und Orientierung stimmen?",
+      "options": [
+        {
+          "text": "Vesikellumen und Cytosol bleiben grundsätzlich getrennte Phasen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine luminale Proteindomäne wird bei jeder Vesikelfusion automatisch cytosolisch.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der trans-Golgi ist ein wichtiger Sortierbereich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "N-Glykosylierung beginnt grundsätzlich erst nach der Ankunft im trans-Golgi.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Fracht muss beim Transport nicht durch die Lipidschicht treten. B: Die Topologie wird im Allgemeinen erhalten. C: Hier werden verschiedene Zielwege organisiert. D: Sie beginnt im ER und wird später weiter modifiziert. Quelle: Originalunterlagen, PDF-S. 14–16.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Sortierung und Topologie"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sortierung und Topologie"
+      ],
+      "questionGoal": "Sortierung und Topologie",
+      "structuredExplanation": {
+        "coreIdea": "Sortierung und Topologie",
+        "correctReasoning": "Fracht muss beim Transport nicht durch die Lipidschicht treten. Hier werden verschiedene Zielwege organisiert.",
+        "wrongAnswerExplanations": {
+          "A": "Fracht muss beim Transport nicht durch die Lipidschicht treten.",
+          "B": "Die Topologie wird im Allgemeinen erhalten.",
+          "C": "Hier werden verschiedene Zielwege organisiert.",
+          "D": "Sie beginnt im ER und wird später weiter modifiziert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q18",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Zellbestandteile werden im lysosomalen System abgebaut. Welche Aussagen stimmen?",
+      "options": [
+        {
+          "text": "Das saure Optimum garantiert, dass entwichene Hydrolasen unter allen Bedingungen harmlos sind.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jeder lysosomale Abbau erfolgt im neutralen Cytosol.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Autophagie ermöglicht das Recycling zelleigener Bestandteile.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Lysosomen enthalten Hydrolasen für unterschiedliche Makromoleküle.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Lysosomale Schädigung kann trotz pH-Abhängigkeit gefährlich sein. B: Der reguläre Abbau findet im sauren Organell statt. C: Sie kann der Zellhomöostase dienen. D: Proteine, Lipide, Nukleinsäuren und Zucker können abgebaut werden. Quelle: Originalunterlagen, PDF-S. 17–18.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Lysosomaler Abbau"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lysosomaler Abbau"
+      ],
+      "questionGoal": "Lysosomaler Abbau",
+      "structuredExplanation": {
+        "coreIdea": "Lysosomaler Abbau",
+        "correctReasoning": "Sie kann der Zellhomöostase dienen. Proteine, Lipide, Nukleinsäuren und Zucker können abgebaut werden.",
+        "wrongAnswerExplanations": {
+          "A": "Lysosomale Schädigung kann trotz pH-Abhängigkeit gefährlich sein.",
+          "B": "Der reguläre Abbau findet im sauren Organell statt.",
+          "C": "Sie kann der Zellhomöostase dienen.",
+          "D": "Proteine, Lipide, Nukleinsäuren und Zucker können abgebaut werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q19",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Ein markiertes Protein wird dem Proteasom zugeführt. Welche Aussagen zu Energie und Markierung stimmen?",
+      "options": [
+        {
+          "text": "ATP wird unter anderem für die Vorbereitung und Entfaltung der Fracht benötigt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Das Proteasom verdaut regelhaft ganze Mitochondrien als ungeteilte Fracht.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "E1, E2 und E3 wirken bei der Ubiquitinmarkierung zusammen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede einzelne Ubiquitinmodifikation hat ausschliesslich Abbau zur Folge.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das regulierte Einfädeln ist energieabhängig. B: Ganze Organellen werden eher durch Autophagie abgebaut. C: Die Enzymkaskade vermittelt die kovalente Markierung. D: Ubiquitinierungen können weitere Signalfunktionen besitzen. Quelle: Originalunterlagen, PDF-S. 19–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Proteasom"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "mechanism",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Proteasom"
+      ],
+      "questionGoal": "Proteasom",
+      "structuredExplanation": {
+        "coreIdea": "Proteasom",
+        "correctReasoning": "Das regulierte Einfädeln ist energieabhängig. Die Enzymkaskade vermittelt die kovalente Markierung.",
+        "wrongAnswerExplanations": {
+          "A": "Das regulierte Einfädeln ist energieabhängig.",
+          "B": "Ganze Organellen werden eher durch Autophagie abgebaut.",
+          "C": "Die Enzymkaskade vermittelt die kovalente Markierung.",
+          "D": "Ubiquitinierungen können weitere Signalfunktionen besitzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b1_kvb05_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo4"
+      ],
+      "blockId": "block1",
+      "lectureId": "KVB05",
+      "stem": "Eine fehlgefaltete Kette wird von der Qualitätskontrolle erfasst. Welche Reaktionen und Zuordnungen sind richtig?",
+      "options": [
+        {
+          "text": "Ungeeignete Proteine können zum Abbau markiert werden.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Fehlgefaltete Proteine müssen immer aktiv in den Zellkern importiert werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Autophagie und Proteasom sind strukturell dasselbe Kompartiment.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Chaperone können erneute Faltungsversuche unterstützen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Selektiver Abbau begrenzt ihre Anhäufung. B: Es existieren mehrere lokale Kontroll- und Abbauwege. C: Lysosomaler Vesikelweg und Proteinkomplex sind verschieden. D: Faltungshilfe ist ein früher Kontrollschritt. Quelle: Originalunterlagen, PDF-S. 4,18–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 1",
+        "KVB05",
+        "Qualitätskontrolle"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Qualitätskontrolle"
+      ],
+      "questionGoal": "Qualitätskontrolle",
+      "structuredExplanation": {
+        "coreIdea": "Qualitätskontrolle",
+        "correctReasoning": "Selektiver Abbau begrenzt ihre Anhäufung. Faltungshilfe ist ein früher Kontrollschritt.",
+        "wrongAnswerExplanations": {
+          "A": "Selektiver Abbau begrenzt ihre Anhäufung.",
+          "B": "Es existieren mehrere lokale Kontroll- und Abbauwege.",
+          "C": "Lysosomaler Vesikelweg und Proteinkomplex sind verschieden.",
+          "D": "Faltungshilfe ist ein früher Kontrollschritt."
+        }
+      }
+    }
+  ]
+}

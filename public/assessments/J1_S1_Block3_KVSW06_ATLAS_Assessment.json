@@ -1,0 +1,1317 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw06_20261102",
+  "lectureCode": "KVSW06",
+  "title": "Interzelluläre Kommunikation und Source-Sink-Prinzip",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW06 - InterzellulaereKommunikation. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Gap-Junction-Vorkommen nicht als ausnahmsloses Zelltypgesetz abgefragt. Grössenprinzip mit gleichem synaptischem Strom statt widersprüchlich „identischen EPSPs“ präzisiert. Source-Sink-Begriffe des Ausbreitungsmodells von extrazellulären Stromquellen getrennt. Figuren PDF3–4,6–11 visuell geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Endokrine, parakrine, autokrine und kontaktabhängige Kommunikation unterscheiden."
+    },
+    {
+      "id": "lo2",
+      "text": "Aufbau, Permeabilität und Regulation von Gap Junctions erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Elektrische Kopplung und Erregungsausbreitung im Zellverband beurteilen."
+    },
+    {
+      "id": "lo4",
+      "text": "Source-Sink-Verhältnisse und richtungsabhängige Leitungsblöcke erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Elektrische Faserrekrutierung vom synaptischen Grössenprinzip unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw06_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Ein Botenstoff erreicht eine weit entfernte Zielzelle über die Blutbahn. Welche Einordnung passt?",
+      "options": [
+        {
+          "text": "Endokrin",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Autokrin",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Direkt über Gap Junctions",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Juxtakrin durch Oberflächenkontakt",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Parakrin",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Verteilung erfolgt über den Kreislauf. B: Dies bezeichnet Rückwirkung auf die freisetzende Zelle. C: Dafür wäre direkter Zellkontakt erforderlich. D: Entfernte Zellen berühren sich hier nicht. E: Dies bezeichnet lokale Wirkung auf Nachbarzellen. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Endokrines Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Endokrines Signal"
+      ],
+      "questionGoal": "Endokrines Signal",
+      "structuredExplanation": {
+        "coreIdea": "Endokrines Signal",
+        "correctReasoning": "Die Verteilung erfolgt über den Kreislauf.",
+        "wrongAnswerExplanations": {
+          "B": "Dies bezeichnet Rückwirkung auf die freisetzende Zelle.",
+          "C": "Dafür wäre direkter Zellkontakt erforderlich.",
+          "D": "Entfernte Zellen berühren sich hier nicht.",
+          "E": "Dies bezeichnet lokale Wirkung auf Nachbarzellen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q02",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Ein von einer Zelle freigesetzter Botenstoff bindet an Rezeptoren derselben Zelle. Wie heisst dieser Kommunikationsweg?",
+      "options": [
+        {
+          "text": "Kontaktabhängige Oberflächenbindung zwischen zwei Zellen",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Autokrin",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Parakrin als präziseste Bezeichnung",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Elektrische Synapse",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Endokrin zwingend",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Hier ist nur eine Zelle beteiligt. B: Sender und Ziel sind dieselbe Zelle. C: Parakrin betrifft Nachbarzellen. D: Es wird ein freigesetzter Botenstoff beschrieben. E: Die eigene Rückwirkung setzt keine Blutbahnverteilung voraus. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Autokrin"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Autokrin"
+      ],
+      "questionGoal": "Autokrin",
+      "structuredExplanation": {
+        "coreIdea": "Autokrin",
+        "correctReasoning": "Sender und Ziel sind dieselbe Zelle.",
+        "wrongAnswerExplanations": {
+          "A": "Hier ist nur eine Zelle beteiligt.",
+          "C": "Parakrin betrifft Nachbarzellen.",
+          "D": "Es wird ein freigesetzter Botenstoff beschrieben.",
+          "E": "Die eigene Rückwirkung setzt keine Blutbahnverteilung voraus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «endokrine, parakrine und kontaktvermittelte Kommunikation».",
+      "options": [
+        {
+          "text": "Gap Junctions verbinden die Zellen ausschliesslich über ausgeschüttete Hormone.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede Zellkommunikation benötigt eine Verteilung im Blut.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein parakrines Signal muss zur lokalen Nachbarzelle zwingend zuerst den gesamten Blutkreislauf durchlaufen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Oberflächenproteine können bei direktem Zellkontakt Signale vermitteln.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie stellen direkte cytoplasmatische Kanalverbindungen her. B: Direkte und lokale Wege existieren ebenfalls. C: Parakrine Wirkung erfolgt lokal; systemischer Bluttransport kennzeichnet endokrine Wege. D: Dies ist ein kontaktabhängiger Mechanismus. Quelle: Originalunterlagen, PDF-S. 2.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Kommunikationswege"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kommunikationswege"
+      ],
+      "questionGoal": "Kommunikationswege",
+      "structuredExplanation": {
+        "coreIdea": "Kommunikationswege",
+        "correctReasoning": "Dies ist ein kontaktabhängiger Mechanismus.",
+        "wrongAnswerExplanations": {
+          "A": "Sie stellen direkte cytoplasmatische Kanalverbindungen her.",
+          "B": "Direkte und lokale Wege existieren ebenfalls.",
+          "C": "Parakrine Wirkung erfolgt lokal; systemischer Bluttransport kennzeichnet endokrine Wege.",
+          "D": "Dies ist ein kontaktabhängiger Mechanismus."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q04",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Wie viele Connexine bilden im dargestellten Grundmodell ein Connexon?",
+      "options": [
+        {
+          "text": "6",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "3",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "12",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "1",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Sechs Untereinheiten bilden einen Halbkanal. B: Ein Connexon ist kein Trimer. C: Zwei Connexone bilden einen vollständigen interzellulären Kanal. D: Dies ist die Gesamtzahl Connexine in zwei hexameren Halbkanälen. E: Ein einzelnes Connexin ist noch kein Halbkanal. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Connexon"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Connexon"
+      ],
+      "questionGoal": "Connexon",
+      "structuredExplanation": {
+        "coreIdea": "Connexon",
+        "correctReasoning": "Sechs Untereinheiten bilden einen Halbkanal.",
+        "wrongAnswerExplanations": {
+          "B": "Ein Connexon ist kein Trimer.",
+          "C": "Zwei Connexone bilden einen vollständigen interzellulären Kanal.",
+          "D": "Dies ist die Gesamtzahl Connexine in zwei hexameren Halbkanälen.",
+          "E": "Ein einzelnes Connexin ist noch kein Halbkanal."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Ein Gap-Junction-Kanal verbindet zwei Zellen. Welche Anordnung entspricht dem Grundmodell?",
+      "options": [
+        {
+          "text": "Ein einziges Connexon durchspannt ohne Partner beide Zellmembranen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Zwei Connexone liegen nur nebeneinander in einer Zellmembran.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Je ein Connexon aus jeder Zellmembran dockt an das andere an.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zwölf getrennte Connexine liegen frei im synaptischen Spalt.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein einziger Connexinmonomer bildet den gesamten Zell-zu-Zell-Kanal.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Je eine Halbkanalstruktur trägt eine Membran bei. B: Der Kanal entsteht durch transzelluläres Andocken. C: So entsteht ein durchgehender Kanal zwischen den Cytoplasmen. D: Die Untereinheiten bilden membranständige Halbkanäle. E: Mehrere Untereinheiten sind erforderlich. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Vollständiger Kanal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vollständiger Kanal"
+      ],
+      "questionGoal": "Vollständiger Kanal",
+      "structuredExplanation": {
+        "coreIdea": "Vollständiger Kanal",
+        "correctReasoning": "So entsteht ein durchgehender Kanal zwischen den Cytoplasmen.",
+        "wrongAnswerExplanations": {
+          "A": "Je eine Halbkanalstruktur trägt eine Membran bei.",
+          "B": "Der Kanal entsteht durch transzelluläres Andocken.",
+          "D": "Die Untereinheiten bilden membranständige Halbkanäle.",
+          "E": "Mehrere Untereinheiten sind erforderlich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «homomere, heteromere und homotypische Gap Junctions».",
+      "options": [
+        {
+          "text": "Alle Gap-Junction-Kanäle müssen dieselben Gatingeigenschaften besitzen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein heteromeres Connexon kann mehrere Connexin-Subtypen enthalten.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Homotypisch bedeutet passende gleichartige Connexone auf beiden Seiten des Kanals.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Ein homomeres Connexon enthält denselben Connexin-Subtyp.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Eigenschaften hängen von Subtyp und Zusammensetzung ab. B: Die Untereinheitenzusammensetzung ist gemischt. C: Dies ist vom heterotypischen Andocken unterschiedlicher Halbkanäle zu unterscheiden. D: Die Untereinheiten des Halbkanals sind gleichartig. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Zusammensetzung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zusammensetzung"
+      ],
+      "questionGoal": "Zusammensetzung",
+      "structuredExplanation": {
+        "coreIdea": "Zusammensetzung",
+        "correctReasoning": "Die Untereinheitenzusammensetzung ist gemischt. Dies ist vom heterotypischen Andocken unterschiedlicher Halbkanäle zu unterscheiden. Die Untereinheiten des Halbkanals sind gleichartig.",
+        "wrongAnswerExplanations": {
+          "A": "Die Eigenschaften hängen von Subtyp und Zusammensetzung ab.",
+          "B": "Die Untereinheitenzusammensetzung ist gemischt.",
+          "C": "Dies ist vom heterotypischen Andocken unterschiedlicher Halbkanäle zu unterscheiden.",
+          "D": "Die Untereinheiten des Halbkanals sind gleichartig."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Welcher Stoff kann grundsätzlich eher durch geeignete Gap Junctions gelangen als ein grosses Protein?",
+      "options": [
+        {
+          "text": "Ein vollständiges grosses Enzymprotein.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein synaptisches Vesikel.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein intakter Ribosomenkomplex.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein doppelsträngiges vollständiges Chromosom.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Ein kleines Signalmolekül wie cAMP.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Grössenbegrenzung schliesst solche Makromoleküle typischerweise aus. B: Die Pore transportiert keine ganzen Vesikel. C: Dieser ist viel grösser als die geeigneten gelösten Moleküle. D: Dies ist kein üblicher Gap-Junction-Inhalt. E: Die Kanäle sind für Ionen und bestimmte kleine Moleküle durchlässig. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Permeabilität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Permeabilität"
+      ],
+      "questionGoal": "Permeabilität",
+      "structuredExplanation": {
+        "coreIdea": "Permeabilität",
+        "correctReasoning": "Die Kanäle sind für Ionen und bestimmte kleine Moleküle durchlässig.",
+        "wrongAnswerExplanations": {
+          "A": "Die Grössenbegrenzung schliesst solche Makromoleküle typischerweise aus.",
+          "B": "Die Pore transportiert keine ganzen Vesikel.",
+          "C": "Dieser ist viel grösser als die geeigneten gelösten Moleküle.",
+          "D": "Dies ist kein üblicher Gap-Junction-Inhalt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Welche Veränderung kann nach dem Folienmodell Gap Junctions schliessen?",
+      "options": [
+        {
+          "text": "Ausschliesslich Freisetzung von Acetylcholin im synaptischen Spalt.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Jede minimale physiologische Ca²⁺-Schwankung öffnet sie zwingend maximal.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein konstantes extrazelluläres Protein oberhalb der Porengrösse muss hindurchtreten.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Starke Erhöhung von intrazellulärem Ca²⁺ und H⁺.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Abnahme der H⁺-Konzentration als identischer Säureeffekt.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Folie beschreibt direktes chemisches und elektrisches Kanal-Gating. B: Die Regulation ist nicht eine solche universelle Regel. C: Die Grösse verhindert gerade eine solche Passage. D: Dies kann die Kopplung geschädigter oder stark veränderter Zellen begrenzen. E: Eine H⁺-Zunahme entspricht der beschriebenen Ansäuerung. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Chemisches Gating"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Chemisches Gating"
+      ],
+      "questionGoal": "Chemisches Gating",
+      "structuredExplanation": {
+        "coreIdea": "Chemisches Gating",
+        "correctReasoning": "Dies kann die Kopplung geschädigter oder stark veränderter Zellen begrenzen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Folie beschreibt direktes chemisches und elektrisches Kanal-Gating.",
+          "B": "Die Regulation ist nicht eine solche universelle Regel.",
+          "C": "Die Grösse verhindert gerade eine solche Passage.",
+          "E": "Eine H⁺-Zunahme entspricht der beschriebenen Ansäuerung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «elektrische und metabolische Kopplung durch Gap Junctions».",
+      "options": [
+        {
+          "text": "Eine Gap Junction braucht für jeden übertragenen Ionenstrom zunächst Vesikelexozytose.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Das funktionelle Synzytium bedeutet zwangsläufig, dass alle Zellmembranen verschwunden sind.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Gap Junctions können elektrische und metabolische Kopplung ermöglichen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Grosse transjunktionale Spannungsdifferenzen können die Leitfähigkeit beeinflussen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Kanalweg ist direkt. B: Gekoppelte Zellen können anatomisch getrennt bleiben. C: Ionen und kleine Moleküle können Zellen verbinden. D: Gap-Junction-Gating ist auch elektrisch regulierbar. Quelle: Originalunterlagen, PDF-S. 4–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Direkte Kopplung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Direkte Kopplung"
+      ],
+      "questionGoal": "Direkte Kopplung",
+      "structuredExplanation": {
+        "coreIdea": "Direkte Kopplung",
+        "correctReasoning": "Ionen und kleine Moleküle können Zellen verbinden. Gap-Junction-Gating ist auch elektrisch regulierbar.",
+        "wrongAnswerExplanations": {
+          "A": "Der Kanalweg ist direkt.",
+          "B": "Gekoppelte Zellen können anatomisch getrennt bleiben.",
+          "C": "Ionen und kleine Moleküle können Zellen verbinden.",
+          "D": "Gap-Junction-Gating ist auch elektrisch regulierbar."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Der Widerstand der Gap Junctions zwischen Herzmuskelzellen steigt. Was folgt im vereinfachten Kabelmodell bei sonst gleichen Werten?",
+      "options": [
+        {
+          "text": "Der effektive Längswiderstand steigt und λ sinkt.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Der passive Strom zur Nachbarzelle steigt zwingend.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Der Längswiderstand sinkt und λ steigt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Zellen werden dadurch zu einer einzigen membranlosen Flüssigkeit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die Membrankapazität muss exakt null werden.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Kopplungswiderstand kommt zum axialen Widerstand hinzu. B: Ein grösserer Widerstand erschwert diesen Strom. C: Dies ist die entgegengesetzte Wirkung. D: Die Zellmembranen bleiben bestehen. E: Kopplungswiderstand bestimmt keine solche Kapazität. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Kopplungswiderstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kopplungswiderstand"
+      ],
+      "questionGoal": "Kopplungswiderstand",
+      "structuredExplanation": {
+        "coreIdea": "Kopplungswiderstand",
+        "correctReasoning": "Der Kopplungswiderstand kommt zum axialen Widerstand hinzu.",
+        "wrongAnswerExplanations": {
+          "B": "Ein grösserer Widerstand erschwert diesen Strom.",
+          "C": "Dies ist die entgegengesetzte Wirkung.",
+          "D": "Die Zellmembranen bleiben bestehen.",
+          "E": "Kopplungswiderstand bestimmt keine solche Kapazität."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Connexinkopplung und Geometrie der Erregungsausbreitung».",
+      "options": [
+        {
+          "text": "Die Geometrie des Zellverbands beeinflusst die Leitung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Im Herzmuskel hängt die Leitung nur vom Na-Strom einer isolierten Einzelzelle ab.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Aus mehr Kopplung folgt unter allen Geometrien zwingend mehr Leitungssicherheit.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Verminderte Connexindichte kann die Erregungsausbreitung verlangsamen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Seitliche Kopplung und Zahl erreichbarer Nachbarzellen spielen mit. B: Kopplung und Last sind ebenfalls wesentlich. C: Auch die zu erregende Last kann wachsen; Source und Sink müssen zusammen betrachtet werden. D: Der interzelluläre Widerstand kann steigen. Quelle: Originalunterlagen, PDF-S. 6–7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Kopplung und Sicherheit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kopplung und Sicherheit"
+      ],
+      "questionGoal": "Kopplung und Sicherheit",
+      "structuredExplanation": {
+        "coreIdea": "Kopplung und Sicherheit",
+        "correctReasoning": "Seitliche Kopplung und Zahl erreichbarer Nachbarzellen spielen mit. Der interzelluläre Widerstand kann steigen.",
+        "wrongAnswerExplanations": {
+          "A": "Seitliche Kopplung und Zahl erreichbarer Nachbarzellen spielen mit.",
+          "B": "Kopplung und Last sind ebenfalls wesentlich.",
+          "C": "Auch die zu erregende Last kann wachsen; Source und Sink müssen zusammen betrachtet werden.",
+          "D": "Der interzelluläre Widerstand kann steigen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Was bezeichnet die Sink im hier verwendeten Source-Sink-Modell?",
+      "options": [
+        {
+          "text": "Die bereits depolarisierte Gewebemenge, die den Antriebsstrom liefert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ausschliesslich der extrazelluläre Stromsenkenbegriff bei einer Messelektrode.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die elektrische Last, die zur Schwelle depolarisiert werden muss.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Nur die Menge freigesetzten Transmitters.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Nur die Amplitude eines isolierten APs ohne Lastbezug.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Source. B: Hier ist die zu depolarisierende Last gemeint. C: Die benachbarte Membran benötigt depolarisierenden Strom. D: Das Modell beschreibt elektrische Last. E: Sink umfasst die belastete Membran, nicht nur eine Amplitude. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Source und Sink"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Source und Sink"
+      ],
+      "questionGoal": "Source und Sink",
+      "structuredExplanation": {
+        "coreIdea": "Source und Sink",
+        "correctReasoning": "Die benachbarte Membran benötigt depolarisierenden Strom.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Source.",
+          "B": "Hier ist die zu depolarisierende Last gemeint.",
+          "D": "Das Modell beschreibt elektrische Last.",
+          "E": "Sink umfasst die belastete Membran, nicht nur eine Amplitude."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Source-Sink-Verhältnis und elektrische Last».",
+      "options": [
+        {
+          "text": "Ein grösseres zu erregendes Areal kann die Sink erhöhen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die aktive Gewebefläche kann die Grösse der Source nicht beeinflussen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Reicht der bereitgestellte depolarisierende Strom nicht für die Last, droht ein Leitungsblock.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Source-Sink-Matching hängt ausschliesslich vom Namen des Zelltyps ab.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehr Membran muss aufgeladen werden. B: Mehr aktive Membran kann mehr Strom liefern. C: Source ist dann relativ zur Sink zu klein. D: Geometrie, Leitfähigkeiten und Erregbarkeit sind entscheidend. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Sicherheitsreserve"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sicherheitsreserve"
+      ],
+      "questionGoal": "Sicherheitsreserve",
+      "structuredExplanation": {
+        "coreIdea": "Sicherheitsreserve",
+        "correctReasoning": "Mehr Membran muss aufgeladen werden. Source ist dann relativ zur Sink zu klein.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr Membran muss aufgeladen werden.",
+          "B": "Mehr aktive Membran kann mehr Strom liefern.",
+          "C": "Source ist dann relativ zur Sink zu klein.",
+          "D": "Geometrie, Leitfähigkeiten und Erregbarkeit sind entscheidend."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q14",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Eine dünne erregte Faser trifft auf eine grosse noch ruhende Muskelmasse. Warum kann die Leitung am Übergang verzögert sein?",
+      "options": [
+        {
+          "text": "Der verfügbare Strom verteilt sich auf eine grössere zu depolarisierende Last.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die grössere Last benötigt grundsätzlich weniger Gesamtladung.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die verfügbare Source nimmt automatisch im gleichen Verhältnis wie jede beliebige Last zu.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein dünnes aktiviertes Areal stellt unabhängig von seiner Grösse beliebig viel Strom bereit.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Eine grosse ruhende Muskelmasse besitzt definitionsgemäss keine kapazitive Belastung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Source kann relativ klein gegenüber der Sink sein. B: Für vergleichbare Spannungsänderung steigt der Ladungsbedarf mit Kapazität. C: Am Übergang kann gerade ein Missverhältnis bestehen. D: Die Source ist begrenzt. E: Ihre Membran muss depolarisiert werden. Quelle: Originalunterlagen, PDF-S. 10–11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Gewebesprung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Gewebesprung"
+      ],
+      "questionGoal": "Gewebesprung",
+      "structuredExplanation": {
+        "coreIdea": "Gewebesprung",
+        "correctReasoning": "Die Source kann relativ klein gegenüber der Sink sein.",
+        "wrongAnswerExplanations": {
+          "B": "Für vergleichbare Spannungsänderung steigt der Ladungsbedarf mit Kapazität.",
+          "C": "Am Übergang kann gerade ein Missverhältnis bestehen.",
+          "D": "Die Source ist begrenzt.",
+          "E": "Ihre Membran muss depolarisiert werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q15",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Von einer kleinen Quelle zu einer grossen Last versagt die Leitung, in Gegenrichtung gelingt sie. Welcher Begriff passt?",
+      "options": [
+        {
+          "text": "Unidirektionaler Leitungsblock",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Normale verlustfreie Leitung in beide Richtungen",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Obligatorischer chemischer Synapsenwechsel",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vollständiger bidirektionaler Block",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Reine Änderung des Messvorzeichens ohne Leitungsänderung",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Erfolg hängt von der Ausbreitungsrichtung ab. B: Eine Richtung ist blockiert. C: Die Richtung wird hier durch Source-Sink-Verhältnisse erklärt. D: Die Gegenrichtung leitet ausdrücklich. E: Ein tatsächlicher Ausbreitungsausfall ist beschrieben. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Unidirektionaler Block"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unidirektionaler Block"
+      ],
+      "questionGoal": "Unidirektionaler Block",
+      "structuredExplanation": {
+        "coreIdea": "Unidirektionaler Block",
+        "correctReasoning": "Der Erfolg hängt von der Ausbreitungsrichtung ab.",
+        "wrongAnswerExplanations": {
+          "B": "Eine Richtung ist blockiert.",
+          "C": "Die Richtung wird hier durch Source-Sink-Verhältnisse erklärt.",
+          "D": "Die Gegenrichtung leitet ausdrücklich.",
+          "E": "Ein tatsächlicher Ausbreitungsausfall ist beschrieben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «unidirektionaler Block und Reentry».",
+      "options": [
+        {
+          "text": "Richtungsabhängige elektrische Lasten können einen asymmetrischen Leitungserfolg erklären.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ein unidirektionaler Block allein garantiert in jedem Gewebe einen stabilen Reentry.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die blockierte Richtung muss auch nach vollständiger Umkehr der Source-Sink-Geometrie blockiert bleiben.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein unidirektionaler Block kann zur Entstehung kreisender Erregung beitragen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Source und Sink vertauschen ihre Rollen. B: Zusätzliche Leitungswege, Erholungszeiten und Geometrie müssen passen. C: Gerade die Umkehr kann Leitung erlauben. D: Eine Welle kann einen alternativen Weg nehmen und später zurückkehren. Quelle: Originalunterlagen, PDF-S. 11.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Kreisende Erregung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kreisende Erregung"
+      ],
+      "questionGoal": "Kreisende Erregung",
+      "structuredExplanation": {
+        "coreIdea": "Kreisende Erregung",
+        "correctReasoning": "Source und Sink vertauschen ihre Rollen. Eine Welle kann einen alternativen Weg nehmen und später zurückkehren.",
+        "wrongAnswerExplanations": {
+          "A": "Source und Sink vertauschen ihre Rollen.",
+          "B": "Zusätzliche Leitungswege, Erholungszeiten und Geometrie müssen passen.",
+          "C": "Gerade die Umkehr kann Leitung erlauben.",
+          "D": "Eine Welle kann einen alternativen Weg nehmen und später zurückkehren."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Welche Fasern werden im dargestellten äusseren Nervenreizexperiment bei vergleichbarer Lage eher mit kleinerer Reizamplitude aktiviert?",
+      "options": [
+        {
+          "text": "Ausschliesslich postsynaptische Zellkörper.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nur Axone ohne jede Membranleitfähigkeit.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Dünne C-Fasern zwingend vor allen motorischen Axonen.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Dicke motorische Axone gegenüber dünnen C-Fasern.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Alle Fasern exakt gleichzeitig unabhängig von Durchmesser und Lage.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das Experiment reizt periphere Axone. B: Ohne Erregbarkeit wäre kein AP möglich. C: Dies widerspricht dem beschriebenen Experiment. D: Ihre elektrischen Eigenschaften begünstigen die Erregung im gezeigten Schema. E: Schwellen können sich unterscheiden. Quelle: Originalunterlagen, PDF-S. 8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Extrazelluläre Rekrutierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Extrazelluläre Rekrutierung"
+      ],
+      "questionGoal": "Extrazelluläre Rekrutierung",
+      "structuredExplanation": {
+        "coreIdea": "Extrazelluläre Rekrutierung",
+        "correctReasoning": "Ihre elektrischen Eigenschaften begünstigen die Erregung im gezeigten Schema.",
+        "wrongAnswerExplanations": {
+          "A": "Das Experiment reizt periphere Axone.",
+          "B": "Ohne Erregbarkeit wäre kein AP möglich.",
+          "C": "Dies widerspricht dem beschriebenen Experiment.",
+          "E": "Schwellen können sich unterscheiden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «äussere Axonreizung und synaptisches Grössenprinzip».",
+      "options": [
+        {
+          "text": "Das synaptische Grössenprinzip besagt, dass grosse motorische Zellkörper stets zuerst reagieren.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Aus gleicher Spannungskurve folgt automatisch derselbe synaptische Strom bei beliebigen Eingangswiderständen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Die stärkere elektrische Erregbarkeit dicker Axone widerlegt das synaptische Grössenprinzip nicht.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Äussere Axonreizung und synaptische Motoneuronenaktivierung sind verschiedene Eingangssituationen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Kleine Motoneurone werden bei vergleichbarem synaptischem Strom typischerweise früher rekrutiert. B: I und ΔV hängen über den Widerstand zusammen. C: Die Randbedingungen sind verschieden. D: Der Strom greift an unterschiedlichen Strukturen an. Quelle: Originalunterlagen, PDF-S. 8–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Zwei Rekrutierungsprinzipien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Zwei Rekrutierungsprinzipien"
+      ],
+      "questionGoal": "Zwei Rekrutierungsprinzipien",
+      "structuredExplanation": {
+        "coreIdea": "Zwei Rekrutierungsprinzipien",
+        "correctReasoning": "Die Randbedingungen sind verschieden. Der Strom greift an unterschiedlichen Strukturen an.",
+        "wrongAnswerExplanations": {
+          "A": "Kleine Motoneurone werden bei vergleichbarem synaptischem Strom typischerweise früher rekrutiert.",
+          "B": "I und ΔV hängen über den Widerstand zusammen.",
+          "C": "Die Randbedingungen sind verschieden.",
+          "D": "Der Strom greift an unterschiedlichen Strukturen an."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Zwei passive Modellneurone erhalten denselben synaptischen Strom I. Neuron A hat den doppelt so grossen Eingangswiderstand wie B. Wie verhalten sich die stationären ΔV?",
+      "options": [
+        {
+          "text": "Aus dem Eingangswiderstand folgt kein Zusammenhang mit ΔV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "ΔV von A ist doppelt so gross.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "ΔV von A ist halb so gross.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "A muss trotz höherem Widerstand stets weniger depolarisieren.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Die ΔV sind gleich, weil die Ströme gleich sind.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Das passive Modell erlaubt genau diesen Zusammenhang. B: ΔV = I×Rinput. C: Dies vertauscht die Abhängigkeit. D: Bei gleichem Strom gilt das Gegenteil. E: Die Widerstände unterscheiden sich. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Eingangswiderstand"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Eingangswiderstand"
+      ],
+      "questionGoal": "Eingangswiderstand",
+      "structuredExplanation": {
+        "coreIdea": "Eingangswiderstand",
+        "correctReasoning": "ΔV = I×Rinput.",
+        "wrongAnswerExplanations": {
+          "A": "Das passive Modell erlaubt genau diesen Zusammenhang.",
+          "C": "Dies vertauscht die Abhängigkeit.",
+          "D": "Bei gleichem Strom gilt das Gegenteil.",
+          "E": "Die Widerstände unterscheiden sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw06_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW06",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Connexin-Zusammensetzung und Begriffe der elektrischen Kopplung».",
+      "options": [
+        {
+          "text": "Source im Erregungsausbreitungsmodell und extrazelluläre Stromquelle sind in jeder Beschreibung identisch definiert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Im Grössenprinzip sollte eine vergleichbare synaptische Stromzufuhr betrachtet werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Connexinabhängige Kanaleigenschaften können die elektrische Kooperation verändern.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Homomer und homotypisch bezeichnen dieselbe Ebene der Connexin-Zusammensetzung.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Bezugsebene muss beachtet werden; ein Na-Einstrom ist extrazellulär eine Senke. B: Bei bereits identischen EPSP-Spannungen wäre der Widerstandseffekt in der Antwort enthalten. C: Subtyp und Regulation beeinflussen die Kopplung. D: Homomer beschreibt einen Halbkanal, homotypisch das Andocken zweier Halbkanäle. Quelle: Originalunterlagen, PDF-S. 4,7,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW06",
+        "Kontext der Begriffe"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kontext der Begriffe"
+      ],
+      "questionGoal": "Kontext der Begriffe",
+      "structuredExplanation": {
+        "coreIdea": "Kontext der Begriffe",
+        "correctReasoning": "Bei bereits identischen EPSP-Spannungen wäre der Widerstandseffekt in der Antwort enthalten. Subtyp und Regulation beeinflussen die Kopplung.",
+        "wrongAnswerExplanations": {
+          "A": "Die Bezugsebene muss beachtet werden; ein Na-Einstrom ist extrazellulär eine Senke.",
+          "B": "Bei bereits identischen EPSP-Spannungen wäre der Widerstandseffekt in der Antwort enthalten.",
+          "C": "Subtyp und Regulation beeinflussen die Kopplung.",
+          "D": "Homomer beschreibt einen Halbkanal, homotypisch das Andocken zweier Halbkanäle."
+        }
+      }
+    }
+  ]
+}

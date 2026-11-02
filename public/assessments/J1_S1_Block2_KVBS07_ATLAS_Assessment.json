@@ -1,0 +1,1320 @@
+{
+  "id": "assessment_j1_s1_block2_kvbs07_20261102",
+  "lectureCode": "KVBS07",
+  "title": "Bedingte Wahrscheinlichkeiten und diagnostische Tests",
+  "block": "Block 2",
+  "subject": "Public Health / Epidemiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVBS07 - Wahrscheinlichkeiten_InDerMedizin_2025. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Alle Zahlen zu diagnostischen Tests sind hypothetische Rechenbeispiele, keine aktuellen Testempfehlungen. Sensitivität und Spezifität nur im expliziten Gedankenexperiment als konstant behandelt. Modell-PPV signifikanter Studien ist keine aus einem einzelnen p-Wert ablesbare Hypothesenwahrscheinlichkeit.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Komplement-, Summen- und Multiplikationsregeln anwenden."
+    },
+    {
+      "id": "lo2",
+      "text": "Bedingte Wahrscheinlichkeiten mit Bayes umkehren."
+    },
+    {
+      "id": "lo3",
+      "text": "Sensitivität, Spezifität und prädiktive Werte unterscheiden und berechnen."
+    },
+    {
+      "id": "lo4",
+      "text": "Den Einfluss der Vortestwahrscheinlichkeit auf Testergebnisse erklären."
+    },
+    {
+      "id": "lo5",
+      "text": "Fehler erster und zweiter Art, Power und den Modell-PPV signifikanter Studien unterscheiden."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b2_kvbs07_q01",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "P(A) = 0,30. Wie gross ist P(nicht A)?",
+      "options": [
+        {
+          "text": "0,09",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,30",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,43",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "1,30",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,70",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wäre das Produkt zweier unabhängiger Ereignisse mit Wahrscheinlichkeit 0,30. B: Dies ist P(A). C: Dies sind ungefähr die Odds für A. D: Wahrscheinlichkeiten überschreiten 1 nicht. E: Ereignis und Komplement summieren sich zu 1. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Komplementregel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Komplementregel"
+      ],
+      "questionGoal": "Komplementregel",
+      "structuredExplanation": {
+        "coreIdea": "Komplementregel",
+        "correctReasoning": "Ereignis und Komplement summieren sich zu 1.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wäre das Produkt zweier unabhängiger Ereignisse mit Wahrscheinlichkeit 0,30.",
+          "B": "Dies ist P(A).",
+          "C": "Dies sind ungefähr die Odds für A.",
+          "D": "Wahrscheinlichkeiten überschreiten 1 nicht."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "40 von 200 Personen sind sowohl exponiert als auch erkrankt. Insgesamt sind 80 exponiert. Wie gross ist P(erkrankt unter den Exponierten)?",
+      "options": [
+        {
+          "text": "0,20",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,25",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,40",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "2",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,50",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: 40/200 ist die gemeinsame Wahrscheinlichkeit. B: Hier wurde ein falscher Bezugsnenner verwendet. C: 80/200 ist die Expositionshäufigkeit. D: Dies ist der umgekehrte Quotient und keine Wahrscheinlichkeit. E: 40/80 = 0,50; die Bedingung bestimmt den Nenner. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Bedingte Wahrscheinlichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bedingte Wahrscheinlichkeit"
+      ],
+      "questionGoal": "Bedingte Wahrscheinlichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Bedingte Wahrscheinlichkeit",
+        "correctReasoning": "40/80 = 0,50; die Bedingung bestimmt den Nenner.",
+        "wrongAnswerExplanations": {
+          "A": "40/200 ist die gemeinsame Wahrscheinlichkeit.",
+          "B": "Hier wurde ein falscher Bezugsnenner verwendet.",
+          "C": "80/200 ist die Expositionshäufigkeit.",
+          "D": "Dies ist der umgekehrte Quotient und keine Wahrscheinlichkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Zum Thema «Unabhängigkeit und Disjunktheit von Ereignissen»: Beurteilen Sie die Aussagen für Ereignisse mit positiver Wahrscheinlichkeit.",
+      "options": [
+        {
+          "text": "Disjunkte Ereignisse mit positiver Wahrscheinlichkeit sind unabhängig.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Bei disjunkten Ereignissen mit positiver Wahrscheinlichkeit gilt P(A und B) = P(A)P(B).",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei Unabhängigkeit ist P(A und B) = P(A)×P(B).",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "P(A oder B) ist bei beliebigen Ereignissen immer die einfache Summe.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Disjunktheit schliesst gemeinsames Eintreten aus; Unabhängigkeit würde ein positives Produkt liefern. B: Der Schnitt ist null; das Produkt positiver Wahrscheinlichkeiten ist positiv. C: Die Bedingung B verändert P(A) dann nicht. D: Bei Überlappung muss P(A und B) abgezogen werden. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Unabhängig oder disjunkt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Unabhängig oder disjunkt"
+      ],
+      "questionGoal": "Unabhängig oder disjunkt",
+      "structuredExplanation": {
+        "coreIdea": "Unabhängig oder disjunkt",
+        "correctReasoning": "Die Bedingung B verändert P(A) dann nicht.",
+        "wrongAnswerExplanations": {
+          "A": "Disjunktheit schliesst gemeinsames Eintreten aus; Unabhängigkeit würde ein positives Produkt liefern.",
+          "B": "Der Schnitt ist null; das Produkt positiver Wahrscheinlichkeiten ist positiv.",
+          "C": "Die Bedingung B verändert P(A) dann nicht.",
+          "D": "Bei Überlappung muss P(A und B) abgezogen werden."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "P(B) = 0,4 und P(A unter B) = 0,5. Wie gross ist P(A und B)?",
+      "options": [
+        {
+          "text": "1,25",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,20",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "0,50",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,10",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,90",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der umgekehrte Quotient ist keine zulässige Wahrscheinlichkeit. B: 0,5×0,4 = 0,20. C: Die bedingte Wahrscheinlichkeit muss noch mit P(B) gewichtet werden. D: Die Differenz ist nicht die Multiplikationsregel. E: Die Summe liefert nicht die gemeinsame Wahrscheinlichkeit. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Multiplikationsregel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Multiplikationsregel"
+      ],
+      "questionGoal": "Multiplikationsregel",
+      "structuredExplanation": {
+        "coreIdea": "Multiplikationsregel",
+        "correctReasoning": "0,5×0,4 = 0,20.",
+        "wrongAnswerExplanations": {
+          "A": "Der umgekehrte Quotient ist keine zulässige Wahrscheinlichkeit.",
+          "C": "Die bedingte Wahrscheinlichkeit muss noch mit P(B) gewichtet werden.",
+          "D": "Die Differenz ist nicht die Multiplikationsregel.",
+          "E": "Die Summe liefert nicht die gemeinsame Wahrscheinlichkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q05",
+      "type": "A",
+      "difficulty": 2,
+      "difficultyLevel": "easy",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Welche Definition beschreibt die Sensitivität?",
+      "options": [
+        {
+          "text": "P(Test negativ unter den Nichterkrankten)",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "P(nicht erkrankt unter den Testnegativen)",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "P(erkrankt unter den Testpositiven)",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "P(Test positiv unter den Nichterkrankten)",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "P(Test positiv unter den Erkrankten)",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Spezifität. B: Dies ist der negative prädiktive Wert. C: Dies ist der positive prädiktive Wert. D: Dies ist die Falsch-positiv-Rate. E: Der Nenner umfasst alle tatsächlich Erkrankten. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Sensitivität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Sensitivität"
+      ],
+      "questionGoal": "Sensitivität",
+      "structuredExplanation": {
+        "coreIdea": "Sensitivität",
+        "correctReasoning": "Der Nenner umfasst alle tatsächlich Erkrankten.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Spezifität.",
+          "B": "Dies ist der negative prädiktive Wert.",
+          "C": "Dies ist der positive prädiktive Wert.",
+          "D": "Dies ist die Falsch-positiv-Rate."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Ein Test liefert TP = 80, FN = 20, FP = 90, TN = 810. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Der NPV beträgt 810/900.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Sensitivität ist 80 %.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die Spezifität beträgt 810/(810+90) = 90 %.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Der PPV beträgt 80/170.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Nenner für NPV ist TN+FN = 830. B: 80/(80+20) = 0,80. C: Der Nenner umfasst alle Nichterkrankten. D: Alle positiven Tests bestehen aus 80 TP und 90 FP. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Vierfeldertafel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vierfeldertafel"
+      ],
+      "questionGoal": "Vierfeldertafel",
+      "structuredExplanation": {
+        "coreIdea": "Vierfeldertafel",
+        "correctReasoning": "80/(80+20) = 0,80. Der Nenner umfasst alle Nichterkrankten. Alle positiven Tests bestehen aus 80 TP und 90 FP.",
+        "wrongAnswerExplanations": {
+          "A": "Der Nenner für NPV ist TN+FN = 830.",
+          "B": "80/(80+20) = 0,80.",
+          "C": "Der Nenner umfasst alle Nichterkrankten.",
+          "D": "Alle positiven Tests bestehen aus 80 TP und 90 FP."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Von 1000 Nichterkrankten werden 50 positiv getestet. Wie gross ist die Spezifität?",
+      "options": [
+        {
+          "text": "5 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Nicht berechenbar ohne die Zahl Erkrankter",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "50 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "95 %",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Falsch-positiv-Rate. B: Spezifität ist innerhalb der Nichterkrankten definiert. C: 50 ist hier keine Prozentangabe. D: Es gibt 50 falsch positive Resultate. E: 950 von 1000 Nichterkrankten testen korrekt negativ. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Spezifität berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Spezifität berechnen"
+      ],
+      "questionGoal": "Spezifität berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Spezifität berechnen",
+        "correctReasoning": "950 von 1000 Nichterkrankten testen korrekt negativ.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Falsch-positiv-Rate.",
+          "B": "Spezifität ist innerhalb der Nichterkrankten definiert.",
+          "C": "50 ist hier keine Prozentangabe.",
+          "D": "Es gibt 50 falsch positive Resultate."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Hypothetischer Test: Prävalenz 1 %, Sensitivität 90 %, Spezifität 99 %. In 10’000 getesteten Personen: Wie viele wahr positive Resultate erwartet man?",
+      "options": [
+        {
+          "text": "9000",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "90",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "189",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "99",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "100",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Sensitivität wurde fälschlich auf alle Personen angewandt. B: 100 Erkrankte×0,90 = 90. C: Dies ist die erwartete Gesamtzahl positiver Tests. D: Dies ist die erwartete Zahl falsch positiver Ergebnisse unter 9900 Nichterkrankten. E: Dies ist die Gesamtzahl Erkrankter vor dem Test. Quelle: Originalunterlagen, PDF-S. 10–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Bayes mit Häufigkeiten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bayes mit Häufigkeiten"
+      ],
+      "questionGoal": "Bayes mit Häufigkeiten",
+      "structuredExplanation": {
+        "coreIdea": "Bayes mit Häufigkeiten",
+        "correctReasoning": "100 Erkrankte×0,90 = 90.",
+        "wrongAnswerExplanations": {
+          "A": "Die Sensitivität wurde fälschlich auf alle Personen angewandt.",
+          "C": "Dies ist die erwartete Gesamtzahl positiver Tests.",
+          "D": "Dies ist die erwartete Zahl falsch positiver Ergebnisse unter 9900 Nichterkrankten.",
+          "E": "Dies ist die Gesamtzahl Erkrankter vor dem Test."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q09",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Für dieselbe hypothetische Population werden 90 wahr positive und 99 falsch positive Resultate erwartet. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Ein positives Resultat ist hier nicht gleichbedeutend mit einer gesicherten Erkrankung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Die Falsch-positiv-Rate beträgt 99/189.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "PPV = 90 %, weil dies die Sensitivität ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "PPV = 90/189 ≈ 47,6 %.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Mehr als die Hälfte der erwarteten positiven Tests ist falsch positiv. B: Das ist der Anteil falsch positiver Ergebnisse unter den Positiven; die Falsch-positiv-Rate verwendet alle Nichterkrankten. C: Die bedingte Richtung wurde vertauscht. D: Der Nenner enthält alle positiven Tests. Quelle: Originalunterlagen, PDF-S. 10–15.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "PPV berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PPV berechnen"
+      ],
+      "questionGoal": "PPV berechnen",
+      "structuredExplanation": {
+        "coreIdea": "PPV berechnen",
+        "correctReasoning": "Mehr als die Hälfte der erwarteten positiven Tests ist falsch positiv. Der Nenner enthält alle positiven Tests.",
+        "wrongAnswerExplanations": {
+          "A": "Mehr als die Hälfte der erwarteten positiven Tests ist falsch positiv.",
+          "B": "Das ist der Anteil falsch positiver Ergebnisse unter den Positiven; die Falsch-positiv-Rate verwendet alle Nichterkrankten.",
+          "C": "Die bedingte Richtung wurde vertauscht.",
+          "D": "Der Nenner enthält alle positiven Tests."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Warum folgt aus 100 % Sensitivität allein kein PPV von 100 %?",
+      "options": [
+        {
+          "text": "Weil ein positiver Test grundsätzlich keinerlei Information liefert.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Weil PPV immer genau 50 % ist.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Weil Sensitivität immer die Spezifität verkleinert, exakt auf null.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weil perfekte Sensitivität mathematisch unmöglich ist.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Auch Nichterkrankte können positiv testen, und ihre Zahl hängt von der Vortestwahrscheinlichkeit ab.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein geeigneter Test kann die Erkrankungswahrscheinlichkeit deutlich verändern. B: PPV hängt von Prävalenz und Testgüte ab. C: Ein solcher fester Zusammenhang besteht nicht. D: Ein hypothetisches Modell kann sie voraussetzen. E: PPV berücksichtigt wahr und falsch positive Tests. Quelle: Originalunterlagen, PDF-S. 7–9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Bedingung umkehren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Bedingung umkehren"
+      ],
+      "questionGoal": "Bedingung umkehren",
+      "structuredExplanation": {
+        "coreIdea": "Bedingung umkehren",
+        "correctReasoning": "PPV berücksichtigt wahr und falsch positive Tests.",
+        "wrongAnswerExplanations": {
+          "A": "Ein geeigneter Test kann die Erkrankungswahrscheinlichkeit deutlich verändern.",
+          "B": "PPV hängt von Prävalenz und Testgüte ab.",
+          "C": "Ein solcher fester Zusammenhang besteht nicht.",
+          "D": "Ein hypothetisches Modell kann sie voraussetzen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q11",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Sensitivität und Spezifität bleiben in einem Gedankenexperiment konstant. Beurteilen Sie die Aussagen bei sinkender Prävalenz.",
+      "options": [
+        {
+          "text": "Die Sensitivität wird dadurch automatisch zum PPV.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der PPV sinkt, wenn die übrigen Bedingungen gleich bleiben.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der NPV steigt unter denselben Bedingungen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Die Spezifität muss allein deshalb sinken.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die beiden bedingten Wahrscheinlichkeiten bleiben verschieden. B: Unter den Positiven nimmt der relative Anteil falsch positiver Resultate zu. C: Unter den Negativen wird Erkrankung seltener. D: Sie ist im Gedankenexperiment konstant und auf Nichterkrankte bedingt. Quelle: Originalunterlagen, PDF-S. 17–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Prävalenzeffekt"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Prävalenzeffekt"
+      ],
+      "questionGoal": "Prävalenzeffekt",
+      "structuredExplanation": {
+        "coreIdea": "Prävalenzeffekt",
+        "correctReasoning": "Unter den Positiven nimmt der relative Anteil falsch positiver Resultate zu. Unter den Negativen wird Erkrankung seltener.",
+        "wrongAnswerExplanations": {
+          "A": "Die beiden bedingten Wahrscheinlichkeiten bleiben verschieden.",
+          "B": "Unter den Positiven nimmt der relative Anteil falsch positiver Resultate zu.",
+          "C": "Unter den Negativen wird Erkrankung seltener.",
+          "D": "Sie ist im Gedankenexperiment konstant und auf Nichterkrankte bedingt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q12",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Prävalenz 10 %, Sensitivität 80 %, Spezifität 90 %. Welcher PPV folgt?",
+      "options": [
+        {
+          "text": "90 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 47,1 %",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "10 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "80 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "8 %",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies ist die Spezifität. B: 0,08/(0,08+0,09) ≈ 0,471. C: Dies ist die Vortestwahrscheinlichkeit. D: Dies ist die Sensitivität. E: Dies ist die gemeinsame Wahrscheinlichkeit von Krankheit und positivem Test. Quelle: Originalunterlagen, PDF-S. 7,20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "PPV per Formel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "PPV per Formel"
+      ],
+      "questionGoal": "PPV per Formel",
+      "structuredExplanation": {
+        "coreIdea": "PPV per Formel",
+        "correctReasoning": "0,08/(0,08+0,09) ≈ 0,471.",
+        "wrongAnswerExplanations": {
+          "A": "Dies ist die Spezifität.",
+          "C": "Dies ist die Vortestwahrscheinlichkeit.",
+          "D": "Dies ist die Sensitivität.",
+          "E": "Dies ist die gemeinsame Wahrscheinlichkeit von Krankheit und positivem Test."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q13",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Fehler erster und zweiter Art sowie Power».",
+      "options": [
+        {
+          "text": "Ein Fehler zweiter Art ist das Verwerfen einer wahren H0.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein Fehler erster Art ist das Verwerfen einer wahren H0.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Power ist die Wahrscheinlichkeit, dass H0 wahr ist.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Power ist 1−β für eine festgelegte Alternative.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Das wäre Fehler erster Art; Fehler zweiter Art verfehlt eine vorliegende Alternative. B: Seine Wahrscheinlichkeit wird durch das Signifikanzniveau kontrolliert, unter den Testannahmen. C: Dies ist eine andere bedingte Richtung. D: Sie ist die Wahrscheinlichkeit, diese Alternative mit dem Test zu entdecken. Quelle: Originalunterlagen, PDF-S. 21–22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Testfehler"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Testfehler"
+      ],
+      "questionGoal": "Testfehler",
+      "structuredExplanation": {
+        "coreIdea": "Testfehler",
+        "correctReasoning": "Seine Wahrscheinlichkeit wird durch das Signifikanzniveau kontrolliert, unter den Testannahmen. Sie ist die Wahrscheinlichkeit, diese Alternative mit dem Test zu entdecken.",
+        "wrongAnswerExplanations": {
+          "A": "Das wäre Fehler erster Art; Fehler zweiter Art verfehlt eine vorliegende Alternative.",
+          "B": "Seine Wahrscheinlichkeit wird durch das Signifikanzniveau kontrolliert, unter den Testannahmen.",
+          "C": "Dies ist eine andere bedingte Richtung.",
+          "D": "Sie ist die Wahrscheinlichkeit, diese Alternative mit dem Test zu entdecken."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Für eine festgelegte Effektgrösse hat ein Test β = 0,20. Welche Power ergibt sich?",
+      "options": [
+        {
+          "text": "100 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "95 %",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "5 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "20 %",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "80 %",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein Effekt wird nicht mit Sicherheit entdeckt. B: Das ist nicht das Komplement von 20 %. C: Dies könnte α sein, folgt aber nicht aus β. D: Dies ist die Wahrscheinlichkeit eines Fehlers zweiter Art. E: Power = 1−0,20. Quelle: Originalunterlagen, PDF-S. 22.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Power berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Power berechnen"
+      ],
+      "questionGoal": "Power berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Power berechnen",
+        "correctReasoning": "Power = 1−0,20.",
+        "wrongAnswerExplanations": {
+          "A": "Ein Effekt wird nicht mit Sicherheit entdeckt.",
+          "B": "Das ist nicht das Komplement von 20 %.",
+          "C": "Dies könnte α sein, folgt aber nicht aus β.",
+          "D": "Dies ist die Wahrscheinlichkeit eines Fehlers zweiter Art."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q15",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "In einem Gedankenexperiment sind von 1000 untersuchten Hypothesen 100 tatsächlich nichtnull. Power = 50 %, α = 5 %. Wie viele signifikante Ergebnisse erwartet man bei den 900 wahren Nullhypothesen?",
+      "options": [
+        {
+          "text": "5",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "50",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "900",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "95",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "45",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies wendet α auf die falsche Gruppe von 100 an. B: Dies ist die erwartete Zahl entdeckter Alternativen unter den 100 nichtnull Hypothesen. C: Nicht jede wahre Nullhypothese wird verworfen. D: Dies ist die Summe aller erwarteten signifikanten Ergebnisse. E: 900×0,05 = 45 falsch positive Ergebnisse. Quelle: Originalunterlagen, PDF-S. 23–24.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Studien als Screeningmodell"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Studien als Screeningmodell"
+      ],
+      "questionGoal": "Studien als Screeningmodell",
+      "structuredExplanation": {
+        "coreIdea": "Studien als Screeningmodell",
+        "correctReasoning": "900×0,05 = 45 falsch positive Ergebnisse.",
+        "wrongAnswerExplanations": {
+          "A": "Dies wendet α auf die falsche Gruppe von 100 an.",
+          "B": "Dies ist die erwartete Zahl entdeckter Alternativen unter den 100 nichtnull Hypothesen.",
+          "C": "Nicht jede wahre Nullhypothese wird verworfen.",
+          "D": "Dies ist die Summe aller erwarteten signifikanten Ergebnisse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Im beschriebenen Modell entstehen 50 richtig positive und 45 falsch positive Studien. Beurteilen Sie die Aussagen.",
+      "options": [
+        {
+          "text": "Der Modellwert ist die aus jedem einzelnen p-Wert ablesbare Wahrscheinlichkeit eines echten Effekts.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Der Anteil echter Alternativen unter signifikanten Studien beträgt etwa 52,6 %.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Dieser Modellanteil hängt von der Häufigkeit echter Alternativen ab.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Bei α = 5 % sind zwingend nur 5 % aller signifikanten Studien falsch positiv.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er folgt aus den zusätzlichen Szenarioannahmen, nicht aus dem p-Wert allein. B: 50/(50+45) ≈ 0,526. C: Die Basisrate beeinflusst den prädiktiven Wert. D: α bezieht sich auf wahre Nullhypothesen, nicht auf alle signifikanten Ergebnisse. Quelle: Originalunterlagen, PDF-S. 23–26.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Modell-PPV signifikanter Studien"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Modell-PPV signifikanter Studien"
+      ],
+      "questionGoal": "Modell-PPV signifikanter Studien",
+      "structuredExplanation": {
+        "coreIdea": "Modell-PPV signifikanter Studien",
+        "correctReasoning": "50/(50+45) ≈ 0,526. Die Basisrate beeinflusst den prädiktiven Wert.",
+        "wrongAnswerExplanations": {
+          "A": "Er folgt aus den zusätzlichen Szenarioannahmen, nicht aus dem p-Wert allein.",
+          "B": "50/(50+45) ≈ 0,526.",
+          "C": "Die Basisrate beeinflusst den prädiktiven Wert.",
+          "D": "α bezieht sich auf wahre Nullhypothesen, nicht auf alle signifikanten Ergebnisse."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Ein hypothetischer Test liefert 18 falsch negative und 882 wahr negative Resultate. Welcher NPV folgt?",
+      "options": [
+        {
+          "text": "88,2 % zwingend",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "18 %",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "2 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "98 %",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Nicht berechenbar ohne TP",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Der Nenner ist die Zahl aller negativen Tests, nicht ohne weitere Angabe 1000. B: Die Zahl falsch negativer Ergebnisse ist nicht der NPV. C: Dies ist der Anteil Erkrankter unter den Negativen. D: 882/(882+18) = 0,98. E: NPV benötigt TN und FN; diese sind gegeben. Quelle: Originalunterlagen, PDF-S. 20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "NPV berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "NPV berechnen"
+      ],
+      "questionGoal": "NPV berechnen",
+      "structuredExplanation": {
+        "coreIdea": "NPV berechnen",
+        "correctReasoning": "882/(882+18) = 0,98.",
+        "wrongAnswerExplanations": {
+          "A": "Der Nenner ist die Zahl aller negativen Tests, nicht ohne weitere Angabe 1000.",
+          "B": "Die Zahl falsch negativer Ergebnisse ist nicht der NPV.",
+          "C": "Dies ist der Anteil Erkrankter unter den Negativen.",
+          "E": "NPV benötigt TN und FN; diese sind gegeben."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «diagnostische Vortestwahrscheinlichkeit und Ergebnisinterpretation».",
+      "options": [
+        {
+          "text": "Eine Testspezifität von 99 % bedeutet automatisch PPV = 99 %.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein PPV kann unabhängig von untersuchter Population und Testdurchführung unverändert auf jede andere Situation übertragen werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Natürliche Häufigkeiten können die Zusammensetzung positiver Resultate verständlich zeigen.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Vortestwahrscheinlichkeit kann je nach untersuchter Population verschieden sein.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Vortestwahrscheinlichkeit und Sensitivität fehlen. B: Vortestwahrscheinlichkeit und Testeigenschaften können sich unterscheiden. C: Sie machen TP und FP in einer gemeinsamen Bezugsgruppe sichtbar. D: Das verändert die Interpretation desselben Testergebnisses. Quelle: Originalunterlagen, PDF-S. 7–20.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Diagnostische Kommunikation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Diagnostische Kommunikation"
+      ],
+      "questionGoal": "Diagnostische Kommunikation",
+      "structuredExplanation": {
+        "coreIdea": "Diagnostische Kommunikation",
+        "correctReasoning": "Sie machen TP und FP in einer gemeinsamen Bezugsgruppe sichtbar. Das verändert die Interpretation desselben Testergebnisses.",
+        "wrongAnswerExplanations": {
+          "A": "Die Vortestwahrscheinlichkeit und Sensitivität fehlen.",
+          "B": "Vortestwahrscheinlichkeit und Testeigenschaften können sich unterscheiden.",
+          "C": "Sie machen TP und FP in einer gemeinsamen Bezugsgruppe sichtbar.",
+          "D": "Das verändert die Interpretation desselben Testergebnisses."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q19",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "P(A) = 0,30, P(B) = 0,40, P(A und B) = 0,10. Wie gross ist P(A oder B)?",
+      "options": [
+        {
+          "text": "0,80",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "0,70",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,60",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "0,10",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0,12",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Überlappung wurde addiert statt abgezogen. B: Dabei wird die Überlappung doppelt gezählt. C: 0,30+0,40−0,10; die Überlappung wird einmal abgezogen. D: Dies ist die gemeinsame statt der Vereinigungswahrscheinlichkeit. E: Dies wäre das Produkt unter Unabhängigkeit, die hier nicht vorliegt. Quelle: Originalunterlagen, PDF-S. 6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Vereinigungswahrscheinlichkeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Vereinigungswahrscheinlichkeit"
+      ],
+      "questionGoal": "Vereinigungswahrscheinlichkeit",
+      "structuredExplanation": {
+        "coreIdea": "Vereinigungswahrscheinlichkeit",
+        "correctReasoning": "0,30+0,40−0,10; die Überlappung wird einmal abgezogen.",
+        "wrongAnswerExplanations": {
+          "A": "Die Überlappung wurde addiert statt abgezogen.",
+          "B": "Dabei wird die Überlappung doppelt gezählt.",
+          "D": "Dies ist die gemeinsame statt der Vereinigungswahrscheinlichkeit.",
+          "E": "Dies wäre das Produkt unter Unabhängigkeit, die hier nicht vorliegt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b2_kvbs07_q20",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4",
+        "lo5"
+      ],
+      "blockId": "block2",
+      "lectureId": "KVBS07",
+      "stem": "Zum Thema «Signifikanzniveau, Power und klinische Bedeutung»: Beurteilen Sie die Aussagen bei sonst gleichen Modellbedingungen.",
+      "options": [
+        {
+          "text": "Ein niedrigeres α erhöht bei unveränderter Stichprobe stets die Power.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Statistische Signifikanz allein zeigt weder Effektgrösse noch klinische Bedeutung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Höhere Power erhöht den Anteil entdeckter echter Effekte.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "p = 0,04 beweist, dass ein Befund wahr und p = 0,06, dass er falsch ist.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Eine strengere Schwelle kann die Power verringern. B: Beides muss zusätzlich beurteilt werden. C: Die Wahrscheinlichkeit eines Fehlers zweiter Art sinkt. D: Eine starre Wahrheitsteilung lässt Unsicherheit und Kontext ausser Acht. Quelle: Originalunterlagen, PDF-S. 21–28.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 2",
+        "KVBS07",
+        "Signifikanz vorsichtig lesen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Signifikanz vorsichtig lesen"
+      ],
+      "questionGoal": "Signifikanz vorsichtig lesen",
+      "structuredExplanation": {
+        "coreIdea": "Signifikanz vorsichtig lesen",
+        "correctReasoning": "Beides muss zusätzlich beurteilt werden. Die Wahrscheinlichkeit eines Fehlers zweiter Art sinkt.",
+        "wrongAnswerExplanations": {
+          "A": "Eine strengere Schwelle kann die Power verringern.",
+          "B": "Beides muss zusätzlich beurteilt werden.",
+          "C": "Die Wahrscheinlichkeit eines Fehlers zweiter Art sinkt.",
+          "D": "Eine starre Wahrheitsteilung lässt Unsicherheit und Kontext ausser Acht."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1320 @@
+{
+  "id": "assessment_j1_s1_block3_kvsw05_20261102",
+  "lectureCode": "KVSW05",
+  "title": "Ausbreitung des Aktionspotentials",
+  "block": "Block 3",
+  "subject": "Physiologie",
+  "active": true,
+  "sourceSummary": "Universität Bern, 1. Studienjahr, HS2025. KVSW5_AP_Propagation. 20 eigenständig formulierte Übungsfragen (12 Typ A, 8 K-Prim), an Originalunterlagen und Lernzielen orientiert. Redaktionell selbstgeprüft; Schwierigkeit eingeschätzt, nicht empirisch kalibriert. Schematische Kabelmodelle mit expliziten Konstantbedingungen. Spezifischer Membranwiderstand und Membranwiderstand pro Länge werden getrennt. Na-Einstrom ist extrazellulär eine Stromsenke. Synthetische Rechenbeispiele; Originalfiguren PDF3–4,6–10 visuell geprüft.",
+  "learningObjectives": [
+    {
+      "id": "lo1",
+      "text": "Passive Kabelausbreitung und Längskonstante erklären."
+    },
+    {
+      "id": "lo2",
+      "text": "Aktive AP-Regeneration durch lokale Kreisströme erklären."
+    },
+    {
+      "id": "lo3",
+      "text": "Einfluss von Durchmesser, Myelin, Widerstand und Kapazität auf Leitung beurteilen."
+    },
+    {
+      "id": "lo4",
+      "text": "Extrazelluläre Stimulation und Ableitung interpretieren."
+    },
+    {
+      "id": "lo5",
+      "text": "Leitungsgeschwindigkeit und einfache Kabelbeziehungen berechnen."
+    }
+  ],
+  "questions": [
+    {
+      "id": "j1_s1_b3_kvsw05_q01",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Eine passive Spannungsänderung beträgt am Reizort 10 mV. Wie gross ist sie im idealen stationären Kabelmodell bei x = λ ungefähr?",
+      "options": [
+        {
+          "text": "10 mV",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "3,7 mV",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "1 mV",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "6,3 mV",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "0 mV",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Passive Signale nehmen räumlich ab. B: Bei einer Längskonstante verbleibt 1/e ≈ 0,37. C: Ein Zehntel wird erst nach etwa 2,3 λ erreicht. D: 63 % sind der abgefallene, nicht der verbleibende Anteil. E: Bei λ ist das Signal noch nicht vollständig abgeklungen. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Längskonstante"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Längskonstante"
+      ],
+      "questionGoal": "Längskonstante",
+      "structuredExplanation": {
+        "coreIdea": "Längskonstante",
+        "correctReasoning": "Bei einer Längskonstante verbleibt 1/e ≈ 0,37.",
+        "wrongAnswerExplanations": {
+          "A": "Passive Signale nehmen räumlich ab.",
+          "C": "Ein Zehntel wird erst nach etwa 2,3 λ erreicht.",
+          "D": "63 % sind der abgefallene, nicht der verbleibende Anteil.",
+          "E": "Bei λ ist das Signal noch nicht vollständig abgeklungen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q02",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "rm vervierfacht sich bei konstantem ri und vernachlässigbarem Aussenwiderstand. Wie ändert sich λ = √(rm/ri)?",
+      "options": [
+        {
+          "text": "λ bleibt gleich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "λ halbiert sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "λ verdoppelt sich.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "λ sinkt auf ein Viertel.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "λ vervierfacht sich.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: rm geht in die Formel ein. B: Höherer Membranwiderstand vermindert das Leck. C: √4 = 2. D: Dies verwechselt Zähler und Nenner und übersieht die Wurzel. E: Die Wurzel wurde übersehen. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Membranleck"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Membranleck"
+      ],
+      "questionGoal": "Membranleck",
+      "structuredExplanation": {
+        "coreIdea": "Membranleck",
+        "correctReasoning": "√4 = 2.",
+        "wrongAnswerExplanations": {
+          "A": "rm geht in die Formel ein.",
+          "B": "Höherer Membranwiderstand vermindert das Leck.",
+          "D": "Dies verwechselt Zähler und Nenner und übersieht die Wurzel.",
+          "E": "Die Wurzel wurde übersehen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q03",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «passives Kabelmodell eines Axons».",
+      "options": [
+        {
+          "text": "Eine grössere Längskonstante bedeutet einen schnelleren räumlichen Abfall.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Ein grösserer axialer Innenwiderstand verkürzt bei sonst gleichen Werten λ.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Mehr Membranleck erhöht bei sonst gleichen Werten die Reichweite passiver Spannung.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein unterschwelliges Signal regeneriert sich entlang des passiven Kabels wie ein AP.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Sie bedeutet eine grössere Reichweite. B: Er erschwert den Längsstrom. C: Ein kleinerer Membranwiderstand vermindert die Längskonstante. D: Ohne aktive Regeneration nimmt es ab. Quelle: Originalunterlagen, PDF-S. 3–4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Passives Kabel"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Passives Kabel"
+      ],
+      "questionGoal": "Passives Kabel",
+      "structuredExplanation": {
+        "coreIdea": "Passives Kabel",
+        "correctReasoning": "Er erschwert den Längsstrom.",
+        "wrongAnswerExplanations": {
+          "A": "Sie bedeutet eine grössere Reichweite.",
+          "B": "Er erschwert den Längsstrom.",
+          "C": "Ein kleinerer Membranwiderstand vermindert die Längskonstante.",
+          "D": "Ohne aktive Regeneration nimmt es ab."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q04",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Was bringt den noch nicht erregten benachbarten Axonabschnitt zunächst zur Schwelle?",
+      "options": [
+        {
+          "text": "Elektrotonischer Längsstrom aus dem aktiven Bereich.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Zwingende Transmitterfreisetzung zwischen zwei Axonabschnitten.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine dauerhaft offene isolierende Myelinschicht.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Eine jeweils neu erforderliche externe Reizelektrode.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Diffusion der zuvor eingeströmten Na-Ionen über die gesamte Axonlänge.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Lokaler Ladungsfluss depolarisiert die benachbarte Membran. B: Innerhalb desselben Axons liegt keine chemische Synapse zwischen jedem Abschnitt. C: Myelin ist kein offener Ionenkanal. D: Nach Initiation kann sich das AP ohne externe Reizung jedes Abschnitts fortsetzen. E: Die Ausbreitung beruht auf lokalen Strömen und regenerierten Membranereignissen. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Lokale Kreisströme"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Lokale Kreisströme"
+      ],
+      "questionGoal": "Lokale Kreisströme",
+      "structuredExplanation": {
+        "coreIdea": "Lokale Kreisströme",
+        "correctReasoning": "Lokaler Ladungsfluss depolarisiert die benachbarte Membran.",
+        "wrongAnswerExplanations": {
+          "B": "Innerhalb desselben Axons liegt keine chemische Synapse zwischen jedem Abschnitt.",
+          "C": "Myelin ist kein offener Ionenkanal.",
+          "D": "Nach Initiation kann sich das AP ohne externe Reizung jedes Abschnitts fortsetzen.",
+          "E": "Die Ausbreitung beruht auf lokalen Strömen und regenerierten Membranereignissen."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q05",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Warum begünstigt eine kleinere effektive Membrankapazität die schnelle Erregungsausbreitung?",
+      "options": [
+        {
+          "text": "Sie ersetzt sämtliche nodalen Na-Kanäle.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Sie macht den axialen Innenwiderstand zwingend null.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Für dieselbe Spannungsänderung muss weniger Ladung umgeladen werden.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Sie erhöht die dafür nötige Ladung.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Sie verhindert jede depolarisierende Spannungsänderung.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Aktive Regeneration an Schnürringen bleibt nötig. B: Kapazität und axialer Widerstand sind verschiedene Eigenschaften. C: Q = CΔV. D: Q sinkt bei kleinerem C. E: Die Umladung wird gerade erleichtert. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Myelin und Kapazität"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Myelin und Kapazität"
+      ],
+      "questionGoal": "Myelin und Kapazität",
+      "structuredExplanation": {
+        "coreIdea": "Myelin und Kapazität",
+        "correctReasoning": "Q = CΔV.",
+        "wrongAnswerExplanations": {
+          "A": "Aktive Regeneration an Schnürringen bleibt nötig.",
+          "B": "Kapazität und axialer Widerstand sind verschiedene Eigenschaften.",
+          "D": "Q sinkt bei kleinerem C.",
+          "E": "Die Umladung wird gerade erleichtert."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q06",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «myelinisierte saltatorische Leitung».",
+      "options": [
+        {
+          "text": "Das AP wird unter jedem Myelinabschnitt identisch kontinuierlich regeneriert wie an einem Schnürring.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "An erregbaren Schnürringen kann das AP regeneriert werden.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Myelin erhöht den effektiven Membranwiderstand der Internodien.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Zwischen Schnürringen breitet sich die Depolarisation elektrotonisch aus.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Die Regeneration konzentriert sich auf die Schnürringe. B: Dazwischen wird die Depolarisation überwiegend elektrotonisch weitergeleitet. C: Dadurch sinkt der Leckstrom. D: Sie lädt die nächste erregbare Membran auf. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Saltatorische Leitung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Saltatorische Leitung"
+      ],
+      "questionGoal": "Saltatorische Leitung",
+      "structuredExplanation": {
+        "coreIdea": "Saltatorische Leitung",
+        "correctReasoning": "Dazwischen wird die Depolarisation überwiegend elektrotonisch weitergeleitet. Dadurch sinkt der Leckstrom. Sie lädt die nächste erregbare Membran auf.",
+        "wrongAnswerExplanations": {
+          "A": "Die Regeneration konzentriert sich auf die Schnürringe.",
+          "B": "Dazwischen wird die Depolarisation überwiegend elektrotonisch weitergeleitet.",
+          "C": "Dadurch sinkt der Leckstrom.",
+          "D": "Sie lädt die nächste erregbare Membran auf."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q07",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Bei gleicher intrazellulärer spezifischer Resistivität wird der Axondurchmesser verdoppelt. Was geschieht mit dem axialen Widerstand pro Länge ri?",
+      "options": [
+        {
+          "text": "Er vervierfacht sich.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Er verdoppelt sich.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Er bleibt unverändert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Er wird halbiert.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Er wird geviertelt.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies entspricht der umgekehrten Abhängigkeit. B: Grösserer Querschnitt vermindert den Widerstand. C: Die Axongeometrie beeinflusst ri. D: Die Querschnittsfläche, nicht nur der Radius, bestimmt ri. E: Der Querschnitt steigt mit d². Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Axondurchmesser"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Axondurchmesser"
+      ],
+      "questionGoal": "Axondurchmesser",
+      "structuredExplanation": {
+        "coreIdea": "Axondurchmesser",
+        "correctReasoning": "Der Querschnitt steigt mit d².",
+        "wrongAnswerExplanations": {
+          "A": "Dies entspricht der umgekehrten Abhängigkeit.",
+          "B": "Grösserer Querschnitt vermindert den Widerstand.",
+          "C": "Die Axongeometrie beeinflusst ri.",
+          "D": "Die Querschnittsfläche, nicht nur der Radius, bestimmt ri."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q08",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Welche Kombination passt zur schnell leitenden motorischen Aα-Faser gegenüber einer C-Faser?",
+      "options": [
+        {
+          "text": "Kleinerer Durchmesser ohne Myelin.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Grösserer Durchmesser, aber zwingend höheres ri.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Myelin mit erhöhter effektiver Kapazität des Internodiums.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weniger Membranwiderstand und mehr Leckstrom als isolierendes Prinzip.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Grösserer Durchmesser und Myelinisierung.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies passt eher zur langsam leitenden C-Faser. B: ri sinkt bei grösserem Querschnitt. C: Myelin senkt die effektive Kapazität. D: Myelin wirkt in entgegengesetzter Richtung. E: Beide begünstigen schnelle Leitung. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Fasertypen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Fasertypen"
+      ],
+      "questionGoal": "Fasertypen",
+      "structuredExplanation": {
+        "coreIdea": "Fasertypen",
+        "correctReasoning": "Beide begünstigen schnelle Leitung.",
+        "wrongAnswerExplanations": {
+          "A": "Dies passt eher zur langsam leitenden C-Faser.",
+          "B": "ri sinkt bei grösserem Querschnitt.",
+          "C": "Myelin senkt die effektive Kapazität.",
+          "D": "Myelin wirkt in entgegengesetzter Richtung."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q09",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «aktive Ionenströme und passive Leitungseigenschaften».",
+      "options": [
+        {
+          "text": "Ein steiler AP-Aufstrich kann einen kräftigen depolarisierenden Längsstrom unterstützen.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Verringerter verfügbarer Na-Einwärtsstrom kann die Leitung verlangsamen oder blockieren.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Leitungsgeschwindigkeit hängt ausschliesslich vom Durchmesser ab.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein hoher Membranleckstrom verbessert bei sonst gleichen Bedingungen stets die Reichweite.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Er erhöht den Spannungsgradienten zur benachbarten Membran. B: Die aktive Quelle für die nächste Depolarisation wird kleiner. C: Auch Kanäle, Myelin und passive Eigenschaften tragen bei. D: Leck verkürzt die passive Reichweite. Quelle: Originalunterlagen, PDF-S. 7.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Aktive und passive Faktoren"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Aktive und passive Faktoren"
+      ],
+      "questionGoal": "Aktive und passive Faktoren",
+      "structuredExplanation": {
+        "coreIdea": "Aktive und passive Faktoren",
+        "correctReasoning": "Er erhöht den Spannungsgradienten zur benachbarten Membran. Die aktive Quelle für die nächste Depolarisation wird kleiner.",
+        "wrongAnswerExplanations": {
+          "A": "Er erhöht den Spannungsgradienten zur benachbarten Membran.",
+          "B": "Die aktive Quelle für die nächste Depolarisation wird kleiner.",
+          "C": "Auch Kanäle, Myelin und passive Eigenschaften tragen bei.",
+          "D": "Leck verkürzt die passive Reichweite."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q10",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Das extrazelluläre Potential unter einer Kathode wird kurz negativer, das intrazelluläre Potential ändert sich zunächst kaum. Was geschieht mit Vm = innen−aussen?",
+      "options": [
+        {
+          "text": "V_m wird negativer, also hyperpolarisierend.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "V_m bleibt gleich, weil nur Aussenpotential geändert wurde.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine negative Aussenänderung wird automatisch identisch auf V_m addiert.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Vm wird positiver, die Membran depolarisiert.",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Die Änderung beweist ohne Schwellenprüfung bereits ein vollständiges AP.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Ein negativeres Aussenpotential macht innen minus aussen positiver. B: Aussenpotential ist Teil der Spannungsdifferenz. C: Sie wird in innen minus aussen subtrahiert. D: Das Subtrahieren eines negativeren Aussenpotentials erhöht Vm. E: Eine Depolarisation muss nicht überschwelllig sein. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Kathodale Stimulation"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kathodale Stimulation"
+      ],
+      "questionGoal": "Kathodale Stimulation",
+      "structuredExplanation": {
+        "coreIdea": "Kathodale Stimulation",
+        "correctReasoning": "Das Subtrahieren eines negativeren Aussenpotentials erhöht Vm.",
+        "wrongAnswerExplanations": {
+          "A": "Ein negativeres Aussenpotential macht innen minus aussen positiver.",
+          "B": "Aussenpotential ist Teil der Spannungsdifferenz.",
+          "C": "Sie wird in innen minus aussen subtrahiert.",
+          "E": "Eine Depolarisation muss nicht überschwelllig sein."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q11",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Zum Thema «lokale extrazelluläre Stimulation unter Anode und Kathode»: Beurteilen Sie das vereinfachte lokale Stimulationsschema der Folie.",
+      "options": [
+        {
+          "text": "Unter der Anode tritt zunächst eine Hyperpolarisation auf.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Ausreichend starke kathodale Depolarisation kann ein Nerven-AP auslösen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Jede unterschwellige kathodale Reizung löst zwingend ein AP aus.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Ein äusseres Spannungsfeld kann eine Membran nie beeinflussen.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Ein positiveres Aussenpotential macht innen−aussen negativer. B: Sie verschiebt Vm zur Schwelle. C: Die Schwelle muss erreicht werden. D: Gerade diese Wirkung wird zur Stimulation verwendet. Quelle: Originalunterlagen, PDF-S. 9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Anode und Kathode"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Anode und Kathode"
+      ],
+      "questionGoal": "Anode und Kathode",
+      "structuredExplanation": {
+        "coreIdea": "Anode und Kathode",
+        "correctReasoning": "Ein positiveres Aussenpotential macht innen−aussen negativer. Sie verschiebt Vm zur Schwelle.",
+        "wrongAnswerExplanations": {
+          "A": "Ein positiveres Aussenpotential macht innen−aussen negativer.",
+          "B": "Sie verschiebt Vm zur Schwelle.",
+          "C": "Die Schwelle muss erreicht werden.",
+          "D": "Gerade diese Wirkung wird zur Stimulation verwendet."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q12",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo5",
+      "learningObjectiveIds": [
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Zwischen zwei Messorten liegen 0,20 m. Dasselbe AP erreicht den zweiten Ort 2 ms später. Welche Geschwindigkeit ergibt sich?",
+      "options": [
+        {
+          "text": "10 m/s",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "400 m/s",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "0,1 m/s",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "100 m/s",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "0,004 m/s",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zeitumrechnung ist um Faktor zehn falsch. B: Distanz und Verzögerung wurden falsch kombiniert. C: Millisekunden wurden als Sekunden eingesetzt. D: 0,20/0,002 = 100. E: Zeit/Distanz ist nicht die Geschwindigkeit. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Geschwindigkeit berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geschwindigkeit berechnen"
+      ],
+      "questionGoal": "Geschwindigkeit berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Geschwindigkeit berechnen",
+        "correctReasoning": "0,20/0,002 = 100.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zeitumrechnung ist um Faktor zehn falsch.",
+          "B": "Distanz und Verzögerung wurden falsch kombiniert.",
+          "C": "Millisekunden wurden als Sekunden eingesetzt.",
+          "E": "Zeit/Distanz ist nicht die Geschwindigkeit."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q13",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo4",
+      "learningObjectiveIds": [
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «extrazelluläres Potential einer fortgeleiteten Erregung».",
+      "options": [
+        {
+          "text": "Na-Einstrom entzieht dem unmittelbar benachbarten Extrazellulärraum positive Ladung.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "Eine extrazelluläre AP-Kurve muss dieselbe Form und Amplitude wie Vm besitzen.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Ein negativer Ausschlag beweist ohne Kenntnis der Referenz immer eine intrazelluläre Hyperpolarisation.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die bewegte Stromsenke kann an einer stationären Elektrode eine vorübergehende Potentialänderung erzeugen.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der aktive Einstrombereich ist extrazellulär eine Stromsenke. B: Sie hängt auch von Elektrodengeometrie und räumlichen Strömen ab. C: Extrazelluläre und transmembrane Messung sind nicht gleichzusetzen. D: Die Quelle bewegt sich relativ zum Messort. Quelle: Originalunterlagen, PDF-S. 6,10.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Extrazelluläres Signal"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Extrazelluläres Signal"
+      ],
+      "questionGoal": "Extrazelluläres Signal",
+      "structuredExplanation": {
+        "coreIdea": "Extrazelluläres Signal",
+        "correctReasoning": "Der aktive Einstrombereich ist extrazellulär eine Stromsenke. Die Quelle bewegt sich relativ zum Messort.",
+        "wrongAnswerExplanations": {
+          "A": "Der aktive Einstrombereich ist extrazellulär eine Stromsenke.",
+          "B": "Sie hängt auch von Elektrodengeometrie und räumlichen Strömen ab.",
+          "C": "Extrazelluläre und transmembrane Messung sind nicht gleichzusetzen.",
+          "D": "Die Quelle bewegt sich relativ zum Messort."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q14",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "rm = 4 Ω·m, ri = 10⁶ Ω/m, Aussenwiderstand vernachlässigbar. Wie gross ist λ?",
+      "options": [
+        {
+          "text": "2 m",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "4 µm",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "4 mm",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "0,5 mm",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "2 mm",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Die Zehnerpotenz unter der Wurzel wurde ignoriert. B: Dies ist der Quotient in m², noch ohne Wurzel. C: Die Quadratwurzel aus 4 ist 2. D: Zähler und Nenner wurden nicht korrekt eingesetzt. E: √(4×10⁻⁶ m²) = 0,002 m. Quelle: Originalunterlagen, PDF-S. 4.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Kabelgleichung berechnen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Kabelgleichung berechnen"
+      ],
+      "questionGoal": "Kabelgleichung berechnen",
+      "structuredExplanation": {
+        "coreIdea": "Kabelgleichung berechnen",
+        "correctReasoning": "√(4×10⁻⁶ m²) = 0,002 m.",
+        "wrongAnswerExplanations": {
+          "A": "Die Zehnerpotenz unter der Wurzel wurde ignoriert.",
+          "B": "Dies ist der Quotient in m², noch ohne Wurzel.",
+          "C": "Die Quadratwurzel aus 4 ist 2.",
+          "D": "Zähler und Nenner wurden nicht korrekt eingesetzt."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q15",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Im stationären Kabelmodell gilt ΔV(x) = ΔV0 exp(−x/λ). Welcher Anteil bleibt nach 2 λ?",
+      "options": [
+        {
+          "text": "Etwa 37 %",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Etwa 74 %",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Exakt 0 %",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Etwa 13,5 %",
+          "correct": true,
+          "id": "D"
+        },
+        {
+          "text": "Etwa 50 %",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies gilt nach einer Längskonstante. B: Die Restanteile werden nicht addiert. C: Die Exponentialfunktion erreicht bei endlicher Distanz nicht null. D: exp(−2) ≈ 0,135. E: Der Abfall ist exponentiell, nicht eine Halbierung pro λ. Quelle: Originalunterlagen, PDF-S. 3.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Räumlicher Abfall"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Räumlicher Abfall"
+      ],
+      "questionGoal": "Räumlicher Abfall",
+      "structuredExplanation": {
+        "coreIdea": "Räumlicher Abfall",
+        "correctReasoning": "exp(−2) ≈ 0,135.",
+        "wrongAnswerExplanations": {
+          "A": "Dies gilt nach einer Längskonstante.",
+          "B": "Die Restanteile werden nicht addiert.",
+          "C": "Die Exponentialfunktion erreicht bei endlicher Distanz nicht null.",
+          "E": "Der Abfall ist exponentiell, nicht eine Halbierung pro λ."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q16",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Bei gleichem spezifischem Membranwiderstand und gleicher Resistivität: Beurteilen Sie ein zylindrisches Axon mit verdoppeltem Durchmesser.",
+      "options": [
+        {
+          "text": "ri pro Länge sinkt auf ein Viertel.",
+          "correct": true,
+          "id": "A"
+        },
+        {
+          "text": "λ muss sich allein aufgrund von ri verdoppeln, wenn alle geometrischen Änderungen mitgerechnet werden.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Bei vernachlässigbarem Aussenwiderstand wächst λ um √2.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "rm pro Länge bleibt wegen gleicher Membraneigenschaft unverändert.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Der Querschnitt vervierfacht sich. B: Auch rm pro Länge verändert sich. C: √[(rm/2)/(ri/4)] = √2×λ. D: Die Membranoberfläche pro Länge verdoppelt sich; rm halbiert sich. Quelle: Originalunterlagen, PDF-S. 4,7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Geometrie konsistent halten"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "application",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Geometrie konsistent halten"
+      ],
+      "questionGoal": "Geometrie konsistent halten",
+      "structuredExplanation": {
+        "coreIdea": "Geometrie konsistent halten",
+        "correctReasoning": "Der Querschnitt vervierfacht sich. √[(rm/2)/(ri/4)] = √2×λ.",
+        "wrongAnswerExplanations": {
+          "A": "Der Querschnitt vervierfacht sich.",
+          "B": "Auch rm pro Länge verändert sich.",
+          "C": "√[(rm/2)/(ri/4)] = √2×λ.",
+          "D": "Die Membranoberfläche pro Länge verdoppelt sich; rm halbiert sich."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q17",
+      "type": "A",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Warum kann ein AP trotz passiver Verluste lange Axonstrecken überwinden?",
+      "options": [
+        {
+          "text": "Der initiale passive Impuls breitet sich ohne jeden Verlust aus.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Die Na/K-Pumpe erzeugt jeden schnellen Aufstrich unmittelbar.",
+          "correct": false,
+          "id": "B"
+        },
+        {
+          "text": "Eine einzige Na-Ladungswolke diffundiert unverändert bis ans Axonende.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Die Membrankapazität entfällt bei überschwelliger Reizung vollständig.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Spannungsabhängige Kanäle regenerieren die Erregung an nachfolgenden erregbaren Abschnitten.",
+          "correct": true,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Passive Ausbreitung nimmt räumlich ab. B: Spannungsabhängige Kanäle vermitteln die schnelle Regeneration. C: Lokale Ströme lösen nacheinander neue Erregung aus. D: Sie bleibt eine elektrische Membraneigenschaft. E: Die Energie stammt aus erhaltenen Ionengradienten. Quelle: Originalunterlagen, PDF-S. 5–6.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Regeneration statt Abklingen"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Regeneration statt Abklingen"
+      ],
+      "questionGoal": "Regeneration statt Abklingen",
+      "structuredExplanation": {
+        "coreIdea": "Regeneration statt Abklingen",
+        "correctReasoning": "Die Energie stammt aus erhaltenen Ionengradienten.",
+        "wrongAnswerExplanations": {
+          "A": "Passive Ausbreitung nimmt räumlich ab.",
+          "B": "Spannungsabhängige Kanäle vermitteln die schnelle Regeneration.",
+          "C": "Lokale Ströme lösen nacheinander neue Erregung aus.",
+          "D": "Sie bleibt eine elektrische Membraneigenschaft."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q18",
+      "type": "KPRIM",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo2",
+      "learningObjectiveIds": [
+        "lo2",
+        "lo4"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Leitung nach künstlicher Reizung in Axonmitte».",
+      "options": [
+        {
+          "text": "Elektrotonischer Strom kann nur nach distal und niemals nach proximal fliessen.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Eine künstliche Reizung in der Mitte eines erregbaren Axons kann APs in beide Richtungen auslösen.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Der kürzlich erregte Bereich ist vorübergehend weniger oder nicht erneut erregbar.",
+          "correct": true,
+          "id": "C"
+        },
+        {
+          "text": "Jede Axonmembran besitzt ein absolutes anatomisches Einwegventil für APs.",
+          "correct": false,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Lokale Stromwege sind nicht grundsätzlich einseitig. B: Beide benachbarten Seiten können zunächst erregbar sein. C: Refraktärität begünstigt die fortschreitende Wellenfront. D: Die bevorzugte physiologische Richtung folgt nicht aus einem solchen Ventil. Quelle: Originalunterlagen, PDF-S. 5,9.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Ausbreitungsrichtung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Ausbreitungsrichtung"
+      ],
+      "questionGoal": "Ausbreitungsrichtung",
+      "structuredExplanation": {
+        "coreIdea": "Ausbreitungsrichtung",
+        "correctReasoning": "Beide benachbarten Seiten können zunächst erregbar sein. Refraktärität begünstigt die fortschreitende Wellenfront.",
+        "wrongAnswerExplanations": {
+          "A": "Lokale Stromwege sind nicht grundsätzlich einseitig.",
+          "B": "Beide benachbarten Seiten können zunächst erregbar sein.",
+          "C": "Refraktärität begünstigt die fortschreitende Wellenfront.",
+          "D": "Die bevorzugte physiologische Richtung folgt nicht aus einem solchen Ventil."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q19",
+      "type": "A",
+      "difficulty": 4,
+      "difficultyLevel": "hard",
+      "learningObjectiveId": "lo3",
+      "learningObjectiveIds": [
+        "lo3"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Welcher unmittelbare passive Effekt passt zum Verlust isolierenden Myelins?",
+      "options": [
+        {
+          "text": "Höherer Internodienwiderstand und geringere Kapazität.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Mehr Leckstrom und mehr umzuladende effektive Membrankapazität.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Geringerer axialer Innenwiderstand als alleiniger unmittelbarer Effekt.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "Weniger Leckstrom bei unverändertem Axon.",
+          "correct": false,
+          "id": "D"
+        },
+        {
+          "text": "Automatisch kleinere kapazitive Last jedes Internodiums.",
+          "correct": false,
+          "id": "E"
+        }
+      ],
+      "explanation": "A: Dies beschreibt die isolierende Wirkung erhaltenen Myelins. B: Beides erschwert die schnelle Depolarisation nachfolgender Abschnitte. C: Myelinverlust betrifft primär die Membranisolation. D: Die Isolation wird gerade vermindert. E: Die effektive Kapazität nimmt bei Myelinverlust eher zu. Quelle: Originalunterlagen, PDF-S. 7–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Demyelinisierung"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "transfer",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Demyelinisierung"
+      ],
+      "questionGoal": "Demyelinisierung",
+      "structuredExplanation": {
+        "coreIdea": "Demyelinisierung",
+        "correctReasoning": "Beides erschwert die schnelle Depolarisation nachfolgender Abschnitte.",
+        "wrongAnswerExplanations": {
+          "A": "Dies beschreibt die isolierende Wirkung erhaltenen Myelins.",
+          "C": "Myelinverlust betrifft primär die Membranisolation.",
+          "D": "Die Isolation wird gerade vermindert.",
+          "E": "Die effektive Kapazität nimmt bei Myelinverlust eher zu."
+        }
+      }
+    },
+    {
+      "id": "j1_s1_b3_kvsw05_q20",
+      "type": "KPRIM",
+      "difficulty": 3,
+      "difficultyLevel": "medium",
+      "learningObjectiveId": "lo1",
+      "learningObjectiveIds": [
+        "lo1",
+        "lo3",
+        "lo5"
+      ],
+      "blockId": "block3",
+      "lectureId": "KVSW05",
+      "stem": "Beurteilen Sie die Aussagen zum Thema «Längskonstante und zeitliche Membranaufladung».",
+      "options": [
+        {
+          "text": "λ und Leitungsgeschwindigkeit haben dieselbe Einheit.",
+          "correct": false,
+          "id": "A"
+        },
+        {
+          "text": "Membrankapazität beeinflusst zeitliche Aufladung.",
+          "correct": true,
+          "id": "B"
+        },
+        {
+          "text": "Die stationäre λ-Formel allein bestimmt sämtliche zeitlichen Details des APs.",
+          "correct": false,
+          "id": "C"
+        },
+        {
+          "text": "λ ist eine räumliche Grösse.",
+          "correct": true,
+          "id": "D"
+        }
+      ],
+      "explanation": "A: Geschwindigkeit ist Länge pro Zeit. B: Für ΔV muss Ladung CΔV bewegt werden. C: Dafür werden auch Kapazität und aktive Kanalprozesse benötigt. D: Ihre Einheit ist eine Länge. Quelle: Originalunterlagen, PDF-S. 3–8.",
+      "trap": "",
+      "tags": [
+        "J1",
+        "Semester 1",
+        "Block 3",
+        "KVSW05",
+        "Länge und Zeit"
+      ],
+      "sourceReliability": "high",
+      "bloomLevel": "understanding",
+      "reviewStatus": "reviewed",
+      "concepts": [
+        "Länge und Zeit"
+      ],
+      "questionGoal": "Länge und Zeit",
+      "structuredExplanation": {
+        "coreIdea": "Länge und Zeit",
+        "correctReasoning": "Für ΔV muss Ladung CΔV bewegt werden. Ihre Einheit ist eine Länge.",
+        "wrongAnswerExplanations": {
+          "A": "Geschwindigkeit ist Länge pro Zeit.",
+          "B": "Für ΔV muss Ladung CΔV bewegt werden.",
+          "C": "Dafür werden auch Kapazität und aktive Kanalprozesse benötigt.",
+          "D": "Ihre Einheit ist eine Länge."
+        }
+      }
+    }
+  ]
+}
