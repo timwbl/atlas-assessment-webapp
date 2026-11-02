@@ -49,7 +49,7 @@ import type {
 type Scope = "all" | "current" | ExamId;
 
 export function AltfragenLibrary() {
-  const { settings } = useUserStudyContext();
+  const { contentSettings: settings } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
   const [documents, setDocuments] = useState<AltfragenDocument[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});

@@ -105,6 +105,16 @@ export function defaultStudySettings(ariEnabled = false): UserStudySettings {
   };
 }
 
+export function studySettingsForContent(settings: UserStudySettings, isAdmin: boolean): UserStudySettings {
+  if (!isAdmin) return settings;
+  return {
+    ...settings,
+    studyYear: null,
+    semester: null,
+    examPreparation: { mode: "semester", selectedExams: [] }
+  };
+}
+
 export function semesterConfig(
   semester: StudySemester | null,
   studyYear: StudyYear | null = "year1"

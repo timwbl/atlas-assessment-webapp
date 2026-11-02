@@ -37,7 +37,7 @@ const PROFILE_NAME_CHANGED_EVENT = "atlas-profile-name-changed";
 type AuthMode = "signin" | "signup" | "name" | "check-email";
 
 export function AccountMenu() {
-  const { settings: studySettings } = useUserStudyContext();
+  const { contentSettings: studySettings, isAdmin } = useUserStudyContext();
   const router = useRouter();
   const menuRef = useRef<HTMLDivElement | null>(null);
   const nameInputRef = useRef<HTMLInputElement | null>(null);
@@ -266,7 +266,7 @@ export function AccountMenu() {
           <span className="account-avatar-mark">{initials}</span>
           <span className="account-avatar-copy">
             <strong>{displayName || "Gastprofil"}</strong>
-            <small>{semesterHeading(studySettings)}</small>
+            <small>{isAdmin ? "ADMIN · Alle Studienjahre" : semesterHeading(studySettings)}</small>
           </span>
           <AtlasIcon className="account-avatar-chevron" name="chevronRight" />
         </button>
@@ -283,7 +283,7 @@ export function AccountMenu() {
 
             <div className="account-popover-list">
               <AccountMenuItem
-                detail={semesterHeading(studySettings)}
+                detail={isAdmin ? "ADMIN · Alle Studienjahre" : semesterHeading(studySettings)}
                 icon="settings"
                 label="Einstellungen"
                 onClick={() => {

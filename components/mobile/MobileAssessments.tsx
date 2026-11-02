@@ -19,7 +19,7 @@ import {
 
 export function MobileAssessments() {
   const data = useMobileLearningData();
-  const { settings } = useUserStudyContext();
+  const { contentSettings: settings } = useUserStudyContext();
   const [query, setQuery] = useState("");
   const [selectedExam, setSelectedExam] = useState<ExamId | null>(null);
   const filtered = useMemo(() => {

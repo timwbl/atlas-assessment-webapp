@@ -52,7 +52,7 @@ type DashboardScope = {
 
 export function DashboardClient() {
   const data = useMobileLearningData();
-  const { settings } = useUserStudyContext();
+  const { contentSettings: settings, isAdmin } = useUserStudyContext();
   const [firstName, setFirstName] = useState("");
 
   useEffect(() => {
@@ -87,10 +87,10 @@ export function DashboardClient() {
     };
   }, []);
   const scopedSettings = useMemo(() => {
-    if (settings.studyYear && settings.semester) return settings;
+    if (isAdmin || (settings.studyYear && settings.semester)) return settings;
     const current = semesterPeriod();
     return current ? settingsForSemester(settings, current.semester, "year1") : settings;
-  }, [settings]);
+  }, [isAdmin, settings]);
   const scopedAssessments = useMemo(
     () => data.allAssessments.filter((assessment) => matchesStudyProfile(assessment, scopedSettings)),
     [data.allAssessments, scopedSettings]

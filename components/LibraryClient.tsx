@@ -54,7 +54,7 @@ import { useUserStudyContext } from "./study/UserStudyProvider";
 const EXERCISES_PER_PAGE = 8;
 
 export function LibraryClient() {
-  const { hydrated, settings } = useUserStudyContext();
+  const { hydrated, contentSettings: settings, isAdmin } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [query, setQuery] = useState("");
@@ -120,10 +120,11 @@ export function LibraryClient() {
 
   const deferredQuery = useDeferredValue(query);
   const semesterOptions = useMemo(() => {
+    if (isAdmin) return DOWNLOAD_SEMESTERS;
     const activeStudyYear = settings.studyYear || (semester ? studyProfileForLegacyId(semester)?.studyYear : null);
     if (!activeStudyYear) return DOWNLOAD_SEMESTERS;
     return DOWNLOAD_SEMESTERS.filter((item) => studyProfileForLegacyId(item.id)?.studyYear === activeStudyYear);
-  }, [semester, settings.studyYear]);
+  }, [isAdmin, semester, settings.studyYear]);
   const assessments = useMemo(
     () => loaded
       .map((item) => item.assessment)
@@ -270,7 +271,7 @@ export function LibraryClient() {
           <h2>{semester ? semesterTitle(semester) : "Fachsemester wählen"}</h2>
           <p>Die Blockkarten zeigen nur Inhalte, die zu deiner aktuellen Auswahl passen.</p>
           <Link className="exercise-profile-link" href="/settings">
-            Fachsemester im Profil ändern
+            {isAdmin ? "Admin · Alle Studienjahre verfügbar" : "Fachsemester im Profil ändern"}
           </Link>
         </div>
         <div className="exercise-control-actions">

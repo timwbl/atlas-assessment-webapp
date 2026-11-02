@@ -30,7 +30,7 @@ import {
 } from "@/lib/studyProgram";
 
 export function DownloadLibrary() {
-  const { hydrated, settings } = useUserStudyContext();
+  const { hydrated, contentSettings: settings } = useUserStudyContext();
   const [downloads, setDownloads] = useState<SummaryDownload[]>([]);
   const [query, setQuery] = useState("");
   const [semester, setSemester] = useState<SemesterId | "">("");

@@ -28,7 +28,7 @@ export function StudyProfileSettings({
   onDone?: () => void;
   submitLabel?: string;
 }) {
-  const { settings, updateSettings } = useUserStudyContext();
+  const { settings, updateSettings, isAdmin } = useUserStudyContext();
   const [draft, setDraft] = useState<UserStudySettings>(settings);
 
   useEffect(() => setDraft(settings), [settings]);
@@ -69,6 +69,16 @@ export function StudyProfileSettings({
   const selectedExam = draft.examPreparation.mode === "singleExam"
     ? draft.examPreparation.selectedExams[0]
     : "all";
+
+  if (isAdmin) {
+    return (
+      <div className="study-profile-editor">
+        <h2>ADMIN · Alle Studienjahre</h2>
+        <p>Dein Admin-Profil zeigt alle verfügbaren Studienjahre, Fachsemester und Prüfungen. Du kannst die Inhalte direkt im jeweiligen Bereich auswählen.</p>
+        {onDone && <button className="btn-primary" onClick={onDone} type="button">Schliessen</button>}
+      </div>
+    );
+  }
 
   return (
     <div className="study-profile-editor">

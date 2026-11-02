@@ -29,7 +29,7 @@ const NAME_KEY = "atlas-user-display-name";
 const PROFILE_NAME_CHANGED_EVENT = "atlas-profile-name-changed";
 
 export function SettingsPageClient() {
-  const { settings, updateSettings } = useUserStudyContext();
+  const { settings, updateSettings, isAdmin } = useUserStudyContext();
   const [user, setUser] = useState<CloudUser | null>(null);
   const [profile, setProfile] = useState<CloudProfile | null>(null);
   const [displayName, setDisplayName] = useState("");
@@ -174,7 +174,7 @@ export function SettingsPageClient() {
         <div className="settings-profile-copy">
           <strong>{resolvedName}</strong>
           <span>{email}</span>
-          <small>{semesterHeading(settings)}</small>
+          <small>{isAdmin ? "ADMIN · Alle Studienjahre" : semesterHeading(settings)}</small>
         </div>
         <button
           className="btn-secondary settings-profile-edit"
@@ -198,29 +198,29 @@ export function SettingsPageClient() {
         <div className="settings-section-head">
           <div>
             <h2>Lernprofil</h2>
-            <p>ATLAS filtert Übungen, Fortschritt und Lernphase anhand dieser Auswahl.</p>
+            <p>{isAdmin ? "Dein Admin-Profil zeigt alle verfügbaren Studienjahre, Fachsemester und Prüfungen." : "ATLAS filtert Übungen, Fortschritt und Lernphase anhand dieser Auswahl."}</p>
           </div>
         </div>
         {!editingProfile ? (
           <div className="settings-summary-list">
             <div className="settings-summary-row">
               <span>Studienjahr</span>
-              <strong>{STUDY_YEARS.find((year) => year.id === settings.studyYear)?.label || "Nicht festgelegt"}</strong>
+              <strong>{isAdmin ? "Alle Studienjahre" : STUDY_YEARS.find((year) => year.id === settings.studyYear)?.label || "Nicht festgelegt"}</strong>
             </div>
             <div className="settings-summary-row">
               <span>Fachsemester / Lernphase</span>
-              <strong>{activeSemester ? `${activeSemester.label} · ${activeSemester.shortLabel}` : "Nicht festgelegt"}</strong>
+              <strong>{isAdmin ? "Alle Fachsemester" : activeSemester ? `${activeSemester.label} · ${activeSemester.shortLabel}` : "Nicht festgelegt"}</strong>
             </div>
             <div className="settings-summary-row">
               <span>Prüfungsvorbereitung</span>
-              <strong>{activeExamLabel}</strong>
+              <strong>{isAdmin ? "Alle Prüfungen" : activeExamLabel}</strong>
             </div>
           </div>
         ) : (
           <div className="settings-edit-submenu" aria-label="Lernprofil bearbeiten">
             <div className="settings-submenu-head">
               <h3>Profil bearbeiten</h3>
-              <p>Ändere hier Name, Studienjahr, Fachsemester und Prüfungsfilter.</p>
+              <p>{isAdmin ? "Ändere hier deinen Profilnamen. Als Admin kannst du jederzeit alle Inhalte sehen." : "Ändere hier Name, Studienjahr, Fachsemester und Prüfungsfilter."}</p>
             </div>
 
             <label className="settings-edit-field">
@@ -237,6 +237,13 @@ export function SettingsPageClient() {
               />
             </label>
 
+            {isAdmin ? (
+              <div className="study-placeholder">
+                <strong>ADMIN · Alle Studienjahre</strong>
+                <span>Fachsemester und Prüfungen lassen sich direkt in den Inhaltsbereichen auswählen.</span>
+              </div>
+            ) : (
+              <>
             <label className="settings-edit-field">
               <span>Studienjahr</span>
               <AtlasDropdown
@@ -311,6 +318,9 @@ export function SettingsPageClient() {
                     </div>
                   </div>
                 )}
+              </>
+            )}
+
               </>
             )}
 

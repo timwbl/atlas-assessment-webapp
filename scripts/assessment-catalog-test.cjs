@@ -6,6 +6,12 @@ const {
   normalizeAssessmentSubject,
   parseAssessmentSortKey
 } = require(path.resolve(process.argv[2]));
+const {
+  matchesStudyProfile,
+  normalizeStudySettings,
+  selectedBlockIds,
+  studySettingsForContent
+} = require(path.join(path.dirname(path.resolve(process.argv[2])), "studyProgram.js"));
 
 function assessment(lectureCode, title = lectureCode) {
   return {
@@ -98,4 +104,23 @@ assert.equal(assessmentMatchesLibraryBlock({ block: "Prüfungssimulationen MC1" 
 assert.equal(assessmentMatchesLibraryBlock({ block: "Alte Fragen MC2" }, { title: "Altfragen", matchTerms: ["alte fragen"] }), true);
 assert.equal(assessmentMatchesLibraryBlock({ block: "Altfragen", title: "Altfragen Block 1" }, { title: "Block 1" }), false);
 assert.equal(assessmentMatchesLibraryBlock({ block: "Altfragen", title: "Altfragen Block 1" }, { title: "Altfragen" }), true);
-console.log("Assessment catalog tests passed, including study-year and altfragen isolation.");
+// A saved year-two profile must not hide any available semester for an admin.
+const savedStudySettings = normalizeStudySettings({
+  studyYear: "year2",
+  semester: "hs",
+  examPreparation: { mode: "singleExam", selectedExams: ["eMC1"] },
+  ariEnabled: true
+});
+const adminSettings = studySettingsForContent(savedStudySettings, true);
+const studentSettings = studySettingsForContent(savedStudySettings, false);
+const catalogBlocks = ["Block 1", "Block 4", "Block 5", "Block 9", "J2 Block 1", "J2 Block 3", "J2 Block 4", "J2 Block 6"];
+const visibleBlocks = (settings) => catalogBlocks.filter((block) => matchesStudyProfile({ block }, settings));
+assert.deepEqual(visibleBlocks(adminSettings), catalogBlocks);
+assert.deepEqual(visibleBlocks(studentSettings), ["J2 Block 1", "J2 Block 3"]);
+assert.equal(adminSettings.ariEnabled, true);
+assert.deepEqual(selectedBlockIds(adminSettings), []);
+assert.equal(savedStudySettings.studyYear, "year2");
+assert.equal(savedStudySettings.semester, "hs");
+assert.equal(matchesStudyProfile({ block: "Altfragen Block 5" }, adminSettings, { altfragen: true }), true);
+assert.equal(matchesStudyProfile({ block: "Altfragen Block 5" }, adminSettings), false);
+console.log("Assessment catalog tests passed, including admin access across all study years and unchanged student filters.");

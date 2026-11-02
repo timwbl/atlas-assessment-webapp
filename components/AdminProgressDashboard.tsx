@@ -36,7 +36,7 @@ export function AdminProgressDashboard() {
   const filteredProfiles = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return profiles.filter((profile) => {
-      if (year !== "all" && String(profile.studyYear || "unknown") !== year) return false;
+      if (year !== "all" && profile.role !== "admin" && String(profile.studyYear || "unknown") !== year) return false;
       if (circle !== "all" && profile.closeCircle !== (circle === "yes")) return false;
       if (role !== "all" && profile.role !== role) return false;
       return !needle || [
@@ -173,14 +173,14 @@ export function AdminProgressDashboard() {
           return (
             <article key={profile.id} className={isAdmin ? "admin-user--admin" : undefined}>
               <div className="admin-user-identity">
-                <div title={profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"} className={`admin-user-avatar study-year-color study-year-color--${profile.studyYear || "unknown"}`}>{initials(profile.displayName || profile.email)}</div>
+                <div title={isAdmin ? "Alle Studienjahre" : profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"} className={`admin-user-avatar study-year-color study-year-color--${isAdmin ? "unknown" : profile.studyYear || "unknown"}`}>{initials(profile.displayName || profile.email)}</div>
                 <div>
                   <div className="admin-user-name">
                     <strong>{profile.displayName || "Name nicht hinterlegt"}</strong>
                     {isAdmin && <span className="admin-user-badge">ADMIN</span>}
                   </div>
                   <span>{profile.email}</span>
-                  <small>{profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"}</small>
+                  <small>{isAdmin ? "Alle Studienjahre" : profile.studyYear ? `${profile.studyYear}. Studienjahr` : "Studienjahr nicht angegeben"}</small>
                 </div>
               </div>
               <div className="admin-circle-control">

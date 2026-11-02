@@ -34,7 +34,7 @@ export type MobileLearningData = {
 };
 
 export function useMobileLearningData(): MobileLearningData {
-  const { settings, hydrated } = useUserStudyContext();
+  const { contentSettings: settings, hydrated } = useUserStudyContext();
   const [assessments, setAssessments] = useState<AssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [resume, setResume] = useState<ActiveQuizSession | null>(null);

@@ -15,10 +15,12 @@ import {
   normalizeStudySettings,
   semesterPeriod,
   settingsForSemester,
+  studySettingsForContent,
   type StudySemester,
   type UserStudySettings
 } from "@/lib/studyProgram";
 import {
+  getCurrentProfile,
   getCurrentUser,
   updateCurrentUserStudySettings
 } from "@/lib/cloudProgress";
@@ -35,6 +37,8 @@ type SemesterPromptState = {
 
 type StudyContextValue = {
   settings: UserStudySettings;
+  contentSettings: UserStudySettings;
+  isAdmin: boolean;
   hydrated: boolean;
   onboardingOpen: boolean;
   profileEditorOpen: boolean;
@@ -58,6 +62,7 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
   const [semesterPromptOpen, setSemesterPromptOpen] = useState(false);
   const [suggestedSemester, setSuggestedSemester] = useState<StudySemester | null>(null);
   const [authenticated, setAuthenticated] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [currentUserId, setCurrentUserId] = useState<string | null>(null);
   const loadGeneration = useRef(0);
 
@@ -71,6 +76,7 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
     const guestLocal = readLocalSettings();
     let next = guestLocal;
     let userId: string | null = null;
+    let admin = false;
     try {
       const user = await getCurrentUser();
       userId = user?.id || null;
@@ -91,6 +97,8 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
         } else {
           next = defaultStudySettings(false);
         }
+        const profile = await getCurrentProfile(user).catch(() => null);
+        admin = profile?.role === "admin";
       }
     } catch {
       // Local settings remain authoritative while offline.
@@ -98,13 +106,13 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
 
     if (generation !== loadGeneration.current) return;
     setSettings(next);
+    setIsAdmin(admin);
     setAuthenticated(!!userId);
     setCurrentUserId(userId);
     setHydrated(true);
 
-    // Guests can configure their profile manually, but never receive recurring
-    // automatic profile or semester prompts.
-    if (!userId) return;
+    // Guests and admins are not assigned a semester by automatic prompts.
+    if (!userId || admin) return;
 
     if (!next.studyYear && !readBoolean(onboardingDismissedKey(userId))) {
       setOnboardingOpen(true);
@@ -166,8 +174,11 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
     setSemesterPromptOpen(false);
   }, [currentUserId, settings.semester]);
 
+  const contentSettings = useMemo(() => studySettingsForContent(settings, isAdmin), [settings, isAdmin]);
   const value = useMemo<StudyContextValue>(() => ({
     settings,
+    contentSettings,
+    isAdmin,
     hydrated,
     onboardingOpen,
     profileEditorOpen,
@@ -182,7 +193,9 @@ export function UserStudyProvider({ children }: { children: ReactNode }) {
   }), [
     dismissOnboarding,
     authenticated,
+    contentSettings,
     hydrated,
+    isAdmin,
     keepCurrentSemester,
     onboardingOpen,
     profileEditorOpen,
