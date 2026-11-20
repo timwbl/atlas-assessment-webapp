@@ -13,6 +13,8 @@ import { loadAssessmentById } from "@/lib/assessmentClient";
 import { ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT } from "@/lib/assessmentRouteContext";
 import { collectAssessmentTags } from "@/lib/assessmentValidator";
 import { formatBlockLabel } from "@/lib/blockLabels";
+import { altfragenCatalogBlockLabel, altfragenCatalogExam } from "@/lib/altfragenCatalog";
+import { examLabel } from "@/lib/studyProgram";
 import { cloudSyncAvailable, resetCloudProgress, syncAssessmentProgress } from "@/lib/cloudProgress";
 import { rememberAssessmentLibrarySelectionFromAssessment } from "@/lib/librarySelection";
 import { getProgress, resetProgress, reviewQuestionIds } from "@/lib/progressStore";
@@ -115,6 +117,8 @@ export function AssessmentDetailClient({ id }: { id: string }) {
   const backHref = isAltfragen ? "/altfragen" : "/assessments";
   const backLabel = isAltfragen ? "Zu den Altfragen" : "Zu den Übungen";
   const quizOrigin = isAltfragen ? "&origin=altfragen" : "";
+  const altfragenExam = isAltfragen ? altfragenCatalogExam(assessment) : null;
+  const blockLabel = isAltfragen ? altfragenCatalogBlockLabel(assessment) : formatBlockLabel(assessment.block);
 
   if (isAltfragen && !altfragenAccess) {
     return (
@@ -131,7 +135,9 @@ export function AssessmentDetailClient({ id }: { id: string }) {
 
       <header className="assessment-detail-head">
         <div className="assessment-detail-intro">
-          <div className="assessment-detail-kicker">{assessment.lectureCode} · {formatBlockLabel(assessment.block)}</div>
+          <div className="assessment-detail-kicker">
+            {[assessment.lectureCode, blockLabel, altfragenExam && examLabel(altfragenExam)].filter(Boolean).join(" · ")}
+          </div>
           <h1 className="detail-title assessment-detail-title">{assessment.title}</h1>
           <div className="assessment-detail-description-panel" aria-label="Beschreibung">
             <span>Beschreibung</span>

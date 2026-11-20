@@ -1434,7 +1434,7 @@ body {
 
 .altfragen-practice-footer strong {
   margin-left: auto;
-  color: var(--altfragen-accent, var(--atlas-blue));
+  color: color-mix(in srgb, var(--altfragen-accent, var(--atlas-blue)) 50%, var(--atlas-text));
   font-weight: 760;
 }
 

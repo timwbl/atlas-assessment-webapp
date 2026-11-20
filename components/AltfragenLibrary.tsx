@@ -12,8 +12,9 @@ import {
   canAccessAltfragen
 } from "@/lib/altfragenAccess";
 import { loadAssessmentSummaries, loadMc1AltfragenSummaries } from "@/lib/assessmentClient";
-import { formatBlockLabel } from "@/lib/blockLabels";
-import { blockColor } from "@/lib/blockColors";
+import {
+  altfragenBlockAccent, altfragenCatalogBlockLabel, altfragenCatalogBlocks, altfragenCatalogExam
+} from "@/lib/altfragenCatalog";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
 import {
   blocksForSemester,
@@ -30,7 +31,6 @@ import {
 import {
   blockIdForContent,
   examForBlock,
-  examForContent,
   examsForSemester,
   examLabel,
   isAltfragenValue,
@@ -40,7 +40,7 @@ import {
   type ExamId
 } from "@/lib/studyProgram";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
-import { mc1Catalog, mc1CatalogBlockLabel } from "@/lib/mc1Altfragen";
+import { mc1Catalog } from "@/lib/mc1Altfragen";
 import type {
   AssessmentProgress,
   AssessmentSummary,
@@ -152,8 +152,8 @@ export function AltfragenLibrary() {
   );
   const blockOptions = useMemo(
     () => [...new Set([
-      ...assessments.flatMap(altfragenBlocks),
-      ...documents.flatMap((item) => altfragenDocumentBlocks(item).map((block) => block.canonicalBlockId || blockIdForContent(block.title))),
+      ...assessments.flatMap(altfragenCatalogBlocks),
+      ...documents.flatMap(documentBlockIds),
       ...DOWNLOAD_SEMESTERS
         .filter((semester) => {
           if (!settings.studyYear || !settings.semester) return true;
@@ -176,8 +176,8 @@ export function AltfragenLibrary() {
     const needle = query.trim().toLowerCase();
     const profileBlockIds = selectedBlockIds(settings);
     return assessments.filter((assessment) => {
-      const exam = altfragenExam(assessment);
-      const assessmentBlocks = altfragenBlocks(assessment);
+      const exam = altfragenCatalogExam(assessment);
+      const assessmentBlocks = altfragenCatalogBlocks(assessment);
       const scopeMatches = scope === "all"
         || (scope === "current" && (currentExams.length === 0 || (!!exam && currentExams.includes(exam))))
         || scope === exam;
@@ -200,19 +200,14 @@ export function AltfragenLibrary() {
     const needle = query.trim().toLowerCase();
     const profileBlockIds = selectedBlockIds(settings);
     return documents.filter((document) => {
-      const documentBlocks = altfragenDocumentBlocks(document);
-      const documentBlockIds = documentBlocks
-        .map((block) => block.canonicalBlockId || blockIdForContent(block.title))
-        .filter((value): value is string => !!value);
-      const exams = documentBlocks
-        .map((block) => examForBlock(block.canonicalBlockId || block.title))
-        .filter((value): value is ExamId => !!value);
+      const blocks = documentBlockIds(document);
+      const exams = blocks.map(examForBlock);
       const scopeMatches = scope === "all"
-        || (scope === "current" && (currentExams.length === 0 || exams.some((exam) => currentExams.includes(exam))))
+        || (scope === "current" && (currentExams.length === 0 || exams.some((exam) => !!exam && currentExams.includes(exam))))
         || (scope !== "current" && exams.includes(scope));
       const profileMatches = scope === "all"
         || profileBlockIds.length === 0
-        || documentBlockIds.some((id) => profileBlockIds.includes(id));
+        || blocks.some((id) => profileBlockIds.includes(id));
       const queryMatches = !needle || [
         document.title,
         document.description,
@@ -223,7 +218,7 @@ export function AltfragenLibrary() {
       return scopeMatches
         && profileMatches
         && queryMatches
-        && (!blockId || documentBlockIds.includes(blockId));
+        && (!blockId || blocks.includes(blockId));
     });
   }, [blockId, currentExams, documents, query, scope, settings]);
 
@@ -299,7 +294,7 @@ export function AltfragenLibrary() {
                   { value: "", label: "Alle Blöcke" },
                   ...blockOptions.map((value) => ({
                     value,
-                    label: formatBlockOptionLabel(value)
+                    label: formatBlockOptionLabel(value, blockOptions)
                   }))
                 ]}
               />
@@ -376,7 +371,7 @@ export function AltfragenLibrary() {
                           <article
                             className="altfragen-document-card"
                             key={document.id}
-                            style={{ "--download-accent": blockColor(altfragenDocumentBlocks(document)[0]?.canonicalBlockId || altfragenDocumentBlocks(document)[0]?.title || document.blockTitle) } as CSSProperties}
+                            style={{ "--download-accent": altfragenBlockAccent(documentBlockIds(document)) } as CSSProperties}
                           >
                             <div className="altfragen-document-icon" aria-hidden="true">
                               <span>{fileTypeLabel(document)}</span>
@@ -426,17 +421,27 @@ function fileTypeLabel(document: AltfragenDocument): string {
   return document.fileName.split(".").pop()?.toUpperCase() || document.fileType || "Datei";
 }
 
+function documentBlockIds(document: AltfragenDocument): string[] {
+  return altfragenDocumentBlocks(document)
+    .map((block) => block.canonicalBlockId || blockIdForContent(block.title))
+    .filter((id): id is string => !!id);
+}
+
 function AltfragenAssessmentCard({ assessment, progress }: { assessment: AssessmentSummary; progress?: AssessmentProgress }) {
   const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
   const percent = assessment.questionCount ? Math.round((seen / assessment.questionCount) * 100) : 0;
-  const accent = blockColor(assessment.block);
+  const blocks = altfragenCatalogBlocks(assessment);
+  const accent = altfragenBlockAccent(blocks);
   const mc1 = mc1Catalog(assessment.id);
-  const blockLabel = mc1CatalogBlockLabel(assessment.id) || formatBlockLabel(assessment.block);
-  const exam = altfragenExam(assessment);
+  const blockLabel = altfragenCatalogBlockLabel(assessment);
+  const exam = altfragenCatalogExam(assessment);
   const icon = mc1?.blocks.length === 3
     ? assessment.title.includes("Mischserie") ? "target" : "archive"
-    : blockIcon(mc1 ? assessment.title : assessment.block);
-  const title = cleanAltfragenTitle(assessment.title, blockLabel);
+    : blocks.length === 1 ? blockIcon(mc1 ? assessment.title : blocks[0]) : "archive";
+  const title = cleanAltfragenTitle(assessment.title, blockLabel || "Altfragen");
+  const j1Semester = blocks.length === 1 && /^block[1-9]$/.test(blocks[0])
+    ? `${blockNumberFromId(blocks[0]) <= 4 ? 1 : 2}. Fachsemester`
+    : null;
 
   return (
     <Link
@@ -453,10 +458,10 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
       </div>
 
       <div className="altfragen-practice-copy">
-        <p className="eyebrow">Altfragen · {blockLabel}</p>
+        <p className="eyebrow">{blockLabel ? `Altfragen · ${blockLabel}` : "Altfragen"}</p>
         <h3>{title}</h3>
         <p>{mc1 ? (assessment.title.includes("Mischserie") ? "Prüfungssimulation" : "3. Fachsemester")
-          : assessment.subject || "Prüfungsnahe Wiederholung"}</p>
+          : j1Semester || assessment.subject || "Prüfungsnahe Wiederholung"}</p>
       </div>
 
       <div className="altfragen-practice-progress" aria-label={`${percent}% gesehen`}>
@@ -470,17 +475,6 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
       </div>
     </Link>
   );
-}
-
-function altfragenBlocks(assessment: AssessmentSummary): readonly string[] {
-  const catalog = mc1Catalog(assessment.id);
-  if (catalog) return catalog.blocks;
-  const id = blockIdForContent(assessment);
-  return id ? [id] : [];
-}
-
-function altfragenExam(assessment: AssessmentSummary) {
-  return mc1Catalog(assessment.id) ? "eMC1" : examForContent(assessment);
 }
 
 function cleanAltfragenTitle(title: string, blockLabel: string): string {
@@ -537,9 +531,12 @@ function compareBlockIds(a: string, b: string): number {
   return blockNumberFromId(a) - blockNumberFromId(b);
 }
 
-function formatBlockOptionLabel(value: string): string {
+function formatBlockOptionLabel(value: string, options: readonly string[]): string {
   const number = blockNumberFromId(value);
-  return number ? `Block ${number}` : "Block";
+  if (!number) return "Block";
+  const duplicateNumber = options.some((id) => id !== value && blockNumberFromId(id) === number);
+  const label = `Block ${number}`;
+  return duplicateNumber ? `${value.startsWith("j2-") ? "J2" : "J1"} · ${label}` : label;
 }
 
 function blockNumberFromId(value: string): number {

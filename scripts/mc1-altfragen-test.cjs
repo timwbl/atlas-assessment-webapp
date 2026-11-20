@@ -58,6 +58,40 @@ async function main() {
   const list = load("app/api/altfragen/kataloge/route.ts");
   const detail = load("app/api/assessments/[id]/route.ts");
   const { MC1_CATALOGS } = load("lib/mc1Altfragen.ts");
+  const {
+    altfragenBlockAccent, altfragenCatalogBlockLabel, altfragenCatalogBlocks, altfragenCatalogExam,
+  } = load("lib/altfragenCatalog.ts");
+  const { blockColor } = load("lib/blockColors.ts");
+  const j1Exams = ["eMC1", "eMC2", "eMC2", "eMC2", "eMC3", "eMC4", "eMC3", "eMC3", "eMC4"];
+  for (const [index, exam] of j1Exams.entries()) {
+    const number = index + 1;
+    const fixture = JSON.parse(fs.readFileSync(
+      path.join(root, "public/assessments", `Altfragen_Block_${number}_ATLAS_Assessment.json`), "utf8"
+    ));
+    const blocks = altfragenCatalogBlocks(fixture);
+    assert.deepEqual(blocks, [`block${number}`]);
+    assert.equal(altfragenCatalogBlockLabel(fixture), `Block ${number}`);
+    assert.equal(altfragenCatalogExam(fixture), exam);
+    assert.equal(altfragenBlockAccent(blocks), blockColor(`block${number}`));
+  }
+  for (const catalog of MC1_CATALOGS) {
+    const fixture = { id: catalog.id, title: "MC1", lectureCode: "ALT-J2-MC1", block: "Altfragen" };
+    const blocks = altfragenCatalogBlocks(fixture);
+    assert.deepEqual(blocks, catalog.blocks);
+    assert.equal(altfragenCatalogExam(fixture), "eMC1");
+    assert.equal(altfragenBlockAccent(blocks), blockColor(blocks.length === 1 ? blocks[0] : "Altfragen"));
+  }
+  for (const [title, lectureCode] of [
+    ["J2 · Sammlung 2026", "ALT-2026"],
+    ["Altfragen Block 1–3", "ALT-BLOCK-1"],
+    ["Altfragen Block 5 und Block 7", "ALT-BLOCK-5"],
+    ["Altfragen Block 2", "ALT-BLOCK-3"],
+  ]) {
+    const fixture = { id: "unzugeordnet", title, lectureCode, block: "Altfragen" };
+    assert.equal(altfragenCatalogExam(fixture), null);
+    assert.equal(altfragenCatalogBlockLabel(fixture), null);
+    assert.equal(altfragenBlockAccent(altfragenCatalogBlocks(fixture)), "#8e8e93");
+  }
   if (process.argv[2]) {
     const payload = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
     const { validateMc1Catalogs } = load("lib/serverMc1Altfragen.ts");
