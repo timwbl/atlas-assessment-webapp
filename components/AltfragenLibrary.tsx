@@ -11,7 +11,7 @@ import {
   ALTFRAGEN_ACCESS_CHANGED_EVENT,
   canAccessAltfragen
 } from "@/lib/altfragenAccess";
-import { loadAssessmentSummaries } from "@/lib/assessmentClient";
+import { loadAssessmentSummaries, loadMc1AltfragenSummaries } from "@/lib/assessmentClient";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { blockColor } from "@/lib/blockColors";
 import { getAllProgress, PROGRESS_CHANGED_EVENT } from "@/lib/progressStore";
@@ -40,6 +40,7 @@ import {
   type ExamId
 } from "@/lib/studyProgram";
 import { AUTH_SESSION_CHANGED_EVENT } from "@/lib/supabaseClient";
+import { mc1Catalog, mc1CatalogBlockLabel } from "@/lib/mc1Altfragen";
 import type {
   AssessmentProgress,
   AssessmentSummary,
@@ -51,6 +52,7 @@ type Scope = "all" | "current" | ExamId;
 export function AltfragenLibrary() {
   const { contentSettings: settings } = useUserStudyContext();
   const [loaded, setLoaded] = useState<LoadedAssessmentSummary[]>([]);
+  const [mc1, setMc1] = useState<LoadedAssessmentSummary[]>([]);
   const [documents, setDocuments] = useState<AltfragenDocument[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
   const [access, setAccess] = useState(false);
@@ -61,6 +63,20 @@ export function AltfragenLibrary() {
   const [error, setError] = useState("");
   const [documentsLoading, setDocumentsLoading] = useState(true);
   const [downloadingId, setDownloadingId] = useState("");
+
+  useEffect(() => {
+    if (!access) {
+      setMc1([]);
+      return;
+    }
+    let active = true;
+    void loadMc1AltfragenSummaries()
+      .then((items) => { if (active) setMc1(items); })
+      .catch((cause: unknown) => {
+        if (active) setError(cause instanceof Error ? cause.message : "Die MC1-Kataloge konnten nicht geladen werden.");
+      });
+    return () => { active = false; };
+  }, [access]);
 
   useEffect(() => {
     void loadAssessmentSummaries()
@@ -120,14 +136,14 @@ export function AltfragenLibrary() {
   }, []);
 
   const assessments = useMemo(
-    () => loaded
+    () => [...loaded, ...mc1]
       .map((item) => item.assessment)
       .filter((assessment): assessment is AssessmentSummary => (
         !!assessment
         && isAltfragenValue(assessment.block)
         && !isThreeDContent(assessment)
       )),
-    [loaded]
+    [loaded, mc1]
   );
 
   const currentExams = useMemo(
@@ -136,7 +152,7 @@ export function AltfragenLibrary() {
   );
   const blockOptions = useMemo(
     () => [...new Set([
-      ...assessments.map(blockIdForContent),
+      ...assessments.flatMap(altfragenBlocks),
       ...documents.flatMap((item) => altfragenDocumentBlocks(item).map((block) => block.canonicalBlockId || blockIdForContent(block.title))),
       ...DOWNLOAD_SEMESTERS
         .filter((semester) => {
@@ -160,14 +176,14 @@ export function AltfragenLibrary() {
     const needle = query.trim().toLowerCase();
     const profileBlockIds = selectedBlockIds(settings);
     return assessments.filter((assessment) => {
-      const exam = examForContent(assessment);
-      const assessmentBlock = blockIdForContent(assessment);
+      const exam = altfragenExam(assessment);
+      const assessmentBlocks = altfragenBlocks(assessment);
       const scopeMatches = scope === "all"
         || (scope === "current" && (currentExams.length === 0 || (!!exam && currentExams.includes(exam))))
         || scope === exam;
       const profileMatches = scope === "all"
         || profileBlockIds.length === 0
-        || (!!assessmentBlock && profileBlockIds.includes(assessmentBlock));
+        || assessmentBlocks.some((id) => profileBlockIds.includes(id));
       const queryMatches = !needle || [
         assessment.title,
         assessment.lectureCode,
@@ -177,7 +193,7 @@ export function AltfragenLibrary() {
       return scopeMatches
         && profileMatches
         && queryMatches
-        && (!blockId || assessmentBlock === blockId);
+        && (!blockId || assessmentBlocks.includes(blockId));
     });
   }, [assessments, blockId, currentExams, query, scope, settings]);
   const filteredDocuments = useMemo(() => {
@@ -414,9 +430,12 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
   const seen = Object.values(progress?.questionStats || {}).filter((stat) => stat.seen > 0).length;
   const percent = assessment.questionCount ? Math.round((seen / assessment.questionCount) * 100) : 0;
   const accent = blockColor(assessment.block);
-  const blockLabel = formatBlockLabel(assessment.block);
-  const exam = examForContent(assessment);
-  const icon = blockIcon(assessment.block);
+  const mc1 = mc1Catalog(assessment.id);
+  const blockLabel = mc1CatalogBlockLabel(assessment.id) || formatBlockLabel(assessment.block);
+  const exam = altfragenExam(assessment);
+  const icon = mc1?.blocks.length === 3
+    ? assessment.title.includes("Mischserie") ? "target" : "archive"
+    : blockIcon(mc1 ? assessment.title : assessment.block);
   const title = cleanAltfragenTitle(assessment.title, blockLabel);
 
   return (
@@ -436,7 +455,8 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
       <div className="altfragen-practice-copy">
         <p className="eyebrow">Altfragen · {blockLabel}</p>
         <h3>{title}</h3>
-        <p>{assessment.subject || "Prüfungsnahe Wiederholung"}</p>
+        <p>{mc1 ? (assessment.title.includes("Mischserie") ? "Prüfungssimulation" : "3. Fachsemester")
+          : assessment.subject || "Prüfungsnahe Wiederholung"}</p>
       </div>
 
       <div className="altfragen-practice-progress" aria-label={`${percent}% gesehen`}>
@@ -450,6 +470,17 @@ function AltfragenAssessmentCard({ assessment, progress }: { assessment: Assessm
       </div>
     </Link>
   );
+}
+
+function altfragenBlocks(assessment: AssessmentSummary): readonly string[] {
+  const catalog = mc1Catalog(assessment.id);
+  if (catalog) return catalog.blocks;
+  const id = blockIdForContent(assessment);
+  return id ? [id] : [];
+}
+
+function altfragenExam(assessment: AssessmentSummary) {
+  return mc1Catalog(assessment.id) ? "eMC1" : examForContent(assessment);
 }
 
 function cleanAltfragenTitle(title: string, blockLabel: string): string {

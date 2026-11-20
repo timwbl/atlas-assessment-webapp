@@ -43,6 +43,10 @@ export async function authenticateRequest(request: Request): Promise<Authenticat
 
 export async function canExportAssessment(auth: AuthenticatedRequest, assessment: Assessment): Promise<boolean> {
   if (!isAltfragenBlock(assessment.block)) return true;
+  return canAccessAltfragen(auth);
+}
+
+export async function canAccessAltfragen(auth: AuthenticatedRequest): Promise<boolean> {
   if (auth.profile.role === "admin") return true;
 
   const rows = await supabaseServerRestRequest<AltfragenRequestRow[]>(

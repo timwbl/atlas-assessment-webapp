@@ -7,6 +7,8 @@ import type {
 } from "./types";
 import { validateAssessment } from "./assessmentValidator";
 import { normalizeLoadedAssessmentSummaries } from "./assessmentSummary";
+import { mc1Catalog } from "./mc1Altfragen";
+import { ensureSession } from "./supabaseClient";
 import {
   readCachedAssessment,
   readCachedAssessments,
@@ -110,6 +112,7 @@ export async function loadActiveAssessmentsWithDiagnostics(): Promise<ActiveAsse
 }
 
 export async function loadAssessmentById(id: string): Promise<Assessment | null> {
+  if (mc1Catalog(id)) return requestMc1Assessment(id);
   const existing = assessmentRequests.get(id);
   if (existing) return existing;
 
@@ -120,6 +123,37 @@ export async function loadAssessmentById(id: string): Promise<Assessment | null>
   } finally {
     assessmentRequests.delete(id);
   }
+}
+
+export async function loadMc1AltfragenSummaries(): Promise<LoadedAssessmentSummary[]> {
+  const session = await ensureSession();
+  if (!session) return [];
+  const response = await fetch("/api/altfragen/kataloge", {
+    cache: "no-store",
+    headers: { Authorization: `Bearer ${session.access_token}` },
+  });
+  if (response.status === 401 || response.status === 403) return [];
+  if (!response.ok) throw new Error("Die MC1-Altfragen konnten nicht geladen werden.");
+  const payload = await response.json() as { assessments?: unknown };
+  return normalizeLoadedAssessmentSummaries(payload.assessments);
+}
+
+async function requestMc1Assessment(id: string): Promise<Assessment | null> {
+  const session = await ensureSession();
+  if (!session) throw new Error("Melde dich mit deinem freigeschalteten ATLAS-Konto an.");
+  const response = await fetch(`/api/assessments/${encodeURIComponent(id)}`, {
+    cache: "no-store",
+    headers: { Authorization: `Bearer ${session.access_token}` },
+  });
+  if (response.status === 404) return null;
+  if (!response.ok) {
+    const payload = await response.json().catch(() => null) as { error?: string } | null;
+    throw new Error(payload?.error || "Der geschützte Katalog konnte nicht geladen werden.");
+  }
+  const payload = await response.json() as { assessment?: unknown };
+  const result = validateAssessment(payload.assessment);
+  if (!result.ok) throw new Error("Der geschützte Katalog enthält ungültige Daten.");
+  return result.value;
 }
 
 async function requestAssessmentById(id: string): Promise<Assessment | null> {

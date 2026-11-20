@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { renderAssessmentPdf, renderAssessmentReviewPdf } from "./assessmentPdf";
 import { canExportAssessment, authenticateRequest } from "./serverAuth";
 import { loadServerAssessmentById } from "./serverAssessments";
+import { loadMc1Assessment } from "./serverMc1Altfragen";
+import { mc1Catalog } from "./mc1Altfragen";
 import type { QuizAttempt, StoredQuestionResult, UserAnswer } from "./types";
 
 type ExportKind = "questions" | "solutions";
@@ -12,7 +14,7 @@ export async function handleAssessmentPdfExport(request: Request, id: string, ki
     return NextResponse.json({ error: "Bitte melde dich an, um PDFs zu exportieren." }, { status: 401 });
   }
 
-  const assessment = await loadServerAssessmentById(id);
+  const assessment = await loadExportAssessment(id);
   if (!assessment) {
     return NextResponse.json({ error: "Assessment wurde nicht gefunden." }, { status: 404 });
   }
@@ -46,7 +48,7 @@ export async function handleAssessmentReviewPdfExport(request: Request, id: stri
     return NextResponse.json({ error: "Bitte melde dich an, um PDFs zu exportieren." }, { status: 401 });
   }
 
-  const assessment = await loadServerAssessmentById(id);
+  const assessment = await loadExportAssessment(id);
   if (!assessment) {
     return NextResponse.json({ error: "Assessment wurde nicht gefunden." }, { status: 404 });
   }
@@ -90,6 +92,10 @@ export async function handleAssessmentReviewPdfExport(request: Request, id: stri
       error: error instanceof Error ? error.message : "Review-PDF konnte nicht erstellt werden."
     }, { status: 500 });
   }
+}
+
+function loadExportAssessment(id: string) {
+  return mc1Catalog(id) ? loadMc1Assessment(id) : loadServerAssessmentById(id);
 }
 
 function parseAttempt(raw: unknown, assessmentId: string): QuizAttempt | null {

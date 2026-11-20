@@ -5,8 +5,10 @@ import { useEffect, useMemo, useState } from "react";
 import { QuestionEditor } from "./QuestionEditor";
 import { QuizEngine } from "./QuizEngine";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
-import { loadActiveAssessments } from "@/lib/assessmentClient";
+import { loadActiveAssessments, loadAssessmentById, loadMc1AltfragenSummaries } from "@/lib/assessmentClient";
+import { AdminMc1CatalogImport } from "./AdminMc1CatalogImport";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
+import { mc1Catalog } from "@/lib/mc1Altfragen";
 import { validateAssessment } from "@/lib/assessmentValidator";
 import { analyzeQuestionQuality } from "@/lib/questionQuality";
 import { ASSESSMENT_SUBJECTS, compareAssessmentsByNumber, getAssessmentSubject } from "@/lib/assessmentCatalog";
@@ -26,6 +28,17 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [targetQuestionId, setTargetQuestionId] = useState("");
+
+  async function addImportedCatalogs() {
+    const summaries = await loadMc1AltfragenSummaries();
+    const imported = (await Promise.all(summaries.flatMap(({ assessment }) =>
+      assessment ? [loadAssessmentById(assessment.id)] : []))).filter((item): item is Assessment => !!item);
+    setAssessments((current) => {
+      const items = new Map(current.map((entry) => [entry.id, entry]));
+      for (const entry of imported) items.set(entry.id, entry);
+      return [...items.values()].sort(compareAssessmentsByNumber);
+    });
+  }
 
   useEffect(() => {
     setLoading(true);
@@ -47,6 +60,12 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
       })
       .finally(() => setLoading(false));
   }, [contentType]);
+
+  useEffect(() => {
+    if (contentType === "altfragen" && !loading && !error) {
+      void addImportedCatalogs().catch(() => undefined);
+    }
+  }, [contentType, loading, error]);
 
   useEffect(() => {
     if (!draft || !targetQuestionId) return;
@@ -159,13 +178,18 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
 
   return (
     <div>
+      {contentType === "altfragen" && <AdminMc1CatalogImport onImported={() => {
+        void addImportedCatalogs().catch(() => undefined);
+      }} />}
       <header className="card admin-editor-header">
         <div className="admin-editor-header-inner">
           <div>
             <div className="eyebrow">{contentType === "altfragen" ? "ALTFRAGEN CONTENT" : "FRAGENSAMMLUNGEN"}</div>
             <h2>{contentType === "altfragen" ? "Altfragen verwalten" : "Übungseditor"}</h2>
             <p>
-              Änderungen bleiben lokal im Browser, bis du das JSON exportierst und in `/public/assessments` ersetzt.
+              {mc1Catalog(draft.id)
+                ? "Dieser Katalog wird über die Altfragen-Freigabe bereitgestellt. Änderungen im Editor dienen der Vorschau."
+                : "Änderungen bleiben lokal im Browser, bis du das JSON exportierst und in /public/assessments ersetzt."}
             </p>
           </div>
           <div className="admin-editor-actions">
