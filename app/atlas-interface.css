@@ -554,13 +554,65 @@ a.dashboard-study-row:active {
     box-shadow: none !important;
   }
 
-  .atlas-account-chrome .account-menu {
-    position: static;
+  /* The compact control belongs to the top bar, independent of the desktop sidebar. */
+  body .atlas-account-chrome > .account-menu {
+    --atlas-account-target: 2.75rem;
+    position: static !important;
+    inset: auto !important;
+    flex: 0 0 var(--atlas-account-target);
+    width: var(--atlas-account-target) !important;
+    margin-inline-start: auto;
   }
 
-  .atlas-account-chrome .account-avatar {
-    min-height: 2.75rem;
+  body .atlas-account-chrome > .account-menu > .account-avatar {
+    width: var(--atlas-account-target) !important;
+    height: var(--atlas-account-target) !important;
+    grid-template: 1fr / 1fr !important;
+    place-items: center !important;
+    gap: 0 !important;
+    border: 0 !important;
     border-radius: 50% !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  body :is(
+    .atlas-account-chrome > .account-menu > .account-avatar > .account-avatar-mark,
+    .atlas-dialog .account-popover-head > .account-popover-mark,
+    .settings-profile-card > .settings-profile-avatar
+  ) {
+    width: var(--atlas-profile-mark-size, 2.25rem) !important;
+    height: var(--atlas-profile-mark-size, 2.25rem) !important;
+    place-items: center !important;
+    border: 1px solid color-mix(in srgb, var(--atlas-active-text) 19%, var(--atlas-hairline)) !important;
+    border-radius: 50% !important;
+    background: color-mix(in srgb, var(--atlas-active-text) 9%, var(--atlas-panel-strong)) !important;
+    color: var(--atlas-active-text) !important;
+    font-size: var(--atlas-profile-mark-text, .8125rem) !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    white-space: nowrap;
+    box-shadow: none !important;
+  }
+
+  .atlas-dialog .account-popover-mark {
+    --atlas-profile-mark-size: 2.5rem;
+    --atlas-profile-mark-text: .875rem;
+  }
+
+  .settings-profile-card > .settings-profile-avatar {
+    --atlas-profile-mark-size: 3rem;
+    --atlas-profile-mark-text: 1rem;
+    justify-self: center;
+  }
+
+  body .atlas-account-chrome > .account-menu > .account-avatar:active {
+    background: transparent !important;
+  }
+
+  body .atlas-account-chrome .account-avatar:active .account-avatar-mark {
+    background: var(--atlas-press) !important;
   }
 
   .atlas-account-chrome .atlas-brand-logo {

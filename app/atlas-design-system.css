@@ -959,7 +959,7 @@ body.atlas-sidebar-collapsed .account-avatar-chevron {
   display: none !important;
 }
 
-body.atlas-sidebar-collapsed .account-popover {
+body.atlas-sidebar-collapsed .account-menu > .account-popover {
   left: 0 !important;
   bottom: calc(100% + 10px) !important;
   transform-origin: bottom left !important;
@@ -8295,7 +8295,7 @@ body:has(.settings-page-shell) .account-avatar-mark {
   }
 
   .settings-profile-card {
-    grid-template-columns: 48px minmax(0, 1fr);
+    grid-template-columns: 3rem minmax(0, 1fr);
   }
 
   .settings-profile-avatar {
