@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import {
   getAllProgress,
-  getLatestActiveSession,
   PROGRESS_CHANGED_EVENT
 } from "@/lib/progressStore";
 import type {
@@ -37,14 +36,12 @@ export function useMobileLearningData(): MobileLearningData {
   const { contentSettings: settings, hydrated } = useUserStudyContext();
   const [assessments, setAssessments] = useState<AssessmentSummary[]>([]);
   const [progress, setProgress] = useState<Record<string, AssessmentProgress>>({});
-  const [resume, setResume] = useState<ActiveQuizSession | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
     function refreshProgress() {
       setProgress(getAllProgress());
-      setResume(getLatestActiveSession());
     }
     refreshProgress();
     loadAssessmentSummaries()
@@ -67,8 +64,8 @@ export function useMobileLearningData(): MobileLearningData {
     [assessments, settings]
   );
   const derived = useMemo(
-    () => deriveLearningData(visibleAssessments, assessments, progress, resume),
-    [assessments, progress, resume, visibleAssessments]
+    () => deriveLearningData(visibleAssessments, assessments, progress),
+    [assessments, progress, visibleAssessments]
   );
   return { allAssessments: assessments, assessments: visibleAssessments, progress, loading: loading || !hydrated, error, ...derived };
 }
@@ -76,19 +73,23 @@ export function useMobileLearningData(): MobileLearningData {
 function deriveLearningData(
   assessments: AssessmentSummary[],
   allAssessments: AssessmentSummary[],
-  progress: Record<string, AssessmentProgress>,
-  resume: ActiveQuizSession | null
+  progress: Record<string, AssessmentProgress>
 ) {
   const assessmentById = new Map(assessments.map((assessment) => [assessment.id, assessment]));
   const allAssessmentById = new Map(allAssessments.map((assessment) => [assessment.id, assessment]));
-  const validResume = resume && assessmentById.has(resume.assessmentId) ? resume : null;
-  const otherResume = resume && !validResume && allAssessmentById.has(resume.assessmentId) ? resume : null;
   const recentProgress = Object.values(progress)
     .filter((item) => item.lastAttemptAt || item.activeSession)
     .sort((a, b) => activityTime(b) - activityTime(a));
-
+  const sessions = recentProgress.map((item) => item.activeSession)
+    .filter((session): session is ActiveQuizSession => !!session)
+    .sort((a, b) => Date.parse(b.lastOpenedAt) - Date.parse(a.lastOpenedAt));
+  const validResume = sessions.find(({ assessmentId }) => assessmentById.has(assessmentId)) ?? null;
+  const otherResume = sessions.find(({ assessmentId }) => (
+    !assessmentById.has(assessmentId) && allAssessmentById.has(assessmentId)
+  )) ?? null;
+  const lastInScope = recentProgress.find(({ assessmentId }) => assessmentById.has(assessmentId));
   const recentAssessment = (validResume && assessmentById.get(validResume.assessmentId))
-    || assessmentById.get(recentProgress[0]?.assessmentId)
+    || (lastInScope && assessmentById.get(lastInScope.assessmentId))
     || assessments[0]
     || null;
 

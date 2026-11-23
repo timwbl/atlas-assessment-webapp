@@ -6,13 +6,23 @@ import { AtlasPageLoading } from "@/components/AtlasPageLoading";
 import { LibraryClient } from "@/components/LibraryClient";
 import { MobileAssessments } from "@/components/mobile/MobileAssessments";
 import { MobileHome } from "@/components/mobile/MobileHome";
+import { MobileTrain } from "@/components/mobile/MobileTrain";
+import { MobileProgress } from "@/components/mobile/MobileProgress";
+import { DesktopTrain } from "@/components/DesktopTrain";
+import { DesktopProgress } from "@/components/DesktopProgress";
 
-export function ResponsiveLearningRoute({ mobileView }: { mobileView: "home" | "assessments" }) {
+const views = {
+  home: [DashboardClient, MobileHome],
+  assessments: [LibraryClient, MobileAssessments],
+  train: [DesktopTrain, MobileTrain],
+  progress: [DesktopProgress, MobileProgress]
+} as const;
+
+export function ResponsiveLearningRoute({ mobileView }: { mobileView: keyof typeof views }) {
   const mobile = useMobileViewport();
-
-  if (mobile === null) return <ResponsiveRouteLoading />;
-  if (!mobile) return mobileView === "home" ? <DashboardClient /> : <LibraryClient />;
-  return mobileView === "home" ? <MobileHome /> : <MobileAssessments />;
+  if (mobile === null) return <AtlasPageLoading />;
+  const View = views[mobileView][mobile ? 1 : 0];
+  return <View />;
 }
 
 function useMobileViewport(): boolean | null {
@@ -27,15 +37,4 @@ function useMobileViewport(): boolean | null {
   }, []);
 
   return mobile;
-}
-
-function ResponsiveRouteLoading({ mobile = false }: { mobile?: boolean }) {
-  if (!mobile) return <AtlasPageLoading />;
-  return (
-    <main className={mobile ? "mobile-action-page responsive-route-loading" : "shell responsive-route-loading"}>
-      <span />
-      <span />
-      <span />
-    </main>
-  );
 }

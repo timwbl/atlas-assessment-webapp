@@ -27,6 +27,27 @@ assert.equal(normalizeLoadedAssessmentSummaries([{...summary,assessment:{...summ
 const missingTags = normalizeLoadedAssessmentSummaries([{...summary,assessment:{...summary.assessment,tags:undefined}}]);
 assert.deepEqual(missingTags[0].assessment.tags,[]);
 
+const questionImages = [
+  { src: "/assets/atlas-diagram.png", alt: "Messkurve mit drei Punkten", caption: "Messreihe A" },
+  { src: "data:image/png;base64,iVBORw0KGgo=", alt: "Eingebettetes Diagramm" }
+];
+const withImages = validateAssessment({
+  ...raw,
+  questions: [{ ...raw.questions[0], images: questionImages }, ...raw.questions.slice(1)]
+});
+assert.equal(withImages.ok, true);
+assert.deepEqual(withImages.value.questions[0].images, questionImages);
+assert.equal("images" in validated.value.questions[0], false);
+for (const image of [
+  { src: "//untrusted.example/image.png", alt: "Abbildung" },
+  { src: "data:image/svg+xml;base64,PHN2Zz4=", alt: "Abbildung" },
+  { src: "/assets/atlas-diagram.png", alt: "" }
+]) {
+  const invalid = validateAssessment({ ...raw, questions: [{ ...raw.questions[0], images: [image] }] });
+  assert.equal(invalid.ok, false);
+  assert.match(invalid.errors.join(" "), /questions\[0\]\.images\[0\]/);
+}
+
 // Every currently shipped full assessment must be safe for overview consumers.
 for (const file of fs.readdirSync(path.join(__dirname,'../public/assessments')).filter(x=>x.endsWith('.json'))) {
  const source=JSON.parse(fs.readFileSync(path.join(__dirname,'../public/assessments',file)));

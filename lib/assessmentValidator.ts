@@ -1,6 +1,7 @@
 import type {
   Assessment,
   AssessmentQuestion,
+  AssessmentQuestionImage,
   BloomLevel,
   QuestionDifficulty,
   QuestionOption,
@@ -8,6 +9,7 @@ import type {
   StructuredQuestionExplanation,
   ValidationResult
 } from "./types";
+import { isQuestionImageSource } from "./questionImages";
 import { validateKPrimQuestion } from "./questionQuality";
 import { normalizeAssessmentSubject } from "./assessmentCatalog";
 
@@ -91,7 +93,26 @@ function validateOptions(question: AssessmentQuestion, path: string): string[] {
   return errors;
 }
 
-function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | null {
+function normalizeQuestionImages(value: unknown, path: string, errors: string[]): AssessmentQuestionImage[] {
+  if (value === undefined) return [];
+  if (!Array.isArray(value)) {
+    errors.push(`${path}: Bilder müssen als Liste angegeben werden.`);
+    return [];
+  }
+
+  return value.flatMap((item, index) => {
+    const image = isRecord(item) ? item : {};
+    const src = stringValue(image.src);
+    const alt = stringValue(image.alt);
+    const caption = stringValue(image.caption);
+    const entry = `${path}[${index}]`;
+    if (!isQuestionImageSource(src)) errors.push(`${entry}: Eine gültige Bildadresse oder eingebettete Bilddatei ist nötig.`);
+    if (!alt) errors.push(`${entry}: Bildbeschreibung fehlt.`);
+    return src && alt ? [{ src, alt, ...(caption ? { caption } : {}) }] : [];
+  });
+}
+
+function normalizeQuestion(raw: unknown, index: number, errors: string[]): AssessmentQuestion | null {
   if (!isRecord(raw)) return null;
 
   const legacyOptions = isRecord(raw.options)
@@ -120,6 +141,7 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
       }))
     : [];
 
+  const images = normalizeQuestionImages(raw.images, `questions[${index}].images`, errors);
   const rawType = stringValue(raw.type).toUpperCase();
   const difficultyLevel = stringValue(raw.difficultyLevel) as QuestionDifficulty;
   const bloomLevel = stringValue(raw.bloomLevel) as BloomLevel;
@@ -131,6 +153,7 @@ function normalizeQuestion(raw: unknown, index: number): AssessmentQuestion | nu
     difficulty: Math.max(1, Math.min(5, Number(raw.difficulty) || 1)),
     learningObjectiveId: stringValue(raw.learningObjectiveId),
     stem: stringValue(raw.stem) || stringValue(raw.question),
+    ...(images.length ? { images } : {}),
     options,
     explanation: stringValue(raw.explanation),
     trap: stringValue(raw.trap),
@@ -173,7 +196,7 @@ export function validateAssessment(raw: unknown): ValidationResult<Assessment> {
   }
 
   const questions = Array.isArray(raw.questions)
-    ? raw.questions.map(normalizeQuestion).filter(Boolean) as AssessmentQuestion[]
+    ? raw.questions.map((question, index) => normalizeQuestion(question, index, errors)).filter(Boolean) as AssessmentQuestion[]
     : [];
 
   const legacyTitle = stringValue(raw.assessment_title);

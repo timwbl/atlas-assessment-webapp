@@ -1,5 +1,6 @@
 "use client";
 
+import { QuestionImageEditor } from "./QuestionImageEditor";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
 import type { AssessmentQuestion, LearningObjective } from "@/lib/types";
 import {
@@ -76,6 +77,8 @@ export function QuestionEditor({ question, objectives, onChange, onDelete, onMov
         <span className="eyebrow">Frage</span>
         <textarea className="input mt-2 min-h-24 py-3" value={question.stem} onChange={(event) => update("stem", event.target.value)} />
       </label>
+
+      <QuestionImageEditor images={question.images} onChange={(images) => update("images", images)} />
 
       <div className="mt-4 grid gap-3 md:grid-cols-3">
         <label>

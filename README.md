@@ -2,6 +2,11 @@
 
 Separate read-only Assessment-WebApp für Mitstudierende.
 
+## Abbildungen in Übungen
+
+Im Frageneditor lassen sich pro Frage Bilddateien anhängen oder Bildadressen eintragen. Der Export speichert sie im optionalen Feld `images` der Frage. Jede Abbildung hat einen `src`, einen beschreibenden `alt` und optional eine sichtbare `caption`. Eingebettete JPG-, PNG- und WebP-Dateien bleiben im JSON. Verlinkte Bilder liegen auf ATLAS oder an einer HTTPS-Adresse. Quiz, Schnellquiz und Auswertung verwenden denselben Betrachter.
+
+
 ## Eigenschaften
 
 - Keine KI-Generierung

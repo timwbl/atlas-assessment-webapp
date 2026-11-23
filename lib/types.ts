@@ -52,12 +52,19 @@ export type QuestionOption = {
   displayId?: string;
 };
 
+export type AssessmentQuestionImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
 export type AssessmentQuestion = {
   id: string;
   type: QuestionType;
   difficulty: number;
   learningObjectiveId: string;
   stem: string;
+  images?: AssessmentQuestionImage[];
   options: QuestionOption[];
   explanation: string;
   trap: string;

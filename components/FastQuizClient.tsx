@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useCompanion } from "./companion/CompanionProvider";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
+import { QuestionImages } from "./QuestionImages";
 import { QuestionRenderer } from "./QuestionRenderer";
 import {
   FAST_QUIZ_COUNTS,
@@ -473,6 +474,7 @@ export function FastQuizClient({
             {objective && <span>{objective}</span>}
           </div>
           <h1 ref={questionHeading} tabIndex={-1}>{question.stem}</h1>
+          <QuestionImages images={question.images} key={question.id} />
           <QuestionRenderer
             answer={currentAnswer}
             onChange={setAnswer}
@@ -676,6 +678,7 @@ function FastQuizResult({
             <article className="card fast-result-question" key={row.question.id}>
               <p className="eyebrow">Frage {rows.indexOf(row) + 1} · {row.question.type === "KPRIM" ? "K-Prim" : "Typ A"}</p>
               <h3>{row.question.stem}</h3>
+              <QuestionImages images={row.question.images} />
               <p><strong>Richtig:</strong> {correctAnswerLabel(row.question)}</p>
               <QuestionExplanationPanel answer={row.answer} compact question={row.question} />
               {rowIndex >= 7 && <span className="sr-only">Weitere Reviewfrage</span>}

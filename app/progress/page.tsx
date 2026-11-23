@@ -1,11 +1,5 @@
-import { DesktopProgress } from "@/components/DesktopProgress";
-import { MobileProgress } from "@/components/mobile/MobileProgress";
+import { ResponsiveLearningRoute } from "@/components/responsive/ResponsiveLearningRoute";
 
 export default function ProgressPage() {
-  return (
-    <>
-      <MobileProgress />
-      <DesktopProgress />
-    </>
-  );
+  return <ResponsiveLearningRoute mobileView="progress" />;
 }

@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { exportProgressJson, importProgressJson } from "@/lib/progressStore";
 
 export function ProgressTools({ onImported }: { onImported?: () => void }) {
+  const [message, setMessage] = useState("");
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   function exportProgress() {
@@ -22,15 +23,19 @@ export function ProgressTools({ onImported }: { onImported?: () => void }) {
     try {
       importProgressJson(await file.text());
       onImported?.();
-    } catch (error) {
-      alert(error instanceof Error ? error.message : "Import fehlgeschlagen.");
+      setMessage("Fortschrittsdaten importiert.");
+    } catch {
+      setMessage("Die Datei konnte nicht gelesen werden. Wähle eine aus ATLAS exportierte JSON-Datei.");
     }
   }
 
   return (
-    <div className="progress-tools flex flex-wrap gap-2">
-      <button className="btn-secondary" onClick={exportProgress}>Fortschritt exportieren</button>
-      <button className="btn-secondary" onClick={() => inputRef.current?.click()}>Fortschritt importieren</button>
+    <details className="progress-data-tools">
+      <summary>Fortschrittsdaten verwalten</summary>
+      <div className="progress-tools flex flex-wrap gap-2">
+        <button className="btn-secondary" onClick={exportProgress} type="button">Fortschritt exportieren</button>
+        <button className="btn-secondary" onClick={() => inputRef.current?.click()} type="button">Fortschritt importieren</button>
+      </div>
       <input
         ref={inputRef}
         type="file"
@@ -42,6 +47,7 @@ export function ProgressTools({ onImported }: { onImported?: () => void }) {
           event.currentTarget.value = "";
         }}
       />
-    </div>
+      {message && <p role="status">{message}</p>}
+    </details>
   );
 }

@@ -8,7 +8,6 @@ import { AtlasPageLoading } from "./AtlasPageLoading";
 import { AtlasIcon, type AtlasIconName } from "./AtlasIcon";
 import { BlockReadinessCard } from "./BlockReadinessCard";
 import { PrivacyNotice } from "./PrivacyNotice";
-import { ProgressTools } from "./ProgressTools";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
 import { loadAssessmentSummaries } from "@/lib/assessmentClient";
 import { blockColor } from "@/lib/blockColors";
@@ -256,7 +255,6 @@ export function LibraryClient() {
               Übungsfragen nach Fachsemester, Block und Thema.
             </p>
           </div>
-          <ProgressTools onImported={() => setProgress(getAllProgress())} />
         </div>
       </header>
 

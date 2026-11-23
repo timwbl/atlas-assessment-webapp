@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { AtlasIcon, type AtlasIconName } from "@/components/AtlasIcon";
-import { ProgressTools } from "@/components/ProgressTools";
 import { useMobileLearningData } from "@/components/mobile/useMobileLearningData";
 import { useUserStudyContext } from "@/components/study/UserStudyProvider";
 import { formatBlockLabel } from "@/lib/blockLabels";
@@ -150,13 +149,13 @@ export function DashboardClient() {
   const actions: DashboardAction[] = [
     {
       title: "Übungen",
-      description: "Fragen nach Block, Titel oder Fach suchen.",
+      description: "Nach Block, Titel oder Fach suchen",
       href: "/assessments",
       icon: "book",
-      meta: `${scopedAssessments.length} Übungen`
+      meta: `${scopedAssessments.length} verfügbar`
     },
     {
-      title: "Schwächen trainieren",
+      title: "Offene Fehler wiederholen",
       description: scopedData.wrongTarget
         ? compactAssessmentTitle(scopedData.wrongTarget)
         : "Noch keine offenen Fehler",
@@ -172,7 +171,7 @@ export function DashboardClient() {
         : "Noch keine markierten Fragen",
       href: markedHref,
       icon: "bookmark",
-      meta: `${scopedData.markedCount} markiert`,
+      meta: `${scopedData.markedCount} verfügbar`,
       disabled: !scopedData.markedTarget
     }
   ];
@@ -184,7 +183,6 @@ export function DashboardClient() {
           <p className="eyebrow">{todayLabel}</p>
           <h1>{firstName ? `Hallo ${firstName}` : "Deine Lernübersicht"}</h1>
         </div>
-        <ProgressTools />
       </header>
 
       {data.error ? <div className="dashboard-alert" role="alert">{data.error}</div> : null}
@@ -199,11 +197,14 @@ export function DashboardClient() {
             {data.resume && resumeAssessment ? "Fortsetzen" : primaryAssessment ? "Training starten" : "Übungen öffnen"}
           </Link>
         </article>
-        <ul className="dashboard-study-list" aria-label="Weitere Lernmöglichkeiten">
-          {actions.map((action) => (
-            <li key={action.title}><DashboardLearningLink action={action} /></li>
-          ))}
-        </ul>
+        <section className="dashboard-study-directory" aria-labelledby="study-directory-heading">
+          <h2 id="study-directory-heading">Übungen und Wiederholung</h2>
+          <ul className="dashboard-study-list">
+            {actions.map((action) => (
+              <li key={action.title}><DashboardLearningLink action={action} /></li>
+            ))}
+          </ul>
+        </section>
       </section>
 
       <section className="dashboard-overview-grid dashboard-overview-grid--wide">
@@ -259,8 +260,12 @@ function DashboardLearningLink({ action }: { action: DashboardAction }) {
         <strong>{action.title}</strong>
         <small>{action.description}</small>
       </span>
-      {!action.disabled && <span className="dashboard-study-count">{action.meta}</span>}
-      {!action.disabled && <AtlasIcon name="chevronRight" />}
+      {!action.disabled && (
+        <span className="dashboard-study-end">
+          <small className="dashboard-study-count">{action.meta}</small>
+          <AtlasIcon name="chevronRight" />
+        </span>
+      )}
     </>
   );
 

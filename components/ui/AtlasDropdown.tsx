@@ -6,6 +6,7 @@ import { createPortal } from "react-dom";
 export type AtlasDropdownOption<T extends string = string> = {
   value: T;
   label: string;
+  shortLabel?: string;
   disabled?: boolean;
 };
 
@@ -30,6 +31,7 @@ export function AtlasDropdown<T extends string = string>({
   placeholder = "Bitte auswählen",
   value
 }: Props<T>) {
+  const pointerEntry = useRef(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [menuStyle, setMenuStyle] = useState<CSSProperties>({});
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -42,7 +44,10 @@ export function AtlasDropdown<T extends string = string>({
     ? activeIndex
     : enabledIndices[0];
   const optionId = (index: number) => `${listboxId}-option-${index}`;
-  const close = useCallback(() => setActiveIndex(null), []);
+  const close = useCallback(() => {
+    pointerEntry.current = false;
+    setActiveIndex(null);
+  }, []);
 
   useLayoutEffect(() => {
     if (!open) return;
@@ -186,9 +191,10 @@ export function AtlasDropdown<T extends string = string>({
         className="atlas-dropdown-trigger"
         disabled={disabled}
         onBlur={close}
-        onClick={() => {
+        onClick={(event) => {
           if (open) close();
           else {
+            pointerEntry.current = event.detail > 0;
             buttonRef.current?.focus({ preventScroll: true });
             openMenu();
           }
@@ -198,12 +204,12 @@ export function AtlasDropdown<T extends string = string>({
         role="combobox"
         type="button"
       >
-        <span>{options[selectedIndex]?.label || placeholder}</span>
+        <span>{options[selectedIndex]?.shortLabel || options[selectedIndex]?.label || placeholder}</span>
         <span className="atlas-dropdown-chevron" aria-hidden="true" />
       </button>
 
       {open && createPortal(
-        <div aria-label={ariaLabel || placeholder} className="atlas-dropdown-menu" id={listboxId} ref={menuRef} role="listbox" style={menuStyle}>
+        <div aria-label={ariaLabel || placeholder} className="atlas-dropdown-menu" data-pointer-entry={pointerEntry.current || undefined} id={listboxId} ref={menuRef} role="listbox" style={menuStyle}>
           {options.map((option, index) => (
             <button
               aria-selected={index === selectedIndex}

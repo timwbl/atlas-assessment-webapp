@@ -1,11 +1,5 @@
-import { DesktopTrain } from "@/components/DesktopTrain";
-import { MobileTrain } from "@/components/mobile/MobileTrain";
+import { ResponsiveLearningRoute } from "@/components/responsive/ResponsiveLearningRoute";
 
 export default function TrainPage() {
-  return (
-    <>
-      <MobileTrain />
-      <DesktopTrain />
-    </>
-  );
+  return <ResponsiveLearningRoute mobileView="train" />;
 }

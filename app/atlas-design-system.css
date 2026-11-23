@@ -5392,24 +5392,7 @@ select.input {
   }
 }
 
-@keyframes atlas-soft-enter {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .atlas-dashboard-shell > section,
-  .atlas-subpage-shell > section,
-  .library-shell > section {
-    animation: atlas-soft-enter 320ms var(--atlas-ease-spring) both;
-  }
-
   .dashboard-action-icon,
   .account-avatar,
   .btn-primary,
@@ -5833,7 +5816,7 @@ select.input {
   height: 100%;
   border-radius: inherit;
   background: linear-gradient(90deg, var(--atlas-blue), color-mix(in srgb, var(--atlas-blue) 76%, var(--atlas-violet)));
-  transition: width var(--atlas-motion-medium) var(--atlas-ease-standard);
+  transition: none;
 }
 
 .atlas-quiz-question-rail {

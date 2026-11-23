@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { QuestionEditor } from "./QuestionEditor";
 import { QuizEngine } from "./QuizEngine";
 import { AtlasDropdown } from "./ui/AtlasDropdown";
@@ -67,17 +67,13 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
     }
   }, [contentType, loading, error]);
 
-  useEffect(() => {
-    if (!draft || !targetQuestionId) return;
-    const timer = window.setTimeout(() => {
-      document.getElementById(`admin-question-${targetQuestionId}`)?.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-      setTargetQuestionId("");
-    }, 120);
-    return () => window.clearTimeout(timer);
-  }, [draft, targetQuestionId]);
+  useLayoutEffect(() => {
+    if (loading || !draft || !targetQuestionId || preview) return;
+    const question = document.getElementById(`admin-question-${targetQuestionId}`);
+    question?.focus({ preventScroll: true });
+    question?.scrollIntoView({ block: "start" });
+    setTargetQuestionId("");
+  }, [draft, loading, preview, targetQuestionId]);
 
   const filteredAssessments = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -345,7 +341,7 @@ export function AdminEditor({ contentType = "assessment" }: { contentType?: "ass
           <button className="btn-primary" onClick={addQuestion}>Frage hinzufügen</button>
         </div>
         {draft.questions.map((question, index) => (
-          <div className="scroll-mt-24" id={`admin-question-${question.id}`} key={question.id}>
+          <div className="scroll-mt-24" id={`admin-question-${question.id}`} key={question.id} tabIndex={-1}>
             <QuestionEditor
               question={question}
               objectives={draft.learningObjectives}

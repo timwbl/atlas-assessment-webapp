@@ -2,18 +2,20 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { QuestionImages } from "./QuestionImages";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { ResultsPage } from "./ResultsPage";
 import { AtlasIcon } from "./AtlasIcon";
 import { SummaryLinkButton } from "./SummaryLinkPanel";
+import { AtlasDialog } from "./ui/AtlasDialog";
 import { useCompanion } from "./companion/CompanionProvider";
 import { isAltfragenAssessment } from "@/lib/altfragenAccess";
 import { analyzeAssessmentResults } from "@/lib/assessmentAnalysis";
 import {
   buildResultRows,
   correctAnswerLabel,
-  isQuestionCorrect,
+  evaluateQuestion,
   optionKey,
   scorePercent,
   stableOptionId,
@@ -49,6 +51,14 @@ type Props = {
   quick?: QuickTrainingType;
   limit?: number;
 };
+
+const QUIZ_MODE_LABELS: Record<QuizMode, string> = {
+  training: "Training",
+  exam: "Prüfung",
+  review: "Wiederholung"
+};
+
+type Confirmation = { kind: "finish" } | { kind: "mode"; mode: QuizMode };
 
 type InitialQuizState = {
   mode: QuizMode;
@@ -89,6 +99,7 @@ export function QuizEngine({
   const [startedAt, setStartedAt] = useState(initial.current.startedAt);
   const [result, setResult] = useState<{ rows: QuizResultRow[]; attempt: QuizAttempt } | null>(null);
   const [finishError, setFinishError] = useState("");
+  const [confirmation, setConfirmation] = useState<Confirmation | null>(null);
   const [progress, setProgress] = useState(() => getProgress(assessment.id));
 
   useEffect(() => {
@@ -125,12 +136,25 @@ export function QuizEngine({
 
   const questionHeading = useRef<HTMLHeadingElement>(null);
   const focusNextQuestion = useRef(false);
+  const questionRail = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
     if (!focusNextQuestion.current) return;
     focusNextQuestion.current = false;
-    questionHeading.current?.focus();
-  }, [index, mode]);
+    const heading = questionHeading.current;
+    heading?.focus({ preventScroll: true });
+    heading?.scrollIntoView({ block: "nearest" });
+  }, [index, mode, questions, result]);
+
+  useLayoutEffect(() => {
+    const rail = questionRail.current;
+    const current = rail?.querySelector<HTMLElement>('[aria-current="step"]');
+    if (!rail || !current) return;
+    const left = current.offsetLeft;
+    const right = left + current.offsetWidth;
+    if (left < rail.scrollLeft) rail.scrollLeft = left - 4;
+    else if (right > rail.scrollLeft + rail.clientWidth) rail.scrollLeft = right - rail.clientWidth + 4;
+  }, [index, questions, result]);
 
   function goToQuestion(next: number) {
     if (next === index) return;
@@ -246,11 +270,31 @@ export function QuizEngine({
   const currentAnswer = answers[question.id] || {};
   const usesImmediateFeedback = mode !== "exam";
   const isRevealed = usesImmediateFeedback && revealed[question.id];
-  const currentCorrect = isQuestionCorrect(question, currentAnswer);
+  const evaluation = evaluateQuestion(question, currentAnswer);
+  const currentCorrect = evaluation.status === "correct";
+  const resultLabel = !currentAnswer.selected && !Object.keys(currentAnswer.kprim || {}).length
+    ? "Ohne Antwort"
+    : evaluation.status === "correct" ? "Richtig"
+      : evaluation.status === "partial" ? "Teilweise richtig" : "Nicht richtig";
   const stat = progress.questionStats[question.id];
-  const modeLabel = mode === "training" ? "Training" : mode === "exam" ? "Prüfung" : "Review";
+  const modeLabel = QUIZ_MODE_LABELS[mode];
   const progressPercent = Math.round(((index + 1) / questions.length) * 100);
   const answeredCount = answeredQuestionIds.size;
+  const openCount = questions.length - answeredCount;
+
+  function requestFinish() {
+    if (openCount) setConfirmation({ kind: "finish" });
+    else finishQuiz();
+  }
+
+  function requestMode(next: QuizMode) {
+    if (next === mode) return;
+    if (Object.keys(answers).length || Object.values(revealed).some(Boolean)) {
+      setConfirmation({ kind: "mode", mode: next });
+    } else {
+      restart(next);
+    }
+  }
 
   function revealOrNext() {
     if (usesImmediateFeedback && !revealed[question.id]) {
@@ -264,7 +308,7 @@ export function QuizEngine({
       }
       return;
     }
-    if (index >= questions.length - 1) finishQuiz();
+    if (index >= questions.length - 1) requestFinish();
     else goToQuestion(index + 1);
   }
 
@@ -326,6 +370,7 @@ export function QuizEngine({
   }
 
   function restart(nextMode: QuizMode) {
+    focusNextQuestion.current = true;
     const selected = selectQuestions(assessment, nextMode);
     setMode(nextMode);
     setQuestions(createSessionQuestions(selected));
@@ -340,6 +385,7 @@ export function QuizEngine({
   }
 
   function restartWithQuestions(nextQuestions: AssessmentQuestion[], nextMode: QuizMode) {
+    focusNextQuestion.current = true;
     setMode(nextMode);
     setQuestions(createSessionQuestions(nextQuestions));
     setIndex(0);
@@ -354,30 +400,17 @@ export function QuizEngine({
   return (
     <main id="top" className={`shell quiz-shell atlas-quiz-shell quiz-mode-${mode}`}>
       <section className="atlas-quiz-session" aria-label="Trainingssitzung">
-        <div className="atlas-quiz-commandbar">
+        <div className="quiz-session-header">
           <Link className="atlas-quiz-exit" href={detailHref}>
             Beenden
           </Link>
           <div className="atlas-quiz-session-status">
-            <span>{modeLabel}</span>
             <strong>Frage {index + 1} von {questions.length}</strong>
-            <em>{answeredCount} beantwortet</em>
-          </div>
-          <div className="quiz-mode-tabs atlas-quiz-mode-tabs" role="group" aria-label="Quizmodus">
-            {(["training", "exam", "review"] as QuizMode[]).map((value) => (
-              <button
-                aria-pressed={mode === value}
-                className={mode === value ? "is-active" : ""}
-                key={value}
-                onClick={() => restart(value)}
-                type="button"
-              >
-                {value === "training" ? "Training" : value === "exam" ? "Prüfung" : "Review"}
-              </button>
-            ))}
+            <span>{modeLabel} · {answeredCount} beantwortet</span>
           </div>
           <button
             type="button"
+            aria-label="Frage markieren"
             aria-pressed={!!stat?.markedForReview}
             className={stat?.markedForReview ? "atlas-quiz-review-button is-marked" : "atlas-quiz-review-button"}
             onClick={() => {
@@ -388,7 +421,6 @@ export function QuizEngine({
             <AtlasIcon name="bookmark" />
             <span>{stat?.markedForReview ? "Markiert" : "Markieren"}</span>
           </button>
-          <SummaryLinkButton assessment={assessment} />
         </div>
 
         <div className="atlas-quiz-progress-row">
@@ -402,10 +434,9 @@ export function QuizEngine({
           >
             <div style={{ width: `${progressPercent}%` }} />
           </div>
-          <span>{progressPercent}%</span>
         </div>
 
-        <nav aria-label="Fragen der Übung" className="quiz-progress-nav atlas-quiz-question-rail">
+        <nav aria-label="Fragen der Übung" className="quiz-progress-nav atlas-quiz-question-rail" ref={questionRail}>
           {questions.map((item, itemIndex) => {
             const answered = answeredQuestionIds.has(item.id);
             return (
@@ -418,28 +449,61 @@ export function QuizEngine({
                 title={`Frage ${itemIndex + 1}: ${answered ? "beantwortet" : "offen"}`}
                 onClick={() => goToQuestion(itemIndex)}
               >
-                {itemIndex + 1}
+                {itemIndex + 1}{answered && <span aria-hidden="true" className="quiz-step-complete" />}
               </button>
             );
           })}
         </nav>
+        <details className="quiz-session-options">
+          <summary>Modus und Optionen</summary>
+          <div className="quiz-session-option-content">
+            <div className="quiz-mode-tabs atlas-quiz-mode-tabs" role="group" aria-label="Quizmodus">
+              {(["training", "exam", "review"] as QuizMode[]).map((value) => (
+                <button
+                  aria-pressed={mode === value}
+                  className={mode === value ? "is-active" : ""}
+                  key={value}
+                  onClick={() => requestMode(value)}
+                  type="button"
+                >
+                  {QUIZ_MODE_LABELS[value]}
+                </button>
+              ))}
+            </div>
+            <div className="quiz-session-option-actions">
+              <button
+                aria-pressed={stat?.priority === "high"}
+                className="btn-secondary"
+                onClick={() => {
+                  setQuestionPriority(assessment.id, question.id, stat?.priority === "high" ? "normal" : "high");
+                  setProgress(getProgress(assessment.id));
+                }}
+                type="button"
+              >
+                {stat?.priority === "high" ? "Priorität entfernen" : "Frage priorisieren"}
+              </button>
+              <SummaryLinkButton assessment={assessment} />
+              <button className="btn-secondary" onClick={requestFinish} type="button">Jetzt abgeben</button>
+            </div>
+          </div>
+        </details>
       </section>
 
       <article className="quiz-question-card atlas-quiz-card">
         <div className="atlas-quiz-card-meta">
-          <span>Typ {question.type}</span>
+          <span>{question.type === "KPRIM" ? "K-Prim" : "Typ A"}</span>
           <span>Level {question.difficulty}</span>
-          <span>{assessment.title}</span>
         </div>
         <h1 className="quiz-question-title" ref={questionHeading} tabIndex={-1}>{question.stem}</h1>
+        <QuestionImages images={question.images} key={question.id} />
         <div className="atlas-quiz-answer-list">
           <QuestionRenderer question={question} answer={currentAnswer} revealed={isRevealed} onChange={setAnswer} />
         </div>
 
         {isRevealed && (
-          <div className={`quiz-feedback ${currentCorrect ? "is-correct" : "is-wrong"}`}>
+          <div className={`quiz-feedback ${currentCorrect ? "is-correct" : evaluation.status === "partial" ? "is-partial" : "is-wrong"}`}>
             <div role="status">
-              <strong>{currentCorrect ? "Richtig" : "Noch nicht"}</strong>
+              <strong>{resultLabel}</strong>
               <p>Richtige Antwort: {correctAnswerLabel(question)}</p>
             </div>
             <QuestionExplanationPanel
@@ -461,16 +525,6 @@ export function QuizEngine({
                 Nochmals üben
               </button>
             )}
-            <button
-              type="button"
-              className="btn-secondary"
-              onClick={() => {
-                setQuestionPriority(assessment.id, question.id, stat?.priority === "high" ? "normal" : "high");
-                setProgress(getProgress(assessment.id));
-              }}
-            >
-              {stat?.priority === "high" ? "Priorität normal" : "Priorisieren"}
-            </button>
             <button type="button" className="btn-primary" onClick={revealOrNext}>
               {usesImmediateFeedback && !revealed[question.id]
                 ? "Lösung zeigen"
@@ -480,7 +534,6 @@ export function QuizEngine({
                     ? "Abgeben"
                     : "Weiter"}
             </button>
-            <button type="button" className="btn-secondary quiz-finish-button" onClick={finishQuiz}>Jetzt abgeben</button>
           </div>
         </div>
         {finishError && (
@@ -489,6 +542,36 @@ export function QuizEngine({
           </p>
         )}
       </article>
+      {confirmation && (
+        <AtlasDialog
+          className="quiz-confirmation"
+          label={confirmation.kind === "finish" ? "Übung abgeben?" : "Quizmodus wechseln?"}
+          onDismiss={() => setConfirmation(null)}
+        >
+          {(dismiss) => (
+            <>
+              <h2>{confirmation.kind === "finish" ? "Übung abgeben?" : "Quizmodus wechseln?"}</h2>
+              <p>{confirmation.kind === "finish"
+                ? openCount === 1 ? "Eine Frage ist noch offen." : `${openCount} Fragen sind noch offen.`
+                : `Mit «${QUIZ_MODE_LABELS[confirmation.mode]}» beginnst du eine neue Runde. Die Antworten aus dieser Runde gehen dabei verloren.`}</p>
+              <div className="quiz-confirmation-actions">
+                <button className="btn-secondary" onClick={dismiss} type="button">Weiter üben</button>
+                <button
+                  className="btn-primary"
+                  onClick={() => {
+                    setConfirmation(null);
+                    if (confirmation.kind === "finish") finishQuiz();
+                    else restart(confirmation.mode);
+                  }}
+                  type="button"
+                >
+                  {confirmation.kind === "finish" ? "Übung abgeben" : "Modus wechseln"}
+                </button>
+              </div>
+            </>
+          )}
+        </AtlasDialog>
+      )}
     </main>
   );
 }

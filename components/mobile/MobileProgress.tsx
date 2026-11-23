@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ProgressTools } from "@/components/ProgressTools";
 import type { CSSProperties } from "react";
 import { blockColor } from "@/lib/blockColors";
 import { formatBlockLabel } from "@/lib/blockLabels";
@@ -24,7 +25,6 @@ export function MobileProgress() {
   return (
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
-        <p className="eyebrow">Progress</p>
         <h1>Lernfortschritt</h1>
         <p>Kompakt nach Aktivität und offenen Fehlern.</p>
       </header>
@@ -64,6 +64,7 @@ export function MobileProgress() {
         ))}
         {!rows.length && <div className="mobile-empty-state">Noch keine Lerndaten. Starte dein erstes Training.</div>}
       </section>
+      <ProgressTools />
     </main>
   );
 }

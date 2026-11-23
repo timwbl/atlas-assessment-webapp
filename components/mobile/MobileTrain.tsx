@@ -11,20 +11,21 @@ export function MobileTrain() {
   return (
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
-        <p className="eyebrow">Train</p>
         <h1>Trainieren</h1>
-        <p>Kurze Sessions, direkt aus deinem aktuellen Lernstand.</p>
+        <p>Kurze Runden und Wiederholungen aus deinem Lernstand.</p>
       </header>
 
-      {recent && (
+      {data.loading ? <p className="mobile-exercise-count" role="status">Training wird geladen …</p> : recent ? (
         <Link className="mobile-train-primary" href={`/quiz/${recent.id}?mode=training&quick=random&limit=5`}>
-          <span>5 Minuten</span>
-          <strong>Kurzes Training starten</strong>
-          <small>{formatBlockLabel(recent.block)} · {recent.lectureCode} · 5 Fragen</small>
+          <span>Kurze Runde</span>
+          <strong>5 zufällige Fragen</strong>
+          <small>{formatBlockLabel(recent.block)} · {recent.lectureCode}</small>
         </Link>
+      ) : (
+        <Link className="btn-primary mobile-primary-action" href="/assessments">Übung wählen</Link>
       )}
 
-      <section className="mobile-train-list">
+      {!data.loading && <section className="mobile-train-list" aria-label="Weitere Trainingsarten">
         <TrainCard
           count={data.wrongCount}
           disabled={!data.wrongTarget}
@@ -40,18 +41,11 @@ export function MobileTrain() {
           subtitle={data.markedTarget ? `${data.markedTarget.lectureCode} · persönlicher Review` : "Noch nichts markiert"}
         />
         <TrainCard
-          count={recent?.questionCount || 0}
-          disabled={!recent}
-          href={recent ? `/quiz/${recent.id}?mode=training&quick=random&limit=10` : "#"}
-          title="Letzten Block wiederholen"
-          subtitle={recent ? `${formatBlockLabel(recent.block)} · ${recent.lectureCode}` : "Noch keine letzte Aktivität"}
-        />
-        <TrainCard
           count={10}
           disabled={!recent}
           href={recent ? `/quiz/${recent.id}?mode=training&quick=random&limit=10` : "#"}
-          title="10-Minuten-Mix"
-          subtitle={recent ? `Zufällige Fragen aus ${formatBlockLabel(recent.block)}` : "Übung auswählen"}
+          title="10 zufällige Fragen"
+          subtitle={recent ? `${formatBlockLabel(recent.block)} · ${recent.lectureCode}` : "Übung auswählen"}
         />
         <TrainCard
           count={data.resume ? 1 : 0}
@@ -60,7 +54,7 @@ export function MobileTrain() {
           title="Offene Session"
           subtitle={data.resume ? `Weiter bei Frage ${data.resume.currentQuestionIndex + 1}` : "Keine Session unterbrochen"}
         />
-      </section>
+      </section>}
     </main>
   );
 }

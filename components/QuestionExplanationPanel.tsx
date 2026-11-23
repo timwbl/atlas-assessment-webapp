@@ -31,7 +31,7 @@ export function QuestionExplanationPanel({
     <section className={`question-explanation-panel ${compact ? "is-compact" : ""}`}>
       {explanation?.coreIdea && (
         <div className="question-core-idea">
-          <span>Core Idea</span>
+          <span>Grundidee</span>
           <strong>{explanation.coreIdea}</strong>
         </div>
       )}
@@ -80,7 +80,7 @@ export function QuestionExplanationPanel({
 
       {explanation?.highYield && (
         <div className="question-high-yield">
-          <span>High Yield</span>
+          <span>Merksatz</span>
           <strong>{explanation.highYield}</strong>
         </div>
       )}

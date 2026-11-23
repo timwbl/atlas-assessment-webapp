@@ -43,6 +43,7 @@ export function AccountMenu() {
   const router = useRouter();
   const menuRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const pointerEntry = useRef(false);
   const popoverRef = useRef<HTMLDivElement>(null);
   const popoverId = useId();
   const [compact, setCompact] = useState(false);
@@ -143,7 +144,10 @@ export function AccountMenu() {
       const storedName = currentProfile?.display_name?.trim();
       if (storedName) {
         setName(storedName);
-        window.localStorage.setItem(NAME_KEY, storedName);
+        if (window.localStorage.getItem(NAME_KEY) !== storedName) {
+          window.localStorage.setItem(NAME_KEY, storedName);
+          window.dispatchEvent(new CustomEvent(PROFILE_NAME_CHANGED_EVENT, { detail: storedName }));
+        }
       }
       setProfileChecked(true);
     } catch {
@@ -253,6 +257,7 @@ export function AccountMenu() {
         const updated = await updateCurrentProfileName(nextName);
         setProfile(updated);
       }
+      window.dispatchEvent(new CustomEvent(PROFILE_NAME_CHANGED_EVENT, { detail: nextName }));
       closeAuth();
     });
   }
@@ -267,7 +272,7 @@ export function AccountMenu() {
     requestAnimationFrame(() => triggerRef.current?.focus({ preventScroll: true }));
   }
 
-  const menuContent = (
+  const menuContent = (dismiss: () => void) => (
     <>
       <div className="account-popover-head">
         <div className="account-popover-mark">{initials}</div>
@@ -275,7 +280,7 @@ export function AccountMenu() {
           <strong className="account-name">{displayName || "Gastprofil"}</strong>
           <p className="account-email">{accountEmail}</p>
         </div>
-        <button className="account-popover-close" onClick={closeMenu} type="button" aria-label="Account-Menü schliessen">
+        <button className="account-popover-close" onClick={dismiss} type="button" aria-label="Account-Menü schliessen">
           <span aria-hidden="true">×</span>
         </button>
       </div>
@@ -385,7 +390,10 @@ export function AccountMenu() {
           aria-expanded={open}
           aria-haspopup="dialog"
           ref={triggerRef}
-          onClick={() => setOpen((value) => !value)}
+          onClick={(event) => {
+            pointerEntry.current = event.detail > 0;
+            setOpen((value) => !value);
+          }}
         >
           <span className="account-avatar-mark">{initials}</span>
           <span className="account-avatar-copy">
@@ -403,6 +411,7 @@ export function AccountMenu() {
           <div
             aria-label="Account-Menü"
             className="account-popover"
+            data-pointer-entry={pointerEntry.current || undefined}
             id={popoverId}
             onBlur={(event) => {
               const next = event.relatedTarget;
@@ -417,7 +426,7 @@ export function AccountMenu() {
             ref={popoverRef}
             role="dialog"
           >
-            {menuContent}
+            {menuContent(closeMenu)}
           </div>
         ))}
       </div>

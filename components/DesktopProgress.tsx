@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ProgressTools } from "@/components/ProgressTools";
 import type { CSSProperties } from "react";
 import { blockColor } from "@/lib/blockColors";
 import { formatBlockLabel } from "@/lib/blockLabels";
@@ -94,6 +95,7 @@ export function DesktopProgress() {
           <div className="dashboard-empty-state">Noch keine Lerndaten. Starte dein erstes Training.</div>
         )}
       </section>
+      <ProgressTools />
     </main>
   );
 }

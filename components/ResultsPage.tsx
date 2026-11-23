@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useLayoutEffect, useRef } from "react";
 import { AssessmentReviewPrompt } from "./AssessmentReviewPrompt";
 import { CompletedAssessmentPdfExport } from "./CompletedAssessmentPdfExport";
+import { QuestionImages } from "./QuestionImages";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { optionKey, optionLabel } from "@/lib/score";
@@ -24,6 +26,11 @@ type Props = {
 };
 
 export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestart }: Props) {
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  useLayoutEffect(() => {
+    headingRef.current?.focus({ preventScroll: true });
+    window.scrollTo({ top: 0 });
+  }, []);
   const reviewRows = rows.filter((row) => row.status !== "correct");
   const partial = attempt.partial ?? rows.filter((row) => row.status === "partial").length;
   const incorrect = attempt.incorrect ?? rows.filter((row) => row.status === "incorrect").length;
@@ -36,14 +43,14 @@ export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestar
       <header className="glass result-hero assessment-review-hero rounded-[28px] p-6 md:p-8">
         <div>
           <div className="eyebrow">Übung abgeschlossen · {assessment.lectureCode}</div>
-          <h1 className="mt-2 text-3xl font-black md:text-4xl">{assessment.title}</h1>
+          <h1 className="mt-2 text-3xl font-black md:text-4xl" ref={headingRef} tabIndex={-1}>{assessment.title}</h1>
           <p className="mt-2 text-[var(--muted)]">
             {formatBlockLabel(assessment.block)} · {formatCompletedAt(attempt.completedAt)} · {attempt.total} Fragen
           </p>
         </div>
 
         <div className="review-score-grid mt-6">
-          <ReviewMetric label="Score" value={`${attempt.score}%`} accent />
+          <ReviewMetric label="Ergebnis" value={`${attempt.score}%`} accent />
           <ReviewMetric label="Punkte" value={`${formatPoints(points)} / ${formatPoints(maxPoints)}`} />
           <ReviewMetric label="Richtig" value={String(attempt.correct)} tone="success" />
           <ReviewMetric label="Teilrichtig" value={String(partial)} tone="warning" />
@@ -158,6 +165,7 @@ function ReviewQuestion({
         <StatusBadge row={row} />
       </div>
 
+      <QuestionImages images={row.question.images} />
       <div className="review-option-list">
         {row.question.type === "KPRIM"
           ? row.question.options.map((option) => (
