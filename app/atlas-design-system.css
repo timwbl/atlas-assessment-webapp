@@ -2622,7 +2622,7 @@ samp {
   min-height: 38px !important;
   border: 1px solid var(--atlas-hairline) !important;
   border-radius: 13px !important;
-  background: #fff !important;
+  background: var(--atlas-panel-strong) !important;
   padding: 0 12px !important;
   color: var(--atlas-text) !important;
   font-size: 13px !important;
@@ -2642,8 +2642,8 @@ samp {
 
 .atlas-quiz-review-button.is-marked {
   border-color: color-mix(in srgb, var(--atlas-blue) 32%, var(--atlas-hairline)) !important;
-  background: color-mix(in srgb, var(--atlas-blue) 9%, #fff) !important;
-  color: var(--atlas-blue) !important;
+  background: color-mix(in srgb, var(--atlas-blue) 9%, var(--atlas-panel-strong)) !important;
+  color: var(--atlas-active-text) !important;
 }
 
 .atlas-quiz-session-status {
