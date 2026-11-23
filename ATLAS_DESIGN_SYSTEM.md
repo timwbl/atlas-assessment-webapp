@@ -1,61 +1,19 @@
-# ATLAS Design System v1
+# ATLAS Design System
 
-ATLAS ist ein ruhiges Produktivsystem im Stil von Apple Calendar und Notes: klare Navigation, viel Luft, helle Systemflächen, feine Linien und ein kontrollierter Einsatz von ATLAS Blue.
+ATLAS ist auf kurze Lerneinstiege und konzentrierte Übungssitzungen ausgelegt. Auf der Übersicht hat die nächste oder laufende Übung Vorrang. Übungen, Altfragen und Zusammenfassungen behalten ihre fachlichen Filter und Blockfarben. Rückmeldungen im Quiz verwenden Text und Zustände zusätzlich zur Farbe.
 
-## Produktgefühl
+## Navigation und Lesbarkeit
 
-- Ruhig, fokussiert, funktional.
-- Informationsdicht, aber nicht technisch.
-- Akzentfarben markieren Status und Aktion, sie dominieren nie die Fläche.
-- Navigation verwendet lineare, Apple-artige Piktogramme mit kurzen Labels.
-- Karten dienen einzelnen Objekten oder Werkzeugen, nicht als dekorative Seitencontainer.
+- Am Desktop steht die Hauptnavigation am linken Rand. Aktuelle Seiten und zugehörige Detailansichten sind sichtbar markiert. Die eingeklappte Navigation behält ihre Beschriftung für Screenreader und zeigt sie bei Mauszeigerkontakt.
+- Auf kompakten Ansichten sind Übersicht, Übungen, Training, Fortschritt und Unterlagen am unteren Rand erreichbar. Der Reiter Übungen führt auch zu den Altfragen. Ein Zugriff auf den Hauptinhalt per Tastatur steht am Anfang der Navigation.
+- Die Schrift folgt dem System des Geräts. Überschriften haben eine kompaktere Laufweite, Fragen und Antworten ausreichend Zeilenabstand. Die wiederkehrenden Schriftgrössen sind in rem definiert.
+- Inhaltsflächen sind deckend. Die Navigationsleisten dürfen durchscheinend sein und werden mit den Systemeinstellungen für weniger Transparenz oder mehr Kontrast deckend. ATLAS verwendet weiterhin das eigene Logo und die eigenen Icons.
 
-## Tokens
+## Bedienung
 
-- Hintergrund: `#f7f7f9`
-- Fläche: `rgba(255,255,255,.92)`
-- Sidebar: `rgba(255,255,255,.82)`
-- Text: `#1d1d1f`
-- Sekundärtext: `#6e6e73`
-- Linie: `rgba(60,60,67,.14)`
-- ATLAS Blue: `#0a84ff`
-- Violet/Pink nur für seltene Highlights: `#9b72ff`, `#ff4fb8`
-- Success/Warning/Danger: Apple-nahe Systemfarben
+- Bedienelemente zeigen den Druckzustand sofort und lösen die Aktion beim Loslassen aus. Tastaturfokus bleibt sichtbar. Hauptaktionen und häufig genutzte Touch-Ziele sind mindestens 44 CSS-Pixel hoch, soweit der Platz und der jeweilige Kontext es zulassen.
+- Auswahlmenüs bleiben am Auslöser verankert, öffnen bei Platzmangel darüber und beschränken ihre Höhe auf den sichtbaren Bereich. Pfeiltasten bewegen die Hervorhebung. Enter oder Leertaste bestätigen, Escape schliesst.
+- Dialoge verwenden das native Dialogelement. Auf dem Handy können schliessbare Dialoge zusätzlich über den Griff nach unten gezogen werden. Die Position folgt dem Finger. Beim Loslassen berücksichtigt die Bewegung dessen Geschwindigkeit und lässt sich durch erneutes Greifen unterbrechen. Jede Geste hat eine sichtbare Alternative.
+- Die Systemeinstellung für weniger Bewegung deaktiviert die Feder und lässt Zustandswechsel direkt erscheinen. Ladestände zeigen den tatsächlichen Vorgang an.
 
-## Formen
-
-- Controls: 14px Radius
-- Cards: 14-18px Radius
-- Panels: maximal 24px Radius
-- Keine pillenförmigen Buttons für komplexe Navigation, ausser kleine Badges.
-
-## Typografie
-
-- Systemfont: `-apple-system`, `SF Pro Text`, `SF Pro Display`, Fallback `Segoe UI`.
-- Keine negative Letter-Spacing.
-- Grosse Headlines nur auf Start-/Dashboardflächen.
-- Werkzeuge, Tabellen und Planer verwenden kompaktere Hierarchien.
-
-## Navigation
-
-Desktop:
-- Ruhige Topbar oder Sidebar.
-- Aktiver Tab: leichte blaue Tönung, nicht voller Farbblock.
-- Icon + Label für Hauptbereiche.
-
-Mobile:
-- Bottom Tab Bar.
-- Kurze Labels.
-- Piktogramme bleiben führend.
-
-## Komponenten
-
-- Buttons: mindestens 40-44px Touch-Ziel.
-- Inputs: helle Systemflächen mit feinem Border.
-- Cards: feine Linie, minimale Schatten.
-- Tabellen: klare Zeilen, wenig Dekoration.
-- Modals/Sheets: abgerundete Panels, reduzierte Hintergrundunschärfe.
-
-## Icon-Regel
-
-Die WebApp nutzt eigene ATLAS-Systemicons, die sich an SF Symbols orientieren, aber als eigene SVG-Schicht gepflegt werden. Die lokale macOS-App kann visuell näher an SF Symbols geführt werden.
+[Apple, Designing Fluid Interfaces](https://developer.apple.com/videos/play/wwdc2018/803/) · [W3C, WCAG 2.2](https://www.w3.org/TR/WCAG22/)

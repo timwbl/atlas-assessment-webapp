@@ -69,30 +69,30 @@ export function AdminGate() {
   if (unlocked) return <AdminWorkspace />;
 
   return (
-    <main className="shell">
+    <main className="shell admin-login-page">
       <Link className="btn-secondary inline-flex items-center" href="/">Zur App</Link>
       <section className="glass admin-login-card mx-auto mt-8 max-w-xl">
-        <div className="admin-kicker">GESCHÜTZTER BEREICH</div>
         <h1>ATLAS Admin</h1>
         <p className="mt-3 text-[var(--muted)]">
-          Admin-Accounts werden automatisch erkannt. Der alternative Zugang wird serverseitig geprüft und nicht mehr im Browser ausgeliefert.
+          Mit einem Admin-Konto öffnet sich die Verwaltung automatisch. Alternativ kannst du das Admin-Passwort eingeben.
         </p>
-        <div className="mt-5 grid gap-3">
-          <input
-            className="input"
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            onKeyDown={(event) => {
-              if (event.key === "Enter") void login();
-            }}
-            placeholder="Admin-Passwort"
-          />
-          {error && <p className="text-sm text-red-600">{error}</p>}
-          <button className="btn-primary" disabled={checkingAccount || !password} onClick={() => void login()}>
-            {checkingAccount ? "Adminstatus wird geprüft…" : "Admin Mode aktivieren"}
+        <form className="mt-5 grid gap-3" onSubmit={(event) => { event.preventDefault(); void login(); }}>
+          <label className="grid gap-1">
+            Admin-Passwort
+            <input
+              autoComplete="current-password"
+              className="input"
+              onChange={(event) => setPassword(event.target.value)}
+              required
+              type="password"
+              value={password}
+            />
+          </label>
+          {error && <p className="text-sm text-red-600" role="alert">{error}</p>}
+          <button className="btn-primary" disabled={checkingAccount || !password} type="submit">
+            {checkingAccount ? "Adminstatus wird geprüft …" : "Verwaltung öffnen"}
           </button>
-        </div>
+        </form>
       </section>
     </main>
   );

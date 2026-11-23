@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { QuestionRenderer } from "./QuestionRenderer";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { ResultsPage } from "./ResultsPage";
@@ -122,6 +122,21 @@ export function QuizEngine({
       document.body.classList.remove("is-assessment-active");
     };
   }, [result, setCompanionAssessmentActive]);
+
+  const questionHeading = useRef<HTMLHeadingElement>(null);
+  const focusNextQuestion = useRef(false);
+
+  useLayoutEffect(() => {
+    if (!focusNextQuestion.current) return;
+    focusNextQuestion.current = false;
+    questionHeading.current?.focus();
+  }, [index, mode]);
+
+  function goToQuestion(next: number) {
+    if (next === index) return;
+    focusNextQuestion.current = true;
+    setIndex(next);
+  }
 
   useEffect(() => {
     if (result) return;
@@ -250,7 +265,7 @@ export function QuizEngine({
       return;
     }
     if (index >= questions.length - 1) finishQuiz();
-    else setIndex((value) => value + 1);
+    else goToQuestion(index + 1);
   }
 
   function retryCurrentQuestion() {
@@ -348,14 +363,13 @@ export function QuizEngine({
             <strong>Frage {index + 1} von {questions.length}</strong>
             <em>{answeredCount} beantwortet</em>
           </div>
-          <div className="quiz-mode-tabs atlas-quiz-mode-tabs" role="tablist" aria-label="Quizmodus">
+          <div className="quiz-mode-tabs atlas-quiz-mode-tabs" role="group" aria-label="Quizmodus">
             {(["training", "exam", "review"] as QuizMode[]).map((value) => (
               <button
-                aria-selected={mode === value}
+                aria-pressed={mode === value}
                 className={mode === value ? "is-active" : ""}
                 key={value}
                 onClick={() => restart(value)}
-                role="tab"
                 type="button"
               >
                 {value === "training" ? "Training" : value === "exam" ? "Prüfung" : "Review"}
@@ -364,6 +378,7 @@ export function QuizEngine({
           </div>
           <button
             type="button"
+            aria-pressed={!!stat?.markedForReview}
             className={stat?.markedForReview ? "atlas-quiz-review-button is-marked" : "atlas-quiz-review-button"}
             onClick={() => {
               toggleQuestionReview(assessment.id, question.id);
@@ -371,7 +386,7 @@ export function QuizEngine({
             }}
           >
             <AtlasIcon name="bookmark" />
-            <span>{stat?.markedForReview ? "Markiert" : "Review"}</span>
+            <span>{stat?.markedForReview ? "Markiert" : "Markieren"}</span>
           </button>
           <SummaryLinkButton assessment={assessment} />
         </div>
@@ -390,22 +405,24 @@ export function QuizEngine({
           <span>{progressPercent}%</span>
         </div>
 
-        <div className="quiz-progress-nav atlas-quiz-question-rail">
+        <nav aria-label="Fragen der Übung" className="quiz-progress-nav atlas-quiz-question-rail">
           {questions.map((item, itemIndex) => {
             const answered = answeredQuestionIds.has(item.id);
             return (
               <button
                 type="button"
+                aria-current={itemIndex === index ? "step" : undefined}
+                aria-label={`Frage ${itemIndex + 1}: ${answered ? "beantwortet" : "offen"}`}
                 className={`quiz-progress-dot atlas-quiz-step${itemIndex === index ? " is-current" : ""}${answered ? " is-answered" : ""}`}
                 key={item.id}
                 title={`Frage ${itemIndex + 1}: ${answered ? "beantwortet" : "offen"}`}
-                onClick={() => setIndex(itemIndex)}
+                onClick={() => goToQuestion(itemIndex)}
               >
                 {itemIndex + 1}
               </button>
             );
           })}
-        </div>
+        </nav>
       </section>
 
       <article className="quiz-question-card atlas-quiz-card">
@@ -414,15 +431,17 @@ export function QuizEngine({
           <span>Level {question.difficulty}</span>
           <span>{assessment.title}</span>
         </div>
-        <h2 className="quiz-question-title">{question.stem}</h2>
+        <h1 className="quiz-question-title" ref={questionHeading} tabIndex={-1}>{question.stem}</h1>
         <div className="atlas-quiz-answer-list">
           <QuestionRenderer question={question} answer={currentAnswer} revealed={isRevealed} onChange={setAnswer} />
         </div>
 
         {isRevealed && (
           <div className={`quiz-feedback ${currentCorrect ? "is-correct" : "is-wrong"}`}>
-            <strong>{currentCorrect ? "Richtig" : "Noch nicht"}</strong>
-            <p>Richtig wäre: {correctAnswerLabel(question)}</p>
+            <div role="status">
+              <strong>{currentCorrect ? "Richtig" : "Noch nicht"}</strong>
+              <p>Richtige Antwort: {correctAnswerLabel(question)}</p>
+            </div>
             <QuestionExplanationPanel
               answer={currentAnswer}
               compact
@@ -433,7 +452,7 @@ export function QuizEngine({
         )}
 
         <div className="quiz-action-row">
-          <button type="button" className="btn-secondary" disabled={index === 0} onClick={() => setIndex((value) => Math.max(0, value - 1))}>
+          <button type="button" className="btn-secondary" disabled={index === 0} onClick={() => goToQuestion(index - 1)}>
             Zurück
           </button>
           <div className="quiz-action-buttons">
@@ -465,7 +484,7 @@ export function QuizEngine({
           </div>
         </div>
         {finishError && (
-          <p className="quiz-save-warning">
+          <p className="quiz-save-warning" role="alert">
             Resultat wurde angezeigt, aber der lokale Fortschritt konnte nicht gespeichert werden: {finishError}
           </p>
         )}

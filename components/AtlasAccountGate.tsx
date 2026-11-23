@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FormEvent, type ReactNode, useEffect, useState } from "react";
+import { FormEvent, type ReactNode, useEffect, useRef, useState } from "react";
 import {
   cloudSyncAvailable,
   getCurrentUser,
@@ -80,6 +80,8 @@ function AccountGateLoading() {
 }
 
 function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUser) => void }) {
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const requestedFocus = useRef(false);
   const [mode, setMode] = useState<Mode>("welcome");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -89,6 +91,20 @@ function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUse
   const [status, setStatus] = useState("");
 
   useEffect(() => setRemember(shouldRememberSession()), []);
+
+  useEffect(() => {
+    if (requestedFocus.current) {
+      headingRef.current?.focus();
+      requestedFocus.current = false;
+    }
+  }, [mode]);
+
+  function showMode(next: Mode) {
+    if (next === mode) return;
+    requestedFocus.current = true;
+    setMode(next);
+    setStatus("");
+  }
 
   async function run(action: () => Promise<void>) {
     setBusy(true);
@@ -108,7 +124,7 @@ function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUse
       if (mode === "signup") {
         const result = await signUpWithPassword(email.trim(), password, name.trim(), remember);
         if (result.requiresEmailConfirmation) {
-          setMode("check-email");
+          showMode("check-email");
           return;
         }
         if (result.user) {
@@ -134,41 +150,38 @@ function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUse
 
         {mode === "welcome" ? (
           <div className="account-gate-welcome">
-            <div className="eyebrow">ATLAS Lernplattform</div>
-            <h1 id="account-gate-title">Willkommen bei ATLAS.</h1>
+            <h1 id="account-gate-title" ref={headingRef} tabIndex={-1}>Willkommen bei ATLAS</h1>
             <p>Hier findest du Übungsfragen, Zusammenfassungen und weitere Unterlagen für das Studium.</p>
             <div className="account-gate-benefits" aria-label="Inhalte in ATLAS">
               <div><span aria-hidden="true">✓</span><strong>Übungsfragen und Schnellquiz nach Block</strong></div>
               <div><span aria-hidden="true">✓</span><strong>Zusammenfassungen und Downloads</strong></div>
               <div><span aria-hidden="true">✓</span><strong>Altfragen nach persönlicher Freigabe</strong></div>
             </div>
-            <button className="btn-primary account-gate-main-action" onClick={() => setMode("signup")} type="button">Account erstellen</button>
-            <button className="btn-secondary account-gate-main-action" onClick={() => setMode("signin")} type="button">Ich habe bereits ein Konto</button>
+            <button className="btn-primary account-gate-main-action" onClick={() => showMode("signup")} type="button">Account erstellen</button>
+            <button className="btn-secondary account-gate-main-action" onClick={() => showMode("signin")} type="button">Anmelden</button>
           </div>
         ) : mode === "check-email" ? (
           <div className="account-gate-confirmation">
-            <div className="eyebrow">Fast geschafft</div>
-            <h1 id="account-gate-title">Bestätige deine E-Mail</h1>
+            <h1 id="account-gate-title" ref={headingRef} tabIndex={-1}>Bestätige deine E-Mail</h1>
             <p>Wir haben einen Bestätigungslink an <strong>{email.trim()}</strong> gesendet. Danach kannst du ATLAS vollständig nutzen.</p>
             <button className="btn-primary" disabled={busy} onClick={() => void run(() => resendSignupConfirmation(email.trim()))} type="button">
               {busy ? "Wird gesendet …" : "Bestätigung erneut senden"}
             </button>
-            <button className="auth-text-button" onClick={() => { setMode("signin"); setStatus(""); }} type="button">Zur Anmeldung</button>
-            {status && <p className="account-status">{status}</p>}
+            <button className="auth-text-button" onClick={() => showMode("signin")} type="button">Zur Anmeldung</button>
+            {status && <p className="account-status" role="status">{status}</p>}
           </div>
         ) : (
           <>
             <div className="account-gate-heading">
-              <div className="eyebrow">Persönlicher Lernbereich</div>
-              <h1 id="account-gate-title">{mode === "signin" ? "Willkommen zurück" : "Dein ATLAS Account"}</h1>
+              <h1 id="account-gate-title" ref={headingRef} tabIndex={-1}>{mode === "signin" ? "Willkommen zurück" : "Dein ATLAS Account"}</h1>
               <p>{mode === "signin" ? "Melde dich an, um mit deinem Lernfortschritt weiterzumachen." : "Erstelle ein Konto, damit dein Fortschritt sicher deinem Profil zugeordnet wird."}</p>
             </div>
 
-            <button className="account-gate-back" onClick={() => { setMode("welcome"); setStatus(""); }} type="button">← Zurück</button>
+            <button className="account-gate-back" onClick={() => showMode("welcome")} type="button">← Zurück</button>
 
-            <div className="auth-tabs" role="tablist" aria-label="Account Aktion">
-              <button className={mode === "signin" ? "is-active" : ""} onClick={() => { setMode("signin"); setStatus(""); }} type="button">Anmelden</button>
-              <button className={mode === "signup" ? "is-active" : ""} onClick={() => { setMode("signup"); setStatus(""); }} type="button">Registrieren</button>
+            <div className="auth-tabs" role="group" aria-label="Account-Aktion">
+              <button aria-pressed={mode === "signin"} className={mode === "signin" ? "is-active" : ""} onClick={() => showMode("signin")} type="button">Anmelden</button>
+              <button aria-pressed={mode === "signup"} className={mode === "signup" ? "is-active" : ""} onClick={() => showMode("signup")} type="button">Registrieren</button>
             </div>
 
             <div className="auth-provider-grid">
@@ -187,7 +200,7 @@ function AccountRequired({ onAuthenticated }: { onAuthenticated: (user: CloudUse
               <label className="auth-remember-row"><input checked={remember} onChange={(event) => setRemember(event.target.checked)} type="checkbox" /><span aria-hidden="true" className="auth-checkbox" /><span className="auth-remember-copy"><strong>Eingeloggt bleiben</strong><small>Auf diesem Gerät angemeldet bleiben.</small></span></label>
               <button className="btn-primary auth-submit" disabled={busy || !email.trim() || !password || (mode === "signup" && !name.trim())} type="submit">{busy ? "Bitte warten …" : mode === "signup" ? "Account erstellen" : "Anmelden"}</button>
               {mode === "signin" && <button className="auth-text-button" disabled={busy || !email.trim()} onClick={() => void run(() => resendSignupConfirmation(email.trim()))} type="button">Bestätigungsmail erneut senden</button>}
-              {status && <p className="account-status">{status}</p>}
+              {status && <p className="account-status" role="status">{status}</p>}
             </form>
           </>
         )}

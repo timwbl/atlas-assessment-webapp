@@ -1,44 +1,41 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 import { AtlasIcon } from "./AtlasIcon";
-import { ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, type AssessmentRouteContext } from "@/lib/assessmentRouteContext";
 
-export function MainNav() {
-  const pathname = usePathname();
-  const isAltfragenContext = useAltfragenRouteContext(pathname);
-  const isAssessmentDetail = pathname.startsWith("/assessment/");
+const items = [
+  { href: "/", icon: "dashboard", label: "Übersicht" },
+  { href: "/assessments", icon: "book", label: "Übungen" },
+  { href: "/train", icon: "play", label: "Trainieren" },
+  { href: "/progress", icon: "chart", label: "Lernfortschritt" },
+  { href: "/downloads", icon: "folder", label: "Zusammenfassungen" },
+  { href: "/altfragen", icon: "archive", label: "Altfragen" }
+] as const;
 
-  if (pathname.startsWith("/quiz")) return null;
+type NavProps = {
+  isAltfragenContext: boolean;
+  pathname: string;
+};
 
-  const items = [
-    { href: "/", icon: "dashboard", label: "Dashboard" },
-    { href: "/assessments", icon: "book", label: "Übungen" },
-    { href: "/train", icon: "play", label: "Trainieren" },
-    { href: "/progress", icon: "chart", label: "Lernfortschritt" },
-    { href: "/downloads", icon: "folder", label: "Zusammenfassungen" },
-    { href: "/altfragen", icon: "archive", label: "Altfragen" }
-  ] as const;
+export function mainNavLocation({ pathname, isAltfragenContext }: NavProps): string {
+  if (pathname.startsWith("/assessment/")) return isAltfragenContext ? "/altfragen" : "/assessments";
+  if (pathname.startsWith("/blocks/")) return "/assessments";
+  return pathname;
+}
+
+export function MainNav(props: NavProps) {
+  const location = mainNavLocation(props);
 
   return (
-    <nav className="main-nav" aria-label="Hauptnavigation">
+    <nav className="main-nav" id="atlas-main-nav" aria-label="Hauptnavigation">
       {items.map((item) => {
-        const active =
-          item.href === "/" ?
-            pathname === "/" :
-            item.href === "/assessments" ?
-              pathname.startsWith("/assessments") ||
-              pathname.startsWith("/blocks/") ||
-              (isAssessmentDetail && !isAltfragenContext) :
-              item.href === "/altfragen" ?
-                pathname.startsWith("/altfragen") ||
-                (isAssessmentDetail && isAltfragenContext) :
-              pathname.startsWith(item.href);
-
+        const active = location === item.href;
         return (
-          <Link className={active ? "main-nav-item is-active" : "main-nav-item"} href={item.href} key={item.href}>
+          <Link
+            aria-current={active ? (props.pathname === item.href ? "page" : "location") : undefined}
+            className={active ? "main-nav-item is-active" : "main-nav-item"}
+            href={item.href}
+            key={item.href}
+            title={item.label}
+          >
             <AtlasIcon name={item.icon} />
             <span className="main-nav-label">{item.label}</span>
           </Link>
@@ -46,28 +43,4 @@ export function MainNav() {
       })}
     </nav>
   );
-}
-
-function useAltfragenRouteContext(pathname: string): boolean {
-  const [assessmentContext, setAssessmentContext] = useState<AssessmentRouteContext | null>(null);
-
-  useEffect(() => {
-    if (!pathname.startsWith("/assessment/")) {
-      setAssessmentContext(null);
-      return;
-    }
-
-    const params = new URLSearchParams(window.location.search);
-    setAssessmentContext(params.get("origin") === "altfragen" || params.get("from") === "altfragen" ? "altfragen" : null);
-
-    function handleAssessmentContext(event: Event) {
-      const area = (event as CustomEvent<{ area?: AssessmentRouteContext }>).detail?.area;
-      if (area === "altfragen" || area === "assessments") setAssessmentContext(area);
-    }
-
-    window.addEventListener(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, handleAssessmentContext);
-    return () => window.removeEventListener(ASSESSMENT_ROUTE_CONTEXT_CHANGED_EVENT, handleAssessmentContext);
-  }, [pathname]);
-
-  return assessmentContext === "altfragen";
 }

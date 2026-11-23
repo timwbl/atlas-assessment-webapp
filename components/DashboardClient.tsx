@@ -27,7 +27,6 @@ type DashboardAction = {
   href: string;
   icon: AtlasIconName;
   meta?: string;
-  accent?: "blue" | "violet" | "green";
   disabled?: boolean;
 };
 
@@ -150,39 +149,27 @@ export function DashboardClient() {
 
   const actions: DashboardAction[] = [
     {
-      title: data.resume && resumeAssessment ? "Session fortsetzen" : "Training starten",
-      description: primaryAssessment
-        ? compactAssessmentTitle(primaryAssessment)
-        : "Wähle eine Übung und starte ruhig in die nächste Einheit.",
-      href: resumeHref,
-      icon: "play",
-      meta: primaryAssessment ? assessmentMeta(primaryAssessment) : "Übung wählen",
-      accent: "blue"
-    },
-    {
       title: "Übungen",
-      description: "Alle verfügbaren Fragen nach Block, Fach und Lernstand durchsuchen.",
+      description: "Fragen nach Block, Titel oder Fach suchen.",
       href: "/assessments",
       icon: "book",
-      meta: `${scopedAssessments.length} Übungen`,
-      accent: "violet"
+      meta: `${scopedAssessments.length} Übungen`
     },
     {
       title: "Schwächen trainieren",
       description: scopedData.wrongTarget
         ? compactAssessmentTitle(scopedData.wrongTarget)
-        : "Noch keine falschen Fragen für ein gezieltes Training erkannt.",
+        : "Noch keine offenen Fehler",
       href: wrongHref,
       icon: "target",
       meta: `${scopedData.wrongCount} offen`,
-      accent: "green",
       disabled: !scopedData.wrongTarget
     },
     {
       title: "Markierte Fragen",
       description: scopedData.markedTarget
         ? compactAssessmentTitle(scopedData.markedTarget)
-        : "Markiere Fragen im Training, um sie später gebündelt zu wiederholen.",
+        : "Noch keine markierten Fragen",
       href: markedHref,
       icon: "bookmark",
       meta: `${scopedData.markedCount} markiert`,
@@ -195,24 +182,31 @@ export function DashboardClient() {
       <header className="atlas-dashboard-hero">
         <div>
           <p className="eyebrow">{todayLabel}</p>
-          <h1>{firstName ? `Willkommen zurück, ${firstName}.` : "Herzlich willkommen"}</h1>
-          <p>
-            Dein ATLAS Arbeitsbereich für fokussiertes Trainieren, ruhigen Überblick
-            und sauberen Lernfortschritt.
-          </p>
+          <h1>{firstName ? `Hallo ${firstName}` : "Deine Lernübersicht"}</h1>
         </div>
         <ProgressTools />
       </header>
 
-      {data.error ? <div className="dashboard-alert">{data.error}</div> : null}
+      {data.error ? <div className="dashboard-alert" role="alert">{data.error}</div> : null}
 
-      <section className="dashboard-action-grid" aria-label="Hauptaktionen">
-        {actions.map((action) => (
-          <DashboardActionCard action={action} key={action.title} />
-        ))}
+      <section className="dashboard-learning-actions" aria-label="Lernen">
+        <article className="dashboard-next-study">
+          <p className="eyebrow">{data.resume && resumeAssessment ? "Laufende Übung" : "Training"}</p>
+          <h2>{primaryAssessment ? compactAssessmentTitle(primaryAssessment) : "Wähle eine Übung"}</h2>
+          {primaryAssessment && <p>{assessmentMeta(primaryAssessment)} · {primaryAssessment.questionCount} Fragen</p>}
+          <Link className="btn-primary" href={resumeHref}>
+            <AtlasIcon name="play" />
+            {data.resume && resumeAssessment ? "Fortsetzen" : primaryAssessment ? "Training starten" : "Übungen öffnen"}
+          </Link>
+        </article>
+        <ul className="dashboard-study-list" aria-label="Weitere Lernmöglichkeiten">
+          {actions.map((action) => (
+            <li key={action.title}><DashboardLearningLink action={action} /></li>
+          ))}
+        </ul>
       </section>
 
-      <section className="dashboard-overview-grid">
+      <section className="dashboard-overview-grid dashboard-overview-grid--wide">
         <article className="dashboard-progress-panel">
           <div className="dashboard-panel-head">
             <div>
@@ -231,38 +225,18 @@ export function DashboardClient() {
             <Metric label="Aktive Sessions" value={activeSessionCount} />
           </div>
         </article>
-
-        <article className="dashboard-focus-panel">
-          <div className="dashboard-panel-head">
-          <div>
-            <p className="eyebrow">Nächster Fokus</p>
-              <h2>{primaryAssessment ? compactAssessmentTitle(primaryAssessment) : "Übung wählen"}</h2>
-            </div>
-            <AtlasIcon name="calendar" />
-          </div>
-          <p>
-            {primaryAssessment
-              ? `${assessmentMeta(primaryAssessment)} · ${primaryAssessment.questionCount} Fragen`
-              : "Sobald du eine Übung startest, erscheint hier dein nächster sinnvoller Einstieg."}
-          </p>
-          <Link className="dashboard-inline-action" href={resumeHref}>
-            {data.resume && resumeAssessment ? "Weiterlernen" : "Öffnen"}
-            <span aria-hidden="true">→</span>
-          </Link>
-        </article>
       </section>
 
       <section className="dashboard-activity-panel">
         <div className="dashboard-panel-head">
           <div>
-            <p className="eyebrow">Verlauf</p>
             <h2>Letzte Aktivitäten</h2>
           </div>
           <Link className="dashboard-subtle-link" href="/progress">Lernfortschritt öffnen</Link>
         </div>
 
         {data.loading ? (
-          <div className="dashboard-empty-state">Lerndaten werden geladen.</div>
+          <div className="dashboard-empty-state" role="status">Lerndaten werden geladen …</div>
         ) : recentRows.length ? (
           <div className="dashboard-activity-list">
             {recentRows.map((row) => (
@@ -277,34 +251,22 @@ export function DashboardClient() {
   );
 }
 
-function DashboardActionCard({ action }: { action: DashboardAction }) {
+function DashboardLearningLink({ action }: { action: DashboardAction }) {
   const content = (
     <>
-      <div className="dashboard-card-topline">
-        <span className={`dashboard-action-icon is-${action.accent || "blue"}`}>
-          <AtlasIcon name={action.icon} />
-        </span>
-        <span className="dashboard-card-arrow" aria-hidden="true">→</span>
-      </div>
-      <h2>{action.title}</h2>
-      <p>{action.description}</p>
-      {action.meta ? <span className="dashboard-card-meta">{action.meta}</span> : null}
+      <AtlasIcon name={action.icon} />
+      <span className="dashboard-study-label">
+        <strong>{action.title}</strong>
+        <small>{action.description}</small>
+      </span>
+      {!action.disabled && <span className="dashboard-study-count">{action.meta}</span>}
+      {!action.disabled && <AtlasIcon name="chevronRight" />}
     </>
   );
 
-  if (action.disabled) {
-    return (
-      <div className="dashboard-action-card is-disabled" aria-disabled="true">
-        {content}
-      </div>
-    );
-  }
-
-  return (
-    <Link className="dashboard-action-card" href={action.href}>
-      {content}
-    </Link>
-  );
+  return action.disabled
+    ? <div aria-disabled="true" className="dashboard-study-row">{content}</div>
+    : <Link className="dashboard-study-row" href={action.href}>{content}</Link>;
 }
 
 function Metric({ label, value }: { label: string; value: number | string }) {

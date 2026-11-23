@@ -58,12 +58,11 @@ export function MobileAssessments() {
   return (
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
-        <p className="eyebrow">Übungen</p>
-        <h1>Fragen auswählen</h1>
+        <h1>Übungen</h1>
         <p>{semesterHeading(settings)} · nach Titel, KV oder Block suchen.</p>
       </header>
       <nav className="mobile-library-tabs" aria-label="Fragenbereiche">
-        <Link className="is-active" href="/assessments">Übungen</Link>
+        <Link aria-current="page" className="is-active" href="/assessments">Übungen</Link>
         <Link href="/altfragen">Altfragen</Link>
       </nav>
       {settings.studyYear && currentSemester && (

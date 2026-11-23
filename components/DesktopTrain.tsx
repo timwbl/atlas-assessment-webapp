@@ -72,9 +72,8 @@ export function DesktopTrain() {
   return (
     <main className="shell desktop-only atlas-subpage-shell train-desktop-page" id="top">
       <header className="atlas-subpage-hero">
-        <p className="eyebrow">ATLAS Training</p>
-        <h1>Gezielt trainieren.</h1>
-        <p>Kurze, klare Einstiege aus deinem aktuellen Lernstand. Ruhig starten, ohne zuerst die ganze Bibliothek zu durchsuchen.</p>
+        <h1>Trainieren</h1>
+        <p>Starte eine kurze Runde oder wiederhole falsche und markierte Antworten.</p>
       </header>
 
       <section className="train-action-grid" aria-label="Trainingsaktionen">

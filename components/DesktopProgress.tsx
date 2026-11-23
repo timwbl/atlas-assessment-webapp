@@ -31,9 +31,8 @@ export function DesktopProgress() {
   return (
     <main className="shell desktop-only atlas-subpage-shell progress-desktop-page" id="top">
       <header className="atlas-subpage-hero">
-        <p className="eyebrow">ATLAS Fortschritt</p>
-        <h1>Mein Lernfortschritt</h1>
-        <p>Ein ruhiger Überblick über Abdeckung, Fehler, markierte Fragen und die Bereiche, die als Nächstes Aufmerksamkeit brauchen.</p>
+        <h1>Lernfortschritt</h1>
+        <p>Bearbeitete Fragen, offene Fehler und markierte Fragen.</p>
       </header>
 
       <section className="dashboard-progress-panel progress-hero-panel">

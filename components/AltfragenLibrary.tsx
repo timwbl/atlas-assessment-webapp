@@ -237,21 +237,20 @@ export function AltfragenLibrary() {
   return (
     <main className="shell atlas-subpage-shell altfragen-library-shell" id="top">
       <header className="glass library-hero atlas-subpage-hero altfragen-page-head rounded-[28px] p-6 md:p-8">
-        <p className="eyebrow">Prüfungsnahes Training</p>
         <h1 className="library-title mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
           Altfragen
         </h1>
         <p className="mt-3 max-w-2xl text-[var(--muted)]">
-          Separater Fragenpool für prüfungsnahe Wiederholung. Filtere nach aktueller Lernphase, Prüfung oder Block.
+          Prüfungsfragen nach Studienjahr, Prüfung und Block.
         </p>
       </header>
       <nav className="mobile-library-tabs mobile-only" aria-label="Fragenbereiche">
         <Link href="/assessments">Übungen</Link>
-        <Link className="is-active" href="/altfragen">Altfragen</Link>
+        <Link aria-current="page" className="is-active" href="/altfragen">Altfragen</Link>
       </nav>
 
       {checkingAccess ? (
-        <section className="card mt-5 p-5 text-[var(--muted)]">Zugriff wird geprüft…</section>
+        <section className="card mt-5 p-5 text-[var(--muted)]" role="status">Zugriff wird geprüft …</section>
       ) : !access ? (
         <div className="mt-5">
           <AltfragenAccessPanel onUnlocked={() => setAccess(true)} />

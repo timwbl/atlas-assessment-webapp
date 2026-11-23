@@ -1,21 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { AppChrome } from "@/components/AppChrome";
 import { AtlasAccountGate } from "@/components/AtlasAccountGate";
-import { AtlasBootLoader } from "@/components/AtlasBootLoader";
 import { ChunkRecovery } from "@/components/ChunkRecovery";
 import { CompanionProvider } from "@/components/companion/CompanionProvider";
 import { UserStudyProvider } from "@/components/study/UserStudyProvider";
 import { APP_VERSION } from "@/lib/appVersion";
 import "./globals.css";
 import "./atlas-design-system.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter"
-});
+import "./atlas-interface.css";
 
 export const metadata: Metadata = {
   title: "ATLAS Study OS",
@@ -50,14 +43,12 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="de" data-app-version={APP_VERSION} suppressHydrationWarning>
-      <body className={`${inter.variable} ${inter.className}`}>
-        <AtlasBootLoader />
+      <body>
         <ChunkRecovery />
         <AtlasAccountGate>
           <UserStudyProvider>
             <CompanionProvider>
-              <AppChrome />
-              {children}
+              <AppChrome>{children}</AppChrome>
             </CompanionProvider>
           </UserStudyProvider>
         </AtlasAccountGate>

@@ -84,7 +84,7 @@ export function AdminWorkspace() {
   const navigate = useCallback((next: AdminView) => {
     setView(next);
     window.history.replaceState(null, "", `#${next}`);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }, []);
 
   async function lockAdmin() {
@@ -102,7 +102,6 @@ export function AdminWorkspace() {
           <p>{active.description}</p>
         </div>
         <div className="admin-topbar-actions">
-          <span className="admin-mode-badge">Admin Mode</span>
           <Link className="btn-secondary" href="/">Zur App</Link>
           <button className="btn-secondary" disabled={locking} onClick={() => void lockAdmin()} type="button">
             {locking ? "Sperrt…" : "Admin sperren"}
@@ -114,6 +113,7 @@ export function AdminWorkspace() {
         <nav className="admin-navigation" aria-label="Admin-Navigation">
           {NAV_ITEMS.map((item) => (
             <button
+              aria-current={view === item.id ? "page" : undefined}
               className={view === item.id ? "is-active" : ""}
               key={item.id}
               onClick={() => navigate(item.id)}

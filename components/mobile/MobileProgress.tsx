@@ -25,7 +25,7 @@ export function MobileProgress() {
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
         <p className="eyebrow">Progress</p>
-        <h1>Deine Lernlage</h1>
+        <h1>Lernfortschritt</h1>
         <p>Kompakt nach Aktivität und offenen Fehlern.</p>
       </header>
 

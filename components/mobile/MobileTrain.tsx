@@ -12,7 +12,7 @@ export function MobileTrain() {
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
         <p className="eyebrow">Train</p>
-        <h1>Was passt gerade?</h1>
+        <h1>Trainieren</h1>
         <p>Kurze Sessions, direkt aus deinem aktuellen Lernstand.</p>
       </header>
 
@@ -78,10 +78,8 @@ function TrainCard({
   count: number;
   disabled?: boolean;
 }) {
-  return (
-    <Link aria-disabled={disabled} className={disabled ? "mobile-train-card is-disabled" : "mobile-train-card"} href={href}>
-      <div><strong>{title}</strong><span>{subtitle}</span></div>
-      <b>{count}</b>
-    </Link>
-  );
+  const content = <><div><strong>{title}</strong><span>{subtitle}</span></div><b>{count}</b></>;
+  return disabled
+    ? <div aria-disabled="true" className="mobile-train-card is-disabled">{content}</div>
+    : <Link className="mobile-train-card" href={href}>{content}</Link>;
 }

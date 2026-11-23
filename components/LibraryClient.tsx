@@ -249,12 +249,11 @@ export function LibraryClient() {
       <header className="glass library-hero atlas-library-hero rounded-[28px] p-6 md:p-8">
         <div className="library-hero-inner">
           <div>
-            <div className="eyebrow">ATLAS Übungen</div>
             <h1 className="library-title mt-2 max-w-3xl text-4xl font-black leading-[1.02] md:text-6xl">
               Übungen
             </h1>
             <p className="mt-3 max-w-2xl text-[var(--muted)]">
-              Öffne einen Block und trainiere die passenden MC-Fragen für dein aktuelles Fachsemester.
+              Übungsfragen nach Fachsemester, Block und Thema.
             </p>
           </div>
           <ProgressTools onImported={() => setProgress(getAllProgress())} />
@@ -269,7 +268,6 @@ export function LibraryClient() {
         <div className="exercise-control-copy">
           <div className="eyebrow">Lernphase</div>
           <h2>{semester ? semesterTitle(semester) : "Fachsemester wählen"}</h2>
-          <p>Die Blockkarten zeigen nur Inhalte, die zu deiner aktuellen Auswahl passen.</p>
           <Link className="exercise-profile-link" href="/settings">
             {isAdmin ? "Admin · Alle Studienjahre verfügbar" : "Fachsemester im Profil ändern"}
           </Link>

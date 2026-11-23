@@ -57,7 +57,7 @@ export function SettingsPageClient() {
   }, [editingProfile, settings]);
 
   useEffect(() => {
-    if (editingProfile) window.setTimeout(() => nameInputRef.current?.focus(), 80);
+    if (editingProfile) nameInputRef.current?.focus({ preventScroll: true });
   }, [editingProfile]);
 
   async function refreshProfile() {
@@ -191,7 +191,7 @@ export function SettingsPageClient() {
           <AtlasIcon name="pencil" />
           {editingProfile ? "Schliessen" : "Bearbeiten"}
         </button>
-        {status && <p className="settings-status">{status}</p>}
+        {status && <p className="settings-status" role="status">{status}</p>}
       </section>
 
       <section className="settings-page-card" aria-label="Lernprofil">

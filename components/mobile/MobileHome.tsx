@@ -27,8 +27,7 @@ export function MobileHome() {
     <main className="mobile-action-page mobile-only" id="top">
       <header className="mobile-action-header">
         <p className="eyebrow">{todayLabel()}</p>
-        <h1>{name ? `Hallo ${name}.` : "Bereit für eine kurze Runde?"}</h1>
-        <p>{data.resume ? "Du kannst genau dort weitermachen, wo du aufgehört hast." : "Ein kleiner Lernblock reicht für heute völlig."}</p>
+        <h1>{name ? `Hallo ${name}` : "Deine Lernübersicht"}</h1>
       </header>
 
       {data.loading ? <MobileSkeleton /> : data.error ? <p className="mobile-data-error">{data.error}</p> : (
@@ -108,12 +107,10 @@ export function MobileHome() {
 }
 
 function QuickLink({ href, label, meta, disabled }: { href: string; label: string; meta: string; disabled?: boolean }) {
-  return (
-    <Link aria-disabled={disabled} className={disabled ? "mobile-quick-card is-disabled" : "mobile-quick-card"} href={href}>
-      <strong>{label}</strong>
-      <span>{meta}</span>
-    </Link>
-  );
+  const content = <><strong>{label}</strong><span>{meta}</span></>;
+  return disabled
+    ? <div aria-disabled="true" className="mobile-quick-card is-disabled">{content}</div>
+    : <Link className="mobile-quick-card" href={href}>{content}</Link>;
 }
 
 function MobileInsight({ markedCount, wrongCount, recentAt }: { markedCount: number; wrongCount: number; recentAt?: string }) {
@@ -129,7 +126,7 @@ function MobileInsight({ markedCount, wrongCount, recentAt }: { markedCount: num
 }
 
 function MobileSkeleton() {
-  return <div className="mobile-skeleton"><span /><span /><span /></div>;
+  return <div className="mobile-skeleton" role="status" aria-label="Lernübersicht wird geladen"><span /><span /><span /></div>;
 }
 
 function todayLabel(): string {

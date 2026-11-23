@@ -147,14 +147,9 @@ export function DownloadLibrary() {
     <main id="top" className="shell library-shell summary-library-shell">
       <header className="summary-page-head">
         <div>
-          <div className="eyebrow">ATLAS Zusammenfassungen</div>
           <h1>Zusammenfassungen</h1>
-          <p>Wähle Fachsemester, Prüfung und Block. ATLAS zeigt dir nur die passenden Lernunterlagen.</p>
+          <p>Lernunterlagen nach Fachsemester, Prüfung und Block.</p>
         </div>
-        <aside className="summary-page-note">
-          <strong>Hinweis</strong>
-          <span>Zusammenfassungen sind reine Lernunterlagen und verändern deinen Lernfortschritt nicht.</span>
-        </aside>
       </header>
 
       <section className="summary-control-card" aria-label="Zusammenfassungen filtern">

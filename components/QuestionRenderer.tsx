@@ -39,7 +39,12 @@ function TypeAQuestion({ question, answer, revealed, onChange }: Props) {
             onClick={() => onChange({ selected: key })}
           >
             <strong className="grid h-8 w-8 place-items-center rounded-full bg-black/5 dark:bg-white/10">{optionLabel(option)}</strong>
-            <span>{option.text}</span>
+            <span className="question-option-copy">
+              <span>{option.text}</span>
+              {revealed && (option.correct || selected) && (
+                <small>{option.correct ? "Richtige Antwort" : "Deine Antwort"}</small>
+              )}
+            </span>
           </button>
         );
       })}
@@ -67,7 +72,7 @@ function KPrimQuestion({ question, answer, revealed, onChange }: Props) {
           >
             <strong className="grid h-8 w-8 place-items-center rounded-full bg-black/5 dark:bg-white/10">{optionLabel(option)}</strong>
             <span>{option.text}</span>
-            <div className="kprim-toggle-group flex gap-2">
+            <div aria-label={option.text} className="kprim-toggle-group flex gap-2" role="group">
               {[true, false].map((value) => (
                 <button
                   type="button"

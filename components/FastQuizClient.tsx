@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useCompanion } from "./companion/CompanionProvider";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { QuestionRenderer } from "./QuestionRenderer";
@@ -223,7 +223,7 @@ export function FastQuizClient({
     enteredAt.current = Date.now();
     setResult(null);
     setPhase("quiz");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }, [candidates, progressId]);
 
   useEffect(() => {
@@ -284,6 +284,15 @@ export function FastQuizClient({
     [selection]
   );
 
+  const questionHeading = useRef<HTMLHeadingElement>(null);
+  const focusNextQuestion = useRef(false);
+
+  useLayoutEffect(() => {
+    if (!focusNextQuestion.current) return;
+    focusNextQuestion.current = false;
+    questionHeading.current?.focus();
+  }, [index]);
+
   function commitCurrentTime() {
     if (!question) return;
     const elapsed = Math.max(0, Math.round((Date.now() - enteredAt.current) / 1000));
@@ -293,7 +302,10 @@ export function FastQuizClient({
 
   function goToQuestion(nextIndex: number) {
     commitCurrentTime();
-    setIndex(Math.max(0, Math.min(questions.length - 1, nextIndex)));
+    const next = Math.max(0, Math.min(questions.length - 1, nextIndex));
+    if (next === index) return;
+    focusNextQuestion.current = true;
+    setIndex(next);
   }
 
   function setAnswer(answer: UserAnswer) {
@@ -370,7 +382,7 @@ export function FastQuizClient({
     setReadinessProgress(getProgress(progressId));
     setPhase("result");
     triggerAriEvent("assessment_completed");
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   function leaveQuiz() {
@@ -434,13 +446,15 @@ export function FastQuizClient({
           <span>Frage {index + 1}/{questions.length}</span>
         </header>
 
-        <div className="fast-quiz-progress" role="progressbar" aria-valuemin={1} aria-valuemax={questions.length} aria-valuenow={index + 1}>
+        <div className="fast-quiz-progress" aria-label="Fragenfortschritt" role="progressbar" aria-valuemin={1} aria-valuemax={questions.length} aria-valuenow={index + 1}>
           <i style={{ width: `${(index + 1) / questions.length * 100}%` }} />
         </div>
 
         <nav className="fast-quiz-question-nav" aria-label="Fragen-Navigation">
           {questions.map((item, questionIndex) => (
             <button
+              aria-current={questionIndex === index ? "step" : undefined}
+              aria-label={`Frage ${questionIndex + 1}: ${isAnswered(item, answers[item.id]) ? "beantwortet" : "offen"}`}
               className={`${questionIndex === index ? "is-current" : ""} ${isAnswered(item, answers[item.id]) ? "is-answered" : ""}`}
               key={item.id}
               onClick={() => goToQuestion(questionIndex)}
@@ -458,7 +472,7 @@ export function FastQuizClient({
             <span>Level {question.difficulty}</span>
             {objective && <span>{objective}</span>}
           </div>
-          <h1>{question.stem}</h1>
+          <h1 ref={questionHeading} tabIndex={-1}>{question.stem}</h1>
           <QuestionRenderer
             answer={currentAnswer}
             onChange={setAnswer}
@@ -470,6 +484,7 @@ export function FastQuizClient({
             <fieldset className="fast-quiz-confidence">
               <legend>Wie sicher bist du?</legend>
               <button
+                aria-pressed={confidence[question.id] === "sure"}
                 className={confidence[question.id] === "sure" ? "is-active" : ""}
                 onClick={() => setConfidence((current) => ({ ...current, [question.id]: "sure" }))}
                 type="button"
@@ -477,6 +492,7 @@ export function FastQuizClient({
                 Sicher
               </button>
               <button
+                aria-pressed={confidence[question.id] === "unsure"}
                 className={confidence[question.id] === "unsure" ? "is-active" : ""}
                 onClick={() => setConfidence((current) => ({ ...current, [question.id]: "unsure" }))}
                 type="button"

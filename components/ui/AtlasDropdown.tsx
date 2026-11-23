@@ -1,7 +1,6 @@
 "use client";
 
-import type { CSSProperties } from "react";
-import { useEffect, useId, useMemo, useRef, useState } from "react";
+import { useCallback, useId, useLayoutEffect, useRef, useState, type CSSProperties, type KeyboardEvent } from "react";
 import { createPortal } from "react-dom";
 
 export type AtlasDropdownOption<T extends string = string> = {
@@ -31,132 +30,202 @@ export function AtlasDropdown<T extends string = string>({
   placeholder = "Bitte auswählen",
   value
 }: Props<T>) {
-  const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [menuStyle, setMenuStyle] = useState<CSSProperties>({});
-  const rootRef = useRef<HTMLDivElement | null>(null);
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
-  const menuRef = useRef<HTMLDivElement | null>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const listboxId = useId();
-  const selected = useMemo(() => options.find((option) => option.value === value), [options, value]);
-  const enabledOptions = options.filter((option) => !option.disabled);
+  const selectedIndex = options.findIndex((option) => option.value === value);
+  const enabledIndices = options.flatMap((option, index) => option.disabled ? [] : [index]);
+  const open = !disabled && activeIndex !== null && enabledIndices.length > 0;
+  const highlighted = activeIndex !== null && enabledIndices.includes(activeIndex)
+    ? activeIndex
+    : enabledIndices[0];
+  const optionId = (index: number) => `${listboxId}-option-${index}`;
+  const close = useCallback(() => setActiveIndex(null), []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!open) return;
 
-    function updateMenuPosition() {
-      const rect = buttonRef.current?.getBoundingClientRect();
-      if (!rect) return;
-      const viewportPadding = 12;
-      const preferredWidth = Math.min(Math.max(rect.width, 220), Math.min(420, window.innerWidth - viewportPadding * 2));
-      const maxLeft = window.innerWidth - preferredWidth - viewportPadding;
-      const left = Math.max(viewportPadding, Math.min(rect.left, maxLeft));
+    let frame = 0;
+    const viewport = window.visualViewport;
+
+    function positionMenu() {
+      const trigger = buttonRef.current;
+      const menu = menuRef.current;
+      if (!trigger || !menu) return;
+
+      const rect = trigger.getBoundingClientRect();
+      const padding = 12;
+      const gap = 6;
+      const viewportLeft = viewport?.offsetLeft ?? 0;
+      const viewportTop = viewport?.offsetTop ?? 0;
+      const viewportWidth = viewport?.width ?? document.documentElement.clientWidth;
+      const viewportBottom = viewportTop + (viewport?.height ?? window.innerHeight);
+      const width = Math.min(Math.max(rect.width, 220), 420, viewportWidth - padding * 2);
+      const left = Math.max(viewportLeft + padding, Math.min(rect.left, viewportLeft + viewportWidth - padding - width));
+      const roomBelow = viewportBottom - rect.bottom - padding - gap;
+      const roomAbove = rect.top - viewportTop - padding - gap;
+      const desiredHeight = Math.min(360, menu.scrollHeight + 2);
+      const above = roomBelow < desiredHeight && roomAbove > roomBelow;
+      const maxHeight = Math.max(0, Math.min(360, above ? roomAbove : roomBelow));
+
+      if (maxHeight < 48) {
+        close();
+        return;
+      }
+
+      const originX = Math.min(width, Math.max(0, rect.left + rect.width / 2 - left));
       setMenuStyle({
         left,
-        minWidth: preferredWidth,
-        width: preferredWidth,
-        top: rect.bottom + 8
+        width,
+        top: above ? undefined : rect.bottom + gap,
+        bottom: above ? window.innerHeight - rect.top + gap : undefined,
+        maxHeight,
+        transformOrigin: `${originX}px ${above ? "bottom" : "top"}`
       });
     }
 
-    function closeOnOutside(event: MouseEvent | TouchEvent) {
-      const target = event.target as Node;
-      if (!rootRef.current?.contains(target) && !menuRef.current?.contains(target)) setOpen(false);
+    function onViewportChange(event: Event) {
+      if (event.target instanceof Node && menuRef.current?.contains(event.target)) return;
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(positionMenu);
     }
 
-    function closeOnEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        setOpen(false);
-        buttonRef.current?.focus();
+    function closeOnOutside(event: PointerEvent) {
+      const target = event.target as Node;
+      if (!buttonRef.current?.contains(target) && !menuRef.current?.contains(target)) close();
+    }
+
+    positionMenu();
+    document.addEventListener("pointerdown", closeOnOutside);
+    window.addEventListener("resize", onViewportChange);
+    window.addEventListener("scroll", onViewportChange, true);
+    viewport?.addEventListener("resize", onViewportChange);
+    viewport?.addEventListener("scroll", onViewportChange);
+
+    return () => {
+      cancelAnimationFrame(frame);
+      document.removeEventListener("pointerdown", closeOnOutside);
+      window.removeEventListener("resize", onViewportChange);
+      window.removeEventListener("scroll", onViewportChange, true);
+      viewport?.removeEventListener("resize", onViewportChange);
+      viewport?.removeEventListener("scroll", onViewportChange);
+    };
+  }, [open, options.length, close]);
+
+  useLayoutEffect(() => {
+    const menu = menuRef.current;
+    const option = menu?.querySelector<HTMLElement>(".is-highlighted");
+    if (!menu || !option) return;
+    const optionTop = option.offsetTop;
+    if (optionTop < menu.scrollTop) menu.scrollTop = optionTop;
+    const optionBottom = optionTop + option.offsetHeight;
+    if (optionBottom > menu.scrollTop + menu.clientHeight) menu.scrollTop = optionBottom - menu.clientHeight;
+  }, [open, highlighted, menuStyle]);
+
+  function openMenu(direction: 1 | -1 = 1) {
+    const edgeIndex = direction === 1 ? enabledIndices[0] : enabledIndices.at(-1);
+    const index = enabledIndices.includes(selectedIndex) ? selectedIndex : edgeIndex;
+    if (index !== undefined) setActiveIndex(index);
+  }
+
+  function selectOption(index: number) {
+    const option = options[index];
+    if (!option || option.disabled) return;
+    if (option.value !== value) onChange(option.value);
+    close();
+  }
+
+  function handleKey(event: KeyboardEvent<HTMLButtonElement>) {
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      const direction = event.key === "ArrowDown" ? 1 : -1;
+      if (!open) openMenu(direction);
+      else {
+        const position = enabledIndices.indexOf(highlighted);
+        const index = Math.max(0, Math.min(enabledIndices.length - 1, position + direction));
+        setActiveIndex(enabledIndices[index]);
+      }
+    } else if (open && (event.key === "Home" || event.key === "End")) {
+      event.preventDefault();
+      setActiveIndex(event.key === "Home" ? enabledIndices[0] : enabledIndices[enabledIndices.length - 1]);
+    } else if (open && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      selectOption(highlighted);
+    } else if (open && event.key === "Escape") {
+      event.preventDefault();
+      event.stopPropagation();
+      close();
+    } else if (event.key.length === 1 && event.key.trim() && !event.metaKey && !event.ctrlKey && !event.altKey) {
+      const start = enabledIndices.indexOf(open ? highlighted : selectedIndex) + 1;
+      const byLetter = [...enabledIndices.slice(start), ...enabledIndices.slice(0, start)].find(
+        (index) => options[index].label.trimStart().toLocaleLowerCase("de-CH").startsWith(event.key.toLocaleLowerCase("de-CH"))
+      );
+      if (byLetter !== undefined) {
+        event.preventDefault();
+        setActiveIndex(byLetter);
       }
     }
-
-    updateMenuPosition();
-    document.addEventListener("mousedown", closeOnOutside);
-    document.addEventListener("touchstart", closeOnOutside);
-    document.addEventListener("keydown", closeOnEscape);
-    window.addEventListener("resize", updateMenuPosition);
-    window.addEventListener("scroll", updateMenuPosition, true);
-    return () => {
-      document.removeEventListener("mousedown", closeOnOutside);
-      document.removeEventListener("touchstart", closeOnOutside);
-      document.removeEventListener("keydown", closeOnEscape);
-      window.removeEventListener("resize", updateMenuPosition);
-      window.removeEventListener("scroll", updateMenuPosition, true);
-    };
-  }, [open]);
-
-  function moveSelection(direction: 1 | -1) {
-    if (!enabledOptions.length) return;
-    const currentIndex = enabledOptions.findIndex((option) => option.value === value);
-    const nextIndex = currentIndex === -1
-      ? direction === 1 ? 0 : enabledOptions.length - 1
-      : (currentIndex + direction + enabledOptions.length) % enabledOptions.length;
-    onChange(enabledOptions[nextIndex].value);
   }
 
   return (
-    <div
-      className={[
-        "atlas-dropdown",
-        fullWidth ? "atlas-dropdown--full" : "",
-        open ? "is-open" : "",
-        disabled ? "is-disabled" : "",
-        className
-      ].filter(Boolean).join(" ")}
-      ref={rootRef}
-    >
+    <div className={[
+      "atlas-dropdown",
+      fullWidth ? "atlas-dropdown--full" : "",
+      open ? "is-open" : "",
+      disabled ? "is-disabled" : "",
+      className
+    ].filter(Boolean).join(" ")}>
       <button
+        aria-activedescendant={open ? optionId(highlighted) : undefined}
+        aria-controls={open ? listboxId : undefined}
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-label={ariaLabel}
-        aria-controls={listboxId}
         className="atlas-dropdown-trigger"
         disabled={disabled}
-        onClick={() => setOpen((current) => !current)}
-        onKeyDown={(event) => {
-          if (event.key === "ArrowDown") {
-            event.preventDefault();
-            if (!open) setOpen(true);
-            moveSelection(1);
-          }
-          if (event.key === "ArrowUp") {
-            event.preventDefault();
-            if (!open) setOpen(true);
-            moveSelection(-1);
+        onBlur={close}
+        onClick={() => {
+          if (open) close();
+          else {
+            buttonRef.current?.focus({ preventScroll: true });
+            openMenu();
           }
         }}
+        onKeyDown={handleKey}
         ref={buttonRef}
+        role="combobox"
         type="button"
       >
-        <span>{selected?.label || placeholder}</span>
-        <span className="atlas-dropdown-chevron" aria-hidden="true">⌄</span>
+        <span>{options[selectedIndex]?.label || placeholder}</span>
+        <span className="atlas-dropdown-chevron" aria-hidden="true" />
       </button>
 
       {open && createPortal(
-        <div className="atlas-dropdown-menu" id={listboxId} ref={menuRef} role="listbox" style={menuStyle}>
-          {options.map((option) => {
-            const active = option.value === value;
-            return (
-              <button
-                aria-selected={active}
-                className={active ? "is-selected" : ""}
-                disabled={option.disabled}
-                key={option.value}
-                onClick={() => {
-                  onChange(option.value);
-                  setOpen(false);
-                  buttonRef.current?.focus();
-                }}
-                role="option"
-                type="button"
-              >
-                <span>{option.label}</span>
-                {active && <span className="atlas-dropdown-check" aria-hidden="true">✓</span>}
-              </button>
-            );
-          })}
+        <div aria-label={ariaLabel || placeholder} className="atlas-dropdown-menu" id={listboxId} ref={menuRef} role="listbox" style={menuStyle}>
+          {options.map((option, index) => (
+            <button
+              aria-selected={index === selectedIndex}
+              className={[
+                index === selectedIndex ? "is-selected" : "",
+                index === highlighted ? "is-highlighted" : ""
+              ].join(" ")}
+              disabled={option.disabled}
+              id={optionId(index)}
+              key={option.value}
+              onClick={() => selectOption(index)}
+              onMouseDown={(event) => event.preventDefault()}
+              role="option"
+              tabIndex={-1}
+              type="button"
+            >
+              <span>{option.label}</span>
+              {index === selectedIndex && <span className="atlas-dropdown-check" aria-hidden="true">✓</span>}
+            </button>
+          ))}
         </div>,
-        document.body
+        buttonRef.current?.closest("dialog") ?? document.body
       )}
     </div>
   );
