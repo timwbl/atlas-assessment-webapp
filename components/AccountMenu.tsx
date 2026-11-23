@@ -45,6 +45,7 @@ export function AccountMenu() {
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pointerEntry = useRef(false);
   const authOpeningInput = useRef<"pointer" | "keyboard">(undefined);
+  const restoreAuthFocus = useRef(false);
   const popoverRef = useRef<HTMLDivElement>(null);
   const popoverId = useId();
   const [compact, setCompact] = useState(false);
@@ -109,7 +110,10 @@ export function AccountMenu() {
   }, [open, compact]);
 
   useLayoutEffect(() => {
-    if (authOpen && (authMode === "signup" || authMode === "name")) {
+    if (!authOpen && restoreAuthFocus.current) {
+      restoreAuthFocus.current = false;
+      triggerRef.current?.focus({ preventScroll: true });
+    } else if (authOpen && (authMode === "signup" || authMode === "name")) {
       nameInputRef.current?.focus({ preventScroll: true });
     }
   }, [authMode, authOpen]);
@@ -271,8 +275,8 @@ export function AccountMenu() {
   }
 
   function closeAuth() {
+    restoreAuthFocus.current = true;
     setAuthOpen(false);
-    requestAnimationFrame(() => triggerRef.current?.focus({ preventScroll: true }));
   }
 
   const menuContent = (dismiss: MouseEventHandler<HTMLButtonElement>) => (
