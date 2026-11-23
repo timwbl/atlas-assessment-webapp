@@ -12,6 +12,7 @@ import {
   type CloudUser
 } from "@/lib/supabaseClient";
 import { syncAllProgress, upsertCurrentProfile } from "@/lib/cloudProgress";
+import styles from "./EmailConfirmationClient.module.css";
 
 type ConfirmationState = "verifying" | "success" | "error";
 
@@ -97,7 +98,9 @@ export function EmailConfirmationClient() {
         </div>
 
         <div className={`confirmation-state-icon is-${state}`} aria-hidden="true">
-          {state === "verifying" ? <span className="confirmation-spinner" /> : state === "success" ? "✓" : "!"}
+          {state === "verifying" && <span className="confirmation-spinner" />}
+          {state === "success" && <span className={styles.successMark}>✓</span>}
+          {state === "error" && "!"}
         </div>
 
         <div className="eyebrow">ATLAS Account</div>

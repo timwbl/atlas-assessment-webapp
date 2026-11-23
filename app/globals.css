@@ -5282,7 +5282,7 @@ button:disabled {
   height: 100%;
   border-radius: inherit;
   background: var(--accent);
-  transition: width 180ms ease;
+  transition: none;
 }
 
 .fast-quiz-question-nav {
@@ -5786,8 +5786,7 @@ button:disabled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .fast-quiz-loading span,
-  .fast-quiz-progress i {
+  .fast-quiz-loading span {
     animation: none;
     transition: none;
   }

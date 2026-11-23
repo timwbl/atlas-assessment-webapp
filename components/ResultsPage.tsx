@@ -6,6 +6,7 @@ import { AssessmentReviewPrompt } from "./AssessmentReviewPrompt";
 import { CompletedAssessmentPdfExport } from "./CompletedAssessmentPdfExport";
 import { QuestionImages } from "./QuestionImages";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
+import motion from "./QuizResultMotion.module.css";
 import { formatBlockLabel } from "@/lib/blockLabels";
 import { optionKey, optionLabel } from "@/lib/score";
 import type {
@@ -19,13 +20,14 @@ import type {
 
 type Props = {
   assessment: Assessment;
+  animateArrival: boolean;
   rows: QuizResultRow[];
   attempt: QuizAttempt;
   onRepeatWrong: () => void;
   onRestart: () => void;
 };
 
-export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestart }: Props) {
+export function ResultsPage({ assessment, animateArrival, rows, attempt, onRepeatWrong, onRestart }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => {
     headingRef.current?.focus({ preventScroll: true });
@@ -49,7 +51,7 @@ export function ResultsPage({ assessment, rows, attempt, onRepeatWrong, onRestar
           </p>
         </div>
 
-        <div className="review-score-grid mt-6">
+        <div className={`review-score-grid mt-6${animateArrival ? ` ${motion.summary}` : ""}`}>
           <ReviewMetric label="Ergebnis" value={`${attempt.score}%`} accent />
           <ReviewMetric label="Punkte" value={`${formatPoints(points)} / ${formatPoints(maxPoints)}`} />
           <ReviewMetric label="Richtig" value={String(attempt.correct)} tone="success" />

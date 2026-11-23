@@ -1,0 +1,17 @@
+@media (prefers-reduced-motion: no-preference) {
+  .successMark {
+    animation: confirm-address var(--atlas-motion-medium) var(--atlas-press-ease) both;
+  }
+}
+
+@keyframes confirm-address {
+  from {
+    opacity: .5;
+    transform: perspective(240px) rotateX(-18deg) scale(.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

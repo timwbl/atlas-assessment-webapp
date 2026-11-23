@@ -6,6 +6,7 @@ import { useCompanion } from "./companion/CompanionProvider";
 import { QuestionExplanationPanel } from "./QuestionExplanationPanel";
 import { QuestionImages } from "./QuestionImages";
 import { QuestionRenderer } from "./QuestionRenderer";
+import motion from "./QuizResultMotion.module.css";
 import {
   FAST_QUIZ_COUNTS,
   FAST_QUIZ_MODE_LABELS,
@@ -59,6 +60,7 @@ import type {
 type Phase = "setup" | "quiz" | "result";
 
 type ResultState = {
+  animateArrival: boolean;
   readiness: BlockReadinessResult;
   rows: QuizResultRow[];
   attempt: QuizAttempt;
@@ -314,7 +316,7 @@ export function FastQuizClient({
     setAnswers((current) => ({ ...current, [question.id]: answer }));
   }
 
-  function finishQuiz() {
+  function finishQuiz(animateArrival: boolean) {
     if (!selection || !questions.length) return;
     commitCurrentTime();
     const rows = buildResultRows(questions, answers);
@@ -375,6 +377,7 @@ export function FastQuizClient({
     void pushAllProgress(changedProgress).catch(() => undefined);
     pendingSession.current = null;
     setResult({
+      animateArrival,
       readiness,
       rows,
       attempt,
@@ -383,7 +386,6 @@ export function FastQuizClient({
     setReadinessProgress(getProgress(progressId));
     setPhase("result");
     triggerAriEvent("assessment_completed");
-    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   function leaveQuiz() {
@@ -448,7 +450,7 @@ export function FastQuizClient({
         </header>
 
         <div className="fast-quiz-progress" aria-label="Fragenfortschritt" role="progressbar" aria-valuemin={1} aria-valuemax={questions.length} aria-valuenow={index + 1}>
-          <i style={{ width: `${(index + 1) / questions.length * 100}%` }} />
+          <i aria-hidden="true" style={{ transform: `translateX(${((index + 1) / questions.length - 1) * 100}%)` }} />
         </div>
 
         <nav className="fast-quiz-question-nav" aria-label="Fragen-Navigation">
@@ -511,7 +513,7 @@ export function FastQuizClient({
           </button>
           <span>{Object.keys(answers).filter((id) => isAnswered(questions.find((item) => item.id === id), answers[id])).length}/{questions.length} beantwortet</span>
           {index === questions.length - 1 ? (
-            <button className="btn-primary" onClick={finishQuiz} type="button">Readiness berechnen</button>
+            <button className="btn-primary" onClick={(event) => finishQuiz(event.detail > 0)} type="button">Readiness berechnen</button>
           ) : (
             <button className="btn-primary" disabled={!answered} onClick={() => goToQuestion(index + 1)} type="button">Weiter</button>
           )}
@@ -602,7 +604,12 @@ function FastQuizResult({
   result: ResultState;
   onRestart: (mode: FastQuizMode) => void;
 }) {
-  const { readiness, rows, previousScore } = result;
+  const { animateArrival, readiness, rows, previousScore } = result;
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  useLayoutEffect(() => {
+    headingRef.current?.focus({ preventScroll: true });
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
   const weakLabels = readiness.weakLearningObjectiveIds
     .map((id) => readiness.learningObjectiveLabels[id])
     .filter(Boolean);
@@ -616,10 +623,10 @@ function FastQuizResult({
 
   return (
     <main className="shell fast-quiz-shell fast-quiz-result" id="top">
-      <header className={`glass fast-quiz-result-hero is-${readiness.status}`}>
+      <header className={`glass fast-quiz-result-hero is-${readiness.status}${animateArrival ? ` ${motion.summary}` : ""}`}>
         <div>
           <p className="eyebrow">{formatBlockId(blockId)} · Block Readiness</p>
-          <h1>{readiness.readinessScore}%</h1>
+          <h1 ref={headingRef} tabIndex={-1}>{readiness.readinessScore}%</h1>
           <h2>{readinessStatusLabel(readiness.status)}</h2>
           <p>{readinessInterpretation(readiness, weakLabels)}</p>
         </div>
@@ -629,7 +636,7 @@ function FastQuizResult({
         </div>
       </header>
 
-      <section className="fast-result-components">
+      <section className={`fast-result-components${animateArrival ? ` ${motion.metrics}` : ""}`}>
         <ResultMetric label="Normale Übungen" value={readiness.assessmentPerformance === null ? "Noch keine Daten" : `${readiness.assessmentPerformance}%`} />
         <ResultMetric label="Fast Quiz" value={`${readiness.fastQuizPerformance}%`} />
         <ResultMetric label="Lernzielabdeckung" value={`${readiness.learningObjectiveCoverage}%`} />
@@ -735,6 +742,8 @@ function isAnswered(question: AssessmentQuestion | undefined, answer: UserAnswer
 }
 
 function normalizeBlockId(value: string): string {
+  const blockId = blockIdForContent(value);
+  if (blockId) return blockId;
   const number = String(value).match(/\d+/)?.[0];
   return number ? `block${number}` : String(value || "block").toLowerCase();
 }

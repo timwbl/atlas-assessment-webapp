@@ -4,6 +4,9 @@ const path = require("node:path");
 const buildDir = process.argv[2] || ".readiness-test";
 const readiness = require(path.resolve(buildDir, "blockReadiness.js"));
 
+assert.equal(readiness.formatBlockId("block3"), "Block 3");
+assert.equal(readiness.formatBlockId("j2-block3"), "Block 3");
+
 function question(id, objective, type = "A", difficulty = 3, stem = `Mechanismus ${id}`) {
   const optionCount = type === "KPRIM" ? 4 : 5;
   return {

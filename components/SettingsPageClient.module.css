@@ -1,0 +1,12 @@
+@media (prefers-reduced-motion: no-preference) {
+  .profileContent[data-pointer-entry="true"] {
+    opacity: 1;
+    transition: opacity var(--atlas-motion-fast) var(--atlas-press-ease);
+  }
+
+  @starting-style {
+    .profileContent[data-pointer-entry="true"] {
+      opacity: .8;
+    }
+  }
+}

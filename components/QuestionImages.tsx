@@ -1,35 +1,40 @@
 "use client";
 
-import { useCallback, useLayoutEffect, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
+import { useCallback, useImperativeHandle, useLayoutEffect, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent, type Ref } from "react";
 import { AtlasIcon } from "./AtlasIcon";
+import { animateQuestionImage } from "./questionImageMotion";
 import { AtlasDialog } from "./ui/AtlasDialog";
 import { isQuestionImageSource } from "@/lib/questionImages";
 import type { AssessmentQuestionImage } from "@/lib/types";
 
 export function QuestionImages({ images }: { images?: AssessmentQuestionImage[] }) {
-  const [active, setActive] = useState<number | null>(null);
+  const [selection, setSelection] = useState<{ index: number; thumbnail: HTMLImageElement | null } | null>(null);
+  const viewer = useRef<ImageViewerHandle>(null);
   const validImages = useMemo(() => images?.filter(({ src }) => isQuestionImageSource(src)) ?? [], [images]);
   if (!validImages.length) return null;
 
   return (
     <div className="question-figures" aria-label="Abbildungen zur Frage" role="group">
       {validImages.map((item, index) => (
-        <QuestionThumbnail key={index} item={item} onOpen={() => setActive(index)} />
+        <QuestionThumbnail key={index} item={item} onOpen={(thumbnail) => setSelection({ index, thumbnail })} />
       ))}
-      {active !== null && validImages[active] && (
+      {selection && validImages[selection.index] && (
         <AtlasDialog
           className="question-image-viewer"
           label="Abbildungen zur Frage"
-          onDismiss={() => setActive(null)}
+          onDismiss={() => setSelection(null)}
+          onDismissMotion={() => viewer.current?.animateDismiss()}
           presentation="fullscreen"
         >
           {(dismiss) => (
             <ImageViewer
-              item={validImages[active]}
-              index={active}
+              item={validImages[selection.index]}
+              index={selection.index}
               total={validImages.length}
               onClose={dismiss}
-              onNavigate={setActive}
+              onNavigate={(index) => setSelection({ ...selection, index })}
+              thumbnail={selection.thumbnail}
+              ref={viewer}
             />
           )}
         </AtlasDialog>
@@ -38,7 +43,11 @@ export function QuestionImages({ images }: { images?: AssessmentQuestionImage[] 
   );
 }
 
-function QuestionThumbnail({ item, onOpen }: { item: AssessmentQuestionImage; onOpen: () => void }) {
+function QuestionThumbnail({ item, onOpen }: {
+  item: AssessmentQuestionImage;
+  onOpen: (origin: HTMLImageElement | null) => void;
+}) {
+  const image = useRef<HTMLImageElement>(null);
   const [failedSource, setFailedSource] = useState("");
   const failed = failedSource === item.src;
 
@@ -55,13 +64,13 @@ function QuestionThumbnail({ item, onOpen }: { item: AssessmentQuestionImage; on
           className="question-figure-trigger"
           onClick={(event) => {
             event.currentTarget.focus({ preventScroll: true });
-            onOpen();
+            onOpen(event.detail > 0 ? image.current : null);
           }}
           type="button"
         >
           {/* The assessed source may be embedded or hosted on an author-provided HTTPS origin. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img alt={item.alt} decoding="async" loading="lazy" onError={() => setFailedSource(item.src)} referrerPolicy="no-referrer" src={item.src} />
+          <img alt={item.alt} decoding="async" loading="lazy" onError={() => setFailedSource(item.src)} ref={image} referrerPolicy="no-referrer" src={item.src} />
           <span aria-hidden="true" className="question-figure-expand">↗</span>
         </button>
       )}
@@ -72,18 +81,21 @@ function QuestionThumbnail({ item, onOpen }: { item: AssessmentQuestionImage; on
 
 type Point = { x: number; y: number };
 type View = Point & { scale: number };
+type ImageViewerHandle = { animateDismiss: () => Animation | undefined };
 
 const FITTED: View = { x: 0, y: 0, scale: 1 };
 const MAX_ZOOM = 4;
 
 function ImageViewer({
-  item, index, total, onClose, onNavigate
+  item, index, total, onClose, onNavigate, thumbnail, ref
 }: {
   item: AssessmentQuestionImage;
   index: number;
   total: number;
-  onClose: () => void;
+  onClose: (animate?: boolean) => void;
   onNavigate: (index: number) => void;
+  thumbnail: HTMLImageElement | null;
+  ref: Ref<ImageViewerHandle>;
 }) {
   const [zoom, setZoom] = useState(1);
   const [failedSource, setFailedSource] = useState("");
@@ -94,6 +106,54 @@ function ImageViewer({
   const pointers = useRef(new Map<number, Point>());
   const dimensions = useRef({ stage: { width: 0, height: 0 }, image: { width: 0, height: 0 } });
   const stageCenter = useRef<Point>({ x: 0, y: 0 });
+  const transition = useRef<ReturnType<typeof animateQuestionImage>>(undefined);
+  const opening = useRef(false);
+
+  const finishOpening = useCallback(() => {
+    if (!opening.current) return;
+    opening.current = false;
+    transition.current?.cancel();
+    transition.current = undefined;
+  }, []);
+
+  useLayoutEffect(() => {
+    const stage = stageRef.current;
+    if (!stage || !thumbnail) return;
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (preference.matches) return;
+
+    opening.current = true;
+    // The native dialog is promoted to the top layer before the first frame.
+    const frame = requestAnimationFrame(() => {
+      if (!opening.current) return;
+      const entry = animateQuestionImage(stage, imageRef.current, thumbnail, true, null);
+      transition.current = entry;
+      if (entry) entry.animation.onfinish = finishOpening;
+      else opening.current = false;
+    });
+    window.addEventListener("resize", finishOpening);
+    preference.addEventListener("change", finishOpening);
+
+    return () => {
+      window.removeEventListener("resize", finishOpening);
+      preference.removeEventListener("change", finishOpening);
+      cancelAnimationFrame(frame);
+      opening.current = false;
+      transition.current?.cancel();
+      transition.current = undefined;
+    };
+  }, [finishOpening, thumbnail]);
+
+  useImperativeHandle(ref, () => ({
+    animateDismiss() {
+      const stage = stageRef.current;
+      if (!stage || !thumbnail) return;
+      opening.current = false;
+      const image = view.current.scale === 1 ? imageRef.current : null;
+      transition.current = animateQuestionImage(stage, image, thumbnail, false, transition.current ?? null);
+      return transition.current?.animation;
+    }
+  }), [thumbnail]);
 
   const draw = useCallback((next: View) => {
     const { image, stage } = dimensions.current;
@@ -137,6 +197,7 @@ function ImageViewer({
   }, [draw, failed, item.src]);
 
   function applyZoom(scale: number) {
+    finishOpening();
     const next = boundedZoom(scale);
     const ratio = next / view.current.scale;
     draw({ x: view.current.x * ratio, y: view.current.y * ratio, scale: next });
@@ -145,6 +206,7 @@ function ImageViewer({
 
   function onPointerDown(event: PointerEvent<HTMLDivElement>) {
     if (event.button !== 0 || pointers.current.size >= 2 || failed) return;
+    finishOpening();
     if (!pointers.current.size) {
       const rect = event.currentTarget.getBoundingClientRect();
       stageCenter.current = { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
@@ -189,6 +251,7 @@ function ImageViewer({
 
   function onStageKey(event: KeyboardEvent<HTMLDivElement>) {
     if (failed) return;
+    finishOpening();
     const current = view.current;
     if (event.key === "+" || event.key === "=") applyZoom(current.scale + 0.5);
     else if (event.key === "-") applyZoom(current.scale - 0.5);
@@ -201,11 +264,17 @@ function ImageViewer({
     event.preventDefault();
   }
 
+  function navigate(next: number) {
+    finishOpening();
+    onNavigate(next);
+    stageRef.current?.focus({ preventScroll: true });
+  }
+
   return (
     <>
       <header className="question-viewer-header">
         <h2>{total > 1 ? `Abbildung ${index + 1} von ${total}` : "Abbildung"}</h2>
-        <button aria-label="Bildbetrachter schliessen" className="question-viewer-close btn-secondary" onClick={onClose} type="button">×</button>
+        <button aria-label="Bildbetrachter schliessen" className="question-viewer-close btn-secondary" onClick={(event) => onClose(event.detail > 0)} type="button">×</button>
       </header>
       <div
         aria-label="Bildfläche. Mit Plus und Minus zoomen, mit den Pfeiltasten verschieben."
@@ -231,8 +300,8 @@ function ImageViewer({
       <footer className="question-viewer-toolbar">
         {total > 1 && (
           <div aria-label="Abbildungen durchblättern" className="question-viewer-pages" role="group">
-            <button aria-label="Vorherige Abbildung" className="btn-secondary" disabled={index === 0} onClick={() => { onNavigate(index - 1); stageRef.current?.focus({ preventScroll: true }); }} type="button"><AtlasIcon name="chevronRight" /></button>
-            <button aria-label="Nächste Abbildung" className="btn-secondary" disabled={index + 1 === total} onClick={() => { onNavigate(index + 1); stageRef.current?.focus({ preventScroll: true }); }} type="button"><AtlasIcon name="chevronRight" /></button>
+            <button aria-label="Vorherige Abbildung" className="btn-secondary" disabled={index === 0} onClick={() => navigate(index - 1)} type="button"><AtlasIcon name="chevronRight" /></button>
+            <button aria-label="Nächste Abbildung" className="btn-secondary" disabled={index + 1 === total} onClick={() => navigate(index + 1)} type="button"><AtlasIcon name="chevronRight" /></button>
           </div>
         )}
         <div aria-label="Bildgrösse" className="question-viewer-zoom" role="group">

@@ -204,11 +204,6 @@ main[tabindex="-1"]:focus,
   white-space: normal;
 }
 
-@keyframes atlas-surface-in {
-  from { opacity: .5; scale: .98; }
-  to { opacity: 1; scale: 1; }
-}
-
 .account-popover-close {
   display: grid;
   flex: 0 0 auto;
@@ -278,6 +273,7 @@ main[tabindex="-1"]:focus,
   background: transparent;
   color: var(--atlas-text);
   overscroll-behavior: contain;
+  isolation: isolate;
 }
 
 .atlas-dialog[open] {
@@ -286,8 +282,14 @@ main[tabindex="-1"]:focus,
 }
 
 .atlas-dialog::backdrop {
-  background: #0d121d;
-  opacity: calc(.47 * var(--atlas-dialog-shade, 1));
+  background: transparent;
+}
+
+.atlas-dialog-shade {
+  position: absolute;
+  inset: 0;
+  background: rgb(13 18 29 / .47);
+  pointer-events: none;
 }
 
 html:has(.atlas-dialog[open]) {
@@ -307,7 +309,7 @@ html:has(.atlas-dialog[open]) {
   color: var(--atlas-text);
   box-shadow: var(--atlas-shadow-float) !important;
   backdrop-filter: none !important;
-  animation: atlas-surface-in 180ms var(--atlas-press-ease) both !important;
+  animation: none !important;
 }
 
 .atlas-dialog .atlas-dialog-panel.auth-modal,
@@ -726,15 +728,15 @@ a.dashboard-study-row:active {
 }
 
 @media (max-width: 760px) {
-  .atlas-dialog[open] {
+  .atlas-dialog[data-presentation="sheet"][open] {
     align-items: end;
     padding-inline: 0;
     padding-bottom: 0;
   }
 
-  .atlas-dialog .atlas-dialog-panel,
-  .atlas-dialog .atlas-dialog-panel.auth-modal,
-  .atlas-dialog .atlas-dialog-panel.account-popover {
+  .atlas-dialog[data-presentation="sheet"] .atlas-dialog-panel,
+  .atlas-dialog[data-presentation="sheet"] .atlas-dialog-panel.auth-modal,
+  .atlas-dialog[data-presentation="sheet"] .atlas-dialog-panel.account-popover {
     width: 100% !important;
     max-width: min(100%, 35rem) !important;
     max-height: min(90dvh, 48rem);
@@ -746,7 +748,7 @@ a.dashboard-study-row:active {
   .atlas-sheet-handle {
     display: grid;
     width: 7rem;
-    min-height: 2.5rem;
+    min-height: 2.75rem;
     margin: 0 auto .25rem;
     place-items: center;
     cursor: grab;
@@ -1429,6 +1431,10 @@ a.dashboard-study-row:active {
   object-fit: contain;
 }
 
+.question-figure-trigger img[data-viewer-source] {
+  opacity: 0;
+}
+
 .question-figure-trigger:active {
   background: var(--atlas-press);
 }
@@ -1446,6 +1452,13 @@ a.dashboard-study-row:active {
   color: var(--atlas-text);
   font-size: 1.05rem;
   font-weight: 650;
+  transition: scale 120ms var(--atlas-press-ease);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .question-figure-trigger:active:not(:focus-visible) .question-figure-expand {
+    scale: .97;
+  }
 }
 
 .question-figure figcaption,
@@ -1478,7 +1491,6 @@ a.dashboard-study-row:active {
   border-radius: 1rem;
   padding: .75rem;
   overflow: hidden;
-  animation: atlas-surface-in 180ms var(--atlas-press-ease) both !important;
 }
 
 .question-viewer-header,
@@ -1525,6 +1537,19 @@ a.dashboard-study-row:active {
   height: auto;
   max-height: calc(100% - 1.5rem);
   transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.question-viewer-stage[data-moving-image] > img {
+  opacity: 0;
+}
+
+.question-viewer-flight {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  max-width: none;
+  transform-origin: top left;
   pointer-events: none;
 }
 

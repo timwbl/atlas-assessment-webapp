@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState, type MouseEventHandler } from "react";
 import {
   cloudSyncAvailable,
   getCurrentProfile,
@@ -44,6 +44,7 @@ export function AccountMenu() {
   const menuRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const pointerEntry = useRef(false);
+  const authOpeningInput = useRef<"pointer" | "keyboard">(undefined);
   const popoverRef = useRef<HTMLDivElement>(null);
   const popoverId = useId();
   const [compact, setCompact] = useState(false);
@@ -115,6 +116,7 @@ export function AccountMenu() {
 
   useEffect(() => {
     if (!user || !profileChecked || profile?.display_name?.trim()) return;
+    authOpeningInput.current = undefined;
     setAuthMode("name");
     setAuthName(name.trim());
     setAuthOpen(true);
@@ -168,7 +170,8 @@ export function AccountMenu() {
     }
   }
 
-  function openAuth(mode: AuthMode) {
+  function openAuth(mode: AuthMode, detail: number) {
+    authOpeningInput.current = detail > 0 ? "pointer" : "keyboard";
     setStatus("");
     setAuthMode(mode);
     setAuthOpen(true);
@@ -272,7 +275,7 @@ export function AccountMenu() {
     requestAnimationFrame(() => triggerRef.current?.focus({ preventScroll: true }));
   }
 
-  const menuContent = (dismiss: () => void) => (
+  const menuContent = (dismiss: MouseEventHandler<HTMLButtonElement>) => (
     <>
       <div className="account-popover-head">
         <div className="account-popover-mark">{initials}</div>
@@ -299,7 +302,7 @@ export function AccountMenu() {
           detail={displayName ? "Anzeigename ändern" : "Namen ergänzen"}
           icon="user"
           label="Profilname"
-          onClick={() => openAuth("name")}
+          onClick={(event) => openAuth("name", event.detail)}
         />
         <AccountInfoRow detail="Deutsch" icon="globe" label="Sprache" />
         <AccountInfoRow detail="System" icon="palette" label="Erscheinungsbild" />
@@ -364,13 +367,13 @@ export function AccountMenu() {
             detail="Fortschritt zwischen Geräten sichern"
             icon="sync"
             label="Anmelden"
-            onClick={() => openAuth("signin")}
+            onClick={(event) => openAuth("signin", event.detail)}
           />
           <AccountMenuItem
             detail="Neuen ATLAS Account erstellen"
             icon="user"
             label="Registrieren"
-            onClick={() => openAuth("signup")}
+            onClick={(event) => openAuth("signup", event.detail)}
           />
         </div>
       )}
@@ -404,7 +407,12 @@ export function AccountMenu() {
         </button>
 
         {open && (compact ? (
-          <AtlasDialog className="account-popover" label="Account-Menü" onDismiss={closeMenu}>
+          <AtlasDialog
+            className="account-popover"
+            label="Account-Menü"
+            onDismiss={closeMenu}
+            openingInput={pointerEntry.current ? "pointer" : "keyboard"}
+          >
             {menuContent}
           </AtlasDialog>
         ) : (
@@ -442,171 +450,176 @@ export function AccountMenu() {
                 ? "E-Mail bestätigen"
                 : "Anmelden"}
           onDismiss={requiresName ? undefined : closeAuth}
+          openingInput={authOpeningInput.current}
         >
-          {!requiresName && (
-            <button className="auth-modal-close" type="button" aria-label="Schliessen" onClick={closeAuth}>
-              ×
-            </button>
-          )}
+          {(dismiss) => (
+            <>
+              {!requiresName && (
+                <button className="auth-modal-close" type="button" aria-label="Schliessen" onClick={dismiss}>
+                  ×
+                </button>
+              )}
 
-          <div className="auth-modal-mark">
-            <Image alt="" height={38} src="/atlas-logo.svg" width={38} />
-          </div>
+              <div className="auth-modal-mark">
+                <Image alt="" height={38} src="/atlas-logo.svg" width={38} />
+              </div>
 
-          <div className="auth-modal-copy">
-            <div className="eyebrow">ATLAS Account</div>
-            <h2>
-              {authMode === "signup"
-                ? "Account erstellen"
-                : authMode === "name"
-                  ? "Wie dürfen wir dich nennen?"
-                  : authMode === "check-email"
-                    ? "Prüfe dein Postfach"
-                    : "Willkommen zurück"}
-            </h2>
-            <p>
-              {authMode === "signup"
-                ? "Erstelle deinen Account und synchronisiere deinen Lernfortschritt."
-                : authMode === "name"
-                  ? "Bitte ergänze deinen Namen, damit Freigaben und Feedback sauber zugeordnet werden können."
-                  : authMode === "check-email"
-                    ? `Wir haben eine Bestätigungsmail an ${pendingEmail || email} gesendet. Öffne den Link, um deinen ATLAS Account freizuschalten.`
-                    : "Melde dich an, um deinen Fortschritt und Freigaben zu synchronisieren."}
-            </p>
-          </div>
+              <div className="auth-modal-copy">
+                <div className="eyebrow">ATLAS Account</div>
+                <h2>
+                  {authMode === "signup"
+                    ? "Account erstellen"
+                    : authMode === "name"
+                      ? "Wie dürfen wir dich nennen?"
+                      : authMode === "check-email"
+                        ? "Prüfe dein Postfach"
+                        : "Willkommen zurück"}
+                </h2>
+                <p>
+                  {authMode === "signup"
+                    ? "Erstelle deinen Account und synchronisiere deinen Lernfortschritt."
+                    : authMode === "name"
+                      ? "Bitte ergänze deinen Namen, damit Freigaben und Feedback sauber zugeordnet werden können."
+                      : authMode === "check-email"
+                        ? `Wir haben eine Bestätigungsmail an ${pendingEmail || email} gesendet. Öffne den Link, um deinen ATLAS Account freizuschalten.`
+                        : "Melde dich an, um deinen Fortschritt und Freigaben zu synchronisieren."}
+                </p>
+              </div>
 
-          {authMode !== "name" && authMode !== "check-email" && (
-            <div className="auth-tabs" role="group" aria-label="Account-Aktion">
-              <button aria-pressed={authMode === "signin"} className={authMode === "signin" ? "is-active" : ""} type="button" onClick={() => setAuthMode("signin")}>
-                Anmelden
-              </button>
-              <button aria-pressed={authMode === "signup"} className={authMode === "signup" ? "is-active" : ""} type="button" onClick={() => setAuthMode("signup")}>
-                Registrieren
-              </button>
-            </div>
-          )}
+              {authMode !== "name" && authMode !== "check-email" && (
+                <div className="auth-tabs" role="group" aria-label="Account-Aktion">
+                  <button aria-pressed={authMode === "signin"} className={authMode === "signin" ? "is-active" : ""} type="button" onClick={() => setAuthMode("signin")}>
+                    Anmelden
+                  </button>
+                  <button aria-pressed={authMode === "signup"} className={authMode === "signup" ? "is-active" : ""} type="button" onClick={() => setAuthMode("signup")}>
+                    Registrieren
+                  </button>
+                </div>
+              )}
 
-          {authMode === "check-email" ? (
-            <div className="auth-confirmation-pending">
-              <div className="auth-confirmation-icon" aria-hidden="true">✓</div>
-              <p>
-                Nach der Bestätigung wirst du auf eine sichere ATLAS-Seite weitergeleitet und automatisch angemeldet.
-              </p>
-              <button className="btn-primary auth-submit" disabled={busy} type="button" onClick={() => void resendConfirmation()}>
-                {busy ? "Wird gesendet..." : "Bestätigungsmail erneut senden"}
-              </button>
-              <button className="btn-secondary auth-submit" type="button" onClick={() => {
-                setAuthMode("signin");
-                setStatus("");
-              }}>
-                Zur Anmeldung
-              </button>
-              {status && <p className="account-status" role="status">{status}</p>}
-            </div>
-          ) : (
-          <div className="auth-form">
-            {authMode !== "name" && (
-              <>
-                <div className="auth-provider-grid" aria-label="Mit externem Anbieter fortfahren">
-                  {OAUTH_PROVIDERS.map((item) => (
-                    <button
-                      className="auth-provider-button"
-                      disabled={busy}
-                      key={item.provider}
-                      onClick={() => void startOAuth(item.provider)}
-                      type="button"
-                    >
-                      <span>{item.mark}</span>
-                      <strong>Mit {item.label} fortfahren</strong>
+              {authMode === "check-email" ? (
+                <div className="auth-confirmation-pending">
+                  <div className="auth-confirmation-icon" aria-hidden="true">✓</div>
+                  <p>
+                    Nach der Bestätigung wirst du auf eine sichere ATLAS-Seite weitergeleitet und automatisch angemeldet.
+                  </p>
+                  <button className="btn-primary auth-submit" disabled={busy} type="button" onClick={() => void resendConfirmation()}>
+                    {busy ? "Wird gesendet..." : "Bestätigungsmail erneut senden"}
+                  </button>
+                  <button className="btn-secondary auth-submit" type="button" onClick={() => {
+                    setAuthMode("signin");
+                    setStatus("");
+                  }}>
+                    Zur Anmeldung
+                  </button>
+                  {status && <p className="account-status" role="status">{status}</p>}
+                </div>
+              ) : (
+              <div className="auth-form">
+                {authMode !== "name" && (
+                  <>
+                    <div className="auth-provider-grid" aria-label="Mit externem Anbieter fortfahren">
+                      {OAUTH_PROVIDERS.map((item) => (
+                        <button
+                          className="auth-provider-button"
+                          disabled={busy}
+                          key={item.provider}
+                          onClick={() => void startOAuth(item.provider)}
+                          type="button"
+                        >
+                          <span>{item.mark}</span>
+                          <strong>Mit {item.label} fortfahren</strong>
+                        </button>
+                      ))}
+                    </div>
+                    <div className="auth-divider" role="presentation">
+                      <span>oder mit E-Mail</span>
+                    </div>
+                  </>
+                )}
+
+                {(authMode === "signup" || authMode === "name") && (
+                  <label>
+                    <span>Name</span>
+                    <input
+                      ref={nameInputRef}
+                      className="input"
+                      name="atlas-auth-name"
+                      autoComplete="name"
+                      value={authName}
+                      onChange={(event) => setAuthName(event.target.value)}
+                      placeholder="Vorname Nachname"
+                    />
+                  </label>
+                )}
+
+                {authMode !== "name" && (
+                  <>
+                    <label>
+                      <span>E-Mail</span>
+                      <input
+                        className="input"
+                        type="email"
+                        name="atlas-account-email"
+                        autoComplete="username"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                        placeholder="name@example.com"
+                      />
+                    </label>
+                    <label>
+                      <span>Passwort</span>
+                      <input
+                        className="input"
+                        type="password"
+                        name="atlas-account-password"
+                        autoComplete={authMode === "signup" ? "new-password" : "current-password"}
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter") void (authMode === "signup" ? createAccount() : login());
+                        }}
+                        placeholder="Passwort"
+                      />
+                    </label>
+                    <label className="auth-remember-row">
+                      <input
+                        checked={rememberMe}
+                        onChange={(event) => setRememberMe(event.target.checked)}
+                        type="checkbox"
+                      />
+                      <span aria-hidden="true" className="auth-checkbox" />
+                      <span className="auth-remember-copy">
+                        <strong>Eingeloggt bleiben</strong>
+                        <small>Auf diesem Gerät angemeldet bleiben.</small>
+                      </span>
+                    </label>
+                  </>
+                )}
+
+                {authMode === "name" ? (
+                  <button className="btn-primary auth-submit" disabled={busy || !authName.trim()} type="button" onClick={() => void saveName()}>
+                    {busy ? "Speichert..." : "Name speichern"}
+                  </button>
+                ) : authMode === "signup" ? (
+                  <button className="btn-primary auth-submit" disabled={busy || !authName.trim() || !email || !password} type="button" onClick={() => void createAccount()}>
+                    {busy ? "Erstellt..." : "Registrieren"}
+                  </button>
+                ) : (
+                  <>
+                    <button className="btn-primary auth-submit" disabled={busy || !email || !password} type="button" onClick={() => void login()}>
+                      {busy ? "Meldet an..." : "Anmelden"}
                     </button>
-                  ))}
-                </div>
-                <div className="auth-divider" role="presentation">
-                  <span>oder mit E-Mail</span>
-                </div>
-              </>
-            )}
+                    <button className="auth-text-button" disabled={busy || !email.trim()} type="button" onClick={() => void resendConfirmation()}>
+                      Bestätigungsmail erneut senden
+                    </button>
+                  </>
+                )}
 
-            {(authMode === "signup" || authMode === "name") && (
-              <label>
-                <span>Name</span>
-                <input
-                  ref={nameInputRef}
-                  className="input"
-                  name="atlas-auth-name"
-                  autoComplete="name"
-                  value={authName}
-                  onChange={(event) => setAuthName(event.target.value)}
-                  placeholder="Vorname Nachname"
-                />
-              </label>
-            )}
-
-            {authMode !== "name" && (
-              <>
-                <label>
-                  <span>E-Mail</span>
-                  <input
-                    className="input"
-                    type="email"
-                    name="atlas-account-email"
-                    autoComplete="username"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                    placeholder="name@example.com"
-                  />
-                </label>
-                <label>
-                  <span>Passwort</span>
-                  <input
-                    className="input"
-                    type="password"
-                    name="atlas-account-password"
-                    autoComplete={authMode === "signup" ? "new-password" : "current-password"}
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                    onKeyDown={(event) => {
-                      if (event.key === "Enter") void (authMode === "signup" ? createAccount() : login());
-                    }}
-                    placeholder="Passwort"
-                  />
-                </label>
-                <label className="auth-remember-row">
-                  <input
-                    checked={rememberMe}
-                    onChange={(event) => setRememberMe(event.target.checked)}
-                    type="checkbox"
-                  />
-                  <span aria-hidden="true" className="auth-checkbox" />
-                  <span className="auth-remember-copy">
-                    <strong>Eingeloggt bleiben</strong>
-                    <small>Auf diesem Gerät angemeldet bleiben.</small>
-                  </span>
-                </label>
-              </>
-            )}
-
-            {authMode === "name" ? (
-              <button className="btn-primary auth-submit" disabled={busy || !authName.trim()} type="button" onClick={() => void saveName()}>
-                {busy ? "Speichert..." : "Name speichern"}
-              </button>
-            ) : authMode === "signup" ? (
-              <button className="btn-primary auth-submit" disabled={busy || !authName.trim() || !email || !password} type="button" onClick={() => void createAccount()}>
-                {busy ? "Erstellt..." : "Registrieren"}
-              </button>
-            ) : (
-              <>
-                <button className="btn-primary auth-submit" disabled={busy || !email || !password} type="button" onClick={() => void login()}>
-                  {busy ? "Meldet an..." : "Anmelden"}
-                </button>
-                <button className="auth-text-button" disabled={busy || !email.trim()} type="button" onClick={() => void resendConfirmation()}>
-                  Bestätigungsmail erneut senden
-                </button>
-              </>
-            )}
-
-            {status && <p className="account-status" role="status">{status}</p>}
-          </div>
+                {status && <p className="account-status" role="status">{status}</p>}
+              </div>
+              )}
+            </>
           )}
         </AtlasDialog>
       )}
@@ -627,7 +640,7 @@ function AccountMenuItem({
   disabled?: boolean;
   icon: AtlasIconName;
   label: string;
-  onClick: () => void;
+  onClick: MouseEventHandler<HTMLButtonElement>;
 }) {
   return (
     <button

@@ -35,44 +35,52 @@ export function StudyPrompts() {
     <>
       {authenticated && onboardingOpen && (
         <AtlasDialog className="study-modal" label="Lernprofil einrichten" onDismiss={dismissOnboarding}>
-          <StudyProfileSettings
-            description="Wähle deine aktuelle Lernphase. Du kannst dies später jederzeit auf der Einstellungsseite ändern."
-            onDone={dismissOnboarding}
-            title="ATLAS einrichten"
-          />
-          <button className="auth-text-button" onClick={dismissOnboarding} type="button">
-            Später einrichten · vorerst alle Inhalte anzeigen
-          </button>
+          {(dismiss) => (
+            <>
+              <StudyProfileSettings
+                description="Wähle deine aktuelle Lernphase. Du kannst dies später jederzeit auf der Einstellungsseite ändern."
+                onDone={dismissOnboarding}
+                title="ATLAS einrichten"
+              />
+              <button className="auth-text-button" onClick={dismiss} type="button">
+                Später einrichten · vorerst alle Inhalte anzeigen
+              </button>
+            </>
+          )}
         </AtlasDialog>
       )}
 
       {authenticated && semesterPromptOpen && suggestedSemester && !onboardingOpen && !profileEditorOpen && (
         <AtlasDialog className="study-modal semester-change-modal" label="Semester wechseln" onDismiss={keepCurrentSemester}>
-          <p className="eyebrow">Lernphase</p>
-          <h2>Neues Semester?</h2>
-          <p>
-            ATLAS hat erkannt, dass wahrscheinlich ein neues Semester begonnen hat. Welche Inhalte möchtest du aktuell lernen?
-          </p>
-          <div className="semester-change-options">
-            {(["hs", "fs"] as const).map((semester) => {
-              const config = semesterConfig(semester);
-              return (
-                <button
-                  className={suggestedSemester === semester ? "is-suggested" : ""}
-                  key={semester}
-                  onClick={() => selectSemester(semester)}
-                  type="button"
-                >
-                  <strong>{config?.label}</strong>
-                  <span>{config?.shortLabel}</span>
-                  {suggestedSemester === semester && <small>Wahrscheinlich aktuell</small>}
-                </button>
-              );
-            })}
-          </div>
-          <button className="btn-secondary" onClick={keepCurrentSemester} type="button">
-            Aktuelle Auswahl behalten
-          </button>
+          {(dismiss) => (
+            <>
+              <p className="eyebrow">Lernphase</p>
+              <h2>Neues Semester?</h2>
+              <p>
+                ATLAS hat erkannt, dass wahrscheinlich ein neues Semester begonnen hat. Welche Inhalte möchtest du aktuell lernen?
+              </p>
+              <div className="semester-change-options">
+                {(["hs", "fs"] as const).map((semester) => {
+                  const config = semesterConfig(semester);
+                  return (
+                    <button
+                      className={suggestedSemester === semester ? "is-suggested" : ""}
+                      key={semester}
+                      onClick={() => selectSemester(semester)}
+                      type="button"
+                    >
+                      <strong>{config?.label}</strong>
+                      <span>{config?.shortLabel}</span>
+                      {suggestedSemester === semester && <small>Wahrscheinlich aktuell</small>}
+                    </button>
+                  );
+                })}
+              </div>
+              <button className="btn-secondary" onClick={dismiss} type="button">
+                Aktuelle Auswahl behalten
+              </button>
+            </>
+          )}
         </AtlasDialog>
       )}
     </>

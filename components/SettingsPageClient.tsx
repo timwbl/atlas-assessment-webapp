@@ -24,6 +24,7 @@ import {
   type UserStudySettings
 } from "@/lib/studyProgram";
 import { useUserStudyContext } from "./study/UserStudyProvider";
+import styles from "./SettingsPageClient.module.css";
 
 const NAME_KEY = "atlas-user-display-name";
 const PROFILE_NAME_CHANGED_EVENT = "atlas-profile-name-changed";
@@ -34,10 +35,14 @@ export function SettingsPageClient() {
   const [profile, setProfile] = useState<CloudProfile | null>(null);
   const [displayName, setDisplayName] = useState("");
   const [draftName, setDraftName] = useState("");
-  const [editingProfile, setEditingProfile] = useState(false);
+  const [{ editingProfile, pointerEntry }, setProfileEditor] = useState({
+    editingProfile: false,
+    pointerEntry: false
+  });
   const [draftSettings, setDraftSettings] = useState<UserStudySettings>(settings);
   const [status, setStatus] = useState("");
   const [busy, setBusy] = useState(false);
+  const profileEditButtonRef = useRef<HTMLButtonElement>(null);
   const nameInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -78,7 +83,7 @@ export function SettingsPageClient() {
     }
   }
 
-  async function saveProfileChanges() {
+  async function saveProfileChanges(pointerActivation = false) {
     const nextName = draftName.trim() || resolvedName;
 
     setBusy(true);
@@ -92,7 +97,7 @@ export function SettingsPageClient() {
         setProfile(updated);
       }
       updateSettings(draftSettings);
-      setEditingProfile(false);
+      closeEditor(pointerActivation);
       setStatus("Änderungen gespeichert.");
     } catch (error) {
       setStatus(error instanceof Error ? error.message : "Änderungen konnten nicht gespeichert werden.");
@@ -101,11 +106,16 @@ export function SettingsPageClient() {
     }
   }
 
-  function openEditor() {
+  function openEditor(pointerActivation: boolean) {
     setDraftName(resolvedName);
     setDraftSettings(settings);
-    setEditingProfile(true);
+    setProfileEditor({ editingProfile: true, pointerEntry: pointerActivation });
     setStatus("");
+  }
+
+  function closeEditor(pointerActivation: boolean) {
+    setProfileEditor({ editingProfile: false, pointerEntry: pointerActivation });
+    profileEditButtonRef.current?.focus({ preventScroll: true });
   }
 
   function setYear(studyYear: StudyYear | null) {
@@ -178,14 +188,15 @@ export function SettingsPageClient() {
         </div>
         <button
           className="btn-secondary settings-profile-edit"
-          onClick={() => {
+          onClick={(event) => {
             if (editingProfile) {
-              setEditingProfile(false);
+              closeEditor(event.detail > 0);
               setStatus("");
               return;
             }
-            openEditor();
+            openEditor(event.detail > 0);
           }}
+          ref={profileEditButtonRef}
           type="button"
         >
           <AtlasIcon name="pencil" />
@@ -202,7 +213,11 @@ export function SettingsPageClient() {
           </div>
         </div>
         {!editingProfile ? (
-          <div className="settings-summary-list">
+          <div
+            className={`settings-summary-list ${styles.profileContent}`}
+            data-pointer-entry={pointerEntry || undefined}
+            key="profile-summary"
+          >
             <div className="settings-summary-row">
               <span>Studienjahr</span>
               <strong>{isAdmin ? "Alle Studienjahre" : STUDY_YEARS.find((year) => year.id === settings.studyYear)?.label || "Nicht festgelegt"}</strong>
@@ -217,7 +232,12 @@ export function SettingsPageClient() {
             </div>
           </div>
         ) : (
-          <div className="settings-edit-submenu" aria-label="Lernprofil bearbeiten">
+          <div
+            aria-label="Lernprofil bearbeiten"
+            className={`settings-edit-submenu ${styles.profileContent}`}
+            data-pointer-entry={pointerEntry || undefined}
+            key="profile-editor"
+          >
             <div className="settings-submenu-head">
               <h3>Profil bearbeiten</h3>
               <p>{isAdmin ? "Ändere hier deinen Profilnamen. Als Admin kannst du jederzeit alle Inhalte sehen." : "Ändere hier Name, Studienjahr, Fachsemester und Prüfungsfilter."}</p>
@@ -325,10 +345,10 @@ export function SettingsPageClient() {
             )}
 
             <div className="settings-edit-actions">
-              <button className="btn-secondary" disabled={busy} onClick={() => setEditingProfile(false)} type="button">
+              <button className="btn-secondary" disabled={busy} onClick={(event) => closeEditor(event.detail > 0)} type="button">
                 Abbrechen
               </button>
-              <button className="btn-primary" disabled={busy} onClick={() => void saveProfileChanges()} type="button">
+              <button className="btn-primary" disabled={busy} onClick={(event) => void saveProfileChanges(event.detail > 0)} type="button">
                 {busy ? "Speichert..." : "Änderungen speichern"}
               </button>
             </div>

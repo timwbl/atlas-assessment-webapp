@@ -8,108 +8,203 @@ const REDUCED_MOTION = "(prefers-reduced-motion: reduce)";
 const DRAG_INTENT = 8;
 const VELOCITY_WINDOW = 90;
 const SPRING_FREQUENCY = 25;
+const SPRING_STEP = 16;
+const SPRING_MAX_DURATION = 400;
+
+type Dismiss = (source?: boolean | { detail: number }) => void;
 
 type Props = {
-  children: ReactNode | ((dismiss: () => void) => ReactNode);
+  children: ReactNode | ((dismiss: Dismiss) => ReactNode);
   className: string;
   label: string;
   onDismiss?: () => void;
+  onDismissMotion?: () => Animation | undefined;
+  openingInput?: "keyboard" | "pointer";
   presentation?: "sheet" | "fullscreen";
 };
 
 type Sample = { y: number; time: number };
+type SheetPosition = { y: number; shade: number };
 type Drag = {
   pointer: number;
   x: number;
   y: number;
-  offset: number;
   height: number;
+  start: SheetPosition;
+  current: SheetPosition;
   tracking: boolean;
   samples: Sample[];
 };
 
-export function AtlasDialog({ children, className, label, onDismiss, presentation = "sheet" }: Props) {
+export function AtlasDialog({
+  children, className, label, onDismiss, onDismissMotion, openingInput, presentation = "sheet"
+}: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
-  const frame = useRef(0);
-  const position = useRef(0);
+  const shadeRef = useRef<HTMLDivElement>(null);
+  const animations = useRef<Animation[]>([]);
   const drag = useRef<Drag | null>(null);
   const dismissRef = useRef(onDismiss);
+  const initialInput = useRef(openingInput);
   const motion = useRef({ reduced: false, mobile: false, closing: false });
+  const finished = useRef(false);
+
+  const stopAnimations = useCallback(() => {
+    const active = animations.current;
+    animations.current = [];
+    active.forEach((animation) => animation.cancel());
+  }, []);
 
   useLayoutEffect(() => {
     dismissRef.current = onDismiss;
-  }, [onDismiss]);
+    if (onDismiss || !motion.current.closing) return;
+    stopAnimations();
+    motion.current.closing = false;
+    panelRef.current?.style.removeProperty("translate");
+    shadeRef.current?.style.removeProperty("opacity");
+  }, [onDismiss, stopAnimations]);
 
-  const movePanel = useCallback((y: number, height: number) => {
-    position.current = y;
-    const shade = Math.max(0, 1 - Math.max(0, y) / height);
-    dialogRef.current?.style.setProperty("--atlas-dialog-shade", String(shade));
-    if (panelRef.current) {
-      panelRef.current.style.translate = y && !motion.current.reduced ? `0 ${y}px` : "";
-    }
+  const completeDismiss = useCallback(() => {
+    if (finished.current || !dismissRef.current) return;
+    finished.current = true;
+    dismissRef.current();
   }, []);
 
-  const settle = useCallback((target: number, height: number, velocity: number, closing = false) => {
-    cancelAnimationFrame(frame.current);
+  const play = useCallback((active: Animation[], closing = false) => {
+    animations.current = active;
     motion.current.closing = closing;
-    if (motion.current.reduced || !motion.current.mobile) {
-      movePanel(target, height);
-      if (closing) dismissRef.current?.();
+    void Promise.all(active.map((animation) => animation.finished)).then(() => {
+      if (animations.current !== active) return;
+      if (closing) completeDismiss();
+      else stopAnimations();
+    }, () => undefined);
+  }, [completeDismiss, stopAnimations]);
+
+  function readSheet(): SheetPosition {
+    const panel = panelRef.current;
+    const shade = shadeRef.current;
+    const translate = panel && getComputedStyle(panel).translate;
+    return {
+      y: translate ? parseFloat(translate.split(/\s+/)[1] ?? "0") || 0 : 0,
+      shade: shade ? Number(getComputedStyle(shade).opacity) : 1
+    };
+  }
+
+  function moveSheet(position: SheetPosition) {
+    if (panelRef.current) {
+      panelRef.current.style.translate = position.y && !motion.current.reduced ? sheetTranslate(position.y) : "";
+    }
+    if (shadeRef.current) shadeRef.current.style.opacity = String(position.shade);
+  }
+
+  function settleSheet(start: SheetPosition, target: SheetPosition, velocity: number, closing = false) {
+    const panel = panelRef.current;
+    const shade = shadeRef.current;
+    if (!panel || !shade) return;
+    stopAnimations();
+    if (typeof panel.animate !== "function") {
+      moveSheet(target);
+      if (closing) completeDismiss();
       return;
     }
-
-    const start = performance.now();
-    const displacement = position.current - target;
-    // Critically damped spring with the release velocity as its initial slope.
-    const slope = velocity + SPRING_FREQUENCY * displacement;
-
-    function tick(now: number) {
-      const time = Math.max(0, (now - start) / 1000);
-      const decay = Math.exp(-SPRING_FREQUENCY * time);
-      const delta = (displacement + slope * time) * decay;
-      const speed = (velocity - SPRING_FREQUENCY * slope * time) * decay;
-      if ((Math.abs(delta) < 0.75 && Math.abs(speed) < 18) || (closing && delta >= 0)) {
-        movePanel(target, height);
-        if (closing) dismissRef.current?.();
-        return;
+    if (motion.current.reduced) {
+      moveSheet({ y: 0, shade: closing ? start.shade : 1 });
+      if (closing) {
+        const timing = opacityTiming();
+        play([
+          panel.animate([{ opacity: 1 }, { opacity: 0 }], timing),
+          shade.animate([{ opacity: start.shade }, { opacity: 0 }], timing)
+        ], true);
       }
-      movePanel(Math.max(-18, target + delta), height);
-      frame.current = requestAnimationFrame(tick);
+      return;
     }
+    const { positions, duration } = springPositions(start, target, velocity, closing);
+    moveSheet(target);
+    play([
+      panel.animate(positions.map(({ y }) => ({ translate: sheetTranslate(y) })), { duration, fill: "both" }),
+      shade.animate(positions.map(({ shade }) => ({ opacity: shade })), { duration, fill: "both" })
+    ], closing);
+  }
 
-    frame.current = requestAnimationFrame(tick);
-  }, [movePanel]);
-
-  function dismiss() {
-    if (!dismissRef.current || motion.current.closing) return;
-    const height = panelRef.current?.offsetHeight || 1;
-    settle(height, height, 0, true);
+  function dismiss(source: boolean | { detail: number } = true) {
+    if (!dismissRef.current || finished.current) return;
+    const animate = typeof source === "boolean" ? source : source.detail > 0;
+    if (!animate) {
+      stopAnimations();
+      completeDismiss();
+      return;
+    }
+    if (motion.current.closing) return;
+    if (presentation === "fullscreen") {
+      const customExit = !motion.current.reduced && onDismissMotion?.();
+      if (customExit) play([customExit], true);
+      else completeDismiss();
+      return;
+    }
+    const panel = panelRef.current;
+    const shade = shadeRef.current;
+    const dialog = dialogRef.current;
+    if (!panel || !shade || !dialog) return;
+    if (typeof panel.animate !== "function") {
+      completeDismiss();
+      return;
+    }
+    if (motion.current.mobile) {
+      settleSheet(readSheet(), { y: panel.offsetHeight || 1, shade: 0 }, 0, true);
+      return;
+    }
+    const panelStyle = getComputedStyle(panel);
+    const initialOpacity = panelStyle.opacity;
+    const initialScale = panelStyle.scale;
+    const shadeOpacity = getComputedStyle(shade).opacity;
+    const timing = surfaceTiming(dialog, motion.current.reduced, 180);
+    stopAnimations();
+    play([
+      panel.animate([
+        { opacity: initialOpacity, scale: initialScale },
+        { opacity: 0, scale: motion.current.reduced ? "none" : ".97" }
+      ], timing),
+      shade.animate([{ opacity: shadeOpacity }, { opacity: 0 }], timing)
+    ], true);
   }
 
   useLayoutEffect(() => {
     const dialog = dialogRef.current;
     const panel = panelRef.current;
-    if (!dialog || !panel) return;
+    const shade = shadeRef.current;
+    if (!dialog || !panel || !shade) return;
     const previouslyFocused = document.activeElement;
+    const enteredByKeyboard = initialInput.current === "keyboard" || (
+      initialInput.current === undefined && previouslyFocused?.matches("button:focus-visible, a:focus-visible")
+    );
     const viewport = window.matchMedia(MOBILE_SHEET);
     const preference = window.matchMedia(REDUCED_MOTION);
+    finished.current = false;
 
     function updatePreferences() {
-      cancelAnimationFrame(frame.current);
+      stopAnimations();
       drag.current = null;
       const wasClosing = motion.current.closing;
       motion.current = { reduced: preference.matches, mobile: presentation === "sheet" && viewport.matches, closing: false };
-      movePanel(0, panelRef.current?.offsetHeight || 1);
-      if (wasClosing) dismissRef.current?.();
+      if (panel) panel.style.translate = "";
+      if (shade) shade.style.opacity = "";
+      if (wasClosing) completeDismiss();
     }
 
     updatePreferences();
     dialog.showModal();
-    const height = panel.offsetHeight || 1;
-    if (motion.current.mobile && !preference.matches) {
-      movePanel(Math.min(24, height * 0.08), height);
-      settle(0, height, 0);
+    if (presentation === "sheet" && !enteredByKeyboard && typeof panel.animate === "function") {
+      const timing = surfaceTiming(dialog, preference.matches, 240);
+      let keyframes: Keyframe[] = [{ opacity: .45 }, { opacity: 1 }];
+      if (!preference.matches) {
+        keyframes = motion.current.mobile
+          ? [{ translate: sheetTranslate(Math.min(32, panel.offsetHeight * .12)) }, { translate: "0 0" }]
+          : [{ opacity: .45, scale: ".97" }, { opacity: 1, scale: "1" }];
+      }
+      play([
+        panel.animate(keyframes, timing),
+        shade.animate([{ opacity: 0 }, { opacity: 1 }], timing)
+      ]);
     }
     viewport.addEventListener("change", updatePreferences);
     preference.addEventListener("change", updatePreferences);
@@ -117,26 +212,29 @@ export function AtlasDialog({ children, className, label, onDismiss, presentatio
     return () => {
       viewport.removeEventListener("change", updatePreferences);
       preference.removeEventListener("change", updatePreferences);
-      cancelAnimationFrame(frame.current);
+      stopAnimations();
       dialog.close();
       if (previouslyFocused instanceof HTMLElement && previouslyFocused.isConnected) {
         previouslyFocused.focus({ preventScroll: true });
       }
     };
-  }, [movePanel, presentation, settle]);
+  }, [completeDismiss, play, presentation, stopAnimations]);
 
   function startDrag(event: PointerEvent<HTMLDivElement>) {
     const height = panelRef.current?.offsetHeight;
-    if (event.button !== 0 || !event.isPrimary || drag.current || !height) return;
-    cancelAnimationFrame(frame.current);
+    if (event.button !== 0 || !event.isPrimary || drag.current || finished.current || !height) return;
+    const start = readSheet();
+    stopAnimations();
+    moveSheet(start);
     motion.current.closing = false;
     event.currentTarget.setPointerCapture(event.pointerId);
     drag.current = {
       pointer: event.pointerId,
       x: event.clientX,
       y: event.clientY,
-      offset: position.current,
       height,
+      start,
+      current: start,
       tracking: false,
       samples: [{ y: event.clientY, time: event.timeStamp }]
     };
@@ -151,12 +249,17 @@ export function AtlasDialog({ children, className, label, onDismiss, presentatio
       active.tracking = true;
     }
 
-    const y = active.offset + dy;
+    const raw = active.start.y + dy;
+    const y = raw >= 0 ? raw : raw * 44 / (44 + Math.abs(raw));
+    const shade = y >= active.start.y
+      ? active.start.shade * Math.max(0, 1 - (y - active.start.y) / Math.max(1, active.height - active.start.y))
+      : active.start.shade + (1 - active.start.shade) * Math.min(1, (active.start.y - y) / Math.max(1, active.start.y));
+    active.current = { y, shade };
     active.samples.push({ y: event.clientY, time: event.timeStamp });
     while (active.samples.length > 2 && event.timeStamp - active.samples[0].time > VELOCITY_WINDOW) {
       active.samples.shift();
     }
-    movePanel(y >= 0 ? y : y * 44 / (44 + Math.abs(y)), active.height);
+    moveSheet(active.current);
   }
 
   function finishDrag(event: PointerEvent<HTMLDivElement>, cancelled: boolean) {
@@ -170,13 +273,12 @@ export function AtlasDialog({ children, className, label, onDismiss, presentatio
     const releaseVelocity = !cancelled && elapsed >= 8 && event.timeStamp - last.time < 65
       ? Math.max(-1800, Math.min(1800, (last.y - first.y) / elapsed * 1000))
       : 0;
-    const travel = position.current;
     const threshold = Math.min(146, active.height * 0.34);
-    const projected = travel + releaseVelocity * 0.20;
-    if (!cancelled && active.tracking && travel > 10 && projected >= threshold) {
-      settle(active.height, active.height, releaseVelocity, true);
+    const projected = active.current.y + releaseVelocity * 0.20;
+    if (!cancelled && active.tracking && active.current.y > 10 && projected >= threshold) {
+      settleSheet(active.current, { y: active.height, shade: 0 }, releaseVelocity, true);
     } else {
-      settle(0, active.height, active.tracking && !cancelled ? releaseVelocity : 0);
+      settleSheet(active.current, { y: 0, shade: 1 }, active.tracking && !cancelled ? releaseVelocity : 0);
     }
   }
 
@@ -187,13 +289,14 @@ export function AtlasDialog({ children, className, label, onDismiss, presentatio
       data-presentation={presentation}
       onCancel={(event) => {
         event.preventDefault();
-        dismiss();
+        dismiss(false);
       }}
       onClick={(event) => {
-        if (event.target === event.currentTarget) dismiss();
+        if (event.target === event.currentTarget) dismiss(event);
       }}
       ref={dialogRef}
     >
+      <div aria-hidden="true" className="atlas-dialog-shade" ref={shadeRef} />
       <div className={`atlas-dialog-panel ${className}`} ref={panelRef}>
         {onDismiss && presentation === "sheet" && (
           <div
@@ -211,4 +314,39 @@ export function AtlasDialog({ children, className, label, onDismiss, presentatio
     </dialog>,
     document.body
   );
+}
+
+function opacityTiming(): KeyframeAnimationOptions {
+  return { duration: 120, fill: "both" };
+}
+
+function surfaceTiming(dialog: HTMLDialogElement, reduced: boolean, duration: number): KeyframeAnimationOptions {
+  return {
+    ...(reduced ? opacityTiming() : { duration, fill: "both" }),
+    easing: getComputedStyle(dialog).getPropertyValue("--atlas-press-ease").trim()
+  };
+}
+
+function sheetTranslate(y: number): string {
+  return `0 ${y}px`;
+}
+
+function springPositions(start: SheetPosition, target: SheetPosition, velocity: number, closing: boolean) {
+  const positions = [start];
+  const displacement = start.y - target.y;
+  // Sample the critically damped spring once so the compositor can play the release.
+  const slope = velocity + SPRING_FREQUENCY * displacement;
+  let elapsed = SPRING_STEP;
+  for (; elapsed < SPRING_MAX_DURATION; elapsed += SPRING_STEP) {
+    const seconds = elapsed / 1000;
+    const decay = Math.exp(-SPRING_FREQUENCY * seconds);
+    const delta = (displacement + slope * seconds) * decay;
+    const speed = (velocity - SPRING_FREQUENCY * slope * seconds) * decay;
+    if ((Math.abs(delta) < .75 && Math.abs(speed) < 18) || (closing && delta >= 0)) break;
+    const y = Math.max(-18, target.y + delta);
+    const progress = displacement ? Math.min(1, Math.max(0, (start.y - y) / displacement)) : 1 - decay;
+    positions.push({ y, shade: start.shade + (target.shade - start.shade) * progress });
+  }
+  positions.push(target);
+  return { positions, duration: elapsed };
 }

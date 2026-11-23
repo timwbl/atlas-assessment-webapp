@@ -1,0 +1,32 @@
+.summary {
+  animation: settle var(--atlas-motion-medium) var(--atlas-press-ease) backwards;
+}
+
+.metrics {
+  animation: soften var(--atlas-motion-fast) var(--atlas-press-ease) 40ms backwards;
+}
+
+@keyframes settle {
+  from {
+    opacity: .85;
+    transform: perspective(900px) translate3d(0, 8px, -18px) rotateX(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(900px) translate3d(0, 0, 0) rotateX(0deg);
+  }
+}
+
+@keyframes soften {
+  from { opacity: .85; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .summary,
+  .metrics {
+    animation-name: soften;
+    animation-delay: 0ms;
+    animation-duration: 120ms !important;
+  }
+}

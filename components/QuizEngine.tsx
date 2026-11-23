@@ -58,7 +58,10 @@ const QUIZ_MODE_LABELS: Record<QuizMode, string> = {
   review: "Wiederholung"
 };
 
-type Confirmation = { kind: "finish" } | { kind: "mode"; mode: QuizMode };
+type Confirmation = ({ kind: "finish" } | { kind: "mode"; mode: QuizMode }) & {
+  input: "pointer" | "keyboard";
+};
+type QuizResult = { rows: QuizResultRow[]; attempt: QuizAttempt; animateArrival: boolean };
 
 type InitialQuizState = {
   mode: QuizMode;
@@ -97,7 +100,7 @@ export function QuizEngine({
   const [answers, setAnswers] = useState<Record<string, UserAnswer>>(initial.current.answers);
   const [revealed, setRevealed] = useState<Record<string, boolean>>(initial.current.revealed);
   const [startedAt, setStartedAt] = useState(initial.current.startedAt);
-  const [result, setResult] = useState<{ rows: QuizResultRow[]; attempt: QuizAttempt } | null>(null);
+  const [result, setResult] = useState<QuizResult | null>(null);
   const [finishError, setFinishError] = useState("");
   const [confirmation, setConfirmation] = useState<Confirmation | null>(null);
   const [progress, setProgress] = useState(() => getProgress(assessment.id));
@@ -247,6 +250,7 @@ export function QuizEngine({
     return (
       <ResultsPage
         assessment={assessment}
+        animateArrival={result.animateArrival}
         rows={result.rows}
         attempt={result.attempt}
         onRestart={() => restart(mode)}
@@ -282,21 +286,21 @@ export function QuizEngine({
   const answeredCount = answeredQuestionIds.size;
   const openCount = questions.length - answeredCount;
 
-  function requestFinish() {
-    if (openCount) setConfirmation({ kind: "finish" });
-    else finishQuiz();
+  function requestFinish(animateArrival: boolean) {
+    if (openCount) setConfirmation({ kind: "finish", input: animateArrival ? "pointer" : "keyboard" });
+    else finishQuiz(animateArrival);
   }
 
-  function requestMode(next: QuizMode) {
+  function requestMode(next: QuizMode, pointer: boolean) {
     if (next === mode) return;
     if (Object.keys(answers).length || Object.values(revealed).some(Boolean)) {
-      setConfirmation({ kind: "mode", mode: next });
+      setConfirmation({ kind: "mode", mode: next, input: pointer ? "pointer" : "keyboard" });
     } else {
       restart(next);
     }
   }
 
-  function revealOrNext() {
+  function revealOrNext(animateArrival: boolean) {
     if (usesImmediateFeedback && !revealed[question.id]) {
       setRevealed((current) => ({ ...current, [question.id]: true }));
       if (currentCorrect) {
@@ -308,7 +312,7 @@ export function QuizEngine({
       }
       return;
     }
-    if (index >= questions.length - 1) requestFinish();
+    if (index >= questions.length - 1) requestFinish(animateArrival);
     else goToQuestion(index + 1);
   }
 
@@ -321,7 +325,7 @@ export function QuizEngine({
     setRevealed((current) => ({ ...current, [question.id]: false }));
   }
 
-  function finishQuiz() {
+  function finishQuiz(animateArrival: boolean) {
     const rows = buildResultRows(questions, answers);
     const correct = rows.filter((row) => row.correct).length;
     const partial = rows.filter((row) => row.status === "partial").length;
@@ -365,7 +369,7 @@ export function QuizEngine({
       setFinishError(error instanceof Error ? error.message : "Der Fortschritt konnte lokal nicht gespeichert werden.");
     }
 
-    setResult({ rows, attempt });
+    setResult({ rows, attempt, animateArrival });
     triggerAriEvent("assessment_completed");
   }
 
@@ -463,7 +467,7 @@ export function QuizEngine({
                   aria-pressed={mode === value}
                   className={mode === value ? "is-active" : ""}
                   key={value}
-                  onClick={() => requestMode(value)}
+                  onClick={(event) => requestMode(value, event.detail > 0)}
                   type="button"
                 >
                   {QUIZ_MODE_LABELS[value]}
@@ -483,7 +487,7 @@ export function QuizEngine({
                 {stat?.priority === "high" ? "Priorität entfernen" : "Frage priorisieren"}
               </button>
               <SummaryLinkButton assessment={assessment} />
-              <button className="btn-secondary" onClick={requestFinish} type="button">Jetzt abgeben</button>
+              <button className="btn-secondary" onClick={(event) => requestFinish(event.detail > 0)} type="button">Jetzt abgeben</button>
             </div>
           </div>
         </details>
@@ -525,7 +529,7 @@ export function QuizEngine({
                 Nochmals üben
               </button>
             )}
-            <button type="button" className="btn-primary" onClick={revealOrNext}>
+            <button type="button" className="btn-primary" onClick={(event) => revealOrNext(event.detail > 0)}>
               {usesImmediateFeedback && !revealed[question.id]
                 ? "Lösung zeigen"
                 : mode === "review" && isRevealed
@@ -547,6 +551,7 @@ export function QuizEngine({
           className="quiz-confirmation"
           label={confirmation.kind === "finish" ? "Übung abgeben?" : "Quizmodus wechseln?"}
           onDismiss={() => setConfirmation(null)}
+          openingInput={confirmation.input}
         >
           {(dismiss) => (
             <>
@@ -558,9 +563,9 @@ export function QuizEngine({
                 <button className="btn-secondary" onClick={dismiss} type="button">Weiter üben</button>
                 <button
                   className="btn-primary"
-                  onClick={() => {
+                  onClick={(event) => {
                     setConfirmation(null);
-                    if (confirmation.kind === "finish") finishQuiz();
+                    if (confirmation.kind === "finish") finishQuiz(event.detail > 0);
                     else restart(confirmation.mode);
                   }}
                   type="button"

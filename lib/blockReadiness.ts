@@ -324,7 +324,7 @@ export function createFastQuizAssessment(
 }
 
 export function formatBlockId(blockId: string): string {
-  const number = String(blockId).match(/\d+/)?.[0];
+  const number = blockIdForContent(blockId)?.match(/\d+$/)?.[0] ?? String(blockId).match(/\d+/)?.[0];
   return number ? `Block ${number}` : "Block";
 }
 
